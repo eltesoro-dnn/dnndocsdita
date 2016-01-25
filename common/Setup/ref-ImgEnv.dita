@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<reference xml:lang="en" id="ref-ImgEnv">
+
+    <title>Environment for screenshots</title>
+
+    <refbody>
+
+        <section>
+            <p> The screenshots were captured in an environment with the following:
+                <ul>
+                    <li>Windows 10</li>
+                    <li>.NET Framework 4.6</li>
+                    <li>IIS with ASP.NET 3.5 and 4.6</li>
+                    <li>SQL Server 2014 Express Edition</li>
+                    <li>DNN 8.0 RC</li>
+                </ul>
+            </p>
+        </section>
+
+    </refbody>
+
+</reference>

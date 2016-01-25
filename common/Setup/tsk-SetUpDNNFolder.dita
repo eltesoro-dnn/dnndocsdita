@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en" id="tsk-SetUpDNNFolder">
+
+    <title>Set Up the DNN Folder and the User Account</title>
+
+    <taskbody>
+
+        <steps>
+            <step><cmd><xref href="https://www.dnnsoftware.com/community/download">Download DNN and extract the files.</xref></cmd>
+                <info>
+                    <p>The folder where you extract the files becomes the DNN installation folder.</p>
+                    <p><b>Developers and Designers:</b> For module or theme development, you don't need the source files.</p>
+                </info>
+            </step>
+
+            <step><cmd>Determine the user account used to run your website.</cmd>
+                <info>
+                    <p>The account name differs, depending on your IIS and Windows version:</p>
+                    <table frame="all" colsep="1" rowsep="1" >
+                        <tgroup cols="3" align="center">
+                            <colspec colnum="3"/>
+                            <thead>
+                                <row>
+                                    <entry>If your OS is</entry>
+                                    <entry>and your IIS version is</entry>
+                                    <entry>then the account name is</entry>
+                                </row>
+                            </thead>
+                            <tbody>
+                                <row>
+                                    <entry>
+                                        <p>Windows Vista</p>
+                                        <p>Windows Server 2008</p>
+                                    </entry>
+                                    <entry>IIS 7</entry>
+                                    <entry>localmachine\Network Service</entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <p>Windows 7</p>
+                                        <p>Windows Server 2008 R2</p>
+                                    </entry>
+                                    <entry>IIS 7.5</entry>
+                                    <entry morerows="2">
+                                        <p>the <b>NETWORK SERVICE</b> account, or</p>
+                                        <p>the <b>IIS AppPool\AppPoolName</b>, which is the name of the automatically generated app.</p>
+                                        <draft-comment>
+                                            <!-- TODO: Per Joe's tech review on 20160106, "We should include a screenshot of IIS Manager showing where to find this value." Addl info from Skype: "
+                                            [12:02:15 PM] Joe Brinkman: We don't actually show the correct account for Window 7/8/10
+                                            [12:02:23 PM] Joe Brinkman: there are two accounts shown
+                                            [12:03:07 PM] Joe Brinkman: and it is valid to have an app pool use one or the other account
+                                            [12:03:49 PM] Joe Brinkman: by default it will use the ApplicationPoolIdentity"
+                                            -->
+                                        </draft-comment>
+                                    </entry>
+                                </row>
+                                <row>
+                                    <entry>
+                                        <p>Windows 8</p>
+                                        <p>Windows Server 2012</p>
+                                    </entry>
+                                    <entry>IIS 8</entry>
+                                    <!-- Same as Windows 7. -->
+                                </row>
+                                <row>
+                                    <entry>Windows 10</entry>
+                                    <entry>IIS 10</entry>
+                                    <!-- Same as Windows 7. -->
+                                </row>
+                            </tbody>
+                        </tgroup>
+                    </table>
+                </info>
+            </step>
+
+            <step><cmd>Give <b>Full</b> or <b>Modify</b> permissions for the DNN installation folder to the user account that will run your website.</cmd>
+                <substeps>
+                    <substep><cmd>In Windows Explorer, right-click on the DNN installation folder, and choose <uicontrol>Properties</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../img/scr-FolderPerms-1.png"><alt>Right-click on the DNN folder and choose Properties</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Go to the <uicontrol>Security</uicontrol> tab and click <uicontrol>Edit...</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../img/scr-FolderPerms-2.png"><alt>In the Security tab, click Edit...</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Click <uicontrol>Add...</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../img/scr-FolderPerms-3.png"><alt>Click Add...</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>In <uicontrol>Select Users or Groups</uicontrol>, enter the user name, then click <uicontrol>Check Names</uicontrol>. After the name is resolved, click OK.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../img/scr-FolderPerms-5a.png"><alt>In Select Users or Groups, enter the user name, then click Check Names.</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Highlight the newly added user name and check <uicontrol>Full Control</uicontrol> and <uicontrol>Modify</uicontrol> under <uicontrol>Allow</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../img/scr-FolderPerms-6.png"><alt>Highlight the newly added user name and check Full Control and Modify under Allow.</alt></image>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+
+    </taskbody>
+
+
+    <related-links>
+        <link format="html" href="https://www.dnnsoftware.com/wiki/setting-up-your-module-development-environment"><linktext>DNN Wiki: Setting up Your Module Development Environment</linktext></link>
+        <link format="html" href="https://www.christoc.com/Tutorials/All-Tutorials/aid/1"><linktext>Setting up your DotNetNuke Module Development Environment by Chris Hammond</linktext></link>
+        <link format="html" href="https://www.dnnsoftware.com/community-blog/cid/155070/installing-dnn"><linktext>DNN Community Blog: Installing DNN by Clinton Patterson</linktext></link>
+    </related-links>
+
+</task>
