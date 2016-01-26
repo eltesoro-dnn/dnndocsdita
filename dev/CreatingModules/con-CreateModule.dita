@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="en" id="top-CreateModule">
+
+    <title>Create a Module</title>
+
+    <body>
+
+        <section id="diffways">
+            <p>You can produce a module in different ways:
+                <ul>
+                    <li>Create an entire module from scratch. For very simple modules, you can use the <xref format="dita" href="/dev/CreatingModules/Create-With-Module-Creator.html">DNN Module Creator</xref>.</li>
+
+                    <li>Start with module development templates, such as:
+                        <ul>
+                            <li><xref format="dita" href="https://github.com/dnnsoftware/DNN.Templates/releases">DNN 8 Templates</xref></li>
+                            <li><xref format="dita" href="https://github.com/ChrisHammond/DNNTemplates">Chris Hammond's DotNetNuke Module and Theme Development Templates</xref> (<xref format="dita" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot">Installation instructions</xref>)</li>
+                            <draft-comment><!-- What other templates can we mention here? --></draft-comment>
+                        </ul>
+                    </li>
+
+                    <li>Customize a pre-existing module.
+                        <ph conref="../../common/bptext/BP-3rdPartyExtensions.html" />
+                    </li>
+                </ul>
+            </p>
+        </section>
+
+        <section id="diffprogfws">
+            <p>You can also use different programming frameworks (Web Forms, MVC, SPA) and languages (C#, VB) to create your module.</p>
+        </section>
+
+    </body>
+
+
+    <related-links>
+        <!-- <link format="dita" href="../ref-ContentsModulePack.dita"><linktext>Contents of a Module Package</linktext></link> -->
+        <link format="dita" href="../ref-Providers.dita"><linktext>Providers Reference</linktext></link>
+        <link format="html" href="placeholderlink"><linktext>DNN 8 API Reference</linktext></link>
+        <link format="html" href="http://www.dnnsoftware.com/wiki/module-development"><linktext>DNN Wiki: Module Development</linktext></link>
+        <link format="html" href="http://www.dnnsoftware.com/community-blog/cid/155064/module-development-for-non-developers-skinners-dnn-beginners--blog-series-intro"><linktext>DNN Community Blog: Module Development series by Clinton Patterson</linktext></link>
+        <link format="html" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot"><linktext>Using the new Module Development Templates for DotNetNuke 7 by Chris Hammond</linktext></link>
+    </related-links>
+
+</topic>
+

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en" id="top-AboutThemes">
+
+    <title>About Themes</title>
+
+    <conbody>
+
+        <section id="components">
+            <title> Components of a Theme </title>
+
+            <p>A DNN <b>theme</b> (formerly called a <b>skin</b>) defines the look and feel of the website. It is comprised of:</p>
+            <ul>
+                <li> one or more layout templates (HTML or ASCX)</li>
+                <li> (optional) a style sheet (CSS) for each of the layout templates</li>
+                <li> (optional) a master style sheet (CSS) for all the layout templates</li>
+            </ul>
+
+            <image scalefit="yes" placement="break" align="center" href="../common/img/SkinTheme.png"><alt>Three variations of a theme</alt></image>
+        </section>
+
+
+        <section id="layoutsandcontainers">
+            <title> Layouts and Containers </title>
+
+            <image scalefit="yes" placement="break" align="center" href="../common/img/PaneLayout.png"><alt>Pane in a layout</alt></image>
+
+            <p>A <term>pane</term> is a section of a webpage that displays static content, dynamic content, or a standard theme object.</p>
+
+            <p>A <term>layout template</term> defines where panes are located on the webpage and what each pane contains. The layout templates included in a theme are variations that the web designer can choose from for each page in the website, such as the home page, a gallery of photos, or a listing of products for sale.</p>
+
+            <p>A <term>container</term> is similar to a layout template, except a container's scope is a single pane, whereas a layout template's scope is the entire page. A container is associated with a <term>module</term>, which can generate dynamic content or perform other functionality.</p>
+
+            <p>For both layouts and containers, DNN requires exactly one content pane called <uicontrol>ContentPane</uicontrol> (case-insensitive). In a layout, additional panes are optional and names must be unique within the page. In a container, additional panes are ignored.</p>
+
+            <p>Layouts and containers can contain a <term>theme object</term>, which can be a typical component of a webpage, such as the menu bar, the copyright notice, the login/registration links, the privacy link, the terms of service link, and the search box. Theme objects are inserted in the HTML or ASCX as tokens.</p>
+        </section>
+
+
+        <section id="css">
+            <title>Cascading Style Sheets (CSS)</title>
+
+            <p>Cascading Style Sheets (CSS files) are automatically associated with layouts and containers, if they are in the same folder and they share the same filename. Example: <filepath>MyFirstLayout.css</filepath> is associated with <filepath>MyFirstLayout.ascx</filepath>.
+                <ul>
+                    <li>Any CSS file associated with a layout template defines how elements of the entire page are displayed.</li>
+                    <li>Any CSS file associated with a container defines how the dynamic content is displayed within a single pane of the webpage. This ensures a unified design throughout the entire page, even if the various modules in the same page come from different creators.</li>
+                </ul>
+            </p>
+
+            <p>If CSS files are not explicitly associated with the layouts and containers, the website's master CSS file is used. If no CSS files are associated with the website, the host's master CSS file is used.</p>
+
+            <p>Layouts and containers can share several CSS files or a single master CSS file.</p>
+
+            <p>When a layout template is applied to a webpage, any associated CSS is automatically added to the webpage. Likewise, when a container is applied to a pane, any associated CSS is automatically added to the pane.</p>
+        </section>
+
+
+        <section id="themetypes">
+            <title>Theme Types</title>
+
+            <p>DNN supports two different types of themes: HTML and ASCX.</p>
+
+            <table frame="all" colsep="1" rowsep="1" >
+                <tgroup cols="2" align="center">
+                    <colspec colnum="2"/>
+                    <thead>
+                        <row>
+                            <entry>HTML</entry>
+                            <entry>ASCX</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Basic theme.</entry>
+                            <entry>Advanced theme.</entry>
+                        </row>
+                        <row>
+                            <entry>Can be created using any HTML editor.</entry>
+                            <entry>Requires <xref format="html" href="http://www.visualstudio.com/">Microsoft Visual Studio</xref>.</entry>
+                        </row>
+                        <row>
+                            <entry>Automatically converted to ASCX when installed. Only the contents inside the <codeph>&lt;body&gt;</codeph> tag is retained (without the tag); everything else is discarded, including the entire <codeph>&lt;header&gt;</codeph>.</entry>
+                            <entry>Used as is.</entry>
+                        </row>
+                        <row>
+                            <entry>
+                                <p>Easier to create.</p>
+                                <p>Uses DNN tokens, which represent code that call DNN APIs. The tokens are replaced with code during conversion to ASCX.</p>
+                            </entry>
+                            <entry>
+                                <p>More powerful.</p>
+                                <p>Allows customization of code that call DNN APIs.</p>
+                            </entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+
+        </section>
+
+
+        <section id="3rdparty">
+            <p><ph conref="../common/bptext/BP-3rdPartyExtensions.html" /></p>
+        </section>
+
+    </conbody>
+
+
+    <related-links>
+        <link format="html" href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><linktext>DNN Wiki: DotNetNuke Skins</linktext></link>
+        <link format="pdf"  href="placeholderlink"><linktext>UX Guide</linktext></link>
+        <link format="html" href="http://www.dnnsoftware.com/community-blog/cid/132000/dotnetnuke-skinning-101-part-1"><linktext>DNN Community Blog: DotNetNuke Skinning 101 (Part 1) by Joe Brinkman</linktext></link>
+    </related-links>
+
+</concept>

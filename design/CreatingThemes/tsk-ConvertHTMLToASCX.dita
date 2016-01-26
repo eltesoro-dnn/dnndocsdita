@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en" id="tsk-ConvertHTMLToASCX">
+
+    <title>Convert the Layout Template or Container from HTML to ASCX</title>
+
+    <taskbody>
+
+        <prereq><ph conref="../../common/bptext/BP-PrereqHost.dita" /></prereq>
+
+        <section id="overview">
+            <title>Overview</title>
+
+            <p>Although you can define your layout templates or containers in either HTML or ASCX, DNN uses ASCX internally. Therefore, if you create your layout templates or containers in HTML, you must convert them to ASCX before you package your theme.</p>
+
+            <p>The conversion:
+                <ul>
+                    <li>adds the <codeph>Control</codeph> code at the top of the file,</li>
+                    <li>adds <codeph>Registry</codeph> code for each token used within the file, and</li>
+                    <li>replaces the HTML tokens with ASCX tokens.</li>
+                </ul>
+            </p>
+            <draft-comment>
+                <!-- What are the Control code and Registry code lines really called? -->
+            </draft-comment>
+
+        </section>
+
+
+        <steps>
+            <step>Add your theme to your local DNN installation.
+                <substeps>
+                    <substep>Create a folder for your theme inside the <filepath>Portals\</filepath><varname>websitename</varname><filepath>\Skins</filepath> folderof your DNN installation. (<varname>websitename</varname> could be a number representing the PortalID.) The folder name becomes your theme name. Example: If you create the folder <filepath>C:\DNN8\Portals\MyWebsite\Skins\MyTheme</filepath>, <filepath>MyTheme</filepath> becomes your theme's name.</substep>
+                    <substep>Copy your files to the new theme folder.</substep>
+                </substeps>
+            </step>
+
+            <step>In <filepath>www.dnndev.me</filepath>, log in as an admin or host, and go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Advanced Settings</uicontrol> (double-gear tab) <uicontrol>Themes</uicontrol></menucascade>.
+                <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-4.png"><alt>Admin > Advanced Settings > Theme</alt></image>
+            </step>
+
+            <step>Choose your new theme in the <uicontrol>Themes</uicontrol> dropdown, then click <uicontrol>Parse Theme Package</uicontrol>.
+                <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-10.png"><alt>Choose theme, then Parse Theme Package</alt></image>
+            </step>
+
+            <step>Confirm:
+                <substeps>
+                    <substeps>That a section appears under <uicontrol>Themes</uicontrol> for each converted HTML file.</substeps>
+                    <substeps>That no errors appear in the log.</substeps>
+                    <substeps>That the new ASCX file appears in the same folder as the HTML file.</substeps>
+                </substeps>
+                <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-11.png"><alt>Result of conversion</alt></image>
+            </step>
+        </steps>
+
+
+        <section>
+            <note type="note">The conversion only goes in one direction (from HTML to ASCX).</note>
+            <p>To make changes to the layout template:
+                <ul>
+                    <li>Make changes directly to the ASCX file.</li>
+                    <li>Make the changes in your original HTML file and reconvert it to ASCX. <note type="warning">This overrides prior changes made directly to the ASCX file.</note></li>
+                </ul>
+            </p>
+        </section>
+
+
+        <example id="simple">
+
+            <p>This simple HTML layout template or container:
+                <codeblock>
+    <div id="ContentPane" runat="server"></div>
+                </codeblock>
+            </p>
+
+            <p>is converted to this ASCX layout template:
+                <codeblock>
+    <%@ Control language="vb" AutoEventWireup="false" Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %>
+    <div id="ContentPane" runat="server"></div>
+                </codeblock>
+            </p>
+        </example>
+
+
+        <example id="withcopyright">
+            <p>This HTML layout template or container, which includes the <codeph>[COPYRIGHT]</codeph> token:
+                <codeblock>
+    <div id="ContentPane" runat="server">
+        [COPYRIGHT]
+    </div>
+                </codeblock>
+            </p>
+            <p>is converted to this ASCX layout template:
+                <codeblock>
+    <%@ Control language="vb" AutoEventWireup="false" Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %>
+    <%@ Register TagPrefix="dnn" TagName="COPYRIGHT" Src="~/Admin/Skins/Copyright.ascx" %>
+    <div id="ContentPane" runat="server">
+        <dnn:COPYRIGHT runat="server" id="dnnCOPYRIGHT" />
+    </div>
+                </codeblock>
+            </p>
+        </example>
+
+    </taskbody>
+
+    <related-links>
+        <link format="dita" href="./tsk-CreateLayoutTemplate.dita"><linktext>Create Layout Template</linktext></link>
+        <link format="dita" href="./tsk-CreateContainer.dita"><linktext>Create a Container</linktext></link>
+        <link format="html" href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><linktext>DNN Wiki: DotNetNuke Skins</linktext></link>
+        <link format="html" href="http://www.dnnsoftware.com/community-blog/cid/132000/dotnetnuke-skinning-101-part-1"><linktext>DNN Community blog: DotNetNuke Skinning 101 (Part 1) by Joe Brinkman</linktext></link>
+    </related-links>
+
+</task>

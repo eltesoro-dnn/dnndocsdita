@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="CreatingThemes">
+    <title>Creating Themes</title>
+    <topicref format="dita" href="./CreatingThemes/top-CreateThemes.dita" type="topic" >
+        <topicref format="dita" href="con-AboutThemes.dita" type="concept" />
+        <topicref format="dita" href="./CreatingThemes/tsk-CreateLayoutTemplate.dita" type="task" />
+        <topicref format="dita" href="./CreatingThemes/tsk-CreateContainer.dita" type="task" />
+        <topicref format="dita" href="./CreatingThemes/tsk-ConvertHTMLToASCX.dita" type="task" />
+        <topicref format="dita" href="./CreatingThemes/tsk-CreateCSS.dita" type="task" />
+        <topicref format="dita" href="./CreatingThemes/tsk-CreateDocTypeXML.dita" type="task" />
+        <topicref format="dita" href="../common/Extensions/tsk-CreatePackage.dita" type="task" />
+        <topicref format="dita" href="../common/Extensions/tsk-InstallExtension.dita" type="task" />
+        <!-- <topicref format="dita" href="ref-ThemeObjects.dita" type="reference" /> -->
+    </topicref>
+</map>

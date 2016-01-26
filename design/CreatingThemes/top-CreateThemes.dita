@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic xml:lang="en" id="top-CreateThemes">
+
+    <title>Creating Themes</title>
+
+    <body>
+
+        <prereq><xref format="html" href="../../common/Setup/SetUpDNN.dita">A local DNN installation</xref> with <b>Host</b> permissions.</prereq>
+
+        <h3> Steps </h3>
+        <steps>
+            <step><xref format="html" href="./CreateLayoutTemplate.dita">Create layout templates for the webpages.</xref></step>
+            <step><xref format="html" href="./CreateContainer.dita">Create containers for modules.</xref></step>
+            <step><b>HTML only:</b> <xref format="html" href="./ConvertHTMLToASCX.dita">Convert the layout templates and containers from HTML to ASCX.</xref></step>
+            <step>(Optional) <xref format="html" href="./CreateCSS.dita">Create a CSS file for each layout template and container, or create a single master CSS file to be used for all layout templates and containers.</xref></step>
+            <step>(Optional) <xref format="html" href="./CreateDocTypeXML.dita">Create a doctype XML file.</xref></step>
+            <step><xref format="html" href="../../common/Extensions/CreatePackage.dita">Package your theme.</xref></step>
+            <step>Test the theme.
+                <substep>
+                    <substep><xref format="html" href="../../common/Extensions/InstallExtension.dita">Install the package.</xref></substep>
+                    <substep>Apply the theme to a new webpage in your DNN website.</substep>
+                    <substep>Check how the webpage looks in different browsers.</substep>
+                </substep>
+            </step>
+        </steps>
+
+        <p><ph conref="../../common/bptext/BP-TipSkinningTool.html" /></p>
+
+    </body>
+
+</topic>

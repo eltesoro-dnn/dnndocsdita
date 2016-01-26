@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept xml:lang="en" id="con-AboutEVS">
+
+    <title>About the Extension Verification Service</title>
+
+    <conbody>
+
+        <section>
+
+            <p>The DNN <a href="http://evs.dnnsoftware.com">Extension Verification Service</a> (EVS) performs compatibility tests in three areas.</p>
+
+            <ul>
+                <li><b>Module packaging</b>. EVS verifies:
+                    <ul>
+                        <li>That a valid <filepath>.dnn</filepath> manifest file exists. EVS throws an error, if a required section is missing, or a warning, if an optional section is missing.</li>
+                        <li>That all files listed in the manifest exist in the package.</li>
+                        <li>That all files included in the package are listed in the manifest.</li>
+                    </ul>
+                </li>
+
+                <li><b>Data layer</b>. EVS verifies:
+                    <ul>
+                        <li>That core database objects were not modified.</li>
+                        <li>That any SQL scripts in the module are compatible with Microsoft Azure SQL Database and can execute without errors. If Azure-incompatible SQL scripts are found, EVS generates Azure-compatible versions of those scripts and makes them available in a zip file; however, you must verify that the converted scripts still behave as expected.</li>
+                        <li>That {databaseOwner} and {objectQualifier} are correctly used.</li>
+                        <li>That the uninstall script completely removes all objects added by the installation script.</li>
+                    </ul>
+                </li>
+
+                <li><b>Assemblies</b>. EVS verifies:
+                    <ul>
+                        <li>That no assembly errors exist.</li>
+                        <li>That every assembly reference points to an assembly that exists either in DNN or in the .NET global assembly cache (GAC). If the assembly is not found, EVS returns an error.</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-EVS.png"><alt>EVS website</alt></image>
+
+        </section>
+
+    </conbody>
+
+
+    <related-links>
+        <link format="html" href="http://www.dnnsoftware.com/community-blog/cid/147439/extension-verification-service-evs"><linktext>DNN Community Blog: Extension Verification Service (EVS) by Nathan Rover</linktext></link>
+        <link format="html" href="http://www.dnnsoftware.com/community-blog/cid/154576/extension-verification-service-evs-update%20from%20june%202013"><linktext>DNN Community Blog: Extension Verification Service (EVS) Update by Nathan Rover</linktext></link>
+    </related-links>
+
+</concept>

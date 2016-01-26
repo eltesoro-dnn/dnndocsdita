@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en" id="tsk-CreateCSS">
+
+    <title>Create a CSS File</title>
+
+    <taskbody>
+
+        <section>
+            <title> Overview </title>
+
+            <p>A CSS file can be associated with a layout template or container by giving it the same filename and placing it in the same folder. When a <term>layout template</term> (or <term>container</term>) is applied to a webpage (or <term>pane</term>), the associated CSS file is automatically applied. Example: These three files are automatically associated with each other:
+                <ul>
+                    <li>MyLayout.ascx</li>
+                    <li>MyLayout.css</li>
+                    <li>MyLayout.doctype.xml</li>
+                </ul>
+            </p>
+
+            <p>CSS files are applied hierarchically. If a style is defined for an element in multiple CSS files, the last CSS that mentions the same element overrides the style definitions in previously loaded CSS files. By default, the CSS files are loaded in this order:
+            <ol>
+                <li><filepath>Skin.css</filepath> (<filepath>~/Portals/PortalID/Skins/SkinPackageName/skin.css</filepath>) - The master CSS for the theme must be called <filepath>skin.css</filepath>.</li>
+                <li><filepath>MyLayoutTemplate.css</filepath> or <filepath>MyModule.css</filepath></li>
+                <li><filepath>Container.css</filepath> (<filepath>~/Portals/PortalID/Containers/ContainerPackageName/container.css</filepath>) - The CSS for all containers in your theme.</li>
+                <li><filepath>Portal.css</filepath> (<filepath>~/Portals/PortalID/portal.css</filepath>) - The CSS that can override elements in the installed themes if the website admin does not have modify permissions to installed themes.</li>
+                <li><filepath>Default.css</filepath> (<filepath>~/Portals/_default/default.css</filepath>) - The default CSS for the website.</li>
+            </ol>
+            </p>
+        </section>
+
+
+        <steps>
+            <step>For every pane (<codeph>&lt;div&gt;</codeph>) that contains a theme object, add a style definition in the CSS file. The style definition must start with <codeph>#</codeph> followed by the <varname>id</varname>.<br/>
+                <stepxmp>
+                        <table frame="all" colsep="1" rowsep="1" >
+                            <tgroup cols="2" align="center">
+                                <colspec colnum="2"/>
+                                <thead>
+                                    <row>
+                                        <entry>layout template</entry>
+                                        <entry>CSS</entry>
+                                    </row>
+                                </thead>
+                                <tbody>
+                                    <row>
+                                        <entry>
+                                            <codeblock>
+    <div id="login_style" class="user">
+        <object id="dnnLOGIN" codebase="LOGIN" codetype="dotnetnuke/server">
+            <param name="CssClass" value="user" />
+        </object>
+    </div>
+                                            </codeblock>
+                                        </entry>
+                                        <entry>
+                                            <codeblock>
+    #login_style .linkseparator{
+         color: white;
+         font-weight: bold;
+    }
+                                            </codeblock>
+                                        </entry>
+                                    </row>
+                                </tbody>
+                            </tgroup>
+                        </table>
+                    </stepxmp>
+            </step>
+
+        </steps>
+
+    </taskbody>
+
+
+    <related-links>
+        <link format="dita" href="./tsk-CreateLayoutTemplate.dita"><linktext>Create Layout Template</linktext></link>
+        <link format="dita" href="./tsk-CreateContainer.dita"><linktext>Create Container</linktext></link>
+        <link format="html" href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><linktext>DNN Wiki: DotNetNuke Skins</linktext></link>
+        <link format="html" href="http://www.dnnsoftware.com/services/professional-training/training-videos-subscription/skinning-2-creating-html-skins"><linktext>DNN Professional Training: Creating HTML Skins</linktext></link>
+    </related-links>
+
+</task>

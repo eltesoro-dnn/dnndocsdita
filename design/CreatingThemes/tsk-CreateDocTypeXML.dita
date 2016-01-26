@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en" id="tsk-CreateDocTypeXML">
+
+    <title>Create a DocType XML</title>
+
+    <taskbody>
+
+        <context>If a page is not rendering properly in some browsers, you can force the theme to be rendered in XHTML or HTML5 by creating a DocType XML file.</context>
+
+        <steps>
+
+            <step>Create a DocType XML file with the same name as your layout template file, followed by <filepath>.doctype.xml</filepath>.
+                 <stepxmp> If your layout template file is called <filepath>MyAwesomeLayout.html</filepath>, give your DocType file the name <filepath>MyAwesomeLayout.doctype.xml</filepath>. </stepxmp>
+            </step>
+
+            <step>Enter one of the following in your DocType file:
+                <ul>
+                    <li>For XHTML Strict,
+                        <codeblock>
+    <SkinDocType>
+        <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">]]>
+    </SkinDocType>
+                        </codeblock>
+                    </li>
+                    <li>For XHTML Transitional,
+                        <codeblock>
+    <SkinDocType>
+        <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">]]>
+    </SkinDocType>
+                        </codeblock>
+                    </li>
+                    <li>For HTML5,
+                        <codeblock>
+    <SkinDocType>
+        <![CDATA[<!DOCTYPE html>]]>
+    </SkinDocType>
+                        </codeblock>
+                    </li>
+                </ul>
+            </step>
+
+        </steps>
+
+    </taskbody>
+
+
+    <related-links>
+        <link format="html" href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><linktext>DNN Wiki: DotNetNuke Skins</linktext></link>
+        <link format="html" href="http://www.dnnsoftware.com/community-blog/cid/131999/dotnetnuke-skinning-101-part-2"><linktext>DNN Community blog: DotNetNuke Skinning 101 (Part 2) by Joe Brinkman</linktext></link>
+    </related-links>
+
+</task>

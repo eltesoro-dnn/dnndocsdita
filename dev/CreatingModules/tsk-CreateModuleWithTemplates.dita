@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en" id="tsk-CreateModuleUsingTemplates">
+
+    <title>Create a Module Using Templates</title>
+
+    <taskbody>
+
+        <prereq>
+            <ul>
+                <li><xref format="dita" href="../../common/Setup/SetUpDNN.dita">A local DNN installation</xref> with Host permissions.</li>
+                <li>Visual Studio 2015 is the recommended IDE for developing DNN modules.</li>
+            </ul>
+        </prereq>
+
+        <steps>
+
+            <step><cmd><xref format="dita" href="./tsk-StartVSProjWithTemplates.dita">Start a Visual Studio project using DNN templates.</xref></cmd></step>
+
+            <step><cmd>Modify the Visual Studio project to add functionality to your new module.</cmd>
+                <ul>
+                    <li><xref format="dita" href="./tsk-CreateWebFormsModule.dita">Create a Web Forms module using templates.</xref></li>
+                    <li><xref format="dita" href="./tsk-CreateMVCModule.dita">Create an MVC module using templates.</xref></li>
+                    <li><xref format="dita" href="./tsk-CreateSPAModule.dita">Create a SPA module using templates.</xref></li>
+                </ul>
+            </step>
+
+            <step><cmd>Build, debug, and package.</cmd>
+                <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-VS2015DebugReleaseBuildOptions.png"><alt>Visual Studio build type dropdown</alt></image>
+                <substeps>
+                    <substep><cmd>Build in debug mode.</cmd> <info>This build produces <filepath>.pdb</filepath> files that are needed when stepping through your code.</info></substep>
+                    <substep><cmd>Debug, if needed.</cmd></substep>
+                    <substep><cmd>Create the <xref format="dita" href="/common/Extensions/DNNManifestSchema.dita">DNN Manifest</xref>.</cmd></substep>
+                    <substep><cmd>Build in release mode.</cmd> <info>This build creates an installation zip file (your module's package) in the folder <filepath>Desktop Modules/</filepath><varname>yourorganization</varname><filepath>/</filepath><varname>yourmodule</varname><filepath>/install</filepath>.</info></substep>
+                    <substep><cmd>Alternatively, you can manually <xref format="dita" href="/common/Extensions/CreatePackage.dita">package your module</xref>.</cmd></substep>
+                </substeps>
+            </step>
+
+            <step><cmd><xref format="dita" href="./tsk-TestModule.dita">Test your module.</xref></cmd></step>
+
+        </steps>
+
+    </taskbody>
+
+
+    <related-links>
+        <!-- <link format="dita" href="../ref-ContentsModulePack.dita"><linktext>Contents of a Module Package</linktext></link> -->
+        <link format="dita" href="../ref-Providers.dita"><linktext>Providers Reference</linktext></link>
+        <link format="html" href="placeholderlink"><linktext>DNN 8 API Reference</linktext></link>
+        <link format="html" href="http://www.dnnsoftware.com/wiki/module-development"><linktext>DNN Wiki: Module Development</linktext></link>
+        <link format="html" href="http://www.dnnsoftware.com/community-blog/cid/155064/module-development-for-non-developers-skinners-dnn-beginners--blog-series-intro"><linktext>DNN Community Blog: Module Development series by Clinton Patterson</linktext></link>
+        <link format="html" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot"><linktext>Using the new Module Development Templates for DotNetNuke 7 by Chris Hammond</linktext></link>
+    </related-links>
+
+</task>

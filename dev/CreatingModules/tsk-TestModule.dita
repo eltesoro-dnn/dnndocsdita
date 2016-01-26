@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en" id="tsk-TestModule">
+
+    <title>Test Your Module</title>
+
+    <taskbody>
+
+        <steps>
+
+            <step><cmd>Run your module through the DNN <xref format="dita" href="http://evs.dnnsoftware.com">Extension Verification Service</xref> (EVS) to perform <xref format="dita" href="./con-AboutEVS.dita">compatibility tests in three areas</xref>.</cmd></step>
+
+            <step><cmd><xref format="dita" href="../../common/Extensions/InstallExtension.dita">Install the package.</xref></cmd></step>
+
+            <step><cmd>In your DNN installation, apply the module to a pane in a new webpage.</cmd>
+                <substeps>
+                    <substep><cmd><menucascade><uicontrol>Modules</uicontrol> &gt; <uicontrol>Add New Module</uicontrol></menucascade></cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-ModulesAddNewModule.png"><alt>Module - Add New Module</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Find your module in the <uicontrol>Available Modules</uicontrol> bar and drag it to the page.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-ModulesDragModule.png"><alt>Drag your module to a pane in the page.</alt></image>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+
+            <step><cmd>Check how the webpage looks in different browsers.</cmd></step>
+
+        </steps>
+
+    </taskbody>
+
+</task>
