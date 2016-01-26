@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en" id="myID">
+
+    <title>Create the Package</title>
+
+    <taskbody>
+
+        <context>
+            <p>For easier distribution and installation, the components of an extension (theme or module) can be bundled into a package. An extension <term>package</term> is simply a zip file that contains all the files required by your extension. The most important part of the process is creating the <term>DNN Manifest</term>, which provides information required by the installer, such as the target locations for the files.</p>
+            <p>If you use the DNN templates and compile in Visual Studio, the Release build creates the zip file for you.</p>
+        </context>
+
+
+        <steps>
+            <step><cmd>Prepare your files in folders.</cmd>
+                <info>
+                    <ul>
+                        <!-- <li><a href="/design/REF-ContentsThemePack.shtml">Layout templates, containers, and associated files</a></li> -->
+                        <!-- <li><a href="/dev/REF-ContentsModulePack.shtml">Modules and associated files</a></li> -->
+                        <li>Files that are common among all packages:
+                            <ul>
+                                <li>(Optional) <codeph>MyLicense.txt</codeph> is displayed to the user during package installation.</li>.
+                                <li>(Optional) <codeph>MyReleaseNotes.txt</codeph> lists the changes for the current version of the package and is also provided during installation.</li>
+                            </ul>
+                            <note type="tip">The license and release notes are HTML files, so you can include special offers, including a call to action and other details.</note>
+                            <note type="remember">Include the version number of your extension in the release notes.</note>
+                        </li>
+                    </ul>
+                </info>
+            </step>
+            <step><cmd>Create the <xref href="/common/Extensions/DNNManifestSchema.shtml">DNN Manifest</xref>.</cmd></step>
+            <step><cmd>Zip up your files, including the DNN Manifest in the root folder.</cmd></step>
+        </steps>
+
+    </taskbody>
+
+
+    <related-links>
+        <link format="dita" href="./tsk-InstallExtension.dita"><linktext>Install an Extension</linktext></link>
+        <link format="html" href="http://www.dnnsoftware.com/services/professional-training/training-videos-subscription/skinning-5-packaging"><linktext>DNN Professional Training video: Skinning 5: Packaging</linktext></link>
+    </related-links>
+
+</task>

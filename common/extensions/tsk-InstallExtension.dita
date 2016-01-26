@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<task xml:lang="en" id="myID">
+
+    <title>Install an Extension</title>
+
+    <taskbody>
+
+        <context>
+            <p>A DNN extension can contain a <term>module</term>, a <term>theme</term>, or other components that extend the functionality of the DNN Platform.</p>
+            <p><ph conref="../bptext/BP-3rdPartyExtensions.html" /></p>
+            <p>You can also create your custom <xref format="dita" href="../../dev/CreatingModules.dita">modules</xref> and <xref format="dita" href="../../design/CreatingThemes.dita">themes</xref>.</p>
+            <p>The extension must be added by the <term>host</term> / <term>super user</term> account to the DNN installation before it can be used in any of the websites.</p>
+        </context>
+
+
+        <prereq><ph conref="/common/bptext/BP-PrereqHost.html" /></prereq>
+
+
+        <steps>
+            <step>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.
+                <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-1.png"><alt>Host &gt; Extensions</alt></image>
+            </step>
+
+            <step>Click <uicontrol>Install Extension Wizard</uicontrol>.
+                <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-3.png"><alt>Install Extension Wizard</alt></image>
+            </step>
+
+            <step>Click <uicontrol>Choose File</uicontrol> and select the zip file of the extension. The button name changes to the name of the zip file.
+                <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-4.png"><alt>Choose zip file of the extension</alt></image>
+            </step>
+
+            <step>Informational pages will be displayed one after the other:
+                <ul>
+                    <li><wintitle>Package Information</wintitle> includes the extension's version and description, as well as information about the creator.
+                        <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-6.png"><alt>Package Information</alt></image>
+                    </li>
+                    <li><wintitle>Release Notes</wintitle> displays what's new in the current release of the extension.
+                        <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-7.png"><alt>Release Notes</alt></image>
+                    </li>
+                    <li><wintitle>License</wintitle> displays the creator's license terms. Accept the license to continue.
+                        <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-8.png"><alt>License</alt></image>
+                    </li>
+                    <li><wintitle>Package Installation Report</wintitle> displays a log of actions performed by the installation.
+                        <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-10.png"><alt>Package Installation Report</alt></image>
+                    </li>
+                </ul>
+            </step>
+
+            <step>Verify that the newly installed extension appears in the list under the <uicontrol>Installed Extensions</uicontrol> tab.
+                <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-11.png"><alt>New extension appears under Installed Extensions.</alt></image>
+            </step>
+        </steps>
+
+    </taskbody>
+
+
+    <related-links>
+        <link format="dita" href="./tsk-CreatePackage.dita"><linktext>Create the Package</linktext></link>
+        <link format="dita" href="./ref-DNNManifestSchema.dita"><linktext>The DNN Manifest Schema</linktext></link>
+        <link format="html" href="http://www.dnnsoftware.com/community-blog/cid/155092/installing-our-module-in-another-dnn-instance"><linktext>DNN Community blog: Installing Our Module in Another DNN Instance by Clinton Patterson</linktext></link>
+        <link format="html" href="http://www.dnnsoftware.com/forge/2sxc-800-amazing-content-and-apps-9733-9733-9733-9733-9733-rating"><linktext>>DNN Forge: 2sxc 8.0.11 - Amazing Content and Apps by 2sxc (installed as an example for screenshots)</linktext></link>
+    </related-links>
+
+</task>
