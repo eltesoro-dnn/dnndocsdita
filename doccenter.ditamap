@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="Design">
+    <title>Doc Center</title>
+
+    <!-- <topicref href="./admin/admin.ditamap" format="ditamap" /> -->
+    <topicref href="./dev/dev.ditamap" format="ditamap" />
+    <topicref href="./design/design.ditamap" format="ditamap" />
+    <topicref href="./common/Setup/SetUpDNN.ditamap" format="ditamap" />
+    <topicref href="./common/Extensions/Extensions.ditamap" format="ditamap" />
+
+    <!--
+    <reltable>
+        <relheader>
+            <relcolspec type="concept"/>
+            <relcolspec type="task"/>
+            <relcolspec type="reference"/>
+        </relheader>
+        <relrow>
+            <relcell/>
+            <relcell>
+            </relcell>
+            <relcell/>
+        </relrow>
+
+    </reltable>
+    -->
+
+</map>

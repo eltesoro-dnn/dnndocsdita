@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="Design">
+    <title>Administrator Center</title>
+
+    <topicref format="dita" href="../common/Setup" type="topic" collection-type="sequence" >
+    </topicref>
+
+    <!--
+    <reltable>
+        <relheader>
+            <relcolspec type="concept"/>
+            <relcolspec type="task"/>
+            <relcolspec type="reference"/>
+        </relheader>
+        <relrow>
+            <relcell/>
+            <relcell>
+            </relcell>
+            <relcell/>
+        </relrow>
+
+    </reltable>
+    -->
+
+</map>
+
