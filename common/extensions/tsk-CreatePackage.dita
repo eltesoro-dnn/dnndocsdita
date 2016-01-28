@@ -23,10 +23,10 @@
                                 <li>(Optional) <codeph>MyLicense.txt</codeph> is displayed to the user during package installation.</li>.
                                 <li>(Optional) <codeph>MyReleaseNotes.txt</codeph> lists the changes for the current version of the package and is also provided during installation.</li>
                             </ul>
-                            <note type="tip">The license and release notes are HTML files, so you can include special offers, including a call to action and other details.</note>
-                            <note type="remember">Include the version number of your extension in the release notes.</note>
                         </li>
                     </ul>
+                    <note type="tip">The license and release notes are HTML files, so you can include special offers, including a call to action and other details.</note>
+                    <note type="remember">Include the version number of your extension in the release notes.</note>
                 </info>
             </step>
             <step><cmd>Create the <xref href="/common/Extensions/DNNManifestSchema.shtml">DNN Manifest</xref>.</cmd></step>

@@ -18,15 +18,19 @@
             <step><cmd><xref format="dita" href="./tsk-StartVSProjWithTemplates.dita">Start a Visual Studio project using DNN templates.</xref></cmd></step>
 
             <step><cmd>Modify the Visual Studio project to add functionality to your new module.</cmd>
-                <ul>
-                    <li><xref format="dita" href="./tsk-CreateWebFormsModule.dita">Create a Web Forms module using templates.</xref></li>
-                    <li><xref format="dita" href="./tsk-CreateMVCModule.dita">Create an MVC module using templates.</xref></li>
-                    <li><xref format="dita" href="./tsk-CreateSPAModule.dita">Create a SPA module using templates.</xref></li>
-                </ul>
+                <info>
+                    <ul>
+                        <li><xref format="dita" href="./tsk-CreateWebFormsModule.dita">Create a Web Forms module using templates.</xref></li>
+                        <li><xref format="dita" href="./tsk-CreateMVCModule.dita">Create an MVC module using templates.</xref></li>
+                        <li><xref format="dita" href="./tsk-CreateSPAModule.dita">Create a SPA module using templates.</xref></li>
+                    </ul>
+                </info>
             </step>
 
             <step><cmd>Build, debug, and package.</cmd>
-                <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-VS2015DebugReleaseBuildOptions.png"><alt>Visual Studio build type dropdown</alt></image>
+                <info>
+                    <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-VS2015DebugReleaseBuildOptions.png"><alt>Visual Studio build type dropdown</alt></image>
+                </info>
                 <substeps>
                     <substep><cmd>Build in debug mode.</cmd> <info>This build produces <filepath>.pdb</filepath> files that are needed when stepping through your code.</info></substep>
                     <substep><cmd>Debug, if needed.</cmd></substep>

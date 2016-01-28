@@ -10,34 +10,36 @@
 
         <steps>
 
-            <step>Create a DocType XML file with the same name as your layout template file, followed by <filepath>.doctype.xml</filepath>.
+            <step><cmd>Create a DocType XML file with the same name as your layout template file, followed by <filepath>.doctype.xml</filepath>.</cmd>
                  <stepxmp> If your layout template file is called <filepath>MyAwesomeLayout.html</filepath>, give your DocType file the name <filepath>MyAwesomeLayout.doctype.xml</filepath>. </stepxmp>
             </step>
 
-            <step>Enter one of the following in your DocType file:
-                <ul>
-                    <li>For XHTML Strict,
-                        <codeblock>
-    <SkinDocType>
-        <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">]]>
-    </SkinDocType>
-                        </codeblock>
-                    </li>
-                    <li>For XHTML Transitional,
-                        <codeblock>
-    <SkinDocType>
-        <![CDATA[<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">]]>
-    </SkinDocType>
-                        </codeblock>
-                    </li>
-                    <li>For HTML5,
-                        <codeblock>
-    <SkinDocType>
-        <![CDATA[<!DOCTYPE html>]]>
-    </SkinDocType>
-                        </codeblock>
-                    </li>
-                </ul>
+            <step><cmd>Enter the appropriate code in your DocType file.</cmd>
+                <info>
+                    <ul>
+                        <li>For XHTML Strict,
+                            <codeblock>
+    &lt;SkinDocType&gt;
+        &lt;![CDATA[&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;]]&gt;
+    &lt;/SkinDocType&gt;
+                            </codeblock>
+                        </li>
+                        <li>For XHTML Transitional,
+                            <codeblock>
+    &lt;SkinDocType&gt;
+        &lt;![CDATA[&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;]]&gt;
+    &lt;/SkinDocType&gt;
+                            </codeblock>
+                        </li>
+                        <li>For HTML5,
+                            <codeblock>
+    &lt;SkinDocType&gt;
+        &lt;![CDATA[&lt;!DOCTYPE html&gt;]]&gt;
+    &lt;/SkinDocType&gt;
+                            </codeblock>
+                        </li>
+                    </ul>
+                </info>
             </step>
 
         </steps>

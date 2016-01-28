@@ -30,7 +30,7 @@
 
 
         <steps>
-            <step>For every pane (<codeph>&lt;div&gt;</codeph>) that contains a theme object, add a style definition in the CSS file. The style definition must start with <codeph>#</codeph> followed by the <varname>id</varname>.<br/>
+            <step>For every pane (<codeph>&lt;div&gt;</codeph>) that contains a theme object, add a style definition in the CSS file. The style definition must start with <codeph>#</codeph> followed by the <varname>id</varname>.
                 <stepxmp>
                         <table frame="all" colsep="1" rowsep="1" >
                             <tgroup cols="2" align="center">
@@ -45,11 +45,11 @@
                                     <row>
                                         <entry>
                                             <codeblock>
-    <div id="login_style" class="user">
-        <object id="dnnLOGIN" codebase="LOGIN" codetype="dotnetnuke/server">
-            <param name="CssClass" value="user" />
-        </object>
-    </div>
+    &lt;div id="login_style" class="user"&gt;
+        &lt;object id="dnnLOGIN" codebase="LOGIN" codetype="dotnetnuke/server"&gt;
+            &lt;param name="CssClass" value="user" /&gt;
+        &lt;/object&gt;
+    &lt;/div&gt;
                                             </codeblock>
                                         </entry>
                                         <entry>

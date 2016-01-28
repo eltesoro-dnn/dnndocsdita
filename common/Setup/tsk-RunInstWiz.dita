@@ -65,7 +65,7 @@
                 <cmd>(Optional) To assist with localization, modify the <b>web.config</b> file to set <codeph>ShowMissingKeys</codeph> to <codeph>true</codeph>.</cmd>
                 <info>
                     <codeblock>
-            &lt;add key="ShowMissingKeys" value="true" /&gt;
+        &lt;add key="ShowMissingKeys" value="true" /&gt;
                     </codeblock>
                     <p>If set to <b>TRUE</b>,
                         <ul>

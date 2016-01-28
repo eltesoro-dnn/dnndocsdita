@@ -8,47 +8,57 @@
 
         <context>
             <p>A DNN extension can contain a <term>module</term>, a <term>theme</term>, or other components that extend the functionality of the DNN Platform.</p>
-            <p><ph conref="../bptext/BP-3rdPartyExtensions.html" /></p>
+            <p><ph conref="../bptext/bp-3rdPartyExtensions.html" /></p>
             <p>You can also create your custom <xref format="dita" href="../../dev/CreatingModules.dita">modules</xref> and <xref format="dita" href="../../design/CreatingThemes.dita">themes</xref>.</p>
             <p>The extension must be added by the <term>host</term> / <term>super user</term> account to the DNN installation before it can be used in any of the websites.</p>
         </context>
 
 
-        <prereq><ph conref="/common/bptext/BP-PrereqHost.html" /></prereq>
+        <prereq><ph conref="/common/bptext/bp-PrereqHost.html" /></prereq>
 
 
         <steps>
-            <step>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.
-                <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-1.png"><alt>Host &gt; Extensions</alt></image>
+            <step><cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.</cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-1.png"><alt>Host &gt; Extensions</alt></image>
+                </info>
             </step>
 
-            <step>Click <uicontrol>Install Extension Wizard</uicontrol>.
-                <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-3.png"><alt>Install Extension Wizard</alt></image>
+            <step><cmd>Click <uicontrol>Install Extension Wizard</uicontrol>.</cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-3.png"><alt>Install Extension Wizard</alt></image>
+                </info>
             </step>
 
-            <step>Click <uicontrol>Choose File</uicontrol> and select the zip file of the extension. The button name changes to the name of the zip file.
-                <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-4.png"><alt>Choose zip file of the extension</alt></image>
+            <step><cmd>Click <uicontrol>Choose File</uicontrol> and select the zip file of the extension. The button name changes to the name of the zip file.</cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-4.png"><alt>Choose zip file of the extension</alt></image>
+                </info>
             </step>
 
-            <step>Informational pages will be displayed one after the other:
-                <ul>
-                    <li><wintitle>Package Information</wintitle> includes the extension's version and description, as well as information about the creator.
-                        <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-6.png"><alt>Package Information</alt></image>
-                    </li>
-                    <li><wintitle>Release Notes</wintitle> displays what's new in the current release of the extension.
-                        <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-7.png"><alt>Release Notes</alt></image>
-                    </li>
-                    <li><wintitle>License</wintitle> displays the creator's license terms. Accept the license to continue.
-                        <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-8.png"><alt>License</alt></image>
-                    </li>
-                    <li><wintitle>Package Installation Report</wintitle> displays a log of actions performed by the installation.
-                        <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-10.png"><alt>Package Installation Report</alt></image>
-                    </li>
-                </ul>
+            <step><cmd>Informational pages will be displayed one after the other:</cmd>
+                <info>
+                    <ul>
+                        <li><wintitle>Package Information</wintitle> includes the extension's version and description, as well as information about the creator.
+                            <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-6.png"><alt>Package Information</alt></image>
+                        </li>
+                        <li><wintitle>Release Notes</wintitle> displays what's new in the current release of the extension.
+                            <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-7.png"><alt>Release Notes</alt></image>
+                        </li>
+                        <li><wintitle>License</wintitle> displays the creator's license terms. Accept the license to continue.
+                            <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-8.png"><alt>License</alt></image>
+                        </li>
+                        <li><wintitle>Package Installation Report</wintitle> displays a log of actions performed by the installation.
+                            <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-10.png"><alt>Package Installation Report</alt></image>
+                        </li>
+                    </ul>
+                </info>
             </step>
 
-            <step>Verify that the newly installed extension appears in the list under the <uicontrol>Installed Extensions</uicontrol> tab.
-                <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-11.png"><alt>New extension appears under Installed Extensions.</alt></image>
+            <step><cmd>Verify that the newly installed extension appears in the list under the <uicontrol>Installed Extensions</uicontrol> tab.</cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="center" href="/common/img/scr-InstallExt-11.png"><alt>New extension appears under Installed Extensions.</alt></image>
+                </info>
             </step>
         </steps>
 

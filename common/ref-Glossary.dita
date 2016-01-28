@@ -196,7 +196,7 @@
 
     <glossentry xml:lang="en" id="themeObject">
         <glossterm>theme object</glossterm>
-        <glossdef>A type of DNN extension used in themes to provide additional functionality for common UI elements on a webpage. Examples: menu bar, copyright notice, login/registration links, privacy link, terms of service link, and search box. Theme objects are configured by the theme designer. <!--#include virtual="/common/bptext/BP-TipSkinningTool.html" --></glossdef>
+        <glossdef>A type of DNN extension used in themes to provide additional functionality for common UI elements on a webpage. Examples: menu bar, copyright notice, login/registration links, privacy link, terms of service link, and search box. Theme objects are configured by the theme designer. <!--#include virtual="/common/bptext/bp-TipSkinningTool.html" --></glossdef>
         <related-links>
             <link format="dita" href="#token"><linktext>Token</linktext></link>
         </related-links>

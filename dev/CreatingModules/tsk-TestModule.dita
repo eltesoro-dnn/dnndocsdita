@@ -10,11 +10,11 @@
 
             <step><cmd>Run your module through the DNN <xref format="dita" href="http://evs.dnnsoftware.com">Extension Verification Service</xref> (EVS) to perform <xref format="dita" href="./con-AboutEVS.dita">compatibility tests in three areas</xref>.</cmd></step>
 
-            <step><cmd><xref format="dita" href="../../common/Extensions/InstallExtension.dita">Install the package.</xref></cmd></step>
+            <step><cmd><xref format="dita" href="../../common/Extensions/tsk-InstallExtension.dita">Install the package.</xref></cmd></step>
 
             <step><cmd>In your DNN installation, apply the module to a pane in a new webpage.</cmd>
                 <substeps>
-                    <substep><cmd><menucascade><uicontrol>Modules</uicontrol> &gt; <uicontrol>Add New Module</uicontrol></menucascade></cmd>
+                    <substep><cmd><menucascade><uicontrol>Modules</uicontrol> <uicontrol>Add New Module</uicontrol></menucascade></cmd>
                         <info>
                             <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-ModulesAddNewModule.png"><alt>Module - Add New Module</alt></image>
                         </info>

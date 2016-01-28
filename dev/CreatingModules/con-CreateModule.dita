@@ -15,12 +15,11 @@
                         <ul>
                             <li><xref format="dita" href="https://github.com/dnnsoftware/DNN.Templates/releases">DNN 8 Templates</xref></li>
                             <li><xref format="dita" href="https://github.com/ChrisHammond/DNNTemplates">Chris Hammond's DotNetNuke Module and Theme Development Templates</xref> (<xref format="dita" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot">Installation instructions</xref>)</li>
-                            <draft-comment><!-- What other templates can we mention here? --></draft-comment>
                         </ul>
                     </li>
 
                     <li>Customize a pre-existing module.
-                        <ph conref="../../common/bptext/BP-3rdPartyExtensions.html" />
+                        <ph conref="../../common/bptext/bp-3rdPartyExtensions.html" />
                     </li>
                 </ul>
             </p>

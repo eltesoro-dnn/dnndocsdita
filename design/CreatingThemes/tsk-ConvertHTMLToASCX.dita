@@ -6,7 +6,7 @@
 
     <taskbody>
 
-        <prereq><ph conref="../../common/bptext/BP-PrereqHost.dita" /></prereq>
+        <prereq><ph conref="../../common/bptext/bp-PrereqHost.dita" /></prereq>
 
         <section id="overview">
             <title>Overview</title>
@@ -28,28 +28,35 @@
 
 
         <steps>
-            <step>Add your theme to your local DNN installation.
+            <step><cmd>Add your theme to your local DNN installation.</cmd>
                 <substeps>
                     <substep>Create a folder for your theme inside the <filepath>Portals\</filepath><varname>websitename</varname><filepath>\Skins</filepath> folderof your DNN installation. (<varname>websitename</varname> could be a number representing the PortalID.) The folder name becomes your theme name. Example: If you create the folder <filepath>C:\DNN8\Portals\MyWebsite\Skins\MyTheme</filepath>, <filepath>MyTheme</filepath> becomes your theme's name.</substep>
                     <substep>Copy your files to the new theme folder.</substep>
                 </substeps>
             </step>
 
-            <step>In <filepath>www.dnndev.me</filepath>, log in as an admin or host, and go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Advanced Settings</uicontrol> (double-gear tab) <uicontrol>Themes</uicontrol></menucascade>.
-                <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-4.png"><alt>Admin > Advanced Settings > Theme</alt></image>
+            <step><cmd>In <filepath>www.dnndev.me</filepath>, log in as an admin or host, and go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Advanced Settings</uicontrol> (double-gear tab) <uicontrol>Themes</uicontrol></menucascade>.</cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-4.png"><alt>Admin > Advanced Settings > Theme</alt></image>
+                </info>
             </step>
 
-            <step>Choose your new theme in the <uicontrol>Themes</uicontrol> dropdown, then click <uicontrol>Parse Theme Package</uicontrol>.
-                <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-10.png"><alt>Choose theme, then Parse Theme Package</alt></image>
+            <step><cmd>Choose your new theme in the <uicontrol>Themes</uicontrol> dropdown, then click <uicontrol>Parse Theme Package</uicontrol>.</cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-10.png"><alt>Choose theme, then Parse Theme Package</alt></image>
+                </info>
             </step>
 
-            <step>Confirm:
-                <substeps>
-                    <substeps>That a section appears under <uicontrol>Themes</uicontrol> for each converted HTML file.</substeps>
-                    <substeps>That no errors appear in the log.</substeps>
-                    <substeps>That the new ASCX file appears in the same folder as the HTML file.</substeps>
-                </substeps>
-                <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-11.png"><alt>Result of conversion</alt></image>
+            <step><cmd>Confirm:
+                    <ul>
+                        <li>That a section appears under <uicontrol>Themes</uicontrol> for each converted HTML file.</li>
+                        <li>That no errors appear in the log.</li>
+                        <li>That the new ASCX file appears in the same folder as the HTML file.</li>
+                    </ul>
+                </cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-11.png"><alt>Result of conversion</alt></image>
+                </info>
             </step>
         </steps>
 
@@ -69,14 +76,14 @@
 
             <p>This simple HTML layout template or container:
                 <codeblock>
-    <div id="ContentPane" runat="server"></div>
+    &lt;div id="ContentPane" runat="server"&gt;&lt;/div&gt;
                 </codeblock>
             </p>
 
             <p>is converted to this ASCX layout template:
                 <codeblock>
-    <%@ Control language="vb" AutoEventWireup="false" Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %>
-    <div id="ContentPane" runat="server"></div>
+    &lt;%@ Control language="vb" AutoEventWireup="false" Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %&gt;
+    &lt;div id="ContentPane" runat="server"&gt;&lt;/div&gt;
                 </codeblock>
             </p>
         </example>
@@ -85,18 +92,18 @@
         <example id="withcopyright">
             <p>This HTML layout template or container, which includes the <codeph>[COPYRIGHT]</codeph> token:
                 <codeblock>
-    <div id="ContentPane" runat="server">
+    &lt;div id="ContentPane" runat="server"&gt;
         [COPYRIGHT]
-    </div>
+    &lt;/div&gt;
                 </codeblock>
             </p>
             <p>is converted to this ASCX layout template:
                 <codeblock>
-    <%@ Control language="vb" AutoEventWireup="false" Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %>
-    <%@ Register TagPrefix="dnn" TagName="COPYRIGHT" Src="~/Admin/Skins/Copyright.ascx" %>
-    <div id="ContentPane" runat="server">
-        <dnn:COPYRIGHT runat="server" id="dnnCOPYRIGHT" />
-    </div>
+    &lt;%@ Control language="vb" AutoEventWireup="false" Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %&gt;
+    &lt;%@ Register TagPrefix="dnn" TagName="COPYRIGHT" Src="~/Admin/Skins/Copyright.ascx" %&gt;
+    &lt;div id="ContentPane" runat="server"&gt;
+        &lt;dnn:COPYRIGHT runat="server" id="dnnCOPYRIGHT" /&gt;
+    &lt;/div&gt;
                 </codeblock>
             </p>
         </example>

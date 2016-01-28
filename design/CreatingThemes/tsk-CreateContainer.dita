@@ -31,15 +31,15 @@
 
                 <stepxmp>A very basic container in HTML.
                     <codeblock>
-    <div id="ContentPane" runat="server"></div>
+    &lt;div id="ContentPane" runat="server"&gt;&lt;/div&gt;
                     </codeblock>
                 </stepxmp>
 
                 <stepxmp>A very basic container in ASCX.
-                    <!-- <codeblock>
-    <%@ Control AutoEventWireup="false" Explicit="True" Inherits="DotNetNuke.UI.Containers.Container" %>
-    <div id="ContentPane" runat="server"></div>
-                    </codeblock> -->
+                    <codeblock>
+    &lt;%@ Control AutoEventWireup="false" Explicit="True" Inherits="DotNetNuke.UI.Containers.Container" %&gt;
+    &lt;div id="ContentPane" runat="server"&gt;&lt;/div&gt;
+                    </codeblock>
                 </stepxmp>
             </step>
 
@@ -55,7 +55,7 @@
                     <li>TITLE</li>
                     <li>VISIBILITY</li>
                 </ul>
-                <p><ph conref="../../common/bptext/BP-TipSkinningTool.html" /></p>
+                <p><ph conref="../../common/bptext/bp-TipSkinningTool.html" /></p>
             </step>
         </steps>
     </taskbody>
