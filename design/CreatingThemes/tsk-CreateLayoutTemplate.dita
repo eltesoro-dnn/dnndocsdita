@@ -10,48 +10,49 @@
 
             <step><cmd>Create a new file for the layout template.</cmd>
                 <info>
-                    <note type="note">
-                        <ul>
-                            <li>The layout template must contain at least one pane.</li>
-                            <li>Exactly one of the panes must be called <codeph>ContentPane</codeph>.</li>
-                            <li>Each pane must have a name that is unique within the page.</li>
-                            <li>All panes must be defined as a server control by adding <codeph>runat="server"</codeph> to the element.</li>
-                            <li>A pane can be one of the following HTML elements: &lt;td&gt; (table cells), &lt;div&gt;, &lt;p&gt;, and &lt;span&gt;.</li>
-                        </ul>
-                    </note>
+                    <ul>
+                        <li>The layout template must contain at least one pane.</li>
+                        <li>Exactly one of the panes must be called <codeph>ContentPane</codeph>.</li>
+                        <li>Each pane must have a name that is unique within the page.</li>
+                        <li>All panes must be defined as a server control by adding <codeph>runat="server"</codeph> to the element.</li>
+                        <li>A pane can be one of the following HTML elements: &lt;td&gt; (table cells), &lt;div&gt;, &lt;p&gt;, and &lt;span&gt;.</li>
+                    </ul>
 
-                    <stepxmp>
-                        <p>A very basic layout template.</p>
-                        <ul>
-                            <li>HTML
-                                <codeblock>
+                    <note type="tip">ASP.NET might modify the control names (e.g., <codeph>div id</codeph>) when the page is rendered to avoid duplicate control names in a page. Instead of depending on the control name when styling, add a class attribute to each of the controls and refer to those class attributes in your CSS.</note>
+                </info>
+
+                <stepxmp>
+                    <p>A very basic layout template.</p>
+                    <ul>
+                        <li>HTML
+                            <codeblock>
     &lt;div id="ContentPane" runat="server"&gt;&lt;/div&gt;
-                                </codeblock>
-                            </li>
-                            <li>ASCX
-                                <codeblock>
+                            </codeblock>
+                        </li>
+                        <li>ASCX
+                            <codeblock>
     &lt;!-- &lt;%@ Control language="vb" AutoEventWireup="false" Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %&gt; --&gt;
     &lt;div id="ContentPane" runat="server"&gt;&lt;/div&gt;
-                                </codeblock>
-                            </li>
-                        </ul>
-                    </stepxmp>
+                            </codeblock>
+                        </li>
+                    </ul>
+                </stepxmp>
 
-                    <stepxmp>
-                        <p>A layout template with several panes, a header, a footer, and a LOGO theme object.</p>
-                        <ul>
-                            <li>HTML
-                                <codeblock>
+                <stepxmp>
+                    <p>A layout template with several panes, a header, a footer, and a LOGO theme object.</p>
+                    <ul>
+                        <li>HTML
+                            <codeblock>
     &lt;div id="wrapper"&gt;
         &lt;div id="header"&gt;
             [LOGO]
         &lt;/div&gt;
         &lt;div id="sidebar"&gt;
             &lt;div id="feed"&gt;
-                &lt;a class="feed-button" href="#"&gt;&nbsp;&lt;/a&gt;
+                &lt;a class="feed-button" href="#"&gt; &lt;/a&gt;
             &lt;/div&gt;
             &lt;div id="SidebarPane" class="SidebarPane" runat="server"&gt;&lt;/div&gt;
-            &lt;div id="sidebar-bottom"&gt;&nbsp;&lt;/div&gt;
+            &lt;div id="sidebar-bottom"&gt; &lt;/div&gt;
         &lt;/div&gt;
         &lt;div id="content"&gt;
             &lt;div id="BannerPane" class="BannerPane" runat="server"&gt;&lt;/div&gt;
@@ -59,10 +60,10 @@
         &lt;/div&gt;
         &lt;div id="footer"&gt;&lt;/div&gt;
     &lt;/div&gt;
-                                </codeblock>
-                            </li>
-                            <li>ASCX
-                                <codeblock>
+                            </codeblock>
+                        </li>
+                        <li>ASCX
+                            <codeblock>
     &lt;%@ Control language="vb" AutoEventWireup="false" Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %&gt;
     &lt;%@ Register TagPrefix="dnn" TagName="LOGO" Src="~/Admin/Skins/Logo.ascx" %&gt;
     &lt;div id="wrapper"&gt;
@@ -71,10 +72,10 @@
         &lt;/div&gt;
         &lt;div id="sidebar"&gt;
             &lt;div id="feed"&gt;
-                &lt;a class="feed-button" href="#"&gt;&nbsp;&lt;/a&gt;
+                &lt;a class="feed-button" href="#"&gt; &lt;/a&gt;
             &lt;/div&gt;
             &lt;div id="MySidebarPane" class="SidebarPane" runat="server"&gt;&lt;/div&gt;
-            &lt;div id="sidebar-bottom"&gt;&nbsp;&lt;/div&gt;
+            &lt;div id="sidebar-bottom"&gt; &lt;/div&gt;
         &lt;/div&gt;
         &lt;div id="content"&gt;
             &lt;div id="MyBannerPane" class="MyBannerPane" runat="server"&gt;&lt;/div&gt;
@@ -82,37 +83,30 @@
         &lt;/div&gt;
         &lt;div id="footer"&gt;&lt;/div&gt;
     &lt;/div&gt;
-                                </codeblock>
-                            </li>
-                        </ul>
-                    </stepxmp>
-
-                    <note type="tip">ASP.NET might modify the control names (e.g., <codeph>div id</codeph>) when the page is rendered to avoid duplicate control names in a page. Instead of depending on the control name when styling, add a class attribute to each of the controls and refer to those class attributes in your CSS.</note>
-                </info>
+                            </codeblock>
+                        </li>
+                    </ul>
+                </stepxmp>
             </step>
 
             <step><cmd>(Optional) Add theme objects to any pane for a more dynamic page.</cmd>
                 <info>
                     <ul>
                         <li>In HTML, you can use the HTML token (example: <codeph>[LOGIN]</codeph>).
-                            <stepxmp>
-                                <codeblock>
+                            <codeblock>
     &lt;div id="login_style" class="user"&gt;
         [LOGIN]
     &lt;/div&gt;
-                                </codeblock>
-                            </stepxmp>
+                            </codeblock>
                         </li>
                         <li>In ASCX, you must register the ASCX token (example: <codeph>&lt;dnn:Login ...</codeph>) before using it for the first time in the file.
-                            <stepxmp>
-                                <codeblock>
+                            <codeblock>
     &lt;%@ Register TagPrefix="dnn" TagName="Login" Src="~/Admin/Skins/login.ascx" %&gt;
     ...
     &lt;div id="login_style" class="user"&gt;
         &lt;dnn:Login runat="server" id="dnnLogin" CssClass="user" /&gt;
     &lt;/div&gt;
-                                </codeblock>
-                            </stepxmp>
+                            </codeblock>
                         </li>
                     </ul>
 

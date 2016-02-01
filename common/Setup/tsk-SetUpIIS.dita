@@ -82,8 +82,11 @@
                 </substeps>
             </step>
 
-            <step><cmd>If you do not use <b>NETWORK SERVICE</b> as the user account to run your website, verify that the automatically created IIS AppPool\AppPoolName has <b>Full</b> or <b>Modify</b> permissions for the DNN installation folder.</cmd>
-                <info>See <xref format="dita" href="tsk-SetUpDNNFolder.dita">Set Up DNN Folder and the User Account</xref>.</info>
+            <step><cmd>If you do not use <b>NETWORK SERVICE</b> as the user account to run your website, verify that <b>IIS AppPool\AppPoolName</b> has <b>Full</b> or <b>Modify</b> permissions for the DNN installation folder.</cmd>
+                <info>
+                    <p>The account <b>IIS AppPool\AppPoolName</b> is automatically created by IIS.</p>
+                    <p>See <xref format="dita" href="tsk-SetUpDNNFolder.dita">Set Up DNN Folder and the User Account</xref>.</p>
+                </info>
             </step>
         </steps>
 

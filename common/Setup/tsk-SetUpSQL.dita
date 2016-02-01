@@ -10,7 +10,7 @@
 
             <step><cmd>Install SQL.</cmd>
                 <substeps>
-                    <substep><cmd><xref format="dita" href="../req-Requirements.dita">Check compatible versions.</xref></cmd></substep>
+                    <substep><cmd><xref format="dita" href="../ref-Requirements.dita">Check compatible versions.</xref></cmd></substep>
                     <substep><cmd>Choose <uicontrol>New SQL Server stand-alone installation...</uicontrol>.</cmd>
                         <info>
                             <image scalefit="yes" placement="break" align="center" href="../img/scr-InstallSQL-1.png"><alt>New SQL Server stand-alone installation</alt></image>
@@ -44,16 +44,7 @@
                 </substeps>
             </step>
 
-            <step><cmd>Create a SQL user account.</cmd>
-                <info>
-                    <note type="note">
-                        <ul>
-                            <li>Select <uicontrol>SQL Server authentication</uicontrol>.</li>
-                            <li>Uncheck <uicontrol>Enforce password policy</uicontrol>.</li>
-                        </ul>
-                    </note>
-                </info>
-
+            <step><cmd>Create a SQL user account, using <uicontrol>SQL Server authentication</uicontrol> and disabling password policy.</cmd>
                 <substeps>
                     <substep><cmd>Under <uicontrol>Security</uicontrol>, right-click on <uicontrol>Logins</uicontrol>, and choose <uicontrol>New Login...</uicontrol>.</cmd>
                         <info>
@@ -71,7 +62,7 @@
 
             <step><cmd>Give the new SQL user <b>db_owner</b> access to the new database.</cmd>
                 <substeps>
-                    <substep><cmd>In the <uicontrol>Object Explorer</uicontrol> panel, under <menucascade><uicontrol>your database</uicontrol> <uicontrol>Security</uicontrol></menucascade>, right-click on <uicontrol>Users</uicontrol>, and choose <uicontrol>New User...</uicontrol>.</cmd>
+                    <substep><cmd>In the <uicontrol>Object Explorer</uicontrol> panel, under <menucascade><uicontrol><varname>your database</varname></uicontrol> <uicontrol>Security</uicontrol></menucascade>, right-click on <uicontrol>Users</uicontrol>, and choose <uicontrol>New User...</uicontrol>.</cmd>
                         <info>
                             <image scalefit="yes" placement="break" align="center" href="../img/scr-SetupSQL-6.png"><alt>Under your database > Security, right-click Users, choose New User.</alt></image>
                         </info>

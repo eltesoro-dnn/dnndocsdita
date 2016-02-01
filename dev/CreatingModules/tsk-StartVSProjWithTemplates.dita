@@ -59,14 +59,12 @@
                     <substep><cmd>Run Visual Studio as an administrator.</cmd></substep>
                     <substep><cmd><menucascade><uicontrol>File</uicontrol> <uicontrol>New</uicontrol> <uicontrol>Project</uicontrol></menucascade></cmd></substep>
                     <substep><cmd>Select the template for the new project.</cmd>
-                        <choices>
-                            <choice>For Chris Hammond's templates, go to <menucascade><uicontrol>Installed</uicontrol> <uicontrol>Templates</uicontrol> <uicontrol>Visual C# or Visual Basic</uicontrol> <uicontrol>DotNetNuke</uicontrol></menucascade>.
-                                <image scalefit="yes" placement="break" align="center" href="/common/img/scr-VS2015NewProjectWithTemplates-02.png"><alt>Visual Studio > New > Project with Chris Hammond's templates</alt></image>
-                            </choice>
-                            <choice>For the DNN 8 templates, go to <menucascade><uicontrol>Installed</uicontrol> <uicontrol>Templates</uicontrol> <uicontrol>Visual C#</uicontrol> <uicontrol>Dnn</uicontrol></menucascade>.
-                                <image scalefit="yes" placement="break" align="center" href="/common/img/scr-VS2015NewProjectWithTemplates-01.png"><alt>Visual Studio > New > Project with DNN8 templates</alt></image>
-                            </choice>
-                        </choices>
+                        <info>For Chris Hammond's templates, go to <menucascade><uicontrol>Installed</uicontrol> <uicontrol>Templates</uicontrol> <uicontrol>Visual C# or Visual Basic</uicontrol> <uicontrol>DotNetNuke</uicontrol></menucascade>.
+                            <image scalefit="yes" placement="break" align="center" href="/common/img/scr-VS2015NewProjectWithTemplates-02.png"><alt>Visual Studio > New > Project with Chris Hammond's templates</alt></image>
+                        </info>
+                        <info>For the DNN 8 templates, go to <menucascade><uicontrol>Installed</uicontrol> <uicontrol>Templates</uicontrol> <uicontrol>Visual C#</uicontrol> <uicontrol>Dnn</uicontrol></menucascade>.
+                            <image scalefit="yes" placement="break" align="center" href="/common/img/scr-VS2015NewProjectWithTemplates-01.png"><alt>Visual Studio > New > Project with DNN8 templates</alt></image>
+                        </info>
                     </substep>
                     <substep><cmd>Fill in the settings.</cmd>
                         <info>

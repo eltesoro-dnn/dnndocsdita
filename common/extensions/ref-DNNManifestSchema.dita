@@ -58,17 +58,17 @@
                 <li><varname>name</varname> must be unique. To ensure your package's uniqueness, add your company as the prefix.</li>
                 <li><varname>type</varname> can be one of the following:
                     <ul>
-                        <li><b>Auth_System</b></li>
-                        <li><b>Container</b></li>
-                        <li><b>CoreLanguagePack</b></li>
-                        <li><a href="http://www.dnnsoftware.com/wiki/manifest-dashboardcontrol-component"><b>DashboardControl</b></a></li>
-                        <li><b>ExtensionLanguagePack</b></li>
-                        <li><b>JavaScript_Library</b></li>
-                        <li><b>Library</b></li>
-                        <li><a href="http://www.dnnsoftware.com/wiki/modules"><b>Module</b></a></li>
-                        <li><a href="http://www.dnnsoftware.com/wiki/providers"><b>Provider</b></a></li>
-                        <li><a href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><b>Skin</b></a></li>
-                        <li><b>SkinObject</b></li>
+                        <li><userinput>Auth_System</userinput></li>
+                        <li><userinput>Container</userinput></li>
+                        <li><userinput>CoreLanguagePack</userinput></li>
+                        <li><xref format="dita" href="http://www.dnnsoftware.com/wiki/manifest-dashboardcontrol-component"><userinput>DashboardControl</userinput></xref></li>
+                        <li><userinput>ExtensionLanguagePack</userinput></li>
+                        <li><userinput>JavaScript_Library</userinput></li>
+                        <li><userinput>Library</userinput></li>
+                        <li><xref format="dita" href="http://www.dnnsoftware.com/wiki/modules"><userinput>Module</userinput></xref></li>
+                        <li><xref format="dita" href="http://www.dnnsoftware.com/wiki/providers"><userinput>Provider</userinput></xref></li>
+                        <li><xref format="dita" href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><userinput>Skin</userinput></xref></li>
+                        <li><userinput>SkinObject</userinput></li>
                         <li>other custom extension types</li>
                     </ul>
                 </li>
@@ -151,11 +151,9 @@
                 </li>
 
                 <li><b>managedPackage</b>. The name and minimum version of a package required by the extension being installed. The required package must already be listed in the core <uicontrol>Packages</uicontrol> table.
-                    <stepxmp>
-                        <codeblock>
-    &lt;dependency type="managedPackage" version="1.0.0"&gt;AnotherPackageRequiredByThisComponent&lt;/dependency&gt;
-                        </codeblock>
-                    </stepxmp>
+                    <codeblock>
+                        &lt;dependency type="managedPackage" version="1.0.0"&gt;AnotherPackageRequiredByThisComponent&lt;/dependency&gt;
+                    </codeblock>
                 </li>
 
                 <li><b>package</b>. The name of a package required by the extension being installed. The required package must already be listed in the core <uicontrol>Packages</uicontrol> table. Example:
@@ -266,7 +264,7 @@
             </table>
 
             <ul>
-                <li><b><a href="http://www.dnnsoftware.com/wiki/manifest-assembly-component">Assembly</a></b>. Assemblies to be installed in the main <code>\bin</code> folder of the installation. Assemblies are the compiled code portion of your extension. They can be your own assemblies or third-party assemblies that you ship with your extension.
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/manifest-assembly-component"><codeph>Assembly</codeph></xref>. Assemblies to be installed in the main <filepath>\bin</filepath> folder of the installation. Assemblies are the compiled code portion of your extension. They can be your own assemblies or third-party assemblies that you ship with your extension.
                     <codeblock>
     &lt;component type="Assembly"&gt;
         &lt;assemblies&gt;
@@ -287,7 +285,7 @@
                 </li>
 
 
-                <li><b><a href="http://www.dnnsoftware.com/wiki/manifest-authenticationsystem-component">AuthenticationSystem</a></b>.
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/manifest-authenticationsystem-component"><codeph>AuthenticationSystem</codeph></xref>.
                     Authentication providers used by the extension, such as <b>Facebook</b>, <b>Google</b>, <b>Twitter</b>, and <b>Microsoft Accounts</b>.
                     By default, DNN authenticates using its own database.
                     <codeblock>
@@ -305,7 +303,7 @@
                 </li>
 
 
-                <li><b><a href="http://www.dnnsoftware.com/wiki/cleanup-component">Cleanup</a></b>.
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/cleanup-component"><codeph>Cleanup</codeph></xref>.
                     List of files that must be deleted during installation or upgrade of the package.
                     <p>You can list the files individually in the manifest.</p>
                     <codeblock>
@@ -333,7 +331,7 @@
                 </li>
 
 
-                <li><b><a href="http://www.dnnsoftware.com/wiki/manifest-config-component">Config</a></b>.
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/manifest-config-component"><codeph>Config</codeph></xref>.
                     Changes to do on the specified config file.
                     <codeblock>
     &lt;component type="Config"&gt;
@@ -360,11 +358,11 @@
         ...
     &lt;/component&gt;
                     </codeblock>
-                    <p>For information on <code>node</code> attributes, see <a href="http://www.dnnsoftware.com/wiki/manifest-xml-merge">Manifest: XML Merge</a>.</p>
+                    <p>For information on <code>node</code> attributes, see <xref format="html" href="http://www.dnnsoftware.com/wiki/manifest-xml-merge">Manifest: XML Merge</xref>.</p>
                 </li>
 
 
-                <li><b><a href="http://www.dnnsoftware.com/wiki/manifest-container-component">Container</a></b>.
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/manifest-container-component"><codeph>Container</codeph></xref>.
                     Containers to be installed.
                     <codeblock>
     &lt;component type="Container"&gt;
@@ -383,7 +381,7 @@
                 </li>
 
 
-                <li><b><a href="http://www.dnnsoftware.com/wiki/manifest-dashboardcontrol-component">DashboardControl</a></b>.
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/manifest-dashboardcontrol-component"><codeph>DashboardControl</codeph></xref>.
                     Controls that will appear as separate tabs in the DNN Dashboard (<b>Host</b> &gt; <b>Dashboard</b>).
                     <codeblock>
     &lt;component type="DashboardControl"&gt;
@@ -402,7 +400,7 @@
                 </li>
 
 
-                <li><b><a href="http://www.dnnsoftware.com/wiki/manifest-file-component">File</a></b>.
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/manifest-file-component"><codeph>File</codeph></xref>.
                     Files to be installed. By default, only files with allowed file extensions are installed; however, the host user can bypass this security check during installation. To view or modify the list of file extensions, go to <b>Host</b> &gt; <b>Host Settings</b> &gt; <b>Other Settings</b> &gt; <b>Allowable File Extensions</b> in your DNN installation.
                     <codeblock>
     &lt;component type="File"&gt;
@@ -430,7 +428,7 @@
                 </li>
 
 
-                <li><b><a href="http://www.dnnsoftware.com/wiki/manifest-corelanguage-component">CoreLanguage</a></b>.
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/manifest-corelanguage-component"><codeph>CoreLanguage</codeph></xref>.
                     Language pack files required to localize the core DNN Platform for a specific culture. A core language pack can be installed during the DNN Platform installation or anytime after.
                     <codeblock>
     &lt;component type="CoreLanguage"&gt;
@@ -447,11 +445,11 @@
         &lt;/languageFiles&gt;
     &lt;/component&gt;
                     </codeblock>
-                    <p>For the list of supported language codes, see the .NET <a href="https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(VS.80).aspx">CultureInfo</a> class.</p>
+                    <p>For the list of supported language codes, see the .NET <xref format="html" href="https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(VS.80).aspx">CultureInfo</xref> class.</p>
                 </li>
 
 
-                <li><b><a href="http://www.dnnsoftware.com/wiki/manifest-extensionlanguage-component">ExtensionLanguage</a></b>.
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/manifest-extensionlanguage-component"><codeph>ExtensionLanguage</codeph></xref>.
                     Language pack files required to localize a DNN extension for a specific culture.
                     <codeblock>
     &lt;component type="ExtensionLanguage"&gt;
@@ -468,11 +466,11 @@
         &lt;/languageFiles&gt;
     &lt;/component&gt;
                     </codeblock>
-                    <p>For the list of supported language codes, see the .NET <a href="https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(VS.80).aspx">CultureInfo</a> class.</p>
+                    <p>For the list of supported language codes, see the .NET <xref format="html" href="https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(VS.80).aspx">CultureInfo</xref> class.</p>
                 </li>
 
 
-                <li><b><a href="http://www.dnnsoftware.com/wiki/module-component">Module</a></b>.
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/module-component"><codeph>Module</codeph></xref>.
                     Only one component with <code>type="Module"</code> is allowed within a <b>package</b> section. To install a set of modules as a unit, create one <b>package</b> section per module in the same manifest.
                     <codeblock>
     &lt;component type="Module"&gt;
@@ -529,7 +527,7 @@
                 </li>
 
 
-                <li><b><a href="http://www.dnnsoftware.com/wiki/manifest-provider-component">Provider</a></b>.
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/manifest-provider-component"><codeph>Provider</codeph></xref>.
                     Extends the list of allowed file extensions. These additional file extensions apply only to the current installation and are not added to the global list of file extensions found in <b>Host</b> &gt; <b>Host Settings</b> &gt; <b>Other Settings</b> &gt; <b>Allowable File Extensions</b>. The following file extensions can be allowed: .ashx, .aspx, .ascx, .vb, .cs, .resx, .css, .js, .resources, .config, .xml, .htc, .html, .htm, .text, .vbproj, .csproj, and .sln.
                     <codeblock>
     &lt;component type="Provider" /&gt;
@@ -537,8 +535,8 @@
                 </li>
 
 
-                <li><b><a href="http://www.dnnsoftware.com/wiki/manifest-resourcefile-component">ResourceFile</a></b>.
-                    Zip files to be expanded during installation. Can be used instead of <code>component type="File"</code> to simplify the manifest for packages that contain many files.
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/manifest-resourcefile-component"><codeph>ResourceFile</codeph></xref>.
+                    Zip files to be expanded during installation. Can be used instead of <codeph>component type="File"</codeph> to simplify the manifest for packages that contain many files.
                     <codeblock>
     &lt;component type="ResourceFile"&gt;
         &lt;resourceFiles&gt;
@@ -554,11 +552,11 @@
                 </li>
 
 
-                <li><b><a href="http://www.dnnsoftware.com/wiki/script-component">Script</a></b>.
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/script-component"><codeph>Script</codeph></xref>.
                     Database scripts that the extension needs. The following scripts are handled differently:
                         <ul>
-                            <li><b>install.&lt;dataprovidertype&gt;</b> (e.g., <code>install.SqlDataProvider</code>) is executed <i>before</i> all other scripts, if the package is being installed for the first time.</li>
-                            <li><b>upgrade.&lt;dataprovidertype&gt;</b> (e.g., <code>upgrade.SqlDataProvider</code>) is executed <i>after</i> all regular scripts.</li>
+                            <li><codeph>install.&lt;<varname>dataprovidertype</varname>&gt;</codeph> (e.g., <codeph>install.SqlDataProvider</codeph>) is executed <i>before</i> all other scripts, if the package is being installed for the first time.</li>
+                            <li><codeph>upgrade.&lt;<varname>dataprovidertype</varname>&gt;</codeph> (e.g., <codeph>upgrade.SqlDataProvider</codeph>) is executed <i>after</i> all regular scripts.</li>
                         </ul>
                     <codeblock>
     &lt;component type="Script"&gt;
@@ -581,7 +579,7 @@
                 </li>
 
 
-                <li><b><a href="http://www.dnnsoftware.com/wiki/manifest-skin-component">Skin</a></b>.
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/manifest-skin-component"><codeph>Skin</codeph></xref>.
                     All files related to the theme. The installer needs to parse the main theme files at installation time to replace relative folder names; therefore, every file of type <b>ASCX</b>, <b>HTML</b>, or <b>CSS</b> must be declared as a <b>skinFile</b>. Other files (i.e., images and scripts) can be packaged using component type "ResourceFile" to simplify the complexity of the theme manifest.
                     <codeblock>
     &lt;component type="Skin"&gt;
@@ -600,7 +598,7 @@
                 </li>
 
 
-                <li><b><a href="http://www.dnnsoftware.com/wiki/manifest-skinobject-component">SkinObject</a></b>.
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/manifest-skinobject-component"><codeph>SkinObject</codeph></xref>.
                     Custom theme objects.
                     <codeblock>
     &lt;component type="SkinObject"&gt;
@@ -614,8 +612,8 @@
                 </li>
 
 
-                <li><b><a href="http://www.dnnsoftware.com/wiki/manifest-url-provider">URL Provider</a></b>.
-                    Custom URL provider to be used with the Advanced URL Management System (AUM).
+                <li><xref format="html" href="http://www.dnnsoftware.com/wiki/manifest-url-provider"><codeph>URLProvider</codeph></xref>.
+                    Custom URL provider to be used with the <term>Advanced URL Management System (AUM)</term>.
                     <codeblock>
     &lt;component type="URLProvider"&gt;
         &lt;urlProvider&gt;

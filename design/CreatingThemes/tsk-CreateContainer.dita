@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "generaltask.dtd">
 <task xml:lang="en" id="tsk-CreateContainer">
 
     <title>Create a Container</title>
@@ -19,15 +19,17 @@
 
 
         <steps>
-            <step>Create a new file for the container.
-                <note type="note">
-                    <ul>
-                        <li>The container must contain exactly one pane called <codeph>ContentPane</codeph>.</li>
-                        <li>The single pane must be defined as a server control by adding <codeph>runat="server"</codeph> to the element.</li>
-                        <li>A pane can be one of the following HTML elements: &lt;td&gt; (table cells), &lt;div&gt;, &lt;p&gt;, and &lt;span&gt;.</li>
-                        <li>(Optional) You can add the attribute <codeph>visible="false"</codeph> to the pane to prevent it from being displayed if no module is assigned to it.</li>
-                    </ul>
-                </note>
+            <step><cmd>Create a new file for the container.</cmd>
+                <info>
+                    <note type="note">
+                        <ul>
+                            <li>The container must contain exactly one pane called <codeph>ContentPane</codeph>.</li>
+                            <li>The single pane must be defined as a server control by adding <codeph>runat="server"</codeph> to the element.</li>
+                            <li>A pane can be one of the following HTML elements: &lt;td&gt; (table cells), &lt;div&gt;, &lt;p&gt;, and &lt;span&gt;.</li>
+                            <li>(Optional) You can add the attribute <codeph>visible="false"</codeph> to the pane to prevent it from being displayed if no module is assigned to it.</li>
+                        </ul>
+                    </note>
+                </info>
 
                 <stepxmp>A very basic container in HTML.
                     <codeblock>
@@ -43,22 +45,25 @@
                 </stepxmp>
             </step>
 
-            <step>(Optional) Add theme objects to your container for a more dynamic page.
-                <p>The following theme objects are relevant to containers:</p>
-                <ul>
-                    <li>ACTIONBUTTON</li>
-                    <li>ACTIONS</li>
-                    <li>DROPDOWNACTIONS</li>
-                    <li>ICON</li>
-                    <li>LINKACTIONS</li>
-                    <li>PRINTMODULE</li>
-                    <li>TITLE</li>
-                    <li>VISIBILITY</li>
-                </ul>
-                <p><ph conref="../../common/bptext/bp-TipSkinningTool.html" /></p>
+            <step><cmd>(Optional) Add theme objects to your container for a more dynamic page.</cmd>
+                <info>
+                    <p>The following theme objects are relevant to containers:</p>
+                    <ul>
+                        <li>ACTIONBUTTON</li>
+                        <!-- <li>ACTIONS</li> Was this deprecated? -->
+                        <li>DROPDOWNACTIONS</li>
+                        <li>ICON</li>
+                        <li>LINKACTIONS</li>
+                        <li>PRINTMODULE</li>
+                        <li>TITLE</li>
+                        <li>VISIBILITY</li>
+                    </ul>
+                    <p><ph conref="../../common/bptext/bp-TipSkinningTool.html" /></p>
+                </info>
             </step>
         </steps>
     </taskbody>
+
 
     <related-links>
         <link format="dita" href="./tsk-CreateCSS.dita"><linktext>Create CSS</linktext></link>

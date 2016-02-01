@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "generaltask.dtd">
 <task xml:lang="en" id="myID">
 
     <title>Install an Extension</title>
 
     <taskbody>
 
-        <context>
+        <prereq><ph conref="../bptext/bp-PrereqHost.dita" /></prereq>
+
+
+        <section>
             <p>A DNN extension can contain a <term>module</term>, a <term>theme</term>, or other components that extend the functionality of the DNN Platform.</p>
             <p><ph conref="../bptext/bp-3rdPartyExtensions.html" /></p>
             <p>You can also create your custom <xref format="dita" href="../../dev/CreatingModules.dita">modules</xref> and <xref format="dita" href="../../design/CreatingThemes.dita">themes</xref>.</p>
             <p>The extension must be added by the <term>host</term> / <term>super user</term> account to the DNN installation before it can be used in any of the websites.</p>
-        </context>
-
-
-        <prereq><ph conref="/common/bptext/bp-PrereqHost.html" /></prereq>
+        </section>
 
 
         <steps>

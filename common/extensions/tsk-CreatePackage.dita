@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "generaltask.dtd">
 <task xml:lang="en" id="myID">
 
     <title>Create the Package</title>
 
     <taskbody>
 
-        <context>
+        <section>
             <p>For easier distribution and installation, the components of an extension (theme or module) can be bundled into a package. An extension <term>package</term> is simply a zip file that contains all the files required by your extension. The most important part of the process is creating the <term>DNN Manifest</term>, which provides information required by the installer, such as the target locations for the files.</p>
             <p>If you use the DNN templates and compile in Visual Studio, the Release build creates the zip file for you.</p>
-        </context>
+        </section>
 
 
         <steps>
             <step><cmd>Prepare your files in folders.</cmd>
                 <info>
                     <ul>
-                        <!-- <li><a href="/design/REF-ContentsThemePack.shtml">Layout templates, containers, and associated files</a></li> -->
-                        <!-- <li><a href="/dev/REF-ContentsModulePack.shtml">Modules and associated files</a></li> -->
+                        <!-- <li><a href="/design/ref-ContentsThemePack.dita">Layout templates, containers, and associated files</a></li> -->
+                        <!-- <li><a href="/dev/ref-ContentsModulePack.dita">Modules and associated files</a></li> -->
                         <li>Files that are common among all packages:
                             <ul>
-                                <li>(Optional) <codeph>MyLicense.txt</codeph> is displayed to the user during package installation.</li>.
+                                <li>(Optional) <codeph>MyLicense.txt</codeph> is displayed to the user during package installation.</li>
                                 <li>(Optional) <codeph>MyReleaseNotes.txt</codeph> lists the changes for the current version of the package and is also provided during installation.</li>
                             </ul>
                         </li>
@@ -29,7 +29,9 @@
                     <note type="remember">Include the version number of your extension in the release notes.</note>
                 </info>
             </step>
+
             <step><cmd>Create the <xref href="/common/Extensions/DNNManifestSchema.shtml">DNN Manifest</xref>.</cmd></step>
+
             <step><cmd>Zip up your files, including the DNN Manifest in the root folder.</cmd></step>
         </steps>
 

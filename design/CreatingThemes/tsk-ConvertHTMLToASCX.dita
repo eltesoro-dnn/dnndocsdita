@@ -30,12 +30,16 @@
         <steps>
             <step><cmd>Add your theme to your local DNN installation.</cmd>
                 <substeps>
-                    <substep>Create a folder for your theme inside the <filepath>Portals\</filepath><varname>websitename</varname><filepath>\Skins</filepath> folderof your DNN installation. (<varname>websitename</varname> could be a number representing the PortalID.) The folder name becomes your theme name. Example: If you create the folder <filepath>C:\DNN8\Portals\MyWebsite\Skins\MyTheme</filepath>, <filepath>MyTheme</filepath> becomes your theme's name.</substep>
-                    <substep>Copy your files to the new theme folder.</substep>
+                    <substep><cmd>Create a folder for your theme inside the <filepath>Portals\</filepath><varname>websitename</varname><filepath>\Skins</filepath> folder of your DNN installation.</cmd>
+                        <info>
+                            <p><varname>websitename</varname> could be a number representing the PortalID. The folder name becomes your theme name. Example: If you create the folder <filepath>C:\DNN8\Portals\MyWebsite\Skins\MyTheme</filepath>, <filepath>MyTheme</filepath> becomes your theme's name.</p>
+                        </info>
+                    </substep>
+                    <substep><cmd>Copy your files to the new theme folder.</cmd></substep>
                 </substeps>
             </step>
 
-            <step><cmd>In <filepath>www.dnndev.me</filepath>, log in as an admin or host, and go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Advanced Settings</uicontrol> (double-gear tab) <uicontrol>Themes</uicontrol></menucascade>.</cmd>
+            <step><cmd>In <filepath>www.dnndev.me</filepath>, log in as an admin or host, and go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Themes</uicontrol></menucascade>.</cmd>
                 <info>
                     <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-4.png"><alt>Admin > Advanced Settings > Theme</alt></image>
                 </info>

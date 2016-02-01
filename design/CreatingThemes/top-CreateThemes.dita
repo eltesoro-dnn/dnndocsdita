@@ -8,7 +8,6 @@
 
         <prereq><xref format="dita" href="../../common/Setup/tsk-SetUpDNN.dita">A local DNN installation</xref> with <b>Host</b> permissions.</prereq>
 
-        <h3> Steps </h3>
         <steps>
             <step><xref format="dita" href="./tsk-CreateLayoutTemplate.dita">Create layout templates for the webpages.</xref></step>
             <step><xref format="dita" href="./tsk-CreateContainer.dita">Create containers for modules.</xref></step>
