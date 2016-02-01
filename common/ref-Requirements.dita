@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
-<reference xml:lang="en" id="ref-Requirements">
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="DNN8Requirements">
 
     <title>DNN Platform 8.0 and DNN Evoq 8.3 Requirements</title>
 
@@ -21,6 +21,7 @@
             </ul>
         </section>
 
+
         <section id="NETFramework">
             <title>.NET Framework</title>
             <ul>
@@ -28,12 +29,14 @@
             </ul>
         </section>
 
+
         <section id="websvr">
             <title>Web Server</title>
             <ul>
                 <li>Microsoft IIS 7.0, 7.5, 8.0, 8.5, 10</li>
             </ul>
         </section>
+
 
         <section id="dbsvr">
             <title>Database Server</title>
@@ -49,6 +52,7 @@
             </ul>
         </section>
 
+
         <section id="browsers">
             <title>Browsers</title>
             <ul>
@@ -61,11 +65,12 @@
             <note type="note">DNN products are tested on the latest browser versions at the time of release. Although untested, older browsers could still work.</note>
         </section>
 
+
         <section id="DevIDE">
             <title>Developer IDEs</title>
-            <table frame="all" colsep="1" rowsep="1" >
+
+            <table frame="all" colsep="1" rowsep="1">
                 <tgroup cols="3" align="center">
-                    <colspec colnum="3"/>
                     <thead>
                         <row>
                             <entry>For creating modules</entry>
@@ -78,12 +83,15 @@
                                 <p>Visual Studio 2013</p>
                                 <p>Visual Studio 2015</p>
                             </entry>
-                            <entry><p>Visual Studio 2015</p></entry>
+                            <entry>
+                                <p>Visual Studio 2015</p>
+                            </entry>
                         </row>
                     </tbody>
                 </tgroup>
             </table>
         </section>
+
 
         <section id="recommended">
             <title>Recommended Environment</title>

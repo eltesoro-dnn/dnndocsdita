@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/task.dtd">
 <task xml:lang="en" id="tsk-StartVSProjWithTemplates">
 
     <title>Start a Visual Studio Project with Templates</title>
@@ -8,7 +8,7 @@
 
         <prereq>
             <ul>
-                <li><xref format="dita" href="../../common/Setup/tsk-SetUpDNN.dita">A local DNN installation</xref> with Host permissions.</li>
+                <li><xref format="dita" href="../../common/Setup/top-SetUpDNN.dita">A local DNN installation</xref> with Host permissions.</li>
                 <li>Visual Studio 2015 is the recommended IDE for developing DNN modules.</li>
             </ul>
         </prereq>
@@ -33,11 +33,11 @@
                     </substep>
                     <substep><cmd>Click the <uicontrol>Download</uicontrol> button for the <uicontrol>DotNetNuke Project Templates</uicontrol>.</cmd></substep>
                 </substeps>
-                <info><note type="note">See <xref format="html" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot">Chris Hammond's instructions</xref> for other installation methods.</note></info>
+                <info><note type="note">See <xref format="html" scope="external" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot">Chris Hammond's instructions</xref> for other installation methods.</note></info>
 
                 <info>For the DNN 8 templates,</info>
                 <substeps>
-                    <substep><cmd><xref format="html" href="https://github.com/dnnsoftware/DNN.Templates/releases">Download the appropriate .vsix file.</xref></cmd>
+                    <substep><cmd><xref format="html" scope="external" href="https://github.com/dnnsoftware/DNN.Templates/releases">Download the appropriate .vsix file.</xref></cmd>
                     <info>Two are included:
                             <ul>
                                 <li>Dnn.Mvc.Module.vsix</li>
@@ -86,13 +86,13 @@
     </taskbody>
 
     <related-links>
-        <link format="dita" href="./top-CreateModules.dita"><linktext>Creating Modules</linktext></link>
-        <link format="dita" href="./tsk-CreateWebFormsModule.dita"><linktext>Create a Web Forms module</linktext></link>
-        <link format="dita" href="./tsk-CreateMVCModule.dita"><linktext>Create an MVC module</linktext></link>
-        <link format="dita" href="./tsk-CreateSPAModule.dita"><linktext>Create a SPA module</linktext></link>
+        <link format="dita" href="./top-CreateModule.dita"><linktext>Creating Modules</linktext></link>
+        <link format="dita" href="../../_build/placeholder.dita"><linktext>Create a Web Forms module</linktext></link>
+        <link format="dita" href="../../_build/placeholder.dita"><linktext>Create an MVC module</linktext></link>
+        <link format="dita" href="../../_build/placeholder.dita"><linktext>Create a SPA module</linktext></link>
         <!-- <link format="dita" href="../ref-ContentsModulePack.dita"><linktext>Contents of a Module Package</linktext></link> -->
-        <link format="html" href="http://www.dnnsoftware.com/community-blog/cid/155064/module-development-for-non-developers-skinners-dnn-beginners--blog-series-intro"><linktext>DNN Community Blog: Module Development for Non-Developers, Skinners, &amp; DNN Beginners - Blog Series by Clinton Patterson</linktext></link>
-        <link format="html" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot"><linktext>Using the new Module Development Templates for DotNetNuke 7 by Chris Hammond</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155064/module-development-for-non-developers-skinners-dnn-beginners--blog-series-intro"><linktext>DNN Community Blog: Module Development for Non-Developers, Skinners, &amp; DNN Beginners - Blog Series by Clinton Patterson</linktext></link>
+        <link format="html" scope="external" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot"><linktext>Using the new Module Development Templates for DotNetNuke 7 by Chris Hammond</linktext></link>
     </related-links>
 
 </task>

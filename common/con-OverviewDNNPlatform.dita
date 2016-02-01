@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
 <concept xml:lang="en" id="con-OverviewDNNPlatform">
 
     <title>The DNN Platform</title>
@@ -7,7 +7,7 @@
     <conbody>
 
         <section>
-            <p>The <b>DNN Platform</b> is an open, extensible, secure, and scalable content management system for ASP.NET. Hundreds of thousands of businesses around the world, <xref format="html" href="http://www.dnnsoftware.com/solutions/our-customers">from small local businesses to Global 1000 companies</xref>, depend on the DNN Platform as their website authoring environment.</p>
+            <p>The <b>DNN Platform</b> is an open, extensible, secure, and scalable content management system for ASP.NET. Hundreds of thousands of businesses around the world, <xref format="html" scope="external" href="http://www.dnnsoftware.com/solutions/our-customers">from small local businesses to Global 1000 companies</xref>, depend on the DNN Platform as their website authoring environment.</p>
 
             <p>This site is organized according to role:
                 <ul>
@@ -26,11 +26,11 @@
         <section id="Administrator">
             <title>Administrator</title>
             <ul>
-                <li><xref format="dita" href="./Setup/tsk-SetUpDNN.dita">Set up the DNN Platform</xref> on a web server.</li>
+                <li><xref format="dita" href="./Setup/top-SetUpDNN.dita">Set up the DNN Platform</xref> on a web server.</li>
                 <!-- <li>Upgrade DNN on your web server.</li> -->
                 <li><xref format="dita" href="./Extensions/tsk-InstallExtension.dita">Install extensions (modules and themes)</xref> on the web server.</li>
-                <li><xref format="dita" href="placeholderlink">DNN 8.0 User Guide</xref></li>
-                <li><xref format="dita" href="placeholderlink">Evoq 8.x User Guide</xref></li>
+                <li><xref format="dita" href="../_build/placeholder.dita">DNN 8.0 User Guide</xref></li>
+                <li><xref format="dita" href="../_build/placeholder.dita">Evoq 8.x User Guide</xref></li>
                 <!--
                 <li>Security Guide</li>
                 <li>Web Farm Configuration Guide</li>
@@ -42,27 +42,29 @@
         <section id="Developer">
             <title>Developer</title>
             <ul>
-                <li><xref format="dita" href="./Setup/tsk-SetUpDNN.dita">Set up the DNN Platform</xref> in your local development environment.</li>
-                <li><xref format="dita" href="../dev/con-CreatingModules.dita">Create a module</xref>.</li>
+                <li><xref format="dita" href="./Setup/top-SetUpDNN.dita">Set up the DNN Platform</xref> in your local development environment.</li>
+                <li><xref format="dita" href="../dev/CreatingModules/top-CreateModule.dita">Create a module</xref>.</li>
                 <li><xref format="dita" href="./Extensions/tsk-CreatePackage.dita">Create a package</xref> containing your module.</li>
-                <li><xref format="dita" href="placeholderlink">API Reference</xref></li>
+                <li><xref format="dita" href="../dev/top-Providers.dita"></xref></li>
+                <li><xref format="dita" href="../_build/placeholder.dita">API Reference</xref></li>
             </ul>
         </section>
 
         <section id="Designer">
             <title>Designer</title>
             <ul>
-                <li><xref format="dita" href="./Setup/tsk-SetUpDNN.dita">Set up the DNN Platform</xref> in your local development environment.</li>
-                <li><xref format="dita" href="../design/con-CreatingThemes.dita">Create a theme</xref>.</li>
+                <li><xref format="dita" href="./Setup/top-SetUpDNN.dita">Set up the DNN Platform</xref> in your local development environment.</li>
+                <li><xref format="dita" href="../design/con-AboutThemes.dita">About themes</xref></li>
+                <li><xref format="dita" href="../design/top-CreateTheme.dita">Create a theme</xref>.</li>
                 <li><xref format="dita" href="./Extensions/tsk-CreatePackage.dita">Create a package</xref> containing your theme.</li>
-                <li><xref format="dita" href="placeholderlink">UX Guide</xref></li>
+                <li><xref format="dita" href="../_build/placeholder.dita">UX Guide</xref></li>
             </ul>
         </section>
 
         <section id="References">
             <title>References</title>
             <ul>
-                <li><xref format="dita" href="./ref-DNN8WhatsNew.dita">DNN 8.0 What's New</xref></li>
+                <li><xref format="dita" href="./top-DNN8WhatsNew.dita">DNN 8.0 What's New</xref></li>
                 <li><xref format="dita" href="./ref-Requirements.dita">DNN Requirements</xref></li>
                 <li><xref format="dita" href="./ref-Glossary.dita">Glossary</xref></li>
             </ul>

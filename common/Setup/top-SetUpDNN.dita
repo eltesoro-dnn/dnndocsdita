@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
 <topic xml:lang="en" id="top-SetUpDNN">
 
     <title>Set Up DNN</title>
@@ -15,9 +15,9 @@
                 </ul>
             </p>
 
-            <p>You can <xref format="html" href="http://www.dnnsoftware.com/products/compare-dnn-platform-to-evoq">compare the features</xref> in detail.</p>
+            <p>You can <xref format="html" scope="external" href="http://www.dnnsoftware.com/products/compare-dnn-platform-to-evoq">compare the features</xref> in detail.</p>
 
-            <p>Then, <xref format="html" href="placeholderlink">download DNN here</xref>.</p>
+            <p>Then, <xref format="dita" href="../../_build/placeholder.dita">download DNN here</xref>.</p>
 
             <draft-comment>
                 <!--
@@ -35,7 +35,7 @@
 
 
         <section id="DNNRequirements">
-            <p>For a basic installation, DNN requires Microsoft IIS and SQL server. You can view the <xref format="dita" href="/common/ref-Requirements.dita">DNN 8.0 Requirements</xref> for the compatible versions.</p>
+            <p>For a basic installation, DNN requires Microsoft IIS and SQL server. You can view the <xref format="dita" href="../ref-Requirements.dita">DNN 8.0 Requirements</xref> for the compatible versions.</p>
             <p><b>Developers:</b> Visual Studio 2015 is the recommended IDE for developing DNN modules. It is required if you are contributing to the DNN Platform.</p>
         </section>
 
@@ -43,9 +43,9 @@
 
 
     <related-links>
-        <link type="dita" href="/common/Extensions/tsk-InstallExtension.dita"><linktext>Install an Extension</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/community-blog/cid/155070/installing-dnn"><linktext>DNN Community Blog: Installing DNN by Clinton Patterson</linktext></link>
-        <link format="html" href="http://www.christoc.com/Tutorials/All-Tutorials/aid/1"><linktext>Setting up your DotNetNuke Module Development Environment by Chris Hammond</linktext></link>
+        <link type="dita" href="../Extensions/tsk-InstallExtension.dita"><linktext>Install an Extension</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155070/installing-dnn"><linktext>DNN Community Blog: Installing DNN by Clinton Patterson</linktext></link>
+        <link format="html" scope="external" href="http://www.christoc.com/Tutorials/All-Tutorials/aid/1"><linktext>Setting up your DotNetNuke Module Development Environment by Chris Hammond</linktext></link>
     </related-links>
 
 </topic>

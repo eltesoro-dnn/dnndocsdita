@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
 <topic xml:lang="en" id="top-DNN8WhatsNew">
 
 
@@ -89,8 +89,8 @@
 
 
     <related-links>
-        <link format="html" href="http://dotnetnuke.codeplex.com/releases/view/619410"><linktext>DNN Installation in Codeplex</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/services/customer-support/success-network/software-downloads/changelog"><linktext>DNN Software Downloads</linktext></link>
+        <link format="html" scope="external" href="http://dotnetnuke.codeplex.com/releases/view/619410"><linktext>DNN Installation in Codeplex</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support/success-network/software-downloads/changelog"><linktext>DNN Software Downloads</linktext></link>
     </related-links>
 
 </topic>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "reference.dtd">
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
 <reference xml:lang="en" id="ref-ThemeObjects">
 
     <title>REFERENCE: Theme Objects</title>
@@ -161,8 +161,8 @@
 
 
     <related-links>
-        <link format="html" href="http://www.timo-design.nl/"><linktext>DotNetNuke Skinning Guide - Appendix B: Skin Objects by Timo Breumelhof</linktext></link>
-        <link format="html" href="http://www.10poundgorilla.com/DNN/Skinning-Tool"><linktext>Skinning Tool / Online Reference for DNN Skins &amp; Container Objects by 10 Pound Gorilla</linktext></link>
+        <link format="html" scope="external" href="http://www.timo-design.nl/"><linktext>DotNetNuke Skinning Guide - Appendix B: Skin Objects by Timo Breumelhof</linktext></link>
+        <link format="html" scope="external" href="http://www.10poundgorilla.com/DNN/Skinning-Tool"><linktext>Skinning Tool / Online Reference for DNN Skins &amp; Container Objects by 10 Pound Gorilla</linktext></link>
     </related-links>
 
 </reference>

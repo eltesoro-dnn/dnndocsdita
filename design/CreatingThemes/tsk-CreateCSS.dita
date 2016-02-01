@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "generaltask.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
 <task xml:lang="en" id="tsk-CreateCSS">
 
     <title>Create a CSS File</title>
@@ -75,8 +75,8 @@
     <related-links>
         <link format="dita" href="./tsk-CreateLayoutTemplate.dita"><linktext>Create Layout Template</linktext></link>
         <link format="dita" href="./tsk-CreateContainer.dita"><linktext>Create Container</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><linktext>DNN Wiki: DotNetNuke Skins</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/services/professional-training/training-videos-subscription/skinning-2-creating-html-skins"><linktext>DNN Professional Training: Creating HTML Skins</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><linktext>DNN Wiki: DotNetNuke Skins</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/services/professional-training/training-videos-subscription/skinning-2-creating-html-skins"><linktext>DNN Professional Training: Creating HTML Skins</linktext></link>
     </related-links>
 
 </task>

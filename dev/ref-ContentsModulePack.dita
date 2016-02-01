@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA $eference//EN" "reference.dtd">
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA $eference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
 <reference xml:lang="en" id="ref-ContentsModulePack">
 
     <title>Contents of a Module Package</title>
@@ -36,7 +36,7 @@
 
                 <li><filepath>Models</filepath> ??? </li>
 
-                <li><filepath>Providers</filepath> contains the actual implementations of concrete data <xref format="html" href="http://www.dnnsoftware.com/wiki/providers">providers</xref> required by the module.
+                <li><filepath>Providers</filepath> contains the actual implementations of concrete data <xref format="html" scope="external" href="http://www.dnnsoftware.com/wiki/providers">providers</xref> required by the module.
                     <example>The <filepath>Providers\DataProviders\SQLDataProvider</filepath> subfolder contains three files:
                         <ul>
                             <li><filepath>00.00.01 SQLDataProvider</filepath> contains the SQL scripts that create tables and stored procedures required by the module to access the data. These scripts run when the module is installed.</li>
@@ -68,9 +68,9 @@
     <related-links>
         <link format="dita" href="../design/ref-ContentsThemePack.dita"><linktext>Contents of a Theme Package</linktext></link>
         <link format="dita" href="../common/Extensions/tsk-CreatePackage.dita"><linktext>Create the Package</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/community-blog/cid/155065/what-is-a-module"><linktext>DNN Community Blog: What Is a Module by Clinton Patterson</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/community-blog/cid/155075/module-development-templates"><linktext>DNN Community Blog: Module Development Templates by Clinton Patterson</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/wiki/providers"><linktext>DNN Wiki: Providers</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155065/what-is-a-module"><linktext>DNN Community Blog: What Is a Module by Clinton Patterson</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155075/module-development-templates"><linktext>DNN Community Blog: Module Development Templates by Clinton Patterson</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/providers"><linktext>DNN Wiki: Providers</linktext></link>
     </related-links>
 
 </reference>

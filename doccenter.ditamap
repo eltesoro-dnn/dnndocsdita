@@ -3,11 +3,10 @@
 <map xml:lang="en" id="Design">
     <title>Doc Center</title>
 
-    <!-- <topicref href="./admin/admin.ditamap" format="ditamap" /> -->
-    <topicref href="./dev/dev.ditamap" format="ditamap" />
-    <topicref href="./design/design.ditamap" format="ditamap" />
-    <topicref href="./common/Setup/SetUpDNN.ditamap" format="ditamap" />
-    <topicref href="./common/Extensions/Extensions.ditamap" format="ditamap" />
+    <!-- <topicref href="admin.ditamap" format="ditamap" /> -->
+    <topicref href="dev.ditamap" format="ditamap" />
+    <topicref href="design.ditamap" format="ditamap" />
+    <topicref href="Setup.ditamap" format="ditamap" />
 
     <!--
     <reltable>

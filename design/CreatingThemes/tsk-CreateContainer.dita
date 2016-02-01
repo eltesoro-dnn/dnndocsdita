@@ -1,21 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "generaltask.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
 <task xml:lang="en" id="tsk-CreateContainer">
 
     <title>Create a Container</title>
 
     <taskbody>
 
-        <section id="overview">
-            <title>Overview</title>
-
+        <context id="overview">
             <p>Containers allow designers to seamlessly integrate modules from many different developers into a cohesive website design. Containers can also include visual elements that allow website users to interact with the module.</p>
             <ul>
                 <li>You can have a default container, which would be overridden by individual panes or modules if they provide their own style definitions.</li>
                 <li>You can use different containers in a single page.</li>
                 <li>You can mix and match any container with any CSS.</li>
             </ul>
-        </section>
+        </context>
 
 
         <steps>
@@ -58,19 +56,20 @@
                         <li>TITLE</li>
                         <li>VISIBILITY</li>
                     </ul>
-                    <p><ph conref="../../common/bptext/bp-TipSkinningTool.html" /></p>
+                    <p><ph conref="../../common/bptext.dita#note-TipSkinningTool" /></p>
                 </info>
             </step>
         </steps>
+
     </taskbody>
 
 
     <related-links>
         <link format="dita" href="./tsk-CreateCSS.dita"><linktext>Create CSS</linktext></link>
         <link format="dita" href="./tsk-CreateLayoutTemplate.dita"><linktext>Create Layout Template</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><linktext>DNN Wiki: DotNetNuke Skins</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/community-blog/cid/131995/dotnetnuke-skinning-101-part-3"><linktext>DNN Community blog: DotNetNuke Skinning 101 (Part 3) by Joe Brinkman</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/services/professional-training/training-videos-subscription/skinning-2-creating-html-skins"><linktext>DNN Professional Training: Creating HTML Skins</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><linktext>DNN Wiki: DotNetNuke Skins</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/131995/dotnetnuke-skinning-101-part-3"><linktext>DNN Community blog: DotNetNuke Skinning 101 (Part 3) by Joe Brinkman</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/services/professional-training/training-videos-subscription/skinning-2-creating-html-skins"><linktext>DNN Professional Training: Creating HTML Skins</linktext></link>
     </related-links>
 
 </task>

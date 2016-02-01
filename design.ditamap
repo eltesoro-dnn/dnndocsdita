@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="Design">
+    <title>Designer Center</title>
+
+    <topicref format="dita" href="design/con-AboutThemes.dita" type="concept" />
+    <topicref format="dita" href="design/CreatingThemes/top-CreateTheme.dita" type="topic" collection-type="sequence">
+        <topicref format="dita" href="design/CreatingThemes/tsk-CreateLayoutTemplate.dita" type="task" />
+        <topicref format="dita" href="design/CreatingThemes/tsk-CreateContainer.dita" type="task" />
+        <!-- <topicref format="dita" href="design/CreatingThemes/tsk-ConvertHTMLToASCX.dita" type="task" /> -->
+        <topicref format="dita" href="design/CreatingThemes/tsk-CreateCSS.dita" type="task" />
+        <topicref format="dita" href="design/CreatingThemes/tsk-CreateDocTypeXML.dita" type="task" />
+    </topicref>
+    <topicref format="dita" href="common/Extensions/tsk-CreatePackage.dita" type="task" />
+    <topicref format="dita" href="common/Extensions/tsk-InstallExtension.dita" type="task" />
+    <!-- <topicref format="dita" href="design/ref-ThemeObjects.dita" type="reference" /> -->
+    <!-- <topicref format="dita" href="design/ref-ContentsThemePack.dita" type="reference" /> -->
+
+    <reltable>
+        <relheader>
+            <relcolspec type="concept"/>
+            <relcolspec type="task"/>
+            <relcolspec type="reference"/>
+        </relheader>
+        <relrow>
+            <relcell>
+                <topicref format="dita" href="design/con-AboutThemes.dita" type="concept" collection-type="sequence" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" href="design/CreatingThemes/tsk-CreateLayoutTemplate.dita" type="task" />
+                <topicref format="dita" href="design/CreatingThemes/tsk-CreateCSS.dita" type="task" />
+                <topicref format="dita" href="design/CreatingThemes/tsk-CreateContainer.dita" type="task" />
+                <topicref format="dita" href="design/CreatingThemes/tsk-CreateDocTypeXML.dita" type="task" />
+            </relcell>
+            <relcell/>
+        </relrow>
+    </reltable>
+</map>

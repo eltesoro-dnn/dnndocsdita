@@ -1,12 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "task.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
 <task xml:lang="en" id="tsk-ConvertHTMLToASCX">
 
     <title>Convert the Layout Template or Container from HTML to ASCX</title>
 
     <taskbody>
-
-        <prereq><ph conref="../../common/bptext/bp-PrereqHost.dita" /></prereq>
 
         <section id="overview">
             <title>Overview</title>
@@ -24,7 +22,19 @@
                 <!-- What are the Control code and Registry code lines really called? -->
             </draft-comment>
 
+            <note type="note">
+                <p>The conversion only goes in one direction (from HTML to ASCX).</p>
+                <p>To make changes to the layout template:
+                    <ul>
+                        <li>Make changes directly to the ASCX file.</li>
+                        <li>Make the changes in your original HTML file and reconvert it to ASCX. <note type="warning">This overrides prior changes made directly to the ASCX file.</note></li>
+                    </ul>
+                </p>
+            </note>
         </section>
+
+
+        <prereq><ph conref="../../common/bptext.dita#ph-PrereqHost" /></prereq>
 
 
         <steps>
@@ -51,29 +61,19 @@
                 </info>
             </step>
 
-            <step><cmd>Confirm:
-                    <ul>
-                        <li>That a section appears under <uicontrol>Themes</uicontrol> for each converted HTML file.</li>
-                        <li>That no errors appear in the log.</li>
-                        <li>That the new ASCX file appears in the same folder as the HTML file.</li>
-                    </ul>
-                </cmd>
+            <step><cmd>Verify the success of the conversion.</cmd>
                 <info>
+                    <p>Confirm:
+                        <ul>
+                            <li>That a section appears under <uicontrol>Themes</uicontrol> for each converted HTML file.</li>
+                            <li>That no errors appear in the log.</li>
+                            <li>That the new ASCX file appears in the same folder as the HTML file.</li>
+                        </ul>
+                    </p>
                     <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-11.png"><alt>Result of conversion</alt></image>
                 </info>
             </step>
         </steps>
-
-
-        <section>
-            <note type="note">The conversion only goes in one direction (from HTML to ASCX).</note>
-            <p>To make changes to the layout template:
-                <ul>
-                    <li>Make changes directly to the ASCX file.</li>
-                    <li>Make the changes in your original HTML file and reconvert it to ASCX. <note type="warning">This overrides prior changes made directly to the ASCX file.</note></li>
-                </ul>
-            </p>
-        </section>
 
 
         <example id="simple">
@@ -117,8 +117,8 @@
     <related-links>
         <link format="dita" href="./tsk-CreateLayoutTemplate.dita"><linktext>Create Layout Template</linktext></link>
         <link format="dita" href="./tsk-CreateContainer.dita"><linktext>Create a Container</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><linktext>DNN Wiki: DotNetNuke Skins</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/community-blog/cid/132000/dotnetnuke-skinning-101-part-1"><linktext>DNN Community blog: DotNetNuke Skinning 101 (Part 1) by Joe Brinkman</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><linktext>DNN Wiki: DotNetNuke Skins</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/132000/dotnetnuke-skinning-101-part-1"><linktext>DNN Community blog: DotNetNuke Skinning 101 (Part 1) by Joe Brinkman</linktext></link>
     </related-links>
 
 </task>

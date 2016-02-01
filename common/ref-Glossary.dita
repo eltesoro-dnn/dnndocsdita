@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE glossgroup PUBLIC "-//OASIS//DTD DITA Glossgroup//EN" "glossgroup.dtd">
+<!DOCTYPE glossgroup PUBLIC "-//OASIS//DTD DITA Glossgroup//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossgroup.dtd">
 <glossgroup xml:lang="en" id="Glossary">
 
     <title>Glossary</title>
@@ -30,7 +30,7 @@
 
     <glossentry xml:lang="en" id="Forge">
         <glossterm>Forge</glossterm>
-        <glossdef>The <a href="http://www.dnnsoftware.com/forge">list of open-source extensions</a> (including modules and themes) from the DNN community.</glossdef>
+        <glossdef>The <a scope="external" href="http://www.dnnsoftware.com/forge">list of open-source extensions</a> (including modules and themes) from the DNN community.</glossdef>
     </glossentry>
 
 
@@ -50,7 +50,7 @@
             </ul>
         </glossdef>
         <related-links>
-            <link format="html" href="http://www.dnnsoftware.com/wiki/url-rewriting"><linktext>URL Rewriting</linktext></link>
+            <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/url-rewriting"><linktext>URL Rewriting</linktext></link>
         </related-links>
     </glossentry>
 
@@ -127,7 +127,7 @@
         <glossterm>provider</glossterm>
         <glossdef>A type of DNN extension that provides an alternative implementation of a specific functionality of the DNN Platform. Examples: authentication providers, data providers, and navigation providers. In most cases, even if multiple implementations are available in a DNN installation, only one implementation of each provider type is active at any time.</glossdef>
         <related-links>
-            <link format="dita" href="../dev/ref-Providers.dita"><linktext>Providers Reference</linktext></link>
+            <link format="dita" href="../dev/top-Providers.dita"><linktext>Providers Reference</linktext></link>
         </related-links>
     </glossentry>
 
@@ -196,7 +196,9 @@
 
     <glossentry xml:lang="en" id="themeObject">
         <glossterm>theme object</glossterm>
-        <glossdef>A type of DNN extension used in themes to provide additional functionality for common UI elements on a webpage. Examples: menu bar, copyright notice, login/registration links, privacy link, terms of service link, and search box. Theme objects are configured by the theme designer. <!--#include virtual="/common/bptext/bp-TipSkinningTool.html" --></glossdef>
+        <glossdef>A type of DNN extension used in themes to provide additional functionality for common UI elements on a webpage. Examples: menu bar, copyright notice, login/registration links, privacy link, terms of service link, and search box. Theme objects are configured by the theme designer.
+            <note conref="./bptext.dita#note-TipSkinningTool" />
+        </glossdef>
         <related-links>
             <link format="dita" href="#token"><linktext>Token</linktext></link>
         </related-links>
@@ -213,8 +215,8 @@
 
 
     <related-links>
-        <link format="html" href="http://www.dnnsoftware.com/wiki/dotnetnuke-glossary"><linktext>DNN wiki: DNN Glossary</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/wiki/international-glossary"><linktext>DNN wiki: Globalization Glossary</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/dotnetnuke-glossary"><linktext>DNN wiki: DNN Glossary</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/international-glossary"><linktext>DNN wiki: Globalization Glossary</linktext></link>
     </related-links>
 
 

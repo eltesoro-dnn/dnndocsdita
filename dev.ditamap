@@ -3,14 +3,14 @@
 <map xml:lang="en" id="Design">
     <title>Developer Center</title>
 
-    <topicref format="dita" href="./CreatingModules/con-CreateModule.dita" type="concept" collection-type="sequence" >
-        <topicref format="dita" href="./CreatingModules/tsk-CreateModuleWithTemplates.dita" type="task" />
-        <topicref format="dita" href="./CreatingModules/tsk-StartVSProjWithTemplates.dita" type="task" />
-        <topicref format="dita" href="./CreatingModules/tsk-TestModule.dita" type="task" />
-        <topicref format="dita" href="./con-AboutEVS.dita" type="concept" />
-        <topicref format="dita" href="./ref-Providers.dita" type="reference" />
+    <topicref format="dita" href="dev/CreatingModules/top-CreateModule.dita" type="topic" collection-type="sequence" >
+        <topicref format="dita" href="dev/CreatingModules/tsk-CreateModuleUsingTemplates.dita" type="task" />
+        <topicref format="dita" href="dev/CreatingModules/tsk-StartVSProjWithTemplates.dita" type="task" />
+        <topicref format="dita" href="dev/CreatingModules/tsk-TestModule.dita" type="task" />
         <!-- <topicref format="dita" href="./ref-ContentsModulePack.dita" type="reference" /> -->
     </topicref>
+    <topicref format="dita" href="dev/con-AboutEVS.dita" type="concept" />
+    <topicref format="dita" href="dev/top-Providers.dita" type="topic" />
 
     <!--
     <reltable>

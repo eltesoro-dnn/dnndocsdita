@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "generaltask.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
 <task xml:lang="en" id="myID">
 
     <title>Create the Package</title>
+    <titlealts>
+        <navtitle>Create the Package</navtitle>
+    </titlealts>
+
 
     <taskbody>
 
@@ -30,7 +34,7 @@
                 </info>
             </step>
 
-            <step><cmd>Create the <xref href="/common/Extensions/DNNManifestSchema.shtml">DNN Manifest</xref>.</cmd></step>
+            <step><cmd>Create the <xref format="dita" href="/common/Extensions/ref-DNNManifestSchema.dita">DNN Manifest</xref>.</cmd></step>
 
             <step><cmd>Zip up your files, including the DNN Manifest in the root folder.</cmd></step>
         </steps>
@@ -40,7 +44,7 @@
 
     <related-links>
         <link format="dita" href="./tsk-InstallExtension.dita"><linktext>Install an Extension</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/services/professional-training/training-videos-subscription/skinning-5-packaging"><linktext>DNN Professional Training video: Skinning 5: Packaging</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/services/professional-training/training-videos-subscription/skinning-5-packaging"><linktext>DNN Professional Training video: Skinning 5: Packaging</linktext></link>
     </related-links>
 
 </task>

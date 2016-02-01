@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "generaltask.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
 <task xml:lang="en" id="myID">
 
     <title>Install an Extension</title>
 
     <taskbody>
 
-        <prereq><ph conref="../bptext/bp-PrereqHost.dita" /></prereq>
-
-
         <section>
             <p>A DNN extension can contain a <term>module</term>, a <term>theme</term>, or other components that extend the functionality of the DNN Platform.</p>
-            <p><ph conref="../bptext/bp-3rdPartyExtensions.html" /></p>
-            <p>You can also create your custom <xref format="dita" href="../../dev/CreatingModules.dita">modules</xref> and <xref format="dita" href="../../design/CreatingThemes.dita">themes</xref>.</p>
+            <p><ph conref="../bptext.dita#p-3rdPartyExtensions" /></p>
+            <p>You can also create your custom <xref format="dita" href="../../dev/CreatingModules/top-CreateModule.dita">modules</xref> and <xref format="dita" href="../../design/CreatingThemes/top-CreateTheme.dita">themes</xref>.</p>
             <p>The extension must be added by the <term>host</term> / <term>super user</term> account to the DNN installation before it can be used in any of the websites.</p>
         </section>
+
+
+        <prereq><ph conref="../bptext.dita#ph-PrereqHost" /></prereq>
 
 
         <steps>
@@ -68,8 +68,8 @@
     <related-links>
         <link format="dita" href="./tsk-CreatePackage.dita"><linktext>Create the Package</linktext></link>
         <link format="dita" href="./ref-DNNManifestSchema.dita"><linktext>The DNN Manifest Schema</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/community-blog/cid/155092/installing-our-module-in-another-dnn-instance"><linktext>DNN Community blog: Installing Our Module in Another DNN Instance by Clinton Patterson</linktext></link>
-        <link format="html" href="http://www.dnnsoftware.com/forge/2sxc-800-amazing-content-and-apps-9733-9733-9733-9733-9733-rating"><linktext>>DNN Forge: 2sxc 8.0.11 - Amazing Content and Apps by 2sxc (installed as an example for screenshots)</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155092/installing-our-module-in-another-dnn-instance"><linktext>DNN Community blog: Installing Our Module in Another DNN Instance by Clinton Patterson</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/forge/2sxc-800-amazing-content-and-apps-9733-9733-9733-9733-9733-rating"><linktext>>DNN Forge: 2sxc 8.0.11 - Amazing Content and Apps by 2sxc (installed as an example for screenshots)</linktext></link>
     </related-links>
 
 </task>

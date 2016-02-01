@@ -4,11 +4,11 @@
     <title>Set Up DNN</title>
 
     <!-- <topicref format="dita" href="/common/ref-Requirements.dita" topic="reference" /> -->
-    <topicref format="dita" href="top-SetUpDNN.dita" type="topic" collection-type="sequence" >
-        <topicref format="dita" href="tsk-SetUpDNNFolder.dita" type="task" />
-        <topicref format="dita" href="tsk-SetUpIIS.dita" type="task" />
-        <topicref format="dita" href="tsk-SetUpSQL.dita" type="task" />
-        <topicref format="dita" href="tsk-RunInstWiz.dita" type="task" />
+    <topicref format="dita" href="common/Setup/top-SetUpDNN.dita" type="topic" collection-type="sequence" >
+        <topicref format="dita" href="common/Setup/tsk-SetUpDNNFolder.dita" type="task" />
+        <topicref format="dita" href="common/Setup/tsk-SetUpIIS.dita" type="task" />
+        <topicref format="dita" href="common/Setup/tsk-SetUpSQL.dita" type="task" />
+        <topicref format="dita" href="common/Setup/tsk-RunInstWiz.dita" type="task" />
     </topicref>
 
     <!--
