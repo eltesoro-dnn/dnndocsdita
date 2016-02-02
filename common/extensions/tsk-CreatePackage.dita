@@ -34,7 +34,7 @@
                 </info>
             </step>
 
-            <step><cmd>Create the <xref format="dita" href="/common/Extensions/ref-DNNManifestSchema.dita">DNN Manifest</xref>.</cmd></step>
+            <step><cmd>Create the <xref format="dita" href="./ref-DNNManifestSchema.dita">DNN Manifest</xref>.</cmd></step>
 
             <step><cmd>Zip up your files, including the DNN Manifest in the root folder.</cmd></step>
         </steps>

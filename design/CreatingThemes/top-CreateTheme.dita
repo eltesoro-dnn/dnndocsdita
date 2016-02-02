@@ -8,9 +8,11 @@
 
         <section>
             <p>Themes are comprised of layout templates for the webpages, containers for modules, their associated CSS, and their DocType files. These files, along with the DNN Manifest, are packaged into a zip file, which is used to install your theme.</p>
+
+            <note conref="../../common/bptext.dita#bptext/note-TipSkinningTool"></note>
         </section>
 
-        <prereq><xref format="dita" href="../../common/Setup/tsk-SetUpDNN.dita">A local DNN installation</xref> with <b>Host</b> permissions.</prereq>
+        <prereq><xref format="dita" href="../../common/Setup/top-SetUpDNN.dita">A local DNN installation</xref> with <b>Host</b> permissions.</prereq>
 
         <steps>
             <step><cmd><xref format="dita" href="./tsk-CreateLayoutTemplate.dita">Create layout templates for the webpages.</xref></cmd></step>
@@ -29,10 +31,6 @@
                 </substeps>
             </step>
         </steps>
-
-        <section>
-            <note conref="../../common/bptext.dita#note-TipSkinningTool" />
-        </section>
 
     </taskbody>
 

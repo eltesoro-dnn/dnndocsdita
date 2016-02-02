@@ -23,12 +23,12 @@
                     <substep><cmd>Run Visual Studio as an administrator.</cmd></substep>
                     <substep><cmd>Go to <menucascade><uicontrol>Tools</uicontrol> <uicontrol>Extensions and Updates</uicontrol></menucascade>.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="center" href="/common/img/scr-VS2015ExtAndUpdates.png"><alt>Tools > Extensions and Updates</alt></image>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-VS2015ExtAndUpdates.png"><alt>Tools > Extensions and Updates</alt></image>
                         </info>
                     </substep>
                     <substep><cmd>Highlight the <menucascade><uicontrol>Online</uicontrol> <uicontrol>Visual Studio Gallery</uicontrol></menucascade> tree and search for <uicontrol>DotNetNuke</uicontrol>.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="center" href="/common/img/scr-VS2015Search4DNN.png"><alt>In the Online > Visual Studio Gallery tree, search for DotNetNuke then Download.</alt></image>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-VS2015Search4DNN.png"><alt>In the Online > Visual Studio Gallery tree, search for DotNetNuke then Download.</alt></image>
                         </info>
                     </substep>
                     <substep><cmd>Click the <uicontrol>Download</uicontrol> button for the <uicontrol>DotNetNuke Project Templates</uicontrol>.</cmd></substep>
@@ -43,7 +43,7 @@
                                 <li>Dnn.Mvc.Module.vsix</li>
                                 <li>Dnn.Spa.Module.vsix</li>
                             </ul>
-                            <image scalefit="yes" placement="break" align="center" href="/common/img/scr-VS2015DNN8Templates-11.png"><alt>Download DNN8 templates from Github.</alt></image>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-VS2015DNN8Templates-11.png"><alt>Download DNN8 templates from Github.</alt></image>
                             <draft-comment>
                                 <!-- This screenshot might not be a good idea to include because it will need to be updated frequently. However, we need to visually balance the bullet for Chris Hammond's templates. Without this screenshot, this step could easily be overlooked. -->
                             </draft-comment>
@@ -60,10 +60,10 @@
                     <substep><cmd><menucascade><uicontrol>File</uicontrol> <uicontrol>New</uicontrol> <uicontrol>Project</uicontrol></menucascade></cmd></substep>
                     <substep><cmd>Select the template for the new project.</cmd>
                         <info>For Chris Hammond's templates, go to <menucascade><uicontrol>Installed</uicontrol> <uicontrol>Templates</uicontrol> <uicontrol>Visual C# or Visual Basic</uicontrol> <uicontrol>DotNetNuke</uicontrol></menucascade>.
-                            <image scalefit="yes" placement="break" align="center" href="/common/img/scr-VS2015NewProjectWithTemplates-02.png"><alt>Visual Studio > New > Project with Chris Hammond's templates</alt></image>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-VS2015NewProjectWithTemplates-02.png"><alt>Visual Studio > New > Project with Chris Hammond's templates</alt></image>
                         </info>
                         <info>For the DNN 8 templates, go to <menucascade><uicontrol>Installed</uicontrol> <uicontrol>Templates</uicontrol> <uicontrol>Visual C#</uicontrol> <uicontrol>Dnn</uicontrol></menucascade>.
-                            <image scalefit="yes" placement="break" align="center" href="/common/img/scr-VS2015NewProjectWithTemplates-01.png"><alt>Visual Studio > New > Project with DNN8 templates</alt></image>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-VS2015NewProjectWithTemplates-01.png"><alt>Visual Studio > New > Project with DNN8 templates</alt></image>
                         </info>
                     </substep>
                     <substep><cmd>Fill in the settings.</cmd>
