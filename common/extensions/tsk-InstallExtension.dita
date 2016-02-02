@@ -8,13 +8,13 @@
 
         <section>
             <p>A DNN extension can contain a <term>module</term>, a <term>theme</term>, or other components that extend the functionality of the DNN Platform.</p>
-            <p conref="../bptext.dita#bptext/p-3rdPartyExtensions"></p>
+            <p conkeyref="k-bptext/p-3rdPartyExtensions"></p>
             <p>You can also create your custom <xref format="dita" href="../../dev/CreatingModules/top-CreateModule.dita">modules</xref> and <xref format="dita" href="../../design/CreatingThemes/top-CreateTheme.dita">themes</xref>.</p>
             <p>The extension must be added by the <term>host</term> / <term>super user</term> account to the DNN installation before it can be used in any of the websites.</p>
         </section>
 
 
-        <prereq><ph conref="../bptext.dita#bptext/ph-PrereqHost"></ph></prereq>
+        <prereq><ph conkeyref="k-bptext/ph-PrereqHost"></ph></prereq>
 
 
         <steps>

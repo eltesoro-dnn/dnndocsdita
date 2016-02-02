@@ -100,7 +100,7 @@
 
 
         <section id="3rdparty">
-            <p conref="../common/bptext.dita#bptext/p-3rdPartyExtensions"></p>
+            <p conkeyref="k-bptext/p-3rdPartyExtensions"></p>
         </section>
 
     </conbody>

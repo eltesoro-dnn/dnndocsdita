@@ -7,6 +7,7 @@
     <body>
 
         <!-- <p conref="../../common/bptext.dita#bptext/p-3rdPartyExtensions"></p> -->
+        <!-- <p conkeyref="k-bptext/p-3rdPartyExtensions"></p> -->
         <p id="p-3rdPartyExtensions">Thousands of third-party modules and themes are available from these sources:
             <ul>
                 <li><xref format="html" scope="external" href="http://store.dnnsoftware.com">DNN Store</xref>: Extensions for sale. Some developers provide versions that include the source code.</li>
@@ -17,18 +18,21 @@
 
         <p>
         <!-- <ph conref="../../common/bptext.dita#bptext/ph-PrereqHost"></ph> -->
+        <!-- <ph conkeyref="k-bptext/ph-PrereqHost"></ph> -->
         <ph id="ph-PrereqHost"><b>A host / super user account.</b> Host privileges are required to upload modules and themes, because they might contain executable code. (An administrator account is sufficient to apply modules and themes to a website.)</ph>
         </p>
 
 
         <p>
         <!-- <ph conref="../../common/bptext.dita#bptext/ph-RFC2119"></ph> -->
+        <!-- <ph conkeyref="k-bptext/ph-RFC2119"></ph> -->
         <ph id="ph-RFC2119">The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in <xref format="html" scope="external" href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</xref>.
         </ph>
         </p>
 
 
         <!-- <note conref="../../common/bptext.dita#bptext/note-TipSkinningTool"></note> -->
+        <!-- <note conkeyref="k-bptext/note-TipSkinningTool"></note> -->
         <note type="tip" id="note-TipSkinningTool"><xref type="html" scope="external" href="http://www.10poundgorilla.com/">10 Pound Gorilla</xref>'s <xref scope="external" href="http://www.10poundgorilla.com/DNN/Skinning-Tool">Skinning Tool</xref> is both a reference and a tool that customizes the code for DNN theme objects, based on the attribute values you specify.</note>
 
     </body>
