@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map xml:lang="en" id="Design">
-    <title>Administrator Center</title>
+<map xml:lang="en" id="map-DocCtr">
 
-    <topicref format="dita" href="../common/Setup" type="topic" collection-type="sequence" >
-    </topicref>
+    <title>Doc Center</title>
+
+    <mapref href="admctr.ditamap" />
+    <mapref href="devctr.ditamap" />
+    <mapref href="dsgctr.ditamap" />
+
+    <keydef keys="k-bptext" href="common/bptext.dita#bptext" />
+
 
     <!--
     <reltable>
@@ -24,4 +29,3 @@
     -->
 
 </map>
-

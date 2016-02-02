@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-AdmCtr">
+
+    <title>Administrator Center</title>
+
+
+    <topichead id="AdmCtr" navtitle="Administrator Center" toc="yes" print="yes">
+        <topichead id="GettingStarted" navtitle="Getting Started" toc="yes" print="yes">
+            <mapref href="setup.ditamap" />
+            <topicref format="dita" href="common/Extensions/tsk-InstallExtension.dita" type="task" />
+        </topichead>
+
+        <topichead id="AdmRefs" navtitle="Administrator References" toc="yes" print="yes">
+        </topichead>
+    </topichead>
+
+
+    <!--
+    <reltable>
+        <relheader>
+            <relcolspec type="concept"/>
+            <relcolspec type="task"/>
+            <relcolspec type="reference"/>
+        </relheader>
+        <relrow>
+            <relcell/>
+            <relcell>
+            </relcell>
+            <relcell/>
+        </relrow>
+
+    </reltable>
+    -->
+
+</map>
+
