@@ -5,15 +5,25 @@
     <title>Administrator Center</title>
 
 
-    <topichead id="AdmCtr" navtitle="Administrator Center" toc="yes" print="yes">
-        <topichead id="GettingStarted" navtitle="Getting Started" toc="yes" print="yes">
-            <mapref href="setup.ditamap" />
-            <topicref format="dita" href="common/Extensions/tsk-InstallExtension.dita" type="task" />
-        </topichead>
+    <!-- <topichead id="AdmCtr" navtitle="Administrator Center" toc="yes" print="yes"> -->
+    <topicref format="dita" type="concept" href="admin/con-AdmCtr.dita" >
+        <topicsetref href="docctr.ditamap#DNNintro" />
+
+        <mapref href="setup.ditamap" />
+
+        <topicref format="dita" type="task" href="common/Extensions/tsk-InstallExtension.dita" />
 
         <topichead id="AdmRefs" navtitle="Administrator References" toc="yes" print="yes">
+                <!-- <xref format="dita" href="../_build/placeholder.dita">DNN 8.0 User Guide</xref> -->
+                <!-- <xref format="dita" href="../_build/placeholder.dita">Evoq 8.x User Guide</xref> -->
+                <!--
+                Security Guide
+                Web Farm Configuration Guide
+                Performance Tuning
+                -->
+                <topicsetref href="docctr.ditamap#GlobalRefs" />
         </topichead>
-    </topichead>
+    </topicref>
 
 
     <!--

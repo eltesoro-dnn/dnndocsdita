@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
 <map xml:lang="en" id="SetUpDNN">
+
     <title>Set Up DNN</title>
 
+
     <!-- <topicref format="dita" href="common/ref-Requirements.dita" topic="reference" /> -->
-    <topicref format="dita" href="common/Setup/top-SetUpDNN.dita" type="topic" collection-type="sequence">
-        <topicref format="dita" href="common/Setup/tsk-SetUpDNNFolder.dita" type="task" />
-        <topicref format="dita" href="common/Setup/tsk-SetUpIIS.dita" type="task" />
-        <topicref format="dita" href="common/Setup/tsk-SetUpSQL.dita" type="task" />
-        <topicref format="dita" href="common/Setup/tsk-RunInstWiz.dita" type="task" />
+    <topicref format="dita" type="topic" href="common/Setup/top-SetUpDNN.dita" collection-type="sequence">
+        <topicref format="dita" type="task" href="common/Setup/tsk-SetUpDNNFolder.dita" />
+        <topicref format="dita" type="task" href="common/Setup/tsk-SetUpIIS.dita" />
+        <topicref format="dita" type="task" href="common/Setup/tsk-SetUpSQL.dita" />
+        <topicref format="dita" type="task" href="common/Setup/tsk-RunInstWiz.dita" />
     </topicref>
 
-    <!--
+
     <reltable>
         <relheader>
             <relcolspec type="concept"/>
@@ -19,13 +21,15 @@
             <relcolspec type="reference"/>
         </relheader>
         <relrow>
-            <relcell/>
             <relcell>
+                <topicref format="dita" type="topic" href="common/Setup/top-SetUpDNN.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="task" href="common/Extensions/tsk-InstallExtension.dita" />
             </relcell>
             <relcell/>
         </relrow>
 
     </reltable>
-    -->
 
 </map>
