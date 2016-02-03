@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE glossgroup PUBLIC "-//OASIS//DTD DITA Glossgroup//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossgroup.dtd">
-<glossgroup xml:lang="en" id="Glossary">
+<glossgroup xml:lang="en" id="glo-GroupAll">
 
-    <title>Glossary</title>
+    <!--
+    * This is only a repository of glossary terms. For simplicity, they are compiled in this single file, instead of being in multiple files.
+    * The glo-Glossary.dita is the actual deliverable containing all these terms. If you only want a subset of these terms, create another deliverable dita file.
+    * See the glossrefs.ditamap for glosskeys to each entry.
+    * You can refer to a glossary term within text. https://www.oasis-open.org/committees/download.php/34831/GlossarySpecializationBestPractice_Final.pdf Section 5.2.2
+    -->
+
 
     <glossentry xml:lang="en" id="AUM">
         <glossterm>Advanced URL Management</glossterm>
@@ -30,7 +36,7 @@
 
     <glossentry xml:lang="en" id="Forge">
         <glossterm>Forge</glossterm>
-        <glossdef>The <a scope="external" href="http://www.dnnsoftware.com/forge">list of open-source extensions</a> (including modules and themes) from the DNN community.</glossdef>
+        <glossdef>The <xref format="html" scope="external" href="http://www.dnnsoftware.com/forge">list of open-source extensions</xref> (including modules and themes) from the DNN community.</glossdef>
     </glossentry>
 
 
@@ -42,7 +48,7 @@
 
     <glossentry xml:lang="en" id="friendlyURL">
         <glossterm>friendly URL</glossterm>
-        <glossdef>A URL that hides a coded path. Example: <codeph>http://www.example.com/myanswerpage</codeph> might actually resolve to <codeph>http://www.example.com/default.aspx?tabid=42</codeph>. DNN provides three modes of friendly URLs:
+        <glossdef>A URL that hides a coded path. Example: <filepath>http://www.example.com/myanswerpage</filepath> might actually resolve to <filepath>http://www.example.com/default.aspx?tabid=42</filepath>. DNN provides three modes of friendly URLs:
             <ul>
                 <li><b>Advanced</b> provides both human-friendly and search-friendly URLs.</li>
                 <li><b>HumanFriendly</b> uses simple URLs for page names and uses <codeph>tabid</codeph> in more complicated URLs. Limited redirect support.</li>
@@ -127,7 +133,7 @@
         <glossterm>provider</glossterm>
         <glossdef>A type of DNN extension that provides an alternative implementation of a specific functionality of the DNN Platform. Examples: authentication providers, data providers, and navigation providers. In most cases, even if multiple implementations are available in a DNN installation, only one implementation of each provider type is active at any time.</glossdef>
         <related-links>
-            <link format="dita" href="../dev/top-Providers.dita"><linktext>Providers Reference</linktext></link>
+            <link format="dita" href="../../dev/top-Providers.dita"><linktext>Providers Reference</linktext></link>
         </related-links>
     </glossentry>
 
@@ -218,6 +224,5 @@
         <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/dotnetnuke-glossary"><linktext>DNN wiki: DNN Glossary</linktext></link>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/international-glossary"><linktext>DNN wiki: Globalization Glossary</linktext></link>
     </related-links>
-
 
 </glossgroup>
