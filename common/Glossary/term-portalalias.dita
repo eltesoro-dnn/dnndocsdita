@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
+<glossentry xml:lang="en" id="portalalias">
+
+    <glossterm>portal alias</glossterm>
+    <glossdef>A URL that refers to a specific website in a DNN installation. Examples: <codeph>http://www.example.com</codeph> (parent portal alias), <codeph>http://www.example.com/pathname</codeph> (child portal alias). Each website can have one or more portal aliases.</glossdef>
+
+</glossentry>

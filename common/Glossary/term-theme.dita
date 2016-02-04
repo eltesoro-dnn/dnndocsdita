@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
+<glossentry xml:lang="en" id="theme">
+
+    <glossterm>theme</glossterm>
+    <glossdef>A set of related components that define the look and feel of a webpage or website. These components include:
+        <ul>
+            <li>one or more layout templates, and</li>
+            <li>an optional CSS for each of the templates, or an optional master CSS for the entire website.</li>
+        </ul>
+        <p>In contrast, a <term id="container">container</term> and any associated CSS define the look and feel of a module in a single pane of a page.</p>
+    </glossdef>
+
+    <glossBody>
+        <glossAlt id="skin">
+            <glossSynonym>skin</glossSynonym>
+            <glossUsage><ph conkeyref="k-bptext/ph-oldterm"></ph>S</glossUsage>
+        </glossAlt>
+    </glossBody>
+
+</glossentry>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
+<glossentry xml:lang="en" id="site">
+
+    <glossterm>site</glossterm>
+    <glossdef>A specific website in a DNN installation, which can host multiple websites that share files and resources.</glossdef>
+
+    <glossBody>
+        <glossAlt id="portal">
+            <glossSynonym>portal</glossSynonym>
+            <glossUsage><ph conkeyref="k-bptext/ph-oldterm"></ph></glossUsage>
+        </glossAlt>
+    </glossBody>
+
+</glossentry>

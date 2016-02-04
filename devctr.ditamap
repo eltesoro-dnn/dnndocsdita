@@ -28,7 +28,7 @@
             <topicref format="dita" type="concept" href="dev/con-AboutEVS.dita" />
             <!-- <topicref format="dita" type="reference" href="dev/ref-ContentsModulePack.dita" /> -->
             <topicref format="dita" type="reference" keyref="k-manifest" />
-            <topicsetref href="docctr.ditamap#GlobalRefs" />
+            <mapref keyref="k-glossarymap" />
         </topichead>
     </topicref>
 

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
+<glossentry xml:lang="en" id="package">
+
+    <glossterm>package</glossterm>
+    <glossdef>The zip file that contains all files required to install an extension in a DNN-based website. Also, a section of the DNN Manifest schema that specifies how the core components of the extension are installed.</glossdef>
+
+</glossentry>

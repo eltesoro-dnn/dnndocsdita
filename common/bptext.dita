@@ -35,6 +35,15 @@
         <!-- <note conkeyref="k-bptext/note-TipSkinningTool"></note> -->
         <note type="tip" id="note-TipSkinningTool"><xref type="html" scope="external" href="http://www.10poundgorilla.com/">10 Pound Gorilla</xref>'s <xref scope="external" href="http://www.10poundgorilla.com/DNN/Skinning-Tool">Skinning Tool</xref> is both a reference and a tool that customizes the code for DNN theme objects, based on the attribute values you specify.</note>
 
+
+        <p>
+        <!-- <ph conref="../../common/bptext.dita#bptext/ph-oldterm"></ph> -->
+        <!-- <ph conkeyref="k-bptext/ph-oldterm"></ph> -->
+        <ph id="ph-oldterm">This is the old term, still used in some APIs and UI controls.</ph>
+        </p>
+
+
+
     </body>
 
 </topic>
