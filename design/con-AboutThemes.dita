@@ -62,7 +62,7 @@
 
             <table frame="all" colsep="1" rowsep="1" >
                 <tgroup cols="2" align="center">
-                    <colspec colnum="2"/>
+                    <colspec colnum="2" colwidth="50%" />
                     <thead>
                         <row>
                             <entry>HTML</entry>
