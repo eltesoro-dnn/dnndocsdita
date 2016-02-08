@@ -69,27 +69,16 @@
         <section id="DevIDE">
             <title>Developer IDEs</title>
 
-            <table frame="all" colsep="1" rowsep="1">
-                <tgroup cols="3" align="center">
-                    <thead>
-                        <row>
-                            <entry>For creating modules</entry>
-                            <entry>For contributing to the DNN Platform</entry>
-                        </row>
-                    </thead>
-                    <tbody>
-                        <row>
-                            <entry>
-                                <p>Visual Studio 2013</p>
-                                <p>Visual Studio 2015</p>
-                            </entry>
-                            <entry>
-                                <p>Visual Studio 2015</p>
-                            </entry>
-                        </row>
-                    </tbody>
-                </tgroup>
-            </table>
+            <p>For creating modules:</p>
+            <ul>
+                <li>Visual Studio 2013</li>
+                <li>Visual Studio 2015</li>
+            </ul>
+
+            <p>For contributing to the DNN Platform</p>
+            <ul>
+                <li>Visual Studio 2015</li>
+            </ul>
         </section>
 
 

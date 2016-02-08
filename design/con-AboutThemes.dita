@@ -60,9 +60,10 @@
 
             <p>DNN supports two different types of themes: HTML and ASCX.</p>
 
-            <table frame="all" colsep="1" rowsep="1" >
-                <tgroup cols="2" align="center">
-                    <colspec colnum="2" colwidth="50%" />
+            <table>
+                <tgroup cols="2">
+                    <colspec colnum="1" colname="L" colwidth="50%" rowsep="1" />
+                    <colspec colnum="2" colname="R" colwidth="50%" rowsep="1" />
                     <thead>
                         <row>
                             <entry>HTML</entry>

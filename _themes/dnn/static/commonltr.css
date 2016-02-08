@@ -17,8 +17,8 @@
 
 @font-face {
   font-family: 'AvenirNextLTPro-Regular';
-  src: url('26D3F6_6_0.eot');
-  src: url('26D3F6_6_0.eot?#iefix') format('embedded-opentype'), url('26D3F6_6_0.woff') format('woff'), url('26D3F6_6_0.ttf') format('truetype');
+  src: url('_themes/dnn/static/26D3F6_6_0.eot');
+  src: url('_themes/dnn/static/26D3F6_6_0.eot?#iefix') format('embedded-opentype'), url('_themes/dnn/static/26D3F6_6_0.woff') format('woff'), url('_themes/dnn/static/26D3F6_6_0.ttf') format('truetype');
 }
 
 body,
@@ -45,7 +45,7 @@ input {
   /* kerning and line heights */
   font-kerning: normal;
   letter-spacing: 110%;
-  line-height: 145%;
+  line-height: 150%;
 }
 h1,
 h2,
@@ -56,7 +56,8 @@ h2 {
   font-size: 22px;
 }
 a {
-  color: #0d8dbf;
+  color: #006d97;
+  text-decoration: none;
 }
 dd {
   margin-left: 1em;
@@ -251,7 +252,7 @@ dt.prereq {
 }
 
 .sectiontitle {
-  margin-top: 1em;
+  margin-top: 1.25em;
   margin-bottom: 0;
   color: black;
   font-size: 1.75em;
@@ -270,28 +271,23 @@ dt.prereq {
 
 /* All note formats have the same default presentation */
 .note {
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1.25em;
+  margin-bottom: 1.25em;
   /* The following are from dnn.styles.css. */
-  background-color: #e8fcff;
-  border: 1px solid #c0eaef;
+  background-color: #e2f4fc;
+  border: 1px solid #006d97;
+  /* The following are additional adjustments. */
+  padding: 1em;
 }
 .note .notetitle, .note .notelisttitle,
 .note .note__title {
   font-weight: 700;
-  color: #7eb9c1;
+  color: #006d97;
 }
 
 /* Simple lists do not get a bullet */
 ul.simple {
   list-style-type: none;
-}
-
-/* Used on the first column of a table, when rowheader="firstcol" is used */
-.firstcol {
-  font-weight: bold;
-  padding: 5px 10px;
-  background-color: #f5f5f5;
 }
 
 /* Various basic phrase styles */
@@ -318,11 +314,12 @@ ul.simple {
 
 .defkwd {
   font-weight: bold;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 .shortcut {
-  text-decoration: underline;
+  color: #7eb9c1;
+  text-decoration: none;
 }
 
 /* Default of bold for definition list terms */
@@ -400,6 +397,14 @@ table {
   background-color: #f5f5f5;
 }
 
+/* Used on the first column of a table, when rowheader="firstcol" is used */
+.firstcol,
+.sthead,
+.thead {
+  font-weight: bold;
+  background-color: #e0e0e0;
+}
+
 /* The cell border can be turned on with
    {border-right:solid}
    This value creates a very thick border in Firefox (does not match other tables)
@@ -407,56 +412,67 @@ table {
    Firefox works with
    {border-right:solid 1pt}
    but this causes a barely visible line in IE */
+
+.entry,
+.stentry {
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-bottom: solid 1px;
+}
+
+/*
 .cellrowborder {
   border-left: none;
   border-top: none;
-  border-right: solid 1px;
+  border-right: none;
   border-bottom: solid 1px;
 }
 
 .row-nocellborder {
   border-left: none;
   border-top: none;
-  border-right: hidden;
-  border-bottom: solid 1px;
+  border-right: none;
+  border-bottom: none;
 }
 
 .cell-norowborder {
   border-top: none;
   border-left: none;
-  border-bottom: hidden;
-  border-right: solid 1px;
+  border-bottom: none;
+  border-right: none;
 }
 
 .nocellnorowborder {
   border: none;
-  border-right: hidden;
-  border-bottom: hidden;
+  border-right: none;
+  border-bottom: none;
 }
+*/
 
+/*
 .table-border {
-  border-top: solid 1px;
-  border-right: solid 1px;
-  border-bottom: solid 1px;
-  border-left: solid 1px;
+  border: none;
 }
 
 .table-rules-all {
-  border: solid 1px;
+  border: none;
 }
 
 .table-rules-sides {
-  border-right: solid 1px;
-  border-left: solid 1px;
+  border-right: none;
+  border-left: none;
 }
 
 .table-rules-top {
-  border-top: solid 1px;
+  border-top: none;
 }
 
 .table-rules-bottom {
-  border-bottom: solid 1px;
+  border-bottom: none;
 }
+*/
 
 div.tasklabel {
   margin-top: 1em;
@@ -484,16 +500,27 @@ pre.screen {
   font-weight: bold;
 }
 
-span.filepath {
-  font-family: monospace;
+.userinput {
+  /* The following are additional adjustments. */
+  font-size: 125%;
 }
 
-samp.codeph,
-pre.codeblock {
+span.filepath {
+  font-family: monospace;
+  font-size: 125%;
+}
+
+.codeph,
+.codeblock {
   font-family: monospace;
   /* The following are from dnn.styles.css. */
-  background-color: #f2f8f9;
-  color: #062873;
+  background-color: #efefef;
+  color: #005b7e;
+}
+
+.codeph {
+  /* The following are additional adjustments. */
+  font-size: 125%;
 }
 
 .var {
@@ -506,47 +533,4 @@ pre.codeblock {
 
 .parmname {
   font-weight: bold;
-}
-
-
-
-/* ------------------------------------------------------------
- | The following are different from commonltr.css.
- */
-
-.linklist {
-  margin-bottom: 1em;
-}
-
-.linklistwithchild {
-  margin-top: 1em;
-  margin-right: 1.5em;
-}
-
-.sublinklist {
-  margin-top: 1em;
-  margin-right: 1.5em;
-}
-
-dt.prereq {
-  margin-right: 20px;
-}
-
-.cellrowborder {
-  border-right: none;
-  border-left: solid 1px;
-}
-
-.row-nocellborder {
-  border-right: none;
-  border-left: hidden;
-}
-
-.cell-norowborder {
-  border-right: none;
-  border-left: solid 1px;
-}
-
-.nocellnorowborder {
-  border-left: hidden;
 }

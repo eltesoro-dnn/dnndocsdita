@@ -170,7 +170,7 @@
 
                 <li><b>managedPackage</b>. The name and minimum version of a package required by the extension being installed. The required package must already be listed in the core <uicontrol>Packages</uicontrol> table.
                     <codeblock>
-                        &lt;dependency type="managedPackage" version="1.0.0"&gt;AnotherPackageRequiredByThisComponent&lt;/dependency&gt;
+    &lt;dependency type="managedPackage" version="1.0.0"&gt;AnotherPackageRequiredByThisComponent&lt;/dependency&gt;
                     </codeblock>
                 </li>
 
@@ -215,8 +215,11 @@
             </codeblock>
 
             <p>Some component types are applicable only to the package type of the same name; generic component types can be used with any package type.</p>
-            <table frame="all" colsep="1" rowsep="1">
-                <tgroup cols="3" align="center">
+            <table>
+                <tgroup cols="3">
+                    <colspec colnum="1" colname="L" colwidth="33%" rowsep="1" />
+                    <colspec colnum="2" colname="M" colwidth="33%" rowsep="1" />
+                    <colspec colnum="3" colname="R" colwidth="34%" rowsep="1" colsep="1" align="center" />
                     <thead>
                         <row>
                             <entry>Package type</entry>

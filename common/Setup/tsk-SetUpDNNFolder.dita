@@ -17,9 +17,11 @@
             <step><cmd>Determine the user account used to run your website.</cmd>
                 <info>
                     <p>The account name differs, depending on your IIS and Windows version:</p>
-                    <table frame="all" colsep="1" rowsep="1" >
-                        <tgroup cols="3" align="center">
-                            <colspec colnum="3"/>
+                    <table>
+                        <tgroup cols="3">
+                            <colspec colnum="1" colname="L" colwidth="33%" rowsep="1" />
+                            <colspec colnum="2" colname="M" colwidth="33%" rowsep="1" />
+                            <colspec colnum="3" colname="R" colwidth="34%" rowsep="1" />
                             <thead>
                                 <row>
                                     <entry>If your OS is</entry>
