@@ -5,27 +5,27 @@
     <!-- <title>Glossary</title> -->
 
     <topichead navtitle="Glossary" chunk="by-document to-content">
-        <topicref format="dita" href="term-AUM.dita" toc="no" />
-        <topicref format="dita" href="term-container.dita" toc="no" />
-        <topicref format="dita" href="term-databaseOwner.dita" toc="no" />
-        <topicref format="dita" href="term-Forge.dita" toc="no" />
-        <topicref format="dita" href="term-extension.dita" toc="no" />
-        <topicref format="dita" href="term-friendlyURL.dita" toc="no" />
-        <topicref format="dita" href="term-host.dita" toc="no" />
-        <topicref format="dita" href="term-manifest.dita" toc="no" />
-        <topicref format="dita" href="term-module.dita" toc="no" />
-        <topicref format="dita" href="term-actionmenu.dita" toc="no" />
-        <topicref format="dita" href="term-objectQualifier.dita" toc="no" />
-        <topicref format="dita" href="term-package.dita" toc="no" />
-        <topicref format="dita" href="term-page.dita" toc="no" />
-        <topicref format="dita" href="term-pane.dita" toc="no" />
-        <topicref format="dita" href="term-portalalias.dita" toc="no" />
-        <topicref format="dita" href="term-provider.dita" toc="no" />
-        <topicref format="dita" href="term-site.dita" toc="no" />
-        <topicref format="dita" href="term-theme.dita" toc="no" />
-        <topicref format="dita" href="term-themeObject.dita" toc="no" />
-        <topicref format="dita" href="term-token.dita" toc="no" />
-        <topicref format="dita" href="glo-rellinks.dita" toc="no" />
+        <glossref format="dita" keys="AUM"				        href="term-AUM.dita" 				toc="no" />
+        <glossref format="dita" keys="container"		        href="term-container.dita" 			toc="no" />
+        <glossref format="dita" keys="databaseOwner"	        href="term-databaseOwner.dita" 		toc="no" />
+        <glossref format="dita" keys="Forge"			        href="term-Forge.dita" 				toc="no" />
+        <glossref format="dita" keys="extension"		        href="term-extension.dita" 			toc="no" />
+        <glossref format="dita" keys="friendlyURL"		        href="term-friendlyURL.dita" 		toc="no" />
+        <glossref format="dita" keys="host"				        href="term-host.dita" 				toc="no" />
+        <glossref format="dita" keys="manifest"			        href="term-manifest.dita" 			toc="no" />
+        <glossref format="dita" keys="module"			        href="term-module.dita" 			toc="no" />
+        <glossref format="dita" keys="actionmenu"		        href="term-actionmenu.dita" 		toc="no" />
+        <glossref format="dita" keys="objectQualifier"	        href="term-objectQualifier.dita" 	toc="no" />
+        <glossref format="dita" keys="package"			        href="term-package.dita" 			toc="no" />
+        <glossref format="dita" keys="page"				        href="term-page.dita" 				toc="no" />
+        <glossref format="dita" keys="pane"				        href="term-pane.dita" 				toc="no" />
+        <glossref format="dita" keys="portalalias"		        href="term-portalalias.dita" 		toc="no" />
+        <glossref format="dita" keys="provider"			        href="term-provider.dita" 			toc="no" />
+        <glossref format="dita" keys="site portal"				href="term-site.dita" 				toc="no" />
+        <glossref format="dita" keys="theme skin"			    href="term-theme.dita" 				toc="no" />
+        <glossref format="dita" keys="themeObject skinObject"	href="term-themeObject.dita" 		toc="no" />
+        <glossref format="dita" keys="token"			        href="term-token.dita" 				toc="no" />
+        <topicref format="dita"				                    href="glo-rellinks.dita" 			toc="no" />
     </topichead>
 
 </map>
