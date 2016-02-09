@@ -15,13 +15,13 @@
 
     <!-- Resource-only topicsets -->
     <topicset id="DNNintro" processing-role="resource-only" collection-type="family">
-        <topicref format="dita" type="topic"   keyref="k-whatsnew" />
-        <topicref format="dita" type="task"    keyref="k-reqs" />
-        <topicref format="dita" type="concept" keyref="k-overview" />
+        <topicref format="dita" type="topic"     keyref="k-whatsnew" />
+        <topicref format="dita" type="reference" keyref="k-reqs" />
+        <topicref format="dita" type="concept"   keyref="k-overview" />
     </topicset>
 
     <topicset id="Packaging" processing-role="resource-only" collection-type="family">
-        <topicref format="dita" type="topic" href="common/Extensions/tsk-CreatePackage.dita" />
+        <topicref format="dita" type="task"      href="common/Extensions/tsk-CreatePackage.dita" />
         <topicref format="dita" type="reference" keyref="k-manifest" />
     </topicset>
 
@@ -38,8 +38,8 @@
     </topicref>
     <topichead id="References" navtitle="References" toc="yes" print="yes">
         <topicsetref href="#GlobalRefs" />
-        <topicref format="dita" type="topic" keyref="k-whatsnew" />
-        <topicref format="dita" type="task"  keyref="k-reqs" />
+        <topicref format="dita" type="topic"     keyref="k-whatsnew" />
+        <topicref format="dita" type="reference" keyref="k-reqs" />
     </topichead>
 
 
@@ -54,7 +54,7 @@
                 <topicref format="dita" type="concept" keyref="k-overview" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task" keyref="k-reqs" />
+                <topicref format="dita" type="reference" keyref="k-reqs" />
             </relcell>
             <relcell/>
         </relrow>

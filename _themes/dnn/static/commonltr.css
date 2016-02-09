@@ -113,6 +113,7 @@ img {
 /* div with class=p is used for paragraphs that contain blocks, to keep the XHTML valid */
 .p {
   margin-top: 1em;
+  /* The following are additional adjustments. */
 }
 
 .fig {
@@ -286,6 +287,7 @@ dt.prereq {
 }
 
 /* Simple lists do not get a bullet */
+ul.horizontal-list,
 ul.simple {
   list-style-type: none;
 }
@@ -419,7 +421,7 @@ table {
   padding-right: 15px;
   padding-top: 10px;
   padding-bottom: 10px;
-  border-bottom: solid 1px;
+  border: solid 2px #e9e9e9;
 }
 
 /*
@@ -516,6 +518,7 @@ span.filepath {
   /* The following are from dnn.styles.css. */
   background-color: #efefef;
   color: #005b7e;
+  overflow: auto;
 }
 
 .codeph {
@@ -534,3 +537,28 @@ span.filepath {
 .parmname {
   font-weight: bold;
 }
+
+
+
+/* ------------------------------------------------------------
+ | For the footer.
+ */
+
+footer {
+    background-color: #472a2b;
+}
+
+ul.social-media > li,
+ul.contact-info > li {
+  list-style-type: none;
+  display: inline;
+  float: left;
+  text-align: center;
+}
+
+ul.social-media a,
+ul.contact-info a {
+    display: block;
+    padding: 2px;
+}
+
