@@ -43,7 +43,7 @@
                 <target name="generate-params-topic"/>
             </antcall>
 
-            <ant antfile="${dita.home}/docsrc/build.xml">
+            <ant antfile="${dita.home}/build.xml">
                 <property name="args.input" location="@{input}"/>
                 <property name="output.dir" location="@{output}"/>
                 <property name="transtype" value="@{transtype}"/>
@@ -79,29 +79,30 @@
     </target>
 
     <target name="init" depends="check-dita-home">
-        <property name="thm.src.dir"  location="${git.dir}/_themes/dnn"/>
-        <property name="doc.tgt.dir"  location="${bld.dir}/output"/>
-        <property name="log.tgt.dir"  location="${bld.dir}/logs"/>
-        <property name="resource.dir" location="${dita.home}/resources"/>
-        <property name="ditaval.file" location="${log.tgt.dir}/platform.ditaval"/>
-        <property name="params.file"  location="${bld.dir}/output/logs"/>
+        <property name="thm.src.dir"   location="${bld.dir}/_themes/dnn"/>
+        <property name="doc.tgt.dir"   location="${bld.dir}/output"/>
+        <property name="log.tgt.dir"   location="${bld.dir}/logs"/>
+        <property name="docsrc.dir"    location="${dita.home}/docsrc/resources"/>
+        <property name="resources.dir" location="${dita.home}/resources"/>
+        <property name="ditaval.file"  location="${log.tgt.dir}/platform.ditaval"/>
+        <property name="params.file"   location="${bld.dir}/output/logs"/>
     </target>
 
     <target name="generate-msg-topic" depends="init" description="Regenerate message/log? file.">
-        <property name="message.xsl" location="${resource.dir}/messages.xsl"/>
-        <property name="message.input" location="${resource.dir}/messages.xml"/>
-        <property name="message.outputtopic" location="${log.tgt.dir}/DITA-messages.xml"/>
+        <property name="message.xsl"         file="${docsrc.dir}/messages.xsl"/>
+        <property name="message.input"       file="${resources.dir}/messages.xml"/>
+        <property name="message.outputtopic" file="${log.tgt.dir}/DITA-messages.xml"/>
 
         <!--ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/-->
         <xslt in="${message.input}" out="${message.outputtopic}" style="${message.xsl}"/>
     </target>
 
     <target name="generate-params-topic" depends="init" description="Regenerate parameters file.">
-        <property name="params.xsl" location="${resource.dir}/params.xsl"/>
-        <property name="params.input" location="${resource.dir}/plugins.xml"/>
-        <property name="params.outputtopic" location="${bld.dir}/parameters/_all-parameters.dita"/>
-        <dirname property="params.outputdir" file="${params.outputtopic}"/>
-        <makeurl property="params.outputdir.uri" file="${params.outputdir}" validate="false"/>
+        <property name="params.xsl" file="${docsrc.dir}/params.xsl"/>
+        <property name="params.input" file="${resources.dir}/plugins.xml"/>
+        <property name="params.outputtopic" file="${bld.dir}/parameters/_all-parameters.dita"/>
+        <dirname property="params.outputdir" location="${params.outputtopic}"/>
+        <makeurl property="params.outputdir.uri" location="${params.outputdir}" validate="false"/>
 
         <!--ant antfile="${dita.home}/integrator.xml" useNativeBaseDir="true"/-->
         <xslt in="${params.input}" out="${params.outputtopic}" style="${params.xsl}" force="yes">
@@ -131,6 +132,7 @@
     </target>
 
     <target name="preptgt" depends="cleantgt" description="Prepare the staging/build and output directories.">
+    <!--
         <echo level="info">Copying files to build directory ....</echo>
         <copy todir="${bld.dir}/." verbose="yes">
             <fileset dir="${git.dir}" casesensitive="false" includes="*.dita*, *.png, 26D3F6_6_0.*"/>
@@ -143,23 +145,25 @@
         <copy todir="${doc.tgt.dir}/common/samples" verbose="yes">
             <fileset dir="${git.dir}/common/samples" casesensitive="false" includes="*.*"/>
         </copy>
+    -->
     </target>
 
+
     <target name="cleantgt" description="Clean the build and output directories.">
+    <!--
         <delete includeemptydirs="true">
             <fileset dir="${doc.tgt.dir}"   casesensitive="false" />
             <fileset file="${bld.dir}/*.*"  casesensitive="false" />
             <fileset file="${ditaval.file}" casesensitive="false" />
         </delete>
+    -->
     </target>
 
 
 
     <!-- Final targets. -->
 
-    <target name="all" depends="preptgt"/>
-
-    <!-- <target name="all" depends="html5"/> --> <!-- pdf, htmlhelp -->
+    <target name="all" depends="html5"/> <!-- pdf, htmlhelp -->
 
     <target name="html5" depends="preptgt">
         <echo level="info">Building html5 ....</echo>
@@ -170,8 +174,8 @@
                 <property name="args.cssroot" value="${thm.src.dir}/static"/>
                 <property name="args.csspath" value="css"/>
                 <property name="args.gen.task.lbl" value="YES"/>
-                <property name="args.hdr" value="${thm.src.dir}/header.html"/>
-                <property name="args.ftr" value="${thm.src.dir}/footer.html"/>
+                <property name="args.hdr" value="${thm.src.dir}/header.xml"/>
+                <property name="args.ftr" value="${thm.src.dir}/footer.xml"/>
                 <property name="args.xhtml.toc" value="toc"/>
                 <property name="nav-toc" value="partial"/>
                 <property name="processing-mode" value="strict"/>
