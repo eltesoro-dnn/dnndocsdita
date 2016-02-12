@@ -72,9 +72,9 @@
 
     <!-- What is this for? -->
     <target name="generate-params-topic" depends="init" description="Regenerate parameters file.">
-        <property name="params.xsl"         value="${docsrc.dir}${file.separator}params.xsl"/>
-        <property name="params.input"       value="${resources.dir}${file.separator}plugins.xml"/>
-        <property name="params.outputtopic" value="${bld.dir}${file.separator}parameters${file.separator}_all-parameters.dita"/>
+        <property name="params.xsl"              value="${docsrc.dir}${file.separator}params.xsl"/>
+        <property name="params.input"            value="${resources.dir}${file.separator}plugins.xml"/>
+        <property name="params.outputtopic"      value="${bld.dir}${file.separator}parameters${file.separator}_all-parameters.dita"/>
         <dirname property="params.outputdir"     file="${params.outputtopic}"/>
         <makeurl property="params.outputdir.uri" file="${params.outputdir}" validate="false"/>
         <xslt in="${params.input}" out="${params.outputtopic}" style="${params.xsl}" force="yes">
@@ -105,7 +105,7 @@
             <!-- The following are common with other targets. -->
             <property name="args.copycss" value="yes"/>
             <property name="args.css" value="dnndocsltr.css"/>
-            <property name="args.cssroot" value="${thm.src.dir}${file.separator}static"/>
+            <property name="args.cssroot" value="${thm.src.dir}"/>
             <property name="args.csspath" value="_theme"/>
 
             <property name="args.logdir" value="${bld.dir}${file.separator}logs"/>
@@ -128,7 +128,7 @@
             <!-- The following are common with other targets. -->
             <property name="args.copycss" value="yes"/>
             <property name="args.css" value="dnndocsltr.css"/>
-            <property name="args.cssroot" value="${thm.src.dir}${file.separator}static"/>
+            <property name="args.cssroot" value="${thm.src.dir}"/>
             <property name="args.csspath" value="_theme"/>
 
             <property name="args.logdir" value="${bld.dir}${file.separator}logs"/>
@@ -163,7 +163,7 @@
 
             <property name="args.copycss" value="yes"/>
             <property name="args.css" value="dnndocsltr.css"/>
-            <property name="args.cssroot" value="${thm.src.dir}${file.separator}static"/>
+            <property name="args.cssroot" value="${thm.src.dir}"/>
             <property name="args.csspath" value="_theme"/>
 
             <property name="processing-mode" value="strict"/>
