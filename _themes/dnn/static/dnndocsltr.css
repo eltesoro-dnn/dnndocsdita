@@ -17,8 +17,8 @@
 
 @font-face {
   font-family: 'AvenirNextLTPro-Regular';
-  src: url('_themes/dnn/static/26D3F6_6_0.eot');
-  src: url('_themes/dnn/static/26D3F6_6_0.eot?#iefix') format('embedded-opentype'), url('_themes/dnn/static/26D3F6_6_0.woff') format('woff'), url('_themes/dnn/static/26D3F6_6_0.ttf') format('truetype');
+  src: url('26D3F6_6_0.eot');
+  src: url('26D3F6_6_0.eot?#iefix') format('embedded-opentype'), url('26D3F6_6_0.woff') format('woff'), url('26D3F6_6_0.ttf') format('truetype');
 }
 
 body,

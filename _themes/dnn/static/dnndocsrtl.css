@@ -17,8 +17,8 @@
 
 @font-face {
   font-family: 'AvenirNextLTPro-Regular';
-  src: url('_themes/dnn/static/26D3F6_6_0.eot');
-  src: url('_themes/dnn/static/26D3F6_6_0.eot?#iefix') format('embedded-opentype'), url('_themes/dnn/static/26D3F6_6_0.woff') format('woff'), url('_themes/dnn/static/26D3F6_6_0.ttf') format('truetype');
+  src: url('26D3F6_6_0.eot');
+  src: url('26D3F6_6_0.eot?#iefix') format('embedded-opentype'), url('26D3F6_6_0.woff') format('woff'), url('26D3F6_6_0.ttf') format('truetype');
 }
 
 body,
@@ -562,3 +562,48 @@ ul.contact-info a {
     padding: 2px;
 }
 
+
+
+
+
+
+/* ------------------------------------------------------------
+ | The following are different from commonltr.css.
+ */
+
+.linklist {
+  margin-bottom: 1em;
+}
+
+.linklistwithchild {
+  margin-top: 1em;
+  margin-right: 1.5em;
+}
+
+.sublinklist {
+  margin-top: 1em;
+  margin-right: 1.5em;
+}
+
+dt.prereq {
+  margin-right: 20px;
+}
+
+.cellrowborder {
+  border-right: none;
+  border-left: solid 1px;
+}
+
+.row-nocellborder {
+  border-right: none;
+  border-left: hidden;
+}
+
+.cell-norowborder {
+  border-right: none;
+  border-left: solid 1px;
+}
+
+.nocellnorowborder {
+  border-left: hidden;
+}

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Based on DITA-OT %DITA_HOME%\docsrc\build.xml.
+    Assumes that the required files have been copied from %_gitdir% to %DITA_HOME% and %_blddir%.
+-->
+
+
+<project name="DNNDC" default="all" basedir=".">
+    <description>Build DNN Doc Center</description>
+
+
+    <!-- Set properties/variables. -->
+
+    <target name="envvars">
+        <property environment="env"/>
+
+        <condition property="dita.home" value="${env.DITA_HOME}" else="c:${file.separator}dita-ot" >
+            <isset property="env.DITA_HOME"/>
+        </condition>
+
+        <condition property="git.dir" value="${env._gitdir}" else="w:${file.separator}." >
+            <isset property="env._gitdir"/>
+        </condition>
+
+        <condition property="bld.dir" value="${env._blddir}" else="v:${file.separator}." >
+            <isset property="env._blddir"/>
+        </condition>
+    </target>
+
+
+    <target name="check-dita-home" depends="envvars">
+        <available file="${dita.home}/lib/dost.jar" type="file" property="dita-ot.available"/>
+
+        <fail unless="dita-ot.available">
+                ${dita.home}/lib/dost.jar not found.
+
+                Does ${dita.home} contain a working DITA-OT installation?
+
+                Set the $DITA_HOME environment variable or the dita.home Ant property to
+                point to a working DITA-OT installation:
+
+                Either:
+
+                    $ export DITA_HOME=/path/to/dita-ot
+                    $ ant ...
+
+                Or:
+
+                    $ ant -Ddita.home=/path/to/dita-ot
+        </fail>
+    </target>
+
+
+    <!-- Shortcuts to paths and files. -->
+    <target name="init" depends="envvars, check-dita-home">
+        <property name="thm.src.dir"   value="${bld.dir}${file.separator}_themes${file.separator}dnn"/>
+        <property name="doc.tgt.dir"   value="${bld.dir}${file.separator}output"/>
+        <property name="log.tgt.dir"   value="${bld.dir}${file.separator}logs"/>
+        <property name="docsrc.dir"    value="${dita.home}${file.separator}docsrc${file.separator}resources"/>
+        <property name="resources.dir" value="${dita.home}${file.separator}resources"/>
+        <property name="ditaval.file"  value="${log.tgt.dir}${file.separator}platform.ditaval"/>
+        <property name="params.file"   value="${bld.dir}${file.separator}output${file.separator}logs"/>
+    </target>
+
+    <!-- Messages used for the log file. -->
+    <target name="generate-msg-topic" depends="init" description="Regenerate messages file.">
+        <property name="message.xsl"         value="${docsrc.dir}${file.separator}messages.xsl"/>
+        <property name="message.input"       value="${resources.dir}${file.separator}messages.xml"/>
+        <property name="message.outputtopic" value="${log.tgt.dir}${file.separator}DITA-messages.xml"/>
+        <xslt in="${message.input}" out="${message.outputtopic}" style="${message.xsl}"/>
+    </target>
+
+    <!-- What is this for? -->
+    <target name="generate-params-topic" depends="init" description="Regenerate parameters file.">
+        <property name="params.xsl"         value="${docsrc.dir}${file.separator}params.xsl"/>
+        <property name="params.input"       value="${resources.dir}${file.separator}plugins.xml"/>
+        <property name="params.outputtopic" value="${bld.dir}${file.separator}parameters${file.separator}_all-parameters.dita"/>
+        <dirname property="params.outputdir"     file="${params.outputtopic}"/>
+        <makeurl property="params.outputdir.uri" file="${params.outputdir}" validate="false"/>
+        <xslt in="${params.input}" out="${params.outputtopic}" style="${params.xsl}" force="yes">
+            <param name="output-dir.url" expression="${params.outputdir.uri}"/>
+        </xslt>
+    </target>
+
+
+    <target name="preptgt" depends="init" description="Prepare the staging/build and output directories.">
+        <antcall>
+            <target name="generate-msg-topic"/>
+            <target name="generate-params-topic"/>
+        </antcall>
+    </target>
+
+
+    <!-- Final targets. -->
+
+    <target name="all" depends="html5, xhtml"/> <!-- pdf, htmlhelp -->
+
+    <target name="xhtml" depends="init, preptgt">
+        <echo level="info">Building xhtml ....</echo>
+        <ant antfile="build.xml">
+            <property name="transtype" value="xhtml"/>
+            <property name="args.input" location="${bld.dir}${file.separator}docctr.ditamap"/>
+            <property name="output.dir" location="${doc.tgt.dir}${file.separator}xhtml"/>
+
+            <!-- The following are common with other targets. -->
+            <property name="args.copycss" value="yes"/>
+            <property name="args.css" value="dnndocsltr.css"/>
+            <property name="args.cssroot" value="${thm.src.dir}${file.separator}static"/>
+            <property name="args.csspath" value="_theme"/>
+
+            <property name="args.logdir" value="${bld.dir}${file.separator}logs"/>
+            <property name="args.xhtml.toc" value="toc"/>
+            <property name="nav-toc" value="partial"/>
+            <property name="processing-mode" value="strict"/>
+
+            <!-- DITA-OT: Specifies whether to generate locale-based default headings for sections within task topics. -->
+            <property name="args.gen.task.lbl" value="YES"/>
+        </ant>
+    </target>
+
+    <target name="html5" depends="init, preptgt">
+        <echo level="info">Building html5 ....</echo>
+        <ant antfile="build.xml">
+            <property name="transtype" value="html5"/>
+            <property name="args.input" location="${bld.dir}${file.separator}docctr.ditamap"/>
+            <property name="output.dir" location="${doc.tgt.dir}${file.separator}html5"/>
+
+            <!-- The following are common with other targets. -->
+            <property name="args.copycss" value="yes"/>
+            <property name="args.css" value="dnndocsltr.css"/>
+            <property name="args.cssroot" value="${thm.src.dir}${file.separator}static"/>
+            <property name="args.csspath" value="_theme"/>
+
+            <property name="args.logdir" value="${bld.dir}${file.separator}logs"/>
+            <property name="args.xhtml.toc" value="toc"/>
+            <property name="nav-toc" value="partial"/>
+            <property name="processing-mode" value="strict"/>
+
+            <!-- DITA-OT: Specifies whether to generate locale-based default headings for sections within task topics. -->
+            <property name="args.gen.task.lbl" value="YES"/>
+        </ant>
+    </target>
+
+
+    <!--
+    <target name="pdf">
+        <echo level="info">Building pdf ....</echo>
+        <ant antfile="build.xml">
+            <property name="transtype" value="pdf"/>
+            <property name="args.input" location="${bld.dir}${file.separator}docctr-pdf.ditamap"/>
+            <property name="output.dir" location="${doc.tgt.dir}${file.separator}pdf"/>
+
+            <property name="outputFile.base" value="userguide"/>
+            <property name="processing-mode" value="strict"/>
+        </ant>
+    </target>
+
+    <target name="htmlhelp">
+        <ant antfile="build.xml">
+            <property name="transtype" value="htmlhelp"/>
+            <property name="args.input" location="${bld.dir}${file.separator}docctr-htmlhelp.ditamap"/>
+            <property name="output.dir" location="${doc.tgt.dir}${file.separator}htmlhelp"/>
+
+            <property name="args.copycss" value="yes"/>
+            <property name="args.css" value="dnndocsltr.css"/>
+            <property name="args.cssroot" value="${thm.src.dir}${file.separator}static"/>
+            <property name="args.csspath" value="_theme"/>
+
+            <property name="processing-mode" value="strict"/>
+
+            <! DITA-OT: Specifies whether to generate locale-based default headings for sections within task topics. >
+            <property name="args.gen.task.lbl" value="YES"/>
+        </ant>
+
+        <move todir="${doc.out.dir}" failonerror="no">
+            <fileset dir="${doc.out.dir}/htmlhelp" includes="*.chm"/>
+        </move>
+
+        <delete dir="${doc.out.dir}/htmlhelp"/>
+    </target>
+    -->
+
+</project>
