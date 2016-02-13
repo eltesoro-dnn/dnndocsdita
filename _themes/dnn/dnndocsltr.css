@@ -70,11 +70,11 @@ dd {
  */
 
 img {
-    /*
+  /*
 	background: #f9f9f9;
 	border: 6px double #fff;
 	padding: 1em;
-    */
+  */
 }
 
 
@@ -83,8 +83,8 @@ img {
  */
 
 .term {
-    font-style: normal;
-    font-weight: bold;
+  font-style: normal;
+  font-weight: bold;
 }
 
 
@@ -545,7 +545,7 @@ span.filepath {
  */
 
 footer {
-    background-color: #472a2b;
+  background-color: #472a2b;
 }
 
 ul.social-media > li,
@@ -558,7 +558,43 @@ ul.contact-info > li {
 
 ul.social-media a,
 ul.contact-info a {
-    display: block;
-    padding: 2px;
+  display: block;
+  padding: 2px;
 }
 
+
+
+/* ------------------------------------------------------------
+ | For the sidebar navigation.
+ */
+
+sidetoc {
+  background-color: #e2f4fc;
+  border: 1px solid #006d97;
+}
+
+.navigation {
+  /* Collapsed */
+  width: 0;
+
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+
+  transition: width 0.3s ease;
+}
+
+.page-wrap {
+  width: 100%;
+  float: right;
+}
+
+#main-navigation:target {
+  width: 20%;
+}
+
+#main-nav:target + .page-wrap {
+  width: 80%;
+}
