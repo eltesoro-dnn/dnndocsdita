@@ -565,36 +565,11 @@ ul.contact-info a {
 
 
 /* ------------------------------------------------------------
- | For the sidebar navigation.
+ | For the sidebar toc.
  */
 
-sidetoc {
+nav {
   background-color: #e2f4fc;
   border: 1px solid #006d97;
 }
 
-.navigation {
-  /* Collapsed */
-  width: 0;
-
-  overflow: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-
-  transition: width 0.3s ease;
-}
-
-.page-wrap {
-  width: 100%;
-  float: right;
-}
-
-#main-navigation:target {
-  width: 20%;
-}
-
-#main-nav:target + .page-wrap {
-  width: 80%;
-}
