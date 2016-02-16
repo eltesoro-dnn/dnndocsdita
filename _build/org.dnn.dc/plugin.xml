@@ -3,15 +3,17 @@
 <plugin id="org.dnndc.plugins">
 
     <!-- XHTML -->
-    <feature extension="dita.xsl.xhtml" file="xsl/header.xsl"/>
-    <feature extension="dita.xsl.xhtml" file="xsl/footer.xsl"/>
-    <feature extension="dita.xsl.xhtml" file="xsl/sidetoc.xsl"/>
-    <feature extension="dita.xsl.xhtml" file="xsl/notes.xsl"/>
+    <feature extension="dita.xsl.xhtml"   file="xsl/header.xsl"/>
+    <feature extension="dita.xsl.xhtml"   file="xsl/footer.xsl"/>
+    <feature extension="dita.xsl.xhtml"   file="xsl/sidetoc.xsl"/>
+    <feature extension="dita.xsl.xhtml"   file="xsl/notes.xsl"/>
+    <feature extension="dita.xsl.strings" file="xsl/dnnstrings.xml"/>
 
     <!-- HTML5 -->
-    <feature extension="dita.xsl.html5" file="xsl/header.xsl"/>
-    <feature extension="dita.xsl.html5" file="xsl/footer.xsl"/>
-    <feature extension="dita.xsl.html5" file="xsl/sidetoc.xsl"/>
-    <feature extension="dita.xsl.html5" file="xsl/notes.xsl"/>
+    <feature extension="dita.xsl.html5"   file="xsl/header.xsl"/>
+    <feature extension="dita.xsl.html5"   file="xsl/footer.xsl"/>
+    <feature extension="dita.xsl.html5"   file="xsl/sidetoc.xsl"/>
+    <feature extension="dita.xsl.html5"   file="xsl/notes.xsl"/>
+    <feature extension="dita.xsl.strings" file="xsl/dnnstrings.xml"/>
 
 </plugin>
