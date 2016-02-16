@@ -31,7 +31,7 @@
 
 
     <!-- Main maps -->
-    <topicref format="dita" type="concept" keyref="k-overview">
+    <topicref format="dita" type="concept" keyref="k-overview" toc="no">
         <mapref href="admctr.ditamap" />
         <mapref href="devctr.ditamap" />
         <mapref href="dsgctr.ditamap" />

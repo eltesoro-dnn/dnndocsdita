@@ -6,7 +6,7 @@
 
 
     <!-- <topichead id="AdmCtr" navtitle="Administrator Center" toc="yes" print="yes"> -->
-    <topicref format="dita" type="concept" href="admin/con-AdmCtr.dita" >
+    <topicref format="dita" type="concept" href="admin/con-AdmCtr.dita" toc="yes">
         <topicsetref href="docctr.ditamap#DNNintro" />
 
         <mapref href="setup.ditamap" />

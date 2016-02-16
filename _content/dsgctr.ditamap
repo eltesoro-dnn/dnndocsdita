@@ -6,7 +6,7 @@
 
 
     <!-- <topichead id="DsgCtr" navtitle="Designer Center" toc="yes" print="yes"> -->
-    <topicref format="dita" type="concept" href="design/con-DsgCtr.dita" >
+    <topicref format="dita" type="concept" href="design/con-DsgCtr.dita" toc="yes">
         <topicsetref href="docctr.ditamap#DNNintro" />
 
         <topicref format="dita" href="design/con-AboutThemes.dita" type="concept" />

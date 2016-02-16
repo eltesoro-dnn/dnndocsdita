@@ -6,7 +6,7 @@
 
 
     <!-- <topichead id="DevCtr" navtitle="Developer Center" toc="yes" print="yes"> -->
-    <topicref format="dita" type="concept" href="dev/con-DevCtr.dita" >
+    <topicref format="dita" type="concept" href="dev/con-DevCtr.dita" toc="yes">
         <topicsetref href="docctr.ditamap#DNNintro" />
 
         <!-- <topicref format="dita" href="design/con-AboutModules.dita" type="concept" /> -->
