@@ -20,7 +20,6 @@
         </div>
 
         <!--
-            <p>This is a TESTHEADER in header.xsl.</p>
         <div class="header {% if theme_navbar_fixed_top|tobool -%} navbar-fixed-top{%- endif -%}">
             <div class="col-md-4 col-xs-12 logo-wrapper">
                 <a class="logo" href="{{ theme_site_home }}">

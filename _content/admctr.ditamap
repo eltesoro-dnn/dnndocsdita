@@ -7,22 +7,21 @@
 
     <!-- <topichead id="AdmCtr" navtitle="Administrator Center" toc="yes" print="yes"> -->
     <topicref format="dita" type="concept" href="admin/con-AdmCtr.dita" toc="yes">
-        <topicsetref href="docctr.ditamap#DNNintro" />
 
-        <mapref href="setup.ditamap" />
+        <mapref keyref="k-setupmap" />
 
-        <topicref format="dita" type="task" href="common/Extensions/tsk-InstallExtension.dita" />
+        <topicref format="dita" type="task" href="common/Extensions/tsk-InstallExtension.dita" toc="yes" />
 
-        <topichead id="AdmRefs" navtitle="Administrator References" toc="yes" print="yes">
-                <!-- <xref format="dita" href="../common/placeholderlink.dita">DNN 8.0 User Guide</xref> -->
-                <!-- <xref format="dita" href="../common/placeholderlink.dita">Evoq 8.x User Guide</xref> -->
-                <!--
-                Security Guide
-                Web Farm Configuration Guide
-                Performance Tuning
-                -->
-                <mapref keyref="k-glossarymap" />
-        </topichead>
+        <!--
+        <topicref format="dita" type="topic" href="admin/top-AdmRefs.dita" toc="yes" collection-type="family">
+            <xref format="dita" href="../common/placeholderlink.dita">DNN 8.0 User Guide</xref>
+            <xref format="dita" href="../common/placeholderlink.dita">Evoq 8.x User Guide</xref>
+            Security Guide
+            Web Farm Configuration Guide
+            Performance Tuning
+        </topicref>
+        -->
+
     </topicref>
 
 

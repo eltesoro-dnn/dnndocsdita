@@ -57,7 +57,6 @@ md %_logdir% > nul
 echo. > %_logdir%\log.txt
 xcopy %_gitdir%\_build\dnn_build.xml  %DITA_HOME%\.  /v/y
 call ant %_transtype% -f %DITA_HOME%\dnn_build.xml -l %_logdir%\log.txt
-pause
 
 
 echo Copying additional files required to the output ....

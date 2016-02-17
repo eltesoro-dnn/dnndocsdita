@@ -124,7 +124,7 @@
 
             <property name="args.logdir" value="${bld.dir}${file.separator}logs"/>
             <property name="args.xhtml.toc" value="toc"/>
-            <property name="nav-toc" value="partial"/>
+            <property name="nav-toc" value="full"/>
             <property name="processing-mode" value="strict"/>
 
             <!-- DITA-OT: Specifies whether to generate locale-based default headings for sections within task topics. -->
@@ -147,7 +147,7 @@
 
             <property name="args.logdir" value="${bld.dir}${file.separator}logs"/>
             <property name="args.xhtml.toc" value="toc"/>
-            <property name="nav-toc" value="partial"/>
+            <property name="nav-toc" value="full"/>
             <property name="processing-mode" value="strict"/>
 
             <!-- DITA-OT: Specifies whether to generate locale-based default headings for sections within task topics. -->

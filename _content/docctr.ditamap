@@ -8,39 +8,24 @@
     <keydef keys="k-bptext"      href="common/bptext.dita#bptext" />
     <keydef keys="k-whatsnew"    href="common/top-DNN8WhatsNew.dita" />
     <keydef keys="k-reqs"        href="common/ref-Requirements.dita" />
-    <keydef keys="k-overview"    href="common/con-OverviewDNNPlatform.dita" />
+    <keydef keys="k-ovplatform"  href="common/con-OverviewDNNPlatform.dita" />
+    <!-- <keydef keys="k-ovevoq"      href="common/con-OverviewDNNEvoq.dita" /> -->
     <keydef keys="k-manifest"    href="common/Extensions/ref-DNNManifestSchema.dita" />
     <keydef keys="k-glossarymap" href="common/Glossary/glossary.ditamap" />
-
-
-    <!-- Resource-only topicsets -->
-    <topicset id="DNNintro" processing-role="resource-only" collection-type="family">
-        <topicref format="dita" type="topic"     keyref="k-whatsnew" />
-        <topicref format="dita" type="reference" keyref="k-reqs" />
-        <topicref format="dita" type="concept"   keyref="k-overview" />
-    </topicset>
-
-    <topicset id="Packaging" processing-role="resource-only" collection-type="family">
-        <topicref format="dita" type="task"      href="common/Extensions/tsk-CreatePackage.dita" />
-        <topicref format="dita" type="reference" keyref="k-manifest" />
-    </topicset>
-
-    <topicset id="GlobalRefs" processing-role="resource-only" collection-type="family">
-        <mapref keyref="k-glossarymap" />
-    </topicset>
+    <keydef keys="k-setupmap"    href="setup.ditamap" />
 
 
     <!-- Main maps -->
-    <topicref format="dita" type="concept" keyref="k-overview" toc="no">
+    <!-- <topichead navtitle="Doc Center" toc="no"> -->
+        <topicref format="dita" type="topic"   keyref="k-whatsnew" toc="yes" />
+        <topicref format="dita" type="concept" keyref="k-ovplatform" toc="yes" />
+        <!-- <topicref format="dita" type="concept" keyref="k-ovevoq" toc="yes" /> -->
         <mapref href="admctr.ditamap" />
         <mapref href="devctr.ditamap" />
         <mapref href="dsgctr.ditamap" />
-    </topicref>
-    <topichead id="References" navtitle="References" toc="yes" print="yes">
-        <topicsetref href="#GlobalRefs" />
-        <topicref format="dita" type="topic"     keyref="k-whatsnew" />
-        <topicref format="dita" type="reference" keyref="k-reqs" />
-    </topichead>
+        <topicref format="dita" type="reference" keyref="k-reqs" toc="yes" />
+        <mapref keyref="k-glossarymap" />
+    <!-- </topichead> -->
 
 
     <reltable>

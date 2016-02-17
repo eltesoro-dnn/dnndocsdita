@@ -6,11 +6,11 @@
 
 
     <!-- <topicref format="dita" href="common/ref-Requirements.dita" topic="reference" /> -->
-    <topicref format="dita" type="topic" href="common/Setup/top-SetUpDNN.dita" collection-type="sequence">
-        <topicref format="dita" type="task" href="common/Setup/tsk-SetUpDNNFolder.dita" />
-        <topicref format="dita" type="task" href="common/Setup/tsk-SetUpIIS.dita" />
-        <topicref format="dita" type="task" href="common/Setup/tsk-SetUpSQL.dita" />
-        <topicref format="dita" type="task" href="common/Setup/tsk-RunInstWiz.dita" />
+    <topicref format="dita" type="topic" href="common/setup/top-SetUpDNN.dita" toc="yes" collection-type="sequence">
+        <topicref format="dita" type="task" href="common/setup/tsk-SetUpDNNFolder.dita" />
+        <topicref format="dita" type="task" href="common/setup/tsk-SetUpIIS.dita" />
+        <topicref format="dita" type="task" href="common/setup/tsk-SetUpSQL.dita" />
+        <topicref format="dita" type="task" href="common/setup/tsk-RunInstWiz.dita" />
     </topicref>
 
 
@@ -27,7 +27,9 @@
             <relcell>
                 <topicref format="dita" type="task" href="common/Extensions/tsk-InstallExtension.dita" />
             </relcell>
-            <relcell/>
+            <relcell>
+                <topicref format="dita" type="reference" keyref="k-reqs" />
+            </relcell>
         </relrow>
 
     </reltable>

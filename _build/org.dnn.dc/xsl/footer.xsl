@@ -32,10 +32,6 @@
             </div>
         </div>
 
-        <!--
-            <p class="copyright_footer">TESTFOOTER - &#169; 2016 DNN Corp. All rights reserved."></p>
-        -->
-
     </xsl:template>
 
 </xsl:stylesheet>
