@@ -11,7 +11,7 @@
                     <li><a href="http://twitter.com/dnncorp" class="twitter"></a></li>
                     <li><a href="http://www.linkedin.com/company/207975" class="linkedin"></a></li>
                     <li><a href="http://www.youtube.com/user/dotnetnuke#" class="youtube"></a></li>
-                    <li><a href="http://twitter.com/dnn" class="twitter"></a></li>
+                    <!-- <li><a href="http://twitter.com/dnn" class="twitter"></a></li> -->
                 </ul>
             </div>
             <div class="contact-info-wrapper">
