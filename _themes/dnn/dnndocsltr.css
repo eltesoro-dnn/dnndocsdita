@@ -52,8 +52,11 @@ h2,
 h3 {
   color: #515151;
 }
+h1 {
+  font-size: 150%;
+}
 h2 {
-  font-size: 22px;
+  font-size: 120%;
 }
 a {
   color: #006d97;
@@ -63,6 +66,123 @@ dd {
   margin-left: 1em;
   margin-bottom: 1.5em;
 }
+body {
+    margin: 0;
+}
+.header {
+  clear: both;
+  background: #f4f4f4;
+  border-top: 5px solid #0d8dbf;
+  -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+  width: 100%;
+
+  position: fixed;
+  /*
+  z-index: 3000px;
+  */
+}
+.header:before,
+.header:after {
+  clear: both;
+  content: ' ';
+  display: table;
+}
+.header .logo {
+  display: block;
+  padding: 1px 75px 1px 20px;
+  color: #888;
+  font-size: 25px;
+  white-space: nowrap;
+}
+.header .logo:hover {
+  text-decoration: none;
+}
+.header .logo img {
+  display: inline-block;
+  margin-right: 8px;
+}
+.header .logo span {
+  position: relative;
+  top: 2px;
+}
+.logo-wrapper {
+  position: relative;
+}
+
+.footer {
+  background: #382224;
+  clear: both;
+  position: relative;
+  border-top: 5px solid #0aa8e7;
+  text-align: center;
+}
+.footer:before,
+.footer:after {
+  content: ' ';
+  clear: both;
+  display: table;
+}
+.footer:before {
+  position: absolute;
+  left: 0;
+  right: 50%;
+  height: 5px;
+  background: #f03c40;
+  display: block;
+  top: -5px;
+}
+
+.footer div.social-media-wrapper,
+.footer div.contact-info-wrapper,
+.footer div.misc-wrapper {
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+}
+
+.footer li {
+  display: inline-block;
+  white-space: nowrap;
+  vertical-align: middle;
+  text-align: center;
+  color: #847274;
+}
+.footer .social-media li {
+  margin: 0;
+  padding: 0 5px;
+  display: inline-block;
+  float: none;
+}
+.footer .contact-info li,
+.footer .misc li {
+  float: left;
+  display: inline-block;
+  padding: 0 15px 0 15px;
+}
+.footer .contact-info li + li,
+.footer .misc li + li {
+  border-left: 1px solid #847274;
+}
+
+.footer a {
+  color: #847274;
+}
+.footer .social-media a {
+  background-image: url(social-media.jpg);
+  display: block;
+  height: 27px;
+  width: 28px;
+}
+.footer .social-media a.twitter {
+  background-position: -28px 0;
+}
+.footer .social-media a.linkedin {
+  background-position: -57px 0;
+}
+.footer .social-media a.youtube {
+  background-position: -85px 0;
+}
 
 
 /* ------------------------------------------------------------
@@ -70,12 +190,13 @@ dd {
  */
 
 img {
-  /*
+    /*
 	background: #f9f9f9;
 	border: 6px double #fff;
 	padding: 1em;
-  */
+    */
 }
+
 
 
 /* ------------------------------------------------------------
@@ -363,6 +484,14 @@ ul.simple {
   margin-bottom: 1em;
 }
 
+.steps {
+    padding-left: 1em;
+}
+
+.step > .cmd {
+    font-size: 125%;
+}
+
 .stepexpand {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -481,13 +610,18 @@ div.tasklabel {
   margin-bottom: 1em;
 }
 
-h2.tasklabel,
+
+h2.tasklabel {
+  font-size: 150%;
+  font-weight: bold;
+}
 h3.tasklabel,
 h4.tasklabel,
 h5.tasklabel,
 h6.tasklabel {
   font-size: 100%;
 }
+
 
 pre.screen {
   padding: 5px 5px 5px 5px;
@@ -541,35 +675,50 @@ span.filepath {
 
 
 /* ------------------------------------------------------------
- | For the footer.
- */
-
-footer {
-  background-color: #472a2b;
-}
-
-ul.social-media > li,
-ul.contact-info > li {
-  list-style-type: none;
-  display: inline;
-  float: left;
-  text-align: center;
-}
-
-ul.social-media a,
-ul.contact-info a {
-  display: block;
-  padding: 2px;
-}
-
-
-
-/* ------------------------------------------------------------
  | For the sidebar toc.
  */
 
-nav {
-  background-color: #e2f4fc;
-  border: 1px solid #006d97;
+main {
+  display: block;
+  width: 75%;
+  min-width: 400px;
+  float: right;
+  /* margin-left: 25%; */
+  padding: 15px 0 0 0;
+}
+
+nav[role="toc"] {
+  clear: left;
+  background: #f4f4f4;
+
+  -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
+
+  font-size: 100%;
+
+  float: left;
+  width: 20%;
+  margin: 77px 0 0 0;
+  min-width: 200px;
+  transition: all 0.2s ease-out;
+
+  position: fixed;
+  /*
+  z-index: 1000px;
+  */
+}
+nav[role="toc"] ul {
+  margin: 0;
+  padding: 2px;
+}
+nav[role="toc"] li {
+  display: block;
+  width: 97%;
+  padding: 5px;
+  overflow: hidden;
+  color: #787878;
+  background: #f2f2f2;
+  /* position: relative; */
+  white-space: nowrap;
 }
 
