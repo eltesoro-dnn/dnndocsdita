@@ -12,7 +12,7 @@
 
 
 /* ------------------------------------------------------------
- | From dnn.styles.css
+ | Fonts
  */
 
 @font-face {
@@ -66,21 +66,97 @@ dd {
   margin-left: 1em;
   margin-bottom: 1.5em;
 }
+
+
+/* ------------------------------------------------------------
+ | Body
+ */
+
 body {
-    margin: 0;
+  margin: 0;        /* 0 removes the side gaps. */
+  height: 100%;     /* Required or else the footer floats. */
+  width: 100%;      /* Required or else the footer is too short. */
+  position: absolute;   /* Required or else the footer floats. */
 }
+
+
+/* ------------------------------------------------------------
+ | For the sidebar toc.
+ */
+
+main {
+  min-height: 100%;  /* Required or else the footer floats.*/
+}
+
+article[role="article"] {
+  display: block;
+  padding: 80px 10% 80px 250px;  /* approxheaderheight randomrightmargin approxfooterheight approxsidebarwidth */
+
+
+  min-width: 40ch;  /* actual text line widths */
+  max-width: 70ch;  /* actual text line widths */
+}
+
+nav {
+  margin: 0;
+}
+
+nav[role="toc"] {
+  clear: left;
+  float: left;
+  position: fixed;
+  overflow: auto;
+
+  margin-top: 1em;
+  padding: 80px 15px 0 0;
+  width: 200px;
+  height: 100%;
+
+  background: #f4f4f4;
+  -webkit-box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.5);
+
+  font-size: 100%;
+
+  transition: all 0.2s ease-out;
+}
+nav[role="toc"] ul {
+  margin: 0;
+  padding: 2px;
+}
+nav[role="toc"] li {
+  display: block;
+  width: 97%;
+  border-left: 2px solid #0d8dbf;
+  padding: 2px 2px 2px 15px;
+  color: #787878;
+  background: #f2f2f2;
+  white-space: nowrap;
+}
+nav[role="toc"] > ul > li {
+  border: 0;
+}
+nav[role="toc"] > ul > li > ul > li > ul {
+  display: none;
+}
+
+
+/* ------------------------------------------------------------
+ | Header
+ */
+
 .header {
   clear: both;
   background: #f4f4f4;
   border-top: 5px solid #0d8dbf;
+  border-bottom: 5px solid #0d8dbf;
   -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
-  width: 100%;
 
   position: fixed;
-  /*
-  z-index: 3000px;
-  */
+  top: 0;
+  width: 100%;
+  z-index: 9999; /* always top layer */
 }
 .header:before,
 .header:after {
@@ -110,57 +186,79 @@ body {
   position: relative;
 }
 
-.footer {
+
+/* ------------------------------------------------------------
+ | Footer
+ */
+
+footer {
+  /* Both required or else the footer floats. */
+  position: relative;
+  bottom: 0;
+}
+.footer {   /* This is the inner element */
   background: #382224;
   clear: both;
-  position: relative;
-  bottom: -3em;
   border-top: 5px solid #0aa8e7;
   text-align: center;
+  padding: 5px 0 10px 0;
+
+  position: absolute;
+  bottom: 0;
+  width:100%;
+  z-index: 9999; /* always top layer */
 }
 .footer:before,
 .footer:after {
+  display: table;
   content: ' ';
   clear: both;
-  display: table;
 }
 .footer:before {
+  display: block;
   position: absolute;
   left: 0;
   right: 50%;
   height: 5px;
   background: #f03c40;
-  display: block;
   top: -5px;
 }
 
 .footer div.social-media-wrapper,
 .footer div.contact-info-wrapper,
-.footer div.misc-wrapper {
+.footer div.misc-wrapper{
   display: inline-block;
-  position: relative;
   vertical-align: middle;
 }
 
+.footer div.misc-wrapper {
+}
+
+.footer ul {
+  line-height: 1.2;
+  white-space: nowrap;
+  font-size: 90%;
+  overflow: hidden;
+  float: center;
+  display: flex;
+  padding: 2px 5px 2px 5px;
+  margin: 1px;
+}
 .footer li {
   display: inline-block;
-  white-space: nowrap;
   vertical-align: middle;
   text-align: center;
   color: #847274;
+  margin: 0;
 }
 .footer .social-media li {
-  margin: 0;
-  padding: 0 5px;
-  display: inline-block;
-  float: none;
+  padding: 0 5px 0 5px;
 }
 .footer .contact-info li,
 .footer .misc li {
-  float: left;
-  display: inline-block;
-  padding: 0 15px 0 15px;
+  padding: 2px 15px 2px 15px;
 }
+
 .footer .contact-info li + li,
 .footer .misc li + li {
   border-left: 1px solid #847274;
@@ -187,33 +285,13 @@ body {
 
 
 /* ------------------------------------------------------------
- | From overrides.css
- */
-
-img {
-    /*
-	background: #f9f9f9;
-	border: 6px double #fff;
-	padding: 1em;
-    */
-}
-
-
-
-/* ------------------------------------------------------------
- | Additional stuff that try to overwrite user agent stylesheet
+ | DITA-specific labels.
  */
 
 .term {
   font-style: normal;
   font-weight: bold;
 }
-
-
-
-/* ------------------------------------------------------------
- | Basics but with some mods
- */
 
 .unresolved {
   background-color: skyblue;
@@ -227,15 +305,13 @@ img {
   background-color: #ffffff;
 }
 
-/* Add space for top level topics */
 .nested0 {
-  margin-top: 1em;
+  margin-top: 1em; /* Add space for top level topics */
 }
 
 /* div with class=p is used for paragraphs that contain blocks, to keep the XHTML valid */
 .p {
   margin-top: 1em;
-  /* The following are additional adjustments. */
 }
 
 .fig {
@@ -340,7 +416,7 @@ dt.prereq {
 
 /* Set heading sizes, getting smaller for deeper nesting */
 .topictitle1 {
-  margin-top: 0;
+  margin-top: 1pc;
   margin-bottom: .1em;
   font-size: 2.25em; /* 1.34em; */
 }
@@ -674,62 +750,24 @@ span.filepath {
 }
 
 
-
 /* ------------------------------------------------------------
- | For the sidebar toc.
+ | Glossary
  */
 
-main {
-  display: block;
-  width: 75%;
-  min-width: 400px;
-  float: right;
-  margin: 80px 0 0 0;
-  padding: 15px 0 0 0;
+.glossterm {
+  margin: 1.3em 0 0.3em 0;
+}
+.glossAlt {
+  display: none;
+}
+article .glossentry {
+  padding: 0 0 0 2em;  /* Overrides the padding for article. */
+}
+.glossentry .related-links {
+  margin-top: 5px;
+}
+#glo-rellinks .related-links .relinfo {
+  margin: 5em 0 0 0;
 }
 
-nav {
-  margin: 80px 0 0 0;
-}
 
-nav[role="toc"] {
-  clear: left;
-  background: #f4f4f4;
-
-  -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
-  box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
-
-  font-size: 100%;
-
-  float: left;
-  width: 20%;
-  min-width: 200px;
-  transition: all 0.2s ease-out;
-
-  position: fixed;
-  /*
-  z-index: 1000px;
-  */
-}
-nav[role="toc"] ul {
-  margin: 0;
-  padding: 2px;
-}
-nav[role="toc"] li {
-  display: block;
-  width: 97%;
-  border-left: 2px solid #0d8dbf;
-  padding: 2px 2px 2px 15px;
-  overflow: hidden;
-  color: #787878;
-  background: #f2f2f2;
-  /* position: relative; */
-  white-space: nowrap;
-}
-nav[role="toc"] > ul > li {
-  border: 0;
-}
-nav[role="toc"] > ul > li > ul > li > ul {
-  visibility: hidden;
-  height: 0;
-}
