@@ -24,12 +24,12 @@
         <topicref format="dita" type="task" href="common/Extensions/tsk-CreatePackage.dita" />
 
         <topicref format="dita" type="topic" href="dev/top-DevRefs.dita" toc="yes" collection-type="family">
-            <!-- API Reference -->
             <topicref format="dita" type="topic"     href="dev/top-Providers.dita" />
             <topicref format="dita" type="concept"   href="dev/con-AboutEVS.dita" />
             <!-- <topicref format="dita" type="reference" href="dev/ref-ContentsModulePack.dita" /> -->
             <topicref format="dita" type="reference" keyref="k-manifest" />
         </topicref>
+        <topicref format="html" scope="external" navtitle="DNN API Reference" href="http://www.dnnsoftware.com/dnn-api/" />
 
     </topicref>
 
