@@ -145,18 +145,24 @@ nav[role="toc"] > ul > li > ul > li > ul {
  | Header
  */
 
-.header {
+header {
   clear: both;
+  position: fixed;
+  top: 0;
+  z-index: 9999; /* always top layer */
+  width: 100%;
+}
+
+.header {
+  width: 100%;
   background: #f4f4f4;
   border-top: 5px solid #0d8dbf;
   border-bottom: 5px solid #0d8dbf;
   -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
   box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
 
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 9999; /* always top layer */
+  text-align: center;
+  color: #847274;
 }
 .header:before,
 .header:after {
@@ -164,11 +170,37 @@ nav[role="toc"] > ul > li > ul > li > ul {
   content: ' ';
   display: table;
 }
+
+.header a {
+  color: #847274;
+}
+.header ul {
+  line-height: 1.2;
+  white-space: nowrap;
+  font-size: 90%;
+  overflow: hidden;
+  float: center;
+  display: flex;
+  padding: 2px 5px 2px 5px;
+  margin: 1px;
+}
+.header li {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  color: #847274;
+  margin: 0;
+}
+
+.header-logo-wrapper {
+  display: flex;
+  float: left;
+}
 .header .logo {
   display: block;
   padding: 1px 75px 1px 20px;
   color: #888;
-  font-size: 25px;
+  font-size: 125%;
   white-space: nowrap;
 }
 .header .logo:hover {
@@ -186,27 +218,50 @@ nav[role="toc"] > ul > li > ul > li > ul {
   position: relative;
 }
 
+.header-nav-wrapper {
+  display: inline-block;
+  vertical-align: middle;
+  float: right;
+  right: 0;
+}
+.header-nav li {
+  display: inline-block;
+  float: right;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
+  padding: 2px 15px 2px 15px;
+}
+.header-nav > li + li {
+  border-left: 1px solid #847274;
+}
+.header-nav .{
+  display: none;
+}
+
+
 
 /* ------------------------------------------------------------
  | Footer
  */
 
 footer {
-  /* Both required or else the footer floats. */
+  clear: both;
+  /* Position=relative and bottom=0 are required or else the footer floats. */
   position: relative;
   bottom: 0;
+  z-index: 9999; /* always top layer */
+  width: 100%;
 }
 .footer {   /* This is the inner element */
+  width: 100%;
   background: #382224;
-  clear: both;
   border-top: 5px solid #0aa8e7;
   text-align: center;
   padding: 5px 0 10px 0;
 
   position: absolute;
   bottom: 0;
-  width:100%;
-  z-index: 9999; /* always top layer */
 }
 .footer:before,
 .footer:after {

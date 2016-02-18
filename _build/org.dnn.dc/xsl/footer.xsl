@@ -27,7 +27,7 @@
                 <ul class="misc horizontal-list">
                     <li><a href="http://www.dnnsoftware.com/Terms">Terms of Use</a></li>
                     <li><a href="http://www.dnnsoftware.com/Privacy">Privacy</a></li>
-                    <li>&#169; 2016 DNN Corp. All rights reserved.</li>
+                    <li>&#169; 2016 <a href="http://www.dnnsoftware.com/about">DNN Corp.</a> All rights reserved.</li>
                 </ul>
             </div>
         </div>
