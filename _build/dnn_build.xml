@@ -117,6 +117,8 @@
             <property name="output.dir" location="${out.dir}${file.separator}xhtml"/>
 
             <!-- The following are common with other targets. -->
+            <property name="args.breadcrumbs" value="yes"/>
+
             <property name="args.copycss" value="yes"/>
             <property name="args.css" value="dnndocsltr.css"/>
             <property name="args.cssroot" value="${thm.src.dir}"/>
@@ -140,6 +142,8 @@
             <property name="output.dir" location="${out.dir}${file.separator}html5"/>
 
             <!-- The following are common with other targets. -->
+            <property name="args.breadcrumbs" value="yes"/>
+
             <property name="args.copycss" value="yes"/>
             <property name="args.css" value="dnndocsltr.css"/>
             <property name="args.cssroot" value="${thm.src.dir}"/>
