@@ -30,6 +30,10 @@
                     <li>&#169; 2016 <a href="http://www.dnnsoftware.com/about">DNN Corp.</a> All rights reserved.</li>
                 </ul>
             </div>
+
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+            <script src="/_theme/scripts.js"></script>
+            <!-- <script src="_theme/crumb.js"></script> -->
         </div>
 
     </xsl:template>
