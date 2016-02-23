@@ -15,16 +15,27 @@
     <keydef keys="k-setupmap"    href="setup.ditamap" />
 
 
+
     <!-- Main maps -->
     <!-- <topichead navtitle="Doc Center" toc="no"> -->
+
+
+        <!-- These have been moved to the individual centers.
         <topicref format="dita" type="topic"   keyref="k-whatsnew" toc="yes" />
         <topicref format="dita" type="concept" keyref="k-ovplatform" toc="yes" />
+        -->
+
         <!-- <topicref format="dita" type="concept" keyref="k-ovevoq" toc="yes" /> -->
         <mapref href="admctr.ditamap" />
         <mapref href="devctr.ditamap" />
         <mapref href="dsgctr.ditamap" />
+
+        <!-- These have been moved to the individual centers.
         <topicref format="dita" type="reference" keyref="k-reqs" toc="yes" />
+        -->
         <mapref keyref="k-glossarymap" />
+
+
     <!-- </topichead> -->
 
 

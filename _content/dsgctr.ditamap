@@ -8,6 +8,9 @@
     <!-- <topichead id="DsgCtr" navtitle="Designer Center" toc="yes" print="yes"> -->
     <topicref format="dita" type="concept" href="design/con-DsgCtr.dita" toc="yes">
 
+        <topicref format="dita" type="topic"   keyref="k-whatsnew" toc="yes" />
+        <topicref format="dita" type="concept" keyref="k-ovplatform" toc="yes" />
+
         <topicref format="dita" href="design/con-AboutThemes.dita" toc="yes" type="concept" />
 
         <mapref keyref="k-setupmap" />
@@ -30,6 +33,9 @@
             <!-- <topicref format="dita" type="reference" href="design/ref-ContentsThemePack.dita" /> -->
             <topicref format="dita" type="reference" keyref="k-manifest" />
         </topicref>
+
+        <topicref format="dita" type="reference" keyref="k-reqs" toc="yes" />
+        <topicref format="html" navtitle="Glossary" href="common/glossary.html" scope="peer" linking="targetonly" />
 
     </topicref>
 
