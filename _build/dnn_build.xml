@@ -34,13 +34,6 @@
             <isset property="env._logdir"/>
         </condition>
 
-        <condition property="out.dir" value="${env._outdir}" else="v:${file.separator}output" >
-            <isset property="env._outdir"/>
-        </condition>
-
-        <condition property="out.dir" value="${env._outdir}" else="v:${file.separator}output" >
-            <isset property="env._outdir"/>
-        </condition>
     </target>
 
 
@@ -114,7 +107,7 @@
         <ant antfile="build.xml">
             <property name="transtype" value="xhtml"/>
             <property name="args.input" location="${bld.dir}${file.separator}docctr.ditamap"/>
-            <property name="output.dir" location="${out.dir}${file.separator}xhtml"/>
+            <property name="output.dir" location="${out.dir}"/>
 
             <!-- The following are common with other targets. -->
             <property name="args.breadcrumbs" value="yes"/>
@@ -139,7 +132,7 @@
         <ant antfile="build.xml">
             <property name="transtype" value="html5"/>
             <property name="args.input" location="${bld.dir}${file.separator}docctr.ditamap"/>
-            <property name="output.dir" location="${out.dir}${file.separator}html5"/>
+            <property name="output.dir" location="${out.dir}"/>
 
             <!-- The following are common with other targets. -->
             <property name="args.breadcrumbs" value="yes"/>
@@ -166,7 +159,7 @@
         <ant antfile="build.xml">
             <property name="transtype" value="pdf"/>
             <property name="args.input" location="${bld.dir}${file.separator}docctr-pdf.ditamap"/>
-            <property name="output.dir" location="${out.dir}${file.separator}pdf"/>
+            <property name="output.dir" location="${out.dir}"/>
 
             <property name="outputFile.base" value="userguide"/>
             <property name="processing-mode" value="strict"/>
@@ -177,7 +170,7 @@
         <ant antfile="build.xml">
             <property name="transtype" value="htmlhelp"/>
             <property name="args.input" location="${bld.dir}${file.separator}docctr-htmlhelp.ditamap"/>
-            <property name="output.dir" location="${out.dir}${file.separator}htmlhelp"/>
+            <property name="output.dir" location="${out.dir}"/>
 
             <property name="args.copycss" value="yes"/>
             <property name="args.css" value="dnndocsltr.css"/>
