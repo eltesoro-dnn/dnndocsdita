@@ -21,7 +21,7 @@
   <lang xml:lang="de-de" filename="strings-de-de.xml"/>
   <lang xml:lang="el" filename="strings-el-gr.xml"/>
   <lang xml:lang="el-gr" filename="strings-el-gr.xml"/>
-  <lang xml:lang="en" filename="strings-en-us.xml"/>
+  <lang xml:lang="en" filename="dnnstrings-en-us.xml"/>
   <lang xml:lang="en-ca" filename="dnnstrings-en-us.xml"/>
   <lang xml:lang="en-gb" filename="dnnstrings-en-us.xml"/>
   <lang xml:lang="en-us" filename="dnnstrings-en-us.xml"/>
@@ -106,8 +106,8 @@
 
   <lang xml:lang="de" filename="../../plugins/org.dita.odt/xsl/xslodt/common/strings-de-de.xml"/>
   <lang xml:lang="de-de" filename="../../plugins/org.dita.odt/xsl/xslodt/common/strings-de-de.xml"/>
-  <lang xml:lang="en" filename="../../plugins/org.dita.odt/xsl/xslodt/common/strings-en-us.xml"/>
-  <lang xml:lang="en-us" filename="../../plugins/org.dita.odt/xsl/xslodt/common/strings-en-us.xml"/>
+  <lang xml:lang="en" filename="../../plugins/org.dita.odt/xsl/xslodt/common/dnnstrings-en-us.xml"/>
+  <lang xml:lang="en-us" filename="../../plugins/org.dita.odt/xsl/xslodt/common/dnnstrings-en-us.xml"/>
   <lang xml:lang="es" filename="../../plugins/org.dita.odt/xsl/xslodt/common/strings-es-es.xml"/>
   <lang xml:lang="es-es" filename="../../plugins/org.dita.odt/xsl/xslodt/common/strings-es-es.xml"/>
   <lang xml:lang="fr" filename="../../plugins/org.dita.odt/xsl/xslodt/common/strings-fr-fr.xml"/>
