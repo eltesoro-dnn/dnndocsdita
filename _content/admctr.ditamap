@@ -28,7 +28,7 @@
         -->
 
         <topicref format="dita" type="reference" keyref="k-reqs" toc="yes" />
-        <topicref format="html" navtitle="Glossary" href="common/glossary.html" scope="peer" linking="targetonly" />
+        <topicref format="html" navtitle="Glossary" href="common/glossary.html" scope="peer" linking="targetonly" toc="yes" />
 
     </topicref>
 

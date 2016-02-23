@@ -33,7 +33,7 @@
         <!-- These have been moved to the individual centers.
         <topicref format="dita" type="reference" keyref="k-reqs" toc="yes" />
         -->
-        <mapref keyref="k-glossarymap" />
+        <mapref keyref="k-glossarymap" toc="no" />
 
 
     <!-- </topichead> -->
