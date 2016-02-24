@@ -7,6 +7,19 @@
         <navtitle>Run Installation Wizard</navtitle>
     </titlealts>
 
+    <prolog>
+        <author>ERT</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="installing" />
+            <audience type="programmer" job="installing" />
+            <audience type="other" othertype="designer" job="installing" />
+        </metadata>
+    </prolog>
+
     <taskbody>
 
         <prereq>

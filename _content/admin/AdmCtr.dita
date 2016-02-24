@@ -4,6 +4,17 @@
 
     <title>Administrator Center</title>
 
+    <prolog>
+        <author>ERT</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" />
+        </metadata>
+    </prolog>
+
     <conbody>
         <p>Hello, Administrator!</p>
     </conbody>

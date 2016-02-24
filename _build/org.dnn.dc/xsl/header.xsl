@@ -27,7 +27,7 @@
                     -->
                     <!-- From Joe's version -->
                     <ul class="header-nav horizontal-list">
-                        <li>Documentation
+                        <li id="toc-doc">Documentation
                             <ul id="header-subnav-documentation">
                                 <li><a href="/admin/con-AdmCtr.html">Developer</a></li>
                                 <li><a href="/dev/con-DevCtr.html">Admin</a></li>
@@ -36,7 +36,7 @@
                         </li>
                         <li><a href="http://www.dnnsoftware.com/community-blog">Blogs</a></li>
                         <li><a href="http://www.dnnsoftware.com/community/download">Download</a></li>
-                        <li>Support
+                        <li id="toc-sup">Support
                             <ul id="header-subnav-support">
                                 <li><a href="http://www.dnnsoftware.com/forums">Forums</a></li>
                                 <li><a href="http://www.dnnsoftware.com/services/customer-support/success-network">Evoq Success Network</a></li>

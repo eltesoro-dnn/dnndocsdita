@@ -7,6 +7,18 @@
         <navtitle>DNN Manifest</navtitle>
     </titlealts>
 
+    <prolog>
+        <author>ERT</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+            <audience type="other" othertype="designer" job="designing" />
+        </metadata>
+    </prolog>
+
     <refbody>
 
         <section id="overview">

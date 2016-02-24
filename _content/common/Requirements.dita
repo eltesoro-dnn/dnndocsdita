@@ -7,6 +7,21 @@
         <navtitle>DNN Requirements</navtitle>
     </titlealts>
 
+    <prolog>
+        <author>ERT</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience job="evaluating" />
+            <audience job="installing" />
+            <audience type="administrator" />
+            <audience type="programmer" />
+            <audience type="other" othertype="designer" />
+        </metadata>
+    </prolog>
+
     <refbody>
 
         <section id="OS">

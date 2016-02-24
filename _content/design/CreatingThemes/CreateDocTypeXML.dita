@@ -4,6 +4,17 @@
 
     <title>Create a DocType XML</title>
 
+    <prolog>
+        <author>ERT</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="designer" job="other" otherjob="designing" />
+        </metadata>
+    </prolog>
+
     <taskbody>
 
         <context>If a page is not rendering properly in some browsers, you can force the theme to be rendered in XHTML or HTML5 by creating a DocType XML file.</context>
