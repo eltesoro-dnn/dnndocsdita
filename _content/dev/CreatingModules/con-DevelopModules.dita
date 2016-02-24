@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
+<concept xml:lang="en" id="con-DevelopModules">
+
+    <title>Module Development Overview</title>
+
+    <prolog>
+        <author>JMB</author>
+        <metadata>
+            <audience type="programmer" job="programming" />
+        </metadata>
+    </prolog>
+
+    <conbody>
+
+        <section id="Overview">
+            <p>The DNN platform provides many benefits to web developers. DNN provides common features like user management, role-based security, file management, and more. In this topic we'll cover how DNN Module Development which is the primary method for building web applications and web sites that run on DNN. You'll learn what a module is and the high-level concepts involved in module development.</p>
+        </section>
+
+        <section id="WhatIsAModule">
+            <title>What is a Module?</title>
+
+            <p>A typical web page includes page elements and content blocks. In DNN, page elements (e.g. site menu, login link, search bar) are included as part of the theme, and content blocks are managed using DNN modules.</p>
+            <image scalefit="yes" placement="break" align="left" href="../../common/img/module-overview.png"><alt>Modules are used to manage and display content on the page.</alt></image>
+
+            <p>The module is a foundational building block for extending DNN, and is the primary extension type that enables users to view, create and edit content. All DNN administrative features are implemented as modules.</p>
+
+            <note type="tip">The DNN platform source code provides more than two dozen modules that you can use as examples of how to build modules for DNN.</note>
+
+            <p>Due to the modular nature of page composition in DNN, modules are usually built to manage and display a single content type.</p>
+
+            <note type="tip">Consider creating multiple modules when managing complex content types, or include rich templating support so that administrators can control the layout of content on the page.</note>
+
+            <p>Many frameworks and approaches to developing modules are available. The three primary frameworks are:
+                <ul>
+                    <li>Web Forms - This is the traditional framework for creating DNN modules that uses ASP.NET Web Forms based controls.</li>
+                    <li>MVC - This framework was introduced in DNN 8 and uses the ASP.NET MVC framework.</li>
+                    <li>SPA - This framework enables you to build modules using plain HTML, JavaScript, and CSS. Developers are free to use their preferred SPA framework.</li>
+                </ul>
+            </p>
+
+            <p>After selecting the framework, choose your development approach.  You can choose a manual development approach, where the entire module is built by hand, or a more automated approach, where the basic module foundation is created using a template or other automation tool.</p>
+        </section>
+
+    </conbody>
+
+</concept>

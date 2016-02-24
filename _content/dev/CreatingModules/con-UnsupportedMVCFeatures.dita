@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
+<concept xml:lang="en" id="con-UnsupportedMVCFeatures">
+
+    <title>Unsupported MVC Features</title>
+    <titlealts>
+        <navtitle></navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>JMB</author>
+        <metadata>
+            <audience type="programmer" job="programming" />
+        </metadata>
+    </prolog>
+
+    <conbody>
+
+        <section id="NotImplemented">
+            <p>Some MVC features were not fully implemented in DNN 8 due to the differences between ASP.NET MVC and ASP.NET Web Forms frameworks.</p>
+
+            <ul>
+                <li>HTML Helpers
+                    <ul>
+                        <li>FormExtensions (BeginForm, BeginRouteForm, EndForm)</li>
+                        <li>Html.RouteLink</li>
+                        <li>All ChildActionExtensions i.e. Html.Action, Html.RenderAction</li>
+                    </ul>
+                </li>
+
+                <li>Url Helpers
+                    <ul>
+                        <li>Url.Action(string actionName, string controllerName, RouteValueDictionary routeValues, string protocol) </li>
+                        <li>Url.Action(string actionName, string controllerName, object routeValues, string protocol)</li>
+                        <li>Url.Action(string actionName, string controllerName, RouteValueDictionary routeValues, string protocol, string hostName)</li>
+                        <li>Url.RouteUrl</li>
+                        <li>Url.HttpRouteUrl</li>
+                    </ul>
+                </li>
+
+                <li>Controller Action Return Types - DNN 8 expects actions to return an ActionResult.  All other result types are currently unsupported
+                    <ul>
+                        <li>PartialViewResult,</li>
+                        <li>JsonResult</li>
+                        <li>ContentResult</li>
+                        <li>EmptyResult</li>
+                        <li>FileResult</li>
+                        <li>FileStreamResult</li>
+                        <li>JavaScriptResult</li>
+                        <li>RedirectResults</li>
+                        <li>RedirectToRouteResult</li>
+                    </ul>
+                </li>
+
+                <li>AsyncControllers</li>
+
+                <li>Attribute Routing</li>
+
+                <li>Bundles - DNN implements a different minification and bundling API which is available for MVC modules.</li>
+            </ul>
+        </section>
+
+
+        <section id="ComingSoon">
+            <p>The following features are expected in a future release soon:</p>
+            <ul>
+                <li>AJAX Helpers</li>
+                <li>Partial View support</li>
+            </ul>
+        </section>
+
+    </conbody>
+
+</concept>

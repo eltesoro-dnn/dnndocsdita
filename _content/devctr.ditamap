@@ -15,6 +15,15 @@
 
         <mapref keyref="k-setupmap" />
 
+        <topicref format="dita" type="concept" href="dev/con-DevelopModules.dita" toc="yes" collection-type="family">
+            <topicref format="dita" type="concept"   href="dev/CreatingModules/con-ModuleFeatures.dita" />
+            <topicref format="dita" type="concept"   href="dev/CreatingModules/con-ModuleArchitecture.dita" />
+            <topicref format="dita" type="concept"   href="dev/CreatingModules/con-WebFormsModuleDevelopment.dita" />
+            <topicref format="dita" type="concept"   href="dev/CreatingModules/con-MVCModuleDevelopment.dita" />
+            <topicref format="dita" type="concept"   href="dev/CreatingModules/con-SPAModuleDevelopment.dita" />
+            <topicref format="dita" type="concept"   href="dev/CreatingModules/con-UnsupportedMVCFeatures.dita" />
+        </topicref>
+
         <topicref format="dita" type="topic" href="dev/CreatingModules/top-CreateModule.dita" toc="yes" collection-type="sequence">
             <topicref format="dita" type="task" href="dev/CreatingModules/tsk-CreateModuleUsingTemplates.dita" />
             <topicref format="dita" type="task" href="dev/CreatingModules/tsk-StartVSProjWithTemplates.dita" />
@@ -48,19 +57,36 @@
         </relheader>
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept" href="dev/con-AboutEVS.dita" />
+                <topicref format="dita" type="concept" href="dev/CreatingModules/con-DevelopModules.dita" />
+                <topicref format="dita" type="concept" href="dev/CreatingModules/con-WebFormsModuleDevelopment.dita" />
+                <topicref format="dita" type="concept" href="dev/CreatingModules/con-MVCModuleDevelopment.dita" />
+                <topicref format="dita" type="concept" href="dev/CreatingModules/con-SPAModuleDevelopment.dita" />
+                <topicref format="dita" type="topic" href="dev/CreatingModules/top-CreateModule.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task" href="dev/CreatingModules/tsk-TestModule.dita" />
+                <topicref format="dita" type="task" href="common/Extensions/tsk-CreatePackage.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="topic" href="dev/top-Providers.dita" />
+            </relcell>
+        </relrow>
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="concept" href="dev/CreatingModules/con-MVCModuleDevelopment.dita" />
+                <topicref format="dita" type="concept" href="dev/CreatingModules/con-SPAModuleDevelopment.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="task" href="/dev/CreatingModules/tsk-CreateModuleUsingTemplates.dita" />
             </relcell>
             <relcell/>
         </relrow>
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic" href="dev/CreatingModules/top-CreateModule.dita" />
-                <topicref format="dita" type="topic" href="dev/top-Providers.dita" />
+                <topicref format="dita" type="concept" href="dev/con-AboutEVS.dita" />
             </relcell>
-            <relcell/>
+            <relcell>
+                <topicref format="dita" type="task" href="dev/CreatingModules/tsk-TestModule.dita" />
+            </relcell>
             <relcell/>
         </relrow>
         <relrow>

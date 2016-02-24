@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
+<concept xml:lang="en" id="con-ModuleFeatures">
+
+    <title>Common Module Features</title>
+    <titlealts>
+        <navtitle></navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>JMB</author>
+        <metadata>
+            <audience type="programmer" job="programming" />
+        </metadata>
+    </prolog>
+
+    <conbody>
+
+        <section id="Overview">
+            <p>DNN provides many features that simplify module development. Some features are handled completely by the platform and don't require much effort from developers. Others require a simple configuration setting in the module manifest. Some features are provided as a set of APIs that developers can leverage to speed development.</p>
+        </section>
+
+
+        <section id="Themes and Containers">
+            <title>Themes and Containers</title>
+
+            <p>While not traditionally considered part of module development, themes and containers play a big role in how a module is displayed on a page. Understanding the relationship between these elements will help you build modules that play well with other content on the page.</p>
+
+            <p>Themes define the look and feel of pages within DNN, and modules should be designed to work with a wide variety of styles. Through the placement of panes, the theme defines where modules can be positioned on a webpage.</p>
+
+            <note type="tip">You can define styles specific to your module. If you do, define the scope of your styles in a root element (usually a <apiname>&lt;div&gt;</apiname> that wraps your entire markup) within your module. This ensures that your styles will be more specific than the styles defined in the theme.</note>
+
+            <p>When a module is added to a page, DNN wraps a container around the module. The container defines the look and feel of content blocks on the page and provides user interface elements for managing the module, such as the module title, the module action menu, and the action links.</p>
+        </section>
+
+
+        <section id="ModuleActionMenu">
+            <title>Module Action Menu</title>
+
+            <p>The module action menu provides access to standard functionality such as module deletion, printing, content import/export and content placement. Menu items are dynamically created based on module features and on site settings.</p>
+
+            <image scalefit="yes" placement="break" align="left" href="../../common/img/module-action-menu.png"><alt>Module action menu</alt></image>
+
+            <p>Your module can customize the Module Action Menu</p>
+
+            <p>You can customize module action menu by implementing the following features in your module:
+                <ul>
+                    <li>Provide a link to a help page manifest to change the **Help** link in the menu.</li>
+                    <li>Implement the <apiname>IPortable</apiname> interface to display the **Import** and **Export** links in the menu.
+                         <note type="note"> The <apiname>IPortable</apiname> interface is also used by DNN when an administrator creates a page or portal template, or when a page or portal template is used to create a page or portal. </note>
+                    </li>
+                    <li>Implement the <apiname>ISearchable</apiname> interface to display the **Syndicate** link in the menu.
+                         <note type="note"> The Syndicate feature requires an administrator to enable the syndication feature in the module settings. </note>
+                    </li>
+                    <li>Implement the <apiname>IActionable</apiname> interface to display custom menu items.
+                         <note type="note"> Custom menu items are shown in their own menu under the pencil icon.  If IActionable is not implemented then the pencil icon menu will not be shown. </note>
+                    </li>
+                </ul>
+             </p>
+        </section>
+
+
+        <section id="ModuleSettings">
+            <title>Module Settings</title>
+
+            <p>DNN contains a settings management system that includes a settings objects for Host, Portal, Tab, TabModule and Module entities. You might need to access these common settings to determine which of your module's features to enable. The platform manages the storage and retrieval of these settings to simplify module development.</p>
+
+            <p>You can also create custom settings and the associated UI used for managing those settings.</p>
+
+            <image scalefit="yes" placement="break" align="left" href="../../common/img/module-settings.png"><alt>Custom module settings</alt></image>
+        </section>
+
+
+        <section id="Packaging">
+            <title>Packaging</title>
+
+            <p>Modules must be packaged in a standard format to be shared with other DNN websites. DNN packages are essentially .zip files that include a custom DNN manifest. The manifest is an xml file with a .dnn extension, it defines how the components of your module are installed.</p>
+
+            <p>You can bundle modules into packages:
+                <ul>
+                    <li>manually,</li>
+                    <li>by using the module packaging wizard, which is available through the **Module Creator** or the **Extensions** page, or
+                        <image scalefit="yes" placement="break" align="left" href="../../common/img/module-package.png"><alt>Click Create Package to start the wizard.</alt></image>
+                    </li>
+                    <li>by using the build scripts that come with standard module templates.</li>
+                </ul>
+            </p>
+        </section>
+
+
+        <section id="Security">
+            <title>Security</title>
+
+            <p>DNN provides a role-based access control system that provides granular control at the site, page and module level. You can extend this system to increase granularity of permission settings at the module level.</p>
+
+            <image scalefit="yes" placement="break" align="left" href="../../common/img/module-permissions.png"><alt>Include custom module permissions</alt></image>
+
+            <p>Modules can also call a DNN security API to check a user's current permissions before enabling secured features.</p>
+        </section>
+
+    </conbody>
+
+</concept>
