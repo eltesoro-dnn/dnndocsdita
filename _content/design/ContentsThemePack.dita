@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-ContentsThemePack">
+
+    <title>Contents of a Theme Package</title>
+
+    <refbody>
+
+        <section id="themepkgcontents">
+
+            <p>A theme package includes the following:</p>
+            <ul>
+                <li><i>(root folder)</i>
+                    <ul>
+                        <li>Layout template files (*.ascx)</li>
+                        <li>Container files (*.ascx)</li>
+                        <li>(Optional) CSS for individual layout templates or containers (*.css with the same filename as your layout template or container)</li>
+                        <li>(Optional) CSS for the entire theme (skin.css)</li>
+                        <li>(Optional) Document Type XML file for individual layout templates or containers (*.doctype.xml)</li>
+                        <li>(Optional) Property values of tokens used in your HTML layout template or container (*.xml with the same filename as your HTML layout template or container) </li>
+                    </ul>
+                </li>
+
+                <li><b>images</b> contains all image files used by the theme, including:
+                    <ul>
+                        <li>(Optional) Preview images of individual layout templates or containers (*.png/jpg with the same filename and in the same folder as your layout template or container)</li>
+                    </ul>
+                </li>
+
+                <li><b>fonts</b> contains all web fonts used by the theme.</li>
+
+                <li><b>js</b> contains all JScript files used by the theme, such as <filepath>bootstrap.min.js</filepath> and <filepath>common.js</filepath>.</li>
+
+                <li><b>menu</b> contains all desktop menu files for the theme. If a theme includes multiple menu templates (i.e., a left-hand nav tree and a horizontal menu bar), you can store each menu in its own folder.</li>
+            </ul>
+
+            <note type="note">You can choose your own folder names.</note>
+
+        </section>
+
+
+        <related-links>
+            <link format="dita" href="../../dev/ContentsModulePack.dita"><linktext>Contents of a Module Package</linktext></link>
+            <link format="dita" href="../../common/Extensions/CreatePackage.dita"><linktext>Create the Package</linktext></link>
+            <link format="html" scope="external" href="http://www.dnnsoftware.com/services/professional-training/training-videos-subscription/skinning-5-packaging"><linktext>DNN Professional Training video: Skinning 5: Packaging</linktext></link>
+        </related-links>
+
+    </refbody>
+
+</reference>

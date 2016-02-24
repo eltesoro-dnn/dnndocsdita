@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/task.dtd">
+<task xml:lang="en" id="tsk-CreateLayoutTemplate">
+
+    <title>Create a Layout Template</title>
+
+    <taskbody>
+
+        <steps>
+
+            <step><cmd>Create a new file for the layout template.</cmd>
+                <info>
+                    <ul>
+                        <li>The layout template must contain at least one pane.</li>
+                        <li>Exactly one of the panes must be called <codeph>ContentPane</codeph>.</li>
+                        <li>Each pane must have a name that is unique within the page.</li>
+                        <li>All panes must be defined as a server control by adding <codeph>runat="server"</codeph> to the element.</li>
+                        <li>A pane can be one of the following HTML elements: &lt;td&gt; (table cells), &lt;div&gt;, &lt;p&gt;, and &lt;span&gt;.</li>
+                    </ul>
+
+                    <note type="tip">ASP.NET might modify the control names (e.g., <codeph>div id</codeph>) when the page is rendered to avoid duplicate control names in a page. Instead of depending on the control name when styling, add a class attribute to each of the controls and refer to those class attributes in your CSS.</note>
+                </info>
+
+                <stepxmp>
+                    <p>A very basic layout template.</p>
+                    <ul>
+                        <li>HTML
+                            <codeblock>
+    &lt;div id="ContentPane" runat="server"&gt;&lt;/div&gt;
+                            </codeblock>
+                        </li>
+                        <li>ASCX
+                            <codeblock>
+    &lt;!-- &lt;%@ Control language="vb" AutoEventWireup="false" Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %&gt; --&gt;
+    &lt;div id="ContentPane" runat="server"&gt;&lt;/div&gt;
+                            </codeblock>
+                        </li>
+                    </ul>
+                </stepxmp>
+
+                <stepxmp>
+                    <p>A layout template with several panes, a header, a footer, and a LOGO theme object.</p>
+                    <ul>
+                        <li>HTML
+                            <codeblock>
+    &lt;div id="wrapper"&gt;
+        &lt;div id="header"&gt;
+            [LOGO]
+        &lt;/div&gt;
+        &lt;div id="sidebar"&gt;
+            &lt;div id="feed"&gt;
+                &lt;a class="feed-button" href="#"&gt; &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div id="SidebarPane" class="SidebarPane" runat="server"&gt;&lt;/div&gt;
+            &lt;div id="sidebar-bottom"&gt; &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id="content"&gt;
+            &lt;div id="BannerPane" class="BannerPane" runat="server"&gt;&lt;/div&gt;
+            &lt;div id="ContentPane" runat="server"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id="footer"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+                            </codeblock>
+                        </li>
+                        <li>ASCX
+                            <codeblock>
+    &lt;%@ Control language="vb" AutoEventWireup="false" Explicit="True" Inherits="DotNetNuke.UI.Skins.Skin" %&gt;
+    &lt;%@ Register TagPrefix="dnn" TagName="LOGO" Src="~/Admin/Skins/Logo.ascx" %&gt;
+    &lt;div id="wrapper"&gt;
+        &lt;div id="header"&gt;
+            &lt;dnn:LOGO runat="server" id="dnnLOGO" /&gt;
+        &lt;/div&gt;
+        &lt;div id="sidebar"&gt;
+            &lt;div id="feed"&gt;
+                &lt;a class="feed-button" href="#"&gt; &lt;/a&gt;
+            &lt;/div&gt;
+            &lt;div id="MySidebarPane" class="SidebarPane" runat="server"&gt;&lt;/div&gt;
+            &lt;div id="sidebar-bottom"&gt; &lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id="content"&gt;
+            &lt;div id="MyBannerPane" class="MyBannerPane" runat="server"&gt;&lt;/div&gt;
+            &lt;div id="ContentPane" runat="server"&gt;&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div id="footer"&gt;&lt;/div&gt;
+    &lt;/div&gt;
+                            </codeblock>
+                        </li>
+                    </ul>
+                </stepxmp>
+            </step>
+
+            <step><cmd>(Optional) Add theme objects to any pane for a more dynamic page.</cmd>
+                <info>
+                    <ul>
+                        <li>In HTML, you can use the HTML token (example: <codeph>[LOGIN]</codeph>).
+                            <codeblock>
+    &lt;div id="login_style" class="user"&gt;
+        [LOGIN]
+    &lt;/div&gt;
+                            </codeblock>
+                        </li>
+                        <li>In ASCX, you must register the ASCX token (example: <codeph>&lt;dnn:Login ...</codeph>) before using it for the first time in the file.
+                            <codeblock>
+    &lt;%@ Register TagPrefix="dnn" TagName="Login" Src="~/Admin/Skins/login.ascx" %&gt;
+    ...
+    &lt;div id="login_style" class="user"&gt;
+        &lt;dnn:Login runat="server" id="dnnLogin" CssClass="user" /&gt;
+    &lt;/div&gt;
+                            </codeblock>
+                        </li>
+                    </ul>
+
+                    <p>A default DNN installation includes the following theme objects:
+                        <ul>
+                            <li>BANNER</li>
+                            <li>BREADCRUMB</li>
+                            <li>COPYRIGHT</li>
+                            <li>CURRENTDATE</li>
+                            <li>DOTNETNUKE</li>
+                            <li>HELP</li>
+                            <li>HOSTNAME</li>
+                            <li>LANGUAGE</li>
+                            <li>LEFTMENU</li>
+                            <li>LINKS</li>
+                            <li>LOGIN</li>
+                            <li>LOGO</li>
+                            <li>MENU</li>
+                            <li>NAV</li>
+                            <li>PRIVACY</li>
+                            <li>SEARCH</li>
+                            <li>SOLPARTMENU</li>
+                            <li>STYLES</li>
+                            <li>TAGS</li>
+                            <li>TERMS</li>
+                            <li>TEXT</li>
+                            <li>TREEVIEW</li>
+                            <li>USER</li>
+                        </ul>
+                    </p>
+
+                    <note conkeyref="k-bptext/note-TipSkinningTool"></note>
+                </info>
+            </step>
+
+        </steps>
+
+    </taskbody>
+
+
+    <related-links>
+        <link format="dita" href="./CreateCSS.dita"><linktext>Create CSS</linktext></link>
+        <link format="dita" href="./CreateContainer.dita"><linktext>Create a Container</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><linktext>DNN Wiki: DotNetNuke Skins</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/132000/dotnetnuke-skinning-101-part-1"><linktext>DNN Community Blog: DotNetNuke Skinning 101 (Part 1 and 2) by Joe Brinkman</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/services/professional-training/training-videos-subscription/skinning-2-creating-html-skins"><linktext>DNN Professional Training: Creating HTML Skins</linktext></link>
+    </related-links>
+
+</task>

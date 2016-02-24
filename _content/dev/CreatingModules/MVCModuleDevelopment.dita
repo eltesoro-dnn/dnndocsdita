@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
+<concept xml:lang="en" id="con-MVCModuleDevelopment">
+
+    <title>MVC Module Development</title>
+    <titlealts>
+        <navtitle>MVC Modules</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>JMB</author>
+        <metadata>
+            <audience type="programmer" job="programming" />
+        </metadata>
+    </prolog>
+
+    <conbody>
+
+        <section id="Overview">
+            <title>Overview</title>
+
+            <p>The MVC module type integrates ASP.NET MVC 5 with the Web Forms based DNN platform. The DNN MVC implementation focuses on creating a familiar development experience for ASP.NET MVC and DNN module developers.</p>
+
+            <p>Incompatibilities between ASP.NET MVC and ASP.NET Web Forms cause conflicts with pre-existing Web Forms based features in the DNN platform. Therefore, DNN implementations of some ASP.NET features, such as MVC routing, are limited.</p>
+
+            <p>MVC modules can use all of the standard DNN module features. All DNN module types can co-exist on a single page, and the user should not be able to distinguish which framework was used to build the module.</p>
+        </section>
+
+
+        <section id="MVCModuleArchitecture">
+            <title>MVC Module Architecture</title>
+
+            <p>The MVC module type implements the model-view-controller pattern that separates an application into three main components:</p>
+
+            <ul>
+                <li><term>Models</term> implement the domain logic, and often store and retrieve data from the database.</li>
+
+                <li><term>Views</term> render the module's user interface (UI). Typically, views are created based on data provided by the model. The default view in the DNN MVC module template uses a model where a collection of items are rendered by the view.
+
+                    <codeblock> <!-- C# -->
+    @model IEnumerable&lt;Dnn.Modules.DnnMvcModule.Models.Item&gt;
+
+    &lt;div id="Items-@Dnn.ModuleContext.ModuleId"&gt;
+        @if (Model.Count() == 0)
+        {
+            &lt;p&gt;No items defined.&lt;/p&gt;
+        }
+        else
+        {
+            &lt;ul class="tm_tl"&gt;
+                @foreach (var item in Model)
+                {
+                    &lt;li class="tm_t"&gt;
+                        &lt;h3&gt;@item.ItemName&lt;/h3&gt;
+                        &lt;div class="tm_td"&gt;@item.ItemDescription&lt;/div&gt;
+                        @{
+                            if (Dnn.ModuleContext.IsEditable)
+                            {
+                                &lt;div&gt;
+                                    &lt;a href="@Url.Action("Edit", "Item", new {ctl = "Edit", itemId = item.ItemId})"&gt;@Dnn.LocalizeString("EditItem")&lt;/a&gt;
+                                    &lt;a href="@Url.Action("Delete", "Item", new {itemId = item.ItemId})"&gt;@Dnn.LocalizeString("DeleteItem")&lt;/a&gt;
+                                &lt;/div&gt;
+                            }
+                        }
+                    &lt;/li&gt;
+                }
+            &lt;/ul&gt;
+        }
+    &lt;/div&gt;
+                    </codeblock>
+                </li>
+
+                <li><term>Controllers</term> handle user interaction, retrieve and update the model, and select the view to use.
+
+                    <p>Although the composition of the presentation layer is different, the logical architecture of an MVC module is similar to that of a Web Forms module.</p>
+
+                    <image scalefit="yes" placement="break" align="left" href="../../common/img/module-architecture-mvc.png"><alt>Logical architecture of an MVC module</alt></image>
+
+                    <p>When a DNN page is requested, the framework looks up the requested module control in the module definition. In an MVC module, the module control identifies a specific namespace, controller, and action. The output from the controller action is then rendered to a string and subsequently injected into the page.</p>
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="BuildingMVCModules">
+            <title>Building MVC Modules</title>
+
+            <p>Visual Studio only supports a single project type for MVC projects. However, the MVC project type in Visual Studio include additional scaffolding support for creating new controllers and views to speed up development and ensure that controllers and views follow the standard MVC conventions.</p>
+
+            <note type="note">Visual Studio is currently the only tool available for creating MVC modules.</note>
+
+            <p>The ASP.NET MVC framework relies on <xref format="html" scope="external" href="https://en.wikipedia.org/wiki/Convention_over_configuration">Convention over Configuration</xref> to simplify development. DNN modules follow all of the ASP.NET MVC conventions and include DNN specific conventions as well. MVC module conventions include:</p>
+
+
+            <ul>
+                <li>File Name Conventions
+                    <simpletable relcolwidth="3* 7*">
+                        <sthead>
+                            <stentry>File Type</stentry>
+                            <stentry>Convention</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry>Controller</stentry>
+                            <stentry>Name must include the "controller" suffix.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>Default View</stentry>
+                            <stentry>Named for the action (e.g. the default view for an index action must be named index.cshtml).</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>Shared layout</stentry>
+                            <stentry>Name must be prefixed with an underscore (_).</stentry>
+                        </strow>
+                    </simpletable>
+                </li>
+
+                <li>File Location Conventions
+                    <simpletable relcolwidth="3* 7*">
+                        <sthead>
+                            <stentry>File Type</stentry>
+                            <stentry>Convention</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry>View</stentry>
+                            <stentry>Inside **Views** folder that matches the controller name (e.g. a view for the Home controller should be in the **/Views/Home** folder)</stentry>
+                         </strow>
+                         <strow>
+                             <stentry>Shared layout</stentry>
+                             <stentry><filepath>/Views/Shared</filepath> folder</stentry>
+                         </strow>
+                         <strow>
+                             <stentry>MVC Module</stentry>
+                             <stentry><filepath> DesktopModules/MVC </filepath> folder</stentry>
+                         </strow>
+                         <strow>
+                             <stentry>Controller</stentry>
+                             <stentry><filepath> Controllers </filepath> folder (optional)</stentry>
+                         </strow>
+                         <strow>
+                             <stentry>Model</stentry>
+                             <stentry>Models folder (optional)</stentry>
+                         </strow>
+                         <strow>
+                             <stentry>Static content file (e.g., stylesheets and images)</stentry>
+                             <stentry>Content folder</stentry>
+                         </strow>
+                         <strow>
+                             <stentry>JavaScript file</stentry>
+                             <stentry>Scripts folder</stentry>
+                         </strow>
+                    </simpletable>
+                </li>
+
+                <li>Miscellaneous Conventions
+                    <ul>
+                        <li>Bound HTML form fields must have the same name as the corresponding model property.</li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="AccessingDNNFeatures">
+            <title>Accessing DNN Features</title>
+
+            <p>DNN includes APIs to make common DNN features available to MVC developers. These APIs include:</p>
+
+             <ul>
+                 <li><term>Localization</term> - The DNN helper object includes a <apiname>LocalizeString</apiname> method. This helper object can be used in your view when localizing your module.</li>
+
+                 <li><term>Module actions</term> - DNN includes the <apiname>ModuleAction</apiname> and <apiname>ModuleActionItems</apiname> attributes to identify custom module actions. These attributes can only be used with controller action methods.</li>
+
+                 <li><term>Base controller class</term> - MVC controllers should inherit from the <apiname>DnnController</apiname> class. Similar to the <apiname>PortalModuleBase</apiname> class for Web Forms module developers, this class provides access to the DNN module and portal context objects.</li>
+             </ul>
+        </section>
+
+    </conbody>
+
+    <related-links>
+        <link scope="peer" href="UnsupportedMVCFeatures.dita"><linktext>Unsupported-MVC-Features</linktext></link>
+        <link scope="external" href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller"><linktext>Wikipedia: Model-View-Controller</linktext></link>
+    </related-links>
+</concept>

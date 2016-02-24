@@ -6,31 +6,31 @@
 
 
     <!-- <topichead id="DsgCtr" navtitle="Designer Center" toc="yes" print="yes"> -->
-    <topicref format="dita" type="concept" href="design/con-DsgCtr.dita" toc="yes">
+    <topicref format="dita" type="concept" href="design/DsgCtr.dita" toc="yes">
 
         <topicref format="dita" type="topic"   keyref="k-whatsnew" toc="yes" />
         <topicref format="dita" type="concept" keyref="k-ovplatform" toc="yes" />
 
-        <topicref format="dita" href="design/con-AboutThemes.dita" toc="yes" type="concept" />
+        <topicref format="dita" href="design/AboutThemes.dita" toc="yes" type="concept" />
 
-        <mapref keyref="k-setupmap" />
+        <topicref format="html" navtitle="Set Up" href="common/setup/SetUpDNN.html" scope="peer" toc="yes" />
 
-        <topicref format="dita" type="topic" href="design/CreatingThemes/top-CreateTheme.dita" toc="yes" collection-type="sequence">
-            <topicref format="dita" type="task" href="design/CreatingThemes/tsk-CreateLayoutTemplate.dita" />
-            <topicref format="dita" type="task" href="design/CreatingThemes/tsk-CreateContainer.dita" />
-            <topicref format="dita" type="task" href="design/CreatingThemes/tsk-CreateCSS.dita" />
-            <topicref format="dita" type="task" href="design/CreatingThemes/tsk-CreateDocTypeXML.dita" />
-            <topicref format="dita" type="task" href="common/Extensions/tsk-CreatePackage.dita" />
-            <topicref format="dita" type="task" href="common/Extensions/tsk-InstallExtension.dita" />
-            <!-- <topicref format="dita" type="task" href="design/CreatingModules/tsk-TestTheme.dita" /> -->
+        <topicref format="dita" type="topic" href="design/CreatingThemes/CreateTheme.dita" toc="yes" collection-type="sequence">
+            <topicref format="dita" type="task" href="design/CreatingThemes/CreateLayoutTemplate.dita" />
+            <topicref format="dita" type="task" href="design/CreatingThemes/CreateContainer.dita" />
+            <topicref format="dita" type="task" href="design/CreatingThemes/CreateCSS.dita" />
+            <topicref format="dita" type="task" href="design/CreatingThemes/CreateDocTypeXML.dita" />
+            <topicref format="dita" type="task" href="common/Extensions/CreatePackage.dita" />
+            <topicref format="dita" type="task" href="common/Extensions/InstallExtension.dita" />
+            <!-- <topicref format="dita" type="task" href="design/CreatingModules/TestTheme.dita" /> -->
         </topicref>
 
-        <topicref format="dita" type="task"  href="common/Extensions/tsk-CreatePackage.dita" toc="yes" />
+        <topicref format="dita" type="task"  href="common/Extensions/CreatePackage.dita" toc="yes" />
 
-        <topicref format="dita" type="topic" href="design/top-DsgRefs.dita" toc="yes" collection-type="family">
+        <topicref format="dita" type="topic" href="design/DsgRefs.dita" toc="yes" collection-type="family">
             <!-- UX Guide -->
-            <!-- <topicref format="dita" type="reference" href="design/ref-ThemeObjects.dita" /> -->
-            <!-- <topicref format="dita" type="reference" href="design/ref-ContentsThemePack.dita" /> -->
+            <!-- <topicref format="dita" type="reference" href="design/ThemeObjects.dita" /> -->
+            <!-- <topicref format="dita" type="reference" href="design/ContentsThemePack.dita" /> -->
             <topicref format="dita" type="reference" keyref="k-manifest" />
         </topicref>
 
@@ -49,13 +49,13 @@
 
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept" href="design/con-AboutThemes.dita" linking="targetonly" />
+                <topicref format="dita" type="concept" href="design/AboutThemes.dita" linking="targetonly" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task" href="design/CreatingThemes/tsk-CreateLayoutTemplate.dita" />
-                <topicref format="dita" type="task" href="design/CreatingThemes/tsk-CreateCSS.dita" />
-                <topicref format="dita" type="task" href="design/CreatingThemes/tsk-CreateContainer.dita" />
-                <topicref format="dita" type="task" href="design/CreatingThemes/tsk-CreateDocTypeXML.dita" />
+                <topicref format="dita" type="task" href="design/CreatingThemes/CreateLayoutTemplate.dita" />
+                <topicref format="dita" type="task" href="design/CreatingThemes/CreateCSS.dita" />
+                <topicref format="dita" type="task" href="design/CreatingThemes/CreateContainer.dita" />
+                <topicref format="dita" type="task" href="design/CreatingThemes/CreateDocTypeXML.dita" />
             </relcell>
             <relcell/>
         </relrow>
@@ -63,11 +63,11 @@
         <!--
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic" href="design/CreatingThemes/top-CreateTheme.dita" />
+                <topicref format="dita" type="topic" href="design/CreatingThemes/CreateTheme.dita" />
             </relcell>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="reference" href="design/ref-ThemeObjects.dita" />
+                <topicref format="dita" type="reference" href="design/ThemeObjects.dita" />
             </relcell>
         </relrow>
         -->

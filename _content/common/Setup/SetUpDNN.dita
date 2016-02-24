@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-SetUpDNN">
+
+    <title>Set Up DNN</title>
+
+    <body>
+
+        <section id="DNNProducts">
+            <p>DNN offers three products:
+                <ul>
+                    <li>DNN Platform is the free open-source package.</li>
+                    <li>Evoq Content adds more advanced website management features over the DNN Platform.</li>
+                    <li>Evoq Engage adds user engagement features over Evoq Content.</li>
+                </ul>
+            </p>
+
+            <p>You can <xref format="html" scope="external" href="http://www.dnnsoftware.com/products/compare-dnn-platform-to-evoq">compare the features</xref> in detail.</p>
+
+            <p>Then, <xref format="dita" href="../../common/placeholderlink.dita">download DNN here</xref>.</p>
+
+            <draft-comment>
+                <!--
+                Cover older versions in the next iteration of the docs website.
+                <li><b>Determine what DNN version to install.</b> Decide on the oldest DNN version that you are willing to support.
+                    <ul>
+                        <li>What is the oldest DNN version that you or your clients have in production?</li>
+                        <li>If there is a specific feature that you want to use, which DNN version introduced that feature?</li>
+                    </ul>
+                    <p><b>Note:</b> DNN 8.0 is mostly backward-compatible, except where noted in DNN 8 compatibility page. If you compile your module on an older DNN version, it will likely be compatible with newer versions; however, you should test your module on newer versions to ensure compatibility.
+                </li>
+                -->
+            </draft-comment>
+        </section>
+
+
+        <section id="DNNRequirements">
+            <p>For a basic installation, DNN requires Microsoft IIS and SQL server. You can view the <xref format="dita" href="../Requirements.dita">DNN 8.0 Requirements</xref> for the compatible versions.</p>
+            <p><b>Developers:</b> Visual Studio 2015 is the recommended IDE for developing DNN modules. It is required if you are contributing to the DNN Platform.</p>
+        </section>
+
+    </body>
+
+
+    <related-links>
+        <link format="dita" scope="peer"     href="../Extensions/InstallExtension.dita"><linktext>Install an Extension</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155070/installing-dnn"><linktext>DNN Community Blog: Installing DNN by Clinton Patterson</linktext></link>
+        <link format="html" scope="external" href="http://www.christoc.com/Tutorials/All-Tutorials/aid/1"><linktext>Setting up your DotNetNuke Module Development Environment by Chris Hammond</linktext></link>
+    </related-links>
+
+</topic>

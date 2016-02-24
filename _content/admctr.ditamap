@@ -6,19 +6,19 @@
 
 
     <!-- <topichead id="AdmCtr" navtitle="Administrator Center" toc="yes" print="yes"> -->
-    <topicref format="dita" type="concept" href="admin/con-AdmCtr.dita" toc="yes">
+    <topicref format="dita" type="concept" href="admin/AdmCtr.dita" toc="yes">
 
         <topicref format="dita" type="topic"   keyref="k-whatsnew" toc="yes" />
         <topicref format="dita" type="concept" keyref="k-ovplatform" toc="yes" />
 
-        <mapref keyref="k-setupmap" />
+        <topicref format="html" navtitle="Set Up" href="common/setup/SetUpDNN.html" scope="peer" toc="yes" />
 
-        <topicref format="dita" type="task" href="common/Extensions/tsk-InstallExtension.dita" toc="yes" />
+        <topicref format="dita" type="task" href="common/Extensions/InstallExtension.dita" toc="yes" />
 
         <topicref format="html" scope="external" navtitle="Online User Guide" href="http://www.dnnsoftware.com/help" />
 
         <!--
-        <topicref format="dita" type="topic" href="admin/top-AdmRefs.dita" toc="yes" collection-type="family">
+        <topicref format="dita" type="topic" href="admin/AdmRefs.dita" toc="yes" collection-type="family">
             <xref format="dita" href="../common/placeholderlink.dita">DNN 8.0 User Guide</xref>
             <xref format="dita" href="../common/placeholderlink.dita">Evoq 8.x User Guide</xref>
             Security Guide

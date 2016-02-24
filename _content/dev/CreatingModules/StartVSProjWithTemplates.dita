@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/task.dtd">
+<task xml:lang="en" id="tsk-StartVSProjWithTemplates">
+
+    <title>Start a Visual Studio Project with Templates</title>
+    <titlealts>
+        <navtitle>Start VS Project with Templates</navtitle>
+    </titlealts>
+
+    <taskbody>
+
+        <prereq>
+            <ul>
+                <li><xref format="dita" href="../../common/Setup/SetUpDNN.dita">A local DNN installation</xref> with Host permissions.</li>
+                <li>Visual Studio 2015 is the recommended IDE for developing DNN modules.</li>
+            </ul>
+        </prereq>
+
+
+        <steps>
+
+            <step><cmd>Download and install the templates.</cmd>
+
+                <info>For Chris Hammond's templates,</info>
+                <substeps>
+                    <substep><cmd>Run Visual Studio as an administrator.</cmd></substep>
+                    <substep><cmd>Go to <menucascade><uicontrol>Tools</uicontrol> <uicontrol>Extensions and Updates</uicontrol></menucascade>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-VS2015ExtAndUpdates.png"><alt>Tools > Extensions and Updates</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Highlight the <menucascade><uicontrol>Online</uicontrol> <uicontrol>Visual Studio Gallery</uicontrol></menucascade> tree and search for <uicontrol>DotNetNuke</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-VS2015Search4DNN.png"><alt>In the Online > Visual Studio Gallery tree, search for DotNetNuke then Download.</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Click the <uicontrol>Download</uicontrol> button for the <uicontrol>DotNetNuke Project Templates</uicontrol>.</cmd></substep>
+                </substeps>
+                <info><note type="note">See <xref format="html" scope="external" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot">Chris Hammond's instructions</xref> for other installation methods.</note></info>
+
+                <info>For the DNN 8 templates,</info>
+                <substeps>
+                    <substep><cmd><xref format="html" scope="external" href="https://github.com/dnnsoftware/DNN.Templates/releases">Download the appropriate .vsix file.</xref></cmd>
+                    <info>Two are included:
+                            <ul>
+                                <li>Dnn.Mvc.Module.vsix</li>
+                                <li>Dnn.Spa.Module.vsix</li>
+                            </ul>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-VS2015DNN8Templates-11.png"><alt>Download DNN8 templates from Github.</alt></image>
+                            <draft-comment>
+                                <!-- This screenshot might not be a good idea to include because it will need to be updated frequently. However, we need to visually balance the bullet for Chris Hammond's templates. Without this screenshot, this step could easily be overlooked. -->
+                            </draft-comment>
+                        </info>
+                    </substep>
+                    <substep><cmd>In your download folder, double-click the <filepath>.vsix</filepath> file to install the template in Visual Studio.</cmd></substep>
+                </substeps>
+
+            </step>
+
+            <step><cmd>Create a new Visual Studio project.</cmd>
+                <substeps>
+                    <substep><cmd>Run Visual Studio as an administrator.</cmd></substep>
+                    <substep><cmd><menucascade><uicontrol>File</uicontrol> <uicontrol>New</uicontrol> <uicontrol>Project</uicontrol></menucascade></cmd></substep>
+                    <substep><cmd>Select the template for the new project.</cmd>
+                        <info>For Chris Hammond's templates, go to <menucascade><uicontrol>Installed</uicontrol> <uicontrol>Templates</uicontrol> <uicontrol>Visual C# or Visual Basic</uicontrol> <uicontrol>DotNetNuke</uicontrol></menucascade>.
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-VS2015NewProjectWithTemplates-02.png"><alt>Visual Studio > New > Project with Chris Hammond's templates</alt></image>
+                        </info>
+                        <info>For the DNN 8 templates, go to <menucascade><uicontrol>Installed</uicontrol> <uicontrol>Templates</uicontrol> <uicontrol>Visual C#</uicontrol> <uicontrol>Dnn</uicontrol></menucascade>.
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-VS2015NewProjectWithTemplates-01.png"><alt>Visual Studio > New > Project with DNN8 templates</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Fill in the settings.</cmd>
+                        <info>
+                            <ul>
+                                <li><uicontrol>Name</uicontrol>: the name of your new module</li>
+                                <li><uicontrol>Location</uicontrol>: a subfolder inside the <filepath>DesktopModules</filepath> folder of your DNN installation folder</li>
+                                <li><uicontrol>Tip</uicontrol>: Use your company name or a unique name as the subfolder name to avoid conflicts with other module creators in a production environment.</li>
+                            </ul>
+                        </info>
+                    </substep>
+                    <substep><cmd>Uncheck <uicontrol>Create directory for solution</uicontrol>.</cmd>
+                        <info>The templates expect Visual Studio's solution file (.sln) to be in the same folder as the project file. Checking this option puts the solution file in a different folder, which can cause build errors.</info>
+                    </substep>
+                </substeps>
+            </step>
+
+        </steps>
+
+    </taskbody>
+
+    <related-links>
+        <link format="dita" href="./CreateModule.dita"><linktext>Creating Modules</linktext></link>
+        <link format="dita" href="../../common/placeholderlink.dita"><linktext>Create a Web Forms module</linktext></link>
+        <link format="dita" href="../../common/placeholderlink.dita"><linktext>Create an MVC module</linktext></link>
+        <link format="dita" href="../../common/placeholderlink.dita"><linktext>Create a SPA module</linktext></link>
+        <!-- <link format="dita" href="../ContentsModulePack.dita"><linktext>Contents of a Module Package</linktext></link> -->
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155064/module-development-for-non-developers-skinners-dnn-beginners--blog-series-intro"><linktext>DNN Community Blog: Module Development for Non-Developers, Skinners, &amp; DNN Beginners - Blog Series by Clinton Patterson</linktext></link>
+        <link format="html" scope="external" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot"><linktext>Using the new Module Development Templates for DotNetNuke 7 by Chris Hammond</linktext></link>
+    </related-links>
+
+</task>

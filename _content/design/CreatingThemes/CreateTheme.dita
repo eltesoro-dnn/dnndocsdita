@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "generaltask.dtd">
+<task xml:lang="en" id="tsk-CreateThemes">
+
+    <title>Creating Themes</title>
+
+    <taskbody>
+
+        <section>
+            <p>Themes are comprised of layout templates for the webpages, containers for modules, their associated CSS, and their DocType files. These files, along with the DNN Manifest, are packaged into a zip file, which is used to install your theme.</p>
+
+            <note conkeyref="k-bptext/note-TipSkinningTool"></note>
+        </section>
+
+        <prereq><xref format="dita" href="../../common/Setup/SetUpDNN.dita">A local DNN installation</xref> with <b>Host</b> permissions.</prereq>
+
+        <steps>
+            <step><cmd><xref format="dita" href="./CreateLayoutTemplate.dita">Create layout templates for the webpages.</xref></cmd></step>
+            <step><cmd><xref format="dita" href="./CreateContainer.dita">Create containers for modules.</xref></cmd></step>
+            <!-- <step><b>HTML only:</b> <xref format="dita" href="./ConvertHTMLToASCX.dita">Convert the layout templates and containers from HTML to ASCX.</xref></step> -->
+            <step><cmd>(Optional) <xref format="dita" href="./CreateCSS.dita">Create your CSS files.</xref></cmd>
+                <info>You can create one for each layout template and container or create a single master CSS file to be used for all layout templates and containers.</info>
+            </step>
+            <step><cmd>(Optional) <xref format="dita" href="./CreateDocTypeXML.dita">Create a doctype XML file.</xref></cmd></step>
+            <step><cmd><xref format="dita" href="../../common/Extensions/CreatePackage.dita">Package your theme.</xref></cmd></step>
+            <step><cmd>Test the theme.</cmd>
+                <substeps>
+                    <substep><cmd><xref format="dita" href="../../common/Extensions/InstallExtension.dita">Install the package.</xref></cmd></substep>
+                    <substep><cmd>Apply the theme to a new webpage in your DNN website.</cmd></substep>
+                    <substep><cmd>Check how the webpage looks in different browsers.</cmd></substep>
+                </substeps>
+            </step>
+        </steps>
+
+    </taskbody>
+
+</task>

@@ -6,11 +6,11 @@
 
     <!-- Keys -->
     <keydef keys="k-bptext"      href="common/bptext.dita#bptext" />
-    <keydef keys="k-whatsnew"    href="common/top-DNN8WhatsNew.dita" />
-    <keydef keys="k-reqs"        href="common/ref-Requirements.dita" />
-    <keydef keys="k-ovplatform"  href="common/con-OverviewDNNPlatform.dita" />
-    <!-- <keydef keys="k-ovevoq"      href="common/con-OverviewDNNEvoq.dita" /> -->
-    <keydef keys="k-manifest"    href="common/Extensions/ref-DNNManifestSchema.dita" />
+    <keydef keys="k-whatsnew"    href="common/DNN8WhatsNew.dita" />
+    <keydef keys="k-reqs"        href="common/Requirements.dita" />
+    <keydef keys="k-ovplatform"  href="common/OverviewDNNPlatform.dita" />
+    <!-- <keydef keys="k-ovevoq"      href="common/OverviewDNNEvoq.dita" /> -->
+    <keydef keys="k-manifest"    href="common/Extensions/DNNManifestSchema.dita" />
     <keydef keys="k-glossarymap" href="common/Glossary/glossary.ditamap" />
     <keydef keys="k-setupmap"    href="setup.ditamap" />
 
@@ -19,6 +19,9 @@
     <!-- Main maps -->
     <!-- <topichead navtitle="Doc Center" toc="no"> -->
 
+        <!-- Preprocessing common files. -->
+        <mapref keyref="k-setupmap" toc="no" />
+        <mapref keyref="k-glossarymap" toc="no" />
 
         <!-- These have been moved to the individual centers.
         <topicref format="dita" type="topic"   keyref="k-whatsnew" toc="yes" />
@@ -33,8 +36,6 @@
         <!-- These have been moved to the individual centers.
         <topicref format="dita" type="reference" keyref="k-reqs" toc="yes" />
         -->
-        <mapref keyref="k-glossarymap" toc="no" />
-
 
     <!-- </topichead> -->
 
@@ -57,19 +58,19 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task" href="common/Extensions/tsk-CreatePackage.dita" />
-                <topicref format="dita" type="task" href="common/Extensions/tsk-InstallExtension.dita" />
+                <topicref format="dita" type="task" href="common/Extensions/CreatePackage.dita" />
+                <topicref format="dita" type="task" href="common/Extensions/InstallExtension.dita" />
             </relcell>
             <relcell/>
         </relrow>
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task" href="common/Extensions/tsk-CreatePackage.dita" />
+                <topicref format="dita" type="task" href="common/Extensions/CreatePackage.dita" />
             </relcell>
             <relcell>
-                <!-- <topicref format="dita" type="reference" href="design/ref-ContentsThemePack.dita" /> -->
-                <!-- <topicref format="dita" type="reference" href="dev/ref-ContentsModulePack.dita" /> -->
+                <!-- <topicref format="dita" type="reference" href="design/ContentsThemePack.dita" /> -->
+                <!-- <topicref format="dita" type="reference" href="dev/ContentsModulePack.dita" /> -->
                 <topicref format="dita" type="reference" keyref="k-manifest" />
             </relcell>
         </relrow>

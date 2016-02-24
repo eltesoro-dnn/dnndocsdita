@@ -5,12 +5,11 @@
     <title>Set Up DNN</title>
 
 
-    <!-- <topicref format="dita" href="common/ref-Requirements.dita" topic="reference" /> -->
-    <topicref format="dita" type="topic" href="common/setup/top-SetUpDNN.dita" toc="yes" collection-type="sequence">
-        <topicref format="dita" type="task" href="common/setup/tsk-SetUpDNNFolder.dita" />
-        <topicref format="dita" type="task" href="common/setup/tsk-SetUpIIS.dita" />
-        <topicref format="dita" type="task" href="common/setup/tsk-SetUpSQL.dita" />
-        <topicref format="dita" type="task" href="common/setup/tsk-RunInstWiz.dita" />
+    <topicref format="dita" type="topic" href="common/setup/SetUpDNN.dita" toc="yes" collection-type="sequence">
+        <topicref format="dita" type="task" href="common/setup/SetUpDNNFolder.dita" />
+        <topicref format="dita" type="task" href="common/setup/SetUpIIS.dita" />
+        <topicref format="dita" type="task" href="common/setup/SetUpSQL.dita" />
+        <topicref format="dita" type="task" href="common/setup/RunInstWiz.dita" />
     </topicref>
 
 
@@ -22,10 +21,10 @@
         </relheader>
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic" href="common/Setup/top-SetUpDNN.dita" />
+                <topicref format="dita" type="topic" href="common/Setup/SetUpDNN.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task" href="common/Extensions/tsk-InstallExtension.dita" />
+                <topicref format="dita" type="task" href="common/Extensions/InstallExtension.dita" />
             </relcell>
             <relcell>
                 <topicref format="dita" type="reference" keyref="k-reqs" />
