@@ -33,19 +33,19 @@
         <steps>
             <step><cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="center" href="../img/scr-InstallExt-1.png"><alt>Host &gt; Extensions</alt></image>
+                    <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallExt-1.png"><alt>Host &gt; Extensions</alt></image>
                 </info>
             </step>
 
             <step><cmd>Click <uicontrol>Install Extension Wizard</uicontrol>.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="center" href="../img/scr-InstallExt-3.png"><alt>Install Extension Wizard</alt></image>
+                    <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallExt-3.png"><alt>Install Extension Wizard</alt></image>
                 </info>
             </step>
 
             <step><cmd>Click <uicontrol>Choose File</uicontrol> and select the zip file of the extension. The button name changes to the name of the zip file.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="center" href="../img/scr-InstallExt-4.png"><alt>Choose zip file of the extension</alt></image>
+                    <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallExt-4.png"><alt>Choose zip file of the extension</alt></image>
                 </info>
             </step>
 
@@ -53,16 +53,16 @@
                 <info>
                     <ul>
                         <li><wintitle>Package Information</wintitle> includes the extension's version and description, as well as information about the creator.
-                            <image scalefit="yes" placement="break" align="center" href="../img/scr-InstallExt-6.png"><alt>Package Information</alt></image>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallExt-6.png"><alt>Package Information</alt></image>
                         </li>
                         <li><wintitle>Release Notes</wintitle> displays what's new in the current release of the extension.
-                            <image scalefit="yes" placement="break" align="center" href="../img/scr-InstallExt-7.png"><alt>Release Notes</alt></image>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallExt-7.png"><alt>Release Notes</alt></image>
                         </li>
                         <li><wintitle>License</wintitle> displays the creator's license terms. Accept the license to continue.
-                            <image scalefit="yes" placement="break" align="center" href="../img/scr-InstallExt-8.png"><alt>License</alt></image>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallExt-8.png"><alt>License</alt></image>
                         </li>
                         <li><wintitle>Package Installation Report</wintitle> displays a log of actions performed by the installation.
-                            <image scalefit="yes" placement="break" align="center" href="../img/scr-InstallExt-10.png"><alt>Package Installation Report</alt></image>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallExt-10.png"><alt>Package Installation Report</alt></image>
                         </li>
                     </ul>
                 </info>
@@ -70,7 +70,7 @@
 
             <step><cmd>Verify that the newly installed extension appears in the list under the <uicontrol>Installed Extensions</uicontrol> tab.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="center" href="../img/scr-InstallExt-11.png"><alt>New extension appears under Installed Extensions.</alt></image>
+                    <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallExt-11.png"><alt>New extension appears under Installed Extensions.</alt></image>
                 </info>
             </step>
         </steps>
