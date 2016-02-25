@@ -48,7 +48,7 @@
 
 
         <section id="DNNRequirements">
-            <p>For a basic installation, DNN requires Microsoft IIS and SQL server. You can view the <xref format="dita" href="../Requirements.dita">DNN 8.0 Requirements</xref> for the compatible versions.</p>
+            <p>For a basic installation, DNN requires Microsoft IIS and SQL server. You can view the <xref format="dita" scope="peer" href="../Requirements.dita">DNN 8.0 Requirements</xref> for the compatible versions.</p>
             <p><b>Developers:</b> Visual Studio 2015 is the recommended IDE for developing DNN modules. It is required if you are contributing to the DNN Platform.</p>
         </section>
 
@@ -56,7 +56,6 @@
 
 
     <related-links>
-        <link format="dita" scope="peer"     href="../Extensions/InstallExtension.dita"><linktext>Install an Extension</linktext></link>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155070/installing-dnn"><linktext>DNN Community Blog: Installing DNN by Clinton Patterson</linktext></link>
         <link format="html" scope="external" href="http://www.christoc.com/Tutorials/All-Tutorials/aid/1"><linktext>Setting up your DotNetNuke Module Development Environment by Chris Hammond</linktext></link>
     </related-links>
