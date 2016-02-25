@@ -23,7 +23,7 @@
             <note conkeyref="k-bptext/note-TipSkinningTool"></note>
         </section>
 
-        <prereq><xref format="dita" href="../../common/Setup/SetUpDNN.dita">A local DNN installation</xref> with <b>Host</b> permissions.</prereq>
+        <prereq><xref format="dita" href="../Setup/SetUpDNN.dita">A local DNN installation</xref> with <b>Host</b> permissions.</prereq>
 
         <steps>
             <step><cmd><xref format="dita" href="./CreateLayoutTemplate.dita">Create layout templates for the webpages.</xref></cmd></step>
@@ -33,10 +33,10 @@
                 <info>You can create one for each layout template and container or create a single master CSS file to be used for all layout templates and containers.</info>
             </step>
             <step><cmd>(Optional) <xref format="dita" href="./CreateDocTypeXML.dita">Create a doctype XML file.</xref></cmd></step>
-            <step><cmd><xref format="dita" href="../../common/Extensions/CreatePackage.dita">Package your theme.</xref></cmd></step>
+            <step><cmd><xref format="dita" href="../Extensions/CreatePackage.dita">Package your theme.</xref></cmd></step>
             <step><cmd>Test the theme.</cmd>
                 <substeps>
-                    <substep><cmd><xref format="dita" href="../../common/Extensions/InstallExtension.dita">Install the package.</xref></cmd></substep>
+                    <substep><cmd><xref format="dita" href="../Extensions/InstallExtension.dita">Install the package.</xref></cmd></substep>
                     <substep><cmd>Apply the theme to a new webpage in your DNN website.</cmd></substep>
                     <substep><cmd>Check how the webpage looks in different browsers.</cmd></substep>
                 </substeps>

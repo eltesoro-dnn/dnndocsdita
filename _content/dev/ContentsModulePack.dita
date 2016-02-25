@@ -48,18 +48,18 @@
                 <li><filepath>Models</filepath> ??? </li>
 
                 <li><filepath>Providers</filepath> contains the actual implementations of concrete data <xref format="html" scope="external" href="http://www.dnnsoftware.com/wiki/providers">providers</xref> required by the module.
-                    <example>The <filepath>Providers\DataProviders\SQLDataProvider</filepath> subfolder contains three files:
+                    <p>For example, the <filepath>Providers\DataProviders\SQLDataProvider</filepath> subfolder contains three files:
                         <ul>
                             <li><filepath>00.00.01 SQLDataProvider</filepath> contains the SQL scripts that create tables and stored procedures required by the module to access the data. These scripts run when the module is installed.</li>
                             <li><filepath>Uninstall.SqlDataProvider</filepath> contains the SQL scripts that delete tables and stored procedures used by the module. These scripts run when the module is uninstalled.</li>
                             <li><filepath>SQLDataProvider.cs</filepath> sets the value of <varname>SqlConnection.ConnectionString</varname> and defines the concrete data provider class's methods to access data.</li>
                         </ul>
-                    </example>
+                    </p>
                 </li>
 
                 <li><filepath>Views</filepath> contains Razor-based template files (.cshtml) that are used to display the module's output in HTML format.</li>
 
-                <li><filepath>*.dnn*</filepath> is the <xref format="dita" href="../common/Extensions/DNNManifestSchema.dita">DNN Manifest</xref>, which specifies where files are copied during module installation.</li>
+                <li><filepath>*.dnn*</filepath> is the <xref format="dita" href="Extensions/DNNManifestSchema.dita">DNN Manifest</xref>, which specifies where files are copied during module installation.</li>
 
                 <li><filepath>License.txt</filepath> and <filepath>ReleaseNotes.txt</filepath> are displayed when the module is installed. You can rename the files and specify the custom filenames in the DNN Manifest.</li>
 
@@ -77,8 +77,6 @@
 
 
     <related-links>
-        <link format="dita" href="../design/ContentsThemePack.dita"><linktext>Contents of a Theme Package</linktext></link>
-        <link format="dita" href="../common/Extensions/CreatePackage.dita"><linktext>Create the Package</linktext></link>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155065/what-is-a-module"><linktext>DNN Community Blog: What Is a Module by Clinton Patterson</linktext></link>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155075/module-development-templates"><linktext>DNN Community Blog: Module Development Templates by Clinton Patterson</linktext></link>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/providers"><linktext>DNN Wiki: Providers</linktext></link>

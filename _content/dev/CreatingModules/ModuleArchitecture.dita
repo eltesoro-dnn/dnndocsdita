@@ -97,7 +97,7 @@
         <section id="PresentationLayer">
             <title>Presentation Layer</title>
 
-            <p>The core component in the presentation layer is the **Module Control**. Every unique view of a module is registered as a module control in the <xref format="dita" href="../../common/extensions/DNNManifestSchema.dita">DNN Manifest</xref>.</p>
+            <p>The core component in the presentation layer is the **Module Control**. Every unique view of a module is registered as a module control in the <xref format="dita" href="../Extensions/DNNManifestSchema.dita">DNN Manifest</xref>.</p>
 
             <p>DNN APIs make it easy to access any module control, thus simplifying view management within your module.</p>
 

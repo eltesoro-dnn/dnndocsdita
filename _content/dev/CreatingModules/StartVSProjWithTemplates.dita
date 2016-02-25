@@ -22,7 +22,7 @@
 
         <prereq>
             <ul>
-                <li><xref format="dita" href="../../common/Setup/SetUpDNN.dita">A local DNN installation</xref> with Host permissions.</li>
+                <li><xref format="dita" href="../Setup/SetUpDNN.dita">A local DNN installation</xref> with Host permissions.</li>
                 <li>Visual Studio 2015 is the recommended IDE for developing DNN modules.</li>
             </ul>
         </prereq>

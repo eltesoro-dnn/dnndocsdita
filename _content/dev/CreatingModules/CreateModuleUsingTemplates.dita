@@ -22,7 +22,7 @@
 
         <prereq>
             <ul>
-                <li><xref format="dita" href="../../common/Setup/SetUpDNN.dita">A local DNN installation</xref> with Host permissions.</li>
+                <li><xref format="dita" href="../Setup/SetUpDNN.dita">A local DNN installation</xref> with Host permissions.</li>
                 <li>Visual Studio 2015 is the recommended IDE for developing DNN modules.</li>
             </ul>
         </prereq>
@@ -48,9 +48,9 @@
                 <substeps>
                     <substep><cmd>Build in debug mode.</cmd> <info>This build produces <filepath>.pdb</filepath> files that are needed when stepping through your code.</info></substep>
                     <substep><cmd>Debug, if needed.</cmd></substep>
-                    <substep><cmd>Create the <xref format="dita" href="../../common/Extensions/DNNManifestSchema.dita">DNN Manifest</xref>.</cmd></substep>
+                    <substep><cmd>Create the <xref format="dita" href="../Extensions/DNNManifestSchema.dita">DNN Manifest</xref>.</cmd></substep>
                     <substep><cmd>Build in release mode.</cmd> <info>This build creates an installation zip file (your module's package) in the folder <filepath>Desktop Modules/</filepath><varname>yourorganization</varname><filepath>/</filepath><varname>yourmodule</varname><filepath>/install</filepath>.</info></substep>
-                    <substep><cmd>Alternatively, you can manually <xref format="dita" href="../../common/Extensions/CreatePackage.dita">package your module</xref>.</cmd></substep>
+                    <substep><cmd>Alternatively, you can manually <xref format="dita" href="../Extensions/CreatePackage.dita">package your module</xref>.</cmd></substep>
                 </substeps>
             </step>
 
