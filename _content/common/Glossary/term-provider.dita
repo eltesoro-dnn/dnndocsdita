@@ -6,7 +6,7 @@
     <glossdef>A type of DNN extension that provides an alternative implementation of a specific functionality of the DNN Platform. Examples: authentication providers, data providers, and navigation providers. In most cases, even if multiple implementations are available in a DNN installation, only one implementation of each provider type is active at any time.</glossdef>
 
     <related-links>
-        <link format="dita" href="../../dev/Providers.dita"><linktext>Providers Reference</linktext></link>
+        <link format="dita" scope="peer" href="../../dev/Providers.dita"><linktext>Providers Reference</linktext></link>
     </related-links>
 
 </glossentry>
