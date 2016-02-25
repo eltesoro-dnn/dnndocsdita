@@ -33,7 +33,8 @@ for %%v in ( word2dita w2d ) do  if _%1_ EQU _w2d_  set _transtype=word2dita
 if _%_gitdir%_      EQU __    set _gitdir=w:\.
 if _%_blddir%_      EQU __    set _blddir=v:\bld\%_transtype%
 if _%_outdir%_      EQU __    set _outdir=v:\output\%_transtype%
-if _%_logdir%_      EQU __    set _logdir=v:\logs\%_transtype%
+if _%_logdir%_      EQU __    set _logdir=v:\logs
+if _%_logfile%_     EQU __    set _logfile=%_logdir%\%_transtype%.log
 
 if _"%JAVA_HOME%"_  EQU _""_  set JAVA_HOME="%ProgramFiles%"\Java\jdk1.8.0_72
 set DITA_HOME=C:\dita-ot
@@ -49,8 +50,9 @@ if exist %JAVA_HOME%\bin\java.exe  set JAVACMD=%JAVA_HOME%\bin\java.exe
 call "%DITA_HOME%\resources\env.bat"
 
 echo Recreating build folder, output folder, and logs folder....
-for %%v in ( %_blddir% %_outdir% %_logdir% ) do rd /s/q %%v >nul
-for %%v in ( %_blddir% %_outdir% %_logdir% ) do md %%v > nul
+for %%v in ( %_blddir% %_outdir% ) do  rd /s/q %%v >nul
+for %%v in ( %_blddir% %_outdir% %_logdir% ) do  md %%v >nul
+if exist %_logfile%  del %_logfile% /q >nul
 
 goto %_transtype%
 
@@ -66,6 +68,7 @@ xcopy %_gitdir%\_content\*.png           %_blddir%                /i/s/v/y
 xcopy %_gitdir%\_content\common\samples  %_blddir%\common\samples /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\dnn*.css     %_blddir%\_themes\dnn    /i/s/v/y
 
+for %%v in ( admin design dev ) do  xcopy %_blddir%\common\*.dita* %_blddir%\%%v /i/s/v/y
 
 
 echo Integrating our own DITA-OT plugin ....
@@ -79,9 +82,9 @@ echo Building %_transtype% ....
 
 :. Must start at %DITA_HOME%
 cd /d %DITA_HOME%
-echo. > %_logdir%\log.txt
-xcopy %_gitdir%\_build\dnn_build.xml  %DITA_HOME%\.  /v/y
-call ant %_transtype% -f %DITA_HOME%\dnn_build.xml -l %_logdir%\log.txt
+echo. > %_logfile%
+xcopy %_gitdir%\_build\dnn_build*.xml  %DITA_HOME%\.  /v/y
+call ant %_transtype% -f %DITA_HOME%\dnn_build.xml -l %_logfile%
 
 
 echo Copying additional files required to the output ....
@@ -90,6 +93,11 @@ xcopy %_gitdir%\_content\common\img\*.png %_outdir%\common\img       /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\26D3F6_6_0.*  %_outdir%\_theme           /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\*.jpg         %_outdir%\_theme           /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\*.js          %_outdir%\_theme           /i/s/v/y
+
+echo Deleting files we don't need ....
+del %_outdir%\toc.html /q >nul
+rd /s/q %_outdir%\common\glossary >nul
+
 
 
 :. runas /user:administrator /profile "%~f0\v2iis.bat %outdir%\%_transtype% c:\inetpub\wwwroot"
@@ -111,8 +119,8 @@ echo Building %_transtype% ....
 
 :. Must start at %DITA_HOME%
 cd /d %DITA_HOME%
-echo. > %_logdir%\log.txt
-for /f "usebackq" %%v in (`dir %_blddir%\*.docx /s /b`) do call ant -f %DITA_HOME%\build.xml -l %_logdir%\log.txt -Dtranstype=%_transtype% -Dargs.input=%%v -Dargs.output=%_outdir%
+echo. > %_logfile%
+for /f "usebackq" %%v in (`dir %_blddir%\*.docx /s /b`) do call ant -f %DITA_HOME%\build.xml -l %_logfile% -Dtranstype=%_transtype% -Dargs.input=%%v -Dargs.output=%_outdir%
 
 :. Copy the results from the hardcoded output directory to our own.
 del /q %DITA_HOME%\out\delete.me
