@@ -5,41 +5,72 @@
     <title>Designer Center</title>
 
 
-    <!-- <topichead id="DsgCtr" navtitle="Designer Center" toc="yes" print="yes"> -->
+    <!-- Keys -->
+    <keydef keys="k-bptext"      href="common/bptext.dita#bptext" />
+
+    <keydef keys="k-whatsnew"    type="topic"     format="dita" navtitle="What's New"              href="design/DNN8WhatsNew.dita" />
+    <keydef keys="k-reqs"        type="reference" format="dita" navtitle="DNN Requirements"        href="design/Requirements.dita" />
+    <keydef keys="k-ovplatform"  type="concept"   format="dita" navtitle="DNN Platform"            href="design/OverviewDNNPlatform.dita" />
+    <!-- <keydef keys="k-ovevoq" type="concept"   format="dita" navtitle="DNN Evoq"                href="design/OverviewDNNEvoq.dita" /> -->
+
+    <keydef keys="k-suDNN"       type="topic"     format="dita" navtitle="Set Up DNN"              href="design/setup/SetUpDNN.dita" />
+    <keydef keys="k-suFolder"    type="task"      format="dita" navtitle="Set Up the DNN Folder"   href="design/setup/SetUpDNNFolder.dita" />
+    <keydef keys="k-suIIS"       type="task"      format="dita" navtitle="Set Up IIS"              href="design/setup/SetUpIIS.dita" />
+    <keydef keys="k-suSQL"       type="task"      format="dita" navtitle="Set Up SQL"              href="design/setup/SetUpSQL.dita" />
+    <keydef keys="k-suInstWiz"   type="task"      format="dita" navtitle="Run Installation Wizard" href="design/setup/RunInstWiz.dita" />
+
+    <keydef keys="k-installext"  type="task"      format="dita" navtitle="Install an Extension"    href="design/Extensions/InstallExtension.dita" />
+    <keydef keys="k-manifest"    type="reference" format="dita" navtitle="DNN Manifest Schema"     href="design/Extensions/DNNManifestSchema.dita" />
+    <keydef keys="k-createpkg"   type="task"      format="dita" navtitle="Create the Package"      href="design/Extensions/CreatePackage.dita" />
+
+    <keydef keys="k-glossarymap" href="common/Glossary/glossary.ditamap" />
+
+
+    <!-- Topics -->
     <topicref format="dita" type="concept" href="design/DsgCtr.dita" toc="yes">
 
-        <topicref format="dita" type="topic"   keyref="k-whatsnew" toc="yes" />
-        <topicref format="dita" type="concept" keyref="k-ovplatform" toc="yes" />
+        <topicref keyref="k-whatsnew" />
+        <topicref keyref="k-ovplatform" />
 
-        <topicref format="dita" href="design/AboutThemes.dita" toc="yes" type="concept" />
+        <!-- Setup -->
+        <topicref keyref="k-suDNN" toc="yes" collection-type="sequence">
+            <topicref keyref="k-suFolder" />
+            <topicref keyref="k-suIIS" />
+            <topicref keyref="k-suSQL" />
+            <topicref keyref="k-suInstWiz" />
+            <topicref keyref="k-reqs" />
+        </topicref>
 
-        <topicref format="html" navtitle="Set Up" href="common/setup/SetUpDNN.html" scope="peer" toc="yes" />
+        <topicref format="dita" type="concept" href="design/AboutThemes.dita" />
 
-        <topicref format="dita" type="topic" href="design/CreatingThemes/CreateTheme.dita" toc="yes" collection-type="sequence">
+        <!-- Creating themes -->
+        <topicref format="dita" type="topic" href="design/CreatingThemes/CreateTheme.dita" collection-type="sequence">
             <topicref format="dita" type="task" href="design/CreatingThemes/CreateLayoutTemplate.dita" />
             <topicref format="dita" type="task" href="design/CreatingThemes/CreateContainer.dita" />
             <topicref format="dita" type="task" href="design/CreatingThemes/CreateCSS.dita" />
             <topicref format="dita" type="task" href="design/CreatingThemes/CreateDocTypeXML.dita" />
-            <topicref format="dita" type="task" href="common/Extensions/CreatePackage.dita" />
-            <topicref format="dita" type="task" href="common/Extensions/InstallExtension.dita" />
+            <topicref keyref="k-createpkg" />
+            <topicref keyref="k-installext" />
             <!-- <topicref format="dita" type="task" href="design/CreatingModules/TestTheme.dita" /> -->
         </topicref>
 
-        <topicref format="dita" type="task"  href="common/Extensions/CreatePackage.dita" toc="yes" />
-
-        <topicref format="dita" type="topic" href="design/DsgRefs.dita" toc="yes" collection-type="family">
+        <!-- Local references -->
+        <topicref format="dita" type="topic" href="design/DsgRefs.dita" collection-type="family">
             <!-- UX Guide -->
             <!-- <topicref format="dita" type="reference" href="design/ThemeObjects.dita" /> -->
             <!-- <topicref format="dita" type="reference" href="design/ContentsThemePack.dita" /> -->
-            <topicref format="dita" type="reference" keyref="k-manifest" />
+            <topicref keyref="k-manifest" />
         </topicref>
 
-        <topicref format="dita" type="reference" keyref="k-reqs" toc="yes" />
-        <topicref format="html" navtitle="Glossary" href="common/glossary.html" scope="peer" linking="targetonly" toc="yes" />
+        <!-- Important global references -->
+        <topichead navtitle="Glossary" chunk="by-document to-content" copy-to="design/glossary-dsg.dita" >
+            <mapref keyref="k-glossarymap" />
+        </topichead>
 
     </topicref>
 
 
+    <!-- RelTables -->
     <reltable>
         <relheader>
             <relcolspec type="concept"/>
@@ -47,7 +78,52 @@
             <relcolspec type="reference"/>
         </relheader>
 
+        <!-- Common to all centers. -->
         <relrow>
+            <relcell>
+                <topicref keyref="k-overview" />
+            </relcell>
+            <relcell>
+                <topicref keyref="k-reqs" />
+            </relcell>
+            <relcell/>
+        </relrow>
+
+<!--         <relrow>
+            <relcell/>
+            <relcell>
+                <topicref keyref="k-createpkg" />
+                <topicref keyref="k-installext" />
+            </relcell>
+            <relcell/>
+        </relrow> -->
+
+<!--         <relrow>
+            <relcell/>
+            <relcell>
+                <topicref keyref="k-createpkg" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="reference" href="design/ContentsThemePack.dita" />
+                <topicref format="dita" type="reference" href="dev/ContentsModulePack.dita" />
+                <topicref keyref="k-manifest" />
+            </relcell>
+        </relrow> -->
+
+        <!-- Specific to this center. -->
+<!--         <relrow>
+            <relcell>
+                <topicref format="dita" type="topic" href="design/Setup/SetUpDNN.dita" />
+            </relcell>
+            <relcell>
+                <topicref keyref="k-installext" />
+            </relcell>
+            <relcell>
+                <topicref keyref="k-reqs" />
+            </relcell>
+        </relrow> -->
+
+<!--         <relrow>
             <relcell>
                 <topicref format="dita" type="concept" href="design/AboutThemes.dita" linking="targetonly" />
             </relcell>
@@ -58,7 +134,7 @@
                 <topicref format="dita" type="task" href="design/CreatingThemes/CreateDocTypeXML.dita" />
             </relcell>
             <relcell/>
-        </relrow>
+        </relrow> -->
 
         <!--
         <relrow>
