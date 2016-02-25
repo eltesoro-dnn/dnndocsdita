@@ -149,12 +149,16 @@ nav[role="toc"] > ul > li {
 }
 
 nav[role="toc"] > ul ul {
-  display: none;
+  display: block;
 }
 nav[role="toc"] ul li:hover > ul {
   display: block;
 }
 
+nav[role="toc"] > ul li .active {
+  display: block;
+  background: blue;
+}
 
 /* ------------------------------------------------------------
  | Header
