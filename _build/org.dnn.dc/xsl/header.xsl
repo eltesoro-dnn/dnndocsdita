@@ -29,9 +29,9 @@
                     <ul class="header-nav horizontal-list">
                         <li id="toc-doc">Documentation
                             <ul id="header-subnav-documentation">
-                                <li><a href="/admin/con-AdmCtr.html">Developer</a></li>
-                                <li><a href="/dev/con-DevCtr.html">Admin</a></li>
-                                <li><a href="/design/con-DsgCtr.html">Designer</a></li>
+                                <li><a href="/admin/AdmCtr.html">Admin</a></li>
+                                <li><a href="/dev/DevCtr.html">Developer</a></li>
+                                <li><a href="/design/DsgCtr.html">Designer</a></li>
                             </ul>
                         </li>
                         <li><a href="http://www.dnnsoftware.com/community-blog">Blogs</a></li>
