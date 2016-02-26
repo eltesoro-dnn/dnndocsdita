@@ -8,7 +8,7 @@
         <div class="header">
             <div class="header-logo-wrapper">
                 <a class="logo" href="http://www.dnnsoftware.com/docs">
-                    <img src="http://dnnsoftware.com/docs/_static/DNN_logo_28px.png" alt="DNN Logo" />
+                    <img src="/_theme/DNN_logo_28px.png" alt="DNN Logo" />
                     <div id="site-title"><xsl:value-of select="$sitetitle"/></div>
                 </a>
             </div>
