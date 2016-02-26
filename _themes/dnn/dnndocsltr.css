@@ -191,11 +191,6 @@ header {
   display: table;
 }
 
-.header #site-title {
-  display: inline-block;
-  font-size: 150%;
-  font-weight: bold;
-}
 .header ul {
   line-height: 1.2;
   white-space: nowrap;
@@ -221,9 +216,6 @@ header {
 .header .logo {
   display: block;
   padding: 1px 75px 1px 20px;
-  color: #847274; /* #888; */
-  font-size: 100%;
-  white-space: nowrap;
 }
 .header .logo:hover {
   text-decoration: none;
@@ -236,8 +228,31 @@ header {
   position: relative;
   top: 2px;
 }
-.logo-wrapper {
+.header .logo-wrapper {
   position: relative;
+}
+.header .site-title  {
+  display: inline-block;
+  float: left;
+  color: #888; /* #847274; */
+  white-space: nowrap;
+  font-size: 24px;
+  font-weight: bold;
+}
+.header .sibling-sites a {
+  color: #888; /* #847274; */
+  white-space: nowrap;
+  font-size: 80%;
+}
+.header .site-title li {
+  display: none;
+}
+.header .site-title:hover li {
+  display: block;
+  float: down;
+  vertical-align: middle;
+  text-align: center;
+  margin: 0;
 }
 
 .header-nav-wrapper {
