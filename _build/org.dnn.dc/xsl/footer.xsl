@@ -5,7 +5,6 @@
 
         <div class="footer">
             <div class="social-media-wrapper">
-                <!-- <span>Follow</span> -->
                 <ul class="social-media horizontal-list">
                     <li><a href="http://facebook.com/dotnetnuke" class="facebook"></a></li>
                     <li><a href="http://twitter.com/dnncorp" class="twitter"></a></li>
@@ -14,20 +13,12 @@
                     <!-- <li><a href="http://twitter.com/dnn" class="twitter"></a></li> -->
                 </ul>
             </div>
-            <div class="contact-info-wrapper">
-                <!-- <span>Contact</span> -->
-                <ul class="contact-info horizontal-list">
-                    <li><a href="mailto:info@dnnsoftware.com" class="email">info@dnnsoftware.com</a></li>
-                    <li><a href="tel:+1 650 288 3150" class="phone">+1 650 288 3150</a></li>
-                    <!-- <li><a href="tel:+1 650 288 3191" class="fax">+1 650 288 3191</a></li> -->
-                </ul>
-            </div>
 
             <div class="misc-wrapper">
                 <ul class="misc horizontal-list">
                     <li><a href="http://www.dnnsoftware.com/Terms">Terms of Use</a></li>
                     <li><a href="http://www.dnnsoftware.com/Privacy">Privacy</a></li>
-                    <li>&#169; 2016 <a href="http://www.dnnsoftware.com/about">DNN Corp.</a> All rights reserved.</li>
+                    <li>&#169; 2016 <a href="http://www.dnnsoftware.com">DNN Corp.</a> All rights reserved.</li>
                 </ul>
             </div>
 
