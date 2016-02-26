@@ -127,77 +127,65 @@
         </ant>
     </target>
 
-    <target name="html5" depends="init, preptgt">
+
+
+    <target name="html5-prep" depends="init, preptgt">
+
+            <!-- Default site name -->
+            <property name="sitetitle" value="Documentation Center"/>
+
+            <!-- The following are common with other targets. -->
+            <property name="args.breadcrumbs" value="yes"/>
+
+            <property name="args.copycss" value="yes"/>
+            <property name="args.css" value="dnndocsltr.css"/>
+            <property name="args.cssroot" value="${thm.src.dir}"/>
+            <property name="args.csspath" value="_theme"/>
+
+            <property name="args.logdir" value="${bld.dir}${file.separator}logs"/>
+            <property name="args.xhtml.toc" value="toc"/>
+            <property name="nav-toc" value="full"/>
+            <property name="processing-mode" value="strict"/>
+
+            <!-- DITA-OT: Specifies whether to generate locale-based default headings for sections within task topics. -->
+            <property name="args.gen.task.lbl" value="YES"/>
+    </target>
+
+    <target name="html5-admctr" depends="html5-prep">
         <echo level="info">Building html5 Administrator Center ....</echo>
         <ant antfile="build.xml">
+            <property name="sitetitle" value="Administrator Center"/>
             <property name="transtype" value="html5"/>
             <property name="args.input" location="${bld.dir}${file.separator}admctr.ditamap"/>
             <property name="output.dir" location="${out.dir}"/>
-
-            <!-- The following are common with other targets. -->
-            <property name="args.breadcrumbs" value="yes"/>
-
-            <property name="args.copycss" value="yes"/>
-            <property name="args.css" value="dnndocsltr.css"/>
-            <property name="args.cssroot" value="${thm.src.dir}"/>
-            <property name="args.csspath" value="_theme"/>
-
-            <property name="args.logdir" value="${bld.dir}${file.separator}logs"/>
-            <property name="args.xhtml.toc" value="toc"/>
-            <property name="nav-toc" value="full"/>
-            <property name="processing-mode" value="strict"/>
-
-            <!-- DITA-OT: Specifies whether to generate locale-based default headings for sections within task topics. -->
-            <property name="args.gen.task.lbl" value="YES"/>
         </ant>
+    </target>
 
+    <target name="html5-devctr" depends="html5-prep">
         <echo level="info">Building html5 Developer Center ....</echo>
         <ant antfile="build.xml">
+            <property name="sitetitle" value="Developer Center"/>
             <property name="transtype" value="html5"/>
             <property name="args.input" location="${bld.dir}${file.separator}devctr.ditamap"/>
             <property name="output.dir" location="${out.dir}"/>
-
-            <!-- The following are common with other targets. -->
-            <property name="args.breadcrumbs" value="yes"/>
-
-            <property name="args.copycss" value="yes"/>
-            <property name="args.css" value="dnndocsltr.css"/>
-            <property name="args.cssroot" value="${thm.src.dir}"/>
-            <property name="args.csspath" value="_theme"/>
-
-            <property name="args.logdir" value="${bld.dir}${file.separator}logs"/>
-            <property name="args.xhtml.toc" value="toc"/>
-            <property name="nav-toc" value="full"/>
-            <property name="processing-mode" value="strict"/>
-
-            <!-- DITA-OT: Specifies whether to generate locale-based default headings for sections within task topics. -->
-            <property name="args.gen.task.lbl" value="YES"/>
         </ant>
+    </target>
 
+    <target name="html5-dsgctr" depends="html5-prep">
         <echo level="info">Building html5 Designer Center ....</echo>
         <ant antfile="build.xml">
+            <property name="sitetitle" value="Designer Center"/>
             <property name="transtype" value="html5"/>
             <property name="args.input" location="${bld.dir}${file.separator}dsgctr.ditamap"/>
             <property name="output.dir" location="${out.dir}"/>
-
-            <!-- The following are common with other targets. -->
-            <property name="args.breadcrumbs" value="yes"/>
-
-            <property name="args.copycss" value="yes"/>
-            <property name="args.css" value="dnndocsltr.css"/>
-            <property name="args.cssroot" value="${thm.src.dir}"/>
-            <property name="args.csspath" value="_theme"/>
-
-            <property name="args.logdir" value="${bld.dir}${file.separator}logs"/>
-            <property name="args.xhtml.toc" value="toc"/>
-            <property name="nav-toc" value="full"/>
-            <property name="processing-mode" value="strict"/>
-
-            <!-- DITA-OT: Specifies whether to generate locale-based default headings for sections within task topics. -->
-            <property name="args.gen.task.lbl" value="YES"/>
         </ant>
-
     </target>
+
+    <!-- Keep the three centers as separate targets, or else the navs get mixed up. -->
+    <target name="html5" depends="html5-admctr, html5-devctr, html5-dsgctr">
+        <echo level="info">Completed html5 builds ....</echo>
+    </target>
+
 
 
     <!--

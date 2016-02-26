@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+    <xsl:param name="sitetitle"></xsl:param>
+
     <xsl:template name="gen-user-header">
 
         <div class="header">
             <div class="header-logo-wrapper">
                 <a class="logo" href="http://www.dnnsoftware.com/docs">
                     <img src="http://dnnsoftware.com/docs/_static/DNN_logo_28px.png" alt="DNN Logo" />
-                    <div id="site-title">Documentation Center</div>
+                    <div id="site-title"><xsl:value-of select="$sitetitle"/></div>
                 </a>
             </div>
             <div class="header-nav-wrapper">

@@ -16,4 +16,8 @@
     <feature extension="dita.xsl.html5"   file="xsl/notes.xsl"/>
     <feature extension="dita.xsl.strings" file="xsl/dnnstrings.xml"/>
 
+    <!-- Additional parameters to pass from Ant to XSLT. -->
+    <feature extension="dita.conductor.xhtml.param"     file="xsl/insertParameters.xml"/>
+    <feature extension="dita.conductor.xhtml.toc.param" file="xsl/insertParameters.xml"/>
+
 </plugin>
