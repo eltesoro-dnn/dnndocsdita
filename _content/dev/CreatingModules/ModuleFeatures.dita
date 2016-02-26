@@ -32,7 +32,7 @@
 
             <p>Themes define the look and feel of pages within DNN, and modules should be designed to work with a wide variety of styles. Through the placement of panes, the theme defines where modules can be positioned on a webpage.</p>
 
-            <note type="tip">You can define styles specific to your module. If you do, define the scope of your styles in a root element (usually a <apiname>&lt;div&gt;</apiname> that wraps your entire markup) within your module. This ensures that your styles will be more specific than the styles defined in the theme.</note>
+            <note type="tip">You can define styles specific to your module. If you do, define the scope of your styles in a root element (usually a <codeph>&lt;div&gt;</codeph> that wraps your entire markup) within your module. This ensures that your styles will be more specific than the styles defined in the theme.</note>
 
             <p>When a module is added to a page, DNN wraps a container around the module. The container defines the look and feel of content blocks on the page and provides user interface elements for managing the module, such as the module title, the module action menu, and the action links.</p>
         </section>
@@ -49,15 +49,15 @@
 
             <p>You can customize module action menu by implementing the following features in your module:
                 <ul>
-                    <li>Provide a link to a help page manifest to change the **Help** link in the menu.</li>
-                    <li>Implement the <apiname>IPortable</apiname> interface to display the **Import** and **Export** links in the menu.
+                    <li>Provide a link to a help page manifest to change the <uicontrol>Help</uicontrol> link in the menu.</li>
+                    <li>Implement the <apiname>IPortable</apiname> interface to display the <uicontrol>Import</uicontrol> and <uicontrol>Export</uicontrol> links in the menu.
                          <note type="note"> The <apiname>IPortable</apiname> interface is also used by DNN when an administrator creates a page or portal template, or when a page or portal template is used to create a page or portal. </note>
                     </li>
-                    <li>Implement the <apiname>ISearchable</apiname> interface to display the **Syndicate** link in the menu.
+                    <li>Implement the <apiname>ISearchable</apiname> interface to display the <uicontrol>Syndicate</uicontrol> link in the menu.
                          <note type="note"> The Syndicate feature requires an administrator to enable the syndication feature in the module settings. </note>
                     </li>
                     <li>Implement the <apiname>IActionable</apiname> interface to display custom menu items.
-                         <note type="note"> Custom menu items are shown in their own menu under the pencil icon.  If IActionable is not implemented then the pencil icon menu will not be shown. </note>
+                         <note type="note"> Custom menu items are shown in their own menu under the pencil icon.  If <apiname>IActionable</apiname> is not implemented then the pencil icon menu will not be shown. </note>
                     </li>
                 </ul>
              </p>
@@ -83,7 +83,7 @@
             <p>You can bundle modules into packages:
                 <ul>
                     <li>manually,</li>
-                    <li>by using the module packaging wizard, which is available through the **Module Creator** or the **Extensions** page, or
+                    <li>by using the module packaging wizard, which is available through the <wintitle>Module Creator</wintitle> or the <wintitle>Extensions</wintitle> page, or
                         <image scalefit="yes" placement="break" align="left" href="../../common/img/module-package.png"><alt>Click Create Package to start the wizard.</alt></image>
                     </li>
                     <li>by using the build scripts that come with standard module templates.</li>

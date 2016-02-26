@@ -126,31 +126,31 @@
                         </sthead>
                         <strow>
                             <stentry>View</stentry>
-                            <stentry>Inside **Views** folder that matches the controller name (e.g. a view for the Home controller should be in the **/Views/Home** folder)</stentry>
+                            <stentry>The <filepath>Views</filepath> folder that matches the controller name (e.g. a view for the Home controller should be in the <filepath>/Views/Home</filepath> folder)</stentry>
                          </strow>
                          <strow>
                              <stentry>Shared layout</stentry>
-                             <stentry><filepath>/Views/Shared</filepath> folder</stentry>
+                             <stentry>The <filepath>/Views/Shared</filepath> folder</stentry>
                          </strow>
                          <strow>
                              <stentry>MVC Module</stentry>
-                             <stentry><filepath> DesktopModules/MVC </filepath> folder</stentry>
+                             <stentry>The <filepath>DesktopModules/MVC</filepath> folder</stentry>
                          </strow>
                          <strow>
                              <stentry>Controller</stentry>
-                             <stentry><filepath> Controllers </filepath> folder (optional)</stentry>
+                             <stentry>The <filepath>Controllers</filepath> folder (optional)</stentry>
                          </strow>
                          <strow>
                              <stentry>Model</stentry>
-                             <stentry>Models folder (optional)</stentry>
+                             <stentry>The <filepath>models</filepath> folder (optional)</stentry>
                          </strow>
                          <strow>
                              <stentry>Static content file (e.g., stylesheets and images)</stentry>
-                             <stentry>Content folder</stentry>
+                             <stentry>The <filepath>content</filepath> folder</stentry>
                          </strow>
                          <strow>
                              <stentry>JavaScript file</stentry>
-                             <stentry>Scripts folder</stentry>
+                             <stentry>The <filepath>scripts</filepath> folder</stentry>
                          </strow>
                     </simpletable>
                 </li>
