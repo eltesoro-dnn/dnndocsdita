@@ -32,6 +32,8 @@
         <topicref keyref="k-whatsnew" />
         <topicref keyref="k-ovplatform" />
 
+        <topicref format="dita" type="concept" href="design/AboutThemes.dita" />
+
         <!-- Setup -->
         <topicref keyref="k-suDNN" toc="yes" collection-type="sequence">
             <topicref keyref="k-suFolder" />
@@ -40,8 +42,6 @@
             <topicref keyref="k-suInstWiz" />
             <topicref keyref="k-reqs" />
         </topicref>
-
-        <topicref format="dita" type="concept" href="design/AboutThemes.dita" />
 
         <!-- Creating themes -->
         <topicref format="dita" type="topic" href="design/CreatingThemes/CreateTheme.dita" collection-type="sequence">

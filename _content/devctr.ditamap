@@ -30,7 +30,18 @@
     <topicref format="dita" type="concept" href="dev/DevCtr.dita" toc="yes">
 
         <topicref keyref="k-whatsnew" />
+
         <topicref keyref="k-ovplatform" />
+
+        <!-- Creating modules -->
+        <topicref format="dita" type="concept"   href="dev/CreatingModules/ModuleDevelopment.dita" toc="yes" collection-type="family">
+            <topicref format="dita" type="concept"   href="dev/CreatingModules/ModuleFeatures.dita" />
+            <topicref format="dita" type="concept"   href="dev/CreatingModules/ModuleArchitecture.dita" />
+            <topicref format="dita" type="concept"   href="dev/CreatingModules/WebFormsModuleDevelopment.dita" />
+            <topicref format="dita" type="concept"   href="dev/CreatingModules/MVCModuleDevelopment.dita" />
+            <topicref format="dita" type="concept"   href="dev/CreatingModules/SPAModuleDevelopment.dita" />
+            <topicref format="dita" type="concept"   href="dev/CreatingModules/UnsupportedMVCFeatures.dita" />
+        </topicref>
 
         <!-- Setup -->
         <topicref keyref="k-suDNN" toc="yes" collection-type="sequence">
@@ -41,19 +52,10 @@
             <topicref keyref="k-reqs" />
         </topicref>
 
-        <!-- <topicref format="dita" href="design/AboutModules.dita" type="concept" /> -->
-
-        <!-- Creating modules -->
         <topicref format="dita" type="topic" href="dev/CreatingModules/CreateModule.dita" toc="yes" collection-type="sequence">
-            <topicref format="dita" type="concept"   href="dev/CreatingModules/DevelopModules.dita" />
-            <topicref format="dita" type="concept"   href="dev/CreatingModules/ModuleFeatures.dita" />
-            <topicref format="dita" type="concept"   href="dev/CreatingModules/ModuleArchitecture.dita" />
-            <topicref format="dita" type="concept"   href="dev/CreatingModules/WebFormsModuleDevelopment.dita" />
-            <topicref format="dita" type="concept"   href="dev/CreatingModules/MVCModuleDevelopment.dita" />
-            <topicref format="dita" type="concept"   href="dev/CreatingModules/SPAModuleDevelopment.dita" />
-            <topicref format="dita" type="concept"   href="dev/CreatingModules/UnsupportedMVCFeatures.dita" />
-            <topicref format="dita" type="task"      href="dev/CreatingModules/CreateModuleUsingTemplates.dita" />
-            <topicref format="dita" type="task"      href="dev/CreatingModules/StartVSProjWithTemplates.dita" />
+            <topicref format="dita" type="task"      href="dev/CreatingModules/CreateModuleUsingTemplates.dita">
+                <topicref format="dita" type="task"      href="dev/CreatingModules/StartVSProjWithTemplates.dita" />
+            </topicref>
             <!-- Intermediate steps here. -->
             <topicref keyref="k-createpkg" />
             <topicref keyref="k-installext" />
