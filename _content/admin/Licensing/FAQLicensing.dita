@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-FAQLicensing">
+
+    <title>FAQ: Licensing</title>
+    <titlealts>
+        <navtitle></navtitle>
+    </titlealts>
+
+    <prolog>
+        <author></author>
+        <metadata>
+            <audience type="administrator" job="troubleshooting" />
+        </metadata>
+    </prolog>
+
+    <body>
+        <faq>
+            <faqq>I activated my license but my Evoq website still says that I am on the trial version.</faqq>
+            <faqa>See <xref format="dita" href="tsh-NagMessage.dita">Troubleshoot: Nag message still appears after license activation</xref></faqa>
+        </faq>
+
+        <faq>
+            <faqq>Can I activate a license on a server without internet access?</faqq>
+            <faqa>See ....</faqa>
+        </faq>
+
+        <faq>
+            <faqq>How do I view my available licenses?</faqq>
+            <faqa>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings</uicontrol> <uicontrol>License Management</uicontrol></menucascade>, and then search for your email address or invoice number.</faqa>
+        </faq>
+
+        <faq>
+            <faqq>How do I recover a production license that was inadvertently activated in a local development environment?</faqq>
+            <faqa>Please <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support/success-network">contact DNN Customer Support</xref>.</faqa>
+        </faq>
+
+        <faq>
+            <faqq>How do I delete an activated development license in my local server?</faqq>
+            <faqa>While logged in as <term>Host</term>, go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings</uicontrol> <uicontrol>License Management</uicontrol></menucascade>, then delete the license from the list.</faqa>
+            <draft-comment><!-- Is this correct? --></draft-comment>
+        </faq>
+
+    </body>
+
+</topic>

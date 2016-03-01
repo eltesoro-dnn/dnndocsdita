@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
+<concept xml:lang="en" id="con-LicensingOverview">
+
+    <title>DNN Evoq licensing</title>
+    <titlealts>
+        <navtitle>Licensing</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>ERT</author>
+        <metadata>
+            <audience type="administrator" job="installing" />
+            <audience type="programmer" job="installing" />
+            <audience type="other" othertype="designer" job="installing" />
+        </metadata>
+    </prolog>
+
+    <conbody>
+
+        <section id="disclaimer">
+            <note type="note">Due to changing market factors, the following product and licensing information might change without notice. Please contact the <xref format="html" scope="external" href="mailto:sales@dnnsoftware.com">DNN Sales Team</xref> for up-to-date information.</note>
+         </section>
+
+        <section id="types">
+            <title>Overview</title>
+
+            <p>For each edition of Evoq (Content or Engage), the following types of licenses are available:
+                <ul>
+                    <li>Production licenses are for live sites.</li>
+                    <li>Non-production licenses are intended for test sites and staging servers.</li>
+                    <li>Development licenses are for local use (i.e., localhost).</li>
+                    <li>Failover licenses are for emergency use only. Example, in case your main data center goes offline and you have to switch to a backup data center temporarily, the backup data center requires failover licenses.</li>
+                </ul>
+            </p>
+
+            <note type="note">To be able to get non-production, development, or failover licenses, you must have at least one paid commercial production license. Members of the DNN Partner Program can get not-for-retail (NFR) licenses without this requirement.</note>
+        </section>
+
+
+        <section id="activation">
+            <title>Activation</title>
+
+            <p>To activate a license, you need the invoice number(s) sent to you in an email after your purchase and the email address associated with each invoice. Each license will have its own invoice number (e.g., INV00x-1, INV00x-2, INV00x-3).</p>
+
+            <ul>
+                <li>For production licenses, see <xref>License Production Server</xref>.</li>
+                <li>For non-production licenses, see ....</li>
+                <li>For development licenses, see <xref>License Development Server</xref>.</li>
+                <li>For failover licenses, see ....</li>
+            </ul>
+
+            <p>You need one license activation for each IIS instance on each server.</p>
+
+            <p>By default, each production, non-production, and failover license can be activated only once. If you need to move a site to a different server or if a server crash or a database overwrite corrupts your site's license information, please <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support/success-network">open a customer support ticket</xref>to reactivate your existing license.</p>
+
+            <p>In contrast, a development license can be activated as many times as needed. To request additional activations for an existing development license, please <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support/success-network">open a customer support ticket</xref>.
+            </p>
+
+            <note type="important">If switching to a different development server, make sure that the old license is deleted before activating a new license on the new server.</note>
+            <draft-comment><!-- Is this note still valid? If so, why is it necessary to delete the old license in the old server? What if they already deleted the old site? --></draft-comment>
+
+        </section>
+
+    </conbody>
+
+    <related-links>
+        <link href="http://customers.dnnsoftware.com/KB/c48/licensing.aspx"><linktext>DNN KB: Licensing</linktext></link>
+    </related-links>
+</concept>
