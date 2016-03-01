@@ -96,8 +96,8 @@
                 <topicref keyref="k-createpkg" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="reference" href="design/ContentsThemePack.dita" />
-                <topicref format="dita" type="reference" href="dev/ContentsModulePack.dita" />
+                <topicref format="dita" type="reference" scope="peer" href="design/ContentsThemePack.dita" />
+                <topicref format="dita" type="reference" scope="peer" href="dev/ContentsModulePack.dita" />
                 <topicref keyref="k-manifest" />
             </relcell>
         </relrow> -->
@@ -105,10 +105,10 @@
         <!-- Specific to this center. -->
 <!--         <relrow>
             <relcell>
-                <topicref format="dita" type="topic" scope="peer" href="admin/Setup/SetUpDNN.dita" />
+                <topicref format="dita" type="topic" href="admin/Setup/SetUpDNN.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task" scope="peer" href="admin/Extensions/InstallExtension.dita" />
+                <topicref format="dita" type="task" href="admin/Extensions/InstallExtension.dita" />
             </relcell>
             <relcell>
                 <topicref keyref="k-reqs" />
