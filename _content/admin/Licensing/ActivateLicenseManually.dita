@@ -72,13 +72,12 @@
                 <cmd>Get an activation key.</cmd>
                 <info>
                     <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingManual.png"><alt>Copy the encoded server ID, paste it in the website to get an activation key, paste the activation key, then click Submit Activation Key.</alt></image>
-                    <p>Copy the encoded server ID, paste it in the DNN website to get an activation key, paste the activation key, then click Submit Activation Key.</p>
-                    <note type="tip">If your server does not have access to the Internet, you can access the dnnsoftware.com website from another machine and transfer the keys through a local network or a secure flash drive.</note>
+                    <note type="tip">If your server does not have access to the Internet, you can access the DNN Professional License Request page on dnnsoftware.com from another machine and transfer the keys through a local network or a secure flash drive.</note>
                 </info>
 
                 <substeps>
                     <substep>
-                        <cmd>Click <uicontrol>Request an activation key on dnnsoftware.com</uicontrol> to open <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support/success-network/license-management/ctl/requestlicense/mid/1189">the Professional License Request page on dnnsoftware.com</xref>.</cmd>
+                        <cmd>Click <uicontrol>Request an activation key on dnnsoftware.com</uicontrol> to open <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support/success-network/license-management/ctl/requestlicense/mid/1189">the Professional License Request page</xref>.</cmd>
                     </substep>
                     <substep>
                         <cmd>Copy the encoded server ID from the Evoq dialog to the dnnsoftware.com License Request form.</cmd>

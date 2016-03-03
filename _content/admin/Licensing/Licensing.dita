@@ -2,7 +2,7 @@
 <!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
 <concept xml:lang="en" id="con-Licensing">
 
-    <title>DNN Evoq licensing</title>
+    <title>DNN Evoq Licensing</title>
     <titlealts>
         <navtitle>Licensing</navtitle>
     </titlealts>
@@ -18,10 +18,6 @@
 
     <conbody>
 
-        <section id="disclaimer">
-            <note type="note">Due to changing market factors, the following product and licensing information might change without notice. Please contact the <xref format="html" scope="external" href="mailto:sales@dnnsoftware.com">DNN Sales Team</xref> for up-to-date information.</note>
-         </section>
-
         <section id="types">
             <title>Overview</title>
 
@@ -35,7 +31,10 @@
                 </ul>
             </p>
 
-            <note type="note">To be able to get staging, test, development, or failover licenses, you must have at least one paid commercial production license. Members of the DNN Partner Program can get not-for-retail (NFR) licenses without this requirement.</note>
+            <p>To be able to get staging, test, development, or failover licenses, you must have at least one paid commercial production license. Members of the DNN Partner Program can get not-for-retail (NFR) licenses without this requirement.</p>
+
+            <note type="note">Due to changing market factors, the product and licensing information could change without notice. Please contact the <xref format="html" scope="external" href="mailto:sales@dnnsoftware.com">DNN Sales Team</xref> for up-to-date information.</note>
+
         </section>
 
 
