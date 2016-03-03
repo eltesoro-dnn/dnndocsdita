@@ -41,6 +41,15 @@
             <topicref keyref="k-reqs" />
         </topicref>
 
+        <!-- Licensing -->
+        <topicref type="topic" format="dita" navtitle="Licensing" href="admin/licensing/Licensing.dita"  toc="yes" collection-type="family">
+            <topicref type="task" format="dita" navtitle="Activate Automatically"   href="admin/licensing/ActivateLicenseAutomatically.dita" />
+            <topicref type="task" format="dita" navtitle="Activate Manually"        href="admin/licensing/ActivateLicenseManually.dita" />
+            <topicref type="task" format="dita" navtitle="FAQ"                      href="admin/licensing/FAQLicensing.dita" />
+            <topicref type="task" format="dita" navtitle="Troubleshooting"          href="admin/licensing/TroubleshootingLicensing.dita" />
+        </topicref>
+
+
         <!-- Local references -->
         <topicref keyref="k-installext" />
         <topicref format="html" scope="external" navtitle="Online User Guide" href="http://www.dnnsoftware.com/help" />
@@ -53,14 +62,6 @@
             Performance Tuning
         </topicref>
         -->
-
-        <!-- Licensing -->
-        <topicref type="topic" format="dita" navtitle="Licensing" href="admin/licensing/Licensing.dita"  toc="yes" collection-type="family">
-            <topicref type="task" format="dita" navtitle="Activate License Manually"  href="admin/licensing/ActivateLicenseAutomatically.dita" />
-            <topicref type="task" format="dita" navtitle="Activate License Manually"  href="admin/licensing/ActivateLicenseManually.dita" />
-            <topicref type="task" format="dita" navtitle="FAQ: Licensing"             href="admin/licensing/FAQLicensing.dita" />
-            <topicref type="task" format="dita" navtitle="Troubleshooting: Licensing" href="admin/licensing/TroubleshootingLicensing.dita" />
-        </topicref>
 
         <!-- Important global references -->
         <topichead navtitle="Glossary" chunk="by-document to-content" copy-to="admin/glossary-adm.dita" >
@@ -121,18 +122,6 @@
             <relcell>
                 <topicref keyref="k-reqs" />
             </relcell>
-        </relrow> -->
-        <!-- <relrow>
-            <relcell>
-                <topicref type="topic" format="dita" navtitle="Licensing" href="admin/licensing/Licensing.dita" />
-            </relcell>
-            <relcell>
-                <topicref type="task" format="dita" navtitle="Activate License Manually"  href="admin/licensing/ActivateLicenseAutomatically.dita" />
-                <topicref type="task" format="dita" navtitle="Activate License Manually"  href="admin/licensing/ActivateLicenseManually.dita" />
-                <topicref type="task" format="dita" navtitle="FAQ: Licensing"             href="admin/licensing/FAQLicensing.dita" />
-                <topicref type="task" format="dita" navtitle="Troubleshooting: Licensing" href="admin/licensing/TroubleshootingLicensing.dita" />
-            </relcell>
-            <relcell/>
         </relrow> -->
 
     </reltable>
