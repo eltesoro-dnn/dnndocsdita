@@ -12,44 +12,45 @@
     </prolog>
 
     <body>
+
         <section id="TrialMsgAfterActivate">
             <title>Trial message still appears after activating license.</title>
 
-            <symptom>
+            <sectiondiv>
                 <p>Even after a license has been activated, the trial version message still appears.</p>
                 <systemoutput>You are using an unlicensed and unsupported version of .... Please contact your Systems Administrator for information on how to obtain a valid license.</systemoutput>
                 <systemoutput>You are using a trial version of Evoq .... You currently have 365 days remaining before your trial period expires.</systemoutput>
-            </symptom>
+            </sectiondiv>
 
-            <steps-unordered>
-                <step>
-                    <cmd>License not activated correctly.</cmd>
-                    <info>
-                        <p>See <xref format="dita" href="ActivateProdLic.dita">Activate Production License</xref> or <xref format="dita" href="ActivateDevLic.dita">Activate Development License</xref> for instructions to activate a license correctly.</p>
-                        <p>If the server does not have Internet access while the license is being activated on it, </p>
+            <dl>
+                <dlentry>
+                    <dt>License not activated correctly.</dt>
+                    <dd>
+                        <p>See <xref format="dita" href="ActivateLicenseAutomatically.dita">Activate License Automatically</xref> for instructions.</p>
+                        <p>If the server does not have Internet access while the license is being activated on it, see <xref format="dita" href="ActivateLicenseManually.dita">Activate License Manually</xref></p>
                         <draft-comment>
                             <!-- <p>See also: License Activation FAQs</p> -->
                         </draft-comment>
-                    </info>
-                </step>
+                    </dd>
+                </dlentry>
 
-                <step>
-                    <cmd>Site moved from one server to another.</cmd>
-                    <info>
+                <dlentry>
+                    <dt>Site moved from one server to another.</dt>
+                    <dd>
                         <p>Verify that the license is activated at both the server level and the IIS level. Follow the The License FAQ contains more details on this and a guide to activating a license correctly.</p>
-                    </info>
-                </step>
+                    </dd>
+                </dlentry>
 
-                <step>
-                    <cmd>Cached pages.</cmd>
-                    <info>
+                <dlentry>
+                    <dt>Cached pages.</dt>
+                    <dd>
                         <p>While logged in as a <term>Host</term>, go to <menucascade><uicontrol>Tools</uicontrol> <uicontrol>Clear Cache</uicontrol></menucascade>.</p>
-                    </info>
-                </step>
+                    </dd>
+                </dlentry>
 
-                <step>
-                    <cmd>Incorrect or missing settings in web.config.</cmd>
-                    <info>
+                <dlentry>
+                    <dt>Incorrect or missing settings in web.config.</dt>
+                    <dd>
                         <p>The license module requires certain web.config settings. This commonly shows up as an error in your event viewer indicating that the <apiname>DotNetNuke.Professional.Application.ProApplication.CheckLicense()</apiname> "String reference not set to an instance of a String." error.</p>
                         <p>Verify that you have the following nodes in your <filepath>web.config</filepath> in the <menucascade><uicontrol>Configuration</uicontrol> <uicontrol>AppSetting</uicontrol></menucascade> tree:
                             <ul>
@@ -66,26 +67,27 @@
                                 </li>
                             </ul>
                         </p>
-                    </info>
-                </step>
+                    </dd>
+                </dlentry>
 
-                <step>
-                    <cmd>Invalid license type.</cmd>
-                    <info>
+                <dlentry>
+                    <dt>Invalid license type.</dt>
+                    <dd>
                         <p>An invoice for one Evoq product cannot be used to license a different Evoq product. Example: An Evoq Content invoice is invalid for Evoq Engage. Verify that the correct invoice number and email are used.</p>
-                    </info>
-                </step>
+                    </dd>
+                </dlentry>
 
-                <step>
-                    <cmd>Application Pool Identity account with invalid or read-only profile.</cmd>
-                    <info>
+                <dlentry>
+                    <dt>Application Pool Identity account with invalid or read-only profile.</dt>
+                    <dd>
                         <p>With Microsoft .NET Framework 4, if running the application pool under a custom domain account, verify that the domain user has a valid profile.</p>
                         <p>Also verify that the profile is not read-only; otherwise, the license key is not decrypted and the trial version message is displayed.</p>
-                    </info>
-                </step>
-            </steps-unordered>
+                    </dd>
+                </dlentry>
+            </dl>
 
         </section>
+
     </body>
 
     <related-links>
