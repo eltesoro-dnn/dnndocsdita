@@ -4,7 +4,7 @@
 
     <title>Activate Your License Manually</title>
     <titlealts>
-        <navtitle>Activate License Manually</navtitle>
+        <navtitle>Activate Manually</navtitle>
     </titlealts>
 
     <prolog>
@@ -20,9 +20,9 @@
 
         <prereq>
             <p>To activate a license, you need the invoice number(s) sent to you in an email after your purchase and the email address associated with each invoice. Each license will have its own invoice number (e.g., INV00x-1, INV00x-2, INV00x-3).</p>
-            <p>If you are unable to find the required information, please contact <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support/success-network">Customer Support</xref>.</p>
+            <p>If you are unable to find the required information, please contact <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support">Customer Support</xref>.</p>
 
-            <note type="note">You might need to modify your firewall settings to allow a query to the DNN licensing web service: <xref format="html" scope="external" href="http://www.dotnetnuke.com/desktopmodules/bring2mind/licenses/licensequery.asmx">http://www.dotnetnuke.com/desktopmodules/bring2mind/licenses/licensequery.asmx</xref>.</note>
+            <note type="note">You might need to modify your firewall settings to allow a query to be sent to the <xref format="html" scope="external" href="http://www.dotnetnuke.com/desktopmodules/bring2mind/licenses/licensequery.asmx">DNN licensing web service</xref>.</note>
         </prereq>
 
         <steps>
