@@ -3,6 +3,9 @@
 <topic xml:lang="en" id="TroubleshootLicensing">
 
     <title>Troubleshooting: Licensing</title>
+    <titlealts>
+        <navtitle>Troubleshooting</navtitle>
+    </titlealts>
 
     <prolog>
         <author>ERT</author>
@@ -51,10 +54,12 @@
                 </dlentry>
 
                 <dlentry>
-                    <dt><systemoutput>String reference not set to an instance of a String.</systemoutput> error linked to <apiname>DotNetNuke.Professional.Application.ProApplication.CheckLicense()</apiname></dt>
                     <dt>Cause: Incorrect or missing settings in <filepath>web.config</filepath>.</dt>
                     <dd>
-                         <p>Verify that you have the following nodes in your <filepath>web.config</filepath> in the <menucascade><uicontrol>Configuration</uicontrol> <uicontrol>AppSetting</uicontrol></menucascade> tree:
+                        <p>You might also see the following error linked to <apiname>DotNetNuke.Professional.Application.ProApplication.CheckLicense()</apiname>:</p>
+                        <p><systemoutput>String reference not set to an instance of a String.</systemoutput></p>
+
+                        <p>Verify that you have the following nodes in your <filepath>web.config</filepath> in the <menucascade><uicontrol>Configuration</uicontrol> <uicontrol>AppSetting</uicontrol></menucascade> tree:
                             <ul>
                                 <li>InstallationDate:
                                     <codeblock>
