@@ -15,32 +15,39 @@
     </prolog>
 
     <body>
-        <faq>
-            <faqq>I activated my license but my Evoq website still says that I am on the trial version.</faqq>
-            <faqa>See <xref format="dita" href="tsh-NagMessage.dita">Troubleshoot: Nag message still appears after license activation</xref></faqa>
-        </faq>
 
-        <faq>
-            <faqq>Can I activate a license on a server without internet access?</faqq>
-            <faqa>See ....</faqa>
-        </faq>
+        <dl>
+            <dlentry>
+                <dt>I activated my license but my Evoq website still says that I am on the trial version.</dt>
+                <dd>See <xref format="dita" href="TrialMessage.dita">Troubleshoot: Trial message still appears after license activation</xref>.</dd>
+            </dlentry>
 
-        <faq>
-            <faqq>How do I view my available licenses?</faqq>
-            <faqa>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings</uicontrol> <uicontrol>License Management</uicontrol></menucascade>, and then search for your email address or invoice number.</faqa>
-        </faq>
+            <dlentry>
+                <dt>Can I activate a license on a server without internet access?</dt>
+                <dd>See <xref format="html" scope="external" href="ActivateLicMan.dita">Activate License Manually</xref>.</dd>
+            </dlentry>
 
-        <faq>
-            <faqq>How do I recover a production license that was inadvertently activated in a local development environment?</faqq>
-            <faqa>Please <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support/success-network">contact DNN Customer Support</xref>.</faqa>
-        </faq>
+            <dlentry>
+                <dt>How do I view my available licenses?</dt>
+                <dd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings</uicontrol> <uicontrol>License Management</uicontrol></menucascade>, and then search for your email address or invoice number.</dd>
+            </dlentry>
 
-        <faq>
-            <faqq>How do I delete an activated development license in my local server?</faqq>
-            <faqa>While logged in as <term>Host</term>, go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings</uicontrol> <uicontrol>License Management</uicontrol></menucascade>, then delete the license from the list.</faqa>
-            <draft-comment><!-- Is this correct? --></draft-comment>
-        </faq>
+            <dlentry>
+                <dt>How do I recover a production license that was inadvertently activated in a local development environment?</dt>
+                <dd>Please contact <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support/success-network">Customer Support</xref>.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>How do I delete an activated development license in my local server?</dt>
+                <dd>While logged in as <term>Host</term>, go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings</uicontrol> <uicontrol>License Management</uicontrol></menucascade>, then delete the license from the list.</dd>
+                <draft-comment><!-- Is this correct? --></draft-comment>
+            </dlentry>
+        </dl>
 
     </body>
+
+    <related-links>
+        <link href="http://customers.dnnsoftware.com/KB/c48/licensing.aspx"><linktext>DNN KB: Licensing</linktext></link>
+    </related-links>
 
 </topic>

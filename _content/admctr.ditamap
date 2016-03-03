@@ -54,6 +54,14 @@
         </topicref>
         -->
 
+        <!-- Licensing -->
+        <topicref type="topic" format="dita" navtitle="Licensing" href="admin/licensing/LicensingOverview.dita"  toc="yes" collection-type="family">
+            <topicref type="task" format="dita" navtitle="Activate License Manually"  href="admin/licensing/ActivateLicenseAutomatically.dita" />
+            <topicref type="task" format="dita" navtitle="Activate License Manually"  href="admin/licensing/ActivateLicenseManually.dita" />
+            <topicref type="task" format="dita" navtitle="FAQ: Licensing"             href="admin/licensing/FAQLicensing.dita" />
+            <topicref type="task" format="dita" navtitle="Troubleshooting: Licensing" href="admin/licensing/TroubleshootingLicensing.dita" />
+        </topicref>
+
         <!-- Important global references -->
         <topichead navtitle="Glossary" chunk="by-document to-content" copy-to="admin/glossary-adm.dita" >
             <mapref keyref="k-glossarymap" />

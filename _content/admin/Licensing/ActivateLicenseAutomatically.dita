@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/task.dtd">
-<task xml:lang="en" id="tsk-ActivateLicMan">
+<task xml:lang="en" id="tsk-ActivateLicAuto">
 
-    <title>Activate Your License Manually</title>
+    <title>Activate Your License Automatically</title>
     <titlealts>
-        <navtitle>Activate License Manually</navtitle>
+        <navtitle>Activate License Automatically</navtitle>
     </titlealts>
 
     <prolog>
@@ -42,7 +42,7 @@
             <step>
                 <cmd>Fill in the required information.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingAddMan.png"><alt>Choose License Type, enter Account Email and Invoice Number, then click Manual Activation.</alt></image>
+                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingAddAuto.png"><alt>Choose License Type, enter Account Email and Invoice Number, then click Automatic Activation.</alt></image>
                 </info>
 
                 <substeps>
@@ -62,38 +62,11 @@
                         </info>
                     </substep>
                     <substep><cmd>Enter the <uicontrol>Account Email</uicontrol> and <uicontrol>Invoice Number</uicontrol> associated with your license.</cmd></substep>
-                    <substep><cmd>Click <uicontrol>Manual Activation</uicontrol>.</cmd></substep>
+                    <substep><cmd>Click <uicontrol>Automatic Activation</uicontrol>.</cmd></substep>
                 </substeps>
 
                 <draft-comment><!-- Note? Instructions for allowing through firewall? "The application will check the Account Email and Invoice Number against the DotNetNuke License Server to validate the information entered calling the following WebService that needs to be allowed through your firewall if restrictions have been set: http://www.dotnetnuke.com/desktopmodules/bring2mind/licenses/licensequery.asmx" --></draft-comment>
 
-            </step>
-
-            <step>
-                <cmd>Get an activation key.</cmd>
-                <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingManual.png"><alt>Copy the encoded server ID, paste it in the website to get an activation key, paste the activation key, then click Submit Activation Key.</alt></image>
-                    <p>Copy the encoded server ID, paste it in the DNN website to get an activation key, paste the activation key, then click Submit Activation Key.</p>
-                    <note type="tip">If your server does not have access to the Internet, you can access the dnnsoftware.com website from another machine and transfer the keys through a local network or a secure flash drive.</note>
-                </info>
-
-                <substeps>
-                    <substep>
-                        <cmd>Click <uicontrol>Request an activation key on dnnsoftware.com</uicontrol> to open <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support/success-network/license-management/ctl/requestlicense/mid/1189">the Professional License Request page on dnnsoftware.com</xref>.</cmd>
-                    </substep>
-                    <substep>
-                        <cmd>Copy the encoded server ID from the Evoq dialog to the dnnsoftware.com License Request form.</cmd>
-                    </substep>
-                    <substep>
-                        <cmd>In the License Request form, click <uicontrol>Generate Activation Key</uicontrol>.</cmd>
-                    </substep>
-                    <substep>
-                        <cmd>Copy the generated activation key from the License Request form to the Evoq dialog.</cmd>
-                    </substep>
-                    <substep>
-                        <cmd>In Evoq, click <uicontrol>Submit Activation Key</uicontrol>.</cmd>
-                    </substep>
-                </substeps>
             </step>
 
         </steps>
