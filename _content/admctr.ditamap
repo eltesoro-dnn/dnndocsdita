@@ -55,7 +55,7 @@
         -->
 
         <!-- Licensing -->
-        <topicref type="topic" format="dita" navtitle="Licensing" href="admin/licensing/LicensingOverview.dita"  toc="yes" collection-type="family">
+        <topicref type="topic" format="dita" navtitle="Licensing" href="admin/licensing/Licensing.dita"  toc="yes" collection-type="family">
             <topicref type="task" format="dita" navtitle="Activate License Manually"  href="admin/licensing/ActivateLicenseAutomatically.dita" />
             <topicref type="task" format="dita" navtitle="Activate License Manually"  href="admin/licensing/ActivateLicenseManually.dita" />
             <topicref type="task" format="dita" navtitle="FAQ: Licensing"             href="admin/licensing/FAQLicensing.dita" />
@@ -121,6 +121,18 @@
             <relcell>
                 <topicref keyref="k-reqs" />
             </relcell>
+        </relrow> -->
+        <!-- <relrow>
+            <relcell>
+                <topicref type="topic" format="dita" navtitle="Licensing" href="admin/licensing/Licensing.dita" />
+            </relcell>
+            <relcell>
+                <topicref type="task" format="dita" navtitle="Activate License Manually"  href="admin/licensing/ActivateLicenseAutomatically.dita" />
+                <topicref type="task" format="dita" navtitle="Activate License Manually"  href="admin/licensing/ActivateLicenseManually.dita" />
+                <topicref type="task" format="dita" navtitle="FAQ: Licensing"             href="admin/licensing/FAQLicensing.dita" />
+                <topicref type="task" format="dita" navtitle="Troubleshooting: Licensing" href="admin/licensing/TroubleshootingLicensing.dita" />
+            </relcell>
+            <relcell/>
         </relrow> -->
 
     </reltable>
