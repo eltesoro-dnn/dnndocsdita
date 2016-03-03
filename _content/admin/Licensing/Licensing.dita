@@ -54,7 +54,7 @@
 
             <p>To activate a license, you need the invoice number(s) sent to you in an email after your purchase and the email address associated with each invoice. Each license will have its own invoice number (e.g., INV00x-1, INV00x-2, INV00x-3).</p>
 
-            <p>In most cases, you can <xref format="html" scope="external" href="ActivateLicAuto.dita">activate the license automatically</xref>. However, if the server does not have Internet access, you can also <xref format="html" scope="external" href="ActivateLicMan.dita">do so manually</xref>.</p>
+            <p>In most cases, you can <xref format="dita" href="ActivateLicenseAutomatically.dita">activate the license automatically</xref>. However, if the server does not have Internet access, you can also <xref format="dita" href="ActivateLicenseManually.dita">do so manually</xref>.</p>
 
         </section>
 
