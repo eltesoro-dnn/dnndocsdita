@@ -16,6 +16,7 @@
     </prolog>
 
     <taskbody>
+        <div conkeyref="k-bptext/div-breadcrumbs"></div>
 
         <section>
             <p>Themes are comprised of layout templates for the webpages, containers for modules, their associated CSS, and their DocType files. These files, along with the DNN Manifest, are packaged into a zip file, which is used to install your theme.</p>

@@ -13,6 +13,13 @@
 
     <body>
 
+        <!-- <div conref="../../common/bptext.dita#bptext/div-breadcrumbs"></div> -->
+        <!-- <div conkeyref="k-bptext/div-breadcrumbs"></div> -->
+        <div id="div-breadcrumbs">
+            <div id="breadcrumbs"></div>
+        </div>
+
+
         <!-- <p conref="../../common/bptext.dita#bptext/p-3rdPartyExtensions"></p> -->
         <!-- <p conkeyref="k-bptext/p-3rdPartyExtensions"></p> -->
         <p id="p-3rdPartyExtensions">Thousands of third-party modules and themes are available from these sources:
@@ -48,8 +55,6 @@
         <!-- <ph conkeyref="k-bptext/ph-oldterm"></ph> -->
         <ph id="ph-oldterm">This is the old term, still used in some APIs and UI controls.</ph>
         </p>
-
-
 
     </body>
 
