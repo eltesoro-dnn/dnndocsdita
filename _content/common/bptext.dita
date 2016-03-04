@@ -13,11 +13,9 @@
 
     <body>
 
-        <!-- <div conref="../../common/bptext.dita#bptext/div-breadcrumbs"></div> -->
-        <!-- <div conkeyref="k-bptext/div-breadcrumbs"></div> -->
-        <div id="div-breadcrumbs">
-            <div id="breadcrumbs"></div>
-        </div>
+        <!-- <bodydiv conref="../../common/bptext.dita#bptext/bodydiv-breadcrumbs"></bodydiv> -->
+        <!-- <bodydiv conkeyref="k-bptext/bodydiv-breadcrumbs"></bodydiv> -->
+        <bodydiv id="bodydiv-breadcrumbs">&lt;script language=&quot;JavaScript&quot;&gt;&lt;!--breadcrumbs(); --&gt;&lt;/script&gt;</bodydiv>
 
 
         <!-- <p conref="../../common/bptext.dita#bptext/p-3rdPartyExtensions"></p> -->

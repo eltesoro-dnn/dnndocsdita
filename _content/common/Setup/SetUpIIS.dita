@@ -18,7 +18,7 @@
     </prolog>
 
     <taskbody>
-        <div conkeyref="k-bptext/div-breadcrumbs"></div>
+        <bodydiv conkeyref="k-bptext/bodydiv-breadcrumbs"></bodydiv>
 
         <prereq>
             <xref format="dita" href="SetUpDNNFolder.dita">DNN installed with folder permissions for the user account that will run your website.</xref>
