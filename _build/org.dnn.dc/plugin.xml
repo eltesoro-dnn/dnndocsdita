@@ -3,6 +3,7 @@
 <plugin id="org.dnndc.plugins">
 
     <!-- XHTML -->
+    <feature extension="dita.xsl.xhtml"   file="xsl/dnn-head.xsl"/>
     <feature extension="dita.xsl.xhtml"   file="xsl/dnn-header.xsl"/>
     <feature extension="dita.xsl.xhtml"   file="xsl/dnn-footer.xsl"/>
     <feature extension="dita.xsl.xhtml"   file="xsl/dnn-sidetoc.xsl"/>
@@ -10,6 +11,7 @@
     <feature extension="dita.xsl.strings" file="xsl/dnn-strings.xml"/>
 
     <!-- HTML5 -->
+    <feature extension="dita.xsl.html5"   file="xsl/dnn-head.xsl"/>
     <feature extension="dita.xsl.html5"   file="xsl/dnn-header.xsl"/>
     <feature extension="dita.xsl.html5"   file="xsl/dnn-footer.xsl"/>
     <feature extension="dita.xsl.html5"   file="xsl/dnn-sidetoc.xsl"/>
