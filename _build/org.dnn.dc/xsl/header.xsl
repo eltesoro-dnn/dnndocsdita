@@ -52,6 +52,7 @@
                     </ul>
                 </nav>
             </div>
+            <script language="JavaScript" src="/_theme/breadcrumbs.js"></script>
         </div>
 
     </xsl:template>
