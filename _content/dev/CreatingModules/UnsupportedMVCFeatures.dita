@@ -19,7 +19,6 @@
     </prolog>
 
     <conbody>
-        <bodydiv conkeyref="k-bptext/bodydiv-breadcrumbs"></bodydiv>
 
         <section id="NotImplemented">
             <p>Some MVC features were not fully implemented in DNN 8 due to the differences between ASP.NET MVC and ASP.NET Web Forms frameworks.</p>

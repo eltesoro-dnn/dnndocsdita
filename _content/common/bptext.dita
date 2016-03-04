@@ -13,11 +13,6 @@
 
     <body>
 
-        <!-- <bodydiv conref="../../common/bptext.dita#bptext/bodydiv-breadcrumbs"></bodydiv> -->
-        <!-- <bodydiv conkeyref="k-bptext/bodydiv-breadcrumbs"></bodydiv> -->
-        <bodydiv id="bodydiv-breadcrumbs">&lt;script language=&quot;JavaScript&quot;&gt;&lt;!--breadcrumbs(); --&gt;&lt;/script&gt;</bodydiv>
-
-
         <!-- <p conref="../../common/bptext.dita#bptext/p-3rdPartyExtensions"></p> -->
         <!-- <p conkeyref="k-bptext/p-3rdPartyExtensions"></p> -->
         <p id="p-3rdPartyExtensions">Thousands of third-party modules and themes are available from these sources:
