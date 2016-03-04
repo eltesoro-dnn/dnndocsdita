@@ -21,10 +21,10 @@
   <lang xml:lang="de-de" filename="strings-de-de.xml"/>
   <lang xml:lang="el" filename="strings-el-gr.xml"/>
   <lang xml:lang="el-gr" filename="strings-el-gr.xml"/>
-  <lang xml:lang="en" filename="dnnstrings-en-us.xml"/>
-  <lang xml:lang="en-ca" filename="dnnstrings-en-us.xml"/>
-  <lang xml:lang="en-gb" filename="dnnstrings-en-us.xml"/>
-  <lang xml:lang="en-us" filename="dnnstrings-en-us.xml"/>
+  <lang xml:lang="en" filename="dnn-strings-en-us.xml"/>
+  <lang xml:lang="en-ca" filename="dnn-strings-en-us.xml"/>
+  <lang xml:lang="en-gb" filename="dnn-strings-en-us.xml"/>
+  <lang xml:lang="en-us" filename="dnn-strings-en-us.xml"/>
   <lang xml:lang="es" filename="strings-es-es.xml"/>
   <lang xml:lang="es-es" filename="strings-es-es.xml"/>
   <lang xml:lang="es-419" filename="strings-es-es.xml"/>
@@ -106,8 +106,8 @@
 
   <lang xml:lang="de" filename="../../org.dita.odt/xsl/xslodt/common/strings-de-de.xml"/>
   <lang xml:lang="de-de" filename="../../org.dita.odt/xsl/xslodt/common/strings-de-de.xml"/>
-  <lang xml:lang="en" filename="../../org.dnn.dc/xsl/dnnstrings-en-us.xml"/>
-  <lang xml:lang="en-us" filename="../../org.dnn.dc/xsl/dnnstrings-en-us.xml"/>
+  <lang xml:lang="en" filename="../../org.dnn.dc/xsl/dnn-strings-en-us.xml"/>
+  <lang xml:lang="en-us" filename="../../org.dnn.dc/xsl/dnn-strings-en-us.xml"/>
   <lang xml:lang="es" filename="../../org.dita.odt/xsl/xslodt/common/strings-es-es.xml"/>
   <lang xml:lang="es-es" filename="../../org.dita.odt/xsl/xslodt/common/strings-es-es.xml"/>
   <lang xml:lang="fr" filename="../../org.dita.odt/xsl/xslodt/common/strings-fr-fr.xml"/>
