@@ -8,26 +8,26 @@
     <!-- Keys -->
     <keydef keys="k-bptext"      href="common/bptext.dita#bptext" />
 
-    <keydef keys="k-whatsnew"    type="topic"     format="dita" navtitle="What's New"              href="admin/DNN8WhatsNew.dita" />
-    <keydef keys="k-reqs"        type="reference" format="dita" navtitle="DNN Requirements"        href="admin/Requirements.dita" />
-    <keydef keys="k-ovplatform"  type="concept"   format="dita" navtitle="DNN Platform"            href="admin/OverviewDNNPlatform.dita" />
-    <!-- <keydef keys="k-ovevoq" type="concept"   format="dita" navtitle="DNN Evoq"                href="admin/OverviewDNNEvoq.dita" /> -->
+    <keydef keys="k-whatsnew"    format="dita" type="topic"     navtitle="What's New"              href="adm/DNN8WhatsNew.dita" />
+    <keydef keys="k-reqs"        format="dita" type="reference" navtitle="DNN Requirements"        href="adm/Requirements.dita" />
+    <keydef keys="k-ovplatform"  format="dita" type="concept"   navtitle="DNN Platform"            href="adm/OverviewDNNPlatform.dita" />
+    <!-- <keydef keys="k-ovevoq" format="dita" type="concept"   navtitle="DNN Evoq"                href="adm/OverviewDNNEvoq.dita" /> -->
 
-    <keydef keys="k-suDNN"       type="topic"     format="dita" navtitle="Set Up DNN"              href="admin/setup/SetUpDNN.dita" />
-    <keydef keys="k-suFolder"    type="task"      format="dita" navtitle="Set Up the DNN Folder"   href="admin/setup/SetUpDNNFolder.dita" />
-    <keydef keys="k-suIIS"       type="task"      format="dita" navtitle="Set Up IIS"              href="admin/setup/SetUpIIS.dita" />
-    <keydef keys="k-suSQL"       type="task"      format="dita" navtitle="Set Up SQL"              href="admin/setup/SetUpSQL.dita" />
-    <keydef keys="k-suInstWiz"   type="task"      format="dita" navtitle="Run Installation Wizard" href="admin/setup/RunInstWiz.dita" />
+    <keydef keys="k-suDNN"       format="dita" type="topic"     navtitle="Set Up DNN"              href="adm/setup/SetUpDNN.dita" />
+    <keydef keys="k-suFolder"    format="dita" type="task"      navtitle="Set Up the DNN Folder"   href="adm/setup/SetUpDNNFolder.dita" />
+    <keydef keys="k-suIIS"       format="dita" type="task"      navtitle="Set Up IIS"              href="adm/setup/SetUpIIS.dita" />
+    <keydef keys="k-suSQL"       format="dita" type="task"      navtitle="Set Up SQL"              href="adm/setup/SetUpSQL.dita" />
+    <keydef keys="k-suInstWiz"   format="dita" type="task"      navtitle="Run Installation Wizard" href="adm/setup/RunInstWiz.dita" />
 
-    <keydef keys="k-installext"  type="task"      format="dita" navtitle="Install an Extension"    href="admin/Extensions/InstallExtension.dita" />
-    <keydef keys="k-manifest"    type="reference" format="dita" navtitle="DNN Manifest Schema"     href="admin/Extensions/DNNManifestSchema.dita" />
-    <keydef keys="k-createpkg"   type="task"      format="dita" navtitle="Create the Package"      href="admin/Extensions/CreatePackage.dita" />
+    <keydef keys="k-installext"  format="dita" type="task"      navtitle="Install an Extension"    href="adm/Extensions/InstallExtension.dita" />
+    <keydef keys="k-manifest"    format="dita" type="reference" navtitle="DNN Manifest Schema"     href="adm/Extensions/DNNManifestSchema.dita" />
+    <keydef keys="k-createpkg"   format="dita" type="task"      navtitle="Create the Package"      href="adm/Extensions/CreatePackage.dita" />
 
     <keydef keys="k-glossarymap" href="common/Glossary/glossary.ditamap" />
 
 
     <!-- Topics -->
-    <topicref format="dita" type="concept" href="admin/AdmCtr.dita" toc="yes">
+    <topicref format="dita" type="concept" href="adm/AdmCtr.dita" toc="yes">
 
         <topicref keyref="k-whatsnew" />
         <topicref keyref="k-ovplatform" />
@@ -41,30 +41,31 @@
             <topicref keyref="k-reqs" />
         </topicref>
 
+        <topicref keyref="k-installext" />
+
         <!-- Licensing -->
-        <topicref type="topic" format="dita" navtitle="Licensing" href="admin/licensing/Licensing.dita"  toc="yes" collection-type="family">
-            <topicref type="task" format="dita" navtitle="Activate Automatically"   href="admin/licensing/ActivateLicenseAutomatically.dita" />
-            <topicref type="task" format="dita" navtitle="Activate Manually"        href="admin/licensing/ActivateLicenseManually.dita" />
-            <topicref type="task" format="dita" navtitle="FAQ"                      href="admin/licensing/FAQLicensing.dita" />
-            <topicref type="task" format="dita" navtitle="Troubleshooting"          href="admin/licensing/TroubleshootingLicensing.dita" />
+        <topicref type="topic" format="dita" navtitle="Licensing" href="adm/licensing/Licensing.dita"  toc="yes" collection-type="family">
+            <topicref type="task"  format="dita" navtitle="Activate Automatically"   href="adm/licensing/ActivateLicenseAutomatically.dita" />
+            <topicref type="task"  format="dita" navtitle="Activate Manually"        href="adm/licensing/ActivateLicenseManually.dita" />
+            <topicref type="topic" format="dita" navtitle="FAQ"                      href="adm/licensing/FAQLicensing.dita" />
+            <topicref type="topic" format="dita" navtitle="Troubleshooting"          href="adm/licensing/TroubleshootingLicensing.dita" />
         </topicref>
 
 
         <!-- Local references -->
-        <topicref keyref="k-installext" />
-        <topicref format="html" scope="external" navtitle="Online User Guide" href="http://www.dnnsoftware.com/help" />
+        <topicref format="dita" type="topic" href="adm/AdmRefs.dita" collection-type="family">
+            <topicref format="html" scope="external" navtitle="Online User Guide" href="http://www.dnnsoftware.com/help" />
         <!--
-        <topicref format="dita" type="topic" href="admin/AdmRefs.dita" collection-type="family">
             <xref format="dita" href="../common/placeholderlink.dita">DNN 8.0 User Guide</xref>
             <xref format="dita" href="../common/placeholderlink.dita">Evoq 8.x User Guide</xref>
             Security Guide
             Web Farm Configuration Guide
             Performance Tuning
-        </topicref>
         -->
+        </topicref>
 
         <!-- Important global references -->
-        <topichead navtitle="Glossary" chunk="by-document to-content" copy-to="admin/glossary-adm.dita" >
+        <topichead navtitle="Glossary" chunk="by-document to-content" copy-to="adm/glossary-adm.dita" >
             <mapref keyref="k-glossarymap" />
         </topichead>
 
@@ -114,10 +115,10 @@
         <!-- Specific to this center. -->
 <!--         <relrow>
             <relcell>
-                <topicref format="dita" type="topic" href="admin/Setup/SetUpDNN.dita" />
+                <topicref format="dita" type="topic" href="adm/Setup/SetUpDNN.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task" href="admin/Extensions/InstallExtension.dita" />
+                <topicref format="dita" type="task" href="adm/Extensions/InstallExtension.dita" />
             </relcell>
             <relcell>
                 <topicref keyref="k-reqs" />
