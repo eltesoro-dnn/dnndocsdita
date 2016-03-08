@@ -8,20 +8,20 @@
     <!-- Keys -->
     <keydef keys="k-bptext"      href="common/bptext.dita#bptext" />
 
-    <keydef keys="k-whatsnew"    type="topic"     format="dita" navtitle="What's New"              href="dev/DNN8WhatsNew.dita" />
-    <keydef keys="k-reqs"        type="reference" format="dita" navtitle="DNN Requirements"        href="dev/Requirements.dita" />
-    <keydef keys="k-ovplatform"  type="concept"   format="dita" navtitle="DNN Platform"            href="dev/OverviewDNNPlatform.dita" />
-    <!-- <keydef keys="k-ovevoq" type="concept"   format="dita" navtitle="DNN Evoq"                href="dev/OverviewDNNEvoq.dita" /> -->
+    <keydef keys="k-whatsnew"    format="dita" type="topic"     navtitle="What's New"              href="dev/DNN8WhatsNew.dita" />
+    <keydef keys="k-reqs"        format="dita" type="reference" navtitle="DNN Requirements"        href="dev/Requirements.dita" />
+    <keydef keys="k-ovplatform"  format="dita" type="concept"   navtitle="DNN Platform"            href="dev/OverviewDNNPlatform.dita" />
+    <!-- <keydef keys="k-ovevoq" format="dita" type="concept"   navtitle="DNN Evoq"                href="dev/OverviewDNNEvoq.dita" /> -->
 
-    <keydef keys="k-suDNN"       type="topic"     format="dita" navtitle="Set Up DNN"              href="dev/setup/SetUpDNN.dita" />
-    <keydef keys="k-suFolder"    type="task"      format="dita" navtitle="Set Up the DNN Folder"   href="dev/setup/SetUpDNNFolder.dita" />
-    <keydef keys="k-suIIS"       type="task"      format="dita" navtitle="Set Up IIS"              href="dev/setup/SetUpIIS.dita" />
-    <keydef keys="k-suSQL"       type="task"      format="dita" navtitle="Set Up SQL"              href="dev/setup/SetUpSQL.dita" />
-    <keydef keys="k-suInstWiz"   type="task"      format="dita" navtitle="Run Installation Wizard" href="dev/setup/RunInstWiz.dita" />
+    <keydef keys="k-suDNN"       format="dita" type="topic"     navtitle="Set Up DNN"              href="dev/setup/SetUpDNN.dita" />
+    <keydef keys="k-suFolder"    format="dita" type="task"      navtitle="Set Up the DNN Folder"   href="dev/setup/SetUpDNNFolder.dita" />
+    <keydef keys="k-suIIS"       format="dita" type="task"      navtitle="Set Up IIS"              href="dev/setup/SetUpIIS.dita" />
+    <keydef keys="k-suSQL"       format="dita" type="task"      navtitle="Set Up SQL"              href="dev/setup/SetUpSQL.dita" />
+    <keydef keys="k-suInstWiz"   format="dita" type="task"      navtitle="Run Installation Wizard" href="dev/setup/RunInstWiz.dita" />
 
-    <keydef keys="k-installext"  type="task"      format="dita" navtitle="Install an Extension"    href="dev/Extensions/InstallExtension.dita" />
-    <keydef keys="k-manifest"    type="reference" format="dita" navtitle="DNN Manifest Schema"     href="dev/Extensions/DNNManifestSchema.dita" />
-    <keydef keys="k-createpkg"   type="task"      format="dita" navtitle="Create the Package"      href="dev/Extensions/CreatePackage.dita" />
+    <keydef keys="k-installext"  format="dita" type="task"      navtitle="Install an Extension"    href="dev/Extensions/InstallExtension.dita" />
+    <keydef keys="k-manifest"    format="dita" type="reference" navtitle="DNN Manifest Schema"     href="dev/Extensions/DNNManifestSchema.dita" />
+    <keydef keys="k-createpkg"   format="dita" type="task"      navtitle="Create the Package"      href="dev/Extensions/CreatePackage.dita" />
 
     <keydef keys="k-glossarymap" href="common/Glossary/glossary.ditamap" />
 
@@ -30,7 +30,6 @@
     <topicref format="dita" type="concept" href="dev/DevCtr.dita" toc="yes">
 
         <topicref keyref="k-whatsnew" />
-
         <topicref keyref="k-ovplatform" />
 
         <!-- Setup -->
@@ -53,13 +52,14 @@
         </topicref>
 
         <topicref format="dita" type="concept" href="dev/CreatingModules/CreateModule.dita" toc="yes" collection-type="sequence">
-            <topicref format="dita" type="task"      href="dev/CreatingModules/CreateModuleUsingTemplates.dita">
+            <topicref format="dita" type="task"      href="dev/CreatingModules/UseModuleCreator.dita" />
+            <topicref format="dita" type="task"      href="dev/CreatingModules/CreateModuleUsingTemplates.dita" toc="yes" collection-type="sequence">
                 <topicref format="dita" type="task"      href="dev/CreatingModules/StartVSProjWithTemplates.dita" />
+                <!-- Intermediate steps here. -->
             </topicref>
-            <!-- Intermediate steps here. -->
+            <topicref format="dita" type="task"      href="dev/CreatingModules/TestModule.dita" />
             <topicref keyref="k-createpkg" />
             <topicref keyref="k-installext" />
-            <topicref format="dita" type="task"      href="dev/CreatingModules/TestModule.dita" />
         </topicref>
 
         <!-- Local references -->
@@ -181,6 +181,17 @@
             <relcell/>
         </relrow> -->
 
+<!--    <relrow>
+            <relcell>
+                <topicref format="dita" type="concept" href="dev/CreatingModules/WebFormsModuleDevelopment.dita" />
+                <topicref format="dita" type="concept" href="dev/CreatingModules/MVCModuleDevelopment.dita" />
+                <topicref format="dita" type="concept" href="dev/CreatingModules/SPAModuleDevelopment.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="task"      href="dev/CreatingModules/UseModuleCreator.dita" />
+            </relcell>
+            <relcell/>
+        </relrow> -->
     </reltable>
 
 </map>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="myID">
+
+    <title>Use the Module Creator</title>
+    <titlealts>
+        <navtitle>Use Module Creator</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>JMB</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+        </metadata>
+    </prolog>
+
+    <taskbody>
+
+        <section id="overview">
+            <title>Overview</title>
+
+            <p>The DNN Module Creator enables developers to quickly build modules without a full-blown IDE, like Visual Studio. It automates many of the initial module creation tasks so that module developers can focus on writing code. In addition, the Module Creator can be extended with custom templates to further streamline development.</p>
+
+            <p>The DNN Module Creator is generally recommended only for simple modules. For more complex modules, you can <xref format="dita" href="/dev/CreatingModules/WebFormsModuleDevelopment.dita" >create a Web Forms module using templates</xref>.</p>
+        </section>
+
+        <prereq>
+            <ul>
+                <li><xref format="dita" href="../Setup/SetUpDNN.dita">A local DNN installation</xref> with Host permissions.</li>
+            </ul>
+        </prereq>
+
+        <steps>
+            <step>
+                <cmd>Create a new page or edit an existing one.</cmd>
+                <choices>
+                    <choice>
+                        <p>To create a new page, go to <menucascade><uicontrol>Pages</uicontrol> <uicontrol>Add New Page</uicontrol></menucascade>.</p>
+                        <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuPagesAddNew.png"><alt>Pages - Add New</alt></image>
+                        <p>Enter the <uicontrol>Page Name</uicontrol>, then click <uicontrol>Add Page</uicontrol>.</p>
+                        <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-AddPage.png"><alt>Page Name - Add Page</alt></image>
+                    </choice>
+                    <choice>
+                        <p>To edit an existing page, open the page to edit, then go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Edit This Page</uicontrol></menucascade>.</p>
+                        <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageEditThis.png"><alt>Edit Page - Edit This Page</alt></image>
+                    </choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>Go to <menucascade><uicontrol>Module</uicontrol> <uicontrol>Add New Module</uicontrol></menucascade>.</cmd>
+                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddNew.png"><alt></alt></image></info>
+            </step>
+            <step>
+                <cmd>Search for the Module Creator among the installed modules.</cmd>
+                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesList04ModuleCreator.png"><alt></alt></image></info>
+            </step>
+            <step>
+                <cmd>Drag the Module Creator module to any pane in the webpage.</cmd>
+                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesModuleCreatorDrag.png"><alt></alt></image></info>
+            </step>
+            <step>
+                <cmd>Fill in the Module Creation form.</cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleCreatorForm.png"><alt></alt></image>
+                    <simpletable relcolwidth="1* 1*">
+                        <strow>
+                            <stentry><uicontrol>Owner Name</uicontrol></stentry>
+                            <stentry>Name of your organization. Must contain only alphanumeric characters. Used to create a folder to distinguish your modules from those created by other module creators.  Also used as the namespace for your code.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Module Name</uicontrol></stentry>
+                            <stentry>Must contain only alphanumeric characters. Used to create the module's friendly name and full name. The full name is <systemoutput>[OwnerName].[ModuleName]</systemoutput> with space characters removed.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Language</uicontrol></stentry>
+                            <stentry>The selected language (<uicontrol>C#</uicontrol>, <uicontrol>VB</uicontrol>, or <uicontrol>Web</uicontrol>) determines which templates become available.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>
+                            <uicontrol>Template</uicontrol></stentry>
+                            <stentry>
+                                <p>For <uicontrol>C#</uicontrol> and <uicontrol>VB</uicontrol>, choose among:
+                                    <ul>
+                                        <li><uicontrol>Inline Script</uicontrol>. Code is embedded. Also uses user controls.</li>
+                                        <li><uicontrol>Razor</uicontrol>. Uses Razor scripts to render views.</li>
+                                        <li><uicontrol>User Control</uicontrol>. Code is stored in separate files. Most commonly used.</li>
+                                    </ul>
+                                </p>
+                                <p>For <uicontrol>Web</uicontrol>, the <uicontrol>HTML</uicontrol> template allows you to use HTML, CSS, and JavaScript.</p>
+                            </stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Control Name</uicontrol></stentry>
+                            <stentry>Name of the primary module control that is registered with DNN.</stentry>
+                        </strow>
+                    </simpletable>
+                </info>
+                <stepresult>
+                    <p>The new module replaces the Module Creator form in the pane.</p>
+                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleCreatorModuleCreated.png"><alt>Module created.</alt></image>
+                </stepresult>
+            </step>
+            <step>
+                <cmd>Customize the module.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>From the gear icon, choose <uicontrol>Develop</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleGearMenuDevelop.png"><alt></alt></image>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>In the <filepath>View.ascx</filepath> file, delete all the lines of code, except the first one.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleViewAscx.png"><alt></alt></image>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Add markup to customize the module. Then click <uicontrol>Update</uicontrol> to save your changes.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleCustomize.png"><alt></alt></image>
+                        </info>
+                        <stepxmp>Example:
+                            <codeblock> <!-- aspx-cs -->
+    &lt;h1&gt;Hello, &lt;%: UserInfo.DisplayName %&gt;&lt;/h1&gt;
+                            </codeblock>
+                        </stepxmp>
+                    </substep>
+                    <substep>
+                        <cmd>From the <uicontrol>Select File</uicontrol> dropdown, choose the <filepath>View.ascx.cs</filepath> file.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleViewAscxCs.png"><alt></alt></image>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Remove all the code in the <uicontrol>Event Handlers</uicontrol> region and click <uicontrol>Update</uicontrol> to save your changes.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleDeleteEventHandlers.png"><alt></alt></image>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Close the window.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+
+    </taskbody>
+
+</task>
