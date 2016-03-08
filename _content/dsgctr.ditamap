@@ -31,11 +31,8 @@
     <!-- Topics -->
     <topicref format="dita" type="concept" href="dsg/DsgCtr.dita" toc="yes">
 
-        <!-- <topicref keyref="k-whatsnew" />
-        <topicref keyref="k-ovplatform" /> -->
-        <topicref format="dita" type="topic"     navtitle="What's New"              href="dsg/DNN8WhatsNew.dita" />
-        <topicref format="dita" type="concept"   navtitle="DNN Platform"            href="dsg/OverviewDNNPlatform.dita" />
-
+        <topicref keyref="k-whatsnew" />
+        <topicref keyref="k-ovplatform" />
 
         <!-- Setup -->
         <topicref keyref="k-suDNN" toc="yes" collection-type="sequence">
