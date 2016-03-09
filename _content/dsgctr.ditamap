@@ -57,7 +57,7 @@
 
         <!-- Local references -->
         <topicref format="dita" type="topic" href="dsg/DsgRefs.dita" collection-type="family">
-            <!-- UX Guide -->
+            <topicref format="html" scope="external" navtitle="DNN UX Guide" href="http://uxguide.dnnsoftware.com/" />
             <!-- <topicref format="dita" type="reference" href="dsg/ThemeObjects.dita" /> -->
             <!-- <topicref format="dita" type="reference" href="dsg/ContentsThemePack.dita" /> -->
             <topicref keyref="k-manifest" />
