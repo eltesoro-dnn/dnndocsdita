@@ -22,4 +22,7 @@
     <feature extension="dita.conductor.xhtml.param"     file="xsl/dnn-insertParameters.xml"/>
     <feature extension="dita.conductor.xhtml.toc.param" file="xsl/dnn-insertParameters.xml"/>
 
+    <!-- Breadcrumbs -->
+    <feature extension="dita.xsl.xhtml" file="xsl/dnn-breadcrumbs.xsl"/>
+
 </plugin>
