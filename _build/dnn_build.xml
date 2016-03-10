@@ -148,30 +148,30 @@
             <property name="args.gen.task.lbl" value="YES"/>
     </target>
 
-    <target name="html5-admctr" depends="html5-prep">
+    <target name="html5-adm" depends="html5-prep">
         <echo level="info">Building html5 Administrator Center ....</echo>
         <ant antfile="build.xml">
-            <property name="sitetitle" value="admctr"/>
+            <property name="sitetitle" value="Administrators"/>
             <property name="transtype" value="html5"/>
             <property name="args.input" location="${bld.dir}${file.separator}admctr.ditamap"/>
             <property name="output.dir" location="${out.dir}"/>
         </ant>
     </target>
 
-    <target name="html5-devctr" depends="html5-prep">
+    <target name="html5-dev" depends="html5-prep">
         <echo level="info">Building html5 Developer Center ....</echo>
         <ant antfile="build.xml">
-            <property name="sitetitle" value="devctr"/>
+            <property name="sitetitle" value="Developers"/>
             <property name="transtype" value="html5"/>
             <property name="args.input" location="${bld.dir}${file.separator}devctr.ditamap"/>
             <property name="output.dir" location="${out.dir}"/>
         </ant>
     </target>
 
-    <target name="html5-dsgctr" depends="html5-prep">
+    <target name="html5-dsg" depends="html5-prep">
         <echo level="info">Building html5 Designer Center ....</echo>
         <ant antfile="build.xml">
-            <property name="sitetitle" value="dsgctr"/>
+            <property name="sitetitle" value="Designers"/>
             <property name="transtype" value="html5"/>
             <property name="args.input" location="${bld.dir}${file.separator}dsgctr.ditamap"/>
             <property name="output.dir" location="${out.dir}"/>
@@ -179,7 +179,7 @@
     </target>
 
     <!-- Keep the three centers as separate targets, or else the navs get mixed up. -->
-    <target name="html5" depends="html5-admctr, html5-devctr, html5-dsgctr">
+    <target name="html5" depends="html5-adm, html5-dev, html5-dsg">
         <echo level="info">Completed html5 builds ....</echo>
     </target>
 
