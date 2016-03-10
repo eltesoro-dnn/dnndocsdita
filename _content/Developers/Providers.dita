@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
-<topic xml:lang="en" id="myID">
+<topic xml:lang="en" id="top-providers">
 
     <title>Providers Reference</title>
 
@@ -36,24 +36,24 @@
 
             <p>The following are some of the types of providers used in DNN:
                 <ul>
-                    <li><xref format="dita" href="#authprov">Authentication provider</xref></li>
-                    <li><xref format="dita" href="#cacheprov">Caching provider</xref></li>
-                    <li><xref format="dita" href="#dataprov">Data provider</xref></li>
-                    <li><xref format="dita" href="#folderprov">Folder provider</xref></li>
-                    <li><xref format="dita" href="#friendprov">Friendly URL provider</xref></li>
-                    <li><xref format="dita" href="#htmlprov">HTML editor provider</xref></li>
-                    <li><xref format="dita" href="#logprov">Logging provider</xref></li>
-                    <li><xref format="dita" href="#membprov">Membership provider</xref></li>
-                    <li><xref format="dita" href="#modcacheprov">Module caching provider</xref></li>
-                    <li><xref format="dita" href="#navprov">Navigation provider</xref></li>
-                    <li><xref format="dita" href="#outcacheprov">Output caching provider</xref></li>
-                    <li><xref format="dita" href="#permsprov">Permissions provider</xref></li>
-                    <li><xref format="dita" href="#profprov">Profile provider</xref></li>
-                    <li><xref format="dita" href="#rolesprov">Roles provider</xref></li>
-                    <li><xref format="dita" href="#schedprov">Scheduling provider</xref></li>
-                    <li><xref format="dita" href="#searchdataprov">Search data store provider</xref></li>
-                    <li><xref format="dita" href="#searchindexprov">Search index provider</xref></li>
-                    <li><xref format="dita" href="#sitemapprov">Sitemap provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/authprov">Authentication provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/cacheprov">Caching provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/dataprov">Data provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/folderprov">Folder provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/friendprov">Friendly URL provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/htmlprov">HTML editor provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/logprov">Logging provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/membprov">Membership provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/modcacheprov">Module caching provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/navprov">Navigation provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/outcacheprov">Output caching provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/permsprov">Permissions provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/profprov">Profile provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/rolesprov">Roles provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/schedprov">Scheduling provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/searchdataprov">Search data store provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/searchindexprov">Search index provider</xref></li>
+                    <li><xref format="dita" href="#top-providers/sitemapprov">Sitemap provider</xref></li>
                 </ul>
             </p>
         </section>
@@ -87,7 +87,7 @@
                 </ul>
             </p>
             <p>You can also <xref format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/134678/dotnetnuke-tips-and-tricks-12-creating-your-own-authentication-provider">create your own</xref>.</p>
-            <p>See <xref format="dita" href="#membprov">membership provider</xref> (local authentication), <xref format="dita" href="#permsprov">permissions provider</xref>, and <xref format="dita" href="#rolesprov">roles provider</xref>.</p>
+            <p>See <xref format="dita" href="#top-providers/membprov">membership provider</xref> (local authentication), <xref format="dita" href="#top-providers/permsprov">permissions provider</xref>, and <xref format="dita" href="#top-providers/rolesprov">roles provider</xref>.</p>
         </section>
 
 
@@ -256,7 +256,7 @@
 
             <p>Unlike authentication providers which provide SSO authentication, the membership provider is a standalone authentication solution that is local to the website or to the DNN installation.</p>
 
-            <p>See <xref format="dita" href="#authprov">authentication provider</xref> (SSO authentication), <xref format="dita" href="#permsprov">permissions provider</xref>, and <xref format="dita" href="#rolesprov">roles provider</xref>. Also see the MSDN Library's <xref format="html" scope="external" href="https://msdn.microsoft.com/en-us/library/yh26yfzy.aspx">Introduction to Membership</xref> and Engage Weblog's <xref format="html" scope="external" href="http://www.engagesoftware.com/blog/post/447/building-your-own-membership-provider-for-dotnetnuke-and-asp-net-2-0">Building your own Membership Provider</xref> by <xref format="html" scope="external" href="http://www.dnnsoftware.com/activity-feed/userid/32389">Henry Kenuam</xref>.</p>
+            <p>See <xref format="dita" href="#top-providers/authprov">authentication provider</xref> (SSO authentication), <xref format="dita" href="#top-providers/permsprov">permissions provider</xref>, and <xref format="dita" href="#top-providers/rolesprov">roles provider</xref>. Also see the MSDN Library's <xref format="html" scope="external" href="https://msdn.microsoft.com/en-us/library/yh26yfzy.aspx">Introduction to Membership</xref> and Engage Weblog's <xref format="html" scope="external" href="http://www.engagesoftware.com/blog/post/447/building-your-own-membership-provider-for-dotnetnuke-and-asp-net-2-0">Building your own Membership Provider</xref> by <xref format="html" scope="external" href="http://www.dnnsoftware.com/activity-feed/userid/32389">Henry Kenuam</xref>.</p>
         </section>
 
 
@@ -273,7 +273,7 @@
                 </codeblock>
             </p>
             <p>A <b>module caching provider</b> manages how the output of modules are cached and aged, whether they are stored in a file or in memory.</p>
-            <p>See <xref format="dita" href="#outcacheprov">output caching provider</xref>.</p>
+            <p>See <xref format="dita" href="#top-providers/outcacheprov">output caching provider</xref>.</p>
         </section>
 
 
@@ -303,7 +303,7 @@
                 </codeblock>
             </p>
             <p>An <b>output caching provider</b> manages how the entire page is cached and aged.</p>
-            <p>See <xref format="dita" href="#modcacheprov">module caching provider</xref>.</p>
+            <p>See <xref format="dita" href="#top-providers/modcacheprov">module caching provider</xref>.</p>
         </section>
 
 
@@ -321,7 +321,7 @@
             <p>A <b>permissions provider</b> manages asset permissions, such as those associated with components of the website, including page permissions and module permissions. These permissions are used in conjunction with user permissions (authentication provider or membership provider) and group permissions (roles provider) to determine if a specific user would be allowed to access the asset.</p>
             <p>DNN Evoq supplies its own <b>GranularPermissionProvider</b>, which allows greater granularity with permissions.</p>
 
-            <p>See <xref format="dita" href="#authprov">authentication provider</xref> (SSO authentication), <xref format="dita" href="#membprov">membership provider (local authentication)</xref>, and <xref format="dita" href="#rolesprov">roles provider</xref>.</p>
+            <p>See <xref format="dita" href="#top-providers/authprov">authentication provider</xref> (SSO authentication), <xref format="dita" href="#top-providers/membprov">membership provider (local authentication)</xref>, and <xref format="dita" href="#top-providers/rolesprov">roles provider</xref>.</p>
         </section>
 
 
@@ -353,7 +353,7 @@
             </p>
             <p>A <b>roles provider</b> manages the permissions required for specific roles. This allows the administrator to easily assign/revoke all permissions associated with a role by simply adding/deleting a user or a set of users to/from the role.</p>
 
-            <p>See <xref format="dita" href="#authprov">authentication provider</xref> (SSO authentication), <xref format="dita" href="#membprov">membership provider</xref> (local authentication), and <xref format="dita" href="#permsprov">permissions provider</xref>.</p>
+            <p>See <xref format="dita" href="#top-providers/authprov">authentication provider</xref> (SSO authentication), <xref format="dita" href="#top-providers/membprov">membership provider</xref> (local authentication), and <xref format="dita" href="#top-providers/permsprov">permissions provider</xref>.</p>
         </section>
 
 
@@ -386,7 +386,7 @@
                 </codeblock>
             </p>
             <p>A <b>search data store provider</b> allows you to specify where the search engine should store search results and other search-related data.</p>
-            <p>See <xref format="dita" href="#searchindexprov">search index provider</xref>.</p>
+            <p>See <xref format="dita" href="#top-providers/searchindexprov">search index provider</xref>.</p>
         </section>
 
 
@@ -402,7 +402,7 @@
                 </codeblock>
             </p>
             <p>A <b>search index provider</b> allows you to specify how the website content is indexed and what rules are performed to do searches.</p>
-            <p>See <xref format="dita" href="#searchdataprov">search data store provider</xref> and <xref format="dita" href="#sitemapprov">sitemap provider</xref>.</p>
+            <p>See <xref format="dita" href="#top-providers/searchdataprov">search data store provider</xref> and <xref format="dita" href="#top-providers/sitemapprov">sitemap provider</xref>.</p>
         </section>
 
 
