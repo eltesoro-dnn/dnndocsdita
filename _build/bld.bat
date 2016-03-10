@@ -30,6 +30,9 @@ set _transtype=html5
 for %%v in ( html5 xhtml )   do  if _%1_ EQU _%%v_  set _transtype=%1
 for %%v in ( word2dita w2d ) do  if _%1_ EQU _w2d_  set _transtype=word2dita
 
+set _subbld=
+for %%v in ( adm dev dsg )   do  if _%1_ EQU _%%v_  set _subbld=-%1
+
 if _%_gitdir%_      EQU __    set _gitdir=w:\.
 if _%_blddir%_      EQU __    set _blddir=v:\bld\%_transtype%
 if _%_outdir%_      EQU __    set _outdir=v:\output\%_transtype%
@@ -68,8 +71,7 @@ xcopy %_gitdir%\_content\*.png           %_blddir%                /i/s/v/y
 xcopy %_gitdir%\_content\common\samples  %_blddir%\common\samples /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\dnn*.css     %_blddir%\_themes\dnn    /i/s/v/y
 
-for %%v in ( admin design dev ) do  xcopy %_blddir%\common\*.dita* %_blddir%\%%v /i/s/v/y
-
+for %%v in ( Administrators Developers Designers ) do  xcopy %_blddir%\common\*.dita* %_blddir%\%%v /i/s/v/y
 
 echo Integrating our own DITA-OT plugin ....
 rd /s/q %DITA_HOME%\plugins\org.dnn.dc >nul
@@ -78,13 +80,13 @@ cd /d   %DITA_HOME%
 call ant -f integrator.xml strict
 
 
-echo Building %_transtype% ....
+echo Building %_transtype%%_subbld% ....
 
 :. Must start at %DITA_HOME%
 cd /d %DITA_HOME%
 echo. > %_logfile%
-xcopy %_gitdir%\_build\dnn_build*.xml  %DITA_HOME%\.  /v/y
-call ant %_transtype% -f %DITA_HOME%\dnn_build.xml -l %_logfile%
+xcopy %_gitdir%\_build\dnn_build.xml  %DITA_HOME%\.  /v/y
+call ant %_transtype%%_subbld% -f %DITA_HOME%\dnn_build.xml -l %_logfile%
 
 
 echo Copying additional files required to the output ....
@@ -97,7 +99,7 @@ xcopy %_gitdir%\_themes\dnn\*.png         %_outdir%\_theme           /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\*.js          %_outdir%\_theme           /i/s/v/y
 
 echo Deleting files we don't need ....
-del %_outdir%\toc.html /q >nul
+:. del %_outdir%\toc.html /q >nul
 rd /s/q %_outdir%\common\glossary >nul
 
 
