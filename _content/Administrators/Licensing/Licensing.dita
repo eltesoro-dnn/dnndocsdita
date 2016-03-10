@@ -27,7 +27,7 @@
                     <li>Staging licenses are for staging servers.</li>
                     <li>Test licenses are for test sites.</li>
                     <li>Development licenses are for local use (i.e., localhost).</li>
-                    <li>Failover licenses are for emergency use only. Example, in case your main data center goes offline and you have to switch to a backup data center temporarily, the backup data center requires failover licenses.</li>
+                    <li>Failover licenses are for emergency use only. Example: If you set up a backup data center that you could quickly switch to, in case your main data center goes offline, you need failover licenses for the backup data center.</li>
                 </ul>
             </p>
 
