@@ -15,14 +15,14 @@
             <div class="header-subcenters">
                 <div class="active"><xsl:value-of select="$sitetitle" /></div>
                 <!--
-                <xsl:if test="$sitetitle  ='Administrators'"><div class="active"><a href="/adm/AdmCtr.html">Administrators</a></div></xsl:if>
-                <xsl:if test="$sitetitle  ='Developers'"><div class="active"><a href="/dev/DevCtr.html">Developers</a></div></xsl:if>
-                <xsl:if test="$sitetitle  ='Designers'"><div class="active"><a href="/dsg/DsgCtr.html">Designers</a></div></xsl:if>
+                <xsl:if test="$sitetitle  ='Administrators'"><div class="active"><a href="/Administrators/index.html">Administrators</a></div></xsl:if>
+                <xsl:if test="$sitetitle  ='Developers'"><div class="active"><a href="/Developers/index.html">Developers</a></div></xsl:if>
+                <xsl:if test="$sitetitle  ='Designers'"><div class="active"><a href="/Designers/index.html">Designers</a></div></xsl:if>
                 -->
 
-                <xsl:if test="$sitetitle !='Administrators'"><div><a href="/adm/AdmCtr.html">Administrators</a></div></xsl:if>
-                <xsl:if test="$sitetitle !='Developers'"><div><a href="/dev/DevCtr.html">Developers</a></div></xsl:if>
-                <xsl:if test="$sitetitle !='Designers'"><div><a href="/dsg/DsgCtr.html">Designers</a></div></xsl:if>
+                <xsl:if test="$sitetitle !='Administrators'"><div><a href="/Administrators/index.html">Administrators</a></div></xsl:if>
+                <xsl:if test="$sitetitle !='Developers'"><div><a href="/Developers/index.html">Developers</a></div></xsl:if>
+                <xsl:if test="$sitetitle !='Designers'"><div><a href="/Designers/index.html">Designers</a></div></xsl:if>
             </div>
             <div class="header-nav-wrapper">
                 <nav>
