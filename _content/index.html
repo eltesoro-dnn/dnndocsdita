@@ -9,90 +9,126 @@
         <meta name="DC.Identifier" content="index">
         <meta name="DC.Language" content="en">
 
-        <link rel="stylesheet" type="text/css" href="_theme/commonltr.css">
-        <link rel="stylesheet" type="text/css" href="_theme/dnndocsltr.css">
-        <link rel="stylesheet" type="text/css" href="_theme/dnn.styles.css">
-
-        <link rel="stylesheet" href="_static/basic.css" type="text/css" />
-        <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" />
-        <link rel="stylesheet" href="_static/dnn.styles.css" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="../../_theme/commonltr.css">
+        <link rel="stylesheet" type="text/css" href="../../_theme/dnndocsltr.css">
 
         <title>The DNN Platform</title>
     </head>
 
     <body id="index">
-        <header role="banner">
-            <div class="header">
-                <div class="header-logo-wrapper">
-                    <a class="logo" href="http://www.dnnsoftware.com/docs">
-                        <img src="_theme/DNN_logo_28px.png" alt="DNN Logo" />
-                        <div id="site-title">Documentation Center</div>
-                    </a>
-                </div>
-                <div class="header-nav-wrapper">
-                    <nav>
-                        <ul class="header-nav horizontal-list">
-                            <li><a href="http://www.dnnsoftware.com/community/download">Download</a></li>
-                            <li>Ask a question
-                                <ul>
-                                    <li><a href="http://www.dnnsoftware.com/answers">about DNN Platform</a></li>
-                                    <li><a href="http://www.dnnsoftware.com/services/customer-support">about DNN Evoq</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
+
+    <header role="banner">
+        <div class="header">
+
+            <div class="header-logo-wrapper">
+                <a class="logo" href="http://www.dnnsoftware.com/docs"><img src="/_theme/DNN_logo_28px.png" alt="DNN Logo"></a>
+                <div class="site-title">Documentation Center</div>
             </div>
-        </header>
+
+            <div class="header-nav-wrapper">
+                <nav role="hamburger-home">
+
+                    <ul class="header-nav horizontal-list">
+                        <li><a href="#">Documentation</a>
+                            <ul>
+                                <li><a href="/Administrators/index.html">Administrators</a></li>
+                                <li><a href="/Developers/index.html">Developers</a></li>
+                                <li><a href="/Designers/index.html">Designers</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="http://www.dnnsoftware.com/community/download">Download</a></li>
+                        <li id="header-askq"> <a href="#">Ask a Question</a>
+                            <ul id="header-subnav-support">
+                                <li><a href="http://www.dnnsoftware.com/answers">DNN Platform</a></li>
+                                <li><a href="http://www.dnnsoftware.com/services/customer-support">DNN Evoq</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                </nav>
+            </div>
+
+        </div>
+    </header>
 
         <main role="main">
-            <article role="article" aria-labelledby="ariaid-title1">
+            <article role="articleHome" aria-labelledby="ariaid-title1">
 
                 <!-- <h1 class="title topictitle1" id="ariaid-title1">DNN Documentation Center</h1> -->
 
                 <div class="row">
-                    <img alt="Welcome to the DNN Documentation Center" class="welcome-hero" src="_theme/welcome-hero.jpg" />
+                    <img alt="Welcome to the DNN Documentation Center" id="welcome-hero" src="_theme/welcome-hero.jpg" />
                 </div>
 
                 <div class="row card-row">
                     <div class="container">
 
-                        <div class="col-sm-4 col-xs-12">
-                            <a class="home-card designer-card" href="Administrators/index.html">
+                        <div class="card-wrapper">
+                            <a class="home-card" id="admin-card" href="Administrators/index.html">
                                 <div class="card-title">
                                     Administrators
-                                    <div class="card-img-wrapper">
-                                        <img alt="Administrator Center" class="card-img" src="_theme/admin.jpg" />
-                                    </div>
+                                </div>
+                                <div class="card-img-wrapper">
+                                    <img alt="Administrator Center" class="card-img" src="_theme/admin.jpg" />
                                 </div>
                             </a>
                         </div>
 
-                        <div class="col-sm-4 col-xs-12">
-                            <a class="home-card designer-card" href="Developers/index.html">
+                        <div class="card-wrapper">
+                            <a class="home-card" id="dev-card" href="Developers/index.html">
                                 <div class="card-title">
                                     Developers
-                                    <div class="card-img-wrapper">
-                                        <img alt="Developer Center" class="card-img" src="_theme/developer.jpg" />
-                                    </div>
+                                </div>
+                                <div class="card-img-wrapper">
+                                    <img alt="Developer Center" class="card-img" src="_theme/developer.jpg" />
                                 </div>
                             </a>
                         </div>
 
-                        <div class="col-sm-4 col-xs-12">
-                            <a class="home-card designer-card" href="Designers/index.html">
+                        <div class="card-wrapper">
+                            <a class="home-card" id="designer-card" href="Designers/index.html">
                                 <div class="card-title">
                                     Designers
-                                    <div class="card-img-wrapper">
-                                        <img alt="Designer Center" class="card-img" src="_theme/designer.jpg" />
-                                    </div>
+                                </div>
+                                <div class="card-img-wrapper">
+                                    <img alt="Designer Center" class="card-img" src="_theme/designer.jpg" />
                                 </div>
                             </a>
                         </div>
 
                     </div>
                 </div>
+
+                <div class="row link-row">
+                    <div class="page-link-container">
+
+                        <a class="reference internal" href="/Administrators/OverviewDNNPlatform.html">
+                            <div class="page-link-wrapper">
+                                <div class="page-link link-left">
+                                    <span><em>DNN Platform</em></span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="reference internal" href="/Administrators/Requirements.html">
+                            <div class="page-link-wrapper">
+                                <div class="page-link link-center">
+                                    <span><em>DNN&nbsp;Platform&nbsp;Requirements</em></span>
+                                </div>
+                            </div>
+                        </a>
+
+                        <a class="reference internal" href="/Administrators/DNN8WhatsNew.html">
+                            <div class="page-link-wrapper">
+                                <div class="page-link link-right">
+                                    <span><em>What&#8217;s New in DNN 8 and Evoq&nbsp;8.3</em></span>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                </div>
+
             </article>
         </main>
 
@@ -103,7 +139,6 @@
                     <li><a href="http://twitter.com/dnncorp" class="twitter"></a></li>
                     <li><a href="http://www.linkedin.com/company/207975" class="linkedin"></a></li>
                     <li><a href="http://www.youtube.com/user/dotnetnuke#" class="youtube"></a></li>
-                    <!-- <li><a href="http://twitter.com/dnn" class="twitter"></a></li> -->
                 </ul>
             </div>
 
@@ -117,7 +152,6 @@
 
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
             <script src="/_theme/scripts.js"></script>
-            <!-- <script src="_theme/crumb.js"></script> -->
         </div>
 
     </body>
