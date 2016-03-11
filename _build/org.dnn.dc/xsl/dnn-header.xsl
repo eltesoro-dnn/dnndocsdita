@@ -18,19 +18,16 @@
                     <ul class="header-nav horizontal-list">
                         <li id="header-subctr"><a href="#">Documentation</a>
                             <ul id="header-subnav-subctr">
-                                <li class="subctr active">
-                                    <!-- Use the next line, if the active subcenter must always be the first. -->
-                                    <!-- <xsl:value-of select="$sitetitle" /> -->
+                                <!-- If the active subcenter must always be the first, uncomment the next line and comment out the "$sitetitle  =" lines.  -->
+                                <!-- <li class="subctr active"><xsl:value-of select="$sitetitle" /> -->
 
-                                    <!-- Use the next three lines, if the subcenters must always be listed in the same order. -->
-                                    <xsl:if test="$sitetitle  ='Administrators'"><a href="/Administrators/index.html">Administrators</a></xsl:if>
-                                    <xsl:if test="$sitetitle  ='Developers'"><a href="/Developers/index.html">Developers</a></xsl:if>
-                                    <xsl:if test="$sitetitle  ='Designers'"><a href="/Designers/index.html">Designers</a></xsl:if>
-                                </li>
-
-                                <!-- The non-active subcenters are always listed in the same order. -->
+                                <xsl:if test="$sitetitle  ='Administrators'"><li class="subctr active"><a href="/Administrators/index.html">Administrators</a></li></xsl:if>
                                 <xsl:if test="$sitetitle !='Administrators'"><li class="subctr"><a href="/Administrators/index.html">Administrators</a></li></xsl:if>
+
+                                <xsl:if test="$sitetitle  ='Developers'"><li class="subctr active"><a href="/Developers/index.html">Developers</a></li></xsl:if>
                                 <xsl:if test="$sitetitle !='Developers'"><li class="subctr"><a href="/Developers/index.html">Developers</a></li></xsl:if>
+
+                                <xsl:if test="$sitetitle  ='Designers'"><li class="subctr active"><a href="/Designers/index.html">Designers</a></li></xsl:if>
                                 <xsl:if test="$sitetitle !='Designers'"><li class="subctr"><a href="/Designers/index.html">Designers</a></li></xsl:if>
                             </ul>
                         </li>
