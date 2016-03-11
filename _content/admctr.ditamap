@@ -91,39 +91,19 @@
             <relcell/>
         </relrow>
 
-<!--         <relrow>
-            <relcell/>
+        <relrow>
             <relcell>
-                <topicref keyref="k-createpkg" />
+                <topicref keyref="k-suDNN" />
+            </relcell>
+            <relcell>
                 <topicref keyref="k-installext" />
-            </relcell>
-            <relcell/>
-        </relrow> -->
-
-<!--         <relrow>
-            <relcell/>
-            <relcell>
-                <topicref keyref="k-createpkg" />
-            </relcell>
-            <relcell>
-                <topicref format="dita" type="reference" scope="peer" href="design/ContentsThemePack.dita" />
-                <topicref format="dita" type="reference" scope="peer" href="dev/ContentsModulePack.dita" />
-                <topicref keyref="k-manifest" />
-            </relcell>
-        </relrow> -->
-
-        <!-- Specific to this center. -->
-<!--         <relrow>
-            <relcell>
-                <topicref format="dita" type="topic" href="Administrators/Setup/SetUpDNN.dita" />
-            </relcell>
-            <relcell>
-                <topicref format="dita" type="task" href="Administrators/Extensions/InstallExtension.dita" />
             </relcell>
             <relcell>
                 <topicref keyref="k-reqs" />
             </relcell>
-        </relrow> -->
+        </relrow>
+
+        <!-- Specific to this center. -->
 
     </reltable>
 

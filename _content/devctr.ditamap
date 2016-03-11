@@ -97,29 +97,7 @@
             <relcell/>
         </relrow>
 
-<!--         <relrow>
-            <relcell/>
-            <relcell>
-                <topicref keyref="k-createpkg" />
-                <topicref keyref="k-installext" />
-            </relcell>
-            <relcell/>
-        </relrow> -->
-
-<!--         <relrow>
-            <relcell/>
-            <relcell>
-                <topicref keyref="k-createpkg" />
-            </relcell>
-            <relcell>
-                <topicref format="dita" type="reference" href="design/ContentsThemePack.dita" />
-                <topicref format="dita" type="reference" href="Developers/ContentsModulePack.dita" />
-                <topicref keyref="k-manifest" />
-            </relcell>
-        </relrow> -->
-
-        <!-- Specific to this center. -->
-<!--         <relrow>
+        <relrow>
             <relcell>
                 <topicref keyref="k-suDNN" />
             </relcell>
@@ -129,11 +107,34 @@
             <relcell>
                 <topicref keyref="k-reqs" />
             </relcell>
-        </relrow> -->
+        </relrow>
 
-<!--         <relrow>
+        <!-- For developers and designers. -->
+        <relrow>
+            <relcell/>
             <relcell>
-                <topicref format="dita" type="concept" href="Developers/CreatingModules/DevelopModules.dita" />
+                <topicref keyref="k-createpkg" />
+                <topicref keyref="k-installext" />
+            </relcell>
+            <relcell/>
+        </relrow>
+
+        <relrow>
+            <relcell/>
+            <relcell>
+                <topicref keyref="k-createpkg" />
+            </relcell>
+            <relcell>
+                <!-- <topicref format="dita" type="reference" href="Designers/ContentsThemePack.dita" /> Topic not ready. -->
+                <!-- <topicref format="dita" type="reference" href="Developers/ContentsModulePack.dita" /> Topic not ready. -->
+                <topicref keyref="k-manifest" />
+            </relcell>
+        </relrow>
+
+        <!-- Specific to this center. -->
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="concept" href="Developers/CreatingModules/ModuleDevelopment.dita" />
                 <topicref format="dita" type="concept" href="Developers/CreatingModules/WebFormsModuleDevelopment.dita" />
                 <topicref format="dita" type="concept" href="Developers/CreatingModules/MVCModuleDevelopment.dita" />
                 <topicref format="dita" type="concept" href="Developers/CreatingModules/SPAModuleDevelopment.dita" />
@@ -144,12 +145,12 @@
             </relcell>
             <relcell>
                 <topicref format="dita" type="topic"     href="Developers/Providers.dita" />
-                <topicref format="dita" type="reference" href="Developers/ContentsModulePack.dita" />
-                <topicref format="dita" type="reference" scope="peer" href="design/ContentsThemePack.dita" />
+                <!-- <topicref format="dita" type="reference" scope="peer" href="Developers/ContentsModulePack.dita" /> Topic not ready. -->
+                <!-- <topicref format="dita" type="reference" scope="peer" href="Designers/ContentsThemePack.dita" /> Topic not ready. -->
             </relcell>
-        </relrow> -->
+        </relrow>
 
-<!--         <relrow>
+        <relrow>
             <relcell>
                 <topicref format="dita" type="concept" href="Developers/CreatingModules/MVCModuleDevelopment.dita" />
                 <topicref format="dita" type="concept" href="Developers/CreatingModules/SPAModuleDevelopment.dita" />
@@ -158,9 +159,9 @@
                 <topicref format="dita" type="task" href="Developers/CreatingModules/CreateModuleUsingTemplates.dita" />
             </relcell>
             <relcell/>
-        </relrow> -->
+        </relrow>
 
-<!--         <relrow>
+        <relrow>
             <relcell>
                 <topicref format="dita" type="concept" href="Developers/AboutEVS.dita" />
             </relcell>
@@ -168,18 +169,18 @@
                 <topicref format="dita" type="task" href="Developers/CreatingModules/TestModule.dita" />
             </relcell>
             <relcell/>
-        </relrow> -->
+        </relrow>
 
-<!--         <relrow>
+        <relrow>
             <relcell/>
             <relcell>
                 <topicref keyref="k-installext" />
                 <topicref format="dita" type="task" href="Developers/CreatingModules/TestModule.dita" />
             </relcell>
             <relcell/>
-        </relrow> -->
+        </relrow>
 
-<!--    <relrow>
+        <relrow>
             <relcell>
                 <topicref format="dita" type="concept" href="Developers/CreatingModules/WebFormsModuleDevelopment.dita" />
                 <topicref format="dita" type="concept" href="Developers/CreatingModules/MVCModuleDevelopment.dita" />
@@ -189,7 +190,7 @@
                 <topicref format="dita" type="task"      href="Developers/CreatingModules/UseModuleCreator.dita" />
             </relcell>
             <relcell/>
-        </relrow> -->
+        </relrow>
     </reltable>
 
 </map>

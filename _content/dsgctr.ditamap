@@ -25,8 +25,6 @@
 
     <keydef keys="k-glossarymap" href="common/Glossary/glossary.ditamap" />
 
-    <keydef keys="k-AboutThemes" format="dita" type="concept"  href="Designers/AboutThemes.dita" />
-
 
     <!-- Topics -->
     <topicref format="dita" type="concept" href="Designers/index.dita" toc="yes">
@@ -44,7 +42,7 @@
         </topicref>
 
         <!-- Creating themes -->
-        <topicref keyref="k-AboutThemes" />
+        <topicref format="dita" type="concept"  href="Designers/AboutThemes.dita" />
         <topicref format="dita" type="topic"    href="Designers/CreatingThemes/CreateTheme.dita" collection-type="sequence">
             <topicref format="dita" type="task" href="Designers/CreatingThemes/CreateLayoutTemplate.dita" />
             <topicref format="dita" type="task" href="Designers/CreatingThemes/CreateContainer.dita" />
@@ -52,14 +50,14 @@
             <topicref format="dita" type="task" href="Designers/CreatingThemes/CreateDocTypeXML.dita" />
             <topicref keyref="k-createpkg" />
             <topicref keyref="k-installext" />
-            <!-- <topicref format="dita" type="task" href="Designers/CreatingThemes/TestTheme.dita" /> -->
+            <!-- <topicref format="dita" type="task" href="Designers/CreatingThemes/TestTheme.dita" /> Topic not ready. -->
         </topicref>
 
         <!-- Local references -->
         <topicref format="dita" type="topic" href="Designers/DsgRefs.dita" collection-type="family">
-            <topicref format="html" scope="external" navtitle="DNN UX Guide" href="http://uxguide.dnnsoftware.com/" />
-            <!-- <topicref format="dita" type="reference" href="Designers/ThemeObjects.dita" /> -->
-            <!-- <topicref format="dita" type="reference" href="Designers/ContentsThemePack.dita" /> -->
+            <topicref format="dita" type="reference" navtitle="Theme Objects" href="Designers/ThemeObjects.dita" />
+            <topicref format="html" scope="external" navtitle="DNN UX Guide"  href="http://uxguide.dnnsoftware.com/" />
+            <!-- <topicref format="dita" type="reference" href="Designers/ContentsThemePack.dita" /> Topic not ready. -->
             <topicref keyref="k-manifest" />
         </topicref>
 
@@ -90,31 +88,9 @@
             <relcell/>
         </relrow>
 
-<!--         <relrow>
-            <relcell/>
+        <relrow>
             <relcell>
-                <topicref keyref="k-createpkg" />
-                <topicref keyref="k-installext" />
-            </relcell>
-            <relcell/>
-        </relrow> -->
-
-<!--         <relrow>
-            <relcell/>
-            <relcell>
-                <topicref keyref="k-createpkg" />
-            </relcell>
-            <relcell>
-                <topicref format="dita" type="reference" href="Designers/ContentsThemePack.dita" />
-                <topicref format="dita" type="reference" href="dev/ContentsModulePack.dita" />
-                <topicref keyref="k-manifest" />
-            </relcell>
-        </relrow> -->
-
-        <!-- Specific to this center. -->
-<!--         <relrow>
-            <relcell>
-                <topicref format="dita" type="topic" href="Designers/Setup/SetUpDNN.dita" />
+                <topicref keyref="k-suDNN" />
             </relcell>
             <relcell>
                 <topicref keyref="k-installext" />
@@ -122,9 +98,32 @@
             <relcell>
                 <topicref keyref="k-reqs" />
             </relcell>
-        </relrow> -->
+        </relrow>
 
-<!--         <relrow>
+        <!-- For developers and designers. -->
+        <relrow>
+            <relcell/>
+            <relcell>
+                <topicref keyref="k-createpkg" />
+                <topicref keyref="k-installext" />
+            </relcell>
+            <relcell/>
+        </relrow>
+
+        <relrow>
+            <relcell/>
+            <relcell>
+                <topicref keyref="k-createpkg" />
+            </relcell>
+            <relcell>
+                <!-- <topicref format="dita" type="reference" scope="peer" href="Developers/ContentsModulePack.dita" /> Topic not ready. -->
+                <!-- <topicref format="dita" type="reference" scope="peer" href="Designers/ContentsThemePack.dita" /> Topic not ready. -->
+                <topicref keyref="k-manifest" />
+            </relcell>
+        </relrow>
+
+        <!-- Specific to this center. -->
+        <relrow>
             <relcell>
                 <topicref format="dita" type="concept" href="Designers/AboutThemes.dita" linking="targetonly" />
             </relcell>
@@ -135,18 +134,16 @@
                 <topicref format="dita" type="task" href="Designers/CreatingThemes/CreateDocTypeXML.dita" />
             </relcell>
             <relcell/>
-        </relrow> -->
+        </relrow>
 
-        <!--
         <relrow>
             <relcell>
                 <topicref format="dita" type="topic" href="Designers/CreatingThemes/CreateTheme.dita" />
             </relcell>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="reference" href="Designers/ThemeObjects.dita" />
+                <topicref format="dita" type="reference" navtitle="Theme Objects" href="Designers/ThemeObjects.dita" />
             </relcell>
         </relrow>
-        -->
     </reltable>
 </map>
