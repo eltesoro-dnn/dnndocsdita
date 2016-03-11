@@ -91,7 +91,8 @@
         </section>
 
 
-        <section id="cacheprov"> Caching provider
+        <section id="cacheprov">
+            <title>Caching provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;caching defaultProvider="FileBasedCachingProvider"&gt;
@@ -113,7 +114,8 @@
         </section>
 
 
-        <section id="dataprov"> Data provider
+        <section id="dataprov">
+            <title>Data provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;data defaultProvider="SqlDataProvider"&gt;
@@ -142,7 +144,8 @@
         </section>
 
 
-        <section id="folderprov"> Folder provider
+        <section id="folderprov">
+            <title>Folder provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;folder defaultProvider="StandardFolderProvider"&gt;
@@ -187,7 +190,8 @@
         </section>
 
 
-        <section id="friendprov"> Friendly URL provider
+        <section id="friendprov">
+            <title>Friendly URL provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;friendlyUrl defaultProvider="DNNFriendlyUrl"&gt;
@@ -203,7 +207,8 @@
         </section>
 
 
-        <section id="htmlprov"> HTML editor provider
+        <section id="htmlprov">
+            <title>HTML editor provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;htmlEditor defaultProvider="DNNConnect.CKE"&gt;
@@ -218,7 +223,8 @@
         </section>
 
 
-        <section id="logprov"> Logging provider
+        <section id="logprov">
+            <title>Logging provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;logging defaultProvider="DBLoggingProvider"&gt;
@@ -233,7 +239,8 @@
         </section>
 
 
-        <section id="membprov"> Membership provider
+        <section id="membprov">
+            <title>Membership provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;members defaultProvider="AspNetMembershipProvider"&gt;
@@ -260,7 +267,8 @@
         </section>
 
 
-        <section id="modcacheprov"> Module caching provider
+        <section id="modcacheprov">
+            <title>Module caching provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;moduleCaching defaultProvider="FileModuleCachingProvider"&gt;
@@ -277,7 +285,8 @@
         </section>
 
 
-        <section id="navprov"> Navigation provider
+        <section id="navprov">
+            <title>Navigation provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;navigationControl defaultProvider="DDRMenuNavigationProvider"&gt;
@@ -292,7 +301,8 @@
         </section>
 
 
-        <section id="outcacheprov"> Output caching provider
+        <section id="outcacheprov">
+            <title>Output caching provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &gt;outputCaching defaultProvider="FileOutputCachingProvider"&gt;
@@ -307,7 +317,8 @@
         </section>
 
 
-        <section id="permsprov"> Permissions provider
+        <section id="permsprov">
+            <title>Permissions provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;permissions defaultProvider="CorePermissionProvider"&gt;
@@ -325,7 +336,8 @@
         </section>
 
 
-        <section id="profprov"> Profile provider
+        <section id="profprov">
+            <title>Profile provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;profiles defaultProvider="DNNProfileProvider"&gt;
@@ -340,7 +352,8 @@
         </section>
 
 
-        <section id="rolesprov"> Roles provider
+        <section id="rolesprov">
+            <title>Roles provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;roles defaultProvider="DNNRoleProvider"&gt;
@@ -357,7 +370,8 @@
         </section>
 
 
-        <section id="schedprov"> Scheduling provider
+        <section id="schedprov">
+            <title>Scheduling provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;scheduling defaultProvider="DNNScheduler"&gt;
@@ -374,7 +388,8 @@
         </section>
 
 
-        <section id="searchdataprov"> Search data store provider
+        <section id="searchdataprov">
+            <title>Search data store provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;searchDataStore defaultProvider="SearchDataStoreProvider"&gt;
@@ -390,7 +405,8 @@
         </section>
 
 
-        <section id="searchindexprov"> Search index provider
+        <section id="searchindexprov">
+            <title>Search index provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;searchIndex defaultProvider="ModuleIndexProvider"&gt;
@@ -406,7 +422,8 @@
         </section>
 
 
-        <section id="sitemapprov"> Sitemap provider
+        <section id="sitemapprov">
+            <title>Sitemap provider</title>
             <p>Default web.config setting:
                 <codeblock>
     &lt;sitemap defaultProvider="coreSitemapProvider"&gt;
