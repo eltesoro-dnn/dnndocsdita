@@ -30,6 +30,10 @@
             <isset property="env._outdir"/>
         </condition>
 
+        <condition property="out.ext" value="${env._outext}" else=".shtml" >
+            <isset property="env._outext"/>
+        </condition>
+
         <condition property="log.dir" value="${env._logdir}" else="v:${file.separator}logs" >
             <isset property="env._logdir"/>
         </condition>
@@ -107,9 +111,11 @@
         <ant antfile="build.xml">
             <property name="transtype" value="xhtml"/>
             <property name="args.input" location="${bld.dir}${file.separator}docctr.ditamap"/>
-            <property name="output.dir" location="${out.dir}"/>
 
             <!-- The following are common with other targets. -->
+            <property name="output.dir" location="${out.dir}"/>
+            <property name="args.outext" location="${out.ext}"/>
+
             <property name="args.breadcrumbs" value="yes"/>
 
             <property name="args.copycss" value="yes"/>
@@ -130,8 +136,12 @@
 
 
     <target name="html5-prep" depends="init, preptgt">
+            <property name="transtype" value="html5"/>
 
             <!-- The following are common with other targets. -->
+            <property name="output.dir" location="${out.dir}"/>
+            <property name="args.outext" location="${out.ext}"/>
+
             <property name="args.breadcrumbs" value="yes"/>
 
             <property name="args.copycss" value="yes"/>
@@ -152,9 +162,7 @@
         <echo level="info">Building html5 Administrator Center ....</echo>
         <ant antfile="build.xml">
             <property name="sitetitle" value="Administrators"/>
-            <property name="transtype" value="html5"/>
             <property name="args.input" location="${bld.dir}${file.separator}admctr.ditamap"/>
-            <property name="output.dir" location="${out.dir}"/>
         </ant>
     </target>
 
@@ -162,9 +170,7 @@
         <echo level="info">Building html5 Developer Center ....</echo>
         <ant antfile="build.xml">
             <property name="sitetitle" value="Developers"/>
-            <property name="transtype" value="html5"/>
             <property name="args.input" location="${bld.dir}${file.separator}devctr.ditamap"/>
-            <property name="output.dir" location="${out.dir}"/>
         </ant>
     </target>
 
@@ -172,9 +178,7 @@
         <echo level="info">Building html5 Designer Center ....</echo>
         <ant antfile="build.xml">
             <property name="sitetitle" value="Designers"/>
-            <property name="transtype" value="html5"/>
             <property name="args.input" location="${bld.dir}${file.separator}dsgctr.ditamap"/>
-            <property name="output.dir" location="${out.dir}"/>
         </ant>
     </target>
 
