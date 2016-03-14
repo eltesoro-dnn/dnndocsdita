@@ -5,74 +5,57 @@
     <title>Developers</title>
 
 
-    <!-- Keys -->
-    <keydef keys="k-bptext"      href="common/bptext.dita#bptext" />
-
-    <keydef keys="k-whatsnew"    format="dita" type="topic"     navtitle="What's New"              href="Developers/DNN8WhatsNew.dita" />
-    <keydef keys="k-reqs"        format="dita" type="reference" navtitle="DNN Requirements"        href="Developers/Requirements.dita" />
-    <keydef keys="k-ovplatform"  format="dita" type="concept"   navtitle="DNN Platform"            href="Developers/OverviewDNNPlatform.dita" />
-    <!-- <keydef keys="k-ovevoq" format="dita" type="concept"   navtitle="DNN Evoq"                href="Developers/OverviewDNNEvoq.dita" /> -->
-
-    <keydef keys="k-suDNN"       format="dita" type="topic"     navtitle="Set Up DNN"              href="Developers/Setup/SetUpDNN.dita" />
-    <keydef keys="k-suFolder"    format="dita" type="task"      navtitle="Set Up the DNN Folder"   href="Developers/Setup/SetUpDNNFolder.dita" />
-    <keydef keys="k-suIIS"       format="dita" type="task"      navtitle="Set Up IIS"              href="Developers/Setup/SetUpIIS.dita" />
-    <keydef keys="k-suSQL"       format="dita" type="task"      navtitle="Set Up SQL"              href="Developers/Setup/SetUpSQL.dita" />
-    <keydef keys="k-suInstWiz"   format="dita" type="task"      navtitle="Run Installation Wizard" href="Developers/Setup/RunInstWiz.dita" />
-
-    <keydef keys="k-installext"  format="dita" type="task"      navtitle="Install an Extension"    href="Developers/Extensions/InstallExtension.dita" />
-    <keydef keys="k-manifest"    format="dita" type="reference" navtitle="DNN Manifest Schema"     href="Developers/Extensions/DNNManifestSchema.dita" />
-    <keydef keys="k-createpkg"   format="dita" type="task"      navtitle="Create the Package"      href="Developers/Extensions/CreatePackage.dita" />
-
-    <keydef keys="k-glossarymap" href="common/Glossary/glossary.ditamap" />
+    <!-- Keys. NOTE: Do NOT use keys for topics that need to have an "active" tag in the toc. -->
+    <keydef keys="k-bptext" href="common/bptext.dita#bptext" />
 
 
     <!-- Topics -->
-    <topicref format="dita" type="concept" href="Developers/index.dita" toc="yes">
+    <topicref format="dita" type="concept" toc="yes" href="Developers/index.dita" >
 
-        <topicref keyref="k-whatsnew" />
-        <topicref keyref="k-ovplatform" />
+        <topicref format="dita" type="topic"   navtitle="What's New"   toc="yes" href="Developers/DNN8WhatsNew.dita" />
+        <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="Developers/OverviewDNNPlatform.dita" />
 
         <!-- Setup -->
-        <topicref keyref="k-suDNN" toc="yes" collection-type="sequence">
-            <topicref keyref="k-suFolder" />
-            <topicref keyref="k-suIIS" />
-            <topicref keyref="k-suSQL" />
-            <topicref keyref="k-suInstWiz" />
-            <topicref keyref="k-reqs" />
+        <topicref format="dita" type="topic" navtitle="Set Up DNN" toc="yes" href="Developers/Setup/SetUpDNN.dita" collection-type="sequence" >
+            <topicref format="dita" type="task"      navtitle="Set Up the DNN Folder"   toc="yes" href="Developers/Setup/SetUpDNNFolder.dita" />
+            <topicref format="dita" type="task"      navtitle="Set Up IIS"              toc="yes" href="Developers/Setup/SetUpIIS.dita" />
+            <topicref format="dita" type="task"      navtitle="Set Up SQL"              toc="yes" href="Developers/Setup/SetUpSQL.dita" />
+            <topicref format="dita" type="task"      navtitle="Run Installation Wizard" toc="yes" href="Developers/Setup/RunInstWiz.dita" />
+            <topicref format="dita" type="reference" navtitle="DNN Requirements"        toc="yes" href="Developers/Requirements.dita" />
         </topicref>
 
         <!-- Creating modules -->
-        <topicref format="dita" type="concept"   href="Developers/CreatingModules/ModuleDevelopment.dita" toc="yes" collection-type="family">
-            <topicref format="dita" type="concept"   href="Developers/CreatingModules/ModuleFeatures.dita" />
-            <topicref format="dita" type="concept"   href="Developers/CreatingModules/ModuleArchitecture.dita" />
-            <topicref format="dita" type="concept"   href="Developers/CreatingModules/WebFormsModuleDevelopment.dita" />
-            <topicref format="dita" type="concept"   href="Developers/CreatingModules/MVCModuleDevelopment.dita" />
-            <topicref format="dita" type="concept"   href="Developers/CreatingModules/SPAModuleDevelopment.dita" />
-            <topicref format="dita" type="concept"   href="Developers/CreatingModules/UnsupportedMVCFeatures.dita" />
+        <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/ModuleDevelopment.dita" collection-type="family">
+            <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/ModuleFeatures.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/ModuleArchitecture.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/WebFormsModuleDevelopment.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/MVCModuleDevelopment.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/SPAModuleDevelopment.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/UnsupportedMVCFeatures.dita" />
         </topicref>
 
         <topicref format="dita" type="concept" href="Developers/CreatingModules/CreateModule.dita" toc="yes" collection-type="sequence">
-            <topicref format="dita" type="task"      href="Developers/CreatingModules/UseModuleCreator.dita" />
-            <topicref format="dita" type="task"      href="Developers/CreatingModules/CreateModuleUsingTemplates.dita" toc="yes" collection-type="sequence" />
-            <topicref format="dita" type="task"      href="Developers/CreatingModules/StartVSProjWithTemplates.dita" />
-            <topicref format="dita" type="task"      href="Developers/CreatingModules/TestModule.dita" />
-            <topicref keyref="k-createpkg" />
-            <topicref keyref="k-installext" />
+            <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/UseModuleCreator.dita" />
+            <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/CreateModuleUsingTemplates.dita" />
+            <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/StartVSProjWithTemplates.dita" />
+            <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/TestModule.dita" />
+            <topicref format="dita" type="task" navtitle="Create the Package"   toc="yes" href="Developers/Extensions/CreatePackage.dita" />
+            <topicref format="dita" type="task" navtitle="Install an Extension" toc="yes" href="Developers/Extensions/InstallExtension.dita" />
         </topicref>
 
         <!-- Local references -->
-        <topicref format="dita" type="topic" href="Developers/DevRefs.dita" toc="yes" collection-type="family">
-            <topicref format="dita" type="topic"     href="Developers/Providers.dita" />
-            <topicref format="dita" type="concept"   href="Developers/AboutEVS.dita" />
-            <!-- <topicref format="dita" type="reference" href="Developers/ContentsModulePack.dita" /> -->
-            <topicref keyref="k-manifest" />
+        <topicref format="dita" type="topic" toc="yes" href="Developers/DevRefs.dita" collection-type="family">
+            <topicref format="dita" type="topic"   toc="yes" href="Developers/Providers.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="Developers/AboutEVS.dita" />
+            <!-- <topicref format="dita" type="reference" toc="yes" href="Developers/ContentsModulePack.dita" /> Topic not ready. -->
+            <topicref format="dita" type="reference" navtitle="DNN Manifest Schema" toc="yes" href="Developers/Extensions/DNNManifestSchema.dita" />
         </topicref>
 
         <!-- Important global references -->
-        <topicref format="html" scope="external" navtitle="DNN API Reference" href="http://www.dnnsoftware.com/dnn-api/" />
+        <topicref format="html" scope="external" navtitle="DNN API Reference" toc="yes" href="http://www.dnnsoftware.com/dnn-api/" />
 
-        <topichead navtitle="Glossary" chunk="by-document to-content" copy-to="Developers/glossary-dev.dita" >
-            <mapref keyref="k-glossarymap" />
+        <topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="Developers/glossary-dev.dita" >
+            <mapref href="common/Glossary/glossary.ditamap" />
         </topichead>
 
     </topicref>
@@ -89,23 +72,23 @@
         <!-- Common to all centers. -->
         <relrow>
             <relcell>
-                <topicref keyref="k-overview" />
+                <topicref format="dita" type="concept"   navtitle="DNN Platform"         href="Developers/OverviewDNNPlatform.dita" />
             </relcell>
             <relcell>
-                <topicref keyref="k-reqs" />
+                <topicref format="dita" type="reference" navtitle="DNN Requirements"     href="Developers/Requirements.dita" />
             </relcell>
             <relcell/>
         </relrow>
 
         <relrow>
             <relcell>
-                <topicref keyref="k-suDNN" />
+                <topicref format="dita" type="topic"     navtitle="Set Up DNN"           href="Developers/Setup/SetUpDNN.dita" />
             </relcell>
             <relcell>
-                <topicref keyref="k-installext" />
+                <topicref format="dita" type="task"      navtitle="Install an Extension" href="Developers/Extensions/InstallExtension.dita" />
             </relcell>
             <relcell>
-                <topicref keyref="k-reqs" />
+                <topicref format="dita" type="reference" navtitle="DNN Requirements"     href="Developers/Requirements.dita" />
             </relcell>
         </relrow>
 
@@ -113,8 +96,8 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref keyref="k-createpkg" />
-                <topicref keyref="k-installext" />
+                <topicref format="dita" type="task" navtitle="Create the Package"   href="Developers/Extensions/CreatePackage.dita" />
+                <topicref format="dita" type="task" navtitle="Install an Extension" href="Developers/Extensions/InstallExtension.dita" />
             </relcell>
             <relcell/>
         </relrow>
@@ -122,12 +105,12 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref keyref="k-createpkg" />
+                <topicref format="dita" type="task" navtitle="Create the Package" href="Developers/Extensions/CreatePackage.dita" />
             </relcell>
             <relcell>
-                <!-- <topicref format="dita" type="reference" href="Designers/ContentsThemePack.dita" /> Topic not ready. -->
-                <!-- <topicref format="dita" type="reference" href="Developers/ContentsModulePack.dita" /> Topic not ready. -->
-                <topicref keyref="k-manifest" />
+                <!-- <topicref format="dita" type="reference" toc="yes" href="Designers/ContentsThemePack.dita" /> Topic not ready. -->
+                <!-- <topicref format="dita" type="reference" toc="yes" href="Developers/ContentsModulePack.dita" /> Topic not ready. -->
+                <topicref format="dita" type="reference" navtitle="DNN Manifest Schema" href="Developers/Extensions/DNNManifestSchema.dita" />
             </relcell>
         </relrow>
 
@@ -141,10 +124,10 @@
                 <topicref format="dita" type="topic"   href="Developers/CreatingModules/CreateModule.dita" />
             </relcell>
             <relcell>
-                <topicref keyref="k-createpkg" />
+                <topicref format="dita" type="task" navtitle="Create the Package" href="Developers/Extensions/CreatePackage.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="topic"     href="Developers/Providers.dita" />
+                <topicref format="dita" type="topic" href="Developers/Providers.dita" />
                 <!-- <topicref format="dita" type="reference" scope="peer" href="Developers/ContentsModulePack.dita" /> Topic not ready. -->
                 <!-- <topicref format="dita" type="reference" scope="peer" href="Designers/ContentsThemePack.dita" /> Topic not ready. -->
             </relcell>
@@ -174,7 +157,7 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref keyref="k-installext" />
+                <topicref format="dita" type="task" navtitle="Install an Extension" href="Developers/Extensions/InstallExtension.dita" />
                 <topicref format="dita" type="task" href="Developers/CreatingModules/TestModule.dita" />
             </relcell>
             <relcell/>
@@ -187,7 +170,7 @@
                 <topicref format="dita" type="concept" href="Developers/CreatingModules/SPAModuleDevelopment.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task"      href="Developers/CreatingModules/UseModuleCreator.dita" />
+                <topicref format="dita" type="task" href="Developers/CreatingModules/UseModuleCreator.dita" />
             </relcell>
             <relcell/>
         </relrow>
