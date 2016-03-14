@@ -20,21 +20,14 @@
 
     <conbody>
 
-        <section id="Overview">
-            <title>Overview</title>
-
-            <p>Web Forms module development is the most mature and well documented method for creating DNN modules.</p>
-        </section>
-
-
         <section id="WebFormsModuleArchitecture">
             <title>Web Forms Module Architecture</title>
 
-            <p>Web Forms modules follow the standard DNN module architectural pattern, and use a traditional server-side rendering model. When a page is requested, DNN will create an instance of the relevant module control as defined in the module definition. The module control inherits from a code-behind class that contains the presentation logic and that makes additional calls to the appropriate business methods in the Business Logic Layer.</p>
+            <p>Web Forms modules follow the standard DNN module architectural pattern and use a traditional server-side rendering model. When a page is requested, DNN will create an instance of the relevant module control as defined in the module definition. The module control inherits from a code-behind class that contains the presentation logic and that makes additional calls to the appropriate business methods in the Business Logic Layer.</p>
 
             <image scalefit="yes" placement="break" align="left" href="../../common/img/module-architecture-wf.png"><alt>Logical architecture of a Web Forms module</alt></image>
 
-            <p>You can include web service endpoints to enable access by mobile applications if necessary. When accessing the module from a mobile application, the presentation layer moves to the mobile device and the service layer becomes the server-side endpoint that calls the appropriate business methods.</p>
+            <p>You can include web service endpoints to enable access by mobile applications, if necessary. When accessing the module from a mobile application, the presentation layer moves to the mobile device and the service layer becomes the server-side endpoint that calls the appropriate business methods.</p>
 
             <image scalefit="yes" placement="break" align="left" href="../../common/img/module-architecture-mobile.png"><alt>Accessing Web Forms Module via a Web Service</alt></image>
         </section>
@@ -43,26 +36,24 @@
         <section id="BuildingWebFormsModules">
             <title>Building Web Forms Modules</title>
 
-            <p>Visual Studio is the preferred development environment for module development.  In Visual Studio, modules can be created as one of these project types:</p>
+            <p>In Visual Studio, modules can be created as one of these project types:</p>
 
             <ul>
                 <li>Web Site Project (WSP)</li>
                 <li>Web Application Project (WAP)</li>
             </ul>
 
-            <p>Modules built using the WSP project type include the source code as part of the module package. The source code is compiled at runtime and allows you to easily alter code directly on the server. While this approach provides flexibility in making updates, it also decreases startup performance and can complicate module upgrades.</p>
+            <p>Modules built using the WSP project type include the source code as part of the module package. The source code is compiled at runtime, thereby, allowing you to easily alter code directly on the server. While this approach provides flexibility in making updates, it also decreases startup performance and can complicate module upgrades.</p>
 
-            <note type="note">The WSP project type is not recommended for commercial module development, because it requires the distribution of source code with your module.</note>
+            <note type="important">The WSP project type is not recommended for commercial module development, because it requires the distribution of source code with your module.</note>
 
-            <p>WSP projects don't have a project file (<filepath>.csproj</filepath> or <filepath>.vbproj</filepath>) and instead rely on files being part of a complete website. When creating a WSP module, all of the user controls, and the associated code-behind files, and other related files, will be placed in a project folder under <filepath>DesktopModules</filepath> folder. All code files not associated with a user control must be placed in the <filepath>App_Code</filepath> folder in the web site root. This disjointed code model complicates module development and packaging.</p>
+            <p>WSP projects do not have a project file (<filepath>.csproj</filepath> or <filepath>.vbproj</filepath>). Instead, they rely on files being part of a complete website. When creating a WSP module, all user controls, the associated code-behind files, and other related files are placed in a project folder under the <filepath>DesktopModules</filepath> folder. All code files not associated with a user control must be placed in the <filepath>App_Code</filepath> folder in the website's root. This disjointed code model complicates module development and packaging.</p>
 
-            <p>Modules built using the WAP project type are compiled at development time and do not require packaging source code with your module. WAP projects have a project file and are created as standalone projects.</p>
+            <p>Modules built using the WAP project type are compiled at development time and do not require you to include the source code with your module. WAP projects have a project file and are created as standalone projects.</p>
 
             <note type="note">Microsoft recommends the WAP project type for ASP.NET development. (See <xref format="html" scope="external" href="https://msdn.microsoft.com/en-us/library/dd547590%28v=vs.110%29.aspx">Web Application Projects Versus Web Site Projects in Visual Studio</xref>.)</note>
 
-            <p>Visual Studio is recommended for module development. You can also create modules using standard text editors or the included DNN Module Creator; however, these tools don't provide .NET compiler support. Therefore, they are more suited for developing WSP-based modules.</p>
-
-            <p>The DNN Module Creator automatically places files in the appropriate folders (<filepath>App_Code</filepath> and <filepath>DesktopModules</filepath>) and can be used to package the module at the end of your development process.</p>
+            <p>Although Visual Studio is recommended for module development, you can create modules using standard text editors or the included DNN Module Creator. However, these tools do not provide .NET compiler support; therefore, they are more suited for developing WSP-based modules.</p>
 
             <p>You can organize your Web Forms project files any way you wish. Many module developers organize project files based on the logical architecture.</p>
         </section>
@@ -95,6 +86,9 @@
                     </ul>
                 </li>
             </ul>
+
+            <p>The DNN Module Creator automatically places files in the appropriate folders (<filepath>App_Code</filepath> and <filepath>DesktopModules</filepath>) and can be used to package the completed module.</p>
+
         </section>
 
     </conbody>

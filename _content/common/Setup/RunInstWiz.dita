@@ -36,10 +36,9 @@
             <step><cmd>Run the DNN Installation Wizard.</cmd> <!-- Verify the actual names of the UI objects. Need screenshots. -->
                 <substeps>
                     <substep><cmd>Open your website (<codeph>http://www.dnndev.me</codeph>) in a browser.</cmd></substep>
-                    <substep><cmd>Under <uicontrol>Administrative Information</uicontrol>, enter the username, password, and email address for the host / super user account to create.</cmd>
+                    <substep><cmd>Under <uicontrol>Administrative Information</uicontrol>, enter the username, password, and email address for the host / super user account to create. This account will have permissions for all websites created in this DNN installation.</cmd>
                         <info>
-                            This account will have permissions for all websites created in this DNN installation.
-                            <note type="remember">Remember the host's username and password, which you will need to manage your websites.</note>
+                            <note type="note">Remember the host's username and password, which you will need to manage your websites.</note>
                         </info>
                     </substep>
                     <substep><cmd>Under <uicontrol>Website Information</uicontrol>, enter the name, template, and language to use for the first website.</cmd></substep>

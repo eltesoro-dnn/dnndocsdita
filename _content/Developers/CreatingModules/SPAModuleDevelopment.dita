@@ -23,7 +23,7 @@
         <section id="Overview">
             <title>Overview</title>
 
-            <p><term>Single-Page Application (SPA)</term> frameworks are a newer alternative to server-side web development frameworks such as ASP.NET. SPA replaces the full-page updates of server-side frameworks, with small targeted updates of select page elements. This lightweight approach results in a faster, more responsive UI.</p>
+            <p><term>Single-Page Application (SPA)</term> frameworks are a newer alternative to server-side web development frameworks such as ASP.NET. SPA replaces the full-page updates of server-side frameworks, with small targeted updates of select page elements. This lightweight approach results in a faster and more responsive UI.</p>
 
             <p>DNN's SPA module type simplifies the creation of modules that simulate traditional SPA applications and that use AJAX for all server interactions.</p>
 
@@ -38,18 +38,18 @@
 
             <image scalefit="yes" placement="break" align="left" href="../../common/img/module-architecture-spa.png"><alt>Logical architecture of a SPA module</alt></image>
 
-            <p>When a DNN page is requested, the framework looks up the requested module control in the module definition. In an SPA module, the module control identifies a specific HTML file. DNN tokens in the HTML file are replaced with site specific data before the HTML is injected into the page.</p>
+            <p>When a DNN page is requested, the framework looks up the requested module control in the module definition. In an SPA module, the module control identifies a specific HTML file. DNN tokens in the HTML file are replaced with site-specific data before the HTML is injected into the page.</p>
         </section>
 
 
         <section id="BuildingSPAModules">
             <title>Building SPA Modules</title>
 
-            <p>You have more development options available when building SPA modules compared to MVC modules. The server side code can be created in Visual Studio as Web Application Project (WAP) or Web Site Project (WAP) types. (See <xref format="html" scope="external" href="https://msdn.microsoft.com/en-us/library/dd547590%28v=vs.110%29.aspx">Web Application Projects Versus Web Site Projects in Visual Studio</xref>.) Because it is just plain HTML, JavaScript and CSS, the presentation layer can be built using your favorite code editor and doesn't require the use of Visual Studio.</p>
+            <p>You have more development options available when building SPA modules compared to MVC modules. The server-side code can be created in Visual Studio as Web Application Project (WAP) or Web Site Project (WAP) types. (See <xref format="html" scope="external" href="https://msdn.microsoft.com/en-us/library/dd547590%28v=vs.110%29.aspx">Web Application Projects Versus Web Site Projects in Visual Studio</xref>.) Because the presentation layer is created with plain HTML, JavaScript, and CSS, its components can be built using any code editor.</p>
 
-            <p>You can choose to build the SPA module with all presentation layer code in one project and all server side code in a separate project. This approach makes it easy to use different development tools that are optimized for server-side or client-side development.</p>
+            <p>You can choose to build the SPA module with all presentation layer code in one project and all server-side code in a separate project. This approach makes it easy to use different development tools that are optimized for server-side or client-side development.</p>
 
-            <p>Alternatively, you can use Visual Studio to create a single project that includes both server-side and client-side components. This approach leverages the MS Build system to easily package your module as part of your development process. The DNN SPA Module template is set up for this approach.</p>
+            <p>Alternatively, you can use Visual Studio to create a single project that includes both server-side and client-side components. This approach leverages the MS Build system to easily package your module as part of your development process. The DNN SPA module template is set up for this approach.</p>
         </section>
 
 
@@ -65,8 +65,8 @@
                 <li><term>AntiForgeryToken</term> includes an anti-forgery token in the page to prevent Cross-Site Request Forgery (CSRF) attacks.</li>
                 <li><term>ModuleAction</term> identifies custom module actions.</li>
                 <li><term>Resx</term> includes a localized resource string in the page.</li>
-                <li><term>Request</term> includes the page request querystring in the page.</li>
-                <li><term>ModuleContext</term> includes a DNN module context property in the page.  Supported module context properties include:
+                <li><term>Request</term> includes the page-request query string in the page.</li>
+                <li><term>ModuleContext</term> includes a DNN module context property in the page. Supported module context properties include:
                     <ul>
                         <li>ModuleId</li>
                         <li>TabModuleId</li>
@@ -74,7 +74,7 @@
                         <li>PortalId</li>
                         <li>IsSuperUser</li>
                         <li>EditMode</li>
-                        <li><varname>SettingName</varname> - You can access a specific module setting by using the setting name instead of a predefined property name.</li>
+                        <li><varname>SettingName</varname> - You can access a specific module setting by using the setting name, instead of a predefined property name.</li>
                     </ul>
                 </li>
             </ul>

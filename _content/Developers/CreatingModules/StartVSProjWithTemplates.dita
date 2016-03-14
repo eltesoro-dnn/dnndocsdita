@@ -85,8 +85,8 @@
                             <ul>
                                 <li><uicontrol>Name</uicontrol>: the name of your new module</li>
                                 <li><uicontrol>Location</uicontrol>: a subfolder inside the <filepath>DesktopModules</filepath> folder of your DNN installation folder</li>
-                                <li><uicontrol>Tip</uicontrol>: Use your company name or a unique name as the subfolder name to avoid conflicts with other module creators in a production environment.</li>
                             </ul>
+                            <note type="tip">Use your company name or a unique name as the subfolder name to avoid conflicts with other module creators in a production environment.</note>
                         </info>
                     </substep>
                     <substep><cmd>Uncheck <uicontrol>Create directory for solution</uicontrol>.</cmd>
@@ -94,6 +94,8 @@
                     </substep>
                 </substeps>
             </step>
+
+            <step><cmd>Modify the Visual Studio project to add functionality to your new module.</cmd></step>
 
         </steps>
 

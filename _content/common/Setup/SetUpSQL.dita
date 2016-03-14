@@ -3,6 +3,9 @@
 <task xml:lang="en" id="tsk-SetUpSQL">
 
     <title>Install and Set Up SQL</title>
+    <titlealts>
+        <navtitle>Set Up SQL</navtitle>
+    </titlealts>
 
     <prolog>
         <author>ERT</author>
@@ -51,13 +54,13 @@
                     <substep><cmd>Enter the name of the new database. Click <uicontrol>OK</uicontrol>.</cmd>
                         <info>
                             <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-3.png"><alt>Enter new database name.</alt></image>
+                            <note type="note">Remember the database name, because it will be required by the DNN Installation Wizard.</note>
                         </info>
                     </substep>
-                    <substep><cmd>Remember the database name, because it will be required by the DNN Installation Wizard.</cmd></substep>
                 </substeps>
             </step>
 
-            <step><cmd>Create a SQL user account, using <uicontrol>SQL Server authentication</uicontrol> and disabling password policy.</cmd>
+            <step><cmd>Create a SQL user account.</cmd>
                 <substeps>
                     <substep><cmd>Under <uicontrol>Security</uicontrol>, right-click on <uicontrol>Logins</uicontrol>, and choose <uicontrol>New Login...</uicontrol>.</cmd>
                         <info>
@@ -67,9 +70,9 @@
                     <substep><cmd>Enter the username, choose <uicontrol>SQL Server authentication</uicontrol>, add a password, uncheck <uicontrol>Enforce password policy</uicontrol>, and choose the database.</cmd>
                         <info>
                             <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-5.png"><alt>Choose SQL Server authentication. Uncheck Enforce password policy.</alt></image>
+                            <note type="note">Remember the username and password, because they will be required by the DNN Installation Wizard.</note>
                         </info>
                     </substep>
-                    <substep><cmd>Remember the username and password, because they will be required by the DNN Installation Wizard.</cmd></substep>
                 </substeps>
             </step>
 

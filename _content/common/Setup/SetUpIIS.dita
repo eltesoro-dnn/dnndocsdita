@@ -3,6 +3,9 @@
 <task xml:lang="en" id="tsk-SetUpIIS">
 
     <title>Enable and Set Up IIS</title>
+    <titlealts>
+        <navtitle>Set Up IIS</navtitle>
+    </titlealts>
 
     <prolog>
         <author>ERT</author>
@@ -35,12 +38,12 @@
                     <substep><cmd>Under <uicontrol>Internet Information Services</uicontrol>, turn on the following:</cmd>
                         <info>
                             <ul>
-                                <li><uicontrol>Web Management Tools</uicontrol>: <uicontrol>IIS Management Console</uicontrol></li>
+                                <li><uicontrol>Web Management Tools</uicontrol>: IIS Management Console</li>
                                 <li><uicontrol>World Wide Web Services</uicontrol>
                                     <ul>
-                                        <li><uicontrol>Application Development Features</uicontrol>: <uicontrol>ASP.NET 3.5 and 4.6</uicontrol></li>
-                                        <li><uicontrol>Common HTTP Features</uicontrol>: <uicontrol>Default Document and Static Content</uicontrol></li>
-                                        <li>(Optional) <uicontrol>Security</uicontrol>: <uicontrol>Basic Authentication</uicontrol></li>
+                                        <li><uicontrol>Application Development Features</uicontrol>: ASP.NET 3.5 and 4.6</li>
+                                        <li><uicontrol>Common HTTP Features</uicontrol>: Default Document and Static Content</li>
+                                        <li>(Optional) <uicontrol>Security</uicontrol>: Basic Authentication</li>
                                         <!-- TODO: Per Joe's tech review on 20160106: Add Windows Authentication here and in the screenshot. -->
                                     </ul>
                                 </li>

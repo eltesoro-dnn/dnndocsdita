@@ -24,7 +24,7 @@
         <section>
             <p>For easier distribution and installation, the components of an extension (theme or module) can be bundled into a package. An extension <term>package</term> is simply a zip file that contains all the files required by your extension. The most important part of the process is creating the <term>DNN Manifest</term>, which provides information required by the installer, such as the target locations for the files.</p>
 
-            <p>If you use the DNN templates and compile in Visual Studio, the MS Build scripts in the templates automatically create the DNN Manifest and the zip file for you. These instructions describe the manual process.</p>
+            <p>If you use the DNN templates and compile in Visual Studio, the <uicontrol>Release</uicontrol> build creates the zip file for you.</p>
 
             <note type="note">The package wizard, accessible through the DNN Module Creator or the Extensions page, currently cannot create packages for MVC or SPA modules.</note>
         </section>

@@ -30,8 +30,6 @@
 
             <p>You can <xref format="html" scope="external" href="http://www.dnnsoftware.com/products/compare-dnn-platform-to-evoq">compare the features</xref> in detail.</p>
 
-            <p>Then, <xref format="dita" href="../../common/placeholderlink.dita">download DNN here</xref>.</p>
-
             <draft-comment>
                 <!--
                 Cover older versions in the next iteration of the docs website.
@@ -46,10 +44,12 @@
             </draft-comment>
         </section>
 
-
         <section id="DNNRequirements">
-            <p>For a basic installation, DNN requires Microsoft IIS and SQL server. You can view the <xref format="dita" scope="peer" href="../Requirements.dita">DNN 8.0 Requirements</xref> for the compatible versions.</p>
-            <p><b>Developers:</b> Visual Studio 2015 is the recommended IDE for developing DNN modules. It is required if you are contributing to the DNN Platform.</p>
+            <title>Requirements</title>
+            <ul>
+                <li><xref format="dita" scope="peer" href="../Requirements.dita">DNN 8.0 Requirements</xref></li>
+                <li><b>Developers:</b> Visual Studio 2015 is the recommended IDE for developing DNN modules. It is required if you are contributing to the DNN Platform.</li>
+            </ul>
         </section>
 
     </body>

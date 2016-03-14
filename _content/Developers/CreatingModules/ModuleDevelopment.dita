@@ -20,33 +20,33 @@
 
     <conbody>
 
-        <section id="Overview">
-            <p>The DNN platform provides many benefits to web developers. DNN provides common features like user management, role-based security, file management, and more. In this topic we'll cover how DNN Module Development which is the primary method for building web applications and web sites that run on DNN. You'll learn what a module is and the high-level concepts involved in module development.</p>
-        </section>
-
         <section id="WhatIsAModule">
-            <title>What is a Module?</title>
+            <title>What is a module?</title>
 
-            <p>A typical web page includes page elements and content blocks. In DNN, page elements (e.g. site menu, login link, search bar) are included as part of the theme, and content blocks are managed using DNN modules.</p>
-            <image scalefit="yes" placement="break" align="left" href="../../common/img/module-overview.png"><alt>Modules are used to manage and display content on the page.</alt></image>
+            <p>A typical web page includes page elements and content blocks. Page elements, such as the site menu, the login control, and the search bar, are included with the theme. Content blocks are managed by modules.</p>
+            <image scalefit="yes" placement="break" align="left" href="../../common/img/module-overview.png"><alt>Modules manage and display content on the page.</alt></image>
 
-            <p>The module is a foundational building block for extending DNN, and is the primary extension type that enables users to view, create and edit content. All DNN administrative features are implemented as modules.</p>
+            <p>The module is one of the basic building blocks that extend DNN to enable users to view, create, and edit content. All DNN administrative features are implemented as modules.</p>
 
-            <note type="tip">The DNN platform source code provides more than two dozen modules that you can use as examples of how to build modules for DNN.</note>
+            <note type="tip">The DNN platform source code includes numerous example modules to help you build your own modules.</note>
 
             <p>Due to the modular nature of page composition in DNN, modules are usually built to manage and display a single content type.</p>
 
-            <note type="tip">Consider creating multiple modules when managing complex content types, or include rich templating support so that administrators can control the layout of content on the page.</note>
+            <note type="tip">Consider creating multiple modules when managing complex content types, or include rich templating support so that administrators can control the layout of the content on the page.</note>
 
-            <p>Many frameworks and approaches to developing modules are available. The three primary frameworks are:
+            <p>Module development involves selecting the development framework and then the development approach.
                 <ul>
-                    <li>Web Forms - This is the traditional framework for creating DNN modules that uses ASP.NET Web Forms based controls.</li>
-                    <li>MVC - This framework was introduced in DNN 8 and uses the ASP.NET MVC framework.</li>
-                    <li>SPA - This framework enables you to build modules using plain HTML, JavaScript, and CSS. Developers are free to use their preferred SPA framework.</li>
+                    <li>These frameworks can be used with DNN:
+                        <ul>
+                            <li>Web Forms - This traditional framework creates DNN modules that use controls based on ASP.NET Web Forms.</li>
+                            <li>MVC - This framework (introduced in DNN 8) uses the ASP.NET MVC framework.</li>
+                            <li>SPA - This family of frameworks builds modules using plain HTML, JavaScript, and CSS. You can use any SPA framework.</li>
+                        </ul>
+                    </li>
+                    <li>You can choose a manual development approach, where the entire module is built by hand, or a more automated approach, where the basic module foundation is created using a template or other automation tool.</li>
                 </ul>
             </p>
 
-            <p>After selecting the framework, choose your development approach.  You can choose a manual development approach, where the entire module is built by hand, or a more automated approach, where the basic module foundation is created using a template or other automation tool.</p>
         </section>
 
     </conbody>

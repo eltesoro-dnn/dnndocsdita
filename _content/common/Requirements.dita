@@ -2,7 +2,7 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
 <reference xml:lang="en" id="DNN8Requirements">
 
-    <title>DNN Platform 8.0 and DNN Evoq 8.3 Requirements</title>
+    <title>DNN Requirements</title>
     <titlealts>
         <navtitle>DNN Requirements</navtitle>
     </titlealts>
@@ -23,6 +23,9 @@
     </prolog>
 
     <refbody>
+        <section id="overview">
+            <p>The following are required for DNN Platform 8.0 and DNN Evoq 8.3.</p>
+        </section>
 
         <section id="OS">
             <title>Supported Operating Systems</title>
@@ -93,7 +96,7 @@
                 <li>Visual Studio 2015</li>
             </ul>
 
-            <p>For contributing to the DNN Platform</p>
+            <p>For contributing to the DNN Platform:</p>
             <ul>
                 <li>Visual Studio 2015</li>
             </ul>

@@ -4,7 +4,7 @@
 
     <title>Set Up the DNN Folder and the User Account</title>
     <titlealts>
-        <navtitle>Set Up DNN Folder</navtitle>
+        <navtitle>Set Up the DNN Folder</navtitle>
     </titlealts>
 
     <prolog>
@@ -61,7 +61,8 @@
                                     </entry>
                                     <entry>IIS 7.5</entry>
                                     <entry morerows="2">
-                                        <p>the <b>NETWORK SERVICE</b> account, or</p>
+                                        <p>the <b>NETWORK SERVICE</b> account</p>
+                                        <p>- or -</p>
                                         <p>the <b>IIS AppPool\AppPoolName</b>, which is the name of the automatically generated app.</p>
                                         <draft-comment>
                                             <!-- TODO: Per Joe's tech review on 20160106, "We should include a screenshot of IIS Manager showing where to find this value." Addl info from Skype: "

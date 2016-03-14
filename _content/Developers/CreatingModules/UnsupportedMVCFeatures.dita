@@ -25,11 +25,11 @@
                     <ul>
                         <li>FormExtensions (BeginForm, BeginRouteForm, EndForm)</li>
                         <li>Html.RouteLink</li>
-                        <li>All ChildActionExtensions i.e. Html.Action, Html.RenderAction</li>
+                        <li>All ChildActionExtensions (e.g., Html.Action, Html.RenderAction)</li>
                     </ul>
                 </li>
 
-                <li>Url Helpers
+                <li>URL Helpers
                     <ul>
                         <li>Url.Action(string actionName, string controllerName, RouteValueDictionary routeValues, string protocol) </li>
                         <li>Url.Action(string actionName, string controllerName, object routeValues, string protocol)</li>
@@ -39,7 +39,7 @@
                     </ul>
                 </li>
 
-                <li>Controller Action Return Types - DNN 8 expects actions to return an ActionResult.  All other result types are currently unsupported
+                <li>Controller Action Return Types - DNN 8 expects actions to return an ActionResult. All other result types are currently unsupported:
                     <ul>
                         <li>PartialViewResult,</li>
                         <li>JsonResult</li>
@@ -57,7 +57,7 @@
 
                 <li>Attribute Routing</li>
 
-                <li>Bundles - DNN implements a different minification and bundling API which is available for MVC modules.</li>
+                <li>Bundles - DNN implements a different minification-and-bundling API for MVC modules.</li>
             </ul>
         </section>
 
@@ -66,7 +66,7 @@
             <p>The following features are expected in a future release soon:</p>
             <ul>
                 <li>AJAX Helpers</li>
-                <li>Partial View support</li>
+                <li>Partial view support</li>
             </ul>
         </section>
 
