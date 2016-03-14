@@ -16,12 +16,11 @@
         <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="Designers/OverviewDNNPlatform.dita" />
 
         <!-- Setup -->
-        <topicref format="dita" type="topic" navtitle="Set Up DNN" toc="yes" href="Designers/Setup/SetUpDNN.dita" collection-type="sequence">
-            <topicref format="dita" type="task"      navtitle="Set Up the DNN Folder"   toc="yes" href="Designers/Setup/SetUpDNNFolder.dita" />
-            <topicref format="dita" type="task"      navtitle="Set Up IIS"              toc="yes" href="Designers/Setup/SetUpIIS.dita" />
-            <topicref format="dita" type="task"      navtitle="Set Up SQL"              toc="yes" href="Designers/Setup/SetUpSQL.dita" />
-            <topicref format="dita" type="task"      navtitle="Run Installation Wizard" toc="yes" href="Designers/Setup/RunInstWiz.dita" />
-            <topicref format="dita" type="reference" navtitle="DNN Requirements"        toc="yes" href="Designers/Requirements.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="Designers/Setup/SetUpDNN.dita" collection-type="sequence">
+            <topicref format="dita" type="task" toc="yes" href="Designers/Setup/SetUpDNNFolder.dita" />
+            <topicref format="dita" type="task" toc="yes" href="Designers/Setup/SetUpIIS.dita" />
+            <topicref format="dita" type="task" toc="yes" href="Designers/Setup/SetUpSQL.dita" />
+            <topicref format="dita" type="task" toc="yes" href="Designers/Setup/RunInstWiz.dita" />
         </topicref>
 
         <!-- Creating themes -->

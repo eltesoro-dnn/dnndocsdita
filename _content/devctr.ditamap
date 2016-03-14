@@ -16,12 +16,11 @@
         <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="Developers/OverviewDNNPlatform.dita" />
 
         <!-- Setup -->
-        <topicref format="dita" type="topic" navtitle="Set Up DNN" toc="yes" href="Developers/Setup/SetUpDNN.dita" collection-type="sequence" >
-            <topicref format="dita" type="task"      navtitle="Set Up the DNN Folder"   toc="yes" href="Developers/Setup/SetUpDNNFolder.dita" />
-            <topicref format="dita" type="task"      navtitle="Set Up IIS"              toc="yes" href="Developers/Setup/SetUpIIS.dita" />
-            <topicref format="dita" type="task"      navtitle="Set Up SQL"              toc="yes" href="Developers/Setup/SetUpSQL.dita" />
-            <topicref format="dita" type="task"      navtitle="Run Installation Wizard" toc="yes" href="Developers/Setup/RunInstWiz.dita" />
-            <topicref format="dita" type="reference" navtitle="DNN Requirements"        toc="yes" href="Developers/Requirements.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="Developers/Setup/SetUpDNN.dita" collection-type="sequence" >
+            <topicref format="dita" type="task" toc="yes" href="Developers/Setup/SetUpDNNFolder.dita" />
+            <topicref format="dita" type="task" toc="yes" href="Developers/Setup/SetUpIIS.dita" />
+            <topicref format="dita" type="task" toc="yes" href="Developers/Setup/SetUpSQL.dita" />
+            <topicref format="dita" type="task" toc="yes" href="Developers/Setup/RunInstWiz.dita" />
         </topicref>
 
         <!-- Creating modules -->
@@ -34,10 +33,11 @@
             <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/UnsupportedMVCFeatures.dita" />
         </topicref>
 
-        <topicref format="dita" type="concept" href="Developers/CreatingModules/CreateModule.dita" toc="yes" collection-type="sequence">
+        <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/CreateModule.dita" collection-type="sequence">
             <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/UseModuleCreator.dita" />
-            <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/CreateModuleUsingTemplates.dita" />
-            <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/StartVSProjWithTemplates.dita" />
+            <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/CreateModuleUsingTemplates.dita" collection-type="sequence">
+                <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/StartVSProjWithTemplates.dita" />
+            </topicref>
             <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/TestModule.dita" />
             <topicref format="dita" type="task" navtitle="Create the Package"   toc="yes" href="Developers/Extensions/CreatePackage.dita" />
             <topicref format="dita" type="task" navtitle="Install an Extension" toc="yes" href="Developers/Extensions/InstallExtension.dita" />
