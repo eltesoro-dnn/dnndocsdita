@@ -92,9 +92,8 @@ article[role="article"] {
   margin: 0;
   padding: 100px 10% 100px 75px;
   min-width: 40ch;  /* actual text line widths */
-  height: 80vh;
+  min-height: 80vh;
   margin-left: 302px;
-  overflow: hidden;
   background-color: white;
 }
 
@@ -104,7 +103,6 @@ article[role="articleHome"] {
   padding: 100px 10% 100px 75px;
   min-width: 40ch;  /* actual text line widths */
   height: 80vh;
-  overflow: hidden;
   background-color: white;
 }
 
@@ -1626,10 +1624,84 @@ article[role="articleHome"] {
 }
 
 #header-askq:after {
-    visibility: hidden;
+  visibility: hidden;
 }
 
+#header-subctr-wrapper, #header-subctr-wrapper > .subctr {
+  display: inline-block;
+}
+
+#header-subctr-wrapper {
+  width: 400px;
+  margin-left: -275px;
+}
+
+.subctr a {
+  text-align: center;
+  font-family: "AvenirNextLTPro-Regular","Helvetica Neue","HelveticaNeue",Arial,Helvetica,sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  color: #337ab7;
+  text-decoration: none;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-top: 10px;
+}
+
+
 /* RESPONSIVE STYLES */
+
+/* iPhone 6 Portrait */
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 667px)
+and (orientation : portrait) {
+
+  .breadcrumbs, .breadcrumbs a, body p.p, body, th, td, table, h1, h2, h3, h4, h5, h6, p, ul, ol, a:link, a:visited, a:hover {
+    font-size: 30px;
+  }
+
+  .site-title, .site-subtitle {
+    font-size: 27px;
+  }
+
+  h1.topictitle1 {
+    font-size: 55px;
+  }
+
+  .header .logo img {
+    width: 105px;
+  }
+
+  .site-title, .site-subtitle {
+    margin-top: 8px;
+  }
+
+  nav[role="hamburger-home"] {
+    width: 65px;
+  }
+
+  nav[role="hamburger-home"] #menu-button {
+    padding: 30px;
+  }
+
+  nav[role="hamburger-home"] #menu-button:before, nav[role="hamburger-home"] #menu-button:after {
+    width: 35px;
+  }
+
+  nav[role="hamburger-home"] #menu-button:before {
+    height: 4px;
+  }
+
+  nav[role="hamburger-home"] #menu-button:after {
+    height: 8px;
+    top: 28px;
+    border-top: 4px solid #dddddd;
+    border-bottom: 4px solid #dddddd;
+  }
+
+}
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
@@ -1664,6 +1736,10 @@ article[role="articleHome"] {
     padding-bottom: 20px;
     border-bottom: #ddd;
     border-bottom-style: solid;
+  }
+
+  #header-subctr-wrapper {
+    display: none;
   }
 }
 
@@ -1713,6 +1789,14 @@ article[role="articleHome"] {
   .header nav > ul > li + li {
       border-left: none;
   }
+
+  nav[role="toc"] {
+    display: none;
+  }
+
+  article[role="article"] {
+    margin-left: 0;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -1747,10 +1831,6 @@ article[role="articleHome"] {
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
-  }
-
-  body {
-    background-color: white;
   }
 
   main {
@@ -1798,11 +1878,11 @@ article[role="articleHome"] {
   }
 
   #header-askq:after {
-      visibility: visible;
+    visibility: visible;
   }
 
   #header-askq:after {
-      visibility: visible;
+    visibility: visible;
   }
 
   li.has-sub:first-child {
@@ -1819,6 +1899,32 @@ article[role="articleHome"] {
 
   .header nav > ul > li + li {
     border-left: 1px solid #00A4E4;
+  }
+
+  #header-subctr-wrapper {
+    display: inline-block;
+  }
+
+  .subctr.active a {
+    border-bottom: 4px solid #337ab7;
+    padding-bottom: 17px;
+  } 
+
+  .header {
+    padding: 10px 0 0 0;
+    height: 57px;
+  }
+
+  nav[role="toc"] {
+    display: block;
+  }
+
+  article[role="article"] {
+    margin-left: 302px;
+  }
+
+  article[role="article"] {
+    height: 100%;
   }
 
 }
