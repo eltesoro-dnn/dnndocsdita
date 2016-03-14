@@ -12,6 +12,21 @@
                 </a>
                 <div class="site-title">Documentation Center</div>
             </div>
+
+            <div id="header-subctr-wrapper">
+                <!-- If the active subcenter must always be the first, uncomment the next line and comment out the "$sitetitle  =" lines.  -->
+                <!-- <li class="subctr active"><xsl:value-of select="$sitetitle" /> -->
+
+                <xsl:if test="$sitetitle  ='Administrators'"><div class="subctr active"><a href="/Administrators/index.html">Administrators</a></div></xsl:if>
+                <xsl:if test="$sitetitle !='Administrators'"><div class="subctr"><a href="/Administrators/index.html">Administrators</a></div></xsl:if>
+
+                <xsl:if test="$sitetitle  ='Developers'"><div class="subctr active"><a href="/Developers/index.html">Developers</a></div></xsl:if>
+                <xsl:if test="$sitetitle !='Developers'"><div class="subctr"><a href="/Developers/index.html">Developers</a></div></xsl:if>
+
+                <xsl:if test="$sitetitle  ='Designers'"><div class="subctr active"><a href="/Designers/index.html">Designers</a></div></xsl:if>
+                <xsl:if test="$sitetitle !='Designers'"><div class="subctr"><a href="/Designers/index.html">Designers</a></div></xsl:if>
+            </div>
+
             <div class="header-nav-wrapper">
                 <nav role="hamburger-home">
 
