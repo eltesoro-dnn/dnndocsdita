@@ -38,6 +38,8 @@ if _%_blddir%_      EQU __    set _blddir=v:\bld\%_transtype%
 if _%_outdir%_      EQU __    set _outdir=v:\output\%_transtype%
 if _%_logdir%_      EQU __    set _logdir=v:\logs
 if _%_logfile%_     EQU __    set _logfile=%_logdir%\%_transtype%.log
+if _%_outext%_      EQU __    set _outext=.html
+:. Remember to replace the links in the root index.html
 
 if _"%JAVA_HOME%"_  EQU _""_  set JAVA_HOME="%ProgramFiles%"\Java\jdk1.8.0_72
 set DITA_HOME=C:\dita-ot
@@ -105,7 +107,8 @@ rd /s/q %_outdir%\common\glossary >nul
 
 
 :. runas /user:administrator /profile "%~f0\v2iis.bat %outdir%\%_transtype% c:\inetpub\wwwroot"
-start %_outdir%
+:. start %_outdir%
+start c:\z\docbuild\output\%_transtype%
 start c:\inetpub\wwwroot
 
 goto :eof
