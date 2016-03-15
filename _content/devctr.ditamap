@@ -39,8 +39,8 @@
                 <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/StartVSProjWithTemplates.dita" />
             </topicref>
             <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/TestModule.dita" />
-            <topicref format="dita" type="task" navtitle="Create the Package"   toc="yes" href="Developers/Extensions/CreatePackage.dita" />
-            <topicref format="dita" type="task" navtitle="Install an Extension" toc="yes" href="Developers/Extensions/InstallExtension.dita" />
+            <topicref format="dita" type="task" navtitle="Pack the Module"   toc="yes" href="Developers/Extensions/PackExtension.dita" />
+            <topicref format="dita" type="task" navtitle="Install a Module" toc="yes" href="Developers/Extensions/InstallExtension.dita" />
         </topicref>
 
         <!-- Local references -->
@@ -96,7 +96,7 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task" navtitle="Create the Package"   href="Developers/Extensions/CreatePackage.dita" />
+                <topicref format="dita" type="task" navtitle="Pack Your Extension"  href="Developers/Extensions/PackExtension.dita" />
                 <topicref format="dita" type="task" navtitle="Install an Extension" href="Developers/Extensions/InstallExtension.dita" />
             </relcell>
             <relcell/>
@@ -105,7 +105,7 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task" navtitle="Create the Package" href="Developers/Extensions/CreatePackage.dita" />
+                <topicref format="dita" type="task" navtitle="Pack Your Extension" href="Developers/Extensions/PackExtension.dita" />
             </relcell>
             <relcell>
                 <!-- <topicref format="dita" type="reference" toc="yes" href="Designers/ContentsThemePack.dita" /> Topic not ready. -->
@@ -124,7 +124,7 @@
                 <topicref format="dita" type="topic"   href="Developers/CreatingModules/CreateModule.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task" navtitle="Create the Package" href="Developers/Extensions/CreatePackage.dita" />
+                <topicref format="dita" type="task" navtitle="Pack Your Extension" href="Developers/Extensions/PackExtension.dita" />
             </relcell>
             <relcell>
                 <topicref format="dita" type="topic" href="Developers/Providers.dita" />

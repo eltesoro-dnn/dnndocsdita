@@ -32,8 +32,8 @@
             <topicref format="dita" type="task" toc="yes" href="Designers/CreatingThemes/CreateContainer.dita" />
             <topicref format="dita" type="task" toc="yes" href="Designers/CreatingThemes/CreateCSS.dita" />
             <topicref format="dita" type="task" toc="yes" href="Designers/CreatingThemes/CreateDocTypeXML.dita" />
-            <topicref format="dita" type="task" navtitle="Create the Package"   toc="yes" href="Designers/Extensions/CreatePackage.dita" />
-            <topicref format="dita" type="task" navtitle="Install an Extension" toc="yes" href="Designers/Extensions/InstallExtension.dita" />
+            <topicref format="dita" type="task" navtitle="Pack the Theme"   toc="yes" href="Designers/Extensions/PackExtension.dita" />
+            <topicref format="dita" type="task" navtitle="Install a Theme" toc="yes" href="Designers/Extensions/InstallExtension.dita" />
             <!-- <topicref format="dita" type="task" href="Designers/CreatingThemes/TestTheme.dita" /> Topic not ready. -->
         </topicref>
 
@@ -88,7 +88,7 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task"      navtitle="Create the Package"      href="Designers/Extensions/CreatePackage.dita" />
+                <topicref format="dita" type="task"      navtitle="Pack Your Extension"     href="Designers/Extensions/PackExtension.dita" />
                 <topicref format="dita" type="task"      navtitle="Install an Extension"    href="Designers/Extensions/InstallExtension.dita" />
             </relcell>
             <relcell/>
@@ -97,7 +97,7 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task"      navtitle="Create the Package"      href="Designers/Extensions/CreatePackage.dita" />
+                <topicref format="dita" type="task"      navtitle="Pack Your Extension"     href="Designers/Extensions/PackExtension.dita" />
             </relcell>
             <relcell>
                 <!-- <topicref format="dita" type="reference" scope="peer" href="Developers/ContentsModulePack.dita" /> Topic not ready. -->
