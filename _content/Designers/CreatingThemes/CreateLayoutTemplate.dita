@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/task.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
 <task xml:lang="en" id="tsk-CreateLayoutTemplate">
 
     <title>Create a Layout Template</title>
@@ -17,21 +17,18 @@
 
     <taskbody>
 
+        <section id="overview">
+            <p conkeyref="k-themedef/layout"></p>
+            <p conkeyref="k-themedef/panerules"></p>
+
+            <note type="tip">ASP.NET might modify the control names (e.g., <codeph>div id</codeph>) when the page is rendered to avoid duplicate control names in a page. Instead of depending on the control name when styling, add a class attribute to each of the controls and refer to those class attributes in your CSS.</note>
+        </section>
+
+        <prereq><xref format="dita" href="../Setup/SetUpDNN.dita">A local DNN installation</xref> with <b>Host</b> permissions.</prereq>
+
         <steps>
 
             <step><cmd>Create a new file for the layout template.</cmd>
-                <info>
-                    <ul>
-                        <li>The layout template must contain at least one pane.</li>
-                        <li>Exactly one of the panes must be called <codeph>ContentPane</codeph>.</li>
-                        <li>Each pane must have a name that is unique within the page.</li>
-                        <li>All panes must be defined as a server control by adding <codeph>runat="server"</codeph> to the element.</li>
-                        <li>A pane can be one of the following HTML elements: &lt;td&gt; (table cells), &lt;div&gt;, &lt;p&gt;, and &lt;span&gt;.</li>
-                    </ul>
-
-                    <note type="tip">ASP.NET might modify the control names (e.g., <codeph>div id</codeph>) when the page is rendered to avoid duplicate control names in a page. Instead of depending on the control name when styling, add a class attribute to each of the controls and refer to those class attributes in your CSS.</note>
-                </info>
-
                 <stepxmp>
                     <p>A very basic layout template.</p>
                     <ul>

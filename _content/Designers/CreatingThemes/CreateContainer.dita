@@ -18,6 +18,8 @@
     <taskbody>
 
         <section id="overview">
+            <p conkeyref="k-themedef/container"></p>
+
             <p>Containers allow designers to seamlessly integrate modules from many different developers into a cohesive website design. Containers can also include visual elements that allow website users to interact with the module.</p>
             <ul>
                 <li>You can have a default container, which would be overridden by individual panes or modules if they provide their own style definitions.</li>
@@ -26,6 +28,7 @@
             </ul>
         </section>
 
+        <prereq><xref format="dita" href="../Setup/SetUpDNN.dita">A local DNN installation</xref> with <b>Host</b> permissions.</prereq>
 
         <steps>
             <step><cmd>Create a new file for the container.</cmd>
