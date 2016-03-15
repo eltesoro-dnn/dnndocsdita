@@ -6,7 +6,8 @@
 
 
     <!-- Keys. NOTE: Do NOT use keys for topics that need to have an "active" tag in the toc. -->
-    <keydef keys="k-bptext" href="common/bptext.dita#bptext" />
+    <keydef keys="k-bptext"   href="common/bptext.dita#bptext" />
+    <keydef keys="k-themeobj" href="Designers/ThemeObjects.dita#ref-ThemeObjects" />
 
 
     <!-- Topics -->
@@ -122,7 +123,10 @@
             <relcell>
                 <topicref format="dita" type="topic" href="Designers/CreatingThemes/CreateTheme.dita" />
             </relcell>
-            <relcell/>
+            <relcell>
+                <topicref format="dita" type="task" href="Designers/CreatingThemes/CreateLayoutTemplate.dita" />
+                <topicref format="dita" type="task" href="Designers/CreatingThemes/CreateContainer.dita" />
+            </relcell>
             <relcell>
                 <topicref format="dita" type="reference" navtitle="Theme Objects" href="Designers/ThemeObjects.dita" />
             </relcell>
