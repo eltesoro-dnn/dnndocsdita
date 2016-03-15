@@ -141,7 +141,9 @@
             <relcell>
                 <topicref format="dita" type="task" href="Developers/CreatingModules/CreateModuleUsingTemplates.dita" />
             </relcell>
-            <relcell/>
+            <relcell>
+                <topicref format="dita" type="topic" href="Developers/Providers.dita" />
+            </relcell>
         </relrow>
 
         <relrow>
