@@ -1196,6 +1196,7 @@ article[role="articleHome"] {
   min-width: 100%;
   height: 100%;
   overflow: visible;
+  overflow-x: hidden; 
   background-color: white;
 }
 
@@ -1464,6 +1465,7 @@ article[role="articleHome"] {
     width: 100%;
     border-top: 1px solid #888;
     border-bottom: 1px solid #888;
+    top: 72px;
   }
   nav[role="hamburger-home"].align-center > ul {
     text-align: left;
@@ -1833,8 +1835,12 @@ and (orientation : portrait) {
     width: 100%;
   }
 
-  .footer {
+  .footer, main:after {
     height: 30px;
+  }
+
+  .footer-index {
+    position: relative;
   }
 }
 
@@ -1876,10 +1882,6 @@ and (orientation : portrait) {
 
   .header nav > ul > li + li {
     border-left: none;
-  }
-
-  .footer, main:after {
-    height: 30px;
   }
 }
 
@@ -2038,6 +2040,10 @@ and (orientation : portrait) {
 
   .social-media-wrapper {
     display: inline-block!important;
+  }
+
+  .footer-index {
+    position: absolute;
   }
 }
 
