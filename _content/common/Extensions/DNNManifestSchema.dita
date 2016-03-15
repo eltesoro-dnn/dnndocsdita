@@ -22,12 +22,16 @@
     <refbody>
 
         <section id="overview">
-            <title>Schema overview</title>
 
             <p>The DNN <term>manifest</term> is an XML file (e.g., <filepath>MyDNNExtension.dnn</filepath>) that indicates how specific files in the extension package must be processed during installation.</p>
             <p>Only the files specifically declared in the manifest would be installed. Files inside any zip file specified in <codeph>component type="ResourceFile"</codeph> do not have to be listed individually. Nonexistent files mentioned in the manifest will cause an error message.</p>
             <p>The manifest file extension must be <codeph>.dnn</codeph>. You can add the DNN version at the end; e.g., <codeph>MyDNNExtension.dnn7</codeph>.</p> <!-- TODO: Change the extension to .dnn8 after the maintenance release that allows that. -->
             <p>Save the manifest file in the base folder of your package and include it when zipping your package files.</p>
+
+        </section>
+
+        <section id="schema">
+            <title>Schema</title>
 
             <codeblock>
     &lt;dotnetnuke type="Package" version="8.0"&gt;

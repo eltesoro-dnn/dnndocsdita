@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
 <task xml:lang="en" id="tsk-CreateContainer">
 
     <title>Create a Container</title>
@@ -17,14 +17,14 @@
 
     <taskbody>
 
-        <context id="overview">
+        <section id="overview">
             <p>Containers allow designers to seamlessly integrate modules from many different developers into a cohesive website design. Containers can also include visual elements that allow website users to interact with the module.</p>
             <ul>
                 <li>You can have a default container, which would be overridden by individual panes or modules if they provide their own style definitions.</li>
                 <li>You can use different containers in a single page.</li>
                 <li>You can mix and match any container with any CSS.</li>
             </ul>
-        </context>
+        </section>
 
 
         <steps>
@@ -57,17 +57,16 @@
             <step><cmd>(Optional) Add theme objects to your container for a more dynamic page.</cmd>
                 <info>
                     <p>The following theme objects are relevant to containers:</p>
-                    <ul>
-                        <li>ACTIONBUTTON</li>
-                        <!-- <li>ACTIONS</li> Was this deprecated? -->
-                        <li>DROPDOWNACTIONS</li>
-                        <li>ICON</li>
-                        <li>LINKACTIONS</li>
-                        <li>PRINTMODULE</li>
-                        <li>TITLE</li>
-                        <li>VISIBILITY</li>
-                    </ul>
-                    <note conkeyref="k-bptext/note-TipSkinningTool"></note>
+                    <simpletable relcolwidth="1* 3*">
+                        <strow conkeyref="k-themeobj/ACTIONBUTTON"></strow>
+                        <strow conkeyref="k-themeobj/ACTIONBUTTON"></strow>
+                        <strow conkeyref="k-themeobj/DROPDOWNACTIONS"></strow>
+                        <strow conkeyref="k-themeobj/ICON"></strow>
+                        <strow conkeyref="k-themeobj/LINKACTIONS"></strow>
+                        <strow conkeyref="k-themeobj/PRINTMODULE"></strow>
+                        <strow conkeyref="k-themeobj/TITLE"></strow>
+                        <strow conkeyref="k-themeobj/VISIBILITY"></strow>
+                    </simpletable>
                 </info>
             </step>
         </steps>
@@ -76,11 +75,10 @@
 
 
     <related-links>
-        <link format="dita" href="./CreateCSS.dita"><linktext>Create CSS</linktext></link>
-        <link format="dita" href="./CreateLayoutTemplate.dita"><linktext>Create Layout Template</linktext></link>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><linktext>DNN Wiki: DotNetNuke Skins</linktext></link>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/131995/dotnetnuke-skinning-101-part-3"><linktext>DNN Community blog: DotNetNuke Skinning 101 (Part 3) by Joe Brinkman</linktext></link>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/services/professional-training/training-videos-subscription/skinning-2-creating-html-skins"><linktext>DNN Professional Training: Creating HTML Skins</linktext></link>
+        <link format="html" scope="external" href="http://www.10poundgorilla.com"><linktext>Skinning Tool / Online Reference for DNN Skins &amp; Container Objects by 10 Pound Gorilla</linktext></link>
     </related-links>
 
 </task>

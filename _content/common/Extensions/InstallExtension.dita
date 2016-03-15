@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="myID">
+<task xml:lang="en" id="tsk-InstallExtension">
 
     <title>Install an Extension</title>
 
@@ -19,7 +19,7 @@
 
     <taskbody>
 
-        <section>
+        <section id="overview">
             <p>A DNN extension can contain a <term>module</term>, a <term>theme</term>, or other components that extend the functionality of the DNN Platform.</p>
             <p conkeyref="k-bptext/p-3rdPartyExtensions"></p>
             <p>You can also create your custom <xref format="dita" scope="peer" href="../../dev/CreatingModules/CreateModule.dita">modules</xref> and <xref format="dita" scope="peer" href="../../design/CreatingThemes/CreateTheme.dita">themes</xref>.</p>

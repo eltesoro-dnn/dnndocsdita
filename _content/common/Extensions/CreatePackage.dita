@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="myID">
+<task xml:lang="en" id="tsk-CreatePackage">
 
     <title>Create the Package</title>
     <titlealts>
@@ -21,7 +21,7 @@
 
     <taskbody>
 
-        <section>
+        <section id="overview">
             <p>For easier distribution and installation, the components of an extension (theme or module) can be bundled into a package. An extension <term>package</term> is simply a zip file that contains all the files required by your extension. The most important part of the process is creating the <term>DNN Manifest</term>, which provides information required by the installer, such as the target locations for the files.</p>
 
             <p>If you use the DNN templates and compile in Visual Studio, the <uicontrol>Release</uicontrol> build creates the zip file for you.</p>
@@ -78,7 +78,6 @@
 
 
     <related-links>
-        <link format="dita" href="./InstallExtension.dita"><linktext>Install an Extension</linktext></link>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/services/professional-training/training-videos-subscription/skinning-5-packaging"><linktext>DNN Professional Training video: Skinning 5: Packaging</linktext></link>
     </related-links>
 

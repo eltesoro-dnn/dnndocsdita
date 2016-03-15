@@ -17,40 +17,56 @@
 
     <taskbody>
 
-        <context>If a page is not rendering properly in some browsers, you can force the theme to be rendered in XHTML or HTML5 by creating a DocType XML file.</context>
+        <section id="overview">
+            <p>A design intended to be viewed using HTML 5 will not look correct if rendered using the XHTML or HTML 4 specification. You can force the theme to be rendered in XHTML or HTML5 by creating a DocType XML file (<filepath>skin.doctype.xml</filepath>), which is applied to all layouts in the theme. In addition, themes can contain a separate DocType file for any individual layout template to override the theme's DocType declaration.</p>
+
+            <note type="note">If no DocType is specified, then the DocType specified in <menucascade><uicontrol>Host</uicontrol> <uicontrol>Host Settings</uicontrol></menucascade> will be used. By default, DNN uses the HTML 4.0 Transitional DocType (<codeph>&lt;!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"&gt;</codeph>).</note>
+        </section>
 
         <steps>
 
-            <step><cmd>Create a DocType XML file with the same name as your layout template file, followed by <filepath>.doctype.xml</filepath>.</cmd>
-                 <stepxmp> If your layout template file is called <filepath>MyAwesomeLayout.html</filepath>, give your DocType file the name <filepath>MyAwesomeLayout.doctype.xml</filepath>. </stepxmp>
+            <step><cmd>Create a DocType XML file.</cmd>
+                <choices>
+                    <choice>If the DocType is for the entire theme, the file must be named <filepath>skin.doctype.xml</filepath>.</choice>
+                    <choice>If the DocType is for a specific layout template, the file must have the same name as your layout template file, followed by <filepath>.doctype.xml</filepath>.</choice>
+                </choices>
+                <stepxmp> If your layout template file is called <filepath>MyAwesomeLayout.html</filepath>, its specific DocType file must be named <filepath>MyAwesomeLayout.doctype.xml</filepath>. </stepxmp>
             </step>
 
             <step><cmd>Enter the appropriate code in your DocType file.</cmd>
-                <info>
-                    <ul>
-                        <li>For XHTML Strict,
-                            <codeblock>
+                <choices>
+                    <choice>HTML 4.01 Transitional
+                        <codeblock>
+    &lt;SkinDocType&gt;
+        &lt;![CDATA[&lt;!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd"&gt;]]&gt;
+    &lt;/SkinDocType&gt;
+                        </codeblock>
+                    </choice>
+
+                    <choice>XHTML Strict
+                        <codeblock>
     &lt;SkinDocType&gt;
         &lt;![CDATA[&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"&gt;]]&gt;
     &lt;/SkinDocType&gt;
-                            </codeblock>
-                        </li>
-                        <li>For XHTML Transitional,
-                            <codeblock>
+                        </codeblock>
+                    </choice>
+
+                    <choice>XHTML Transitional
+                        <codeblock>
     &lt;SkinDocType&gt;
         &lt;![CDATA[&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"&gt;]]&gt;
     &lt;/SkinDocType&gt;
-                            </codeblock>
-                        </li>
-                        <li>For HTML5,
-                            <codeblock>
+                        </codeblock>
+                    </choice>
+
+                    <choice>HTML5
+                        <codeblock>
     &lt;SkinDocType&gt;
         &lt;![CDATA[&lt;!DOCTYPE html&gt;]]&gt;
     &lt;/SkinDocType&gt;
-                            </codeblock>
-                        </li>
-                    </ul>
-                </info>
+                        </codeblock>
+                    </choice>
+                </choices>
             </step>
 
         </steps>

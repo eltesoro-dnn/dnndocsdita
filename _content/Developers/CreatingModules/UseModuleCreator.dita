@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="myID">
+<task xml:lang="en" id="tsk-UseModuleCreator">
 
     <title>Use the Module Creator</title>
     <titlealts>
@@ -52,21 +52,21 @@
             </step>
             <step>
                 <cmd>Go to <menucascade><uicontrol>Module</uicontrol> <uicontrol>Add New Module</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddNew.png"><alt></alt></image></info>
+                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddNew.png"><alt>Module - Add New Module</alt></image></info>
             </step>
             <step>
                 <cmd>Search for the Module Creator among the installed modules.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesList04ModuleCreator.png"><alt></alt></image></info>
+                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesList04ModuleCreator.png"><alt>Search for Module Creator.</alt></image></info>
             </step>
             <step>
                 <cmd>Drag the Module Creator module to any pane in the webpage.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesModuleCreatorDrag.png"><alt></alt></image></info>
+                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesModuleCreatorDrag.png"><alt>Drag to a pane.</alt></image></info>
             </step>
             <step>
                 <cmd>Fill in the Module Creation form.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleCreatorForm.png"><alt></alt></image>
-                    <simpletable relcolwidth="1* 1*">
+                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleCreatorForm.png"><alt>Module Creation form</alt></image>
+                    <simpletable relcolwidth="1* 3*">
                         <strow>
                             <stentry><uicontrol>Owner Name</uicontrol></stentry>
                             <stentry>Name of your organization. Must contain only alphanumeric characters. Used to create a folder to distinguish your modules from those created by other module creators.  Also used as the namespace for your code.</stentry>
@@ -110,19 +110,19 @@
                     <substep>
                         <cmd>From the gear icon, choose <uicontrol>Develop</uicontrol>.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleGearMenuDevelop.png"><alt></alt></image>
+                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleGearMenuDevelop.png"><alt>(gear) - Develop</alt></image>
                         </info>
                     </substep>
                     <substep>
                         <cmd>In the <filepath>View.ascx</filepath> file, delete all the lines of code, except the first one.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleViewAscx.png"><alt></alt></image>
+                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleViewAscx.png"><alt>In View.ascx, delete all except first line.</alt></image>
                         </info>
                     </substep>
                     <substep>
                         <cmd>Add markup to customize the module. Then click <uicontrol>Update</uicontrol> to save your changes.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleCustomize.png"><alt></alt></image>
+                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleCustomize.png"><alt>Customize the module.</alt></image>
                         </info>
                         <stepxmp>Example:
                             <codeblock> <!-- aspx-cs -->
@@ -133,13 +133,13 @@
                     <substep>
                         <cmd>From the <uicontrol>Select File</uicontrol> dropdown, choose the <filepath>View.ascx.cs</filepath> file.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleViewAscxCs.png"><alt></alt></image>
+                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleViewAscxCs.png"><alt>Select View.ascx.cs.</alt></image>
                         </info>
                     </substep>
                     <substep>
                         <cmd>Remove all the code in the <uicontrol>Event Handlers</uicontrol> region and click <uicontrol>Update</uicontrol> to save your changes.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleDeleteEventHandlers.png"><alt></alt></image>
+                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleDeleteEventHandlers.png"><alt>Remove Event Handlers.</alt></image>
                         </info>
                     </substep>
                 </substeps>

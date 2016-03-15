@@ -32,13 +32,13 @@
             <step><cmd><xref format="dita" href="./StartVSProjWithTemplates.dita">Start a Visual Studio project using DNN templates.</xref></cmd></step>
 
             <step><cmd>Modify the Visual Studio project to add functionality to your new module.</cmd>
-                <info>
+                <!-- <info>
                     <ul>
                         <li><xref format="dita" href="../../common/placeholderlink.dita">Create a Web Forms module using templates.</xref></li>
                         <li><xref format="dita" href="../../common/placeholderlink.dita">Create an MVC module using templates.</xref></li>
                         <li><xref format="dita" href="../../common/placeholderlink.dita">Create a SPA module using templates.</xref></li>
                     </ul>
-                </info>
+                </info> -->
             </step>
 
             <step><cmd>Build, debug, and package.</cmd>
@@ -60,9 +60,7 @@
 
 
     <related-links>
-        <!-- <link format="dita" href="../ContentsModulePack.dita"><linktext>Contents of a Module Package</linktext></link> -->
-        <link format="dita" href="../Providers.dita"><linktext>Providers Reference</linktext></link>
-        <link format="dita" href="../../common/placeholderlink.dita"><linktext>DNN 8 API Reference</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/dnn-api/"><linktext>DNN API Reference</linktext></link>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/module-development"><linktext>DNN Wiki: Module Development</linktext></link>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155064/module-development-for-non-developers-skinners-dnn-beginners--blog-series-intro"><linktext>DNN Community Blog: Module Development series by Clinton Patterson</linktext></link>
         <link format="html" scope="external" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot"><linktext>Using the new Module Development Templates for DotNetNuke 7 by Chris Hammond</linktext></link>
