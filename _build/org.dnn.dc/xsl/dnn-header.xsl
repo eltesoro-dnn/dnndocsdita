@@ -10,7 +10,7 @@
                 <a class="logo" href="/"> <!-- href="http://www.dnnsoftware.com/docs"> -->
                     <img src="/_theme/DNN_logo_28px.png" alt="DNN Logo" />
                 </a>
-                <div class="site-title">Documentation Center</div>
+                <!-- <div class="site-title">Documentation Center</div> -->
             </div>
 
             <div id="header-subctr-wrapper">
