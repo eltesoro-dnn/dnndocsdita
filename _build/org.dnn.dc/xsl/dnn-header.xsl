@@ -49,8 +49,8 @@
                         <li><a href="http://www.dnnsoftware.com/community/download">Download</a></li>
                         <li id="header-askq"> <a href="#">Ask a Question</a>
                             <ul id="header-subnav-support">
-                                <li><a href="http://www.dnnsoftware.com/answers">about DNN Platform</a></li>
-                                <li><a href="http://www.dnnsoftware.com/services/customer-support">about DNN Evoq</a></li>
+                                <li><a href="http://www.dnnsoftware.com/answers">DNN Platform</a></li>
+                                <li><a href="http://www.dnnsoftware.com/services/customer-support">DNN Evoq</a></li>
                             </ul>
                         </li>
                     </ul>
