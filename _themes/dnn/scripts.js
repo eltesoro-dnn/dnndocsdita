@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-    // alert("Your book is overdue.");
-
     // adjust the HTML rendered by Sphinx for the TOC
     $('nav[role="toc"] > ul')
         .attr({
@@ -18,9 +16,20 @@ $(document).ready(function() {
         .children('li')
         .addClass('sub-nav-tabs');
 
-    var openElement = $('nav[role="toc"]').find('.active');
-
-    openMenuItemOnLoad(openElement);
+    // set active class to parent
+    // $(function() {
+    //     var pgurl = window.location.pathname.substr(1);
+    //      $("nav[role='toc'] ul li a").each(function(){
+    //             var tmpUrl = $(this).attr("href").replace('../..','').replace('../','');
+    //             if (tmpUrl.indexOf('/') == 0) {
+    //                 tmpUrl = tmpUrl.substr(1);
+    //             }
+    //          if(tmpUrl == pgurl || tmpUrl == '' ){
+    //           $(this).parent('li').addClass("active");
+    //           openMenuItemOnLoad($(this).parent('li'));
+    //         }
+    //      })
+    // });
 
     // add triangle to parents
     $("nav[role='toc'] > ul > li").each(function(){
@@ -44,8 +53,11 @@ $(document).ready(function() {
             event.stopPropagation();
             });
         });
-
     });
+
+    var openElement = $('nav[role="toc"]').find('.active');
+
+    openMenuItemOnLoad(openElement);
 
     // open menus and rotate arrows with a slide toggle/toggle class
     function openMenuItem(element){
@@ -67,7 +79,7 @@ $(document).ready(function() {
 
 });
 
-
+// hamburger menu
 
 (function($) {
 
