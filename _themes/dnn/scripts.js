@@ -83,7 +83,7 @@ $(document).ready(function() {
 
 (function($) {
 
-  $.fn.menumaker = function(options) {
+  $.fn.mymenu = function(options) {
 
       var cssmenu = $(this), settings = $.extend({
         title: "",
@@ -141,6 +141,7 @@ $(document).ready(function() {
           }
 
           if ($(window).width() <= 992) {
+          	$("nav[role='toc']").hide();
           }
         };
         resizeFix();
@@ -151,12 +152,12 @@ $(document).ready(function() {
 })(jQuery);
 
 (function($){
-$(document).ready(function(){
+	$(document).ready(function(){
 
-$("nav[role='hamburger-home']").menumaker({
-   title: "",
-   format: "multitoggle"
-});
+		$("nav[role='hamburger-home']").mymenu({
+		   title: "",
+		   format: "multitoggle"
+		});
 
-});
+	});
 })(jQuery);
