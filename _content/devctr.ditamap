@@ -24,13 +24,13 @@
         </topicref>
 
         <!-- Creating modules -->
-        <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/ModuleDevelopment.dita" collection-type="family">
-            <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/ModuleFeatures.dita" />
-            <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/ModuleArchitecture.dita" />
-            <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/WebFormsModuleDevelopment.dita" />
-            <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/MVCModuleDevelopment.dita" />
-            <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/SPAModuleDevelopment.dita" />
-            <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/UnsupportedMVCFeatures.dita" />
+        <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/ModuleDevelopment.dita" collection-type="family">
+            <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/ModuleFeatures.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/ModuleArchitecture.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/WebFormsModuleDevelopment.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/MVCModuleDevelopment.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/SPAModuleDevelopment.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/UnsupportedMVCFeatures.dita" />
         </topicref>
 
         <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/CreateModule.dita" collection-type="sequence">
@@ -117,10 +117,10 @@
         <!-- Specific to this center. -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept" href="Developers/CreatingModules/ModuleDevelopment.dita" />
-                <topicref format="dita" type="concept" href="Developers/CreatingModules/WebFormsModuleDevelopment.dita" />
-                <topicref format="dita" type="concept" href="Developers/CreatingModules/MVCModuleDevelopment.dita" />
-                <topicref format="dita" type="concept" href="Developers/CreatingModules/SPAModuleDevelopment.dita" />
+                <topicref format="dita" type="concept" href="Developers/AboutModules/ModuleDevelopment.dita" />
+                <topicref format="dita" type="concept" href="Developers/AboutModules/WebFormsModuleDevelopment.dita" />
+                <topicref format="dita" type="concept" href="Developers/AboutModules/MVCModuleDevelopment.dita" />
+                <topicref format="dita" type="concept" href="Developers/AboutModules/SPAModuleDevelopment.dita" />
                 <topicref format="dita" type="topic"   href="Developers/CreatingModules/CreateModule.dita" />
             </relcell>
             <relcell>
@@ -135,8 +135,8 @@
 
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept" href="Developers/CreatingModules/MVCModuleDevelopment.dita" />
-                <topicref format="dita" type="concept" href="Developers/CreatingModules/SPAModuleDevelopment.dita" />
+                <topicref format="dita" type="concept" href="Developers/AboutModules/MVCModuleDevelopment.dita" />
+                <topicref format="dita" type="concept" href="Developers/AboutModules/SPAModuleDevelopment.dita" />
             </relcell>
             <relcell>
                 <topicref format="dita" type="task" href="Developers/CreatingModules/CreateModuleUsingTemplates.dita" />
@@ -167,9 +167,9 @@
 
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept" href="Developers/CreatingModules/WebFormsModuleDevelopment.dita" />
-                <topicref format="dita" type="concept" href="Developers/CreatingModules/MVCModuleDevelopment.dita" />
-                <topicref format="dita" type="concept" href="Developers/CreatingModules/SPAModuleDevelopment.dita" />
+                <topicref format="dita" type="concept" href="Developers/AboutModules/WebFormsModuleDevelopment.dita" />
+                <topicref format="dita" type="concept" href="Developers/AboutModules/MVCModuleDevelopment.dita" />
+                <topicref format="dita" type="concept" href="Developers/AboutModules/SPAModuleDevelopment.dita" />
             </relcell>
             <relcell>
                 <topicref format="dita" type="task" href="Developers/CreatingModules/UseModuleCreator.dita" />
