@@ -16,15 +16,15 @@
         <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="Developers/OverviewDNNPlatform.dita" />
 
         <!-- Setup -->
-        <topicref format="dita" type="topic" toc="yes" href="Developers/Setup/SetUpDNN.dita" collection-type="sequence" >
+        <topicref format="dita" type="topic" toc="yes" href="Developers/Setup/SetUpDNN.dita" copy-to="Developers/Setup/index.dita" collection-type="sequence" >
             <topicref format="dita" type="task" toc="yes" href="Developers/Setup/SetUpDNNFolder.dita" />
             <topicref format="dita" type="task" toc="yes" href="Developers/Setup/SetUpIIS.dita" />
             <topicref format="dita" type="task" toc="yes" href="Developers/Setup/SetUpSQL.dita" />
             <topicref format="dita" type="task" toc="yes" href="Developers/Setup/RunInstWiz.dita" />
         </topicref>
 
-        <!-- Creating modules -->
-        <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/ModuleDevelopment.dita" collection-type="family">
+        <!-- About modules -->
+        <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/ModuleDevelopment.dita" copy-to="Developers/AboutModules/index.dita" collection-type="family">
             <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/ModuleFeatures.dita" />
             <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/ModuleArchitecture.dita" />
             <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/WebFormsModuleDevelopment.dita" />
@@ -33,11 +33,11 @@
             <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/UnsupportedMVCFeatures.dita" />
         </topicref>
 
-        <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/CreateModule.dita" collection-type="sequence">
+        <!-- Creating modules -->
+        <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/CreateModule.dita" copy-to="Developers/CreatingModules/index.dita" collection-type="sequence">
             <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/UseModuleCreator.dita" />
-            <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/CreateModuleUsingTemplates.dita" collection-type="sequence">
-                <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/StartVSProjWithTemplates.dita" />
-            </topicref>
+            <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/CreateModuleUsingTemplates.dita" />
+            <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/StartVSProjWithTemplates.dita" />
             <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/TestModule.dita" />
             <topicref format="dita" type="task" navtitle="Pack the Module"   toc="yes" href="Developers/Extensions/PackExtension.dita" />
             <topicref format="dita" type="task" navtitle="Install a Module" toc="yes" href="Developers/Extensions/InstallExtension.dita" />
@@ -45,6 +45,7 @@
 
         <!-- Local references -->
         <topicref format="dita" type="topic" toc="yes" href="Developers/DevRefs.dita" collection-type="family">
+            <topicref format="html" scope="external" navtitle="DNN API Reference" toc="yes" href="http://www.dnnsoftware.com/dnn-api/" />
             <topicref format="dita" type="topic"   toc="yes" href="Developers/Providers.dita" />
             <topicref format="dita" type="concept" toc="yes" href="Developers/AboutEVS.dita" />
             <!-- <topicref format="dita" type="reference" toc="yes" href="Developers/ContentsModulePack.dita" /> Topic not ready. -->
@@ -52,8 +53,6 @@
         </topicref>
 
         <!-- Important global references -->
-        <topicref format="html" scope="external" navtitle="DNN API Reference" toc="yes" href="http://www.dnnsoftware.com/dnn-api/" />
-
         <topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="Developers/glossary-dev.dita" >
             <mapref href="common/Glossary/glossary.ditamap" />
         </topichead>

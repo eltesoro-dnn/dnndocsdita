@@ -100,8 +100,13 @@ xcopy %_gitdir%\_themes\dnn\*.jpg         %_outdir%\_theme           /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\*.png         %_outdir%\_theme           /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\*.js          %_outdir%\_theme           /i/s/v/y
 
+:. The following is a hack.
+xcopy %_outdir%\Developers\CreatingModules\index.html %_outdir%\Developers\Extensions /v
+xcopy %_outdir%\Designers\CreatingThemes\index.html %_outdir%\Designers\Extensions /v
+
+
 echo Deleting files we don't need ....
-:. del %_outdir%\toc.html /q >nul
+del %_outdir%\toc.html /q >nul
 rd /s/q %_outdir%\common\glossary >nul
 
 

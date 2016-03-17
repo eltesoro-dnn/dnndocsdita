@@ -18,16 +18,18 @@
         <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="Designers/OverviewDNNPlatform.dita" />
 
         <!-- Setup -->
-        <topicref format="dita" type="topic" toc="yes" href="Designers/Setup/SetUpDNN.dita" collection-type="sequence">
+        <topicref format="dita" type="topic" toc="yes" href="Designers/Setup/SetUpDNN.dita" copy-to="Designers/Setup/index.dita" collection-type="sequence">
             <topicref format="dita" type="task" toc="yes" href="Designers/Setup/SetUpDNNFolder.dita" />
             <topicref format="dita" type="task" toc="yes" href="Designers/Setup/SetUpIIS.dita" />
             <topicref format="dita" type="task" toc="yes" href="Designers/Setup/SetUpSQL.dita" />
             <topicref format="dita" type="task" toc="yes" href="Designers/Setup/RunInstWiz.dita" />
         </topicref>
 
-        <!-- Creating themes -->
+        <!-- About themes -->
         <topicref format="dita" type="concept" toc="yes" href="Designers/AboutThemes.dita" />
-        <topicref format="dita" type="topic" toc="yes" href="Designers/CreatingThemes/CreateTheme.dita" collection-type="sequence">
+
+        <!-- Creating themes -->
+        <topicref format="dita" type="topic" toc="yes" href="Designers/CreatingThemes/CreateTheme.dita" copy-to="Designers/CreatingThemes/index.dita" collection-type="sequence">
             <topicref format="dita" type="task" toc="yes" href="Designers/CreatingThemes/CreateLayoutTemplate.dita" />
             <topicref format="dita" type="task" toc="yes" href="Designers/CreatingThemes/CreateContainer.dita" />
             <topicref format="dita" type="task" toc="yes" href="Designers/CreatingThemes/CreateCSS.dita" />

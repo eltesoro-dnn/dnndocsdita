@@ -16,7 +16,7 @@
         <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="Administrators/OverviewDNNPlatform.dita" />
 
         <!-- Setup -->
-        <topicref format="dita" type="topic" toc="yes" href="Administrators/Setup/SetUpDNN.dita" collection-type="sequence">
+        <topicref format="dita" type="topic" toc="yes" href="Administrators/Setup/SetUpDNN.dita" copy-to="Administrators/Setup/index.dita" collection-type="sequence">
             <topicref format="dita" type="task" toc="yes" href="Administrators/Setup/SetUpDNNFolder.dita" />
             <topicref format="dita" type="task" toc="yes" href="Administrators/Setup/SetUpIIS.dita" />
             <topicref format="dita" type="task" toc="yes" href="Administrators/Setup/SetUpSQL.dita" />
@@ -26,7 +26,7 @@
         <topicref format="dita" type="task" navtitle="Install an Extension" toc="yes" href="Administrators/Extensions/InstallExtension.dita" />
 
         <!-- Licensing -->
-        <topicref type="topic" format="dita" navtitle="Licensing" toc="yes" href="Administrators/Licensing/Licensing.dita" collection-type="family">
+        <topicref type="topic" format="dita" navtitle="Licensing" toc="yes" href="Administrators/Licensing/Licensing.dita" copy-to="Administrators/Licensing/index.dita" collection-type="family">
             <topicref type="task"  format="dita" navtitle="Activate Automatically" toc="yes" href="Administrators/Licensing/ActivateLicenseAutomatically.dita" />
             <topicref type="task"  format="dita" navtitle="Activate Manually"      toc="yes" href="Administrators/Licensing/ActivateLicenseManually.dita" />
             <topicref type="topic" format="dita" navtitle="FAQ"                    toc="yes" href="Administrators/Licensing/FAQLicensing.dita" />
