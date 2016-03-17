@@ -1465,7 +1465,7 @@ article[role="articleHome"] {
     width: 100%;
     border-top: 1px solid #888;
     border-bottom: 1px solid #888;
-    top: 72px;
+    margin-top: 13px;
   }
   nav[role="hamburger-home"].align-center > ul {
     text-align: left;
@@ -1685,6 +1685,19 @@ main[role="main-index"] {
   bottom: 0;
 }
 
+ul.ullinks {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.note_important {
+  background-color: #f8bebe;
+}
+
+span.importanttitle {
+  color: red!important;
+}
+
 /* RESPONSIVE STYLES */
 
 /* iPhone 6 Portrait */
@@ -1759,6 +1772,7 @@ and (orientation : portrait) {
     background-color: #888;
     border-top: 2px solid #888;
     border-bottom: 2px solid #888;
+    margin-top: 0;
   }
 
   nav[role="hamburger-home"] > ul > li.has-sub > span:before {
@@ -1774,7 +1788,7 @@ and (orientation : portrait) {
   }
 
   nav[role="hamburger-home"] .submenu-button {
-    border-left: 2px solid rgba(120, 120, 120, 0.2);
+    border-left: 4px solid rgba(120, 120, 120, 0.2);
     height: 80px;
   }
 
@@ -1788,6 +1802,10 @@ and (orientation : portrait) {
 
   .social-media-wrapper {
     display: none!important;
+  }
+
+  .footer, main:after {
+    height: 60px!important;
   }
 }
 
@@ -1805,10 +1823,10 @@ and (orientation : portrait) {
   #welcome-hero {
     text-align: center;
     display: block;
-    width: 150%;
+    width: 100%;
     margin: auto;
     float: center;
-    margin-left: -24.75%;
+    margin-left: 0;
     margin-bottom: 100px;
     margin-top: 20px;
   }
@@ -2042,8 +2060,8 @@ and (orientation : portrait) {
     display: inline-block!important;
   }
 
-  .footer-index {
-    position: absolute;
+  nav[role="toc"] ul li a {
+    padding-right: 100%;
   }
 }
 
