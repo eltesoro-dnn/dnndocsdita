@@ -129,7 +129,7 @@ $(document).ready(function() {
 
         resizeFix = function() {
           if ($( window ).width() > 992) {
-            // cssmenu.find('ul').show();
+            $("nav[role='toc']").show();
 
             // show nav menu drop downs on hover toggle
             $(".site-subtitle").hover(function () {
@@ -141,7 +141,6 @@ $(document).ready(function() {
           }
 
           if ($(window).width() <= 992) {
-            // cssmenu.find('ul').hide().removeClass('open');
           }
         };
         resizeFix();

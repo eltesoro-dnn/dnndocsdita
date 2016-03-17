@@ -723,10 +723,10 @@ ul.simple {
   padding-left: 1em;
 }
 
-.step > .cmd {
+/*.step > .cmd {
   font-size: 125%;
 }
-
+*/
 .stepexpand {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -866,7 +866,7 @@ article .glossentry {
   margin: 5em 0 0 0;
 }
 
-/* MY NEW STYLES */
+/* NEW STYLES */
 
 .toc-aria-arrow-closed::before {
   cursor: pointer;
@@ -1179,8 +1179,7 @@ a#designer-card > .card-title {
   box-shadow: 0 0 0 #333;
   transform-origin: bottom;
   margin-bottom: 50px;
-/*  max-width: 450px;
-*/}
+}
 
 .home-card .card-img {
   width: 100%;
@@ -1397,8 +1396,7 @@ article[role="articleHome"] {
     margin-right: 100%;
   }
   nav[role="hamburger-home"] ul ul li a {
-/*    border-bottom: 1px solid rgba(150, 150, 150, 0.15);
-*/    padding: 30px 15px;
+    padding: 30px 15px;
     width: 170px;
     font-size: 14px;
     text-decoration: none;
@@ -1472,8 +1470,7 @@ article[role="articleHome"] {
   }
   nav[role="hamburger-home"] ul li {
     width: 100%;
-/*    border-top: 1px solid rgba(120, 120, 120, 0.2);
-*/  }
+  }
   nav[role="hamburger-home"] ul ul li,
   nav[role="hamburger-home"] li:hover > ul > li {
     height: auto;
@@ -1489,8 +1486,7 @@ article[role="articleHome"] {
     text-align: left;
   }
   nav[role="hamburger-home"] ul > li > a:first-child {
-/*    border-top: 1px solid #888;
-*/    border-bottom: 1px solid #888;
+    border-bottom: 1px solid #888;
   }  
   nav[role="hamburger-home"] ul li:first-child {
     border-bottom: 1px solid #999;
@@ -1677,8 +1673,8 @@ article[role="articleHome"] {
 }
 
 main[role="main-index"] {
-    margin-bottom: 0;
-    min-height: 0!important;
+  margin-bottom: 0;
+  min-height: 0!important;
 }
 
 .footer-index {
@@ -1706,7 +1702,6 @@ span.importanttitle {
 and (min-device-width : 320px) 
 and (max-device-width : 667px)
 and (orientation : portrait) {
-
   .breadcrumbs, .breadcrumbs a, body p.p, body, th, td, table, h1, h2, h3, h4, h5, h6, p, ul, ol, a:link, a:visited, a:hover {
     font-size: 30px;
   }
@@ -1807,11 +1802,14 @@ and (orientation : portrait) {
   .footer, main:after {
     height: 60px!important;
   }
+
+  nav[role="toc"] {
+    display: none;
+  }
 }
 
 /* Custom, iPhone Retina */ 
 @media only screen and (min-width : 320px) {
-
   article[role="articleHome"] {
     padding: 0px;
   }
@@ -1832,11 +1830,11 @@ and (orientation : portrait) {
   }
 
   #header-askq li a {
-      margin-top: 0px;
+    margin-top: 0px;
   }
 
   .header nav > ul > li + li {
-      border-left: none;
+    border-left: none;
   }
 
   .link-left, .link-center {
@@ -1860,11 +1858,6 @@ and (orientation : portrait) {
   .footer-index {
     position: relative;
   }
-}
-
-/* Extra Small Devices, Phones */ 
-@media only screen and (min-width : 480px) {
-
 }
 
 /* Small Devices, Tablets */
@@ -2002,7 +1995,7 @@ and (orientation : portrait) {
   }
 
   #header-askq li a {
-      margin-top: 12px;
+    margin-top: 12px;
   }
 
   .header nav > ul > li + li {
@@ -2023,8 +2016,8 @@ and (orientation : portrait) {
     height: 57px;
   }
 
-  nav[role="toc"] {
-    display: block;
+  nav[role="toc"] ul ul {
+    display: none;
   }
 
   article[role="article"] {
@@ -2049,7 +2042,7 @@ and (orientation : portrait) {
   }
 
   article[role="article"] {
-      min-height: 82vh;
+    min-height: 82vh;
   }
 
   img.image {
@@ -2063,9 +2056,4 @@ and (orientation : portrait) {
   nav[role="toc"] ul li a {
     padding-right: 100%;
   }
-}
-
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1200px) {
-
 }
