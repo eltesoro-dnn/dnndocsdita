@@ -7,7 +7,8 @@
  */
 /*
  | History of changes:
- |      20160205 (eleanor.tesoro@dnnsoftware.com): Incorped dnn.styles.css.
+ |      201602xx (eleanor.tesoro@dnnsoftware.com): Incorped dnn.styles.css.
+ |      201603xx (james.hellesen@dnnsoftware.com): Updates to match Joe's and other changes.
  */
 
 /* ------------------------------------------------------------
@@ -63,7 +64,7 @@ dd {
   margin-bottom: 1.5em;
 }
 body {
-  margin: 0;        
+  margin: 0;
   height: 100%;     /* Required or else the footer floats. */
   width: 100%;      /* Required or else the footer is too short. */
   position: absolute;   /* Required or else the footer floats. */
@@ -76,7 +77,7 @@ body#index {
 /* ------------------------------------------------------------
  | For the sidebar toc. */
 
-.map, 
+.map,
 main {
   min-height: 100%;  /* Required or else the footer floats.*/
   overflow-x
@@ -116,7 +117,7 @@ nav[role="toc"] {
   height: auto;
   font-size: 100%;
   transition: all 0.5s ease;
-  top: 70px;
+  top: 127px;
 }
 nav[role="toc"] ul {
   margin: 0;
@@ -142,7 +143,7 @@ nav[role="toc"] li {
 }
 nav[role="toc"] > ul { /* using the first ul as background block */
   margin: 0;
-  padding: 15px 0 15px 0;  /* approxheaderheight randomrightmargin approxfooterheight approxsidebarwidth */
+  padding: 0 0 15px 0;  /* approxheaderheight randomrightmargin approxfooterheight approxsidebarwidth */
   width: 100%;
   height: 100%;
   overflow: hidden;
@@ -187,7 +188,7 @@ header {
 .header #site-title {
   position: relative;
   font-family: "AvenirNextLTPro-Regular", "Helvetica Neue", "HelveticaNeue", Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;  
+  -webkit-font-smoothing: antialiased;
   font-weight: normal;
   display: inline-block;
   letter-spacing: 175%!important;
@@ -361,14 +362,14 @@ html, body {
 main {
   min-height: 100%;
   /* equal to footer height */
-  margin-bottom: -50px; 
+  margin-bottom: -50px;
 }
 main:after {
   content: "";
   display: block;
 }
 .footer, main:after {
-  height: 50px; 
+  height: 50px;
 }
 
 /* ------------------------------------------------------------
@@ -487,7 +488,7 @@ dt.prereq {
 /* Set heading sizes, getting smaller for deeper nesting */
 .topictitle1 {
   font-family: "AvenirNextLTPro-Regular","Helvetica Neue","HelveticaNeue",Arial,Helvetica,sans-serif;
-  -webkit-font-smoothing: antialiased;  
+  -webkit-font-smoothing: antialiased;
   font-weight: 400;
   line-height: 1.1;
   margin-top: 1pc;
@@ -523,7 +524,7 @@ dt.prereq {
 }
 .sectiontitle {
   font-family: "AvenirNextLTPro-Regular","Helvetica Neue","HelveticaNeue",Arial,Helvetica,sans-serif;
-  -webkit-font-smoothing: antialiased;  
+  -webkit-font-smoothing: antialiased;
   font-weight: 500;
   line-height: 1.1;
   margin-top: 1.25em;
@@ -745,7 +746,7 @@ article .glossentry {
   height: 0;
   border-style: solid;
   border-width: 8px 0 8px 10.0px;
-  border-color: transparent transparent transparent #787878;  
+  border-color: transparent transparent transparent #787878;
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
@@ -757,7 +758,7 @@ article .glossentry {
   height: 0;
   border-style: solid;
   border-width: 10px 8px 0 8px;
-  border-color: #787878 transparent transparent transparent; 
+  border-color: #787878 transparent transparent transparent;
   display: inline-block;
   vertical-align: middle;
   margin-right: 5px;
@@ -1021,7 +1022,7 @@ article[role="articleHome"] {
   min-width: 100%;
   height: 100%;
   overflow: visible;
-  overflow-x: hidden; 
+  overflow-x: hidden;
   background-color: white;
 }
 #welcome-hero {
@@ -1035,7 +1036,7 @@ article[role="articleHome"] {
   -webkit-transition: all 200ms ease-in;
   -webkit-transform: scale(1.05);
   -ms-transition: all 200ms ease-in;
-  -ms-transform: scale(1.05);   
+  -ms-transform: scale(1.05);
   -moz-transition: all 200ms ease-in;
   -moz-transform: scale(1.05);
   transition: all 200ms ease-in;
@@ -1125,6 +1126,52 @@ ul.ullinks {
 }
 span.importanttitle {
   color: red!important;
+}
+
+/* SEARCH BOX STYLES */
+
+.searchbox {
+  display: none;
+  position: fixed;
+  top: 74px;
+  display: inline-block;
+  width: 300px;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  background-color: white;
+}
+form.gsc-search-box > table {
+  margin: 0;
+  padding: 0;
+}
+.gsc-input-box table {
+  margin: 0;
+}
+.searchbox > #___gcse_0 {
+  background-color: white;
+  padding-top: 5px;
+  padding-bottom: 1px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+tbody {
+  background-color: white;
+}
+.gsc-input-box {
+  height: 27px!important;
+}
+.gscb_a {
+  display: none!important;
+}
+.gsib_a {
+  padding: 3px 6px 0!important;
+}
+.gsib_a > input {
+  margin: 0!important;
+}
+#gs_tti50 {
+  padding-top: 0;
+  margin-top: 0;
 }
 
 /* HAMBURGER MENU STYLES */
@@ -1264,7 +1311,7 @@ span.importanttitle {
     color: white;
     font-weight: 400;
     background: #333333;
-    text-transform: uppercase;  
+    text-transform: uppercase;
   }
   nav[role="hamburger-home"] ul ul li:last-child > a,
   nav[role="hamburger-home"] ul ul li.last-item > a {
@@ -1348,13 +1395,13 @@ span.importanttitle {
   }
   nav[role="hamburger-home"] ul > li > a:first-child {
     border-bottom: 1px solid #888;
-  }  
+  }
   nav[role="hamburger-home"] ul li:first-child {
     border-bottom: 1px solid #999;
   }
   nav[role="hamburger-home"] ul li ul li:first-child {
     border-bottom: none;
-  }  
+  }
   nav[role="hamburger-home"] > ul > li {
     float: none;
   }
@@ -1502,8 +1549,8 @@ span.importanttitle {
 
 /* iPhone 6 Portrait */
 
-@media only screen 
-and (min-device-width : 320px) 
+@media only screen
+and (min-device-width : 320px)
 and (max-device-width : 667px)
 and (orientation : portrait) {
   .breadcrumbs, .breadcrumbs a, body p.p, body, th, td, table, h1, h2, h3, h4, h5, h6, p, ul, ol, a:link, a:visited, a:hover {
@@ -1585,7 +1632,7 @@ and (orientation : portrait) {
   .footer, main:after {
     height: 60px!important;
   }
-  nav[role="toc"] {
+  nav[role="toc"], .searchbox  {
     display: none;
   }
   .page-link {
@@ -1598,7 +1645,7 @@ and (orientation : portrait) {
   }
 }
 
-/* Custom, iPhone Retina */ 
+/* Custom, iPhone Retina */
 
 @media only screen and (min-width : 320px) {
   article[role="articleHome"] {
@@ -1640,7 +1687,7 @@ and (orientation : portrait) {
   .footer-index {
     position: relative;
   }
-  nav[role="toc"] {
+  nav[role="toc"], .searchbox {
     display: none;
   }
 }
@@ -1675,7 +1722,7 @@ and (orientation : portrait) {
   .header nav > ul > li + li {
     border-left: none;
   }
-  nav[role="toc"] {
+  nav[role="toc"], .searchbox  {
     display: none;
   }
 }
@@ -1756,7 +1803,7 @@ and (orientation : portrait) {
   }
   li.has-sub:first-child {
     display: none;
-  }  
+  }
   .header nav > ul > li:nth-child(2) {
     border-left: none;
   }
@@ -1787,7 +1834,7 @@ and (orientation : portrait) {
     height: 100%;
   }
   .footer, main:after {
-    height: 30px; 
+    height: 30px;
   }
   article[role="articleHome"] {
     padding-left: 0px;
@@ -1807,5 +1854,8 @@ and (orientation : portrait) {
   }
   nav[role="toc"] ul li a {
     padding-right: 100%;
+  }
+  .searchbox {
+    display: inline-block;
   }
 }

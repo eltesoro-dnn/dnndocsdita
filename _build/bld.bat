@@ -92,13 +92,14 @@ call ant %_transtype%%_subbld% -f %DITA_HOME%\dnn_build.xml -l %_logfile%
 
 
 echo Copying additional files required to the output ....
-xcopy %_gitdir%\_content\index.html       %_outdir%\.                /i/s/v/y
-xcopy %_gitdir%\_content\common\samples   %_outdir%\common\samples   /i/s/v/y
-xcopy %_gitdir%\_content\common\img\*.png %_outdir%\common\img       /i/s/v/y
-xcopy %_gitdir%\_themes\dnn\26D3F6_6_0.*  %_outdir%\_theme           /i/s/v/y
-xcopy %_gitdir%\_themes\dnn\*.jpg         %_outdir%\_theme           /i/s/v/y
-xcopy %_gitdir%\_themes\dnn\*.png         %_outdir%\_theme           /i/s/v/y
-xcopy %_gitdir%\_themes\dnn\*.js          %_outdir%\_theme           /i/s/v/y
+xcopy %_gitdir%\_content\index.html          %_outdir%\.                /i/s/v/y
+xcopy %_gitdir%\_content\searchresults.html  %_outdir%\.                /i/s/v/y
+xcopy %_gitdir%\_content\common\samples      %_outdir%\common\samples   /i/s/v/y
+xcopy %_gitdir%\_content\common\img\*.png    %_outdir%\common\img       /i/s/v/y
+xcopy %_gitdir%\_themes\dnn\26D3F6_6_0.*     %_outdir%\_theme           /i/s/v/y
+xcopy %_gitdir%\_themes\dnn\*.jpg            %_outdir%\_theme           /i/s/v/y
+xcopy %_gitdir%\_themes\dnn\*.png            %_outdir%\_theme           /i/s/v/y
+xcopy %_gitdir%\_themes\dnn\*.js             %_outdir%\_theme           /i/s/v/y
 
 :. The following is a hack.
 xcopy %_outdir%\Developers\CreatingModules\index.html %_outdir%\Developers\Extensions /v
@@ -114,7 +115,7 @@ rd /s/q %_outdir%\common\glossary >nul
 :. runas /user:administrator /profile "%~f0\v2iis.bat %outdir%\%_transtype% c:\inetpub\wwwroot"
 :. start %_outdir%
 start c:\z\docbuild\output\%_transtype%
-start c:\inetpub\wwwroot
+start c:\inetpub\wwwroot\docs
 
 goto :eof
 

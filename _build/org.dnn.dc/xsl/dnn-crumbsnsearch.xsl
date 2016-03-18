@@ -4,9 +4,19 @@
 
   <!-- From org.dita.xhtml\xsl\xslhtml\dita2htmlImpl.xsl -->
   <xsl:template name="generateBreadcrumbs">
-    <!-- Insert previous/next/ancestor breadcrumbs links at the top of the xhtml. -->
     <xsl:apply-templates select="*[contains(@class, ' topic/related-links ')]" mode="breadcrumb"/>
-    <div class="breadcrumbs"><script language="JavaScript">breadcrumbs();</script></div>
+    <div class="breadcrumbs"><script language="JavaScript">breadcrumbs();</script></div>  <!-- DNN change -->
+  </xsl:template>
+
+
+  <!-- DNN change: Google Custom Search Engine -->
+  <!-- See https://developers.google.com/custom-search/docs/element#scope . -->
+  <!-- The associated script is in scripts.js. -->
+  <!-- data-resultsUrl="/docs/searchresults.html" Do not use this with the overlay style. -->
+  <xsl:template name="generateSearchBox">
+    <div class="searchbox">
+        <div class="gcse-searchbox-only" data-gname="docs1" data-as_sitesearch="www.dnnsoftware.com" data-newWindow="true" data-enableHistory="true" data-enableAutoComplete="true" data-autoCompleteMaxCompletions="5" data-queryParameterName="q" />
+    </div>
   </xsl:template>
 
 
@@ -18,7 +28,7 @@
           <xsl:apply-templates select="*[contains(@class,' topic/title ')] |
                                        self::dita/*[1]/*[contains(@class,' topic/title ')]" mode="return-aria-label-id"/>
         </xsl:attribute>
-        <xsl:call-template name="generateBreadcrumbs"/> <!-- explicitly call breadcrumbs template. -->
+        <xsl:call-template name="generateBreadcrumbs"/> <!-- DNN change: Explicitly call breadcrumbs template. -->
         <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]" mode="out-of-line"/>
         <xsl:apply-templates/> <!-- this will include all things within topic; therefore,
                                title content will appear here by fall-through
@@ -36,7 +46,7 @@
   <!-- From org.dita.xhtml\xsl\xslhtml\dita2htmlImpl.xsl -->
   <xsl:template match="*" mode="addHeaderToHtmlBodyElement">
     <xsl:variable name="header-content" as="node()*">
-      <!-- <xsl:call-template name="generateBreadcrumbs"/> -->
+      <!-- <xsl:call-template name="generateBreadcrumbs"/> DNN change: Duplicate call in the wrong place. -->
       <xsl:call-template name="gen-user-header"/>  <!-- include user's XSL running header here -->
       <xsl:call-template name="processHDR"/>
       <xsl:if test="$INDEXSHOW = 'yes'">
@@ -49,10 +59,11 @@
         <xsl:sequence select="$header-content"/>
       </header>
     </xsl:if>
+    <xsl:call-template name="generateSearchBox"/>  <!-- DNN change: Insert searchbox between header and nav. -->
   </xsl:template>
 
 
-  <!-- From org.dita.xhtml\xsl\map2htmtoc\map2htmlcoverImpl.xsl -->
+  <!-- From org.dita.xhtml\xsl\map2htmtoc\map2htmlcoverImpl.xsl. Might not be needed at all; not needed in HTML5 build. -->
   <xsl:template match="*[contains(@class, ' map/map ')]" mode="chapterBody">
     <body>
       <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]/@outputclass" mode="add-ditaval-style"/>
@@ -62,7 +73,7 @@
       <xsl:apply-templates select="." mode="addAttributesToBody"/>
       <xsl:call-template name="setidaname"/>
       <xsl:apply-templates select="*[contains(@class, ' ditaot-d/ditaval-startprop ')]" mode="out-of-line"/>
-      <!-- <xsl:call-template name="generateBreadcrumbs"/> -->
+      <!-- <xsl:call-template name="generateBreadcrumbs"/> DNN change: Duplicate call in the wrong place. -->
       <xsl:call-template name="gen-user-header"/>
       <xsl:call-template name="processHDR"/>
       <xsl:if test="$INDEXSHOW = 'yes'">
