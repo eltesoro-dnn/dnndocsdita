@@ -34,7 +34,7 @@
         <section id="SPAModuleArchitecture">
             <title>SPA Module Architecture</title>
 
-            <p>In a SPA module, each HTML file loads the necessary JavaScript and CSS to properly render the UI. SPA modules also make AJAX calls to the business layer through the service layer. This architecture is similar to <xref format="html" scope="external" href="WebFormsModuleDevelopment.dita">the mobile application architecture for Web Forms modules</xref>.</p>
+            <p>In a SPA module, each HTML file loads the necessary JavaScript and CSS to properly render the UI. SPA modules also make AJAX calls to the business layer through the service layer. This architecture is similar to <xref format="dita" href="WebFormsModuleDevelopment.dita">the mobile application architecture for Web Forms modules</xref>.</p>
 
             <image scalefit="yes" placement="break" align="left" href="../../common/img/module-architecture-spa.png"><alt>Logical architecture of a SPA module</alt></image>
 
@@ -83,8 +83,8 @@
     </conbody>
 
     <related-links>
-        <link scope="external" href="http://en.wikipedia.org/wiki/Single-page_application"><linktext>Wikipedia: Single-Page Application</linktext></link>
-        <link scope="external" href="http://www.dnnsoftware.com/wiki/ipropertyaccess"><linktext>DNN Wiki: Token Replacement API</linktext></link>
-        <link scope="external" href="http://www.dnnsoftware.com/wiki/tokens"><linktext>DNN Wiki: Standard DNN Tokens</linktext></link>
+        <link format="html" scope="external" href="http://en.wikipedia.org/wiki/Single-page_application"><linktext>Wikipedia: Single-Page Application</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/ipropertyaccess"><linktext>DNN Wiki: Token Replacement API</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/tokens"><linktext>DNN Wiki: Standard DNN Tokens</linktext></link>
     </related-links>
 </concept>

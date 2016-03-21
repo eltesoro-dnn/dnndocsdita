@@ -19,7 +19,7 @@
 
         <steps>
 
-            <step><cmd>Run your module through the DNN <xref format="dita" scope="external" href="http://evs.dnnsoftware.com">Extension Verification Service</xref> (EVS) to perform <xref format="dita" href="../AboutEVS.dita">compatibility tests in three areas</xref>.</cmd></step>
+            <step><cmd>Run your module through the DNN <xref format="html" scope="external" href="http://evs.dnnsoftware.com/">Extension Verification Service</xref> (EVS) to perform <xref format="dita" href="../AboutEVS.dita">compatibility tests in three areas</xref>.</cmd></step>
 
             <step><cmd><xref format="dita" href="../Extensions/InstallExtension.dita">Install the package.</xref></cmd></step>
 

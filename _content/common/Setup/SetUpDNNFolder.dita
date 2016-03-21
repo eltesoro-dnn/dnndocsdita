@@ -23,7 +23,7 @@
     <taskbody>
 
         <steps>
-            <step><cmd><xref scope="external" href="http://www.dnnsoftware.com/community/download">Download DNN and extract the files.</xref></cmd>
+            <step><cmd><xref format="html" scope="external" href="http://www.dnnsoftware.com/community/download/">Download DNN and extract the files.</xref></cmd>
                 <info>
                     <p>The folder where you extract the files becomes the DNN installation folder.</p>
                     <p><b>Developers and Designers:</b> For module or theme development, you don't need the source files.</p>

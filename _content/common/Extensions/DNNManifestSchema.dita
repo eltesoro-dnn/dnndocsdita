@@ -82,13 +82,13 @@
                         <li><userinput>Auth_System</userinput></li>
                         <li><userinput>Container</userinput></li>
                         <li><userinput>CoreLanguagePack</userinput></li>
-                        <li><xref format="dita" scope="external" href="http://www.dnnsoftware.com/wiki/manifest-dashboardcontrol-component"><userinput>DashboardControl</userinput></xref></li>
+                        <li><xref format="html" scope="external" href="http://www.dnnsoftware.com/wiki/manifest-dashboardcontrol-component"><userinput>DashboardControl</userinput></xref></li>
                         <li><userinput>ExtensionLanguagePack</userinput></li>
                         <li><userinput>JavaScript_Library</userinput></li>
                         <li><userinput>Library</userinput></li>
-                        <li><xref format="dita" scope="external" href="http://www.dnnsoftware.com/wiki/modules"><userinput>Module</userinput></xref></li>
-                        <li><xref format="dita" scope="external" href="http://www.dnnsoftware.com/wiki/providers"><userinput>Provider</userinput></xref></li>
-                        <li><xref format="dita" scope="external" href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><userinput>Skin</userinput></xref></li>
+                        <li><xref format="html" scope="external" href="http://www.dnnsoftware.com/wiki/modules"><userinput>Module</userinput></xref></li>
+                        <li><xref format="html" scope="external" href="http://www.dnnsoftware.com/wiki/providers"><userinput>Provider</userinput></xref></li>
+                        <li><xref format="html" scope="external" href="http://www.dnnsoftware.com/wiki/dotnetnuke-skins"><userinput>Skin</userinput></xref></li>
                         <li><userinput>SkinObject</userinput></li>
                         <li>other custom extension types</li>
                     </ul>
@@ -681,7 +681,7 @@
 
         </section>
 
-        <example>Download a sample theme manifest: <xref format="txt" href="../../common/samples/MyThemeManifest.dnn">MyThemeManifest.dnn</xref>.</example>
+        <example>Right-click on the link to download a sample theme manifest: <xref format="txt" href="../../common/samples/MyThemeManifest.dnn">MyThemeManifest.dnn</xref>.</example>
 
     </refbody>
 

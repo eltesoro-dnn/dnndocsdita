@@ -8,7 +8,7 @@
                 <ul class="social-media horizontal-list">
                     <li><a href="http://facebook.com/dotnetnuke" class="facebook"></a></li>
                     <li><a href="http://twitter.com/dnncorp" class="twitter"></a></li>
-                    <li><a href="http://www.linkedin.com/company/207975" class="linkedin"></a></li>
+                    <li><a href="http://www.linkedin.com/company/dotnetnuke-corporation" class="linkedin"></a></li>
                     <li><a href="http://www.youtube.com/user/dotnetnuke#" class="youtube"></a></li>
                     <!-- <li><a href="http://twitter.com/dnn" class="twitter"></a></li> -->
                 </ul>

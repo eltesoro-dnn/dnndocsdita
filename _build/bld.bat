@@ -107,8 +107,8 @@ xcopy %_outdir%\Designers\CreatingThemes\index.html %_outdir%\Designers\Extensio
 
 
 echo Deleting files we don't need ....
-del %_outdir%\toc.html /q >nul
-rd /s/q %_outdir%\common\glossary >nul
+if exist %_outdir%\toc.html           del %_outdir%\toc.html /q >nul
+if exist %_outdir%\common\glossary\*  rd /s/q %_outdir%\common\glossary >nul
 
 
 
