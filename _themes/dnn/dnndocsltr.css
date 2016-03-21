@@ -1049,7 +1049,7 @@ article[role="articleHome"] {
   margin-bottom: 100px;
 }
 .page-link {
-  font-size: 16px;
+  font-size: 17px;
   width: 25%;
   display: inline-block;
   padding-top: 25px;
@@ -1110,11 +1110,11 @@ article[role="articleHome"] {
   top: 2px;
   margin-right: 4px;
 }
-main[role="main-index"] {
+/*main[role="main-index"] {
   margin-bottom: 0;
   min-height: 0!important;
 }
-.footer-index {
+*/.footer-index {
   bottom: 0;
 }
 ul.ullinks {
@@ -1701,8 +1701,9 @@ and (orientation : portrait) {
     width: 85%;
     margin: auto;
     float: center;
-    margin-bottom: 100px;
-    margin-top: 35px;
+    margin-bottom: 10px;
+    margin-top: 0;
+    padding-top: 65px;
   }
   .page-link-wrapper {
     width: 100%;
@@ -1713,7 +1714,7 @@ and (orientation : portrait) {
     margin-bottom: 0px;
   }
   .card-row {
-    padding-bottom: 45px;
+    padding-bottom: 25px;
     margin-bottom: 0;
   }
   .header nav > ul > li + li {
@@ -1753,6 +1754,7 @@ and (orientation : portrait) {
   }
   .card-wrapper {
     width: 25%;
+    max-width: 400px;
     display: inline-block;
     padding-left: 20px;
     padding-right: 20px;
@@ -1764,13 +1766,14 @@ and (orientation : portrait) {
     background-color: white;
   }
   #welcome-hero {
-    max-width: 700px;
+    max-width: 650px;
   }
   .page-link-wrapper {
     display: inline-block;
   }
   .page-link-wrapper {
     width: 25%;
+    max-width: 400px;
     display: inline-block;
     margin-left: 20px;
     margin-right: 20px;
