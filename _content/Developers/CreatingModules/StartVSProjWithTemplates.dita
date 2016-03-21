@@ -51,7 +51,7 @@
 
                 <info>For the DNN 8 templates,</info>
                 <substeps>
-                    <substep><cmd><xref format="html" scope="external" href="https://github.com/dnnsoftware/DNN.Templates/releases">Download the appropriate .vsix file.</xref></cmd>
+                    <substep><cmd><xref format="html" scope="external" href="http://github.com/dnnsoftware/DNN.Templates/releases">Download the appropriate .vsix file.</xref></cmd>
                     <info>Two are included:
                             <ul>
                                 <li>Dnn.Mvc.Module.vsix</li>
@@ -102,11 +102,6 @@
     </taskbody>
 
     <related-links>
-        <link format="dita" href="./CreateModule.dita"><linktext>Creating Modules</linktext></link>
-        <link format="dita" href="../../common/placeholderlink.dita"><linktext>Create a Web Forms module</linktext></link>
-        <link format="dita" href="../../common/placeholderlink.dita"><linktext>Create an MVC module</linktext></link>
-        <link format="dita" href="../../common/placeholderlink.dita"><linktext>Create a SPA module</linktext></link>
-        <!-- <link format="dita" href="../ContentsModulePack.dita"><linktext>Contents of a Module Package</linktext></link> -->
         <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155064/module-development-for-non-developers-skinners-dnn-beginners--blog-series-intro"><linktext>DNN Community Blog: Module Development for Non-Developers, Skinners, &amp; DNN Beginners - Blog Series by Clinton Patterson</linktext></link>
         <link format="html" scope="external" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot"><linktext>Using the new Module Development Templates for DotNetNuke 7 by Chris Hammond</linktext></link>
     </related-links>

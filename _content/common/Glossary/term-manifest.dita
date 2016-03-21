@@ -6,7 +6,7 @@
     <glossdef>An XML file (e.g., MyExtension.dnn) that specifies how to install an extension. The manifest contains information regarding the extension type, and the various components that make up the extension.</glossdef>
 
     <related-links>
-        <link format="dita" scope="peer" href="extensions/DNNManifestSchema.dita"><linktext>DNN Manifest Schema</linktext></link>
+        <link format="dita" scope="peer" href="DNNManifestSchema.dita"><linktext>DNN Manifest Schema</linktext></link>
     </related-links>
 
 </glossentry>

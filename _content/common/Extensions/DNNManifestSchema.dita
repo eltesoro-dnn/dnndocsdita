@@ -201,7 +201,7 @@
     &lt;dependency type="type"&gt;System.Security.Principal.GenericPrincipal&lt;/dependency&gt;
                     </codeblock>
                     <p>
-                        <note type="tip"><xref format="html" scope="external" href="https://msdn.microsoft.com/en-us/library/yfsftwz6(v=vs.110).aspx">Fully qualify</xref> a type if it is not in the <filepath>App_Code</filepath> folder to avoid conflicts with similarly named types from multiple sources.</note>
+                        <note type="tip"><xref format="html" scope="external" href="http://msdn.microsoft.com/en-us/library/yfsftwz6(v=vs.110).aspx">Fully qualify</xref> a type if it is not in the <filepath>App_Code</filepath> folder to avoid conflicts with similarly named types from multiple sources.</note>
                     </p>
                 </li>
 
@@ -492,7 +492,7 @@
     &lt;/component&gt;
                     </codeblock>
 
-                    <p>For the list of supported language codes, see the .NET <xref format="html" scope="external" href="https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(VS.80).aspx">CultureInfo</xref> class.</p>
+                    <p>For the list of supported language codes, see the .NET <xref format="html" scope="external" href="http://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(VS.80).aspx">CultureInfo</xref> class.</p>
                 </li>
 
                 <li><xref format="html" scope="external" href="http://www.dnnsoftware.com/wiki/manifest-extensionlanguage-component"><codeph>ExtensionLanguage</codeph></xref>.
@@ -514,7 +514,7 @@
     &lt;/component&gt;
                     </codeblock>
 
-                    <p>For the list of supported language codes, see the .NET <xref format="html" scope="external" href="https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(VS.80).aspx">CultureInfo</xref> class.</p>
+                    <p>For the list of supported language codes, see the .NET <xref format="html" scope="external" href="http://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(VS.80).aspx">CultureInfo</xref> class.</p>
                 </li>
 
                 <li><xref format="html" scope="external" href="http://www.dnnsoftware.com/wiki/module-component"><codeph>Module</codeph></xref>.

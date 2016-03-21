@@ -93,7 +93,7 @@
 
             <note type="note">Visual Studio is currently the only tool available for creating MVC modules.</note>
 
-            <p>The ASP.NET MVC framework relies on the <xref format="html" scope="external" href="https://en.wikipedia.org/wiki/Convention_over_configuration">convention over configuration</xref> paradigm to simplify development. DNN modules follow all ASP.NET MVC conventions, as well as DNN-specific conventions. MVC module conventions include:</p>
+            <p>The ASP.NET MVC framework relies on the <xref format="html" scope="external" href="http://en.wikipedia.org/wiki/Convention_over_configuration">convention over configuration</xref> paradigm to simplify development. DNN modules follow all ASP.NET MVC conventions, as well as DNN-specific conventions. MVC module conventions include:</p>
 
 
             <ul>
@@ -182,6 +182,6 @@
 
     <related-links>
         <link scope="peer" href="UnsupportedMVCFeatures.dita"><linktext>Unsupported-MVC-Features</linktext></link>
-        <link scope="external" href="https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller"><linktext>Wikipedia: Model-View-Controller</linktext></link>
+        <link scope="external" href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller"><linktext>Wikipedia: Model-View-Controller</linktext></link>
     </related-links>
 </concept>

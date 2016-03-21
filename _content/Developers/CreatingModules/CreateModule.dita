@@ -23,8 +23,8 @@
                     <li>Create an entire module from scratch. For very simple modules, you can use the <xref format="dita" href="../../common/placeholderlink.dita">DNN Module Creator</xref>.</li>
                     <li>Start with module development templates, such as:
                         <ul>
-                            <li><xref format="dita" scope="external" href="https://github.com/dnnsoftware/DNN.Templates/releases">DNN 8 Templates</xref></li>
-                            <li><xref format="dita" scope="external" href="https://github.com/ChrisHammond/DNNTemplates">Chris Hammond's DotNetNuke Module and Theme Development Templates</xref> (<xref format="dita" scope="external" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot">Installation instructions</xref>)</li>
+                            <li><xref format="dita" scope="external" href="http://github.com/dnnsoftware/DNN.Templates/releases">DNN 8 Templates</xref></li>
+                            <li><xref format="dita" scope="external" href="http://github.com/ChrisHammond/DNNTemplates">Chris Hammond's DotNetNuke Module and Theme Development Templates</xref> (<xref format="dita" scope="external" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot">Installation instructions</xref>)</li>
                         </ul>
                     </li>
                     <li>Customize a pre-existing module.
@@ -42,7 +42,7 @@
 
 
     <related-links>
-        <link format="dita" href="../../common/placeholderlink.dita"><linktext>DNN 8 API Reference</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/dnn-api/"><linktext>DNN 8 API Reference</linktext></link>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/module-development"><linktext>DNN Wiki: Module Development</linktext></link>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155064/module-development-for-non-developers-skinners-dnn-beginners--blog-series-intro"><linktext>DNN Community Blog: Module Development series by Clinton Patterson</linktext></link>
         <link format="html" scope="external" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot"><linktext>Using the new Module Development Templates for DotNetNuke 7 by Chris Hammond</linktext></link>

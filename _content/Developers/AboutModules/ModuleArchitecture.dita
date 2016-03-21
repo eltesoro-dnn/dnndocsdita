@@ -62,7 +62,7 @@
                 </ul>
             </p>
 
-            <p>DNN provides built-in caching with the Cache API. If you use DNN's DAL or DAL+ APIs, implement the <xref format="html" scope="external" href="https://msdn.microsoft.com/en-us/library/dn589799.aspx">Cache-Aside Pattern</xref> for optimum performance. You can configure DAL2's built-in caching by using attributes in your code.</p>
+            <p>DNN provides built-in caching with the Cache API. If you use DNN's DAL or DAL+ APIs, implement the <xref format="html" scope="external" href="http://msdn.microsoft.com/en-us/library/dn589799.aspx">Cache-Aside Pattern</xref> for optimum performance. You can configure DAL2's built-in caching by using attributes in your code.</p>
 
             <p>The Cache API can be extended to use different cache stores. The abstraction provided by the Cache API ensures that modules perform seamlessly, regardless of the caching provider installed by the site administrator.</p>
 

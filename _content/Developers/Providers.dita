@@ -263,7 +263,7 @@
 
             <p>Unlike authentication providers which provide SSO authentication, the membership provider is a standalone authentication solution that is local to the website or to the DNN installation.</p>
 
-            <p>See <xref format="dita" href="#top-providers/authprov">authentication provider</xref> (SSO authentication), <xref format="dita" href="#top-providers/permsprov">permissions provider</xref>, and <xref format="dita" href="#top-providers/rolesprov">roles provider</xref>. Also see the MSDN Library's <xref format="html" scope="external" href="https://msdn.microsoft.com/en-us/library/yh26yfzy.aspx">Introduction to Membership</xref> and Engage Weblog's <xref format="html" scope="external" href="http://www.engagesoftware.com/blog/post/447/building-your-own-membership-provider-for-dotnetnuke-and-asp-net-2-0">Building your own Membership Provider</xref> by <xref format="html" scope="external" href="http://www.dnnsoftware.com/activity-feed/userid/32389">Henry Kenuam</xref>.</p>
+            <p>See <xref format="dita" href="#top-providers/authprov">authentication provider</xref> (SSO authentication), <xref format="dita" href="#top-providers/permsprov">permissions provider</xref>, and <xref format="dita" href="#top-providers/rolesprov">roles provider</xref>. Also see the MSDN Library's <xref format="html" scope="external" href="http://msdn.microsoft.com/en-us/library/yh26yfzy.aspx">Introduction to Membership</xref> and Engage Weblog's <xref format="html" scope="external" href="http://www.engagesoftware.com/blog/post/447/building-your-own-membership-provider-for-dotnetnuke-and-asp-net-2-0">Building your own Membership Provider</xref> by <xref format="html" scope="external" href="http://www.dnnsoftware.com/activity-feed/userid/32389">Henry Kenuam</xref>.</p>
         </section>
 
 
@@ -384,7 +384,7 @@
             </p>
             <p>A <b>scheduling provider</b> manages when tasks are performed and triggers them automatically at the indicated time.</p>
             <p>The DNN Scheduler can be accessed through <menucascade><uicontrol>Host</uicontrol><uicontrol>Advanced Settings (double-gear tab)</uicontrol><uicontrol>Schedule</uicontrol></menucascade>.</p>
-            <p>See <xref format="html" scope="external" href="https://dnnzone.files.wordpress.com/2010/08/dotnetnuke-scheduler.pdf">DotNetNuke Scheduling Provider</xref> by <xref format="html" scope="external" href="http://www.dnnsoftware.com/activity-feed/userid/2386">Dan Caron</xref>.</p>
+            <p>See <xref format="html" scope="external" href="http://dnnzone.files.wordpress.com/2010/08/dotnetnuke-scheduler.pdf">DotNetNuke Scheduling Provider</xref> by <xref format="html" scope="external" href="http://www.dnnsoftware.com/activity-feed/userid/2386">Dan Caron</xref>.</p>
         </section>
 
 

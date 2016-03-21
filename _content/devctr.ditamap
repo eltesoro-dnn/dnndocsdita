@@ -175,6 +175,17 @@
             </relcell>
             <relcell/>
         </relrow>
+
+        <relrow>
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="task" href="Developers/CreatingModules/StartVSProjWithTemplates.dita" />
+                <topicref format="dita" type="task" href="Developers/CreatingModules/CreateModuleUsingTemplates.dita" />
+            </relcell>
+            <relcell>
+                <!-- <topicref format="dita" type="reference" toc="yes" href="Developers/ContentsModulePack.dita" /> Topic not ready. -->
+            </relcell>
+        </relrow>
     </reltable>
 
 </map>
