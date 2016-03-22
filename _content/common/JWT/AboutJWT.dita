@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-AboutJWT">
+
+    <title>About JSON Web Token</title>
+    <titlealts>
+        <navtitle>About JWT</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>ERT</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="installing" />
+            <audience type="programmer" job="programming" />
+        </metadata>
+    </prolog>
+
+    <body>
+
+        <section id="overview">
+            <title>Overview</title>
+
+            <p>JSON Web Token (JWT) is an IETF-standardized format, intended for securely transmitting self-contained JSON objects where space is limited, such as HTTP headers and URI queries.</p>
+
+            <ul>
+                <li>Compact. </li>
+
+                <li>Self-contained. </li>
+
+                <li>Verifiable information. The information contained is digitally signed using a secret with the HMAC algorithm or using a public/private key pair using RSA.</li>
+
+                <li>Easy to implement.</li>
+            </ul>
+
+        </section>
+
+
+        <section id="HowItWorks">
+            <title>How JWT Replaces Cookies</title>
+
+            <p>JWT is ideal for modules that cannot or don't want to use cookies, such as mobile native apps and desktop apps.</p>
+
+            <p>In a standard web-forms application, the user logs into a web site and receives a session/token cookie that the browser sends back with each subsequent request to the site, in order to avoid checking the user's credentials with each request. JWT simply replaces the cookie with a token that is smaller and, therefore, faster to transmit.</p>
+        </section>
+
+
+        <section id="DNNJWToverview">
+            <title>DNN authentication using JWT</title>
+
+            <p>All DNN products support JWT for authentication. This allows DNN modules to send and receive user information without using cookies. However, JWT is not </p>
+        </section>
+
+
+        <section id="DNNJWTenable">
+            <title>Enable JWT for authentication in DNN</title>
+
+
+            <p>When you enable JWT for authentication in DNN, the <filepath>web.config</filepath> file is updated with a line similar to the following:</p>
+
+            <codeblock>
+    &lt;authServices&gt;
+        &lt;messageHandlers&gt;
+            &lt;!-- other message handlers --&gt;
+            &lt;addname=&quot;JWTAuth&quot;type=&quot;Dnn.AuthServices.Jwt.Auth.JwtAuthMessageHandler, Dnn.AuthServices.Jwt&quot;enabled=&quot;false&quot;defaultInclude=&quot;false&quot;forceSSL=&quot;true&quot;/&gt;
+        &lt;/messageHandlers&gt;
+    &lt;/authServices&gt;
+            </codeblock>
+
+            <simpletable relcolwidth="1* 1* 3*">
+                <sthead>
+                    <stentry>Parameter</stentry>
+                    <stentry>Allowed Values</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow>
+                    <stentry>name</stentry>
+                    <stentry>string</stentry>
+                    <stentry>Name of the authentication provider. Must be unique within the <codeph>messageHandlers</codeph> section.</stentry>
+                </strow>
+                <strow>
+                    <stentry>enabled</stentry>
+                    <stentry><codeph>true</codeph> or <codeph>false</codeph></stentry>
+                    <stentry>If <codeph>true</codeph>, an instance of the provider is created and added to the chain of providers when the application starts. Otherwise, the provider is not instantiated at all.</stentry>
+                </strow>
+                <strow>
+                    <stentry>defaultInclude</stentry>
+                    <stentry><codeph>true</codeph> or <codeph>false</codeph></stentry>
+                    <stentry>If <codeph>true</codeph>, the provider is included for each Web API request, if the API controller limits the allowed providers that can be handled by the different services within the controller.</stentry>
+                </strow>
+                <strow>
+                    <stentry>forceSSL</stentry>
+                    <stentry><codeph>true</codeph> or <codeph>false</codeph></stentry>
+                    <stentry>If <codeph>true</codeph>, SSL mode (HTTPS) is required for API requests; otherwise, all requests are accepted.
+                        <note type="tip">Enforce SSL, so that tokens are treated exactly the same way cookies are treated in a web request, thereby, preventing unauthorized access to the site.</note>
+                    </stentry>
+                </strow>
+            </simpletable>
+
+        </section>
+
+    </body>
+
+    <related-links>
+        <link format="html" scope="external" href="https://tools.ietf.org/html/rfc7519"><linktext>IETF RFC 7519</linktext></link>
+        <link format="html" scope="external" href="http://www.slideshare.net/dnnsoftware/how-evoq-helps-you-build-modern-web-applications"><linktext>DNN Presentation: How Evoq Helps You Build Modern Web Applications by Will Morgenweck</linktext></link>
+        <link format="html" scope="external" href="https://jwt.io/introduction/"><linktext>jwt.io</linktext></link>
+
+    </related-links>
+</topic>
