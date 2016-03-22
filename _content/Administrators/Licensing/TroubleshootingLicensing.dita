@@ -16,13 +16,18 @@
 
     <body>
 
+        <section id="CloudSupport"><note conkeyref="k-bptext/note-CloudSupport"></note></section>
+
         <section id="TrialMsgAfterActivate">
             <title>Trial message still appears after activating license.</title>
 
             <sectiondiv>
                 <p>Even after a license has been activated, the trial version message still appears.</p>
+
                 <p><systemoutput>You are using an unlicensed and unsupported version of .... Please contact your Systems Administrator for information on how to obtain a valid license.</systemoutput></p>
-                <p><systemoutput>You are using a trial version of Evoq .... You currently have 365 days remaining before your trial period expires.</systemoutput></p>
+
+                <p><systemoutput>You are using a trial version of Evoq .... You currently have ... days remaining before your trial period expires.</systemoutput></p>
+
             </sectiondiv>
 
             <dl>
@@ -56,24 +61,34 @@
                 <dlentry>
                     <dt>Cause: Incorrect or missing settings in <filepath>web.config</filepath>.</dt>
                     <dd>
-                        <p>You might also see the following error linked to <apiname>DotNetNuke.Professional.Application.ProApplication.CheckLicense()</apiname>:</p>
+                        <p>Additional symptom: You might also see the following error linked to <apiname>DotNetNuke.Professional.Application.ProApplication.CheckLicense()</apiname>:</p>
                         <p><systemoutput>String reference not set to an instance of a String.</systemoutput></p>
 
-                        <p>Verify that you have the following nodes in your <filepath>web.config</filepath> in the <menucascade><uicontrol>Configuration</uicontrol> <uicontrol>AppSetting</uicontrol></menucascade> tree:
-                            <ul>
-                                <li>InstallationDate:
-                                    <codeblock>
+                        <ol>
+                            <li>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Configuration Manager</uicontrol></menucascade>.
+                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuHostAdvancedConfigMgr.png"><alt></alt></image>
+                            </li>
+
+                            <li>In the <uicontrol>Files</uicontrol> tab, select <filepath>web.config</filepath>.
+                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ConfigMgrFiles.png"><alt></alt></image>
+                            </li>
+
+                            <li>Verify that the following nodes exist in <filepath>web.config</filepath> (The date and license type may differ.):
+                                <ul>
+                                    <li>InstallationDate:
+                                        <codeblock>
     &lt;add key=&quot;InstallationDate&quot; value=&quot;9/2/2009&quot; /&gt;
-                                    </codeblock>
-                                </li>
-                                <li>Two licensing nodes:
-                                    <codeblock>
+                                        </codeblock>
+                                    </li>
+                                    <li>Two licensing nodes:
+                                        <codeblock>
     &lt;add name=&quot;Licensing&quot; type=&quot;DotNetNuke.Professional.HttpModules.LicenseValidatorModule, DotNetNuke.Professional&quot; preCondition=&quot;managedHandler&quot; /&gt;
     &lt;add name=&quot;Licensing&quot; type=&quot;DotNetNuke.Professional.HttpModules.LicenseValidatorModule, DotNetNuke.Professional&quot; /&gt;
-                                    </codeblock>
-                                </li>
-                            </ul>
-                        </p>
+                                        </codeblock>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
                     </dd>
                 </dlentry>
 

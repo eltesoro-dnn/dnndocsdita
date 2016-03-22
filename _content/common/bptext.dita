@@ -49,6 +49,11 @@
         <ph id="ph-oldterm">This is the old term, still used in some APIs and UI controls.</ph>
         </p>
 
+
+        <!-- <note conref="../../common/bptext.dita#bptext/note-CloudSupport"></note> -->
+        <!-- <note conkeyref="k-bptext/note-CloudSupport"></note> -->
+        <note type="important" id="note-CloudSupport">If your Evoq instance is hosted on the DNN Cloud, please contact <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support">Customer Support</xref> directly. The following instructions are not applicable to DNN Cloud instances.</note>
+
     </body>
 
 </topic>
