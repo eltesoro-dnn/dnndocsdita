@@ -11,12 +11,8 @@ if "%OS%"=="WINNT" @setlocal
 :.      http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 :. 2. Download and extract DITA-OT to %DITA_HOME%.
 :.      http://www.dita-ot.org/download
-:. 3. If running word2dita transform,
-:.    a. Download and extract the DITA4Publishers plugin to %DITA_HOME%\plugins.
-:.          https://github.com/dita4publishers/dita4publishers/releases
-:.    b. Integrate the plugin.
-:.          cd /d %DITA_HOME%
-:.          ant -f integrator.xml strict
+:. 3. If running word2dita transform, download and extract the DITA4Publishers plugin to %DITA_HOME%\plugins.
+:.      http://github.com/dita4publishers/dita4publishers/releases
 :.----------------------------------------------------------------------------
 
 
@@ -39,7 +35,7 @@ if _%_outdir%_      EQU __    set _outdir=v:\output\%_transtype%
 if _%_logdir%_      EQU __    set _logdir=v:\logs
 if _%_logfile%_     EQU __    set _logfile=%_logdir%\%_transtype%.log
 if _%_outext%_      EQU __    set _outext=.html
-:. Remember to replace the links in the root index.html
+:. If you change _outext, remember to replace the links in the root index.html
 
 if _"%JAVA_HOME%"_  EQU _""_  set JAVA_HOME="%ProgramFiles%"\Java\jdk1.8.0_72
 set DITA_HOME=C:\dita-ot
@@ -73,7 +69,7 @@ xcopy %_gitdir%\_content\*.png           %_blddir%                /i/s/v/y
 xcopy %_gitdir%\_content\common\samples  %_blddir%\common\samples /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\dnn*.css     %_blddir%\_themes\dnn    /i/s/v/y
 
-for %%v in ( Administrators Developers Designers ) do  xcopy %_blddir%\common\*.dita* %_blddir%\%%v /i/s/v/y
+for %%v in ( administrators developers designers ) do  xcopy %_blddir%\common\*.dita* %_blddir%\%%v /i/s/v/y
 
 echo Integrating our own DITA-OT plugin ....
 rd /s/q %DITA_HOME%\plugins\org.dnn.dc >nul
@@ -94,6 +90,7 @@ call ant %_transtype%%_subbld% -f %DITA_HOME%\dnn_build.xml -l %_logfile%
 echo Copying additional files required to the output ....
 xcopy %_gitdir%\_content\index.html          %_outdir%\.                /i/s/v/y
 xcopy %_gitdir%\_content\searchresults.html  %_outdir%\.                /i/s/v/y
+xcopy %_gitdir%\_build\urlmap\web.config     %_outdir%\.                /i/s/v/y
 xcopy %_gitdir%\_content\common\samples      %_outdir%\common\samples   /i/s/v/y
 xcopy %_gitdir%\_content\common\img\*.png    %_outdir%\common\img       /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\26D3F6_6_0.*     %_outdir%\_theme           /i/s/v/y
@@ -102,8 +99,8 @@ xcopy %_gitdir%\_themes\dnn\*.png            %_outdir%\_theme           /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\*.js             %_outdir%\_theme           /i/s/v/y
 
 :. The following is a hack.
-xcopy %_outdir%\Developers\CreatingModules\index.html %_outdir%\Developers\Extensions /v
-xcopy %_outdir%\Designers\CreatingThemes\index.html %_outdir%\Designers\Extensions /v
+xcopy %_outdir%\developers\creating-modules\index.html %_outdir%\developers\extensions /v
+xcopy %_outdir%\designers\creating-themes\index.html %_outdir%\designers\extensions /v
 
 
 echo Deleting files we don't need ....
@@ -125,8 +122,12 @@ goto :eof
 :w2d
 
 echo Copying files required by the build ....
-xcopy %_gitdir%\_build\w2d\build.properties     %DITA_HOME%           /v/y
-xcopy %_gitdir%\_content\*.docx                 %_blddir%         /i/s/v/y
+xcopy %_gitdir%\_build\w2d\org.dita4publishers.word2dita  %DITA_HOME%\plugins\org.dita4publishers.word2dita  /i/s/v/y
+xcopy %_gitdir%\_content\*.docx                           %_blddir%                                          /i/s/v/y
+
+echo Integrating the Word2DITA DITA-OT plugin ....
+cd /d %DITA_HOME%
+ant -f integrator.xml strict
 
 echo Building %_transtype% ....
 
