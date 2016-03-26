@@ -478,9 +478,12 @@ main:after {
   margin-top: 1em;
   argin-bottom: 1em;
 }
-.breadcrumb {
+.breadcrumbs {
   font-size: smaller;
   margin-bottom: 1em;
+}
+.breadcrumbs a {
+  text-transform: capitalize;
 }
 dt.prereq {
   margin-left: 20px;
