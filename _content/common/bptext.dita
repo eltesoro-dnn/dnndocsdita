@@ -54,6 +54,19 @@
         <!-- <note conkeyref="k-bptext/note-CloudSupport"></note> -->
         <note type="important" id="note-CloudSupport">If your Evoq instance is hosted on the DNN Cloud, please contact <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support">Customer Support</xref> directly. The following instructions are not applicable to DNN Cloud instances.</note>
 
+
+        <!-- <codeblock conref="../../common/bptext.dita#bptext/codeblock-JWT"></codeblock> -->
+        <!-- <codeblock conkeyref="k-bptext/codeblock-JWT"></codeblock> -->
+        <codeblock id="codeblock-JWT">
+    &lt;authServices&gt;
+        &lt;messageHandlers&gt;
+            &lt;!-- other message handlers --&gt;
+            &lt;addname=&quot;JWTAuth&quot;type=&quot;Dnn.AuthServices.Jwt.Auth.JwtAuthMessageHandler, Dnn.AuthServices.Jwt&quot;enabled=&quot;false&quot;defaultInclude=&quot;false&quot;forceSSL=&quot;true&quot;/&gt;
+        &lt;/messageHandlers&gt;
+    &lt;/authServices&gt;
+        </codeblock>
+
+
     </body>
 
 </topic>
