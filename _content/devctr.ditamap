@@ -10,51 +10,51 @@
 
 
     <!-- Topics -->
-    <topicref format="dita" type="concept" toc="yes" href="Developers/index.dita" >
+    <topicref format="dita" type="concept" toc="yes" href="developers/index.dita" >
 
-        <topicref format="dita" type="topic"   navtitle="What's New"   toc="yes" href="Developers/DNN8WhatsNew.dita" />
-        <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="Developers/OverviewDNNPlatform.dita" />
+        <topicref format="dita" type="topic"   navtitle="What's New"   toc="yes" href="developers/dnn8-whats-new.dita" />
+        <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="developers/overview-dnn-platform.dita" />
 
         <!-- Setup -->
-        <topicref format="dita" type="topic" toc="yes" href="Developers/Setup/SetUpDNN.dita" copy-to="Developers/Setup/index.dita" collection-type="sequence" >
-            <topicref format="dita" type="task" toc="yes" href="Developers/Setup/SetUpDNNFolder.dita" />
-            <topicref format="dita" type="task" toc="yes" href="Developers/Setup/SetUpIIS.dita" />
-            <topicref format="dita" type="task" toc="yes" href="Developers/Setup/SetUpSQL.dita" />
-            <topicref format="dita" type="task" toc="yes" href="Developers/Setup/RunInstWiz.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="developers/setup/set-up-dnn.dita" copy-to="developers/setup/index.dita" collection-type="sequence">
+            <topicref format="dita" type="task" toc="yes" href="developers/setup/set-up-dnn-folder.dita" />
+            <topicref format="dita" type="task" toc="yes" href="developers/setup/set-up-iis.dita" />
+            <topicref format="dita" type="task" toc="yes" href="developers/setup/set-up-sql.dita" />
+            <topicref format="dita" type="task" toc="yes" href="developers/setup/run-installation-wizard.dita" />
         </topicref>
 
         <!-- About modules -->
-        <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/ModuleDevelopment.dita" copy-to="Developers/AboutModules/index.dita" collection-type="family">
-            <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/ModuleFeatures.dita" />
-            <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/ModuleArchitecture.dita" />
-            <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/WebFormsModuleDevelopment.dita" />
-            <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/MVCModuleDevelopment.dita" />
-            <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/SPAModuleDevelopment.dita" />
-            <topicref format="dita" type="concept" toc="yes" href="Developers/AboutModules/UnsupportedMVCFeatures.dita" />
+        <topicref format="dita" type="concept" toc="yes" href="developers/about-modules/module-development.dita" copy-to="developers/about-modules/index.dita" collection-type="family">
+            <topicref format="dita" type="concept" toc="yes" href="developers/about-modules/module-features.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="developers/about-modules/module-architecture.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="developers/about-modules/web-forms-module-development.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="developers/about-modules/mvc-module-development.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="developers/about-modules/spa-module-development.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="developers/about-modules/unsupported-mvc-features.dita" />
         </topicref>
 
         <!-- Creating modules -->
-        <topicref format="dita" type="concept" toc="yes" href="Developers/CreatingModules/CreateModule.dita" copy-to="Developers/CreatingModules/index.dita" collection-type="sequence">
-            <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/UseModuleCreator.dita" />
-            <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/CreateModuleUsingTemplates.dita" />
-            <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/StartVSProjWithTemplates.dita" />
-            <topicref format="dita" type="task" toc="yes" href="Developers/CreatingModules/TestModule.dita" />
-            <topicref format="dita" type="task" navtitle="Pack the Module"   toc="yes" href="Developers/Extensions/PackExtension.dita" />
-            <topicref format="dita" type="task" navtitle="Install a Module" toc="yes" href="Developers/Extensions/InstallExtension.dita" />
+        <topicref format="dita" type="concept" toc="yes" href="developers/creating-modules/create-module.dita" copy-to="developers/creating-modules/index.dita" collection-type="sequence">
+            <topicref format="dita" type="task" toc="yes" href="developers/creating-modules/use-module-creator.dita" />
+            <topicref format="dita" type="task" toc="yes" href="developers/creating-modules/create-module-using-templates.dita" />
+            <topicref format="dita" type="task" toc="yes" href="developers/creating-modules/start-vs-project-with-templates.dita" />
+            <topicref format="dita" type="task" toc="yes" href="developers/creating-modules/test-module.dita" />
+            <topicref format="dita" type="task" navtitle="Pack the Module"   toc="yes" href="developers/extensions/pack-extension.dita" />
+            <topicref format="dita" type="task" navtitle="Install a Module" toc="yes" href="developers/extensions/install-extension.dita" />
         </topicref>
 
         <!-- Local references -->
-        <topicref format="dita" type="topic" toc="yes" href="Developers/DevRefs.dita" collection-type="family">
+        <topicref format="dita" type="topic" toc="yes" href="developers/developer-references.dita" collection-type="family">
             <topicref format="html" scope="external" navtitle="DNN API Reference" toc="yes" href="http://www.dnnsoftware.com/dnn-api/" />
-            <topicref format="dita" type="topic"   toc="yes" href="Developers/Providers.dita" />
-            <topicref format="dita" type="concept" toc="yes" href="Developers/AboutEVS.dita" />
-            <!-- <topicref format="dita" type="reference" toc="yes" href="Developers/ContentsModulePack.dita" /> Topic not ready. -->
-            <topicref format="dita" type="reference" navtitle="DNN Manifest Schema" toc="yes" href="Developers/Extensions/DNNManifestSchema.dita" />
+            <topicref format="dita" type="topic"   toc="yes" href="developers/providers.dita" />
+            <topicref format="dita" type="concept" toc="yes" href="developers/about-evs.dita" />
+            <!-- <topicref format="dita" type="reference" toc="yes" href="developers/contents-module-pack.dita" /> Topic not ready. -->
+            <topicref format="dita" type="reference" navtitle="DNN Manifest Schema" toc="yes" href="developers/extensions/dnn-manifest-schema.dita" />
         </topicref>
 
         <!-- Important global references -->
-        <topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="Developers/glossary-dev.dita" >
-            <mapref href="common/Glossary/glossary.ditamap" />
+        <topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="developers/glossary.dita" >
+            <mapref href="common/glossary/glossary.ditamap" />
         </topichead>
 
     </topicref>
@@ -71,23 +71,23 @@
         <!-- Common to all centers. -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept"   navtitle="DNN Platform"         href="Developers/OverviewDNNPlatform.dita" />
+                <topicref format="dita" type="concept"   navtitle="DNN Platform"         href="developers/overview-dnn-platform.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="reference" navtitle="DNN Requirements"     href="Developers/Requirements.dita" />
+                <topicref format="dita" type="reference" navtitle="DNN Requirements"     href="developers/requirements.dita" />
             </relcell>
             <relcell/>
         </relrow>
 
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic"     navtitle="Set Up DNN"           href="Developers/Setup/SetUpDNN.dita" />
+                <topicref format="dita" type="topic"     navtitle="Set Up DNN"           href="developers/setup/set-up-dnn.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task"      navtitle="Install an Extension" href="Developers/Extensions/InstallExtension.dita" />
+                <topicref format="dita" type="task"      navtitle="Install an Extension" href="developers/extensions/install-extension.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="reference" navtitle="DNN Requirements"     href="Developers/Requirements.dita" />
+                <topicref format="dita" type="reference" navtitle="DNN Requirements"     href="developers/requirements.dita" />
             </relcell>
         </relrow>
 
@@ -95,8 +95,8 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task" navtitle="Pack Your Extension"  href="Developers/Extensions/PackExtension.dita" />
-                <topicref format="dita" type="task" navtitle="Install an Extension" href="Developers/Extensions/InstallExtension.dita" />
+                <topicref format="dita" type="task" navtitle="Pack Your Extension"  href="developers/extensions/pack-extension.dita" />
+                <topicref format="dita" type="task" navtitle="Install an Extension" href="developers/extensions/install-extension.dita" />
             </relcell>
             <relcell/>
         </relrow>
@@ -104,53 +104,53 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task" navtitle="Pack Your Extension" href="Developers/Extensions/PackExtension.dita" />
+                <topicref format="dita" type="task" navtitle="Pack Your Extension" href="developers/extensions/pack-extension.dita" />
             </relcell>
             <relcell>
-                <!-- <topicref format="dita" type="reference" toc="yes" href="Designers/ContentsThemePack.dita" /> Topic not ready. -->
-                <!-- <topicref format="dita" type="reference" toc="yes" href="Developers/ContentsModulePack.dita" /> Topic not ready. -->
-                <topicref format="dita" type="reference" navtitle="DNN Manifest Schema" href="Developers/Extensions/DNNManifestSchema.dita" />
+                <!-- <topicref format="dita" type="reference" toc="yes" href="designers/contents-theme-pack.dita" /> Topic not ready. -->
+                <!-- <topicref format="dita" type="reference" toc="yes" href="developers/contents-module-pack.dita" /> Topic not ready. -->
+                <topicref format="dita" type="reference" navtitle="DNN Manifest Schema" href="developers/extensions/dnn-manifest-schema.dita" />
             </relcell>
         </relrow>
 
         <!-- Specific to this center. -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept" href="Developers/AboutModules/ModuleDevelopment.dita" />
-                <topicref format="dita" type="concept" href="Developers/AboutModules/WebFormsModuleDevelopment.dita" />
-                <topicref format="dita" type="concept" href="Developers/AboutModules/MVCModuleDevelopment.dita" />
-                <topicref format="dita" type="concept" href="Developers/AboutModules/SPAModuleDevelopment.dita" />
-                <topicref format="dita" type="topic"   href="Developers/CreatingModules/CreateModule.dita" />
+                <topicref format="dita" type="concept" href="developers/about-modules/module-development.dita" />
+                <topicref format="dita" type="concept" href="developers/about-modules/web-forms-module-development.dita" />
+                <topicref format="dita" type="concept" href="developers/about-modules/mvc-module-development.dita" />
+                <topicref format="dita" type="concept" href="developers/about-modules/spa-module-development.dita" />
+                <topicref format="dita" type="topic"   href="developers/creating-modules/create-module.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task" navtitle="Pack Your Extension" href="Developers/Extensions/PackExtension.dita" />
+                <topicref format="dita" type="task" navtitle="Pack Your Extension" href="developers/extensions/pack-extension.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="topic" href="Developers/Providers.dita" />
-                <!-- <topicref format="dita" type="reference" scope="peer" href="Developers/ContentsModulePack.dita" /> Topic not ready. -->
-                <!-- <topicref format="dita" type="reference" scope="peer" href="Designers/ContentsThemePack.dita" /> Topic not ready. -->
-            </relcell>
-        </relrow>
-
-        <relrow>
-            <relcell>
-                <topicref format="dita" type="concept" href="Developers/AboutModules/MVCModuleDevelopment.dita" />
-                <topicref format="dita" type="concept" href="Developers/AboutModules/SPAModuleDevelopment.dita" />
-            </relcell>
-            <relcell>
-                <topicref format="dita" type="task" href="Developers/CreatingModules/CreateModuleUsingTemplates.dita" />
-            </relcell>
-            <relcell>
-                <topicref format="dita" type="topic" href="Developers/Providers.dita" />
+                <topicref format="dita" type="topic" href="developers/providers.dita" />
+                <!-- <topicref format="dita" type="reference" scope="peer" href="developers/contents-module-pack.dita" /> Topic not ready. -->
+                <!-- <topicref format="dita" type="reference" scope="peer" href="designers/contents-theme-pack.dita" /> Topic not ready. -->
             </relcell>
         </relrow>
 
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept" href="Developers/AboutEVS.dita" />
+                <topicref format="dita" type="concept" href="developers/about-modules/mvc-module-development.dita" />
+                <topicref format="dita" type="concept" href="developers/about-modules/spa-module-development.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task" href="Developers/CreatingModules/TestModule.dita" />
+                <topicref format="dita" type="task" href="developers/creating-modules/create-module-using-templates.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="topic" href="developers/providers.dita" />
+            </relcell>
+        </relrow>
+
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="concept" href="developers/about-evs.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="task" href="developers/creating-modules/test-module.dita" />
             </relcell>
             <relcell/>
         </relrow>
@@ -158,32 +158,41 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task" navtitle="Install an Extension" href="Developers/Extensions/InstallExtension.dita" />
-                <topicref format="dita" type="task" href="Developers/CreatingModules/TestModule.dita" />
+                <topicref format="dita" type="task" navtitle="Install an Extension" href="developers/extensions/install-extension.dita" />
+                <topicref format="dita" type="task" href="developers/creating-modules/test-module.dita" />
             </relcell>
             <relcell/>
         </relrow>
 
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept" href="Developers/AboutModules/WebFormsModuleDevelopment.dita" />
-                <topicref format="dita" type="concept" href="Developers/AboutModules/MVCModuleDevelopment.dita" />
-                <topicref format="dita" type="concept" href="Developers/AboutModules/SPAModuleDevelopment.dita" />
+                <topicref format="dita" type="concept" href="developers/about-modules/web-forms-module-development.dita" />
+                <topicref format="dita" type="concept" href="developers/about-modules/mvc-module-development.dita" />
+                <topicref format="dita" type="concept" href="developers/about-modules/spa-module-development.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task" href="Developers/CreatingModules/UseModuleCreator.dita" />
+                <topicref format="dita" type="task" href="developers/creating-modules/use-module-creator.dita" />
             </relcell>
+            <relcell/>
+        </relrow>
+
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="concept" toc="yes" href="developers/about-modules/mvc-module-development.dita" />
+                <topicref format="dita" type="concept" toc="yes" href="developers/about-modules/unsupported-mvc-features.dita" />
+            </relcell>
+            <relcell/>
             <relcell/>
         </relrow>
 
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task" href="Developers/CreatingModules/StartVSProjWithTemplates.dita" />
-                <topicref format="dita" type="task" href="Developers/CreatingModules/CreateModuleUsingTemplates.dita" />
+                <topicref format="dita" type="task" href="developers/creating-modules/start-vs-project-with-templates.dita" />
+                <topicref format="dita" type="task" href="developers/creating-modules/create-module-using-templates.dita" />
             </relcell>
             <relcell>
-                <!-- <topicref format="dita" type="reference" toc="yes" href="Developers/ContentsModulePack.dita" /> Topic not ready. -->
+                <!-- <topicref format="dita" type="reference" toc="yes" href="developers/contents-module-pack.dita" /> Topic not ready. -->
             </relcell>
         </relrow>
     </reltable>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="bp-themedef">
+
+    <title>Boilerplates</title>
+
+    <prolog>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+    </prolog>
+
+    <body>
+
+        <!-- <p conkeyref="k-themedef/pane"></p> -->
+        <p id="pane">A <term>pane</term> is a section of a webpage that displays static content, dynamic content, or a standard theme object.</p>
+
+        <!-- <p conkeyref="k-themedef/layout"></p> -->
+        <p id="layout">A <term>layout template</term> defines where panes are located on the webpage and what each pane contains. The layout templates included in a theme are variations that the web designer can choose from for each page in the website, such as the home page, a gallery of photos, or a listing of products for sale.</p>
+
+        <!-- <p conkeyref="k-themedef/container"></p> -->
+        <p id="container">A <term>container</term> is similar to a layout template, except a container's scope is a single pane, whereas a layout template's scope is the entire page. A container is associated with a <term>module</term>, which can generate dynamic content or perform other functionality.</p>
+
+    </body>
+
+</topic>
+

@@ -10,36 +10,36 @@
 
 
     <!-- Topics -->
-    <topicref format="dita" type="concept" href="Administrators/index.dita" toc="yes">
+    <topicref format="dita" type="concept" href="administrators/index.dita" toc="yes">
 
-        <topicref format="dita" type="topic"   navtitle="What's New"   toc="yes" href="Administrators/DNN8WhatsNew.dita" />
-        <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="Administrators/OverviewDNNPlatform.dita" />
+        <topicref format="dita" type="topic"   navtitle="What's New"   toc="yes" href="administrators/dnn8-whats-new.dita" />
+        <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="administrators/overview-dnn-platform.dita" />
 
         <!-- Setup -->
-        <topicref format="dita" type="topic" toc="yes" href="Administrators/Setup/SetUpDNN.dita" copy-to="Administrators/Setup/index.dita" collection-type="sequence">
-            <topicref format="dita" type="task" toc="yes" href="Administrators/Setup/SetUpDNNFolder.dita" />
-            <topicref format="dita" type="task" toc="yes" href="Administrators/Setup/SetUpIIS.dita" />
-            <topicref format="dita" type="task" toc="yes" href="Administrators/Setup/SetUpSQL.dita" />
-            <topicref format="dita" type="task" toc="yes" href="Administrators/Setup/RunInstWiz.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="administrators/setup/set-up-dnn.dita" copy-to="administrators/setup/index.dita" collection-type="sequence">
+            <topicref format="dita" type="task" toc="yes" href="administrators/setup/set-up-dnn-folder.dita" />
+            <topicref format="dita" type="task" toc="yes" href="administrators/setup/set-up-iis.dita" />
+            <topicref format="dita" type="task" toc="yes" href="administrators/setup/set-up-sql.dita" />
+            <topicref format="dita" type="task" toc="yes" href="administrators/setup/run-installation-wizard.dita" />
         </topicref>
 
-        <topicref format="dita" type="task" navtitle="Install an Extension" toc="yes" href="Administrators/Extensions/InstallExtension.dita" />
+        <topicref format="dita" type="task" navtitle="Install an Extension" toc="yes" href="administrators/extensions/install-extension.dita" />
 
         <!-- Licensing -->
-        <topicref type="topic" format="dita" navtitle="Licensing" toc="yes" href="Administrators/Licensing/Licensing.dita" copy-to="Administrators/Licensing/index.dita" collection-type="family">
-            <topicref type="task"  format="dita" navtitle="Activate Automatically" toc="yes" href="Administrators/Licensing/ActivateLicenseAutomatically.dita" />
-            <topicref type="task"  format="dita" navtitle="Activate Manually"      toc="yes" href="Administrators/Licensing/ActivateLicenseManually.dita" />
-            <topicref type="topic" format="dita" navtitle="FAQ"                    toc="yes" href="Administrators/Licensing/FAQLicensing.dita" />
-            <topicref type="topic" format="dita" navtitle="Troubleshooting"        toc="yes" href="Administrators/Licensing/TroubleshootingLicensing.dita" />
+        <topicref type="topic" format="dita" navtitle="Licensing" toc="yes" href="administrators/licensing/licensing.dita" copy-to="administrators/licensing/index.dita" collection-type="family">
+            <topicref type="task"  format="dita" navtitle="Activate Automatically" toc="yes" href="administrators/licensing/activate-license-automatically.dita" />
+            <topicref type="task"  format="dita" navtitle="Activate Manually"      toc="yes" href="administrators/licensing/activate-license-manually.dita" />
+            <topicref type="topic" format="dita" navtitle="FAQ"                    toc="yes" href="administrators/licensing/faq-licensing.dita" />
+            <topicref type="topic" format="dita" navtitle="Troubleshooting"        toc="yes" href="administrators/licensing/troubleshooting-licensing.dita" />
         </topicref>
 
 
         <!-- Local references -->
-        <topicref format="dita" type="topic" toc="yes" href="Administrators/AdmRefs.dita" collection-type="family">
+        <topicref format="dita" type="topic" toc="yes" href="administrators/administrator-references.dita" collection-type="family">
             <topicref format="html" scope="external" navtitle="Online User Guide" toc="yes" href="http://www.dnnsoftware.com/help" />
         <!--
-            <xref format="dita" href="../common/placeholderlink.dita">DNN 8.0 User Guide</xref>
-            <xref format="dita" href="../common/placeholderlink.dita">Evoq 8.x User Guide</xref>
+            DNN 8.0 User Guide
+            Evoq 8.x User Guide
             Security Guide
             Web Farm Configuration Guide
             Performance Tuning
@@ -47,8 +47,8 @@
         </topicref>
 
         <!-- Important global references -->
-        <topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="Administrators/glossary-adm.dita" >
-            <mapref href="common/Glossary/glossary.ditamap" />
+        <topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="administrators/glossary.dita" >
+            <mapref href="common/glossary/glossary.ditamap" />
         </topichead>
 
     </topicref>
@@ -65,23 +65,23 @@
         <!-- Common to all centers. -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept"   navtitle="DNN Platform"            href="Administrators/OverviewDNNPlatform.dita" />
+                <topicref format="dita" type="concept"   navtitle="DNN Platform"            href="administrators/overview-dnn-platform.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="reference" navtitle="DNN Requirements"        href="Administrators/Requirements.dita" />
+                <topicref format="dita" type="reference" navtitle="DNN Requirements"        href="administrators/requirements.dita" />
             </relcell>
             <relcell/>
         </relrow>
 
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic"     navtitle="Set Up DNN"              href="Administrators/Setup/SetUpDNN.dita" />
+                <topicref format="dita" type="topic"     navtitle="Set Up DNN"              href="administrators/setup/set-up-dnn.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task"      navtitle="Install an Extension"    href="Administrators/Extensions/InstallExtension.dita" />
+                <topicref format="dita" type="task"      navtitle="Install an Extension"    href="administrators/extensions/install-extension.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="reference" navtitle="DNN Requirements"        href="Administrators/Requirements.dita" />
+                <topicref format="dita" type="reference" navtitle="DNN Requirements"        href="administrators/requirements.dita" />
             </relcell>
         </relrow>
 

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/task.dtd">
+<task xml:lang="en" id="tsk-SetUpSQL">
+
+    <title>Install and Set Up SQL</title>
+    <titlealts>
+        <navtitle>Set Up SQL</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>ERT</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="installing" />
+            <audience type="programmer" job="installing" />
+            <audience type="other" othertype="designer" job="installing" />
+        </metadata>
+    </prolog>
+
+    <taskbody>
+
+        <steps>
+
+            <step><cmd>Install SQL.</cmd>
+                <substeps>
+                    <substep><cmd><xref format="dita" href="../requirements.dita">Check compatible versions.</xref></cmd></substep>
+                    <substep><cmd>Choose <uicontrol>New SQL Server stand-alone installation...</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallSQL-1.png"><alt>New SQL Server stand-alone installation</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Include any product updates.</cmd></substep>
+                    <substep><cmd>Accept the defaults in <uicontrol>Feature Selection</uicontrol>, <uicontrol>Instance Configuration</uicontrol>, and <uicontrol>Server Configuration</uicontrol>.</cmd></substep>
+                    <substep><cmd>In <uicontrol>Database Engine Configuration</uicontrol>, under <uicontrol>Authentication Mode</uicontrol>, choose <uicontrol>Mixed Mode</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallSQL-6.png"><alt>Database Engine Conf > Authentication Mode > Mixed Mode</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Accept the defaults in remaining dialogs.</cmd></substep>
+                </substeps>
+            </step>
+
+            <step><cmd>Create a SQL database for your website.</cmd>
+                <substeps>
+                    <substep><cmd>Start the <uicontrol>Microsoft SQL Server Management Studio</uicontrol> app.</cmd></substep>
+                    <substep><cmd>In the <uicontrol>Object Explorer</uicontrol> panel, right-click on <uicontrol>Databases</uicontrol>, and choose <uicontrol>New Database...</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-2.png"><alt>In the Object Explorer panel, right-click Databases, choose New Database.</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Enter the name of the new database. Click <uicontrol>OK</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-3.png"><alt>Enter new database name.</alt></image>
+                            <note type="note">Remember the database name, because it will be required by the DNN Installation Wizard.</note>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+
+            <step><cmd>Create a SQL user account.</cmd>
+                <substeps>
+                    <substep><cmd>Under <uicontrol>Security</uicontrol>, right-click on <uicontrol>Logins</uicontrol>, and choose <uicontrol>New Login...</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-4.png"><alt>Under Security, right-click Logins, choose New Login.</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Enter the username, choose <uicontrol>SQL Server authentication</uicontrol>, add a password, uncheck <uicontrol>Enforce password policy</uicontrol>, and choose the database.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-5.png"><alt>Choose SQL Server authentication. Uncheck Enforce password policy.</alt></image>
+                            <note type="note">Remember the username and password, because they will be required by the DNN Installation Wizard.</note>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+
+            <step><cmd>Give the new SQL user <b>db_owner</b> access to the new database.</cmd>
+                <substeps>
+                    <substep><cmd>In the <uicontrol>Object Explorer</uicontrol> panel, under <menucascade><uicontrol><varname>your database</varname></uicontrol> <uicontrol>Security</uicontrol></menucascade>, right-click on <uicontrol>Users</uicontrol>, and choose <uicontrol>New User...</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-6.png"><alt>Under your database > Security, right-click Users, choose New User.</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Set <uicontrol>User type</uicontrol> to <uicontrol>SQL user with login</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-7.png"><alt>User type = SQL user with login</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Enter the username of the account you just created, then click <uicontrol>Check Names</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-8.png"><alt>Enter the new account's login name, then click Check Names.</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Under <uicontrol>Select a page</uicontrol>, select <uicontrol>Membership</uicontrol>, and check the <uicontrol>db_owner</uicontrol> database role membership.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-10.png"><alt>For Membership page, check db_owner.</alt></image>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+
+    </taskbody>
+
+
+    <related-links>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/setting-up-your-module-development-environment"><linktext>DNN Wiki: Setting up Your Module Development Environment</linktext></link>
+        <link format="html" scope="external" href="http://www.christoc.com/Tutorials/All-Tutorials/aid/1"><linktext>Setting up your DotNetNuke Module Development Environment by Chris Hammond</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155070/installing-dnn"><linktext>DNN Community Blog: Installing DNN by Clinton Patterson</linktext></link>
+    </related-links>
+
+</task>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
+<glossentry xml:lang="en" id="provider">
+
+    <glossterm>provider</glossterm>
+    <glossdef>A type of DNN extension that provides an alternative implementation of a specific functionality of the DNN Platform. Examples: authentication providers, data providers, and navigation providers. In most cases, even if multiple implementations are available in a DNN installation, only one implementation of each provider type is active at any time.</glossdef>
+
+    <!-- Issues with the link.
+    <related-links>
+        <link format="dita" scope="peer" href="providers.dita"><linktext>Providers Reference</linktext></link>
+    </related-links>
+    -->
+
+</glossentry>

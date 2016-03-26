@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/task.dtd">
+<task xml:lang="en" id="tsk-SetUpIIS">
+
+    <title>Enable and Set Up IIS</title>
+    <titlealts>
+        <navtitle>Set Up IIS</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>ERT</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="installing" />
+            <audience type="programmer" job="installing" />
+            <audience type="other" othertype="designer" job="installing" />
+        </metadata>
+    </prolog>
+
+    <taskbody>
+
+        <prereq>
+            <xref format="dita" href="set-up-dnn-folder.dita">DNN installed with folder permissions for the user account that will run your website.</xref>
+        </prereq>
+
+        <steps>
+            <step><cmd>Enable IIS.</cmd>
+                <substeps>
+                    <substep><cmd><xref format="dita" href="../requirements.dita">Check compatible versions.</xref></cmd></substep>
+                    <substep><cmd>Go to <menucascade><uicontrol>Control Panel</uicontrol> <uicontrol>Programs and Features</uicontrol> <uicontrol>Turn Windows features on or off</uicontrol></menucascade>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallIIS-1.png"><alt>Turn Windows features on or off</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Under <uicontrol>Internet Information Services</uicontrol>, turn on the following:</cmd>
+                        <info>
+                            <ul>
+                                <li><uicontrol>Web Management Tools</uicontrol>: IIS Management Console</li>
+                                <li><uicontrol>World Wide Web Services</uicontrol>
+                                    <ul>
+                                        <li><uicontrol>Application Development Features</uicontrol>: ASP.NET 3.5 and 4.6</li>
+                                        <li><uicontrol>Common HTTP Features</uicontrol>: Default Document and Static Content</li>
+                                        <li>(Optional) <uicontrol>Security</uicontrol>: Basic Authentication</li>
+                                        <!-- TODO: Per Joe's tech review on 20160106: Add Windows Authentication here and in the screenshot. -->
+                                    </ul>
+                                </li>
+                                <li><uicontrol>Internet Information Services Hostable Web Core</uicontrol></li>
+                            </ul>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallIIS-6.png"><alt>IIS options to turn on</alt></image>
+                        </info>
+                    </substep>
+                    <!-- TODO: Per Joe's tech review on 20160106: Add (Optional) Performance Features: Static Content Compression -->
+                </substeps>
+            </step>
+
+            <stepsection>You can create a new website or set up an existing one for use with DNN. Choose one of the next two steps.</stepsection>
+
+            <step><cmd>To create a new website and point it to the DNN installation folder:</cmd>
+               <substeps>
+                    <substep><cmd>Go to <menucascade><uicontrol>Control Panel</uicontrol> <uicontrol>Administrative Tools</uicontrol> <uicontrol>Internet Information Services (IIS) Manager</uicontrol></menucascade>.</cmd></substep>
+                    <substep><cmd>In the <uicontrol>Connections</uicontrol> panel, expand your host tree, right-click on <uicontrol>Sites</uicontrol>, and choose <uicontrol>Add Website</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-1.png"><alt>In Connections, Sites, then Add Website"</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Enter the new website's name and choose the location.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-2.png"><alt>Enter the new website's name and choose the location.</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>Enter the <uicontrol>Host name</uicontrol>.</cmd>
+                        <info>
+                            <p><b>Developers and Designers:</b> If setting up a local development environment, you can use <codeph>www.dnndev.me</codeph> (or any subdomain). DNNDEV.ME is a registered domain which points to the loopback address of 127.0.0.1, so it will always resolve locally.</p>
+                            <p><b>Administrators: </b> If setting up a live website, use your website's domain.</p>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-4.png"><alt>For local, use www.dnndev.me.</alt></image>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+
+            <step><cmd>To use an existing IIS website:</cmd>
+                <substeps>
+                    <substep><cmd>In the <uicontrol>Connections</uicontrol> panel, right-click on the name of the existing website, and choose <uicontrol>Edit Bindings...</uicontrol>.</cmd>
+                        <info>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-6.png"><alt>Right-click on the website's name and choose Edit Bindings.</alt></image>
+                        </info>
+                    </substep>
+                    <substep><cmd>In <uicontrol>Site Bindings</uicontrol>, click <uicontrol>Add...</uicontrol>. In <uicontrol>Add Site Binding</uicontrol>, enter the <uicontrol>Host name</uicontrol>.</cmd>
+                        <info>
+                            <p><b>Developers and Designers:</b> If setting up a local development environment, you can use <codeph>www.dnndev.me</codeph> (or any subdomain). DNNDEV.ME is a registered domain which points to the loopback address of 127.0.0.1, so it will always resolve locally.</p>
+                            <p><b>Administrators:</b> If setting up a live website, use your website's domain.</p>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-7.png"><alt>For local, use www.dnndev.me.</alt></image>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+
+            <step><cmd>If you do not use <b>NETWORK SERVICE</b> as the user account to run your website, verify that <b>IIS AppPool\AppPoolName</b> has <b>Full</b> or <b>Modify</b> permissions for the DNN installation folder.</cmd>
+                <info>
+                    <p>The account <b>IIS AppPool\AppPoolName</b> is automatically created by IIS.</p>
+                    <p>See <xref format="dita" href="set-up-dnn-folder.dita">Set Up DNN Folder and the User Account</xref>.</p>
+                </info>
+            </step>
+        </steps>
+
+    </taskbody>
+
+
+    <related-links>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/setting-up-your-module-development-environment"><linktext>DNN Wiki: Setting up Your Module Development Environment</linktext></link>
+        <link format="html" scope="external" href="http://www.christoc.com/Tutorials/All-Tutorials/aid/1"><linktext>Setting up your DotNetNuke Module Development Environment by Chris Hammond</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155070/installing-dnn"><linktext>DNN Community Blog: Installing DNN by Clinton Patterson</linktext></link>
+    </related-links>
+
+</task>
