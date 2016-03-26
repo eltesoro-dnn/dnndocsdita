@@ -27,18 +27,28 @@
         <steps>
             <step>
                 <cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuHostCommonExtensions.png"><alt></alt></image></info>
+                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuHostCommonExtensions.png"><alt>Host - Extensions</alt></image></info>
             </step>
 
-            <step><cmd>Install the DNN JWT Auth Handler.</cmd>
-                <!-- <info><image scalefit="yes" placement="break" align="left" href="../../common/img/.png"><alt></alt></image></info> Option not yet on Evoq-on-Demand instance. -->
+            <step>
+                <cmd>Install the DNN JWT Auth Handler.</cmd>
+                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-AvailableExtensionsProvidersJWT.png"><alt>Available Extensions - Providers - DNN JWT Auth Handler - Install</alt></image></info>
                 <substeps>
-                    <substep><cmd>In the <uicontrol>Available Extensions</uicontrol> tab, expand the <uicontrol>Authentication Systems</uicontrol>section.</cmd></substep>
+                    <substep><cmd>In the <uicontrol>Available Extensions</uicontrol> tab, expand the <uicontrol>Providers</uicontrol>section.</cmd></substep>
                     <substep><cmd>Search for <uicontrol>DNN JWT Auth Handler</uicontrol>, then click or tap its <uicontrol>Install</uicontrol> button.</cmd></substep>
                 </substeps>
+                <stepresult>
+                    <p>In the <filepath>web.config</filepath> file, the JWTAuth line is added inside the <codeph>&lt;messageHandlers/&gt;</codeph> tag.</p>
+                    <codeblock conkeyref="k-bptext/codeblock-JWT"></codeblock>
+                </stepresult>
             </step>
 
-            <step><cmd></cmd></step>
+            <step>
+                <cmd>In web.config, enable JWTAuth.</cmd>
+                    <codeblock>
+    &lt;add name=&quot;JWTAuth&quot; type=&quot;Dnn.AuthServices.Jwt.Auth.JwtAuthMessageHandler, Dnn.AuthServices.Jwt&quot; enabled=&quot;true&quot; defaultInclude=&quot;false&quot; forceSSL=&quot;true&quot; /&gt;
+                    </codeblock>
+            </step>
 
             <step><cmd></cmd></step>
 

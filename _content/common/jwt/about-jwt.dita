@@ -21,54 +21,59 @@
 
     <body>
 
-        <section id="overview">
+        <section id="Overview">
             <title>Overview</title>
 
-            <p>JSON Web Token (JWT) is an IETF-standardized format, intended for securely transmitting self-contained JSON objects where space is limited, such as HTTP headers and URI queries.</p>
+            <p>JSON Web Token (JWT) is an IETF-standardized format, intended for transmitting JavaScript Object Notation (JSON) objects where space is limited, such as HTTP headers and URI queries.</p>
 
             <ul>
-                <li>Compact. </li>
+                <li>Compact. JSON objects are simpler and more compact than Security Assertion Markup Language (SAML) assertions, which use XML.</li>
 
-                <li>Self-contained. </li>
+                <li>Self-contained. JWTs can contain all the information about the user to avoid querying the database unnecessarily.</li>
 
-                <li>Verifiable information. The information contained is digitally signed using a secret with the HMAC algorithm or using a public/private key pair using RSA.</li>
+                <li>Verifiable information. The information can be digitally signed using a secret with the HMAC algorithm or using a public/private key pair using RSA.</li>
 
                 <li>Easy to implement.</li>
             </ul>
 
+            <p>JWT is ideal for applications that cannot or don't want to use cookies, such as mobile native apps and desktop apps. In a standard web-forms application, the user logs into a web site and receives a session/token cookie that the browser sends back with each subsequent request to the site, in order to avoid checking the user's credentials with each request. JWT simply replaces the cookie with a token that is smaller and, therefore, faster to transmit.</p>
+
         </section>
 
 
-        <section id="HowItWorks">
-            <title>How JWT Replaces Cookies</title>
+        <section id="AnatomyOfJWT">
+            <title>Anatomy of a JWT</title>
+            <p>JSON Web Tokens are comprised of the three parts separated by dots; i.e., <codeph>header.payload.signature</codeph> .</p>
+            <ul>
+                <li>Header. A JSON object containing metadata, such as the algorithm used for the hash/encryption of the signature. Converted to octets of the UTF-8 representation of the JavaScript Object Signing and Encryption (JOSE) Header, and then encoded as a Base64 string.</li>
+                <li>Payload. A JWT Claims Set, which is a JSON object that contains the claims. Claims are asserted pieces of information about the user. Encoded as a Base64 string.</li>
+                <li>Signature. The hash/encryption of the header and payload. Encoded as a Base64 string.</li>
+            </ul>
 
-            <p>JWT is ideal for modules that cannot or don't want to use cookies, such as mobile native apps and desktop apps.</p>
-
-            <p>In a standard web-forms application, the user logs into a web site and receives a session/token cookie that the browser sends back with each subsequent request to the site, in order to avoid checking the user's credentials with each request. JWT simply replaces the cookie with a token that is smaller and, therefore, faster to transmit.</p>
+            <example>
+                <p>A JWT Claims Set with three claims:</p>
+                <codeblock>
+    {"iss":"joe",
+     "exp":1300819380,
+     "http://example.com/is_root":true}
+                </codeblock>
+            </example>
         </section>
 
 
-        <section id="DNNJWToverview">
+        <section id="DNNJWTAuth">
             <title>DNN authentication using JWT</title>
 
-            <p>All DNN products support JWT for authentication. This allows DNN modules to send and receive user information without using cookies. However, JWT is not </p>
+            <p>All DNN products support JWT for authentication. This allows DNN modules to send and receive user information without using cookies.</p>
         </section>
 
 
-        <section id="DNNJWTenable">
-            <title>Enable JWT for authentication in DNN</title>
+        <section id="DNNJWTwebconfig">
+            <title>JWT Authentication Handler in DNN</title>
 
+            <p>After the JWT Authentication Handler is installed in DNN, the <filepath>web.config</filepath> file is updated with a line similar to the following:</p>
 
-            <p>When you enable JWT for authentication in DNN, the <filepath>web.config</filepath> file is updated with a line similar to the following:</p>
-
-            <codeblock>
-    &lt;authServices&gt;
-        &lt;messageHandlers&gt;
-            &lt;!-- other message handlers --&gt;
-            &lt;addname=&quot;JWTAuth&quot;type=&quot;Dnn.AuthServices.Jwt.Auth.JwtAuthMessageHandler, Dnn.AuthServices.Jwt&quot;enabled=&quot;false&quot;defaultInclude=&quot;false&quot;forceSSL=&quot;true&quot;/&gt;
-        &lt;/messageHandlers&gt;
-    &lt;/authServices&gt;
-            </codeblock>
+            <codeblock conkeyref="k-bptext/codeblock-JWT"></codeblock>
 
             <simpletable relcolwidth="1* 1* 3*">
                 <sthead>
@@ -95,7 +100,7 @@
                     <stentry>forceSSL</stentry>
                     <stentry><codeph>true</codeph> or <codeph>false</codeph></stentry>
                     <stentry>If <codeph>true</codeph>, SSL mode (HTTPS) is required for API requests; otherwise, all requests are accepted.
-                        <note type="tip">Enforce SSL, so that tokens are treated exactly the same way cookies are treated in a web request, thereby, preventing unauthorized access to the site.</note>
+                        <note type="tip">Enforce SSL, so that tokens are treated the same way cookies are treated in a web request, thereby, preventing unauthorized access to the site.</note>
                     </stentry>
                 </strow>
             </simpletable>
