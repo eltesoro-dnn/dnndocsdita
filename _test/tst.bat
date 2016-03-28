@@ -36,6 +36,13 @@ for /f %%v in ( %~dp0%_expfiles% ) do if not exist %_outdir%\%%v echo Missing ou
 if _%1_ NEQ __ goto :eof
 
 
+:T002
+echo.
+echo ------------------------------------------------------------------------
+echo In Dr. Link Check, enter http://qa.dnncorp.biz/docs/ and click Start.
+echo ------------------------------------------------------------------------
+start http://www.drlinkcheck.com/
+if _%1_ NEQ __ goto :eof
 
 
 
