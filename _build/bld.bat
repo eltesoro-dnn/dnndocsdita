@@ -90,7 +90,7 @@ call ant %_transtype%%_subbld% -f %DITA_HOME%\dnn_build.xml -l %_logfile%
 echo Copying additional files required to the output ....
 xcopy %_gitdir%\_content\index.html          %_outdir%\.                /i/s/v/y
 xcopy %_gitdir%\_content\searchresults.html  %_outdir%\.                /i/s/v/y
-xcopy %_gitdir%\_build\urlmap\web.config     %_outdir%\.                /i/s/v/y
+xcopy %_gitdir%\_content\web.config          %_outdir%\.                /i/s/v/y
 xcopy %_gitdir%\_content\common\samples      %_outdir%\common\samples   /i/s/v/y
 xcopy %_gitdir%\_content\common\img\*.png    %_outdir%\common\img       /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\26D3F6_6_0.*     %_outdir%\_theme           /i/s/v/y

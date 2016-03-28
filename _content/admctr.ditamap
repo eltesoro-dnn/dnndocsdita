@@ -12,8 +12,8 @@
     <!-- Topics -->
     <topicref format="dita" type="concept" href="administrators/index.dita" toc="yes">
 
-        <topicref format="dita" type="topic"   navtitle="What's New"   toc="yes" href="administrators/dnn8-whats-new.dita" />
-        <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="administrators/overview-dnn-platform.dita" />
+        <topicref format="dita" type="topic"   navtitle="What's New"   toc="yes" href="administrators/whats-new-dnn8.dita" />
+        <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="administrators/dnn-platform-overview.dita" />
 
         <!-- Setup -->
         <topicref format="dita" type="topic" toc="yes" href="administrators/setup/set-up-dnn.dita" copy-to="administrators/setup/index.dita" collection-type="sequence">
@@ -65,7 +65,7 @@
         <!-- Common to all centers. -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept"   navtitle="DNN Platform"            href="administrators/overview-dnn-platform.dita" />
+                <topicref format="dita" type="concept"   navtitle="DNN Platform"            href="administrators/dnn-platform-overview.dita" />
             </relcell>
             <relcell>
                 <topicref format="dita" type="reference" navtitle="DNN Requirements"        href="administrators/requirements.dita" />
