@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-JWTAuthRef"> <!-- Replace myID the filename minus extension. -->
+
+    <title>JWT Authentication Reference</title>
+    <titlealts>
+        <navtitle>JWT Auth Reference</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>ERT</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="installing" />
+            <audience type="programmer" job="programming" />
+        </metadata>
+    </prolog>
+
+    <refbody>
+
+        <section id="DNNJWTwebconfig">
+            <title>JWT Authentication Handler in DNN</title>
+
+            <p>After the JWT Authentication Handler is installed in DNN, the <filepath>web.config</filepath> file is updated with a line similar to the following:</p>
+
+            <codeblock conkeyref="k-bptext/codeblock-JWT"></codeblock>
+
+            <simpletable relcolwidth="1* 1* 3*">
+                <sthead>
+                    <stentry>Parameter</stentry>
+                    <stentry>Allowed Values</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow>
+                    <stentry>name</stentry>
+                    <stentry>string</stentry>
+                    <stentry>Name of the authentication provider. Must be unique within the <codeph>messageHandlers</codeph> section.</stentry>
+                </strow>
+                <strow>
+                    <stentry>enabled</stentry>
+                    <stentry><codeph>true</codeph> or <codeph>false</codeph></stentry>
+                    <stentry>If <codeph>true</codeph>, an instance of the provider is created and added to the chain of providers when the application starts. Otherwise, the provider is not instantiated at all.</stentry>
+                </strow>
+                <strow>
+                    <stentry>defaultInclude</stentry>
+                    <stentry><codeph>true</codeph> or <codeph>false</codeph></stentry>
+                    <stentry>If <codeph>true</codeph>, the provider is included for each Web API request, if the API controller limits the allowed providers that can be handled by the different services within the controller.</stentry>
+                </strow>
+                <strow>
+                    <stentry>forceSSL</stentry>
+                    <stentry><codeph>true</codeph> or <codeph>false</codeph></stentry>
+                    <stentry>If <codeph>true</codeph>, SSL mode (HTTPS) is required for API requests; otherwise, all requests are accepted.
+                        <note type="tip">Enforce SSL, so that tokens are treated the same way cookies are treated in a web request, thereby, preventing unauthorized access to the site.</note>
+                    </stentry>
+                </strow>
+            </simpletable>
+
+        </section>
+
+    </refbody>
+
+    <related-links>
+        <link format="" scope="external" href=""><linktext></linktext></link>
+    </related-links>
+</reference>

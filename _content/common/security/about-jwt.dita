@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-AboutJWT">
+
+    <title>About JSON Web Token</title>
+    <titlealts>
+        <navtitle>About JWT</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>ERT</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="installing" />
+            <audience type="programmer" job="programming" />
+        </metadata>
+    </prolog>
+
+    <body>
+
+        <section id="overview">
+            <title>Overview</title>
+
+            <p>The JSON Web Token (JWT) is an open standard (IETF RFC 7519) data format that is compact, self-contained, and secure. It is intended for passing information as JavaScript Object Notation (JSON) objects where space is limited, such as HTTP headers and URI queries.</p>
+
+            <ul>
+                <li>Compact. Because the JWT is comprised of encoded JSON objects, it is compact enough to be sent through a URL query, a POST parameter, or an HTTP header. JSON objects are simpler and more compact than Security Assertion Markup Language (SAML) assertions, which use XML. Due to its smaller size, it can also be transmitted faster.</li>
+                <li>Self-contained. The JWT can contain all the required information about the user and therefore avoids querying the database more than once.</li>
+                <li>Secure. The JWT can be digitally signed with one of the following methods:
+                    <ul>
+                        <li>HMAC algorithm, using a secret</li>
+                        <li>RSA, using a public/private key pair</li>
+                    </ul>
+                </li>
+            </ul>
+
+            <p>JWT is ideal for applications that cannot or don't want to use cookies, such as mobile native apps and desktop apps. In a standard web-forms application, the user logs into a web site and receives a session/token cookie that the browser sends back with each subsequent request to the site, in order to avoid checking the user's credentials with each request. JWT simply replaces the cookie with a token that is smaller and faster to transmit.</p>
+
+        </section>
+
+
+        <section id="authWithJWT">
+            <title>Authentication with JWT</title>
+
+            <note type="note">The JWT Authentication Provider is available in DNN products; however, it must be installed and enabled separately.</note>
+
+            <image scalefit="yes" placement="break" align="left" href="../../common/img/JWTprocess.png"><alt>JWT process</alt></image>
+
+            <ol>
+                <li>The user logs in with their username and password or other security credentials. The browser or the client app sends a POST request with the user credentials, which are sent over an HTTPS connection.</li>
+                <li>The user's credentials are checked against the login database. If valid, the server creates and encrypts a JWT, which is stored in the body of the response.</li>
+                <li>When the user requests a page, the browser or client app stores the JWT inside the Authorization header of the request.</li>
+                <li>The server verifies the JWT signature and extracts the user information from the JWT payload.</li>
+                <li>The requested page or resource is sent to the client.</li>
+            </ol>
+        </section>
+
+
+        <section id="userCredentials">
+            <title>User credentials</title>
+
+            <p>For DNN, the user credentials must be in a JSON object with the user name (key: "u") and password (key: "p").</p>
+
+            <example>
+                <p>A sample POST request with the user name "sitemanager" and password "dnnhost":</p>
+                <codeblock>
+    POST http://testsitece.lvh.me/DesktopModules/JwtAuth/API/mobile/login HTTP/1.1
+    Content-Type: application/json; charset=utf-8
+    Host: testsitece.lvh.me
+    Content-Length: 33
+
+    {"u":"sitemanager","p":"dnnhost"}
+                </codeblock>
+            </example>
+        </section>
+
+
+        <section id="serverResponse">
+            <title>Server response with JWT</title>
+
+            <p>When the server responds to the user's browser, the JSON object that is returned contains three properties.</p>
+            <simpletable relcolwidth="1* 4*">
+                <sthead>
+                    <stentry>Property name</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow>
+                    <stentry><varname>displayName</varname></stentry>
+                    <stentry>The display name of the user.</stentry>
+                </strow>
+                <strow>
+                    <stentry><varname>accessToken</varname></stentry>
+                    <stentry>A JWT that must be included with each subsequent request to the various Web API endpoints for servers. The server obtains the user information from the access token itself, which is faster than retrieving the information from the database again. The access token is valid for 60 minutes and must be renewed using the renewal token.</stentry>
+                </strow>
+                <strow>
+                    <stentry><varname>renewalToken</varname></stentry>
+                    <stentry>A JWT that is required to renew the access token when expired. The renewal token becomes invalid after 14 days, after the user logs out, or when the user changes their credentials, such as the login password for the web site.</stentry>
+                </strow>
+            </simpletable>
+
+            <example>
+                <p>A sample JSON object sent to the browser after validating a user named "Site Manager":</p>
+                <codeblock>
+    HTTP/1.1 200 OK
+    Cache-Control: no-cache
+    Pragma: no-cache
+    Content-Type: application/json; charset=utf-8
+    Expires: -1
+    Date: Wed, 23 Dec 2015 00:54:43 GMT
+    Content-Length: 425
+
+    {
+     "displayName":"Site Manager",
+     "accessToken":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaWQiOiJkYmViMjlhYTMyYjg0MTMxYTA0NjY4MDAyNzAxNWEwZSIsInJvbGUiOlsiQWRtaW5pc3RyYXRvcnMiLCJSZWdpc3RlcmVkIFVzZXJzIiwiU3Vic2NyaWJlcnMiXSwiaXNzIjoidGVzdHNpdGVjZS5sdmgubWUiLCJleHAiOjE0NTA4MzU2ODMsIm5iZiI6MTQ1MDgzMTc4M30.Yf3mmBJ8nV_IozqvvLc8L34dDklU2J7z0uXn3jsICp0",
+     "renewalToken":"qjjd1vmgbtWb23fPK4J9ttUQBKpgC6k1yFmnteU+9mlFxcHeC3rJlly8oGBBAIzw"
+     }
+                </codeblock>
+            </example>
+
+
+            <p>The decoded access token is comprised of three parts separated by dots.</p>
+
+            <codeblock>
+    header.payload.signature
+            </codeblock>
+
+            <simpletable relcolwidth="1* 4*">
+                <sthead>
+                    <stentry>Component</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow>
+                    <stentry>JWT header</stentry>
+                    <stentry>A JSON object containing the JWT protocol identifier and the signature scheme. The header is converted to a JavaScript Object Signing and Encryption (JOSE) header as UTF-8 octets and then encoded as a Base64 string. Example:
+                        <codeblock>
+    {
+     "typ":"JWT",
+     "alg":"HS256"
+    }
+                        </codeblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>JWT payload</stentry>
+                    <stentry>A JSON object that contains the JWT claims set (asserted information about the user) or other information. Encoded as a Base64 string. The DNN JWT claims set includes the following:
+                        <ul>
+                            <li><varname>sid</varname> is the session id, which is fixed for the lifetime of the renewal token.</li>
+                            <li><varname>role</varname> is the list of roles assigned to the user. Used in authorization to determine which areas of the site the user can access.</li>
+                            <li><varname>iss</varname> is the portal alias of the site that issued the token.</li>
+                            <li><varname>exp</varname> is the expiration time of the access token. The token is rejected after this time (plus a small grace period). Expressed as Unix time.</li>
+                            <li><varname>nbf</varname> is the "not-before" time. The token is rejected before this time. Expressed as Unix time.</li>
+                        </ul>
+                        Example:
+                        <codeblock>
+    {
+     "sid":"eecb9bf34bbb4c8eb87dbba3aa1523c6",
+     "role":["Administrators","Registered Users","Subscribers"],
+     "iss":"testsitece.lvh.me",
+     "exp":1450834762,
+     "nbf":1450830862
+    }
+                        </codeblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>JWT signature</stentry>
+                    <stentry>The hash/encryption of the header and payload. The encryption method is stated in the header. Encoded as a Base64 string.</stentry>
+                </strow>
+            </simpletable>
+
+        </section>
+
+
+        <section id="pageRequest">
+            <title>Page request with JWT</title>
+
+            <p>The header of a subsequent request must include the token in this format:</p>
+            <codeblock>
+    Authorization: Bearer [token]
+            </codeblock>
+
+            <example>
+                <p>A sample GET request with JWT:</p>
+                <codeblock>
+    GET http://testsitece.lvh.me/DesktopModules/JwtAuth/API/mobile/testget HTTP/1.1
+    Host: testsitece.lvh.me
+    Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaWQiOiJkYmViMjlhYTMyYjg0MTMxYTA0NjY4MDAyNzAxNWEwZSIsInJvbGUiOlsiQWRtaW5pc3RyYXRvcnMiLCJSZWdpc3RlcmVkIFVzZXJzIiwiU3Vic2NyaWJlcnMiXSwiaXNzIjoidGVzdHNpdGVjZS5sdmgubWUiLCJleHAiOjE0NTA4MzU2ODMsIm5iZiI6MTQ1MDgzMTc4M30.Yf3mmBJ8nV_IozqvvLc8L34dDklU2J7z0uXn3jsICp0
+                </codeblock>
+            </example>
+
+        </section>
+
+
+        <section id="renewToken">
+            <title>Renew an expired token</title>
+
+            <p>When a token expires, the client can request a new one by sending a POST with a JSON object containing the <varname>renewalToken</varname>.</p>
+
+            <codeblock>
+    {
+     "rtoken":[renewalToken]
+    }
+            </codeblock>
+
+            <example>
+                <p>A sample request for a new token:</p>
+                <codeblock>
+    POST http://testsitece.lvh.me/DesktopModules/JwtAuth/API/mobile/extendtoken HTTP/1.1
+    Host: testsitece.lvh.me
+    Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaWQiOiIwNGIxZWUyZmMxNzk0NzRlODQwMzNiYmJhN2MwZGMzYSIsInJvbGUiOlsiQWRtaW5pc3RyYXRvcnMiLCJSZWdpc3RlcmVkIFVzZXJzIiwiU3Vic2NyaWJlcnMiXSwiaXNzIjoidGVzdHNpdGVjZS5sdmgubWUiLCJleHAiOjE0NTA4Mzg0MDAsIm5iZiI6MTQ1MDgzNDUwMH0.ly3OKNpSIHCfDQLhz8J_h4fb0fxjnt71D2dYWcF45ig
+    Content-Type: application/json; charset=utf-8
+    Content-Length: 77
+
+    {"rtoken":"0UKc7UX7nCCT+KJYgAgCB7GAtxggzeHj5j4ZYkb9Z/ZurXcigLjhVSkwpzOYBTPi"}
+                </codeblock>
+            </example>
+
+            <note type="important">After this request, both the old access token and the old renewal token are invalidated.</note>
+        </section>
+
+    </body>
+
+
+    <related-links>
+        <link format="html" scope="external" href="https://tools.ietf.org/html/rfc7519"><linktext>IETF RFC 7519</linktext></link>
+        <link format="html" scope="external" href="http://www.slideshare.net/dnnsoftware/how-evoq-helps-you-build-modern-web-applications"><linktext>DNN Presentation: How Evoq Helps You Build Modern Web Applications by Will Morgenweck</linktext></link>
+        <link format="html" scope="external" href="https://jwt.io/introduction/"><linktext>jwt.io</linktext></link>
+        <link format="html" scope="external" href="https://en.wikipedia.org/wiki/Unix_time"><linktext>Unix time</linktext></link>
+    </related-links>
+</topic>
