@@ -27,12 +27,18 @@
 
         <!-- Licensing -->
         <topicref type="topic" format="dita" navtitle="Licensing" toc="yes" href="administrators/licensing/licensing.dita" copy-to="administrators/licensing/index.dita" collection-type="family">
-            <topicref type="task"  format="dita" navtitle="Activate Automatically" toc="yes" href="administrators/licensing/activate-license-automatically.dita" />
-            <topicref type="task"  format="dita" navtitle="Activate Manually"      toc="yes" href="administrators/licensing/activate-license-manually.dita" />
-            <topicref type="topic" format="dita" navtitle="FAQ"                    toc="yes" href="administrators/licensing/faq-licensing.dita" />
-            <topicref type="topic" format="dita" navtitle="Troubleshooting"        toc="yes" href="administrators/licensing/troubleshooting-licensing.dita" />
+            <topicref type="task"  format="dita" toc="yes" href="administrators/licensing/activate-license-automatically.dita" />
+            <topicref type="task"  format="dita" toc="yes" href="administrators/licensing/activate-license-manually.dita" />
+            <topicref type="topic" format="dita" toc="yes" href="administrators/licensing/faq-licensing.dita" />
+            <topicref type="topic" format="dita" toc="yes" href="administrators/licensing/troubleshooting-licensing.dita" />
         </topicref>
 
+        <!-- Security -->
+        <topicref type="topic" format="dita" navtitle="Security" toc="yes" href="administrators/security/security.dita" copy-to="administrators/security/index.dita" collection-type="family">
+            <topicref type="topic"     format="dita" toc="yes" href="administrators/security/about-jwt.dita" />
+            <topicref type="task"      format="dita" toc="yes" href="administrators/security/setup-jwt-for-auth.dita" />
+            <topicref type="reference" format="dita" toc="yes" href="administrators/security/jwt-auth-reference.dita" />
+        </topicref>
 
         <!-- Local references -->
         <topicref format="dita" type="topic" toc="yes" href="administrators/administrator-references.dita" collection-type="family">

@@ -64,7 +64,7 @@
 
             <p>For DNN, the user credentials must be in a JSON object with the user name (key: "u") and password (key: "p").</p>
 
-            <example>
+            <sectiondiv outputclass="sectionxmp" id="xmp-POSTreq">
                 <p>A sample POST request with the user name "sitemanager" and password "dnnhost":</p>
                 <codeblock>
     POST http://testsitece.lvh.me/DesktopModules/JwtAuth/API/mobile/login HTTP/1.1
@@ -74,7 +74,7 @@
 
     {"u":"sitemanager","p":"dnnhost"}
                 </codeblock>
-            </example>
+            </sectiondiv>
         </section>
 
 
@@ -101,7 +101,7 @@
                 </strow>
             </simpletable>
 
-            <example>
+            <sectiondiv outputclass="sectionxmp" id="xmp-response">
                 <p>A sample JSON object sent to the browser after validating a user named "Site Manager":</p>
                 <codeblock>
     HTTP/1.1 200 OK
@@ -118,7 +118,7 @@
      "renewalToken":"qjjd1vmgbtWb23fPK4J9ttUQBKpgC6k1yFmnteU+9mlFxcHeC3rJlly8oGBBAIzw"
      }
                 </codeblock>
-            </example>
+            </sectiondiv>
 
 
             <p>The decoded access token is comprised of three parts separated by dots.</p>
@@ -182,14 +182,14 @@
     Authorization: Bearer [token]
             </codeblock>
 
-            <example>
+            <sectiondiv outputclass="sectionxmp" id="xmp-GETreq">
                 <p>A sample GET request with JWT:</p>
                 <codeblock>
     GET http://testsitece.lvh.me/DesktopModules/JwtAuth/API/mobile/testget HTTP/1.1
     Host: testsitece.lvh.me
     Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaWQiOiJkYmViMjlhYTMyYjg0MTMxYTA0NjY4MDAyNzAxNWEwZSIsInJvbGUiOlsiQWRtaW5pc3RyYXRvcnMiLCJSZWdpc3RlcmVkIFVzZXJzIiwiU3Vic2NyaWJlcnMiXSwiaXNzIjoidGVzdHNpdGVjZS5sdmgubWUiLCJleHAiOjE0NTA4MzU2ODMsIm5iZiI6MTQ1MDgzMTc4M30.Yf3mmBJ8nV_IozqvvLc8L34dDklU2J7z0uXn3jsICp0
                 </codeblock>
-            </example>
+            </sectiondiv>
 
         </section>
 
@@ -205,7 +205,7 @@
     }
             </codeblock>
 
-            <example>
+            <sectiondiv outputclass="sectionxmp" id="xmp-renewToken">
                 <p>A sample request for a new token:</p>
                 <codeblock>
     POST http://testsitece.lvh.me/DesktopModules/JwtAuth/API/mobile/extendtoken HTTP/1.1
@@ -216,7 +216,7 @@
 
     {"rtoken":"0UKc7UX7nCCT+KJYgAgCB7GAtxggzeHj5j4ZYkb9Z/ZurXcigLjhVSkwpzOYBTPi"}
                 </codeblock>
-            </example>
+            </sectiondiv>
 
             <note type="important">After this request, both the old access token and the old renewal token are invalidated.</note>
         </section>

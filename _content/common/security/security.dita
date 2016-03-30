@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-security">
+
+    <title>About DNN Security</title>
+    <titlealts>
+        <navtitle>Security</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>ERT</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="installing" />
+            <audience type="administrator" job="maintaining" />
+            <audience type="programmer" job="programming" />
+        </metadata>
+    </prolog>
+
+    <body>
+
+        <section id="overview">
+            <title>Overview</title>
+
+            <p>DNN provides several default authentication providers and role providers to help you with your security needs.</p>
+
+            <p>Third-party developers can also extend DNN with custom authentication and role providers.</p>
+
+        </section>
+
+    </body>
+
+    <related-links>
+        <link format="" scope="external" href=""><linktext></linktext></link>
+    </related-links>
+</topic>

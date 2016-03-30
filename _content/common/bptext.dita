@@ -61,7 +61,7 @@
     &lt;authServices&gt;
         &lt;messageHandlers&gt;
             &lt;!-- other message handlers --&gt;
-            &lt;addname=&quot;JWTAuth&quot;type=&quot;Dnn.AuthServices.Jwt.Auth.JwtAuthMessageHandler, Dnn.AuthServices.Jwt&quot;enabled=&quot;false&quot;defaultInclude=&quot;false&quot;forceSSL=&quot;true&quot;/&gt;
+            &lt;add name=&quot;JWTAuth&quot; type=&quot;Dnn.AuthServices.Jwt.Auth.JwtAuthMessageHandler, Dnn.AuthServices.Jwt&quot; enabled=&quot;false&quot; defaultInclude=&quot;false&quot; forceSSL=&quot;true&quot;/&gt;
         &lt;/messageHandlers&gt;
     &lt;/authServices&gt;
         </codeblock>
