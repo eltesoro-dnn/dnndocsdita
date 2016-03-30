@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-jwtAccessToken">
+
+    <title>JWT Access Token</title>
+    <titlealts>
+        <navtitle>JWT Access Token</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>ERT</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+        </metadata>
+    </prolog>
+
+    <body>
+
+        <section id="accessToken">
+
+            <p>The decoded access token is comprised of three parts separated by dots.</p>
+
+            <codeblock>
+    header.payload.signature
+            </codeblock>
+
+            <simpletable relcolwidth="1* 4*">
+                <sthead>
+                    <stentry>Component</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow>
+                    <stentry>JWT header</stentry>
+                    <stentry>A JSON object containing the JWT protocol identifier and the signature scheme. The header is converted to a JavaScript Object Signing and Encryption (JOSE) header as UTF-8 octets and then encoded as a Base64 string. Example:
+                        <codeblock>
+    {
+     "typ":"JWT",
+     "alg":"HS256"
+    }
+                        </codeblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>JWT payload</stentry>
+                    <stentry>A JSON object that contains the JWT claims set (asserted information about the user) or other information. Encoded as a Base64 string. The DNN JWT claims set includes the following:
+                        <ul>
+                            <li><varname>sid</varname> is the session id, which is fixed for the lifetime of the renewal token.</li>
+                            <li><varname>role</varname> is the list of roles assigned to the user. Used in authorization to determine which areas of the site the user can access.</li>
+                            <li><varname>iss</varname> is the portal alias of the site that issued the token.</li>
+                            <li><varname>exp</varname> is the expiration time of the access token. The token is rejected after this time (plus a small grace period). Expressed as Unix time.</li>
+                            <li><varname>nbf</varname> is the "not-before" time. The token is rejected before this time. Expressed as Unix time.</li>
+                        </ul>
+                        Example:
+                        <codeblock>
+    {
+     "sid":"eecb9bf34bbb4c8eb87dbba3aa1523c6",
+     "role":["Administrators","Registered Users","Subscribers"],
+     "iss":"testsitece.lvh.me",
+     "exp":1450834762,
+     "nbf":1450830862
+    }
+                        </codeblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>JWT signature</stentry>
+                    <stentry>The hash/encryption of the header and payload. The encryption method is stated in the header. Encoded as a Base64 string.</stentry>
+                </strow>
+            </simpletable>
+
+        </section>
+
+    </body>
+
+</topic>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="top-createJwtWebApi">
+
+    <title>Create a Web API with JWT</title>
+    <titlealts>
+        <navtitle>Create a Web API with JWT</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>ERT</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+        </metadata>
+    </prolog>
+
+    <taskbody>
+
+        <section id="overview">
+
+            <p>When creating a web API in DNN, you can specify an authentication method to be used with your web service. To do so, you simply need to add the <codeph>[DnnAuthorize]</codeph> attribute in your code.</p>
+
+            <sectiondiv outputclass="sectionxmp" id="xmp-webAPI" >
+                <p>A template for a DNN web API using JWT authentication:</p>
+                <codeblock>
+    [DnnAuthorize(AuthTypes = "JWT")]
+    public class MyJwtTestController : DnnApiController
+    {
+        [HttpGet]
+        public IHttpActionResult MyGetMethod()
+        {
+            // Add your API logic here.
+            // Remember to check for authorization.
+        }
+    }
+                </codeblock>
+                <p><codeph>MyGetMethod</codeph> is called, only if the client was authenticated through the JWT authentication handler, which must be enabled in the <filepath>web.config</filepath> file.</p>
+            </sectiondiv>
+
+        </section>
+
+    </taskbody>
+
+    <related-links>
+        <link format="html" scope="external" href="https://tools.ietf.org/html/rfc7519"><linktext>IETF RFC 7519</linktext></link>
+        <link format="html" scope="external" href="http://www.slideshare.net/dnnsoftware/how-evoq-helps-you-build-modern-web-applications"><linktext>DNN Presentation: How Evoq Helps You Build Modern Web Applications by Will Morgenweck</linktext></link>
+        <link format="html" scope="external" href="https://jwt.io/introduction/"><linktext>jwt.io</linktext></link>
+    </related-links>
+</task>

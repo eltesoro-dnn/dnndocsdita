@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-JWTAuthRef"> <!-- Replace myID the filename minus extension. -->
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-JWTAuthHandler">
 
-    <title>JWT Authentication Reference</title>
+    <title>JWT Authentication Handler</title>
     <titlealts>
-        <navtitle>JWT Reference</navtitle>
+        <navtitle>JWT Auth Handler</navtitle>
     </titlealts>
 
     <prolog>
@@ -19,10 +19,10 @@
         </metadata>
     </prolog>
 
-    <refbody>
+    <body>
 
-        <section id="DNNJWTwebconfig">
-            <title>JWT Authentication Handler in DNN</title>
+        <section id="JWTAuthHandler">
+            <title>JWT Authentication Handler</title>
 
             <p>After the JWT Authentication Handler is installed in DNN, the <filepath>web.config</filepath> file is updated with a line similar to the following:</p>
 
@@ -60,9 +60,11 @@
 
         </section>
 
-    </refbody>
+    </body>
 
     <related-links>
-        <link format="" scope="external" href=""><linktext></linktext></link>
+        <link format="html" scope="external" href="https://tools.ietf.org/html/rfc7519"><linktext>IETF RFC 7519</linktext></link>
+        <link format="html" scope="external" href="http://www.slideshare.net/dnnsoftware/how-evoq-helps-you-build-modern-web-applications"><linktext>DNN Presentation: How Evoq Helps You Build Modern Web Applications by Will Morgenweck</linktext></link>
+        <link format="html" scope="external" href="https://jwt.io/introduction/"><linktext>jwt.io</linktext></link>
     </related-links>
-</reference>
+</topic>

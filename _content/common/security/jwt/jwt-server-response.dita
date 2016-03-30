@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-jwtServerResponse">
+
+    <title>Server Response with JWT</title>
+    <titlealts>
+        <navtitle>JWT Server Response</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>ERT</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+        </metadata>
+    </prolog>
+
+    <body>
+
+        <section id="serverResponse">
+
+            <p>When the server responds to the user's browser, the JSON object that is returned contains three properties.</p>
+            <simpletable relcolwidth="1* 4*">
+                <sthead>
+                    <stentry>Property name</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow>
+                    <stentry><varname>displayName</varname></stentry>
+                    <stentry>The display name of the user.</stentry>
+                </strow>
+                <strow>
+                    <stentry><varname>accessToken</varname></stentry>
+                    <stentry>A JWT that must be included with each subsequent request to the various Web API endpoints for servers. The server obtains the user information from the access token itself, which is faster than retrieving the information from the database again. The access token is valid for 60 minutes and must be renewed using the renewal token.</stentry>
+                </strow>
+                <strow>
+                    <stentry><varname>renewalToken</varname></stentry>
+                    <stentry>A JWT that is required to renew the access token when expired. The renewal token becomes invalid after 14 days, after the user logs out, or when the user changes their credentials, such as the login password for the web site.</stentry>
+                </strow>
+            </simpletable>
+
+            <sectiondiv outputclass="sectionxmp" id="xmp-response">
+                <p>A sample JSON object sent to the browser after validating a user named "Site Manager":</p>
+                <codeblock>
+    HTTP/1.1 200 OK
+    Cache-Control: no-cache
+    Pragma: no-cache
+    Content-Type: application/json; charset=utf-8
+    Expires: -1
+    Date: Wed, 23 Dec 2015 00:54:43 GMT
+    Content-Length: 425
+
+    {
+     "displayName":"Site Manager",
+     "accessToken":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaWQiOiJkYmViMjlhYTMyYjg0MTMxYTA0NjY4MDAyNzAxNWEwZSIsInJvbGUiOlsiQWRtaW5pc3RyYXRvcnMiLCJSZWdpc3RlcmVkIFVzZXJzIiwiU3Vic2NyaWJlcnMiXSwiaXNzIjoidGVzdHNpdGVjZS5sdmgubWUiLCJleHAiOjE0NTA4MzU2ODMsIm5iZiI6MTQ1MDgzMTc4M30.Yf3mmBJ8nV_IozqvvLc8L34dDklU2J7z0uXn3jsICp0",
+     "renewalToken":"qjjd1vmgbtWb23fPK4J9ttUQBKpgC6k1yFmnteU+9mlFxcHeC3rJlly8oGBBAIzw"
+     }
+                </codeblock>
+            </sectiondiv>
+
+        </section>
+
+    </body>
+
+</topic>

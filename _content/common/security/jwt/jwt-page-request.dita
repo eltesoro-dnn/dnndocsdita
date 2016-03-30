@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-jwtPageRequest">
+
+    <title>Page Request with JWT</title>
+    <titlealts>
+        <navtitle>JWT Page Request</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>ERT</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+        </metadata>
+    </prolog>
+
+    <body>
+
+        <section id="pageRequest">
+
+            <p>The header of a subsequent request must include the token in this format:</p>
+            <codeblock>
+    Authorization: Bearer [token]
+            </codeblock>
+
+            <sectiondiv outputclass="sectionxmp" id="xmp-GETreq">
+                <p>A sample GET request with JWT:</p>
+                <codeblock>
+    GET http://testsitece.lvh.me/DesktopModules/JwtAuth/API/mobile/testget HTTP/1.1
+    Host: testsitece.lvh.me
+    Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaWQiOiJkYmViMjlhYTMyYjg0MTMxYTA0NjY4MDAyNzAxNWEwZSIsInJvbGUiOlsiQWRtaW5pc3RyYXRvcnMiLCJSZWdpc3RlcmVkIFVzZXJzIiwiU3Vic2NyaWJlcnMiXSwiaXNzIjoidGVzdHNpdGVjZS5sdmgubWUiLCJleHAiOjE0NTA4MzU2ODMsIm5iZiI6MTQ1MDgzMTc4M30.Yf3mmBJ8nV_IozqvvLc8L34dDklU2J7z0uXn3jsICp0
+                </codeblock>
+            </sectiondiv>
+
+        </section>
+
+    </body>
+
+</topic>

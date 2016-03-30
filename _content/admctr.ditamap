@@ -26,18 +26,23 @@
         <topicref format="dita" type="task" navtitle="Install an Extension" toc="yes" href="administrators/extensions/install-extension.dita" />
 
         <!-- Licensing -->
-        <topicref type="topic" format="dita" navtitle="Licensing" toc="yes" href="administrators/licensing/licensing.dita" copy-to="administrators/licensing/index.dita" collection-type="family">
-            <topicref type="task"  format="dita" toc="yes" href="administrators/licensing/activate-license-automatically.dita" />
-            <topicref type="task"  format="dita" toc="yes" href="administrators/licensing/activate-license-manually.dita" />
-            <topicref type="topic" format="dita" toc="yes" href="administrators/licensing/faq-licensing.dita" />
-            <topicref type="topic" format="dita" toc="yes" href="administrators/licensing/troubleshooting-licensing.dita" />
+        <topicref format="dita" type="topic" navtitle="Licensing" toc="yes" href="administrators/licensing/licensing.dita" copy-to="administrators/licensing/index.dita" collection-type="family">
+            <topicref format="dita" type="task"  toc="yes" href="administrators/licensing/activate-license-automatically.dita" />
+            <topicref format="dita" type="task"  toc="yes" href="administrators/licensing/activate-license-manually.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="administrators/licensing/faq-licensing.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="administrators/licensing/troubleshooting-licensing.dita" />
         </topicref>
 
         <!-- Security -->
-        <topicref type="topic" format="dita" navtitle="Security" toc="yes" href="administrators/security/security.dita" copy-to="administrators/security/index.dita" collection-type="family">
-            <topicref type="topic"     format="dita" toc="yes" href="administrators/security/about-jwt.dita" />
-            <topicref type="task"      format="dita" toc="yes" href="administrators/security/setup-jwt-for-auth.dita" />
-            <topicref type="reference" format="dita" toc="yes" href="administrators/security/jwt-auth-reference.dita" />
+        <topicref format="dita" type="topic" navtitle="Security" toc="yes" href="administrators/security/security.dita" copy-to="administrators/security/index.dita" collection-type="family">
+            <topicref format="dita" type="topic" navtitle="JWT Authentication" toc="yes" href="administrators/security/jwt/about-jwt.dita" copy-to="administrators/security/jwt/index.dita" collection-type="family">
+                <topicref format="dita" type="task" toc="yes" href="administrators/security/jwt/jwt-user-credentials.dita" />
+                <topicref format="dita" type="task" toc="yes" href="administrators/security/jwt/jwt-server-response.dita" />
+                <topicref format="dita" type="task" toc="yes" href="administrators/security/jwt/jwt-access-token.dita" />
+                <topicref format="dita" type="task" toc="yes" href="administrators/security/jwt/jwt-page-request.dita" />
+            </topicref>
+            <topicref format="dita" type="task"     toc="yes" href="administrators/security/jwt/setup-jwt-for-auth.dita" />
+            <topicref format="dita" type="task"     toc="yes" href="administrators/security/jwt/jwt-auth-handler.dita" />
         </topicref>
 
         <!-- Local references -->
@@ -71,27 +76,38 @@
         <!-- Common to all centers. -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept"   navtitle="DNN Platform"            href="administrators/dnn-platform-overview.dita" />
+                <topicref format="dita" type="concept"   href="administrators/dnn-platform-overview.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="reference" navtitle="DNN Requirements"        href="administrators/requirements.dita" />
+                <topicref format="dita" type="reference" href="administrators/requirements.dita" />
             </relcell>
             <relcell/>
         </relrow>
 
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic"     navtitle="Set Up DNN"              href="administrators/setup/set-up-dnn.dita" />
+                <topicref format="dita" type="topic"     href="administrators/setup/set-up-dnn.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task"      navtitle="Install an Extension"    href="administrators/extensions/install-extension.dita" />
+                <topicref format="dita" type="task"      href="administrators/extensions/install-extension.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="reference" navtitle="DNN Requirements"        href="administrators/requirements.dita" />
+                <topicref format="dita" type="reference" href="administrators/requirements.dita" />
             </relcell>
         </relrow>
 
         <!-- Specific to this center. -->
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="topic"     href="administrators/security/jwt/about-jwt.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="task"      href="administrators/security/jwt/setup-jwt-for-auth.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="reference" href="administrators/security/jwt/jwt-auth-handler.dita" />
+            </relcell>
+        </relrow>
 
     </reltable>
 

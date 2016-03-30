@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-SetUpJWTforAuth"> <!-- Replace myID the filename minus extension. -->
+<task xml:lang="en" id="tsk-SetUpJWTforAuth">
 
     <title>Set Up JWT for Authentication</title>
     <titlealts>
@@ -30,11 +30,11 @@
                 <substeps>
                     <substep>
                         <cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.</cmd>
-                        <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuHostCommonExtensions.png"><alt>Host - Extensions</alt></image></info>
+                        <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuHostCommonExtensions.png"><alt>Host - Extensions</alt></image></info>
                     </substep>
                     <substep>
                         <cmd>In the <uicontrol>Available Extensions</uicontrol> tab, expand the <uicontrol>Providers</uicontrol>section, search for <uicontrol>DNN JWT Auth Handler</uicontrol>, then click or tap its <uicontrol>Install</uicontrol> button.</cmd>
-                        <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-AvailableExtensionsProvidersJWT.png"><alt>Available Extensions - Providers - DNN JWT Auth Handler - Install</alt></image></info>
+                        <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-AvailableExtensionsProvidersJWT.png"><alt>Available Extensions - Providers - DNN JWT Auth Handler - Install</alt></image></info>
                     </substep>
                 </substeps>
                 <stepresult>
@@ -43,7 +43,7 @@
                 </stepresult>
             </step>
             <step>
-                <cmd>Enable JWT authentication across all WEB API requests.</cmd>
+                <cmd>Enable JWT authentication across all web API requests.</cmd>
                 <substeps>
                     <substep>
                         <cmd>Search for the newly-added JWTAuth line inside the <codeph>&lt;messageHandlers/&gt;</codeph> section of your <filepath>web.config</filepath> file.</cmd>
@@ -59,19 +59,19 @@
                 </substeps>
             </step>
             <step>
-                <cmd>Enable cross-origin resource sharing (CORS) to allow requests from remote Javascript clients.</cmd>
+                <cmd>Enable cross-origin resource sharing (CORS) to allow requests from remote JavaScript clients.</cmd>
                 <info>
                     <p>In your <filepath>web.config</filepath> file, add these access control lines inside the <codeph>&lt;customHeaders/&gt;</codeph> section.</p>
                     <codeblock>
     &lt;add name=&quot;Access-Control-Allow-Origin&quot; value=&quot;*&quot; /&gt;
     &lt;add name=&quot;Access-Control-Allow-Headers&quot; value=&quot;accept, accept-language, content-type, accept, authorization, moduleid, tabid, x-dnn-moniker&quot; /&gt;
-    &lt;add name=&quot;Access-Control-Allow-Methds&quot; value=&quot;GET, POST, PUT, HEAD, OPTIONS&quot; /&gt;
+    &lt;add name=&quot;Access-Control-Allow-Methods&quot; value=&quot;GET, POST, PUT, HEAD, OPTIONS&quot; /&gt;
                     </codeblock>
                     note
                 </info>
             </step>
-            <step>
-                <cmd>Enable additional logging for advanced debugging.</cmd>
+            <step outputclass="audience-dev">
+                <cmd><ph outputclass="audience-dev">Developers:</ph> Enable additional logging for advanced debugging.</cmd>
                 <info>
                     <p>In your DotNetNuke.log4net.config file, add the following logger lines after the <codeph>&lt;/root&gt;</codeph> closing tag.</p>
                     <codeblock>
@@ -79,7 +79,7 @@
     &lt;logger name=&quot;DotNetNuke.Web.Api.Auth&quot;&gt;
         &lt;level value=&quot;TRACE&quot; /&gt;
     &lt;/logger&gt;
-    &lt;!-- The following is required to troubleshoot failing WEB API calls. --&gt;
+    &lt;!-- The following is required to troubleshoot failing web API calls. --&gt;
     &lt;logger name=&quot;DotNetNuke.Dnn.AuthServices.Jwt&quot;&gt;
         &lt;level value=&quot;TRACE&quot; /&gt;
     &lt;/logger&gt;
@@ -93,6 +93,8 @@
     </taskbody>
 
     <related-links>
+        <link format="html" scope="external" href="https://tools.ietf.org/html/rfc7519"><linktext>IETF RFC 7519</linktext></link>
         <link format="html" scope="external" href="http://www.slideshare.net/dnnsoftware/how-evoq-helps-you-build-modern-web-applications"><linktext>DNN Presentation: How Evoq Helps You Build Modern Web Applications by Will Morgenweck</linktext></link>
+        <link format="html" scope="external" href="https://jwt.io/introduction/"><linktext>jwt.io</linktext></link>
     </related-links>
 </task>
