@@ -42,7 +42,7 @@
                 <strow>
                     <stentry>enabled</stentry>
                     <stentry><codeph>true</codeph> or <codeph>false</codeph></stentry>
-                    <stentry>If <codeph>true</codeph>, an instance of the provider is created and added to the chain of providers when the application starts. Otherwise, the provider is not instantiated at all.</stentry>
+                    <stentry>If <codeph>true</codeph>, an instance of the provider is created and added to the chain of providers when the application starts. Otherwise, the provider is not instantiated.</stentry>
                 </strow>
                 <strow>
                     <stentry>defaultInclude</stentry>
@@ -53,7 +53,7 @@
                     <stentry>forceSSL</stentry>
                     <stentry><codeph>true</codeph> or <codeph>false</codeph></stentry>
                     <stentry>If <codeph>true</codeph>, SSL mode (HTTPS) is required for API requests; otherwise, all requests are accepted.
-                        <note type="tip">Enforce SSL, so that tokens are treated the same way cookies are treated in a web request, thereby, preventing unauthorized access to the site.</note>
+                        <note type="important">To prevent unauthorized access to the site, enforce SSL so that tokens are treated the same way as cookies in a web request.</note>
                     </stentry>
                 </strow>
             </simpletable>

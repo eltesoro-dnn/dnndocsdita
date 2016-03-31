@@ -33,7 +33,7 @@
                         <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuHostCommonExtensions.png"><alt>Host - Extensions</alt></image></info>
                     </substep>
                     <substep>
-                        <cmd>In the <uicontrol>Available Extensions</uicontrol> tab, expand the <uicontrol>Providers</uicontrol>section, search for <uicontrol>DNN JWT Auth Handler</uicontrol>, then click or tap its <uicontrol>Install</uicontrol> button.</cmd>
+                        <cmd>In the <uicontrol>Available Extensions</uicontrol> tab, expand the <uicontrol>Providers</uicontrol> section, search for <uicontrol>DNN JWT Auth Handler</uicontrol>, then click or tap its <uicontrol>Install</uicontrol> button.</cmd>
                         <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-AvailableExtensionsProvidersJWT.png"><alt>Available Extensions - Providers - DNN JWT Auth Handler - Install</alt></image></info>
                     </substep>
                 </substeps>
@@ -67,7 +67,6 @@
     &lt;add name=&quot;Access-Control-Allow-Headers&quot; value=&quot;accept, accept-language, content-type, accept, authorization, moduleid, tabid, x-dnn-moniker&quot; /&gt;
     &lt;add name=&quot;Access-Control-Allow-Methods&quot; value=&quot;GET, POST, PUT, HEAD, OPTIONS&quot; /&gt;
                     </codeblock>
-                    note
                 </info>
             </step>
             <step outputclass="audience-dev">
@@ -87,8 +86,6 @@
                 </info>
             </step>
         </steps>
-        <result/>
-        <postreq/>
 
     </taskbody>
 
