@@ -47,7 +47,7 @@
                 <strow>
                     <stentry>defaultInclude</stentry>
                     <stentry><codeph>true</codeph> or <codeph>false</codeph></stentry>
-                    <stentry>If <codeph>true</codeph>, the provider is included for each Web API request, if the API controller limits the allowed providers that can be handled by the different services within the controller.</stentry>
+                    <stentry>If <codeph>true</codeph>, the API controller uses the authentication type included in the <!-- incoming? outgoing?  -->Web API request; otherwise, the API controller uses the authentication type specified in its own <codeph>DnnAuthorize</codeph> attribute. Example: If the API controller’s attribute is set to <codeph>[DnnAuthorize(AuthTypes = "JWT")]</codeph>, then the API controller uses JWT authentication.</stentry>
                 </strow>
                 <strow>
                     <stentry>forceSSL</stentry>
