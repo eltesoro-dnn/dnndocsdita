@@ -44,7 +44,7 @@
             <step>
                 <cmd>Set up JWT Authentication on your local installation of DNN.</cmd>
                 <substeps>
-                    <substep><cmd><xref format="dita" href="../configuration/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
+                    <substep><cmd><xref format="dita" href="../../configuration/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
                     <substep>
                         <cmd>Modify the <codeph>JWTauth</codeph> message handler to set <codeph>forceSSL="false"</codeph>.</cmd>
                         <info>

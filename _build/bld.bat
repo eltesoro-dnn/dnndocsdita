@@ -108,6 +108,9 @@ if exist %_outdir%\toc.html           del %_outdir%\toc.html /q >nul
 if exist %_outdir%\common\glossary\*  rd /s/q %_outdir%\common\glossary >nul
 
 
+echo Creating an aboutbld.html file ....
+for /f "usebackq tokens=2" %%v in (`date /t`) do for /f "delims=/ tokens=1,2,3" %%w in ("%%v") do echo DocCenter v1.1 Build %%y%%w%%x > %_outdir%\aboutbld.html
+
 
 :. runas /user:administrator /profile "%~f0\v2iis.bat %outdir%\%_transtype% c:\inetpub\wwwroot"
 :. start %_outdir%

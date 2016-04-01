@@ -45,7 +45,7 @@
             <step>
                 <cmd>Enable JWT authentication across all web API requests.</cmd>
                 <substeps>
-                    <substep><cmd><xref format="dita" href="../configuration/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
+                    <substep><cmd><xref format="dita" href="../../configuration/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
                     <substep>
                         <cmd>Search for the newly-added JWTAuth line inside the <codeph>&lt;messageHandlers/&gt;</codeph> section of your <filepath>web.config</filepath> file.</cmd>
                     </substep>
@@ -62,7 +62,7 @@
             <step>
                 <cmd>Enable cross-origin resource sharing (CORS) to allow requests from remote JavaScript clients.</cmd>
                 <substeps>
-                    <substep><cmd><xref format="dita" href="../configuration/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
+                    <substep><cmd><xref format="dita" href="../../configuration/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
                     <substep>
                         <cmd>In your <filepath>web.config</filepath> file, add these access control lines inside the <codeph>&lt;customHeaders/&gt;</codeph> section.</cmd>
                         <info>
@@ -78,7 +78,7 @@
             <step outputclass="audience-dev">
                 <cmd><ph outputclass="audience-dev">Developers:</ph> Enable additional logging for advanced debugging.</cmd>
                 <substeps>
-                    <substep><cmd><xref format="dita" href="../configuration/access-web-config.dita">Access the <filepath>DotNetNuke.log4net.config</filepath> file.</xref></cmd></substep>
+                    <substep><cmd><xref format="dita" href="../../configuration/access-web-config.dita">Access the <filepath>DotNetNuke.log4net.config</filepath> file.</xref></cmd></substep>
                     <substep>
                         <cmd>In your DotNetNuke.log4net.config file, add the following logger lines after the <codeph>&lt;/root&gt;</codeph> closing tag.</cmd>
                         <info>
