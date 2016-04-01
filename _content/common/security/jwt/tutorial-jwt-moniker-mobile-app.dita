@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-tutorialJwtMonikerMobileApp">
+
+    <title>Tutorial: Mobile App Using JWT</title>
+    <titlealts>
+        <navtitle>Tutorial: Mobile and JWT</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author></author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+        </metadata>
+    </prolog>
+
+    <taskbody>
+
+        <section id="overview">
+            <p>In this tutorial:
+                <ul>
+                    <li>sets up JWT authentication on a local installation of DNN,</li>
+                    <li>sets up a DNN module with Moniker, and then</li>
+                    <li>uses a mobile app to verify that the module can be accessed with JWT authentication.</li>
+                </ul>
+            </p>
+        </section>
+
+        <prereq>
+            <ul>
+                <li>A local installation of DNN</li>
+                <li>Download: <xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Platform.Samples.Mvc/tree/master/Website/Install/Module">DNN Contact List SPA sample module</xref></li>
+                <li>Right-click to download: <xref format="zip" scope="peer" href="../../common/samples/">Sample mobile app</xref></li>
+                <li>Telerik account to build the mobile app</li>
+                <li>(Optional) A smartphone, a tablet, or an emulator on a local machine, for testing</li>
+            </ul>
+        </prereq>
+
+        <steps>
+            <step>
+                <cmd>Set up JWT Authentication on your local installation of DNN.</cmd>
+                <substeps>
+                    <substep><cmd><xref format="dita" href="../configuration/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
+                    <substep>
+                        <cmd>Modify the <codeph>JWTauth</codeph> message handler to set <codeph>forceSSL="false"</codeph>.</cmd>
+                        <info>
+                            <codeblock>
+    &lt;add name=&quot;JWTAuth&quot; type=&quot;Dnn.AuthServices.Jwt.Auth.JwtAuthMessageHandler, Dnn.AuthServices.Jwt&quot; enabled=&quot;true&quot; defaultInclude=&quot;true&quot; forceSSL=&quot;false&quot; /&gt;
+                            </codeblock>
+                            <note type="important">In a production environment, this should be set to <codeph>true</codeph>. However, not all APIs support SSL; therefore, temporarily set this to <codeph>false</codeph> for testing.</note>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>Add the SPA sample module.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd></cmd>
+                        <info></info>
+                    </substep>
+                    <substep>
+                        <cmd>Create a new page and add the SPA sample module to one of the panes.</cmd>
+                        <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuPagesAddNew.png"><alt>Pages - Add New Page</alt></image></info>
+                    </substep>
+                    <substep><cmd>Create a couple of records in the contact list.</cmd></substep>
+                    <substep>
+                        <cmd>Right-click on the module's action menu (gear icon) and go to <uicontrol>Settings</uicontrol>.</cmd>
+                        <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-Settings.png"><alt>Action menu - Settings</alt></image></info>
+                    </substep>
+                    <substep><cmd>...</cmd></substep>  <!-- Where is Advanced? -->
+                    <substep><cmd>Set the moniker to <codeph>spamodulesample</codeph>.</cmd></substep>  <!-- How? -->
+                </substeps>
+            </step>
+            <step>
+                <cmd>Call APIs using jQuery AJAX.</cmd>
+                <substeps>
+                    <substep><cmd>Download these sample files....</cmd></substep>  <!-- Clean up the zip file. Does it have everything they'd need? -->
+                    <substep><cmd>Set up IIS bindings to allow local testing.</cmd></substep>  <!-- How? -->
+                    <substep><cmd>If using an app to test, set up the IP address bindings.</cmd></substep>  <!-- How? -->
+                    <substep><cmd>Log in using the URL that was set up in IIS.</cmd></substep>  <!-- How? -->
+                </substeps>
+            </step>
+            <step>
+                <cmd>Download the app to your smartphone or table, or use the emulator to test.</cmd>
+                <!-- What app is the "Run -> Build" screen from? -->
+            </step>
+            <step>
+                <cmd>Test.</cmd>  <!-- What is a valid test? What is expected? -->
+            </step>
+
+        </steps>
+
+    </taskbody>
+
+    <related-links>
+        <link format="html" scope="external" href="https://technet.microsoft.com/en-us/library/bb734869.aspx"><linktext>Microsoft TechNet: Add and Remove IP Address Bindings</linktext></link>
+        <link format="html" scope="external" href="https://www.iis.net/configreference/system.applicationhost/sites/sitedefaults/bindings/binding"><linktext>IIS.net: Adding a Default Binding</linktext></link>
+    </related-links>
+</task>

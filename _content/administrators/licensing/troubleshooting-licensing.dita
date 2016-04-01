@@ -65,14 +65,7 @@
                         <p><systemoutput>String reference not set to an instance of a String.</systemoutput></p>
 
                         <ol>
-                            <li>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Configuration Manager</uicontrol></menucascade>.
-                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuHostAdvancedConfigMgr.png"><alt></alt></image>
-                            </li>
-
-                            <li>In the <uicontrol>Files</uicontrol> tab, select <filepath>web.config</filepath>.
-                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ConfigMgrFiles-webconfig.png"><alt></alt></image>
-                            </li>
-
+                            <li><xref format="dita" href="../configuration/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></li>
                             <li>Verify that the following nodes exist in <filepath>web.config</filepath> (The date and license type may differ.):
                                 <ul>
                                     <li>InstallationDate:

@@ -73,7 +73,8 @@
             <relcolspec type="reference"/>
         </relheader>
 
-        <!-- Common to all centers. -->
+
+        <!-- ===== Common to all centers. ===== -->
         <relrow>
             <relcell>
                 <topicref format="dita" type="concept"   href="administrators/dnn-platform-overview.dita" />
@@ -96,7 +97,10 @@
             </relcell>
         </relrow>
 
-        <!-- Specific to this center. -->
+
+        <!-- ===== Specific to this center. ===== -->
+
+        <!-- JWT top level topics. -->
         <relrow>
             <relcell>
                 <topicref format="dita" type="topic"     href="administrators/security/jwt/about-jwt.dita" />

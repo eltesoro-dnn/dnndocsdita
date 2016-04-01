@@ -35,7 +35,7 @@
 
             <p>The module action menu provides standard functionality, such as module deletion, printing, content import/export, and content placement. Menu items are dynamically created based on module features and site settings.</p>
 
-            <image scalefit="yes" placement="break" align="left" href="../../common/img/module-action-menu.png"><alt>Module action menu</alt></image>
+            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu.png"><alt>Module action menu</alt></image>
 
             <p>You can customize the <term>module action menu</term> by implementing the following features in your module:
                 <ul>
