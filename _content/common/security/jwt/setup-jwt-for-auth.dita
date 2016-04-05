@@ -44,7 +44,7 @@
             </step>
 
             <step>
-                <cmd>(Optional) Enable JWT authentication for all web API requests.</cmd>
+                <cmd>(Optional) Enable JWT authentication for all Web API requests.</cmd>
                 <substeps>
                     <substep><cmd><xref format="dita" href="../../configuration/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
                     <substep><cmd>Search for the newly-added JWTAuth line inside the <codeph>&lt;messageHandlers/&gt;</codeph> section.</cmd></substep>
@@ -59,7 +59,7 @@
                 </substeps>
                 <info>
                     <note type="tip">
-                        <ph outputclass="audience-dev">Developers:</ph> To enable JWT authentication for your specific web API, add the following attribute to the controller class:
+                        <ph outputclass="audience-dev">Developers:</ph> To enable JWT authentication for your specific Web API, add the following attribute to the controller class:
                         <codeblock>
     [DnnAuthorize(AuthTypes = "JWT")]
                         </codeblock>
@@ -70,7 +70,7 @@
             <step>
                 <cmd>(Optional) Enable cross-origin resource sharing (CORS) to allow requests from remote JavaScript clients.</cmd>
                 <info>
-                    <p>CORS is required only if the web API would be accessed through a web browser. CORS is not required by native mobile or desktop apps.</p>
+                    <p>CORS is required only if the Web API would be accessed through a web browser. CORS is not required by native mobile or desktop apps.</p>
                     <note type="warning">Enabling CORS allows external sites to access your site, therefore, making it vulnerable to cross-site scripting (XSS) attacks.</note>
                 </info>
                 <substeps>
@@ -100,7 +100,7 @@
     &lt;logger name=&quot;DotNetNuke.Web.Api.Auth&quot;&gt;
         &lt;level value=&quot;TRACE&quot; /&gt;
     &lt;/logger&gt;
-    &lt;!-- The following is required to troubleshoot failing web API calls. --&gt;
+    &lt;!-- The following is required to troubleshoot failing Web API calls. --&gt;
     &lt;logger name=&quot;DotNetNuke.Dnn.AuthServices.Jwt&quot;&gt;
         &lt;level value=&quot;TRACE&quot; /&gt;
     &lt;/logger&gt;

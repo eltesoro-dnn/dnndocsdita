@@ -22,10 +22,10 @@
 
         <section id="overview">
 
-            <p>When creating a web API in DNN, you can specify an authentication method to be used with your web service. To do so, you simply need to add the <codeph>[DnnAuthorize]</codeph> attribute in your code.</p>
+            <p>When creating a Web API in DNN, you can specify an authentication method to be used with your web service. To do so, you simply need to add the <codeph>[DnnAuthorize]</codeph> attribute in your code.</p>
 
             <sectiondiv outputclass="sectionxmp" id="xmp-webAPI" >
-                <p>A template for a DNN web API using JWT authentication:</p>
+                <p>A template for a DNN Web API using JWT authentication:</p>
                 <codeblock>
     [DnnAuthorize(AuthTypes = "JWT")]
     public class MyJwtTestController : DnnApiController
