@@ -37,7 +37,7 @@ if _%_logfile%_     EQU __    set _logfile=%_logdir%\%_transtype%.log
 if _%_outext%_      EQU __    set _outext=.html
 :. If you change _outext, remember to replace the links in the root index.html
 
-if _"%JAVA_HOME%"_  EQU _""_  set JAVA_HOME="%ProgramFiles%"\Java\jdk1.8.0_72
+if _"%JAVA_HOME%"_  EQU _""_  set JAVA_HOME=%ProgramFiles%\Java\jdk1.8.0_77
 set DITA_HOME=C:\dita-ot
 set ANT_HOME=C:\dita-ot
 
