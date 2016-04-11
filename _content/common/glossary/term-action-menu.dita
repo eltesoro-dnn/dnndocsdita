@@ -2,6 +2,28 @@
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
 <glossentry xml:lang="en" id="actionmenu">
 
+    <prolog>
+        <author>wrET,trJB,ceDS,1601</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
     <glossterm>module action menu</glossterm>
     <glossdef>The set of menus that provides access to the functionality of a module. Available only if the page is in <b>Edit</b> mode. The menus can include the pencil menu (module editing, optional), the gear menu (module settings), and the plus menu (additional module features, optional). The DNN Platform provides actions that are common to all modules, and the specific module can provide additional actions. Actions performed through the module action menu affect only that specific module in that specific webpage.</glossdef>
 
