@@ -33,6 +33,7 @@ if _%1_ NEQ __ goto %1
 :T001
 call :header "Checking that all expected files are there."  >> %_logfile%
 for /f %%v in ( %~dp0%_expfiles% ) do if not exist %_outdir%\%%v echo Missing output: %%v >> %_logfile%
+call npp %_logfile%
 if _%1_ NEQ __ goto :eof
 
 
