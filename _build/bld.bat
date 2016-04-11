@@ -114,8 +114,10 @@ for /f "usebackq tokens=2" %%v in (`date /t`) do for /f "delims=/ tokens=1,2,3" 
 
 :. runas /user:administrator /profile "%~f0\v2iis.bat %outdir%\%_transtype% c:\inetpub\wwwroot"
 :. start %_outdir%
+:. start c:\inetpub\wwwroot\docs
 start c:\z\docbuild\output\%_transtype%
-start c:\inetpub\wwwroot\docs
+start explorer.exe
+echo Copy the following to the Windows Explorer address bar: ftp://66.29.195.16/DNN%20Staging/DNNSoftware.QA.Docs/
 
 goto :eof
 
