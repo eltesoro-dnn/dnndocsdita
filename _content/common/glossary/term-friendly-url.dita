@@ -2,6 +2,15 @@
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
 <glossentry xml:lang="en" id="friendlyURL">
 
+    <glossterm>friendly URL</glossterm>
+    <glossdef>A URL that hides a coded path. Example: <filepath>http://www.example.com/myanswerpage</filepath> might actually resolve to <filepath>http://www.example.com/default.aspx?tabid=42</filepath>. DNN provides three modes of friendly URLs:
+        <ul>
+            <li><b>Advanced</b> provides both human-friendly and search-friendly URLs.</li>
+            <li><b>HumanFriendly</b> uses simple URLs for page names and uses <codeph>tabid</codeph> in more complicated URLs. Limited redirect support.</li>
+            <li><b>SearchFriendly</b> includes <codeph>tabid</codeph> patterns in URLs.</li>
+        </ul>
+    </glossdef>
+
     <prolog>
         <author>wrET,trJB,ceDS,1601</author>
         <copyright>
@@ -23,15 +32,6 @@
             </prodinfo>
         </metadata>
     </prolog>
-
-    <glossterm>friendly URL</glossterm>
-    <glossdef>A URL that hides a coded path. Example: <filepath>http://www.example.com/myanswerpage</filepath> might actually resolve to <filepath>http://www.example.com/default.aspx?tabid=42</filepath>. DNN provides three modes of friendly URLs:
-        <ul>
-            <li><b>Advanced</b> provides both human-friendly and search-friendly URLs.</li>
-            <li><b>HumanFriendly</b> uses simple URLs for page names and uses <codeph>tabid</codeph> in more complicated URLs. Limited redirect support.</li>
-            <li><b>SearchFriendly</b> includes <codeph>tabid</codeph> patterns in URLs.</li>
-        </ul>
-    </glossdef>
 
     <related-links>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/url-rewriting"><linktext>URL Rewriting</linktext></link>

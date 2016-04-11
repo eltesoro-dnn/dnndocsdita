@@ -2,6 +2,9 @@
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
 <glossentry xml:lang="en" id="site">
 
+    <glossterm>site</glossterm>
+    <glossdef>A specific website in a DNN installation, which can host multiple websites that share files and resources.</glossdef>
+
     <prolog>
         <author>wrET,trJB,ceDS,1601</author>
         <copyright>
@@ -23,9 +26,6 @@
             </prodinfo>
         </metadata>
     </prolog>
-
-    <glossterm>site</glossterm>
-    <glossdef>A specific website in a DNN installation, which can host multiple websites that share files and resources.</glossdef>
 
     <glossBody>
         <glossAlt id="portal">

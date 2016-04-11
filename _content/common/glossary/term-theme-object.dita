@@ -2,6 +2,11 @@
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
 <glossentry xml:lang="en" id="themeObject">
 
+    <glossterm>theme object</glossterm>
+    <glossdef>A type of DNN extension used in themes to provide additional functionality for common UI elements on a webpage. Examples: menu bar, copyright notice, login/registration links, privacy link, terms of service link, and search box. Theme objects are configured by the theme designer.
+        <note conkeyref="k-bptext/note-TipSkinningTool"></note>
+    </glossdef>
+
     <prolog>
         <author>wrET,trJB,ceDS,1601</author>
         <copyright>
@@ -23,11 +28,6 @@
             </prodinfo>
         </metadata>
     </prolog>
-
-    <glossterm>theme object</glossterm>
-    <glossdef>A type of DNN extension used in themes to provide additional functionality for common UI elements on a webpage. Examples: menu bar, copyright notice, login/registration links, privacy link, terms of service link, and search box. Theme objects are configured by the theme designer.
-        <note conkeyref="k-bptext/note-TipSkinningTool"></note>
-    </glossdef>
 
     <glossBody>
         <glossAlt id="skinobject">

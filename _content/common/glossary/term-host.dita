@@ -2,6 +2,9 @@
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
 <glossentry xml:lang="en" id="host">
 
+    <glossterm>host</glossterm>
+    <glossdef>An administrator account used to manage the server and its apps. A host account is the most privileged administrative account and has complete access to all DNN functionality and all websites supported by the DNN installation.</glossdef>
+
     <prolog>
         <author>wrET,trJB,ceDS,1601</author>
         <copyright>
@@ -23,9 +26,6 @@
             </prodinfo>
         </metadata>
     </prolog>
-
-    <glossterm>host</glossterm>
-    <glossdef>An administrator account used to manage the server and its apps. A host account is the most privileged administrative account and has complete access to all DNN functionality and all websites supported by the DNN installation.</glossdef>
 
     <glossBody>
         <glossAlt id="superuser">

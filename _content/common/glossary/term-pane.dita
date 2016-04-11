@@ -2,6 +2,9 @@
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
 <glossentry xml:lang="en" id="pane">
 
+    <glossterm>pane</glossterm>
+    <glossdef>A layout template area that holds a module. Theme designers determine the names and positions of panes. Administrators and webpage editors select the pane for each module added to the webpage. When the webpage is viewed, the pane can display content, depending on the module's functionality.</glossdef>
+
     <prolog>
         <author>wrET,trJB,ceDS,1601</author>
         <copyright>
@@ -23,8 +26,5 @@
             </prodinfo>
         </metadata>
     </prolog>
-
-    <glossterm>pane</glossterm>
-    <glossdef>A layout template area that holds a module. Theme designers determine the names and positions of panes. Administrators and webpage editors select the pane for each module added to the webpage. When the webpage is viewed, the pane can display content, depending on the module's functionality.</glossdef>
 
 </glossentry>

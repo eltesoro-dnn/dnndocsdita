@@ -2,6 +2,12 @@
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
 <glossentry xml:lang="en" id="token">
 
+    <glossterm>token</glossterm>
+    <glossdef>
+        <p>In an HTML content template, a placeholder for data to be injected into the HTML output. Example: <codeph>[User:UserName]</codeph> is replaced with the actual username.</p>
+        <p>In an HTML layout template, a word that represents DNN-standard code for a <term id="themeobject">theme object</term>. Examples: [NAV], [COPYRIGHT], [LOGIN], [PRIVACY], [TERMS], and [SEARCH].</p>
+    </glossdef>
+
     <prolog>
         <author>wrET,trJB,ceDS,1601</author>
         <copyright>
@@ -23,11 +29,5 @@
             </prodinfo>
         </metadata>
     </prolog>
-
-    <glossterm>token</glossterm>
-    <glossdef>
-        <p>In an HTML content template, a placeholder for data to be injected into the HTML output. Example: <codeph>[User:UserName]</codeph> is replaced with the actual username.</p>
-        <p>In an HTML layout template, a word that represents DNN-standard code for a <term id="themeobject">theme object</term>. Examples: [NAV], [COPYRIGHT], [LOGIN], [PRIVACY], [TERMS], and [SEARCH].</p>
-    </glossdef>
 
 </glossentry>

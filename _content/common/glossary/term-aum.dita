@@ -2,6 +2,9 @@
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
 <glossentry xml:lang="en" id="AUM">
 
+    <glossterm>Advanced URL Management</glossterm>
+    <glossdef>The latest implementation of the Friendly URL Rewriter. Includes additional tools that give DNN administrators greater control over the formatting of URLs within DNN.</glossdef>
+
     <prolog>
         <author>wrET,trJB,ceDS,1601</author>
         <copyright>
@@ -23,9 +26,6 @@
             </prodinfo>
         </metadata>
     </prolog>
-
-    <glossterm>Advanced URL Management</glossterm>
-    <glossdef>The latest implementation of the Friendly URL Rewriter. Includes additional tools that give DNN administrators greater control over the formatting of URLs within DNN.</glossdef>
 
     <glossBody>
         <glossSurfaceForm>Advanced URL Management (AUM)</glossSurfaceForm>

@@ -2,6 +2,9 @@
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
 <glossentry xml:lang="en" id="container">
 
+    <glossterm>container</glossterm>
+    <glossdef>A set of related components that define the look and feel of a module. In contrast, a <term id="skin">skin</term> or <term id="theme">theme</term> defines the look and feel of an entire webpage or website.</glossdef>
+
     <prolog>
         <author>wrET,trJB,ceDS,1601</author>
         <copyright>
@@ -23,8 +26,5 @@
             </prodinfo>
         </metadata>
     </prolog>
-
-    <glossterm>container</glossterm>
-    <glossdef>A set of related components that define the look and feel of a module. In contrast, a <term id="skin">skin</term> or <term id="theme">theme</term> defines the look and feel of an entire webpage or website.</glossdef>
 
 </glossentry>

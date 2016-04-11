@@ -2,6 +2,9 @@
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
 <glossentry xml:lang="en" id="page">
 
+    <glossterm>page</glossterm>
+    <glossdef>A DNN object that includes all components of a webpage, including scripts and UI components.</glossdef>
+
     <prolog>
         <author>wrET,trJB,ceDS,1601</author>
         <copyright>
@@ -23,9 +26,6 @@
             </prodinfo>
         </metadata>
     </prolog>
-
-    <glossterm>page</glossterm>
-    <glossdef>A DNN object that includes all components of a webpage, including scripts and UI components.</glossdef>
 
     <glossBody>
         <glossAlt id="tab">

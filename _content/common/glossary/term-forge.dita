@@ -2,6 +2,9 @@
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
 <glossentry xml:lang="en" id="Forge">
 
+    <glossterm>Forge</glossterm>
+    <glossdef>The <xref format="html" scope="external" href="http://www.dnnsoftware.com/forge">list of open-source extensions</xref> (including modules and themes) from the DNN community.</glossdef>
+
     <prolog>
         <author>wrET,trJB,ceDS,1601</author>
         <copyright>
@@ -23,8 +26,5 @@
             </prodinfo>
         </metadata>
     </prolog>
-
-    <glossterm>Forge</glossterm>
-    <glossdef>The <xref format="html" scope="external" href="http://www.dnnsoftware.com/forge">list of open-source extensions</xref> (including modules and themes) from the DNN community.</glossdef>
 
 </glossentry>
