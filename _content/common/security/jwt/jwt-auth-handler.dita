@@ -21,8 +21,7 @@
 
     <body>
 
-        <section id="JWTAuthHandler">
-            <title>JWT Authentication Handler</title>
+        <section id="Overview">
 
             <p>After the JWT Authentication Handler is installed in DNN, the <filepath>web.config</filepath> file is updated with a line similar to the following:</p>
 
