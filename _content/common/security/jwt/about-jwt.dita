@@ -2,9 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
 <topic xml:lang="en" id="top-AboutJWT">
 
-    <title>About JSON Web Token</title>
+    <title>About JWT Authentication</title>
     <titlealts>
-        <navtitle>About JWT</navtitle>
+        <navtitle>JWT Authentication</navtitle>
     </titlealts>
 
     <prolog>
@@ -21,7 +21,7 @@
 
     <body>
 
-        <section id="overview">
+        <section id="Overview">
             <title>Overview</title>
 
             <p>The JSON Web Token (JWT) is an open standard (IETF RFC 7519) data format that is compact, self-contained, and secure. It is intended for passing information where space is limited, such as HTTP headers and URI queries.</p>
@@ -41,8 +41,8 @@
 
         </section>
 
-        <section id="authWithJWT">
-            <title>Authentication with JWT</title>
+        <section id="JWTAuth">
+            <title>JWT Authentication</title>
 
             <note type="note">The JWT Authentication Provider is available in DNN products; however, it must be installed and enabled separately. DNN uses JWT for authentication only.</note>
 

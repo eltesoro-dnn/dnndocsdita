@@ -63,52 +63,54 @@
             <relcolspec type="reference"/>
         </relheader>
 
-        <!-- Common to all centers. -->
+        <!-- adm dev dsg -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept"   navtitle="DNN Platform"            href="designers/dnn-platform-overview.dita" />
+                <topicref format="dita" type="concept"   href="designers/dnn-platform-overview.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="reference" navtitle="DNN Requirements"        href="designers/requirements.dita" />
+                <topicref format="dita" type="reference" href="designers/requirements.dita" />
             </relcell>
             <relcell/>
         </relrow>
 
+        <!-- adm dev dsg -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic"     navtitle="Set Up DNN"              href="designers/setup/set-up-dnn.dita" />
+                <topicref format="dita" type="topic"                                     href="designers/setup/set-up-dnn.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task"      navtitle="Install an Extension"    href="designers/extensions/install-extension.dita" />
+                <topicref format="dita" type="task"      navtitle="Install an Extension" href="designers/extensions/install-extension.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="reference" navtitle="DNN Requirements"        href="designers/requirements.dita" />
+                <topicref format="dita" type="reference"                                 href="designers/requirements.dita" />
             </relcell>
         </relrow>
 
-        <!-- For developers and designers. -->
+        <!-- dev dsg -->
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task"      navtitle="Pack Your Extension"     href="designers/extensions/pack-extension.dita" />
-                <topicref format="dita" type="task"      navtitle="Install an Extension"    href="designers/extensions/install-extension.dita" />
+                <topicref format="dita" type="task" navtitle="Pack Your Extension"  href="designers/extensions/pack-extension.dita" />
+                <topicref format="dita" type="task" navtitle="Install an Extension" href="designers/extensions/install-extension.dita" />
             </relcell>
             <relcell/>
         </relrow>
 
+        <!-- dev dsg -->
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task"      navtitle="Pack Your Extension"     href="designers/extensions/pack-extension.dita" />
+                <topicref format="dita" type="task" navtitle="Pack Your Extension" href="designers/extensions/pack-extension.dita" />
             </relcell>
             <relcell>
                 <!-- <topicref format="dita" type="reference" scope="peer" href="Developers/Contents-module-pack.dita" /> topic not ready. -->
                 <!-- <topicref format="dita" type="reference" scope="peer" href="Designers/Contents-theme-pack.dita" /> topic not ready. -->
-                <topicref format="dita" type="reference" navtitle="DNN Manifest Schema"     href="designers/extensions/dnn-manifest-schema.dita" />
+                <topicref format="dita" type="reference" href="designers/extensions/dnn-manifest-schema.dita" />
             </relcell>
         </relrow>
 
-        <!-- Specific to this center. -->
+        <!-- dsg -->
         <relrow>
             <relcell>
                 <topicref format="dita" type="concept" href="designers/about-themes.dita" linking="targetonly" />
@@ -122,6 +124,7 @@
             <relcell/>
         </relrow>
 
+        <!-- dsg -->
         <relrow>
             <relcell>
                 <topicref format="dita" type="topic" href="designers/creating-themes/create-theme.dita" />
@@ -134,5 +137,7 @@
                 <topicref format="dita" type="reference" navtitle="Theme Objects" href="designers/theme-objects.dita" />
             </relcell>
         </relrow>
+
     </reltable>
+
 </map>

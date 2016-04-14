@@ -32,6 +32,13 @@
 
 
         <p>
+        <!-- <ph conref="../../common/bptext.dita#bptext/ph-PrereqAdmin"></ph> -->
+        <!-- <ph conkeyref="k-bptext/ph-PrereqAdmin"></ph> -->
+        <ph id="ph-PrereqAdmin"><b>An administrator account for the site.</b> Administrators have full permissions to the specific site.</ph>
+        </p>
+
+
+        <p>
         <!-- <ph conref="../../common/bptext.dita#bptext/ph-RFC2119"></ph> -->
         <!-- <ph conkeyref="k-bptext/ph-RFC2119"></ph> -->
         <ph id="ph-RFC2119">The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in <xref format="html" scope="external" href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</xref>.

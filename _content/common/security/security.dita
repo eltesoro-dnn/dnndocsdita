@@ -25,9 +25,13 @@
         <section id="overview">
             <title>Overview</title>
 
-            <p>DNN provides several default authentication providers and role providers to help with your site's security needs.</p>
+            <p>Security is comprised of two major components:</p>
+            <ul>
+                <li>Authentication (AuthN) - Verifies if the user provides valid login credentials. </li> <!-- Add more info here. -->
+                <li>Authorization (AuthZ) - Determines which site content or settings the user has access to. DNN products use role-based authorization to simplify permission management. Administrators assign roles to users based on the user's function, and each role is pre-assigned access to relevant content and settings, based on the typical needs of someone in that role. </li>
+            </ul>
 
-            <p>Third-party developers can also extend DNN with custom authentication and role providers.</p>
+            <p>DNN provides several default authentication and role providers, and third-party developers can also extend DNN with custom providers.</p>
 
         </section>
 
