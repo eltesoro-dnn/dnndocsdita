@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-AboutRoleBasedAccess">
+
+    <title>About Role-Based Access</title>
+    <titlealts>
+        <navtitle>Role-Based Access</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+        <section id="overview">
+            <p>Administrators can minimize the time required to manage permissions by assigning users to security roles based on their needs. Instead of managing permissions for each individual user, the administrator assigns permissions to the role, and those permissions are automatically extended to every user assigned to the role.</p>
+        </section>
+
+
+        <section id="roles">
+            <title>DNN roles</title>
+
+            <p>Roles can be used to assign security permissions to groups of users or to categorize users into social groups. For example, you can use roles to allow only paid subscribers to access your site.</p>
+
+            <p>DNN provides the following default roles:</p>
+            <ul>
+                <li><term>Administrators</term>. Have full permissions to manage their specific site, including permissions to add, delete, and edit all pages and modules on the site. Administrators can also authorize other users to access the <uicontrol>Site Administration</uicontrol> modules, as well as other pages. This role cannot be deleted or modified.</li>
+
+                <li><term>Registered Users</term>. All authenticated users (i.e., users who are registered and logged in). These user accounts can be set to Authorized or Unauthorized to access specific pages/modules. This role cannot be deleted or modified.</li>
+
+                <li><term>Unverified Users</term>. Anonymous site visitors, including registered users who are unauthenticated (i.e., not logged in). This role could be used to determine whether to display an invitation to log in or sign up. This role cannot be deleted or modified.</li>
+
+                <li><term>Subscribers</term>. Users that sign up for subscription to the site. All registered users are added to this role by default. Authenticated users can unsubscribe or re-subscribe to this role under <uicontrol>Membership Services</uicontrol> on the <uicontrol>View Profile</uicontrol> module. Administrators can delete or modify this role.</li>
+
+                <li><term>Translators</term>. A role for translators is automatically added for the default site language; example, <uicontrol>Translators (en-US)</uicontrol>, if the site's default language is set to English (US). When content localization is enabled, another Translators role is added for each installed language. Registered users must be manually assigned to this role.</li>
+            </ul>
+
+            <p>Additional roles might be available, depending on the product or the current page.</p>
+            <ul>
+                <li><term>All Users</term>. All site visitors, whether they are authenticated or not.</li>
+                <li><term>Hosts</term> or <term>Super Users</term>. Have full permissions to manage any site in the entire DNN installation. Super users can only be created by other super users.</li>
+                <li><term>Content Editors</term>. Users with permissions to edit content on a page.</li>
+                <li><term>Content Managers</term>. Users with permissions to manage (add/delete/modify/reposition) content within a page.</li>
+                <li><term>Module Deployers</term>. Users with permissions to add modules to site pages.</li>
+                <li><term>Module Editors</term>. Users with permissions to edit a module.</li>
+                <li><term>Page Editors</term>. Users with permissions to edit a page.</li>
+            </ul>
+
+            <p>When adding a role, only the "Role Name" field is required. The default settings create a private security role.</p>
+
+            <p>If a role is private,
+                <ul>
+                    <li>administrators can add users to it, and</li>
+                    <li>users can add themselves, only if they are provided with the RSVP Code or RSVP Link associated with the role.</li>
+                </ul>
+            </p>
+
+            <p>If a role is public,
+                <ul>
+                    <li>users can add themselves from their user profile.</li>
+                </ul>
+            </p>
+
+            <p>A role can be one of three security modes:</p>
+            <ul>
+                <li><uicontrol>SecurityRole</uicontrol>. Used for assigning site permissions.</li>
+                <li><uicontrol>SocialGroup</uicontrol>. Serves as a group that users can join.</li>
+                <li><uicontrol>Both</uicontrol>.</li>
+            </ul>
+
+            <p>Users can be automatically added to a role, either when the role is created or when a user is created.</p>
+
+            <p>The role's status determines what can be done with it.</p>
+            <simpletable relcolwidth="1* 2* 2*">
+                <sthead>
+                    <stentry>Status</stentry>
+                    <stentry>Administrators/Super Users</stentry>
+                    <stentry>Users</stentry>
+                </sthead>
+                <strow>
+                    <stentry>Disabled</stentry>
+                    <stentry>Cannot access.</stentry>
+                    <stentry>Cannot join.</stentry>
+                </strow>
+                <strow>
+                    <stentry>Pending</stentry>
+                    <stentry>Can access.</stentry>
+                    <stentry>Cannot join.</stentry>
+                </strow>
+                <strow>
+                    <stentry>Approved</stentry>
+                    <stentry>Can access.</stentry>
+                    <stentry>Can join, if role is public or if role has an RSVP code/link.</stentry>
+                </strow>
+            </simpletable>
+
+            <p>An icon can be associated with the role.</p>  <!-- When/Where is the icon displayed? -->
+
+        </section>
+
+
+        <section id="roleGroups">
+            <title>Role groups</title>
+
+            <p>Role groups categorize multiple roles for ease of management. For example, a role group named <userinput>Staff</userinput> could include the following security roles:</p>
+            <ol>
+                <li><userinput>All Staff</userinput></li>
+                <li><userinput>Telemarketing</userinput></li>
+                <li><userinput>Marketing</userinput></li>
+                <li><userinput>Sales</userinput></li>
+                <li><userinput>Information Technology</userinput></li>
+            </ol>
+
+        </section>
+
+    <draft-comment>
+    <!--
+    TODO: Add to ditamap when these topics are ready:
+    Create and manage user accounts. <xref href="../User Accounts/00_User_Accounts.dita#User_Accounts" />
+    Restrict access to files which have been uploaded to the site. <xref href="../File Management/Folder Editors/Modifying Folder Permissions.dita#Modifying_Folder_Permissions" />
+    Restrict access to view and manage modules.    <xref href="../../../Building Your Site/Adding and Managing Modules/Module Settings/Permissions/Setting Module Permissions.dita#Setting_Module_Permissions" />
+    Restrict access to view and manage pages. <xref href="../../../Building Your Site/Adding and Managing Pages/Page Settings/Setting Page Permissions.dita#Setting_Page_Permissions" />
+
+    Move related links outside body.
+    <related-links>
+        <xref href="../../Host Console/Super User Accounts/00_About_Super_User_Accounts.dita#Super_User_Accounts" />
+        <xref href="../../../Advanced Site Management/Content Localization/Configuring Content Localization/02 Setting Translator Roles.dita#Setting_Translator_Roles" />
+        <link format="" scope="" href="../Extensions/Administrators/Setting Permissions to Deploy a Module.dita#Setting_Permissions_to_Deploy_a_Module"><linktext></linktext></link>
+        <link format="" scope="" href="../Site Settings/User Account Settings/Registration Settings/01_Enabling User Registration.dita#Enabling_User_Registration"><linktext></linktext></link>
+    </related-links>
+    -->
+    </draft-comment>
+
+    </body>
+
+</topic>

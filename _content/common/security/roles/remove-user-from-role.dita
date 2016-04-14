@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="top-RemoveUserFromRole">
+
+    <title>Remove User from a Role</title>
+    <titlealts>
+        <navtitle>Remove User from Role</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
+            </ul>
+        </prereq>
+
+        <steps>
+            <step>
+                <cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Security Roles</uicontrol></menucascade>.</cmd>
+                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuAdminCommonSecurityRoles.png"><alt>Admin - Security Roles</alt></image></info>
+            </step>
+
+            <step>
+                <cmd>To remove a user from a role, click/tap the <uicontrol>Manage Users</uicontrol> icon for the role that the user belongs to.</cmd>
+                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-RoleList-Edit.png"><alt>Click/Tap the Manage Users icon to add a user to the role.</alt></image></info>
+            </step>
+
+            <step>
+                <cmd>In the <wintitle>Manage Users in Role</wintitle> page, search for the user in the list and click/tap the trash icon in that row. Confirm.</cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserRolesDelete.png"><alt>Trash icon in the Manage Users in Role page</alt></image>
+                    <note type="tip">To ensure that the correct user is remove, click/tap the username to view the account before deletion.</note>
+                </info>
+            </step>
+
+        </steps>
+
+        <result>The user immediately loses access to any modules or pages restricted to the members of the selected role.</result>
+
+    </taskbody>
+
+</task>
