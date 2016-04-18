@@ -1,118 +1,117 @@
-Rule-001		administrators/administrator-references.html
-Rule-002	DNN8-Whats-New.html	administrators/whats-new-dnn8.html
-Rule-003	Overview-DNN-Platform.html	administrators/dnn-platform-overview.html
-Rule-004	DNN8-Requirements.html	administrators/requirements.html
-Rule-005	admin/GettingStarted/Install-Extensions.html	administrators/extensions/install-extension.html
-Rule-006	admin/Glossary.html	administrators/glossary.html
-Rule-007	admin/index.html	administrators/index.html
-Rule-008		administrators/licensing/activate-license-automatically.html
-Rule-009		administrators/licensing/activate-license-manually.html
-Rule-010		administrators/licensing/faq-licensing.html
-Rule-011		administrators/licensing/index.html
-Rule-012		administrators/licensing/licensing.html
-Rule-013		administrators/licensing/troubleshooting-licensing.html
-Rule-014	admin/GettingStarted/Getting-Started.html	administrators/setup/index.html
-Rule-015	admin/GettingStarted/Setup/Run-Install-Wizard.html	administrators/setup/run-installation-wizard.html
-Rule-016	admin/GettingStarted/Setup/Set-Up-DNN-Folder.html	administrators/setup/set-up-dnn-folder.html
-Rule-017	admin/GettingStarted/Set-Up-DNN.html	administrators/setup/set-up-dnn.html
-Rule-018	admin/GettingStarted/Setup/Set-Up-IIS.html	administrators/setup/set-up-iis.html
-Rule-019	admin/GettingStarted/Setup/Set-Up-SQL-Server.html	administrators/setup/set-up-sql.html
-Rule-020	admin/UserGuide/User-Guides.html	http://www.dnnsoftware.com/community/download/manuals
-Rule-021		designers/about-themes.html
-Rule-022	design/HowTo/CreatingThemes/Create-Container.html	designers/creating-themes/create-container.html
-Rule-023	design/HowTo/CreatingThemes/Create-CSS.html	designers/creating-themes/create-css.html
-Rule-024	design/HowTo/CreatingThemes/Create-Doctype.html	designers/creating-themes/create-doctype-xml.html
-Rule-025	design/HowTo/CreatingThemes/Create-Layout-Template.html	designers/creating-themes/create-layout-template.html
-Rule-026	design/HowTo/CreatingThemes/Creating-Themes.html	designers/creating-themes/create-theme.html
-Rule-027	design/HowTo/How-To.html	designers/creating-themes/index.html
-Rule-028		designers/designer-references.html
-Rule-029		designers/whats-new-dnn8.html
-Rule-030	design/HowTo/PackagingThemes/Dnn-Manifest.html	designers/extensions/dnn-manifest-schema.html
-Rule-031	design/HowTo/PackagingThemes/Packaging-Themes.html	designers/extensions/index.html
-Rule-032	design/GettingStarted/Install-Extensions.html	designers/extensions/install-extension.html
-Rule-033	design/HowTo/PackagingThemes/Creating-Package.html	designers/extensions/pack-extension.html
-Rule-034	design/Glossary.html	designers/glossary.html
-Rule-035	design/index.html	designers/index.html
-Rule-036		designers/dnn-platform-overview.html
-Rule-037		designers/requirements.html
-Rule-038	design/GettingStarted/Getting-Started.html	designers/setup/index.html
-Rule-039	design/GettingStarted/Setup/Run-Install-Wizard.html	designers/setup/run-installation-wizard.html
-Rule-040	design/GettingStarted/Setup/Set-Up-DNN-Folder.html	designers/setup/set-up-dnn-folder.html
-Rule-041	design/GettingStarted/Set-Up-DNN.html	designers/setup/set-up-dnn.html
-Rule-042	design/GettingStarted/Setup/Set-Up-IIS.html	designers/setup/set-up-iis.html
-Rule-043	design/GettingStarted/Setup/Set-Up-SQL-Server.html	designers/setup/set-up-sql.html
-Rule-044	design/Theme-Objects.html	designers/theme-objects.html
-Rule-045	design/Style-Guide.html	http://uxguide.dnnsoftware.com/
-Rule-046	design/HowTo/CreatingThemes/Test-Html-Layout.html	designers/creating-themes/index.html
-Rule-047		developers/about-evs.html
-Rule-048	dev/Concepts/Concepts.html	developers/about-modules/index.html
-Rule-049	dev/Concepts/ModuleDevelopment/Module-Architecture.html	developers/about-modules/module-architecture.html
-Rule-050	dev/Concepts/ModuleDevelopment/Develop-Modules.html	developers/about-modules/module-development.html
-Rule-051	dev/Concepts/ModuleDevelopment/Module-Features.html	developers/about-modules/module-features.html
-Rule-052	dev/Concepts/ModuleDevelopment/MVC-Module-Development.html	developers/about-modules/mvc-module-development.html
-Rule-053	dev/Concepts/ModuleDevelopment/SPA-Module-Development.html	developers/about-modules/spa-module-development.html
-Rule-054	dev/Concepts/ModuleDevelopment/Unsupported-MVC-Features.html	developers/about-modules/unsupported-mvc-features.html
-Rule-055	dev/Concepts/ModuleDevelopment/Web-Forms-Module-Development.html	developers/about-modules/web-forms-module-development.html
-Rule-056	dev/HowTo/CreatingModules/Creating-Modules.html	developers/creating-modules/create-module-using-templates.html
-Rule-057	dev/HowTo/CreatingModules/Module-Templates.html	developers/creating-modules/create-module.html
-Rule-058	dev/HowTo/How-To.html	developers/creating-modules/index.html
-Rule-059		developers/creating-modules/start-vs-project-with-templates.html
-Rule-060		developers/creating-modules/test-module.html
-Rule-061	dev/HowTo/CreatingModules/Using-The-Module-Creator.html	developers/creating-modules/use-module-creator.html
-Rule-062		developers/developer-references.html
-Rule-063		developers/whats-new-dnn8.html
-Rule-064	dev/HowTo/PackagingExtensions/Dnn-Manifest.html	developers/extensions/dnn-manifest-schema.html
-Rule-065	dev/HowTo/PackagingExtensions/Packaging-Extensions.html	developers/extensions/index.html
-Rule-066	dev/GettingStarted/Install-Extensions.html	developers/extensions/install-extension.html
-Rule-067	dev/HowTo/PackagingExtensions/Creating-Package.html	developers/extensions/pack-extension.html
-Rule-068	dev/Glossary.html	developers/glossary.html
-Rule-069	dev/index.html	developers/index.html
-Rule-070		developers/dnn-platform-overview.html
-Rule-071		developers/providers.html
-Rule-072		developers/requirements.html
-Rule-073	dev/GettingStarted/Getting-Started.html	developers/setup/index.html
-Rule-074	dev/GettingStarted/Setup/Run-Install-Wizard.html	developers/setup/run-installation-wizard.html
-Rule-075	dev/GettingStarted/Setup/Set-Up-DNN-Folder.html	developers/setup/set-up-dnn-folder.html
-Rule-076	dev/GettingStarted/Set-Up-DNN.html	developers/setup/set-up-dnn.html
-Rule-077	dev/GettingStarted/Setup/Set-Up-IIS.html	developers/setup/set-up-iis.html
-Rule-078	dev/GettingStarted/Setup/Set-Up-SQL-Server.html	developers/setup/set-up-sql.html
-Rule-079	dev/API.html	http://www.dnnsoftware.com/dnn-api/
-Rule-080		searchresults.html
-Rule-081	administrators	administrators/index.html
-Rule-082	administrators/	administrators/index.html
-Rule-083	administrators/extensions	administrators/extensions/install-extension.html
-Rule-084	administrators/extensions/	administrators/extensions/install-extension.html
-Rule-085	administrators/licensing	administrators/licensing/index.html
-Rule-086	administrators/licensing/	administrators/licensing/index.html
-Rule-087	administrators/security	administrators/security/index.html
-Rule-088	administrators/security/	administrators/security/index.html
-Rule-089	administrators/security/jwt	administrators/security/jwt/index.html
-Rule-090	administrators/security/jwt/	administrators/security/jwt/index.html
-Rule-091	administrators/security/roles	administrators/security/roles/index.html
-Rule-092	administrators/security/roles/	administrators/security/roles/index.html
-Rule-093	administrators/setup	administrators/setup/index.html
-Rule-094	administrators/setup/	administrators/setup/index.html
-Rule-095	designers	designers/index.html
-Rule-096	designers/	designers/index.html
-Rule-097	designers/creating-themes	designers/creating-themes/index.html
-Rule-098	designers/creating-themes/	designers/creating-themes/index.html
-Rule-099	designers/extensions	designers/extensions/index.html
-Rule-100	designers/extensions/	designers/extensions/index.html
-Rule-101	designers/setup	designers/setup/index.html
-Rule-102	designers/setup/	designers/setup/index.html
-Rule-103	developers	developers/index.html
-Rule-104	developers/	developers/index.html
-Rule-105	developers/about-modules	developers/about-modules/index.html
-Rule-106	developers/about-modules/	developers/about-modules/index.html
-Rule-107	developers/creating-modules	developers/creating-modules/index.html
-Rule-108	developers/creating-modules/	developers/creating-modules/index.html
-Rule-109	developers/extensions	developers/extensions/index.html
-Rule-110	developers/extensions/	developers/extensions/index.html
-Rule-111	developers/security	developers/security/index.html
-Rule-112	developers/security/	developers/security/index.html
-Rule-113	developers/security/jwt	developers/security/jwt/index.html
-Rule-114	developers/security/jwt/	developers/security/jwt/index.html
-Rule-115	developers/security/roles	developers/security/roles/index.html
-Rule-116	developers/security/roles/	developers/security/roles/index.html
-Rule-117	developers/setup	developers/setup/index.html
-Rule-118	developers/setup/	developers/setup/index.html
+Rule-001	/	/index.html
+Rule-002		administrators/administrator-references.html
+Rule-003	DNN8-Whats-New.html	administrators/whats-new-dnn8.html
+Rule-004	Overview-DNN-Platform.html	administrators/dnn-platform-overview.html
+Rule-005	DNN8-Requirements.html	administrators/requirements.html
+Rule-006	admin/GettingStarted/Install-Extensions.html	administrators/extensions/install-extension.html
+Rule-007	admin/Glossary.html	administrators/glossary.html
+Rule-008	admin/index.html	administrators/index.html
+Rule-009		administrators/licensing/activate-license-automatically.html
+Rule-010		administrators/licensing/activate-license-manually.html
+Rule-011		administrators/licensing/faq-licensing.html
+Rule-012		administrators/licensing/index.html
+Rule-013		administrators/licensing/licensing.html
+Rule-014		administrators/licensing/troubleshooting-licensing.html
+Rule-015	admin/GettingStarted/Getting-Started.html	administrators/setup/index.html
+Rule-016	admin/GettingStarted/Setup/Run-Install-Wizard.html	administrators/setup/run-installation-wizard.html
+Rule-017	admin/GettingStarted/Setup/Set-Up-DNN-Folder.html	administrators/setup/set-up-dnn-folder.html
+Rule-018	admin/GettingStarted/Set-Up-DNN.html	administrators/setup/set-up-dnn.html
+Rule-019	admin/GettingStarted/Setup/Set-Up-IIS.html	administrators/setup/set-up-iis.html
+Rule-020	admin/GettingStarted/Setup/Set-Up-SQL-Server.html	administrators/setup/set-up-sql.html
+Rule-021	admin/UserGuide/User-Guides.html	http://www.dnnsoftware.com/community/download/manuals
+Rule-022		designers/about-themes.html
+Rule-023	design/HowTo/CreatingThemes/Create-Container.html	designers/creating-themes/create-container.html
+Rule-024	design/HowTo/CreatingThemes/Create-CSS.html	designers/creating-themes/create-css.html
+Rule-025	design/HowTo/CreatingThemes/Create-Doctype.html	designers/creating-themes/create-doctype-xml.html
+Rule-026	design/HowTo/CreatingThemes/Create-Layout-Template.html	designers/creating-themes/create-layout-template.html
+Rule-027	design/HowTo/CreatingThemes/Creating-Themes.html	designers/creating-themes/create-theme.html
+Rule-028	design/HowTo/How-To.html	designers/creating-themes/index.html
+Rule-029		designers/designer-references.html
+Rule-030		designers/whats-new-dnn8.html
+Rule-031	design/HowTo/PackagingThemes/Dnn-Manifest.html	designers/extensions/dnn-manifest-schema.html
+Rule-032	design/HowTo/PackagingThemes/Packaging-Themes.html	designers/extensions/index.html
+Rule-033	design/GettingStarted/Install-Extensions.html	designers/extensions/install-extension.html
+Rule-034	design/HowTo/PackagingThemes/Creating-Package.html	designers/extensions/pack-extension.html
+Rule-035	design/Glossary.html	designers/glossary.html
+Rule-036	design/index.html	designers/index.html
+Rule-037		designers/dnn-platform-overview.html
+Rule-038		designers/requirements.html
+Rule-039	design/GettingStarted/Getting-Started.html	designers/setup/index.html
+Rule-040	design/GettingStarted/Setup/Run-Install-Wizard.html	designers/setup/run-installation-wizard.html
+Rule-041	design/GettingStarted/Setup/Set-Up-DNN-Folder.html	designers/setup/set-up-dnn-folder.html
+Rule-042	design/GettingStarted/Set-Up-DNN.html	designers/setup/set-up-dnn.html
+Rule-043	design/GettingStarted/Setup/Set-Up-IIS.html	designers/setup/set-up-iis.html
+Rule-044	design/GettingStarted/Setup/Set-Up-SQL-Server.html	designers/setup/set-up-sql.html
+Rule-045	design/Theme-Objects.html	designers/theme-objects.html
+Rule-046	design/Style-Guide.html	http://uxguide.dnnsoftware.com/
+Rule-047	design/HowTo/CreatingThemes/Test-Html-Layout.html	designers/creating-themes/index.html
+Rule-048		developers/about-evs.html
+Rule-049	dev/Concepts/Concepts.html	developers/about-modules/index.html
+Rule-050	dev/Concepts/ModuleDevelopment/Module-Architecture.html	developers/about-modules/module-architecture.html
+Rule-051	dev/Concepts/ModuleDevelopment/Develop-Modules.html	developers/about-modules/module-development.html
+Rule-052	dev/Concepts/ModuleDevelopment/Module-Features.html	developers/about-modules/module-features.html
+Rule-053	dev/Concepts/ModuleDevelopment/MVC-Module-Development.html	developers/about-modules/mvc-module-development.html
+Rule-054	dev/Concepts/ModuleDevelopment/SPA-Module-Development.html	developers/about-modules/spa-module-development.html
+Rule-055	dev/Concepts/ModuleDevelopment/Unsupported-MVC-Features.html	developers/about-modules/unsupported-mvc-features.html
+Rule-056	dev/Concepts/ModuleDevelopment/Web-Forms-Module-Development.html	developers/about-modules/web-forms-module-development.html
+Rule-057	dev/HowTo/CreatingModules/Creating-Modules.html	developers/creating-modules/create-module-using-templates.html
+Rule-058	dev/HowTo/CreatingModules/Module-Templates.html	developers/creating-modules/create-module.html
+Rule-059	dev/HowTo/How-To.html	developers/creating-modules/index.html
+Rule-060		developers/creating-modules/start-vs-project-with-templates.html
+Rule-061		developers/creating-modules/test-module.html
+Rule-062	dev/HowTo/CreatingModules/Using-The-Module-Creator.html	developers/creating-modules/use-module-creator.html
+Rule-063		developers/developer-references.html
+Rule-064		developers/whats-new-dnn8.html
+Rule-065	dev/HowTo/PackagingExtensions/Dnn-Manifest.html	developers/extensions/dnn-manifest-schema.html
+Rule-066	dev/HowTo/PackagingExtensions/Packaging-Extensions.html	developers/extensions/index.html
+Rule-067	dev/GettingStarted/Install-Extensions.html	developers/extensions/install-extension.html
+Rule-068	dev/HowTo/PackagingExtensions/Creating-Package.html	developers/extensions/pack-extension.html
+Rule-069	dev/Glossary.html	developers/glossary.html
+Rule-070	dev/index.html	developers/index.html
+Rule-071		developers/dnn-platform-overview.html
+Rule-072		developers/providers.html
+Rule-073		developers/requirements.html
+Rule-074	dev/GettingStarted/Getting-Started.html	developers/setup/index.html
+Rule-075	dev/GettingStarted/Setup/Run-Install-Wizard.html	developers/setup/run-installation-wizard.html
+Rule-076	dev/GettingStarted/Setup/Set-Up-DNN-Folder.html	developers/setup/set-up-dnn-folder.html
+Rule-077	dev/GettingStarted/Set-Up-DNN.html	developers/setup/set-up-dnn.html
+Rule-078	dev/GettingStarted/Setup/Set-Up-IIS.html	developers/setup/set-up-iis.html
+Rule-079	dev/GettingStarted/Setup/Set-Up-SQL-Server.html	developers/setup/set-up-sql.html
+Rule-080	dev/API.html	http://www.dnnsoftware.com/dnn-api/
+Rule-081		searchresults.html
+Rule-082	administrators	administrators/index.html
+Rule-083	administrators/extensions	administrators/extensions/index.html
+Rule-084	administrators/licensing	administrators/licensing/index.html
+Rule-085	administrators/security	administrators/security/index.html
+Rule-086	administrators/security/jwt	administrators/security/jwt/index.html
+Rule-087	administrators/security/roles	administrators/security/roles/index.html
+Rule-088	administrators/setup	administrators/setup/index.html
+Rule-089	designers	designers/index.html
+Rule-090	designers/creating-themes	designers/creating-themes/index.html
+Rule-091	designers/extensions	designers/extensions/index.html
+Rule-092	designers/setup	designers/setup/index.html
+Rule-093	developers	developers/index.html
+Rule-094	developers/about-modules	developers/about-modules/index.html
+Rule-095	developers/creating-modules	developers/creating-modules/index.html
+Rule-096	developers/extensions	developers/extensions/index.html
+Rule-097	developers/security	developers/security/index.html
+Rule-098	developers/security/jwt	developers/security/jwt/index.html
+Rule-099	developers/setup	developers/setup/index.html
+testonly	administrators/
+testonly	administrators/extensions/
+testonly	administrators/licensing/
+testonly	administrators/security/
+testonly	administrators/security/jwt/
+testonly	administrators/security/roles/
+testonly	administrators/setup/
+testonly	designers/
+testonly	designers/creating-themes/
+testonly	designers/extensions/
+testonly	designers/setup/
+testonly	developers/
+testonly	developers/about-modules/
+testonly	developers/creating-modules/
+testonly	developers/extensions/
+testonly	developers/security/
+testonly	developers/security/jwt/
+testonly	developers/setup/
