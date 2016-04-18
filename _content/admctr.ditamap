@@ -23,7 +23,8 @@
             <topicref format="dita" type="task" toc="yes" href="administrators/setup/run-installation-wizard.dita" />
         </topicref>
 
-        <topicref format="dita" type="task" navtitle="Install an Extension" toc="yes" href="administrators/extensions/install-extension.dita" />
+        <!-- Extensions -->
+        <topicref format="dita" type="task" navtitle="Install an Extension" toc="yes" href="administrators/extensions/install-extension.dita" copy-to="administrators/extensions/index.dita" />
 
         <!-- Licensing -->
         <topicref format="dita" type="topic" navtitle="Licensing" toc="yes" href="administrators/licensing/licensing.dita" copy-to="administrators/licensing/index.dita" collection-type="family">
