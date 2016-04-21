@@ -45,7 +45,10 @@
         </section>
 
 
-        <prereq><ph conkeyref="k-bptext/ph-PrereqHost"></ph></prereq>
+        <prereq>
+            <ph conkeyref="k-bptext/ph-PrereqHost"></ph>
+            <ph conkeyref="k-bptext/ph-HostForModulesThemes"></ph>
+        </prereq>
 
 
         <steps>
