@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-AuthorizeUser">
+
+    <title>Authorize a User Account</title>
+    <titlealts>
+        <navtitle>Authorize a User</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <taskbody>
+
+        <section id="overview"><ph conref="bptext-userssteps.dita#bptext-userssteps/ph-introauthorize"></ph></section>
+
+        <prereq><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></prereq>
+
+        <steps>
+            <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotouseracctlist"><cmd/></step>
+            <step conref="bptext-userssteps.dita#bptext-userssteps/step-searchforuser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#bptext-userssteps/step-edituser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#bptext-userssteps/step-authorizeuser"><cmd/></step>
+        </steps>
+
+    </taskbody>
+
+</task>

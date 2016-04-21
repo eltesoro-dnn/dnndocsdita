@@ -7,15 +7,40 @@
     <!-- Topics -->
     <topicref format="dita" type="topic" navtitle="Security" toc="yes" href="security.dita" copy-to="index.dita" collection-type="family">
 
+        <topicref format="dita" type="topic" toc="yes" href="user-accounts/about-user-accounts.dita" copy-to="user-accounts/index.dita" collection-type="family">
+            <!-- Regular user accounts tasks -->
+            <topicset id="regularusers"  collection-type="family">
+                <topicref format="dita" type="task" toc="yes" href="user-accounts/add-user-account.dita" />
+                <topicref format="dita" type="task" toc="yes" href="user-accounts/authorize-user.dita" />
+                <topicref format="dita" type="task" toc="yes" href="user-accounts/delete-all-unauthorized-users.dita" />
+                <topicref format="dita" type="task" toc="yes" href="user-accounts/edit-or-delete-user.dita" />
+                <topicref format="dita" type="task" toc="yes" href="user-accounts/manage-user-password.dita" />
+                <topicref format="dita" type="task" toc="yes" href="user-accounts/restore-deleted-user-account.dita" />
+            </topicset>
+            <!-- Host/superuser accounts tasks -->
+            <topicset id="hostusers" collection-type="family">
+                <topicref format="dita" type="task" toc="yes" href="user-accounts/add-host-account.dita" />
+                <topicref format="dita" type="task" toc="yes" href="user-accounts/authorize-host.dita" />
+                <topicref format="dita" type="task" toc="yes" href="user-accounts/promote-user-to-host.dita" />
+                <topicref format="dita" type="task" toc="yes" href="user-accounts/demote-from-host.dita" />
+                <topicref format="dita" type="task" toc="yes" href="user-accounts/delete-all-unauthorized-hosts.dita" />
+                <topicref format="dita" type="task" toc="yes" href="user-accounts/edit-or-delete-host.dita" />
+                <topicref format="dita" type="task" toc="yes" href="user-accounts/manage-host-password.dita" />
+                <topicref format="dita" type="task" toc="yes" href="user-accounts/restore-deleted-host-account.dita" />
+            </topicset>
+        </topicref>
+
         <topicref format="dita" type="topic" toc="yes" href="roles/about-role-based-access.dita" copy-to="roles/index.dita" collection-type="family">
             <!-- Roles tasks -->
-            <topicref format="dita" type="task" toc="yes" href="roles/add-edit-role.dita" />
+            <topicref format="dita" type="task" toc="yes" href="roles/add-or-edit-role.dita" />
             <topicref format="dita" type="task" toc="yes" href="roles/delete-role.dita" />
             <topicref format="dita" type="task" toc="yes" href="roles/add-role-group.dita" />
-            <topicref format="dita" type="task" toc="yes" href="roles/edit-delete-role-group.dita" />
-            <topicref format="dita" type="task" toc="yes" href="roles/add-user-to-role.dita" />
+            <topicref format="dita" type="task" toc="yes" href="roles/edit-or-delete-role-group.dita" />
+            <topicref format="dita" type="task" toc="yes" href="roles/assign-user-to-multiple-roles.dita" />
+            <topicref format="dita" type="task" toc="yes" href="roles/assign-multiple-users-to-role.dita" />
             <topicref format="dita" type="task" toc="yes" href="roles/edit-dates-of-user-subscription-to-role.dita" />
-            <topicref format="dita" type="task" toc="yes" href="roles/remove-user-from-role.dita" />
+            <topicref format="dita" type="task" toc="yes" href="roles/remove-user-from-multiple-roles.dita" />
+            <topicref format="dita" type="task" toc="yes" href="roles/remove-multiple-users-from-role.dita" />
         </topicref>
 
         <topicref format="dita" type="topic" toc="yes" href="jwt/about-jwt.dita" copy-to="jwt/index.dita" collection-type="family">

@@ -1,12 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="top-EditDatesUserSubscriptionToRole">
+<task xml:lang="en" id="tsk-AssignUserToMultipleRoles">
 
-    <title>Edit Dates of a User's Subscription to a Role</title>
+    <title>Assign a Single User to Multiple Roles</title>
     <titlealts>
-        <navtitle>Edit User Subscription</navtitle>
+        <navtitle>Assign User to Multiple Roles</navtitle>
     </titlealts>
-
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -31,36 +30,35 @@
         </metadata>
     </prolog>
 
-
     <taskbody>
 
-        <prereq>
-            <ul>
-                <li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
-            </ul>
-        </prereq>
-
+        <prereq><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></prereq>
 
         <steps>
-            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-manageroles"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-searchforrole"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-manageusers"><cmd/></step>
+            <step conref="../user-accounts/bptext-userssteps.dita#bptext-userssteps/step-gotouseracctlist"><cmd/></step>
+            <step conref="../user-accounts/bptext-userssteps.dita#bptext-userssteps/step-searchforuser"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-managerolesforuser"><cmd/></step>
             <step>
-                <cmd>In the <wintitle>Manage Users in Role</wintitle> page, select the users to edit.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageUsersInRole.png"><alt>Manage Users in Role page</alt></image></info>
+                <cmd>For each role to add to the user,</cmd>
+                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageRolesForUserAdd.png"><alt>Select each role and optionally assign effective or expiry dates. Then click/tap Add Role to User.</alt></image></info>
                 <substeps>
                     <substep>
-                        <cmd>Select the user from the <uicontrol>User Name</uicontrol> dropdown.</cmd>
+                        <cmd>Select a role from the <uicontrol>Security Role</uicontrol> dropdown.</cmd>
                     </substep>
 
                     <substep>
-                        <cmd>(Optional) Change the <uicontrol>Effective Date</uicontrol> to assign the role to the user at a future date.</cmd>
+                        <cmd>(Optional) Add an <uicontrol>Effective Date</uicontrol> to assign the role to the user at a future date.</cmd>
                         <info>If <uicontrol>Effective Date</uicontrol> is empty, the role is assigned to the user immediately.</info>
                     </substep>
 
                     <substep>
-                        <cmd>(Optional) Change the <uicontrol>Expiry Date</uicontrol> to remove the user from the role at a future date.</cmd>
+                        <cmd>(Optional) Add an <uicontrol>Expiry Date</uicontrol> to remove the user from the role at a future date.</cmd>
                         <info>If <uicontrol>Expiry Date</uicontrol> is empty, the user is assigned that role indefinitely.</info>
+                    </substep>
+
+                    <substep>
+                        <cmd>(Optional) Check <uicontrol>Is Owner</uicontrol> to allow the user to moderate other users in the role.</cmd>
+                        <info>This option is available only if the role's <uicontrol>Security Mode</uicontrol> is set to <uicontrol>SocialGroup</uicontrol>.</info>
                     </substep>
 
                     <substep>
@@ -68,16 +66,11 @@
                     </substep>
 
                     <substep>
-                        <cmd>Click/Tap <uicontrol>Update User Role</uicontrol>.</cmd>
+                        <cmd>Click/Tap <uicontrol>Add Role to User</uicontrol>.</cmd>
                     </substep>
                 </substeps>
             </step>
         </steps>
-
-
-        <result>
-            <note type="note">The user might need to refresh their browser to see the effects of the change.</note>
-        </result>
 
     </taskbody>
 

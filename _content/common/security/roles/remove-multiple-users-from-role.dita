@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="top-RemoveMultipleUsersFromRole">
+
+    <title>Remove Multiple Users from a Single Role</title>
+    <titlealts>
+        <navtitle>Remove Multiple Users from Role</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
+            </ul>
+        </prereq>
+
+        <steps>
+            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-manageroles"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-searchforrole"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-manageusers"><cmd/></step>
+            <step>
+                <cmd>In the <wintitle>Manage Users in Role</wintitle> page, search for the user and remove.</cmd>
+                <choices>
+                    <choice>
+                        <p>To remove the user immediately, search for the user in the list, and then click/tap the trash icon in that row. Confirm.</p>
+                        <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageUsersInRoleDelete.png"><alt>Trash icon in the Manage Users in Role page</alt></image>
+                    </choice>
+                    <choice>
+                        <p>To remove the user at a later date, search for the user in the <uicontrol>User Name</uicontrol> dropdown, choose an Expiry Date, and click/tap <uicontrol>Update User Role</uicontrol>.</p>
+                        <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageUsersInRoleUpdateDelete.png"><alt>Choose the user, add an Expiry Date, and then click/tap Update User Role.</alt></image>
+                    </choice>
+                </choices>
+                <info>
+                    <note type="tip">Click/Tap the username to view the account before deletion to ensure that you are deleting the correct account.</note>
+                </info>
+            </step>
+        </steps>
+
+    </taskbody>
+
+</task>

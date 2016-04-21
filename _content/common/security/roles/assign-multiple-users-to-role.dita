@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="top-AddUserToRole">
+<task xml:lang="en" id="top-AssignMultipleUsersToRole">
 
-    <title>Add User to a Role</title>
+    <title>Assign Multiple Users to a Single Role</title>
     <titlealts>
-        <navtitle>Add User to Role</navtitle>
+        <navtitle>Assign Multiple Users to Role</navtitle>
     </titlealts>
 
 
@@ -42,19 +42,12 @@
 
 
         <steps>
-            <step>
-                <cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Security Roles</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuAdminCommonSecurityRoles.png"><alt>Admin - Security Roles</alt></image></info>
-            </step>
-
-            <step>
-                <cmd>To add a user to a role, click/tap the <uicontrol>Manage Users</uicontrol> icon for the role you want.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-RoleList-Edit.png"><alt>Click/Tap the Manage Users icon to add a user to the role.</alt></image></info>
-            </step>
-
+            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-manageroles"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-searchforrole"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-manageusers"><cmd/></step>
             <step>
                 <cmd>In the <wintitle>Manage Users in Role</wintitle> page, select the users to add to the role.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserRoles.png"><alt>Manage Users in Role page</alt></image></info>
+                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageUsersInRole.png"><alt>Manage Users in Role page</alt></image></info>
                 <substeps>
                     <substep>
                         <cmd>Select the user from the <uicontrol>User Name</uicontrol> dropdown.</cmd>
@@ -85,7 +78,6 @@
                 </substeps>
                 <stepxmp>For example, if a new subscription plan will be officially released on the first of the following month, you can add new customers to the role associated with that new plan ahead of time, but set the <uicontrol>Effective Date</uicontrol> to the first of the following month.</stepxmp>
             </step>
-
         </steps>
 
 

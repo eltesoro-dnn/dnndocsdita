@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="bptext-userssteps">
+
+    <title>Boilerplates - User-related Steps</title>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+    </prolog>
+
+    <taskbody>
+
+        <section>
+
+            <p>
+                <!-- <ph conref="bptext-userssteps.dita#bptext-userssteps/ph-introauthorize"></ph> -->
+                <ph id="ph-introauthorize">A user account must be authorized for the account to be active. If you choose to delay the authorization, you can edit the account at a later time to authorize the account.</ph>
+            </p>
+
+
+            <p>
+                <!-- <ph conref="bptext-userssteps.dita#bptext-userssteps/ph-hostfullperms"></ph> -->
+                <ph id="ph-hostfullperms"><term>Hosts</term> (also known as <term>super users</term>) have full permissions to all sites within the DNN instance. Only a host can promote/demote a user account to/from a host account.</ph>
+            </p>
+
+
+            <p>
+                <!-- <ph conref="bptext-userssteps.dita#bptext-userssteps/ph-hostscandemote"></ph> -->
+                <ph id="ph-hostscandemote">Hosts can revoke permissions from or demote another host.</ph>
+            </p>
+
+
+            <p>
+                <!-- This blurb is valid until the persona bar for admins and hosts have been implemented. Per ChrisP, ETA 2016 Oct or later. In that release, the pages will all be centralized. -->
+                <!-- <ph conref="bptext-userssteps.dita#bptext-userssteps/ph-hostcannotbedemoted"></ph> -->
+                <ph id="ph-hostcannotbedemoted">Host accounts that were created from <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>SuperUser Accounts</uicontrol> <uicontrol>Add New User</uicontrol></menucascade> cannot be demoted to a regular user. To create host accounts that can be demoted, create the user account from <menucascade><uicontrol>Users</uicontrol> <uicontrol>Add New User</uicontrol></menucascade>, and then promote the new user to host.</ph>
+            </p>
+
+        </section>
+
+
+        <steps>
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotohostacctlist"><cmd/></step> -->
+            <step id="step-gotohostacctlist">
+                <cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>SuperUser Accounts</uicontrol></menucascade>.</cmd>
+                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuHostAdvancedSuperUserAccounts.png"><alt>Host - Advanced Settings - SuperUser Accounts</alt></image></info>
+            </step>
+
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-clicktapaddnewuser"><cmd/></step> -->
+            <step id="step-clicktapaddnewuser">
+                <cmd>Click/Tap <uicontrol>Add New User</uicontrol>.</cmd>
+                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListAddNewUser.png"><alt>Add New User button</alt></image></info>
+            </step>
+
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotoaddusers"><cmd/></step> -->
+            <step id="step-gotoaddusers">
+                <cmd>Go to <menucascade><uicontrol>Users</uicontrol> <uicontrol>Add New User</uicontrol></menucascade>.</cmd>
+                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuUsersAddNewUser.png"><alt>Users - Add New User</alt></image></info>
+            </step>
+
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-enteruserinfo"><cmd/></step> -->
+            <step id="step-enteruserinfo">
+                <cmd>Enter the user's information.</cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-AddNewUser.png"><alt>Add New User</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry><uicontrol>Authorize</uicontrol></stentry>
+                            <stentry>If checked, the user is immediately subscribed to the <uicontrol>Registered User</uicontrol> role and to other roles that have <uicontrol>Auto Assignment</uicontrol> checked. A user account can be created and then authorized at a later time by an administrator.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Notify</uicontrol></stentry>
+                            <stentry>If checked, the user is notified by email that the account is created. Can be checked at a later time to send the email belatedly.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Random Password</uicontrol></stentry>
+                            <stentry>If checked, generates a random password. Otherwise, you must provide a password.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Password</uicontrol></stentry>
+                            <stentry>If the site is configured with password rules (i.e., minimum length), the initial password you assign must obey those password rules.
+                            </stentry>
+                        </strow>
+                    </simpletable>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotouseracctlist"><cmd/></step> -->
+            <step id="step-gotouseracctlist">
+                <cmd>Go to <menucascade><uicontrol>Users</uicontrol> <uicontrol>Manage Users</uicontrol></menucascade>.</cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuUsersManageUsers.png"><alt>Users - Manage Users</alt></image>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-searchforuser"><cmd/></step> -->
+            <step id="step-searchforuser">
+                <cmd>Search for the user account to edit.</cmd>
+                <info>
+                    <p>You can use the <uicontrol>Search</uicontrol> textbox and dropdown at the top to search by a user account field, such as Username, Email, Display Name, Street, City, social media account, or Preferred Locale.</p>
+
+                    <p>You can also limit the displayed accounts using the predefined filter links. The alphabet links return accounts with usernames that start with that letter.</p>
+
+                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListSearchFilter.png"><alt>User List - Search field and dropdown</alt></image>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-edituser"><cmd/></step> -->
+            <step id="step-edituser">
+                <cmd>Click/Tap the pencil icon for the user account to edit.</cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListEdit.png"><alt>User List - pencil icons</alt></image>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-deleteuser"><cmd/></step> -->
+            <step id="step-deleteuser">
+                <cmd>Click/Tap the trash icon for the user account to delete.</cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListDelete.png"><alt>User List - trash icons</alt></image>
+                    <note type="note">Deletion simply makes the account unavailable and revokes user-specific permissions. You must also remove the user from assigned roles to revoke role-based permissions also.</note>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-editdeleteuser"><cmd/></step> -->
+            <step id="step-editdeleteuser">
+                <cmd>Edit or delete the user account.</cmd>
+                <choices>
+                    <choice>To edit the user account, click/tap the pencil icon for that user.</choice>
+                    <choice>To delete the user account, click/tap the trash icon for that user.</choice>
+                </choices>
+                <info>
+                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListEditDelete.png"><alt>User List - pencil and trash icons</alt></image>
+                    <note type="note">Deletion simply makes the account unavailable and revokes user-specific permissions. You must also remove the user from assigned roles to revoke role-based permissions also.</note>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-optpurgeuser"><cmd/></step> -->
+            <step id="step-optpurgeuser">
+                <cmd>(Optional) To completely remove all account information from the database, purge the deleted account(s).</cmd>
+                <choices>
+                    <choice>To purge a single account, click/tap the <uicontrol>x</uicontrol> icon for the deleted user account.</choice>
+                    <choice>To purge all deleted accounts, click/tap <uicontrol>Remove Deleted Users</uicontrol>.</choice>
+                </choices>
+                <info>
+                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListWithDeletedPurge.png"><alt>User List - Purge</alt></image>
+                    <note type="important">Purged accounts cannot be restored.</note>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-restoredeleteduser"><cmd/></step> -->
+            <step id="step-restoredeleteduser">
+                <cmd>Click/Tap the back-arrow icon for the deleted user account to restore the account.</cmd>
+                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListWithDeletedRestore.png"><alt>User List - Restore</alt></image></info>
+            </step>
+
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-authorizeuser"><cmd/></step> -->
+            <step id="step-authorizeuser">
+                <cmd>Click/Tap <uicontrol>Authorize User</uicontrol>.</cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditUserAuthorize.png"><alt>Edit User - Authorize User</alt></image>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-deleteallunauthed"><cmd/></step> -->
+            <step id="step-deleteallunauthed">
+                <cmd>Verify then delete the unauthorized users.</cmd>
+                <substeps>
+                    <substep><cmd>(Optional) Click/Tap the <uicontrol>Unauthorized</uicontrol> link to filter the list.</cmd></substep>
+                    <substep><cmd>(Optional) Verify that each unauthorized account is not needed.</cmd></substep>
+                    <substep><cmd>Click/Tap <uicontrol>Delete Unauthorized Users</uicontrol>.</cmd></substep>
+                </substeps>
+                <info>
+                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListUnauthorized.png"><alt>User List - Delete Unauthorized Users</alt></image>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-changepwd"><cmd/></step> -->
+            <step id="step-changepwd">
+                <cmd>Change the user password, send a reset link, or force a password change at next login.S</cmd>
+                <choices>
+                    <choice>
+                        <p>To change the password for the user,</p>
+                        <ol>
+                            <li>go to the <uicontrol>Manage Password</uicontrol> tab,</li>
+                            <li>fill in the <uicontrol>New Password</uicontrol> and <uicontrol>Confirm Password</uicontrol> fields, and</li>
+                            <li>click/tap <uicontrol>Change Password</uicontrol>.</li>
+                        </ol>
+                        <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditUserManagePasswordChangePwd.png"><alt>Edit User - Manage Password - Change Password</alt></image>
+                    </choice>
+
+                    <choice>
+                        <p>To send the user a password reset link,</p>
+                        <ol>
+                            <li>go to the <uicontrol>Manage Password</uicontrol> tab, and</li>
+                            <li>click/tap <uicontrol>Send Password Reset Link</uicontrol>.</li>
+                        </ol>
+                        <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditUserManagePasswordResetLink.png"><alt>Edit User - Manage Password - Send Password Reset Link</alt></image>
+                    </choice>
+
+                    <choice>
+                        <p>To force the user to change their password at their next login,</p>
+                        <ol>
+                            <li>go to the <uicontrol>Manage Account</uicontrol> tab, and</li>
+                            <li>click/tap <uicontrol>Force Password Change</uicontrol>.</li>
+                        </ol>
+                        <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditUserForcePwdChg.png"><alt>Edit User Manage Account - Force Password Change</alt></image>
+                    </choice>
+                </choices>
+            </step>
+
+        </steps>
+
+    </taskbody>
+
+</task>
