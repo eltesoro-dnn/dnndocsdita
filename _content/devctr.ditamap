@@ -56,6 +56,8 @@
         </topicref>
 
         <!-- Important global references -->
+        <topicref format="dita" type="reference" toc="yes" href="developers/product-versions.dita" />
+        <topicref format="dita" type="reference" toc="yes" href="developers/dnn-license.dita" />
         <topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="developers/glossary.dita" >
             <mapref href="common/glossary/glossary.ditamap" />
         </topichead>
@@ -76,10 +78,11 @@
             <relcell>
                 <topicref format="dita" type="concept"   href="developers/dnn-platform-overview.dita" />
             </relcell>
+            <relcell/>
             <relcell>
                 <topicref format="dita" type="reference" href="developers/requirements.dita" />
+                <topicref format="dita" type="reference" href="developers/product-versions.dita" />
             </relcell>
-            <relcell/>
         </relrow>
 
         <!-- adm dev dsg -->
