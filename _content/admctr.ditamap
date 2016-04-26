@@ -39,6 +39,7 @@
 
         <!-- Local references -->
         <topicref format="dita" type="topic" toc="yes" href="administrators/administrator-references.dita" collection-type="family">
+            <mapref href="administrators/included-modules/included-modules-adm.ditamap" />
             <topicref format="html" scope="external" navtitle="Online User Guide" toc="yes" href="http://www.dnnsoftware.com/help" />
         <!--
             DNN 8.0 User Guide

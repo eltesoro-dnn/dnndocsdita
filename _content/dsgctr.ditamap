@@ -41,10 +41,11 @@
 
         <!-- Local references -->
         <topicref format="dita" type="topic" toc="yes" href="designers/designer-references.dita" collection-type="family">
-            <topicref format="dita" type="reference" navtitle="Theme Objects"       toc="yes" href="designers/theme-objects.dita" />
+            <topicref format="dita" type="reference" toc="yes" href="designers/theme-objects.dita" />
+            <topicref format="dita" type="reference" toc="yes" href="designers/extensions/dnn-manifest-schema.dita" />
+            <mapref href="designers/included-modules/included-modules-dsg.ditamap" />
             <topicref format="html" scope="external" navtitle="DNN UX Guide"        toc="yes" href="http://uxguide.dnnsoftware.com/" />
             <!-- <topicref format="dita" type="reference" toc="yes" href="designers/contents-theme-pack.dita" /> Topic not ready. -->
-            <topicref format="dita" type="reference" navtitle="DNN Manifest Schema" toc="yes" href="designers/extensions/dnn-manifest-schema.dita" />
         </topicref>
 
         <!-- Important global references -->

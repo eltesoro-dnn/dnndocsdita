@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-ModuleExtensions">
+
+    <title>Module: Extensions</title>
+    <titlealts>
+        <navtitle>Extensions</navtitle>
+    </titlealts>
+
+    <shortdesc>Displays the list of installed extensions and their status.</shortdesc>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <audience type="programmer" job="customizing" />
+            <audience type="other" othertype="designer" job="other" otherjob="customizing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <refbody>
+
+        <section>
+
+            <!-- <sectiondiv conref=".dita#ref-ModuleExtensions/bpdesc"></sectiondiv> -->
+            <sectiondiv id="bpdesc">
+
+                <p>Displays the list of installed extensions and their status. You can also configure the extension settings from this module.</p>
+
+            </sectiondiv>
+
+
+            <!-- <sectiondiv conref=".dita#ref-ModuleExtensions/bpimg"></sectiondiv> -->
+            <sectiondiv id="bpimg">
+
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Extensions.png"><alt>Extensions module</alt></image>
+
+            </sectiondiv>
+
+        </section>
+
+    </refbody>
+
+</reference>

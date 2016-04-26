@@ -69,7 +69,7 @@ xcopy %_gitdir%\_content\*.png           %_blddir%                /i/s/v/y
 xcopy %_gitdir%\_content\common\samples  %_blddir%\common\samples /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\dnn*.css     %_blddir%\_themes\dnn    /i/s/v/y
 
-for %%v in ( administrators developers designers ) do  xcopy %_blddir%\common\*.dita* %_blddir%\%%v /i/s/v/y
+for %%v in ( administrators developers designers publishers ) do  xcopy %_blddir%\common\*.dita* %_blddir%\%%v /i/s/v/y
 
 echo Integrating our own DITA-OT plugin ....
 rd /s/q %DITA_HOME%\plugins\org.dnn.dc >nul
@@ -112,12 +112,22 @@ echo Creating an aboutbld.html file ....
 for /f "usebackq tokens=2" %%v in (`date /t`) do for /f "delims=/ tokens=1,2,3" %%w in ("%%v") do echo DocCenter v1.1 Build %%y%%w%%x > %_outdir%\aboutbld.html
 
 
+:. Test before opening up the folders.
+for %%v in ( administrators developers designers ) do  if not exist %_outdir%\%%v\*  goto :eof
+:. for %%v in ( administrators developers designers publishers ) do  if not exist %_outdir%\%%v\*  goto :eof
+
+
 :. runas /user:administrator /profile "%~f0\v2iis.bat %outdir%\%_transtype% c:\inetpub\wwwroot"
 :. start %_outdir%
-:. start c:\inetpub\wwwroot\docs
+start c:\inetpub\wwwroot\docs
 start c:\z\docbuild\output\%_transtype%
 start explorer.exe
 echo Copy the following to the Windows Explorer address bar: ftp://66.29.195.16/DNN%20Staging/DNNSoftware.QA.Docs/
+echo In Filezilla, use the following:
+echo    Host: 66.29.195.16
+echo    Port: 25
+echo Use your username and password from Birch.
+call "C:\Program Files\FileZilla FTP Client\filezilla.exe"
 
 goto :eof
 

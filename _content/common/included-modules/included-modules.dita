@@ -1,0 +1,267 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-IncludedModules">
+
+    <title>Included Modules</title>
+    <titlealts>
+        <navtitle>Included Modules</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="instalsectionng" />
+            <audience type="administrator" job="maintaining" />
+            <audience type="administrator" job="troubleshooting" />
+            <audience type="programmer" job="programming" />
+            <audience type="other" othertype="designer" job="other" otherjob="designing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <refbody>
+
+        <section>
+            <p>A number of modules are included in DNN by default and can be added to your site.</p>
+
+            <note type="note">For security reasons, some module must be added to the site by a host before it can be used. <!-- See <xref href="../../../Using the Control Panel/Host Console/Extensions/Premium Modules.dita#Managing_Premium_Modules" />. --></note>
+        </section>
+
+        <!--
+        <section>
+            <title>Account Login</title>
+            <sectiondiv conref=".dita#ref-ModuleAccountLogin/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Account Registration</title>
+            <sectiondiv conref=".dita#ref-ModuleAccountRegistration/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Advanced URL Management</title>
+            <sectiondiv conref=".dita#ref-ModuleAdvancedURLManagement/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Configuration Manager</title>
+            <sectiondiv conref=".dita#ref-ModuleConfigurationManager/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Console</title>
+            <sectiondiv conref=".dita#ref-ModuleConsole/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Content Layout</title>
+            <sectiondiv conref=".dita#ref-ModuleContentLayout/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Dashboard</title>
+            <sectiondiv conref=".dita#ref-ModuleDashboard/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>DDR Menu</title>
+            <sectiondiv conref=".dita#ref-ModuleDDRMenu/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Digital Asset Management</title>
+            <sectiondiv conref=".dita#ref-ModuleDigitalAssetManagement/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Extensions</title>
+            <sectiondiv conref=".dita#ref-ModuleExtensions/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Google Analytics</title>
+            <sectiondiv conref=".dita#ref-ModuleGoogleAnalytics/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Google Analytics Professional</title>
+            <sectiondiv conref=".dita#ref-ModuleGoogleAnalyticsPro/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>HTML / HTML Pro</title>
+            <sectiondiv conref=".dita#ref-ModuleHtmlHtmlPro/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Html Editor Management</title>
+            <sectiondiv conref=".dita#ref-ModuleHtmlEditorManagement/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Journal</title>
+            <sectiondiv conref=".dita#ref-ModuleJournal/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Languages</title>
+            <sectiondiv conref=".dita#ref-ModuleLanguages/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Lists</title>
+            <sectiondiv conref=".dita#ref-ModuleLists/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Log Viewer</title>
+            <sectiondiv conref=".dita#ref-ModuleLogViewer/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Marketo Forms</title>
+            <sectiondiv conref=".dita#ref-ModuleMarketoForms/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Member Directory</title>
+            <sectiondiv conref=".dita#ref-ModuleMemberDirectory/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Message Center</title>
+            <sectiondiv conref=".dita#ref-ModuleMessageCenter/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Module Creator</title>
+            <sectiondiv conref=".dita#ref-ModuleModuleCreator/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Optimizely Connector</title>
+            <sectiondiv conref=".dita#ref-ModuleOptimizelyConnector/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Pages</title>
+            <sectiondiv conref=".dita#ref-ModulePages/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Publisher</title>
+            <sectiondiv conref=".dita#ref-ModulePublisher/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Razor Host</title>
+            <sectiondiv conref=".dita#ref-ModuleRazorHost/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Recycle Bin</title>
+            <sectiondiv conref=".dita#ref-ModuleRecycleBin/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Search Admin</title>
+            <sectiondiv conref=".dita#ref-ModuleSearchAdmin/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Search Results</title>
+            <sectiondiv conref=".dita#ref-ModuleSearchResults/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Security Analyzer</title>
+            <sectiondiv conref=".dita#ref-ModuleSecurityAnalyzer/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>SharePoint Viewer</title>
+            <sectiondiv conref=".dita#ref-ModuleSharePointViewer/bpdesc"></sectiondiv>
+        </section>
+
+        <!-
+        <section>
+            <title>Security Roles</title>
+            Premium???
+
+                <p>Allows management of roles.</p>
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SecurityRoles.png"><alt>Security Roles module</alt></image>
+                <p>Found in <menucascade><title>Admin</title> <title>Security Roles</title></menucascade>.</p>
+
+        </section>
+        ->
+
+        <section>
+            <title>Site Wizard</title>
+            <sectiondiv conref=".dita#ref-ModuleSiteWizard/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Sitemap</title>
+            <sectiondiv conref=".dita#ref-ModuleSitemap/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Social Groups</title>
+            <sectiondiv conref=".dita#ref-ModuleSocialGroups/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>SQL</title>
+            <sectiondiv conref=".dita#ref-ModuleSQL/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Taxonomy Manager</title>
+            <sectiondiv conref=".dita#ref-ModuleTaxonomyManager/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Themes</title>
+            <sectiondiv conref=".dita#ref-ModuleThemes/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>User Switcher</title>
+            <sectiondiv conref=".dita#ref-ModuleUserSwitcher/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Users and Roles</title>
+            <sectiondiv conref=".dita#ref-ModuleUsersandRoles/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>View Profile</title>
+            <sectiondiv conref=".dita#ref-ModuleViewProfile/bpdesc"></sectiondiv>
+        </section>
+
+        <section>
+            <title>Workflow Management</title>
+            <sectiondiv conref=".dita#ref-ModuleWorkflowManagement/bpdesc"></sectiondiv>
+        </section>
+
+        -->
+
+    </refbody>
+
+</reference>

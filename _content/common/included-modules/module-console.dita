@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-ModuleConsole">
+
+    <title>Module: Console</title>
+    <titlealts>
+        <navtitle>Console</navtitle>
+    </titlealts>
+
+    <shortdesc>Generates a list of links to child pages, group activity, or a member list.</shortdesc>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <audience type="programmer" job="customizing" />
+            <audience type="other" othertype="designer" job="other" otherjob="customizing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <refbody>
+
+        <section>
+
+            <!-- <sectiondiv conref=".dita#ref-ModuleConsole/bpdesc"></sectiondiv> -->
+            <sectiondiv id="bpdesc">
+
+                <p>Generates a list of links to child pages, group activity, or a member list.</p>
+                <ul>
+                    <li><uicontrol>Pages Console</uicontrol>. Creates dynamic site menus that display the child pages of any site page, using the page name as the link name and the page description as the tooltip.
+                        <ul>
+                            <li>The links can be configured to include a small or large icon. You can allow icons to expand or shrink as the containing page does, or you can set a minimum pixel width.</li>
+                            <li>Links to child pages can be sorted in multiple ways.</li>
+                            <li>The view can be simple (icon and page name only) or detailed (icon, page name, and page description, which can be a tooltip).</li>
+                        </ul>
+                        <!-- <p>Several layout options are included such as a small or large icon can be displayed and this setting will use the default icon provided with the Console or the "Icon" / "large Icon" set for the page. If page icons have not been set then the default icons called "icon_unknown_32px.gif" for the large icon and "icon_unknown_16px.gif" for the small icon will be displayed. An example of this is seen on the parent page "Our Products" in the below image.</p>
+                        <p>Pages can be ordering in hierarchical order which displays the pages that don't have child pages in alphabetical order at the beginning of the list, followed by pages that do have child pages at the end of the list. E.g. If there are four parent pages (Pages A, B, C and D) and only Pages A and D have child pages, then the Console would display pages in this order: Page B, Page C, Page A, Page A1, Page A2, Page D, Page D1, Page D2. Alternatively pages can be displayed in alphabetical order regardless of whether they have children.  E.g. If there are four parent pages (Pages A, B, C and D) and only Pages A and D have child pages, then the Console would display pages in this order: Page A, Page A1, Page A2, Page B, Page C, Page D, Page D1, Page D2.</p> -->
+                    </li>
+
+                    <li><uicontrol>Groups Console</uicontrol>. Displays group activity or a member list. Can be viewed by all site users, the social group owner, and/or group members. When a <uicontrol>Social Group</uicontrol> module is added to a page and one or more social groups are created, a <uicontrol>Console</uicontrol> module is automatically added to each group page. You can also set up the <uicontrol>Social Group</uicontrol> console on a different page, such as the site home page, to promote social groups on the site.</li>
+
+                    <li><uicontrol>Profile Console</uicontrol>. Displays a user's profile, list of friends, and other child pages of the user profile page. Can be viewed by all site users and/or friends, or just the user.</li>
+                </ul>
+
+                <p>Found in the <uicontrol>Admin Console</uicontrol> and <uicontrol>Host Console</uicontrol> pages.</p>
+
+            </sectiondiv>
+
+
+            <!-- <sectiondiv conref=".dita#ref-ModuleConsole/bpimg"></sectiondiv> -->
+            <sectiondiv id="bpimg">
+
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Console.png"><alt>Console module</alt></image>
+
+            </sectiondiv>
+
+        </section>
+
+    </refbody>
+
+</reference>

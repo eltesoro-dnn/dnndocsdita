@@ -11,6 +11,14 @@
         <author>wrET,trBC,1603</author>
         <metadata>
             <audience type="administrator" job="troubleshooting" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
         </metadata>
     </prolog>
 

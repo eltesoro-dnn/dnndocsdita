@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/map.dtd">
+<map xml:lang="en" id="map-includedmodules-adm">
+
+    <title>Included Modules</title>
+
+    <!-- Topics -->
+    <topicref format="dita" type="topic" navtitle="Included Modules" toc="yes" href="included-modules.dita" copy-to="index.dita" collection-type="family">
+
+        <topicref format="dita" type="task" toc="no" href="module-account-login.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-account-registration.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-advanced-url-management.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-configuration-manager.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-console.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-content-layout.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-dashboard.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-ddr-menu.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-digital-asset-management.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-extensions.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-google-analytics-professional.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-google-analytics.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-html-editor-management.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-html-html-pro.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-journal.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-languages.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-lists.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-log-viewer.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-marketo-forms.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-member-directory.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-message-center.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-module-creator.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-optimizely-connector.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-pages.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-publisher.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-razor-host.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-recycle-bin.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-search-admin.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-search-results.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-security-analyzer.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-security-roles.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-sharepoint-viewer.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-site-wizard.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-sitemap.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-social-groups.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-sql.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-taxonomy-manager.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-themes.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-user-switcher.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-users-and-roles.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-view-profile.dita" />
+        <topicref format="dita" type="task" toc="no" href="module-workflow-management.dita" />
+
+    </topicref>
+
+</map>

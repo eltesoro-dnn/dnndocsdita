@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-ModuleUsersandRoles">
+
+    <title>Module: Users and Roles</title>
+    <titlealts>
+        <navtitle>Users and Roles</navtitle>
+    </titlealts>
+
+    <shortdesc>Creates and manages registered user accounts and security roles.</shortdesc>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <audience type="programmer" job="customizing" />
+            <audience type="other" othertype="designer" job="other" otherjob="customizing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <refbody>
+
+        <section>
+
+            <!-- <sectiondiv conref=".dita#ref-ModuleUsersandRoles/bpdesc"></sectiondiv> -->
+            <sectiondiv id="bpdesc">
+
+                <p>Premium</p>
+
+                <p>Creates and manages registered user accounts and security roles. The module can be modified to select which fields are displayed, to add profile properties, and to specify how user accounts are handled. By default, the <uicontrol>Users and Roles</uicontrol> module package is not displayed in the selection of modules that can be added to a page, in order to avoid being accidentally added to a page and, thereby, reveasectionng personal user information.</p>
+
+                <p>The <uicontrol>Users and Roles</uicontrol> package includes:</p>
+                <ul>
+                    <li><uicontrol>Add New User</uicontrol>. Enables hosts and administrators to create new user accounts. After creation, the user accounts are  managed in <menucascade><uicontrol>Admin</uicontrol> <uicontrol>User Accounts</uicontrol></menucascade> page. Required in all custom Registration pages. <!-- <xref href="../../../Using the Control Panel/Admin Console/Site Settings/User Account Settings/Registration Settings/03_Custom_Registration_Form.dita#Configuring_a_Custom_Registration_Form">See "Configuring a Custom Registration Form". --></li>
+                </ul>
+
+                <p>You must install the entire package and then delete the unwanted modules.</p>
+
+            </sectiondiv>
+
+
+            <!-- <sectiondiv conref=".dita#ref-ModuleUsersandRoles/bpimg"></sectiondiv> -->
+            <sectiondiv id="bpimg">
+
+                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-.png"><alt>Users and Roles module</alt></image> -->
+
+            </sectiondiv>
+
+        </section>
+
+    </refbody>
+
+</reference>
