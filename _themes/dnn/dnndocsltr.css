@@ -112,7 +112,7 @@ ul .map,
 nav[role="toc"] {
   clear: left;
   float: left;
-  position: fixed;
+  position: absolute;
   width: 300px;
   height: auto;
   font-size: 100%;
@@ -166,7 +166,7 @@ header {
   position: fixed;
   right: 0;
   left: 0;
-  z-index: 1030;
+  z-index: 9999; /* always top layer */
   width: 100%;
 }
 .header {
@@ -720,6 +720,10 @@ span.filepath {
   font-weight: bold;
 }
 
+.img-icon {
+  width: 100px;
+}
+
 /* ------------------------------------------------------------
  | Glossary
  */
@@ -1135,7 +1139,7 @@ span.importanttitle {
 
 .searchbox {
   display: none;
-  position: fixed;
+  position: absolute;
   top: 74px;
   display: inline-block;
   width: 300px;
