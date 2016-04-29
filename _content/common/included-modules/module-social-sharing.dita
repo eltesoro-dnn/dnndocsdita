@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-ModuleSocialSharing">
+
+    <title>Module: Social Sharing</title>
+    <titlealts>
+        <navtitle>Social Sharing</navtitle>
+    </titlealts>
+
+    <!-- <ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/bpshortdesc"></ph> -->
+    <shortdesc><ph id="bpshortdesc">Exposes social sharing links to Google+, Twitter, LinkedIn, and Facebook.</ph></shortdesc>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <refbody>
+
+        <section>
+
+            <!-- <sectiondiv conref="module-social-sharing.dita#ref-ModuleSocialSharing/bpdesc"></sectiondiv> -->
+            <sectiondiv id="bpdesc">
+                <!-- <p>It utilizes the Facebook Application ID set at the portal level and also utilizes Open Graph Protocol data written to the page based on the currently viewed Content Item.</p> Would the audience (content managers) need this information? -->
+            </sectiondiv>
+
+
+            <!-- <sectiondiv conref="module-social-sharing.dita#ref-ModuleSocialSharing/bpimg"></sectiondiv> -->
+            <sectiondiv id="bpimg">
+                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SocialSharing.png"><alt>Social Sharing module</alt></image> -->
+            </sectiondiv>
+
+
+            <sectiondiv id="bpdetails">
+
+                <simpletable relcolwidth="1* 1* 1*">
+                    <sthead>
+                        <stentry></stentry>
+                        <stentry>Package</stentry>
+                        <stentry>Premium</stentry>
+                        <stentry>Product(s)</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>
+                            <!-- <ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/bpicon"></ph> -->
+                            <ph id="bpicon">
+                                <image outputclass="img-icon" href="../../common/img/ico-module-socialsharing.png"><alt>icon</alt></image>
+                            </ph>
+                        </stentry>
+                        <stentry>Social Sharing</stentry>
+                        <stentry>No</stentry>
+                        <stentry>
+                            <!-- <ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/bpproducts"></ph> -->
+                            <ph id="bpproducts">
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                            </ph>
+                        </stentry>
+                    </strow>
+                </simpletable>
+
+            </sectiondiv>
+
+        </section>
+
+    </refbody>
+
+</reference>

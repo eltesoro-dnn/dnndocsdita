@@ -7,6 +7,7 @@
         <navtitle>Included Modules</navtitle>
     </titlealts>
 
+
     <prolog>
         <author>wrET,orLY,edET</author>
         <copyright>
@@ -14,11 +15,9 @@
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
-            <audience type="administrator" job="instalsectionng" />
-            <audience type="administrator" job="maintaining" />
-            <audience type="administrator" job="troubleshooting" />
-            <audience type="programmer" job="programming" />
-            <audience type="other" othertype="designer" job="other" otherjob="designing" />
+            <audience type="administrator" job="customizing" />
+            <audience type="programmer" job="customizing" />
+            <audience type="other" othertype="designer" job="other" otherjob="customizing" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -34,233 +33,465 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
-        <section>
+        <section id="overview">
             <p>A number of modules are included in DNN by default and can be added to your site.</p>
 
-            <note type="note">For security reasons, some module must be added to the site by a host before it can be used. <!-- See <xref href="../../../Using the Control Panel/Host Console/Extensions/Premium Modules.dita#Managing_Premium_Modules" />. --></note>
+            <note type="note">For security reasons, <term>premium</term> modules might not be enabled for all sites. The host user must enable a premium module for the site before it can be used.</note>
+
+            <!-- See <xref href="../../../Using the Control Panel/Host Console/Extensions/Premium Modules.dita#Managing_Premium_Modules" />. -->
+
         </section>
 
-        <!--
-        <section>
-            <title>Account Login</title>
-            <sectiondiv conref=".dita#ref-ModuleAccountLogin/bpdesc"></sectiondiv>
-        </section>
 
         <section>
-            <title>Account Registration</title>
-            <sectiondiv conref=".dita#ref-ModuleAccountRegistration/bpdesc"></sectiondiv>
+            <simpletable relcolwidth="1* 4* 8* 3*">
+
+                <sthead>
+                    <stentry></stentry> <!-- icons -->
+                    <stentry>Module</stentry>
+                    <stentry>Description</stentry>
+                    <stentry>In product(s)</stentry>
+                </sthead>
+
+                <strow>
+                    <stentry><ph conref="module-activities.dita#ref-ModuleActivities/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-activities.dita"><uicontrol>Activities</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-activities.dita#ref-ModuleActivities/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-activities.dita#ref-ModuleActivities/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-activity-stream.dita#ref-ModuleActivityStream/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-activity-stream.dita"><uicontrol>Activity Stream</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-activity-stream.dita#ref-ModuleActivityStream/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-activity-stream.dita#ref-ModuleActivityStream/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-advanced-url-management.dita"><uicontrol>Advanced URL Management</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-answers.dita#ref-ModuleAnswers/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-answers.dita"><uicontrol>Answers</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-answers.dita#ref-ModuleAnswers/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-answers.dita#ref-ModuleAnswers/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-authentication.dita#ref-ModuleAuthentication/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-authentication.dita"><uicontrol>Authentication</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-authentication.dita#ref-ModuleAuthentication/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-authentication.dita#ref-ModuleAuthentication/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-blogs.dita#ref-ModuleBlogs/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-blogs.dita"><uicontrol>Blogs</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-blogs.dita#ref-ModuleBlogs/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-blogs.dita#ref-ModuleBlogs/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-challenges.dita#ref-ModuleChallenges/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-challenges.dita"><uicontrol>Challenges</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-challenges.dita#ref-ModuleChallenges/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-challenges.dita#ref-ModuleChallenges/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-configuration-manager.dita#ref-ModuleConfigurationManager/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-configuration-manager.dita"><uicontrol>Configuration Manager</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-configuration-manager.dita#ref-ModuleConfigurationManager/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-configuration-manager.dita#ref-ModuleConfigurationManager/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-console.dita#ref-ModuleConsole/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-console.dita"><uicontrol>Console</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-console.dita#ref-ModuleConsole/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-console.dita#ref-ModuleConsole/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-content-layout.dita#ref-ModuleContentLayout/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-content-layout.dita"><uicontrol>Content Layout</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-content-layout.dita#ref-ModuleContentLayout/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-content-layout.dita#ref-ModuleContentLayout/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-content-staging.dita#ref-ModuleContentStaging/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-content-staging.dita"><uicontrol>Content Staging</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-content-staging.dita#ref-ModuleContentStaging/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-content-staging.dita#ref-ModuleContentStaging/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-dashboard.dita#ref-ModuleDashboard/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-dashboard.dita"><uicontrol>Dashboard</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-dashboard.dita#ref-ModuleDashboard/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-dashboard.dita#ref-ModuleDashboard/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-ddr-menu.dita"><uicontrol>DDR Menu</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-device-preview-management.dita#ref-ModuleDevicePreviewManagement/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-device-preview-management.dita"><uicontrol>Device Preview Management</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-device-preview-management.dita#ref-ModuleDevicePreviewManagement/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-device-preview-management.dita#ref-ModuleDevicePreviewManagement/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-digital-asset-management.dita#ref-ModuleDigitalAssetManagement/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-digital-asset-management.dita"><uicontrol>Digital Asset Management</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-digital-asset-management.dita#ref-ModuleDigitalAssetManagement/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-digital-asset-management.dita#ref-ModuleDigitalAssetManagement/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-discussions.dita#ref-ModuleDiscussions/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-discussions.dita"><uicontrol>Discussions</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-discussions.dita#ref-ModuleDiscussions/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-discussions.dita#ref-ModuleDiscussions/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-document-viewer.dita#ref-ModuleDocumentViewer/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-document-viewer.dita"><uicontrol>Document Viewer</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-document-viewer.dita#ref-ModuleDocumentViewer/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-document-viewer.dita#ref-ModuleDocumentViewer/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-extensions.dita#ref-ModuleExtensions/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-extensions.dita"><uicontrol>Extensions</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-extensions.dita#ref-ModuleExtensions/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-extensions.dita#ref-ModuleExtensions/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-file-integrity-checker.dita"><uicontrol>File Integrity Checker</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-google-analytics.dita"><uicontrol>Google Analytics + Google Analytics Professional</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-group-directory.dita#ref-ModuleGroupDirectory/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-group-directory.dita"><uicontrol>Group Directory</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-group-directory.dita#ref-ModuleGroupDirectory/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-group-directory.dita#ref-ModuleGroupDirectory/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-group-spaces.dita#ref-ModuleGroupSpaces/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-group-spaces.dita"><uicontrol>Group Spaces</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-group-spaces.dita#ref-ModuleGroupSpaces/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-group-spaces.dita#ref-ModuleGroupSpaces/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-host-settings.dita#ref-ModuleHostSettings/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-host-settings.dita"><uicontrol>Host Settings</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-host-settings.dita#ref-ModuleHostSettings/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-host-settings.dita#ref-ModuleHostSettings/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-html-editor-management.dita#ref-ModuleHtmlEditorManagement/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-html-editor-management.dita"><uicontrol>Html Editor Management</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-html-editor-management.dita#ref-ModuleHtmlEditorManagement/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-html-editor-management.dita#ref-ModuleHtmlEditorManagement/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-html-text.dita#ref-ModuleHtmlText/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-html-text.dita"><uicontrol>HTML / Text</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-html-text.dita#ref-ModuleHtmlText/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-html-text.dita#ref-ModuleHtmlText/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-ideas.dita#ref-ModuleIdeas/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-ideas.dita"><uicontrol>Ideas</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-ideas.dita#ref-ModuleIdeas/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-ideas.dita#ref-ModuleIdeas/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-journal.dita#ref-ModuleJournal/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-journal.dita"><uicontrol>Journal</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-journal.dita#ref-ModuleJournal/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-journal.dita#ref-ModuleJournal/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-languages.dita#ref-ModuleLanguages/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-languages.dita"><uicontrol>Languages</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-languages.dita#ref-ModuleLanguages/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-languages.dita#ref-ModuleLanguages/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-latest-challenges.dita"><uicontrol>Latest Challenges</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-leaderboard.dita#ref-ModuleLeaderboard/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-leaderboard.dita"><uicontrol>Leaderboard</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-leaderboard.dita#ref-ModuleLeaderboard/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-leaderboard.dita#ref-ModuleLeaderboard/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-license-activation-manager.dita"><uicontrol>License Activation Manager</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-lists.dita#ref-ModuleLists/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-lists.dita"><uicontrol>Lists</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-lists.dita#ref-ModuleLists/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-lists.dita#ref-ModuleLists/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-log-viewer.dita#ref-ModuleLogViewer/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-log-viewer.dita"><uicontrol>Log Viewer</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-log-viewer.dita#ref-ModuleLogViewer/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-log-viewer.dita#ref-ModuleLogViewer/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-marketo-forms.dita#ref-ModuleMarketoForms/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-marketo-forms.dita"><uicontrol>Marketo Forms</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-marketo-forms.dita#ref-ModuleMarketoForms/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-marketo-forms.dita#ref-ModuleMarketoForms/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-member-directory.dita#ref-ModuleMemberDirectory/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-member-directory.dita"><uicontrol>Member Directory</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-member-directory.dita#ref-ModuleMemberDirectory/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-member-directory.dita#ref-ModuleMemberDirectory/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-message-center.dita#ref-ModuleMessageCenter/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-message-center.dita"><uicontrol>Message Center</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-message-center.dita#ref-ModuleMessageCenter/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-message-center.dita#ref-ModuleMessageCenter/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-module-creator.dita#ref-ModuleModuleCreator/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-module-creator.dita"><uicontrol>Module Creator</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-module-creator.dita#ref-ModuleModuleCreator/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-module-creator.dita#ref-ModuleModuleCreator/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-my-status.dita#ref-ModuleMyStatus/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-my-status.dita"><uicontrol>My Status</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-my-status.dita#ref-ModuleMyStatus/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-my-status.dita#ref-ModuleMyStatus/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-pages.dita#ref-ModulePages/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-pages.dita"><uicontrol>Pages</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-pages.dita#ref-ModulePages/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-pages.dita#ref-ModulePages/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-profile-dashboard.dita"><uicontrol>Profile Dashboard</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-publisher.dita#ref-ModulePublisher/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-publisher.dita"><uicontrol>Publisher</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-publisher.dita#ref-ModulePublisher/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-publisher.dita#ref-ModulePublisher/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-razor-host.dita#ref-ModuleRazorHost/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-razor-host.dita"><uicontrol>Razor Host</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-razor-host.dita#ref-ModuleRazorHost/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-razor-host.dita#ref-ModuleRazorHost/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-recycle-bin.dita"><uicontrol>Recycle Bin</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-registration.dita#ref-ModuleRegistration/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-registration.dita"><uicontrol>Registration</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-registration.dita#ref-ModuleRegistration/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-registration.dita#ref-ModuleRegistration/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-related-content.dita#ref-ModuleRelatedContent/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-related-content.dita"><uicontrol>Related Content</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-related-content.dita#ref-ModuleRelatedContent/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-related-content.dita#ref-ModuleRelatedContent/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-scheduler.dita#ref-ModuleScheduler/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-scheduler.dita"><uicontrol>Scheduler</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-scheduler.dita#ref-ModuleScheduler/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-scheduler.dita#ref-ModuleScheduler/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-search-admin.dita#ref-ModuleSearchAdmin/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-search-admin.dita"><uicontrol>Search Admin</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-search-admin.dita#ref-ModuleSearchAdmin/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-search-admin.dita#ref-ModuleSearchAdmin/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-search-crawler-admin.dita"><uicontrol>Search Crawler Admin</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-search-results.dita#ref-ModuleSearchResults/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-search-results.dita"><uicontrol>Search Results</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-search-results.dita#ref-ModuleSearchResults/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-search-results.dita#ref-ModuleSearchResults/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-security-analyzer.dita"><uicontrol>Security Analyzer</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-security-center.dita#ref-ModuleSecurityCenter/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-security-center.dita"><uicontrol>Security Center</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-security-center.dita#ref-ModuleSecurityCenter/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-security-center.dita#ref-ModuleSecurityCenter/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-sharepoint-connector.dita#ref-ModuleSharePointConnector/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-sharepoint-connector.dita"><uicontrol>SharePoint Connector</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-sharepoint-connector.dita#ref-ModuleSharePointConnector/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-sharepoint-connector.dita#ref-ModuleSharePointConnector/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-sharepoint-viewer.dita"><uicontrol>SharePoint Viewer</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-site-groups.dita#ref-ModuleSiteGroups/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-site-groups.dita"><uicontrol>Site Groups</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-site-groups.dita#ref-ModuleSiteGroups/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-site-groups.dita#ref-ModuleSiteGroups/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-site-management.dita#ref-ModuleSiteManagement/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-site-management.dita"><uicontrol>Site Management</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-site-management.dita#ref-ModuleSiteManagement/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-site-management.dita#ref-ModuleSiteManagement/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-site-redirection-management.dita"><uicontrol>Site Redirection Management</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-site-wizard.dita#ref-ModuleSiteWizard/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-site-wizard.dita"><uicontrol>Site Wizard</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-site-wizard.dita#ref-ModuleSiteWizard/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-site-wizard.dita#ref-ModuleSiteWizard/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-sitemap.dita#ref-ModuleSitemap/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-sitemap.dita"><uicontrol>Sitemap</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-sitemap.dita#ref-ModuleSitemap/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-sitemap.dita#ref-ModuleSitemap/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-social-events.dita#ref-ModuleSocialEvents/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-social-events.dita"><uicontrol>Social Events</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-social-events.dita#ref-ModuleSocialEvents/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-social-events.dita#ref-ModuleSocialEvents/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-social-groups.dita#ref-Module/ModuleSocialGroups/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-social-groups.dita"><uicontrol>Social Groups</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-social-groups.dita#ref-Module/ModuleSocialGroups/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-social-groups.dita#ref-Module/ModuleSocialGroups/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-social-sharing.dita"><uicontrol>Social Sharing</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-sql.dita#ref-ModuleSQL/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-sql.dita"><uicontrol>SQL</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-sql.dita#ref-ModuleSQL/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-sql.dita#ref-ModuleSQL/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-taxonomy-manager.dita#ref-ModuleTaxonomyManager/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-taxonomy-manager.dita"><uicontrol>Taxonomy Manager</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-taxonomy-manager.dita#ref-ModuleTaxonomyManager/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-taxonomy-manager.dita#ref-ModuleTaxonomyManager/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-themes.dita#ref-ModuleThemes/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-themes.dita"><uicontrol>Themes</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-themes.dita#ref-ModuleThemes/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-themes.dita#ref-ModuleThemes/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-user-badges.dita#ref-ModuleUserBadges/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-user-badges.dita"><uicontrol>User Badges</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-user-badges.dita#ref-ModuleUserBadges/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-user-badges.dita#ref-ModuleUserBadges/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-user-switcher.dita#ref-ModuleUserSwitcher/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-user-switcher.dita"><uicontrol>User Switcher</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-user-switcher.dita#ref-ModuleUserSwitcher/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-user-switcher.dita#ref-ModuleUserSwitcher/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-users-and-roles.dita"><uicontrol>Users and Roles</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-view-profile.dita#ref-ModuleViewProfile/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-view-profile.dita"><uicontrol>ViewProfile</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-view-profile.dita#ref-ModuleViewProfile/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-view-profile.dita#ref-ModuleViewProfile/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-web-server-manager.dita#ref-ModuleWebServerManager/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-web-server-manager.dita"><uicontrol>Web Server Manager</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-web-server-manager.dita#ref-ModuleWebServerManager/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-web-server-manager.dita#ref-ModuleWebServerManager/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-wiki.dita#ref-ModuleWiki/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-wiki.dita"><uicontrol>Wiki</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-wiki.dita#ref-ModuleWiki/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-wiki.dita#ref-ModuleWiki/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-workflow-management.dita"><uicontrol>Workflow Management</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/bpproducts"></ph></stentry>
+                </strow>
+                <strow>
+                    <stentry><ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-zendesk-tickets.dita"><uicontrol>Zendesk Tickets</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/bpproducts"></ph></stentry>
+                </strow>
+
+            </simpletable>
+
         </section>
-
-        <section>
-            <title>Advanced URL Management</title>
-            <sectiondiv conref=".dita#ref-ModuleAdvancedURLManagement/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Configuration Manager</title>
-            <sectiondiv conref=".dita#ref-ModuleConfigurationManager/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Console</title>
-            <sectiondiv conref=".dita#ref-ModuleConsole/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Content Layout</title>
-            <sectiondiv conref=".dita#ref-ModuleContentLayout/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Dashboard</title>
-            <sectiondiv conref=".dita#ref-ModuleDashboard/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>DDR Menu</title>
-            <sectiondiv conref=".dita#ref-ModuleDDRMenu/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Digital Asset Management</title>
-            <sectiondiv conref=".dita#ref-ModuleDigitalAssetManagement/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Extensions</title>
-            <sectiondiv conref=".dita#ref-ModuleExtensions/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Google Analytics</title>
-            <sectiondiv conref=".dita#ref-ModuleGoogleAnalytics/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Google Analytics Professional</title>
-            <sectiondiv conref=".dita#ref-ModuleGoogleAnalyticsPro/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>HTML / HTML Pro</title>
-            <sectiondiv conref=".dita#ref-ModuleHtmlHtmlPro/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Html Editor Management</title>
-            <sectiondiv conref=".dita#ref-ModuleHtmlEditorManagement/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Journal</title>
-            <sectiondiv conref=".dita#ref-ModuleJournal/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Languages</title>
-            <sectiondiv conref=".dita#ref-ModuleLanguages/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Lists</title>
-            <sectiondiv conref=".dita#ref-ModuleLists/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Log Viewer</title>
-            <sectiondiv conref=".dita#ref-ModuleLogViewer/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Marketo Forms</title>
-            <sectiondiv conref=".dita#ref-ModuleMarketoForms/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Member Directory</title>
-            <sectiondiv conref=".dita#ref-ModuleMemberDirectory/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Message Center</title>
-            <sectiondiv conref=".dita#ref-ModuleMessageCenter/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Module Creator</title>
-            <sectiondiv conref=".dita#ref-ModuleModuleCreator/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Optimizely Connector</title>
-            <sectiondiv conref=".dita#ref-ModuleOptimizelyConnector/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Pages</title>
-            <sectiondiv conref=".dita#ref-ModulePages/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Publisher</title>
-            <sectiondiv conref=".dita#ref-ModulePublisher/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Razor Host</title>
-            <sectiondiv conref=".dita#ref-ModuleRazorHost/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Recycle Bin</title>
-            <sectiondiv conref=".dita#ref-ModuleRecycleBin/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Search Admin</title>
-            <sectiondiv conref=".dita#ref-ModuleSearchAdmin/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Search Results</title>
-            <sectiondiv conref=".dita#ref-ModuleSearchResults/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Security Analyzer</title>
-            <sectiondiv conref=".dita#ref-ModuleSecurityAnalyzer/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>SharePoint Viewer</title>
-            <sectiondiv conref=".dita#ref-ModuleSharePointViewer/bpdesc"></sectiondiv>
-        </section>
-
-        <!-
-        <section>
-            <title>Security Roles</title>
-            Premium???
-
-                <p>Allows management of roles.</p>
-                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SecurityRoles.png"><alt>Security Roles module</alt></image>
-                <p>Found in <menucascade><title>Admin</title> <title>Security Roles</title></menucascade>.</p>
-
-        </section>
-        ->
-
-        <section>
-            <title>Site Wizard</title>
-            <sectiondiv conref=".dita#ref-ModuleSiteWizard/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Sitemap</title>
-            <sectiondiv conref=".dita#ref-ModuleSitemap/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Social Groups</title>
-            <sectiondiv conref=".dita#ref-ModuleSocialGroups/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>SQL</title>
-            <sectiondiv conref=".dita#ref-ModuleSQL/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Taxonomy Manager</title>
-            <sectiondiv conref=".dita#ref-ModuleTaxonomyManager/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Themes</title>
-            <sectiondiv conref=".dita#ref-ModuleThemes/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>User Switcher</title>
-            <sectiondiv conref=".dita#ref-ModuleUserSwitcher/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Users and Roles</title>
-            <sectiondiv conref=".dita#ref-ModuleUsersandRoles/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>View Profile</title>
-            <sectiondiv conref=".dita#ref-ModuleViewProfile/bpdesc"></sectiondiv>
-        </section>
-
-        <section>
-            <title>Workflow Management</title>
-            <sectiondiv conref=".dita#ref-ModuleWorkflowManagement/bpdesc"></sectiondiv>
-        </section>
-
-        -->
 
     </refbody>
 

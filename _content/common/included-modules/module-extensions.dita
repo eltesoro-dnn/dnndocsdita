@@ -7,7 +7,8 @@
         <navtitle>Extensions</navtitle>
     </titlealts>
 
-    <shortdesc>Displays the list of installed extensions and their status.</shortdesc>
+    <!-- <ph conref="module-extensions.dita#ref-ModuleExtensions/bpshortdesc"></ph> -->
+    <shortdesc><ph id="bpshortdesc">Displays the list of installed extensions (including modules, themes, language packs, providers) and their status. Hosts can also configure the extension settings from this module.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -17,8 +18,6 @@
         </copyright>
         <metadata>
             <audience type="administrator" job="customizing" />
-            <audience type="programmer" job="customizing" />
-            <audience type="other" othertype="designer" job="other" otherjob="customizing" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -38,18 +37,46 @@
 
         <section>
 
-            <!-- <sectiondiv conref=".dita#ref-ModuleExtensions/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc">
+            <!-- <sectiondiv conref="module-extensions.dita#ref-ModuleExtensions/bpdesc"></sectiondiv> -->
+            <sectiondiv id="bpdesc"></sectiondiv>
 
-                <p>Displays the list of installed extensions and their status. You can also configure the extension settings from this module.</p>
 
+            <!-- <sectiondiv conref="module-extensions.dita#ref-ModuleExtensions/bpimg"></sectiondiv> -->
+            <sectiondiv id="bpimg">
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Extensions.png"><alt>Extensions module</alt></image>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref=".dita#ref-ModuleExtensions/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <sectiondiv id="bpdetails">
 
-                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Extensions.png"><alt>Extensions module</alt></image>
+                <simpletable relcolwidth="1* 1* 1*">
+                    <sthead>
+                        <stentry></stentry>
+                        <stentry>Package</stentry>
+                        <stentry>Premium</stentry>
+                        <stentry>Required permissions</stentry>
+                        <stentry>Product(s)</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>
+                            <!-- <ph conref="module-extensions.dita#ref-ModuleExtensions/bpicon"></ph> -->
+                            <ph id="bpicon">
+                                <image outputclass="img-icon" href="../../common/img/ico-module-extensions.png"><alt>icon</alt></image>
+                            </ph>
+                        </stentry>
+                        <stentry>Extensions</stentry>
+                        <stentry>-</stentry>
+                        <stentry>Host</stentry>
+                        <stentry>
+                            <!-- <ph conref="module-extensions.dita#ref-ModuleExtensions/bpproducts"></ph> -->
+                            <ph id="bpproducts">
+                                <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                            </ph>
+                        </stentry>
+                    </strow>
+                </simpletable>
 
             </sectiondiv>
 

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-ModuleRelatedContent">
+
+    <title>Module: Related Content</title>
+    <titlealts>
+        <navtitle>Related Content</navtitle>
+    </titlealts>
+
+    <!-- <ph conref="module-related-content.dita#ref-ModuleRelatedContent/bpshortdesc"></ph> -->
+    <shortdesc><ph id="bpshortdesc">Displays a list of content related to the item that is currently displayed on the page.</ph></shortdesc>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <refbody>
+
+        <section>
+
+            <!-- <sectiondiv conref="module-related-content.dita#ref-ModuleRelatedContent/bpdesc"></sectiondiv> -->
+            <sectiondiv id="bpdesc">
+                <p>Relationships are based on the <filepath>cid</filepath> parameter of the URL; however, content managers can also manage direct relationships among content assets. If the URL does not include the <filepath>cid</filepath> parameter, the module is hidden.</p>
+            </sectiondiv>
+
+
+            <!-- <sectiondiv conref="module-related-content.dita#ref-ModuleRelatedContent/bpimg"></sectiondiv> -->
+            <sectiondiv id="bpimg">
+                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-RelatedContent.png"><alt>Related Content module</alt></image> -->
+            </sectiondiv>
+
+
+            <sectiondiv id="bpdetails">
+
+                <simpletable relcolwidth="1* 1* 1*">
+                    <sthead>
+                        <stentry></stentry>
+                        <stentry>Package</stentry>
+                        <stentry>Premium</stentry>
+                        <stentry>Product(s)</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>
+                            <!-- <ph conref="module-related-content.dita#ref-ModuleRelatedContent/bpicon"></ph> -->
+                            <ph id="bpicon">
+                                <image outputclass="img-icon" href="../../common/img/ico-module-relatedcontent.png"><alt>icon</alt></image>
+                            </ph>
+                        </stentry>
+                        <stentry>Related Content</stentry>
+                        <stentry>No</stentry>
+                        <stentry>
+                            <!-- <ph conref="module-related-content.dita#ref-ModuleRelatedContent/bpproducts"></ph> -->
+                            <ph id="bpproducts">
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                            </ph>
+                        </stentry>
+                    </strow>
+                </simpletable>
+
+            </sectiondiv>
+
+        </section>
+
+    </refbody>
+
+</reference>

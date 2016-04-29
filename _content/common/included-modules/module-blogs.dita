@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-ModuleBlogs">
+
+    <title>Module: Blogs</title>
+    <titlealts>
+        <navtitle>Blogs</navtitle>
+    </titlealts>
+
+    <!-- <ph conref="module-blogs.dita#ref-ModuleBlogs/bpshortdesc"></ph> -->
+    <shortdesc><ph id="bpshortdesc">Enables users to publish single- or multi-author blogs. Allows content to be authored using third-party tools, such as Windows Live Writer.</ph></shortdesc>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <refbody>
+
+        <section>
+
+            <!-- <sectiondiv conref="module-blogs.dita#ref-ModuleBlogs/bpdesc"></sectiondiv> -->
+            <sectiondiv id="bpdesc">
+                <p>Includes:</p>
+                <ul>
+                    <li>Blog</li>
+                    <li>Blog Roster</li>
+                    <li>Blog Calendar</li>
+                    <li>Blog Subscribe</li>
+                    <li>Blog Search</li>
+                </ul>
+            </sectiondiv>
+
+
+            <!-- <sectiondiv conref="module-blogs.dita#ref-ModuleBlogs/bpimg"></sectiondiv> -->
+            <sectiondiv id="bpimg">
+                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Blogs.png"><alt>Blogs module</alt></image> -->
+            </sectiondiv>
+
+
+            <sectiondiv id="bpdetails">
+
+                <simpletable relcolwidth="1* 1* 1*">
+                    <sthead>
+                        <stentry></stentry>
+                        <stentry>Package</stentry>
+                        <stentry>Premium</stentry>
+                        <stentry>Product(s)</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>
+                            <!-- <ph conref="module-blogs.dita#ref-ModuleBlogs/bpicon"></ph> -->
+                            <ph id="bpicon">
+                                <image outputclass="img-icon" href="../../common/img/ico-module-blogs.png"><alt>icon</alt></image>
+                            </ph>
+                        </stentry>
+                        <stentry>Blogs</stentry>
+                        <stentry>No</stentry>
+                        <stentry>
+                            <!-- <ph conref="module-blogs.dita#ref-ModuleBlogs/bpproducts"></ph> -->
+                            <ph id="bpproducts">
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                            </ph>
+                        </stentry>
+                    </strow>
+                </simpletable>
+
+            </sectiondiv>
+
+        </section>
+
+    </refbody>
+
+</reference>

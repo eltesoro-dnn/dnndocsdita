@@ -7,7 +7,8 @@
         <navtitle>Console</navtitle>
     </titlealts>
 
-    <shortdesc>Generates a list of links to child pages, group activity, or a member list.</shortdesc>
+    <!-- <ph conref="module-console.dita#ref-ModuleConsole/bpshortdesc"></ph> -->
+    <shortdesc><ph id="bpshortdesc">Generates a list of links to child pages, group activity, or a member list.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -17,8 +18,7 @@
         </copyright>
         <metadata>
             <audience type="administrator" job="customizing" />
-            <audience type="programmer" job="customizing" />
-            <audience type="other" othertype="designer" job="other" otherjob="customizing" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -38,10 +38,8 @@
 
         <section>
 
-            <!-- <sectiondiv conref=".dita#ref-ModuleConsole/bpdesc"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-console.dita#ref-ModuleConsole/bpdesc"></sectiondiv> -->
             <sectiondiv id="bpdesc">
-
-                <p>Generates a list of links to child pages, group activity, or a member list.</p>
                 <ul>
                     <li><uicontrol>Pages Console</uicontrol>. Creates dynamic site menus that display the child pages of any site page, using the page name as the link name and the page description as the tooltip.
                         <ul>
@@ -59,14 +57,43 @@
                 </ul>
 
                 <p>Found in the <uicontrol>Admin Console</uicontrol> and <uicontrol>Host Console</uicontrol> pages.</p>
-
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref=".dita#ref-ModuleConsole/bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-console.dita#ref-ModuleConsole/bpimg"></sectiondiv> -->
             <sectiondiv id="bpimg">
-
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Console.png"><alt>Console module</alt></image>
+            </sectiondiv>
+
+
+            <sectiondiv id="bpdetails">
+
+                <simpletable relcolwidth="1* 1* 1*">
+                    <sthead>
+                        <stentry></stentry>
+                        <stentry>Package</stentry>
+                        <stentry>Premium</stentry>
+                        <stentry>Product(s)</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>
+                            <!-- <ph conref="module-console.dita#ref-ModuleConsole/bpicon"></ph> -->
+                            <ph id="bpicon">
+                                <image outputclass="img-icon" href="../../common/img/ico-module-console.png"><alt>icon</alt></image>
+                            </ph>
+                        </stentry>
+                        <stentry>Console</stentry>
+                        <stentry>No</stentry>
+                        <stentry>
+                            <!-- <ph conref="module-console.dita#ref-ModuleConsole/bpproducts"></ph> -->
+                            <ph id="bpproducts">
+                                <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                            </ph>
+                        </stentry>
+                    </strow>
+                </simpletable>
 
             </sectiondiv>
 

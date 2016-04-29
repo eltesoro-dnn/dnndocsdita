@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-ModuleProfileDashboard">
+
+    <title>Module: Profile Dashboard</title>
+    <titlealts>
+        <navtitle>Profile Dashboard</navtitle>
+    </titlealts>
+
+    <!-- <ph conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/bpshortdesc"></ph> -->
+    <shortdesc><ph id="bpshortdesc">Displays the social and gaming information about a user.</ph></shortdesc>  <!-- ??? -->
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <refbody>
+
+        <section>
+
+            <!-- <sectiondiv conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/bpdesc"></sectiondiv> -->
+            <sectiondiv id="bpdesc">
+                <p>Includes:</p>
+                <ul>
+                    <li>Profile Dashboard</li>
+                    <li>My Activity</li>
+                    <li>About Me</li>
+                    <li>My Badges</li>
+                    <li>My Engagement</li>
+                    <li>Profile Features</li>
+                    <li>My Score</li>
+                </ul>
+
+                <p>See <xref format="dita" href="module-my-status.dita">My Status</xref>.</p>
+            </sectiondiv>
+
+
+            <!-- <sectiondiv conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/bpimg"></sectiondiv> -->
+            <sectiondiv id="bpimg">
+                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ProfileDashboard.png"><alt>Profile Dashboard module</alt></image> -->
+            </sectiondiv>
+
+
+            <sectiondiv id="bpdetails">
+
+                <simpletable relcolwidth="1* 1* 1*">
+                    <sthead>
+                        <stentry></stentry>
+                        <stentry>Package</stentry>
+                        <stentry>Premium</stentry>
+                        <stentry>Product(s)</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>
+                            <!-- <ph conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/bpicon"></ph> -->
+                            <ph id="bpicon">
+                                <image outputclass="img-icon" href="../../common/img/ico-module-profiledashboard.png"><alt>icon</alt></image>
+                            </ph>
+                        </stentry>
+                        <stentry>Profile Dashboard</stentry>
+                        <stentry>No</stentry>
+                        <stentry>
+                            <!-- <ph conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/bpproducts"></ph> -->
+                            <ph id="bpproducts">
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                            </ph>
+                        </stentry>
+                    </strow>
+                </simpletable>
+
+            </sectiondiv>
+
+        </section>
+
+    </refbody>
+
+</reference>

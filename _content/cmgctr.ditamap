@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-CmgCtr">
+
+    <title>Content Manager</title>
+
+
+    <!-- Keys. NOTE: Do NOT use keys for topics that need to have an "active" tag in the toc. -->
+    <keydef keys="k-bptext" href="common/bptext.dita#bptext" />
+
+
+    <!-- Topics -->
+    <topicref format="dita" type="concept" href="content-managers/index.dita" toc="yes">
+
+        <topicref format="dita" type="topic"   navtitle="What's New"   toc="yes" href="content-managers/whats-new-dnn8.dita" />
+        <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="content-managers/dnn-platform-overview.dita" />
+
+        <!-- Local references -->
+        <topicref format="dita" type="topic" toc="yes" href="content-managers/content-manager-references.dita" collection-type="family">
+            <mapref href="content-managers/included-modules/included-modules-cmg.ditamap" />
+                <!-- <topicref format="dita" type="reference" toc="yes" href="content-managers/included-modules/included-modules.dita" copy-to="content-managers/included-modules/index.dita"/> -->
+            <topicref format="html" scope="external" navtitle="Online User Guide" toc="yes" href="http://www.dnnsoftware.com/help" />
+        </topicref>
+
+        <!-- Important global references -->
+        <topicref format="dita" type="reference" toc="yes" href="content-managers/product-versions.dita" />
+        <topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="content-managers/glossary.dita" >
+            <mapref href="common/glossary/glossary.ditamap" />
+        </topichead>
+
+    </topicref>
+
+
+    <!-- RelTables -->
+    <reltable>
+        <relheader>
+            <relcolspec type="concept"/>
+            <relcolspec type="task"/>
+            <relcolspec type="reference"/>
+        </relheader>
+
+        <!-- adm dev dsg -->
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="concept"   href="content-managers/dnn-platform-overview.dita" />
+            </relcell>
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="reference" href="content-managers/product-versions.dita" />
+            </relcell>
+        </relrow>
+
+        <!-- adm dev dsg -->
+        <relrow>
+            <relcell/>
+            <relcell/>
+            <relcell/>
+        </relrow>
+
+    </reltable>
+
+</map>
+

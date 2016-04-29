@@ -7,7 +7,8 @@
         <navtitle>Users and Roles</navtitle>
     </titlealts>
 
-    <shortdesc>Creates and manages registered user accounts and security roles.</shortdesc>
+    <!-- <ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/bpshortdesc"></ph> -->
+    <shortdesc><ph id="bpshortdesc">Creates and manages registered user accounts and security roles.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -17,8 +18,6 @@
         </copyright>
         <metadata>
             <audience type="administrator" job="customizing" />
-            <audience type="programmer" job="customizing" />
-            <audience type="other" othertype="designer" job="other" otherjob="customizing" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -38,27 +37,59 @@
 
         <section>
 
-            <!-- <sectiondiv conref=".dita#ref-ModuleUsersandRoles/bpdesc"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/bpdesc"></sectiondiv> -->
             <sectiondiv id="bpdesc">
+                <p>The module can be modified to select which fields are displayed, to add profile properties, and to specify how user accounts are handled. By default, the <uicontrol>Users and Roles</uicontrol> module package is not displayed in the selection of modules that can be added to a page, in order to avoid being accidentally added to a page and, thereby, revealing personal user information.</p>
 
-                <p>Premium</p>
-
-                <p>Creates and manages registered user accounts and security roles. The module can be modified to select which fields are displayed, to add profile properties, and to specify how user accounts are handled. By default, the <uicontrol>Users and Roles</uicontrol> module package is not displayed in the selection of modules that can be added to a page, in order to avoid being accidentally added to a page and, thereby, reveasectionng personal user information.</p>
-
-                <p>The <uicontrol>Users and Roles</uicontrol> package includes:</p>
+                <p>Includes:</p>
                 <ul>
-                    <li><uicontrol>Add New User</uicontrol>. Enables hosts and administrators to create new user accounts. After creation, the user accounts are  managed in <menucascade><uicontrol>Admin</uicontrol> <uicontrol>User Accounts</uicontrol></menucascade> page. Required in all custom Registration pages. <!-- <xref href="../../../Using the Control Panel/Admin Console/Site Settings/User Account Settings/Registration Settings/03_Custom_Registration_Form.dita#Configuring_a_Custom_Registration_Form">See "Configuring a Custom Registration Form". --></li>
+                    <li><uicontrol>Security Roles</uicontrol>. Creates and manages security roles and social groups, and to assign registered users to the roles and groups.</li>
+                    <li><uicontrol>User Account</uicontrol>. Creates new user accounts. Required in all custom registration pages. <!-- <xref href="../../../Using the Control Panel/Admin Console/Site Settings/User Account Settings/Registration Settings/03_Custom_Registration_Form.dita#Configuring_a_Custom_Registration_Form">See "Configuring a Custom Registration Form". --></li>
+                    <li><uicontrol>User Accounts</uicontrol>. Manages multiple user accounts.</li>
                 </ul>
 
-                <p>You must install the entire package and then delete the unwanted modules.</p>
+                <p>Existing user accounts are managed in <menucascade><uicontrol>Admin</uicontrol> <uicontrol>User Accounts</uicontrol></menucascade> page.</p>
 
+                <p>You must install the entire package and then delete the unwanted modules.</p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref=".dita#ref-ModuleUsersandRoles/bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/bpimg"></sectiondiv> -->
             <sectiondiv id="bpimg">
-
                 <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-.png"><alt>Users and Roles module</alt></image> -->
+            </sectiondiv>
+
+
+            <sectiondiv id="bpdetails">
+
+                <simpletable relcolwidth="1* 1* 1*">
+                    <sthead>
+                        <stentry></stentry>
+                        <stentry>Package</stentry>
+                        <stentry>Premium</stentry>
+                        <stentry>Required permissions</stentry>
+                        <stentry>Product(s)</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>
+                            <!-- <ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/bpicon"></ph> -->
+                            <ph id="bpicon">
+                                <image outputclass="img-icon" href="../../common/img/ico-module-usersandroles.png"><alt>icon</alt></image>
+                            </ph>
+                        </stentry>
+                        <stentry>Users and Roles</stentry>
+                        <stentry>Yes</stentry>
+                        <stentry>Administrator</stentry>
+                        <stentry>
+                            <!-- <ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/bpproducts"></ph> -->
+                            <ph id="bpproducts">
+                                <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                            </ph>
+                        </stentry>
+                    </strow>
+                </simpletable>
 
             </sectiondiv>
 

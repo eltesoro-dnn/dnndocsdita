@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-ModuleLatestChallenges">
+
+    <title>Module: Latest Challenges</title>
+    <titlealts>
+        <navtitle>Latest Challenges</navtitle>
+    </titlealts>
+
+    <!-- <ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/bpshortdesc"></ph> -->
+    <shortdesc><ph id="bpshortdesc">Displays the most recent and currently active challenges that registered users can participate in.</ph></shortdesc>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <refbody>
+
+        <section>
+
+            <!-- <sectiondiv conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/bpdesc"></sectiondiv> -->
+            <sectiondiv id="bpdesc">
+                <p>See <xref format="dita" href="module-challenges.dita">Challenges</xref>.</p>
+            </sectiondiv>
+
+
+            <!-- <sectiondiv conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/bpimg"></sectiondiv> -->
+            <sectiondiv id="bpimg">
+                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-LatestChallenges.png"><alt>Latest Challenges module</alt></image> -->
+            </sectiondiv>
+
+
+            <sectiondiv id="bpdetails">
+
+                <simpletable relcolwidth="1* 1* 1*">
+                    <sthead>
+                        <stentry></stentry>
+                        <stentry>Package</stentry>
+                        <stentry>Premium</stentry>
+                        <stentry>Product(s)</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>
+                            <!-- <ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/bpicon"></ph> -->
+                            <ph id="bpicon">
+                                <image outputclass="img-icon" href="../../common/img/ico-module-latestchallenges.png"><alt>icon</alt></image>
+                            </ph>
+                        </stentry>
+                        <stentry>Latest Challenges</stentry>
+                        <stentry>No</stentry>
+                        <stentry>
+                            <!-- <ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/bpproducts"></ph> -->
+                            <ph id="bpproducts">
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                            </ph>
+                        </stentry>
+                    </strow>
+                </simpletable>
+
+            </sectiondiv>
+
+        </section>
+
+    </refbody>
+
+</reference>

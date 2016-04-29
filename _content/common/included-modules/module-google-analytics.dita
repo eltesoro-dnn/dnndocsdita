@@ -7,7 +7,8 @@
         <navtitle>Google Analytics</navtitle>
     </titlealts>
 
-    <!-- <shortdesc></shortdesc> -->
+    <!-- <ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/bpshortdesc"></ph> -->
+    <shortdesc><ph id="bpshortdesc">Manages the site's Google Analytics settings.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -17,8 +18,6 @@
         </copyright>
         <metadata>
             <audience type="administrator" job="customizing" />
-            <audience type="programmer" job="customizing" />
-            <audience type="other" othertype="designer" job="other" otherjob="customizing" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -38,16 +37,50 @@
 
         <section>
 
-            <!-- <sectiondiv conref=".dita#ref-ModuleGoogleAnalytics/bpdesc"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/bpdesc"></sectiondiv> -->
             <sectiondiv id="bpdesc">
-
+                <ul>
+                    <li>Google Analytics is available in DNN Platform only.</li>
+                    <li>Google Analytics Professional is available in DNN Evoq only.</li>
+                </ul>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref=".dita#ref-ModuleGoogleAnalytics/bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/bpimg"></sectiondiv> -->
             <sectiondiv id="bpimg">
-
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-GoogleAnalytics.png"><alt>Google Analytics module</alt></image>
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-GoogleAnalyticsPro.png"><alt>Google Analytics Professional module</alt></image>
+            </sectiondiv>
+
+
+            <sectiondiv id="bpdetails">
+
+                <simpletable relcolwidth="1* 1* 1*">
+                    <sthead>
+                        <stentry></stentry>
+                        <stentry>Package</stentry>
+                        <stentry>Premium</stentry>
+                        <stentry>Product(s)</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>
+                            <!-- <ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/bpicon"></ph> -->
+                            <ph id="bpicon">
+                                <image outputclass="img-icon" href="../../common/img/ico-module-googleanalytics.png"><alt>icon</alt></image>
+                            </ph>
+                        </stentry>
+                        <stentry>Google Analytics</stentry>
+                        <stentry>No</stentry>
+                        <stentry>
+                            <!-- <ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/bpproducts"></ph> -->
+                            <ph id="bpproducts">
+                                <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                            </ph>
+                        </stentry>
+                    </strow>
+                </simpletable>
 
             </sectiondiv>
 

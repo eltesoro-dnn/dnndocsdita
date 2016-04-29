@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-ModuleAuthentication">
+
+    <title>Module: Authentication</title>
+    <titlealts>
+        <navtitle>Authentication</navtitle>
+    </titlealts>
+
+    <!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/bpshortdesc"></ph> -->
+    <shortdesc><ph id="bpshortdesc">Allows administrators to manage authentication settings for sites that use Windows Authentication.</ph></shortdesc>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <refbody>
+
+        <section>
+
+            <!-- <sectiondiv conref="module-authentication.dita#ref-ModuleAuthentication/bpdesc"></sectiondiv> -->
+            <sectiondiv id="bpdesc">
+                <p>Includes:</p>
+                <ul>
+                    <li><uicontrol>Account Login</uicontrol>. Enables registered users to log in to a site using credentials from this site or from third-party sites, such as Facebook and Twitter. If registration is enabled on the site and the current user is not yet registered, a <uicontrol>Register</uicontrol> link is displayed in the top right corner of all pages, as well as on any instance of the <uicontrol>Account Login</uicontrol> module. Found in the default <wintitle>User Log In</wintitle> page.</li>
+                </ul>
+            </sectiondiv>
+
+
+            <!-- <sectiondiv conref="module-authentication.dita#ref-ModuleAuthentication/bpimg"></sectiondiv> -->
+            <sectiondiv id="bpimg">
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-AccountLogin.png"><alt>Account Login module</alt></image>
+            </sectiondiv>
+
+
+            <sectiondiv id="bpdetails">
+
+                <simpletable relcolwidth="1* 1* 1*">
+                    <sthead>
+                        <stentry></stentry>
+                        <stentry>Package</stentry>
+                        <stentry>Premium</stentry>
+                        <stentry>Required permissions</stentry>
+                        <stentry>Product(s)</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>
+                            <!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/bpicon"></ph> -->
+                            <ph id="bpicon">
+                                <image outputclass="img-icon" href="../../common/img/ico-module-authentication.png"><alt>icon</alt></image>
+                            </ph>
+                        </stentry>
+                        <stentry>Authentication</stentry>
+                        <stentry>No</stentry>
+                        <stentry>Administrator</stentry>
+                        <stentry>
+                            <!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/bpproducts"></ph> -->
+                            <ph id="bpproducts">
+                                <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                            </ph>
+                        </stentry>
+                    </strow>
+                </simpletable>
+
+            </sectiondiv>
+
+
+            <!--
+            See also:
+            <ul>
+                <li><xref href="../../../Using the Control Panel/Admin Console/Site Settings/Advanced Settings/Page Management/02_LoginPage.dita#Settings_the_Login_Page" /></li>
+                <li><xref href="../../../Using the Control Panel/Admin Console/Site Settings/User Account Settings/Login Settings/Login Settings.dita#Login_Settings" /></li>
+                <li><xref href="../../../Using the Control Panel/Admin Console/Languages/Language Editor/03 Editing Site Language Files.dita#Editing_Language_Files" /></li>
+            </ul> -->
+
+        </section>
+
+    </refbody>
+
+</reference>

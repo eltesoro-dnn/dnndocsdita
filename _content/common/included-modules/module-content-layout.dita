@@ -7,7 +7,8 @@
         <navtitle>Content Layout</navtitle>
     </titlealts>
 
-    <shortdesc>Evoq only.</shortdesc>
+    <!-- <ph conref="module-content-layout.dita#ref-ModuleContentLayout/bpshortdesc"></ph> -->
+    <shortdesc><ph id="bpshortdesc">Adds a dynamic content layout to the page.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -17,12 +18,7 @@
         </copyright>
         <metadata>
             <audience type="administrator" job="customizing" />
-            <audience type="programmer" job="customizing" />
-            <audience type="other" othertype="designer" job="other" otherjob="customizing" />
-            <prodinfo>
-                <prodname>Platform</prodname>
-                <vrmlist><vrm version="8" release="0"/></vrmlist>
-            </prodinfo>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
             <prodinfo>
                 <prodname>Evoq Content</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
@@ -38,18 +34,43 @@
 
         <section>
 
-            <!-- <sectiondiv conref=".dita#ref-ModuleContentLayout/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc">
+            <!-- <sectiondiv conref="module-content-layout.dita#ref-ModuleContentLayout/bpdesc"></sectiondiv> -->
+            <sectiondiv id="bpdesc"></sectiondiv>
 
-                <p>Available in Evoq only.</p>
 
+            <!-- <sectiondiv conref="module-content-layout.dita#ref-ModuleContentLayout/bpimg"></sectiondiv> -->
+            <sectiondiv id="bpimg">
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ContentLayout.png"><alt>Content Layout module</alt></image>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref=".dita#ref-ModuleContentLayout/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <sectiondiv id="bpdetails">
 
-                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ContentLayout.png"><alt>Content Layout module</alt></image>
+                <simpletable relcolwidth="1* 1* 1*">
+                    <sthead>
+                        <stentry></stentry>
+                        <stentry>Package</stentry>
+                        <stentry>Premium</stentry>
+                        <stentry>Product(s)</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>
+                            <!-- <ph conref="module-content-layout.dita#ref-ModuleContentLayout/bpicon"></ph> -->
+                            <ph id="bpicon">
+                                <image outputclass="img-icon" href="../../common/img/ico-module-contentlayout.png"><alt>icon</alt></image>
+                            </ph>
+                        </stentry>
+                        <stentry>Content Layout</stentry>
+                        <stentry>No</stentry>
+                        <stentry>
+                            <!-- <ph conref="module-content-layout.dita#ref-ModuleContentLayout/bpproducts"></ph> -->
+                            <ph id="bpproducts">
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                            </ph>
+                        </stentry>
+                    </strow>
+                </simpletable>
 
             </sectiondiv>
 

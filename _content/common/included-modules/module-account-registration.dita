@@ -7,7 +7,8 @@
         <navtitle>Account Registration</navtitle>
     </titlealts>
 
-    <shortdesc>Allows visitors to register for a user account.</shortdesc>
+    <!-- <ph conref="module-account-registration.dita#ref-ModuleAccountRegistration/bpshortdesc"></ph> -->
+    <shortdesc><ph id="bpshortdesc">See Registration.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -17,8 +18,7 @@
         </copyright>
         <metadata>
             <audience type="administrator" job="customizing" />
-            <audience type="programmer" job="customizing" />
-            <audience type="other" othertype="designer" job="other" otherjob="customizing" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -38,18 +38,29 @@
 
         <section>
 
-            <!-- <sectiondiv conref=".dita#ref-ModuleAccountRegistration/bpdesc"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-account-registration.dita#ref-ModuleAccountRegistration/bpdesc"></sectiondiv> -->
             <sectiondiv id="bpdesc">
-
-                <p>Allows visitors to register for a user account. After the registration form has been completed and submitted, the primary administrator receives a notice to review the registration and authorize the user account.</p>
-
+                <p>After the registration form has been completed and submitted, the primary administrator receives a notice to review the registration and authorize the user account.</p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref=".dita#ref-ModuleAccountRegistration/bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-account-registration.dita#ref-ModuleAccountRegistration/bpimg"></sectiondiv> -->
             <sectiondiv id="bpimg">
-
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-AccountRegistration.png"><alt>Account Registration module</alt></image>
+            </sectiondiv>
+
+            <sectiondiv id="bpdetails">
+
+                <simpletable relcolwidth="1* 1* 1*">
+                    <sthead>
+                        <stentry>Package</stentry>
+                        <stentry>Premium</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>Registration</stentry>
+                        <stentry>No</stentry>
+                    </strow>
+                </simpletable>
 
             </sectiondiv>
 

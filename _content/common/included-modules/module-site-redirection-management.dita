@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-ModuleSiteRedirectionManagement">
+
+    <title>Module: Site Redirection Management</title>
+    <titlealts>
+        <navtitle>Site Redirection Management</navtitle>
+    </titlealts>
+
+    <!-- <ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/bpshortdesc"></ph> -->
+    <shortdesc><ph id="bpshortdesc">Allows administrators to manage their website's redirects.</ph></shortdesc>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <refbody>
+
+        <section>
+
+            <!-- <sectiondiv conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/bpdesc"></sectiondiv> -->
+            <sectiondiv id="bpdesc">
+                <!-- Including friendly URLs? How is this related to the Evoq-only Advanced URL Management module? -->
+            </sectiondiv>
+
+
+            <!-- <sectiondiv conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/bpimg"></sectiondiv> -->
+            <sectiondiv id="bpimg">
+                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SiteRedirectionManagement.png"><alt>Site Redirection Management module</alt></image> -->
+            </sectiondiv>
+
+
+            <sectiondiv id="bpdetails">
+
+                <simpletable relcolwidth="1* 1* 1*">
+                    <sthead>
+                        <stentry></stentry>
+                        <stentry>Package</stentry>
+                        <stentry>Premium</stentry>
+                        <stentry>Required permissions</stentry>
+                        <stentry>Product(s)</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>
+                            <!-- <ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/bpicon"></ph> -->
+                            <ph id="bpicon">
+                                <image outputclass="img-icon" href="../../common/img/ico-module-siteredirectionmgmt.png"><alt>icon</alt></image>
+                            </ph>
+                        </stentry>
+                        <stentry>Site Redirection Management</stentry>
+                        <stentry>-</stentry>
+                        <stentry>Administrator</stentry><!-- ??? -->
+                        <stentry>
+                            <!-- <ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/bpproducts"></ph> -->
+                            <ph id="bpproducts">
+                                <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                            </ph>
+                        </stentry>
+                    </strow>
+                </simpletable>
+
+            </sectiondiv>
+
+        </section>
+
+    </refbody>
+
+</reference>

@@ -7,7 +7,8 @@
         <navtitle>View Profile</navtitle>
     </titlealts>
 
-    <!-- <shortdesc></shortdesc> -->
+    <!-- <ph conref="module-view-profile.dita#ref-ModuleViewProfile/bpshortdesc"></ph> -->
+    <shortdesc><ph id="bpshortdesc">Displays a user profile.</ph></shortdesc>  <!-- ??? -->
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -17,8 +18,6 @@
         </copyright>
         <metadata>
             <audience type="administrator" job="customizing" />
-            <audience type="programmer" job="customizing" />
-            <audience type="other" othertype="designer" job="other" otherjob="customizing" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -38,16 +37,44 @@
 
         <section>
 
-            <!-- <sectiondiv conref=".dita#ref-ModuleViewProfile/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc">
+            <!-- <sectiondiv conref="module-view-profile.dita#ref-ModuleViewProfile/bpdesc"></sectiondiv> -->
+            <sectiondiv id="bpdesc"></sectiondiv>
 
+
+            <!-- <sectiondiv conref="module-view-profile.dita#ref-ModuleViewProfile/bpimg"></sectiondiv> -->
+            <sectiondiv id="bpimg">
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ViewProfile.png"><alt>View Profile module</alt></image>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref=".dita#ref-ModuleViewProfile/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <sectiondiv id="bpdetails">
 
-                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ViewProfile.png"><alt>View Profile module</alt></image>
+                <simpletable relcolwidth="1* 1* 1*">
+                    <sthead>
+                        <stentry></stentry>
+                        <stentry>Package</stentry>
+                        <stentry>Premium</stentry>
+                        <stentry>Product(s)</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>
+                            <!-- <ph conref="module-view-profile.dita#ref-ModuleViewProfile/bpicon"></ph> -->
+                            <ph id="bpicon">
+                                <image outputclass="img-icon" href="../../common/img/ico-module-viewprofile.png"><alt>icon</alt></image>
+                            </ph>
+                        </stentry>
+                        <stentry>ViewProfile</stentry>
+                        <stentry>No</stentry>
+                        <stentry>
+                            <!-- <ph conref="module-view-profile.dita#ref-ModuleViewProfile/bpproducts"></ph> -->
+                            <ph id="bpproducts">
+                                <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                            </ph>
+                        </stentry>
+                    </strow>
+                </simpletable>
 
             </sectiondiv>
 

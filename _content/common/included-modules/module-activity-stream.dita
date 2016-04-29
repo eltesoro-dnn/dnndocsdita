@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-ModuleActivityStream">
+
+    <title>Module: Activity Stream</title>
+    <titlealts>
+        <navtitle>Activity Stream</navtitle>
+    </titlealts>
+
+    <!-- <ph conref="module-activity-stream.dita#ref-ModuleActivityStream/bpshortdesc"></ph> -->
+    <shortdesc><ph id="bpshortdesc">Displays a social group's activities in reverse chronological order.</ph></shortdesc>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <refbody>
+
+        <section>
+
+            <!-- <sectiondiv conref="module-activity-stream.dita#ref-ModuleActivityStream/bpdesc"></sectiondiv> -->
+            <sectiondiv id="bpdesc">
+                <p>Includes:</p>
+                <ul>
+                    <li>Activity Stream</li>
+                    <li>Activity Stream Filter</li>
+                </ul>
+            </sectiondiv>
+
+
+            <!-- <sectiondiv conref="module-activity-stream.dita#ref-ModuleActivityStream/bpimg"></sectiondiv> -->
+            <sectiondiv id="bpimg">
+                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ActivityStream.png"><alt>Activity Stream module</alt></image> -->
+            </sectiondiv>
+
+
+            <sectiondiv id="bpdetails">
+
+                <simpletable relcolwidth="1* 1* 1*">
+                    <sthead>
+                        <stentry></stentry>
+                        <stentry>Package</stentry>
+                        <stentry>Premium</stentry>
+                        <stentry>Product(s)</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>
+                            <!-- <ph conref="module-activity-stream.dita#ref-ModuleActivityStream/bpicon"></ph> -->
+                            <ph id="bpicon">
+                                <image outputclass="img-icon" href="../../common/img/ico-module-activitystream.png"><alt>icon</alt></image>
+                            </ph>
+                        </stentry>
+                        <stentry>Activity Stream</stentry>
+                        <stentry>No</stentry>
+                        <stentry>
+                            <!-- <ph conref="module-activity-stream.dita#ref-ModuleActivityStream/bpproducts"></ph> -->
+                            <ph id="bpproducts">
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                            </ph>
+                        </stentry>
+                    </strow>
+                </simpletable>
+
+            </sectiondiv>
+
+        </section>
+
+    </refbody>
+
+</reference>
