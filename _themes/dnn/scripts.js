@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+    $(window).on('resize', function () {
+        if ($(window).width() > 992) {
+            $('ul.header-nav').show();
+        } else {
+            $('ul.header-nav').hide();
+        }
+    });
+
     // adjust the HTML rendered by Sphinx for the TOC
     $('nav[role="toc"] > ul')
         .attr({
