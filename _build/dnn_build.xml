@@ -181,8 +181,16 @@
         </ant>
     </target>
 
+    <target name="html5-cmg" depends="html5-prep">
+        <echo level="info">Building html5 Content Manager Center ....</echo>
+        <ant antfile="build.xml">
+            <property name="sitetitle" value="Content Managers"/>
+            <property name="args.input" location="${bld.dir}${file.separator}cmgctr.ditamap"/>
+        </ant>
+    </target>
+
     <!-- Keep the three centers as separate targets, or else the navs get mixed up. -->
-    <target name="html5" depends="html5-adm, html5-dev, html5-dsg">
+    <target name="html5" depends="html5-adm, html5-dev, html5-dsg, html5-cmg">
         <echo level="info">Completed html5 builds ....</echo>
     </target>
 

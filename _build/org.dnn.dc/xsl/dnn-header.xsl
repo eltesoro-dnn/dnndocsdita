@@ -17,14 +17,17 @@
                 <!-- If the active subcenter must always be the first, uncomment the next line and comment out the "$sitetitle  =" lines.  -->
                 <!-- <li class="subctr active"><xsl:value-of select="$sitetitle" /> -->
 
-                <xsl:if test="$sitetitle  ='Administrators'"><div class="subctr active"><a href="/docs/Administrators/index.html">Administrators</a></div></xsl:if>
-                <xsl:if test="$sitetitle !='Administrators'"><div class="subctr"><a href="/docs/Administrators/index.html">Administrators</a></div></xsl:if>
+                <xsl:if test="$sitetitle  ='Administrators'"><div class="subctr admctr active"><a href="/docs/administrators/index.html">Administrators</a></div></xsl:if>
+                <xsl:if test="$sitetitle !='Administrators'"><div class="subctr admctr"><a href="/docs/administrators/index.html">Administrators</a></div></xsl:if>
 
-                <xsl:if test="$sitetitle  ='Developers'"><div class="subctr active"><a href="/docs/Developers/index.html">Developers</a></div></xsl:if>
-                <xsl:if test="$sitetitle !='Developers'"><div class="subctr"><a href="/docs/Developers/index.html">Developers</a></div></xsl:if>
+                <xsl:if test="$sitetitle  ='Content Managers'"><div class="subctr cmgctr active"><a href="/docs/content-managers/index.html">Content Managers</a></div></xsl:if>
+                <xsl:if test="$sitetitle !='Content Managers'"><div class="subctr cmgctr"><a href="/docs/content-managers/index.html">Content Managers</a></div></xsl:if>
 
-                <xsl:if test="$sitetitle  ='Designers'"><div class="subctr active"><a href="/docs/Designers/index.html">Designers</a></div></xsl:if>
-                <xsl:if test="$sitetitle !='Designers'"><div class="subctr"><a href="/docs/Designers/index.html">Designers</a></div></xsl:if>
+                <xsl:if test="$sitetitle  ='Developers'"><div class="subctr devctr active"><a href="/docs/developers/index.html">Developers</a></div></xsl:if>
+                <xsl:if test="$sitetitle !='Developers'"><div class="subctr devctr"><a href="/docs/developers/index.html">Developers</a></div></xsl:if>
+
+                <xsl:if test="$sitetitle  ='Designers'"><div class="subctr dsgctr active"><a href="/docs/designers/index.html">Designers</a></div></xsl:if>
+                <xsl:if test="$sitetitle !='Designers'"><div class="subctr dsgctr"><a href="/docs/designers/index.html">Designers</a></div></xsl:if>
             </div>
 
             <div class="header-nav-wrapper">
@@ -35,14 +38,17 @@
                                 <!-- If the active subcenter must always be the first, uncomment the next line and comment out the "$sitetitle  =" lines.  -->
                                 <!-- <li class="subctr active"><xsl:value-of select="$sitetitle" /> -->
 
-                                <xsl:if test="$sitetitle  ='Administrators'"><li class="subctr active"><a href="/docs/Administrators/index.html">Administrators</a></li></xsl:if>
-                                <xsl:if test="$sitetitle !='Administrators'"><li class="subctr"><a href="/docs/Administrators/index.html">Administrators</a></li></xsl:if>
+                                <xsl:if test="$sitetitle  ='Administrators'"><li class="subctr admctr active"><a href="/docs/administrators/index.html">Administrators</a></li></xsl:if>
+                                <xsl:if test="$sitetitle !='Administrators'"><li class="subctr admctr"><a href="/docs/administrators/index.html">Administrators</a></li></xsl:if>
 
-                                <xsl:if test="$sitetitle  ='Developers'"><li class="subctr active"><a href="/docs/Developers/index.html">Developers</a></li></xsl:if>
-                                <xsl:if test="$sitetitle !='Developers'"><li class="subctr"><a href="/docs/Developers/index.html">Developers</a></li></xsl:if>
+                                <xsl:if test="$sitetitle  ='Content Managers'"><li class="subctr cmgctr active"><a href="/docs/content-managers/index.html">Content Managers</a></li></xsl:if>
+                                <xsl:if test="$sitetitle !='Content Managers'"><li class="subctr cmgctr"><a href="/docs/content-managers/index.html">Content Managers</a></li></xsl:if>
 
-                                <xsl:if test="$sitetitle  ='Designers'"><li class="subctr active"><a href="/docs/Designers/index.html">Designers</a></li></xsl:if>
-                                <xsl:if test="$sitetitle !='Designers'"><li class="subctr"><a href="/docs/Designers/index.html">Designers</a></li></xsl:if>
+                                <xsl:if test="$sitetitle  ='Developers'"><li class="subctr devctr active"><a href="/docs/developers/index.html">Developers</a></li></xsl:if>
+                                <xsl:if test="$sitetitle !='Developers'"><li class="subctr devctr"><a href="/docs/developers/index.html">Developers</a></li></xsl:if>
+
+                                <xsl:if test="$sitetitle  ='Designers'"><li class="subctr dsgctr active"><a href="/docs/designers/index.html">Designers</a></li></xsl:if>
+                                <xsl:if test="$sitetitle !='Designers'"><li class="subctr dsgctr"><a href="/docs/designers/index.html">Designers</a></li></xsl:if>
                             </ul>
                         </li>
                         <li><a href="http://www.dnnsoftware.com/community/download">Download</a></li>

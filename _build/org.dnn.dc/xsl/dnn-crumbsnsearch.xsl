@@ -2,10 +2,23 @@
 <xsl:stylesheet version="1.0"
                 xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
 
+
+  <xsl:param name="sitetitle"></xsl:param>
+
   <!-- From org.dita.xhtml\xsl\xslhtml\dita2htmlImpl.xsl -->
   <xsl:template name="generateBreadcrumbs">
     <xsl:apply-templates select="*[contains(@class, ' topic/related-links ')]" mode="breadcrumb"/>
-    <div class="breadcrumbs"><script language="JavaScript">breadcrumbs();</script></div>  <!-- DNN change -->
+	<!-- DNN change: start -->
+    <div>
+		<xsl:attribute name="class">
+			<xsl:if test="$sitetitle ='Administrators'">breadcrumbs admctr</xsl:if>
+			<xsl:if test="$sitetitle ='Content Managers'">breadcrumbs cmgctr</xsl:if>
+			<xsl:if test="$sitetitle ='Developers'">breadcrumbs devctr</xsl:if>
+			<xsl:if test="$sitetitle ='Designers'">breadcrumbs dsgctr</xsl:if>
+		</xsl:attribute>
+		<script language="JavaScript">breadcrumbs();</script>
+	</div>
+	<!-- DNN change: end -->
   </xsl:template>
 
 
