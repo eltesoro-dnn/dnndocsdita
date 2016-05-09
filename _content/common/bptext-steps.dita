@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="bptext-steps">
+
+    <title>Boilerplates - Generic Steps</title>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+    </prolog>
+
+    <taskbody>
+
+        <steps>
+
+			<!-- PAGES, combined Administrators and Content Managers -->
+
+			<!-- <step conref="bptext-steps.dita#bptext-steps/step-createpage"><cmd/></step> -->
+			<step id="step-createpage">
+				<cmd>Create a page.</cmd>
+				<choices>
+					<choice><ph outputclass="audience-adm">Administrators:</ph>   <xref format="dita" href="building-your-site/create-copy-page-from-pages-menu.dita">Create or copy a page from the <uicontrol>Pages</uicontrol> menu.</xref></choice>
+					<choice><ph outputclass="audience-cmg">Content Managers:</ph> <xref format="dita" href="building-your-site/create-page-from-persona-bar.dita">Create a page from the <uicontrol>Persona Bar</uicontrol>.</xref></choice>
+				</choices>
+			</step>
+
+			<!-- <step conref="bptext-steps.dita#bptext-steps/step-editpage"><cmd/></step> -->
+			<step id="step-editpage">
+				<cmd>Select and edit a page.</cmd>
+				<choices>
+					<choice><ph outputclass="audience-adm">Administrators:</ph>   <xref format="dita" href="building-your-site/edit-page-from-pages-menu.dita">Edit a page from the <uicontrol>Pages</uicontrol> menu.</xref></choice>
+					<choice><ph outputclass="audience-cmg">Content Managers:</ph> <xref format="dita" href="building-your-site/edit-page-from-persona-bar.dita">Edit a page from the <uicontrol>Persona Bar</uicontrol>.</xref></choice>
+				</choices>
+			</step>
+
+			<!-- <step conref="bptext-steps.dita#bptext-steps/step-createeditpage"><strow/></step> -->
+			<step id="step-createeditpage">
+				<cmd>Create or edit a page.</cmd>
+				<info>
+					<simpletable relcolwidth="1* 1* 1*">
+						<sthead>
+							<stentry>Administrators</stentry>
+							<stentry>Content Managers</stentry>
+						</sthead>
+						<strow>
+							<stentry><xref format="dita" href="building-your-site/create-copy-page-from-pages-menu.dita">Create or copy a page from the <uicontrol>Pages</uicontrol> menu.</xref></stentry>
+							<stentry><xref format="dita" href="building-your-site/create-page-from-persona-bar.dita">Create a page from the <uicontrol>Persona Bar</uicontrol>.</xref></stentry>
+						</strow>
+						<strow>
+							<stentry><xref format="dita" href="building-your-site/edit-page-from-pages-menu.dita">Edit a page from the <uicontrol>Pages</uicontrol> menu.</xref></stentry>
+							<stentry><xref format="dita" href="building-your-site/edit-page-from-persona-bar.dita">Edit a page from the <uicontrol>Persona Bar</uicontrol>.</xref></stentry>
+						</strow>
+					</simpletable>
+				</info>
+			</step>
+
+			<!-- <step conref="bptext-steps.dita#bptext-steps/step-createeditpage-cp"><cmd/></step> -->
+			<step id="step-createeditpage-cp" outputclass="audience-adm">
+				<cmd>Create or edit a page from the <uicontrol>Pages</uicontrol> menu.</cmd>
+				<choices>
+					<choice><xref format="dita" href="building-your-site/create-copy-page-from-pages-menu.dita">Create or copy a page.</xref></choice>
+					<choice><xref format="dita" href="building-your-site/edit-page-from-pages-menu.dita">Edit a page.</xref></choice>
+				</choices>
+			</step>
+
+			<!-- <step conref="bptext-steps.dita#bptext-steps/step-createeditpage-pb"><cmd/></step> -->
+			<step id="step-createeditpage-pb" outputclass="audience-cmg">
+				<cmd>Create or edit a page from the <uicontrol>Persona Bar</uicontrol>.</cmd>
+				<choices>
+					<choice><xref format="dita" href="building-your-site/create-page-from-persona-bar.dita">Create a page.</xref></choice>
+					<choice><xref format="dita" href="building-your-site/edit-page-from-persona-bar.dita">Edit a page.</xref></choice>
+				</choices>
+			</step>
+
+
+
+
+			<!-- MODULES - ADD, EDIT -->
+
+
+        </steps>
+
+    </taskbody>
+
+</task>

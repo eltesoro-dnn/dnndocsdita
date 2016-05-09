@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="bptext-pages-steps-cp">
+
+    <title>Boilerplates - Pages (Control Panel) Steps</title>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+    </prolog>
+
+    <taskbody>
+
+        <steps>
+
+			<!-- PAGES MENU (CP) - PAGES - ADD, EDIT -->
+
+			<!--
+			<cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-cp-configure-page-details"></cmd>
+			<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-PageDetails.png"><alt>Add Page - Page Details</alt></image></info>
+			<substeps conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/substeps-cp-configure-page-details"><substep><cmd/></substep></substeps>
+			-->
+			<step>
+				<!-- <cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-cp-configure-page-details"></cmd> -->
+				<cmd id="cmd-cp-configure-page-details">In the <uicontrol>Page Details</uicontrol> tab, configure the page.</cmd>
+
+				<!-- <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-PageDetails.png"><alt>Add Page - Page Details</alt></image></info> -->
+
+				<!-- <substeps conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/substeps-cp-configure-page-details"><substep><cmd/></substep></substeps> -->
+				<substeps id="substeps-cp-configure-page-details">
+					<substep><cmd>Enter the <uicontrol>Page Name</uicontrol>.</cmd></substep>
+					<substep>
+						<cmd>(Optional) Fill in the remaining fields.</cmd>
+						<info>
+							<simpletable id="simpletable-pagedetails-cp" relcolwidth="1* 3*">
+								<sthead>
+									<stentry>Field</stentry>
+									<stentry>Description</stentry>
+								</sthead>
+								<strow>
+									<stentry>Page Title</stentry>
+									<stentry>Displayed as the browser window's title.</stentry>
+								</strow>
+								<strow>
+									<stentry>Page URL</stentry>
+									<stentry>Custom URL for the page.</stentry>
+								</strow>
+								<strow>
+									<stentry>Do Not Redirect</stentry>
+									<stentry>If checked, the page is excluded from any rules that might result in a redirect.</stentry>
+								</strow>
+								<strow>
+									<stentry>Keywords</stentry>
+									<stentry>Comma-separated keywords that can be used by search engines to help index your site's pages.</stentry>
+								</strow>
+								<strow>
+									<stentry>Tags</stentry>
+									<stentry>Predefined tags that you can choose from the drop-down, if any are defined.</stentry>
+								</strow>
+								<strow>
+									<stentry>
+										<lines>
+											Parent Page
+											Insert Page
+										</lines>
+									</stentry>
+									<stentry>Choose under which page in the hierarchy to insert the current page, and choose its position among its siblings. By default, the new page inherits permissions from the parent page.</stentry>
+								</strow>
+								<strow>
+									<stentry>
+										<lines>
+											Template Folder
+											Page Template
+										</lines>
+									</stentry>
+									<stentry>The folder and the specific template to use for the new page.</stentry>
+								</strow>
+								<strow>
+									<stentry>Include in Menu</stentry>
+									<stentry>If checked, the page is included in the main navigation menu. Even if unchecked, you can still link to the page using its URL.</stentry>
+								</strow>
+							</simpletable>
+						</info>
+					</substep>
+				</substeps>
+			</step>
+
+			<!--
+			<cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-configure-page-advanced"></cmd>
+			<info>
+				<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings.png"><alt>Add Page - Advanced Settings</alt></image>
+				<table conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/table-page-properties"><tgroup cols="2"><colspec colnum="2"/><tbody><row><entry/><entry/></row></tbody></tgroup></table>
+			</info>
+			-->
+			<step>
+				<!-- <cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-configure-page-advanced"></cmd> -->
+				<cmd id="cmd-configure-page-advanced">(Optional) In the <uicontrol>Advanced Settings</uicontrol> tab, configure the page.</cmd>
+				<info>
+					<!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings.png"><alt>Add Page - Advanced Settings</alt></image> -->
+
+					<!-- <table conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/table-page-properties"><tgroup cols="2"><colspec colnum="2"/><tbody><row><entry/><entry/></row></tbody></tgroup></table> -->
+					<table id="table-page-properties" frame="all" colsep="1" rowsep="1" >
+						<tgroup cols="2" align="left">
+							<colspec colnum="2"/>
+							<thead>
+								<row>
+									<entry>Field</entry>
+									<entry>Description</entry>
+								</row>
+							</thead>
+							<tbody><row><entry morerows="1" nameend="2"></entry></row></tbody>
+						</tgroup>
+
+						<tgroup cols="2" align="left">
+							<colspec colnum="2"/>
+							<thead>
+								<row><entry nameend="2">Appearance</entry></row>
+							</thead>
+							<tbody>
+								<row>
+									<entry>
+										<lines>
+											Icon
+											Large Icon
+										</lines>
+									</entry>
+									<entry>
+										The icons to be displayed in the navigation (small icon) and in the console (large icon).
+										<!-- DOCBUG: What sizes should these be? -->
+										<ul>
+											<li conref="../bptext.dita#bptext/li-AddPageChooseSiteFile"></li>
+											<li conref="../bptext.dita#bptext/li-AddPageUploadFile"></li>
+											<li>To choose an image that shipped with DNN,
+												<ul>
+													<li>Select <uicontrol>System Image</uicontrol>.</li>
+													<li>Choose the image from the <uicontrol>Image</uicontrol> dropdown.</li>
+												</ul>
+											</li>
+										</ul>
+									</entry>
+								</row>
+								<row>
+									<entry>
+										<lines>
+											Page Theme
+											Page Container
+											Page Stylesheet
+										</lines>
+									</entry>
+									<entry>The custom theme for the page, the custom container for the modules in the page, and the custom stylesheet for the page, respectively. To inherit from the parent, leave as <uicontrol>None Specified</uicontrol> or blank.</entry>
+								</row>
+								<row>
+									<entry>Disabled</entry>
+									<entry>If checked, the page appears on the navigation as static text, which is unclickable.</entry>
+								</row>
+								<row>
+									<entry>Refresh interval</entry>
+									<entry>The number of seconds between automatic page refreshes. To disable automatic page refreshes, leave blank.</entry>
+								</row>
+								<row>
+									<entry>Page Header Tags</entry>
+									<entry>Tags that you want to be included in the META tag inside the HEAD tag of the page.</entry>
+								</row>
+							</tbody>
+						</tgroup>
+
+						<tgroup cols="2" align="left">
+							<colspec colnum="2"/>
+							<thead>
+								<row><entry nameend="2">Cache Settings</entry></row>
+							</thead>
+							<tbody>
+								<row>
+									<entry>Output Cache Provider</entry>
+									<entry>The cache provider to use for this page. The dropdown list includes the <xref format="dita" scope="peer" href="/docs/administrators/providers.html#top-providers__outcacheprov">output caching providers</xref> installed on the site.</entry>
+								</row>
+							</tbody>
+						</tgroup>
+
+						<tgroup cols="2" align="left">
+							<colspec colnum="2"/>
+							<thead>
+								<row><entry nameend="2">Other Settings</entry></row>
+							</thead>
+							<tbody>
+								<row>
+									<entry>Secure?</entry>
+									<entry>If checked, the page requires a secure connection (SSL). This option is available only if the administrator enabled SSL for the site.
+										<!-- DOCBUG: Is the protocol automatically switched to https if they used http? -->
+									</entry>
+								</row>
+								<row>
+									<entry>Allow Indexing</entry>
+									<entry>If checked, the page is indexed by search crawlers; otherwise, it is ignored.</entry>
+								</row>
+								<row>
+									<entry>Site Map Priority</entry>
+									<entry>A priority level that helps Google determine the page's importance, compared to the rest of the pages on the site. Ranges from 0.0 to 1.0, where 1.0 is the highest priority; the default value is 0.5.</entry>
+								</row>
+								<row>
+									<entry>
+										<lines>
+											Start Date
+											End Date
+										</lines>
+									</entry>
+									<entry>
+										<p>Click/Tap on the calendar icon to choose the date (server date); the default is the current date. Click/Tap on the clock icon to choose the time; the default is 12:00 AM (server time).</p>
+										<ul conref="../bptext.dita#bptext/ul-publisheddates"><li/></ul>
+									</entry>
+								</row>
+								<row>
+									<entry>Link URL</entry>
+									<entry>
+										<p conref="../bptext.dita#bptext/p-AddPageLinkType"></p>
+									</entry>
+								</row>
+							</tbody>
+						</tgroup>
+					</table>
+
+				</info>
+			</step>
+
+			<!--
+			<step><cmd>Open the page to edit.</cmd></step>
+			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
+			-->
+			<step id="step-cp-editpage">
+				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Edit This Page</uicontrol></menucascade>.</cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageEditThis.png"><alt>Edit Page - Edit This Page</alt></image>
+				</info>
+			</step>
+
+			<!--
+			<step><cmd>Open the page to delete.</cmd></step>
+			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-deletepage"><cmd/></step>
+			-->
+			<step id="step-cp-deletepage">
+				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Delete Page</uicontrol></menucascade>.</cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageDeletePage.png"><alt>Edit Page - Delete Page</alt></image>
+				</info>
+			</step>
+
+
+
+			<!-- MODULES - ADD, EDIT -->
+
+			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step> -->
+			<step id="step-cp-openmodulelist">
+                <cmd>Go to <menucascade><uicontrol>Module</uicontrol> <uicontrol>Add New Module</uicontrol></menucascade>.</cmd>
+                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddNew.png"><alt>Module - Add New Module</alt></image></info>
+			</step>
+
+			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-addmoduletopane"><cmd/></step> -->
+			<step id="step-cp-addmoduletopane">
+				<cmd>Drag the module to a pane in the current page.</cmd>
+				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-ModulesList-Drag.png"><alt>Drag module to pane.</alt></image></info>
+			</step>
+
+        </steps>
+
+    </taskbody>
+
+</task>

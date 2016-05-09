@@ -35,33 +35,20 @@
         </prereq>
 
         <steps>
-            <step>
-                <cmd>Create a new page or edit an existing one.</cmd>
-                <choices>
-                    <choice>
-                        <p>To create a new page, go to <menucascade><uicontrol>Pages</uicontrol> <uicontrol>Add New Page</uicontrol></menucascade>.</p>
-                        <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuPagesAddNew.png"><alt>Pages - Add New</alt></image>
-                        <p>Enter the <uicontrol>Page Name</uicontrol>, then click <uicontrol>Add Page</uicontrol>.</p>
-                        <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-AddPage.png"><alt>Page Name - Add Page</alt></image>
-                    </choice>
-                    <choice>
-                        <p>To edit an existing page, open the page to edit, then go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Edit This Page</uicontrol></menucascade>.</p>
-                        <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageEditThis.png"><alt>Edit Page - Edit This Page</alt></image>
-                    </choice>
-                </choices>
-            </step>
-            <step>
-                <cmd>Go to <menucascade><uicontrol>Module</uicontrol> <uicontrol>Add New Module</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddNew.png"><alt>Module - Add New Module</alt></image></info>
-            </step>
+			<step conref="../../common/bptext-steps.dita#bptext-steps/step-createeditpage-cp"><cmd/></step>
+
+			<step conref="../../common/building-your-site/bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step>
+
             <step>
                 <cmd>Search for the Module Creator among the installed modules.</cmd>
                 <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesList04ModuleCreator.png"><alt>Search for Module Creator.</alt></image></info>
             </step>
+
             <step>
                 <cmd>Drag the Module Creator module to any pane in the webpage.</cmd>
                 <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesModuleCreatorDrag.png"><alt>Drag to a pane.</alt></image></info>
             </step>
+
             <step>
                 <cmd>Fill in the Module Creation form.</cmd>
                 <info>
@@ -104,6 +91,7 @@
                     <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleCreatorModuleCreated.png"><alt>Module created.</alt></image>
                 </stepresult>
             </step>
+
             <step>
                 <cmd>Customize the module.</cmd>
                 <substeps>

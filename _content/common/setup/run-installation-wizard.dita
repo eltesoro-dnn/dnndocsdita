@@ -48,12 +48,12 @@
                                 <li><uicontrol>Database Setup:</uicontrol> Custom</li>
                                 <li><uicontrol>Database Type:</uicontrol> SQL Server/SQL Server Express Database</li>
                                 <li><uicontrol>Server Name:</uicontrol>
-                                    <p><b>Developers and Designers:</b> You can use the default value (example: <codeph>.\SQLExpress</codeph> or <codeph>(local)</codeph>).</p>
-                                    <p><b>Administrators:</b> Set the value to <codeph>(local)</codeph>.</p>
+                                    <p><ph outputclass="audience-dev audience-dsg">Developers and Designers:</ph> You can use the default value (example: <codeph>.\SQLExpress</codeph> or <codeph>(local)</codeph>).</p>
+                                    <p><ph outputclass="audience-adm">Administrators:</ph> Set the value to <codeph>(local)</codeph>.</p>
                                 </li>
                                 <li><uicontrol>Database Name:</uicontrol> Enter the name of the SQL database you created earlier.</li>
                                 <li><uicontrol>Object Qualifier:</uicontrol>
-                                    <p><b>Developers:</b>
+                                    <p><ph outputclass="audience-dev">Developers:</ph>
                                         <ul>
                                             <li>If creating modules for your own websites, set <uicontrol>objectQualifier</uicontrol> to blank.</li>
                                             <li>If creating modules for sale, set <uicontrol>objectQualifier</uicontrol> to <codeph>dnn</codeph> to prepend <codeph>dnn_</codeph> to all DNN-generated objects, such as tables and stored procedures. This practice is recommended in your local development environment, so that you can catch name-matching errors that could occur if the target DNN installation's <uicontrol>objectQualifier</uicontrol> setting (found in web.config) is not blank.</li>

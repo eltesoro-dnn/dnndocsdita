@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-BuildingYourSite">
+
+    <title>Building Your Site</title>
+    <titlealts>
+        <navtitle>Building Your Site</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orLY,edET,1605</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section id="overview">
+			<p>DNN sites are built by adding one or more pages to the site and then adding <term>modules</term> to each page. Modules are a type of extensions that expand the functionality of DNN by displaying or generating content. Themes and containers control the appearance of the pages and modules, respectively. Other extensions control different aspects of DNN, such as security, caching, and user management.</p>
+
+			<p>The <xref format="dita" href="../included-modules/module-site-wizard.dita">Site Wizard</xref> is a quick way to configure the basic settings for a site, change the design, and apply a template.</p>
+
+			<p>Specific pages can be restricted to users in certain roles, such as subscribers.</p>
+		</section>
+
+
+		<section id="aboutpages">
+
+		</section>
+
+
+		<section id="aboutmodules">
+			<!--
+			<p>The most commonly used module is the <xref format="dita" href="../included-modules/module-html-text.dita">HTML/Text</xref> module which allows you to display rich text, HTML, and images or to run a script.</p>
+			-->
+		</section>
+
+    </body>
+
+</topic>

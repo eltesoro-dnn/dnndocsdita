@@ -73,8 +73,8 @@
                     </substep>
                     <substep><cmd>Enter the <uicontrol>Host name</uicontrol>.</cmd>
                         <info>
-                            <p><b>Developers and Designers:</b> If setting up a local development environment, you can use <codeph>www.dnndev.me</codeph> (or any subdomain). DNNDEV.ME is a registered domain which points to the loopback address of 127.0.0.1, so it will always resolve locally.</p>
-                            <p><b>Administrators: </b> If setting up a live website, use your website's domain.</p>
+                            <p><ph outputclass="audience-dev audience-dsg">Developers and Designers:</ph> If setting up a local development environment, you can use <codeph>www.dnndev.me</codeph> (or any subdomain). DNNDEV.ME is a registered domain which points to the loopback address of 127.0.0.1, so it will always resolve locally.</p>
+                            <p><ph outputclass="audience-adm">Administrators:</ph> If setting up a live website, use your website's domain.</p>
                             <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-4.png"><alt>For local, use www.dnndev.me.</alt></image>
                         </info>
                     </substep>
@@ -90,8 +90,8 @@
                     </substep>
                     <substep><cmd>In <uicontrol>Site Bindings</uicontrol>, click <uicontrol>Add...</uicontrol>. In <uicontrol>Add Site Binding</uicontrol>, enter the <uicontrol>Host name</uicontrol>.</cmd>
                         <info>
-                            <p><b>Developers and Designers:</b> If setting up a local development environment, you can use <codeph>www.dnndev.me</codeph> (or any subdomain). DNNDEV.ME is a registered domain which points to the loopback address of 127.0.0.1, so it will always resolve locally.</p>
-                            <p><b>Administrators:</b> If setting up a live website, use your website's domain.</p>
+                            <p><ph outputclass="audience-dev audience-dsg">Developers and Designers:</ph> If setting up a local development environment, you can use <codeph>www.dnndev.me</codeph> (or any subdomain). DNNDEV.ME is a registered domain which points to the loopback address of 127.0.0.1, so it will always resolve locally.</p>
+                            <p><ph outputclass="audience-adm">Administrators:</ph> If setting up a live website, use your website's domain.</p>
                             <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-7.png"><alt>For local, use www.dnndev.me.</alt></image>
                         </info>
                     </substep>

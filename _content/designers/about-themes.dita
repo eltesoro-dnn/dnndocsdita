@@ -20,7 +20,7 @@
         <section id="components">
             <title> Components of a Theme </title>
 
-            <p>A DNN <b>theme</b> (formerly called a <b>skin</b>) defines the look and feel of the website. It is comprised of:</p>
+            <p>A DNN <term>theme</term> (formerly called a <term>skin</term>) defines the look and feel of the website. It is comprised of:</p>
             <ul>
                 <li> one or more layout templates (HTML or ASCX)</li>
                 <li> (optional) a style sheet (CSS) for each of the layout templates</li>

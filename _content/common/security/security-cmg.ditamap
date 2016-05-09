@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/map.dtd">
+<map xml:lang="en" id="map-security-cmg">
+
+    <title>Security</title>
+
+    <!-- Topics -->
+    <topicref format="dita" type="topic" navtitle="Security" toc="yes" href="security.dita" copy-to="index.dita" collection-type="family">
+
+        <topicref format="dita" type="topic" toc="yes" href="user-accounts/about-user-accounts.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="roles/about-role-based-access.dita" />
+
+    </topicref>
+
+</map>

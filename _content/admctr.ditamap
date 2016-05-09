@@ -37,26 +37,23 @@
         <!-- Security -->
         <mapref href="administrators/security/security-adm.ditamap" />
 
-        <!-- Local references -->
+		<!-- Building Your Site -->
+		<mapref href="administrators/building-your-site/building-your-site-from-pages-menu.ditamap" />
+
+        <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="administrators/administrator-references.dita" collection-type="family">
+            <topicref format="dita" type="topic"     toc="yes" href="administrators/providers.dita" />
             <mapref href="administrators/included-modules/included-modules-adm.ditamap" />
                 <!-- <topicref format="dita" type="reference" toc="yes" href="administrators/included-modules/included-modules.dita" /> -->
-            <topicref format="html" scope="external" navtitle="Online User Guide" toc="yes" href="http://www.dnnsoftware.com/help" />
-        <!--
-            DNN 8.0 User Guide
-            Evoq 8.x User Guide
-            Security Guide
-            Web Farm Configuration Guide
-            Performance Tuning
-        -->
-        </topicref>
 
-        <!-- Important global references -->
-        <topicref format="dita" type="reference" toc="yes" href="administrators/product-versions.dita" />
-        <topicref format="dita" type="reference" toc="yes" href="administrators/dnn-license.dita" />
-        <topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="administrators/glossary.dita" >
-            <mapref href="common/glossary/glossary.ditamap" />
-        </topichead>
+			<topicref format="dita" type="reference" toc="yes" href="administrators/product-versions.dita" />
+			<topicref format="dita" type="reference" toc="yes" href="administrators/dnn-license.dita" />
+			<topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="administrators/glossary.dita" >
+				<mapref href="common/glossary/glossary.ditamap" />
+			</topichead>
+
+            <topicref format="dita" type="topic" toc="yes" href="administrators/more-resources.dita" />
+        </topicref>
 
     </topicref>
 
@@ -70,7 +67,7 @@
         </relheader>
 
 
-        <!-- adm dev dsg -->
+        <!-- adm dev dsg cmg -->
         <relrow>
             <relcell>
                 <topicref format="dita" type="concept"   href="administrators/dnn-platform-overview.dita" />
@@ -94,6 +91,24 @@
                 <topicref format="dita" type="reference" href="administrators/requirements.dita" />
             </relcell>
         </relrow>
+
+        <!-- adm -->
+		<relrow>
+			<relcell>
+				<topicref format="dita" type="conceptual" href="administrators/building-your-site/building-your-site.dita" />
+				<topicref format="dita" type="reference" href="administrators/security/roles/about-role-based-access.dita" />
+			</relcell>
+			<relcell/>
+			<relcell/>
+		</relrow>
+
+        <!-- adm -->
+		<relrow>
+			<relcell><topicref format="dita" type="task" toc="yes" href="administrators/building-your-site/add-module-to-page-from-pages-menu.dita" />
+			</relcell>
+			<relcell/>
+			<relcell><topicref format="dita" type="reference" href="administrators/included-modules/included-modules.dita" /></relcell>
+		</relrow>
 
     </reltable>
 

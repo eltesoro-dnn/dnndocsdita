@@ -39,7 +39,7 @@
             <!-- <topicref format="dita" type="task" href="designers/creating-themes/test-theme.dita" /> Topic not ready. -->
         </topicref>
 
-        <!-- Local references -->
+        <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="designers/designer-references.dita" collection-type="family">
             <topicref format="dita" type="reference" toc="yes" href="designers/theme-objects.dita" />
             <topicref format="dita" type="reference" toc="yes" href="designers/extensions/dnn-manifest-schema.dita" />
@@ -47,14 +47,15 @@
                 <!-- <topicref format="dita" type="reference" toc="yes" href="administrators/included-modules/included-modules.dita" /> -->
             <topicref format="html" scope="external" navtitle="DNN UX Guide"        toc="yes" href="http://uxguide.dnnsoftware.com/" />
             <!-- <topicref format="dita" type="reference" toc="yes" href="designers/contents-theme-pack.dita" /> Topic not ready. -->
-        </topicref>
 
-        <!-- Important global references -->
-        <topicref format="dita" type="reference" toc="yes" href="designers/product-versions.dita" />
-        <topicref format="dita" type="reference" toc="yes" href="designers/dnn-license.dita" />
-        <topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="designers/glossary.dita" >
-            <mapref href="common/glossary/glossary.ditamap" />
-        </topichead>
+			<topicref format="dita" type="reference" toc="yes" href="designers/product-versions.dita" />
+			<topicref format="dita" type="reference" toc="yes" href="designers/dnn-license.dita" />
+			<topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="designers/glossary.dita" >
+				<mapref href="common/glossary/glossary.ditamap" />
+			</topichead>
+
+			<topicref format="dita" type="topic" toc="yes" href="designers/more-resources.dita" />
+        </topicref>
 
     </topicref>
 
@@ -67,7 +68,7 @@
             <relcolspec type="reference"/>
         </relheader>
 
-        <!-- adm dev dsg -->
+        <!-- adm dev dsg cmg -->
         <relrow>
             <relcell>
                 <topicref format="dita" type="concept"   href="designers/dnn-platform-overview.dita" />

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="bptext-pages-steps-pb">
+
+    <title>Boilerplates - Pages (Persona Bar) Steps</title>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+    </prolog>
+
+    <taskbody>
+
+        <steps>
+
+			<!-- PERSONA BAR (PB) - PAGES - ADD, EDIT -->
+
+			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-gotopagemgmt"><cmd/></step> -->
+			<step id="step-pb-gotopagemgmt">
+				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Manage</uicontrol> <uicontrol>Pages</uicontrol></menucascade>.</cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarManage-Pages.png"><alt>Persona Bar - Manage - Pages</alt></image>
+				</info>
+            </step>
+
+			<!--
+			<step><cmd>Open the page to edit.</cmd></step>
+			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-editpagepersonabar"><cmd/></step>
+			-->
+			<step id="step-pb-editpagepersonabar">
+				<cmd>In the <wintitle>Persona Bar</wintitle>, click/tap the Edit/pencil icon.</cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarEdit.png"><alt>Persona Bar - Edit</alt></image>
+				</info>
+			</step>
+
+			<!--
+			Not used.
+			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-editpagepagemgmt"><cmd/></step>
+			<step id="step-pb-editpagepagemgmt">
+				<cmd>In the <wintitle>Page Management</wintitle> page, hover over the page to edit, then click/tap the pencil icon.</cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageManagement-Edit.png"><alt>Page Management - Edit</alt></image>
+				</info>
+			</step>
+			-->
+
+			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-gearicon"><cmd/></step> -->
+			<step id="step-pb-gearicon">
+				<cmd>In the <wintitle>Page Management</wintitle> page, hover over the page to configure, then click/tap the gear icon.</cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageManagement-Configure.png"><alt>Page Management - Edit</alt></image>
+				</info>
+			</step>
+
+			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-deletepage"><cmd/></step> -->
+			<step id="step-pb-deletepage">
+				<cmd>In the <wintitle>Page Management</wintitle> page, hover over the page to delete, then click/tap the X icon.</cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageManagement-Delete.png"><alt>Page Management - Edit</alt></image>
+				</info>
+			</step>
+
+
+
+			<!--
+			<cmd conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/cmd-pb-configurepage"></cmd>
+			<info>
+				<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details.png"><alt>Add Page - Details</alt></image>
+				-OR-
+				<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-ConfigPage-Details.png"><alt>Configure Page - Details</alt></image>
+				<simpletable conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/simpletable-pb-configurepage"><strow/></simpletable>
+			</info>
+			-->
+            <step>
+				<!-- <cmd conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/cmd-pb-configurepage"></cmd> -->
+            	<cmd>In the <uicontrol>Details</uicontrol> tab, configure the page.</cmd>
+				<info>
+
+					<!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details.png"><alt>Add Page - Details</alt></image> -->
+					<!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-ConfigPage-Details.png"><alt>Configure Page - Details</alt></image> -->
+
+					<!-- <simpletable conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/simpletable-pb-configurepage"><strow/></simpletable> -->
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry>Field</stentry>
+							<stentry>Description</stentry>
+						</sthead>
+						<strow>
+							<stentry>Name</stentry>
+							<stentry>Required. Name for the page.</stentry>
+						</strow>
+						<strow>
+							<stentry>Title</stentry>
+							<stentry>Displayed as the browser window's title.</stentry>
+						</strow>
+						<strow>
+							<stentry>URL</stentry>
+							<stentry>URL for the page.</stentry>
+						</strow>
+						<strow>
+							<stentry>Keywords</stentry>
+							<stentry>Comma-separated keywords that can be used by search engines to help index your site's pages.</stentry>
+						</strow>
+						<strow>
+							<stentry>Tags</stentry>
+							<stentry>Predefined tags that you can choose from the dropdown.</stentry>
+						</strow>
+
+						<strow>
+							<stentry>Workflow</stentry>
+							<stentry>Predefined workflow states that you can choose from the dropdown.</stentry>
+						</strow>
+						<strow>
+							<stentry>Display in Menu</stentry>
+							<stentry>If enabled, the page is included in the main navigation menu. If the page is not included in the navigation menu, you can still link to it using its URL.</stentry>
+						</strow>
+						<strow>
+							<stentry>Link Tracking</stentry>
+							<stentry>If enabled, </stentry>
+						</strow>
+						<strow>
+							<stentry>Enable Scheduling</stentry>
+							<stentry>
+								<p>If enabled, the <uicontrol>Start Date</uicontrol> and <uicontrol>End Date</uicontrol> buttons appear below the switch. Click/Tap on either button to set the dates and times.</p>
+								<ul conref="../bptext.dita#bptext/ul-publisheddates"><li/></ul>
+								<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details-Calendar.png"><alt>Add Page - Details - Calendar</alt></image>
+							</stentry>
+						</strow>
+						<strow>
+							<stentry>Page Template</stentry>
+							<stentry>Required. The template layouts are defined by the theme used in the site.</stentry>
+						</strow>
+					</simpletable>
+				</info>
+            </step>
+
+
+
+			<!-- MODULES - ADD, EDIT -->
+
+			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-openmodulelist"><cmd/></step> -->
+			<step id="step-pb-openmodulelist">
+                <cmd>In the <uicontrol>Edit Bar</uicontrol>, click/tap the <uicontrol>Add Module</uicontrol> icon.</cmd>
+                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-EditBar-AddModule.png"><alt>Edit Bar - Add Module</alt></image></info>
+			</step>
+
+			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-addmoduletopane"><cmd/></step> -->
+			<step id="step-pb-addmoduletopane">
+				<cmd>Add the module to a pane in the current page.</cmd>
+				<substeps>
+					<substep>
+						<cmd>Hover over the module to expose the <uicontrol>Bookmark</uicontrol> and <uicontrol>Add</uicontrol> icons.</cmd>
+						<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-ModulesList-AddToPage.png"><alt>Module List - Hover to highlight the module.</alt></image></info>
+					</substep>
+					<substep><cmd>Click/Tap the <uicontrol>Add</uicontrol> (<uicontrol>+</uicontrol>) icon.</cmd></substep>
+					<substep>
+						<cmd>Drag the floating module box to the target pane.</cmd>
+						<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-ModulesList-GrabAndPosition.png"><alt>Module - Drag the floating module box to the target pane.</alt></image></info>
+					</substep>
+				</substeps>
+			</step>
+
+        </steps>
+
+    </taskbody>
+
+</task>

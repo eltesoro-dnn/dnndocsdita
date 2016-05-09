@@ -46,23 +46,24 @@
         <!-- Security -->
         <mapref href="developers/security/security-dev.ditamap" />
 
-        <!-- Local references -->
+        <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="developers/developer-references.dita" collection-type="family">
             <topicref format="dita" type="topic"     toc="yes" href="developers/providers.dita" />
             <topicref format="dita" type="concept"   toc="yes" href="developers/about-evs.dita" />
             <!-- <topicref format="dita" type="reference" toc="yes" href="developers/contents-module-pack.dita" /> Topic not ready. -->
             <topicref format="dita" type="reference" toc="yes" href="developers/extensions/dnn-manifest-schema.dita" />
             <mapref href="developers/included-modules/included-modules-dev.ditamap" />
-                <!-- <topicref format="dita" type="reference" toc="yes" href="administrators/included-modules/included-modules.dita" /> -->
+                <!-- <topicref format="dita" type="reference" toc="yes" href="developers/included-modules/included-modules.dita" /> -->
             <topicref format="html" scope="external" navtitle="DNN API Reference" toc="yes" href="http://www.dnnsoftware.com/dnn-api/" />
-        </topicref>
 
-        <!-- Important global references -->
-        <topicref format="dita" type="reference" toc="yes" href="developers/product-versions.dita" />
-        <topicref format="dita" type="reference" toc="yes" href="developers/dnn-license.dita" />
-        <topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="developers/glossary.dita" >
-            <mapref href="common/glossary/glossary.ditamap" />
-        </topichead>
+			<topicref format="dita" type="reference" toc="yes" href="developers/product-versions.dita" />
+			<topicref format="dita" type="reference" toc="yes" href="developers/dnn-license.dita" />
+			<topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="developers/glossary.dita" >
+				<mapref href="common/glossary/glossary.ditamap" />
+			</topichead>
+
+			<topicref format="dita" type="topic" toc="yes" href="developers/more-resources.dita" />
+        </topicref>
 
     </topicref>
 
@@ -75,7 +76,7 @@
             <relcolspec type="reference"/>
         </relheader>
 
-        <!-- adm dev dsg -->
+        <!-- adm dev dsg cmg -->
         <relrow>
             <relcell>
                 <topicref format="dita" type="concept"   href="developers/dnn-platform-overview.dita" />

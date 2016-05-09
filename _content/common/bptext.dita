@@ -62,6 +62,47 @@
         <note type="tip" id="note-TipSkinningTool"><xref type="html" scope="external" href="http://www.10poundgorilla.com/">10 Pound Gorilla</xref>'s <xref scope="external" href="http://www.10poundgorilla.com/DNN/Skinning-Tool">Skinning Tool</xref> is both a reference and a tool that customizes the code for DNN theme objects, based on the attribute values you specify.</note>
 
 
+        <!-- ==================== Page Settings ==================== -->
+
+		<!-- <ul conref="../../common/bptext.dita#bptext/ul-publisheddates"><li/></ul> -->
+		<ul id="ul-publisheddates">
+			<li>The page is published after the specified start date. If <uicontrol>Start Date</uicontrol> is not set, the page is published immediately.</li>
+			<li>The page is hidden after the specified end date. If <uicontrol>End Date</uicontrol> is not set, the page is visible indefinitely.</li>
+		</ul>
+
+		<!-- <p conref="../../common/bptext.dita#bptext/p-AddPageLinkType"></p> -->
+		<p id="p-AddPageLinkType">
+			<uicontrol>Link Type</uicontrol>
+			<ul>
+				<li><uicontrol>None</uicontrol> creates a new page and adds it to the site's navigation.</li>
+				<li><uicontrol>URL</uicontrol> creates a navigation link to an external resource outside the site. Add a new URL in <uicontrol>Location</uicontrol> or select from the dropdown list of previously entered URLs.</li>
+				<li><uicontrol>Page</uicontrol> creates a navigation link to a page in the same site. Choose the page from the <uicontrol>Page</uicontrol> dropdown.</li>
+				<li><uicontrol>File</uicontrol> creates a navigation link to a file in the same site. Choose a file that is already on your site or upload a file.</li>
+			</ul>
+		</p>
+
+		<ul>
+			<!-- <li conref="../../common/bptext.dita#bptext/li-AddPageChooseSiteFile"></li> -->
+			<li id="li-AddPageChooseSiteFile">
+				To choose a file that is already on your site,
+				<ul>
+					<li>Select <uicontrol>File (A File on Your Site)</uicontrol>.</li>
+					<li>Choose the <uicontrol>Folder</uicontrol> where the file can be found.</li>
+					<li>Choose the <uicontrol>File</uicontrol>.</li>
+				</ul>
+			</li>
+			<!-- <li conref="../../common/bptext.dita#bptext/li-AddPageUploadFile"></li> -->
+			<li id="li-AddPageUploadFile">
+				To upload a file to your site,
+				<ul>
+					<li>Choose the <uicontrol>Folder</uicontrol> where the file should be stored.</li>
+					<li>Drag and drop the files from your local drive to the <uicontrol>Drop File(s) Here</uicontrol> box.</li>
+					<li>Click/Tap <uicontrol>Upload File</uicontrol>.</li>
+				</ul>
+			</li>
+		</ul>
+
+
         <!-- ==================== Misc ==================== -->
 
         <p>
@@ -93,4 +134,3 @@
     </body>
 
 </topic>
-

@@ -138,7 +138,7 @@
             <p>DNN's default concrete data provider is the SQL Data Provider, which requires these UTF-8 files:
                 <ul>
                     <li><filepath>xx.xx.xx.sqldataprovider</filepath> is a script executed during module/core installation/upgrade to modify the objectQualifier and databaseOwner settings. The <filepath>xx.xx.xx</filepath> portion of the filename is the script version. <note type="note">DNN 8+ supports incremental scripts.</note> </li>
-                    <li><filepath>uninstall.sqldataprovider</filepath> includes all of the module's SQL stored procedures, functions, views, and tables to be removed from the data store when the module is uninstalled. <b>Developers:</b> Always check if an item exists before removing it.</li>
+                    <li><filepath>uninstall.sqldataprovider</filepath> includes all of the module's SQL stored procedures, functions, views, and tables to be removed from the data store when the module is uninstalled. <ph outputclass="audience-dev">Developers:</ph> Always check if an item exists before removing it.</li>
                 </ul>
             </p>
         </section>
@@ -177,8 +177,8 @@
             </p>
             <p>A <b>folder mapping</b> or <b>folder type</b> is an implementation of a folder provider for a specific storage system. A folder mapping can have its own settings, and it can be prioritized in case of collisions during synchronization.</p>
             <ul>
-                <li><b>Administrators:</b> You can choose and configure the folder types you allow in the DNN installation (host) or in a specific website (administrator).</li>
-                <li><b>Developers:</b> To create a folder provider,
+                <li><ph outputclass="audience-adm">Administrators:</ph> You can choose and configure the folder types you allow in the DNN installation (host) or in a specific website (administrator).</li>
+                <li><ph outputclass="audience-dev">Developers:</ph> To create a folder provider,
                     <ol>
                         <li>Implement the abstract methods inherited from the <apiname>FolderProvider</apiname> class.</li>
                         <li>Provide a <b>Settings</b> control that inherits from the <apiname>FolderMappingSettingsControlBase</apiname> class.</li>

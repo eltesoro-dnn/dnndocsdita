@@ -68,8 +68,8 @@ body {
   height: 100%;     /* Required or else the footer floats. */
   width: 100%;      /* Required or else the footer is too short. */
   position: absolute;   /* Required or else the footer floats. */
-  background-color: #b3b3b3;
-}
+/*  background-color: #b3b3b3;
+*/}
 body#index {
   background-color: white;
 }
@@ -90,6 +90,7 @@ article[role="article"] {
   min-height: 82vh;
   margin-left: 302px;
   background-color: white;
+  border-left: 2px solid #b3b3b3;
 }
 article[role="articleHome"] {
   display: block;
@@ -114,27 +115,22 @@ nav[role="toc"] {
   float: left;
   position: absolute;
   width: 300px;
-  height: auto;
+  height: 100%;
   font-size: 100%;
   transition: all 0.5s ease;
   top: 102px; /* 127px; */
 }
 nav[role="toc"] ul {
-  margin: 0;
-  padding: 2px;
-  position: relative;
-  z-index: 8000;
-  overflow: hidden;
 }
-nav[role="toc"] > ul {
+/*nav[role="toc"] > ul {
   border-right: 2px solid #b3b3b3;
 }
-nav[role="toc"] li {
+*/nav[role="toc"] li {
   display: block;
   float: left;
   width: 97%;
-  margin: 2px 2px 2px 0px;
-  padding-left: 20px;
+/*  margin: 2px 2px 2px 0px;
+*/  padding-left: 20px;
   border-left: 2px block #0d8dbf;
   color: #787878;
   background: #f4f4f4;
@@ -143,11 +139,13 @@ nav[role="toc"] li {
 }
 nav[role="toc"] > ul { /* using the first ul as background block */
   margin: 0;
-  padding: 0 0 15px 0;  /* approxheaderheight randomrightmargin approxfooterheight approxsidebarwidth */
+  padding: 0 2px 15px 0;  /* approxheaderheight randomrightmargin approxfooterheight approxsidebarwidth */
   width: 100%;
   height: 100%;
   overflow: hidden;
   background: white;
+  position: relative;
+  z-index: 8000;
 }
 nav[role="toc"] > ul > li {
   border: 0;
@@ -483,6 +481,7 @@ main:after {
   margin-bottom: 1pc; /* 1em; */
   border-bottom: 4px solid;
   padding-bottom: 15px;
+  margin-top: 10px;
 }
 .breadcrumbs a {
   text-transform: capitalize;
@@ -793,7 +792,7 @@ nav[role="toc"] > ul >li > ul > li {
   display: inline-block;
   border-left: 1px solid #b3b3b3;
   padding-top: 5px;
-  padding-bottom: 5px;
+  padding-bottom: 3px;
 }
 nav[role="toc"] > ul >li > ul > li > a {
   margin-left: -10px;
@@ -804,7 +803,7 @@ nav[role="toc"] > ul >li > ul > li:first-child {
 }
 nav[role="toc"] > ul >li > ul {
   overflow: hidden;
-  margin-left: -20px;
+  margin-left: -56px;
   height: 100%;
   width: 100%;
   padding-bottom: 15px;
@@ -893,7 +892,7 @@ li#header-askq {
 }
 #header-askq:after {
   position: absolute;
-  top: 17px;
+  top: 14px;
   right: 6px;
   width: 8px;
   height: 2px;
@@ -903,7 +902,7 @@ li#header-askq {
 }
 #header-askq:before  {
   position: absolute;
-  top: 14px;
+  top: 11px;
   right: 9px;
   display: block;
   width: 2px;
@@ -955,6 +954,7 @@ li.sub-nav-tabs {
   background-color: #f4f4f4!important;
   padding-bottom: 3px;
   padding-top: 3px;
+  margin-left: -50px;
 }
 li.sub-nav-tabs:hover {
   background-color: #dbeef4!important;
@@ -962,9 +962,6 @@ li.sub-nav-tabs:hover {
 nav[role="toc"] > ul > li > ul > li > ul {
   background-color: #f4f4f4!important;
   margin-left: -25px;
-  margin-bottom: -15px;
-  padding-bottom: 15px;
-  padding-top: 10px;
 }
 nav[role="toc"] > ul > li > ul > li > ul > li > a {
   margin-left: 25px;
@@ -1139,11 +1136,7 @@ article[role="articleHome"] {
   top: 2px;
   margin-right: 4px;
 }
-/*main[role="main-index"] {
-  margin-bottom: 0;
-  min-height: 0!important;
-}
-*/.footer-index {
+.footer-index {
   bottom: 0;
 }
 ul.ullinks {
@@ -1155,6 +1148,12 @@ ul.ullinks {
 }
 span.importanttitle {
   color: red!important;
+}
+
+img.img-icon {
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 35px;
 }
 
 /* SEARCH BOX STYLES */
@@ -1272,9 +1271,9 @@ tbody {
   }
   nav[role="hamburger-home"] > ul > li.has-sub > span:after {
     position: absolute;
-    top: 14px; /* 39px; */
-    right: 36px;
-    width: 8px;
+    top: 39px;
+    right: 32px;
+    width: 16px;
     height: 2px;
     display: block;
     background: #337ab7;
@@ -1282,11 +1281,11 @@ tbody {
   }
   nav[role="hamburger-home"] > ul > li.has-sub > span:before {
     position: absolute;
-    top: 11px; /* 36px; */
+    top: 33px;
     right: 39px;
     display: block;
     width: 2px;
-    height: 8px;
+    height: 16px;
     background: #337ab7;
     content: '';
     -webkit-transition: all .25s ease;
@@ -1296,7 +1295,7 @@ tbody {
     transition: all .25s ease;
   }
   nav[role="hamburger-home"] > ul > li.has-sub:hover > span:before {
-    top: 15px; /* 40px; */
+    top: 40px;
     height: 0;
   }
   nav[role="hamburger-home"] ul ul {
@@ -1322,7 +1321,7 @@ tbody {
     right: 0;
   }
   nav[role="hamburger-home"] li:hover > ul > li {
-    height: 15px; /* 35px; */
+    height: 35px;
   }
   nav[role="hamburger-home"] ul ul ul {
     margin-left: 100%;
@@ -1333,8 +1332,8 @@ tbody {
     margin-right: 100%;
   }
   nav[role="hamburger-home"] ul ul li a {
-    padding: 5px 15px; /* 30px 15px; */
-    width: 50px; /* 170px; */
+    padding: 30px 15px;
+    width: 50px;
     font-size: 14px;
     text-decoration: none;
     color: white;
@@ -1366,11 +1365,11 @@ tbody {
   }
   nav[role="hamburger-home"] ul ul li.has-sub > a:before {
     position: absolute;
-    top: 2px; /* 13px; */
+    top: 2px;
     right: 14px;
     display: block;
     width: 2px;
-    height: 6px; /* 8px; */
+    height: 6px;
     background: #337ab7;
     content: '';
     -webkit-transition: all .25s ease;
@@ -1384,14 +1383,14 @@ tbody {
     left: 14px;
   }
   nav[role="hamburger-home"] ul ul > li.has-sub:hover > a:before {
-    top: 10px; /* 17px; */
+    top: 10px;
     height: 0;
   }
   nav[role="hamburger-home"] {
     width: 50px;
     position: fixed;
     right: 15px;
-    top: 10px; /* 17px; */
+    top: 8px;
   }
   nav[role="hamburger-home"] ul {
     display: none;
@@ -1400,7 +1399,7 @@ tbody {
     width: 100%;
     border-top: 1px solid #888;
     border-bottom: 1px solid #888;
-    margin-top: 8px; /* 13px; */
+    margin-top: 4px;
   }
   nav[role="hamburger-home"].align-center > ul {
     text-align: left;
@@ -1467,39 +1466,39 @@ tbody {
   }
   nav[role="hamburger-home"] #menu-button {
     display: block;
-    padding: 15px; /* 17px; */
+    padding: 15px;
     color: #dddddd;
     cursor: pointer;
     font-size: 12px;
     text-transform: uppercase;
     font-weight: 700;
-    padding-bottom: 23px; /* 25px; */
+    padding-bottom: 25px;
   }
   nav[role="hamburger-home"] #menu-button:after {
     position: absolute;
-    top: 35%; /* 22px; */
-    width: 100%; /* right: 15px; */
+    top: 35%;
+    width: 100%;
     display: block;
-    height: 9px; /* 4px; */
+    height: 9px;
     width: 20px;
-    border-top: 3px solid #dddddd; /* 2px solid #dddddd; */
-    border-bottom: 3px solid #dddddd; /* 2px solid #dddddd; */
+    border-top: 3px solid #dddddd;
+    border-bottom: 3px solid #dddddd;
     content: '';
   }
   nav[role="hamburger-home"] #menu-button:before {
     position: absolute;
-    top: 50%; /* 20px; */
-    width: 100%; /* right: 15px; */
+    top: 50%;
+    width: 100%;
     display: block;
-    height: 3px; /* 2px; */
+    height: 3px;
     width: 20px;
     background: #dddddd;
     content: '';
   }
   nav[role="hamburger-home"] #menu-button.menu-opened:after {
-    top: 50%; /* 21px; */
+    top: 50%;
     border: 0;
-    height: 3px; /* 2px; */
+    height: 3px;
     width: 15px;
     background: #ffffff;
     -webkit-transform: rotate(45deg);
@@ -1510,7 +1509,7 @@ tbody {
     right: 18px;
   }
   nav[role="hamburger-home"] #menu-button.menu-opened:before {
-    top: 50%; /* 21px; */
+    top: 50%;
     background: #ffffff;
     width: 15px;
     -webkit-transform: rotate(-45deg);
@@ -1552,25 +1551,39 @@ tbody {
     top: 15px;
     right: 13px;
   }
+  nav[role="hamburger-home"] .submenu-button:after {
+      position: absolute;
+      top: 22px;
+      right: 19px;
+      width: 8px;
+      height: 2px;
+      display: block;
+      background: #dddddd;
+      content: '';
+  }
+  nav[role="hamburger-home"] ul ul .submenu-button:after {
+      top: 15px;
+      right: 13px;
+  }
   nav[role="hamburger-home"] .submenu-button.submenu-opened:after {
-    background: #ffffff;
+      background: #ffffff;
   }
   nav[role="hamburger-home"] .submenu-button:before {
-    position: absolute;
-    top: 19px;
-    right: 22px;
-    display: block;
-    width: 2px;
-    height: 8px;
-    background: #dddddd;
-    content: '';
+      position: absolute;
+      top: 19px;
+      right: 22px;
+      display: block;
+      width: 2px;
+      height: 8px;
+      background: #dddddd;
+      content: '';
   }
   nav[role="hamburger-home"] ul ul .submenu-button:before {
-    top: 12px;
-    right: 16px;
+      top: 12px;
+      right: 16px;
   }
   nav[role="hamburger-home"] .submenu-button.submenu-opened:before {
-    display: none;
+      display: none;
   }
 }
 
@@ -1599,6 +1612,7 @@ and (orientation : portrait) {
   }
   nav[role="hamburger-home"] {
     width: 65px;
+    top: 14px;
   }
   nav[role="hamburger-home"] #menu-button {
     padding: 30px;
@@ -1608,19 +1622,23 @@ and (orientation : portrait) {
   }
   nav[role="hamburger-home"] #menu-button:before {
     height: 4px;
+    left: 15px;
+    top: 30%;
   }
   nav[role="hamburger-home"] #menu-button:after {
     height: 8px;
-    top: 28px;
+    top: 31px;
     border-top: 4px solid #dddddd;
     border-bottom: 4px solid #dddddd;
+    left: 15px;
   }
   nav[role="hamburger-home"] #menu-button.menu-opened:after {
     height: 4px;
   }
   nav[role="hamburger-home"] #menu-button.menu-opened:before, nav[role="hamburger-home"] #menu-button.menu-opened:after {
-    top: 28px;
+    top: 30px;
     width: 30px;
+    left: 18px;
   }
   .header-nav {
     top: 87px;
@@ -1672,6 +1690,12 @@ and (orientation : portrait) {
   .page-link span {
     color: #337ab7;
   }
+  .header-logo-wrapper{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+
 }
 
 /* Custom, iPhone Retina */
@@ -1763,12 +1787,12 @@ and (orientation : portrait) {
   #header-subnav-documentation,  #header-askq > ul, .sibling-sites {
     position: absolute;
     top: 26px;
-    padding-top: 24px;
+    padding-top: 9px;
     width: 300px;
     margin-left: -90px;
   }
   #header-askq > ul {
-    margin-left: -120px;
+    margin-left: -150px;
   }
   #header-subnav-documentation li, #header-askq li, .sibling-sites li {
     text-align: center;
@@ -1846,8 +1870,8 @@ and (orientation : portrait) {
     display: inline-block;
   }
   .subctr.active {
-    border-bottom: 8px solid; /* 4px solid #337ab7; */
-    padding-bottom: 5px; /* 17px; */
+    border-bottom: 6px solid; /* 4px solid #337ab7; */
+    padding-bottom: 4px; /* 17px; */
   }
   .subctr.admctr {
     border-color: #9daa12;
@@ -1899,4 +1923,12 @@ and (orientation : portrait) {
   .searchbox {
     display: inline-block;
   }
+}
+
+.sub-nav-tabs:first-child {
+  padding-top: 15px;
+}
+.sub-nav-tabs:last-child {
+  padding-bottom: 20px;
+  margin-bottom: -5px;
 }

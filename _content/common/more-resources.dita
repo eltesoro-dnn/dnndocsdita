@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-MoreResources">
+
+    <title>More Resources</title>
+    <titlealts>
+        <navtitle>More Resources</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,tr,ce,1605</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" />
+            <audience type="programmer" />
+            <audience type="other" othertype="designer" />
+            <audience type="other" othertype="content manager" />
+            <prodinfo><prodname>Platform</prodname></prodinfo>
+            <prodinfo><prodname>Evoq Content</prodname></prodinfo>
+            <prodinfo><prodname>Evoq Engage</prodname></prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section>
+			<title>Hosts, Administrators, Content Managers, and Content Editors</title>
+
+			<ul>
+				<li><xref format="html" scope="external" href="http://www.dnnsoftware.com/help">Online Help</xref></li>
+				<li>DNN Evoq manuals:
+					<ul>
+						<!-- Source: http://www.dnnsoftware.com/services/customer-support/success-network/software-downloads -->
+						<li><xref format="pdf" scope="external" href="http://www.dnnsoftware.com/Portals/0/DnnManuals/Evoq_Content_8_4_0_User_Manual.pdf">Evoq Content 8.4 manual (pdf)</xref></li>
+						<li><xref format="pdf" scope="external" href="http://www.dnnsoftware.com/Portals/0/DnnManuals/Evoq_Engage_8_4_0_User_Manual.pdf">Evoq Engage 8.4 manual (pdf)</xref></li>
+					</ul>
+				</li>
+				<li><xref format="html" scope="external" href="http://www.dnnsoftware.com/community/download/manuals">Older manuals for DNN Platform</xref></li>
+			</ul>
+		</section>
+
+
+		<section>
+			<title>Developers, Designers, and Other Extension Creators</title>
+
+			<ul>
+				<li><xref format="html" scope="external" href="http://www.dnnsoftware.com/wiki">Wiki</xref></li>
+				<li><xref format="html" scope="external" href="http://www.dnnsoftware.com/community">Community</xref></li>
+			</ul>
+		</section>
+
+        <!--
+            DNN Platform 8.0 User Guide
+            Security Guide
+            Web Farm Configuration Guide
+            Performance Tuning
+        -->
+
+    </body>
+
+</topic>

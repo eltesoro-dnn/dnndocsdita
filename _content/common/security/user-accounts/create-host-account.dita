@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-AddUserAccount">
+<task xml:lang="en" id="tsk-CreateHostAccount">
 
-    <title>Add a User Account</title>
+    <title>Create a Host Account</title>
     <titlealts>
-        <navtitle>Add a User</navtitle>
+        <navtitle>Create a Host</navtitle>
     </titlealts>
 
 
@@ -34,14 +34,23 @@
 
     <taskbody>
 
+        <section>
+            <p><ph conref="bptext-userssteps.dita#bptext-userssteps/ph-hostfullperms"></ph></p>
+            <note type="warning">
+                <p><ph conref="bptext-userssteps.dita#bptext-userssteps/ph-hostscandemote"></ph></p>
+                <p><ph conref="bptext-userssteps.dita#bptext-userssteps/ph-hostcannotbedemoted"></ph></p>
+            </note>
+        </section>
+
         <prereq>
             <ul>
-                <li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
+                <li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li>
             </ul>
         </prereq>
 
         <steps>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotoaddusers"><cmd/></step>
+            <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotohostacctlist"><cmd/></step>
+            <step conref="bptext-userssteps.dita#bptext-userssteps/step-clicktapaddnewuser"><cmd/></step>
             <step conref="bptext-userssteps.dita#bptext-userssteps/step-enteruserinfo"><cmd/></step>
         </steps>
 
