@@ -35,7 +35,7 @@
         </prereq>
 
         <steps>
-			<step conref="../../common/bptext-steps.dita#bptext-steps/step-createeditpage-cp"><cmd/></step>
+			<step conref="../../common/bptext-steps.dita#bptext-steps/step-createcopyeditpage-cp"><cmd/></step>
 
 			<step conref="../../common/building-your-site/bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step>
 

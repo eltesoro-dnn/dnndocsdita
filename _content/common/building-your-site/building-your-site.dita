@@ -35,11 +35,20 @@
     <body>
 
 		<section id="overview">
-			<p>DNN sites are built by adding one or more pages to the site and then adding <term>modules</term> to each page. Modules are a type of extensions that expand the functionality of DNN by displaying or generating content. Themes and containers control the appearance of the pages and modules, respectively. Other extensions control different aspects of DNN, such as security, caching, and user management.</p>
+			<p>Modules are a type of extensions that expand the functionality of DNN by displaying or generating content. Themes and containers are also added to the site to manage the appearance of the pages and modules, respectively. Other extensions control different aspects of DNN, such as security, caching, and user management.</p>
 
 			<p>The <xref format="dita" href="../included-modules/module-site-wizard.dita">Site Wizard</xref> is a quick way to configure the basic settings for a site, change the design, and apply a template.</p>
 
-			<p>Specific pages can be restricted to users in certain roles, such as subscribers.</p>
+			<p>To build a site,
+				<ol>
+					<li>Create, copy, or import one or more pages on the site.</li>
+					<li>Configure the permissions for the page. Specific pages can be restricted to users in certain roles, such as subscribers.</li>
+					<li>To each page, add one or more <term>modules</term>.</li>
+					<li>Configure the modules.</li>
+					<li>Add themes and containers.</li>
+					<li>Publish the pages.</li>
+				</ol>
+			</p>
 		</section>
 
 

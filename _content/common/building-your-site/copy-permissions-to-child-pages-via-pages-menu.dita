@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-DeletePageFromPersonaBar">
+<task xml:lang="en" id="tsk-CopyPermissionsToChildPagesViaPagesMenu">
 
-    <title>Delete a Page from the Persona Bar</title>
+    <title>Copy the Page's Permission Settings to Its Child Pages via the Pages Menu</title>
     <titlealts>
-        <navtitle>Delete Page</navtitle>
+        <navtitle>Copy Permissions to Child Pages</navtitle>
     </titlealts>
 
 
@@ -35,13 +35,21 @@
     <taskbody>
 
 		<section>
-			<p>The <uicontrol>Persona Bar</uicontrol> is visible to <term>content managers</term>. See <xref format="dita" scope="peer" href="../../administrators/building-your-site/delete-page-from-pages-menu.dita">Delete a Page from the Pages Menu</xref> as an <term>administrator</term>.</p>
+			<p>The <uicontrol>Pages</uicontrol> menu is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/copy-permissions-to-child-pages-via-persona-bar.dita">Copy the Page's Permission Settings to Its Child Pages via the Persona Bar</xref> as a content manager.</p>
 		</section>
 
         <steps>
-			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-gotopagemgmt"><cmd/></step>
-			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-deletepage"><cmd/></step>
-			<step><cmd>Confirm the deletion.</cmd></step>
+            <step><cmd>View the parent page.</cmd></step>
+
+			<step>
+				<cmd>Go to <menucascade><uicontrol>Pages</uicontrol> <uicontrol>Copy Permissions to Children</uicontrol></menucascade></cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuPagesCopyPerms.png"><alt>Pages - Copy Permissions to Children</alt></image>
+				</info>
+			</step>
+
+			<step><cmd>Confirm.</cmd></step>
+
         </steps>
 
     </taskbody>

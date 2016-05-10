@@ -16,7 +16,7 @@
         <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="content-managers/dnn-platform-overview.dita" />
 
 		<!-- Building Your Site -->
-		<mapref href="content-managers/building-your-site/building-your-site-from-persona-bar.ditamap" />
+		<mapref href="content-managers/building-your-site/building-your-site-via-persona-bar.ditamap" />
 
         <!-- Security -->
         <mapref href="content-managers/security/security-cmg.ditamap" />
@@ -27,13 +27,13 @@
                 <!-- <topicref format="dita" type="reference" toc="yes" href="content-managers/included-modules/included-modules.dita" copy-to="content-managers/included-modules/index.dita"/> -->
 
 			<topicref format="dita" type="reference" toc="yes" href="content-managers/product-versions.dita" />
-			<topicref format="dita" type="reference" toc="yes" href="content-managers/dnn-license.dita" />
-			<topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="content-managers/glossary.dita" >
-				<mapref href="common/glossary/glossary.ditamap" />
-			</topichead>
+			<topicref format="dita" type="topic"     toc="yes" href="content-managers/dnn-license.dita" />
 
             <topicref format="dita" type="topic" toc="yes" href="content-managers/more-resources.dita" />
         </topicref>
+		<topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="content-managers/glossary.dita" >
+			<mapref href="common/glossary/glossary.ditamap" />
+		</topichead>
 
     </topicref>
 
@@ -61,8 +61,8 @@
         <!-- cmg -->
 		<relrow>
 			<relcell>
-				<topicref format="dita" type="conceptual" href="content-managers/building-your-site/building-your-site.dita" />
-				<topicref format="dita" type="reference" href="content-managers/security/roles/about-role-based-access.dita" />
+				<topicref format="dita" type="topic" href="content-managers/building-your-site/building-your-site.dita" />
+				<topicref format="dita" type="topic" href="content-managers/security/roles/about-role-based-access.dita" />
 			</relcell>
 			<relcell/>
 			<relcell/>
@@ -70,7 +70,7 @@
 
         <!-- cmg -->
 		<relrow>
-			<relcell><topicref format="dita" type="task" toc="yes" href="content-managers/building-your-site/add-module-to-page-from-pages-menu.dita" />
+			<relcell><topicref format="dita" type="task" toc="yes" href="content-managers/building-your-site/add-module-to-page-via-pages-menu.dita" />
 			</relcell>
 			<relcell/>
 			<relcell><topicref format="dita" type="reference" href="content-managers/included-modules/included-modules.dita" /></relcell>

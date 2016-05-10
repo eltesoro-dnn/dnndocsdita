@@ -24,10 +24,7 @@
 			<substeps conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/substeps-xx-configure-page-permissions"><substep><cmd/></substep></substeps>
 			-->
 			<step>
-				<!-- <cmd conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/cmd-xx-configure-page-permissions"></cmd> -->
 				<cmd id="cmd-xx-configure-page-permissions">(Optional) In the <uicontrol>Permissions</uicontrol> tab, configure which roles can do which actions on this page.</cmd>
-
-				<!-- <substeps conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/substeps-xx-configure-page-permissions"><substep><cmd/></substep></substeps> -->
 				<substeps id="substeps-xx-configure-page-permissions">
 					<substep><cmd>(Optional) To filter the displayed roles, select the role group from the <uicontrol> Filter By Group</uicontrol> dropdown.</cmd></substep>
 					<substep><cmd>(Optional) To add another role to the list, choose the additional role from the <uicontrol>Select Role</uicontrol> dropdown, and click <uicontrol>Add</uicontrol>.</cmd></substep>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-CreateCopyPageFromPagesMenu">
+<task xml:lang="en" id="tsk-CreatePageViaPagesMenu">
 
-    <title>Create or Copy a Page from the Pages Menu</title>
+    <title>Create a Page via the Pages Menu</title>
     <titlealts>
-        <navtitle>Create/Copy Page</navtitle>
+        <navtitle>Create Page</navtitle>
     </titlealts>
 
 
@@ -35,7 +35,7 @@
     <taskbody>
 
 		<section>
-			<p>The <uicontrol>Pages</uicontrol> menu is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/create-page-from-persona-bar.dita">Create a Page from the Persona Bar</xref> as a content manager.</p>
+			<p>The <uicontrol>Pages</uicontrol> menu is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/create-page-via-persona-bar.dita">Create a Page via the Persona Bar</xref> as a content manager.</p>
 		</section>
 
         <steps>
@@ -47,24 +47,8 @@
             </step>
 
 			<step>
-				<cmd>(Optional) In the <uicontrol>Copy Page</uicontrol> tab, copy an existing page to use as a starting point for the new page.</cmd>
-				<substeps>
-					<substep>
-						<cmd>Choose the page to copy from in the <uicontrol>Copy From Page</uicontrol> dropdown.</cmd>
-						<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-CopyPage.png"><alt>Add Page - CopyPage</alt></image></info>
-					</substep>
-					<substep>
-						<cmd>If the source page contains modules, select which modules to create, copy, or reference in the new page.</cmd>
-						<info>
-							<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-CopyPage-SpecifyModules.png"><alt>Add Page - CopyPage - Specify Modules</alt></image>
-							<ul>
-								<li><uicontrol>New</uicontrol> creates a new module instance with default settings.</li>
-								<li><uicontrol>Copy</uicontrol> creates a new module instance with the same settings as the module in the source page.</li>
-								<li><uicontrol>Reference</uicontrol> simply creates a link to the same module instance in the source page.</li>
-							</ul>
-						</info>
-					</substep>
-				</substeps>
+				<cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-cp-configure-page-copy-optional"></cmd>
+				<substeps conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/substeps-cp-configure-page-copy"><substep><cmd/></substep></substeps>
 			</step>
 
             <step>
@@ -84,7 +68,7 @@
 			</step>
 
 			<step>
-				<cmd conref="../bptext-steps.dita#bptext-steps/cmd-configure-page-advanced"></cmd>
+				<cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-configure-page-advanced"></cmd>
 				<info>
 					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings.png"><alt>Add Page - Advanced Settings</alt></image>
 					<table conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/table-page-properties"><tgroup cols="2"><colspec colnum="2"/><tbody><row><entry/><entry/></row></tbody></tgroup></table>

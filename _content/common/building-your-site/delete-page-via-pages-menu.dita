@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-AddModuleToPageFromPagesMenu">
+<task xml:lang="en" id="tsk-DeletePageViaPagesMenu">
 
-    <title>Add a Module to a Page from the Pages Menu</title>
+    <title>Delete a Page via the Pages Menu</title>
     <titlealts>
-        <navtitle>Add Module</navtitle>
+        <navtitle>Delete Page</navtitle>
     </titlealts>
 
 
@@ -35,14 +35,13 @@
     <taskbody>
 
 		<section>
-			<p>The <uicontrol>Pages</uicontrol> menu is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" href="add-module-to-page-from-persona-bar.dita">Add a Module to a Page from the Persona Bar</xref> as a content manager.</p>
+			<p>The <uicontrol>Pages</uicontrol> menu is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/delete-page-via-persona-bar.dita">Delete a Page via the Persona Bar</xref> as a content manager.</p>
 		</section>
 
         <steps>
-			<step><cmd>Open the page to edit.</cmd></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-addmoduletopane"><cmd/></step>
+			<step><cmd>Open the page to delete.</cmd></step>
+			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-deletepage"><cmd/></step>
+			<step><cmd>Confirm the deletion.</cmd></step>
         </steps>
 
     </taskbody>

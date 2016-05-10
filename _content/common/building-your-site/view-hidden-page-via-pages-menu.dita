@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-ViewHiddenPageViaPagesMenu">
+
+    <title>View a Hidden Page via the Pages Menu</title>
+    <titlealts>
+        <navtitle>View Hidden Page</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orLY,edET,1605</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+			<audience type="administrator" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section>
+			<p>The <uicontrol>Pages</uicontrol> menu is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/view-hidden-page-via-persona-bar.dita">View a Hidden Page via the Persona Bar</xref> as a content manager.</p>
+		</section>
+
+        <steps>
+			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-pb/step-cp-gotopagemgmt"><cmd/></step>
+
+			<step>
+				<cmd>Right-click on a page and click/tap <uicontrol>View Page</uicontrol>.</cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-PageManagement-ContextMenu.png"><alt>Right-click menu for page hierarchy - View Page</alt></image>
+				</info>
+			</step>
+
+        </steps>
+
+    </taskbody>
+
+</task>

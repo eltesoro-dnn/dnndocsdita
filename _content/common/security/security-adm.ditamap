@@ -43,13 +43,13 @@
             <!-- JWT tasks -->
             <topicref format="dita" type="task" toc="yes" href="jwt/setup-jwt-for-auth.dita" />
             <!-- JWT references -->
-            <topicref format="dita" type="task" toc="yes" href="jwt/jwt-user-credentials.dita" />
-            <topicref format="dita" type="task" toc="yes" href="jwt/jwt-server-response.dita" />
-            <topicref format="dita" type="task" toc="yes" href="jwt/jwt-access-token.dita" />
-            <topicref format="dita" type="task" toc="yes" href="jwt/jwt-page-request.dita" />
-            <topicref format="dita" type="task" toc="yes" href="jwt/jwt-auth-handler.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="jwt/jwt-user-credentials.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="jwt/jwt-server-response.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="jwt/jwt-access-token.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="jwt/jwt-page-request.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="jwt/jwt-auth-handler.dita" />
             <!-- JWT example -->
-            <!-- <topicref format="dita" type="topic" toc="yes" href="jwt/tutorial-jwt-moniker-mobile-app.dita" /> Topic not ready. -->
+            <!-- <topicref format="dita" type="task" toc="yes" href="jwt/tutorial-jwt-moniker-mobile-app.dita" /> Topic not ready. -->
         </topicref>
 
     </topicref>
@@ -74,11 +74,11 @@
                 <topicref format="dita" type="task"      href="jwt/setup-jwt-for-auth.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="reference" href="jwt/jwt-user-credentials.dita" />
-                <topicref format="dita" type="reference" href="jwt/jwt-server-response.dita" />
-                <topicref format="dita" type="reference" href="jwt/jwt-access-token.dita" />
-                <topicref format="dita" type="reference" href="jwt/jwt-page-request.dita" />
-                <topicref format="dita" type="reference" href="jwt/jwt-auth-handler.dita" />
+                <topicref format="dita" type="topic" href="jwt/jwt-user-credentials.dita" />
+                <topicref format="dita" type="topic" href="jwt/jwt-server-response.dita" />
+                <topicref format="dita" type="topic" href="jwt/jwt-access-token.dita" />
+                <topicref format="dita" type="topic" href="jwt/jwt-page-request.dita" />
+                <topicref format="dita" type="topic" href="jwt/jwt-auth-handler.dita" />
             </relcell>
         </relrow>
 

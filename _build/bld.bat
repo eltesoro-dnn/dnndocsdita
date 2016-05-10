@@ -113,7 +113,7 @@ for /f "usebackq tokens=2" %%v in (`date /t`) do for /f "delims=/ tokens=1,2,3" 
 
 
 :. Test before opening up the folders.
-for %%v in ( administrators developers designers content-managers ) do  if not exist %_outdir%\%%v\*  goto :eof
+for %%v in ( administrators developers designers content-managers ) do  if not exist %_outdir%\%%v\*  goto :ifbuilderror
 :. for %%v in ( administrators developers designers content-managers ) do  if not exist %_outdir%\%%v\*  goto :eof
 
 
@@ -129,6 +129,11 @@ echo    Port: 25
 echo Use your username and password from Birch.
 call "C:\Program Files\FileZilla FTP Client\filezilla.exe"
 
+goto :eof
+
+
+:ifbuilderror
+start npp %_logfile%
 goto :eof
 
 

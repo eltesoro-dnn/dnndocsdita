@@ -18,18 +18,24 @@
 
 			<!-- PAGES MENU (CP) - PAGES - ADD, EDIT -->
 
+			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-pb/step-cp-gotopagemgmt"><cmd/></step> -->
+			<step id="step-pb-gotopagemgmt">
+				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Page Management</uicontrol></menucascade>.</cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuAdminCommonPageManagement.png"><alt>Admin - Page Management</alt></image>
+				</info>
+				<stepresult>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-PageManagement.png"><alt>Page Management - hierarchy of pages</alt></image>
+				</stepresult>
+            </step>
+
 			<!--
 			<cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-cp-configure-page-details"></cmd>
 			<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-PageDetails.png"><alt>Add Page - Page Details</alt></image></info>
 			<substeps conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/substeps-cp-configure-page-details"><substep><cmd/></substep></substeps>
 			-->
 			<step>
-				<!-- <cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-cp-configure-page-details"></cmd> -->
 				<cmd id="cmd-cp-configure-page-details">In the <uicontrol>Page Details</uicontrol> tab, configure the page.</cmd>
-
-				<!-- <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-PageDetails.png"><alt>Add Page - Page Details</alt></image></info> -->
-
-				<!-- <substeps conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/substeps-cp-configure-page-details"><substep><cmd/></substep></substeps> -->
 				<substeps id="substeps-cp-configure-page-details">
 					<substep><cmd>Enter the <uicontrol>Page Name</uicontrol>.</cmd></substep>
 					<substep>
@@ -58,23 +64,19 @@
 								</strow>
 								<strow>
 									<stentry>Tags</stentry>
-									<stentry>Predefined tags that you can choose from the drop-down, if any are defined.</stentry>
+									<stentry>Predefined tags that you can choose from the dropdown, if any are defined.</stentry>
 								</strow>
 								<strow>
 									<stentry>
-										<lines>
-											Parent Page
-											Insert Page
-										</lines>
+										<p>Parent Page</p>
+										<p>Insert Page</p>
 									</stentry>
 									<stentry>Choose under which page in the hierarchy to insert the current page, and choose its position among its siblings. By default, the new page inherits permissions from the parent page.</stentry>
 								</strow>
 								<strow>
 									<stentry>
-										<lines>
-											Template Folder
-											Page Template
-										</lines>
+										<p>Template Folder</p>
+										<p>Page Template</p>
 									</stentry>
 									<stentry>The folder and the specific template to use for the new page.</stentry>
 								</strow>
@@ -89,6 +91,39 @@
 			</step>
 
 			<!--
+			<cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-cp-configure-page-copy-optional"></cmd>
+			<substeps conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/substeps-cp-configure-page-copy"><substep><cmd/></substep></substeps>
+			-OR-
+			<cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-cp-configure-page-copy"></cmd>
+			<substeps conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/substeps-cp-configure-page-copy"><substep><cmd/></substep></substeps>
+			-->
+			<step>
+				<cmd id="cmd-cp-configure-page-copy-optional">(Optional) In the <uicontrol>Copy Page</uicontrol> tab, copy an existing page to use as a starting point for the new page.</cmd>
+			</step>
+			<step>
+				<cmd id="cmd-cp-configure-page-copy">In the <uicontrol>Copy Page</uicontrol> tab, copy an existing page and choose the modules to copy.</cmd>
+				<substeps id="substeps-cp-configure-page-copy">
+					<substep>
+						<cmd>In the <uicontrol>Copy From Page</uicontrol> dropdown, choose the page to copy from.</cmd>
+						<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-CopyPage.png"><alt>Add Page - CopyPage</alt></image></info>
+					</substep>
+					<substep>
+						<cmd>If the source page contains modules, select which modules to create, copy, or reference in the new page.</cmd>
+						<info>
+							<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-CopyPage-SpecifyModules.png"><alt>Add Page - CopyPage - Specify Modules</alt></image>
+							<ul>
+								<li><uicontrol>New</uicontrol> creates a new module instance with default settings.</li>
+								<li><uicontrol>Copy</uicontrol> creates a new module instance with the same settings as the module in the source page.</li>
+								<li><uicontrol>Reference</uicontrol> creates a link to the module instance in the source page.</li>
+							</ul>
+						</info>
+					</substep>
+				</substeps>
+
+			</step>
+
+
+			<!--
 			<cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-configure-page-advanced"></cmd>
 			<info>
 				<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings.png"><alt>Add Page - Advanced Settings</alt></image>
@@ -96,15 +131,13 @@
 			</info>
 			-->
 			<step>
-				<!-- <cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-configure-page-advanced"></cmd> -->
 				<cmd id="cmd-configure-page-advanced">(Optional) In the <uicontrol>Advanced Settings</uicontrol> tab, configure the page.</cmd>
 				<info>
-					<!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings.png"><alt>Add Page - Advanced Settings</alt></image> -->
-
-					<!-- <table conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/table-page-properties"><tgroup cols="2"><colspec colnum="2"/><tbody><row><entry/><entry/></row></tbody></tgroup></table> -->
 					<table id="table-page-properties" frame="all" colsep="1" rowsep="1" >
+						<!--
 						<tgroup cols="2" align="left">
-							<colspec colnum="2"/>
+							<colspec colname="FIELD" />
+							<colspec colname="DESCRIPTION" />
 							<thead>
 								<row>
 									<entry>Field</entry>
@@ -113,19 +146,19 @@
 							</thead>
 							<tbody><row><entry morerows="1" nameend="2"></entry></row></tbody>
 						</tgroup>
+						-->
 
 						<tgroup cols="2" align="left">
-							<colspec colnum="2"/>
+							<colspec colname="FIELD" />
+							<colspec colname="DESCRIPTION" />
 							<thead>
-								<row><entry nameend="2">Appearance</entry></row>
+								<row><entry nameend="DESCRIPTION">Appearance</entry></row>
 							</thead>
 							<tbody>
 								<row>
 									<entry>
-										<lines>
-											Icon
-											Large Icon
-										</lines>
+										<lines>Icon
+											   Large Icon</lines>
 									</entry>
 									<entry>
 										The icons to be displayed in the navigation (small icon) and in the console (large icon).
@@ -144,11 +177,9 @@
 								</row>
 								<row>
 									<entry>
-										<lines>
-											Page Theme
-											Page Container
-											Page Stylesheet
-										</lines>
+										<lines>Page Theme
+											   Page Container
+											   Page Stylesheet</lines>
 									</entry>
 									<entry>The custom theme for the page, the custom container for the modules in the page, and the custom stylesheet for the page, respectively. To inherit from the parent, leave as <uicontrol>None Specified</uicontrol> or blank.</entry>
 								</row>
@@ -168,9 +199,10 @@
 						</tgroup>
 
 						<tgroup cols="2" align="left">
-							<colspec colnum="2"/>
+							<colspec colname="FIELD" />
+							<colspec colname="DESCRIPTION" />
 							<thead>
-								<row><entry nameend="2">Cache Settings</entry></row>
+								<row><entry nameend="DESCRIPTION">Cache Settings</entry></row>
 							</thead>
 							<tbody>
 								<row>
@@ -181,9 +213,10 @@
 						</tgroup>
 
 						<tgroup cols="2" align="left">
-							<colspec colnum="2"/>
+							<colspec colname="FIELD" />
+							<colspec colname="DESCRIPTION" />
 							<thead>
-								<row><entry nameend="2">Other Settings</entry></row>
+								<row><entry nameend="DESCRIPTION">Other Settings</entry></row>
 							</thead>
 							<tbody>
 								<row>
@@ -202,10 +235,8 @@
 								</row>
 								<row>
 									<entry>
-										<lines>
-											Start Date
-											End Date
-										</lines>
+										<lines>Start Date
+											   End Date</lines>
 									</entry>
 									<entry>
 										<p>Click/Tap on the calendar icon to choose the date (server date); the default is the current date. Click/Tap on the clock icon to choose the time; the default is 12:00 AM (server time).</p>

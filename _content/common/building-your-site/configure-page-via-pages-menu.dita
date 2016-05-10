@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-ConfigurePageViaPagesMenu">
+
+    <title>Configure a Page via the Pages Menu</title>
+    <titlealts>
+        <navtitle>Configure Page</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orLY,edET,1605</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+			<audience type="administrator" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section>
+			<p>The <uicontrol>Pages</uicontrol> menu is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/configure-page-via-persona-bar.dita">Configure a Page via the Persona Bar</xref> as a content manager.</p>
+		</section>
+
+        <steps>
+			<step><cmd>Open the page to edit.</cmd></step>
+
+			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
+
+            <step>
+				<cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-cp-configure-page-details"></cmd>
+				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-PageDetails.png"><alt>Add Page - Page Details</alt></image></info>
+				<substeps conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/substeps-cp-configure-page-details"><substep><cmd/></substep></substeps>
+            </step>
+
+			<step>
+				<cmd conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/cmd-xx-configure-page-permissions"></cmd>
+				<info><image scalefit="yes" placement="break" align="left" href="img/scr-XX-AddPage-Permissions.png"><alt>Add Page - Permissions</alt></image></info>
+				<substeps conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/substeps-xx-configure-page-permissions"><substep><cmd/></substep></substeps>
+			</step>
+
+			<step>
+				<cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-configure-page-advanced"></cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings.png"><alt>Add Page - Advanced Settings</alt></image>
+					<table conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/table-page-properties"><tgroup cols="2"><colspec colnum="2"/><tbody><row><entry/><entry/></row></tbody></tgroup></table>
+				</info>
+			</step>
+        </steps>
+
+    </taskbody>
+
+</task>

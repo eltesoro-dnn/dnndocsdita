@@ -31,7 +31,7 @@
 			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-editpagepersonabar"><cmd/></step>
 			-->
 			<step id="step-pb-editpagepersonabar">
-				<cmd>In the <wintitle>Persona Bar</wintitle>, click/tap the Edit/pencil icon.</cmd>
+				<cmd>In the <wintitle>Persona Bar</wintitle>, click/tap the pencil icon (<uicontrol>Edit</uicontrol>).</cmd>
 				<info>
 					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarEdit.png"><alt>Persona Bar - Edit</alt></image>
 				</info>
@@ -48,6 +48,14 @@
 			</step>
 			-->
 
+			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-eyeicon"><cmd/></step> -->
+			<step id="step-pb-eyeicon">
+				<cmd>In the <wintitle>Page Management</wintitle> page, hover over the page to view, then click/tap the eye icon.</cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageManagement-View.png"><alt>Page Management - View</alt></image>
+				</info>
+			</step>
+
 			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-gearicon"><cmd/></step> -->
 			<step id="step-pb-gearicon">
 				<cmd>In the <wintitle>Page Management</wintitle> page, hover over the page to configure, then click/tap the gear icon.</cmd>
@@ -60,7 +68,7 @@
 			<step id="step-pb-deletepage">
 				<cmd>In the <wintitle>Page Management</wintitle> page, hover over the page to delete, then click/tap the X icon.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageManagement-Delete.png"><alt>Page Management - Edit</alt></image>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageManagement-Delete.png"><alt>Page Management - Delete</alt></image>
 				</info>
 			</step>
 
@@ -71,20 +79,14 @@
 			<info>
 				<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details.png"><alt>Add Page - Details</alt></image>
 				-OR-
-				<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-ConfigPage-Details.png"><alt>Configure Page - Details</alt></image>
+				<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-ConfigPage-Details.png"><alt>Pages - Details</alt></image>
 				<simpletable conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/simpletable-pb-configurepage"><strow/></simpletable>
 			</info>
 			-->
             <step>
-				<!-- <cmd conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/cmd-pb-configurepage"></cmd> -->
-            	<cmd>In the <uicontrol>Details</uicontrol> tab, configure the page.</cmd>
+            	<cmd id="cmd-pb-configurepage">In the <uicontrol>Details</uicontrol> tab, configure the page.</cmd>
 				<info>
-
-					<!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details.png"><alt>Add Page - Details</alt></image> -->
-					<!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-ConfigPage-Details.png"><alt>Configure Page - Details</alt></image> -->
-
-					<!-- <simpletable conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/simpletable-pb-configurepage"><strow/></simpletable> -->
-					<simpletable relcolwidth="1* 3*">
+					<simpletable id="simpletable-pb-configurepage" relcolwidth="1* 3*">
 						<sthead>
 							<stentry>Field</stentry>
 							<stentry>Description</stentry>
@@ -139,6 +141,36 @@
             </step>
 
 
+			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-addfloatingpagetohierarchy"><cmd/></step> -->
+			<step id="step-pb-addfloatingpagetohierarchy">
+				<cmd>Add the new page to the hierarchy of pages.</cmd>
+				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Floater.png"><alt>Add Page - Drag the floater.</alt></image></info>
+				<substeps>
+					<substep><cmd>Drag the floating <uicontrol>Drag Page into Location</uicontrol> box towards the column of pages.</cmd></substep>
+					<substep>
+						<cmd>To insert at the same level, drag until the placeholder appears in the correct position.</cmd>
+						<!-- <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-DragToTopLevel.png"><alt>Add Page - Drag to top level.</alt></image></info> -->
+					</substep>
+					<substep>
+						<cmd>To insert at a lower level, hover above the intended parent until another column appears to the right, then drag until the placeholder appears in the correct position in the column of siblings.</cmd>
+						<!-- <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-DragAsChild.png"><alt>Add Page - Drag as child.</alt></image></info> -->
+					</substep>
+				</substeps>
+			</step>
+
+
+
+			<!-- TEMPLATES - ADD, EDIT -->
+
+			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-gototemplatelist"><cmd/></step> -->
+			<step id="step-pb-gototemplatelist">
+				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Manage</uicontrol> <uicontrol>Templates</uicontrol></menucascade>.</cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarManage-Templates.png"><alt>Persona Bar - Manage - Templates</alt></image>
+				</info>
+            </step>
+
+
 
 			<!-- MODULES - ADD, EDIT -->
 
@@ -153,10 +185,10 @@
 				<cmd>Add the module to a pane in the current page.</cmd>
 				<substeps>
 					<substep>
-						<cmd>Hover over the module to expose the <uicontrol>Bookmark</uicontrol> and <uicontrol>Add</uicontrol> icons.</cmd>
+						<cmd>Hover over the module to expose the bookmark and plus icons.</cmd>
 						<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-ModulesList-AddToPage.png"><alt>Module List - Hover to highlight the module.</alt></image></info>
 					</substep>
-					<substep><cmd>Click/Tap the <uicontrol>Add</uicontrol> (<uicontrol>+</uicontrol>) icon.</cmd></substep>
+					<substep><cmd>Click/Tap the plus icon.</cmd></substep>
 					<substep>
 						<cmd>Drag the floating module box to the target pane.</cmd>
 						<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-ModulesList-GrabAndPosition.png"><alt>Module - Drag the floating module box to the target pane.</alt></image></info>

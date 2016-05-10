@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-EditPageFromPagesMenu">
+<task xml:lang="en" id="tsk-EditPageViaPersonaBar">
 
-    <title>Edit a Page from the Pages Menu</title>
+    <title>Edit a Page via the Persona Bar</title>
     <titlealts>
         <navtitle>Edit Page</navtitle>
     </titlealts>
@@ -15,7 +15,7 @@
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
-			<audience type="administrator" job="other" otherjob="aggregating" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -35,14 +35,14 @@
     <taskbody>
 
 		<section>
-			<p>The <uicontrol>Pages</uicontrol> menu is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/edit-page-from-persona-bar.dita">Edit a Page from the Persona Bar</xref> as a content manager.</p>
+			<p>The <uicontrol>Persona Bar</uicontrol> is visible to <term>content managers</term>. See <xref format="dita" scope="peer" href="../../administrators/building-your-site/edit-page-via-pages-menu.dita">Edit a Page via the Pages Menu</xref> as an <term>administrator</term>.</p>
 		</section>
 
         <steps>
 			<step><cmd>Open the page to edit.</cmd></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-addmoduletopane"><cmd/></step>
+			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-editpagepersonabar"><cmd/></step>
+			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-openmodulelist"><cmd/></step>
+			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-addmoduletopane"><cmd/></step>
         </steps>
 
     </taskbody>
