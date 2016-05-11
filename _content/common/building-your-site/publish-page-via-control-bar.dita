@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-publish-page-via-control-bar">
+
+    <title>Publish or Unpublish Your Page via the Control Bar</title>
+    <titlealts>
+        <navtitle>Publish/Unpublish Page</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orLY,edET,1605</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section>
+			<p>Publishing a page makes it visible to all site users, including unregistered users. If a page is private, only administrators and hosts can view it.</p>
+
+			<p>To allow only specific roles and users to view the page, configure the permissions in the page settings.</p>
+
+			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. <!-- See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/moving-pages-through-workflow.dita">Moving Pages through Workflow</xref> as a content manager. --></p>
+		</section>
+
+
+        <steps>
+			<step><cmd>Go to the page to publish/unpublish.</cmd></step>
+
+            <step><cmd>Make the page public or private.</cmd>
+				<choices>
+					<choice>
+						<p>To publish, go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Make Public</uicontrol></menucascade>. This option is available if the page is private.</p>
+						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageMakePublic.png"><alt>Edit Page - Make Public</alt></image>
+					</choice>
+					<choice>
+						<p>To unpublish, go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Make Private</uicontrol></menucascade>. This option is available if the page is published.</p>
+						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageMakePrivate.png"><alt>Edit Page - Make Private</alt></image>
+					</choice>
+				</choices>
+            </step>
+
+			<step><cmd>Confirm.</cmd></step>
+        </steps>
+
+    </taskbody>
+
+</task>

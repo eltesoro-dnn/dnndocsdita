@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-DeletePageViaPagesMenu">
+<task xml:lang="en" id="tsk-view-hidden-page-via-control-bar">
 
-    <title>Delete a Page via the Pages Menu</title>
+    <title>View a Hidden Page via the Control Bar</title>
     <titlealts>
-        <navtitle>Delete Page</navtitle>
+        <navtitle>View Hidden Page</navtitle>
     </titlealts>
 
 
@@ -35,13 +35,19 @@
     <taskbody>
 
 		<section>
-			<p>The <uicontrol>Pages</uicontrol> menu is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/delete-page-via-persona-bar.dita">Delete a Page via the Persona Bar</xref> as a content manager.</p>
+			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/view-hidden-page-via-persona-bar.dita">View a Hidden Page via the Persona Bar</xref> as a content manager.</p>
 		</section>
 
         <steps>
-			<step><cmd>Open the page to delete.</cmd></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-deletepage"><cmd/></step>
-			<step><cmd>Confirm the deletion.</cmd></step>
+			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-gotopagemgmt"><cmd/></step>
+
+			<step>
+				<cmd>Right-click on a page and click/tap <uicontrol>View Page</uicontrol>.</cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-PageManagement-ContextMenu.png"><alt>Right-click menu for page hierarchy - View Page</alt></image>
+				</info>
+			</step>
+
         </steps>
 
     </taskbody>

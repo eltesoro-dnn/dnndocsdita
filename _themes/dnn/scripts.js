@@ -85,6 +85,11 @@ $(document).ready(function() {
     // remove the arrow from glossary
     $( "nav[role='toc'] > ul >li > ul > li" ).last().removeClass( "toc-aria-arrow-closed" );
 
+    $("nav[role='hamburger-home']").mymenu({
+       title: "",
+       format: "multitoggle"
+    });
+
 });
 
 // hamburger menu
@@ -158,15 +163,3 @@ $(document).ready(function() {
       });
   };
 })(jQuery);
-
-(function($){
-	$(document).ready(function(){
-
-		$("nav[role='hamburger-home']").mymenu({
-		   title: "",
-		   format: "multitoggle"
-		});
-
-	});
-})(jQuery);
-

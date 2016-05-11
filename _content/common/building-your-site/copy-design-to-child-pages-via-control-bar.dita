@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-CopyDesignToChildPagesViaPagesMenu">
+<task xml:lang="en" id="tsk-copy-design-to-child-pages-via-control-bar">
 
-    <title>Copy the Page's Design to Its Child Pages via Pages Menu</title>
+    <title>Copy the Page's Design to Its Child Pages via the Control Bar</title>
     <titlealts>
         <navtitle>Copy Design to Child Pages</navtitle>
     </titlealts>
@@ -34,13 +34,17 @@
 
     <taskbody>
 
+		<section>
+			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. <!-- See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/copy-design-to-child-pages-via-persona-bar.dita">Copy the Page's Design to Its Child Pages via the Persona Bar</xref> as a content manager. --></p>
+		</section>
+
         <steps>
-            <step><cmd>View the parent page.</cmd></step>
+            <step><cmd>Go to the parent page.</cmd></step>
 
             <step>
 				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Page Appearance</uicontrol></menucascade>.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPage-PageAppearance.png"><alt>Edit Page - Page Appearance</alt></image>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPagePageAppearance.png"><alt>Edit Page - Page Appearance</alt></image>
 				</info>
             </step>
 

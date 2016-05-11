@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-EditDeleteTemplateViaPersonaBar">
+<task xml:lang="en" id="tsk-edit-delete-template-via-persona-bar">
 
     <title>Edit or Delete a Template via the Persona Bar</title>
     <titlealts>
@@ -35,7 +35,7 @@
     <taskbody>
 
 		<section>
-			<p>The <uicontrol>Persona Bar</uicontrol> is visible to <term>content managers</term>. <!-- See <xref format="dita" scope="peer" href="../../administrators/building-your-site/edit-delete-template-via-pages-menu.dita">Edit/Delete a Template via the Pages Menu</xref> as an <term>administrator</term>. --></p>
+			<p>The <uicontrol>Persona Bar</uicontrol> is visible to <term>content managers</term>. <!-- See <xref format="dita" scope="peer" href="../../administrators/building-your-site/edit-delete-template-via-control-bar.dita">Edit/Delete a Template via the Control Bar</xref> as an <term>administrator</term>. --></p>
 		</section>
 
         <steps>

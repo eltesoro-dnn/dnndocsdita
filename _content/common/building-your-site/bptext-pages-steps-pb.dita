@@ -27,7 +27,7 @@
             </step>
 
 			<!--
-			<step><cmd>Open the page to edit.</cmd></step>
+			<step><cmd>Go to the page to edit.</cmd></step>
 			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-editpagepersonabar"><cmd/></step>
 			-->
 			<step id="step-pb-editpagepersonabar">
@@ -91,51 +91,16 @@
 							<stentry>Field</stentry>
 							<stentry>Description</stentry>
 						</sthead>
-						<strow>
-							<stentry>Name</stentry>
-							<stentry>Required. Name for the page.</stentry>
-						</strow>
-						<strow>
-							<stentry>Title</stentry>
-							<stentry>Displayed as the browser window's title.</stentry>
-						</strow>
-						<strow>
-							<stentry>URL</stentry>
-							<stentry>URL for the page.</stentry>
-						</strow>
-						<strow>
-							<stentry>Keywords</stentry>
-							<stentry>Comma-separated keywords that can be used by search engines to help index your site's pages.</stentry>
-						</strow>
-						<strow>
-							<stentry>Tags</stentry>
-							<stentry>Predefined tags that you can choose from the dropdown.</stentry>
-						</strow>
-
-						<strow>
-							<stentry>Workflow</stentry>
-							<stentry>Predefined workflow states that you can choose from the dropdown.</stentry>
-						</strow>
-						<strow>
-							<stentry>Display in Menu</stentry>
-							<stentry>If enabled, the page is included in the main navigation menu. If the page is not included in the navigation menu, you can still link to it using its URL.</stentry>
-						</strow>
-						<strow>
-							<stentry>Link Tracking</stentry>
-							<stentry>If enabled, </stentry>
-						</strow>
-						<strow>
-							<stentry>Enable Scheduling</stentry>
-							<stentry>
-								<p>If enabled, the <uicontrol>Start Date</uicontrol> and <uicontrol>End Date</uicontrol> buttons appear below the switch. Click/Tap on either button to set the dates and times.</p>
-								<ul conref="../bptext.dita#bptext/ul-publisheddates"><li/></ul>
-								<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details-Calendar.png"><alt>Add Page - Details - Calendar</alt></image>
-							</stentry>
-						</strow>
-						<strow>
-							<stentry>Page Template</stentry>
-							<stentry>Required. The template layouts are defined by the theme used in the site.</stentry>
-						</strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagename"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagetitle"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pageurl"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-keywords"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-tags"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-workflow"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-displayinmenu"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-linktracking"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-enablescheduling"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagetemplate"><stentry/></strow>
 					</simpletable>
 				</info>
             </step>

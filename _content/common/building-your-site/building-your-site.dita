@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
-<topic xml:lang="en" id="top-BuildingYourSite">
+<topic xml:lang="en" id="top-building-your-site">
 
     <title>Building Your Site</title>
     <titlealts>
@@ -41,10 +41,10 @@
 
 			<p>To build a site,
 				<ol>
-					<li>Create, copy, or import one or more pages on the site.</li>
+					<li>Create or copy one or more pages on the site.</li>
 					<li>Configure the permissions for the page. Specific pages can be restricted to users in certain roles, such as subscribers.</li>
 					<li>To each page, add one or more <term>modules</term>.</li>
-					<li>Configure the modules.</li>
+					<li>Configure the modules and add content.</li>
 					<li>Add themes and containers.</li>
 					<li>Publish the pages.</li>
 				</ol>

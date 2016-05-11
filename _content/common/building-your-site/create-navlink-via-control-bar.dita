@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-CreateNavLinkViaPagesMenu">
+<task xml:lang="en" id="tsk-create-navlink-via-control-bar">
 
-    <title>Create a Navigation Link</title>
+    <title>Create a Navigation Link via the Control Bar</title>
     <titlealts>
         <navtitle>Create Navigation Link</navtitle>
     </titlealts>
@@ -36,6 +36,8 @@
 
 		<section>
 			<p>You can create a link in the navigation without creating a new page.</p>
+
+			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. <!-- See <xref format="dita" href="create-navlink-via-persona-bar.dita">Create a Navigation Link via the Persona Bar</xref> as a content manager. --></p>
 		</section>
 
         <steps>
@@ -47,9 +49,15 @@
             </step>
 
 			<step>
-				<cmd>(Optional) In the <uicontrol>Advanced Settings</uicontrol> tab, configure the navigation link.</cmd>
+				<cmd>In the <uicontrol>Advanced Settings</uicontrol> tab, expand the <uicontrol>Other Settings</uicontrol> section.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings.png"><alt>Add Page - Advanced Settings</alt></image>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings-OtherSettings.png"><alt>Add Page - Advanced Settings - Other Settings</alt></image>
+				</info>
+			</step>
+
+			<step>
+				<cmd>Configure the <uicontrol>Link URL</uicontrol>.</cmd>
+				<info>
 					<simpletable relcolwidth="1* 3*">
 						<sthead>
 							<stentry>Field</stentry>

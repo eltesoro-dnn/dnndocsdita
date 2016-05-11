@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-building-your-site-via-control-bar">
+
+    <title>Building Your Site</title>
+
+    <!-- Topics -->
+	<topicref format="dita" type="topic" toc="yes" href="building-your-site.dita" copy-to="index.dita" collection-type="family">
+		<!-- Pages -->
+		<topicref format="dita" type="task" toc="yes" href="create-page-via-control-bar.dita" />
+		<topicref format="dita" type="task" toc="yes" href="create-page-using-template-via-control-bar.dita" />
+		<topicref format="dita" type="task" toc="yes" href="create-navlink-via-control-bar.dita" />
+		<topicref format="dita" type="task" toc="yes" href="configure-page-via-control-bar.dita" />
+		<topicref format="dita" type="task" toc="yes" href="copy-page-via-control-bar.dita" />
+		<topicref format="dita" type="task" toc="yes" href="edit-page-via-control-bar.dita" />
+		<topicref format="dita" type="task" toc="yes" href="publish-page-via-control-bar.dita" />
+		<topicref format="dita" type="task" toc="yes" href="view-hidden-page-via-control-bar.dita" />
+		<topicref format="dita" type="task" toc="yes" href="delete-page-via-control-bar.dita" />
+
+		<!-- Child Pages -->
+		<topicref format="dita" type="task" toc="yes" href="copy-design-to-child-pages-via-control-bar.dita" />
+		<topicref format="dita" type="task" toc="yes" href="copy-permissions-to-child-pages-via-control-bar.dita" />
+
+		<!-- Templates -->
+		<topicref format="dita" type="task" toc="yes" href="create-template-based-on-page-via-control-bar.dita" />
+
+		<!-- Modules -->
+		<topicref format="dita" type="task" toc="yes" href="add-module-to-page-via-control-bar.dita" />
+	</topicref>
+
+
+
+    <!-- RelTables -->
+    <reltable>
+        <relheader>
+            <relcolspec type="concept"/>
+            <relcolspec type="task"/>
+            <relcolspec type="reference"/>
+        </relheader>
+
+
+        <!-- adm cmg - creating pages -->
+        <relrow>
+            <relcell/>
+            <relcell>
+				<topicref format="dita" type="task"  href="create-page-via-control-bar.dita" />
+				<topicref format="dita" type="task"  href="create-page-using-template-via-control-bar.dita" />
+				<topicref format="dita" type="task"  href="create-navlink-via-control-bar.dita" />
+				<topicref format="dita" type="task"  scope="peer" navtitle="Create a Page via the Persona Bar" href="../../content-managers/building-your-site/create-page-via-persona-bar.dita" />
+			</relcell>
+            <relcell/>
+        </relrow>
+
+        <!-- adm cmg - configuring pages -->
+        <relrow>
+            <relcell/>
+            <relcell>
+				<topicref format="dita" type="task"  href="configure-page-via-control-bar.dita" />
+				<topicref format="dita" type="task"  scope="peer" navtitle="Configure a Page via the Persona Bar" href="../../content-managers/building-your-site/configure-page-via-persona-bar.dita" />
+            </relcell>
+            <relcell/>
+        </relrow>
+
+        <!-- adm cmg - copying pages -->
+        <relrow>
+            <relcell/>
+			<relcell>
+				<topicref format="dita" type="task"  href="copy-page-via-control-bar.dita" />
+				<topicref format="dita" type="task"  scope="peer" navtitle="Copy a Page via the Persona Bar" href="../../content-managers/building-your-site/copy-page-via-persona-bar.dita" />
+			</relcell>
+            <relcell/>
+        </relrow>
+
+        <!-- adm cmg - editing pages -->
+        <relrow>
+            <relcell/>
+            <relcell>
+				<topicref format="dita" type="task"  href="edit-page-via-control-bar.dita" />
+				<topicref format="dita" type="task"  scope="peer" navtitle="Edit a Page via the Persona Bar" href="../../content-managers/building-your-site/edit-page-via-persona-bar.dita" />
+			</relcell>
+            <relcell/>
+        </relrow>
+
+        <!-- adm cmg - [un]publishing pages -->
+        <relrow>
+            <relcell>
+				<!-- <topicref format="dita" type="topic" scope="peer" navtitle="Moving Pages through the Workflow" href="../../content-managers/building-your-site/moving-pages-through-workflow.dita" /> -->
+            </relcell>
+            <relcell>
+				<topicref format="dita" type="task"  href="publish-page-via-control-bar.dita" />
+				<topicref format="dita" type="task"  href="configure-page-via-control-bar.dita" />
+				<topicref format="dita" type="topic" scope="peer" navtitle="Configure a Page via the Persona Bar" href="../../content-managers/building-your-site/configure-page-via-persona-bar.dita" />
+			</relcell>
+            <relcell/>
+        </relrow>
+
+        <!-- adm cmg - viewing hidden pages -->
+        <relrow>
+            <relcell/>
+            <relcell>
+				<topicref format="dita" type="task"  href="view-hidden-page-via-control-bar.dita" />
+				<topicref format="dita" type="task"  scope="peer" navtitle="View a Hidden Page via the Persona Bar" href="../../content-managers/building-your-site/view-hidden-page-via-persona-bar.dita" />
+			</relcell>
+            <relcell/>
+        </relrow>
+
+        <!-- adm cmg - deleting pages -->
+        <relrow>
+            <relcell/>
+            <relcell>
+				<topicref format="dita" type="task"  href="delete-page-via-control-bar.dita" />
+				<topicref format="dita" type="task"  scope="peer" navtitle="Delete a Page via the Persona Bar" href="../../content-managers/building-your-site/delete-page-via-persona-bar.dita" />
+			</relcell>
+            <relcell/>
+        </relrow>
+
+        <!-- adm cmg - child pages -->
+        <relrow>
+            <relcell/>
+            <relcell>
+				<topicref format="dita" type="task"  href="copy-design-to-child-pages-via-control-bar.dita" />
+				<topicref format="dita" type="task"  href="copy-permissions-to-child-pages-via-control-bar.dita" />
+				<topicref format="dita" type="task"  scope="peer" navtitle="Copy the Page's Permission Settings to Its Child Pages via the Persona Bar" href="../../content-managers/building-your-site/copy-permissions-to-child-pages-via-persona-bar.dita" />
+			</relcell>
+            <relcell/>
+        </relrow>
+
+        <!-- adm cmg - templates -->
+        <relrow>
+            <relcell/>
+            <relcell>
+				<topicref format="dita" type="task"  href="create-template-based-on-page-via-control-bar.dita" />
+				<topicref format="dita" type="task"  scope="peer" navtitle="Create a Template Based on an Page via the Persona Bar"             href="../../content-managers/building-your-site/create-template-based-on-page-via-persona-bar.dita" />
+				<topicref format="dita" type="task"  scope="peer" navtitle="Create a Template Based on an Another Template via the Persona Bar" href="../../content-managers/building-your-site/create-template-based-on-another-template-via-persona-bar.dita" />
+				<topicref format="dita" type="task"  scope="peer" navtitle="Edit or Delete a Template via the Persona Bar"                      href="../../content-managers/building-your-site/edit-delete-template-via-persona-bar.dita" />
+			</relcell>
+            <relcell/>
+        </relrow>
+
+        <!-- adm cmg - modules -->
+        <relrow>
+            <relcell/>
+            <relcell>
+				<topicref format="dita" type="task"  href="add-module-to-page-via-control-bar.dita" />
+				<topicref format="dita" type="task"  scope="peer" navtitle="Add a Module to a Page via the Persona Bar" href="../../content-managers/building-your-site/add-module-to-page-via-persona-bar.dita" />
+			</relcell>
+            <relcell/>
+        </relrow>
+
+    </reltable>
+
+</map>

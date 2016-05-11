@@ -169,7 +169,7 @@ header {
 }
 .header {
   width: 100%;
-  padding: 5px 0 2px 0; /* 10px 0 10px 0; */
+  padding: 5px 0 0 0;
   background: #f4f4f4;
   border-top: 5px solid #382224;
   -webkit-box-shadow: 0 0px 5px rgba(0, 0, 0, 0.5);
@@ -244,6 +244,7 @@ header {
 .header nav ul {
   margin: 0;
   padding: 2px;
+  padding-top: 6px;
 }
 .header nav li {
   display: block;
@@ -632,10 +633,6 @@ ul.simple {
 .steps {
   padding-left: 1em;
 }
-/*.step > .cmd {
-  font-size: 125%;
-}
-*/
 .stepexpand {
   margin-top: 1em;
   margin-bottom: 1em;
@@ -857,7 +854,7 @@ nav[role="toc"] > ul > li > a {
   vertical-align: middle;
   font-family: "AvenirNextLTPro-Regular","Helvetica Neue","HelveticaNeue",Arial,Helvetica,sans-serif;
   font-weight: normal;
-  font-size: 14px; /* 18px; */
+  font-size: 14px;
   color: #337ab7;
   text-decoration: none;
 }
@@ -892,7 +889,7 @@ li#header-askq {
 }
 #header-askq:after {
   position: absolute;
-  top: 14px;
+  top: 17px;
   right: 6px;
   width: 8px;
   height: 2px;
@@ -902,7 +899,7 @@ li#header-askq {
 }
 #header-askq:before  {
   position: absolute;
-  top: 11px;
+  top: 14px;
   right: 9px;
   display: block;
   width: 2px;
@@ -1003,7 +1000,7 @@ a#contentmgr-card > .card-title {
 }
 .card-title {
   color: white;
-  padding: 20px 0; /* 45px 0; */
+  padding: 20px 0;
   display: block;
   text-align: center;
   width: 100%;
@@ -1013,11 +1010,11 @@ a#contentmgr-card > .card-title {
 .card-wrapper {
   display: block;
   margin: auto;
-  padding-left: 20px; /* 40px; */
-  padding-right: 20px; /* 40px; */
+  padding-left: 20px;
+  padding-right: 20px;
 }
 .card-img-wrapper {
-  padding: 20px 30px; /* 45px 80px; */
+  padding: 20px 30px;
   border-color: #ccc;
   border-style: solid;
   border-width: 0 1px;
@@ -1100,10 +1097,6 @@ article[role="articleHome"] {
 .link-left {
   padding-left: 0;
 }
-/* .card-row {
-  margin-bottom: 100px;
-  background-image: linear-gradient(to bottom,white 12%,#f4f4f4 30%);
-} */
 #header-askq:after {
   visibility: hidden;
 }
@@ -1111,7 +1104,7 @@ article[role="articleHome"] {
   display: inline-block;
 }
 #header-subctr-wrapper {
-  width: 500px; /* 400px; */
+  width: 500px;
   margin-left: -275px;
 }
 .header-card-img {
@@ -1121,11 +1114,11 @@ article[role="articleHome"] {
   text-align: center;
   font-family: "AvenirNextLTPro-Regular","Helvetica Neue","HelveticaNeue",Arial,Helvetica,sans-serif;
   font-weight: normal;
-  font-size: 14px; /* 18px; */
+  font-size: 14px;
   color: #337ab7;
   text-decoration: none;
-  margin-left: 5px; /* 15px; */
-  margin-right: 5px; /* 15px; */
+  margin-left: 5px;
+  margin-right: 5px;
   margin-top: 10px;
 }
 .sub-nav-tabs.active {
@@ -1149,11 +1142,17 @@ ul.ullinks {
 span.importanttitle {
   color: red!important;
 }
-
 img.img-icon {
     display: block;
     margin-top: 5px;
     margin-bottom: 35px;
+}
+.sub-nav-tabs:first-child {
+  padding-top: 15px;
+}
+.sub-nav-tabs:last-child {
+  padding-bottom: 20px;
+  margin-bottom: -5px;
 }
 
 /* SEARCH BOX STYLES */
@@ -1161,7 +1160,7 @@ img.img-icon {
 .searchbox {
   display: none;
   position: absolute;
-  top: 49px; /* 74px; */
+  top: 49px;
   display: inline-block;
   width: 300px;
   padding-top: 5px;
@@ -1201,6 +1200,8 @@ tbody {
   padding-top: 0;
   margin-top: 0;
 }
+
+/* RESPONSIVE STYLES */
 
 /* HAMBURGER MENU STYLES */
 
@@ -1390,7 +1391,7 @@ tbody {
     width: 50px;
     position: fixed;
     right: 15px;
-    top: 8px;
+    top: 7px;
   }
   nav[role="hamburger-home"] ul {
     display: none;
@@ -1399,7 +1400,7 @@ tbody {
     width: 100%;
     border-top: 1px solid #888;
     border-bottom: 1px solid #888;
-    margin-top: 4px;
+    margin-top: 2px;
   }
   nav[role="hamburger-home"].align-center > ul {
     text-align: left;
@@ -1552,42 +1553,40 @@ tbody {
     right: 13px;
   }
   nav[role="hamburger-home"] .submenu-button:after {
-      position: absolute;
-      top: 22px;
-      right: 19px;
-      width: 8px;
-      height: 2px;
-      display: block;
-      background: #dddddd;
-      content: '';
+    position: absolute;
+    top: 22px;
+    right: 19px;
+    width: 8px;
+    height: 2px;
+    display: block;
+    background: #dddddd;
+    content: '';
   }
   nav[role="hamburger-home"] ul ul .submenu-button:after {
-      top: 15px;
-      right: 13px;
+    top: 15px;
+    right: 13px;
   }
   nav[role="hamburger-home"] .submenu-button.submenu-opened:after {
-      background: #ffffff;
+    background: #ffffff;
   }
   nav[role="hamburger-home"] .submenu-button:before {
-      position: absolute;
-      top: 19px;
-      right: 22px;
-      display: block;
-      width: 2px;
-      height: 8px;
-      background: #dddddd;
-      content: '';
+    position: absolute;
+    top: 19px;
+    right: 22px;
+    display: block;
+    width: 2px;
+    height: 8px;
+    background: #dddddd;
+    content: '';
   }
   nav[role="hamburger-home"] ul ul .submenu-button:before {
-      top: 12px;
-      right: 16px;
+    top: 12px;
+    right: 16px;
   }
   nav[role="hamburger-home"] .submenu-button.submenu-opened:before {
-      display: none;
+    display: none;
   }
 }
-
-/* RESPONSIVE STYLES */
 
 /* iPhone 6 Portrait */
 
@@ -1651,7 +1650,7 @@ and (orientation : portrait) {
     background-color: #888;
     border-top: 2px solid #888;
     border-bottom: 2px solid #888;
-    margin-top: 0;
+    margin-top: -3px;
   }
   nav[role="hamburger-home"] > ul > li.has-sub > span:before {
     top: 26px;
@@ -1694,8 +1693,6 @@ and (orientation : portrait) {
     margin-top: 10px;
     margin-bottom: 10px;
   }
-
-
 }
 
 /* Custom, iPhone Retina */
@@ -1767,7 +1764,7 @@ and (orientation : portrait) {
     margin-bottom: 0px;
   }
   .card-row {
-    padding-bottom: 0; /* 25px; */
+    padding-bottom: 0;
     margin-bottom: 0;
   }
   .header nav > ul > li + li {
@@ -1786,7 +1783,7 @@ and (orientation : portrait) {
 @media only screen and (min-width : 992px) {
   #header-subnav-documentation,  #header-askq > ul, .sibling-sites {
     position: absolute;
-    top: 26px;
+    top: 30px;
     padding-top: 9px;
     width: 300px;
     margin-left: -90px;
@@ -1819,7 +1816,7 @@ and (orientation : portrait) {
     background-color: white;
   }
   #welcome-hero {
-    max-width: 350px; /* 650px; */
+    max-width: 350px
   }
   .page-link-wrapper {
     display: inline-block;
@@ -1840,7 +1837,7 @@ and (orientation : portrait) {
     margin-bottom: 100px;
   }
   .card-title {
-    font-size: 20px; /* 25px; */
+    font-size: 20px;
   }
   .card-row {
     margin-bottom: 0px;
@@ -1870,8 +1867,8 @@ and (orientation : portrait) {
     display: inline-block;
   }
   .subctr.active {
-    border-bottom: 6px solid; /* 4px solid #337ab7; */
-    padding-bottom: 4px; /* 17px; */
+    border-bottom: 6px solid;
+    padding-bottom: 4px;
   }
   .subctr.admctr {
     border-color: #9daa12;
@@ -1884,10 +1881,6 @@ and (orientation : portrait) {
   }
   .subctr.dsgctr {
     border-color: #d48e12;
-  }
-  .header {
-    padding: 2px 0 0 0; /* 10px 0 0 0; */
-    height: 40px; /* 57px; */
   }
   nav[role="toc"] ul ul {
     display: none;
@@ -1923,12 +1916,4 @@ and (orientation : portrait) {
   .searchbox {
     display: inline-block;
   }
-}
-
-.sub-nav-tabs:first-child {
-  padding-top: 15px;
-}
-.sub-nav-tabs:last-child {
-  padding-bottom: 20px;
-  margin-bottom: -5px;
 }

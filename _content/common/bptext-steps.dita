@@ -22,7 +22,7 @@
 			<step id="step-createpage">
 				<cmd>Create a page.</cmd>
 				<choices>
-					<choice><ph outputclass="audience-adm">Administrators:</ph>   <xref format="dita" href="building-your-site/create-page-via-pages-menu.dita">Create a page via the <uicontrol>Pages</uicontrol> menu.</xref></choice>
+					<choice><ph outputclass="audience-adm">Administrators:</ph>   <xref format="dita" href="building-your-site/create-page-via-control-bar.dita">Create a page via the <uicontrol>Control Bar</uicontrol>.</xref></choice>
 					<choice><ph outputclass="audience-cmg">Content Managers:</ph> <xref format="dita" href="building-your-site/create-page-via-persona-bar.dita">Create a page via the <uicontrol>Persona Bar</uicontrol>.</xref></choice>
 				</choices>
 			</step>
@@ -31,7 +31,7 @@
 			<step id="step-editpage">
 				<cmd>Select and edit a page.</cmd>
 				<choices>
-					<choice><ph outputclass="audience-adm">Administrators:</ph>   <xref format="dita" href="building-your-site/edit-page-via-pages-menu.dita">Edit a page via the <uicontrol>Pages</uicontrol> menu.</xref></choice>
+					<choice><ph outputclass="audience-adm">Administrators:</ph>   <xref format="dita" href="building-your-site/edit-page-via-control-bar.dita">Edit a page via the <uicontrol>Control Bar</uicontrol>.</xref></choice>
 					<choice><ph outputclass="audience-cmg">Content Managers:</ph> <xref format="dita" href="building-your-site/edit-page-via-persona-bar.dita">Edit a page via the <uicontrol>Persona Bar</uicontrol>.</xref></choice>
 				</choices>
 			</step>
@@ -46,15 +46,15 @@
 							<stentry>Content Managers</stentry>
 						</sthead>
 						<strow>
-							<stentry><xref format="dita" href="building-your-site/create-page-via-pages-menu.dita">Create a page via the <uicontrol>Pages</uicontrol> menu.</xref></stentry>
+							<stentry><xref format="dita" href="building-your-site/create-page-via-control-bar.dita">Create a page via the <uicontrol>Control Bar</uicontrol>.</xref></stentry>
 							<stentry><xref format="dita" href="building-your-site/create-page-via-persona-bar.dita">Create a page via the <uicontrol>Persona Bar</uicontrol>.</xref></stentry>
 						</strow>
 						<strow>
-							<stentry><xref format="dita" href="building-your-site/copy-page-via-pages-menu.dita">Copy a page via the <uicontrol>Pages</uicontrol> menu.</xref></stentry>
+							<stentry><xref format="dita" href="building-your-site/copy-page-via-control-bar.dita">Copy a page via the <uicontrol>Control Bar</uicontrol>.</xref></stentry>
 							<stentry><xref format="dita" href="building-your-site/copy-page-via-persona-bar.dita">Copy a page via the <uicontrol>Persona Bar</uicontrol>.</xref></stentry>
 						</strow>
 						<strow>
-							<stentry><xref format="dita" href="building-your-site/edit-page-via-pages-menu.dita">Edit a page via the <uicontrol>Pages</uicontrol> menu.</xref></stentry>
+							<stentry><xref format="dita" href="building-your-site/edit-page-via-control-bar.dita">Edit a page via the <uicontrol>Control Bar</uicontrol>.</xref></stentry>
 							<stentry><xref format="dita" href="building-your-site/edit-page-via-persona-bar.dita">Edit a page via the <uicontrol>Persona Bar</uicontrol>.</xref></stentry>
 						</strow>
 					</simpletable>
@@ -63,11 +63,11 @@
 
 			<!-- <step conref="bptext-steps.dita#bptext-steps/step-createcopyeditpage-cp"><cmd/></step> -->
 			<step id="step-createcopyeditpage-cp" outputclass="audience-adm">
-				<cmd>Create, copy, or edit a page via the <uicontrol>Pages</uicontrol> menu.</cmd>
+				<cmd>Create, copy, or edit a page via the <uicontrol>Control Bar</uicontrol>.</cmd>
 				<choices>
-					<choice><xref format="dita" href="building-your-site/create-page-via-pages-menu.dita">Create a page.</xref></choice>
-					<choice><xref format="dita" href="building-your-site/copy-page-via-pages-menu.dita">Copy a page.</xref></choice>
-					<choice><xref format="dita" href="building-your-site/edit-page-via-pages-menu.dita">Edit a page.</xref></choice>
+					<choice><xref format="dita" href="building-your-site/create-page-via-control-bar.dita">Create a page.</xref></choice>
+					<choice><xref format="dita" href="building-your-site/copy-page-via-control-bar.dita">Copy a page.</xref></choice>
+					<choice><xref format="dita" href="building-your-site/edit-page-via-control-bar.dita">Edit a page.</xref></choice>
 				</choices>
 			</step>
 

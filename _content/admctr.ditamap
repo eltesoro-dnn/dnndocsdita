@@ -38,7 +38,7 @@
         <mapref href="administrators/security/security-adm.ditamap" />
 
 		<!-- Building Your Site -->
-		<mapref href="administrators/building-your-site/building-your-site-via-pages-menu.ditamap" />
+		<mapref href="administrators/building-your-site/building-your-site-via-control-bar.ditamap" />
 
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="administrators/administrator-references.dita" collection-type="family">
@@ -104,7 +104,7 @@
 
         <!-- adm -->
 		<relrow>
-			<relcell><topicref format="dita" type="task" toc="yes" href="administrators/building-your-site/add-module-to-page-via-pages-menu.dita" />
+			<relcell><topicref format="dita" type="task" toc="yes" href="administrators/building-your-site/add-module-to-page-via-control-bar.dita" />
 			</relcell>
 			<relcell/>
 			<relcell><topicref format="dita" type="reference" href="administrators/included-modules/included-modules.dita" /></relcell>

@@ -14,11 +14,22 @@
 
     <taskbody>
 
+		<!-- <section conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/section-importexportoverview"></section> -->
+		<section id="section-importexportoverview">
+			<p>Exporting and importing a page converts it to and from a template file, which is an XML file that contains pertinent information about the source page and about each module contained in it.</p>
+
+			<p>If a theme was applied specifically to an exported page, a reference to the theme is stored in the XML file, however, the theme package itself is not copied and must be installed on the target site separately.</p>
+
+			<p>Folders are not shared among sites, even within the same DNN installation. Therefore, after exporting a page, an administrator must copy the resulting template file to the target site before it can be imported as a page.</p>
+		</section>
+
+
+
         <steps>
 
 			<!-- PAGES MENU (CP) - PAGES - ADD, EDIT -->
 
-			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-pb/step-cp-gotopagemgmt"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-gotopagemgmt"><cmd/></step> -->
 			<step id="step-pb-gotopagemgmt">
 				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Page Management</uicontrol></menucascade>.</cmd>
 				<info>
@@ -29,65 +40,27 @@
 				</stepresult>
             </step>
 
-			<!--
-			<cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-cp-configure-page-details"></cmd>
-			<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-PageDetails.png"><alt>Add Page - Page Details</alt></image></info>
-			<substeps conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/substeps-cp-configure-page-details"><substep><cmd/></substep></substeps>
-			-->
-			<step>
-				<cmd id="cmd-cp-configure-page-details">In the <uicontrol>Page Details</uicontrol> tab, configure the page.</cmd>
-				<substeps id="substeps-cp-configure-page-details">
-					<substep><cmd>Enter the <uicontrol>Page Name</uicontrol>.</cmd></substep>
-					<substep>
-						<cmd>(Optional) Fill in the remaining fields.</cmd>
-						<info>
-							<simpletable id="simpletable-pagedetails-cp" relcolwidth="1* 3*">
-								<sthead>
-									<stentry>Field</stentry>
-									<stentry>Description</stentry>
-								</sthead>
-								<strow>
-									<stentry>Page Title</stentry>
-									<stentry>Displayed as the browser window's title.</stentry>
-								</strow>
-								<strow>
-									<stentry>Page URL</stentry>
-									<stentry>Custom URL for the page.</stentry>
-								</strow>
-								<strow>
-									<stentry>Do Not Redirect</stentry>
-									<stentry>If checked, the page is excluded from any rules that might result in a redirect.</stentry>
-								</strow>
-								<strow>
-									<stentry>Keywords</stentry>
-									<stentry>Comma-separated keywords that can be used by search engines to help index your site's pages.</stentry>
-								</strow>
-								<strow>
-									<stentry>Tags</stentry>
-									<stentry>Predefined tags that you can choose from the dropdown, if any are defined.</stentry>
-								</strow>
-								<strow>
-									<stentry>
-										<p>Parent Page</p>
-										<p>Insert Page</p>
-									</stentry>
-									<stentry>Choose under which page in the hierarchy to insert the current page, and choose its position among its siblings. By default, the new page inherits permissions from the parent page.</stentry>
-								</strow>
-								<strow>
-									<stentry>
-										<p>Template Folder</p>
-										<p>Page Template</p>
-									</stentry>
-									<stentry>The folder and the specific template to use for the new page.</stentry>
-								</strow>
-								<strow>
-									<stentry>Include in Menu</stentry>
-									<stentry>If checked, the page is included in the main navigation menu. Even if unchecked, you can still link to the page using its URL.</stentry>
-								</strow>
-							</simpletable>
-						</info>
-					</substep>
-				</substeps>
+			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-configure-page-details"><cmd/></step> -->
+			<step id="step-cp-configure-page-details">
+				<cmd>In the <uicontrol>Page Details</uicontrol> tab, configure the page.</cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-PageDetails.png"><alt>Page Details</alt></image>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry>Field</stentry>
+							<stentry>Description</stentry>
+						</sthead>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagename"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagetitle"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pageurl"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-donotredirect"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-keywords"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-tags"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-parentpageinsertpage"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-templatefolderpagetemplate"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-includeinmenu"><stentry/></strow>
+					</simpletable>
+				</info>
 			</step>
 
 			<!--
@@ -112,9 +85,9 @@
 						<info>
 							<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-CopyPage-SpecifyModules.png"><alt>Add Page - CopyPage - Specify Modules</alt></image>
 							<ul>
-								<li><uicontrol>New</uicontrol> creates a new module instance with default settings.</li>
-								<li><uicontrol>Copy</uicontrol> creates a new module instance with the same settings as the module in the source page.</li>
-								<li><uicontrol>Reference</uicontrol> creates a link to the module instance in the source page.</li>
+								<li><uicontrol>New</uicontrol> creates a new module instance with default settings and no content.</li>
+								<li><uicontrol>Copy</uicontrol> creates a new module instance with the same settings as the module in the source page and also creates independent copies of the content. This option is disabled for modules that don't have content, such as the <uicontrol>Account Login</uicontrol> module.</li>
+								<li><uicontrol>Reference</uicontrol> shares content between the original and the new pages.</li>
 							</ul>
 						</info>
 					</substep>
@@ -149,7 +122,7 @@
 						-->
 
 						<tgroup cols="2" align="left">
-							<colspec colname="FIELD" />
+							<colspec colname="FIELD" colwidth="20%"/>
 							<colspec colname="DESCRIPTION" />
 							<thead>
 								<row><entry nameend="DESCRIPTION">Appearance</entry></row>
@@ -161,7 +134,7 @@
 											   Large Icon</lines>
 									</entry>
 									<entry>
-										The icons to be displayed in the navigation (small icon) and in the console (large icon).
+										The icons to be displayed in the navigation (small icon) and in any <uicontrol>Console</uicontrol> module (small icon and large icon).
 										<!-- DOCBUG: What sizes should these be? -->
 										<ul>
 											<li conref="../bptext.dita#bptext/li-AddPageChooseSiteFile"></li>
@@ -199,7 +172,7 @@
 						</tgroup>
 
 						<tgroup cols="2" align="left">
-							<colspec colname="FIELD" />
+							<colspec colname="FIELD" colwidth="20%"/>
 							<colspec colname="DESCRIPTION" />
 							<thead>
 								<row><entry nameend="DESCRIPTION">Cache Settings</entry></row>
@@ -213,7 +186,7 @@
 						</tgroup>
 
 						<tgroup cols="2" align="left">
-							<colspec colname="FIELD" />
+							<colspec colname="FIELD" colwidth="20%"/>
 							<colspec colname="DESCRIPTION" />
 							<thead>
 								<row><entry nameend="DESCRIPTION">Other Settings</entry></row>
@@ -227,7 +200,7 @@
 								</row>
 								<row>
 									<entry>Allow Indexing</entry>
-									<entry>If checked, the page is indexed by search crawlers; otherwise, it is ignored.</entry>
+									<entry>If checked, search crawlers are allowed to index the page.</entry>
 								</row>
 								<row>
 									<entry>Site Map Priority</entry>
@@ -257,7 +230,7 @@
 			</step>
 
 			<!--
-			<step><cmd>Open the page to edit.</cmd></step>
+			<step><cmd>Go to the page to edit.</cmd></step>
 			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
 			-->
 			<step id="step-cp-editpage">
@@ -268,7 +241,18 @@
 			</step>
 
 			<!--
-			<step><cmd>Open the page to delete.</cmd></step>
+			<step><cmd>Go to the page to configure.</cmd></step>
+			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpagesettings"><cmd/></step>
+			-->
+			<step id="step-cp-editpagesettings">
+				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Page Settings</uicontrol></menucascade>.</cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPagePageSettings.png"><alt>Edit Page - Page Settings</alt></image>
+				</info>
+			</step>
+
+			<!--
+			<step><cmd>Go to the page to delete.</cmd></step>
 			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-deletepage"><cmd/></step>
 			-->
 			<step id="step-cp-deletepage">
@@ -277,7 +261,6 @@
 					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageDeletePage.png"><alt>Edit Page - Delete Page</alt></image>
 				</info>
 			</step>
-
 
 
 			<!-- MODULES - ADD, EDIT -->

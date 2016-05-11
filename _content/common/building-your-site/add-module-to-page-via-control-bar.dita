@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-AddModuleToPageViaPagesMenu">
+<task xml:lang="en" id="tsk-add-module-to-page-via-control-bar">
 
-    <title>Add a Module to a Page via the Pages Menu</title>
+    <title>Add a Module to a Page via the Control Bar</title>
     <titlealts>
         <navtitle>Add Module</navtitle>
     </titlealts>
@@ -35,11 +35,11 @@
     <taskbody>
 
 		<section>
-			<p>The <uicontrol>Pages</uicontrol> menu is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" href="add-module-to-page-via-persona-bar.dita">Add a Module to a Page via the Persona Bar</xref> as a content manager.</p>
+			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" href="add-module-to-page-via-persona-bar.dita">Add a Module to a Page via the Persona Bar</xref> as a content manager.</p>
 		</section>
 
         <steps>
-			<step><cmd>Open the page to edit.</cmd></step>
+			<step><cmd>Go to the page to edit.</cmd></step>
 			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
 			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step>
 			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-addmoduletopane"><cmd/></step>

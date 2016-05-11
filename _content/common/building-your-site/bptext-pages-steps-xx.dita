@@ -14,6 +14,178 @@
 
     <taskbody>
 
+		<section>
+
+			<!-- FIELD NAMES IN SIMPLETABLE -->
+
+			<simpletable relcolwidth="1* 3*">
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagename"><stentry/></strow> -->
+				<strow id="strow-field-pagename">
+					<stentry>[Page] Name</stentry>
+					<stentry>Required. Used in the navigation.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagetitle"><stentry/></strow> -->
+				<strow id="strow-field-pagetitle">
+					<stentry>[Page] Title</stentry>
+					<stentry>
+						Displayed as the browser window's title.
+						<note type="tip">The title is used by search engines to identify the information on the page. Include at least five highly descriptive words, and keep the title under 200 characters.</note>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pageurl"><stentry/></strow> -->
+				<strow id="strow-field-pageurl">
+					<stentry>[Page] URL</stentry>
+					<stentry>Custom URL for the page.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-donotredirect"><stentry/></strow> -->
+				<strow id="strow-field-donotredirect">
+					<stentry>Do Not Redirect</stentry>
+					<stentry>If checked, the page is excluded from any rules that might result in a redirect.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-redirectmode"><stentry/></strow> -->
+				<strow id="strow-field-redirectmode">
+					<stentry>Redirect Mode</stentry>
+					<stentry>
+						<p>If <uicontrol>View imported page</uicontrol>, the imported page is displayed after import.</p>
+						<p>If <uicontrol>Edit imported page</uicontrol>, the imported page is opened for editing after import.</p>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-keywords"><stentry/></strow> -->
+				<strow id="strow-field-keywords">
+					<stentry>Keywords</stentry>
+					<stentry>Comma-separated keywords that can be used by search engines to help index your site's pages.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-tags"><stentry/></strow> -->
+				<strow id="strow-field-tags">
+					<stentry>Tags</stentry>
+					<stentry>Predefined tags that you can choose from the dropdown, if any are defined.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-parentpageinsertpage"><stentry/></strow> -->
+				<strow id="strow-field-parentpageinsertpage">
+					<stentry>
+						<p>Parent Page</p>
+						<p>Insert Page</p>
+					</stentry>
+					<stentry>Choose under which page in the hierarchy to insert the page, and choose its position among its siblings. By default, a new page inherits permissions from the parent page.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-templatefolderpagetemplate"><stentry/></strow> -->
+				<strow id="strow-field-templatefolderpagetemplate">
+					<stentry>
+						<p>Template Folder</p>
+						<p>Page Template</p>
+					</stentry>
+					<stentry>The template to use for the new page.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-foldertemplateimport"><stentry/></strow> -->
+				<strow id="strow-field-foldertemplateimport">
+					<stentry>
+						<p>Folder</p>
+						<p>Template</p>
+					</stentry>
+					<stentry>The template to use for the new page.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-foldertemplateexport"><stentry/></strow> -->
+				<strow id="strow-field-foldertemplateexport">
+					<stentry>
+						<p>Folder</p>
+						<p>Template Name</p>
+					</stentry>
+					<stentry>The location and name of the file to export to.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-includeinmenu"><stentry/></strow> -->
+				<strow id="strow-field-includeinmenu">
+					<stentry>Include in Menu</stentry>
+					<stentry>If checked, the page is included in the main navigation menu. Even if unchecked, you can still link to the page using its URL.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-importmode"><stentry/></strow> -->
+				<strow id="strow-field-importmode">
+					<stentry>Import Mode</stentry>
+					<stentry>
+						<p>If <uicontrol>Create a new page</uicontrol>, you must specify a name for the page and its position in the hierarchy.</p>
+						<p>If <uicontrol>Replace the current page</uicontrol>, the imported page gets the same name and position of the current page. Existing data on the current page might be overwritten.</p>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-descriptionexport"><stentry/></strow> -->
+				<strow id="strow-field-descriptionexport">
+					<stentry>Description</stentry>
+					<stentry>Description of the page/template to be exported.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-includecontentexport"><stentry/></strow> -->
+				<strow id="strow-field-includecontentexport">
+					<stentry>Include Content</stentry>
+					<stentry>If checked, the resulting template file includes information about all the modules in the current page. If unchecked, the resulting template file only includes page information.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-workflow"><stentry/></strow> -->
+				<strow id="strow-field-workflow">
+					<stentry>Workflow</stentry>
+					<stentry>Predefined workflow states that you can choose from the dropdown.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-displayinmenu"><stentry/></strow> -->
+				<strow id="strow-field-displayinmenu">
+					<stentry>Display in Menu</stentry>
+					<stentry>If enabled, the page is included in the main navigation menu. If the page is not included in the navigation menu, you can still link to it using its URL.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-linktracking"><stentry/></strow> -->
+				<strow id="strow-field-linktracking">
+					<stentry>Link Tracking</stentry>
+					<stentry>If enabled, </stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-enablescheduling"><stentry/></strow> -->
+				<strow id="strow-field-enablescheduling">
+					<stentry>Enable Scheduling</stentry>
+					<stentry>
+						<p>If enabled, the <uicontrol>Start Date</uicontrol> and <uicontrol>End Date</uicontrol> buttons appear below the switch. Click/Tap on either button to set the dates and times.</p>
+						<ul conref="../bptext.dita#bptext/ul-publisheddates"><li/></ul>
+						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details-Calendar.png"><alt>Add Page - Details - Calendar</alt></image>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagetemplate"><stentry/></strow> -->
+				<strow id="strow-field-pagetemplate">
+					<stentry>Page Template</stentry>
+					<stentry>Required. The template layouts are defined by the theme used in the site.</stentry>
+				</strow>
+
+			</simpletable>
+
+		</section>
+
+
+		<section>
+
+			<!-- <note conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/note-deletingpages"></note> -->
+			<note type="note" id="note-deletingpages">
+				<ul>
+					<li>Deleting a parent page also deletes its child pages.</li>
+					<li>Pages that are set as the <wintitle>Splash</wintitle> page, the <wintitle>Home</wintitle> page, the <wintitle>Login</wintitle> page, or the <wintitle>User</wintitle> page cannot be deleted until the settings are changed by the administrator in the site settings.</li>
+					<li>The last visible site page cannot be deleted.</li>
+					<li>Deleted pages are stored in the recycle bin until they are restored or purged.</li>
+				</ul>
+			</note>
+
+
+
+		</section>
+
+
         <steps>
 
 			<!-- PAGES MENU (both) - PAGES - ADD, EDIT -->
