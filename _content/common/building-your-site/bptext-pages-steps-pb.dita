@@ -161,6 +161,12 @@
 				</substeps>
 			</step>
 
+			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-quicklyaddcontenttopane"><cmd/></step> -->
+			<step id="step-pb-quicklyaddcontenttopane">
+				<cmd>Within a pane, click on the appropriate icon to add text, an image, or a module.</cmd>
+				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pane-with-content-icons.png"><alt>Pane with content icons</alt></image></info>
+			</step>
+
         </steps>
 
     </taskbody>

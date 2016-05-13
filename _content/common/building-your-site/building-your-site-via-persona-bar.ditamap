@@ -22,6 +22,8 @@
 
 		<!-- Modules -->
 		<topicref format="dita" type="task" toc="yes" href="add-module-to-page-via-persona-bar.dita" />
+		<topicref format="dita" type="task" toc="yes" href="add-content-to-page-quickly-via-persona-bar.dita" />
+		<topicref format="dita" type="task" toc="yes" href="delete-module-from-page-via-persona-bar.dita" />
 	</topicref>
 
 
@@ -126,6 +128,7 @@
             <relcell>
 				<topicref format="dita" type="task"  scope="peer" navtitle="Add a Module to a Page via the Control Bar" href="../../administrators/building-your-site/add-module-to-page-via-control-bar.dita" />
 				<topicref format="dita" type="task"  href="add-module-to-page-via-persona-bar.dita" />
+				<topicref format="dita" type="task"  href="add-content-to-page-quickly-via-persona-bar.dita" />
 			</relcell>
             <relcell/>
         </relrow>

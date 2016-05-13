@@ -35,7 +35,9 @@
     <body>
 
 		<section id="overview">
-			<p>Modules are a type of extensions that expand the functionality of DNN by displaying or generating content. Themes and containers are also added to the site to manage the appearance of the pages and modules, respectively. Other extensions control different aspects of DNN, such as security, caching, and user management.</p>
+			<p>Modules expand the functionality of DNN by displaying or generating content on a page or by performing administrative tasks. Themes and containers manage the appearance of the pages and modules, respectively. Other extensions control different aspects of DNN, such as security, caching, and user management.</p>
+
+			<p>Extensions, which include modules, themes, and containers, must be installed and enabled by the host before they become available for use in any site or page.</p>
 
 			<p>The <xref format="dita" href="../included-modules/module-site-wizard.dita">Site Wizard</xref> is a quick way to configure the basic settings for a site, change the design, and apply a template.</p>
 

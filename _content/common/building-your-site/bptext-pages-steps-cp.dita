@@ -154,11 +154,11 @@
 											   Page Container
 											   Page Stylesheet</lines>
 									</entry>
-									<entry>The custom theme for the page, the custom container for the modules in the page, and the custom stylesheet for the page, respectively. To inherit from the parent, leave as <uicontrol>None Specified</uicontrol> or blank.</entry>
+									<entry>The custom theme for the page, the custom container for the modules in the page, and the custom stylesheet for the page, respectively. To inherit from the parent, leave as <uicontrol>None Specified</uicontrol> or blank. Additional files for themes, containers, and stylesheets can be uploaded by an administrator.</entry>
 								</row>
 								<row>
 									<entry>Disabled</entry>
-									<entry>If checked, the page appears on the navigation as static text, which is unclickable.</entry>
+									<entry>If checked, the page appears on the navigation as static (unclickable) text, instead of a link.</entry>
 								</row>
 								<row>
 									<entry>Refresh interval</entry>
@@ -180,7 +180,13 @@
 							<tbody>
 								<row>
 									<entry>Output Cache Provider</entry>
-									<entry>The cache provider to use for this page. The dropdown list includes the <xref format="dita" scope="peer" href="/docs/administrators/providers.html#top-providers__outcacheprov">output caching providers</xref> installed on the site.</entry>
+									<entry>The cache provider to use for this page. The dropdown list includes the <xref format="dita" scope="peer" href="/docs/administrators/providers.html#top-providers__outcacheprov">output caching providers</xref> installed on the site.
+										<ul>
+											<li><uicontrol>FileOutputCachingProvider</uicontrol> saves cached items to a file system. Ideal for a shared hosting environment.</li>
+											<li><uicontrol>DatabaseOutputCachingProvider</uicontrol> saves cached items to the database.</li>
+											<li><uicontrol>MemoryOutputCachingProvider</uicontrol> saves cached items in memory. This is the fastest caching method. Ideal if the website has a large amount of RAM. Not suitable in a shared hosting environment.</li>
+										</ul>
+									</entry>
 								</row>
 							</tbody>
 						</tgroup>
@@ -200,7 +206,7 @@
 								</row>
 								<row>
 									<entry>Allow Indexing</entry>
-									<entry>If checked, search crawlers are allowed to index the page.</entry>
+									<entry>If checked, search crawlers are allowed to index the page, using the INDEX/NOINDEX values for the ROBOTS meta tag.</entry>
 								</row>
 								<row>
 									<entry>Site Map Priority</entry>
@@ -214,12 +220,20 @@
 									<entry>
 										<p>Click/Tap on the calendar icon to choose the date (server date); the default is the current date. Click/Tap on the clock icon to choose the time; the default is 12:00 AM (server time).</p>
 										<ul conref="../bptext.dita#bptext/ul-publisheddates"><li/></ul>
+										<note type="note">Administrators can manage expired pages from <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Page Management</uicontrol></menucascade></note>
 									</entry>
 								</row>
 								<row>
 									<entry>Link URL</entry>
 									<entry>
 										<p conref="../bptext.dita#bptext/p-AddPageLinkType"></p>
+									</entry>
+								</row>
+								<row>
+									<entry>Permanently Redirect</entry>
+									<entry>
+										<p>If checked, the URL to this page is permanently mapped to the <uicontrol>Link URL</uicontrol> value, so that search engines can go directly to the target URL.</p>
+										<note type="note">This setting is ignored if <uicontrol>Link Type</uicontrol> is <uicontrol>None</uicontrol>.</note>
 									</entry>
 								</row>
 							</tbody>
@@ -275,6 +289,60 @@
 			<step id="step-cp-addmoduletopane">
 				<cmd>Drag the module to a pane in the current page.</cmd>
 				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-ModulesList-Drag.png"><alt>Drag module to pane.</alt></image></info>
+			</step>
+
+			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-addexistingmodule"><cmd/></step> -->
+			<step id="step-cp-addexistingmodule">
+                <cmd>Go to <menucascade><uicontrol>Module</uicontrol> <uicontrol>Add Existing Module</uicontrol></menucascade>.</cmd>
+                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddExisting.png"><alt>Module - Add Existing Module</alt></image></info>
+			</step>
+
+			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-chooseexistingmodule"><cmd/></step> -->
+			<step id="step-cp-chooseexistingmodule">
+                <cmd>Choose a module from another page.</cmd>
+				<substeps>
+					<substep>
+						<cmd>Search for or choose the page containing the configured module instance to refer to.</cmd>
+						<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ExistingModule-ChoosePage.png"><alt>From the first dropdown, choose the page containing the module to refer to.</alt></image></info>
+						<stepresult>The modules list panel below the dropdown is populated with the list of modules that exist in the selected page.</stepresult>
+					</substep>
+
+					<substep>
+						<cmd>Choose who can view the module.</cmd>
+						<info>
+							<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ExistingModule-Viewers.png"><alt>From the second dropdown, choose who can view the module.</alt></image>
+							<simpletable relcolwidth="1* 1*">
+								<sthead>
+									<stentry>Same as Page</stentry>
+									<stentry>Inherits the permissions from the current page.</stentry>
+								</sthead>
+								<strow>
+									<stentry>Page Editors Only</stentry>
+									<stentry>Displays the module only to users who are allowed to edit the page. You can also use this option to hide content to be published later.</stentry>
+								</strow>
+							</simpletable>
+						</info>
+					</substep>
+
+					<substep>
+						<cmd>(Optional) Check <uicontrol>Make a Copy</uicontrol>.</cmd>
+						<info>
+							<ul>
+								<li>If unchecked, you create a reference to the module, and any changes to the module configuration or the associated data would be displayed in all pages that refer to that module instance.</li>
+								<li>If checked, you create a copy of the configured module, and future changes to the configuration would not be reflected in the new instance.</li>
+							</ul>
+						</info>
+					</substep>
+
+					<substep>
+						<cmd>Drag the module to a pane in the current page.</cmd>
+						<info>
+							<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-ConfiguredModulesList-Drag.png"><alt>Drag module to pane.</alt></image>
+							<note type="note">If a reference to the same module instance already exists on the page, a new reference will not be created. Instead, the existing reference will be highlighted. However, you can create multiple copies of the same module on the same page.</note>
+						</info>
+					</substep>
+				</substeps>
+
 			</step>
 
         </steps>

@@ -35,7 +35,7 @@
     <taskbody>
 
 		<section>
-			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" href="add-module-to-page-via-persona-bar.dita">Add a Module to a Page via the Persona Bar</xref> as a content manager.</p>
+			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" href="../../content-managers/building-your-site/add-module-to-page-via-persona-bar.dita">Add a Module to a Page via the Persona Bar</xref> as a content manager.</p>
 		</section>
 
         <steps>
@@ -43,6 +43,7 @@
 			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
 			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step>
 			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-addmoduletopane"><cmd/></step>
+			<step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-xx-movemoduletodiffpane"><cmd/></step>
         </steps>
 
     </taskbody>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-edit-page-via-control-bar">
+<task xml:lang="en" id="tsk-copy-refer-to-existing-module-via-control-bar">
 
-    <title>Edit a Page via the Control Bar</title>
+    <title>Copy or Refer to an Existing Module via the Control Bar</title>
     <titlealts>
-        <navtitle>Edit Page</navtitle>
+        <navtitle>Copy/Refer to Existing Module</navtitle>
     </titlealts>
 
 
@@ -35,15 +35,22 @@
     <taskbody>
 
 		<section>
-			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/edit-page-via-persona-bar.dita">Edit a Page via the Persona Bar</xref> as a content manager.</p>
+			<p>You can choose to add a module instance as it is configured in another page, either by creating an independent copy of the module or by creating a reference to the same module instance.</p>
+
+			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. <!-- See <xref format="dita" href="../../content-managers/building-your-site/copy-refer-to-existing-module-via-persona-bar.dita">Copy or Refer to an Existing Module via the Persona Bar</xref> as a content manager. --></p>
+
+			<!-- As of 20160513, Add Existing Module is currently not available in the Persona Bar. See JIRA CONTENT-5098. -->
 		</section>
 
         <steps>
 			<step><cmd>Go to the page to edit.</cmd></step>
 			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-addmoduletopane"><cmd/></step>
-			<step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-xx-movemoduletodiffpane"><cmd/></step>
+			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-addexistingmodule"><cmd/></step>
+			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-chooseexistingmodule"><cmd/></step>
+			<step>
+				<cmd>(Optional) Update the configuration of the module.</cmd>
+				<info><p>If</p></info>
+			</step>
         </steps>
 
     </taskbody>

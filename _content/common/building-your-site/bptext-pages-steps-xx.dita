@@ -205,6 +205,32 @@
 				</substeps>
 			</step>
 
+			<!-- <step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-xx-movemoduletodiffpane"><cmd/></step> -->
+			<step id="step-xx-movemoduletodiffpane">
+				<cmd>You can move the module to a different pane in the current page.</cmd>
+				<choices>
+					<choice>
+						<p>You can hover over the empty area of the action menu bar of the module until the cursor changes to a four-arrow cursor, then drag the module to a different pane.</p>
+						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenubar-hover.png"><alt>Hover over action menu bar of the module, then drag to a different pane.</alt></image>
+					</choice>
+					<choice>
+						<p>You can click on the four-arrow icon to expand the <uicontrol>Move</uicontrol> action menu, which contains the list of panes on the page. Then choose the target pane.</p>
+						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-positioning-actionmenu.png"><alt>Click on the four-arrow icon, then choose the target pane from the list.</alt></image>
+					</choice>
+				</choices>
+			</step>
+
+			<!-- <step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step> -->
+			<step id="step-xx-actionmenu-manage-settings">
+				<cmd>In the module's action menu bar, go to <menucascade><uicontrol>Manage (gear icon)</uicontrol> <uicontrol>Settings</uicontrol></menucascade>.</cmd>
+				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-manage-settings.png"><alt>Manage action menu - Settings</alt></image></info>
+            </step>
+
+			<!-- <step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-xx-actionmenu-manage-delete"><cmd/></step> -->
+			<step id="step-xx-actionmenu-manage-delete">
+				<cmd>In the module's action menu bar, go to <menucascade><uicontrol>Manage (gear icon)</uicontrol> <uicontrol>Delete</uicontrol></menucascade>.</cmd>
+				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-manage-delete.png"><alt>Manage action menu - Delete</alt></image></info>
+            </step>
         </steps>
 
     </taskbody>
