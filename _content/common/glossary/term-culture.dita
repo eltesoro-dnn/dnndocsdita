@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
+<glossentry xml:lang="en" id="culture">
+
+    <glossterm>culture</glossterm>
+    <glossdef>The RFC 4646 code for the language and region. Example: en-US for English (US) and fr-FR for French (France).
+		<!-- Source: https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(v=vs.110).aspx -->
+    </glossdef>
+
+    <prolog>
+        <author>wrET,1605</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+</glossentry>

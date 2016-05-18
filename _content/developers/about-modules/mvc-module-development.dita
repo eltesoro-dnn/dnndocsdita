@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
-<concept xml:lang="en" id="con-MVCModuleDevelopment">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="con-MVCModuleDevelopment">
 
     <title>MVC Module Development</title>
     <titlealts>
@@ -18,7 +18,7 @@
         </metadata>
     </prolog>
 
-    <conbody>
+    <body>
 
         <section id="Overview">
             <title>Overview</title>
@@ -178,9 +178,9 @@
              </ul>
         </section>
 
-    </conbody>
+    </body>
 
     <related-links>
         <link format="html" scope="external" href="http://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller"><linktext>Wikipedia: Model-View-Controller</linktext></link>
     </related-links>
-</concept>
+</topic>

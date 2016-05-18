@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
-<concept xml:lang="en" id="con-SPAModuleDevelopment">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="con-SPAModuleDevelopment">
 
     <title>SPA Module Development</title>
     <titlealts>
@@ -18,7 +18,7 @@
         </metadata>
     </prolog>
 
-    <conbody>
+    <body>
 
         <section id="Overview">
             <title>Overview</title>
@@ -80,11 +80,12 @@
             </ul>
         </section>
 
-    </conbody>
+    </body>
 
     <related-links>
         <link format="html" scope="external" href="http://en.wikipedia.org/wiki/Single-page_application"><linktext>Wikipedia: Single-Page Application</linktext></link>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/ipropertyaccess"><linktext>DNN Wiki: Token Replacement API</linktext></link>
         <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/tokens"><linktext>DNN Wiki: Standard DNN Tokens</linktext></link>
     </related-links>
-</concept>
+
+</topic>

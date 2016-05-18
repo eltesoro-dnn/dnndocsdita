@@ -18,6 +18,7 @@
         </copyright>
         <metadata>
             <audience type="administrator" job="customizing" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -50,7 +51,7 @@
             </sectiondiv>
 
 
-            <sectiondiv>
+            <sectiondiv id="bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
@@ -61,7 +62,7 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-social-groups.dita#ref-Module/ModuleSocialGroups/bpicon"></ph> -->
+                            <!-- <ph conref="module-social-groups.dita#ref-ModuleSocialGroups/bpicon"></ph> -->
                             <ph id="bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-socialgroups.png"><alt>icon</alt></image>
                             </ph>

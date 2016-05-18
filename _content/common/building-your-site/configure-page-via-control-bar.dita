@@ -40,24 +40,14 @@
 
         <steps>
 			<step><cmd>Go to the page to configure.</cmd></step>
-
 			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpagesettings"><cmd/></step>
-
 			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-configure-page-details"><cmd/></step>
-
 			<step>
 				<cmd conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/cmd-xx-configure-page-permissions"></cmd>
 				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-Page-Permissions.png"><alt>Add Page - Permissions</alt></image></info>
 				<substeps conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/substeps-xx-configure-page-permissions"><substep><cmd/></substep></substeps>
 			</step>
-
-			<step>
-				<cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-configure-page-advanced"></cmd>
-				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings.png"><alt>Add Page - Advanced Settings</alt></image>
-					<table conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/table-page-properties"><tgroup cols="2"><colspec colnum="2"/><tbody><row><entry/><entry/></row></tbody></tgroup></table>
-				</info>
-			</step>
+			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-configure-page-advanced"><cmd/></step>
         </steps>
 
     </taskbody>

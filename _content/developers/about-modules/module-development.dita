@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
-<concept xml:lang="en" id="con-DevelopModules">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="con-DevelopModules">
 
     <title>Module Development Overview</title>
     <titlealts>
@@ -18,7 +18,7 @@
         </metadata>
     </prolog>
 
-    <conbody>
+    <body>
 
         <section id="WhatIsAModule">
             <title>What is a module?</title>
@@ -49,6 +49,6 @@
 
         </section>
 
-    </conbody>
+    </body>
 
-</concept>
+</topic>

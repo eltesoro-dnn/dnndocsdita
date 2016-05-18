@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
-<concept xml:lang="en" id="con-ModuleFeatures">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="con-ModuleFeatures">
 
     <title>Common Module Features</title>
 
@@ -15,7 +15,7 @@
         </metadata>
     </prolog>
 
-    <conbody>
+    <body>
 
         <section id="ThemesAndContainers">
             <title>Themes and Containers</title>
@@ -92,6 +92,6 @@
             <p>Modules can also call DNN security APIs to check a user's current permissions before enabling secured features.</p>
         </section>
 
-    </conbody>
+    </body>
 
-</concept>
+</topic>

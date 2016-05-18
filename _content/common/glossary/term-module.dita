@@ -3,7 +3,7 @@
 <glossentry xml:lang="en" id="module">
 
     <glossterm>module</glossterm>
-    <glossdef>Code that provides some functionality in a webpage. Example: A module could produce dynamic content that is displayed in a <term id="pane">pane</term> on the webpage.</glossdef>
+    <glossdef>A DNN extension that provides content or some functionality in a page. Example: A module could produce dynamic content that is displayed in a <term id="pane">pane</term> on the page.</glossdef>
 
     <prolog>
         <author>wrET,trJB,ceDS,1601</author>

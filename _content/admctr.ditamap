@@ -10,10 +10,10 @@
 
 
     <!-- Topics -->
-    <topicref format="dita" type="concept" href="administrators/index.dita" toc="yes">
+    <topicref format="dita" type="topic" href="administrators/index.dita" toc="yes">
 
-        <topicref format="dita" type="topic"   navtitle="What's New"   toc="yes" href="administrators/whats-new-dnn8.dita" />
-        <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="administrators/dnn-platform-overview.dita" />
+        <topicref format="dita" type="topic" navtitle="What's New"   toc="yes" href="administrators/whats-new-dnn8.dita" />
+        <topicref format="dita" type="topic" navtitle="DNN Platform" toc="yes" href="administrators/dnn-platform-overview.dita" />
 
         <!-- Setup -->
         <topicref format="dita" type="topic" toc="yes" href="administrators/setup/set-up-dnn.dita" copy-to="administrators/setup/index.dita" collection-type="sequence">
@@ -70,7 +70,7 @@
         <!-- adm dev dsg cmg -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept"   href="administrators/dnn-platform-overview.dita" />
+                <topicref format="dita" type="topic"     href="administrators/dnn-platform-overview.dita" />
             </relcell>
             <relcell/>
             <relcell>
@@ -92,11 +92,22 @@
             </relcell>
         </relrow>
 
+        <!-- adm cmg -->
+		<relrow>
+			<relcell>
+				<topicref format="dita" type="topic" toc="yes" href="administrators/building-your-site/building-your-site.dita" />
+			</relcell>
+			<relcell/>
+			<relcell>
+				<topicref format="dita" type="reference" toc="yes" href="administrators/included-modules/included-modules.dita" />
+			</relcell>
+		</relrow>
+
         <!-- adm -->
 		<relrow>
 			<relcell>
-				<topicref format="dita" type="conceptual" href="administrators/building-your-site/building-your-site.dita" />
-				<topicref format="dita" type="reference" href="administrators/security/roles/about-role-based-access.dita" />
+				<topicref format="dita" type="topic"     href="administrators/building-your-site/building-your-site.dita" />
+				<topicref format="dita" type="topic"     href="administrators/security/roles/about-role-based-access.dita" />
 			</relcell>
 			<relcell/>
 			<relcell/>

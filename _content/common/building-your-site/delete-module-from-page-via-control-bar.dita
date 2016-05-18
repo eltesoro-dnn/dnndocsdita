@@ -35,11 +35,11 @@
     <taskbody>
 
 		<section>
-			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" href="../../content-managers/building-your-site/delete-module-from-page-via-persona-bar.dita">Delete a Module from a Page via the Persona Bar</xref> as a content manager.</p>
+			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/delete-module-from-page-via-persona-bar.dita">Delete a Module from a Page via the Persona Bar</xref> as a content manager.</p>
 		</section>
 
         <steps>
-			<step><cmd>Go to the page to edit.</cmd></step>
+			<step><cmd>Go to the page containing the module to delete.</cmd></step>
 			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
 			<step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-xx-actionmenu-manage-delete"><cmd/></step>
         </steps>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
-<concept xml:lang="en" id="con-CreateModule">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="con-CreateModule">
 
     <title>Create a Module</title>
 
@@ -15,7 +15,7 @@
         </metadata>
     </prolog>
 
-    <conbody>
+    <body>
 
         <section id="diffways">
             <p>You can produce a module in different ways:
@@ -38,7 +38,7 @@
             <p>You can also use different programming frameworks (Web Forms, MVC, SPA) and languages (C#, VB) to create your module.</p>
         </section>
 
-    </conbody>
+    </body>
 
 
     <related-links>
@@ -48,4 +48,4 @@
         <link format="html" scope="external" href="http://www.chrishammond.com/blog/itemid/2616/using-the-new-module-development-templates-for-dot/"><linktext>Using the new Module Development Templates for DotNetNuke 7 by Chris Hammond</linktext></link>
     </related-links>
 
-</concept>
+</topic>

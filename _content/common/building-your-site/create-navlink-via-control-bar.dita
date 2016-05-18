@@ -37,7 +37,7 @@
 		<section>
 			<p>You can create a link in the navigation without creating a new page.</p>
 
-			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. <!-- See <xref format="dita" href="create-navlink-via-persona-bar.dita">Create a Navigation Link via the Persona Bar</xref> as a content manager. --></p>
+			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. <!-- See <xref format="dita" scope="peer"  href="create-navlink-via-persona-bar.dita">Create a Navigation Link via the Persona Bar</xref> as a content manager. --></p>
 		</section>
 
         <steps>
@@ -69,10 +69,10 @@
 								<p conref="../../common/bptext.dita#bptext/p-AddPageLinkType"></p>
 							</stentry>
 						</strow>
-						<strow>
+						<!-- <strow>
 							<stentry>Open Link in New Browser Window</stentry>
 							<stentry></stentry>
-						</strow>
+						</strow> -->
 					</simpletable>
 				</info>
 			</step>

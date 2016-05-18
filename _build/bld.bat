@@ -121,7 +121,7 @@ for %%v in ( administrators developers designers content-managers ) do  if not e
 :. start %_outdir%
 start c:\inetpub\wwwroot\docs
 start c:\z\docbuild\output\%_transtype%
-start explorer.exe
+:. start explorer.exe
 echo Copy the following to the Windows Explorer address bar: ftp://66.29.195.16/DNN%20Staging/DNNSoftware.QA.Docs/
 echo In Filezilla, use the following:
 echo    Host: 66.29.195.16

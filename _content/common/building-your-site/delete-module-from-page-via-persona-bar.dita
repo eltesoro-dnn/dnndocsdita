@@ -39,8 +39,8 @@
 		</section>
 
         <steps>
-			<step><cmd>Go to the page to edit.</cmd></step>
-			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-editpage"><cmd/></step>
+			<step><cmd>Go to the page containing the module to delete.</cmd></step>
+			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-editpagepersonabar"><cmd/></step>
 			<step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-xx-actionmenu-manage-delete"><cmd/></step>
         </steps>
 

@@ -30,7 +30,7 @@
 			<!-- PAGES MENU (CP) - PAGES - ADD, EDIT -->
 
 			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-gotopagemgmt"><cmd/></step> -->
-			<step id="step-pb-gotopagemgmt">
+			<step id="step-cp-gotopagemgmt">
 				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Page Management</uicontrol></menucascade>.</cmd>
 				<info>
 					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuAdminCommonPageManagement.png"><alt>Admin - Page Management</alt></image>
@@ -92,156 +92,120 @@
 						</info>
 					</substep>
 				</substeps>
-
 			</step>
 
-
-			<!--
-			<cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-configure-page-advanced"></cmd>
-			<info>
-				<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings.png"><alt>Add Page - Advanced Settings</alt></image>
-				<table conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/table-page-properties"><tgroup cols="2"><colspec colnum="2"/><tbody><row><entry/><entry/></row></tbody></tgroup></table>
-			</info>
-			-->
-			<step>
-				<cmd id="cmd-configure-page-advanced">(Optional) In the <uicontrol>Advanced Settings</uicontrol> tab, configure the page.</cmd>
+			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-configure-page-advanced"><cmd/></step> -->
+			<step id="step-configure-page-advanced">
+				<cmd>(Optional) In the <uicontrol>Advanced Settings</uicontrol> tab, configure the page.</cmd>
 				<info>
-					<table id="table-page-properties" frame="all" colsep="1" rowsep="1" >
-						<!--
-						<tgroup cols="2" align="left">
-							<colspec colname="FIELD" />
-							<colspec colname="DESCRIPTION" />
-							<thead>
-								<row>
-									<entry>Field</entry>
-									<entry>Description</entry>
-								</row>
-							</thead>
-							<tbody><row><entry morerows="1" nameend="2"></entry></row></tbody>
-						</tgroup>
-						-->
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings.png"><alt>Page Settings - Advanced Settings</alt></image>
 
-						<tgroup cols="2" align="left">
-							<colspec colname="FIELD" colwidth="20%"/>
-							<colspec colname="DESCRIPTION" />
-							<thead>
-								<row><entry nameend="DESCRIPTION">Appearance</entry></row>
-							</thead>
-							<tbody>
-								<row>
-									<entry>
-										<lines>Icon
-											   Large Icon</lines>
-									</entry>
-									<entry>
-										The icons to be displayed in the navigation (small icon) and in any <uicontrol>Console</uicontrol> module (small icon and large icon).
-										<!-- DOCBUG: What sizes should these be? -->
-										<ul>
-											<li conref="../bptext.dita#bptext/li-AddPageChooseSiteFile"></li>
-											<li conref="../bptext.dita#bptext/li-AddPageUploadFile"></li>
-											<li>To choose an image that shipped with DNN,
-												<ul>
-													<li>Select <uicontrol>System Image</uicontrol>.</li>
-													<li>Choose the image from the <uicontrol>Image</uicontrol> dropdown.</li>
-												</ul>
-											</li>
-										</ul>
-									</entry>
-								</row>
-								<row>
-									<entry>
-										<lines>Page Theme
-											   Page Container
-											   Page Stylesheet</lines>
-									</entry>
-									<entry>The custom theme for the page, the custom container for the modules in the page, and the custom stylesheet for the page, respectively. To inherit from the parent, leave as <uicontrol>None Specified</uicontrol> or blank. Additional files for themes, containers, and stylesheets can be uploaded by an administrator.</entry>
-								</row>
-								<row>
-									<entry>Disabled</entry>
-									<entry>If checked, the page appears on the navigation as static (unclickable) text, instead of a link.</entry>
-								</row>
-								<row>
-									<entry>Refresh interval</entry>
-									<entry>The number of seconds between automatic page refreshes. To disable automatic page refreshes, leave blank.</entry>
-								</row>
-								<row>
-									<entry>Page Header Tags</entry>
-									<entry>Tags that you want to be included in the META tag inside the HEAD tag of the page.</entry>
-								</row>
-							</tbody>
-						</tgroup>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry></stentry>
+							<stentry>Appearance</stentry>
+						</sthead>
+						<strow>
+							<stentry>
+								<lines><uicontrol>Icon</uicontrol>
+									   <uicontrol>Large Icon</uicontrol></lines>
+							</stentry>
+							<stentry>
+								The icons to be displayed in the navigation (small icon) and in any <uicontrol>Console</uicontrol> module (small icon and large icon).
+								<!-- DOCBUG: What sizes should these be? -->
+								<ul>
+									<li conref="../bptext.dita#bptext/li-AddPageChooseSiteFile"></li>
+									<li conref="../bptext.dita#bptext/li-AddPageUploadFile"></li>
+									<li conref="../bptext.dita#bptext/li-ChooseSystemImage"></li>
+								</ul>
+							</stentry>
+						</strow>
+						<strow>
+							<stentry>
+								<lines><uicontrol>Page Theme</uicontrol>
+									   <uicontrol>Page Container</uicontrol>
+									   <uicontrol>Page Stylesheet</uicontrol></lines>
+							</stentry>
+							<stentry>The custom theme for the page, the custom container for the modules in the page, and the custom stylesheet for the page, respectively. To inherit from the parent, leave as <uicontrol>None Specified</uicontrol> or blank. Additional files for themes, containers, and stylesheets can be uploaded by an administrator.</stentry>
+						</strow>
+						<strow>
+							<stentry><uicontrol>Disabled</uicontrol></stentry>
+							<stentry>If checked, the page appears on the navigation as static (unclickable) text, instead of a link.</stentry>
+						</strow>
+						<strow>
+							<stentry><uicontrol>Refresh interval</uicontrol></stentry>
+							<stentry>The number of seconds between automatic page refreshes. To disable automatic page refreshes, leave blank.</stentry>
+						</strow>
+						<strow>
+							<stentry><uicontrol>Page Header Tags</uicontrol></stentry>
+							<stentry>Tags that you want to be included in the META tag inside the HEAD tag of the page.</stentry>
+						</strow>
+					</simpletable>
 
-						<tgroup cols="2" align="left">
-							<colspec colname="FIELD" colwidth="20%"/>
-							<colspec colname="DESCRIPTION" />
-							<thead>
-								<row><entry nameend="DESCRIPTION">Cache Settings</entry></row>
-							</thead>
-							<tbody>
-								<row>
-									<entry>Output Cache Provider</entry>
-									<entry>The cache provider to use for this page. The dropdown list includes the <xref format="dita" scope="peer" href="/docs/administrators/providers.html#top-providers__outcacheprov">output caching providers</xref> installed on the site.
-										<ul>
-											<li><uicontrol>FileOutputCachingProvider</uicontrol> saves cached items to a file system. Ideal for a shared hosting environment.</li>
-											<li><uicontrol>DatabaseOutputCachingProvider</uicontrol> saves cached items to the database.</li>
-											<li><uicontrol>MemoryOutputCachingProvider</uicontrol> saves cached items in memory. This is the fastest caching method. Ideal if the website has a large amount of RAM. Not suitable in a shared hosting environment.</li>
-										</ul>
-									</entry>
-								</row>
-							</tbody>
-						</tgroup>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry></stentry>
+							<stentry>Cache Settings</stentry>
+						</sthead>
+						<strow>
+							<stentry><uicontrol>Output Cache Provider</uicontrol></stentry>
+							<stentry>The cache provider to use for this page. The dropdown list includes the <xref format="dita" scope="peer" href="/docs/administrators/providers.html#top-providers__outcacheprov">output caching providers</xref> installed on the site.
+								<ul>
+									<li><uicontrol>DatabaseOutputCachingProvider</uicontrol> saves cached items to the database.</li>
+									<li><uicontrol>FileOutputCachingProvider</uicontrol> saves cached items to a file system. Ideal for a shared hosting environment.</li>
+									<li><uicontrol>MemoryOutputCachingProvider</uicontrol> saves cached items in memory. This is the fastest caching method. Ideal if the website has a large amount of RAM. Not suitable in a shared hosting environment.</li>
+								</ul>
+							</stentry>
+						</strow>
+					</simpletable>
 
-						<tgroup cols="2" align="left">
-							<colspec colname="FIELD" colwidth="20%"/>
-							<colspec colname="DESCRIPTION" />
-							<thead>
-								<row><entry nameend="DESCRIPTION">Other Settings</entry></row>
-							</thead>
-							<tbody>
-								<row>
-									<entry>Secure?</entry>
-									<entry>If checked, the page requires a secure connection (SSL). This option is available only if the administrator enabled SSL for the site.
-										<!-- DOCBUG: Is the protocol automatically switched to https if they used http? -->
-									</entry>
-								</row>
-								<row>
-									<entry>Allow Indexing</entry>
-									<entry>If checked, search crawlers are allowed to index the page, using the INDEX/NOINDEX values for the ROBOTS meta tag.</entry>
-								</row>
-								<row>
-									<entry>Site Map Priority</entry>
-									<entry>A priority level that helps Google determine the page's importance, compared to the rest of the pages on the site. Ranges from 0.0 to 1.0, where 1.0 is the highest priority; the default value is 0.5.</entry>
-								</row>
-								<row>
-									<entry>
-										<lines>Start Date
-											   End Date</lines>
-									</entry>
-									<entry>
-										<p>Click/Tap on the calendar icon to choose the date (server date); the default is the current date. Click/Tap on the clock icon to choose the time; the default is 12:00 AM (server time).</p>
-										<ul conref="../bptext.dita#bptext/ul-publisheddates"><li/></ul>
-										<note type="note">Administrators can manage expired pages from <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Page Management</uicontrol></menucascade></note>
-									</entry>
-								</row>
-								<row>
-									<entry>Link URL</entry>
-									<entry>
-										<p conref="../bptext.dita#bptext/p-AddPageLinkType"></p>
-									</entry>
-								</row>
-								<row>
-									<entry>Permanently Redirect</entry>
-									<entry>
-										<p>If checked, the URL to this page is permanently mapped to the <uicontrol>Link URL</uicontrol> value, so that search engines can go directly to the target URL.</p>
-										<note type="note">This setting is ignored if <uicontrol>Link Type</uicontrol> is <uicontrol>None</uicontrol>.</note>
-									</entry>
-								</row>
-							</tbody>
-						</tgroup>
-					</table>
-
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry></stentry>
+							<stentry>Other Settings</stentry>
+						</sthead>
+						<strow>
+							<stentry><uicontrol>Secure?</uicontrol></stentry>
+							<stentry>If checked, the page requires a secure connection (SSL). This option is available only if the administrator enabled SSL for the site.
+								<!-- DOCBUG: Is the protocol automatically switched to https if they used http? -->
+							</stentry>
+						</strow>
+						<strow>
+							<stentry><uicontrol>Allow Indexing</uicontrol></stentry>
+							<stentry>If checked, search crawlers are allowed to index the page, using the INDEX/NOINDEX values for the ROBOTS meta tag.</stentry>
+						</strow>
+						<strow>
+							<stentry><uicontrol>Site Map Priority</uicontrol></stentry>
+							<stentry>A priority level that helps Google determine the page's importance, compared to the rest of the pages on the site. Ranges from 0.0 to 1.0, where 1.0 is the highest priority. The default is 0.5.</stentry>
+						</strow>
+						<strow>
+							<stentry>
+								<lines><uicontrol>Start Date</uicontrol>
+									   <uicontrol>End Date</uicontrol></lines>
+							</stentry>
+							<stentry>
+								<p conref="../bptext.dita#bptext/p-clicktapcalendarclockicons"></p>
+								<ul conref="../bptext.dita#bptext/ul-publisheddatespages"><li/></ul>
+								<note type="note">Administrators can manage expired pages from <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Page Management</uicontrol></menucascade></note>
+							</stentry>
+						</strow>
+						<strow>
+							<stentry><uicontrol>Link URL</uicontrol></stentry>
+							<stentry>
+								<p conref="../bptext.dita#bptext/p-AddPageLinkType"></p>
+							</stentry>
+						</strow>
+						<strow>
+							<stentry><uicontrol>Permanently Redirect</uicontrol></stentry>
+							<stentry>
+								<p>If checked, the URL to this page is permanently mapped to the <uicontrol>Link URL</uicontrol> value, so that search engines can go directly to the target URL.</p>
+								<note type="note">This setting is ignored if <uicontrol>Link Type</uicontrol> is <uicontrol>None</uicontrol>.</note>
+							</stentry>
+						</strow>
+					</simpletable>
 				</info>
 			</step>
+
 
 			<!--
 			<step><cmd>Go to the page to edit.</cmd></step>
@@ -311,13 +275,17 @@
 						<cmd>Choose who can view the module.</cmd>
 						<info>
 							<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ExistingModule-Viewers.png"><alt>From the second dropdown, choose who can view the module.</alt></image>
-							<simpletable relcolwidth="1* 1*">
+							<simpletable relcolwidth="1* 3*">
 								<sthead>
-									<stentry>Same as Page</stentry>
-									<stentry>Inherits the permissions from the current page.</stentry>
+									<stentry>Field</stentry>
+									<stentry>Description</stentry>
 								</sthead>
 								<strow>
-									<stentry>Page Editors Only</stentry>
+									<stentry><uicontrol>Same as Page</uicontrol></stentry>
+									<stentry>Inherits the permissions from the current page.</stentry>
+								</strow>
+								<strow>
+									<stentry><uicontrol>Page Editors Only</uicontrol></stentry>
 									<stentry>Displays the module only to users who are allowed to edit the page. You can also use this option to hide content to be published later.</stentry>
 								</strow>
 							</simpletable>
@@ -338,7 +306,7 @@
 						<cmd>Drag the module to a pane in the current page.</cmd>
 						<info>
 							<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-ConfiguredModulesList-Drag.png"><alt>Drag module to pane.</alt></image>
-							<note type="note">If a reference to the same module instance already exists on the page, a new reference will not be created. Instead, the existing reference will be highlighted. However, you can create multiple copies of the same module on the same page.</note>
+							<note type="note">You cannot create multiple references of the same module on the same page. However, you can create multiple copies of the same module on the same page.</note>
 						</info>
 					</substep>
 				</substeps>

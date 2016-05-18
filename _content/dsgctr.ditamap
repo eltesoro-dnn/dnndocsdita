@@ -12,10 +12,10 @@
 
 
     <!-- Topics -->
-    <topicref format="dita" type="concept" toc="yes" href="designers/index.dita" >
+    <topicref format="dita" type="topic" toc="yes" href="designers/index.dita" >
 
         <topicref format="dita" type="topic"   navtitle="What's New"   toc="yes" href="designers/whats-new-dnn8.dita" />
-        <topicref format="dita" type="concept" navtitle="DNN Platform" toc="yes" href="designers/dnn-platform-overview.dita" />
+        <topicref format="dita" type="topic" navtitle="DNN Platform" toc="yes" href="designers/dnn-platform-overview.dita" />
 
         <!-- Setup -->
         <topicref format="dita" type="topic" toc="yes" href="designers/setup/set-up-dnn.dita" copy-to="designers/setup/index.dita" collection-type="sequence">
@@ -26,7 +26,7 @@
         </topicref>
 
         <!-- About themes -->
-        <topicref format="dita" type="concept" toc="yes" href="designers/about-themes.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="designers/about-themes.dita" />
 
         <!-- Creating themes -->
         <topicref format="dita" type="topic" toc="yes" href="designers/creating-themes/create-theme.dita" copy-to="designers/creating-themes/index.dita" collection-type="sequence">
@@ -71,7 +71,7 @@
         <!-- adm dev dsg cmg -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept"   href="designers/dnn-platform-overview.dita" />
+                <topicref format="dita" type="topic"     href="designers/dnn-platform-overview.dita" />
             </relcell>
             <relcell/>
             <relcell>
@@ -119,13 +119,13 @@
         <!-- dsg -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="concept" href="designers/about-themes.dita" linking="targetonly" />
+                <topicref format="dita" type="topic" href="designers/about-themes.dita" linking="targetonly" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task" href="designers/creating-themes/create-layout-template.dita" />
-                <topicref format="dita" type="task" href="designers/creating-themes/create-css.dita" />
-                <topicref format="dita" type="task" href="designers/creating-themes/create-container.dita" />
-                <topicref format="dita" type="task" href="designers/creating-themes/create-doctype-xml.dita" />
+                <topicref format="dita" type="task"  href="designers/creating-themes/create-layout-template.dita" />
+                <topicref format="dita" type="task"  href="designers/creating-themes/create-css.dita" />
+                <topicref format="dita" type="task"  href="designers/creating-themes/create-container.dita" />
+                <topicref format="dita" type="task"  href="designers/creating-themes/create-doctype-xml.dita" />
             </relcell>
             <relcell/>
         </relrow>

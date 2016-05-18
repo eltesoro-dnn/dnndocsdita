@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
-<concept xml:lang="en" id="con-OverviewDNNPlatform">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="con-OverviewDNNPlatform">
 
     <title>The DNN Platform</title>
 
@@ -19,7 +19,7 @@
         </metadata>
     </prolog>
 
-    <conbody>
+    <body>
 
         <section id="DNNPlatform">
             <p>The <b>DNN Platform</b> is an open, extensible, secure, and scalable content management system for ASP.NET. Hundreds of thousands of businesses around the world, <xref format="html" scope="external" href="http://www.dnnsoftware.com/solutions/our-customers">from small local businesses to Global 1000 companies</xref>, depend on the DNN Platform as their website authoring environment.</p>
@@ -37,6 +37,6 @@
             <image scalefit="yes" placement="break" align="center" href="../common/img/DNNRoles.png"><alt>DNN workflow with roles</alt></image>
         </section>
 
-    </conbody>
+    </body>
 
-</concept>
+</topic>

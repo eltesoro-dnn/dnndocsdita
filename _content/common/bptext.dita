@@ -62,13 +62,24 @@
         <note type="tip" id="note-TipSkinningTool"><xref type="html" scope="external" href="http://www.10poundgorilla.com/">10 Pound Gorilla</xref>'s <xref scope="external" href="http://www.10poundgorilla.com/DNN/Skinning-Tool">Skinning Tool</xref> is both a reference and a tool that customizes the code for DNN theme objects, based on the attribute values you specify.</note>
 
 
-        <!-- ==================== Page Settings ==================== -->
+        <!-- ==================== Page and Module Settings ==================== -->
 
-		<!-- <ul conref="../../common/bptext.dita#bptext/ul-publisheddates"><li/></ul> -->
-		<ul id="ul-publisheddates">
+		<!-- <ul conref="../../common/bptext.dita#bptext/ul-publisheddatespages"><li/></ul> -->
+		<ul id="ul-publisheddatespages">
 			<li>The page is published after the specified start date. If <uicontrol>Start Date</uicontrol> is not set, the page is published immediately.</li>
 			<li>The page is hidden after the specified end date. If <uicontrol>End Date</uicontrol> is not set, the page is visible indefinitely.</li>
 		</ul>
+
+		<!-- <ul conref="../../common/bptext.dita#bptext/ul-publisheddatesmodules"><li/></ul> -->
+		<ul id="ul-publisheddatesmodules">
+			<li>The module is published after the specified start date. If <uicontrol>Start Date</uicontrol> is not set, the module is published immediately.</li>
+			<li>The module is hidden after the specified end date. If <uicontrol>End Date</uicontrol> is not set, the module is visible indefinitely.</li>
+		</ul>
+
+
+		<!-- <p conref="../../common/bptext.dita#bptext/p-clicktapcalendarclockicons"></p> -->
+		<p id="p-clicktapcalendarclockicons">Click/Tap on the calendar icon to choose the date (server date); the default is the current date. Click/Tap on the clock icon to choose the time; the default is 12:00 AM (server time).</p>
+
 
 		<!-- <p conref="../../common/bptext.dita#bptext/p-AddPageLinkType"></p> -->
 		<p id="p-AddPageLinkType">
@@ -81,25 +92,75 @@
 			</ul>
 		</p>
 
+
 		<ul>
 			<!-- <li conref="../../common/bptext.dita#bptext/li-AddPageChooseSiteFile"></li> -->
 			<li id="li-AddPageChooseSiteFile">
 				To choose a file that is already on your site,
-				<ul>
+				<ol>
 					<li>Select <uicontrol>File (A File on Your Site)</uicontrol>.</li>
 					<li>Choose the <uicontrol>Folder</uicontrol> where the file can be found.</li>
 					<li>Choose the <uicontrol>File</uicontrol>.</li>
-				</ul>
+				</ol>
 			</li>
+
 			<!-- <li conref="../../common/bptext.dita#bptext/li-AddPageUploadFile"></li> -->
 			<li id="li-AddPageUploadFile">
 				To upload a file to your site,
-				<ul>
+				<ol>
 					<li>Choose the <uicontrol>Folder</uicontrol> where the file should be stored.</li>
 					<li>Drag and drop the files from your local drive to the <uicontrol>Drop File(s) Here</uicontrol> box.</li>
 					<li>Click/Tap <uicontrol>Upload File</uicontrol>.</li>
-				</ul>
+				</ol>
 			</li>
+
+			<!-- <li conref="../../common/bptext.dita#bptext/li-ChooseUploadSiteFile"></li> -->
+			<li id="li-ChooseUploadSiteFile">
+				<p>Choose <uicontrol>File</uicontrol> to provide your own file.</p>
+				<image scalefit="yes" placement="break" align="left" href="../common/img/scr-ChooseUploadSiteFile.png"><alt>Choose a file from your site.</alt></image>
+				<p>To choose a file that is already on your site,
+					<ol>
+						<li>Select <uicontrol>File (A File on Your Site)</uicontrol>.</li>
+						<li>Choose the <uicontrol>Folder</uicontrol> where the file can be found.</li>
+						<li>Choose the <uicontrol>File</uicontrol>.</li>
+					</ol>
+				</p>
+				<p>To upload a file,
+					<ol>
+						<li>Select <uicontrol>File (A File on Your Site)</uicontrol>.</li>
+						<li>Choose the <uicontrol>Folder</uicontrol> where the uploaded file should go.</li>
+						<li>Drag and drop the files from your local storage to the <uicontrol>Drop File(s) Here</uicontrol> area.</li>
+					</ol>
+				</p>
+				<p>Alternately, you can copy a file from a URL to your site.
+					<ol>
+						<li>Select <uicontrol>File (A File on Your Site)</uicontrol>.</li>
+						<li>Click/Tap <uicontrol>Upload File</uicontrol>.</li>
+						<li>In the <uicontrol>Upload Files</uicontrol> dialog,
+							<ol>
+								<li>click/tap <uicontrol>From URL</uicontrol>,</li>
+								<li>choose the target location on your site,</li>
+								<li>enter the source URL, and</li>
+								<li>click/tap <uicontrol>Upload</uicontrol>.</li>
+							</ol>
+							<image scalefit="yes" placement="break" align="left" href="../common/img/scr-UploadFileFromURL.png"><alt>Upload File from URL dialog</alt></image>
+						</li>
+					</ol>
+				</p>
+			</li>
+
+			<!-- <li conref="../../common/bptext.dita#bptext/li-ChooseSystemImage"></li> -->
+			<li id="li-ChooseSystemImage">
+				<p>To choose an image that shipped with DNN,
+					<ol>
+						<li>Select <uicontrol>System Image</uicontrol>.</li>
+						<li>Choose the image from the <uicontrol>Image</uicontrol> dropdown.</li>
+					</ol>
+				</p>
+				<image scalefit="yes" placement="break" align="left" href="../common/img/scr-ChooseASystemImage.png"><alt>Choose an image that shipped with DNN.</alt></image>
+			</li>
+
+
 		</ul>
 
 

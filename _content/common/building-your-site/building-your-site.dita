@@ -35,34 +35,56 @@
     <body>
 
 		<section id="overview">
-			<p>Modules expand the functionality of DNN by displaying or generating content on a page or by performing administrative tasks. Themes and containers manage the appearance of the pages and modules, respectively. Other extensions control different aspects of DNN, such as security, caching, and user management.</p>
+			<p>Extensions expand the functionality of DNN. The most commonly used extensions when building a website are modules, themes, and containers.
+				<ul>
+					<li>Modules present content on a page or perform administrative tasks.</li>
+					<li>Themes and containers define the appearance of the pages and modules, respectively.</li>
+				</ul>
+			</p>
 
-			<p>Extensions, which include modules, themes, and containers, must be installed and enabled by the host before they become available for use in any site or page.</p>
-
-			<p>The <xref format="dita" href="../included-modules/module-site-wizard.dita">Site Wizard</xref> is a quick way to configure the basic settings for a site, change the design, and apply a template.</p>
+			<note type="note">Extensions must be installed and enabled by the host before they become available for use in any site or page.</note>
 
 			<p>To build a site,
 				<ol>
-					<li>Create or copy one or more pages on the site.</li>
-					<li>Configure the permissions for the page. Specific pages can be restricted to users in certain roles, such as subscribers.</li>
-					<li>To each page, add one or more <term>modules</term>.</li>
-					<li>Configure the modules and add content.</li>
-					<li>Add themes and containers.</li>
-					<li>Publish the pages.</li>
+					<li>Create or copy one or more pages on the site. A new page is based on the layout template, which defines the panes on the page.</li>
+					<li>Configure the page, including the permissions. Specific pages can be restricted to users in certain roles, such as subscribers.</li>
+					<li>To each page, add one or more <term>modules</term>. Each pane on the page can hold one module.</li>
+					<li>Configure the modules, choose containers for each, and add content where appropriate.</li>
+					<li>Add themes for the entire site and optionally for individual pages.</li>
+					<li>Test your site.</li>
+					<li>Publish your site.</li>
 				</ol>
 			</p>
-		</section>
 
-
-		<section id="aboutpages">
+			<note type="tip">The <xref format="dita" href="../included-modules/module-site-wizard.dita">Site Wizard</xref> is a quick way to configure the basic settings for a site, change the design, and apply a template.</note>
 
 		</section>
 
 
 		<section id="aboutmodules">
+			<title>About Modules</title>
+
 			<!--
 			<p>The most commonly used module is the <xref format="dita" href="../included-modules/module-html-text.dita">HTML/Text</xref> module which allows you to display rich text, HTML, and images or to run a script.</p>
 			-->
+
+			<p>You can add a module to a page:
+				<ul>
+					<li>As an independent instance. The new module instance is not affected by configuration changes made to other instances of the same module type.</li>
+					<li>As a reference to an existing module instance. If the module instance is reconfigured, even from another page, those changes will also be reflected on your page.</li>
+				</ul>
+			</p>
+
+			<p>Each module on a page has its own action menu that allows you to configure the module and its behavior. Action menus are displayed when the page is in <uicontrol>Edit</uicontrol> mode.</p>
+			<ul>
+				<li><uicontrol>Edit</uicontrol> menu (pencil icon)</li>
+				<li><uicontrol>Manage</uicontrol> menu (gear icon)</li>
+				<li><uicontrol>Move</uicontrol> menu (four-arrow icon)</li>
+				<li>Custom menus specific to the module</li>
+			</ul>
+
+			<p>Depending on module settings, site users could print, tag, and subscribe to the module's content.</p>
+
 		</section>
 
     </body>

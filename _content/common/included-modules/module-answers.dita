@@ -47,7 +47,7 @@
             </sectiondiv>
 
 
-            <sectiondiv>
+            <sectiondiv id="bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
@@ -67,7 +67,9 @@
                         <stentry>No</stentry>
                         <stentry>
                             <!-- <ph conref="module-answers.dita#ref-ModuleAnswers/bpproducts"></ph> -->
-                            <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+							<ph id="bpproducts">
+								<image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+							</ph>
                         </stentry>
                     </strow>
                 </simpletable>

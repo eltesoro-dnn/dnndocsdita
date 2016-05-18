@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
-<concept xml:lang="en" id="con-AboutThemes">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="con-AboutThemes">
 
     <title>About Themes</title>
 
@@ -15,7 +15,7 @@
         </metadata>
     </prolog>
 
-    <conbody>
+    <body>
 
         <section id="components">
             <title> Components of a Theme </title>
@@ -123,7 +123,7 @@
             <p conkeyref="k-bptext/p-3rdPartyExtensions"></p>
         </section>
 
-    </conbody>
+    </body>
 
 
     <related-links>
@@ -132,4 +132,4 @@
         <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/132000/dotnetnuke-skinning-101-part-1"><linktext>DNN Community Blog: DotNetNuke Skinning 101 (Part 1) by Joe Brinkman</linktext></link>
     </related-links>
 
-</concept>
+</topic>

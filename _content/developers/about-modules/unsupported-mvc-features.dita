@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
-<concept xml:lang="en" id="con-UnsupportedMVCFeatures">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="con-UnsupportedMVCFeatures">
 
     <title>Unsupported MVC Features</title>
 
@@ -15,7 +15,7 @@
         </metadata>
     </prolog>
 
-    <conbody>
+    <body>
 
         <section id="NotImplemented">
             <p>Some MVC features were not fully implemented in DNN 8 due to the differences between ASP.NET MVC and ASP.NET Web Forms frameworks.</p>
@@ -70,6 +70,6 @@
             </ul>
         </section>
 
-    </conbody>
+    </body>
 
-</concept>
+</topic>

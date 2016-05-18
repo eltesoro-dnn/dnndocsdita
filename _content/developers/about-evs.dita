@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
-<concept xml:lang="en" id="con-AboutEVS">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="con-AboutEVS">
 
     <title>About the Extension Verification Service</title>
     <titlealts>
@@ -18,7 +18,7 @@
         </metadata>
     </prolog>
 
-    <conbody>
+    <body>
 
         <section id="EVS">
 
@@ -54,7 +54,7 @@
 
         </section>
 
-    </conbody>
+    </body>
 
 
     <related-links>
@@ -62,4 +62,4 @@
         <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/154576/extension-verification-service-evs-update%20from%20june%202013"><linktext>DNN Community Blog: Extension Verification Service (EVS) Update by Nathan Rover</linktext></link>
     </related-links>
 
-</concept>
+</topic>

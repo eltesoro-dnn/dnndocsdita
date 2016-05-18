@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/concept.dtd">
-<concept xml:lang="en" id="con-ModuleArchitecture">
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="con-ModuleArchitecture">
 
     <title>Module Architecture</title>
 
@@ -15,7 +15,7 @@
         </metadata>
     </prolog>
 
-    <conbody>
+    <body>
 
         <section id="Overview">
             <p>Although every module provides a different set of features and functionality, some architectural elements are common among modules. Most DNN modules are developed using an n-tier architecture. Whether you build a Web Forms module, an MVC module, or a SPA module, you implement most of these layers in your module.</p>
@@ -106,6 +106,6 @@
             <p>For Web Forms modules, the primary view component is an ASP.NET user control, called a <term>module control</term> in DNN. For MVC and SPA modules, DNN expanded the definition of module controls to accommodate their alternative view-rendering pipelines.</p>
         </section>
 
-    </conbody>
+    </body>
 
-</concept>
+</topic>
