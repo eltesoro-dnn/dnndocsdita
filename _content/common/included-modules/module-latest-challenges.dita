@@ -7,8 +7,6 @@
         <navtitle>Latest Challenges</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Displays the most recent and currently active challenges that registered users can participate in.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -26,43 +24,59 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc">
-                <p>See <xref format="dita" href="module-challenges.dita">Challenges</xref>.</p>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Displays the most recent and currently active challenges that registered users can participate in.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-LatestChallenges.png"><alt>Latest Challenges module</alt></image> -->
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+            <!-- <sectiondiv conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
+
+                <p>See <xref format="dita" href="module-challenges.dita">Challenges</xref>.</p>
+
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-latestchallenges.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Latest Challenges</stentry>
                         <stentry>No</stentry>
+						<stentry>
+							<!-- <ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Social</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>
                         </stentry>

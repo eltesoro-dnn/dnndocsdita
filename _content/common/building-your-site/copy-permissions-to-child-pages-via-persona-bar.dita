@@ -39,9 +39,9 @@
 		</section>
 
         <steps>
-			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-gotopagemgmt"><cmd/></step>
+			<step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gotopagemgmt"><cmd/></step>
 
-			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-gearicon"><cmd/></step>
+			<step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gearicon"><cmd/></step>
 
 			<step>
 				<cmd>In the <uicontrol>Permissions</uicontrol> tab, next to <uicontrol>Copy Permissions to Descendant Pages</uicontrol>, click/tap the <uicontrol>Update</uicontrol> button.</cmd>

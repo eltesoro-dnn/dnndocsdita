@@ -7,8 +7,6 @@
         <navtitle>Content Staging</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-content-staging.dita#ref-ModuleContentStaging/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Allows administrators to connect and synchronize different servers.</ph></shortdesc>  <!-- Admins or hosts? -->
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -25,25 +23,37 @@
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
+
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
             </prodinfo>
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-content-staging.dita#ref-ModuleContentStaging/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-content-staging.dita#ref-ModuleContentStaging/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Allows administrators to connect and synchronize different servers.</ph></p>  <!-- Admins or hosts? -->
+			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-content-staging.dita#ref-ModuleContentStaging/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-content-staging.dita#ref-ModuleContentStaging/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-contentstaging.png"><alt>Content Staging module</alt></image> -->
             </sectiondiv>
 
 
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-content-staging.dita#ref-ModuleContentStaging/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
@@ -51,20 +61,25 @@
                         <stentry></stentry>
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-content-staging.dita#ref-ModuleContentStaging/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-content-staging.dita#ref-ModuleContentStaging/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-contentstaging.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Content Staging</stentry>
                         <stentry>-</stentry>
+						<stentry>
+							<!-- <ph conref="module-content-staging.dita#ref-ModuleContentStaging/ph-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Site Administration</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-content-staging.dita#ref-ModuleContentStaging/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-content-staging.dita#ref-ModuleContentStaging/ph-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>

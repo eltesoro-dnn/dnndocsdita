@@ -40,10 +40,10 @@
 
         <steps>
 			<step><cmd>Go to the page to edit.</cmd></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-addmoduletopane"><cmd/></step>
-			<step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-xx-movemoduletodiffpane"><cmd/></step>
+			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
+			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step>
+			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-addmoduletopane"><cmd/></step>
+			<step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-movemoduletodiffpane"><cmd/></step>
         </steps>
 
     </taskbody>

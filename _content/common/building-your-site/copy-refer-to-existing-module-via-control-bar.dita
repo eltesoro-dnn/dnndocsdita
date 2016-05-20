@@ -44,9 +44,9 @@
 
         <steps>
 			<step><cmd>Go to the page to edit.</cmd></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-addexistingmodule"><cmd/></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-chooseexistingmodule"><cmd/></step>
+			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
+			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-addexistingmodule"><cmd/></step>
+			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-chooseexistingmodule"><cmd/></step>
 			<step>
 				<cmd>(Optional) Update the configuration of the module.</cmd>
 				<info></info>

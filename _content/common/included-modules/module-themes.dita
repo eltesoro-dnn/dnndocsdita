@@ -7,8 +7,6 @@
         <navtitle>Themes</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-themes.dita#ref-ModuleThemes/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Manages the installed themes and how they are applied to the site.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -35,47 +33,63 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-themes.dita#ref-ModuleThemes/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc">
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-themes.dita#ref-ModuleThemes/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Manages the installed themes and how they are applied to the site.</ph></p>
+            </sectiondiv>
+
+
+            <!-- <sectiondiv conref="module-themes.dita#ref-ModuleThemes/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Themes.png"><alt>Themes module</alt></image>
+            </sectiondiv>
+
+
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-themes.dita#ref-ModuleThemes/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
+
                 <p>Includes:</p>
                 <ul>
                     <li><uicontrol>Themes</uicontrol>. Manages themes in the site.</li>
                     <li><uicontrol>Theme Designer</uicontrol>. Allows the creation of a theme within DNN.</li>
                 </ul>
-            </sectiondiv>
-
-
-            <!-- <sectiondiv conref="module-themes.dita#ref-ModuleThemes/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
-                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Themes.png"><alt>Themes module</alt></image>
-            </sectiondiv>
-
-
-            <sectiondiv id="bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-themes.dita#ref-ModuleThemes/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-themes.dita#ref-ModuleThemes/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-themes.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Themes</stentry>
                         <stentry>No</stentry>
+						<stentry>
+							<!-- <ph conref="module-themes.dita#ref-ModuleThemes/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Site Administration</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-themes.dita#ref-ModuleThemes/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-themes.dita#ref-ModuleThemes/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>

@@ -7,8 +7,6 @@
         <navtitle>Social Sharing</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Exposes social sharing links to Google+, Twitter, LinkedIn, and Facebook.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -26,43 +24,59 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-social-sharing.dita#ref-ModuleSocialSharing/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc">
-                <!-- <p>It utilizes the Facebook Application ID set at the portal level and also utilizes Open Graph Protocol data written to the page based on the currently viewed Content Item.</p> Would the audience (content managers) need this information? -->
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Exposes social sharing links to Google+, Twitter, LinkedIn, and Facebook.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-social-sharing.dita#ref-ModuleSocialSharing/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-social-sharing.dita#ref-ModuleSocialSharing/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SocialSharing.png"><alt>Social Sharing module</alt></image> -->
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-social-sharing.dita#ref-ModuleSocialSharing/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
+
+                <!-- <p>It utilizes the Facebook Application ID set at the portal level and also utilizes Open Graph Protocol data written to the page based on the currently viewed Content Item.</p> Would the audience (content managers) need this information? -->
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-socialsharing.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Social Sharing</stentry>
                         <stentry>No</stentry>
+						<stentry>
+							<!-- <ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Social</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>
                         </stentry>

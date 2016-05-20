@@ -7,8 +7,6 @@
         <navtitle>Advanced URL Management</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Helps administrators to manage the site's friendly URLs.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -29,22 +27,33 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/bpdesc"></sectiondiv> -->
-            <!-- How is this related to the Site Redirection Management module? -->
-            <sectiondiv id="bpdesc"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Helps administrators to manage the site's friendly URLs.</ph></p>
+			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-AdvURLMgmt.png"><alt>Advanced URL Management module</alt></image>
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- How is this related to the Site Redirection Management module? -->
+            <sectiondiv id="sectiondiv-bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
@@ -52,21 +61,26 @@
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
                         <stentry>Required permissions</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-advurlmgmt.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Advanced URL Management</stentry>
                         <stentry>No</stentry>
                         <stentry>Administrator</stentry>
+						<stentry>
+							<!-- <ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Site Administration</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>

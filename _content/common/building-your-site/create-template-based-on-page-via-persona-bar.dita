@@ -39,9 +39,9 @@
 		</section>
 
         <steps>
-			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-gotopagemgmt"><cmd/></step>
+			<step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gotopagemgmt"><cmd/></step>
 
-			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-gearicon"><cmd/></step>
+			<step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gearicon"><cmd/></step>
 
 			<step>
 				<cmd>Click/Tap <uicontrol>Save as Template</uicontrol>.</cmd>

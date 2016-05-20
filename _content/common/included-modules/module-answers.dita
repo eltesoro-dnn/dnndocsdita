@@ -7,8 +7,6 @@
         <navtitle>Answers</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-answers.dita#ref-ModuleAnswers/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Allows registered users to post questions to a social group and receive answers from the group.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -26,48 +24,64 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-answers.dita#ref-ModuleAnswers/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc">
-                <p>Includes:</p>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-answers.dita#ref-ModuleAnswers/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Allows registered users to post questions to a social group and receive answers from the group.</ph></p>
+            </sectiondiv>
+
+
+            <!-- <sectiondiv conref="module-answers.dita#ref-ModuleAnswers/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
+                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Answers.png"><alt>Answers module</alt></image> -->
+            </sectiondiv>
+
+
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-answers.dita#ref-ModuleAnswers/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
+
+				<p>Includes:</p>
                 <ul>
                     <li>Answers</li> <!-- ??? -->
                     <li>Answers Subscribe</li> <!-- ??? -->
                     <li>Answers Search</li> <!-- ??? -->
                 </ul>
-            </sectiondiv>
-
-
-            <!-- <sectiondiv conref="module-answers.dita#ref-ModuleAnswers/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Answers.png"><alt>Answers module</alt></image> -->
-            </sectiondiv>
-
-
-            <sectiondiv id="bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-answers.dita#ref-ModuleAnswers/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-answers.dita#ref-ModuleAnswers/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-answers.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Answers</stentry>
                         <stentry>No</stentry>
+						<stentry>
+							<!-- <ph conref="module-answers.dita#ref-ModuleAnswers/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Social</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-answers.dita#ref-ModuleAnswers/bpproducts"></ph> -->
-							<ph id="bpproducts">
+                            <!-- <ph conref="module-answers.dita#ref-ModuleAnswers/sectiondiv-bpproducts"></ph> -->
+							<ph id="ph-bpproducts">
 								<image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
 							</ph>
                         </stentry>

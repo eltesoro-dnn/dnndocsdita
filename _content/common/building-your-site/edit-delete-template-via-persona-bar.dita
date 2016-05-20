@@ -39,7 +39,7 @@
 		</section>
 
         <steps>
-			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-gototemplatelist"><cmd/></step>
+			<step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gototemplatelist"><cmd/></step>
 
 			<step>
 				<cmd>In the <wintitle>Page Templates</wintitle> list, hover over the template to edit/delete.</cmd>

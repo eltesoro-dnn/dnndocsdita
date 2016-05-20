@@ -39,8 +39,8 @@
 		</section>
 
         <steps>
-			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-gotopagemgmt"><cmd/></step>
-			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-eyeicon"><cmd/></step>
+			<step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gotopagemgmt"><cmd/></step>
+			<step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-eyeicon"><cmd/></step>
         </steps>
 
     </taskbody>

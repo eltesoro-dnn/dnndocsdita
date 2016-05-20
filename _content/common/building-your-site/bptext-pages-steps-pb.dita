@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="bptext-pages-steps-pb">
+<task xml:lang="en" id="tsk-bptext-pages-steps-pb">
 
     <title>Boilerplates - Pages (Persona Bar) Steps</title>
 
@@ -18,7 +18,7 @@
 
 			<!-- PERSONA BAR (PB) - PAGES - ADD, EDIT -->
 
-			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-gotopagemgmt"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gotopagemgmt"><cmd/></step> -->
 			<step id="step-pb-gotopagemgmt">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Manage</uicontrol> <uicontrol>Pages</uicontrol></menucascade>.</cmd>
 				<info>
@@ -28,7 +28,7 @@
 
 			<!--
 			<step><cmd>Go to the page to edit.</cmd></step>
-			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-editpagepersonabar"><cmd/></step>
+			<step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-editpagepersonabar"><cmd/></step>
 			-->
 			<step id="step-pb-editpagepersonabar">
 				<cmd>In the <wintitle>Persona Bar</wintitle>, click/tap the pencil icon (<uicontrol>Edit</uicontrol>).</cmd>
@@ -39,7 +39,7 @@
 
 			<!--
 			Not used.
-			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-editpagepagemgmt"><cmd/></step>
+			<step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-editpagepagemgmt"><cmd/></step>
 			<step id="step-pb-editpagepagemgmt">
 				<cmd>In the <wintitle>Page Management</wintitle> page, hover over the page to edit, then click/tap the pencil icon.</cmd>
 				<info>
@@ -48,7 +48,7 @@
 			</step>
 			-->
 
-			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-eyeicon"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-eyeicon"><cmd/></step> -->
 			<step id="step-pb-eyeicon">
 				<cmd>In the <wintitle>Page Management</wintitle> page, hover over the page to view, then click/tap the eye icon.</cmd>
 				<info>
@@ -56,7 +56,7 @@
 				</info>
 			</step>
 
-			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-gearicon"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gearicon"><cmd/></step> -->
 			<step id="step-pb-gearicon">
 				<cmd>In the <wintitle>Page Management</wintitle> page, hover over the page to configure, then click/tap the gear icon.</cmd>
 				<info>
@@ -64,7 +64,7 @@
 				</info>
 			</step>
 
-			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-deletepage"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-deletepage"><cmd/></step> -->
 			<step id="step-pb-deletepage">
 				<cmd>In the <wintitle>Page Management</wintitle> page, hover over the page to delete, then click/tap the X icon.</cmd>
 				<info>
@@ -75,12 +75,12 @@
 
 
 			<!--
-			<cmd conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/cmd-pb-configurepage"></cmd>
+			<cmd conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/cmd-pb-configurepage"></cmd>
 			<info>
 				<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details.png"><alt>Add Page - Details</alt></image>
 				-OR-
 				<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-ConfigPage-Details.png"><alt>Pages - Details</alt></image>
-				<simpletable conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/simpletable-pb-configurepage"><strow/></simpletable>
+				<simpletable conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/simpletable-pb-configurepage"><strow/></simpletable>
 			</info>
 			-->
             <step>
@@ -91,22 +91,22 @@
 							<stentry>Field</stentry>
 							<stentry>Description</stentry>
 						</sthead>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagename"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagetitle"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pageurl"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-keywords"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-tags"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-workflow"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-displayinmenu"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-linktracking"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-enablescheduling"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagetemplate"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagename"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagetitle"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pageurl"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-keywords"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-tags"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-workflow"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-displayinmenu"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-linktracking"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-enablescheduling"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagetemplate"><stentry/></strow>
 					</simpletable>
 				</info>
             </step>
 
 
-			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-addfloatingpagetohierarchy"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-addfloatingpagetohierarchy"><cmd/></step> -->
 			<step id="step-pb-addfloatingpagetohierarchy">
 				<cmd>Add the new page to the hierarchy of pages.</cmd>
 				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Floater.png"><alt>Add Page - Drag the floater.</alt></image></info>
@@ -127,7 +127,7 @@
 
 			<!-- TEMPLATES - ADD, EDIT -->
 
-			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-gototemplatelist"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gototemplatelist"><cmd/></step> -->
 			<step id="step-pb-gototemplatelist">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Manage</uicontrol> <uicontrol>Templates</uicontrol></menucascade>.</cmd>
 				<info>
@@ -139,13 +139,13 @@
 
 			<!-- MODULES - ADD, EDIT -->
 
-			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-openmodulelist"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-openmodulelist"><cmd/></step> -->
 			<step id="step-pb-openmodulelist">
                 <cmd>In the <uicontrol>Edit Bar</uicontrol>, click/tap the <uicontrol>Add Module</uicontrol> icon.</cmd>
                 <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-EditBar-AddModule.png"><alt>Edit Bar - Add Module</alt></image></info>
 			</step>
 
-			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-addmoduletopane"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-addmoduletopane"><cmd/></step> -->
 			<step id="step-pb-addmoduletopane">
 				<cmd>Add the module to a pane in the current page.</cmd>
 				<substeps>
@@ -161,7 +161,7 @@
 				</substeps>
 			</step>
 
-			<!-- <step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-quicklyaddcontenttopane"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-quicklyaddcontenttopane"><cmd/></step> -->
 			<step id="step-pb-quicklyaddcontenttopane">
 				<cmd>Within a pane, click on the appropriate icon to add text, an image, or a module.</cmd>
 				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pane-with-content-icons.png"><alt>Pane with content icons</alt></image></info>

@@ -7,8 +7,6 @@
         <navtitle>Related Content</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-related-content.dita#ref-ModuleRelatedContent/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Displays a list of content related to the item that is currently displayed on the page.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -30,39 +28,54 @@
 
         <section>
 
-            <!-- <sectiondiv conref="module-related-content.dita#ref-ModuleRelatedContent/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc">
-                <p>Relationships are based on the <filepath>cid</filepath> parameter of the URL; however, content managers can also manage direct relationships among content assets. If the URL does not include the <filepath>cid</filepath> parameter, the module is hidden.</p>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-related-content.dita#ref-ModuleRelatedContent/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Displays a list of content related to the item that is currently displayed on the page.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-related-content.dita#ref-ModuleRelatedContent/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-related-content.dita#ref-ModuleRelatedContent/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-RelatedContent.png"><alt>Related Content module</alt></image> -->
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-related-content.dita#ref-ModuleRelatedContent/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
+
+                <p>Relationships are based on the <filepath>cid</filepath> parameter of the URL; however, content managers can also manage direct relationships among content assets. If the URL does not include the <filepath>cid</filepath> parameter, the module is hidden.</p>
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-related-content.dita#ref-ModuleRelatedContent/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-related-content.dita#ref-ModuleRelatedContent/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-relatedcontent.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Related Content</stentry>
                         <stentry>No</stentry>
+						<stentry>
+							<!-- <ph conref="module-related-content.dita#ref-ModuleRelatedContent/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">General Content</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-related-content.dita#ref-ModuleRelatedContent/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-related-content.dita#ref-ModuleRelatedContent/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>
                         </stentry>

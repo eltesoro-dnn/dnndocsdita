@@ -7,8 +7,6 @@
         <navtitle>Google Analytics</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Manages the site's Google Analytics settings.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -25,6 +23,7 @@
             <prodinfo>
                 <prodname>Evoq Content</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
+
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
@@ -33,47 +32,63 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc">
-                <ul>
-                    <li>Google Analytics is available in DNN Platform only.</li>
-                    <li>Google Analytics Professional is available in DNN Evoq only.</li>
-                </ul>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Manages the site's Google Analytics settings.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-GoogleAnalytics.png"><alt>Google Analytics module</alt></image>
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-GoogleAnalyticsPro.png"><alt>Google Analytics Professional module</alt></image>
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
+
+                <ul>
+                    <li>Google Analytics is available in DNN Platform only.</li>
+                    <li>Google Analytics Professional is available in DNN Evoq only.</li>
+                </ul>
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-googleanalytics.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Google Analytics</stentry>
                         <stentry>No</stentry>
+						<stentry>
+							<!-- <ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Site Administration</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>

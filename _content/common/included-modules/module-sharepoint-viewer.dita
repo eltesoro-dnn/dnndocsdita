@@ -7,8 +7,6 @@
         <navtitle>SharePoint Viewer</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Displays content assets stored in SharePoint.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -29,21 +27,32 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Displays content assets stored in SharePoint.</ph></p>
+			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SharePointViewer.png"><alt>SharePoint Viewer module</alt></image>
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
@@ -51,21 +60,26 @@
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
                         <stentry>Required permissions</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-sharepointviewer.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>SharePoint Viewer</stentry>
                         <stentry>No</stentry>
                         <stentry>Administrator</stentry>
+						<stentry>
+							<!-- <ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Site Administration</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>

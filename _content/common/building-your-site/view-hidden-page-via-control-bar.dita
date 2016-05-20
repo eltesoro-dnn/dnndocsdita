@@ -39,7 +39,7 @@
 		</section>
 
         <steps>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-gotopagemgmt"><cmd/></step>
+			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-gotopagemgmt"><cmd/></step>
 
 			<step>
 				<cmd>Right-click on a page and click/tap <uicontrol>View Page</uicontrol>.</cmd>

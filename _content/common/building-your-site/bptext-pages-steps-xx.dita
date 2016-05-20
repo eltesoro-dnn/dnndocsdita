@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="bptext-pages-steps-xx">
+<task xml:lang="en" id="tsk-bptext-pages-steps-xx">
 
     <title>Boilerplates - Pages Steps</title>
 
@@ -19,13 +19,13 @@
 			<!-- FIELD NAMES IN SIMPLETABLE -->
 
 			<simpletable relcolwidth="1* 3*">
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagename"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagename"><stentry/></strow> -->
 				<strow id="strow-field-pagename">
 					<stentry><uicontrol>[Page] Name</uicontrol></stentry>
 					<stentry>Required. Used in the navigation.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagetitle"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagetitle"><stentry/></strow> -->
 				<strow id="strow-field-pagetitle">
 					<stentry><uicontrol>[Page] Title</uicontrol></stentry>
 					<stentry>
@@ -34,19 +34,19 @@
 					</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pageurl"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pageurl"><stentry/></strow> -->
 				<strow id="strow-field-pageurl">
 					<stentry><uicontrol>[Page] URL</uicontrol></stentry>
 					<stentry>Custom URL for the page.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-donotredirect"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-donotredirect"><stentry/></strow> -->
 				<strow id="strow-field-donotredirect">
 					<stentry><uicontrol>Do Not Redirect</uicontrol></stentry>
 					<stentry>If checked, the page is excluded from any rules that might result in a redirect.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-redirectmode"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-redirectmode"><stentry/></strow> -->
 				<strow id="strow-field-redirectmode">
 					<stentry><uicontrol>Redirect Mode</uicontrol></stentry>
 					<stentry>
@@ -55,19 +55,19 @@
 					</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-keywords"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-keywords"><stentry/></strow> -->
 				<strow id="strow-field-keywords">
 					<stentry><uicontrol>Keywords</uicontrol></stentry>
 					<stentry>Comma-separated keywords that can be used by search engines to help index your site's pages.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-tags"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-tags"><stentry/></strow> -->
 				<strow id="strow-field-tags">
 					<stentry><uicontrol>Tags</uicontrol></stentry>
 					<stentry>Predefined tags that you can choose from the dropdown, if any are defined in the <uicontrol>Taxonomy Manager</uicontrol>.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-parentpageinsertpage"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-parentpageinsertpage"><stentry/></strow> -->
 				<strow id="strow-field-parentpageinsertpage">
 					<stentry>
 						<p><uicontrol>Parent Page</uicontrol></p>
@@ -76,7 +76,7 @@
 					<stentry>Choose under which page in the hierarchy to insert the page, and choose its position among its siblings. By default, a new page inherits permissions from the parent page.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-templatefolderpagetemplate"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-templatefolderpagetemplate"><stentry/></strow> -->
 				<strow id="strow-field-templatefolderpagetemplate">
 					<stentry>
 						<p><uicontrol>[Template] Folder</uicontrol></p>
@@ -85,7 +85,7 @@
 					<stentry>The template to use for the new page.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-foldertemplateexport"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-foldertemplateexport"><stentry/></strow> -->
 				<strow id="strow-field-foldertemplateexport">
 					<stentry>
 						<p><uicontrol>Folder</uicontrol></p>
@@ -94,13 +94,13 @@
 					<stentry>The location and name of the file to export to.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-includeinmenu"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-includeinmenu"><stentry/></strow> -->
 				<strow id="strow-field-includeinmenu">
 					<stentry><uicontrol>Include in Menu</uicontrol></stentry>
 					<stentry>If checked, the page is included in the main navigation menu. Even if unchecked, you can still link to the page using its URL.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-importmode"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-importmode"><stentry/></strow> -->
 				<strow id="strow-field-importmode">
 					<stentry><uicontrol>Import Mode</uicontrol></stentry>
 					<stentry>
@@ -109,47 +109,47 @@
 					</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-descriptionexport"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-descriptionexport"><stentry/></strow> -->
 				<strow id="strow-field-descriptionexport">
 					<stentry><uicontrol>Description</uicontrol></stentry>
 					<stentry>Description of the page/template to be exported.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-includecontentexport"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-includecontentexport"><stentry/></strow> -->
 				<strow id="strow-field-includecontentexport">
 					<stentry><uicontrol>Include Content</uicontrol></stentry>
 					<stentry>If checked, the resulting template file includes information about all the modules in the current page. If unchecked, the resulting template file only includes page information.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-workflow"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-workflow"><stentry/></strow> -->
 				<strow id="strow-field-workflow">
 					<stentry><uicontrol>Workflow</uicontrol></stentry>
 					<stentry>Predefined workflow states that you can choose from the dropdown.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-displayinmenu"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-displayinmenu"><stentry/></strow> -->
 				<strow id="strow-field-displayinmenu">
 					<stentry><uicontrol>Display in Menu</uicontrol></stentry>
 					<stentry>If enabled, the page is included in the main navigation menu. If the page is not included in the navigation menu, you can still link to it using its URL.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-linktracking"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-linktracking"><stentry/></strow> -->
 				<strow id="strow-field-linktracking">
 					<stentry><uicontrol>Link Tracking</uicontrol></stentry>
 					<stentry>If enabled, </stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-enablescheduling"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-enablescheduling"><stentry/></strow> -->
 				<strow id="strow-field-enablescheduling">
 					<stentry><uicontrol>Enable Scheduling</uicontrol></stentry>
 					<stentry>
 						<p>If enabled, the <uicontrol>Start Date</uicontrol> and <uicontrol>End Date</uicontrol> buttons appear below the switch. Click/Tap on either button to set the dates and times.</p>
-						<ul conref="../bptext.dita#bptext/ul-publisheddatespages"><li/></ul>
+						<ul conref="../bptext.dita#top-bptext/ul-publisheddatespages"><li/></ul>
 						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details-Calendar.png"><alt>Add Page - Details - Calendar</alt></image>
 					</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagetemplate"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagetemplate"><stentry/></strow> -->
 				<strow id="strow-field-pagetemplate">
 					<stentry><uicontrol>Page Template</uicontrol></stentry>
 					<stentry>Required. The template layouts are defined by the theme used in the site.</stentry>
@@ -158,44 +158,44 @@
 
 				<!-- ========== MODULES ========== -->
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-moduleculture"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-moduleculture"><stentry/></strow> -->
 				<strow id="strow-field-moduleculture">
 					<stentry><uicontrol>Module Culture</uicontrol></stentry>
 					<stentry>If the module is available for different cultures (language-region), choose which one to use for this module instance. The default is <uicontrol>Neutral Culture</uicontrol>.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-moduletitle"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-moduletitle"><stentry/></strow> -->
 				<strow id="strow-field-moduletitle">
 					<stentry><uicontrol>Module Title</uicontrol></stentry>
 					<stentry>Appears in the container's title bar, if the container supports it.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-DisplayModuleOnAllPages"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-DisplayModuleOnAllPages"><stentry/></strow> -->
 				<strow id="strow-field-DisplayModuleOnAllPages" outputclass="audience-adm">
 					<stentry><uicontrol>Display Module on All Pages</uicontrol></stentry>
 					<stentry><ph outputclass="audience-adm">Administrators:</ph> If checked, the module appears in the same position on all pages in the site.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-IsShareable"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-IsShareable"><stentry/></strow> -->
 				<strow id="strow-field-IsShareable">
 					<stentry><uicontrol>Is Shareable</uicontrol></stentry>
 					<stentry>If checked, the module can be shared across sites.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-ViewOnly"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-ViewOnly"><stentry/></strow> -->
 				<strow id="strow-field-ViewOnly">
 					<stentry><uicontrol>View Only</uicontrol></stentry>
 					<stentry>If checked, the module is shared across sites as viewable only.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-HideAdminBorder"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-HideAdminBorder"><stentry/></strow> -->
 				<strow id="strow-field-HideAdminBorder">
 					<stentry><uicontrol>Hide Admin Border</uicontrol></stentry>
 					<stentry>By default, a border appears around the module if the user is an administrator to indicate that this module is visible only to administrators. If checked, the border is not displayed.
 					</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-HeaderFooter"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-HeaderFooter"><stentry/></strow> -->
 				<strow id="strow-field-HeaderFooter">
 					<stentry>
 						<lines><uicontrol>Header</uicontrol>
@@ -204,57 +204,57 @@
 					<stentry>Enter text that you want to display before (header) and after (footer) the module content.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-StartEndDatesTimes"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-StartEndDatesTimes"><stentry/></strow> -->
 				<strow id="strow-field-StartEndDatesTimes">
 					<stentry>
 						<lines><uicontrol>Start Date</uicontrol>
 							   <uicontrol>End Date</uicontrol></lines>
 					</stentry>
 					<stentry>
-						<p conref="../../common/bptext.dita#bptext/p-clicktapcalendarclockicons"></p>
-						<ul conref="../../common/bptext.dita#bptext/ul-publisheddatesmodules"><li/></ul>
+						<p conref="../../common/bptext.dita#top-bptext/p-clicktapcalendarclockicons"></p>
+						<ul conref="../../common/bptext.dita#top-bptext/ul-publisheddatesmodules"><li/></ul>
 					</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-ModuleMoniker"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-ModuleMoniker"><stentry/></strow> -->
 				<strow id="strow-field-ModuleMoniker">
 					<stentry><uicontrol>Module Moniker</uicontrol></stentry>
 					<stentry>An identifier for the module. The identifier must be unique within the page.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-Icon"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-Icon"><stentry/></strow> -->
 				<strow id="strow-field-Icon">
 					<stentry><uicontrol>Icon</uicontrol></stentry>
 					<stentry>
 						<p>The icon to be displayed in the module's title bar.</p>
 						<ul>
 							<li>Choose <uicontrol>None</uicontrol> if you do not need an icon for the module.</li>
-							<li conref="../bptext.dita#bptext/li-ChooseUploadSiteFile"></li>
-							<li conref="../bptext.dita#bptext/li-ChooseSystemImage"></li>
+							<li conref="../bptext.dita#top-bptext/li-ChooseUploadSiteFile"></li>
+							<li conref="../bptext.dita#top-bptext/li-ChooseSystemImage"></li>
 						</ul>
 					</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-Alignment"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-Alignment"><stentry/></strow> -->
 				<strow id="strow-field-Alignment">
 					<stentry><uicontrol>Alignment</uicontrol></stentry>
 					<stentry>The default alignment of the module content. Choose <uicontrol>Not Specified</uicontrol> to use the setting in the container or theme.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-Color"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-Color"><stentry/></strow> -->
 				<strow id="strow-field-Color">
 					<stentry><uicontrol>Color</uicontrol></stentry>
 					<stentry>The color name or hexadecimal RGB value for the background of the module. Leave blank to use the setting in the container or theme. <xref format="html" scope="external" href="https://en.wikipedia.org/wiki/Web_colors">See Wikipedia article on Web Colors.</xref>
 					</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-Border"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-Border"><stentry/></strow> -->
 				<strow id="strow-field-Border">
 					<stentry><uicontrol>Border</uicontrol></stentry>
 					<stentry>The width (in pixels) of the border around the module. Leave blank to use the setting in the container or theme.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-CollapseExpand"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-CollapseExpand"><stentry/></strow> -->
 				<strow id="strow-field-CollapseExpand">
 					<stentry><uicontrol>Collapse/Expand</uicontrol></stentry>
 					<stentry>
@@ -268,73 +268,74 @@
 					</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-DisplayContainer"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-DisplayContainer"><stentry/></strow> -->
 				<strow id="strow-field-DisplayContainer">
 					<stentry><uicontrol>Display Container</uicontrol></stentry>
 					<stentry>If checked, displays the container of the module.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-AllowPrint"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-AllowPrint"><stentry/></strow> -->
 				<strow id="strow-field-AllowPrint">
 					<stentry><uicontrol>Allow Print</uicontrol></stentry>
 					<stentry>If checked, the contents of the module can be printed.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-AllowSyndicate"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-AllowSyndicate"><stentry/></strow> -->
 				<strow id="strow-field-AllowSyndicate">
 					<stentry><uicontrol>Allow Syndicate</uicontrol></stentry>
 					<stentry>If checked, RSS is enabled on the module.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-IsAWebSlice"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-IsAWebSlice"><stentry/></strow> -->
 				<strow id="strow-field-IsAWebSlice">
 					<stentry><uicontrol>Is a WebSlice</uicontrol></stentry>
 					<stentry>If checked, the module is converted into a Web Slice, which is a portion of a web page that can be subscribed to for updates. Introduced in Internet Explorer 8. <xref format="html" scope="external" href="http://windows.microsoft.com/en-us/windows/web-slices-faq#1TC=windows-7">See the FAQ about Web Slices at Microsoft.com.</xref></stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-WebSliceTitle"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-WebSliceTitle"><stentry/></strow> -->
 				<strow id="strow-field-WebSliceTitle">
 					<stentry><uicontrol>Web Slice Title</uicontrol></stentry>
 					<stentry>A name for the Web Slice.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-WebSliceExpires"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-WebSliceExpires"><stentry/></strow> -->
 				<strow id="strow-field-WebSliceExpires">
 					<stentry><uicontrol>Web Slice Expires</uicontrol></stentry>
 					<stentry>If blank, the Web Slice expires at the same time as the module.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-WebSliceTTL"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-WebSliceTTL"><stentry/></strow> -->
 				<strow id="strow-field-WebSliceTTL">
 					<stentry><uicontrol>Web Slice TTL</uicontrol></stentry>
 					<stentry>Time to live (TTL), in minutes. If blank, this value is the same as the module's time in cache (in minutes).</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-ModuleContainer"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-ModuleContainer"><stentry/></strow> -->
 				<strow id="strow-field-ModuleContainer">
 					<stentry><uicontrol>Module Container</uicontrol></stentry>
 					<stentry>The container to use when the module is displayed.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-SetAsDefaultSettings"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-SetAsDefaultSettings"><stentry/></strow> -->
 				<strow id="strow-field-SetAsDefaultSettings">
 					<stentry><uicontrol>Set as Default Settings</uicontrol></stentry>
 					<stentry>(<ph outputclass="audience-adm">Administrators only</ph>) If checked, the settings for this module are used as the default for future modules.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-ApplyToAllModules"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-ApplyToAllModules"><stentry/></strow> -->
 				<strow id="strow-field-ApplyToAllModules">
 					<stentry><uicontrol>Apply to All Modules</uicontrol></stentry>
 					<stentry>(<ph outputclass="audience-adm">Administrators only</ph>) If checked, the settings for this module are copied to all existing modules.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-MoveToPage"><stentry/></strow> -->
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-MoveToPage"><stentry/></strow> -->
 				<strow id="strow-field-MoveToPage">
 					<stentry><uicontrol>Move To Page</uicontrol></stentry>
 					<stentry>The target web page where the module would be moved to.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-"><stentry/></strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-"><stentry/></strow>
 				<strow id="strow-field-">
 					<stentry><uicontrol></uicontrol></stentry>
 					<stentry></stentry>
@@ -348,7 +349,7 @@
 
 		<section>
 
-			<!-- <note conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/note-deletingpages"></note> -->
+			<!-- <note conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/note-deletingpages"></note> -->
 			<note type="note" id="note-deletingpages">
 				<ul>
 					<li>Deleting a parent page also deletes its child pages.</li>
@@ -368,9 +369,9 @@
 			<!-- PAGES MENU (both) - PAGES - ADD, EDIT -->
 
 			<!--
-			<cmd conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/cmd-xx-configure-page-permissions"></cmd>
+			<cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-page-permissions"></cmd>
 			<info><image scalefit="yes" placement="break" align="left" href="img/scr-XX-Page-Permissions.png"><alt>Page Settings - Permissions</alt></image></info>
-			<substeps conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/substeps-xx-configure-page-permissions"><substep><cmd/></substep></substeps>
+			<substeps conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/substeps-xx-configure-page-permissions"><substep><cmd/></substep></substeps>
 			-->
 			<step>
 				<cmd id="cmd-xx-configure-page-permissions">(Optional) In the <uicontrol>Permissions</uicontrol> tab, configure which roles can do which actions on this page.</cmd>
@@ -383,9 +384,9 @@
 			</step>
 
 			<!--
-			<cmd conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/cmd-xx-configure-module-permissions"></cmd>
+			<cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-module-permissions"></cmd>
 			<info><image scalefit="yes" placement="break" align="left" href="img/scr-XX-Module-Permissions.png"><alt>Module Settings - Permissions</alt></image></info>
-			<substeps conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/substeps-xx-configure-module-permissions"><substep><cmd/></substep></substeps>
+			<substeps conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/substeps-xx-configure-module-permissions"><substep><cmd/></substep></substeps>
 			-->
 			<step>
 				<cmd id="cmd-xx-configure-module-permissions">(Optional) In the <uicontrol>Permissions</uicontrol> tab, configure which roles can do which actions on this module.</cmd>
@@ -399,7 +400,7 @@
 			</step>
 
 
-			<!-- <step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-xx-movemoduletodiffpane"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-movemoduletodiffpane"><cmd/></step> -->
 			<step id="step-xx-movemoduletodiffpane">
 				<cmd>You can move the module to a different pane in the current page.</cmd>
 				<choices>
@@ -414,13 +415,13 @@
 				</choices>
 			</step>
 
-			<!-- <step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step> -->
 			<step id="step-xx-actionmenu-manage-settings">
 				<cmd>In the module's action menu bar, go to <menucascade><uicontrol>Manage (gear icon)</uicontrol> <uicontrol>Settings</uicontrol></menucascade>.</cmd>
 				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-manage-settings.png"><alt>Manage action menu - Settings</alt></image></info>
             </step>
 
-			<!-- <step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-modulemanagesettings-modulesettings"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-modulesettings"><cmd/></step> -->
             <step id="step-modulemanagesettings-modulesettings">
             	<cmd>In the <uicontrol>Module Settings</uicontrol> tab, configure the settings of the module instance.</cmd>
 				<info>
@@ -433,9 +434,9 @@
 							<stentry></stentry>
 							<stentry>Module Settings &#8212; Basic Settings</stentry>
 						</sthead>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-moduleculture"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-moduletitle"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-tags"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-moduleculture"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-moduletitle"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-tags"><stentry/></strow>
 					</simpletable>
 
 					<simpletable relcolwidth="1* 3*">
@@ -443,19 +444,19 @@
 							<stentry></stentry>
 							<stentry>Module Settings &#8212; Advanced Settings</stentry>
 						</sthead>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-DisplayModuleOnAllPages"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-IsShareable"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-ViewOnly"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-HideAdminBorder"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-HeaderFooter"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-StartEndDatesTimes"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-ModuleMoniker"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-DisplayModuleOnAllPages"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-IsShareable"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-ViewOnly"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-HideAdminBorder"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-HeaderFooter"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-StartEndDatesTimes"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-ModuleMoniker"><stentry/></strow>
 					</simpletable>
 
 				</info>
             </step>
 
-			<!-- <step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-modulemanagesettings-pagesettings"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-pagesettings"><cmd/></step> -->
             <step id="step-modulemanagesettings-pagesettings">
             	<cmd>In the <uicontrol>Page Settings</uicontrol> tab, configure the page-related settings of the module instance.</cmd>
 				<info>
@@ -468,19 +469,19 @@
 							<stentry></stentry>
 							<stentry>Page Settings &#8212; Basic Settings</stentry>
 						</sthead>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-Icon"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-Alignment"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-Color"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-Border"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-CollapseExpand"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-DisplayContainer"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-AllowPrint"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-AllowSyndicate"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-IsAWebSlice"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-WebSliceTitle"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-WebSliceExpires"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-WebSliceTTL"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-ModuleContainer"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-Icon"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-Alignment"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-Color"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-Border"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-CollapseExpand"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-DisplayContainer"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-AllowPrint"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-AllowSyndicate"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-IsAWebSlice"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-WebSliceTitle"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-WebSliceExpires"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-WebSliceTTL"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-ModuleContainer"><stentry/></strow>
 					</simpletable>
 
 					<simpletable relcolwidth="1* 3*">
@@ -509,21 +510,21 @@
 							<stentry></stentry>
 							<stentry>Page Settings &#8212; Advanced Settings</stentry>
 						</sthead>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-SetAsDefaultSettings"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-ApplyToAllModules"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-MoveToPage"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-SetAsDefaultSettings"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-ApplyToAllModules"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-MoveToPage"><stentry/></strow>
 					</simpletable>
 
 				</info>
             </step>
 
-			<!-- <step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-modulemanagesettings-customsettings"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-customsettings"><cmd/></step> -->
 			<step id="step-modulemanagesettings-customsettings">
 				<cmd>Configure the module's custom settings, if any.</cmd>
 				<info>Custom settings would be in an additional tab with a name that includes the module's name.</info>
 			</step>
 
-			<!-- <step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-xx-actionmenu-manage-delete"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-delete"><cmd/></step> -->
 			<step id="step-xx-actionmenu-manage-delete">
 				<cmd>In the module's action menu bar, go to <menucascade><uicontrol>Manage (gear icon)</uicontrol> <uicontrol>Delete</uicontrol></menucascade>.</cmd>
 				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-manage-delete.png"><alt>Manage action menu - Delete</alt></image></info>

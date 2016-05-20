@@ -7,8 +7,6 @@
         <navtitle>Social Groups</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-social-groups.dita#ref-ModuleSocialGroups/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Allows registered users to browse, view, create, and join social groups.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -34,44 +32,60 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-social-groups.dita#ref-ModuleSocialGroups/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc">
-                <!-- See "Making Social Connections". -->
-                <!-- See Console module. -->
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-social-groups.dita#ref-ModuleSocialGroups/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Allows registered users to browse, view, create, and join social groups.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-social-groups.dita#ref-ModuleSocialGroups/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-social-groups.dita#ref-ModuleSocialGroups/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SocialGroups.png"><alt>Social Groups module</alt></image>
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-social-groups.dita#ref-ModuleSocialGroups/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
+
+                <!-- See "Making Social Connections". -->
+                <!-- See Console module. -->
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-social-groups.dita#ref-ModuleSocialGroups/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-social-groups.dita#ref-ModuleSocialGroups/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-socialgroups.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Social Groups</stentry>
                         <stentry>No</stentry>
+						<stentry>
+							<!-- <ph conref="module-social-groups.dita#ref-ModuleSocialGroups/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Social</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-social-groups.dita#ref-ModuleSocialGroups/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-social-groups.dita#ref-ModuleSocialGroups/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>

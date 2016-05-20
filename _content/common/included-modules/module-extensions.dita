@@ -7,8 +7,6 @@
         <navtitle>Extensions</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-extensions.dita#ref-ModuleExtensions/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Displays the list of installed extensions (including modules, themes, language packs, providers) and their status. Hosts can also configure the extension settings from this module.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -25,6 +23,7 @@
             <prodinfo>
                 <prodname>Evoq Content</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
+
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
@@ -33,21 +32,32 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-extensions.dita#ref-ModuleExtensions/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-extensions.dita#ref-ModuleExtensions/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Displays the list of installed extensions (including modules, themes, language packs, providers) and their status. Hosts can also configure the extension settings from this module.</ph></p>
+			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-extensions.dita#ref-ModuleExtensions/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-extensions.dita#ref-ModuleExtensions/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Extensions.png"><alt>Extensions module</alt></image>
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-extensions.dita#ref-ModuleExtensions/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
@@ -55,21 +65,26 @@
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
                         <stentry>Required permissions</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-extensions.dita#ref-ModuleExtensions/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-extensions.dita#ref-ModuleExtensions/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-extensions.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Extensions</stentry>
                         <stentry>-</stentry>
                         <stentry>Host</stentry>
+						<stentry>
+							<!-- <ph conref="module-extensions.dita#ref-ModuleExtensions/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Site Administration</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-extensions.dita#ref-ModuleExtensions/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-extensions.dita#ref-ModuleExtensions/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>

@@ -7,8 +7,6 @@
         <navtitle>Wiki</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-wiki.dita#ref-ModuleWiki/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Displays and manages a wiki within the site.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -26,12 +24,33 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-wiki.dita#ref-ModuleWiki/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc">
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-wiki.dita#ref-ModuleWiki/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Displays and manages a wiki within the site.</ph></p>
+            </sectiondiv>
+
+
+            <!-- <sectiondiv conref="module-wiki.dita#ref-ModuleWiki/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
+                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Wiki.png"><alt>Wiki module</alt></image> -->
+            </sectiondiv>
+
+
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-wiki.dita#ref-ModuleWiki/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
+
                 <p>Includes:</p>
                 <ul>
                     <li>Wiki</li>
@@ -40,36 +59,31 @@
                     <li>Wiki Subscribe</li>
                     <li>Wiki Search</li>
                 </ul>
-            </sectiondiv>
-
-
-            <!-- <sectiondiv conref="module-wiki.dita#ref-ModuleWiki/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Wiki.png"><alt>Wiki module</alt></image> -->
-            </sectiondiv>
-
-
-            <sectiondiv id="bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-wiki.dita#ref-ModuleWiki/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-wiki.dita#ref-ModuleWiki/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-wiki.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Wiki</stentry>
                         <stentry>No</stentry>
+						<stentry>
+							<!-- <ph conref="module-wiki.dita#ref-ModuleWiki/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Social</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-wiki.dita#ref-ModuleWiki/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-wiki.dita#ref-ModuleWiki/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>
                         </stentry>

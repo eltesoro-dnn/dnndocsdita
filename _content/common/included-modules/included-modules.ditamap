@@ -1,12 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/map.dtd">
-<map xml:lang="en" id="map-includedmodules-adm">
+<map xml:lang="en" id="map-includedmodules">
 
     <title>Included Modules</title>
 
     <!-- Topics -->
+	<topicref format="dita" type="reference" toc="yes" href="included-modules.dita" />
+
+	<!--
     <topicref format="dita" type="reference" toc="yes" href="included-modules.dita" copy-to="index.dita" >
-		<!-- <topicref format="dita" type="reference" toc="no"  href="module-account-registration.dita" /> -->
+		DEPRECATED  <topicref format="dita" type="reference" toc="no"  href="module-account-registration.dita" />
 		<topicref format="dita" type="reference" toc="no"  href="module-activities.dita" />
 		<topicref format="dita" type="reference" toc="no"  href="module-activity-stream.dita" />
 		<topicref format="dita" type="reference" toc="no"  href="module-advanced-url-management.dita" />
@@ -45,7 +48,7 @@
 		<topicref format="dita" type="reference" toc="no"  href="module-message-center.dita" />
 		<topicref format="dita" type="reference" toc="no"  href="module-module-creator.dita" />
 		<topicref format="dita" type="reference" toc="no"  href="module-my-status.dita" />
-		<!-- <topicref format="dita" type="reference" toc="no"  href="module-optimizely-connector.dita" /> -->
+		DEPRECATED  <topicref format="dita" type="reference" toc="no"  href="module-optimizely-connector.dita" />
 		<topicref format="dita" type="reference" toc="no"  href="module-pages.dita" />
 		<topicref format="dita" type="reference" toc="no"  href="module-profile-dashboard.dita" />
 		<topicref format="dita" type="reference" toc="no"  href="module-publisher.dita" />
@@ -81,55 +84,73 @@
 		<topicref format="dita" type="reference" toc="no"  href="module-workflow-management.dita" />
 		<topicref format="dita" type="reference" toc="no"  href="module-zendesk-tickets.dita" />
 	</topicref>
+	-->
 
 
     <!-- RelTables -->
-    <!--
     <reltable>
         <relheader>
             <relcolspec type="concept"/>
             <relcolspec type="task"/>
             <relcolspec type="reference"/>
         </relheader>
-    -->
 
-        <!-- adm: Connect module topics to related topics elsewhere. -->
-        <!--
+
+		<!-- ========== BASIC AND ADVANCED MODULES ========== -->
+
+		<!-- Activity Stream is the Evoq Engage version of Journal. -->
+		<relrow>
+			<relcell/>
+			<relcell/>
+			<relcell>
+				<topicref format="dita" type="reference" href="module-journal.dita" />
+				<topicref format="dita" type="reference" href="module-activity-stream.dita" />
+			</relcell>
+		</relrow>
+
+		<relrow>
+			<relcell/>
+			<relcell/>
+			<relcell>
+				<topicref format="dita" type="reference" href="module-social-groups.dita" />
+				<topicref format="dita" type="reference" href="module-member-directory.dita" />
+				<topicref format="dita" type="reference" href="module-message-center.dita" />
+			</relcell>
+		</relrow>
+
+
+		<!--
+		<relrow>
+			<relcell/>
+			<relcell/>
+			<relcell/>
+		</relrow>
+		-->
+
+		<!-- ========== RELATED MODULES ========== -->
+
+		<!-- Security: AuthN -->
         <relrow>
+            <relcell>
+                <!-- <topicref format="dita" type="topic" scope="peer" href="../security/index.dita" /> -->
+                <!-- <topicref format="dita" type="topic" scope="peer" href="../security/user-accounts/index.dita" /> -->
+                <!-- <topicref format="dita" type="topic" scope="peer" href="../security/roles/index.dita" /> -->
+            </relcell>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task" scope="peer" href="../security/user-accounts/add-user-account.dita" />
-                <topicref format="dita" type="task" scope="peer" href="../security/user-accounts/authorize-user.dita" />
-            </relcell>
-            <relcell>
-                <topicref format="dita" type="reference"         href="module-registration.dita" />
-            </relcell>
-        </relrow>
-
-        <relrow>
-            <relcell>
-                <topicref format="dita" type="topic" scope="peer" href="../security/user-accounts/index.dita" />
-                <topicref format="dita" type="topic" scope="peer" href="../security/roles/index.dita" />
-            </relcell>
-            <relcell/>
-            <relcell>
-                <topicref format="dita" type="reference"          href="module-users-and-roles.dita" />
+                <topicref format="dita" type="reference" href="module-authentication.dita" />
+                <topicref format="dita" type="reference" href="module-security-analyzer.dita" />
+                <topicref format="dita" type="reference" href="module-security-center.dita" />
+				<topicref format="dita" type="reference" href="module-users-and-roles.dita" />
             </relcell>
         </relrow>
 
-        <relrow>
-            <relcell>
-                <topicref format="dita" type="topic" scope="peer" href="../security/index.dita" />
-            </relcell>
-            <relcell></relcell>
-            <relcell>
-                <topicref format="dita" type="reference"          href="module-authentication.dita" />
-                <topicref format="dita" type="reference"          href="module-security-analyzer.dita" />
-                <topicref format="dita" type="reference"          href="module-security-center.dita" />
-            </relcell>
-        </relrow>
-        -->
 
-    <!-- </reltable> -->
+		<!-- ========== MODULES IN THE SAME CATEGORY ========== -->
+
+
+
+
+    </reltable>
 
 </map>

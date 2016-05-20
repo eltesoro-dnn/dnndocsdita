@@ -39,7 +39,7 @@
 		</section>
 
         <steps>
-			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-gotopagemgmt"><cmd/></step>
+			<step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gotopagemgmt"><cmd/></step>
 
 			<step>
 				<cmd>Click/Tap <uicontrol>Add Page</uicontrol>.</cmd>
@@ -49,22 +49,22 @@
 			</step>
 
 			<step>
-				<cmd conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/cmd-pb-configurepage"></cmd>
+				<cmd conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/cmd-pb-configurepage"></cmd>
 				<info>
 					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details.png"><alt>Add Page - Details</alt></image>
-					<simpletable conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/simpletable-pb-configurepage"><strow/></simpletable>
+					<simpletable conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/simpletable-pb-configurepage"><strow/></simpletable>
 				</info>
 			</step>
 
 			<step>
-				<cmd conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/cmd-xx-configure-page-permissions"></cmd>
+				<cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-page-permissions"></cmd>
 				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Page-Permissions.png"><alt>Add Page - Permissions</alt></image></info>
-				<substeps conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/substeps-xx-configure-page-permissions"><substep><cmd/></substep></substeps>
+				<substeps conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/substeps-xx-configure-page-permissions"><substep><cmd/></substep></substeps>
 			</step>
 
 			<step><cmd>Click/Tap <uicontrol>Create</uicontrol>.</cmd></step>
 
-			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-addfloatingpagetohierarchy"><cmd/></step>
+			<step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-addfloatingpagetohierarchy"><cmd/></step>
 
         </steps>
 

@@ -40,16 +40,16 @@
 
         <steps>
 			<step><cmd>Go to the page containing the module to configure.</cmd></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
-			<step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step>
-			<step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-modulemanagesettings-modulesettings"><cmd/></step>
+			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
+			<step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step>
+			<step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-modulesettings"><cmd/></step>
 			<step>
-				<cmd conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/cmd-xx-configure-module-permissions"></cmd>
+				<cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-module-permissions"></cmd>
 				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-Module-Permissions.png"><alt>Module Settings - Permissions</alt></image></info>
-				<substeps conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/substeps-xx-configure-module-permissions"><substep><cmd/></substep></substeps>
+				<substeps conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/substeps-xx-configure-module-permissions"><substep><cmd/></substep></substeps>
 			</step>
-			<step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-modulemanagesettings-pagesettings"><cmd/></step>
-			<step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-modulemanagesettings-customsettings"><cmd/></step>
+			<step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-pagesettings"><cmd/></step>
+			<step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-customsettings"><cmd/></step>
         </steps>
 
     </taskbody>

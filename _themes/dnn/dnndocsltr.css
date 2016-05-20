@@ -732,6 +732,17 @@ span.filepath {
   width: 100px;
 }
 
+.audience-adm,
+.audience-cmg,
+.audience-dev,
+.audience-dsg,
+.product-EvoqEngage,
+.product-EvoqContent,
+.product-Platform {
+	font-weight: bold;
+}
+
+
 /* ------------------------------------------------------------
  | Glossary
  */

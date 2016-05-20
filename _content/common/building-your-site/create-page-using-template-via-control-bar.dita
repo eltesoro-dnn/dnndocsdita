@@ -15,7 +15,7 @@
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+			<audience type="administrator" job="other" otherjob="aggregating" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -34,7 +34,7 @@
 
     <taskbody>
 
-		<section conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/section-importexportoverview"></section>
+		<section conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/section-importexportoverview"></section>
 
 		<section>
 			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. <!-- See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/import-page-via-persona-bar.dita">Import a Page via the Persona Bar</xref> as a content manager. --></p>
@@ -57,10 +57,10 @@
 							<stentry>Field</stentry>
 							<stentry>Description</stentry>
 						</sthead>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-templatefolderpagetemplate"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-importmode"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-parentpageinsertpage"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-redirectmode"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-templatefolderpagetemplate"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-importmode"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-parentpageinsertpage"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-redirectmode"><stentry/></strow>
 					</simpletable>
 				</info>
 			</step>

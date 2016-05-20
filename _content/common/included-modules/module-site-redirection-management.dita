@@ -7,8 +7,6 @@
         <navtitle>Site Redirection Management</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Allows administrators to manage their website's redirects.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -33,23 +31,34 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc">
-                <!-- Including friendly URLs? How is this related to the Evoq-only Advanced URL Management module? -->
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Allows administrators to manage their website's redirects.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SiteRedirectionManagement.png"><alt>Site Redirection Management module</alt></image> -->
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
+
+                <!-- Including friendly URLs? How is this related to the Evoq-only Advanced URL Management module? -->
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
@@ -57,21 +66,26 @@
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
                         <stentry>Required permissions</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-siteredirectionmgmt.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Site Redirection Management</stentry>
                         <stentry>-</stentry>
                         <stentry>Administrator</stentry><!-- ??? -->
+						<stentry>
+							<!-- <ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Site Administration</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>

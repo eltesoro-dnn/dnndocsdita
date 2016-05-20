@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="bptext-steps">
+<task xml:lang="en" id="tsk-bptext-steps">
 
     <title>Boilerplates - Generic Steps</title>
 
@@ -18,7 +18,7 @@
 
 			<!-- PAGES, combined Administrators and Content Managers -->
 
-			<!-- <step conref="bptext-steps.dita#bptext-steps/step-createpage"><cmd/></step> -->
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createpage"><cmd/></step> -->
 			<step id="step-createpage">
 				<cmd>Create a page.</cmd>
 				<choices>
@@ -27,7 +27,7 @@
 				</choices>
 			</step>
 
-			<!-- <step conref="bptext-steps.dita#bptext-steps/step-editpage"><cmd/></step> -->
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-editpage"><cmd/></step> -->
 			<step id="step-editpage">
 				<cmd>Select and edit a page.</cmd>
 				<choices>
@@ -36,7 +36,7 @@
 				</choices>
 			</step>
 
-			<!-- <step conref="bptext-steps.dita#bptext-steps/step-createcopyeditpage"><strow/></step> -->
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createcopyeditpage"><strow/></step> -->
 			<step id="step-createcopyeditpage">
 				<cmd>Create, copy, or edit a page.</cmd>
 				<info>
@@ -61,7 +61,7 @@
 				</info>
 			</step>
 
-			<!-- <step conref="bptext-steps.dita#bptext-steps/step-createcopyeditpage-cp"><cmd/></step> -->
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createcopyeditpage-cp"><cmd/></step> -->
 			<step id="step-createcopyeditpage-cp" outputclass="audience-adm">
 				<cmd>Create, copy, or edit a page via the <uicontrol>Control Bar</uicontrol>.</cmd>
 				<choices>
@@ -71,7 +71,7 @@
 				</choices>
 			</step>
 
-			<!-- <step conref="bptext-steps.dita#bptext-steps/step-createcopyeditpage-pb"><cmd/></step> -->
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createcopyeditpage-pb"><cmd/></step> -->
 			<step id="step-createcopyeditpage-pb" outputclass="audience-cmg">
 				<cmd>Create, copy, or edit a page via the <uicontrol>Persona Bar</uicontrol>.</cmd>
 				<choices>

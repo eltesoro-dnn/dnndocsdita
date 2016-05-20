@@ -7,8 +7,6 @@
         <navtitle>Search Crawler Admin</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Allows an administrator to configure the site's search crawler.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -34,17 +32,28 @@
 
         <section>
 
-            <!-- <sectiondiv conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc"></sectiondiv>
+
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Allows an administrator to configure the site's search crawler.</ph></p>
+			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-searchcrawleradmin.png"><alt>Search Crawler Admin module</alt></image> -->
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
@@ -52,21 +61,26 @@
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
                         <stentry>Required permissions</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-searchcrawleradmin.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>SearchCrawlerAdmin</stentry>
                         <stentry>-</stentry>
                         <stentry>Administrator</stentry>
+						<stentry>
+							<!-- <ph conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Site Administration</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>

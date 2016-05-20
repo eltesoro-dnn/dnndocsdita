@@ -7,8 +7,6 @@
         <navtitle>Recycle Bin</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Allows administrators to restore or purge deleted components.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -33,21 +31,32 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-recycle-bin.dita#ref-ModuleRecycleBin/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Allows administrators to restore or purge deleted components.</ph></p>
+			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-recycle-bin.dita#ref-ModuleRecycleBin/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-recycle-bin.dita#ref-ModuleRecycleBin/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-RecycleBin.png"><alt>Recycle Bin module</alt></image>
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-recycle-bin.dita#ref-ModuleRecycleBin/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
@@ -55,21 +64,26 @@
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
                         <stentry>Required permissions</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-recyclebin.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Recycle Bin</stentry>
                         <stentry>No</stentry>
                         <stentry>Administrator</stentry>
+						<stentry>
+							<!-- <ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Site Administration</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>

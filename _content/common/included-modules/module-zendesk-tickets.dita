@@ -7,8 +7,6 @@
         <navtitle>Zendesk Tickets</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Enables the registered user to view or create Zendesk tickets.</ph></shortdesc> <!-- ??? -->
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -26,46 +24,62 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc">
-                <p>Includes:</p>
-                <ul>
-                    <li>User Desk</li>
-                </ul>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Enables the registered user to view or create Zendesk tickets.</ph></p> <!-- ??? -->
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ZendeskTickets.png"><alt>Zendesk Tickets module</alt></image> -->
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
+
+                <!-- <p>Includes:</p>
+                <ul>
+                    <li>User Desk</li>
+                </ul> -->
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-zendesk.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Zendesk Tickets</stentry>
                         <stentry>No</stentry>
+						<stentry>
+							<!-- <ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/ph-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Social</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/ph-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>
                         </stentry>

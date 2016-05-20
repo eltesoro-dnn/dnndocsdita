@@ -15,7 +15,7 @@
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
-			<audience type="administrator" job="other" otherjob="aggregating" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -40,16 +40,16 @@
 
         <steps>
 			<step><cmd>Go to the page containing the module to configure.</cmd></step>
-			<step conref="bptext-pages-steps-pb.dita#bptext-pages-steps-pb/step-pb-editpagepersonabar"><cmd/></step>
-			<step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step>
-			<step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-modulemanagesettings-modulesettings"><cmd/></step>
+			<step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-editpagepersonabar"><cmd/></step>
+			<step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step>
+			<step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-modulesettings"><cmd/></step>
 			<step>
-				<cmd conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/cmd-xx-configure-module-permissions"></cmd>
+				<cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-module-permissions"></cmd>
 				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Module-Permissions.png"><alt>Module Settings - Permissions</alt></image></info>
-				<substeps conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/substeps-xx-configure-module-permissions"><substep><cmd/></substep></substeps>
+				<substeps conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/substeps-xx-configure-module-permissions"><substep><cmd/></substep></substeps>
 			</step>
-			<step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-modulemanagesettings-pagesettings"><cmd/></step>
-			<step conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/step-modulemanagesettings-customsettings"><cmd/></step>
+			<step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-pagesettings"><cmd/></step>
+			<step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-customsettings"><cmd/></step>
         </steps>
 
     </taskbody>

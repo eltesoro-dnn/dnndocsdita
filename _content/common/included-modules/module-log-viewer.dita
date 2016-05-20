@@ -7,8 +7,6 @@
         <navtitle>Log Viewer</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-log-viewer.dita#ref-ModuleLogViewer/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Allows administrators to view and manage logs.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -25,6 +23,7 @@
             <prodinfo>
                 <prodname>Evoq Content</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
+
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
@@ -33,21 +32,32 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-log-viewer.dita#ref-ModuleLogViewer/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-log-viewer.dita#ref-ModuleLogViewer/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Allows administrators to view and manage logs.</ph></p>
+			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-log-viewer.dita#ref-ModuleLogViewer/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-log-viewer.dita#ref-ModuleLogViewer/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-LogViewer.png"><alt>Log Viewer module</alt></image>
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-log-viewer.dita#ref-ModuleLogViewer/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
@@ -55,21 +65,26 @@
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
                         <stentry>Required permissions</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-log-viewer.dita#ref-ModuleLogViewer/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-log-viewer.dita#ref-ModuleLogViewer/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-logviewer.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Log Viewer</stentry>
                         <stentry>No</stentry>
                         <stentry>Administrator</stentry>
+						<stentry>
+							<!-- <ph conref="module-log-viewer.dita#ref-ModuleLogViewer/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Site Administration</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-log-viewer.dita#ref-ModuleLogViewer/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-log-viewer.dita#ref-ModuleLogViewer/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>

@@ -7,8 +7,6 @@
         <navtitle>Authentication</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Allows administrators to manage authentication settings for sites that use Windows Authentication.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -34,26 +32,37 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-authentication.dita#ref-ModuleAuthentication/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc">
-                <p>Includes:</p>
-                <ul>
-                    <li><uicontrol>Account Login</uicontrol>. Enables registered users to log in to a site using credentials from this site or from third-party sites, such as Facebook and Twitter. If registration is enabled on the site and the current user is not yet registered, a <uicontrol>Register</uicontrol> link is displayed in the top right corner of all pages, as well as on any instance of the <uicontrol>Account Login</uicontrol> module. Found in the default <wintitle>User Log In</wintitle> page.</li>
-                </ul>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Allows administrators to manage authentication settings for sites that use Windows Authentication.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-authentication.dita#ref-ModuleAuthentication/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-AccountLogin.png"><alt>Account Login module</alt></image>
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
+
+                <p>Includes:</p>
+                <ul>
+                    <li><uicontrol>Account Login</uicontrol>. Enables registered users to log in to a site using credentials from this site or from third-party sites, such as Facebook and Twitter. If registration is enabled on the site and the current user is not yet registered, a <uicontrol>Register</uicontrol> link is displayed in the top right corner of all pages, as well as on any instance of the <uicontrol>Account Login</uicontrol> module. Found in the default <wintitle>User Log In</wintitle> page.</li>
+                </ul>
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
@@ -61,21 +70,26 @@
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
                         <stentry>Required permissions</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-authentication.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Authentication</stentry>
                         <stentry>No</stentry>
                         <stentry>Administrator</stentry>
+						<stentry>
+							<!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Site Administration</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>

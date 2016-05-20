@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="bptext-pages-steps-cp">
+<task xml:lang="en" id="tsk-bptext-pages-steps-cp">
 
     <title>Boilerplates - Pages (Control Panel) Steps</title>
 
@@ -14,7 +14,7 @@
 
     <taskbody>
 
-		<!-- <section conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/section-importexportoverview"></section> -->
+		<!-- <section conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/section-importexportoverview"></section> -->
 		<section id="section-importexportoverview">
 			<p>Exporting and importing a page converts it to and from a template file, which is an XML file that contains pertinent information about the source page and about each module contained in it.</p>
 
@@ -29,7 +29,7 @@
 
 			<!-- PAGES MENU (CP) - PAGES - ADD, EDIT -->
 
-			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-gotopagemgmt"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-gotopagemgmt"><cmd/></step> -->
 			<step id="step-cp-gotopagemgmt">
 				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Page Management</uicontrol></menucascade>.</cmd>
 				<info>
@@ -40,7 +40,7 @@
 				</stepresult>
             </step>
 
-			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-configure-page-details"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-configure-page-details"><cmd/></step> -->
 			<step id="step-cp-configure-page-details">
 				<cmd>In the <uicontrol>Page Details</uicontrol> tab, configure the page.</cmd>
 				<info>
@@ -50,25 +50,25 @@
 							<stentry>Field</stentry>
 							<stentry>Description</stentry>
 						</sthead>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagename"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pagetitle"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-pageurl"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-donotredirect"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-keywords"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-tags"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-parentpageinsertpage"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-templatefolderpagetemplate"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/strow-field-includeinmenu"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagename"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagetitle"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pageurl"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-donotredirect"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-keywords"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-tags"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-parentpageinsertpage"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-templatefolderpagetemplate"><stentry/></strow>
+						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-includeinmenu"><stentry/></strow>
 					</simpletable>
 				</info>
 			</step>
 
 			<!--
-			<cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-cp-configure-page-copy-optional"></cmd>
-			<substeps conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/substeps-cp-configure-page-copy"><substep><cmd/></substep></substeps>
+			<cmd conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/cmd-cp-configure-page-copy-optional"></cmd>
+			<substeps conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/substeps-cp-configure-page-copy"><substep><cmd/></substep></substeps>
 			-OR-
-			<cmd conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/cmd-cp-configure-page-copy"></cmd>
-			<substeps conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/substeps-cp-configure-page-copy"><substep><cmd/></substep></substeps>
+			<cmd conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/cmd-cp-configure-page-copy"></cmd>
+			<substeps conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/substeps-cp-configure-page-copy"><substep><cmd/></substep></substeps>
 			-->
 			<step>
 				<cmd id="cmd-cp-configure-page-copy-optional">(Optional) In the <uicontrol>Copy Page</uicontrol> tab, copy an existing page to use as a starting point for the new page.</cmd>
@@ -94,7 +94,7 @@
 				</substeps>
 			</step>
 
-			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-configure-page-advanced"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-configure-page-advanced"><cmd/></step> -->
 			<step id="step-configure-page-advanced">
 				<cmd>(Optional) In the <uicontrol>Advanced Settings</uicontrol> tab, configure the page.</cmd>
 				<info>
@@ -114,9 +114,9 @@
 								The icons to be displayed in the navigation (small icon) and in any <uicontrol>Console</uicontrol> module (small icon and large icon).
 								<!-- DOCBUG: What sizes should these be? -->
 								<ul>
-									<li conref="../bptext.dita#bptext/li-AddPageChooseSiteFile"></li>
-									<li conref="../bptext.dita#bptext/li-AddPageUploadFile"></li>
-									<li conref="../bptext.dita#bptext/li-ChooseSystemImage"></li>
+									<li conref="../bptext.dita#top-bptext/li-AddPageChooseSiteFile"></li>
+									<li conref="../bptext.dita#top-bptext/li-AddPageUploadFile"></li>
+									<li conref="../bptext.dita#top-bptext/li-ChooseSystemImage"></li>
 								</ul>
 							</stentry>
 						</strow>
@@ -184,15 +184,15 @@
 									   <uicontrol>End Date</uicontrol></lines>
 							</stentry>
 							<stentry>
-								<p conref="../bptext.dita#bptext/p-clicktapcalendarclockicons"></p>
-								<ul conref="../bptext.dita#bptext/ul-publisheddatespages"><li/></ul>
+								<p conref="../bptext.dita#top-bptext/p-clicktapcalendarclockicons"></p>
+								<ul conref="../bptext.dita#top-bptext/ul-publisheddatespages"><li/></ul>
 								<note type="note">Administrators can manage expired pages from <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Page Management</uicontrol></menucascade></note>
 							</stentry>
 						</strow>
 						<strow>
 							<stentry><uicontrol>Link URL</uicontrol></stentry>
 							<stentry>
-								<p conref="../bptext.dita#bptext/p-AddPageLinkType"></p>
+								<p conref="../bptext.dita#top-bptext/p-AddPageLinkType"></p>
 							</stentry>
 						</strow>
 						<strow>
@@ -209,7 +209,7 @@
 
 			<!--
 			<step><cmd>Go to the page to edit.</cmd></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
+			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
 			-->
 			<step id="step-cp-editpage">
 				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Edit This Page</uicontrol></menucascade>.</cmd>
@@ -220,7 +220,7 @@
 
 			<!--
 			<step><cmd>Go to the page to configure.</cmd></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-editpagesettings"><cmd/></step>
+			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-editpagesettings"><cmd/></step>
 			-->
 			<step id="step-cp-editpagesettings">
 				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Page Settings</uicontrol></menucascade>.</cmd>
@@ -231,7 +231,7 @@
 
 			<!--
 			<step><cmd>Go to the page to delete.</cmd></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-deletepage"><cmd/></step>
+			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-deletepage"><cmd/></step>
 			-->
 			<step id="step-cp-deletepage">
 				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Delete Page</uicontrol></menucascade>.</cmd>
@@ -243,25 +243,25 @@
 
 			<!-- MODULES - ADD, EDIT -->
 
-			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step> -->
 			<step id="step-cp-openmodulelist">
                 <cmd>Go to <menucascade><uicontrol>Module</uicontrol> <uicontrol>Add New Module</uicontrol></menucascade>.</cmd>
                 <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddNew.png"><alt>Module - Add New Module</alt></image></info>
 			</step>
 
-			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-addmoduletopane"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-addmoduletopane"><cmd/></step> -->
 			<step id="step-cp-addmoduletopane">
 				<cmd>Drag the module to a pane in the current page.</cmd>
 				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-ModulesList-Drag.png"><alt>Drag module to pane.</alt></image></info>
 			</step>
 
-			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-addexistingmodule"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-addexistingmodule"><cmd/></step> -->
 			<step id="step-cp-addexistingmodule">
                 <cmd>Go to <menucascade><uicontrol>Module</uicontrol> <uicontrol>Add Existing Module</uicontrol></menucascade>.</cmd>
                 <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddExisting.png"><alt>Module - Add Existing Module</alt></image></info>
 			</step>
 
-			<!-- <step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-chooseexistingmodule"><cmd/></step> -->
+			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-chooseexistingmodule"><cmd/></step> -->
 			<step id="step-cp-chooseexistingmodule">
                 <cmd>Choose a module from another page.</cmd>
 				<substeps>

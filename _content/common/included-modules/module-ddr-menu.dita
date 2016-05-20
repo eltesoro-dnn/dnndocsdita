@@ -7,8 +7,6 @@
         <navtitle>DDR Menu</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Provides a basic navigation structure.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -25,6 +23,7 @@
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Content</prodname>
+
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
             </prodinfo>
             <prodinfo>
@@ -34,41 +33,57 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-ddr-menu.dita#ref-ModuleDDRMenu/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Provides a basic navigation structure.</ph></p>
+			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-ddr-menu.dita#ref-ModuleDDRMenu/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-ddr-menu.dita#ref-ModuleDDRMenu/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-DDRMenu.png"><alt>DDR Menu module</alt></image>
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-ddr-menu.dita#ref-ModuleDDRMenu/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-ddrmenu.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>DDR Menu</stentry>
                         <stentry>No</stentry>
+						<stentry>
+							<!-- <ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">General Content</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>

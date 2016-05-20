@@ -7,8 +7,6 @@
         <navtitle>Search Results</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-search-results.dita#ref-ModuleSearchResults/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Displays the search results.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -33,41 +31,57 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-search-results.dita#ref-ModuleSearchResults/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-search-results.dita#ref-ModuleSearchResults/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Displays the search results.</ph></p>
+			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-search-results.dita#ref-ModuleSearchResults/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-search-results.dita#ref-ModuleSearchResults/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SearchResults.png"><alt>Search Results module</alt></image>
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-search-results.dita#ref-ModuleSearchResults/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-search-results.dita#ref-ModuleSearchResults/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-search-results.dita#ref-ModuleSearchResults/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-searchresults.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Search Results</stentry>
                         <stentry>No</stentry>
+						<stentry>
+							<!-- <ph conref="module-search-results.dita#ref-ModuleSearchResults/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">General Content</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-search-results.dita#ref-ModuleSearchResults/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-search-results.dita#ref-ModuleSearchResults/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>

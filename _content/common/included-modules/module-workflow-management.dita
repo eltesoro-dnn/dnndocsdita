@@ -7,8 +7,6 @@
         <navtitle>Workflow Management</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc"></ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -29,41 +27,57 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Enables administrators to specify the stages of a content-creation workflow.</ph></p>
+			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-WorkflowManagement.png"><alt>Workflow Management module</alt></image>
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-workflowmgmt.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Workflow Management</stentry>
                         <stentry>No</stentry>
+						<stentry>
+							<!-- <ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Site Administration</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>

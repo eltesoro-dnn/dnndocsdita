@@ -7,8 +7,6 @@
         <navtitle>File Integrity Checker</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Checks the files for errors.</ph></shortdesc>  <!-- Need a better description. -->
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -25,46 +23,63 @@
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
+
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
             </prodinfo>
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Checks the files for errors.</ph></p>  <!-- Need a better description. -->
+			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-fileintegritychecker.png"><alt>File Integrity Checker module</alt></image> -->
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-fileintegritychecker.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>File Integrity Checker</stentry>
                         <stentry>-</stentry>
+						<stentry>
+							<!-- <ph conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Site Administration</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>

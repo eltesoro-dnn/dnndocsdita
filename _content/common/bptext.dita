@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
-<topic xml:lang="en" id="bptext">
+<topic xml:lang="en" id="top-bptext">
 
     <title>Boilerplates</title>
 
@@ -18,22 +18,22 @@
 
         <p>
 
-        <!-- <ph conref="../../common/bptext.dita#bptext/ph-PrereqHost"></ph> -->
+        <!-- <ph conref="../../common/bptext.dita#top-bptext/ph-PrereqHost"></ph> -->
         <!-- <ph conkeyref="k-bptext/ph-PrereqHost"></ph> -->
         <ph id="ph-PrereqHost"><b>A host / super user account.</b> Hosts have full permissions to all sites in the DNN instance.</ph>
 
-        <!-- <ph conref="../../common/bptext.dita#bptext/ph-HostForModulesThemes"></ph> -->
+        <!-- <ph conref="../../common/bptext.dita#top-bptext/ph-HostForModulesThemes"></ph> -->
         <!-- <ph conkeyref="k-bptext/ph-HostForModulesThemes"></ph> -->
         <ph id="ph-HostForModulesThemes">A host account is required to upload modules and themes, because they might contain executable code. (An administrator account is sufficient to apply modules and themes to a website.)</ph>
 
-        <!-- <ph conref="../../common/bptext.dita#bptext/ph-PrereqAdmin"></ph> -->
+        <!-- <ph conref="../../common/bptext.dita#top-bptext/ph-PrereqAdmin"></ph> -->
         <!-- <ph conkeyref="k-bptext/ph-PrereqAdmin"></ph> -->
         <ph id="ph-PrereqAdmin"><b>An administrator account for the site.</b> Administrators have full permissions to the specific site.</ph>
 
 
 
 
-        <!-- <ph conref="../../common/bptext.dita#bptext/ph-RFC2119"></ph> -->
+        <!-- <ph conref="../../common/bptext.dita#top-bptext/ph-RFC2119"></ph> -->
         <!-- <ph conkeyref="k-bptext/ph-RFC2119"></ph> -->
         <ph id="ph-RFC2119">The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in <xref format="html" scope="external" href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</xref>.
         </ph>
@@ -48,7 +48,7 @@
 
         <!-- ==================== Tips ==================== -->
 
-        <!-- <p conref="../../common/bptext.dita#bptext/p-3rdPartyExtensions"></p> -->
+        <!-- <p conref="../../common/bptext.dita#top-bptext/p-3rdPartyExtensions"></p> -->
         <!-- <p conkeyref="k-bptext/p-3rdPartyExtensions"></p> -->
         <p id="p-3rdPartyExtensions">Thousands of third-party modules and themes are available from these sources:
             <ul>
@@ -57,31 +57,31 @@
             </ul>
         </p>
 
-        <!-- <note conref="../../common/bptext.dita#bptext/note-TipSkinningTool"></note> -->
+        <!-- <note conref="../../common/bptext.dita#top-bptext/note-TipSkinningTool"></note> -->
         <!-- <note conkeyref="k-bptext/note-TipSkinningTool"></note> -->
         <note type="tip" id="note-TipSkinningTool"><xref type="html" scope="external" href="http://www.10poundgorilla.com/">10 Pound Gorilla</xref>'s <xref scope="external" href="http://www.10poundgorilla.com/DNN/Skinning-Tool">Skinning Tool</xref> is both a reference and a tool that customizes the code for DNN theme objects, based on the attribute values you specify.</note>
 
 
         <!-- ==================== Page and Module Settings ==================== -->
 
-		<!-- <ul conref="../../common/bptext.dita#bptext/ul-publisheddatespages"><li/></ul> -->
+		<!-- <ul conref="../../common/bptext.dita#top-bptext/ul-publisheddatespages"><li/></ul> -->
 		<ul id="ul-publisheddatespages">
 			<li>The page is published after the specified start date. If <uicontrol>Start Date</uicontrol> is not set, the page is published immediately.</li>
 			<li>The page is hidden after the specified end date. If <uicontrol>End Date</uicontrol> is not set, the page is visible indefinitely.</li>
 		</ul>
 
-		<!-- <ul conref="../../common/bptext.dita#bptext/ul-publisheddatesmodules"><li/></ul> -->
+		<!-- <ul conref="../../common/bptext.dita#top-bptext/ul-publisheddatesmodules"><li/></ul> -->
 		<ul id="ul-publisheddatesmodules">
 			<li>The module is published after the specified start date. If <uicontrol>Start Date</uicontrol> is not set, the module is published immediately.</li>
 			<li>The module is hidden after the specified end date. If <uicontrol>End Date</uicontrol> is not set, the module is visible indefinitely.</li>
 		</ul>
 
 
-		<!-- <p conref="../../common/bptext.dita#bptext/p-clicktapcalendarclockicons"></p> -->
+		<!-- <p conref="../../common/bptext.dita#top-bptext/p-clicktapcalendarclockicons"></p> -->
 		<p id="p-clicktapcalendarclockicons">Click/Tap on the calendar icon to choose the date (server date); the default is the current date. Click/Tap on the clock icon to choose the time; the default is 12:00 AM (server time).</p>
 
 
-		<!-- <p conref="../../common/bptext.dita#bptext/p-AddPageLinkType"></p> -->
+		<!-- <p conref="../../common/bptext.dita#top-bptext/p-AddPageLinkType"></p> -->
 		<p id="p-AddPageLinkType">
 			<uicontrol>Link Type</uicontrol>
 			<ul>
@@ -94,7 +94,7 @@
 
 
 		<ul>
-			<!-- <li conref="../../common/bptext.dita#bptext/li-AddPageChooseSiteFile"></li> -->
+			<!-- <li conref="../../common/bptext.dita#top-bptext/li-AddPageChooseSiteFile"></li> -->
 			<li id="li-AddPageChooseSiteFile">
 				To choose a file that is already on your site,
 				<ol>
@@ -104,7 +104,7 @@
 				</ol>
 			</li>
 
-			<!-- <li conref="../../common/bptext.dita#bptext/li-AddPageUploadFile"></li> -->
+			<!-- <li conref="../../common/bptext.dita#top-bptext/li-AddPageUploadFile"></li> -->
 			<li id="li-AddPageUploadFile">
 				To upload a file to your site,
 				<ol>
@@ -114,7 +114,7 @@
 				</ol>
 			</li>
 
-			<!-- <li conref="../../common/bptext.dita#bptext/li-ChooseUploadSiteFile"></li> -->
+			<!-- <li conref="../../common/bptext.dita#top-bptext/li-ChooseUploadSiteFile"></li> -->
 			<li id="li-ChooseUploadSiteFile">
 				<p>Choose <uicontrol>File</uicontrol> to provide your own file.</p>
 				<image scalefit="yes" placement="break" align="left" href="../common/img/scr-ChooseUploadSiteFile.png"><alt>Choose a file from your site.</alt></image>
@@ -149,7 +149,7 @@
 				</p>
 			</li>
 
-			<!-- <li conref="../../common/bptext.dita#bptext/li-ChooseSystemImage"></li> -->
+			<!-- <li conref="../../common/bptext.dita#top-bptext/li-ChooseSystemImage"></li> -->
 			<li id="li-ChooseSystemImage">
 				<p>To choose an image that shipped with DNN,
 					<ol>
@@ -167,20 +167,20 @@
         <!-- ==================== Misc ==================== -->
 
         <p>
-        <!-- <ph conref="../../common/bptext.dita#bptext/ph-oldterm"></ph> -->
+        <!-- <ph conref="../../common/bptext.dita#top-bptext/ph-oldterm"></ph> -->
         <!-- <ph conkeyref="k-bptext/ph-oldterm"></ph> -->
         <ph id="ph-oldterm">This is the old term, still used in some APIs and UI controls.</ph>
         </p>
 
 
-        <!-- <note conref="../../common/bptext.dita#bptext/note-CloudSupport"></note> -->
+        <!-- <note conref="../../common/bptext.dita#top-bptext/note-CloudSupport"></note> -->
         <!-- <note conkeyref="k-bptext/note-CloudSupport"></note> -->
         <note type="important" id="note-CloudSupport">If your Evoq instance is hosted on the DNN Cloud, please contact <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support">Customer Support</xref> directly. The following instructions are not applicable to DNN Cloud instances.</note>
 
 
         <!-- ==================== Code ==================== -->
 
-        <!-- <codeblock conref="../../common/bptext.dita#bptext/codeblock-JWT"></codeblock> -->
+        <!-- <codeblock conref="../../common/bptext.dita#top-bptext/codeblock-JWT"></codeblock> -->
         <!-- <codeblock conkeyref="k-bptext/codeblock-JWT"></codeblock> -->
         <codeblock id="codeblock-JWT">
     &lt;authServices&gt;

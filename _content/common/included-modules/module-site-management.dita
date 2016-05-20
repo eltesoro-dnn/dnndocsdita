@@ -7,8 +7,6 @@
         <navtitle>Site Management</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-site-management.dita#ref-ModuleSiteManagement/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">Allows the host to manage the sites within the DNN instance.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -33,21 +31,32 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-site-management.dita#ref-ModuleSiteManagement/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-site-management.dita#ref-ModuleSiteManagement/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">Allows the host to manage the sites within the DNN instance.</ph></p>
+			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-site-management.dita#ref-ModuleSiteManagement/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-site-management.dita#ref-ModuleSiteManagement/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SiteManagement.png"><alt>Site Management module</alt></image> -->
             </sectiondiv>
 
 
-            <sectiondiv id="bpdetails">
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-site-management.dita#ref-ModuleSiteManagement/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
@@ -55,21 +64,26 @@
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
                         <stentry>Required permissions</stentry>
+						<stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-site-management.dita#ref-ModuleSiteManagement/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-site-management.dita#ref-ModuleSiteManagement/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-sitemgmt.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Site Management</stentry>
                         <stentry>-</stentry>
                         <stentry>Host</stentry>
+						<stentry>
+							<!-- <ph conref="module-site-management.dita#ref-ModuleSiteManagement/sectiondiv-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">Site Administration</ph>
+						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-site-management.dita#ref-ModuleSiteManagement/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-site-management.dita#ref-ModuleSiteManagement/sectiondiv-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>

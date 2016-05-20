@@ -7,8 +7,6 @@
         <navtitle>Account Registration</navtitle>
     </titlealts>
 
-    <!-- <ph conref="module-account-registration.dita#ref-ModuleAccountRegistration/bpshortdesc"></ph> -->
-    <shortdesc><ph id="bpshortdesc">See Registration.</ph></shortdesc>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -34,31 +32,56 @@
         </metadata>
     </prolog>
 
+
     <refbody>
 
         <section>
 
-            <!-- <sectiondiv conref="module-account-registration.dita#ref-ModuleAccountRegistration/bpdesc"></sectiondiv> -->
-            <sectiondiv id="bpdesc">
-                <p>After the registration form has been completed and submitted, the primary administrator receives a notice to review the registration and authorize the user account.</p>
+            <sectiondiv id="sectiondiv-bpdesc">
+				<!-- <ph conref="module-account-registration.dita#ref-ModuleAccountRegistration/ph-bpshortdesc"></ph> -->
+				<p><ph id="ph-bpshortdesc">See Registration.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-account-registration.dita#ref-ModuleAccountRegistration/bpimg"></sectiondiv> -->
-            <sectiondiv id="bpimg">
+            <!-- <sectiondiv conref="module-account-registration.dita#ref-ModuleAccountRegistration/sectiondiv-bpimg"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpimg">
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-AccountRegistration.png"><alt>Account Registration module</alt></image>
             </sectiondiv>
 
-            <sectiondiv id="bpdetails">
+
+			<!--
+			<sectiondiv id="sectiondiv-config">
+				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
+			</sectiondiv>
+			-->
+
+
+            <!-- <sectiondiv conref="module-account-registration.dita#ref-ModuleAccountRegistration/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
+
+                <p>After the registration form has been completed and submitted, the primary administrator receives a notice to review the registration and authorize the user account.</p>
 
                 <simpletable relcolwidth="1* 1* 1*">
                     <sthead>
                         <stentry>Package</stentry>
                         <stentry>Premium</stentry>
+						<stentry>Category</stentry>
+                        <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
                         <stentry>Registration</stentry>
                         <stentry>No</stentry>
+						<stentry>
+							<!-- <ph conref="module-account-registration.dita#ref-ModuleAccountRegistration/ph-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">User Management</ph>
+						</stentry>
+						<stentry>
+                            <!-- <ph conref="module-account-registration.dita#ref-ModuleAccountRegistration/ph-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                            </ph>
+                        </stentry>
                     </strow>
                 </simpletable>
 

@@ -35,14 +35,14 @@
     <taskbody>
 
 		<section>
-			<note conref="bptext-pages-steps-xx.dita#bptext-pages-steps-xx/note-deletingpages"></note>
+			<note conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/note-deletingpages"></note>
 
 			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/delete-page-via-persona-bar.dita">Delete a Page via the Persona Bar</xref> as a content manager.</p>
 		</section>
 
         <steps>
 			<step><cmd>Go to the page to delete.</cmd></step>
-			<step conref="bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-deletepage"><cmd/></step>
+			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-deletepage"><cmd/></step>
 			<step><cmd>Confirm the deletion.</cmd></step>
         </steps>
 
