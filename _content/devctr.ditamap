@@ -6,7 +6,8 @@
 
 
     <!-- Keys. NOTE: Do NOT use keys for topics that need to have an "active" tag in the toc. -->
-    <keydef keys="k-bptext" href="common/bptext.dita#bptext" />
+    <keydef keys="k-bptext"  href="common/bptext.dita#top-bptext" />
+    <keydef keys="k-bpsteps" href="common/bptext-steps.dita#tsk-bptext-steps" />
 
 
     <!-- Topics -->
@@ -52,12 +53,10 @@
             <topicref format="dita" type="topic"     toc="yes" href="developers/about-evs.dita" />
             <!-- <topicref format="dita" type="reference" toc="yes" href="developers/contents-module-pack.dita" /> Topic not ready. -->
             <topicref format="dita" type="reference" toc="yes" href="developers/extensions/dnn-manifest-schema.dita" />
-			<mapref href="developers/included-modules/included-modules.ditamap" />
+			<topicref format="dita" type="reference" toc="yes" href="developers/included-modules/included-modules.dita" />
             <topicref format="html" scope="external" navtitle="DNN API Reference" toc="yes" href="http://www.dnnsoftware.com/dnn-api/" />
-
 			<topicref format="dita" type="reference" toc="yes" href="developers/product-versions.dita" />
 			<topicref format="dita" type="topic"     toc="yes" href="developers/dnn-license.dita" />
-
 			<topicref format="dita" type="topic"     toc="yes" href="developers/more-resources.dita" />
         </topicref>
 		<topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="developers/glossary.dita" >

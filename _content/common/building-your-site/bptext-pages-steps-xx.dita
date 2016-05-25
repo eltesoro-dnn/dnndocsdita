@@ -144,8 +144,8 @@
 					<stentry><uicontrol>Enable Scheduling</uicontrol></stentry>
 					<stentry>
 						<p>If enabled, the <uicontrol>Start Date</uicontrol> and <uicontrol>End Date</uicontrol> buttons appear below the switch. Click/Tap on either button to set the dates and times.</p>
-						<ul conref="../bptext.dita#top-bptext/ul-publisheddatespages"><li/></ul>
-						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details-Calendar.png"><alt>Add Page - Details - Calendar</alt></image>
+						<ul conkeyref="k-bptext/ul-publisheddatespages"><li/></ul>
+						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details-Calendar.png"><alt>Add Page &gt; Details &gt; Calendar</alt></image>
 					</stentry>
 				</strow>
 
@@ -211,8 +211,8 @@
 							   <uicontrol>End Date</uicontrol></lines>
 					</stentry>
 					<stentry>
-						<p conref="../../common/bptext.dita#top-bptext/p-clicktapcalendarclockicons"></p>
-						<ul conref="../../common/bptext.dita#top-bptext/ul-publisheddatesmodules"><li/></ul>
+						<p conkeyref="k-bptext/p-clicktapcalendarclockicons"></p>
+						<ul conkeyref="k-bptext/ul-publisheddatesmodules"><li/></ul>
 					</stentry>
 				</strow>
 
@@ -229,8 +229,8 @@
 						<p>The icon to be displayed in the module's title bar.</p>
 						<ul>
 							<li>Choose <uicontrol>None</uicontrol> if you do not need an icon for the module.</li>
-							<li conref="../bptext.dita#top-bptext/li-ChooseUploadSiteFile"></li>
-							<li conref="../bptext.dita#top-bptext/li-ChooseSystemImage"></li>
+							<li conkeyref="k-bptext/li-ChooseUploadSiteFile"></li>
+							<li conkeyref="k-bptext/li-ChooseSystemImage"></li>
 						</ul>
 					</stentry>
 				</strow>
@@ -364,13 +364,23 @@
 		</section>
 
 
+        <prereq>
+			<!-- <ul conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/ul-prereqaddingmodules"><li/></ul> -->
+			<ul id="ul-prereqaddingmodules">
+				<li><xref format="dita" href="../extensions/install-extension.dita">The host must install the extension package containing the module.</xref></li>
+				<li><xref format="dita" href="../extensions/manage-premium-module.dita">If the module is set as premium, the host must allow the site to use it.</xref></li>
+				<li><xref format="dita" href="../extensions/allow-module-use.dita">The administrator must grant you <uicontrol>Deploy Module</uicontrol> permissions for the module.</xref></li>
+			</ul>
+        </prereq>
+
+
         <steps>
 
 			<!-- PAGES MENU (both) - PAGES - ADD, EDIT -->
 
 			<!--
 			<cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-page-permissions"></cmd>
-			<info><image scalefit="yes" placement="break" align="left" href="img/scr-XX-Page-Permissions.png"><alt>Page Settings - Permissions</alt></image></info>
+			<info><image scalefit="yes" placement="break" align="left" href="img/scr-XX-Page-Permissions.png"><alt>Page Settings &gt; Permissions</alt></image></info>
 			<substeps conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/substeps-xx-configure-page-permissions"><substep><cmd/></substep></substeps>
 			-->
 			<step>
@@ -385,7 +395,7 @@
 
 			<!--
 			<cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-module-permissions"></cmd>
-			<info><image scalefit="yes" placement="break" align="left" href="img/scr-XX-Module-Permissions.png"><alt>Module Settings - Permissions</alt></image></info>
+			<info><image scalefit="yes" placement="break" align="left" href="img/scr-XX-Module-Permissions.png"><alt>Module Settings &gt; Permissions</alt></image></info>
 			<substeps conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/substeps-xx-configure-module-permissions"><substep><cmd/></substep></substeps>
 			-->
 			<step>
@@ -418,7 +428,7 @@
 			<!-- <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step> -->
 			<step id="step-xx-actionmenu-manage-settings">
 				<cmd>In the module's action menu bar, go to <menucascade><uicontrol>Manage (gear icon)</uicontrol> <uicontrol>Settings</uicontrol></menucascade>.</cmd>
-				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-manage-settings.png"><alt>Manage action menu - Settings</alt></image></info>
+				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-manage-settings.png"><alt>Manage action menu &gt; Settings</alt></image></info>
             </step>
 
 			<!-- <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-modulesettings"><cmd/></step> -->
@@ -527,7 +537,7 @@
 			<!-- <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-delete"><cmd/></step> -->
 			<step id="step-xx-actionmenu-manage-delete">
 				<cmd>In the module's action menu bar, go to <menucascade><uicontrol>Manage (gear icon)</uicontrol> <uicontrol>Delete</uicontrol></menucascade>.</cmd>
-				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-manage-delete.png"><alt>Manage action menu - Delete</alt></image></info>
+				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-manage-delete.png"><alt>Manage action menu &gt; Delete</alt></image></info>
             </step>
 
         </steps>

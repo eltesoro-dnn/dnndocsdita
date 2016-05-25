@@ -41,8 +41,22 @@
             </sectiondiv>
 
 
-			<!--
-			<sectiondiv id="sectiondiv-config">
+            <!-- <sectiondiv conref="module-challenges.dita#ref-ModuleChallenges/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpmoreinfo">
+                <p>Includes:
+					<ul>
+						<li>Challenges</li>
+						<li>Challenges Subscribe</li>
+						<li>Challenges Search</li>
+					</ul>
+				</p>
+
+                <p>See <xref format="dita" href="module-latest-challenges.dita">Latest Challenges</xref>.</p>
+            </sectiondiv>
+
+
+			<!-- <sectiondiv conref="module-challenges.dita#ref-ModuleChallenges/sectiondiv-bpconfig"></sectiondiv>
+			<sectiondiv id="sectiondiv-bpconfig">
 				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
 			</sectiondiv>
 			-->
@@ -50,22 +64,11 @@
 
             <!-- <sectiondiv conref="module-challenges.dita#ref-ModuleChallenges/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
-
-                <p>Includes:</p>
-                <ul>
-                    <li>Challenges</li>
-                    <li>Challenges Subscribe</li>
-                    <li>Challenges Search</li>
-                </ul>
-
-                <p>See <xref format="dita" href="module-latest-challenges.dita">Latest Challenges</xref>.</p>
-
-                <simpletable relcolwidth="1* 1* 1*">
+                <simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
-                        <stentry>Premium</stentry>
-						<stentry>Category</stentry>
+                        <stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
@@ -76,8 +79,7 @@
                             </ph>
                         </stentry>
                         <stentry>Challenges</stentry>
-                        <stentry>No</stentry>
-						<stentry>
+                        <stentry>
 							<!-- <ph conref="module-challenges.dita#ref-ModuleChallenges/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Social</ph>
 						</stentry>
@@ -90,9 +92,20 @@
                     </strow>
                 </simpletable>
 
+				<!--
+				Premium: No
+				-->
             </sectiondiv>
 
         </section>
+
+
+		<!--
+		<section>
+			<title>Module Configuration</title>
+			<sectiondiv id="sectiondiv-bpconfig"/> See ditamap.
+        </section>
+		 -->
 
     </refbody>
 

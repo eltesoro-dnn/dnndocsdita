@@ -16,9 +16,59 @@
 
         <steps>
 
-			<!-- PAGES, combined Administrators and Content Managers -->
+			<!-- ========== MENU ========== -->
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-menuhostextensions"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-menuhostextensions"><cmd/></step> -->
+            <step id="step-menuhostextensions">
+				<cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.</cmd>
+                <info><image scalefit="yes" placement="break" align="center" href="img/scr-menuHostCommonExtensions.png"><alt>Host &gt; Extensions</alt></image></info>
+            </step>
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-hostopenmoduleforediting"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-hostopenmoduleforediting"><cmd/></step> -->
+			<step id="step-hostopenmoduleforediting">
+				<cmd>Open the module for editing.</cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="center" href="img/scr-HostExtensionsList-Installed-Modules-Edit.png"><alt>Installed Extensions tab &gt; Modules section &gt; click/tap the pencil icon for the module to edit.</alt></image>
+                </info>
+				<substeps>
+					<substep><cmd>Go to the <uicontrol>Installed Extensions</uicontrol> tab.</cmd></substep>
+					<substep><cmd>Expand the <uicontrol>Modules</uicontrol> section.</cmd></substep>
+					<substep><cmd>Click/Tap the pencil icon for the module you want.</cmd></substep>
+				</substeps>
+            </step>
+
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-menuadminextensions"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-menuadminextensions"><cmd/></step> -->
+            <step id="step-menuadminextensions">
+				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol></uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.</cmd>
+                <info><image scalefit="yes" placement="break" align="center" href="img/scr-menuAdminAdvanced-Extensions.png"><alt>Host &gt; Extensions</alt></image></info>
+            </step>
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-adminopenmoduleforediting"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-adminopenmoduleforediting"><cmd/></step> -->
+			<step id="step-adminopenmoduleforediting">
+				<cmd>Open the module for editing.</cmd>
+                <info>
+                    <image scalefit="yes" placement="break" align="center" href="img/scr-AdminExtensionsList-Installed-Modules-Edit.png"><alt>Installed Extensions tab &gt; Modules section &gt; click/tap the pencil icon for the module to edit.</alt></image>
+                </info>
+				<substeps>
+					<substep><cmd>In the <uicontrol>Installed Extensions</uicontrol> tab, expand the <uicontrol>Modules</uicontrol> section.</cmd></substep>
+					<substep><cmd>Click/Tap the pencil icon for the module you want.</cmd></substep>
+				</substeps>
+            </step>
+
+
+
+
+
+
+			<!-- ========== PAGES, combined Administrators and Content Managers ========== -->
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createpage"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-createpage"><cmd/></step> -->
 			<step id="step-createpage">
 				<cmd>Create a page.</cmd>
 				<choices>
@@ -28,6 +78,7 @@
 			</step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-editpage"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-editpage"><cmd/></step> -->
 			<step id="step-editpage">
 				<cmd>Select and edit a page.</cmd>
 				<choices>
@@ -37,10 +88,11 @@
 			</step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createcopyeditpage"><strow/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-createcopyeditpage"><strow/></step> -->
 			<step id="step-createcopyeditpage">
 				<cmd>Create, copy, or edit a page.</cmd>
 				<info>
-					<simpletable relcolwidth="1* 1* 1*">
+					<simpletable relcolwidth="1* 3* 3* 6*">
 						<sthead>
 							<stentry>Administrators</stentry>
 							<stentry>Content Managers</stentry>
@@ -62,6 +114,7 @@
 			</step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createcopyeditpage-cp"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-createcopyeditpage-cp"><cmd/></step> -->
 			<step id="step-createcopyeditpage-cp" outputclass="audience-adm">
 				<cmd>Create, copy, or edit a page via the <uicontrol>Control Bar</uicontrol>.</cmd>
 				<choices>
@@ -72,6 +125,7 @@
 			</step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createcopyeditpage-pb"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-createcopyeditpage-pb"><cmd/></step> -->
 			<step id="step-createcopyeditpage-pb" outputclass="audience-cmg">
 				<cmd>Create, copy, or edit a page via the <uicontrol>Persona Bar</uicontrol>.</cmd>
 				<choices>

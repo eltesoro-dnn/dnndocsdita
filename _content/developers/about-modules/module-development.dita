@@ -38,9 +38,9 @@
                 <ul>
                     <li>These frameworks can be used with DNN:
                         <ul>
-                            <li>Web Forms - This traditional framework creates DNN modules that use controls based on ASP.NET Web Forms.</li>
-                            <li>MVC - This framework (introduced in DNN 8) uses the ASP.NET MVC framework.</li>
-                            <li>SPA - This family of frameworks builds modules using plain HTML, JavaScript, and CSS. You can use any SPA framework.</li>
+                            <li>Web Forms. This traditional framework creates DNN modules that use controls based on ASP.NET Web Forms.</li>
+                            <li>MVC. This framework (introduced in DNN 8) uses the ASP.NET MVC framework.</li>
+                            <li>SPA. This family of frameworks builds modules using plain HTML, JavaScript, and CSS. You can use any SPA framework.</li>
                         </ul>
                     </li>
                     <li>You can choose a manual development approach, where the entire module is built by hand, or a more automated approach, where the basic module foundation is created using a template or other automation tool.</li>

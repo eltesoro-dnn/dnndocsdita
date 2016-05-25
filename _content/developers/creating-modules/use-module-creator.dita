@@ -35,7 +35,7 @@
         </prereq>
 
         <steps>
-			<step conref="../../common/bptext-steps.dita#bptext-steps/step-createcopyeditpage-cp"><cmd/></step>
+			<step conkeyref="k-bpsteps/step-createcopyeditpage-cp"><cmd/></step>
 
 			<step conref="../../common/building-your-site/bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step>
 
@@ -98,7 +98,7 @@
                     <substep>
                         <cmd>From the gear icon, choose <uicontrol>Develop</uicontrol>.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleGearMenuDevelop.png"><alt>(gear) - Develop</alt></image>
+                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleGearMenuDevelop.png"><alt>Settings (gear icon) &gt; Develop</alt></image>
                         </info>
                     </substep>
                     <substep>

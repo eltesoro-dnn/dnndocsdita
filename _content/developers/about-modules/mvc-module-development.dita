@@ -170,11 +170,11 @@
             <p>Common DNN features are made available to MVC developers through DNN APIs, such as:</p>
 
              <ul>
-                 <li><term>Localization</term> - The DNN helper object includes a <apiname>LocalizeString</apiname> method. This helper object can be used in your view when localizing your module.</li>
+                 <li><term>Localization</term>. The DNN helper object includes a <apiname>LocalizeString</apiname> method. This helper object can be used in your view when localizing your module.</li>
 
-                 <li><term>Module actions</term> - DNN includes the <apiname>ModuleAction</apiname> and <apiname>ModuleActionItems</apiname> attributes to identify custom module actions. These attributes can only be used with controller action methods.</li>
+                 <li><term>Module actions</term>. DNN includes the <apiname>ModuleAction</apiname> and <apiname>ModuleActionItems</apiname> attributes to identify custom module actions. These attributes can only be used with controller action methods.</li>
 
-                 <li><term>Base controller class</term> - MVC controllers must inherit from the <apiname>DnnController</apiname> class. Similar to the <apiname>PortalModuleBase</apiname> class for Web Forms module developers, this class provides access to the DNN module and portal context objects.</li>
+                 <li><term>Base controller class</term>. MVC controllers must inherit from the <apiname>DnnController</apiname> class. Similar to the <apiname>PortalModuleBase</apiname> class for Web Forms module developers, this class provides access to the DNN module and portal context objects.</li>
              </ul>
         </section>
 

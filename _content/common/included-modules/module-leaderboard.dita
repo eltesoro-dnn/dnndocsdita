@@ -41,24 +41,26 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-leaderboard.dita#ref-ModuleLeaderboard/sectiondiv-bpdetails"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpdetails">
-
+            <!-- <sectiondiv conref="module-leaderboard.dita#ref-ModuleLeaderboard/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpmoreinfo">
                 <p>See <xref format="dita" href="module-member-directory.dita">Member Directory</xref>.</p>
+            </sectiondiv>
 
-			<!--
-			<sectiondiv id="sectiondiv-config">
+
+			<!-- <sectiondiv conref="module-leaderboard.dita#ref-ModuleLeaderboard/sectiondiv-bpconfig"></sectiondiv>
+			<sectiondiv id="sectiondiv-bpconfig">
 				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
 			</sectiondiv>
 			-->
 
 
-                <simpletable relcolwidth="1* 1* 1*">
+            <!-- <sectiondiv conref="module-leaderboard.dita#ref-ModuleLeaderboard/sectiondiv-bpdetails"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpdetails">
+                <simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
-                        <stentry>Premium</stentry>
-						<stentry>Category</stentry>
+                        <stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
@@ -69,8 +71,7 @@
                             </ph>
                         </stentry>
                         <stentry>Leaderboard</stentry>
-                        <stentry>No</stentry>
-						<stentry>
+                        <stentry>
 							<!-- <ph conref="module-leaderboard.dita#ref-ModuleLeaderboard/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Social</ph>
 						</stentry>
@@ -83,9 +84,20 @@
                     </strow>
                 </simpletable>
 
+				<!--
+				Premium: No
+				-->
             </sectiondiv>
 
         </section>
+
+
+		<!--
+		<section>
+			<title>Module Configuration</title>
+			<sectiondiv id="sectiondiv-bpconfig"/> See ditamap.
+        </section>
+		 -->
 
     </refbody>
 

@@ -44,7 +44,7 @@
         <steps>
             <step>
                 <cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Security Roles</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuAdminCommonSecurityRoles.png"><alt>Admin - Security Roles</alt></image></info>
+                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuAdminCommonSecurityRoles.png"><alt>Admin &gt; Security Roles</alt></image></info>
             </step>
 
             <step>
@@ -62,7 +62,7 @@
             <step>
                 <cmd>Configure the role.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditSecurityRolesBasic.png"><alt>Edit Security Roles - Basic Settings</alt></image>
+                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditSecurityRolesBasic.png"><alt>Edit Security Roles &gt; Basic Settings</alt></image>
 
                     <simpletable relcolwidth="1* 1* 3*">
                         <sthead>
@@ -81,7 +81,7 @@
                         </strow>
                     </simpletable>
 
-                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditSecurityRolesAdvanced.png"><alt>Edit Security Roles - Basic Settings</alt></image>
+                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditSecurityRolesAdvanced.png"><alt>Edit Security Roles &gt; Basic Settings</alt></image>
 
                     <simpletable relcolwidth="1* 1* 3*">
                         <sthead>

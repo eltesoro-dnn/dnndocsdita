@@ -30,11 +30,11 @@
                 <substeps>
                     <substep>
                         <cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.</cmd>
-                        <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuHostCommonExtensions.png"><alt>Host - Extensions</alt></image></info>
+                        <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuHostCommonExtensions.png"><alt>Host &gt; Extensions</alt></image></info>
                     </substep>
                     <substep>
                         <cmd>In the <uicontrol>Available Extensions</uicontrol> tab, expand the <uicontrol>Providers</uicontrol> section, search for <uicontrol>DNN JWT Auth Handler</uicontrol>, then click or tap its <uicontrol>Install</uicontrol> button.</cmd>
-                        <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-AvailableExtensionsProvidersJWT.png"><alt>Available Extensions - Providers - DNN JWT Auth Handler - Install</alt></image></info>
+                        <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-AvailableExtensionsProvidersJWT.png"><alt>Available Extensions &gt; Providers &gt; DNN JWT Auth Handler &gt; Install</alt></image></info>
                     </substep>
                 </substeps>
                 <stepresult>

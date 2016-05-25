@@ -68,8 +68,7 @@ body {
   height: 100%;     /* Required or else the footer floats. */
   width: 100%;      /* Required or else the footer is too short. */
   position: absolute;   /* Required or else the footer floats. */
-/*  background-color: #b3b3b3;
-*/}
+}
 body#index {
   background-color: white;
 }
@@ -80,12 +79,11 @@ body#index {
 .map,
 main {
   min-height: 100%;  /* Required or else the footer floats.*/
-  overflow-x
 }
 article[role="article"] {
   display: block;
   margin: 0;
-  padding: 60px 10% 100px 30px; /* 100px 10% 100px 30px; */
+  padding: 60px 10% 120px 30px;
   min-width: 40ch;  /* actual text line widths */
   min-height: 82vh;
   margin-left: 302px;
@@ -113,24 +111,18 @@ ul .map,
 nav[role="toc"] {
   clear: left;
   float: left;
-  position: absolute;
-  width: 300px;
-  height: 100%;
-  font-size: 90%;
+  position: relative;
+  width: 375px;
+  font-size: 100%;
   transition: all 0.5s ease;
-  top: 102px; /* 127px; */
+  top: 102px;
+  margin-bottom: -50px;
 }
-nav[role="toc"] ul {
-}
-/*nav[role="toc"] > ul {
-  border-right: 2px solid #b3b3b3;
-}
-*/nav[role="toc"] li {
+nav[role="toc"] li {
   display: block;
   float: left;
-  width: 97%;
-/*  margin: 2px 2px 2px 0px;
-*/  padding-left: 20px;
+  width: 100%;
+  padding-left: 20px;
   border-left: 2px block #0d8dbf;
   color: #787878;
   background: #f4f4f4;
@@ -146,6 +138,7 @@ nav[role="toc"] > ul { /* using the first ul as background block */
   background: white;
   position: relative;
   z-index: 8000;
+  border-right: 2px solid #b3b3b3;
 }
 nav[role="toc"] > ul > li {
   border: 0;
@@ -226,7 +219,7 @@ header {
 .header .logo img {
   display: inline-block;
   margin-right: 4px;
-  margin-top: 2px; /* 10px; */
+  margin-top: 2px;
 }
 .header .logo span {
   position: relative;
@@ -239,7 +232,7 @@ header {
   display: block;
   position: absolute;
   right: 20px;
-  top: 12px; /* 22px; */
+  top: 12px;
 }
 .header nav ul {
   margin: 0;
@@ -275,6 +268,7 @@ footer {
   bottom: 0;
   z-index: 9999; /* always top layer */
   width: 100%;
+  top: 150px;
 }
 .footer {   /* This is the inner element */
   width: 100%;
@@ -732,17 +726,6 @@ span.filepath {
   width: 100px;
 }
 
-.audience-adm,
-.audience-cmg,
-.audience-dev,
-.audience-dsg,
-.product-EvoqEngage,
-.product-EvoqContent,
-.product-Platform {
-	font-weight: bold;
-}
-
-
 /* ------------------------------------------------------------
  | Glossary
  */
@@ -765,6 +748,16 @@ article .glossentry {
 
 /* NEW STYLES */
 
+ul li ul li.sub-nav-tabs.toc-aria-arrow-closed::before {
+  margin-left: 23px;
+  margin-right: -20px;
+}
+
+ul li ul li.sub-nav-tabs.toc-aria-arrow-open::before {
+  margin-left: 17px;
+  margin-right: -20px;
+}
+
 .toc-aria-arrow-closed::before {
   cursor: pointer;
   content: '';
@@ -777,6 +770,10 @@ article .glossentry {
   vertical-align: middle;
   margin-right: 5px;
   margin-top: -5px;
+}
+li.sub-nav-tabs.toc-aria-arrow-closed::before {
+  margin-left: 20px;
+  margin-right: 10px;
 }
 .toc-aria-arrow-open::before {
   content: '';
@@ -791,27 +788,80 @@ article .glossentry {
   margin-top: -5px;
   margin-left: -6px;
 }
-nav[role="toc"] > ul >li > ul > li {
+ul.nav-tabs .toc-aria-arrow-closed::before {
+  cursor: pointer;
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 8px 0 8px 10.0px;
+  border-color: transparent transparent transparent #787878;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-top: -5px;
+  margin-left: -12px;
+}
+ul.nav-tabs .toc-aria-arrow-open::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 10px 8px 0 8px;
+  border-color: #787878 transparent transparent transparent;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  margin-top: -5px;
+  margin-left: -6px;
+  margin-left: -18px;
+}
+#articleNavAffix > li > ul > li > ul > li > ul > li {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background: transparent;
+  padding-left: 80px;
+  margin-left: -80px;
+}
+#articleNavAffix > li > ul > li > ul > li > ul > li:first-child {
+  padding-top: 10px;
+  margin-top: 5px;
+}
+#articleNavAffix > li > ul > li > ul > li > ul > li:hover {
+  background-color: #afd0db;
+}
+.sub-nav-tabs > ul > li > ul > li {
+  padding-top: 15px;
+}
+nav[role="toc"] > ul > li > ul > li {
   background-color: white;
   margin: 0px;
   width: 100%;
-  margin-left: 35px;
   padding-right: 50px;
   display: inline-block;
-  border-left: 1px solid #b3b3b3;
+  padding-top: 5px;
+  padding-bottom: 4px;
+}
+nav[role="toc"] > ul >li > ul > li > ul > li {
+  background-color: white;
+  margin: 0px;
+  width: 100%;
+  padding-left: 15px;
+  padding-right: 50px;
+  display: inline-block;
   padding-top: 5px;
   padding-bottom: 3px;
 }
-nav[role="toc"] > ul >li > ul > li > a {
+nav[role="toc"] > ul > li > ul > li > a {
   margin-left: -10px;
 }
-nav[role="toc"] > ul >li > ul > li:first-child {
-  padding-top: 10px;
+nav[role="toc"] > ul > li > ul > li:first-child {
+  padding-top: 9px;
   margin-top: 15px;
 }
-nav[role="toc"] > ul >li > ul {
+nav[role="toc"] > ul > li > ul {
   overflow: hidden;
-  margin-left: -56px;
+  margin-left: -65px;
   height: 100%;
   width: 100%;
   padding-bottom: 15px;
@@ -819,6 +869,7 @@ nav[role="toc"] > ul >li > ul {
   padding-right: 7px;
   margin-top: 10px;
   margin-bottom: -10px;
+  padding-left: 72px;
 }
 nav[role="toc"] > ul > li.active {
   background-color: #dbeef4;
@@ -961,7 +1012,7 @@ nav[role="toc"] > ul > li > ul > li > a {
 li.sub-nav-tabs {
   background-color: #f4f4f4!important;
   padding-bottom: 3px;
-  padding-top: 3px;
+  padding-top: 5px;
   margin-left: -50px;
 }
 li.sub-nav-tabs:hover {
@@ -969,7 +1020,7 @@ li.sub-nav-tabs:hover {
 }
 nav[role="toc"] > ul > li > ul > li > ul {
   background-color: #f4f4f4!important;
-  margin-left: -25px;
+  margin-left: -70px;
 }
 nav[role="toc"] > ul > li > ul > li > ul > li > a {
   margin-left: 25px;
@@ -1172,8 +1223,9 @@ img.img-icon {
   display: none;
   position: absolute;
   top: 49px;
+  left: 0;
   display: inline-block;
-  width: 300px;
+  width: 375px;
   padding-top: 5px;
   padding-bottom: 2px;
   background-color: white;
@@ -1897,7 +1949,7 @@ and (orientation : portrait) {
     display: none;
   }
   article[role="article"] {
-    margin-left: 302px;
+    margin-left: 377px;
   }
   article[role="article"] {
     height: 100%;
@@ -1910,7 +1962,7 @@ and (orientation : portrait) {
     padding-right: 0px;
   }
   main {
-    margin-bottom: -50px;
+    margin-bottom: -200px;
   }
   article[role="article"] {
     min-height: 82vh;

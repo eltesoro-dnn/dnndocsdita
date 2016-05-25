@@ -49,8 +49,14 @@
             </sectiondiv>
 
 
-			<!--
-			<sectiondiv id="sectiondiv-config">
+            <!-- <sectiondiv conref="module-account-registration.dita#ref-ModuleAccountRegistration/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpmoreinfo">
+                <p>After the registration form has been completed and submitted, the primary administrator receives a notice to review the registration and authorize the user account.</p>
+            </sectiondiv>
+
+
+			<!-- <sectiondiv conref="module-account-registration.dita#ref-ModuleAccountRegistration/sectiondiv-bpconfig"></sectiondiv>
+			<sectiondiv id="sectiondiv-bpconfig">
 				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
 			</sectiondiv>
 			-->
@@ -58,20 +64,17 @@
 
             <!-- <sectiondiv conref="module-account-registration.dita#ref-ModuleAccountRegistration/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
-
-                <p>After the registration form has been completed and submitted, the primary administrator receives a notice to review the registration and authorize the user account.</p>
-
-                <simpletable relcolwidth="1* 1* 1*">
+				<simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
+						<stentry/>
                         <stentry>Package</stentry>
-                        <stentry>Premium</stentry>
-						<stentry>Category</stentry>
+                        <stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
+						<stentry/>
                         <stentry>Registration</stentry>
-                        <stentry>No</stentry>
-						<stentry>
+                        <stentry>
 							<!-- <ph conref="module-account-registration.dita#ref-ModuleAccountRegistration/ph-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">User Management</ph>
 						</stentry>
@@ -85,9 +88,20 @@
                     </strow>
                 </simpletable>
 
+				<!--
+				Premium: No
+				-->
             </sectiondiv>
 
         </section>
+
+
+		<!--
+		<section>
+			<title>Module Configuration</title>
+			<sectiondiv id="sectiondiv-bpconfig"/> See ditamap.
+        </section>
+		 -->
 
     </refbody>
 

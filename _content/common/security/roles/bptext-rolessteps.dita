@@ -19,13 +19,13 @@
             <!-- USE THIS: <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-manageroles"><cmd/></step> -->
             <step id="step-manageroles">
                 <cmd>Go to <menucascade><uicontrol>Users</uicontrol> <uicontrol>Manage Roles</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuUsersManageRoles.png"><alt>Users - Manage Roles</alt></image></info>
+                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuUsersManageRoles.png"><alt>Users &gt; Manage Roles</alt></image></info>
             </step>
 
             <!-- WILL BE DEPRECATED: <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-admsecroles"><cmd/></step> -->
             <step id="step-admsecroles">
                 <cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Security Roles</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuAdminCommonSecurityRoles.png"><alt>Admin - Security Roles</alt></image></info>
+                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuAdminCommonSecurityRoles.png"><alt>Admin &gt; Security Roles</alt></image></info>
             </step>
 
 
@@ -34,7 +34,7 @@
                 <cmd>Search for the role to manage.</cmd>
                 <info>
                     <note type="tip">You can use the <uicontrol>Filter by Role Group</uicontrol> dropdown at the top to narrow your search.</note>
-                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-RoleList-FilterByRoleGroup.png"><alt>Role List - Filter by Role Group dropdown</alt></image>
+                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-RoleList-FilterByRoleGroup.png"><alt>Role List &gt; Filter by Role Group dropdown</alt></image>
                 </info>
             </step>
 
@@ -49,7 +49,7 @@
             <!-- <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-managerolesforuser"><cmd/></step> -->
             <step id="step-managerolesforuser">
                 <cmd>Click/Tap the shield icon for the user account to manage that user's roles.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListManageRoles.png"><alt>User List - Manage Roles</alt></image></info>
+                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListManageRoles.png"><alt>User List &gt; Manage Roles</alt></image></info>
             </step>
 
         </steps>

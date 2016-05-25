@@ -116,6 +116,187 @@
 				</strow>
 
 
+				<!-- ========== MODULE: MEMBER DIRECTORY ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplate"><stentry/></strow> -->
+				<strow id="strow-field-ItemTemplate">
+					<stentry><uicontrol>Item Template</uicontrol></stentry>
+					<stentry>The HTML template used to display the first and every other (odd-numbered) item in the directory.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AlternateItemTemplate"><stentry/></strow> -->
+				<strow id="strow-field-AlternateItemTemplate">
+					<stentry><uicontrol>Alternate Item Template</uicontrol></stentry>
+					<stentry>The HTML template used to display the second and every other (even-numbered) item in the directory. Leave this blank to use the <uicontrol>Item Template</uicontrol> for all members.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnablePopUp"><stentry/></strow> -->
+				<strow id="strow-field-EnablePopUp">
+					<stentry><uicontrol>Enable PopUp</uicontrol></stentry>
+					<stentry>If checked, the member details are displayed in a pop-up window when the user hovers over the member's listing.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PopUpTemplate"><stentry/></strow> -->
+				<strow id="strow-field-PopUpTemplate">
+					<stentry><uicontrol>PopUp Template</uicontrol></stentry>
+					<stentry>The HTML template used to display a member's details in a pop-up window.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FilterBy"><stentry/></strow> -->
+				<strow id="strow-field-FilterBy">
+					<stentry><uicontrol>Filter By</uicontrol></stentry>
+					<stentry>
+						<ul>
+							<li><uicontrol>No Filter</uicontrol>. Displays all members.</li>
+							<li><uicontrol>User</uicontrol>. Displays the profile of the current user.</li>
+							<li><uicontrol>Group</uicontrol>. Displays only the members of the selected group.
+								<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory-FilterGroup.png"><alt>Module Settings &#8212; Member Directory &#8212; Filter by Group</alt></image>
+							</li>
+							<li><uicontrol>Relationship</uicontrol>. Displays only the members with the selected relationship to the current user. (Friends or Followers)
+								<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory-FilterRelationship.png"><alt>Module Settings &#8212; Member Directory &#8212; Filter by Relationship</alt></image>
+							</li>
+							<li><uicontrol>Profile Property</uicontrol>. Displays only the members who have the specified value for the selected property.
+								<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory-FilterProfileProperty.png"><alt>Module Settings &#8212; Member Directory &#8212; Filter by Property</alt></image>
+							</li>
+						</ul>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SortFieldListBy"><stentry/></strow> -->
+				<strow id="strow-field-SortFieldListBy">
+					<stentry>
+						<lines><uicontrol>Sort Field</uicontrol>
+							   <uicontrol>Sort List By</uicontrol></lines>
+					</stentry>
+					<stentry>Sorts the list based on the selected field.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SortOrderDirection"><stentry/></strow> -->
+				<strow id="strow-field-SortOrder">
+					<stentry>
+						<lines><uicontrol>Sort Order</uicontrol>
+							   <uicontrol>Sort Direction</uicontrol>
+						</lines>
+					</stentry>
+					<stentry>Sorts the list in ascending or descending order.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ExcludeHostUsers"><stentry/></strow> -->
+				<strow id="strow-field-ExcludeHostUsers">
+					<stentry><uicontrol>Exclude Host Users</uicontrol></stentry>
+					<stentry>
+						<p>If checked, hosts are excluded from the resulting list.</p>
+						<note type="tip">Checking this option is useful for security. By hiding users with maximum permissions, you reduce the risk of hackers targeting those accounts or leveraging the names of those users in social engineering attacks.</note>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisplaySearch"><stentry/></strow> -->
+				<strow id="strow-field-DisplaySearch">
+					<stentry><uicontrol>Display Search</uicontrol></stentry>
+					<stentry>
+						<ul>
+							<li><uicontrol>None</uicontrol>. Removes the search capability.</li>
+							<li><uicontrol>Simple Search</uicontrol>. Provides a basic case-insensitive search of the <uicontrol>Display Name</uicontrol> field only.</li>
+							<li><uicontrol>Simple and Advanced Search</uicontrol>. Provides both the basic search and the advanced search. The <uicontrol>Advanced Search</uicontrol> allows you to narrow the search results by performing a case-insensitive Boolean-AND search on the specified <uicontrol>Search Field</uicontrol>s.</li>
+						</ul>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SearchField"><stentry/></strow> -->
+				<strow id="strow-field-SearchField">
+					<stentry>
+						<lines><uicontrol>Search Field 1</uicontrol>
+							   <uicontrol>Search Field 2</uicontrol>
+							   <uicontrol>Search Field 3</uicontrol>
+							   <uicontrol>Search Field 4</uicontrol></lines>
+					</stentry>
+					<stentry>The fields to be used in the <uicontrol>Advanced Search</uicontrol>.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisablePaging"><stentry/></strow> -->
+				<strow id="strow-field-DisablePaging">
+					<stentry><uicontrol>Disable Paging</uicontrol></stentry>
+					<stentry>If checked, only the first page of the results is displayed and the <uicontrol>Load more</uicontrol> button is hidden.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize"><stentry/></strow> -->
+				<strow id="strow-field-PageSize">
+					<stentry><uicontrol>Page Size</uicontrol></stentry>
+					<stentry>The maximum number of items to display in each result page. (1 &#8212; 100)</stentry>
+				</strow>
+
+
+				<!-- ========== MODULE: SOCIAL GROUPS ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisplayUsersGroupsOnly"><stentry/></strow> -->
+				<strow id="strow-field-DisplayUsersGroupsOnly">
+					<stentry><uicontrol>Display User's Groups Only</uicontrol></stentry>
+					<stentry>If checked, displays only the groups that the current user belongs to.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DefaultRoleGroup"><stentry/></strow> -->
+				<strow id="strow-field-DefaultRoleGroup">
+					<stentry><uicontrol>Default Role Group</uicontrol></stentry>
+					<stentry>The role group that is displayed by default.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ModuleViewMode"><stentry/></strow> -->
+				<strow id="strow-field-ModuleViewMode">
+					<stentry><uicontrol>Module View Mode</uicontrol></stentry>
+					<stentry>The mode for the current module instance.
+						<ul>
+							<li><uicontrol>List</uicontrol>. Choose this setting for the page that lists the groups.</li>
+							<li><uicontrol>View</uicontrol>. Choose this setting for the page that displays the details of the selected group.</li>
+						</ul>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GroupViewPage"><stentry/></strow> -->
+				<strow id="strow-field-GroupViewPage">
+					<stentry><uicontrol>Group View Page</uicontrol></stentry>
+					<stentry>The page that displays the details of the selected group.
+						<note type="important">In the target page, the <uicontrol>Social Groups</uicontrol> module instance must be configured with <uicontrol>Module View Mode</uicontrol> set to <uicontrol>View</uicontrol>.</note>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GroupListTemplate"><stentry/></strow> -->
+				<strow id="strow-field-GroupListTemplate">
+					<stentry>
+						<lines><uicontrol>Group List Template</uicontrol>
+							   <uicontrol>Group View Template</uicontrol></lines>
+					</stentry>
+					<stentry>The custom HTML template used to display the group list or details. You can use the following tokens in the template:
+						<ul>
+							<li>[groupitem:GroupName]</li>
+							<li>[groupitem:GroupDescription]</li>
+							<li>[groupitem:PhotoURL]</li>
+							<li>[groupviewurl]</li>
+						</ul>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GroupListPageSize"><stentry/></strow> -->
+				<strow id="strow-field-GroupListPageSize">
+					<stentry><uicontrol>Group List Page Size</uicontrol></stentry>
+					<stentry>The maximum number of groups that are initially displayed in a page. Also the maximum number of additional groups displayed when the <uicontrol>Get More</uicontrol> button is clicked/tapped.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableGroupSearch"><stentry/></strow> -->
+				<strow id="strow-field-EnableGroupSearch">
+					<stentry><uicontrol>Enable Group Search</uicontrol></stentry>
+					<stentry>If checked, provides case-insensitive search by group name.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GroupCreationRequiresApproval"><stentry/></strow> -->
+				<strow id="strow-field-GroupCreationRequiresApproval">
+					<stentry><uicontrol>Group Creation Requires Approval</uicontrol></stentry>
+					<stentry>If checked, a <uicontrol>Group Moderator</uicontrol> or an administrator must approve new groups.
+						<note type="note">If the <uicontrol>Group Moderator</uicontrol> role does not exist or is not assigned to a user, the group is created anyway, without warning.</note>
+					</stentry>
+				</strow>
+
+
+
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-"><stentry/></strow>
 				<strow id="strow-field-">
 					<stentry><uicontrol></uicontrol></stentry>

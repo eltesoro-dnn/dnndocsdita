@@ -40,7 +40,7 @@
         <steps>
             <step>
                 <cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Security Roles</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuAdminCommonSecurityRoles.png"><alt>Admin - Security Roles</alt></image></info>
+                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuAdminCommonSecurityRoles.png"><alt>Admin &gt; Security Roles</alt></image></info>
             </step>
 
             <step>
@@ -60,7 +60,7 @@
                 <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-RoleList-FilterByRoleGroup.png"><alt>Result: Filter by Role Group</alt></image>
                 </li>
                 <li>The new role group appears in the <uicontrol>Role Group</uicontrol> dropdown in the <wintitle>Edit Security Roles</wintitle> page.
-                <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditSecurityRolesBasic-RoleGroup.png"><alt>Result: Edit Security Roles - Role Group dropdown</alt></image>
+                <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditSecurityRolesBasic-RoleGroup.png"><alt>Result: Edit Security Roles &gt; Role Group dropdown</alt></image>
                 </li>
             </ul>
         </result>

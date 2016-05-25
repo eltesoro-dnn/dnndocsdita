@@ -50,11 +50,11 @@
 				<choices>
 					<choice>
 						<p>To publish, go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Make Public</uicontrol></menucascade>. This option is available if the page is private.</p>
-						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageMakePublic.png"><alt>Edit Page - Make Public</alt></image>
+						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageMakePublic.png"><alt>Edit Page &gt; Make Public</alt></image>
 					</choice>
 					<choice>
 						<p>To unpublish, go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Make Private</uicontrol></menucascade>. This option is available if the page is published.</p>
-						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageMakePrivate.png"><alt>Edit Page - Make Private</alt></image>
+						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageMakePrivate.png"><alt>Edit Page &gt; Make Private</alt></image>
 					</choice>
 				</choices>
             </step>

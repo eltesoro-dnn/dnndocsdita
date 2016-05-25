@@ -74,7 +74,7 @@
                         <li>PortalId</li>
                         <li>IsSuperUser</li>
                         <li>EditMode</li>
-                        <li><varname>SettingName</varname> - You can access a specific module setting by using the setting name, instead of a predefined property name.</li>
+                        <li><varname>SettingName</varname>. You can access a specific module setting by using the setting name, instead of a predefined property name.</li>
                     </ul>
                 </li>
             </ul>

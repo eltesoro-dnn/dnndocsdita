@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-manage-premium-module">
+
+    <title>Manage a Premium Module</title>
+
+    <prolog>
+        <author>wrET,trJB,ceLY,1601</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="installing" />
+        </metadata>
+    </prolog>
+
+    <taskbody>
+
+        <section id="overview">
+			<p>If a module is set as <term>Premium</term>, its availability can be restricted at the site level and at the role level.</p>
+
+			<p>After installation, hosts can set the module to <term>Premium</term> and select which websites can access the module. If a module is designed to be premium by default, hosts only need to select the sites that can use it.</p>
+
+			<p>Then the administrators of each enabled site can assign <uicontrol>Deploy Module</uicontrol> permissions to a role, such as the <term>Content Manager</term>, to allow users in that role to add the module to a page.</p>
+        </section>
+
+
+        <prereq>
+            <ph conkeyref="k-bptext/ph-PrereqHost"></ph>
+            <ph conkeyref="k-bptext/ph-HostForModulesThemes"></ph>
+        </prereq>
+
+
+        <steps>
+			<stepsection>Installing a module requires <term>host</term> permissions.</stepsection>
+            <step conkeyref="k-bpsteps/step-menuhostextensions"><cmd/></step>
+			<step conkeyref="k-bpsteps/step-hostopenmoduleforediting"><cmd/></step>
+			<step>
+				<cmd>Set the module to premium, and select the sites that you allow to use the module.</cmd>
+				<info><image scalefit="yes" placement="break" align="center" href="../../common/img/scr-HostEditExtension-Premium.png"><alt>Check Is Premium Module? &gt; then drag websites from Unassigned to Assigned.</alt></image></info>
+				<substeps>
+					<substep><cmd>Check the <uicontrol>Is Premium Module?</uicontrol> box.</cmd></substep>
+					<substep><cmd>In <uicontrol>Assigned Premium Modules</uicontrol>, drag the websites to enable from the <uicontrol>Unassigned</uicontrol> panel to the <uicontrol>Assigned</uicontrol> panel.</cmd></substep>
+				</substeps>
+			</step>
+        </steps>
+
+		<postreq><xref format="dita" href="allow-module-use.dita">Grant <uicontrol>Deploy Module</uicontrol> permissions to a role, such as the <term>Content Manager</term>, to allow users in that role to add the module to a page.</xref>
+
+		</postreq>
+
+    </taskbody>
+
+
+    <related-links>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/community-blog/cid/155092/installing-our-module-in-another-dnn-instance"><linktext>DNN Community blog: Installing Our Module in Another DNN Instance by Clinton Patterson</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/forge/2sxc-800-amazing-content-and-apps-9733-9733-9733-9733-9733-rating"><linktext>DNN Forge: 2sxc 8.0.11 &#8212; Amazing Content and Apps by 2sxc (installed as an example for screenshots)</linktext></link>
+    </related-links>
+
+</task>

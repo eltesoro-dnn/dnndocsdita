@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-managing-pages-templates">
+
+    <title>Managing Pages and Templates</title>
+    <titlealts>
+        <navtitle>Managing Pages and Templates</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orLY,edET,1605</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section id="aboutpages">
+			<title>About Pages and Templates</title>
+
+			<p>A page is defined by the layout template, which comes with the theme installed for the site. The layout specifies where the panes go, and each pane contains a module. A module presents content, which could be static or dynamic.</p>
+
+		</section>
+
+    </body>
+
+</topic>

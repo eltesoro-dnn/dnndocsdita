@@ -39,7 +39,7 @@
                     </ul>
                 </li>
 
-                <li>Controller Action Return Types - DNN 8 expects actions to return an ActionResult. All other result types are currently unsupported:
+                <li>Controller Action Return Types. DNN 8 expects actions to return an ActionResult. All other result types are currently unsupported:
                     <ul>
                         <li>PartialViewResult,</li>
                         <li>JsonResult</li>
@@ -57,7 +57,7 @@
 
                 <li>Attribute Routing</li>
 
-                <li>Bundles - DNN implements a different minification-and-bundling API for MVC modules.</li>
+                <li>Bundles. DNN implements a different minification-and-bundling API for MVC modules.</li>
             </ul>
         </section>
 

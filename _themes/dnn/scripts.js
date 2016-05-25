@@ -53,12 +53,19 @@ $(document).ready(function() {
         };
     })
 
+    // add triangle to children that have children that have children
+    $("nav[role='toc'] > ul > li > ul > li > ul > li").each(function(){
+        if($(this).has("ul").length){
+            $(this).addClass('toc-aria-arrow-closed');
+        };
+    })
+
     // click to slide toggle the menus
     $(function () {
         $('nav[role="toc"] > ul').find('li').each(function(){
-            $(this).click(function() {
+            $(this).click(function(e) {
             openMenuItem(this);
-            event.stopPropagation();
+            e.stopPropagation();
             });
         });
     });

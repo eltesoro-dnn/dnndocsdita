@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-config-module-member-directory">
+
+    <title>Configure the Member Directory Module</title>
+    <titlealts>
+        <navtitle>Configure Member Directory</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orLY,edET,1605</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section id="overview">
+			<p>In the Member Directory module, you can configure:
+				<ul>
+					<li>the HTML templates used to display member information,</li>
+					<li>how the list is filtered and sorted,</li>
+					<li>how users can search for members in the list, and</li>
+					<li>how the list is divided into pages.</li>
+				</ul>
+			</p>
+		</section>
+
+		<section id="screenshot">
+			<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory.png"><alt>Module Settings - Member Directory</alt></image>
+		</section>
+
+        <steps>
+			<step><cmd>Go to the page containing the module to configure and edit the page.</cmd></step>
+			<step conref="../building-your-site/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step>
+            <step>
+				<cmd>Go to the <uicontrol>Member Directory Settings</uicontrol> tab.</cmd>
+				<info>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry/>
+							<stentry>Templates</stentry>
+						</sthead>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplate"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AlternateItemTemplate"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnablePopUp"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PopUpTemplate"><stentry/></strow>
+					</simpletable>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry/>
+							<stentry>Filters and Sorting</stentry>
+						</sthead>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FilterBy"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SortFieldListBy"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SortOrderDirection"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ExcludeHostUsers"><stentry/></strow>
+					</simpletable>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry/>
+							<stentry>Search Settings</stentry>
+						</sthead>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisplaySearch"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SearchField"><stentry/></strow>
+					</simpletable>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry/>
+							<stentry>Paging Options</stentry>
+						</sthead>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisablePaging"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize"><stentry/></strow>
+					</simpletable>
+				</info>
+            </step>
+        </steps>
+
+
+		<example>
+			<ul>
+				<li>To list the current user's friends or followers,
+					<ol>
+						<li>Under <uicontrol>Filters and Sorting</uicontrol>, choose <uicontrol>Relationship</uicontrol>.</li>
+						<li>In the dropdown, choose <uicontrol>Friends</uicontrol> or <uicontrol>Followers</uicontrol>.</li>
+					</ol>
+				</li>
+				<li>To add the current user's abbreviated profile on a page, such as on a sidebar,
+					<ol>
+						<li>Under <uicontrol>Filters and Sorting</uicontrol>, choose <uicontrol>User</uicontrol>.</li>
+						<li>Under <uicontrol>Search Settings</uicontrol>, set <uicontrol>Display Search</uicontrol> to <uicontrol>None</uicontrol>.</li>
+					</ol>
+				</li>
+				<li>To allow the user to search for other members in the entire site,
+					<ol>
+						<li>Under <uicontrol>Filters and Sorting</uicontrol>, choose <uicontrol>No Filter</uicontrol>.</li>
+						<li>Under <uicontrol>Search Settings</uicontrol>, set <uicontrol>Display Search</uicontrol> to <uicontrol>Simple Search</uicontrol> or <uicontrol>Simple and Advanced Search</uicontrol>.</li>
+						<li>Choose four fields that you allow the users to search on.</li>
+					</ol>
+				</li>
+				<li>To list the members of a group,
+					<ol>
+						<li>Under <uicontrol>Filters and Sorting</uicontrol>, choose <uicontrol>Group</uicontrol>.</li>
+						<li>In the dropdown, choose the social group or role group.</li>
+					</ol>
+				</li>
+				<li>To list members located in a specific geographical area.
+					<ol>
+						<li>Under <uicontrol>Filters and Sorting</uicontrol>, choose <uicontrol>Profile Property</uicontrol>.</li>
+						<li>In the dropdown, choose a location field, such as <uicontrol>City</uicontrol>, <uicontrol>Region</uicontrol>, or <uicontrol>Postal Code</uicontrol>.</li>
+						<li>In the text field, enter the value to match for the selected property.</li>
+					</ol>
+				</li>
+			</ul>
+		</example>
+
+    </taskbody>
+
+    <related-links>
+        <link format="dita" href="../building-your-site/configure-module-on-page-via-control-bar.dita"><linktext>Configure a Module on a Page via the Control Bar</linktext></link>
+        <link format="dita" href="../building-your-site/configure-module-on-page-via-persona-bar.dita"><linktext>Configure a Module on a Page via the Persona Bar</linktext></link>
+    </related-links>
+
+</task>

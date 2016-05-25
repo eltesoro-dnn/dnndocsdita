@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-allow-module-use">
+
+    <title>Allow a Module to Be Used</title>
+    <titlealts>
+        <navtitle>Allow Module Use</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>wrET,trJB,ceLY,1601</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="installing" />
+        </metadata>
+    </prolog>
+
+    <taskbody>
+
+        <section id="overview">
+			<p>An administrator can grant <uicontrol>Deploy Module</uicontrol> permissions to a role, such as the <term>Content Manager</term>, to allow users in that role to add the module to a page.</p>
+        </section>
+
+
+        <prereq>
+			<ul>
+				<li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
+				<li><xref format="dita" href="../extensions/install-extension.dita">The host must install the extension package containing the module.</xref></li>
+				<li><xref format="dita" href="manage-premium-module.dita">If the module is set as premium, the host must allow the site to use it.</xref></li>
+			</ul>
+        </prereq>
+
+
+        <steps>
+			<step conkeyref="k-bpsteps/step-menuadminextensions"><cmd/></step>
+			<step conkeyref="k-bpsteps/step-adminopenmoduleforediting"><cmd/></step>
+			<step>
+				<cmd>If the role/user you want is already in the table, check the <uicontrol>Deploy Module</uicontrol> box for that role/user.</cmd>
+				<info><image scalefit="yes" placement="break" align="center" href="../../common/img/scr-AdminEditExtension.png"><alt>Check Deploy Module box for that role/user.</alt></image></info>
+			</step>
+			<step>
+				<cmd>If the role/user you want is not yet in the table, add.</cmd>
+				<choices>
+					<choice>
+						<p>To add a role, expand the <uicontrol>Select Role</uicontrol> dropdown and choose the role you want to allow. Click/Tap <uicontrol>Add</uicontrol>.</p>
+						<image scalefit="yes" placement="break" align="center" href="../../common/img/scr-AdminEditExtension-AddRole.png"><alt>Add the role to the table.</alt></image>
+					</choice>
+					<choice>
+						<p>To add a user, start entering the user's display name in the <uicontrol>Display Name</uicontrol> field. A few names with partial matches will be offered. Choose the correct one, then click/tap <uicontrol>Add</uicontrol>.</p>
+						<image scalefit="yes" placement="break" align="center" href="../../common/img/scr-AdminEditExtension-AddUser.png"><alt>Add a user to the table.</alt></image>
+					</choice>
+				</choices>
+			</step>
+        </steps>
+
+		<result>
+			<p>The added role/user is automatically assigned <uicontrol>Deploy Module</uicontrol> permissions.</p>
+			<image scalefit="yes" placement="break" align="center" href="../../common/img/scr-AdminEditExtension-AddedRoleUser.png"><alt>After adding a role and a user.</alt></image>
+		</result>
+
+    </taskbody>
+
+</task>

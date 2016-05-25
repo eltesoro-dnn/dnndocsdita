@@ -49,8 +49,18 @@
             </sectiondiv>
 
 
-			<!--
-			<sectiondiv id="sectiondiv-config">
+            <!-- <sectiondiv conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpmoreinfo">
+                <p>Includes:
+					<ul>
+						<li><uicontrol>Account Login</uicontrol>. Enables registered users to log in to a site using credentials from this site or from third-party sites, such as Facebook and Twitter. If registration is enabled on the site and the current user is not yet registered, a <uicontrol>Register</uicontrol> link is displayed in the top right corner of all pages, as well as on any instance of the <uicontrol>Account Login</uicontrol> module. Found in the default <wintitle>User Log In</wintitle> page.</li>
+					</ul>
+				</p>
+            </sectiondiv>
+
+
+			<!-- <sectiondiv conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpconfig"></sectiondiv>
+			<sectiondiv id="sectiondiv-bpconfig">
 				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
 			</sectiondiv>
 			-->
@@ -58,19 +68,11 @@
 
             <!-- <sectiondiv conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
-
-                <p>Includes:</p>
-                <ul>
-                    <li><uicontrol>Account Login</uicontrol>. Enables registered users to log in to a site using credentials from this site or from third-party sites, such as Facebook and Twitter. If registration is enabled on the site and the current user is not yet registered, a <uicontrol>Register</uicontrol> link is displayed in the top right corner of all pages, as well as on any instance of the <uicontrol>Account Login</uicontrol> module. Found in the default <wintitle>User Log In</wintitle> page.</li>
-                </ul>
-
-                <simpletable relcolwidth="1* 1* 1*">
+				<simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
-                        <stentry>Premium</stentry>
-                        <stentry>Required permissions</stentry>
-						<stentry>Category</stentry>
+                        <stentry>Category</stentry>
                         <stentry>Product(s)</stentry>
                     </sthead>
                     <strow>
@@ -81,9 +83,7 @@
                             </ph>
                         </stentry>
                         <stentry>Authentication</stentry>
-                        <stentry>No</stentry>
-                        <stentry>Administrator</stentry>
-						<stentry>
+                        <stentry>
 							<!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Site Administration</ph>
 						</stentry>
@@ -98,6 +98,10 @@
                     </strow>
                 </simpletable>
 
+				<!--
+				Premium: No
+				Required permissions: Administrator
+				-->
             </sectiondiv>
 
 
@@ -110,6 +114,14 @@
             </ul> -->
 
         </section>
+
+
+		<!--
+		<section>
+			<title>Module Configuration</title>
+			<sectiondiv id="sectiondiv-bpconfig"/> See ditamap.
+        </section>
+		 -->
 
     </refbody>
 

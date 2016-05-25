@@ -34,6 +34,10 @@
 
     <taskbody>
 
+        <prereq>
+			<ul conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/ul-prereqaddingmodules"><li/></ul>
+        </prereq>
+
 		<section>
 			<p>The <uicontrol>Persona Bar</uicontrol> is visible to <term>content managers</term>. See <xref format="dita" scope="peer" href="../../administrators/building-your-site/add-module-to-page-via-control-bar.dita">Add a Module to a Page via the Control Bar</xref> as an <term>administrator</term>.</p>
 		</section>
@@ -47,5 +51,9 @@
         </steps>
 
     </taskbody>
+
+    <related-links>
+         <link format="dita" href="../included-modules/included-modules.dita"><linktext>Included Modules</linktext></link>
+    </related-links>
 
 </task>

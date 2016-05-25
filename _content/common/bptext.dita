@@ -65,12 +65,14 @@
         <!-- ==================== Page and Module Settings ==================== -->
 
 		<!-- <ul conref="../../common/bptext.dita#top-bptext/ul-publisheddatespages"><li/></ul> -->
+		<!-- <ul conkeyref="k-bptext/ul-publisheddatespages"><li/></ul> -->
 		<ul id="ul-publisheddatespages">
 			<li>The page is published after the specified start date. If <uicontrol>Start Date</uicontrol> is not set, the page is published immediately.</li>
 			<li>The page is hidden after the specified end date. If <uicontrol>End Date</uicontrol> is not set, the page is visible indefinitely.</li>
 		</ul>
 
 		<!-- <ul conref="../../common/bptext.dita#top-bptext/ul-publisheddatesmodules"><li/></ul> -->
+		<!-- <ul conkeyref="k-bptext/ul-publisheddatesmodules"><li/></ul> -->
 		<ul id="ul-publisheddatesmodules">
 			<li>The module is published after the specified start date. If <uicontrol>Start Date</uicontrol> is not set, the module is published immediately.</li>
 			<li>The module is hidden after the specified end date. If <uicontrol>End Date</uicontrol> is not set, the module is visible indefinitely.</li>
@@ -78,10 +80,12 @@
 
 
 		<!-- <p conref="../../common/bptext.dita#top-bptext/p-clicktapcalendarclockicons"></p> -->
+		<!-- <p conkeyref="k-bptext/p-clicktapcalendarclockicons"></p> -->
 		<p id="p-clicktapcalendarclockicons">Click/Tap on the calendar icon to choose the date (server date); the default is the current date. Click/Tap on the clock icon to choose the time; the default is 12:00 AM (server time).</p>
 
 
 		<!-- <p conref="../../common/bptext.dita#top-bptext/p-AddPageLinkType"></p> -->
+		<!-- <p conkeyref="k-bptext/p-AddPageLinkType"></p> -->
 		<p id="p-AddPageLinkType">
 			<uicontrol>Link Type</uicontrol>
 			<ul>
@@ -95,6 +99,7 @@
 
 		<ul>
 			<!-- <li conref="../../common/bptext.dita#top-bptext/li-AddPageChooseSiteFile"></li> -->
+			<!-- <li conkeyref="k-bptext/li-AddPageChooseSiteFile"></li> -->
 			<li id="li-AddPageChooseSiteFile">
 				To choose a file that is already on your site,
 				<ol>
@@ -105,6 +110,7 @@
 			</li>
 
 			<!-- <li conref="../../common/bptext.dita#top-bptext/li-AddPageUploadFile"></li> -->
+			<!-- <li conkeyref="k-bptext/li-AddPageUploadFile"></li> -->
 			<li id="li-AddPageUploadFile">
 				To upload a file to your site,
 				<ol>
@@ -115,6 +121,7 @@
 			</li>
 
 			<!-- <li conref="../../common/bptext.dita#top-bptext/li-ChooseUploadSiteFile"></li> -->
+			<!-- <li conkeyref="k-bptext/li-ChooseUploadSiteFile"></li> -->
 			<li id="li-ChooseUploadSiteFile">
 				<p>Choose <uicontrol>File</uicontrol> to provide your own file.</p>
 				<image scalefit="yes" placement="break" align="left" href="../common/img/scr-ChooseUploadSiteFile.png"><alt>Choose a file from your site.</alt></image>
@@ -150,6 +157,7 @@
 			</li>
 
 			<!-- <li conref="../../common/bptext.dita#top-bptext/li-ChooseSystemImage"></li> -->
+			<!-- <li conkeyref="k-bptext/li-ChooseSystemImage"></li> -->
 			<li id="li-ChooseSystemImage">
 				<p>To choose an image that shipped with DNN,
 					<ol>
