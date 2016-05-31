@@ -49,8 +49,14 @@
             </sectiondiv>
 
 
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
+
+
             <!-- <sectiondiv conref="module-social-groups.dita#ref-ModuleSocialGroups/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
+            	<note type="tip">In <ph outputclass="product-EvoqEngage">Evoq Engage</ph>, use the <uicontrol>Group Directory</uicontrol> module and the <uicontrol>Group Spaces</uicontrol> module, instead of the <uicontrol>Social Groups</uicontrol> in <uicontrol>List</uicontrol> and <uicontrol>View</uicontrol> modes, respectively.</note>
                 <!-- See "Making Social Connections". -->
                 <!-- See Console module. -->
             </sectiondiv>
@@ -75,7 +81,7 @@
                         <stentry>Social Groups</stentry>
 						<stentry>
 							<!-- <ph conref="module-social-groups.dita#ref-ModuleSocialGroups/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Social</ph>
+							<ph id="ph-bpcategory">None</ph>  <!-- Expected: Social -->
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-social-groups.dita#ref-ModuleSocialGroups/sectiondiv-bpproducts"></ph> -->

@@ -42,19 +42,17 @@
 
             <!-- <sectiondiv conref="module-document-viewer.dita#ref-ModuleDocumentViewer/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-documentviewer.png"><alt>Document Viewer module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-DocumentViewer.png"><alt>Document Viewer module</alt></image>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-document-viewer.dita#ref-ModuleDocumentViewer/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-            </sectiondiv>
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
-			<!-- <sectiondiv conref="module-document-viewer.dita#ref-ModuleDocumentViewer/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-document-viewer.dita#ref-ModuleDocumentViewer/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
@@ -77,7 +75,7 @@
                         <stentry>Document Viewer</stentry>
                         <stentry>
 							<!-- <ph conref="module-document-viewer.dita#ref-ModuleDocumentViewer/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">General Content</ph>
+							<ph id="ph-bpcategory">None</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-document-viewer.dita#ref-ModuleDocumentViewer/sectiondiv-bpproducts"></ph> -->

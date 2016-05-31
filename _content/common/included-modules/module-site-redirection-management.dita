@@ -48,17 +48,15 @@
             </sectiondiv>
 
 
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
+
+
             <!-- <sectiondiv conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
                 <!-- Including friendly URLs? How is this related to the Evoq-only Advanced URL Management module? -->
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/sectiondiv-bpdetails"></sectiondiv> -->
@@ -80,7 +78,7 @@
                         <stentry>Site Redirection Management</stentry>
                         <stentry>
 							<!-- <ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Site Administration</ph>
+							<ph id="ph-bpcategory">Admin</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/sectiondiv-bpproducts"></ph> -->

@@ -50,6 +50,11 @@
             </sectiondiv>
 
 
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
+
+
             <!-- <sectiondiv conref="module-journal.dita#ref-ModuleJournal/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
 				<p>Old entries cannot be edited, only deleted.</p>
@@ -86,7 +91,7 @@
                         <stentry>Journal</stentry>
                         <stentry>
 							<!-- <ph conref="module-journal.dita#ref-ModuleJournal/ph-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Social</ph>
+							<ph id="ph-bpcategory">None</ph>  <!-- Expected: Social. -->
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-journal.dita#ref-ModuleJournal/ph-bpproducts"></ph> -->

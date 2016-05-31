@@ -37,29 +37,27 @@
 
             <!-- <sectiondiv conref="module-blogs.dita#ref-ModuleBlogs/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Blogs.png"><alt>Blogs module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Blogs.png"><alt>Blogs module</alt></image>
             </sectiondiv>
+
+
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
             <!-- <sectiondiv conref="module-blogs.dita#ref-ModuleBlogs/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-                <p>Includes:
-					<ul>
-						<li>Blog</li>
-						<li>Blog Roster</li>
-						<li>Blog Calendar</li>
-						<li>Blog Subscribe</li>
-						<li>Blog Search</li>
-					</ul>
-				</p>
+			<sectiondiv id="sectiondiv-bpmoreinfo">
+				<p><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-companionmodules"></ph></p>
+				<ul>
+					<li><uicontrol>Blog Roster</uicontrol>. Lists the blog entries.</li>
+					<li><uicontrol>Blog Calendar</uicontrol>. Displays a calendar that users can use to view the blog archives.</li>
+					<li><uicontrol>Blog Subscriptions</uicontrol>. Allows the user to subscribe to the blog.</li>
+					<li><uicontrol>Blog Search</uicontrol>. Allows the user to search the blog.</li>
+				</ul>
+
+				<p conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/p-companions-VisibleOnPage"></p>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-blogs.dita#ref-ModuleBlogs/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-blogs.dita#ref-ModuleBlogs/sectiondiv-bpdetails"></sectiondiv> -->

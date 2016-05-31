@@ -37,20 +37,19 @@
 
             <!-- <sectiondiv conref="module-social-sharing.dita#ref-ModuleSocialSharing/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SocialSharing.png"><alt>Social Sharing module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SocialSharing.png"><alt>Social Sharing module</alt></image>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-social-sharing.dita#ref-ModuleSocialSharing/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
+
+
+            <!-- <sectiondiv conref="module-social-sharing.dita#ref-ModuleSocialSharing/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo">
-                <!-- <p>It utilizes the Facebook Application ID set at the portal level and also utilizes Open Graph Protocol data written to the page based on the currently viewed Content Item.</p> Would the audience (content managers) need this information? -->
+				<p>It utilizes the Facebook Application ID set at the portal level and also utilizes Open Graph Protocol data written to the page based on the currently viewed Content Item.</p>  // This sounds like implementation detail. Would the audience (content managers) need this information?
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-social-sharing.dita#ref-ModuleSocialSharing/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
 			-->
 
 

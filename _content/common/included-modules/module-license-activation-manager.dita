@@ -28,12 +28,6 @@
             </prodinfo>
         </metadata>
     </prolog>
-			<!--
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
-
 
 
     <refbody>
@@ -52,15 +46,14 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpsecurity">
+            	<note conkeyref="k-bptext/note-ModuleSecurityForHosts"></note>
             </sectiondiv>
 
 
-			<!-- <sectiondiv conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
@@ -75,19 +68,19 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/bpicon"></ph> -->
-                            <ph id="bpicon">
+                            <!-- <ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/ph-bpicon"></ph> -->
+                            <ph id="ph-bpicon">
                                 <image outputclass="img-icon" href="../../common/img/ico-module-licenseactivationmgr.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>License Activation Manager</stentry>
                         <stentry>
-							<!-- <ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/bpcategory"></ph> -->
-							<ph id="bpcategory">Site Administration</ph>
+							<!-- <ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/ph-bpcategory"></ph> -->
+							<ph id="ph-bpcategory">None</ph>  <!-- Expected: Host. -->
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/bpproducts"></ph> -->
-                            <ph id="bpproducts">
+                            <!-- <ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/ph-bpproducts"></ph> -->
+                            <ph id="ph-bpproducts">
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
                                 <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>

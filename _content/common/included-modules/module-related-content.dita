@@ -36,21 +36,19 @@
 
             <!-- <sectiondiv conref="module-related-content.dita#ref-ModuleRelatedContent/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-RelatedContent.png"><alt>Related Content module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-RelatedContent.png"><alt>Related Content module</alt></image>  <!-- Add content then redo screenshot. -->
             </sectiondiv>
+
+
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
             <!-- <sectiondiv conref="module-related-content.dita#ref-ModuleRelatedContent/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
                 <p>Relationships are based on the <filepath>cid</filepath> parameter of the URL; however, content managers can also manage direct relationships among content assets. If the URL does not include the <filepath>cid</filepath> parameter, the module is hidden.</p>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-related-content.dita#ref-ModuleRelatedContent/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-related-content.dita#ref-ModuleRelatedContent/sectiondiv-bpdetails"></sectiondiv> -->
@@ -72,7 +70,7 @@
                         <stentry>Related Content</stentry>
 						<stentry>
 							<!-- <ph conref="module-related-content.dita#ref-ModuleRelatedContent/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">General Content</ph>
+							<ph id="ph-bpcategory">Social</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-related-content.dita#ref-ModuleRelatedContent/sectiondiv-bpproducts"></ph> -->

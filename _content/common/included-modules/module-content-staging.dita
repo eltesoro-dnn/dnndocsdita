@@ -46,15 +46,13 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-content-staging.dita#ref-ModuleContentStaging/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-            </sectiondiv>
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
-			<!-- <sectiondiv conref="module-content-staging.dita#ref-ModuleContentStaging/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-content-staging.dita#ref-ModuleContentStaging/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
@@ -77,7 +75,7 @@
                         <stentry>Content Staging</stentry>
                         <stentry>
 							<!-- <ph conref="module-content-staging.dita#ref-ModuleContentStaging/ph-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Site Administration</ph>
+							<ph id="ph-bpcategory">Admin</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-content-staging.dita#ref-ModuleContentStaging/ph-bpproducts"></ph> -->

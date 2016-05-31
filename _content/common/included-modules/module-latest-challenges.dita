@@ -37,20 +37,17 @@
 
             <!-- <sectiondiv conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-LatestChallenges.png"><alt>Latest Challenges module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-LatestChallenges.png"><alt>Latest Challenges module</alt></image>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-                <p>See <xref format="dita" href="module-challenges.dita">Challenges</xref>.</p>
-            </sectiondiv>
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
-			<!-- <sectiondiv conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 

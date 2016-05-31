@@ -120,7 +120,6 @@
 
                     <p>The following theme objects are relevant to layout templates:</p>
                     <simpletable relcolwidth="1* 3*">
-                        <strow conkeyref="k-themeobj/BANNER"></strow>
                         <strow conkeyref="k-themeobj/BREADCRUMB"></strow>
                         <strow conkeyref="k-themeobj/COPYRIGHT"></strow>
                         <strow conkeyref="k-themeobj/CURRENTDATE"></strow>
@@ -132,11 +131,9 @@
                         <strow conkeyref="k-themeobj/LINKS"></strow>
                         <strow conkeyref="k-themeobj/LOGIN"></strow>
                         <strow conkeyref="k-themeobj/LOGO"></strow>
-                        <strow conkeyref="k-themeobj/MENU"></strow>
                         <strow conkeyref="k-themeobj/NAV"></strow>
                         <strow conkeyref="k-themeobj/PRIVACY"></strow>
                         <strow conkeyref="k-themeobj/SEARCH"></strow>
-                        <strow conkeyref="k-themeobj/SOLPARTMENU"></strow>
                         <strow conkeyref="k-themeobj/STYLES"></strow>
                         <strow conkeyref="k-themeobj/TAGS"></strow>
                         <strow conkeyref="k-themeobj/TERMS"></strow>

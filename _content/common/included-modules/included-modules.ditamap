@@ -7,15 +7,47 @@
     <!-- Topics -->
 	<!-- <topicref format="dita" type="reference" toc="yes" href="included-modules.dita" /> If you only want the reference page, use this line only, not the mapref. -->
 
-    <!-- Topics -->
+
+    <!-- SOCIAL MODULES -->
 	<topicref format="dita" type="topic" toc="yes" href="social-modules.dita" collection-type="family">
 
-		<topicref format="dita" type="reference" toc="yes"  href="module-activity-stream.dita">
-		<topicref format="dita" type="task" 	 toc="yes"  href="config-module-activity-stream.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-activities.dita" />
+
+		<topicref format="dita" type="reference" toc="yes" href="module-activity-stream.dita">
+		<topicref format="dita" type="task" 	 toc="yes" href="config-module-activity-stream.dita" />
+		</topicref>
+
+		<topicref format="dita" type="reference" toc="yes" href="module-answers.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-answers.dita" />
+		</topicref>
+
+		<topicref format="dita" type="reference" toc="yes" href="module-blogs.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-blogs.dita" />
+		<topicref format="dita" type="task"      toc="yes" href="config-module-calendar.dita" />
+		</topicref>
+
+		<topicref format="dita" type="reference" toc="yes" href="module-challenges.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-challenges.dita" />
+		</topicref>
+
+		<topicref format="dita" type="reference" toc="yes" href="module-discussions.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-discussions.dita" />
+		</topicref>
+
+		<topicref format="dita" type="reference" toc="yes" href="module-group-directory.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-group-directory.dita" />
+		</topicref>
+
+		<topicref format="dita" type="reference" toc="yes" href="module-group-spaces.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-group-spaces.dita" />
 		</topicref>
 
 		<topicref format="dita" type="reference" toc="yes" href="module-journal.dita">
 		<topicref format="dita" type="task"      toc="yes" href="config-module-journal.dita" />
+		</topicref>
+
+		<topicref format="dita" type="reference" toc="yes" href="module-latest-challenges.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-latest-challenges.dita" />
 		</topicref>
 
 		<topicref format="dita" type="reference" toc="yes" href="module-member-directory.dita">
@@ -28,18 +60,26 @@
 		<topicref format="dita" type="task"      toc="yes" href="config-module-social-groups.dita" />
 		</topicref>
 
+		<!--
+		<topicref format="dita" type="reference" toc="yes" href="module-ideas.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-leaderboard.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-my-status.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-profile-dashboard.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-related-content.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-social-events.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-social-sharing.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-user-badges.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-wiki.dita" />
+		-->
+
 	</topicref>
 
 
 	<!--
     <topicref format="dita" type="reference" toc="yes" href="included-modules.dita" copy-to="index.dita" >
 		DEPRECATED  <topicref format="dita" type="reference" toc="yes"  href="module-account-registration.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-activities.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-advanced-url-management.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-answers.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-authentication.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-blogs.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-challenges.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-configuration-manager.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-console.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-content-layout.dita" />
@@ -48,34 +88,24 @@
 		<topicref format="dita" type="reference" toc="yes"  href="module-ddr-menu.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-device-preview-management.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-digital-asset-management.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-discussions.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-document-viewer.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-extensions.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-file-integrity-checker.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-google-analytics.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-group-directory.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-group-spaces.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-host-settings.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-html-editor-management.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-html-text.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-ideas.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-languages.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-latest-challenges.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-leaderboard.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-license-activation-manager.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-lists.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-log-viewer.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-marketo-forms.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-module-creator.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-my-status.dita" />
-		DEPRECATED  <topicref format="dita" type="reference" toc="yes"  href="module-optimizely-connector.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-pages.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-profile-dashboard.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-publisher.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-razor-host.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-recycle-bin.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-registration.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-related-content.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-scheduler.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-search-admin.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-search-crawler-admin.dita" />
@@ -89,19 +119,18 @@
 		<topicref format="dita" type="reference" toc="yes"  href="module-site-redirection-management.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-site-wizard.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-sitemap.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-social-events.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-social-sharing.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-sql.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-taxonomy-manager.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-themes.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-user-badges.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-user-switcher.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-users-and-roles.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-view-profile.dita" />
+		<topicref format="dita" type="reference" toc="yes"  href="module-visualizer.dita" />  For DNN 9.
 		<topicref format="dita" type="reference" toc="yes"  href="module-web-server-manager.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-wiki.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-workflow-management.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-zendesk-tickets.dita" />
+
+		<topicref format="dita" type="reference" toc="yes"  href="module-optimizely-connector.dita" />
 	</topicref>
 	-->
 
@@ -146,6 +175,7 @@
 		</relrow>
 		-->
 
+
 		<!-- ========== RELATED MODULES ========== -->
 
 		<!-- Security: AuthN -->
@@ -163,6 +193,77 @@
 				<topicref format="dita" type="reference" href="module-users-and-roles.dita" />
             </relcell>
         </relrow>
+
+		<!-- Social -->
+		<relrow>
+			<relcell/>
+			<relcell/>
+			<relcell>
+
+			</relcell>
+		</relrow>
+
+		<!-- Social: Challenges -->
+		<relrow>
+			<relcell/>
+			<relcell/>
+			<relcell>
+				<topicref format="dita" type="reference" href="module-challenges.dita" />
+				<topicref format="dita" type="reference" href="module-latest-challenges.dita" />
+			</relcell>
+		</relrow>
+
+		<!-- Social: Journal et al -->
+		<relrow>
+			<relcell/>
+			<relcell/>
+			<relcell>
+				<topicref format="dita" type="reference" toc="yes" href="module-journal.dita"/>
+				<topicref format="dita" type="reference" toc="yes" href="module-activity-stream.dita"/>
+				<topicref format="dita" type="reference" toc="yes" href="module-discussions.dita" />
+			</relcell>
+		</relrow>
+
+		<!-- Social: Profile et al -->
+		<relrow>
+			<relcell/>
+			<relcell/>
+			<relcell>
+				<topicref format="dita" type="reference" toc="yes" href="module-my-status.dita" />
+				<topicref format="dita" type="reference" toc="yes" href="module-profile-dashboard.dita" />
+			</relcell>
+		</relrow>
+
+		<!-- Social: Groups -->
+		<relrow>
+			<relcell/>
+			<relcell/>
+			<relcell>
+				<topicref format="dita" type="reference" toc="yes" href="module-group-directory.dita" />
+				<topicref format="dita" type="reference" toc="yes" href="module-group-spaces.dita" />
+				<topicref format="dita" type="reference" toc="yes" href="module-social-groups.dita" />
+			</relcell>
+		</relrow>
+
+		<!-- Search -->
+		<relrow>
+			<relcell/>
+			<relcell/>
+			<relcell>
+				<topicref format="dita" type="reference" href="module-search-admin.dita" />
+				<topicref format="dita" type="reference" href="module-search-crawler-admin.dita" />
+				<topicref format="dita" type="reference" href="module-search-results.dita" />
+			</relcell>
+		</relrow>
+
+		<!-- User management -->
+		<relrow>
+			<relcell/>
+			<relcell/>
+			<relcell>
+
+			</relcell>
+		</relrow>
 
 
 		<!-- ========== MODULES IN THE SAME CATEGORY ========== -->

@@ -48,15 +48,14 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-sql.dita#ref-ModuleSQL/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpsecurity">
+            	<note conkeyref="k-bptext/note-ModuleSecurityForHosts"></note>
             </sectiondiv>
 
 
-			<!-- <sectiondiv conref="module-sql.dita#ref-ModuleSQL/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-sql.dita#ref-ModuleSQL/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
@@ -79,7 +78,7 @@
                         <stentry>SQL</stentry>
                         <stentry>
 							<!-- <ph conref="module-sql.dita#ref-ModuleSQL/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Site Administration</ph>
+							<ph id="ph-bpcategory">Admin</ph>  <!-- Expected: Host -->
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-sql.dita#ref-ModuleSQL/sectiondiv-bpproducts"></ph> -->

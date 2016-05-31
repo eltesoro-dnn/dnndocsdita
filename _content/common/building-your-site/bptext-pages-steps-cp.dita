@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
 <task xml:lang="en" id="tsk-bptext-pages-steps-cp">
 
-    <title>Boilerplates - Pages (Control Panel) Steps</title>
+    <title>Boilerplates &#8212; Pages (Control Panel) Steps</title>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -27,7 +27,7 @@
 
         <steps>
 
-			<!-- PAGES MENU (CP) - PAGES - ADD, EDIT -->
+			<!-- PAGES MENU (CP) PAGES: ADD, EDIT -->
 
 			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-gotopagemgmt"><cmd/></step> -->
 			<step id="step-cp-gotopagemgmt">
@@ -241,7 +241,7 @@
 			</step>
 
 
-			<!-- MODULES - ADD, EDIT -->
+			<!-- MODULES: ADD, EDIT -->
 
 			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step> -->
 			<step id="step-cp-openmodulelist">

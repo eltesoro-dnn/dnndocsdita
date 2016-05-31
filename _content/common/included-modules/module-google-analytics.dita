@@ -49,6 +49,11 @@
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-GoogleAnalyticsPro.png"><alt>Google Analytics Professional module</alt></image>
             </sectiondiv>
 
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
+
+
             <!-- <sectiondiv conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
                 <ul>
@@ -56,13 +61,6 @@
                     <li>Google Analytics Professional is available in DNN Evoq only.</li>
                 </ul>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/sectiondiv-bpdetails"></sectiondiv> -->
@@ -84,7 +82,7 @@
                         <stentry>Google Analytics</stentry>
                         <stentry>
 							<!-- <ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Site Administration</ph>
+							<ph id="ph-bpcategory">Admin for Google Analytics; Professional for Google Analytics Pro</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/sectiondiv-bpproducts"></ph> -->

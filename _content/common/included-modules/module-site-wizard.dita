@@ -48,15 +48,13 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-site-wizard.dita#ref-ModuleSiteWizard/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-            </sectiondiv>
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
-			<!-- <sectiondiv conref="module-site-wizard.dita#ref-ModuleSiteWizard/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-site-wizard.dita#ref-ModuleSiteWizard/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
@@ -79,7 +77,7 @@
                         <stentry>Site Wizard</stentry>
                         <stentry>
 							<!-- <ph conref="module-site-wizard.dita#ref-ModuleSiteWizard/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Site Administration</ph>
+							<ph id="ph-bpcategory">Admin</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-site-wizard.dita#ref-ModuleSiteWizard/sectiondiv-bpproducts"></ph> -->

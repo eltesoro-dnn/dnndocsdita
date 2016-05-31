@@ -37,32 +37,29 @@
 
             <!-- <sectiondiv conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ProfileDashboard.png"><alt>Profile Dashboard module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ProfileDashboard.png"><alt>Profile Dashboard module</alt></image>
             </sectiondiv>
+
+
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
             <!-- <sectiondiv conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-                <p>Includes:</p>
-                <ul>
-                    <li>Profile Dashboard</li>
-                    <li>My Activity</li>
-                    <li>About Me</li>
-                    <li>My Badges</li>
-                    <li>My Engagement</li>
-                    <li>Profile Features</li>
-                    <li>My Score</li>
-                </ul>
+			<sectiondiv id="sectiondiv-bpmoreinfo">
+				<p><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-companionmodules"></ph></p>
+				<ul>
+                    <li><uicontrol>My Activity</uicontrol>. </li>
+                    <li><uicontrol>About Me</uicontrol>. </li>
+                    <li><uicontrol>My Badges</uicontrol>. </li>
+                    <li><uicontrol>My Engagement</uicontrol>. </li>
+                    <li><uicontrol>Profile Features</uicontrol>. </li>
+                    <li><uicontrol>My Score</uicontrol>. </li>
+				</ul>
 
-                <p>See <xref format="dita" href="module-my-status.dita">My Status</xref>.</p>
+				<p conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/p-companions-VisibleOnPage"></p>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/sectiondiv-bpdetails"></sectiondiv> -->

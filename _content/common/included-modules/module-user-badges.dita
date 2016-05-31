@@ -38,19 +38,17 @@
 
             <!-- <sectiondiv conref="module-user-badges.dita#ref-ModuleUserBadges/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-UserBadges.png"><alt>User Badges module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-UserBadges.png"><alt>User Badges module</alt></image>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-user-badges.dita#ref-ModuleUserBadges/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-            </sectiondiv>
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
-			<!-- <sectiondiv conref="module-user-badges.dita#ref-ModuleUserBadges/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-user-badges.dita#ref-ModuleUserBadges/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 

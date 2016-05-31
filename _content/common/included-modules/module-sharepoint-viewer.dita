@@ -44,15 +44,13 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-            </sectiondiv>
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
-			<!-- <sectiondiv conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
@@ -75,7 +73,7 @@
                         <stentry>SharePoint Viewer</stentry>
                         <stentry>
 							<!-- <ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Site Administration</ph>
+							<ph id="ph-bpcategory">Admin</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/sectiondiv-bpproducts"></ph> -->

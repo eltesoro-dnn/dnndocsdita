@@ -37,21 +37,19 @@
 
             <!-- <sectiondiv conref="module-leaderboard.dita#ref-ModuleLeaderboard/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Leaderboard.png"><alt>Leaderboard module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Leaderboard.png"><alt>Leaderboard module</alt></image>
             </sectiondiv>
+
+
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
             <!-- <sectiondiv conref="module-leaderboard.dita#ref-ModuleLeaderboard/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
                 <p>See <xref format="dita" href="module-member-directory.dita">Member Directory</xref>.</p>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-leaderboard.dita#ref-ModuleLeaderboard/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-leaderboard.dita#ref-ModuleLeaderboard/sectiondiv-bpdetails"></sectiondiv> -->

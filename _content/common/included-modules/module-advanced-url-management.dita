@@ -44,15 +44,13 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-            </sectiondiv>
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
-			<!-- <sectiondiv conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
@@ -76,7 +74,7 @@
                         <stentry>Advanced URL Management</stentry>
                         <stentry>
 							<!-- <ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Site Administration</ph>
+							<ph id="ph-bpcategory">Admin</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/sectiondiv-bpproducts"></ph> -->

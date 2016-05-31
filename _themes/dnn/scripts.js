@@ -40,21 +40,7 @@ $(document).ready(function() {
     // });
 
     // add triangle to parents
-    $("nav[role='toc'] > ul > li").each(function(){
-        if($(this).has("ul").length){
-            $(this).addClass('toc-aria-arrow-closed');
-        };
-    })
-
-    // add triangle to children that have children
-    $("nav[role='toc'] > ul > li > ul > li").each(function(){
-        if($(this).has("ul").length){
-            $(this).addClass('toc-aria-arrow-closed');
-        };
-    })
-
-    // add triangle to children that have children that have children
-    $("nav[role='toc'] > ul > li > ul > li > ul > li").each(function(){
+    $("nav[role='toc'] > ul > li, nav[role='toc'] > ul > li > ul > li, nav[role='toc'] > ul > li > ul > li > ul > li, nav[role='toc'] > ul > li > ul > li > ul > li > ul > li").each(function(){
         if($(this).has("ul").length){
             $(this).addClass('toc-aria-arrow-closed');
         };

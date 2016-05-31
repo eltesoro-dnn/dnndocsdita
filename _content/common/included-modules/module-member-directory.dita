@@ -50,6 +50,11 @@
             </sectiondiv>
 
 
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
+
+
             <!-- <sectiondiv conref="module-member-directory.dita#ref-ModuleMemberDirectory/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
 				<p>With the <uicontrol>Member Directory</uicontrol> module, you can:
@@ -85,7 +90,7 @@
                         <stentry>Member Directory</stentry>
                         <stentry>
 							<!-- <ph conref="module-member-directory.dita#ref-ModuleMemberDirectory/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">User Management</ph>
+							<ph id="ph-bpcategory">None</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-member-directory.dita#ref-ModuleMemberDirectory/sectiondiv-bpproducts"></ph> -->

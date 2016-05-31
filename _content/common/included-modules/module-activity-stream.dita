@@ -31,7 +31,7 @@
 
             <sectiondiv id="sectiondiv-bpdesc">
 				<!-- <ph conref="module-activity-stream.dita#ref-ModuleActivityStream/ph-bpshortdesc"></ph> -->
-				<p><ph id="ph-bpshortdesc">Displays a list of activities related to a user or a group in reverse chronological order. The inline editor also enables the user to create an entry. The Activity Stream is the advanced version of the <uicontrol>Journal</uicontrol> module.</ph></p>
+				<p><ph id="ph-bpshortdesc">Displays a list of activities related to a user or a group in reverse chronological order. The inline editor also enables the user to create an entry. The <uicontrol>Activity Stream</uicontrol> is the advanced version of the <uicontrol>Journal</uicontrol> module.</ph></p>
             </sectiondiv>
 
 
@@ -41,9 +41,17 @@
             </sectiondiv>
 
 
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
+
+
             <!-- <sectiondiv conref="module-activity-stream.dita#ref-ModuleActivityStream/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
-                <p>When the <uicontrol>Activity Stream</uicontrol> module is added to a page, an <uicontrol>Activity Stream Filter</uicontrol> module is also added immediately below it. You can manage the <uicontrol>Filter by activity</uicontrol> dropdown list by configuring the <uicontrol>Activity Stream Filter</uicontrol> module.</p>
+				<p><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-companionmodules"></ph></p>
+				<ul>
+					<li><uicontrol>Activity Stream Filter</uicontrol>. Manages the <uicontrol>Filter by activity</uicontrol> dropdown list.</li>
+				</ul>
             </sectiondiv>
 
 

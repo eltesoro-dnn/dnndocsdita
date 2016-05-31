@@ -37,23 +37,19 @@
 
             <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ZendeskTickets.png"><alt>Zendesk Tickets module</alt></image> -->
+                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ZendeskTickets.png"><alt>Zendesk Tickets module</alt></image>  // The Zendesk connector has not been configured -->
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
+
+
+            <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo">
-                <!-- <p>Includes:</p>
-                <ul>
-                    <li>User Desk</li>
-                </ul> -->
+                <p>Includes the <uicontrol>User Desk</uicontrol>.</p>	// What is the User Desk?
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
 			-->
 
 

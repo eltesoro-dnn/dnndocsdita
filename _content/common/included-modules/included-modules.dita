@@ -47,7 +47,7 @@
 
 
         <section>
-            <simpletable relcolwidth="1* 3* 8* 3* 3*">
+            <simpletable relcolwidth="1* 3* 8* 6*">
 
                 <sthead>
                     <stentry></stentry> <!-- icons -->
@@ -528,11 +528,18 @@
                 </strow>
                 <strow>
                     <stentry><ph conref="module-view-profile.dita#ref-ModuleViewProfile/ph-bpicon"></ph></stentry>
-                    <stentry><xref format="dita" href="module-view-profile.dita"><uicontrol>ViewProfile</uicontrol></xref></stentry>
+                    <stentry><xref format="dita" href="module-view-profile.dita"><uicontrol>View Profile</uicontrol></xref></stentry>
                     <stentry><ph conref="module-view-profile.dita#ref-ModuleViewProfile/ph-bpshortdesc"></ph></stentry>
                     <stentry><ph conref="module-view-profile.dita#ref-ModuleViewProfile/ph-bpcategory"></ph></stentry>
                     <stentry><ph conref="module-view-profile.dita#ref-ModuleViewProfile/ph-bpproducts"></ph></stentry>
                 </strow>
+                <!-- <strow> For DNN 9.
+                    <stentry><ph conref="module-visualizer.dita#ref-ModuleVisualizer/ph-bpicon"></ph></stentry>
+                    <stentry><xref format="dita" href="module-visualizer.dita"><uicontrol>Visualizer</uicontrol></xref></stentry>
+                    <stentry><ph conref="module-visualizer.dita#ref-ModuleVisualizer/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-visualizer.dita#ref-ModuleVisualizer/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-visualizer.dita#ref-ModuleVisualizer/ph-bpproducts"></ph></stentry>
+                </strow> -->
                 <strow>
                     <stentry><ph conref="module-web-server-manager.dita#ref-ModuleWebServerManager/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-web-server-manager.dita"><uicontrol>Web Server Manager</uicontrol></xref></stentry>

@@ -49,6 +49,11 @@
             </sectiondiv>
 
 
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
+
+
             <!-- <sectiondiv conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
                 <p>Includes:
@@ -57,13 +62,6 @@
 					</ul>
 				</p>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpdetails"></sectiondiv> -->
@@ -85,7 +83,7 @@
                         <stentry>Authentication</stentry>
                         <stentry>
 							<!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Site Administration</ph>
+							<ph id="ph-bpcategory">Admin</ph>  <!-- None in Platform -->
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpproducts"></ph> -->

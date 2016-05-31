@@ -50,15 +50,13 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-dashboard.dita#ref-ModuleDashboard/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-            </sectiondiv>
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
-			<!-- <sectiondiv conref="module-dashboard.dita#ref-ModuleDashboard/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-dashboard.dita#ref-ModuleDashboard/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
@@ -81,7 +79,7 @@
                         <stentry>Dashboard</stentry>
                         <stentry>
 							<!-- <ph conref="module-dashboard.dita#ref-ModuleDashboard/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Site Administration</ph>
+							<ph id="ph-bpcategory">Admin</ph>  <!-- None in Platform -->
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-dashboard.dita#ref-ModuleDashboard/sectiondiv-bpproducts"></ph> -->

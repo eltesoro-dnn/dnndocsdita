@@ -42,15 +42,7 @@
 
             <p conkeyref="k-themedef/container"></p>
 
-            <p id="panerules">
-                <ul>
-                    <li>The layout template must contain one or more panes. A container has exactly one pane; additional panes are ignored.</li>
-                    <li>Exactly one of the panes must be called <codeph>ContentPane</codeph> (case-insensitive).</li>
-                    <li>Each pane must have a name that is unique within the page.</li>
-                    <li>All panes must be defined as a server control by adding <codeph>runat="server"</codeph> to the element.</li>
-                    <li>A pane can be one of the following HTML elements: &lt;td&gt; (table cells), &lt;div&gt;, &lt;p&gt;, and &lt;span&gt;.</li>
-                </ul>
-            </p>
+            <p conkeyref="k-themedef/panerules"></p>
 
             <p>Layouts and containers can contain a <term>theme object</term>, which can be a typical component of a webpage, such as the menu bar, the copyright notice, the login/registration links, the privacy link, the terms of service link, and the search box. Theme objects are inserted in the HTML or ASCX as tokens.</p>
         </section>

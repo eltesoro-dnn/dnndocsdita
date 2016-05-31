@@ -37,28 +37,26 @@
 
             <!-- <sectiondiv conref="module-ideas.dita#ref-ModuleIdeas/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Ideas.png"><alt>Ideas module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Ideas.png"><alt>Ideas module</alt></image>
             </sectiondiv>
+
+
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
             <!-- <sectiondiv conref="module-ideas.dita#ref-ModuleIdeas/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-                <p>Includes:
-					<ul>
-						<li>Ideas </li>
-						<li>Ideas Vote Summary</li>
-						<li>Ideas Subscribe</li>
-						<li>Ideas Search</li>
-					</ul>
-				</p>
+			<sectiondiv id="sectiondiv-bpmoreinfo">
+				<p><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-companionmodules"></ph></p>
+				<ul>
+						<li><uicontrol>Ideas Vote Summary</uicontrol>. </li>
+						<li><uicontrol>Ideas Subscriptions</uicontrol>. Allows the user to subscribe to the idea list.</li>
+						<li><uicontrol>Ideas Search</uicontrol>. Allows the user to search the idea list.</li>
+				</ul>
+
+				<p conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/p-companions-VisibleOnPage"></p>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-ideas.dita#ref-ModuleIdeas/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-ideas.dita#ref-ModuleIdeas/sectiondiv-bpdetails"></sectiondiv> -->

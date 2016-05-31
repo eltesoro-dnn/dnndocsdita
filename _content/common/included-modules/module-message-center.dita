@@ -49,6 +49,11 @@
             </sectiondiv>
 
 
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
+
+
             <!-- <sectiondiv conref="module-message-center.dita#ref-ModuleMessageCenter/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
 				<p>By default, the <uicontrol>Message Center</uicontrol> module can be accessed by clicking on the current user's display name at the top right of most pages.</p>
@@ -74,7 +79,7 @@
                         <stentry>Message Center</stentry>
                         <stentry>
 							<!-- <ph conref="module-message-center.dita#ref-ModuleMessageCenter/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Social</ph>
+							<ph id="ph-bpcategory">Admin</ph>  <!-- None in Platform -->
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-message-center.dita#ref-ModuleMessageCenter/sectiondiv-bpproducts"></ph> -->

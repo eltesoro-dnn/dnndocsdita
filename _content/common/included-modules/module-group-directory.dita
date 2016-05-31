@@ -31,34 +31,33 @@
 
             <sectiondiv id="sectiondiv-bpdesc">
 				<!-- <ph conref="module-group-directory.dita#ref-ModuleGroupDirectory/ph-bpshortdesc"></ph> -->
-				<p><ph id="ph-bpshortdesc">Displays the list of group members.</ph></p>
+				<p><ph id="ph-bpshortdesc">Displays the list of groups and allows users to create a new group. The <uicontrol>Group Directory</uicontrol> module and the <uicontrol>Group Spaces</uicontrol> module are the advanced version of the <uicontrol>Social Groups</uicontrol> module in <uicontrol>List</uicontrol> and <uicontrol>View</uicontrol> modes, respectively.</ph></p>
             </sectiondiv>
 
 
             <!-- <sectiondiv conref="module-group-directory.dita#ref-ModuleGroupDirectory/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-GroupDirectory.png"><alt>Group Directory module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-GroupDirectory.png"><alt>Group Directory module</alt></image>
             </sectiondiv>
+
+
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
             <!-- <sectiondiv conref="module-group-directory.dita#ref-ModuleGroupDirectory/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-                <p>Includes:</p>
-                <ul>
-                    <li>Group Directory</li>
-                    <li>Active Groups</li>
-                    <li>Top Group Tags</li>
-                    <li>Groups Subscribe</li>
-                    <li>Groups Search</li>
-                </ul>
+			<sectiondiv id="sectiondiv-bpmoreinfo">
+				<p><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-companionmodules"></ph></p>
+				<ul>
+                    <li><uicontrol>Active Groups</uicontrol>. Displays a list of active groups.</li>
+                    <li><uicontrol>Top Group Tags</uicontrol>. Displays the most popular tags in the group.</li>
+					<li><uicontrol>Groups Subscriptions</uicontrol>. Allows the user to subscribe to the group.</li>
+					<li><uicontrol>Groups Search</uicontrol>. Allows the user to search the group.</li>
+				</ul>
+
+				<p conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/p-companions-VisibleOnPage"></p>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-group-directory.dita#ref-ModuleGroupDirectory/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-group-directory.dita#ref-ModuleGroupDirectory/sectiondiv-bpdetails"></sectiondiv> -->

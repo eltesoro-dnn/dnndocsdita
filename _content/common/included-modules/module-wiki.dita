@@ -37,28 +37,27 @@
 
             <!-- <sectiondiv conref="module-wiki.dita#ref-ModuleWiki/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Wiki.png"><alt>Wiki module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Wiki.png"><alt>Wiki module</alt></image>
             </sectiondiv>
+
+
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
             <!-- <sectiondiv conref="module-wiki.dita#ref-ModuleWiki/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-                <p>Includes:</p>
-                <ul>
-                    <li>Wiki</li>
-                    <li>Wiki Index</li>
-                    <li>Wiki MetaData</li>
-                    <li>Wiki Subscribe</li>
-                    <li>Wiki Search</li>
-                </ul>
+			<sectiondiv id="sectiondiv-bpmoreinfo">
+				<p><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-companionmodules"></ph></p>
+				<ul>
+                    <li><uicontrol>Wiki Index</uicontrol>. </li>
+                    <li><uicontrol>Wiki MetaData</uicontrol>. </li>
+					<li><uicontrol>Wiki Subscriptions</uicontrol>. Allows the user to subscribe to the wiki.</li>
+					<li><uicontrol>Wiki Search</uicontrol>. Allows the user to search the wiki.</li>
+				</ul>
+
+				<p conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/p-companions-VisibleOnPage"></p>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-wiki.dita#ref-ModuleWiki/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-wiki.dita#ref-ModuleWiki/sectiondiv-bpdetails"></sectiondiv> -->

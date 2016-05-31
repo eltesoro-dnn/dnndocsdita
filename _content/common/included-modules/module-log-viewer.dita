@@ -49,15 +49,15 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-log-viewer.dita#ref-ModuleLogViewer/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpsecurity">
+				<note conkeyref="k-bptext/note-ModuleSecurityForAdmins"></note>
+            	<note conkeyref="k-bptext/note-SecurityReviewLogs"></note>
             </sectiondiv>
 
 
-			<!-- <sectiondiv conref="module-log-viewer.dita#ref-ModuleLogViewer/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-log-viewer.dita#ref-ModuleLogViewer/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
@@ -80,7 +80,7 @@
                         <stentry>Log Viewer</stentry>
                         <stentry>
 							<!-- <ph conref="module-log-viewer.dita#ref-ModuleLogViewer/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Site Administration</ph>
+							<ph id="ph-bpcategory">Admin</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-log-viewer.dita#ref-ModuleLogViewer/sectiondiv-bpproducts"></ph> -->

@@ -50,6 +50,11 @@
             </sectiondiv>
 
 
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
+
+
             <!-- <sectiondiv conref="module-themes.dita#ref-ModuleThemes/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
                 <p>Includes:</p>
@@ -58,13 +63,6 @@
                     <li><uicontrol>Theme Designer</uicontrol>. Allows the creation of a theme within DNN.</li>
                 </ul>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-themes.dita#ref-ModuleThemes/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-themes.dita#ref-ModuleThemes/sectiondiv-bpdetails"></sectiondiv> -->
@@ -86,7 +84,7 @@
                         <stentry>Themes</stentry>
                         <stentry>
 							<!-- <ph conref="module-themes.dita#ref-ModuleThemes/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Site Administration</ph>
+							<ph id="ph-bpcategory">None</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-themes.dita#ref-ModuleThemes/sectiondiv-bpproducts"></ph> -->

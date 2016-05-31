@@ -46,16 +46,14 @@
 			</p>
 		</section>
 
-		<section id="screenshot">
-			<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory.png"><alt>Module Settings - Member Directory</alt></image>
-		</section>
-
         <steps>
 			<step><cmd>Go to the page containing the module to configure and edit the page.</cmd></step>
 			<step conref="../building-your-site/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step>
             <step>
 				<cmd>Go to the <uicontrol>Member Directory Settings</uicontrol> tab.</cmd>
 				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory.png"><alt>Module Settings &#8212; Member Directory</alt></image>
+
 					<simpletable relcolwidth="1* 3*">
 						<sthead>
 							<stentry/>

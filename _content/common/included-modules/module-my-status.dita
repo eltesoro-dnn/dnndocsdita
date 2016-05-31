@@ -37,20 +37,17 @@
 
             <!-- <sectiondiv conref="module-my-status.dita#ref-ModuleMyStatus/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-MyStatus.png"><alt>My Status module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-MyStatus.png"><alt>My Status module</alt></image>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-my-status.dita#ref-ModuleMyStatus/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-				<p>See <xref format="dita" href="module-profile-dashboard.dita">Profile Dashboard</xref>.</p>
-            </sectiondiv>
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
-			<!-- <sectiondiv conref="module-my-status.dita#ref-ModuleMyStatus/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-my-status.dita#ref-ModuleMyStatus/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 

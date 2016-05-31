@@ -31,33 +31,31 @@
 
             <sectiondiv id="sectiondiv-bpdesc">
 				<!-- <ph conref="module-answers.dita#ref-ModuleAnswers/ph-bpshortdesc"></ph> -->
-				<p><ph id="ph-bpshortdesc">Allows registered users to post questions to a social group and receive answers from the group.</ph></p>
+				<p><ph id="ph-bpshortdesc">Allows registered users to post questions and receive answers.</ph></p>
             </sectiondiv>
 
 
             <!-- <sectiondiv conref="module-answers.dita#ref-ModuleAnswers/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Answers.png"><alt>Answers module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Answers.png"><alt>Answers module with companion modules</alt></image>
             </sectiondiv>
+
+
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
             <!-- <sectiondiv conref="module-answers.dita#ref-ModuleAnswers/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
-				<p>Includes:
-					<ul>
-						<li>Answers</li> <!-- ??? -->
-						<li>Answers Subscribe</li> <!-- ??? -->
-						<li>Answers Search</li> <!-- ??? -->
-					</ul>
-				</p>
+				<p><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-companionmodules"></ph></p>
+				<ul>
+					<li><uicontrol>Answers Subscribe</uicontrol>. Allows users to subscribe to new responses to the original question.</li>
+					<li><uicontrol>Answers Search</uicontrol>. Allows users to search the <uicontrol>Answers</uicontrol> </li>
+				</ul>
+
+				<p conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/p-companions-VisibleOnPage"></p>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-answers.dita#ref-ModuleAnswers/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-answers.dita#ref-ModuleAnswers/sectiondiv-bpdetails"></sectiondiv> -->

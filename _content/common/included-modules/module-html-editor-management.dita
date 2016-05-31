@@ -49,15 +49,13 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-html-editor-management.dita#ref-ModuleHtmlEditorManagement/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-            </sectiondiv>
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
-			<!-- <sectiondiv conref="module-html-editor-management.dita#ref-ModuleHtmlEditorManagement/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-html-editor-management.dita#ref-ModuleHtmlEditorManagement/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
@@ -80,7 +78,7 @@
                         <stentry>Html Editor Management</stentry>
                         <stentry>
 							<!-- <ph conref="module-html-editor-management.dita#ref-ModuleHtmlEditorManagement/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Site Administration</ph>
+							<ph id="ph-bpcategory">None</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-html-editor-management.dita#ref-ModuleHtmlEditorManagement/sectiondiv-bpproducts"></ph> -->

@@ -23,6 +23,17 @@
         <!-- <p conkeyref="k-themedef/container"></p> -->
         <p id="container">A <term>container</term> is similar to a layout template, except a container's scope is a single pane, whereas a layout template's scope is the entire page. A container is associated with a <term>module</term>, which can generate dynamic content or perform other functionality.</p>
 
+		<!-- <p conkeyref="k-themedef/panerules"></p> -->
+		<p id="panerules">
+			<ul>
+				<li>The layout template must contain one or more panes. A container has exactly one pane; additional panes are ignored.</li>
+				<li>Exactly one of the panes must be called <codeph>ContentPane</codeph> (case-insensitive).</li>
+				<li>Each pane must have a name that is unique within the page.</li>
+				<li>All panes must be defined as a server control by adding <codeph>runat="server"</codeph> to the element.</li>
+				<li>A pane can be one of the following HTML elements: &lt;td&gt; (table cells), &lt;div&gt;, &lt;p&gt;, and &lt;span&gt;.</li>
+			</ul>
+		</p>
+
     </body>
 
 </topic>

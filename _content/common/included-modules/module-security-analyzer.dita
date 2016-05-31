@@ -48,15 +48,13 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-            </sectiondiv>
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
-			<!-- <sectiondiv conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
@@ -79,7 +77,7 @@
                         <stentry>SecurityAnalyzer</stentry>
                         <stentry>
 							<!-- <ph conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Site Administration</ph>
+							<ph id="ph-bpcategory">None</ph>  <!-- Expected: Admin -->
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/sectiondiv-bpproducts"></ph> -->

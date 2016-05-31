@@ -49,17 +49,15 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-account-registration.dita#ref-ModuleAccountRegistration/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
+
+
+			<!-- <sectiondiv conref="module-account-registration.dita#ref-ModuleAccountRegistration/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
                 <p>After the registration form has been completed and submitted, the primary administrator receives a notice to review the registration and authorize the user account.</p>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-account-registration.dita#ref-ModuleAccountRegistration/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-account-registration.dita#ref-ModuleAccountRegistration/sectiondiv-bpdetails"></sectiondiv> -->
@@ -76,7 +74,7 @@
                         <stentry>Registration</stentry>
                         <stentry>
 							<!-- <ph conref="module-account-registration.dita#ref-ModuleAccountRegistration/ph-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">User Management</ph>
+							<ph id="ph-bpcategory">None</ph>
 						</stentry>
 						<stentry>
                             <!-- <ph conref="module-account-registration.dita#ref-ModuleAccountRegistration/ph-bpproducts"></ph> -->

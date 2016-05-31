@@ -44,6 +44,11 @@
                 <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Publisher-companions.png"><alt>Companion modules for the Publisher module</alt></image>
             </sectiondiv>
 
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
+
+
             <!-- <sectiondiv conref="module-publisher.dita#ref-ModulePublisher/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
                 <p>Includes:</p>
@@ -56,13 +61,6 @@
                     <li>Publisher Social Share</li>
                 </ul>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-publisher.dita#ref-ModulePublisher/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-publisher.dita#ref-ModulePublisher/sectiondiv-bpdetails"></sectiondiv> -->
@@ -84,7 +82,7 @@
                         <stentry>Publisher</stentry>
                         <stentry>
 							<!-- <ph conref="module-publisher.dita#ref-ModulePublisher/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">General Content</ph>
+							<ph id="ph-bpcategory">None</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-publisher.dita#ref-ModulePublisher/sectiondiv-bpproducts"></ph> -->

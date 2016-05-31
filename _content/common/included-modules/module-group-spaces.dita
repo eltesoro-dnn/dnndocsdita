@@ -31,35 +31,34 @@
 
             <sectiondiv id="sectiondiv-bpdesc">
 				<!-- <ph conref="module-group-spaces.dita#ref-ModuleGroupSpaces/ph-bpshortdesc"></ph> -->
-				<p><ph id="ph-bpshortdesc">Lists information about the group.</ph></p>
+				<p><ph id="ph-bpshortdesc">Displays the details about a social group. The <uicontrol>Group Directory</uicontrol> module and the <uicontrol>Group Spaces</uicontrol> module are the advanced version of the <uicontrol>Social Groups</uicontrol> module in <uicontrol>List</uicontrol> and <uicontrol>View</uicontrol> modes, respectively.</ph></p>
             </sectiondiv>
 
 
             <!-- <sectiondiv conref="module-group-spaces.dita#ref-ModuleGroupSpaces/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-GroupSpaces.png"><alt>Group Spaces module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-GroupSpaces.png"><alt>Group Spaces module</alt></image>
             </sectiondiv>
+
+
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
             <!-- <sectiondiv conref="module-group-spaces.dita#ref-ModuleGroupSpaces/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-                <p>Includes:</p>
-                <ul>
-                    <li>Group Spaces</li>
-                    <li>Group Features</li>
-                    <li>Group Owner</li>
-                    <li>Group Administrators</li>
-                    <li>Related Groups</li>
-                    <li>Recommended Members</li>
-                </ul>
+			<sectiondiv id="sectiondiv-bpmoreinfo">
+				<p><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-companionmodules"></ph></p>
+				<ul>
+                    <li><uicontrol>Group Features</uicontrol>. </li>
+                    <li><uicontrol>Group Owner</uicontrol>. </li>
+                    <li><uicontrol>Group Administrators</uicontrol>. </li>
+                    <li><uicontrol>Related Groups</uicontrol>. </li>
+                    <li><uicontrol>Recommended Members</uicontrol>. </li>
+				</ul>
+
+				<p conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/p-companions-VisibleOnPage"></p>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-group-spaces.dita#ref-ModuleGroupSpaces/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-group-spaces.dita#ref-ModuleGroupSpaces/sectiondiv-bpdetails"></sectiondiv> -->

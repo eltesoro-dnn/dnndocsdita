@@ -40,19 +40,17 @@
 
             <!-- <sectiondiv conref="module-optimizely-connector.dita#ref-ModuleOptimizelyConnector/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-OptimizelyConnector.png"><alt>Optimizely Connector module</alt></image> -->
+                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-OptimizelyConnector.png"><alt>Optimizely Connector module</alt></image> *** Redo this screenshot. *** -->
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-optimizely-connector.dita#ref-ModuleOptimizelyConnector/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-            </sectiondiv>
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
-			<!-- <sectiondiv conref="module-optimizely-connector.dita#ref-ModuleOptimizelyConnector/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-optimizely-connector.dita#ref-ModuleOptimizelyConnector/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
@@ -70,7 +68,7 @@
                         <stentry/>
 						<stentry>
 							<!-- <ph conref="module-my-status.dita#ref-ModuleOptimizelyConnector/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Site Administration</ph>
+							<ph id="ph-bpcategory">None</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-my-status.dita#ref-ModuleOptimizelyConnector/sectiondiv-bpproducts"></ph> -->

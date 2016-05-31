@@ -50,15 +50,13 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-lists.dita#ref-ModuleLists/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-            </sectiondiv>
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
-			<!-- <sectiondiv conref="module-lists.dita#ref-ModuleLists/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-lists.dita#ref-ModuleLists/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
@@ -81,7 +79,7 @@
                         <stentry>Lists</stentry>
                         <stentry>
 							<!-- <ph conref="module-lists.dita#ref-ModuleLists/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Social</ph>
+							<ph id="ph-bpcategory">Admin</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-lists.dita#ref-ModuleLists/sectiondiv-bpproducts"></ph> -->

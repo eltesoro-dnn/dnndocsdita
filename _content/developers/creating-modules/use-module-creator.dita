@@ -37,7 +37,7 @@
         <steps>
 			<step conkeyref="k-bpsteps/step-createcopyeditpage-cp"><cmd/></step>
 
-			<step conref="../../common/building-your-site/bptext-pages-steps-cp.dita#bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step>
+			<step conref="../../common/building-your-site/bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step>
 
             <step>
                 <cmd>Search for the Module Creator among the installed modules.</cmd>

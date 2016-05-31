@@ -31,25 +31,23 @@
 
             <sectiondiv id="sectiondiv-bpdesc">
 				<!-- <ph conref="module-activities.dita#ref-ModuleActivities/ph-bpshortdesc"></ph> -->
-				<p><ph id="ph-bpshortdesc">Enables social group owners to manage activities of the group.</ph></p>
+				<p><ph id="ph-bpshortdesc">Displays the current user's activities and associated activity points.</ph></p>
 			</sectiondiv>
 
 
             <!-- <sectiondiv conref="module-activities.dita#ref-ModuleActivities/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Activities.png"><alt>Activities module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Activities.png"><alt>Activities module</alt></image>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-activities.dita#ref-ModuleActivities/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-            </sectiondiv>
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
-			<!-- <sectiondiv conref="module-activities.dita#ref-ModuleActivities/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-activities.dita#ref-ModuleActivities/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
@@ -91,12 +89,14 @@
         </section>
 
 
-		<!--
 		<section>
 			<title>Module Configuration</title>
-			<sectiondiv id="sectiondiv-bpconfig"/> See ditamap.
+
+			<!-- <sectiondiv conref="module-activities.dita#ref-ModuleActivities/sectiondiv-bpconfig"></sectiondiv> -->
+			<sectiondiv id="sectiondiv-bpconfig">
+				<p>The <uicontrol>Activities</uicontrol> module does not have custom settings.</p>
+			</sectiondiv>
         </section>
-		 -->
 
     </refbody>
 

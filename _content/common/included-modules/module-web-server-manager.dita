@@ -45,15 +45,14 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-web-server-manager.dita#ref-ModuleWebServerManager/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpsecurity">
+            	<note conkeyref="k-bptext/note-ModuleSecurityForHosts"></note>
             </sectiondiv>
 
 
-			<!-- <sectiondiv conref="module-web-server-manager.dita#ref-ModuleWebServerManager/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
+            <!-- <sectiondiv conref="module-web-server-manager.dita#ref-ModuleWebServerManager/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
@@ -76,7 +75,7 @@
                         <stentry>Web Server Manager</stentry>
                         <stentry>
 							<!-- <ph conref="module-web-server-manager.dita#ref-ModuleWebServerManager/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Site Administration</ph>
+							<ph id="ph-bpcategory">None</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-web-server-manager.dita#ref-ModuleWebServerManager/sectiondiv-bpproducts"></ph> -->

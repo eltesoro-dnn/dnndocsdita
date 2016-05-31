@@ -48,6 +48,11 @@
             </sectiondiv>
 
 
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
+
+
             <!-- <sectiondiv conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
                 <p>The module can be modified to select which fields are displayed, to add profile properties, and to specify how user accounts are handled. By default, the <uicontrol>Users and Roles</uicontrol> module package is not displayed in the selection of modules that can be added to a page, in order to avoid being accidentally added to a page and, thereby, revealing personal user information.</p>
@@ -63,13 +68,6 @@
 
                 <p>You must install the entire package and then delete the unwanted modules.</p>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/sectiondiv-bpdetails"></sectiondiv> -->
@@ -91,7 +89,7 @@
                         <stentry>Users and Roles</stentry>
                         <stentry>
 							<!-- <ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">User Management</ph>
+							<ph id="ph-bpcategory">Admin</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/sectiondiv-bpproducts"></ph> -->

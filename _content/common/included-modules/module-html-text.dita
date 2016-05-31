@@ -45,8 +45,14 @@
 
             <!-- <sectiondiv conref="module-html-text.dita#ref-ModuleHtmlHtmlPro/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-HTML.png"><alt>HTML / HTML Pro modules</alt></image>
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-HTML.png"><alt>HTML module</alt></image>
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-HTMLPro.png"><alt>HTML Pro module</alt></image>
             </sectiondiv>
+
+
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
             <!-- <sectiondiv conref="module-html-text.dita#ref-ModuleHtmlHtmlPro/sectiondiv-bpmoreinfo"></sectiondiv> -->
@@ -58,13 +64,6 @@
                     <li>HTML/Text Pro is available in DNN Evoq only.</li>
                 </ul>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-html-text.dita#ref-ModuleHtmlHtmlPro/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-html-text.dita#ref-ModuleHtmlHtmlPro/sectiondiv-bpdetails"></sectiondiv> -->
@@ -86,7 +85,7 @@
                         <stentry>HTML</stentry>
                         <stentry>
 							<!-- <ph conref="module-html-text.dita#ref-ModuleHtmlText/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">General Content</ph>
+							<ph id="ph-bpcategory">Common</ph>
 						</stentry>
                         <stentry>
                             <!-- <ph conref="module-html-text.dita#ref-ModuleHtmlText/sectiondiv-bpproducts"></ph> -->

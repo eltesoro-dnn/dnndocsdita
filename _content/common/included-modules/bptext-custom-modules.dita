@@ -85,7 +85,7 @@
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DefaultPageSize"><stentry/></strow> -->
 				<strow id="strow-field-DefaultPageSize">
 					<stentry><uicontrol>Default Page Size</uicontrol></stentry>
-					<stentry>The maximum number of entries that are initially displayed in a page. Also the maximum number of additional entries displayed when the <uicontrol>Get More</uicontrol> button is clicked/tapped.</stentry>
+					<stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesizecumulative"></ph></stentry>
 				</strow>
 
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MaximumCharactersPerMessage"><stentry/></strow> -->
@@ -172,7 +172,7 @@
 				</strow>
 
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SortOrderDirection"><stentry/></strow> -->
-				<strow id="strow-field-SortOrder">
+				<strow id="strow-field-SortOrderDirection">
 					<stentry>
 						<lines><uicontrol>Sort Order</uicontrol>
 							   <uicontrol>Sort Direction</uicontrol>
@@ -222,7 +222,7 @@
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize"><stentry/></strow> -->
 				<strow id="strow-field-PageSize">
 					<stentry><uicontrol>Page Size</uicontrol></stentry>
-					<stentry>The maximum number of items to display in each result page. (1 &#8212; 100)</stentry>
+					<stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesize"></ph> (1 &#8212; 100)</stentry>
 				</strow>
 
 
@@ -278,7 +278,7 @@
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GroupListPageSize"><stentry/></strow> -->
 				<strow id="strow-field-GroupListPageSize">
 					<stentry><uicontrol>Group List Page Size</uicontrol></stentry>
-					<stentry>The maximum number of groups that are initially displayed in a page. Also the maximum number of additional groups displayed when the <uicontrol>Get More</uicontrol> button is clicked/tapped.</stentry>
+					<stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesizecumulative"></ph></stentry>
 				</strow>
 
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableGroupSearch"><stentry/></strow> -->
@@ -290,10 +290,142 @@
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GroupCreationRequiresApproval"><stentry/></strow> -->
 				<strow id="strow-field-GroupCreationRequiresApproval">
 					<stentry><uicontrol>Group Creation Requires Approval</uicontrol></stentry>
-					<stentry>If checked, a <uicontrol>Group Moderator</uicontrol> or an administrator must approve new groups.
-						<note type="note">If the <uicontrol>Group Moderator</uicontrol> role does not exist or is not assigned to a user, the group is created anyway, without warning.</note>
+					<stentry>If checked, a user with <uicontrol>Moderators</uicontrol> permissions or an administrator must approve new groups.</stentry>
+				</strow>
+
+
+				<!-- ========== MODULE: ANSWERS ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ModeSocialModules"><stentry/></strow> -->
+				<strow id="strow-field-ModeSocialModules">
+					<stentry><uicontrol>Mode</uicontrol></stentry>
+					<stentry>The mode for the current module instance.
+						<ul>  <!-- Is this correct? -->
+							<li><uicontrol>Normal</uicontrol>. If selected, the contents of the module are available to all registered users of the site.</li>
+							<li><uicontrol>Group</uicontrol>. If selected, the contents of the module are restricted to group members.</li>
+						</ul>
 					</stentry>
 				</strow>
+
+
+				<!-- ========== MODULE: CALENDAR ========== -->
+
+				<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisplayModeCalendar"><stentry/></strow>
+				<strow id="strow-field-DisplayModeCalendar">
+					<stentry><uicontrol>Display Mode</uicontrol></stentry>
+					<stentry>The mode for the current module instance.
+						<ul>  <!-- Is this correct? -->
+							<li><uicontrol>List</uicontrol>. If selected, the items are displayed in a list.</li>
+							<li><uicontrol>Calendar</uicontrol>. If selected, a calendar for the month is displayed.</li>
+						</ul>
+					</stentry>
+				</strow>
+
+
+				<!-- ========== MODULE: BLOGS ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ModeBlogs"><stentry/></strow> -->
+				<strow id="strow-field-ModeBlogs">
+					<stentry><uicontrol>Mode</uicontrol></stentry>
+					<stentry>The mode for the current module instance.
+						<ul>  <!-- Is this correct? -->
+							<li><uicontrol>Normal</uicontrol>. If selected, the contents of the module are available to all registered users of the site.</li>
+							<li><uicontrol>Group</uicontrol>. If selected, the blog and all entries is associated with a group.</li>
+						</ul>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AllowWindowsLiveWriter"><stentry/></strow> -->
+				<strow id="strow-field-AllowWindowsLiveWriter">
+					<stentry><uicontrol>Allow Windows Live Writer</uicontrol></stentry>
+					<stentry>If checked, bloggers can use Windows Live Writer (or other remote blogging tools that use the MetaWeblog API) to post and edit blog posts.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-UseExcerptinWindowsLiveWriter"><stentry/></strow> -->
+				<strow id="strow-field-UseExcerptinWindowsLiveWriter">
+					<stentry><uicontrol>Use Excerpt in Windows Live Writer</uicontrol></stentry>
+					<stentry>If checked, bloggers can use the <uicontrol>Excerpt</uicontrol> in Windows Live Writer to create a summary of the post in plain text.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-CommentMode"><stentry/></strow> -->
+				<strow id="strow-field-CommentMode">
+					<stentry><uicontrol>Comment Mode</uicontrol></stentry>
+					<stentry>
+						Entries can be individually set to allow or disallow comments.
+						<ul>
+							<li><uicontrol>None</uicontrol>. If selected, comments are disabled.</li>
+							<li><uicontrol>Default</uicontrol>. If selected, the default comment settings for the site are used.</li>  <!-- ??? -->
+							<li><uicontrol>Inline Login/Registration</uicontrol>. If selected, a login/registration link is displayed in the module for unauthenticated (anonymous) users who try to leave a comment.</li>
+						</ul>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MakeEntrySummaryMandatory"><stentry/></strow> -->
+				<strow id="strow-field-MakeEntrySummaryMandatory">
+					<stentry><uicontrol>Make Entry Summary Mandatory</uicontrol></stentry>
+					<stentry>If checked, the blogger is required to include a summary when posting a blog entry.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-LimitAutoGeneratedEntrySummaryto"><stentry/></strow> -->
+				<strow id="strow-field-LimitAutoGeneratedEntrySummaryto">
+					<stentry><uicontrol>Limit Auto-Generated Entry Summary to</uicontrol></stentry>
+					<stentry>The maximum number of single-byte characters for the entry's summary. Enter "0" for unlimited characters. If <uicontrol>Enforce Entry Summary Limit</uicontrol> is unchecked, this limit applies to automatically generated summaries only.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnforceEntrySummaryLimit"><stentry/></strow> -->
+				<strow id="strow-field-EnforceEntrySummaryLimit">
+					<stentry><uicontrol>Enforce Entry Summary Limit</uicontrol></stentry>
+					<stentry>If checked, <uicontrol>Limit Auto-Generated Entry Summary to</uicontrol> applies to both automatically generated summaries and blogger-generated summaries.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeSummaryinEntry"><stentry/></strow> -->
+				<strow id="strow-field-IncludeSummaryinEntry">
+					<stentry><uicontrol>Include Summary in Entry</uicontrol></stentry>
+					<stentry>If checked, the summary is displayed at the top of each entry, when entries are listed.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AllowSummaryHTML"><stentry/></strow> -->
+				<strow id="strow-field-AllowSummaryHTML">
+					<stentry><uicontrol>Allow Summary HTML</uicontrol></stentry>
+					<stentry>If checked, the blogger can format their entry summary in HTML.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ListRowTemplate"><stentry/></strow> -->
+				<strow id="strow-field-ListRowTemplate">
+					<stentry><uicontrol>List Row Template</uicontrol></stentry>
+					<stentry>The template to use when displaying the blog entries in a list.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DetailViewTemplate"><stentry/></strow> -->
+				<strow id="strow-field-DetailViewTemplate">
+					<stentry><uicontrol>Detail View Template</uicontrol></stentry>
+					<stentry>The template to use when displaying the details of a single blog entry.</stentry>
+				</strow>
+
+
+				<!-- ========== MODULE: GROUP DIRECTORY ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ViewMode"><stentry/></strow> -->
+				<strow id="strow-field-ViewMode">
+					<stentry><uicontrol>View Mode</uicontrol></stentry>
+					<stentry>
+						<ul>
+							<li><uicontrol>Thumbnail</uicontrol>. Displays the thumbnail logos of the groups in a grid.</li>
+							<li><uicontrol>List</uicontrol>. Displays the list of group names.</li>
+						</ul>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-RoleGroup"><stentry/></strow> -->
+				<strow id="strow-field-RoleGroup">
+					<stentry><uicontrol>Role Group</uicontrol></stentry>
+					<stentry>Filters the list to show only the groups in the selected role group.</stentry>
+				</strow>
+
+
+
+
+
 
 
 
@@ -331,6 +463,39 @@
 
 				<p>A photo entry cannot have a file attachment. However, an entry with a photo attachment can have additional attachments.</p>
 			</sectiondiv>
+
+
+			<!-- ========== COMPANION MODULES ========== -->
+
+			<p>
+				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-companionmodules"></ph> -->
+				<ph id="ph-companionmodules">Companion modules are displayed automatically when the main module is added to a page and are configured separately.</ph>
+			</p>
+
+			<!-- <p conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/p-companions-VisibleOnPage"></p> -->
+			<p id="p-companions-VisibleOnPage">To display/hide companion module(s),
+				<ul>
+					<li>
+						From the main module's action menu, go to <menucascade><uicontrol>Edit (pencil icon)</uicontrol> <uicontrol>Add Companion Modules...</uicontrol></menucascade>.
+						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-edit-addcompanionmodules.png"><alt>Edit (pencil icon) action menu &gt; Add Companion Modules...</alt></image>
+					</li>
+					<li>
+						Check/Uncheck the <uicontrol>Visible on Page</uicontrol> box for the companion module that you want to be displayed/hidden.
+						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-companions-VisibleOnPage.png"><alt></alt></image>
+					</li>
+				</ul>
+			</p>
+
+
+			<!-- ========== PAGE SIZE ========== -->
+
+			<p>
+				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesize"></ph> -->
+				<ph id="ph-pagesize">The maximum number of items to display in each result page.</ph>
+
+				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesizecumulative"></ph> -->
+				<ph id="ph-pagesizecumulative">The number of items to initially display, and the number of additional items to display when the <uicontrol>Get More</uicontrol> button is clicked/tapped.</ph>
+			</p>
 
 		</section>
 

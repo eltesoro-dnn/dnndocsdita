@@ -62,6 +62,22 @@
         <note type="tip" id="note-TipSkinningTool"><xref type="html" scope="external" href="http://www.10poundgorilla.com/">10 Pound Gorilla</xref>'s <xref scope="external" href="http://www.10poundgorilla.com/DNN/Skinning-Tool">Skinning Tool</xref> is both a reference and a tool that customizes the code for DNN theme objects, based on the attribute values you specify.</note>
 
 
+        <!-- <note conref="../../common/bptext.dita#top-bptext/note-ModuleSecurityForHosts"></note> -->
+        <!-- <note conkeyref="k-bptext/note-ModuleSecurityForHosts"></note> -->
+		<note type="important" id="note-ModuleSecurityForHosts">To improve security, grant module access only to host users, and disable the module if not used regularly.</note>
+
+
+        <!-- <note conref="../../common/bptext.dita#top-bptext/note-ModuleSecurityForAdmins"></note> -->
+        <!-- <note conkeyref="k-bptext/note-ModuleSecurityForAdmins"></note> -->
+		<note type="important" id="note-ModuleSecurityForAdmins">To improve security, restrict permissions for modules that perform administrative tasks.</note>
+
+
+        <!-- <note conref="../../common/bptext.dita#top-bptext/note-SecurityReviewLogs"></note> -->
+        <!-- <note conkeyref="k-bptext/note-SecurityReviewLogs"></note> -->
+		<note type="tip" id="note-SecurityReviewLogs">Review your site's logs regularly to be familiar with your traffic patterns. This practice makes it easier for you to identify unusual patterns that might indicate suspicious activity.</note>
+
+
+
         <!-- ==================== Page and Module Settings ==================== -->
 
 		<!-- <ul conref="../../common/bptext.dita#top-bptext/ul-publisheddatespages"><li/></ul> -->

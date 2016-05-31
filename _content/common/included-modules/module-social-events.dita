@@ -37,27 +37,26 @@
 
             <!-- <sectiondiv conref="module-social-events.dita#ref-ModuleSocialEvents/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SocialEvents.png"><alt>Social Events module</alt></image> -->
+                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SocialEvents.png"><alt>Social Events module</alt></image>
             </sectiondiv>
+
+
+            <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
+            <sectiondiv id="sectiondiv-bpsecurity"/>
+			-->
 
 
             <!-- <sectiondiv conref="module-social-events.dita#ref-ModuleSocialEvents/sectiondiv-bpmoreinfo"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-bpmoreinfo">
-                <p>Includes:</p>
-                <ul>
-                    <li>Social Events</li>
-                    <li>Social Events Calendar</li>
-                    <li>Events Subscribe</li>
-                    <li>Events Search</li>
-                </ul>
+			<sectiondiv id="sectiondiv-bpmoreinfo">
+				<p><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-companionmodules"></ph></p>
+				<ul>
+					<li><uicontrol>Social Events Calendar</uicontrol>. Displays a calendar that users can use to view the events list.</li>
+					<li><uicontrol>Events Subscriptions</uicontrol>. Allows the user to subscribe to the events list.</li>
+					<li><uicontrol>Events Search</uicontrol>. Allows the user to search the events list.</li>
+				</ul>
+
+				<p conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/p-companions-VisibleOnPage"></p>
             </sectiondiv>
-
-
-			<!-- <sectiondiv conref="module-social-events.dita#ref-ModuleSocialEvents/sectiondiv-bpconfig"></sectiondiv>
-			<sectiondiv id="sectiondiv-bpconfig">
-				<xref format="dita" href="config-module-....dita">Configure the <uicontrol>...</uicontrol> module.</xref>
-			</sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-social-events.dita#ref-ModuleSocialEvents/sectiondiv-bpdetails"></sectiondiv> -->
