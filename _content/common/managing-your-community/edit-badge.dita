@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-edit-badge">
+
+    <title>Edit Badge</title>
+    <titlealts>
+        <navtitle>Edit Badge</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1606</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="community manager" job="other" otherjob="moderating" />
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <prereq><ph conkeyref="k-bptext/ph-PrereqCommunityMgr"></ph></prereq>
+
+        <steps>
+			<step conkeyref="k-bpsteps/step-pb-gotosettingsgaming-mod"><cmd/></step>
+			<step>
+				<cmd>Highlight the badge to edit. Then Click/Tap the pencil icon under the <uicontrol>Actions</uicontrol> column.</cmd>
+				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-Gaming-BadgesActions-Edit.png"><alt>Gaming - Highlight and edit the item.</alt></image></info>
+			</step>
+			<step conref="bptext-community-steps.dita#tsk-bptext-community-steps/step-editbadge"><cmd/></step>
+			<step conref="bptext-community-steps.dita#tsk-bptext-community-steps/step-scoreactions"><cmd/></step>
+			<step conref="bptext-community-steps.dita#tsk-bptext-community-steps/step-definegoals"><cmd/></step>
+		</steps>
+
+    </taskbody>
+
+</task>

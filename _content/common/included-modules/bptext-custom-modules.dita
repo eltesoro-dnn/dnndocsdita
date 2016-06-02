@@ -118,14 +118,14 @@
 
 				<!-- ========== MODULE: MEMBER DIRECTORY ========== -->
 
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplate"><stentry/></strow> -->
-				<strow id="strow-field-ItemTemplate">
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateOdd"><stentry/></strow> -->
+				<strow id="strow-field-ItemTemplateOdd">
 					<stentry><uicontrol>Item Template</uicontrol></stentry>
 					<stentry>The HTML template used to display the first and every other (odd-numbered) item in the directory.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AlternateItemTemplate"><stentry/></strow> -->
-				<strow id="strow-field-AlternateItemTemplate">
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateEven"><stentry/></strow> -->
+				<strow id="strow-field-ItemTemplateEven">
 					<stentry><uicontrol>Alternate Item Template</uicontrol></stentry>
 					<stentry>The HTML template used to display the second and every other (even-numbered) item in the directory. Leave this blank to use the <uicontrol>Item Template</uicontrol> for all members.</stentry>
 				</strow>
@@ -219,10 +219,16 @@
 					<stentry>If checked, only the first page of the results is displayed and the <uicontrol>Load more</uicontrol> button is hidden.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize"><stentry/></strow> -->
-				<strow id="strow-field-PageSize">
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize1"><stentry/></strow> -->
+				<strow id="strow-field-PageSize1">
 					<stentry><uicontrol>Page Size</uicontrol></stentry>
 					<stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesize"></ph> (1 &#8212; 100)</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize5"><stentry/></strow> -->
+				<strow id="strow-field-PageSize5">
+					<stentry><uicontrol>Page Size</uicontrol></stentry>
+					<stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesize"></ph> (5 &#8212; 100)</stentry>
 				</strow>
 
 
@@ -423,11 +429,173 @@
 				</strow>
 
 
+				<!-- ========== MODULE: IDEAS ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TotalVotesPerIdea"><stentry/></strow> -->
+				<strow id="strow-field-TotalVotesPerIdea">
+					<stentry><uicontrol>Total Votes per Idea</uicontrol></stentry>
+					<stentry>The maximum number of votes that a user can give to a single idea. The votes can be given at different times, but the cumulative number cannot exceed this value.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TotalVotesPerUser"><stentry/></strow> -->
+				<strow id="strow-field-TotalVotesPerUser">
+					<stentry><uicontrol>Total Votes per User</uicontrol></stentry>
+					<stentry>The total number of votes that a single user can distribute among any number of ideas within the current module. While voting is enabled, votes can be changed, and revoked votes return to the user's voting pool. <!-- Set to 0 for unlimited votes. --></stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AcceptNewIdeas"><stentry/></strow> -->
+				<strow id="strow-field-AcceptNewIdeas">
+					<stentry><uicontrol>Accept New Ideas</uicontrol></stentry>
+					<stentry>If checked, registered <!-- ??? --> users can submit their own ideas. If you are performing a survey, uncheck this option.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PermitVoting"><stentry/></strow> -->
+				<strow id="strow-field-PermitVoting">
+					<stentry><uicontrol>Permit Voting</uicontrol></stentry>
+					<stentry>If checked, voting is allowed. You can allow users to preview ideas before voting by keeping this box unchecked, then you can check this box when voting begins. To end the voting period, uncheck this box again.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SearchResults"><stentry/></strow> -->
+				<strow id="strow-field-SearchResults">
+					<stentry><uicontrol>Search Results</uicontrol></stentry>
+					<stentry><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesize"></ph></stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowCategories"><stentry/></strow> -->
+				<strow id="strow-field-ShowCategories">
+					<stentry><uicontrol>Show Categories</uicontrol></stentry>
+					<stentry>If checked, users adding new ideas would be required to choose a category from the selected vocabulary.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-RootVocabulary"><stentry/></strow> -->
+				<strow id="strow-field-RootVocabulary">
+					<stentry><uicontrol>Root Vocabulary</uicontrol></stentry>
+					<stentry>A node in a vocabulary tree to use as the root node. <!-- Is this correct? --> The vocabulary must already be defined in the site's taxonomy. The <uicontrol>Manage Vocabularies</uicontrol> link takes you to the <uicontrol>Taxonomy Manager</uicontrol> so you can create or update vocabularies. The <uicontrol>Refresh</uicontrol> link updates the <uicontrol>Root Vocabulary</uicontrol> dropdown box.</stentry>
+				</strow>
+
+
+				<!-- ========== MODULE: LEADERBOARD ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize"><stentry/></strow> -->
+				<strow id="strow-field-PageSize">
+					<stentry><uicontrol>Page Size</uicontrol></stentry>
+					<stentry><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesize"></ph></stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Interval"><stentry/></strow> -->
+				<strow id="strow-field-Interval">
+					<stentry><uicontrol>Interval</uicontrol></stentry>
+					<stentry>The time period when the rankings would be based. Example: If you choose <uicontrol>Last Week</uicontrol>, the rankings would be based on points earned by users in the past seven days only.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowSearchPanel"><stentry/></strow> -->
+				<strow id="strow-field-ShowSearchPanel">
+					<stentry><uicontrol>Show Search Panel</uicontrol></stentry>
+					<stentry>If checked, allows users to search for members by name in the displayed list.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowModeSwitchButtons"><stentry/></strow> -->
+				<strow id="strow-field-ShowModeSwitchButtons">
+					<stentry><uicontrol>Show Mode Switch Buttons</uicontrol></stentry>
+					<stentry>Displays relevant buttons that can be used by the user to further filter what is displayed.
+						<ul>
+							<li><uicontrol>Everyone</uicontrol>. Displays all the results.</li>
+							<li><uicontrol>Friends</uicontrol>. Displays only the current user's friends who are included in the results.</li>
+							<li><uicontrol>Members</uicontrol>. Displays only the members of the group specified in <uicontrol>Membership in Group</uicontrol>.</li>
+						</ul>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisplayMode"><stentry/></strow> -->
+				<strow id="strow-field-DisplayMode">
+					<stentry><uicontrol>Display Mode</uicontrol></stentry>
+					<stentry>
+						<ul>
+							<li><uicontrol>All Users</uicontrol>. Ranks and returns all registered users of the site.</li>
+							<li><uicontrol>Friends</uicontrol>. Ranks and returns only the friends of the current user.</li>
+							<li><uicontrol>Members</uicontrol>. Ranks and returns only members of the specified group.</li>
+						</ul>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MembershipInGroup"><stentry/></strow> -->
+				<strow id="strow-field-MembershipInGroup">
+					<stentry><uicontrol>Membership in Group</uicontrol></stentry>
+					<stentry>The group whose members to display. This field appears only if <uicontrol>Display Mode</uicontrol> is <uicontrol>Members</uicontrol>. If the selected group is <uicontrol>None</uicontrol>, all registered users will be included. <!-- Is this correct? --> </stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Behavior"><stentry/></strow> -->
+				<strow id="strow-field-Behavior">
+					<stentry><uicontrol>Behavior</uicontrol></stentry>
+					<stentry>
+						<ul>
+							<li><uicontrol>Relative Ranking</uicontrol>. Displays users in order of ranking.</li>
+							<li><uicontrol>Top Contributors</uicontrol>. Displays only the users with the highest points.</li>
+						</ul>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Template"><stentry/></strow> -->
+				<strow id="strow-field-Template">
+					<stentry><uicontrol>Template</uicontrol></stentry>
+					<stentry>Template to use for the leaderboard. Some predefined templates are provided by DNN. If you choose <uicontrol>Custom</uicontrol>, the next four fields are displayed to allow you to enter custom HTML to be used with the current module instance only.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HeaderTemplate"><stentry/></strow> -->
+				<strow id="strow-field-HeaderTemplate">
+					<stentry><uicontrol>Header Template</uicontrol></stentry>
+					<stentry>The custom HTML template used as the prefix to the list. Typically the starting tags for the table. Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateAll"><stentry/></strow> -->
+				<strow id="strow-field-ItemTemplateAll">
+					<stentry><uicontrol>Item Template</uicontrol></stentry>
+					<stentry>The custom HTML template used to display each item in the list. Typically an entire row of the table. Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HighlightedItemTemplate"><stentry/></strow> -->
+				<strow id="strow-field-HighlightedItemTemplate">
+					<stentry><uicontrol>Highlighted Item Template</uicontrol></stentry>
+					<stentry>The custom HTML template used to display the selected item in the list. Typically an entire row of the table. Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FooterTemplate"><stentry/></strow> -->
+				<strow id="strow-field-FooterTemplate">
+					<stentry><uicontrol>Footer Template</uicontrol></stentry>
+					<stentry>The custom HTML template used as the suffix to the list. Typically the terminating tags for the table. Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
+				</strow>
+
+
+				<!-- ========== MODULE: MY STATUS ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TemplateInfoTypes"><stentry/></strow> -->
+				<strow id="strow-field-TemplateInfoTypes">
+					<stentry><uicontrol>Template</uicontrol></stentry>
+					<stentry>The information type(s) that should be displayed by this module.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GraphColor1"><stentry/></strow> -->
+				<strow id="strow-field-GraphColor1">
+					<stentry><uicontrol>Graph Color 1</uicontrol></stentry>
+					<stentry>The starting color of the gradient used in the Profile Completion graphic.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GraphColor2"><stentry/></strow> -->
+				<strow id="strow-field-GraphColor2">
+					<stentry><uicontrol>Graph Color 2</uicontrol></stentry>
+					<stentry>The ending color of the gradient used in the Profile Completion graphic.</stentry>
+				</strow>
+
+
+				<!-- ========== MODULE:  ========== -->
 
 
 
 
 
+
+
+				<!-- ========== MODULE:  ========== -->
 
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-"><stentry/></strow>
 				<strow id="strow-field-">
@@ -488,10 +656,11 @@
 
 
 			<!-- ========== PAGE SIZE ========== -->
+			<!-- Also see <strow conref="managing-your-community/bptext-community-steps.dita#tsk-bptext-community-steps/strow-field-PageSize"><stentry/></strow>. -->
 
 			<p>
 				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesize"></ph> -->
-				<ph id="ph-pagesize">The maximum number of items to display in each result page.</ph>
+				<ph id="ph-pagesize">The number of items to display in each result page.</ph>
 
 				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesizecumulative"></ph> -->
 				<ph id="ph-pagesizecumulative">The number of items to initially display, and the number of additional items to display when the <uicontrol>Get More</uicontrol> button is clicked/tapped.</ph>

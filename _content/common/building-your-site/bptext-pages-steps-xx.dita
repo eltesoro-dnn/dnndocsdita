@@ -387,8 +387,8 @@
 				<cmd id="cmd-xx-configure-page-permissions">(Optional) In the <uicontrol>Permissions</uicontrol> tab, configure which roles can do which actions on this page.</cmd>
 				<substeps id="substeps-xx-configure-page-permissions">
 					<substep><cmd>(Optional) To filter the displayed roles, select the role group from the <uicontrol>Filter By Group</uicontrol> dropdown.</cmd></substep>
-					<substep><cmd>(Optional) To add another role to the list, choose the additional role from the <uicontrol>Select Role</uicontrol> dropdown, and click <uicontrol>Add</uicontrol>.</cmd></substep>
-					<substep><cmd>(Optional) To add a specific user to the list, enter part of their display name, select the correct user from the list, and click <uicontrol>Add</uicontrol>.</cmd></substep>
+					<substep><cmd>(Optional) To add another role to the list, choose the additional role from the <uicontrol>Select Role</uicontrol> dropdown, and click/tap <uicontrol>Add</uicontrol>.</cmd></substep>
+					<substep><cmd>(Optional) To add a specific user to the list, enter part of their display name, select the correct user from the list, and click/tap <uicontrol>Add</uicontrol>.</cmd></substep>
 					<substep><cmd>(Optional) Check the appropriate checkboxes to enable each role to perform actions on the page.</cmd></substep>
 				</substeps>
 			</step>
@@ -402,8 +402,8 @@
 				<cmd id="cmd-xx-configure-module-permissions">(Optional) In the <uicontrol>Permissions</uicontrol> tab, configure which roles can do which actions on this module.</cmd>
 				<substeps id="substeps-xx-configure-module-permissions">
 					<substep><cmd>(Optional) To filter the displayed roles, select the role group from the <uicontrol>Filter By Group</uicontrol> dropdown.</cmd></substep>
-					<substep><cmd>(Optional) To add another role to the list, choose the additional role from the <uicontrol>Select Role</uicontrol> dropdown, and click <uicontrol>Add</uicontrol>.</cmd></substep>
-					<substep><cmd>(Optional) To add a specific user to the list, enter part of their display name, select the correct user from the list, and click <uicontrol>Add</uicontrol>.</cmd></substep>
+					<substep><cmd>(Optional) To add another role to the list, choose the additional role from the <uicontrol>Select Role</uicontrol> dropdown, and click/tap <uicontrol>Add</uicontrol>.</cmd></substep>
+					<substep><cmd>(Optional) To add a specific user to the list, enter part of their display name, select the correct user from the list, and click/tap <uicontrol>Add</uicontrol>.</cmd></substep>
 					<substep><cmd>(Optional) Check the appropriate checkboxes to enable each role to perform actions on the module.</cmd></substep>
 					<substep><cmd>(Optional) To specify view permissions that are different from the parent page, uncheck <uicontrol>Inherit View permissions from Page</uicontrol>.</cmd></substep>
 				</substeps>
@@ -419,8 +419,8 @@
 						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenubar-hover.png"><alt>Hover over action menu bar of the module, then drag to a different pane.</alt></image>
 					</choice>
 					<choice>
-						<p>You can click on the four-arrow icon to expand the <uicontrol>Move</uicontrol> action menu, which contains the list of panes on the page. Then choose the target pane.</p>
-						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-move.png"><alt>Click on the four-arrow icon, then choose the target pane from the list.</alt></image>
+						<p>You can click/tap on the four-arrow icon to expand the <uicontrol>Move</uicontrol> action menu, which contains the list of panes on the page. Then choose the target pane.</p>
+						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-move.png"><alt>Click/Tap on the four-arrow icon, then choose the target pane from the list.</alt></image>
 					</choice>
 				</choices>
 			</step>

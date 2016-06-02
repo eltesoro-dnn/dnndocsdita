@@ -5,7 +5,7 @@
     <title>Boilerplates &#8212; Pages (Persona Bar) Steps</title>
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,1605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -22,7 +22,7 @@
 			<step id="step-pb-gotopagemgmt">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Manage</uicontrol> <uicontrol>Pages</uicontrol></menucascade>.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarManage-Pages.png"><alt>Persona Bar &gt; Manage &gt; Pages</alt></image>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarManage-cmg-Pages.png"><alt>Persona Bar &gt; Manage &gt; Pages</alt></image>
 				</info>
             </step>
 
@@ -33,7 +33,7 @@
 			<step id="step-pb-editpagepersonabar">
 				<cmd>In the <wintitle>Persona Bar</wintitle>, click/tap the pencil icon (<uicontrol>Edit</uicontrol>).</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarEdit.png"><alt>Persona Bar &gt; Edit</alt></image>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarEdit-cmg.png"><alt>Persona Bar &gt; Edit</alt></image>
 				</info>
 			</step>
 
@@ -131,7 +131,7 @@
 			<step id="step-pb-gototemplatelist">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Manage</uicontrol> <uicontrol>Templates</uicontrol></menucascade>.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarManage-Templates.png"><alt>Persona Bar &gt; Manage &gt; Templates</alt></image>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarManage-cmg-Templates.png"><alt>Persona Bar &gt; Manage &gt; Templates</alt></image>
 				</info>
             </step>
 
@@ -163,7 +163,7 @@
 
 			<!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-quicklyaddcontenttopane"><cmd/></step> -->
 			<step id="step-pb-quicklyaddcontenttopane">
-				<cmd>Within a pane, click on the appropriate icon to add text, an image, or a module.</cmd>
+				<cmd>Within a pane, click/tap on the appropriate icon to add text, an image, or a module.</cmd>
 				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pane-with-content-icons.png"><alt>Pane with content icons</alt></image></info>
 			</step>
 

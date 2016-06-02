@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
+<glossentry xml:lang="en" id="reputation-points">
+
+    <glossterm>Reputation Points</glossterm>
+    <glossdef>A set of points based on how members of the site perceive the trustworthiness of a user.</glossdef>
+
+    <prolog>
+        <author>wrET,1606</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <glossBody>
+        <glossSurfaceForm>Reputation Points (RP)</glossSurfaceForm>
+        <glossAlt id="RP-acronym">
+            <glossAcronym>RP</glossAcronym>
+        </glossAlt>
+    </glossBody>
+
+</glossentry>

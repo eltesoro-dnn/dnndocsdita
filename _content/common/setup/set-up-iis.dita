@@ -88,7 +88,7 @@
                             <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-6.png"><alt>Right-click on the website's name and choose Edit Bindings.</alt></image>
                         </info>
                     </substep>
-                    <substep><cmd>In <uicontrol>Site Bindings</uicontrol>, click <uicontrol>Add...</uicontrol>. In <uicontrol>Add Site Binding</uicontrol>, enter the <uicontrol>Host name</uicontrol>.</cmd>
+                    <substep><cmd>In <uicontrol>Site Bindings</uicontrol>, click/tap <uicontrol>Add...</uicontrol>. In <uicontrol>Add Site Binding</uicontrol>, enter the <uicontrol>Host name</uicontrol>.</cmd>
                         <info>
                             <p><ph outputclass="audience-dev audience-dsg">Developers and Designers:</ph> If setting up a local development environment, you can use <codeph>www.dnndev.me</codeph> (or any subdomain). DNNDEV.ME is a registered domain which points to the loopback address of 127.0.0.1, so it will always resolve locally.</p>
                             <p><ph outputclass="audience-adm">Administrators:</ph> If setting up a live website, use your website's domain.</p>

@@ -35,11 +35,15 @@
 
     <taskbody>
 
+		<section id="overview">
+			<p>Content managers and administrators can filter the results list by time frame (<uicontrol>Interval</uicontrol>), by relationship (<uicontrol>Display Mode</uicontrol>), or type (<uicontrol>Behavior</uicontrol>). These settings determine which user accounts are included in the results returned to the user. However, the user can also filter which of the results are displayed if <uicontrol>Show Mode Switch Buttons</uicontrol>is checked.</p>
+		</section>
+
         <steps>
 			<step><cmd>Go to the page containing the module to configure and edit the page.</cmd></step>
 			<step conref="../building-your-site/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step>
             <step>
-				<cmd>Go to the <uicontrol>...</uicontrol> tab.</cmd>
+				<cmd>Go to the <uicontrol>Leaderboard</uicontrol> tab.</cmd>
 				<info>
 					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-Leaderboard.png"><alt>Module Settings &#8212; Leaderboard</alt></image>
 
@@ -48,7 +52,18 @@
 							<stentry>Field</stentry>
 							<stentry>Description</stentry>
 						</sthead>
-						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-..."><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize5"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Interval"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowSearchPanel"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowModeSwitchButtons"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisplayMode"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MembershipInGroup"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Behavior"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Template"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HeaderTemplate"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateAll"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HighlightedItemTemplate"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FooterTemplate"><stentry/></strow>
 					</simpletable>
 				</info>
             </step>

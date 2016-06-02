@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-delete-influence-goal-type">
+
+    <title>Delete Influence Goal Type</title>
+    <titlealts>
+        <navtitle>Delete Goal Type</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1606</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="community manager" job="other" otherjob="moderating" />
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <prereq><ph conkeyref="k-bptext/ph-PrereqCommunityMgr"></ph></prereq>
+
+        <steps>
+			<step conkeyref="k-bpsteps/step-pb-gotosettingscommunity-mod"><cmd/></step>
+			<step>
+				<cmd>Highlight the goal type to delete. Then Click/Tap the X icon under the <uicontrol>Actions</uicontrol> column.</cmd>
+				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-CommunityInfluence-GoalsActions-Delete.png"><alt>Community Influence - Highlight and delete the goal type.</alt></image></info>
+			</step>
+        </steps>
+
+    </taskbody>
+
+</task>

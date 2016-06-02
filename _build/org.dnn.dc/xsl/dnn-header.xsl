@@ -28,6 +28,9 @@
 
                 <xsl:if test="$sitetitle  ='Designers'"><div class="subctr dsgctr active"><a href="/docs/designers/index.html">Designers</a></div></xsl:if>
                 <xsl:if test="$sitetitle !='Designers'"><div class="subctr dsgctr"><a href="/docs/designers/index.html">Designers</a></div></xsl:if>
+
+                <xsl:if test="$sitetitle  ='Community Managers'"><div class="subctr modctr active"><a href="/docs/community-managers/index.html">Community Managers</a></div></xsl:if>
+                <xsl:if test="$sitetitle !='Community Managers'"><div class="subctr modctr"><a href="/docs/community-managers/index.html">Community Managers</a></div></xsl:if>
             </div>
 
             <div class="header-nav-wrapper">
@@ -49,6 +52,9 @@
 
                                 <xsl:if test="$sitetitle  ='Designers'"><li class="subctr dsgctr active"><a href="/docs/designers/index.html">Designers</a></li></xsl:if>
                                 <xsl:if test="$sitetitle !='Designers'"><li class="subctr dsgctr"><a href="/docs/designers/index.html">Designers</a></li></xsl:if>
+
+                                <xsl:if test="$sitetitle  ='Community Managers'"><li class="subctr modctr active"><a href="/docs/community-managers/index.html">Community Managers</a></li></xsl:if>
+                                <xsl:if test="$sitetitle !='Community Managers'"><li class="subctr modctr"><a href="/docs/community-managers/index.html">Community Managers</a></li></xsl:if>
                             </ul>
                         </li>
                         <li><a href="http://www.dnnsoftware.com/community/download">Download</a></li>

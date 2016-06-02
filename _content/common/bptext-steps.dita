@@ -62,6 +62,29 @@
 
 
 
+			<!-- ========== PERSONA BAR - COMMUNITY MANAGER / MODERATOR ========== -->
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-gotosettingscommunity-mod"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-pb-gotosettingscommunity-mod"><cmd/></step> -->
+            <step id="step-pb-gotosettingscommunity-mod">
+				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Community</uicontrol></menucascade>.</cmd>
+                <info><image scalefit="yes" placement="break" align="center" href="img/scr-pbarSettings-Community-mod.png"><alt>Persona Bar &gt; Settings &gt; Community</alt></image></info>
+            </step>
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-gotosettingsconnectors-mod"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-pb-gotosettingsconnectors-mod"><cmd/></step> -->
+            <step id="step-pb-gotosettingsconnectors-mod">
+				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Connectors</uicontrol></menucascade>.</cmd>
+                <info><image scalefit="yes" placement="break" align="center" href="img/scr-pbarSettings-Connectors-mod.png"><alt>Persona Bar &gt; Settings &gt; Connectors</alt></image></info>
+            </step>
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-gotosettingsgaming-mod"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-pb-gotosettingsgaming-mod"><cmd/></step> -->
+            <step id="step-pb-gotosettingsgaming-mod">
+				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Gaming</uicontrol></menucascade>.</cmd>
+                <info><image scalefit="yes" placement="break" align="center" href="img/scr-pbarSettings-Gaming-mod.png"><alt>Persona Bar &gt; Settings &gt; Gaming</alt></image></info>
+            </step>
+
 
 
 

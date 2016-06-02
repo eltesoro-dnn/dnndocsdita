@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-gamification">
+
+    <title>Gamification</title>
+    <titlealts>
+        <navtitle>Gamification</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orCP,edET,1606</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="community manager" job="other" otherjob="moderating" />
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section id="overview">
+
+			<p>Experience Points (XP) and Reputation Points (RP) are used to gamify your site. Registered users collect points to earn advanced privileges or badges. You can configure the points they can collect for each action they perform.</p>
+
+			<simpletable relcolwidth="1* 1*">
+				<sthead>
+					<stentry><term>Experience points (XP)</term></stentry>
+					<stentry><term>Reputation points (RP)</term></stentry>
+				</sthead>
+				<strow>
+					<stentry>Not displayed to the users, but used by community managers to determine how active the user is, regardless of their reputation.</stentry>
+					<stentry>Displayed to the end user.</stentry>
+				</strow>
+				<strow>
+					<stentry>Quantitative.</stentry>
+					<stentry>Qualitative.</stentry>
+				</strow>
+				<strow>
+					<stentry>An unlimited lifetime cumulative score based on the activities of the user on the site.</stentry>
+					<stentry>A set of points based on how members of the site perceive the trustworthiness of a user.</stentry>
+				</strow>
+				<strow>
+					<stentry>Accepts only positive points.</stentry>
+					<stentry>Accepts both positive and negative points. </stentry>
+				</strow>
+				<strow>
+					<stentry>Example: The number of points that a user receives per action.</stentry>
+					<stentry>Example: The number of points that a user needs to earn per privilege.</stentry>
+				</strow>
+			</simpletable>
+
+			<note type="note">
+				<ul>
+					<li>RP will always be less than or equal to XP.</li>
+					<li>Privileges are based on RP, not XP.</li>
+					<li>Both can be configured differently per site.</li>
+				</ul>
+			</note>
+
+		</section>
+
+    </body>
+
+</topic>

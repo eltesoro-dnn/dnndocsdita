@@ -59,8 +59,8 @@
 							<stentry/>
 							<stentry>Templates</stentry>
 						</sthead>
-						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplate"><stentry/></strow>
-						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AlternateItemTemplate"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateOdd"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateEven"><stentry/></strow>
 						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnablePopUp"><stentry/></strow>
 						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PopUpTemplate"><stentry/></strow>
 					</simpletable>
@@ -88,7 +88,7 @@
 							<stentry>Paging Options</stentry>
 						</sthead>
 						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisablePaging"><stentry/></strow>
-						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize1"><stentry/></strow>
 					</simpletable>
 				</info>
             </step>

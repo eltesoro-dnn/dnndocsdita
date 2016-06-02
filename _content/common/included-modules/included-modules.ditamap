@@ -42,6 +42,10 @@
 		<topicref format="dita" type="task"      toc="yes" href="config-module-group-spaces.dita" />
 		</topicref>
 
+		<topicref format="dita" type="reference" toc="yes" href="module-ideas.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-ideas.dita" />
+		</topicref>
+
 		<topicref format="dita" type="reference" toc="yes" href="module-journal.dita">
 		<topicref format="dita" type="task"      toc="yes" href="config-module-journal.dita" />
 		</topicref>
@@ -50,21 +54,27 @@
 		<topicref format="dita" type="task"      toc="yes" href="config-module-latest-challenges.dita" />
 		</topicref>
 
+		<topicref format="dita" type="reference" toc="yes" href="module-leaderboard.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-leaderboard.dita" />
+		</topicref>
+
 		<topicref format="dita" type="reference" toc="yes" href="module-member-directory.dita">
 		<topicref format="dita" type="task"      toc="yes" href="config-module-member-directory.dita" />
 		</topicref>
 
 		<topicref format="dita" type="reference" toc="yes" href="module-message-center.dita"/>
 
+		<topicref format="dita" type="reference" toc="yes" href="module-my-status.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-my-status.dita" />
+		</topicref>
+
+		<topicref format="dita" type="reference" toc="yes" href="module-profile-dashboard.dita" />
+
 		<topicref format="dita" type="reference" toc="yes" href="module-social-groups.dita">
 		<topicref format="dita" type="task"      toc="yes" href="config-module-social-groups.dita" />
 		</topicref>
 
 		<!--
-		<topicref format="dita" type="reference" toc="yes" href="module-ideas.dita" />
-		<topicref format="dita" type="reference" toc="yes" href="module-leaderboard.dita" />
-		<topicref format="dita" type="reference" toc="yes" href="module-my-status.dita" />
-		<topicref format="dita" type="reference" toc="yes" href="module-profile-dashboard.dita" />
 		<topicref format="dita" type="reference" toc="yes" href="module-related-content.dita" />
 		<topicref format="dita" type="reference" toc="yes" href="module-social-events.dita" />
 		<topicref format="dita" type="reference" toc="yes" href="module-social-sharing.dita" />
@@ -245,6 +255,13 @@
 			</relcell>
 		</relrow>
 
+		<!-- Social:  -->
+
+
+
+
+
+
 		<!-- Search -->
 		<relrow>
 			<relcell/>
@@ -267,6 +284,7 @@
 
 
 		<!-- ========== MODULES IN THE SAME CATEGORY ========== -->
+
 
 
 

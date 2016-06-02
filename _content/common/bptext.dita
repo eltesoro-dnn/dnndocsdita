@@ -30,6 +30,9 @@
         <!-- <ph conkeyref="k-bptext/ph-PrereqAdmin"></ph> -->
         <ph id="ph-PrereqAdmin"><b>An administrator account for the site.</b> Administrators have full permissions to the specific site.</ph>
 
+        <!-- <ph conref="../../common/bptext.dita#top-bptext/ph-PrereqCommunityMgr"></ph> -->
+        <!-- <ph conkeyref="k-bptext/ph-PrereqCommunityMgr"></ph> -->
+        <ph id="ph-PrereqCommunityMgr"><b>A community manager account for the site.</b> Community managers have access to community-related features and settings in Evoq Engage.</ph>
 
 
 

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-misc-community-settings">
+
+    <title>Configure Other Community Settings</title>
+    <titlealts>
+        <navtitle>Other Community Settings</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1606</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="community manager" job="other" otherjob="moderating" />
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <prereq><ph conkeyref="k-bptext/ph-PrereqCommunityMgr"></ph></prereq>
+
+        <steps>
+			<step conkeyref="k-bpsteps/step-pb-gotosettingscommunity-mod"><cmd/></step>
+			<step>
+				<cmd>Configure the community settings.</cmd>
+				<info>
+					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-CommunityInfluence-Misc.png"><alt>Community Influence - Miscellaneous Community Settings</alt></image>
+					<simpletable conref="bptext-community-steps.dita#tsk-bptext-community-steps/simpletable-configcommunity"><strow/></simpletable>
+				</info>
+			</step>
+
+        </steps>
+
+    </taskbody>
+
+</task>

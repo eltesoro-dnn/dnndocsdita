@@ -15,6 +15,7 @@
 			<xsl:if test="$sitetitle ='Content Managers'">breadcrumbs cmgctr</xsl:if>
 			<xsl:if test="$sitetitle ='Developers'">breadcrumbs devctr</xsl:if>
 			<xsl:if test="$sitetitle ='Designers'">breadcrumbs dsgctr</xsl:if>
+			<xsl:if test="$sitetitle ='Community Managers'">breadcrumbs modctr</xsl:if>
 		</xsl:attribute>
 		<script language="JavaScript">breadcrumbs();</script>
 	</div>

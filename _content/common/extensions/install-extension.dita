@@ -36,13 +36,13 @@
         <steps>
             <step conkeyref="k-bpsteps/step-menuhostextensions"><cmd/></step>
 
-            <step><cmd>Click <uicontrol>Install Extension Wizard</uicontrol>.</cmd>
+            <step><cmd>Click/Tap <uicontrol>Install Extension Wizard</uicontrol>.</cmd>
                 <info>
                     <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallExt-3.png"><alt>Install Extension Wizard</alt></image>
                 </info>
             </step>
 
-            <step><cmd>Click <uicontrol>Choose File</uicontrol> and select the zip file of the extension. The button name changes to the name of the zip file.</cmd>
+            <step><cmd>Click/Tap <uicontrol>Choose File</uicontrol> and select the zip file of the extension. The button name changes to the name of the zip file.</cmd>
                 <info>
                     <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallExt-4.png"><alt>Choose zip file of the extension</alt></image>
                 </info>

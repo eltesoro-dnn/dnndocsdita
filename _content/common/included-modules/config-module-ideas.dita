@@ -39,7 +39,7 @@
 			<step><cmd>Go to the page containing the module to configure and edit the page.</cmd></step>
 			<step conref="../building-your-site/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step>
             <step>
-				<cmd>Go to the <uicontrol>...</uicontrol> tab.</cmd>
+				<cmd>Go to the <uicontrol>Ideas</uicontrol> tab.</cmd>
 				<info>
 					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-Ideas.png"><alt>Module Settings &#8212; Ideas</alt></image>
 
@@ -48,7 +48,14 @@
 							<stentry>Field</stentry>
 							<stentry>Description</stentry>
 						</sthead>
-						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-..."><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ModeSocialModules"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TotalVotesPerIdea"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TotalVotesPerUser"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AcceptNewIdeas"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PermitVoting"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SearchResults"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowCategories"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-RootVocabulary"><stentry/></strow>
 					</simpletable>
 				</info>
             </step>

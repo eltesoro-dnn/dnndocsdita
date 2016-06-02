@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-managing-your-community">
+
+    <title>Building Your Site</title>
+
+    <!-- Topics -->
+	<topicref format="dita" type="topic" toc="yes" href="managing-your-community.dita" copy-to="index.dita" collection-type="family">
+
+		<topicref format="dita" type="topic" toc="yes" href="engagement-influence.dita" collection-type="family">
+			<topicref format="dita" type="task" toc="yes" href="create-influence-goal-type.dita" />
+			<topicref format="dita" type="task" toc="yes" href="edit-influence-goal-type.dita" />
+			<topicref format="dita" type="task" toc="yes" href="delete-influence-goal-type.dita" />
+			<topicref format="dita" type="task" toc="yes" href="config-misc-community-settings.dita" />
+		</topicref>
+
+		<topicref format="dita" type="topic" toc="yes" href="gamification.dita" collection-type="family">
+			<topicref format="dita" type="task" toc="yes" href="configure-gaming-actions.dita" />
+			<topicref format="dita" type="task" toc="yes" href="configure-gaming-privileges.dita" />
+			<topicref format="dita" type="task" toc="yes" href="create-badge.dita" />
+			<topicref format="dita" type="task" toc="yes" href="edit-badge.dita" />
+			<topicref format="dita" type="task" toc="yes" href="delete-badge.dita" />
+		</topicref>
+
+	</topicref>
+
+</map>

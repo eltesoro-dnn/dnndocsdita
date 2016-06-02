@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-engagement-influence">
+
+    <title>Community Engagement and Influence</title>
+    <titlealts>
+        <navtitle>Engagement and Influence</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1606</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="community manager" job="other" otherjob="moderating" />
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section id="overview">
+
+			<p><term>Engagement</term> and <term>Influence</term> provide insight into the relationships among your community members.</p>
+
+			<simpletable relcolwidth="1* 1*">
+				<sthead>
+					<stentry><term>Engagement</term></stentry>
+					<stentry><term>Influence</term></stentry>
+				</sthead>
+				<strow>
+					<stentry>Measures how involved the member is with the rest of the community.</stentry>
+					<stentry>Measures the positive or negative effect of the member on the community.</stentry>
+				</strow>
+				<strow>
+					<stentry>Engagement is internally computed and cannot be configured.</stentry>
+					<stentry>Influence is based on points (<varname>weight</varname> * <varname>value</varname>) earned by a registered user based on activities that affect their reputation in the community.</stentry>
+				</strow>
+			</simpletable>
+
+		</section>
+
+
+		<section id="config">
+			<title>Influence Configuration</title>
+
+			<p>The Influence score is affected by a set of goals that the community manager configures.</p>
+
+		</section>
+
+    </body>
+
+</topic>

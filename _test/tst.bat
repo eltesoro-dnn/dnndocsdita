@@ -45,6 +45,7 @@ cd /d %_outdir%
 dir * /a:-d /s/b > %_tempfile%
 echo. > %_currfiles%
 for /f %%v in ( %_tempfile% ) do for /f "tokens=4* delims=\" %%w in ( "%%v" ) do @echo %%w\%%x >> %_currfiles%
+echo foo.txt >> %_currfiles%
 windiff %_expfiles% %_currfiles%
 set /P _ans=Copy the new list? [y/n]
 if _%_ans%_ EQU _y_  xcopy %_currfiles% %_expfiles% /v/y

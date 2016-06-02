@@ -51,7 +51,7 @@
                             <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-2.png"><alt>In the Object Explorer panel, right-click Databases, choose New Database.</alt></image>
                         </info>
                     </substep>
-                    <substep><cmd>Enter the name of the new database. Click <uicontrol>OK</uicontrol>.</cmd>
+                    <substep><cmd>Enter the name of the new database. Click/Tap <uicontrol>OK</uicontrol>.</cmd>
                         <info>
                             <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-3.png"><alt>Enter new database name.</alt></image>
                             <note type="note">Remember the database name, because it will be required by the DNN Installation Wizard.</note>
@@ -88,9 +88,9 @@
                             <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-7.png"><alt>User type = SQL user with login</alt></image>
                         </info>
                     </substep>
-                    <substep><cmd>Enter the username of the account you just created, then click <uicontrol>Check Names</uicontrol>.</cmd>
+                    <substep><cmd>Enter the username of the account you just created, then click/tap <uicontrol>Check Names</uicontrol>.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-8.png"><alt>Enter the new account's login name, then click Check Names.</alt></image>
+                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-8.png"><alt>Enter the new account's login name, then click/tap Check Names.</alt></image>
                         </info>
                     </substep>
                     <substep><cmd>Under <uicontrol>Select a page</uicontrol>, select <uicontrol>Membership</uicontrol>, and check the <uicontrol>db_owner</uicontrol> database role membership.</cmd>

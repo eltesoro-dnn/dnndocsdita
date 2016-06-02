@@ -39,7 +39,7 @@
 			<step><cmd>Go to the page containing the module to configure and edit the page.</cmd></step>
 			<step conref="../building-your-site/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step>
             <step>
-				<cmd>Go to the <uicontrol>...</uicontrol> tab.</cmd>
+				<cmd>Go to the <uicontrol>My Status Settings</uicontrol> tab.</cmd>
 				<info>
 					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MyStatus.png"><alt>Module Settings &#8212; My Status</alt></image>
 
@@ -48,7 +48,9 @@
 							<stentry>Field</stentry>
 							<stentry>Description</stentry>
 						</sthead>
-						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-..."><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TemplateInfoTypes"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GraphColor1"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GraphColor2"><stentry/></strow>
 					</simpletable>
 				</info>
             </step>

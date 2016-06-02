@@ -493,6 +493,9 @@ main:after {
 .breadcrumbs.dsgctr {
 	border-color: #d48e12;
 }
+.breadcrumbs.modctr {
+	border-color: #999999;
+}
 dt.prereq {
   margin-left: 20px;
 }
@@ -1082,6 +1085,12 @@ a#contentmgr-card > .card-title {
 }
 #contentmgr-card {
   border-bottom-color: #2abcd3;
+}
+a#communitymgr-card > .card-title {
+  background: #999999;
+}
+#communitymgr-card {
+  border-bottom-color: #999999;
 }
 .card-title {
   color: white;
@@ -1967,6 +1976,9 @@ and (orientation : portrait) {
   }
   .subctr.dsgctr {
     border-color: #d48e12;
+  }
+  .subctr.modctr {
+    border-color: #999999;
   }
   nav[role="toc"] ul ul {
     display: none;
