@@ -38,21 +38,21 @@
             <step>
                 <cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Activate Your License</uicontrol></menucascade>.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuHostAdvActivateLic.png"><alt>Host &gt; Advanced Settings &gt; Activate Your License</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuHostAdvActivateLic.png"><alt>Host &gt; Advanced Settings &gt; Activate Your License</alt></image>
                 </info>
             </step>
 
             <step>
                 <cmd>Click <uicontrol>Add License</uicontrol>.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingActivate.png"><alt>Click Add License.</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingActivate.png"><alt>Click Add License.</alt></image>
                 </info>
             </step>
 
             <step>
                 <cmd>Fill in the required information.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingAddMan.png"><alt>Choose License Type, enter Account Email and Invoice Number, then click Manual Activation.</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingAddMan.png"><alt>Choose License Type, enter Account Email and Invoice Number, then click Manual Activation.</alt></image>
                 </info>
 
                 <substeps>
@@ -79,7 +79,7 @@
             <step>
                 <cmd>Get an activation key.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingManual.png"><alt>Copy the encoded server ID, paste it in the website to get an activation key, paste the activation key, then click Submit Activation Key.</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingManual.png"><alt>Copy the encoded server ID, paste it in the website to get an activation key, paste the activation key, then click Submit Activation Key.</alt></image>
                     <note type="tip">If your server does not have access to the Internet, you can access the DNN Professional License Request page on dnnsoftware.com from another machine and transfer the keys through a local network or a secure flash drive.</note>
                 </info>
 
@@ -105,7 +105,7 @@
         </steps>
 
         <result>
-            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingActivate.png"><alt>License has been activated successfully.</alt></image>
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingActivate.png"><alt>License has been activated successfully.</alt></image>
         </result>
 
     </taskbody>

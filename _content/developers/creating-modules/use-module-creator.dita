@@ -41,18 +41,18 @@
 
             <step>
                 <cmd>Search for the Module Creator among the installed modules.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesList04ModuleCreator.png"><alt>Search for Module Creator.</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesList04ModuleCreator.png"><alt>Search for Module Creator.</alt></image></info>
             </step>
 
             <step>
                 <cmd>Drag the Module Creator module to any pane in the webpage.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesModuleCreatorDrag.png"><alt>Drag to a pane.</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesModuleCreatorDrag.png"><alt>Drag to a pane.</alt></image></info>
             </step>
 
             <step>
                 <cmd>Fill in the Module Creation form.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleCreatorForm.png"><alt>Module Creation form</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleCreatorForm.png"><alt>Module Creation form</alt></image>
                     <simpletable relcolwidth="1* 3*">
                         <strow>
                             <stentry><uicontrol>Owner Name</uicontrol></stentry>
@@ -88,7 +88,7 @@
                 </info>
                 <stepresult>
                     <p>The new module replaces the Module Creator form in the pane.</p>
-                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleCreatorModuleCreated.png"><alt>Module created.</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleCreatorModuleCreated.png"><alt>Module created.</alt></image>
                 </stepresult>
             </step>
 
@@ -98,19 +98,19 @@
                     <substep>
                         <cmd>From the gear icon, choose <uicontrol>Develop</uicontrol>.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleGearMenuDevelop.png"><alt>Settings (gear icon) &gt; Develop</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleGearMenuDevelop.png"><alt>Settings (gear icon) &gt; Develop</alt></image>
                         </info>
                     </substep>
                     <substep>
                         <cmd>In the <filepath>View.ascx</filepath> file, delete all the lines of code, except the first one.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleViewAscx.png"><alt>In View.ascx, delete all except first line.</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleViewAscx.png"><alt>In View.ascx, delete all except first line.</alt></image>
                         </info>
                     </substep>
                     <substep>
                         <cmd>Add markup to customize the module. Then click <uicontrol>Update</uicontrol> to save your changes.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleCustomize.png"><alt>Customize the module.</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleCustomize.png"><alt>Customize the module.</alt></image>
                         </info>
                         <stepxmp>Example:
                             <codeblock> <!-- aspx-cs -->
@@ -121,13 +121,13 @@
                     <substep>
                         <cmd>From the <uicontrol>Select File</uicontrol> dropdown, choose the <filepath>View.ascx.cs</filepath> file.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleViewAscxCs.png"><alt>Select View.ascx.cs.</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleViewAscxCs.png"><alt>Select View.ascx.cs.</alt></image>
                         </info>
                     </substep>
                     <substep>
                         <cmd>Remove all the code in the <uicontrol>Event Handlers</uicontrol> region and click <uicontrol>Update</uicontrol> to save your changes.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleDeleteEventHandlers.png"><alt>Remove Event Handlers.</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ModuleDeleteEventHandlers.png"><alt>Remove Event Handlers.</alt></image>
                         </info>
                     </substep>
                 </substeps>

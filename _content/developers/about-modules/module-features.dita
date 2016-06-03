@@ -35,7 +35,7 @@
 
             <p>The module action menu provides standard functionality, such as module deletion, printing, content import/export, and content placement. Menu items are dynamically created based on module features and site settings.</p>
 
-            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-edit-icons.png"><alt>Module action menu</alt></image>
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-edit-icons.png"><alt>Module action menu</alt></image>
 
             <p>You can customize the <term>module action menu</term> by implementing the following features in your module:
                 <ul>
@@ -61,7 +61,7 @@
 
             <p>You can also create custom settings and the associated UI to manage those custom settings.</p>
 
-            <image scalefit="yes" placement="break" align="left" href="../../common/img/module-settings.png"><alt>Custom module settings</alt></image>
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-settings.png"><alt>Custom module settings</alt></image>
         </section>
 
 
@@ -74,7 +74,7 @@
                 <ul>
                     <li>manually,</li>
                     <li>by using the module packaging wizard, which is available through the <wintitle>Module Creator</wintitle> or the <wintitle>Extensions</wintitle> page, or
-                        <image scalefit="yes" placement="break" align="left" href="../../common/img/module-package.png"><alt>Click Create Package to start the wizard.</alt></image>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-package.png"><alt>Click Create Package to start the wizard.</alt></image>
                     </li>
                     <li>by using the build scripts that come with standard module templates.</li>
                 </ul>
@@ -87,7 +87,7 @@
 
             <p>DNN provides a role-based access control system that provides granular control at the site level, page level, and module level. You can extend this system to increase granularity of permission settings at the module level.</p>
 
-            <image scalefit="yes" placement="break" align="left" href="../../common/img/module-permissions.png"><alt>Include custom module permissions</alt></image>
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-permissions.png"><alt>Include custom module permissions</alt></image>
 
             <p>Modules can also call DNN security APIs to check a user's current permissions before enabling secured features.</p>
         </section>

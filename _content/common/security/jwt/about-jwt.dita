@@ -46,7 +46,7 @@
 
             <note type="note">The JWT Authentication Provider is available in DNN products; however, it must be installed and enabled separately. DNN uses JWT for authentication only.</note>
 
-            <image scalefit="yes" placement="break" align="left" href="../../../common/img/JWTprocess.png"><alt>JWT process</alt></image>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../../../common/img/gra-JWTprocess.png"><alt>JWT process</alt></image>
 
             <ol>
                 <li>The user logs in with their username and password or other security credentials. The browser or the client app sends a POST request with the user credentials, which are sent over an HTTPS connection.</li>

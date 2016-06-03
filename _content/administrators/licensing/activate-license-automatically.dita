@@ -38,21 +38,21 @@
             <step>
                 <cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Activate Your License</uicontrol></menucascade>.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuHostAdvActivateLic.png"><alt>Host &gt; Advanced Settings &gt; Activate Your License</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuHostAdvActivateLic.png"><alt>Host &gt; Advanced Settings &gt; Activate Your License</alt></image>
                 </info>
             </step>
 
             <step>
                 <cmd>Click <uicontrol>Add License</uicontrol>.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingActivate.png"><alt>Click Add License.</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingActivate.png"><alt>Click Add License.</alt></image>
                 </info>
             </step>
 
             <step>
                 <cmd>Fill in the required information.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingAddAuto.png"><alt>Choose License Type, enter Account Email and Invoice Number, then click Automatic Activation.</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingAddAuto.png"><alt>Choose License Type, enter Account Email and Invoice Number, then click Automatic Activation.</alt></image>
                 </info>
 
                 <substeps>
@@ -79,7 +79,7 @@
         </steps>
 
         <result>
-            <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingActivate.png"><alt>License has been activated successfully.</alt></image>
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingActivate.png"><alt>License has been activated successfully.</alt></image>
         </result>
 
     </taskbody>

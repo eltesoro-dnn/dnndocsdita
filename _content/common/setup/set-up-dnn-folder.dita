@@ -97,27 +97,27 @@
                 <substeps>
                     <substep><cmd>In Windows Explorer, right-click on the DNN installation folder, and choose <uicontrol>Properties</uicontrol>.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-FolderPerms-1.png"><alt>Right-click on the DNN folder and choose Properties</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-FolderPerms-1.png"><alt>Right-click on the DNN folder and choose Properties</alt></image>
                         </info>
                     </substep>
                     <substep><cmd>Go to the <uicontrol>Security</uicontrol> tab and click/tap <uicontrol>Edit...</uicontrol>.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-FolderPerms-2.png"><alt>In the Security tab, click/tap Edit...</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-FolderPerms-2.png"><alt>In the Security tab, click/tap Edit...</alt></image>
                         </info>
                     </substep>
                     <substep><cmd>Click/Tap <uicontrol>Add...</uicontrol>.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-FolderPerms-3.png"><alt>Click/Tap Add...</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-FolderPerms-3.png"><alt>Click/Tap Add...</alt></image>
                         </info>
                     </substep>
                     <substep><cmd>In <uicontrol>Select Users or Groups</uicontrol>, enter the user name, then click/tap <uicontrol>Check Names</uicontrol>. After the name is resolved, click/tap OK.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-FolderPerms-5a.png"><alt>In Select Users or Groups, enter the user name, then click/tap Check Names.</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-FolderPerms-5a.png"><alt>In Select Users or Groups, enter the user name, then click/tap Check Names.</alt></image>
                         </info>
                     </substep>
                     <substep><cmd>Highlight the newly added user name and check <uicontrol>Full Control</uicontrol> and <uicontrol>Modify</uicontrol> under <uicontrol>Allow</uicontrol>.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-FolderPerms-6.png"><alt>Highlight the newly added user name and check Full Control and Modify under Allow.</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-FolderPerms-6.png"><alt>Highlight the newly added user name and check Full Control and Modify under Allow.</alt></image>
                         </info>
                     </substep>
                 </substeps>

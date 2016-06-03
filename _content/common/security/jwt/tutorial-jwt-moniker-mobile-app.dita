@@ -65,12 +65,12 @@
                     </substep>
                     <substep>
                         <cmd>Create a new page and add the SPA sample module to one of the panes.</cmd>
-                        <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuPagesAddNew.png"><alt>Pages &gt; Add New Page</alt></image></info>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuPagesAddNew.png"><alt>Pages &gt; Add New Page</alt></image></info>
                     </substep>
                     <substep><cmd>Create a couple of records in the contact list.</cmd></substep>
                     <substep>
                         <cmd>In the module's action menu bar, go to <menucascade><uicontrol>Manage (gear icon)</uicontrol> <uicontrol>Settings</uicontrol></menucascade>.</cmd>
-                        <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-manage-settings.png"><alt>Manage action menu &gt; Settings</alt></image></info>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-manage-settings.png"><alt>Manage action menu &gt; Settings</alt></image></info>
                     </substep>
                     <substep><cmd>...</cmd></substep>  <!-- Where is Advanced? -->
                     <substep><cmd>Set the moniker to <codeph>spamodulesample</codeph>.</cmd></substep>  <!-- How? -->

@@ -48,21 +48,21 @@
             <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotohostacctlist"><cmd/></step> -->
             <step id="step-gotohostacctlist">
                 <cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>SuperUser Accounts</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuHostAdvancedSuperUserAccounts.png"><alt>Host &gt; Advanced Settings &gt; SuperUser Accounts</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuHostAdvancedSuperUserAccounts.png"><alt>Host &gt; Advanced Settings &gt; SuperUser Accounts</alt></image></info>
             </step>
 
 
             <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-clicktapaddnewuser"><cmd/></step> -->
             <step id="step-clicktapaddnewuser">
                 <cmd>Click/Tap <uicontrol>Add New User</uicontrol>.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListAddNewUser.png"><alt>Add New User button</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListAddNewUser.png"><alt>Add New User button</alt></image></info>
             </step>
 
 
             <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotoaddusers"><cmd/></step> -->
             <step id="step-gotoaddusers">
                 <cmd>Go to <menucascade><uicontrol>Users</uicontrol> <uicontrol>Add New User</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuUsersAddNewUser.png"><alt>Users &gt; Add New User</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuUsersAddNewUser.png"><alt>Users &gt; Add New User</alt></image></info>
             </step>
 
 
@@ -70,7 +70,7 @@
             <step id="step-enteruserinfo">
                 <cmd>Enter the user's information.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-AddNewUser.png"><alt>Add New User</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-AddNewUser.png"><alt>Add New User</alt></image>
                     <simpletable relcolwidth="1* 3*">
                         <sthead>
                             <stentry>Field</stentry>
@@ -102,7 +102,7 @@
             <step id="step-gotouseracctlist">
                 <cmd>Go to <menucascade><uicontrol>Users</uicontrol> <uicontrol>Manage Users</uicontrol></menucascade>.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuUsersManageUsers.png"><alt>Users &gt; Manage Users</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuUsersManageUsers.png"><alt>Users &gt; Manage Users</alt></image>
                 </info>
             </step>
 
@@ -115,7 +115,7 @@
 
                     <p>You can also limit the displayed accounts using the predefined filter links. The alphabet links return accounts with usernames that start with that letter.</p>
 
-                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListSearchFilter.png"><alt>User List &gt; Search field and dropdown</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListSearchFilter.png"><alt>User List &gt; Search field and dropdown</alt></image>
                 </info>
             </step>
 
@@ -124,7 +124,7 @@
             <step id="step-edituser">
                 <cmd>Click/Tap the pencil icon for the user account to edit.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListEdit.png"><alt>User List &gt; pencil icons</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListEdit.png"><alt>User List &gt; pencil icons</alt></image>
                 </info>
             </step>
 
@@ -133,7 +133,7 @@
             <step id="step-deleteuser">
                 <cmd>Click/Tap the trash icon for the user account to delete.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListDelete.png"><alt>User List &gt; trash icons</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListDelete.png"><alt>User List &gt; trash icons</alt></image>
                     <note type="note">Deletion simply makes the account unavailable and revokes user-specific permissions. You must also remove the user from assigned roles to revoke role-based permissions also.</note>
                 </info>
             </step>
@@ -147,7 +147,7 @@
                     <choice>To delete the user account, click/tap the trash icon for that user.</choice>
                 </choices>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListEditDelete.png"><alt>User List &gt; pencil and trash icons</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListEditDelete.png"><alt>User List &gt; pencil and trash icons</alt></image>
                     <note type="note">Deletion simply makes the account unavailable and revokes user-specific permissions. You must also remove the user from assigned roles to revoke role-based permissions also.</note>
                 </info>
             </step>
@@ -161,7 +161,7 @@
                     <choice>To purge all deleted accounts, click/tap <uicontrol>Remove Deleted Users</uicontrol>.</choice>
                 </choices>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListWithDeletedPurge.png"><alt>User List &gt; Purge</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListWithDeletedPurge.png"><alt>User List &gt; Purge</alt></image>
                     <note type="important">Purged accounts cannot be restored.</note>
                 </info>
             </step>
@@ -170,7 +170,7 @@
             <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-restoredeleteduser"><cmd/></step> -->
             <step id="step-restoredeleteduser">
                 <cmd>Click/Tap the back-arrow icon for the deleted user account to restore the account.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListWithDeletedRestore.png"><alt>User List &gt; Restore</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListWithDeletedRestore.png"><alt>User List &gt; Restore</alt></image></info>
             </step>
 
 
@@ -178,7 +178,7 @@
             <step id="step-authorizeuser">
                 <cmd>Click/Tap <uicontrol>Authorize User</uicontrol>.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditUserAuthorize.png"><alt>Edit User &gt; Authorize User</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditUserAuthorize.png"><alt>Edit User &gt; Authorize User</alt></image>
                 </info>
             </step>
 
@@ -192,7 +192,7 @@
                     <substep><cmd>Click/Tap <uicontrol>Delete Unauthorized Users</uicontrol>.</cmd></substep>
                 </substeps>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListUnauthorized.png"><alt>User List &gt; Delete Unauthorized Users</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListUnauthorized.png"><alt>User List &gt; Delete Unauthorized Users</alt></image>
                 </info>
             </step>
 
@@ -208,7 +208,7 @@
                             <li>fill in the <uicontrol>New Password</uicontrol> and <uicontrol>Confirm Password</uicontrol> fields, and</li>
                             <li>click/tap <uicontrol>Change Password</uicontrol>.</li>
                         </ol>
-                        <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditUserManagePasswordChangePwd.png"><alt>Edit User &gt; Manage Password &gt; Change Password</alt></image>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditUserManagePasswordChangePwd.png"><alt>Edit User &gt; Manage Password &gt; Change Password</alt></image>
                     </choice>
 
                     <choice>
@@ -217,7 +217,7 @@
                             <li>go to the <uicontrol>Manage Password</uicontrol> tab, and</li>
                             <li>click/tap <uicontrol>Send Password Reset Link</uicontrol>.</li>
                         </ol>
-                        <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditUserManagePasswordResetLink.png"><alt>Edit User &gt; Manage Password &gt; Send Password Reset Link</alt></image>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditUserManagePasswordResetLink.png"><alt>Edit User &gt; Manage Password &gt; Send Password Reset Link</alt></image>
                     </choice>
 
                     <choice>
@@ -226,7 +226,7 @@
                             <li>go to the <uicontrol>Manage Account</uicontrol> tab, and</li>
                             <li>click/tap <uicontrol>Force Password Change</uicontrol>.</li>
                         </ol>
-                        <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditUserForcePwdChg.png"><alt>Edit User Manage Account &gt; Force Password Change</alt></image>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditUserForcePwdChg.png"><alt>Edit User Manage Account &gt; Force Password Change</alt></image>
                     </choice>
                 </choices>
             </step>

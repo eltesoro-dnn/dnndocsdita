@@ -41,7 +41,7 @@
 				</strow>
 				<strow>
 					<stentry>Engagement is internally computed and cannot be configured.</stentry>
-					<stentry>Influence is based on points (<varname>weight</varname> * <varname>value</varname>) earned by a registered user based on activities that affect their reputation in the community.</stentry>
+					<stentry>Influence is based on points (<varname>weight</varname> multiplied by <varname>value</varname>) earned by a registered user based on activities that affect their reputation in the community.</stentry>
 				</strow>
 			</simpletable>
 

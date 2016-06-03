@@ -45,8 +45,8 @@
 
             <!-- <sectiondiv conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-GoogleAnalytics.png"><alt>Google Analytics module</alt></image>
-                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-GoogleAnalyticsPro.png"><alt>Google Analytics Professional module</alt></image>
+                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-GoogleAnalytics.png"><alt>Google Analytics module</alt></image>
+                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-GoogleAnalyticsPro.png"><alt>Google Analytics Professional module</alt></image>
             </sectiondiv>
 
             <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
@@ -76,7 +76,7 @@
                         <stentry>
                             <!-- <ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
-                                <image outputclass="img-icon" href="../../common/img/ico-module-googleanalytics.png"><alt>icon</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-module-googleanalytics.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Google Analytics</stentry>
@@ -87,9 +87,9 @@
                         <stentry>
                             <!-- <ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
-                                <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>
                         </stentry>
                     </strow>

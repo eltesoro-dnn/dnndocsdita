@@ -41,7 +41,7 @@
 				</strow>
 
 				<!-- <strow conref="bptext-community-steps.dita#tsk-bptext-community-steps/strow-field-MinMax"><stentry/></strow> -->
-				<strow id="strow-field-">
+				<strow id="strow-field-MinMax">
 					<stentry>
 						<lines><uicontrol>Min Value</uicontrol>
 							   <uicontrol>Max Value</uicontrol></lines>
@@ -152,7 +152,7 @@
 			<step id="step-editbadge">
 				<cmd>Provide information about the badge.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-Gaming-BadgesConfig1.png"><alt>Edit Badge</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Gaming-BadgesConfig1.png"><alt>Edit Badge</alt></image>
 					<ul>
 						<li><uicontrol>Badge Tier</uicontrol>. The category of the badge to indicate its desirability or the difficulty to obtain it. <!-- If they want to change the tiers, where do they do it? --></li>
 						<li><uicontrol>Badge Banner</uicontrol>. The image that represents the banner. This image is displayed in a user's profile, if the user has earned the badge. <!-- Is the second sentence correct? --></li>
@@ -164,7 +164,7 @@
 			<step id="step-scoreactions">
 				<cmd>Choose one or more actions required to earn the badge.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-Gaming-BadgesConfig2.png"><alt>Score Actions</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Gaming-BadgesConfig2.png"><alt>Score Actions</alt></image>
 				</info>
 				<substeps>
 					<substep><cmd>Check one or more items under <uicontrol>Available Actions</uicontrol>, then click/tap the right-arrow icon to move them to the <uicontrol>Selected Actions </uicontrol> section.</cmd></substep>
@@ -178,7 +178,7 @@
 			<!-- <step conref="bptext-community-steps.dita#tsk-bptext-community-steps/step-definegoals"><cmd/></step> -->
 			<step id="step-definegoals">
 				<cmd>Enter the <uicontrol>Number of Days</uicontrol> within which the user must perform all selected actions to earn the badge.</cmd>  <!-- Is this correct? -->
-				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-Gaming-BadgesConfig3.png"><alt>Define Goals</alt></image></info>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Gaming-BadgesConfig3.png"><alt>Define Goals</alt></image></info>
 			</step>
 
 

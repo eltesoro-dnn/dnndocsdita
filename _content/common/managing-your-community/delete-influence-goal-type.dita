@@ -32,7 +32,7 @@
 			<step conkeyref="k-bpsteps/step-pb-gotosettingscommunity-mod"><cmd/></step>
 			<step>
 				<cmd>Highlight the goal type to delete. Then Click/Tap the X icon under the <uicontrol>Actions</uicontrol> column.</cmd>
-				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-CommunityInfluence-GoalsActions-Delete.png"><alt>Community Influence - Highlight and delete the goal type.</alt></image></info>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-CommunityInfluence-GoalsActions-Delete.png"><alt>Community Influence &#8212; Highlight and delete the goal type.</alt></image></info>
 			</step>
         </steps>
 

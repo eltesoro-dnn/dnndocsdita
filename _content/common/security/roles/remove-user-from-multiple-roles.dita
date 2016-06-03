@@ -40,7 +40,7 @@
             <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-managerolesforuser"><cmd/></step>
             <step>
                 <cmd>For each role to remove from the user,</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageRolesForUserDelete.png"><alt>Click/Tap trash icon for each role to remove.</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageRolesForUserDelete.png"><alt>Click/Tap trash icon for each role to remove.</alt></image></info>
                 <substeps>
                     <substep>
                         <cmd>Search the list for the role to remove.</cmd>

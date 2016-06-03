@@ -36,7 +36,7 @@
 
             <p>In a SPA module, each HTML file loads the necessary JavaScript and CSS to properly render the UI. SPA modules also make AJAX calls to the business layer through the service layer. This architecture is similar to <xref format="dita" href="web-forms-module-development.dita">the mobile application architecture for Web Forms modules</xref>.</p>
 
-            <image scalefit="yes" placement="break" align="left" href="../../common/img/module-architecture-spa.png"><alt>Logical architecture of a SPA module</alt></image>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../../common/img/gra-module-architecture-spa.png"><alt>Logical architecture of a SPA module</alt></image>
 
             <p>When a DNN page is requested, the framework looks up the requested module control in the module definition. In an SPA module, the module control identifies a specific HTML file. DNN tokens in the HTML file are replaced with site-specific data before the HTML is injected into the page.</p>
         </section>

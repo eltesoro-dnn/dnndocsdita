@@ -45,7 +45,7 @@
 
             <!-- <sectiondiv conref="module-message-center.dita#ref-ModuleMessageCenter/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-MessageCenter.png"><alt>Message Center module</alt></image>
+                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-MessageCenter.png"><alt>Message Center module</alt></image>
             </sectiondiv>
 
 
@@ -73,7 +73,7 @@
                         <stentry>
                             <!-- <ph conref="module-message-center.dita#ref-ModuleMessageCenter/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
-                                <image outputclass="img-icon" href="../../common/img/ico-module-messagecenter.png"><alt>icon</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-module-messagecenter.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Message Center</stentry>
@@ -84,9 +84,9 @@
                         <stentry>
                             <!-- <ph conref="module-message-center.dita#ref-ModuleMessageCenter/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
-                                <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>
                         </stentry>
                     </strow>
@@ -107,7 +107,7 @@
 			<sectiondiv id="sectiondiv-bpconfig">
 				<p>The <uicontrol>Message Center</uicontrol> module does not have custom settings; however, the correct permissions settings must be set to ensure that the messages are visible only to the intended targets.</p>
 
-				<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MessageCenter.png"><alt>Message Center module settings &gt; Permissions</alt></image>
+				<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MessageCenter.png"><alt>Message Center module settings &gt; Permissions</alt></image>
 
 				<p>In the <uicontrol>Permissions</uicontrol> tab,
 					<ol>

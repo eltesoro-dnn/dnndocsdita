@@ -44,14 +44,14 @@
 			<step>
 				<cmd>Go to <menucascade><uicontrol>Pages</uicontrol> <uicontrol>Add New Page</uicontrol></menucascade>.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuPagesAddNew.png"><alt>Page Name &gt; Add Page</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuPagesAddNew.png"><alt>Page Name &gt; Add Page</alt></image>
 				</info>
             </step>
 
 			<step>
 				<cmd>In the <uicontrol>Advanced Settings</uicontrol> tab, expand the <uicontrol>Other Settings</uicontrol> section.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings-OtherSettings.png"><alt>Add Page &gt; Advanced Settings &gt; Other Settings</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings-OtherSettings.png"><alt>Add Page &gt; Advanced Settings &gt; Other Settings</alt></image>
 				</info>
 			</step>
 

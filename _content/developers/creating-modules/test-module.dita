@@ -27,12 +27,12 @@
                 <substeps>
                     <substep><cmd><menucascade><uicontrol>Modules</uicontrol> <uicontrol>Add New Module</uicontrol></menucascade></cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-menuModulesAddNew.png"><alt>Module &gt; Add New Module</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-menuModulesAddNew.png"><alt>Module &gt; Add New Module</alt></image>
                         </info>
                     </substep>
                     <substep><cmd>Find your module in the <uicontrol>Available Modules</uicontrol> bar and drag it to the page.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-cp-ModulesList-Drag.png"><alt>Drag your module to a pane in the page.</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-cp-ModulesList-Drag.png"><alt>Drag your module to a pane in the page.</alt></image>
                         </info>
                     </substep>
                 </substeps>

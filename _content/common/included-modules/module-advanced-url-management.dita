@@ -40,7 +40,7 @@
 
             <!-- <sectiondiv conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-AdvURLMgmt.png"><alt>Advanced URL Management module</alt></image>
+                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-AdvURLMgmt.png"><alt>Advanced URL Management module</alt></image>
             </sectiondiv>
 
 
@@ -68,7 +68,7 @@
                         <stentry>
                             <!-- <ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
-                                <image outputclass="img-icon" href="../../common/img/ico-module-advurlmgmt.png"><alt>icon</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-module-advurlmgmt.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Advanced URL Management</stentry>
@@ -79,8 +79,8 @@
                         <stentry>
                             <!-- <ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>
                         </stentry>
                     </strow>

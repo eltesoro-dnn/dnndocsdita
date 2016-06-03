@@ -145,7 +145,7 @@
 					<stentry>
 						<p>If enabled, the <uicontrol>Start Date</uicontrol> and <uicontrol>End Date</uicontrol> buttons appear below the switch. Click/Tap on either button to set the dates and times.</p>
 						<ul conkeyref="k-bptext/ul-publisheddatespages"><li/></ul>
-						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details-Calendar.png"><alt>Add Page &gt; Details &gt; Calendar</alt></image>
+						<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details-Calendar.png"><alt>Add Page &gt; Details &gt; Calendar</alt></image>
 					</stentry>
 				</strow>
 
@@ -380,7 +380,7 @@
 
 			<!--
 			<cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-page-permissions"></cmd>
-			<info><image scalefit="yes" placement="break" align="left" href="img/scr-XX-Page-Permissions.png"><alt>Page Settings &gt; Permissions</alt></image></info>
+			<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-XX-Page-Permissions.png"><alt>Page Settings &gt; Permissions</alt></image></info>
 			<substeps conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/substeps-xx-configure-page-permissions"><substep><cmd/></substep></substeps>
 			-->
 			<step>
@@ -395,7 +395,7 @@
 
 			<!--
 			<cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-module-permissions"></cmd>
-			<info><image scalefit="yes" placement="break" align="left" href="img/scr-XX-Module-Permissions.png"><alt>Module Settings &gt; Permissions</alt></image></info>
+			<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-XX-Module-Permissions.png"><alt>Module Settings &gt; Permissions</alt></image></info>
 			<substeps conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/substeps-xx-configure-module-permissions"><substep><cmd/></substep></substeps>
 			-->
 			<step>
@@ -416,11 +416,11 @@
 				<choices>
 					<choice>
 						<p>You can hover over the empty area of the action menu bar of the module until the cursor changes to a four-arrow cursor, then drag the module to a different pane.</p>
-						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenubar-hover.png"><alt>Hover over action menu bar of the module, then drag to a different pane.</alt></image>
+						<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenubar-hover.png"><alt>Hover over action menu bar of the module, then drag to a different pane.</alt></image>
 					</choice>
 					<choice>
 						<p>You can click/tap on the four-arrow icon to expand the <uicontrol>Move</uicontrol> action menu, which contains the list of panes on the page. Then choose the target pane.</p>
-						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-move.png"><alt>Click/Tap on the four-arrow icon, then choose the target pane from the list.</alt></image>
+						<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-move.png"><alt>Click/Tap on the four-arrow icon, then choose the target pane from the list.</alt></image>
 					</choice>
 				</choices>
 			</step>
@@ -428,14 +428,14 @@
 			<!-- <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step> -->
 			<step id="step-xx-actionmenu-manage-settings">
 				<cmd>In the module's action menu bar, go to <menucascade><uicontrol>Manage (gear icon)</uicontrol> <uicontrol>Settings</uicontrol></menucascade>.</cmd>
-				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-manage-settings.png"><alt>Manage action menu &gt; Settings</alt></image></info>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-manage-settings.png"><alt>Manage action menu &gt; Settings</alt></image></info>
             </step>
 
 			<!-- <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-modulesettings"><cmd/></step> -->
             <step id="step-modulemanagesettings-modulesettings">
             	<cmd>In the <uicontrol>Module Settings</uicontrol> tab, configure the settings of the module instance.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-XX-ModuleManageSettings-ModuleSettings.png"><alt>Module Settings tab</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-XX-ModuleManageSettings-ModuleSettings.png"><alt>Module Settings tab</alt></image>
 
 					<note type="note">Changes to these settings will affect the display of the module instance wherever it is referenced.</note>
 
@@ -470,7 +470,7 @@
             <step id="step-modulemanagesettings-pagesettings">
             	<cmd>In the <uicontrol>Page Settings</uicontrol> tab, configure the page-related settings of the module instance.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-xx-ModuleManageSettings-ModuleSettings.png"><alt>Module Settings tab</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-xx-ModuleManageSettings-ModuleSettings.png"><alt>Module Settings tab</alt></image>
 
 					<note type="note">Changes to <uicontrol>Page Settings</uicontrol> will affect only the page where the module instance is.</note>
 
@@ -537,7 +537,7 @@
 			<!-- <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-delete"><cmd/></step> -->
 			<step id="step-xx-actionmenu-manage-delete">
 				<cmd>In the module's action menu bar, go to <menucascade><uicontrol>Manage (gear icon)</uicontrol> <uicontrol>Delete</uicontrol></menucascade>.</cmd>
-				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-manage-delete.png"><alt>Manage action menu &gt; Delete</alt></image></info>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-manage-delete.png"><alt>Manage action menu &gt; Delete</alt></image></info>
             </step>
 
         </steps>

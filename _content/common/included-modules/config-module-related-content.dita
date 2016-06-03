@@ -39,16 +39,105 @@
 			<step><cmd>Go to the page containing the module to configure and edit the page.</cmd></step>
 			<step conref="../building-your-site/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step>
             <step>
-				<cmd>Go to the <uicontrol>...</uicontrol> tab.</cmd>
+				<cmd>Go to the <uicontrol>Related Content</uicontrol> tab.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-RelatedContent.png"><alt>Module Settings &#8212; Related Content</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-RelatedContent.png"><alt>Module Settings &#8212; Related Content</alt></image>
 
 					<simpletable relcolwidth="1* 3*">
 						<sthead>
-							<stentry>Field</stentry>
+							<stentry></stentry>
+							<stentry>Initial View</stentry>
+						</sthead>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemsToDisplay"><stentry/></strow>
+					</simpletable>
+
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry></stentry>
+							<stentry>Sorting</stentry>
+						</sthead>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SortingColumn"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SortOrderDirection"><stentry/></strow>
+					</simpletable>
+
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry></stentry>
+							<stentry>Filtering</stentry>
+						</sthead>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FilterRelatedItemsOnTaxonomyTag"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FilterRelatedItemsOnContentType"><stentry/></strow>
+					</simpletable>
+
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry></stentry>
+							<stentry>Display Templates</stentry>
+						</sthead>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HeaderTemplateRelatedContent"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateRelatedContent"><stentry/></strow>
+						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FooterTemplateRelatedContent"><stentry/></strow>
+					</simpletable>
+
+					<p>The following tokens are available for the Display Templates:</p>
+
+					<simpletable relcolwidth="1* 1* 3*">
+						<sthead>
+							<stentry>Token</stentry>
+							<stentry>Template</stentry>
 							<stentry>Description</stentry>
 						</sthead>
-						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-..."><stentry/></strow>
+						<strow>
+							<stentry><userinput>[Summary:TotalItems]</userinput></stentry>
+							<stentry>
+								<lines><uicontrol>Header Template</uicontrol>
+								       <uicontrol>Footer Template</uicontrol></lines>
+							</stentry>
+							<stentry>Count of related items returned by the query.</stentry>
+						</strow>
+						<strow>
+							<stentry><userinput>[Summary:ContentTitle]</userinput></stentry>
+							<stentry>
+								<lines><uicontrol>Header Template</uicontrol>
+								       <uicontrol>Footer Template</uicontrol></lines>
+							</stentry>
+							<stentry>Title of the primary content item for which we are searching related items.</stentry>
+						</strow>
+						<strow>
+							<stentry><userinput>[Item:ContentType]</userinput></stentry>
+							<stentry><uicontrol>Item Template</uicontrol></stentry>
+							<stentry>The related item's content type.</stentry>
+						</strow>
+						<strow>
+							<stentry><userinput>[Item:ContentBrief]</userinput></stentry>
+							<stentry><uicontrol>Item Template</uicontrol></stentry>
+							<stentry>A snippet of the related item.</stentry>
+						</strow>
+						<strow>
+							<stentry><userinput>[Item:Page]</userinput></stentry>
+							<stentry><uicontrol>Item Template</uicontrol></stentry>
+							<stentry>The page hosting the related item.</stentry>  <!-- The name of the page? Or the URL? -->
+						</strow>
+						<strow>
+							<stentry><userinput>[Item:Module]</userinput></stentry>
+							<stentry><uicontrol>Item Template</uicontrol></stentry>
+							<stentry>The module hosting the related item.</stentry>  <!-- Name of the module? Other reference to the module? -->
+						</strow>
+						<strow>
+							<stentry><userinput>[Item:Key]</userinput></stentry>
+							<stentry><uicontrol>Item Template</uicontrol></stentry>
+							<stentry>The ContentKey associated with the related item.</stentry>
+						</strow>
+						<strow>
+							<stentry><userinput>[Item:CreatedBy]</userinput></stentry>
+							<stentry><uicontrol>Item Template</uicontrol></stentry>
+							<stentry>The user who created the related item.</stentry>  <!-- Username? Display name? -->
+						</strow>
+						<strow>
+							<stentry><userinput>[Item:CreatedDate]</userinput></stentry>
+							<stentry><uicontrol>Item Template</uicontrol></stentry>
+							<stentry>When the related item was created.</stentry>  <!-- Based on file date? -->
+						</strow>
 					</simpletable>
 				</info>
             </step>

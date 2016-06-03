@@ -33,10 +33,10 @@
 			<step id="step-cp-gotopagemgmt">
 				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Page Management</uicontrol></menucascade>.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuAdminCommonPageManagement.png"><alt>Admin &gt; Page Management</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuAdminCommonPageManagement.png"><alt>Admin &gt; Page Management</alt></image>
 				</info>
 				<stepresult>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-PageManagement.png"><alt>Page Management &gt; hierarchy of pages</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-PageManagement.png"><alt>Page Management &gt; hierarchy of pages</alt></image>
 				</stepresult>
             </step>
 
@@ -44,7 +44,7 @@
 			<step id="step-cp-configure-page-details">
 				<cmd>In the <uicontrol>Page Details</uicontrol> tab, configure the page.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-PageDetails.png"><alt>Page Details</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-PageDetails.png"><alt>Page Details</alt></image>
 					<simpletable relcolwidth="1* 3*">
 						<sthead>
 							<stentry>Field</stentry>
@@ -78,12 +78,12 @@
 				<substeps id="substeps-cp-configure-page-copy">
 					<substep>
 						<cmd>In the <uicontrol>Copy From Page</uicontrol> dropdown, choose the page to copy from.</cmd>
-						<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-CopyPage.png"><alt>Add Page &gt; CopyPage</alt></image></info>
+						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-CopyPage.png"><alt>Add Page &gt; CopyPage</alt></image></info>
 					</substep>
 					<substep>
 						<cmd>If the source page contains modules, select which modules to create, copy, or reference in the new page.</cmd>
 						<info>
-							<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-CopyPage-SpecifyModules.png"><alt>Add Page &gt; CopyPage &gt; Specify Modules</alt></image>
+							<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-CopyPage-SpecifyModules.png"><alt>Add Page &gt; CopyPage &gt; Specify Modules</alt></image>
 							<ul>
 								<li><uicontrol>New</uicontrol> creates a new module instance with default settings and no content.</li>
 								<li><uicontrol>Copy</uicontrol> creates a new module instance with the same settings as the module in the source page and also creates independent copies of the content. This option is disabled for modules that don't have content, such as the <uicontrol>Account Login</uicontrol> module.</li>
@@ -98,7 +98,7 @@
 			<step id="step-configure-page-advanced">
 				<cmd>(Optional) In the <uicontrol>Advanced Settings</uicontrol> tab, configure the page.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings.png"><alt>Page Settings &gt; Advanced Settings</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings.png"><alt>Page Settings &gt; Advanced Settings</alt></image>
 
 					<simpletable relcolwidth="1* 3*">
 						<sthead>
@@ -214,7 +214,7 @@
 			<step id="step-cp-editpage">
 				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Edit This Page</uicontrol></menucascade>.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageEditThis.png"><alt>Edit Page &gt; Edit This Page</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageEditThis.png"><alt>Edit Page &gt; Edit This Page</alt></image>
 				</info>
 			</step>
 
@@ -225,7 +225,7 @@
 			<step id="step-cp-editpagesettings">
 				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Page Settings</uicontrol></menucascade>.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPagePageSettings.png"><alt>Edit Page &gt; Page Settings</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPagePageSettings.png"><alt>Edit Page &gt; Page Settings</alt></image>
 				</info>
 			</step>
 
@@ -236,7 +236,7 @@
 			<step id="step-cp-deletepage">
 				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Delete Page</uicontrol></menucascade>.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageDeletePage.png"><alt>Edit Page &gt; Delete Page</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageDeletePage.png"><alt>Edit Page &gt; Delete Page</alt></image>
 				</info>
 			</step>
 
@@ -246,19 +246,19 @@
 			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step> -->
 			<step id="step-cp-openmodulelist">
                 <cmd>Go to <menucascade><uicontrol>Module</uicontrol> <uicontrol>Add New Module</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddNew.png"><alt>Module &gt; Add New Module</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddNew.png"><alt>Module &gt; Add New Module</alt></image></info>
 			</step>
 
 			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-addmoduletopane"><cmd/></step> -->
 			<step id="step-cp-addmoduletopane">
 				<cmd>Drag the module to a pane in the current page.</cmd>
-				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-ModulesList-Drag.png"><alt>Drag module to pane.</alt></image></info>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-ModulesList-Drag.png"><alt>Drag module to pane.</alt></image></info>
 			</step>
 
 			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-addexistingmodule"><cmd/></step> -->
 			<step id="step-cp-addexistingmodule">
                 <cmd>Go to <menucascade><uicontrol>Module</uicontrol> <uicontrol>Add Existing Module</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddExisting.png"><alt>Module &gt; Add Existing Module</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddExisting.png"><alt>Module &gt; Add Existing Module</alt></image></info>
 			</step>
 
 			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-chooseexistingmodule"><cmd/></step> -->
@@ -267,14 +267,14 @@
 				<substeps>
 					<substep>
 						<cmd>Search for or choose the page containing the configured module instance to refer to.</cmd>
-						<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ExistingModule-ChoosePage.png"><alt>From the first dropdown, choose the page containing the module to refer to.</alt></image></info>
+						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ExistingModule-ChoosePage.png"><alt>From the first dropdown, choose the page containing the module to refer to.</alt></image></info>
 						<stepresult>The modules list panel below the dropdown is populated with the list of modules that exist in the selected page.</stepresult>
 					</substep>
 
 					<substep>
 						<cmd>Choose who can view the module.</cmd>
 						<info>
-							<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ExistingModule-Viewers.png"><alt>From the second dropdown, choose who can view the module.</alt></image>
+							<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ExistingModule-Viewers.png"><alt>From the second dropdown, choose who can view the module.</alt></image>
 							<simpletable relcolwidth="1* 3*">
 								<sthead>
 									<stentry>Field</stentry>
@@ -305,7 +305,7 @@
 					<substep>
 						<cmd>Drag the module to a pane in the current page.</cmd>
 						<info>
-							<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-ConfiguredModulesList-Drag.png"><alt>Drag module to pane.</alt></image>
+							<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-ConfiguredModulesList-Drag.png"><alt>Drag module to pane.</alt></image>
 							<note type="note">You cannot create multiple references of the same module on the same page. However, you can create multiple copies of the same module on the same page.</note>
 						</info>
 					</substep>

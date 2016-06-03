@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
 <task xml:lang="en" id="tsk-bptext-custom-modules">
 
-    <title>Boilerplates - Custom Modules Settings and Steps</title>
+    <title>Boilerplates: Custom Modules Settings and Steps</title>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -85,7 +85,7 @@
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DefaultPageSize"><stentry/></strow> -->
 				<strow id="strow-field-DefaultPageSize">
 					<stentry><uicontrol>Default Page Size</uicontrol></stentry>
-					<stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesizecumulative"></ph></stentry>
+					<stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesizecumulativeGetMore"></ph></stentry>
 				</strow>
 
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MaximumCharactersPerMessage"><stentry/></strow> -->
@@ -150,13 +150,13 @@
 							<li><uicontrol>No Filter</uicontrol>. Displays all members.</li>
 							<li><uicontrol>User</uicontrol>. Displays the profile of the current user.</li>
 							<li><uicontrol>Group</uicontrol>. Displays only the members of the selected group.
-								<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory-FilterGroup.png"><alt>Module Settings &#8212; Member Directory &#8212; Filter by Group</alt></image>
+								<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory-FilterGroup.png"><alt>Module Settings &#8212; Member Directory &#8212; Filter by Group</alt></image>
 							</li>
 							<li><uicontrol>Relationship</uicontrol>. Displays only the members with the selected relationship to the current user. (Friends or Followers)
-								<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory-FilterRelationship.png"><alt>Module Settings &#8212; Member Directory &#8212; Filter by Relationship</alt></image>
+								<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory-FilterRelationship.png"><alt>Module Settings &#8212; Member Directory &#8212; Filter by Relationship</alt></image>
 							</li>
 							<li><uicontrol>Profile Property</uicontrol>. Displays only the members who have the specified value for the selected property.
-								<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory-FilterProfileProperty.png"><alt>Module Settings &#8212; Member Directory &#8212; Filter by Property</alt></image>
+								<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory-FilterProfileProperty.png"><alt>Module Settings &#8212; Member Directory &#8212; Filter by Property</alt></image>
 							</li>
 						</ul>
 					</stentry>
@@ -284,7 +284,7 @@
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GroupListPageSize"><stentry/></strow> -->
 				<strow id="strow-field-GroupListPageSize">
 					<stentry><uicontrol>Group List Page Size</uicontrol></stentry>
-					<stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesizecumulative"></ph></stentry>
+					<stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesizecumulativeGetMore"></ph></stentry>
 				</strow>
 
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableGroupSearch"><stentry/></strow> -->
@@ -541,28 +541,28 @@
 					<stentry>Template to use for the leaderboard. Some predefined templates are provided by DNN. If you choose <uicontrol>Custom</uicontrol>, the next four fields are displayed to allow you to enter custom HTML to be used with the current module instance only.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HeaderTemplate"><stentry/></strow> -->
-				<strow id="strow-field-HeaderTemplate">
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HeaderTemplateLeaderboard"><stentry/></strow> -->
+				<strow id="strow-field-HeaderTemplateLeaderboard">
 					<stentry><uicontrol>Header Template</uicontrol></stentry>
-					<stentry>The custom HTML template used as the prefix to the list. Typically the starting tags for the table. Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
+					<stentry><ph conref="#tsk-bptext-custom-modules/ph-HeaderTemplate"></ph> Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateAll"><stentry/></strow> -->
-				<strow id="strow-field-ItemTemplateAll">
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateLeaderboard"><stentry/></strow> -->
+				<strow id="strow-field-ItemTemplateLeaderboard">
 					<stentry><uicontrol>Item Template</uicontrol></stentry>
-					<stentry>The custom HTML template used to display each item in the list. Typically an entire row of the table. Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
+					<stentry><ph conref="#tsk-bptext-custom-modules/ph-ItemTemplate"></ph> Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HighlightedItemTemplate"><stentry/></strow> -->
-				<strow id="strow-field-HighlightedItemTemplate">
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HighlightedItemTemplateLeaderboard"><stentry/></strow> -->
+				<strow id="strow-field-HighlightedItemTemplateLeaderboard">
 					<stentry><uicontrol>Highlighted Item Template</uicontrol></stentry>
-					<stentry>The custom HTML template used to display the selected item in the list. Typically an entire row of the table. Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
+					<stentry><ph conref="#tsk-bptext-custom-modules/ph-HighlightedItemTemplate"></ph> Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
 				</strow>
 
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FooterTemplate"><stentry/></strow> -->
-				<strow id="strow-field-FooterTemplate">
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FooterTemplateLeaderboard"><stentry/></strow> -->
+				<strow id="strow-field-FooterTemplateLeaderboard">
 					<stentry><uicontrol>Footer Template</uicontrol></stentry>
-					<stentry>The custom HTML template used as the suffix to the list. Typically the terminating tags for the table. Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
+					<stentry><ph conref="#tsk-bptext-custom-modules/ph-FooterTemplate"></ph> Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
 				</strow>
 
 
@@ -587,10 +587,145 @@
 				</strow>
 
 
+				<!-- ========== MODULE: RELATED CONTENT ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemsToDisplay "><stentry/></strow> -->
+				<strow id="strow-field-ItemsToDisplay">
+					<stentry><uicontrol>Items to Display</uicontrol></stentry>
+					<stentry><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-singlepagesize"></ph></stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SortingColumn"><stentry/></strow> -->
+				<strow id="strow-field-SortingColumn">
+					<stentry><uicontrol>Sorting Column</uicontrol></stentry>
+					<stentry>Sorts the list based on the selected column.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FilterRelatedItemsOnTaxonomyTag"><stentry/></strow> -->
+				<strow id="strow-field-FilterRelatedItemsOnTaxonomyTag">
+					<stentry><uicontrol>Filter Related Items on Taxonomy Tag</uicontrol></stentry>
+					<stentry>Returns only the related items that have the specified tag. The tag must be defined in a <term>Taxonomy</term> directory.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FilterRelatedItemsOnContentType"><stentry/></strow> -->
+				<strow id="strow-field-FilterRelatedItemsOnContentType">
+					<stentry><uicontrol>Filter Related Items on Content Type</uicontrol></stentry>
+					<stentry>Returns only the related items that are of the selected content type.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HeaderTemplateRelatedContent"><stentry/></strow> -->
+				<strow id="strow-field-HeaderTemplateRelatedContent">
+					<stentry><uicontrol>Header Template</uicontrol></stentry>
+					<stentry><ph conref="#tsk-bptext-custom-modules/ph-HeaderTemplate"></ph></stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateRelatedContent"><stentry/></strow> -->
+				<strow id="strow-field-ItemTemplateRelatedContent">
+					<stentry><uicontrol>Item Template</uicontrol></stentry>
+					<stentry><ph conref="#tsk-bptext-custom-modules/ph-ItemTemplate"></ph></stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FooterTemplateRelatedContent"><stentry/></strow> -->
+				<strow id="strow-field-FooterTemplateRelatedContent">
+					<stentry><uicontrol>Footer Template</uicontrol></stentry>
+					<stentry><ph conref="#tsk-bptext-custom-modules/ph-FooterTemplate"></ph></stentry>
+				</strow>
+
+
+				<!-- ========== MODULE: SOCIAL EVENTS  ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MapProvider"><stentry/></strow> -->
+				<strow id="strow-field-MapProvider">
+					<stentry><uicontrol>Map Provider</uicontrol></stentry>
+					<stentry>The map provider to use if the event includes a reference to a location. If <uicontrol>None</uicontrol> is selected, a map is not included in the event details.</stentry>
+				</strow>
+
+
+				<!-- ========== MODULE: SOCIAL SETTINGS ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowShareLabel"><stentry/></strow> -->
+				<strow id="strow-field-ShowShareLabel">
+					<stentry><uicontrol>Show Share Label</uicontrol></stentry>
+					<stentry>If checked, the word "Share" is displayed.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableGooglePlus"><stentry/></strow> -->
+				<strow id="strow-field-EnableGooglePlus">
+					<stentry><uicontrol>Enable Google+</uicontrol></stentry>
+					<stentry>If checked, users can share in Google Plus.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableTwitter"><stentry/></strow> -->
+				<strow id="strow-field-EnableTwitter">
+					<stentry><uicontrol>Enable Twitter</uicontrol></stentry>
+					<stentry>If checked, users can share in Twitter.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableLinkedIn"><stentry/></strow> -->
+				<strow id="strow-field-EnableLinkedIn">
+					<stentry><uicontrol>Enable LinkedIn</uicontrol></stentry>
+					<stentry>If checked, users can share in LinkedIn.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableFacebook"><stentry/></strow> -->
+				<strow id="strow-field-EnableFacebook">
+					<stentry><uicontrol>Enable Facebook</uicontrol></stentry>
+					<stentry>If checked, users can share in Facebook.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnablePinterest"><stentry/></strow> -->
+				<strow id="strow-field-EnablePinterest">
+					<stentry><uicontrol>Enable Pinterest</uicontrol></stentry>
+					<stentry>If checked, users can share in Pinterest.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FacebookLikeButton"><stentry/></strow> -->
+				<strow id="strow-field-FacebookLikeButton">
+					<stentry><uicontrol>Facebook Like Button</uicontrol></stentry>
+					<stentry>If checked, Facebook's <uicontrol>Like</uicontrol> button is also displayed.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FacebookLikeStyle"><stentry/></strow> -->
+				<strow id="strow-field-FacebookLikeStyle">
+					<stentry><uicontrol>Facebook Like Style</uicontrol></stentry>
+					<stentry>  <!-- Add screenshots of each style when SOCIAL-4523 is fixed. -->
+						<ul>
+							<li><uicontrol>Standard</uicontrol></li>
+							<li><uicontrol>Like button only</uicontrol></li>
+							<li><uicontrol>Like button, Share count</uicontrol></li>
+						</ul>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-LinkShorteningService"><stentry/></strow> -->
+				<strow id="strow-field-LinkShorteningService">
+					<stentry><uicontrol>Link Shortening Service</uicontrol></stentry>
+					<stentry>If the page link is included in the share message, the selected service is used to shorten the link.</stentry>
+				</strow>
+
+
 				<!-- ========== MODULE:  ========== -->
 
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NumberOfBadges"><stentry/></strow> -->
+				<strow id="strow-field-NumberOfBadges">
+					<stentry><uicontrol>Number of Badges</uicontrol></stentry>
+					<stentry><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesizecumulativeViewMore"></ph></stentry>
+				</strow>
 
 
+				<!-- ========== MODULE:  ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableCommentsOnArticles"><stentry/></strow> -->
+				<strow id="strow-field-EnableCommentsOnArticles">
+					<stentry><uicontrol>Enable Comments on Articles</uicontrol></stentry>
+					<stentry>If checked, users can comment on individual wiki articles.</stentry>
+				</strow>
+
+
+
+
+
+				<!-- ========== MODULE:  ========== -->
 
 
 
@@ -645,11 +780,11 @@
 				<ul>
 					<li>
 						From the main module's action menu, go to <menucascade><uicontrol>Edit (pencil icon)</uicontrol> <uicontrol>Add Companion Modules...</uicontrol></menucascade>.
-						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-edit-addcompanionmodules.png"><alt>Edit (pencil icon) action menu &gt; Add Companion Modules...</alt></image>
+						<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-edit-addcompanionmodules.png"><alt>Edit (pencil icon) action menu &gt; Add Companion Modules...</alt></image>
 					</li>
 					<li>
 						Check/Uncheck the <uicontrol>Visible on Page</uicontrol> box for the companion module that you want to be displayed/hidden.
-						<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-companions-VisibleOnPage.png"><alt></alt></image>
+						<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-companions-VisibleOnPage.png"><alt></alt></image>
 					</li>
 				</ul>
 			</p>
@@ -659,12 +794,42 @@
 			<!-- Also see <strow conref="managing-your-community/bptext-community-steps.dita#tsk-bptext-community-steps/strow-field-PageSize"><stentry/></strow>. -->
 
 			<p>
+				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-singlepagesize"></ph> -->
+				<ph id="ph-singlepagesize">The number of items to display.</ph>
+
 				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesize"></ph> -->
 				<ph id="ph-pagesize">The number of items to display in each result page.</ph>
 
-				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesizecumulative"></ph> -->
-				<ph id="ph-pagesizecumulative">The number of items to initially display, and the number of additional items to display when the <uicontrol>Get More</uicontrol> button is clicked/tapped.</ph>
+				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesizecumulativeGetMore"></ph> -->
+				<ph id="ph-pagesizecumulativeGetMore">The number of items to initially display, and the number of additional items to display when the <uicontrol>Get More</uicontrol> button is clicked/tapped.</ph>
+
+				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesizecumulativeViewMore"></ph> -->
+				<ph id="ph-pagesizecumulativeViewMore">The number of items to initially display, and the number of additional items to display when the <uicontrol>View More</uicontrol> button is clicked/tapped.</ph>
 			</p>
+
+
+			<!-- ========== HTML TEMPLATE ========== -->
+			<p>
+
+				<!-- <ph conref="#tsk-bptext-custom-modules/ph-HeaderTemplate"></ph> -->
+				<ph id="ph-HeaderTemplate">The custom HTML template used as the prefix to the list. Typically the starting tags for the table or list.</ph>
+
+				<!-- <ph conref="#tsk-bptext-custom-modules/ph-ItemTemplate"></ph> -->
+				<ph id="ph-ItemTemplate">The custom HTML template used to display each item in the list. Typically an entire row of the table or a bullet in the list. </ph>
+
+				<!-- <ph conref="#tsk-bptext-custom-modules/ph-HighlightedItemTemplate"></ph> -->
+				<ph id="ph-HighlightedItemTemplate">The custom HTML template used to display the selected item in the list. Typically an entire row of the table or a bullet in the list. </ph>
+
+				<!-- <ph conref="#tsk-bptext-custom-modules/ph-FooterTemplate"></ph> -->
+				<ph id="ph-FooterTemplate">The custom HTML template used as the suffix to the list. Typically the terminating tags for the table or list.</ph>
+
+
+				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-"></ph>
+				<ph id="ph-"></ph>
+				-->
+
+			</p>
+
 
 		</section>
 

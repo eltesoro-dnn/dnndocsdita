@@ -32,7 +32,7 @@
                     <substep><cmd><xref format="dita" href="../requirements.dita">Check compatible versions.</xref></cmd></substep>
                     <substep><cmd>Go to <menucascade><uicontrol>Control Panel</uicontrol> <uicontrol>Programs and Features</uicontrol> <uicontrol>Turn Windows features on or off</uicontrol></menucascade>.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallIIS-1.png"><alt>Turn Windows features on or off</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallIIS-1.png"><alt>Turn Windows features on or off</alt></image>
                         </info>
                     </substep>
                     <substep><cmd>Under <uicontrol>Internet Information Services</uicontrol>, turn on the following:</cmd>
@@ -49,7 +49,7 @@
                                 </li>
                                 <li><uicontrol>Internet Information Services Hostable Web Core</uicontrol></li>
                             </ul>
-                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallIIS-6.png"><alt>IIS options to turn on</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallIIS-6.png"><alt>IIS options to turn on</alt></image>
                         </info>
                     </substep>
                     <!-- TODO: Per Joe's tech review on 20160106: Add (Optional) Performance Features: Static Content Compression -->
@@ -63,19 +63,19 @@
                     <substep><cmd>Go to <menucascade><uicontrol>Control Panel</uicontrol> <uicontrol>Administrative Tools</uicontrol> <uicontrol>Internet Information Services (IIS) Manager</uicontrol></menucascade>.</cmd></substep>
                     <substep><cmd>In the <uicontrol>Connections</uicontrol> panel, expand your host tree, right-click on <uicontrol>Sites</uicontrol>, and choose <uicontrol>Add Website</uicontrol>.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-1.png"><alt>In Connections, Sites, then Add Website"</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-1.png"><alt>In Connections, Sites, then Add Website"</alt></image>
                         </info>
                     </substep>
                     <substep><cmd>Enter the new website's name and choose the location.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-2.png"><alt>Enter the new website's name and choose the location.</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-2.png"><alt>Enter the new website's name and choose the location.</alt></image>
                         </info>
                     </substep>
                     <substep><cmd>Enter the <uicontrol>Host name</uicontrol>.</cmd>
                         <info>
                             <p><ph outputclass="audience-dev audience-dsg">Developers and Designers:</ph> If setting up a local development environment, you can use <codeph>www.dnndev.me</codeph> (or any subdomain). DNNDEV.ME is a registered domain which points to the loopback address of 127.0.0.1, so it will always resolve locally.</p>
                             <p><ph outputclass="audience-adm">Administrators:</ph> If setting up a live website, use your website's domain.</p>
-                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-4.png"><alt>For local, use www.dnndev.me.</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-4.png"><alt>For local, use www.dnndev.me.</alt></image>
                         </info>
                     </substep>
                 </substeps>
@@ -85,14 +85,14 @@
                 <substeps>
                     <substep><cmd>In the <uicontrol>Connections</uicontrol> panel, right-click on the name of the existing website, and choose <uicontrol>Edit Bindings...</uicontrol>.</cmd>
                         <info>
-                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-6.png"><alt>Right-click on the website's name and choose Edit Bindings.</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-6.png"><alt>Right-click on the website's name and choose Edit Bindings.</alt></image>
                         </info>
                     </substep>
                     <substep><cmd>In <uicontrol>Site Bindings</uicontrol>, click/tap <uicontrol>Add...</uicontrol>. In <uicontrol>Add Site Binding</uicontrol>, enter the <uicontrol>Host name</uicontrol>.</cmd>
                         <info>
                             <p><ph outputclass="audience-dev audience-dsg">Developers and Designers:</ph> If setting up a local development environment, you can use <codeph>www.dnndev.me</codeph> (or any subdomain). DNNDEV.ME is a registered domain which points to the loopback address of 127.0.0.1, so it will always resolve locally.</p>
                             <p><ph outputclass="audience-adm">Administrators:</ph> If setting up a live website, use your website's domain.</p>
-                            <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-7.png"><alt>For local, use www.dnndev.me.</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-7.png"><alt>For local, use www.dnndev.me.</alt></image>
                         </info>
                     </substep>
                 </substeps>

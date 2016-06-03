@@ -45,7 +45,7 @@
 
             <!-- <sectiondiv conref="module-account-registration.dita#ref-ModuleAccountRegistration/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-AccountRegistration.png"><alt>Account Registration module</alt></image>
+                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-AccountRegistration.png"><alt>Account Registration module</alt></image>
             </sectiondiv>
 
 
@@ -79,8 +79,8 @@
 						<stentry>
                             <!-- <ph conref="module-account-registration.dita#ref-ModuleAccountRegistration/ph-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>
                         </stentry>
                     </strow>

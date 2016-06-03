@@ -45,7 +45,7 @@
 			<step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-modulesettings"><cmd/></step>
 			<step>
 				<cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-module-permissions"></cmd>
-				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Module-Permissions.png"><alt>Module Settings &gt; Permissions</alt></image></info>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Module-Permissions.png"><alt>Module Settings &gt; Permissions</alt></image></info>
 				<substeps conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/substeps-xx-configure-module-permissions"><substep><cmd/></substep></substeps>
 			</step>
 			<step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-pagesettings"><cmd/></step>

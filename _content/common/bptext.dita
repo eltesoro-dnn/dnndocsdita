@@ -143,7 +143,7 @@
 			<!-- <li conkeyref="k-bptext/li-ChooseUploadSiteFile"></li> -->
 			<li id="li-ChooseUploadSiteFile">
 				<p>Choose <uicontrol>File</uicontrol> to provide your own file.</p>
-				<image scalefit="yes" placement="break" align="left" href="../common/img/scr-ChooseUploadSiteFile.png"><alt>Choose a file from your site.</alt></image>
+				<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../common/img/scr-ChooseUploadSiteFile.png"><alt>Choose a file from your site.</alt></image>
 				<p>To choose a file that is already on your site,
 					<ol>
 						<li>Select <uicontrol>File (A File on Your Site)</uicontrol>.</li>
@@ -169,7 +169,7 @@
 								<li>enter the source URL, and</li>
 								<li>click/tap <uicontrol>Upload</uicontrol>.</li>
 							</ol>
-							<image scalefit="yes" placement="break" align="left" href="../common/img/scr-UploadFileFromURL.png"><alt>Upload File from URL dialog</alt></image>
+							<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../common/img/scr-UploadFileFromURL.png"><alt>Upload File from URL dialog</alt></image>
 						</li>
 					</ol>
 				</p>
@@ -184,7 +184,7 @@
 						<li>Choose the image from the <uicontrol>Image</uicontrol> dropdown.</li>
 					</ol>
 				</p>
-				<image scalefit="yes" placement="break" align="left" href="../common/img/scr-ChooseASystemImage.png"><alt>Choose an image that shipped with DNN.</alt></image>
+				<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../common/img/scr-ChooseASystemImage.png"><alt>Choose an image that shipped with DNN.</alt></image>
 			</li>
 
 

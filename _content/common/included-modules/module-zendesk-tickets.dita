@@ -37,7 +37,7 @@
 
             <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ZendeskTickets.png"><alt>Zendesk Tickets module</alt></image>  // The Zendesk connector has not been configured -->
+                <!-- <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ZendeskTickets.png"><alt>Zendesk Tickets module</alt></image>  // The Zendesk connector has not been configured -->
             </sectiondiv>
 
 
@@ -66,7 +66,7 @@
                         <stentry>
                             <!-- <ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
-                                <image outputclass="img-icon" href="../../common/img/ico-module-zendesk.png"><alt>icon</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-module-zendesk.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Zendesk Tickets</stentry>
@@ -77,7 +77,7 @@
                         <stentry>
                             <!-- <ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/ph-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>
                         </stentry>
                     </strow>

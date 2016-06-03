@@ -25,11 +25,11 @@
 
             <p>Web Forms modules follow the standard DNN module architectural pattern and use a traditional server-side rendering model. When a page is requested, DNN will create an instance of the relevant module control as defined in the module definition. The module control inherits from a code-behind class that contains the presentation logic and that makes additional calls to the appropriate business methods in the Business Logic Layer.</p>
 
-            <image scalefit="yes" placement="break" align="left" href="../../common/img/module-architecture-wf.png"><alt>Logical architecture of a Web Forms module</alt></image>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../../common/img/gra-module-architecture-wf.png"><alt>Logical architecture of a Web Forms module</alt></image>
 
             <p>You can include web service endpoints to enable access by mobile applications, if necessary. When accessing the module from a mobile application, the presentation layer moves to the mobile device and the service layer becomes the server-side endpoint that calls the appropriate business methods.</p>
 
-            <image scalefit="yes" placement="break" align="left" href="../../common/img/module-architecture-mobile.png"><alt>Accessing Web Forms Module via a Web Service</alt></image>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../../common/img/gra-module-architecture-mobile.png"><alt>Accessing Web Forms Module via a Web Service</alt></image>
         </section>
 
 

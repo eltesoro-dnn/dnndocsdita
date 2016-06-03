@@ -65,13 +65,13 @@
 
             <step><cmd>In <filepath>www.dnndev.me</filepath>, log in as an admin or host, and go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Themes</uicontrol></menucascade>.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-4.png"><alt>Admin > Advanced Settings > Theme</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-4.png"><alt>Admin > Advanced Settings > Theme</alt></image>
                 </info>
             </step>
 
             <step><cmd>Choose your new theme in the <uicontrol>Themes</uicontrol> dropdown, then click <uicontrol>Parse Theme Package</uicontrol>.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-10.png"><alt>Choose theme, then Parse Theme Package</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-10.png"><alt>Choose theme, then Parse Theme Package</alt></image>
                 </info>
             </step>
 
@@ -84,7 +84,7 @@
                             <li>That the new ASCX file appears in the same folder as the HTML file.</li>
                         </ul>
                     </p>
-                    <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-11.png"><alt>Result of conversion</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-HTMLtoASCX-11.png"><alt>Result of conversion</alt></image>
                 </info>
             </step>
         </steps>

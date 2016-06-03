@@ -45,17 +45,17 @@
         <steps>
             <step>
                 <cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Security Roles</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuAdminCommonSecurityRoles.png"><alt>Admin &gt; Security Roles</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuAdminCommonSecurityRoles.png"><alt>Admin &gt; Security Roles</alt></image></info>
             </step>
 
             <step>
                 <cmd>In the role list, choose the role group from the <uicontrol>Filter by Role Group</uicontrol> dropdown.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-RoleList-FilterByRoleGroup.png"><alt>Filter by Role Group</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-RoleList-FilterByRoleGroup.png"><alt>Filter by Role Group</alt></image></info>
                 <stepresult>
                     <ul>
                         <li>The role list is updated to show only the roles in the selected role group.</li>
                         <li>A pencil icon and a trash icon appear to the right of the <uicontrol>Filter by Role Group</uicontrol> dropdown.
-                            <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-RoleList-FilterByRoleGroup-icons.png"><alt>Pencil and trash icons appear next to Filter by Role Group dropdown.</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-RoleList-FilterByRoleGroup-icons.png"><alt>Pencil and trash icons appear next to Filter by Role Group dropdown.</alt></image>
                         </li>
                     </ul>
                 </stepresult>

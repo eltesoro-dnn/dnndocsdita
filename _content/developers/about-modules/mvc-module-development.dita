@@ -78,7 +78,7 @@
 
                     <p>Although the composition of the presentation layer is different, the logical architecture of an MVC module is similar to that of a Web Forms module.</p>
 
-                    <image scalefit="yes" placement="break" align="left" href="../../common/img/module-architecture-mvc.png"><alt>Logical architecture of an MVC module</alt></image>
+                    <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../../common/img/gra-module-architecture-mvc.png"><alt>Logical architecture of an MVC module</alt></image>
 
                     <p>When a DNN page is requested, the framework looks up the requested module control in the module definition. In an MVC module, the module control identifies a specific namespace, controller, and action. The output from the controller action is stored in a string, which is injected into the page.</p>
                 </li>

@@ -40,7 +40,7 @@
 
             <!-- <sectiondiv conref="module-optimizely-connector.dita#ref-ModuleOptimizelyConnector/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-OptimizelyConnector.png"><alt>Optimizely Connector module</alt></image> *** Redo this screenshot. *** -->
+                <!-- <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-OptimizelyConnector.png"><alt>Optimizely Connector module</alt></image> *** Redo this screenshot. *** -->
             </sectiondiv>
 
 
@@ -73,8 +73,8 @@
                         <stentry>
                             <!-- <ph conref="module-my-status.dita#ref-ModuleOptimizelyConnector/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>
                         </stentry>
                     </strow>

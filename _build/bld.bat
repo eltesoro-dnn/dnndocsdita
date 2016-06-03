@@ -122,12 +122,12 @@ for %%v in ( administrators developers designers content-managers community-mana
 start c:\inetpub\wwwroot\docs
 start c:\z\docbuild\output\%_transtype%
 :. start explorer.exe
-echo Copy the following to the Windows Explorer address bar: ftp://66.29.195.16/DNN%20Staging/DNNSoftware.QA.Docs/
-echo In Filezilla, use the following:
-echo    Host: 66.29.195.16
-echo    Port: 25
-echo Use your username and password from Birch.
-call "C:\Program Files\FileZilla FTP Client\filezilla.exe"
+:. echo Copy the following to the Windows Explorer address bar: ftp://66.29.195.16/DNN%20Staging/DNNSoftware.QA.Docs/
+:. echo In Filezilla, use the following:
+:. echo    Host: 66.29.195.16
+:. echo    Port: 25
+:. echo Use your username and password from Birch.
+:. call "C:\Program Files\FileZilla FTP Client\filezilla.exe"
 
 goto :eof
 

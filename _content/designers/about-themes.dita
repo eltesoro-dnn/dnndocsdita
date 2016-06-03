@@ -27,14 +27,14 @@
                 <li> (optional) a master style sheet (CSS) for all the layout templates</li>
             </ul>
 
-            <image scalefit="yes" placement="break" align="center" href="../common/img/SkinTheme.png"><alt>Three variations of a theme</alt></image>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="center" href="../common/img/gra-SkinTheme.png"><alt>Three variations of a theme</alt></image>
         </section>
 
 
         <section id="layoutsandcontainers">
             <title> Layouts and Containers </title>
 
-            <image scalefit="yes" placement="break" align="center" href="../common/img/PaneLayout.png"><alt>Pane in a layout</alt></image>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="center" href="../common/img/gra-PaneLayout.png"><alt>Pane in a layout</alt></image>
 
             <p conkeyref="k-themedef/pane"></p>
 

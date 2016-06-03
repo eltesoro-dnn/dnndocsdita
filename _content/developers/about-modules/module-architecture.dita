@@ -19,7 +19,7 @@
 
         <section id="Overview">
             <p>Although every module provides a different set of features and functionality, some architectural elements are common among modules. Most DNN modules are developed using an n-tier architecture. Whether you build a Web Forms module, an MVC module, or a SPA module, you implement most of these layers in your module.</p>
-            <image scalefit="yes" placement="break" align="left" href="../../common/img/module-architecture.png"><alt>Module architecture</alt></image>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../../common/img/gra-module-architecture.png"><alt>Module architecture</alt></image>
         </section>
 
 

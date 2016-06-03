@@ -43,7 +43,7 @@
 
 			<step>
 				<cmd>In the <wintitle>Page Templates</wintitle> list, hover over the template to edit/delete.</cmd>
-				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageTemplates-EditDelete.png"><alt>Pencil icon / X icon to edit/delete the template</alt></image></info>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageTemplates-EditDelete.png"><alt>Pencil icon / X icon to edit/delete the template</alt></image></info>
 				<choices>
 					<choice>To edit, click/tap the pencil icon.</choice>
 					<choice>To delete, click/tap the X icon, then confirm.</choice>

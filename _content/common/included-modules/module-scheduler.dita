@@ -44,7 +44,7 @@
 
             <!-- <sectiondiv conref="module-scheduler.dita#ref-ModuleScheduler/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Scheduler.png"><alt>Scheduler module</alt></image> -->
+                <!-- <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Scheduler.png"><alt>Scheduler module</alt></image> -->
             </sectiondiv>
 
 
@@ -71,7 +71,7 @@
                         <stentry>
                             <!-- <ph conref="module-scheduler.dita#ref-ModuleScheduler/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
-                                <image outputclass="img-icon" href="../../common/img/ico-module-scheduler.png"><alt>icon</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-module-scheduler.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Scheduler</stentry>
@@ -82,9 +82,9 @@
                         <stentry>
                             <!-- <ph conref="module-scheduler.dita#ref-ModuleScheduler/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
-                                <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>
                         </stentry>
                     </strow>

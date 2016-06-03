@@ -40,7 +40,7 @@
             <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-managerolesforuser"><cmd/></step>
             <step>
                 <cmd>For each role to add to the user,</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageRolesForUserAdd.png"><alt>Select each role and optionally assign effective or expiry dates. Then click/tap Add Role to User.</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageRolesForUserAdd.png"><alt>Select each role and optionally assign effective or expiry dates. Then click/tap Add Role to User.</alt></image></info>
                 <substeps>
                     <substep>
                         <cmd>Select a role from the <uicontrol>Security Role</uicontrol> dropdown.</cmd>

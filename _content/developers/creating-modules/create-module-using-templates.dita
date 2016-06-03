@@ -43,7 +43,7 @@
 
             <step><cmd>Build, debug, and package.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="center" href="../../common/img/scr-VS2015DebugReleaseBuildOptions.png"><alt>Visual Studio build type dropdown</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-VS2015DebugReleaseBuildOptions.png"><alt>Visual Studio build type dropdown</alt></image>
                 </info>
                 <substeps>
                     <substep><cmd>Build in debug mode.</cmd> <info>This build produces <filepath>.pdb</filepath> files that are needed when stepping through your code.</info></substep>

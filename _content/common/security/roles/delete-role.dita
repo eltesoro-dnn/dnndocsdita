@@ -42,17 +42,17 @@
         <steps>
             <step>
                 <cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Security Roles</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuAdminCommonSecurityRoles.png"><alt>Admin &gt; Security Roles</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuAdminCommonSecurityRoles.png"><alt>Admin &gt; Security Roles</alt></image></info>
             </step>
 
             <step>
                 <cmd>Click/tap the pencil icon for the role you want to delete.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-RoleList-Edit.png"><alt>Click/Tap the pencil icon for the role to delete.</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-RoleList-Edit.png"><alt>Click/Tap the pencil icon for the role to delete.</alt></image></info>
             </step>
 
             <step>
                 <cmd>At the bottom of <wintitle>Edit Security Roles</wintitle>, click/tap <uicontrol>Delete</uicontrol> and confirm.</cmd>
-                <info><image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditSecurityRolesBasic-Delete.png"><alt>In Edit Security Roles, click/tap Delete.</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-EditSecurityRolesBasic-Delete.png"><alt>In Edit Security Roles, click/tap Delete.</alt></image></info>
             </step>
         </steps>
 

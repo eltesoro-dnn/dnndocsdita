@@ -32,7 +32,7 @@
 			<step conkeyref="k-bpsteps/step-pb-gotosettingsgaming-mod"><cmd/></step>
 			<step>
 				<cmd>Click/Tap <uicontrol>Create New</uicontrol>.</cmd>
-				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-Gaming-BadgesNew.png"><alt>Gaming - Create a Badge.</alt></image></info>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Gaming-BadgesNew.png"><alt>Gaming &#8212; Create a Badge.</alt></image></info>
 			</step>
 			<step conref="bptext-community-steps.dita#tsk-bptext-community-steps/step-editbadge"><cmd/></step>
 			<step conref="bptext-community-steps.dita#tsk-bptext-community-steps/step-scoreactions"><cmd/></step>

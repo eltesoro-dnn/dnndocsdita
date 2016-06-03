@@ -44,7 +44,7 @@
 
             <!-- <sectiondiv conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-.png"><alt>Users and Roles module</alt></image> -->
+                <!-- <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-.png"><alt>Users and Roles module</alt></image> -->
             </sectiondiv>
 
 
@@ -83,7 +83,7 @@
                         <stentry>
                             <!-- <ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
-                                <image outputclass="img-icon" href="../../common/img/ico-module-usersandroles.png"><alt>icon</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-module-usersandroles.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Users and Roles</stentry>
@@ -94,9 +94,9 @@
                         <stentry>
                             <!-- <ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
-                                <image outputclass="img-icon" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-dnn-platform.png"><alt>Platform</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>
                         </stentry>
                     </strow>

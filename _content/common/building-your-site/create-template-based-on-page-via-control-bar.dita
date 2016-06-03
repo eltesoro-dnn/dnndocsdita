@@ -44,14 +44,14 @@
 			<step>
 				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Export Page</uicontrol></menucascade>.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageExportPage.png"><alt>Edit Page &gt; Export Page</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageExportPage.png"><alt>Edit Page &gt; Export Page</alt></image>
 				</info>
 			</step>
 
 			<step>
 				<cmd>Configure export settings.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ExportPageTemplateSettings.png"><alt>Export Page settings</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ExportPageTemplateSettings.png"><alt>Export Page settings</alt></image>
 					<simpletable relcolwidth="1* 3*">
 						<sthead>
 							<stentry>Field</stentry>

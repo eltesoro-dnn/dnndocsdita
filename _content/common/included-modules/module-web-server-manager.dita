@@ -41,7 +41,7 @@
 
             <!-- <sectiondiv conref="module-web-server-manager.dita#ref-ModuleWebServerManager/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <!-- <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-WebServerManager.png"><alt>Web Server Manager module</alt></image> -->
+                <!-- <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-WebServerManager.png"><alt>Web Server Manager module</alt></image> -->
             </sectiondiv>
 
 
@@ -69,7 +69,7 @@
                         <stentry>
                             <!-- <ph conref="module-web-server-manager.dita#ref-ModuleWebServerManager/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
-                                <image outputclass="img-icon" href="../../common/img/ico-module-webservermgr.png"><alt>icon</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-module-webservermgr.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Web Server Manager</stentry>
@@ -80,8 +80,8 @@
                         <stentry>
                             <!-- <ph conref="module-web-server-manager.dita#ref-ModuleWebServerManager/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>
                         </stentry>
                     </strow>

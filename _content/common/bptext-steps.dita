@@ -2,7 +2,7 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
 <task xml:lang="en" id="tsk-bptext-steps">
 
-    <title>Boilerplates - Generic Steps</title>
+    <title>Boilerplates: Generic Steps</title>
 
     <prolog>
         <author>wrET,orLY,edET</author>
@@ -22,7 +22,7 @@
 			<!-- <step conkeyref="k-bpsteps/step-menuhostextensions"><cmd/></step> -->
             <step id="step-menuhostextensions">
 				<cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="center" href="img/scr-menuHostCommonExtensions.png"><alt>Host &gt; Extensions</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="img/scr-menuHostCommonExtensions.png"><alt>Host &gt; Extensions</alt></image></info>
             </step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-hostopenmoduleforediting"><cmd/></step> -->
@@ -30,7 +30,7 @@
 			<step id="step-hostopenmoduleforediting">
 				<cmd>Open the module for editing.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="center" href="img/scr-HostExtensionsList-Installed-Modules-Edit.png"><alt>Installed Extensions tab &gt; Modules section &gt; click/tap the pencil icon for the module to edit.</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="img/scr-HostExtensionsList-Installed-Modules-Edit.png"><alt>Installed Extensions tab &gt; Modules section &gt; click/tap the pencil icon for the module to edit.</alt></image>
                 </info>
 				<substeps>
 					<substep><cmd>Go to the <uicontrol>Installed Extensions</uicontrol> tab.</cmd></substep>
@@ -44,7 +44,7 @@
 			<!-- <step conkeyref="k-bpsteps/step-menuadminextensions"><cmd/></step> -->
             <step id="step-menuadminextensions">
 				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol></uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="center" href="img/scr-menuAdminAdvanced-Extensions.png"><alt>Host &gt; Extensions</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="img/scr-menuAdminAdvanced-Extensions.png"><alt>Host &gt; Extensions</alt></image></info>
             </step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-adminopenmoduleforediting"><cmd/></step> -->
@@ -52,7 +52,7 @@
 			<step id="step-adminopenmoduleforediting">
 				<cmd>Open the module for editing.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="center" href="img/scr-AdminExtensionsList-Installed-Modules-Edit.png"><alt>Installed Extensions tab &gt; Modules section &gt; click/tap the pencil icon for the module to edit.</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="img/scr-AdminExtensionsList-Installed-Modules-Edit.png"><alt>Installed Extensions tab &gt; Modules section &gt; click/tap the pencil icon for the module to edit.</alt></image>
                 </info>
 				<substeps>
 					<substep><cmd>In the <uicontrol>Installed Extensions</uicontrol> tab, expand the <uicontrol>Modules</uicontrol> section.</cmd></substep>
@@ -62,27 +62,27 @@
 
 
 
-			<!-- ========== PERSONA BAR - COMMUNITY MANAGER / MODERATOR ========== -->
+			<!-- ========== PERSONA BAR: COMMUNITY MANAGER / MODERATOR ========== -->
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-gotosettingscommunity-mod"><cmd/></step> -->
 			<!-- <step conkeyref="k-bpsteps/step-pb-gotosettingscommunity-mod"><cmd/></step> -->
             <step id="step-pb-gotosettingscommunity-mod">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Community</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="center" href="img/scr-pbarSettings-Community-mod.png"><alt>Persona Bar &gt; Settings &gt; Community</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="img/scr-pbarSettings-Community-mod.png"><alt>Persona Bar &gt; Settings &gt; Community</alt></image></info>
             </step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-gotosettingsconnectors-mod"><cmd/></step> -->
 			<!-- <step conkeyref="k-bpsteps/step-pb-gotosettingsconnectors-mod"><cmd/></step> -->
             <step id="step-pb-gotosettingsconnectors-mod">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Connectors</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="center" href="img/scr-pbarSettings-Connectors-mod.png"><alt>Persona Bar &gt; Settings &gt; Connectors</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="img/scr-pbarSettings-Connectors-mod.png"><alt>Persona Bar &gt; Settings &gt; Connectors</alt></image></info>
             </step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-gotosettingsgaming-mod"><cmd/></step> -->
 			<!-- <step conkeyref="k-bpsteps/step-pb-gotosettingsgaming-mod"><cmd/></step> -->
             <step id="step-pb-gotosettingsgaming-mod">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Gaming</uicontrol></menucascade>.</cmd>
-                <info><image scalefit="yes" placement="break" align="center" href="img/scr-pbarSettings-Gaming-mod.png"><alt>Persona Bar &gt; Settings &gt; Gaming</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="img/scr-pbarSettings-Gaming-mod.png"><alt>Persona Bar &gt; Settings &gt; Gaming</alt></image></info>
             </step>
 
 
@@ -161,7 +161,7 @@
 
 
 
-			<!-- MODULES - ADD, EDIT -->
+			<!-- MODULES: ADD, EDIT -->
 
 
         </steps>

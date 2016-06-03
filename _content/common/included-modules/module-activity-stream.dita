@@ -37,7 +37,7 @@
 
             <!-- <sectiondiv conref="module-activity-stream.dita#ref-ModuleActivityStream/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ActivityStream.png"><alt>Activity Stream module</alt></image>
+                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ActivityStream.png"><alt>Activity Stream module</alt></image>
             </sectiondiv>
 
 
@@ -68,7 +68,7 @@
                         <stentry>
                             <!-- <ph conref="module-activity-stream.dita#ref-ModuleActivityStream/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
-                                <image outputclass="img-icon" href="../../common/img/ico-module-activitystream.png"><alt>icon</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-module-activitystream.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Activity Stream</stentry>
@@ -79,7 +79,7 @@
                         <stentry>
                             <!-- <ph conref="module-activity-stream.dita#ref-ModuleActivityStream/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
-                                <image outputclass="img-icon" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                                <image outputclass="img-ico" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
                             </ph>
                         </stentry>
                     </strow>

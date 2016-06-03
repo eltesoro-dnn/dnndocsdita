@@ -5,7 +5,7 @@
     <title>Included Modules</title>
 
     <!-- Topics -->
-	<!-- <topicref format="dita" type="reference" toc="yes" href="included-modules.dita" /> If you only want the reference page, use this line only, not the mapref. -->
+	<!-- <topicref format="dita" type="reference" toc="yes" href="included-modules.dita" /> // If you only want the reference page, use this line only, not the mapref. -->
 
 
     <!-- SOCIAL MODULES -->
@@ -74,13 +74,25 @@
 		<topicref format="dita" type="task"      toc="yes" href="config-module-social-groups.dita" />
 		</topicref>
 
-		<!--
-		<topicref format="dita" type="reference" toc="yes" href="module-related-content.dita" />
-		<topicref format="dita" type="reference" toc="yes" href="module-social-events.dita" />
-		<topicref format="dita" type="reference" toc="yes" href="module-social-sharing.dita" />
-		<topicref format="dita" type="reference" toc="yes" href="module-user-badges.dita" />
-		<topicref format="dita" type="reference" toc="yes" href="module-wiki.dita" />
-		-->
+		<topicref format="dita" type="reference" toc="yes" href="module-related-content.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-related-content.dita" />
+		</topicref>
+
+		<topicref format="dita" type="reference" toc="yes" href="module-social-events.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-social-events.dita" />
+		</topicref>
+
+		<topicref format="dita" type="reference" toc="yes" href="module-social-sharing.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-social-sharing.dita" />
+		</topicref>
+
+		<topicref format="dita" type="reference" toc="yes" href="module-user-badges.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-user-badges.dita" />
+		</topicref>
+
+		<topicref format="dita" type="reference" toc="yes" href="module-wiki.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-wiki.dita" />
+		</topicref>
 
 	</topicref>
 

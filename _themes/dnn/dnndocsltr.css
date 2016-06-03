@@ -725,9 +725,16 @@ span.filepath {
   font-weight: bold;
 }
 
-.img-icon {
+.img-ico {
   width: 100px;
 }
+
+.img-scr {
+  	-webkit-box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.4);
+	-moz-box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.4);
+	box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.4);
+  }
+
 
 /* ------------------------------------------------------------
  | Glossary
@@ -1236,7 +1243,7 @@ ul.ullinks {
 span.importanttitle {
   color: red!important;
 }
-img.img-icon {
+img.img-ico {
   display: block;
   margin-top: 5px;
   margin-bottom: 35px;
@@ -2003,7 +2010,7 @@ and (orientation : portrait) {
     min-height: 82vh;
   }
   img.image {
-    width: auto;;
+    width: auto;
   }
   .social-media-wrapper {
     display: inline-block!important;

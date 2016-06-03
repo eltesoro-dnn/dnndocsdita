@@ -24,7 +24,7 @@
             <title>What is a module?</title>
 
             <p>A typical web page includes page elements and content blocks. Page elements, such as the site menu, the login control, and the search bar, are included with the theme. Content blocks are managed by modules.</p>
-            <image scalefit="yes" placement="break" align="left" href="../../common/img/module-overview.png"><alt>Modules manage and display content on the page.</alt></image>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../../common/img/gra-module-overview.png"><alt>Modules manage and display content on the page.</alt></image>
 
             <p>The module is one of the basic building blocks that extend DNN to enable users to view, create, and edit content. All DNN administrative features are implemented as modules.</p>
 

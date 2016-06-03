@@ -44,14 +44,14 @@
 			<step>
 				<cmd>In the <wintitle>Page Templates</wintitle> list, click/tap <uicontrol>Add Template</uicontrol>.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageTemplates-AddTemplate.png"><alt>In Page Templates, click/tap Add Template.</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageTemplates-AddTemplate.png"><alt>In Page Templates, click/tap Add Template.</alt></image>
 				</info>
 			</step>
 
 			<step>
 				<cmd>Provide the template information.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageTemplates-Create.png"><alt>Enter template name and description. Choose the Page Template to base on. Click/Tap Create.</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageTemplates-Create.png"><alt>Enter template name and description. Choose the Page Template to base on. Click/Tap Create.</alt></image>
 				</info>
 			<substeps>
 				<substep><cmd>Enter the new template's name and description.</cmd></substep>
@@ -63,7 +63,7 @@
 
 		<result>
 			<p>The list of templates is displayed with the new template.</p>
-			<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageTemplates-NewTemplate.png"><alt>List of templates including the new template.</alt></image>
+			<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageTemplates-NewTemplate.png"><alt>List of templates including the new template.</alt></image>
 		</result>
 
     </taskbody>

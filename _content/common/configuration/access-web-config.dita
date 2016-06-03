@@ -26,13 +26,13 @@
             <step>
                 <cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Configuration Manager</uicontrol></menucascade>.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuHostAdvancedConfigMgr.png"><alt>Host &gt; Advanced Settings &gt; Configuration Manager</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuHostAdvancedConfigMgr.png"><alt>Host &gt; Advanced Settings &gt; Configuration Manager</alt></image>
                 </info>
             </step>
             <step>
                 <cmd>In the <uicontrol>Files</uicontrol> tab, choose the configuration file from the dropdown list.</cmd>
                 <info>
-                    <image scalefit="yes" placement="break" align="left" href="../../common/img/scr-ConfigMgrFiles-webconfig.png"><alt>Files dropdown &gt; web.config</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ConfigMgrFiles-webconfig.png"><alt>Files dropdown &gt; web.config</alt></image>
                 </info>
             </step>
         </steps>

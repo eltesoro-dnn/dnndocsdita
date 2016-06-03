@@ -32,12 +32,12 @@
 			<step conkeyref="k-bpsteps/step-pb-gotosettingscommunity-mod"><cmd/></step>
 			<step>
 				<cmd>Highlight the goal type to edit. Then Click/Tap the pencil icon under the <uicontrol>Actions</uicontrol> column.</cmd>
-				<info><image scalefit="yes" placement="break" align="left" href="../../common/img/scr-CommunityInfluence-GoalsActions-Edit.png"><alt>Community Influence - Highlight and edit the item.</alt></image></info>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-CommunityInfluence-GoalsActions-Edit.png"><alt>Community Influence &#8212; Highlight and edit the item.</alt></image></info>
 			</step>
 			<step>
 				<cmd>Configure the goal type.</cmd>
 				<info>
-					<image scalefit="yes" placement="break" align="left" href="../../common/img/scr-CommunityInfluence-GoalsEdit.png"><alt>Community Influence - Edit.</alt></image>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-CommunityInfluence-GoalsEdit.png"><alt>Community Influence &#8212; Edit.</alt></image>
 					<simpletable conref="bptext-community-steps.dita#tsk-bptext-community-steps/simpletable-configgoaltype"><strow/></simpletable>
 				</info>
 			</step>

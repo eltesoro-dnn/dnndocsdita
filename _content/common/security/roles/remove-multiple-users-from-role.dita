@@ -49,11 +49,11 @@
                 <choices>
                     <choice>
                         <p>To remove the user immediately, search for the user in the list, and then click/tap the trash icon in that row. Confirm.</p>
-                        <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageUsersInRoleDelete.png"><alt>Trash icon in the Manage Users in Role page</alt></image>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageUsersInRoleDelete.png"><alt>Trash icon in the Manage Users in Role page</alt></image>
                     </choice>
                     <choice>
                         <p>To remove the user at a later date, search for the user in the <uicontrol>User Name</uicontrol> dropdown, choose an Expiry Date, and click/tap <uicontrol>Update User Role</uicontrol>.</p>
-                        <image scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageUsersInRoleUpdateDelete.png"><alt>Choose the user, add an Expiry Date, and then click/tap Update User Role.</alt></image>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageUsersInRoleUpdateDelete.png"><alt>Choose the user, add an Expiry Date, and then click/tap Update User Role.</alt></image>
                     </choice>
                 </choices>
                 <info>
