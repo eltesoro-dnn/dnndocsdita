@@ -11,6 +11,21 @@
  |      201603xx (james.hellesen@dnnsoftware.com): Updates to match Joe's and other changes.
  */
 
+
+/* ------------------------------------------------------------
+ | Variables
+ */
+
+/* Remember to match the colors in the svg files too. */
+:root {
+  --color-adm: #9dab00; /* lime green */
+  --color-cmg: #19bcd5;  /* light blue */
+  --color-dev: #ab51ae;  /* purple */
+  --color-dsg: #d68f00;  /* orange */
+  --color-mod: #1e96e2;  /* dark blue */
+}
+
+
 /* ------------------------------------------------------------
  | Fonts
  */
@@ -482,19 +497,19 @@ main:after {
   text-transform: capitalize;
 }
 .breadcrumbs.admctr {
-	border-color: #9daa12;
+	border-color: var( --color-adm );
 }
 .breadcrumbs.cmgctr {
-	border-color: #2abcd3;
+	border-color: var( --color-cmg );
 }
 .breadcrumbs.devctr {
-	border-color: #8b098f;
+	border-color: var( --color-dev );
 }
 .breadcrumbs.dsgctr {
-	border-color: #d48e12;
+	border-color: var( --color-dsg );
 }
 .breadcrumbs.modctr {
-	border-color: #999999;
+	border-color: var( --color-mod );
 }
 dt.prereq {
   margin-left: 20px;
@@ -725,6 +740,11 @@ span.filepath {
   font-weight: bold;
 }
 
+.svg-adm,
+.svg-cmg,
+.svg-dev,
+.svg-dsg,
+.svg-mod,
 .img-ico {
   width: 100px;
 }
@@ -1070,34 +1090,34 @@ nav[role="toc"] > ul > li > ul > li > ul > li > a {
   display: inline-flex;
 }
 a#admin-card > .card-title {
-  background: #9daa12;
+  background: var( --color-adm );
 }
 #admin-card {
-  border-bottom-color: #9daa12;
+  border-bottom-color: var( --color-adm );
 }
 a#dev-card > .card-title {
-  background: #8b098f;
+  background: var( --color-dev );
 }
 #dev-card {
-  border-bottom-color: #8b098f;
+  border-bottom-color: var( --color-dev );
 }
 a#designer-card > .card-title {
-  background: #d48e12;
+  background: var( --color-dsg );
 }
 #designer-card {
-  border-bottom-color: #d48e12;
+  border-bottom-color: var( --color-dsg );
 }
 a#contentmgr-card > .card-title {
-  background: #2abcd3;
+  background: var( --color-cmg );
 }
 #contentmgr-card {
-  border-bottom-color: #2abcd3;
+  border-bottom-color: var( --color-cmg );
 }
 a#communitymgr-card > .card-title {
-  background: #999999;
+  background: var( --color-mod );
 }
 #communitymgr-card {
-  border-bottom-color: #999999;
+  border-bottom-color: var( --color-mod );
 }
 .card-title {
   color: white;
@@ -1205,7 +1225,7 @@ article[role="articleHome"] {
   display: inline-block;
 }
 #header-subctr-wrapper {
-  width: 500px;
+  width: 600px;
   margin-left: -275px;
 }
 .header-card-img {
@@ -1973,19 +1993,19 @@ and (orientation : portrait) {
     padding-bottom: 4px;
   }
   .subctr.admctr {
-    border-color: #9daa12;
+    border-color: var( --color-adm );
   }
   .subctr.cmgctr {
-    border-color: #2abcd3;
+    border-color: var( --color-cmg );
   }
   .subctr.devctr {
-    border-color: #8b098f;
+    border-color: var( --color-dev );
   }
   .subctr.dsgctr {
-    border-color: #d48e12;
+    border-color: var( --color-dsg );
   }
   .subctr.modctr {
-    border-color: #999999;
+    border-color: var( --color-mod );
   }
   nav[role="toc"] ul ul {
     display: none;

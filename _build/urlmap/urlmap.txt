@@ -79,65 +79,41 @@ Rule-078	dev/GettingStarted/Setup/Set-Up-IIS.html	developers/setup/set-up-iis.ht
 Rule-079	dev/GettingStarted/Setup/Set-Up-SQL-Server.html	developers/setup/set-up-sql.html
 Rule-080	dev/API.html	http://www.dnnsoftware.com/dnn-api/
 Rule-081		searchresults.html
-Rule-082	administrators	  administrators/index.html
-Rule-083	administrators/building-your-site	   administrators/building-your-site/index.html
+Rule-082	administrators	administrators/index.html
+Rule-083	administrators/building-your-site	administrators/building-your-site/index.html
 Rule-084	administrators/configuration	administrators/configuration/index.html
-Rule-085	administrators/extensions	   administrators/extensions/index.html
-Rule-086	administrators/included-modules	 administrators/included-modules/index.html
+Rule-085	administrators/extensions	administrators/extensions/index.html
+Rule-086	administrators/included-modules	administrators/included-modules/index.html
 Rule-087	administrators/licensing	administrators/licensing/index.html
-Rule-088	administrators/security	 administrators/security/index.html
-Rule-089	administrators/security/jwt	 administrators/security/jwt/index.html
-Rule-090	administrators/security/roles	   administrators/security/roles/index.html
-Rule-091	administrators/security/user-accounts   administrators/security/user-accounts/index.html
+Rule-088	administrators/security	administrators/security/index.html
+Rule-089	administrators/security/jwt	administrators/security/jwt/index.html
+Rule-090	administrators/security/roles	administrators/security/roles/index.html
+Rule-091	administrators/security/user-accounts	administrators/security/user-accounts/index.html
 Rule-092	administrators/setup	administrators/setup/index.html
-Rule-093	content-managers	content-managers/index.html
-Rule-094	content-managers/building-your-site	 content-managers/building-your-site/index.html
-Rule-095	content-managers/included-modules	   content-managers/included-modules/index.html
-Rule-096	content-managers/security	   content-managers/security/index.html
-Rule-097	content-managers/security/roles	 content-managers/security/roles/index.html
-Rule-098	content-managers/security/user-accounts content-managers/security/user-accounts/index.html
-Rule-099	designers	   designers/index.html
-Rule-100	designers/creating-themes	   designers/creating-themes/index.html
-Rule-101	designers/extensions	designers/extensions/index.html
-Rule-102	designers/included-modules	  designers/included-modules/index.html
-Rule-103	designers/setup	 designers/setup/index.html
-Rule-104	developers	  developers/index.html
-Rule-105	developers/about-modules	developers/about-modules/index.html
-Rule-106	developers/configuration	developers/configuration/index.html
-Rule-107	developers/creating-modules	 developers/creating-modules/index.html
-Rule-108	developers/extensions	   developers/extensions/index.html
-Rule-109	developers/included-modules	 developers/included-modules/index.html
-Rule-110	developers/security	 developers/security/index.html
-Rule-111	developers/security/jwt	 developers/security/jwt/index.html
-Rule-112	developers/setup	developers/setup/index.html
-testonly	administrators/
-testonly	administrators/building-your-site/
-testonly	administrators/configuration/
-testonly	administrators/extensions/
-testonly	administrators/included-modules/
-testonly	administrators/licensing/
-testonly	administrators/security/
-testonly	administrators/security/jwt/
-testonly	administrators/security/roles/
-testonly	administrators/security/user-accounts/
-testonly	administrators/setup/
-testonly	content-managers/
-testonly	content-managers/building-your-site/
-testonly	content-managers/included-modules/
-testonly	content-managers/security/
-testonly	content-managers/security/roles/
-testonly	content-managers/security/user-accounts/
-testonly	designers/
-testonly	designers/creating-themes/
-testonly	designers/extensions/
-testonly	designers/included-modules/
-testonly	designers/setup/
-testonly	developers/
-testonly	developers/about-modules/
-testonly	developers/configuration/
-testonly	developers/creating-modules/
-testonly	developers/extensions/
-testonly	developers/included-modules/
-testonly	developers/security/
-testonly	developers/security/jwt/
-testonly	developers/setup/
+Rule-093	community-managers	community-managers/index.html
+Rule-094	community-managers/included-modules	community-managers/included-modules/index.html
+Rule-095	community-managers/managing-your-community	community-managers/managing-your-community/index.html
+Rule-096	community-managers/security	community-managers/security/index.html
+Rule-097	community-managers/security/roles	community-managers/security/roles/index.html
+Rule-098	community-managers/security/user-accounts	community-managers/security/user-accounts/index.html
+Rule-099	content-managers	content-managers/index.html
+Rule-100	content-managers/building-your-site	content-managers/building-your-site/index.html
+Rule-101	content-managers/extensions	content-managers/extensions/index.html
+Rule-102	content-managers/included-modules	content-managers/included-modules/index.html
+Rule-103	content-managers/security	content-managers/security/index.html
+Rule-104	content-managers/security/roles	content-managers/security/roles/index.html
+Rule-105	content-managers/security/user-accounts	content-managers/security/user-accounts/index.html
+Rule-106	designers	designers/index.html
+Rule-107	designers/creating-themes	designers/creating-themes/index.html
+Rule-108	designers/extensions	designers/extensions/index.html
+Rule-109	designers/included-modules	designers/included-modules/index.html
+Rule-110	designers/setup	designers/setup/index.html
+Rule-111	developers	developers/index.html
+Rule-112	developers/about-modules	developers/about-modules/index.html
+Rule-113	developers/configuration	developers/configuration/index.html
+Rule-114	developers/creating-modules	developers/creating-modules/index.html
+Rule-115	developers/extensions	developers/extensions/index.html
+Rule-116	developers/included-modules	developers/included-modules/index.html
+Rule-117	developers/security	developers/security/index.html
+Rule-118	developers/security/jwt	developers/security/jwt/index.html
+Rule-119	developers/setup	developers/setup/index.html

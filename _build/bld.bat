@@ -66,6 +66,7 @@ goto %_transtype%
 echo Copying files required by the build ....
 xcopy %_gitdir%\_content\*.dita*         %_blddir%                /i/s/v/y
 xcopy %_gitdir%\_content\*.png           %_blddir%                /i/s/v/y
+xcopy %_gitdir%\_content\*.svg           %_blddir%                /i/s/v/y
 xcopy %_gitdir%\_content\common\samples  %_blddir%\common\samples /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\dnn*.css     %_blddir%\_themes\dnn    /i/s/v/y
 
@@ -93,9 +94,11 @@ xcopy %_gitdir%\_content\searchresults.html  %_outdir%\.                /i/s/v/y
 xcopy %_gitdir%\_content\web.config          %_outdir%\.                /i/s/v/y
 xcopy %_gitdir%\_content\common\samples      %_outdir%\common\samples   /i/s/v/y
 xcopy %_gitdir%\_content\common\img\*.png    %_outdir%\common\img       /i/s/v/y
+xcopy %_gitdir%\_content\common\img\*.svg    %_outdir%\common\img       /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\26D3F6_6_0.*     %_outdir%\_theme           /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\*.jpg            %_outdir%\_theme           /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\*.png            %_outdir%\_theme           /i/s/v/y
+xcopy %_gitdir%\_themes\dnn\*.svg            %_outdir%\_theme           /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\*.js             %_outdir%\_theme           /i/s/v/y
 
 :. The following is a hack.
