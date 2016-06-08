@@ -2,9 +2,9 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
 <reference xml:lang="en" id="ref-ModuleHtmlText">
 
-    <title>Module: HTML/Text</title>
+    <title>Module: HTML (Text)</title>
     <titlealts>
-        <navtitle>HTML/Text</navtitle>
+        <navtitle>HTML (Text)</navtitle>
     </titlealts>
 
 
@@ -45,8 +45,11 @@
 
             <!-- <sectiondiv conref="module-html-text.dita#ref-ModuleHtmlHtmlPro/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-HTML.png"><alt>HTML module</alt></image>
+				<p>HTML Pro in DNN Evoq:</p>
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-HTMLPro.png"><alt>HTML Pro module</alt></image>
+
+				<p>HTML in DNN Platform:</p>
+                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-HTML.png"><alt>HTML module</alt></image>
             </sectiondiv>
 
 
@@ -60,8 +63,8 @@
                 <p>Authorized users can edit the content either inline or in a separate administration page. Tokens can be used to represent data or other code that get replaced dynamically when the content is displayed. All versions of the content are stored in the database and can be rolled back to an earlier version.</p>
 
                 <ul>
-                    <li>HTML/Text is available in DNN Platform only.</li>
                     <li>HTML/Text Pro is available in DNN Evoq only.</li>
+                    <li>HTML/Text is available in DNN Platform only.</li>
                 </ul>
             </sectiondiv>
 

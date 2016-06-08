@@ -53,7 +53,7 @@
             <topicref format="dita" type="topic"     toc="yes" href="developers/about-evs.dita" />
             <!-- <topicref format="dita" type="reference" toc="yes" href="developers/contents-module-pack.dita" /> Topic not ready. -->
             <topicref format="dita" type="reference" toc="yes" href="developers/extensions/dnn-manifest-schema.dita" />
-			<topicref format="dita" type="reference" toc="yes" href="developers/included-modules/included-modules.dita" />
+			<topicref format="dita" type="reference" toc="yes" href="developers/included-modules/included-modules.dita" copy-to="developers/included-modules/index.dita" />
             <topicref format="html" scope="external" navtitle="DNN API Reference" toc="yes" href="http://www.dnnsoftware.com/dnn-api/" />
 			<topicref format="dita" type="reference" toc="yes" href="developers/product-versions.dita" />
 			<topicref format="dita" type="topic"     toc="yes" href="developers/dnn-license.dita" />

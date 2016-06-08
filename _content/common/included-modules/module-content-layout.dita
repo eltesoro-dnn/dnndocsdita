@@ -36,13 +36,19 @@
 
             <sectiondiv id="sectiondiv-bpdesc">
 				<!-- <ph conref="module-content-layout.dita#ref-ModuleContentLayout/ph-bpshortdesc"></ph> -->
-				<p><ph id="ph-bpshortdesc">Adds a dynamic content layout to the page.</ph></p>
+				<p><ph id="ph-bpshortdesc">Adds a dynamic content layout that can accommodate more modules.</ph></p>
 			</sectiondiv>
 
 
             <!-- <sectiondiv conref="module-content-layout.dita#ref-ModuleContentLayout/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ContentLayout.png"><alt>Content Layout module</alt></image>
+				<!--
+				<p>DNN Platform:</p>
+                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ContentLayout-Platform.png"><alt>Content Layout module on DNN Platform</alt></image>
+
+				<p>DNN Evoq:</p>
+				-->
+                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ContentLayout-Evoq.png"><alt>Content Layout module<!--  on DNN Evoq --></alt></image>
             </sectiondiv>
 
 
@@ -53,6 +59,7 @@
 
             <!-- <sectiondiv conref="module-content-layout.dita#ref-ModuleContentLayout/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo"/>
+			// Why is this available to add in a page in Evoq Content for Content Manager, but not in Evoq Engage?
 			-->
 
 
@@ -95,12 +102,12 @@
         </section>
 
 
-		<!--
 		<section>
 			<title>Module Configuration</title>
-			<sectiondiv id="sectiondiv-bpconfig"/> See ditamap.
+			<sectiondiv id="sectiondiv-bpconfig">
+				The <uicontrol>Content Layout</uicontrol> module does not have custom settings.
+			</sectiondiv>
         </section>
-		 -->
 
     </refbody>
 

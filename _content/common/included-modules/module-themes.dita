@@ -105,12 +105,14 @@
         </section>
 
 
-		<!--
 		<section>
 			<title>Module Configuration</title>
-			<sectiondiv id="sectiondiv-bpconfig"/> See ditamap.
+
+			<!-- <sectiondiv conref="module-themes.dita#ref-ModuleThemes/sectiondiv-bpconfig"></sectiondiv> -->
+			<sectiondiv id="sectiondiv-bpconfig">
+				<p>The <uicontrol>Themes</uicontrol> module does not have custom settings.</p>
+			</sectiondiv>
         </section>
-		 -->
 
     </refbody>
 

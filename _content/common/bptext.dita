@@ -205,6 +205,12 @@
         <note type="important" id="note-CloudSupport">If your Evoq instance is hosted on the DNN Cloud, please contact <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support">Customer Support</xref> directly. The following instructions are not applicable to DNN Cloud instances.</note>
 
 
+        <!-- <note conref="../../common/bptext.dita#top-bptext/note-VisibleToAdminsOnly"></note> -->
+        <!-- <note conkeyref="k-bptext/note-VisibleToAdminsOnly"></note> -->
+		<note type="note" id="note-VisibleToAdminsOnly">This module is visible to administrators only.</note>
+
+
+
         <!-- ==================== Code ==================== -->
 
         <!-- <codeblock conref="../../common/bptext.dita#top-bptext/codeblock-JWT"></codeblock> -->

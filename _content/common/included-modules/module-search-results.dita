@@ -37,9 +37,9 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-search-results.dita#ref-ModuleSearchResults/ph-bpshortdesc"></ph> -->
-				<p><ph id="ph-bpshortdesc">Displays the search results.</ph></p>
-			</sectiondiv>
+                <!-- <ph conref="module-search-results.dita#ref-ModuleSearchResults/ph-bpshortdesc"></ph> -->
+                <p><ph id="ph-bpshortdesc">Displays the search results.</ph></p>
+            </sectiondiv>
 
 
             <!-- <sectiondiv conref="module-search-results.dita#ref-ModuleSearchResults/sectiondiv-bpimg"></sectiondiv> -->
@@ -50,17 +50,18 @@
 
             <!-- <sectiondiv conref=".../sectiondiv-bpsecurity"></sectiondiv>
             <sectiondiv id="sectiondiv-bpsecurity"/>
-			-->
+            -->
 
 
-            <!-- <sectiondiv conref="module-search-results.dita#ref-ModuleSearchResults/sectiondiv-bpmoreinfo"></sectiondiv>
-            <sectiondiv id="sectiondiv-bpmoreinfo"/>
-			-->
+            <!-- <sectiondiv conref="module-search-results.dita#ref-ModuleSearchResults/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpmoreinfo">
+                <note conkeyref="k-bptext/note-VisibleToAdminsOnly"></note>
+            </sectiondiv>
 
 
             <!-- <sectiondiv conref="module-search-results.dita#ref-ModuleSearchResults/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
-				<simpletable relcolwidth="1* 3* 3* 6*">
+                <simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
                         <stentry></stentry>
                         <stentry>Package</stentry>
@@ -76,9 +77,9 @@
                         </stentry>
                         <stentry>Search Results</stentry>
                         <stentry>
-							<!-- <ph conref="module-search-results.dita#ref-ModuleSearchResults/sectiondiv-bpcategory"></ph> -->
-							<ph id="ph-bpcategory">Admin</ph>
-						</stentry>
+                            <!-- <ph conref="module-search-results.dita#ref-ModuleSearchResults/sectiondiv-bpcategory"></ph> -->
+                            <ph id="ph-bpcategory">Admin</ph>
+                        </stentry>
                         <stentry>
                             <!-- <ph conref="module-search-results.dita#ref-ModuleSearchResults/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
@@ -90,20 +91,20 @@
                     </strow>
                 </simpletable>
 
-				<!--
-				Premium: No
-				-->
+                <!--
+                Premium: No
+                -->
             </sectiondiv>
 
         </section>
 
 
-		<!--
-		<section>
-			<title>Module Configuration</title>
-			<sectiondiv id="sectiondiv-bpconfig"/> See ditamap.
+        <!--
+        <section>
+            <title>Module Configuration</title>
+            <sectiondiv id="sectiondiv-bpconfig"/> See ditamap.
         </section>
-		 -->
+         -->
 
     </refbody>
 

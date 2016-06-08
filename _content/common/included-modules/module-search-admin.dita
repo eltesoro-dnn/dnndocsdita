@@ -53,9 +53,26 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-search-admin.dita#ref-ModuleSearchAdmin/sectiondiv-bpmoreinfo"></sectiondiv>
-            <sectiondiv id="sectiondiv-bpmoreinfo"/>
-			-->
+            <!-- <sectiondiv conref="module-search-admin.dita#ref-ModuleSearchAdmin/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpmoreinfo">
+            	<note conkeyref="k-bptext/note-VisibleToAdminsOnly"></note>
+
+				<p>With the <uicontrol>Search Admin</uicontrol> module, administrators can:
+					<ul>
+						<li>reindex the content,</li>
+						<li>enter synonyms for search terms, and </li>
+						<li>provide a list of words to ignore in the search phrase.</li>
+					</ul>
+				</p>
+
+				<p><uicontrol>Synonym groups</uicontrol> contain terms that are similar in meaning, so that the search engine could easily find related content.</p>.
+
+				<p><uicontrol>Ignore words</uicontrol> are short words in the language that are typically very common. Example: conjunctions, articles, pronouns, prepositions.</p>
+
+				<p>Reindexing is performed regularly as part of the search crawler's scheduled job; however, it can also be started manually. <!-- How? --></p>
+
+				<note type="warning">Reindexing is resource-intensive and should be done during off-peak hours.</note>
+            </sectiondiv>
 
 
             <!-- <sectiondiv conref="module-search-admin.dita#ref-ModuleSearchAdmin/sectiondiv-bpdetails"></sectiondiv> -->
@@ -99,12 +116,14 @@
         </section>
 
 
-		<!--
 		<section>
 			<title>Module Configuration</title>
-			<sectiondiv id="sectiondiv-bpconfig"/> See ditamap.
+
+			<!-- <sectiondiv conref="module-search-admin.dita#ref-ModuleSearchAdmin/sectiondiv-bpconfig"></sectiondiv> -->
+			<sectiondiv id="sectiondiv-bpconfig">
+				<p>The <uicontrol>Search Admin</uicontrol> module does not have custom settings.</p>
+			</sectiondiv>
         </section>
-		 -->
 
     </refbody>
 

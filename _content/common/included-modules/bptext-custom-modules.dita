@@ -302,6 +302,7 @@
 
 				<!-- ========== MODULE: ANSWERS ========== -->
 
+				<!-- (See also: strow-field-ModeConsole.) -->
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ModeSocialModules"><stentry/></strow> -->
 				<strow id="strow-field-ModeSocialModules">
 					<stentry><uicontrol>Mode</uicontrol></stentry>
@@ -704,7 +705,7 @@
 				</strow>
 
 
-				<!-- ========== MODULE:  ========== -->
+				<!-- ========== MODULE: USER BADGES ========== -->
 
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NumberOfBadges"><stentry/></strow> -->
 				<strow id="strow-field-NumberOfBadges">
@@ -713,7 +714,7 @@
 				</strow>
 
 
-				<!-- ========== MODULE:  ========== -->
+				<!-- ========== MODULE: WIKI ========== -->
 
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableCommentsOnArticles"><stentry/></strow> -->
 				<strow id="strow-field-EnableCommentsOnArticles">
@@ -722,10 +723,161 @@
 				</strow>
 
 
+				<!-- ========== MODULE: CONSOLE ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ModeConsole"><stentry/></strow> -->
+				<strow id="strow-field-ModeConsole">
+					<stentry><uicontrol>Mode</uicontrol></stentry>
+					<stentry>The mode for the current module instance.
+						<ul>  <!-- Is this correct? -->
+							<li><uicontrol>Normal</uicontrol>. If selected, the module displays the child pages of the current page.</li>
+							<li><uicontrol>Profile</uicontrol>. If selected, the module displays the child pages of the current user's profile information.</li>
+							<li><uicontrol>Group</uicontrol>. If selected, the module displays the child pages of the group page.</li>  <!-- Where do they specify the group? -->
+						</ul>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageVisibilitySettings"><stentry/></strow> -->
+				<strow id="strow-field-PageVisibilitySettings">
+					<stentry><uicontrol>Page Visibility Settings</uicontrol></stentry>
+					<stentry>Who can see each specified page.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowChildrenOf"><stentry/></strow> -->
+				<strow id="strow-field-ShowChildrenOf">
+					<stentry><uicontrol>Show Children of</uicontrol></stentry>
+					<stentry>The page whose children to display.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeParent"><stentry/></strow> -->
+				<strow id="strow-field-IncludeParent">
+					<stentry><uicontrol>Include Parent</uicontrol></stentry>
+					<stentry>If checked, the parent is also included in the tree/list of its children.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DefaultIconSize"><stentry/></strow>  // self-explanatory -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AllowIconResize"><stentry/></strow>  // self-explanatory -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DefaultView"><stentry/></strow> -->
+				<strow id="strow-field-DefaultView">
+					<stentry><uicontrol>Default View</uicontrol></stentry>
+					<stentry>The initial configuration of the module's contents.
+						<ul>
+							<li><uicontrol>Simple View</uicontrol></li>
+							<li><uicontrol>Detailed View</uicontrol></li>
+						</ul>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AllowViewChange"><stentry/></strow> -->
+				<strow id="strow-field-AllowViewChange">
+					<stentry><uicontrol>Allow View Change</uicontrol></stentry>
+					<stentry>If checked, the user can toggle between the <uicontrol>Simple View</uicontrol> and the <uicontrol>Detailed View</uicontrol>.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowTooltip"><stentry/></strow> -->
+				<strow id="strow-field-ShowTooltip">
+					<stentry><uicontrol>Show Tooltip</uicontrol></stentry>
+					<stentry>If checked, displays a detailed description when the user hovers over each icon.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-OrderItemsByHierarchy"><stentry/></strow> -->
+				<strow id="strow-field-OrderItemsByHierarchy">
+					<stentry><uicontrol>Order Items by Hierarchy</uicontrol></stentry>
+					<stentry>If checked, displays the child pages immediately after their respective parent pages. Otherwise, all pages are displayed alphabetically in a flat list.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeHiddenPages"><stentry/></strow> -->
+				<strow id="strow-field-IncludeHiddenPages">
+					<stentry><uicontrol>Include Hidden Pages</uicontrol></stentry>
+					<stentry>If checked, the tree/list includes hidden pages.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Width"><stentry/></strow> -->
+				<strow id="strow-field-Width">
+					<stentry><uicontrol>Width</uicontrol></stentry>
+					<stentry>The maximum width (in pixels) of the icons to reduce the width of the module. If blank, the icons can expand horizontally based on the window size. Example: You can enter 400 to simulate a grid with two columns of icons.</stentry>
+				</strow>
+
+
+				<!-- ========== MODULE: HTML PRO ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ReplaceTokens"><stentry/></strow> -->
+				<strow id="strow-field-ReplaceTokens">
+					<stentry><uicontrol>Replace Tokens</uicontrol></stentry>
+					<stentry>If checked, tokens in the HTML text are replaced.
+						<note type="note">If checked, inline editing and module caching are also disabled.</note>
+					</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MaxLengthOfDescriptionInSearch"><stentry/></strow> -->
+				<strow id="strow-field-MaxLengthOfDescriptionInSearch">
+					<stentry><uicontrol>Max Length of Description in Search</uicontrol></stentry>
+					<stentry>The maximum number of single-byte characters from the text that are displayed in site search results.</stentry> <!-- Is this correct? Shouldn't this be in the Search module? -->
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-UseFormDecoration"><stentry/></strow> -->
+				<strow id="strow-field-UseFormDecoration">
+					<stentry><uicontrol>Use Form Decoration</uicontrol></stentry>
+					<stentry>If checked, the HTML controls in the module's contents are decorated to match the style in other instances of the <uicontrol>HTML</uicontrol> module in the site.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Workflow"><stentry/></strow> -->
+				<strow id="strow-field-Workflow">
+					<stentry><uicontrol>Workflow</uicontrol></stentry>
+					<stentry>The predefined workflow to use for content creation using this module. Workflows are defined by content managers or administrators in the <uicontrol>Workflow Management</uicontrol> module.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ApplyWorkflowTo"><stentry/></strow> -->
+				<strow id="strow-field-ApplyWorkflowTo">
+					<stentry><uicontrol>Apply Workflow To</uicontrol></stentry>
+					<stentry>
+						<ul>
+							<li><uicontrol>Module</uicontrol>. The selected workflow is used only for the current instance of the module.</li>
+							<li><uicontrol>Page</uicontrol>. The selected workflow is used for all HTML module instances in the same page.</li>
+							<li><uicontrol>Site</uicontrol>. The selected workflow is used for all HTML module instances in the entire site.</li>
+						</ul>
+					</stentry>
+				</strow>
+
+
+				<!-- ========== MODULE: SEARCH RESULTS ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TitleLinkTarget"><stentry/></strow> -->
+				<strow id="strow-field-TitleLinkTarget">
+					<stentry><uicontrol>Title Link Target</uicontrol></stentry>
+					<stentry></stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ResultsScopeforContentTypes"><stentry/></strow> -->
+				<strow id="strow-field-ResultsScopeforContentTypes">
+					<stentry><uicontrol>Results Scope for Content Type(s)</uicontrol></stentry>
+					<stentry></stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableWildcardSearchesbyDefault"><stentry/></strow> -->
+				<strow id="strow-field-EnableWildcardSearchesbyDefault">
+					<stentry><uicontrol>Enable Wildcard Searches by Default</uicontrol></stentry>
+					<stentry></stentry>
+				</strow>
+
+
+
+
 
 
 
 				<!-- ========== MODULE:  ========== -->
+
+
+
+
+
+				<!-- ========== MODULE:  ========== -->
+
+
+
 
 
 
