@@ -42,7 +42,7 @@
 			<step>
 				<cmd>Go to <menucascade><uicontrol>Pages</uicontrol> <uicontrol>Add New Page</uicontrol></menucascade>.</cmd>
 				<info>
-					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuPagesAddNew.png"><alt>Page Name &gt; Add Page</alt></image>
+					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuPagesAddNew.png"><alt>Page Name &gt; Add Page</alt></image>
 				</info>
             </step>
 
@@ -55,10 +55,8 @@
 
 			<step>
 				<cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-page-permissions"></cmd>
-				<info>
-					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-Page-Permissions.png"><alt>Add Page &gt; Permissions</alt></image>
-				</info>
-				<substeps conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/substeps-xx-configure-page-permissions"><substep><cmd/></substep></substeps>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-Page-Permissions.png"><alt>Add Page &gt; Permissions</alt></image></info>
+				<substeps conkeyref="k-bpsteps/substeps-configure-permissions"><substep><cmd/></substep></substeps>
 			</step>
 
 			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-configure-page-advanced"><cmd/></step>

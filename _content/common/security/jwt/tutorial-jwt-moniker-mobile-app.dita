@@ -44,7 +44,7 @@
             <step>
                 <cmd>Set up JWT Authentication on your local installation of DNN.</cmd>
                 <substeps>
-                    <substep><cmd><xref format="dita" href="../../configuration/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
+                    <substep><cmd><xref format="dita" href="../../configuring-your-site/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
                     <substep>
                         <cmd>Modify the <codeph>JWTauth</codeph> message handler to set <codeph>forceSSL="false"</codeph>.</cmd>
                         <info>
@@ -65,7 +65,7 @@
                     </substep>
                     <substep>
                         <cmd>Create a new page and add the SPA sample module to one of the panes.</cmd>
-                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuPagesAddNew.png"><alt>Pages &gt; Add New Page</alt></image></info>
+                        <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuPagesAddNew.png"><alt>Pages &gt; Add New Page</alt></image></info>
                     </substep>
                     <substep><cmd>Create a couple of records in the contact list.</cmd></substep>
                     <substep>

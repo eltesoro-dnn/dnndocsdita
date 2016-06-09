@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-configuring-your-site-via-control-bar">
+
+    <title>Configuring Your Site</title>
+
+    <!-- Topics -->
+	<topicref format="dita" type="topic" toc="yes" href="configuring-your-site.dita" copy-to="index.dita" collection-type="family">
+
+		<topicref format="dita" type="task"  toc="yes" href="access-web-config.dita" />
+		<topicref format="dita" type="task"  toc="yes" href="assign-key-pages.dita" />
+		<topicref format="dita" type="topic" toc="yes" href="about-workflows.dita">
+			<topicref format="dita" type="task" toc="yes" href="create-workflow.dita" />
+			<topicref format="dita" type="task" toc="yes" href="edit-workflow.dita" />
+			<topicref format="dita" type="task" toc="yes" href="delete-workflow.dita" />
+			<topicref format="dita" type="task" toc="yes" href="configure-workflow-state.dita" />
+		</topicref>
+
+	</topicref>
+
+</map>
+

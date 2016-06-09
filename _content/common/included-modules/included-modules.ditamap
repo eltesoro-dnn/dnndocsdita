@@ -111,7 +111,8 @@
 		</topicref>
 
 		<!-- <topicref format="dita" type="reference" toc="yes"  href="module-content-staging.dita" />  // Skip for now. Cannot add to a page, why? -->
-		<!-- <topicref format="dita" type="reference" toc="yes"  href="module-workflow-management.dita" /> -->
+
+		<topicref format="dita" type="reference" toc="yes"  href="module-workflow-management.dita" />
 
 	</topicref>
 
@@ -132,6 +133,43 @@
 	</topicref>
 
 
+    <!-- SECURITY / USER MANAGEMENT MODULES -->
+	<!--
+	<topicref format="dita" type="topic" toc="yes" href="...-modules.dita" collection-type="family">
+
+		DEPRECATED  <topicref format="dita" type="reference" toc="yes"  href="module-account-registration.dita" />
+		<topicref format="dita" type="reference" toc="yes"  href="module-authentication.dita" />
+		<topicref format="dita" type="reference" toc="yes"  href="module-registration.dita" />
+		<topicref format="dita" type="reference" toc="yes"  href="module-security-analyzer.dita" />
+		<topicref format="dita" type="reference" toc="yes"  href="module-security-center.dita" />
+		<topicref format="dita" type="reference" toc="yes"  href="module-users-and-roles.dita" />
+
+	</topicref>
+	-->
+
+
+    <!-- SITE MANAGEMENT MODULES -->
+	<topicref format="dita" type="topic" toc="yes" href="site-management-modules.dita" collection-type="family">
+
+		<topicref format="dita" type="reference" toc="yes"  href="module-themes.dita" />
+
+
+
+		<!--
+		<topicref format="dita" type="reference" toc="yes"  href="module-advanced-url-management.dita" />
+		<topicref format="dita" type="reference" toc="yes"  href="module-google-analytics.dita" />
+		<topicref format="dita" type="reference" toc="yes"  href="module-log-viewer.dita" />
+		<topicref format="dita" type="reference" toc="yes"  href="module-recycle-bin.dita" />
+		<topicref format="dita" type="reference" toc="yes"  href="module-site-groups.dita" />
+		<topicref format="dita" type="reference" toc="yes"  href="module-site-management.dita" />
+		<topicref format="dita" type="reference" toc="yes"  href="module-site-redirection-management.dita" />
+		<topicref format="dita" type="reference" toc="yes"  href="module-site-wizard.dita" />
+		<topicref format="dita" type="reference" toc="yes"  href="module-sitemap.dita" />
+		-->
+
+	</topicref>
+
+
     <!-- HOST MODULES -->
 	<!--
 	<topicref format="dita" type="topic" toc="yes" href="...-modules.dita" collection-type="family">
@@ -142,37 +180,6 @@
 		<topicref format="dita" type="reference" toc="yes"  href="module-license-activation-manager.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-sql.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-user-switcher.dita" />
-
-	</topicref>
-	-->
-
-
-    <!-- SITE MANAGEMENT MODULES -->
-	<!--
-	<topicref format="dita" type="topic" toc="yes" href="...-modules.dita" collection-type="family">
-
-		<topicref format="dita" type="reference" toc="yes"  href="module-google-analytics.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-site-groups.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-site-management.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-site-redirection-management.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-site-wizard.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-sitemap.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-themes.dita" />  // done
-
-
-	</topicref>
-	-->
-
-
-    <!-- SECURITY MODULES -->
-	<!--
-	<topicref format="dita" type="topic" toc="yes" href="...-modules.dita" collection-type="family">
-
-		DEPRECATED  <topicref format="dita" type="reference" toc="yes"  href="module-account-registration.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-authentication.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-security-analyzer.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-security-center.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-users-and-roles.dita" />
 
 	</topicref>
 	-->
@@ -194,7 +201,6 @@
 
 	<!--
     <topicref format="dita" type="reference" toc="yes" href="included-modules.dita" copy-to="index.dita" >
-		<topicref format="dita" type="reference" toc="yes"  href="module-advanced-url-management.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-configuration-manager.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-dashboard.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-ddr-menu.dita" />
@@ -204,13 +210,10 @@
 		<topicref format="dita" type="reference" toc="yes"  href="module-file-integrity-checker.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-languages.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-lists.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-log-viewer.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-module-creator.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-pages.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-publisher.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-razor-host.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-recycle-bin.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-registration.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-scheduler.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-taxonomy-manager.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-view-profile.dita" />
@@ -228,6 +231,22 @@
             <relcolspec type="task"/>
             <relcolspec type="reference"/>
         </relheader>
+
+
+		<!-- ========== WRAPPER TOPICS ========== -->
+
+		<relrow>
+			<relcell>
+				<topicref format="dita" type="topic"     href="social-modules.dita" />
+				<topicref format="dita" type="topic"     href="general-content-modules.dita" />
+				<topicref format="dita" type="topic"     href="search-modules.dita" />
+				<!-- Add other wrapper topics here. -->
+			</relcell>
+			<relcell/>
+			<relcell>
+				<topicref format="dita" type="reference" href="included-modules.dita" />
+			</relcell>
+		</relrow>
 
 
 		<!-- ========== BASIC AND ADVANCED MODULES ========== -->

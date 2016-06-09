@@ -847,19 +847,26 @@
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TitleLinkTarget"><stentry/></strow> -->
 				<strow id="strow-field-TitleLinkTarget">
 					<stentry><uicontrol>Title Link Target</uicontrol></stentry>
-					<stentry></stentry>
+					<stentry>Where the results would be displayed:
+						<ul>
+							<li>On Same Page</li>
+							<li>Open New Page</li>
+						</ul>
+					</stentry>
 				</strow>
 
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ResultsScopeforContentTypes"><stentry/></strow> -->
 				<strow id="strow-field-ResultsScopeforContentTypes">
 					<stentry><uicontrol>Results Scope for Content Type(s)</uicontrol></stentry>
-					<stentry></stentry>
+					<stentry>The content types that would be included in the results.</stentry>
 				</strow>
 
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableWildcardSearchesbyDefault"><stentry/></strow> -->
 				<strow id="strow-field-EnableWildcardSearchesbyDefault">
 					<stentry><uicontrol>Enable Wildcard Searches by Default</uicontrol></stentry>
-					<stentry></stentry>
+					<stentry>If checked, users can enter partial words as search terms. Example, "org" will return "organization" and "organize".
+						<note type="tip">If too many searches take too long, uncheck this option.</note>
+					</stentry>
 				</strow>
 
 

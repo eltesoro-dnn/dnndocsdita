@@ -6,6 +6,8 @@
     <xsl:template name="gen-user-header">
 
         <div class="header">
+			<xsl:comment>#include file="/docs/ssi/gtm.ssi" </xsl:comment>
+
             <div class="header-logo-wrapper">
                 <a class="logo" href="/docs"> <!-- href="http://www.dnnsoftware.com/docs"> -->
                     <img src="/docs/_theme/DNN_logo_28px.png" alt="DNN Logo" />

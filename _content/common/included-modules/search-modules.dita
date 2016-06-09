@@ -36,6 +36,13 @@
 
 		<section id="overview">
 			<p>Search modules provide functionality related to indexing and searching content on your site.</p>
+
+			<p>To configure the search functionality:
+				<ul>
+					<li>Create a page that contains the <uicontrol>Search Results</uicontrol> module.</li>
+					<li>In the <uicontrol>Page Management</uicontrol> settings, the administrator must set the <uicontrol>Search Results Page</uicontrol> to that page.</li>
+				</ul>
+			</p>
 		</section>
 
     </body>

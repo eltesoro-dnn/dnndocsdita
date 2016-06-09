@@ -58,7 +58,7 @@
 		</section>
 
         <steps>
-			<step><cmd>Go to the page containing the module to configure and edit the page.</cmd></step>
+			<step conref="../building-your-site/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-editpageformoduleconfig-basic"><cmd/></step>
 			<step>
 				<cmd>(Optional) Click/Tap the <uicontrol>Autoconfigure</uicontrol> button.</cmd>
 				<info><note type="tip">Even if you plan to customize the settings, run the autoconfiguration first to initialize the settings.</note></info>

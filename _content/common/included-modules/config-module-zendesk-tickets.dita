@@ -36,7 +36,7 @@
     <taskbody>
 
         <steps>
-			<step><cmd>Go to the page containing the module to configure and edit the page.</cmd></step>
+			<step conref="../building-your-site/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-editpageformoduleconfig-basic"><cmd/></step>
 			<step conref="../building-your-site/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step>
             <step>
 				<cmd>Go to the <uicontrol>...</uicontrol> tab.</cmd>

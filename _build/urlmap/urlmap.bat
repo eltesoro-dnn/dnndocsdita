@@ -34,6 +34,9 @@ echo                [[/rule]] >> %_log%
 
 echo            [[/rules]] >> %_log%
 echo         [[/rewrite]] >> %_log%
+echo         [[handlers]] >> %_log%
+echo             [[add name="SSI-html" path="*.html" verb="*" modules="ServerSideIncludeModule" resourceType="Unspecified" /]] >> %_log%
+echo         [[/handlers]] >> %_log%
 echo     [[/system.webServer]] >> %_log%
 echo [[/configuration]] >> %_log%
 

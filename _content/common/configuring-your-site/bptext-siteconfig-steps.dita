@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-bptext-siteconfig-steps">
+
+    <title>Boilerplates &#8212; Site Configuration Steps</title>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+    </prolog>
+
+    <taskbody>
+
+		<section>
+
+			<!-- FIELD NAMES IN SIMPLETABLE -->
+
+			<simpletable relcolwidth="1* 3*">
+
+				<!-- ========== PAGE MANAGEMENT ========== -->
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-SplashPage"><stentry/></strow> -->
+				<strow id="strow-field-SplashPage">
+					<stentry><uicontrol>Splash Page</uicontrol></stentry>
+					<stentry>The page displayed before the user sees the home page of the site. If <uicontrol>None Specified</uicontrol>, then the <uicontrol>Home Page</uicontrol> is displayed immediately.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-HomePage"><stentry/></strow>  // self-explanatory -->
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-LoginPage"><stentry/></strow> -->
+				<strow id="strow-field-LoginPage">
+					<stentry><uicontrol>Login Page</uicontrol></stentry>
+					<stentry>The page must include the <uicontrol>Authentication</uicontrol> module.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-RegistrationPage"><stentry/></strow> -->
+				<strow id="strow-field-RegistrationPage">
+					<stentry><uicontrol>Registration Page</uicontrol></stentry>
+					<stentry>The page can include the <uicontrol>Registration</uicontrol> module.</stentry>  <!-- // Not required? -->
+				</strow>
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-UserProfilePage"><stentry/></strow> -->
+				<strow id="strow-field-UserProfilePage">
+					<stentry><uicontrol>User Profile Page</uicontrol></stentry>
+					<stentry>The page can include the <uicontrol>Profile Dashboard</uicontrol> module.</stentry>  <!-- // Not required? -->
+				</strow>
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-SearchResultsPage"><stentry/></strow> -->
+				<strow id="strow-field-SearchResultsPage">
+					<stentry><uicontrol>Search Results Page</uicontrol></stentry>
+					<stentry>The page must include the <uicontrol>Search Results</uicontrol> module.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-404ErrorPage"><stentry/></strow> -->
+				<strow id="strow-field-404ErrorPage">
+					<stentry><uicontrol>404 Error Page</uicontrol></stentry>
+					<stentry>The page displayed if the requested page is not found.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-500ErrorPage"><stentry/></strow> -->
+				<strow id="strow-field-500ErrorPage">
+					<stentry><uicontrol>500 Error Page</uicontrol></stentry>
+					<stentry>The page displayed if the requested page generates an error.</stentry>
+				</strow>
+
+
+
+
+				<!-- ========== ... ========== -->
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-"><stentry/></strow>
+				<strow id="strow-field-">
+					<stentry><uicontrol></uicontrol></stentry>
+					<stentry></stentry>
+				</strow>
+				-->
+
+
+			</simpletable>
+
+		</section>
+
+
+
+        <steps>
+
+			<!-- ========== ... ========== -->
+			<step><cmd/>
+
+			</step>
+
+
+        </steps>
+
+    </taskbody>
+
+</task>

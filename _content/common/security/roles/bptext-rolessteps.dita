@@ -19,13 +19,13 @@
             <!-- USE THIS: <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-manageroles"><cmd/></step> -->
             <step id="step-manageroles">
                 <cmd>Go to <menucascade><uicontrol>Users</uicontrol> <uicontrol>Manage Roles</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuUsersManageRoles.png"><alt>Users &gt; Manage Roles</alt></image></info>
+                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuUsersManageRoles.png"><alt>Users &gt; Manage Roles</alt></image></info>
             </step>
 
             <!-- WILL BE DEPRECATED: <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-admsecroles"><cmd/></step> -->
             <step id="step-admsecroles">
                 <cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Security Roles</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuAdminCommonSecurityRoles.png"><alt>Admin &gt; Security Roles</alt></image></info>
+                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuAdminCommonSecurityRoles.png"><alt>Admin &gt; Security Roles</alt></image></info>
             </step>
 
 

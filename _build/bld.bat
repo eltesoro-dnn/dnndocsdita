@@ -95,11 +95,13 @@ xcopy %_gitdir%\_content\web.config          %_outdir%\.                /i/s/v/y
 xcopy %_gitdir%\_content\common\samples      %_outdir%\common\samples   /i/s/v/y
 xcopy %_gitdir%\_content\common\img\*.png    %_outdir%\common\img       /i/s/v/y
 xcopy %_gitdir%\_content\common\img\*.svg    %_outdir%\common\img       /i/s/v/y
+xcopy %_gitdir%\_content\ssi                 %_outdir%\ssi              /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\26D3F6_6_0.*     %_outdir%\_theme           /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\*.jpg            %_outdir%\_theme           /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\*.png            %_outdir%\_theme           /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\*.svg            %_outdir%\_theme           /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\*.js             %_outdir%\_theme           /i/s/v/y
+
 
 :. The following is a hack.
 xcopy %_outdir%\developers\creating-modules\index.html %_outdir%\developers\extensions /v

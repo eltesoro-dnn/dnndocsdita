@@ -78,8 +78,8 @@
                         <stentry>
                             <!-- <ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
-                                <image outputclass="img-ico" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
-                                <image outputclass="img-ico" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                                <image conkeyref="k-bptext/image-LogoContent"></image>
+                                <image conkeyref="k-bptext/image-LogoEngage"></image>
                             </ph>
                         </stentry>
                     </strow>

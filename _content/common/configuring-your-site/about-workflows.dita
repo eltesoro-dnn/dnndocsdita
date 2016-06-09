@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-about-workflows">
+
+    <title>About Workflows</title>
+    <titlealts>
+        <navtitle>Workflows</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1606</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section id="workflow-overview">
+			<p>A workflow is the process that content goes through in its lifetime, specifically during its creation. The workflow provides a structure for different roles to provide feedback regarding the content at various times in the process.</p>
+		</section>
+
+		<section id="state-overview">
+			<p>A state in a workflow represents the stages of the content-creation or content-editing process.</p>
+		</section>
+
+		<example>
+			<p>Example: The following can be states in the creation of a text asset:</p>
+			<simpletable relcolwidth="1* 3* 3*">
+				<sthead>
+					<stentry>Order</stentry>
+					<stentry>State</stentry>
+					<stentry>Reviewers</stentry>
+				</sthead>
+				<strow>
+					<stentry>1</stentry>
+					<stentry>Draft (default)</stentry>
+					<stentry></stentry>
+				</strow>
+				<strow>
+					<stentry>2</stentry>
+					<stentry>Content/Technical review</stentry>
+					<stentry>Subject Matter Experts</stentry>
+				</strow>
+				<strow>
+					<stentry>3</stentry>
+					<stentry>Incorporation of feedback</stentry>
+					<stentry>Content Editors</stentry>
+				</strow>
+				<strow>
+					<stentry>4</stentry>
+					<stentry>Editing</stentry>
+					<stentry>Content Manager</stentry>
+				</strow>
+				<strow>
+					<stentry>5</stentry>
+					<stentry>Incorporation of edits</stentry>
+					<stentry>Content Editors</stentry>
+				</strow>
+				<strow>
+					<stentry>6</stentry>
+					<stentry>Published (default)</stentry>
+					<stentry></stentry>
+				</strow>
+			</simpletable>
+		</example>
+    </body>
+
+</topic>

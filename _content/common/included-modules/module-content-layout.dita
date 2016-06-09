@@ -42,13 +42,7 @@
 
             <!-- <sectiondiv conref="module-content-layout.dita#ref-ModuleContentLayout/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
-				<!--
-				<p>DNN Platform:</p>
-                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ContentLayout-Platform.png"><alt>Content Layout module on DNN Platform</alt></image>
-
-				<p>DNN Evoq:</p>
-				-->
-                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ContentLayout-Evoq.png"><alt>Content Layout module<!--  on DNN Evoq --></alt></image>
+                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ContentLayout.png"><alt>Content Layout module</alt></image>
             </sectiondiv>
 
 
@@ -87,8 +81,8 @@
                         <stentry>
                             <!-- <ph conref="module-content-layout.dita#ref-ModuleContentLayout/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
-                                <image outputclass="img-ico" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
-                                <image outputclass="img-ico" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                                <image conkeyref="k-bptext/image-LogoContent"></image>
+                                <image conkeyref="k-bptext/image-LogoEngage"></image>
                             </ph>
                         </stentry>
                     </strow>

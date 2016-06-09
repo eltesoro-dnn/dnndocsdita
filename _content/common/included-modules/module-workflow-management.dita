@@ -34,7 +34,7 @@
 
             <sectiondiv id="sectiondiv-bpdesc">
 				<!-- <ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/ph-bpshortdesc"></ph> -->
-				<p><ph id="ph-bpshortdesc">Enables administrators to specify the stages of a content-creation workflow.</ph></p>
+				<p><ph id="ph-bpshortdesc">Enables administrators to define the stages of a content-creation process.</ph></p>
 			</sectiondiv>
 
 
@@ -78,8 +78,8 @@
                         <stentry>
                             <!-- <ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
-                                <image outputclass="img-ico" href="../../common/img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
-                                <image outputclass="img-ico" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                                <image conkeyref="k-bptext/image-LogoContent"></image>
+                                <image conkeyref="k-bptext/image-LogoEngage"></image>
                             </ph>
                         </stentry>
                     </strow>
@@ -93,12 +93,14 @@
         </section>
 
 
-		<!--
 		<section>
 			<title>Module Configuration</title>
-			<sectiondiv id="sectiondiv-bpconfig"/> See ditamap.
+
+			<!-- <sectiondiv conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/sectiondiv-bpconfig"></sectiondiv> -->
+			<sectiondiv id="sectiondiv-bpconfig">
+				<p>The <uicontrol>Workflow Management</uicontrol> module does not have custom settings.</p>
+			</sectiondiv>
         </section>
-		 -->
 
     </refbody>
 

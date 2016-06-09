@@ -749,6 +749,11 @@ span.filepath {
   width: 100px;
 }
 
+.img-logoprod {
+  width: 50px;
+  padding-right: 10px;
+}
+
 .img-scr {
   	-webkit-box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.4);
 	-moz-box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.4);
@@ -1081,6 +1086,9 @@ nav[role="toc"] > ul > li > ul > li > ul > li > a {
 
 /* HOME PAGE STYLES */
 
+main[role="main-index"] {
+  margin-bottom: -50px;
+}
 #welcome-hero {
   display: block;
   width: 90%;
@@ -1267,6 +1275,10 @@ img.img-ico {
   display: block;
   margin-top: 5px;
   margin-bottom: 35px;
+}
+img.img-logoprod {
+  width: 50px;
+  padding-right: 10px;
 }
 .sub-nav-tabs:first-child {
   padding-top: 15px;
@@ -1853,6 +1865,10 @@ and (orientation : portrait) {
   img.image {
     width: 100%;
   }
+  img.img-logoprod {
+    width: 50px;
+    padding-right: 10px;
+  }
   .footer, main:after {
     height: 30px;
   }
@@ -1905,7 +1921,7 @@ and (orientation : portrait) {
 @media only screen and (min-width : 992px) {
   #header-subnav-documentation,  #header-askq > ul, .sibling-sites {
     position: absolute;
-    top: 30px;
+    top: 28px;
     padding-top: 9px;
     width: 300px;
     margin-left: -90px;
@@ -2032,6 +2048,10 @@ and (orientation : portrait) {
   img.image {
     width: auto;
   }
+  img.img-logoprod {
+    width: 50px;
+    padding-right: 10px;
+  }
   .social-media-wrapper {
     display: inline-block!important;
   }
@@ -2039,7 +2059,7 @@ and (orientation : portrait) {
     display: inline-block;
   }
   .footer-index {
-    position: absolute;
+    position: relative;
   }
 }
 

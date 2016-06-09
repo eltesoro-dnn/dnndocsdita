@@ -18,11 +18,13 @@
 
 			<!-- ========== MENU ========== -->
 
+			<!-- ========== MENU: HOST EXTENSIONS ========== -->
+
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-menuhostextensions"><cmd/></step> -->
 			<!-- <step conkeyref="k-bpsteps/step-menuhostextensions"><cmd/></step> -->
             <step id="step-menuhostextensions">
 				<cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="img/scr-menuHostCommonExtensions.png"><alt>Host &gt; Extensions</alt></image></info>
+                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="center" href="img/scr-menuHostCommonExtensions.png"><alt>Host &gt; Extensions</alt></image></info>
             </step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-hostopenmoduleforediting"><cmd/></step> -->
@@ -40,11 +42,13 @@
             </step>
 
 
+			<!-- ========== MENU: ADMIN EXTENSIONS ========== -->
+
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-menuadminextensions"><cmd/></step> -->
 			<!-- <step conkeyref="k-bpsteps/step-menuadminextensions"><cmd/></step> -->
             <step id="step-menuadminextensions">
-				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol></uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="img/scr-menuAdminAdvanced-Extensions.png"><alt>Host &gt; Extensions</alt></image></info>
+				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.</cmd>
+                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="center" href="img/scr-menuAdminAdvanced-Extensions.png"><alt>Admin &gt; Advanced Settings (double-gear tab) &gt; Extensions</alt></image></info>
             </step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-adminopenmoduleforediting"><cmd/></step> -->
@@ -59,6 +63,81 @@
 					<substep><cmd>Click/Tap the pencil icon for the module you want.</cmd></substep>
 				</substeps>
             </step>
+
+
+			<!-- ========== MENU: SITE SETTINGS ========== -->
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-cp-gotositesettings"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-cp-gotositesettings"><cmd/></step> -->
+			<step id="step-cp-gotositesettings">
+				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Site Settings</uicontrol></menucascade>.</cmd>
+				<info>
+					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-menuAdminCommonSiteSettings.png"><alt>Admin &gt; Site Settings</alt></image>
+				</info>
+            </step>
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-cp-sitesettings-advanced-pagemgmt"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-cp-sitesettings-advanced-pagemgmt"><cmd/></step> -->
+			<step id="step-cp-sitesettings-advanced-pagemgmt">
+				<cmd>Go to the <uicontrol>Advanced Settings</uicontrol> tab and expand the <uicontrol>Page Management</uicontrol> section.</cmd>
+				<info>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-SiteSettings-Advanced-PageMgmt.png"><alt>Site Settings &gt; Advanced Settings &gt; Page Management</alt></image>
+				</info>
+            </step>
+
+
+			<!-- ========== MENU: WORKFLOW MANAGEMENT ========== -->
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-menuadminworkflowmgmt"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-menuadminworkflowmgmt"><cmd/></step> -->
+            <step id="step-menuadminworkflowmgmt">
+				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Workflow Management</uicontrol></menucascade>.</cmd>
+                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="center" href="img/scr-menuAdminAdvanced-WorkflowMgmt.png"><alt>Admin &gt; Advanced Settings (double-gear tab) &gt; Workflow Management</alt></image></info>
+            </step>
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-workflowlist"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-workflowlist"><cmd/></step> -->
+			<step id="step-workflowlist">
+				<cmd>Click/Tap the <uicontrol>Create Workflow</uicontrol> button.</cmd>
+				<info>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-WorkflowMgmt-List.png"><alt>Workflow list</alt></image>
+				</info>
+            </step>
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createworkflow"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-createworkflow"><cmd/></step> -->
+			<step id="step-createworkflow">
+				<cmd>Fill in the name and description for the workflow. Then <uicontrol>Save</uicontrol>.</cmd>
+				<info>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-WorkflowMgmt-Create.png"><alt>Create Workflow form</alt></image>
+				</info>
+            </step>
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-editworkflow"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-editworkflow"><cmd/></step> -->
+			<step id="step-editworkflow">
+				<cmd>In the list of workflows, hover over the workflow to edit. Then click/tap the pencil icon.</cmd>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-WorkflowMgmt-icons-pencil.png"><alt>Pencil icon to edit the workflow</alt></image></info>
+			</step>
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-manageworkflowstates"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-manageworkflowstates"><cmd/></step> -->
+			<step id="step-manageworkflowstates">
+				<cmd>Manage the workflow states.</cmd>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-WorkflowMgmt-EditWorkflow.png"><alt>Workflow editing form</alt></image></info>
+				<choices>
+					<choice>To add a state to the workflow, click/tap the <uicontrol>Add a State</uicontrol> button. Then configure the workflow state.</choice>
+					<choice>To edit a state, click/tap the state's pencil icon in the <uicontrol>Actions</uicontrol> column. Then configure the workflow state.</choice>
+					<choice>To delete a state, click/tap the state's X icon in the <uicontrol>Actions</uicontrol> column.</choice>
+					<choice>To rearrange the order of the states, use the arrows in the <uicontrol>Move</uicontrol> column.</choice>
+				</choices>
+			</step>
+
+			<!-- <step conkeyref="k-bpsteps/step-deleteworkflow"><cmd/></step> -->
+			<step id="step-deleteworkflow">
+				<cmd>In the list, hover over the workflow to delete. Click/tap the X icon, then confirm.</cmd>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-WorkflowMgmt-icons-X.png"><alt>X icon to delete the workflow</alt></image></info>
+			</step>
 
 
 
@@ -158,6 +237,18 @@
 				</choices>
 			</step>
 
+
+			<step>
+				<cmd></cmd>
+				<!-- <substeps conref="bptext-steps.dita#tsk-bptext-steps/substeps-configure-permissions"><substep><cmd/></substep></substeps> -->
+				<!-- <substeps conkeyref="k-bpsteps/substeps-configure-permissions"><substep><cmd/></substep></substeps> -->
+				<substeps id="substeps-configure-permissions">
+					<substep><cmd>(Optional) To filter the displayed roles, select the role group from the <uicontrol>Filter By Group</uicontrol> dropdown.</cmd></substep>
+					<substep><cmd>(Optional) To add another role to the list, choose the additional role from the <uicontrol>Select Role</uicontrol> dropdown, and click/tap <uicontrol>Add</uicontrol>.</cmd></substep>
+					<substep><cmd>(Optional) To add a specific user to the list, enter part of their display name, select the correct user from the list, and click/tap <uicontrol>Add</uicontrol>.</cmd></substep>
+					<substep><cmd>(Optional) Check the appropriate checkboxes to enable each role to perform actions.</cmd></substep>
+				</substeps>
+			</step>
 
 
 

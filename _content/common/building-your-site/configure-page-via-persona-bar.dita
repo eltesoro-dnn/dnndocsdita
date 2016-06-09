@@ -54,7 +54,7 @@
 			<step>
 				<cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-page-permissions"></cmd>
 				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Page-Permissions.png"><alt>Add Page &gt; Permissions</alt></image></info>
-				<substeps conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/substeps-xx-configure-page-permissions"><substep><cmd/></substep></substeps>
+				<substeps conkeyref="k-bpsteps/substeps-configure-permissions"><substep><cmd/></substep></substeps>
 			</step>
 		</steps>
 

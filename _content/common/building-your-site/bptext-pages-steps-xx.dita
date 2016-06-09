@@ -378,19 +378,18 @@
 
 			<!-- PAGES MENU (both) PAGES: ADD, EDIT -->
 
+			<!-- <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-editpageformoduleconfig-basic"><cmd/></step> -->
+			<step id="step-editpageformoduleconfig-basic">
+				<cmd>Go to the page containing the module to configure. Edit the page.</cmd>
+            </step>
+
 			<!--
 			<cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-page-permissions"></cmd>
 			<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-XX-Page-Permissions.png"><alt>Page Settings &gt; Permissions</alt></image></info>
-			<substeps conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/substeps-xx-configure-page-permissions"><substep><cmd/></substep></substeps>
+			<substeps conkeyref="k-bpsteps/substeps-configure-permissions"><substep><cmd/></substep></substeps>
 			-->
 			<step>
 				<cmd id="cmd-xx-configure-page-permissions">(Optional) In the <uicontrol>Permissions</uicontrol> tab, configure which roles can do which actions on this page.</cmd>
-				<substeps id="substeps-xx-configure-page-permissions">
-					<substep><cmd>(Optional) To filter the displayed roles, select the role group from the <uicontrol>Filter By Group</uicontrol> dropdown.</cmd></substep>
-					<substep><cmd>(Optional) To add another role to the list, choose the additional role from the <uicontrol>Select Role</uicontrol> dropdown, and click/tap <uicontrol>Add</uicontrol>.</cmd></substep>
-					<substep><cmd>(Optional) To add a specific user to the list, enter part of their display name, select the correct user from the list, and click/tap <uicontrol>Add</uicontrol>.</cmd></substep>
-					<substep><cmd>(Optional) Check the appropriate checkboxes to enable each role to perform actions on the page.</cmd></substep>
-				</substeps>
 			</step>
 
 			<!--

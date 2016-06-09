@@ -79,7 +79,7 @@
                         <stentry>
                             <!-- <ph conref="module-activity-stream.dita#ref-ModuleActivityStream/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
-                                <image outputclass="img-ico" href="../../common/img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+                                <image conkeyref="k-bptext/image-LogoEngage"></image>
                             </ph>
                         </stentry>
                     </strow>

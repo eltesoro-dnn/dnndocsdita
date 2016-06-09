@@ -30,7 +30,7 @@
                 <substeps>
                     <substep>
                         <cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.</cmd>
-                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuHostCommonExtensions.png"><alt>Host &gt; Extensions</alt></image></info>
+                        <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuHostCommonExtensions.png"><alt>Host &gt; Extensions</alt></image></info>
                     </substep>
                     <substep>
                         <cmd>In the <uicontrol>Available Extensions</uicontrol> tab, expand the <uicontrol>Providers</uicontrol> section, search for <uicontrol>DNN JWT Auth Handler</uicontrol>, then click/tap its <uicontrol>Install</uicontrol> button.</cmd>
@@ -46,7 +46,7 @@
             <step>
                 <cmd>(Optional) Enable JWT authentication for all Web API requests.</cmd>
                 <substeps>
-                    <substep><cmd><xref format="dita" href="../../configuration/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
+                    <substep><cmd><xref format="dita" href="../../configuring-your-site/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
                     <substep><cmd>Search for the newly-added JWTAuth line inside the <codeph>&lt;messageHandlers/&gt;</codeph> section.</cmd></substep>
                     <substep>
                     <cmd>Change JWTAuth's <codeph>enabled</codeph> and <codeph>defaultInclude</codeph> attributes to "true".</cmd>
@@ -74,7 +74,7 @@
                     <note type="warning">Enabling CORS allows external sites to access your site, therefore, making it vulnerable to cross-site scripting (XSS) attacks.</note>
                 </info>
                 <substeps>
-                    <substep><cmd><xref format="dita" href="../../configuration/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
+                    <substep><cmd><xref format="dita" href="../../configuring-your-site/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
                     <substep>
                         <cmd>In your <filepath>web.config</filepath> file, add these access control lines inside the <codeph>&lt;customHeaders/&gt;</codeph> section.</cmd>
                         <info>
@@ -91,7 +91,7 @@
             <step outputclass="audience-dev">
                 <cmd>(Optional) <ph outputclass="audience-dev">Developers:</ph> Enable additional logging for advanced debugging, testing, or troubleshooting.</cmd>
                 <substeps>
-                    <substep><cmd><xref format="dita" href="../../configuration/access-web-config.dita">Access the <filepath>DotNetNuke.log4net.config</filepath> file.</xref></cmd></substep>
+                    <substep><cmd><xref format="dita" href="../../configuring-your-site/access-web-config.dita">Access the <filepath>DotNetNuke.log4net.config</filepath> file.</xref></cmd></substep>
                     <substep>
                         <cmd>In your DotNetNuke.log4net.config file, add the following logger lines after the <codeph>&lt;/root&gt;</codeph> closing tag.</cmd>
                         <info>
