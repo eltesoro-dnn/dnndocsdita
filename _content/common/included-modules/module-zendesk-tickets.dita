@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleZendeskTickets">
+<reference xml:lang="en" id="ref-module-zendesk-tickets">
 
     <title>Module: Zendesk Tickets</title>
     <titlealts>
@@ -9,14 +9,16 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <audience type="other" othertype="content manager" job="customizing" />
+            <audience type="other" othertype="community manager" job="customizing" />
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
@@ -30,12 +32,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-zendesk-tickets.dita#ref-module-zendesk-tickets/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Enables the registered user to view or create Zendesk tickets.</ph></p> <!-- ??? -->
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-module-zendesk-tickets/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <!-- <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ZendeskTickets.png"><alt>Zendesk Tickets module</alt></image>  // The Zendesk connector has not been configured -->
             </sectiondiv>
@@ -46,14 +48,14 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/sectiondiv-bpmoreinfo"></sectiondiv>
+            <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-module-zendesk-tickets/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo">
                 <p>Includes the <uicontrol>User Desk</uicontrol>.</p>	// What is the User Desk?
             </sectiondiv>
 			-->
 
 
-            <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-module-zendesk-tickets/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
 				<simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -64,18 +66,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-zendesk-tickets.dita#ref-module-zendesk-tickets/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-zendesk.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Zendesk Tickets</stentry>
                         <stentry>
-							<!-- <ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/ph-bpcategory"></ph> -->
+							<!-- <ph conref="module-zendesk-tickets.dita#ref-module-zendesk-tickets/ph-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Social</ph>
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/ph-bpproducts"></ph> -->
+                            <!-- <ph conref="module-zendesk-tickets.dita#ref-module-zendesk-tickets/ph-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoEngage"></image>
                             </ph>

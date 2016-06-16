@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleRecycleBin">
+<reference xml:lang="en" id="ref-module-recycle-bin">  <!-- MOVING TO PERSONA BAR -->
 
     <title>Module: Recycle Bin</title>
     <titlealts>
@@ -9,12 +9,13 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
             <prodinfo>
                 <prodname>Platform</prodname>
@@ -37,12 +38,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-recycle-bin.dita#ref-module-recycle-bin/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Allows administrators to restore or purge deleted components.</ph></p>
 			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-recycle-bin.dita#ref-ModuleRecycleBin/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-recycle-bin.dita#ref-module-recycle-bin/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-RecycleBin.png"><alt>Recycle Bin module</alt></image>
             </sectiondiv>
@@ -53,12 +54,12 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-recycle-bin.dita#ref-ModuleRecycleBin/sectiondiv-bpmoreinfo"></sectiondiv>
+            <!-- <sectiondiv conref="module-recycle-bin.dita#ref-module-recycle-bin/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
-            <!-- <sectiondiv conref="module-recycle-bin.dita#ref-ModuleRecycleBin/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-recycle-bin.dita#ref-module-recycle-bin/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
 				<simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -69,18 +70,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-recycle-bin.dita#ref-module-recycle-bin/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-recyclebin.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Recycle Bin</stentry>
 						<stentry>
-							<!-- <ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-recycle-bin.dita#ref-module-recycle-bin/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Admin</ph>
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-recycle-bin.dita#ref-module-recycle-bin/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoPlatform"></image>
                                 <image conkeyref="k-bptext/image-LogoContent"></image>

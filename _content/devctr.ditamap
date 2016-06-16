@@ -116,11 +116,20 @@
                 <topicref format="dita" type="task" navtitle="Pack Your Extension" href="developers/extensions/pack-extension.dita" />
             </relcell>
             <relcell>
-                <!-- <topicref format="dita" type="reference" toc="yes" href="designers/contents-theme-pack.dita" /> Topic not ready. -->
-                <!-- <topicref format="dita" type="reference" toc="yes" href="developers/contents-module-pack.dita" /> Topic not ready. -->
                 <topicref format="dita" type="reference" href="developers/extensions/dnn-manifest-schema.dita" />
             </relcell>
         </relrow>
+
+		<!-- dev -->
+		<relrow>
+			<relcell></relcell>
+			<relcell>
+				<topicref format="dita" type="task"      href="developers/creating-modules/use-module-creator.dita" />
+			</relcell>
+			<relcell>
+				<topicref format="dita" type="reference" href="developers/included-modules/module-module-creator.dita" />
+			</relcell>
+		</relrow>
 
         <!-- dev -->
         <relrow>
@@ -136,8 +145,6 @@
             </relcell>
             <relcell>
                 <topicref format="dita" type="topic"   href="developers/providers.dita" />
-                <!-- <topicref format="dita" type="reference" scope="peer" href="developers/contents-module-pack.dita" /> Topic not ready. -->
-                <!-- <topicref format="dita" type="reference" scope="peer" href="designers/contents-theme-pack.dita" /> Topic not ready. -->
             </relcell>
         </relrow>
 

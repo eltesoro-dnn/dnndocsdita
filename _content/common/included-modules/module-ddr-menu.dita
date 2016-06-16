@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleDDRMenu">
+<reference xml:lang="en" id="ref-module-ddr-menu">
 
     <title>Module: DDR Menu</title>
     <titlealts>
@@ -9,21 +9,20 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Content</prodname>
-
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
             </prodinfo>
             <prodinfo>
@@ -39,12 +38,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-ddr-menu.dita#ref-module-ddr-menu/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Provides a basic navigation structure.</ph></p>
 			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-ddr-menu.dita#ref-ModuleDDRMenu/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-ddr-menu.dita#ref-module-ddr-menu/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-DDRMenu.png"><alt>DDR Menu module</alt></image>
             </sectiondiv>
@@ -55,12 +54,12 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-ddr-menu.dita#ref-ModuleDDRMenu/sectiondiv-bpmoreinfo"></sectiondiv>
+            <!-- <sectiondiv conref="module-ddr-menu.dita#ref-module-ddr-menu/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
-            <!-- <sectiondiv conref="module-ddr-menu.dita#ref-ModuleDDRMenu/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-ddr-menu.dita#ref-module-ddr-menu/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
                 <simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -71,18 +70,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-ddr-menu.dita#ref-module-ddr-menu/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-ddrmenu.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>DDR Menu</stentry>
                         <stentry>
-							<!-- <ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-ddr-menu.dita#ref-module-ddr-menu/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Admin</ph>  <!-- None in Platform -->
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-ddr-menu.dita#ref-module-ddr-menu/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoPlatform"></image>
                                 <image conkeyref="k-bptext/image-LogoContent"></image>

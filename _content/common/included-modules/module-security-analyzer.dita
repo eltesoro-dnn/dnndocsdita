@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleSecurityAnalyzer">
+<reference xml:lang="en" id="ref-module-security-analyzer">  <!-- MOVING TO PERSONA BAR -->
 
     <title>Module: Security Analyzer</title>
     <titlealts>
@@ -9,13 +9,16 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
+            <audience type="other" othertype="content manager" job="customizing" />
+            <audience type="other" othertype="community manager" job="customizing" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -37,12 +40,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-security-analyzer.dita#ref-module-security-analyzer/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Performs a basic security analysis on the site.</ph></p> <!-- ??? -->
 			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-security-analyzer.dita#ref-module-security-analyzer/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SecurityAnalyzer.png"><alt>Security Analyzer module</alt></image>
             </sectiondiv>
@@ -53,12 +56,12 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/sectiondiv-bpmoreinfo"></sectiondiv>
+            <!-- <sectiondiv conref="module-security-analyzer.dita#ref-module-security-analyzer/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
-            <!-- <sectiondiv conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-security-analyzer.dita#ref-module-security-analyzer/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
 				<simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -69,18 +72,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-security-analyzer.dita#ref-module-security-analyzer/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-securityanalyzer.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>SecurityAnalyzer</stentry>
                         <stentry>
-							<!-- <ph conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-security-analyzer.dita#ref-module-security-analyzer/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">None</ph>  <!-- Expected: Admin -->
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-security-analyzer.dita#ref-module-security-analyzer/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoPlatform"></image>
                                 <image conkeyref="k-bptext/image-LogoContent"></image>

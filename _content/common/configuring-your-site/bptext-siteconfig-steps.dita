@@ -67,6 +67,60 @@
 				</strow>
 
 
+				<!-- ========== ADVANCED URL MANAGEMENT ========== -->
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-UseLowercaseURLs"><stentry/></strow> -->
+				<strow id="strow-field-UseLowercaseURLs">
+					<stentry><uicontrol>Use Lowercase URLs</uicontrol></stentry>
+					<stentry>If checked, URLs will be converted to all lowercase characters.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-RedirectMixedCaseURLs"><stentry/></strow> -->
+				<strow id="strow-field-RedirectMixedCaseURLs">
+					<stentry><uicontrol>Redirect Mixed Case URLs</uicontrol></stentry>
+					<stentry>If checked, URLs with mixed-case characters would be redirected to the lowercase version of that URL.</stentry>  <!-- What's the diff between this and Use Lowercase URLs? -->
+				</strow>
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-URLSpaceEncodingValue"><stentry/></strow> -->
+				<strow id="strow-field-URLSpaceEncodingValue">
+					<stentry><uicontrol>URL Space Encoding Value</uicontrol></stentry>
+					<stentry>The value that replaces any space character in the parameter portion of a generated URL.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-ConvertAccentedCharacters"><stentry/></strow> -->
+				<strow id="strow-field-ConvertAccentedCharacters">
+					<stentry><uicontrol>Convert Accented Characters</uicontrol></stentry>
+					<stentry>If checked, accented characters are converted to their plain-ASCII equivalents.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-ReplaceTheseCharacters"><stentry/></strow> -->
+				<strow id="strow-field-ReplaceTheseCharacters">
+					<stentry><uicontrol>Replace These Characters</uicontrol></stentry>
+					<stentry>The list of characters to be replaced with the default character alternative, which can be a hyphen (-) or an underscore (_).</stentry>  <!-- Where do they set the default character? -->
+				</strow>
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-FindReplaceTheseCharacters"><stentry/></strow> -->
+				<strow id="strow-field-FindReplaceTheseCharacters">
+					<stentry><uicontrol>Find/Replace These Characters</uicontrol></stentry>
+					<stentry>A comma-delimited pair (<varname>f</varname>,<varname>r</varname>), where any occurrence of <varname>f</varname> is to be replaced by <varname>r</varname>. The value of <varname>f</varname> can only be a character; however, <varname>r</varname> can be a string.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-WarninLogAboutDuplicateURLs"><stentry/></strow> -->
+				<strow id="strow-field-WarninLogAboutDuplicateURLs">
+					<stentry><uicontrol>Warn in Log About Duplicate URLs</uicontrol></stentry>
+					<stentry>If checked, duplicate URLs are reported in the event log. The system chooses which page with the duplicate URL is returned.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-EnableCustomURLProviders"><stentry/></strow> -->
+				<strow id="strow-field-EnableCustomURLProviders">
+					<stentry><uicontrol>Enable Custom URL Providers</uicontrol></stentry>
+					<stentry>If checked, custom URL providers are loaded and used. Otherwise, the default URL provider is used.</stentry>
+				</strow>
+
+
+
+
+
 
 
 				<!-- ========== ... ========== -->

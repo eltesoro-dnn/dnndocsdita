@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleExtensions">
+<reference xml:lang="en" id="ref-module-extensions">  <!-- MOVING TO PERSONA BAR -->
 
     <title>Module: Extensions</title>
     <titlealts>
@@ -9,13 +9,13 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
-            <audience type="administrator" job="customizing" />
+            <audience type="other" othertype="host" job="customizing" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -23,7 +23,6 @@
             <prodinfo>
                 <prodname>Evoq Content</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
-
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
@@ -38,12 +37,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-extensions.dita#ref-ModuleExtensions/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-extensions.dita#ref-module-extensions/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Displays the list of installed extensions (including modules, themes, language packs, providers) and their status. Hosts can also configure the extension settings from this module.</ph></p>
 			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-extensions.dita#ref-ModuleExtensions/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-extensions.dita#ref-module-extensions/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Extensions.png"><alt>Extensions module</alt></image>
             </sectiondiv>
@@ -54,12 +53,12 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-extensions.dita#ref-ModuleExtensions/sectiondiv-bpmoreinfo"></sectiondiv>
+            <!-- <sectiondiv conref="module-extensions.dita#ref-module-extensions/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
-            <!-- <sectiondiv conref="module-extensions.dita#ref-ModuleExtensions/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-extensions.dita#ref-module-extensions/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
                 <simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -70,18 +69,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-extensions.dita#ref-ModuleExtensions/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-extensions.dita#ref-module-extensions/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-extensions.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Extensions</stentry>
                         <stentry>
-							<!-- <ph conref="module-extensions.dita#ref-ModuleExtensions/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-extensions.dita#ref-module-extensions/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Admin</ph>
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-extensions.dita#ref-ModuleExtensions/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-extensions.dita#ref-module-extensions/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoPlatform"></image>
                                 <image conkeyref="k-bptext/image-LogoContent"></image>

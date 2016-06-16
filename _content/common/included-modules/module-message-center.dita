@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleMessageCenter">
+<reference xml:lang="en" id="ref-module-message-center">
 
     <title>Module: Message Center</title>
     <titlealts>
@@ -9,14 +9,14 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -38,12 +38,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-message-center.dita#ref-ModuleMessageCenter/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-message-center.dita#ref-module-message-center/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Allows registered users to send messages to each other.</ph></p>
 			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-message-center.dita#ref-ModuleMessageCenter/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-message-center.dita#ref-module-message-center/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-MessageCenter.png"><alt>Message Center module</alt></image>
             </sectiondiv>
@@ -54,13 +54,13 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-message-center.dita#ref-ModuleMessageCenter/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-message-center.dita#ref-module-message-center/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
 				<p>By default, the <uicontrol>Message Center</uicontrol> module can be accessed by clicking on the current user's display name at the top right of most pages.</p>
 			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-message-center.dita#ref-ModuleMessageCenter/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-message-center.dita#ref-module-message-center/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
                 <simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -71,18 +71,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-message-center.dita#ref-ModuleMessageCenter/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-message-center.dita#ref-module-message-center/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-messagecenter.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Message Center</stentry>
                         <stentry>
-							<!-- <ph conref="module-message-center.dita#ref-ModuleMessageCenter/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-message-center.dita#ref-module-message-center/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Admin</ph>  <!-- None in Platform -->
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-message-center.dita#ref-ModuleMessageCenter/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-message-center.dita#ref-module-message-center/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoPlatform"></image>
                                 <image conkeyref="k-bptext/image-LogoContent"></image>
@@ -103,7 +103,7 @@
 		<section>
 			<title>Module Configuration</title>
 
-			<!-- <sectiondiv conref="module-message-center.dita#ref-ModuleMessageCenter/sectiondiv-bpconfig"></sectiondiv> -->
+			<!-- <sectiondiv conref="module-message-center.dita#ref-module-message-center/sectiondiv-bpconfig"></sectiondiv> -->
 			<sectiondiv id="sectiondiv-bpconfig">
 				<p>The <uicontrol>Message Center</uicontrol> module does not have custom settings; however, the correct permissions settings must be set to ensure that the messages are visible only to the intended targets.</p>
 

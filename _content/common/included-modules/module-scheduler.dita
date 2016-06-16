@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleScheduler">
+<reference xml:lang="en" id="ref-module-scheduler">  <!-- MOVING TO PERSONA BAR -->
 
     <title>Module: Scheduler</title>
     <titlealts>
@@ -9,25 +9,15 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
-            <prodinfo>
-                <prodname>Platform</prodname>
-                <vrmlist><vrm version="8" release="0"/></vrmlist>
-            </prodinfo>
-            <prodinfo>
-                <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="8" release="3"/></vrmlist>
-            </prodinfo>
-            <prodinfo>
-                <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="8" release="3"/></vrmlist>
-            </prodinfo>
+            <!-- prodinfo? -->
         </metadata>
     </prolog>
 
@@ -37,12 +27,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-scheduler.dita#ref-ModuleScheduler/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-scheduler.dita#ref-module-scheduler/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Allows administrators to schedule tasks to be run at specified intervals.</ph></p>
 			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-scheduler.dita#ref-ModuleScheduler/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-scheduler.dita#ref-module-scheduler/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <!-- <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Scheduler.png"><alt>Scheduler module</alt></image> -->
             </sectiondiv>
@@ -53,12 +43,12 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-scheduler.dita#ref-ModuleScheduler/sectiondiv-bpmoreinfo"></sectiondiv>
+            <!-- <sectiondiv conref="module-scheduler.dita#ref-module-scheduler/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
-            <!-- <sectiondiv conref="module-scheduler.dita#ref-ModuleScheduler/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-scheduler.dita#ref-module-scheduler/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
 				<simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -69,18 +59,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-scheduler.dita#ref-ModuleScheduler/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-scheduler.dita#ref-module-scheduler/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-scheduler.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Scheduler</stentry>
 						<stentry>
-							<!-- <ph conref="module-scheduler.dita#ref-ModuleScheduler/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-scheduler.dita#ref-module-scheduler/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Admin</ph>
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-scheduler.dita#ref-ModuleScheduler/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-scheduler.dita#ref-module-scheduler/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoPlatform"></image>
                                 <image conkeyref="k-bptext/image-LogoContent"></image>

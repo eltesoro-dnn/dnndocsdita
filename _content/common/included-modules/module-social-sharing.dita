@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleSocialSharing">
+<reference xml:lang="en" id="ref-module-social-sharing">
 
     <title>Module: Social Sharing</title>
     <titlealts>
@@ -9,14 +9,16 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <audience type="other" othertype="content manager" job="customizing" />
+            <audience type="other" othertype="community manager" job="customizing" />
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
@@ -30,12 +32,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-social-sharing.dita#ref-module-social-sharing/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Exposes social sharing links to Google+, Twitter, LinkedIn, and Facebook.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-social-sharing.dita#ref-ModuleSocialSharing/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-social-sharing.dita#ref-module-social-sharing/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SocialSharing.png"><alt>Social Sharing module</alt></image>
             </sectiondiv>
@@ -46,14 +48,14 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-social-sharing.dita#ref-ModuleSocialSharing/sectiondiv-bpmoreinfo"></sectiondiv>
+            <!-- <sectiondiv conref="module-social-sharing.dita#ref-module-social-sharing/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo">
 				<p>It utilizes the Facebook Application ID set at the portal level and also utilizes Open Graph Protocol data written to the page based on the currently viewed Content Item.</p>  // This sounds like implementation detail. Would the audience (content managers) need this information?
             </sectiondiv>
 			-->
 
 
-            <!-- <sectiondiv conref="module-social-sharing.dita#ref-ModuleSocialSharing/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-social-sharing.dita#ref-module-social-sharing/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
 				<simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -64,18 +66,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-social-sharing.dita#ref-module-social-sharing/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-socialsharing.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Social Sharing</stentry>
 						<stentry>
-							<!-- <ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-social-sharing.dita#ref-module-social-sharing/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Social</ph>
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-social-sharing.dita#ref-module-social-sharing/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoEngage"></image>
                             </ph>

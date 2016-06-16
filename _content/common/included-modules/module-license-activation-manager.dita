@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleLicenseActivationManager">
+<reference xml:lang="en" id="ref-module-license-activation-manager">  <!-- MOVING TO PERSONA BAR -->
 
     <title>Module: License Activation Manager</title>
     <titlealts>
@@ -9,21 +9,19 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
-            <audience type="administrator" job="customizing" />
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <audience type="other" othertype="host" job="customizing" />
             <prodinfo>
                 <prodname>Evoq Content</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
             </prodinfo>
         </metadata>
@@ -35,12 +33,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-license-activation-manager.dita#ref-module-license-activation-manager/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Enables the host to activate DNN licenses.</ph></p>
 			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-license-activation-manager.dita#ref-module-license-activation-manager/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <!-- <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-licenseactivationmanager.png"><alt>License Activation Manager module</alt></image> -->
             </sectiondiv>
@@ -52,12 +50,12 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/sectiondiv-bpmoreinfo"></sectiondiv>
+            <!-- <sectiondiv conref="module-license-activation-manager.dita#ref-module-license-activation-manager/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
-            <!-- <sectiondiv conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-license-activation-manager.dita#ref-module-license-activation-manager/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
                 <simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -68,18 +66,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-license-activation-manager.dita#ref-module-license-activation-manager/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-licenseactivationmgr.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>License Activation Manager</stentry>
                         <stentry>
-							<!-- <ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/ph-bpcategory"></ph> -->
+							<!-- <ph conref="module-license-activation-manager.dita#ref-module-license-activation-manager/ph-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">None</ph>  <!-- Expected: Host. -->
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/ph-bpproducts"></ph> -->
+                            <!-- <ph conref="module-license-activation-manager.dita#ref-module-license-activation-manager/ph-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoContent"></image>
                                 <image conkeyref="k-bptext/image-LogoEngage"></image>

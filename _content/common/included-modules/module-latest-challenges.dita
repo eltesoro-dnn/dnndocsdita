@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleLatestChallenges">
+<reference xml:lang="en" id="ref-module-latest-challenges">
 
     <title>Module: Latest Challenges</title>
     <titlealts>
@@ -9,14 +9,16 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <audience type="other" othertype="content manager" job="customizing" />
+            <audience type="other" othertype="community manager" job="customizing" />
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
@@ -30,12 +32,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-latest-challenges.dita#ref-module-latest-challenges/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Displays the most recent and currently active challenges that registered users can participate in.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-latest-challenges.dita#ref-module-latest-challenges/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-LatestChallenges.png"><alt>Latest Challenges module</alt></image>
             </sectiondiv>
@@ -46,12 +48,12 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/sectiondiv-bpmoreinfo"></sectiondiv>
+            <!-- <sectiondiv conref="module-latest-challenges.dita#ref-module-latest-challenges/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
-            <!-- <sectiondiv conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-latest-challenges.dita#ref-module-latest-challenges/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
                 <simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -62,18 +64,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-latest-challenges.dita#ref-module-latest-challenges/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-latestchallenges.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Latest Challenges</stentry>
                         <stentry>
-							<!-- <ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-latest-challenges.dita#ref-module-latest-challenges/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Social</ph>
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-latest-challenges.dita#ref-module-latest-challenges/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoEngage"></image>
                             </ph>

@@ -104,15 +104,13 @@
 		<topicref format="dita" type="task"      toc="yes" href="config-module-console.dita" />
 		</topicref>
 
-		<topicref format="dita" type="reference" toc="yes"  href="module-content-layout.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-content-layout.dita" />  <!-- // Add Grid. -->
 
-		<topicref format="dita" type="reference" toc="yes"  href="module-html-text.dita">
+		<topicref format="dita" type="reference" toc="yes" href="module-html-text.dita">
 		<topicref format="dita" type="task"      toc="yes" href="config-module-html-text.dita" />
 		</topicref>
 
-		<!-- <topicref format="dita" type="reference" toc="yes"  href="module-content-staging.dita" />  // Skip for now. Cannot add to a page, why? -->
-
-		<topicref format="dita" type="reference" toc="yes"  href="module-workflow-management.dita" />
+		<!-- <topicref format="dita" type="reference" toc="yes"  href="module-content-staging.dita" />  // Cannot add to page easily. -->
 
 	</topicref>
 
@@ -120,15 +118,9 @@
     <!-- SEARCH MODULES -->
 	<topicref format="dita" type="topic" toc="yes" href="search-modules.dita" collection-type="family">
 
-		<topicref format="dita" type="reference" toc="yes"  href="module-search-results.dita">
+		<topicref format="dita" type="reference" toc="yes" href="module-search-results.dita">
 		<topicref format="dita" type="task"      toc="yes" href="config-module-search-results.dita" />
 		</topicref>
-
-		<topicref format="dita" type="reference" toc="yes"  href="module-search-admin.dita" />
-
-		<!--
-		<topicref format="dita" type="reference" toc="yes"  href="module-search-crawler-admin.dita" />
-		-->
 
 	</topicref>
 
@@ -137,12 +129,8 @@
 	<!--
 	<topicref format="dita" type="topic" toc="yes" href="...-modules.dita" collection-type="family">
 
-		DEPRECATED  <topicref format="dita" type="reference" toc="yes"  href="module-account-registration.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-authentication.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-registration.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-security-analyzer.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-security-center.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-users-and-roles.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-authentication.dita" />  // Cannot add to page easily.
+		<topicref format="dita" type="reference" toc="yes" href="module-registration.dita" />  // Cannot add to page easily.
 
 	</topicref>
 	-->
@@ -151,80 +139,91 @@
     <!-- SITE MANAGEMENT MODULES -->
 	<topicref format="dita" type="topic" toc="yes" href="site-management-modules.dita" collection-type="family">
 
-		<topicref format="dita" type="reference" toc="yes"  href="module-themes.dita" />
-
-
-
-		<!--
-		<topicref format="dita" type="reference" toc="yes"  href="module-advanced-url-management.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-google-analytics.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-log-viewer.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-recycle-bin.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-site-groups.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-site-management.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-site-redirection-management.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-site-wizard.dita" />
 		<topicref format="dita" type="reference" toc="yes"  href="module-sitemap.dita" />
-		-->
 
 	</topicref>
-
-
-    <!-- HOST MODULES -->
-	<!--
-	<topicref format="dita" type="topic" toc="yes" href="...-modules.dita" collection-type="family">
-
-		<topicref format="dita" type="reference" toc="yes"  href="module-extensions.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-host-settings.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-html-editor-management.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-license-activation-manager.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-sql.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-user-switcher.dita" />
-
-	</topicref>
-	-->
 
 
     <!-- CONNECTORS MODULES -->
 	<!--
 	<topicref format="dita" type="topic" toc="yes" href="...-modules.dita" collection-type="family">
+		<topicref format="dita" type="reference" toc="yes" href="module-marketo-forms.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-optimizely-connector.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-zendesk-tickets.dita" />  // Already started the config* file.
 
-		<topicref format="dita" type="reference" toc="yes"  href="module-marketo-forms.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-optimizely-connector.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-sharepoint-connector.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-sharepoint-viewer.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-zendesk-tickets.dita" />
+	</topicref>
+	-->
 
+
+    <!-- CREATION MODULES -->
+    <topicref format="dita" type="topic" toc="yes" href="creation-modules.dita" collection-type="family">
+
+		<topicref format="dita" type="reference" toc="yes" href="module-module-creator.dita" />
+
+		<topicref format="dita" type="reference" toc="yes" href="module-publisher.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-publisher.dita" />
+		</topicref>
+
+	</topicref>
+
+
+    <!-- ... MODULES -->
+	<!--
+    <topicref format="dita" type="topic" toc="yes" href="...-modules.dita" collection-type="family">
+		<topicref format="dita" type="reference" toc="yes" href="module-ddr-menu.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-razor-host.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-view-profile.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-visualizer.dita" />  For DNN 9.
 	</topicref>
 	-->
 
 
 	<!--
-    <topicref format="dita" type="reference" toc="yes" href="included-modules.dita" copy-to="index.dita" >
-		<topicref format="dita" type="reference" toc="yes"  href="module-configuration-manager.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-dashboard.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-ddr-menu.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-device-preview-management.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-digital-asset-management.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-document-viewer.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-file-integrity-checker.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-languages.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-lists.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-module-creator.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-pages.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-publisher.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-razor-host.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-scheduler.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-taxonomy-manager.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-view-profile.dita" />
-		<topicref format="dita" type="reference" toc="yes"  href="module-visualizer.dita" />  For DNN 9.
-		<topicref format="dita" type="reference" toc="yes"  href="module-web-server-manager.dita" />
 
-	</topicref>
+	MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED, BUT DOCUMENT THE PERSONA BAR FUNCTIONALITY:
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-advanced-url-management.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-configuration-manager.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-dashboard.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-extensions.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-host-settings.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-languages.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-license-activation-manager.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-lists.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-log-viewer.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-pages.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-recycle-bin.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-scheduler.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-search-admin.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-search-crawler-admin.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-security-analyzer.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-site-groups.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-site-management.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-sql.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-taxonomy-manager.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-themes.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-users-and-roles.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-web-server-manager.dita" />
+		MOVING TO PERSONA BAR <topicref format="dita" type="reference" toc="yes" href="module-workflow-management.dita" />
+
+	TO BE DEPRECATED:
+		DEPRECATED  <topicref format="dita" type="reference" toc="yes"  href="module-account-registration.dita" />
+		TO BE DEPRECATED <topicref format="dita" type="reference" toc="yes" href="module-device-preview-management.dita" />
+		TO BE DEPRECATED <topicref format="dita" type="reference" toc="yes" href="module-digital-asset-management.dita" />
+		TO BE DEPRECATED <topicref format="dita" type="reference" toc="yes" href="module-document-viewer.dita" />
+		TO BE DEPRECATED <topicref format="dita" type="reference" toc="yes" href="module-file-integrity-checker.dita" />
+		TO BE DEPRECATED <topicref format="dita" type="reference" toc="yes" href="module-google-analytics.dita" />
+		TO BE DEPRECATED <topicref format="dita" type="reference" toc="yes" href="module-html-editor-management.dita" />
+		TO BE DEPRECATED <topicref format="dita" type="reference" toc="yes" href="module-security-center.dita" />
+		TO BE DEPRECATED <topicref format="dita" type="reference" toc="yes" href="module-sharepoint-connector.dita" />
+		TO BE DEPRECATED <topicref format="dita" type="reference" toc="yes" href="module-sharepoint-viewer.dita" />
+		TO BE DEPRECATED <topicref format="dita" type="reference" toc="yes" href="module-site-redirection-management.dita" />
+		TO BE DEPRECATED <topicref format="dita" type="reference" toc="yes" href="module-site-wizard.dita" />
+		TO BE DEPRECATED <topicref format="dita" type="reference" toc="yes" href="module-user-switcher.dita" />
+
 	-->
 
 
-    <!-- RelTables (Do reltables ) -->
+    <!-- RelTables -->
     <reltable>
         <relheader>
             <relcolspec type="concept"/>
@@ -283,30 +282,9 @@
 
 		<!-- ========== RELATED MODULES ========== -->
 
-		<!-- Security: AuthN -->
-        <relrow>
-            <relcell>
-                <!-- <topicref format="dita" type="topic" scope="peer" href="../security/index.dita" /> -->
-                <!-- <topicref format="dita" type="topic" scope="peer" href="../security/user-accounts/index.dita" /> -->
-                <!-- <topicref format="dita" type="topic" scope="peer" href="../security/roles/index.dita" /> -->
-            </relcell>
-            <relcell/>
-            <relcell>
+		<!-- Security: AuthN
                 <topicref format="dita" type="reference" href="module-authentication.dita" />
-                <topicref format="dita" type="reference" href="module-security-analyzer.dita" />
-                <topicref format="dita" type="reference" href="module-security-center.dita" />
-				<topicref format="dita" type="reference" href="module-users-and-roles.dita" />
-            </relcell>
-        </relrow>
-
-		<!-- Social -->
-		<relrow>
-			<relcell/>
-			<relcell/>
-			<relcell>
-
-			</relcell>
-		</relrow>
+		-->
 
 		<!-- Social: Challenges -->
 		<relrow>
@@ -350,40 +328,13 @@
 			</relcell>
 		</relrow>
 
-		<!-- Social:  -->
-
-
-
-
-
-
-		<!-- Search -->
-		<!-- Also add a link to Scheduling Jobs topic; i.e., Host > Advanced (double-gear icon) > Schedule. -->
-		<relrow>
-			<relcell/>
-			<relcell/>
-			<relcell>
-				<topicref format="dita" type="reference" href="module-search-admin.dita" />
-				<topicref format="dita" type="reference" href="module-search-crawler-admin.dita" />
+		<!-- Search
 				<topicref format="dita" type="reference" href="module-search-results.dita" />
-			</relcell>
-		</relrow>
-
-		<!-- User management -->
-		<relrow>
-			<relcell/>
-			<relcell/>
-			<relcell>
-
-			</relcell>
-		</relrow>
+				Also add a link to Scheduling Jobs topic; i.e., Host > Advanced (double-gear icon) > Schedule.
+		-->
 
 
 		<!-- ========== MODULES IN THE SAME CATEGORY ========== -->
-
-
-
-
 
     </reltable>
 

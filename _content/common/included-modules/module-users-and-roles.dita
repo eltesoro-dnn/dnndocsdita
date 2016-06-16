@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleUsersandRoles">
+<reference xml:lang="en" id="ref-module-users-and-roles">  <!-- MOVING TO PERSONA BAR -->
 
     <title>Module: Users and Roles</title>
     <titlealts>
@@ -9,25 +9,15 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
-            <prodinfo>
-                <prodname>Platform</prodname>
-                <vrmlist><vrm version="8" release="0"/></vrmlist>
-            </prodinfo>
-            <prodinfo>
-                <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="8" release="3"/></vrmlist>
-            </prodinfo>
-            <prodinfo>
-                <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="8" release="3"/></vrmlist>
-            </prodinfo>
+            <!-- prodinfo? -->
         </metadata>
     </prolog>
 
@@ -37,12 +27,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-users-and-roles.dita#ref-module-users-and-roles/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Creates and manages registered user accounts and security roles.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-users-and-roles.dita#ref-module-users-and-roles/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <!-- <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-.png"><alt>Users and Roles module</alt></image> -->
             </sectiondiv>
@@ -53,7 +43,7 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-users-and-roles.dita#ref-module-users-and-roles/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
                 <p>The module can be modified to select which fields are displayed, to add profile properties, and to specify how user accounts are handled. By default, the <uicontrol>Users and Roles</uicontrol> module package is not displayed in the selection of modules that can be added to a page, in order to avoid being accidentally added to a page and, thereby, revealing personal user information.</p>
 
@@ -70,7 +60,7 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-users-and-roles.dita#ref-module-users-and-roles/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
 				<simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -81,18 +71,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-users-and-roles.dita#ref-module-users-and-roles/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-usersandroles.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Users and Roles</stentry>
                         <stentry>
-							<!-- <ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-users-and-roles.dita#ref-module-users-and-roles/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Admin</ph>
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-users-and-roles.dita#ref-module-users-and-roles/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoPlatform"></image>
                                 <image conkeyref="k-bptext/image-LogoContent"></image>

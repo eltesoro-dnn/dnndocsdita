@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="submit-site-Google-search">
+
+    <title>Submit Your Site to Google Search for Indexing</title>
+    <titlealts>
+        <navtitle>Submit Site to Google Search</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orLY,edET,1606</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <steps>
+			<step conkeyref="k-bpsteps/step-menuadminsitemap"><cmd/></step>
+
+			<step>
+				<cmd>Submit your site's URL.</cmd>
+				<substeps>
+					<substep>
+						<cmd>Choose <uicontrol>Google</uicontrol> from the <uicontrol>Search Engine</uicontrol> dropdown. Click/Tap <uicontrol>Submit</uicontrol>.</cmd>
+						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SitemapConfig-SiteSubmission-SearchEngine.png"><alt>Site Submission &gt; Search Engine</alt></image></info>
+					</substep>
+					<substep><cmd>Log in with your Google account for Google Webmaster Tools.</cmd></substep>
+					<substep>
+						<cmd>Enter the URL to your site and submit.</cmd>
+						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-GoogleSearchConsoleSubmitURL.png"><alt>Google Search Console - URL Submit Request</alt></image></info>
+					</substep>
+				</substeps>
+			</step>
+
+			<step>  <!-- Confirm step. -->
+				<cmd>Verify that you own the site.</cmd>
+				<substeps>
+					<substep><cmd>In the Google Verification page, choose <uicontrol>Upload an HTML File</uicontrol>, and copy the filename provided by Google.</cmd></substep>  <!-- Needs screenshot. -->
+					<substep>
+						<cmd>In this page, paste the filename to the <uicontrol>Verification</uicontrol> field, and click/tap <uicontrol>Create</uicontrol>.</cmd>
+						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SitemapConfig-SiteSubmission-Verification.png"><alt>Site Submission &gt; Verification</alt></image></info>
+					</substep>
+					<substep><cmd>In the Google Verification page, click/tap <uicontrol>Verify</uicontrol>.</cmd></substep>  <!-- Needs screenshot. -->
+				</substeps>
+			</step>
+
+			<step>  <!-- Confirm step. -->
+				<cmd>After Google successfully verifies your ownership of the site, provide your sitemap.</cmd>
+				<substeps>
+					<substep>
+						<cmd>In the Search Engine Sitemap page, copy the <uicontrol>Sitemap URL</uicontrol>.</cmd>
+						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SitemapConfig-SitemapURL-Platform.png"><alt>Sitemap URL</alt></image></info>
+					</substep>
+					<substep><cmd>In the Google Verification page, go to the <uicontrol>Google Sitemaps</uicontrol> tab.</cmd></substep>
+					<substep><cmd>Select <uicontrol>Add General Web Sitemap</uicontrol>.</cmd></substep>
+					<substep><cmd>Paste your sitemap URL.</cmd></substep>
+				</substeps>
+			</step>
+		</steps>
+
+    </taskbody>
+
+
+	<!--
+    <related-links>
+        <link format="" scope="external" href=""><linktext></linktext></link>
+    </related-links>
+	-->
+
+</task>

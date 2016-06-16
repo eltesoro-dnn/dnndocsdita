@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleDevicePreviewManagement">
+<reference xml:lang="en" id="ref-module-device-preview-management">  <!-- DEPRECATED -->
 
     <title>Module: Device Preview Management</title>
     <titlealts>
@@ -9,26 +9,15 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
-            <prodinfo>
-                <prodname>Platform</prodname>
-                <vrmlist><vrm version="8" release="0"/></vrmlist>
-            </prodinfo>
-            <prodinfo>
-                <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="8" release="3"/></vrmlist>
-
-            </prodinfo>
-            <prodinfo>
-                <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="8" release="3"/></vrmlist>
-            </prodinfo>
+            <!-- prodinfo? -->
         </metadata>
     </prolog>
 
@@ -38,12 +27,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-device-preview-management.dita#ref-ModuleDevicePreviewManagement/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-device-preview-management.dita#ref-module-device-preview-management/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Enables users to manage how their profiles look on a mobile device.</ph></p>
 			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-device-preview-management.dita#ref-ModuleDevicePreviewManagement/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-device-preview-management.dita#ref-module-device-preview-management/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <!-- <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-DevicePreviewMgmt.png"><alt>Account Login module</alt></image> -->
             </sectiondiv>
@@ -54,12 +43,12 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-device-preview-management.dita#ref-ModuleDevicePreviewManagement/sectiondiv-bpmoreinfo"></sectiondiv>
+            <!-- <sectiondiv conref="module-device-preview-management.dita#ref-module-device-preview-management/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
-            <!-- <sectiondiv conref="module-device-preview-management.dita#ref-ModuleDevicePreviewManagement/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-device-preview-management.dita#ref-module-device-preview-management/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
                 <simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -70,18 +59,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-device-preview-management.dita#ref-ModuleDevicePreviewManagement/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-device-preview-management.dita#ref-module-device-preview-management/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-devicepreviewmgmt.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Device Preview Management</stentry>
                         <stentry>
-							<!-- <ph conref="module-device-preview-management.dita#ref-ModuleDevicePreviewManagement/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-device-preview-management.dita#ref-module-device-preview-management/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Admin</ph>  <!-- None in Platform. Expected: Mobile. -->
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-device-preview-management.dita#ref-ModuleDevicePreviewManagement/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-device-preview-management.dita#ref-module-device-preview-management/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoPlatform"></image>
                                 <image conkeyref="k-bptext/image-LogoContent"></image>

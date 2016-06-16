@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleSecurityCenter">
+<reference xml:lang="en" id="ref-module-security-center">  <!-- DEPRECATED -->
 
     <title>Module: Security Center</title>
     <titlealts>
@@ -9,22 +9,14 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
-            <audience type="administrator" job="customizing" />
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
-            <prodinfo>
-                <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="8" release="3"/></vrmlist>
-            </prodinfo>
-            <prodinfo>
-                <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="8" release="3"/></vrmlist>
-            </prodinfo>
+            <!-- audience? -->
+            <!-- prodinfo? -->
         </metadata>
     </prolog>
 
@@ -34,12 +26,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-security-center.dita#ref-ModuleSecurityCenter/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-security-center.dita#ref-module-security-center/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Displays security bulletins for all sites in the DNN instance.</ph></p>
 			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-security-center.dita#ref-ModuleSecurityCenter/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-security-center.dita#ref-module-security-center/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <!-- <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-securitycenter.png"><alt>Security Center module</alt></image> -->
             </sectiondiv>
@@ -50,12 +42,12 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-security-center.dita#ref-ModuleSecurityCenter/sectiondiv-bpmoreinfo"></sectiondiv>
+            <!-- <sectiondiv conref="module-security-center.dita#ref-module-security-center/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
-            <!-- <sectiondiv conref="module-security-center.dita#ref-ModuleSecurityCenter/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-security-center.dita#ref-module-security-center/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
 				<simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -66,18 +58,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-security-center.dita#ref-ModuleSecurityCenter/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-security-center.dita#ref-module-security-center/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-securitycenter.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Security Center</stentry>
                         <stentry>
-							<!-- <ph conref="module-security-center.dita#ref-ModuleSecurityCenter/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-security-center.dita#ref-module-security-center/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">None</ph>  <!-- Expected: Admin -->
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-security-center.dita#ref-ModuleSecurityCenter/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-security-center.dita#ref-module-security-center/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoContent"></image>
                                 <image conkeyref="k-bptext/image-LogoEngage"></image>

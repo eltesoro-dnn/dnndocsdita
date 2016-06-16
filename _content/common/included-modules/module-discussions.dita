@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleDiscussions">
+<reference xml:lang="en" id="ref-module-discussions">
 
     <title>Module: Discussions</title>
     <titlealts>
@@ -9,14 +9,16 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <audience type="other" othertype="content manager" job="customizing" />
+            <audience type="other" othertype="community manager" job="customizing" />
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
@@ -30,12 +32,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-discussions.dita#ref-ModuleDiscussions/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-discussions.dita#ref-module-discussions/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Allows registered users to start discussions or participate in them.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-discussions.dita#ref-ModuleDiscussions/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-discussions.dita#ref-module-discussions/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Discussions.png"><alt>Discussions module</alt></image>
             </sectiondiv>
@@ -46,7 +48,7 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-discussions.dita#ref-ModuleDiscussions/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-discussions.dita#ref-module-discussions/sectiondiv-bpmoreinfo"></sectiondiv> -->
 			<sectiondiv id="sectiondiv-bpmoreinfo">
 				<p>Topics and replies are tightly integrated with the <uicontrol>Journal</uicontrol> and <uicontrol>Activity Stream</uicontrol> modules to allow discussions to continue in other pages and modules within the site.</p>
 
@@ -60,7 +62,7 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-discussions.dita#ref-ModuleDiscussions/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-discussions.dita#ref-module-discussions/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
                 <simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -71,18 +73,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-discussions.dita#ref-ModuleDiscussions/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-discussions.dita#ref-module-discussions/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-discussions.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Discussions</stentry>
                         <stentry>
-							<!-- <ph conref="module-discussions.dita#ref-ModuleDiscussions/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-discussions.dita#ref-module-discussions/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Social</ph>
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-discussions.dita#ref-ModuleDiscussions/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-discussions.dita#ref-module-discussions/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoEngage"></image>
                             </ph>

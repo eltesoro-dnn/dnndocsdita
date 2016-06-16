@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleMemberDirectory">
+<reference xml:lang="en" id="ref-module-member-directory">
 
     <title>Module: Member Directory</title>
     <titlealts>
@@ -9,14 +9,16 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <audience type="other" othertype="content manager" job="customizing" />
+            <audience type="other" othertype="community manager" job="customizing" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -26,7 +28,6 @@
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
             </prodinfo>
             <prodinfo>
-
                 <prodname>Evoq Engage</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
             </prodinfo>
@@ -39,12 +40,12 @@
 		<section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-member-directory.dita#ref-ModuleMemberDirectory/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-member-directory.dita#ref-module-member-directory/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Displays a member list that can be filtered, sorted, and searched on.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-member-directory.dita#ref-ModuleMemberDirectory/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-member-directory.dita#ref-module-member-directory/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-MemberDirectory.png"><alt>Member Directory module</alt></image>
             </sectiondiv>
@@ -55,7 +56,7 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-member-directory.dita#ref-ModuleMemberDirectory/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-member-directory.dita#ref-module-member-directory/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
 				<p>With the <uicontrol>Member Directory</uicontrol> module, you can:
 					<ul>
@@ -71,7 +72,7 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-member-directory.dita#ref-ModuleMemberDirectory/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-member-directory.dita#ref-module-member-directory/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
                 <simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -82,18 +83,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-member-directory.dita#ref-ModuleMemberDirectory/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-member-directory.dita#ref-module-member-directory/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-memberdirectory.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Member Directory</stentry>
                         <stentry>
-							<!-- <ph conref="module-member-directory.dita#ref-ModuleMemberDirectory/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-member-directory.dita#ref-module-member-directory/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">None</ph>
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-member-directory.dita#ref-ModuleMemberDirectory/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-member-directory.dita#ref-module-member-directory/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoPlatform"></image>
                                 <image conkeyref="k-bptext/image-LogoContent"></image>

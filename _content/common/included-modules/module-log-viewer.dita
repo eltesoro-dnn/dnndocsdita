@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleLogViewer">
+<reference xml:lang="en" id="ref-module-log-viewer">  <!-- MOVING TO PERSONA BAR -->
 
     <title>Module: Log Viewer</title>
     <titlealts>
@@ -9,12 +9,13 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
             <prodinfo>
                 <prodname>Platform</prodname>
@@ -23,7 +24,6 @@
             <prodinfo>
                 <prodname>Evoq Content</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
-
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
@@ -38,12 +38,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-log-viewer.dita#ref-ModuleLogViewer/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-log-viewer.dita#ref-module-log-viewer/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Allows administrators to view and manage logs.</ph></p>
 			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-log-viewer.dita#ref-ModuleLogViewer/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-log-viewer.dita#ref-module-log-viewer/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-LogViewer.png"><alt>Log Viewer module</alt></image>
             </sectiondiv>
@@ -56,12 +56,12 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-log-viewer.dita#ref-ModuleLogViewer/sectiondiv-bpmoreinfo"></sectiondiv>
+            <!-- <sectiondiv conref="module-log-viewer.dita#ref-module-log-viewer/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
-            <!-- <sectiondiv conref="module-log-viewer.dita#ref-ModuleLogViewer/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-log-viewer.dita#ref-module-log-viewer/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
                 <simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -72,18 +72,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-log-viewer.dita#ref-ModuleLogViewer/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-log-viewer.dita#ref-module-log-viewer/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-logviewer.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Log Viewer</stentry>
                         <stentry>
-							<!-- <ph conref="module-log-viewer.dita#ref-ModuleLogViewer/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-log-viewer.dita#ref-module-log-viewer/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Admin</ph>
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-log-viewer.dita#ref-ModuleLogViewer/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-log-viewer.dita#ref-module-log-viewer/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoPlatform"></image>
                                 <image conkeyref="k-bptext/image-LogoContent"></image>

@@ -870,13 +870,25 @@
 				</strow>
 
 
+				<!-- ========== MODULE: PUBLISHER ========== -->
 
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TopTagsPageSize"><stentry/></strow> -->
+				<strow id="strow-field-TopTagsPageSize">
+					<stentry><uicontrol>Top Tags Page Size</uicontrol></stentry>
+					<stentry>The number of tags to display in each result page.</stentry>
+				</strow>
 
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TopAuthorsPageSize"><stentry/></strow> -->
+				<strow id="strow-field-TopAuthorsPageSize">
+					<stentry><uicontrol>Top Authors Page Size</uicontrol></stentry>
+					<stentry>The number of authors to display in each result page.</stentry>
+				</strow>
 
-
-
-				<!-- ========== MODULE:  ========== -->
-
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableSharing"><stentry/></strow> -->
+				<strow id="strow-field-EnableSharing">
+					<stentry><uicontrol>Enable Sharing</uicontrol></stentry>
+					<stentry>Content added to this module can be shared in the selected social media site(s).</stentry>
+				</strow>
 
 
 

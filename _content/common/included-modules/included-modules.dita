@@ -9,7 +9,7 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -65,515 +65,585 @@
                 </sthead>
 
                 <strow>
-                    <stentry><ph conref="module-activities.dita#ref-ModuleActivities/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-activities.dita#ref-module-activities/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-activities.dita"><uicontrol>Activities</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-activities.dita#ref-ModuleActivities/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-activities.dita#ref-ModuleActivities/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-activities.dita#ref-ModuleActivities/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-activities.dita#ref-module-activities/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-activities.dita#ref-module-activities/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-activities.dita#ref-module-activities/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-activity-stream.dita#ref-ModuleActivityStream/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-activity-stream.dita#ref-module-activity-stream/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-activity-stream.dita"><uicontrol>Activity Stream</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-activity-stream.dita#ref-ModuleActivityStream/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-activity-stream.dita#ref-ModuleActivityStream/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-activity-stream.dita#ref-ModuleActivityStream/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-activity-stream.dita#ref-module-activity-stream/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-activity-stream.dita#ref-module-activity-stream/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-activity-stream.dita#ref-module-activity-stream/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-advanced-url-management.dita#ref-module-advanced-url-management/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-advanced-url-management.dita"><uicontrol>Advanced URL Management</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-advanced-url-management.dita#ref-ModuleAdvancedURLManagement/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-advanced-url-management.dita#ref-module-advanced-url-management/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-advanced-url-management.dita#ref-module-advanced-url-management/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-advanced-url-management.dita#ref-module-advanced-url-management/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-answers.dita#ref-ModuleAnswers/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-answers.dita#ref-module-answers/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-answers.dita"><uicontrol>Answers</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-answers.dita#ref-ModuleAnswers/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-answers.dita#ref-ModuleAnswers/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-answers.dita#ref-ModuleAnswers/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-answers.dita#ref-module-answers/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-answers.dita#ref-module-answers/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-answers.dita#ref-module-answers/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-authentication.dita#ref-ModuleAuthentication/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-authentication.dita#ref-module-authentication/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-authentication.dita"><uicontrol>Authentication</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-authentication.dita#ref-ModuleAuthentication/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-authentication.dita#ref-ModuleAuthentication/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-authentication.dita#ref-ModuleAuthentication/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-authentication.dita#ref-module-authentication/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-authentication.dita#ref-module-authentication/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-authentication.dita#ref-module-authentication/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-blogs.dita#ref-ModuleBlogs/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-blogs.dita#ref-module-blogs/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-blogs.dita"><uicontrol>Blogs</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-blogs.dita#ref-ModuleBlogs/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-blogs.dita#ref-ModuleBlogs/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-blogs.dita#ref-ModuleBlogs/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-blogs.dita#ref-module-blogs/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-blogs.dita#ref-module-blogs/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-blogs.dita#ref-module-blogs/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-challenges.dita#ref-ModuleChallenges/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-challenges.dita#ref-module-challenges/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-challenges.dita"><uicontrol>Challenges</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-challenges.dita#ref-ModuleChallenges/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-challenges.dita#ref-ModuleChallenges/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-challenges.dita#ref-ModuleChallenges/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-challenges.dita#ref-module-challenges/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-challenges.dita#ref-module-challenges/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-challenges.dita#ref-module-challenges/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-configuration-manager.dita#ref-ModuleConfigurationManager/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-configuration-manager.dita#ref-module-configuration-manager/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-configuration-manager.dita"><uicontrol>Configuration Manager</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-configuration-manager.dita#ref-ModuleConfigurationManager/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-configuration-manager.dita#ref-ModuleConfigurationManager/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-configuration-manager.dita#ref-ModuleConfigurationManager/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-configuration-manager.dita#ref-module-configuration-manager/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-configuration-manager.dita#ref-module-configuration-manager/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-configuration-manager.dita#ref-module-configuration-manager/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-console.dita#ref-ModuleConsole/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-console.dita#ref-module-console/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-console.dita"><uicontrol>Console</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-console.dita#ref-ModuleConsole/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-console.dita#ref-ModuleConsole/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-console.dita#ref-ModuleConsole/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-console.dita#ref-module-console/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-console.dita#ref-module-console/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-console.dita#ref-module-console/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-content-layout.dita#ref-ModuleContentLayout/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-content-layout.dita#ref-module-content-layout/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-content-layout.dita"><uicontrol>Content Layout</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-content-layout.dita#ref-ModuleContentLayout/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-content-layout.dita#ref-ModuleContentLayout/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-content-layout.dita#ref-ModuleContentLayout/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-content-layout.dita#ref-module-content-layout/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-content-layout.dita#ref-module-content-layout/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-content-layout.dita#ref-module-content-layout/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-content-staging.dita#ref-ModuleContentStaging/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-content-staging.dita#ref-module-content-staging/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-content-staging.dita"><uicontrol>Content Staging</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-content-staging.dita#ref-ModuleContentStaging/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-content-staging.dita#ref-ModuleContentStaging/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-content-staging.dita#ref-ModuleContentStaging/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-content-staging.dita#ref-module-content-staging/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-content-staging.dita#ref-module-content-staging/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-content-staging.dita#ref-module-content-staging/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-dashboard.dita#ref-ModuleDashboard/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-dashboard.dita#ref-module-dashboard/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-dashboard.dita"><uicontrol>Dashboard</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-dashboard.dita#ref-ModuleDashboard/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-dashboard.dita#ref-ModuleDashboard/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-dashboard.dita#ref-ModuleDashboard/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-dashboard.dita#ref-module-dashboard/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-dashboard.dita#ref-module-dashboard/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-dashboard.dita#ref-module-dashboard/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-ddr-menu.dita#ref-module-ddr-menu/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-ddr-menu.dita"><uicontrol>DDR Menu</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-ddr-menu.dita#ref-ModuleDDRMenu/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-ddr-menu.dita#ref-module-ddr-menu/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-ddr-menu.dita#ref-module-ddr-menu/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-ddr-menu.dita#ref-module-ddr-menu/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-device-preview-management.dita#ref-ModuleDevicePreviewManagement/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  TO BE DEPRECATED
+                    <stentry><ph conref="module-device-preview-management.dita#ref-module-device-preview-management/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-device-preview-management.dita"><uicontrol>Device Preview Management</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-device-preview-management.dita#ref-ModuleDevicePreviewManagement/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-device-preview-management.dita#ref-ModuleDevicePreviewManagement/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-device-preview-management.dita#ref-ModuleDevicePreviewManagement/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-device-preview-management.dita#ref-module-device-preview-management/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-device-preview-management.dita#ref-module-device-preview-management/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-device-preview-management.dita#ref-module-device-preview-management/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-digital-asset-management.dita#ref-ModuleDigitalAssetManagement/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  TO BE DEPRECATED
+                    <stentry><ph conref="module-digital-asset-management.dita#ref-module-digital-asset-management/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-digital-asset-management.dita"><uicontrol>Digital Asset Management</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-digital-asset-management.dita#ref-ModuleDigitalAssetManagement/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-digital-asset-management.dita#ref-ModuleDigitalAssetManagement/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-digital-asset-management.dita#ref-ModuleDigitalAssetManagement/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-digital-asset-management.dita#ref-module-digital-asset-management/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-digital-asset-management.dita#ref-module-digital-asset-management/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-digital-asset-management.dita#ref-module-digital-asset-management/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-discussions.dita#ref-ModuleDiscussions/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-discussions.dita#ref-module-discussions/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-discussions.dita"><uicontrol>Discussions</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-discussions.dita#ref-ModuleDiscussions/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-discussions.dita#ref-ModuleDiscussions/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-discussions.dita#ref-ModuleDiscussions/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-discussions.dita#ref-module-discussions/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-discussions.dita#ref-module-discussions/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-discussions.dita#ref-module-discussions/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-document-viewer.dita#ref-ModuleDocumentViewer/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  TO BE DEPRECATED
+                    <stentry><ph conref="module-document-viewer.dita#ref-module-document-viewer/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-document-viewer.dita"><uicontrol>Document Viewer</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-document-viewer.dita#ref-ModuleDocumentViewer/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-document-viewer.dita#ref-ModuleDocumentViewer/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-document-viewer.dita#ref-ModuleDocumentViewer/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-document-viewer.dita#ref-module-document-viewer/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-document-viewer.dita#ref-module-document-viewer/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-document-viewer.dita#ref-module-document-viewer/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-extensions.dita#ref-ModuleExtensions/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-extensions.dita#ref-module-extensions/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-extensions.dita"><uicontrol>Extensions</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-extensions.dita#ref-ModuleExtensions/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-extensions.dita#ref-ModuleExtensions/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-extensions.dita#ref-ModuleExtensions/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-extensions.dita#ref-module-extensions/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-extensions.dita#ref-module-extensions/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-extensions.dita#ref-module-extensions/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  TO BE DEPRECATED
+                    <stentry><ph conref="module-file-integrity-checker.dita#ref-module-file-integrity-checker/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-file-integrity-checker.dita"><uicontrol>File Integrity Checker</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-file-integrity-checker.dita#ref-ModuleFileIntegrityChecker/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-file-integrity-checker.dita#ref-module-file-integrity-checker/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-file-integrity-checker.dita#ref-module-file-integrity-checker/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-file-integrity-checker.dita#ref-module-file-integrity-checker/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  TO BE DEPRECATED
+                    <stentry><ph conref="module-google-analytics.dita#ref-module-google-analytics/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-google-analytics.dita"><uicontrol>Google Analytics + Google Analytics Professional</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-google-analytics.dita#ref-ModuleGoogleAnalytics/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-google-analytics.dita#ref-module-google-analytics/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-google-analytics.dita#ref-module-google-analytics/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-google-analytics.dita#ref-module-google-analytics/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-group-directory.dita#ref-ModuleGroupDirectory/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-group-directory.dita#ref-module-group-directory/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-group-directory.dita"><uicontrol>Group Directory</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-group-directory.dita#ref-ModuleGroupDirectory/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-group-directory.dita#ref-ModuleGroupDirectory/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-group-directory.dita#ref-ModuleGroupDirectory/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-group-directory.dita#ref-module-group-directory/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-group-directory.dita#ref-module-group-directory/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-group-directory.dita#ref-module-group-directory/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-group-spaces.dita#ref-ModuleGroupSpaces/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-group-spaces.dita#ref-module-group-spaces/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-group-spaces.dita"><uicontrol>Group Spaces</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-group-spaces.dita#ref-ModuleGroupSpaces/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-group-spaces.dita#ref-ModuleGroupSpaces/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-group-spaces.dita#ref-ModuleGroupSpaces/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-group-spaces.dita#ref-module-group-spaces/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-group-spaces.dita#ref-module-group-spaces/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-group-spaces.dita#ref-module-group-spaces/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-host-settings.dita#ref-ModuleHostSettings/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-host-settings.dita#ref-module-host-settings/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-host-settings.dita"><uicontrol>Host Settings</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-host-settings.dita#ref-ModuleHostSettings/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-host-settings.dita#ref-ModuleHostSettings/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-host-settings.dita#ref-ModuleHostSettings/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-host-settings.dita#ref-module-host-settings/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-host-settings.dita#ref-module-host-settings/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-host-settings.dita#ref-module-host-settings/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-html-editor-management.dita#ref-ModuleHtmlEditorManagement/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  TO BE DEPRECATED
+                    <stentry><ph conref="module-html-editor-management.dita#ref-module-html-editor-management/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-html-editor-management.dita"><uicontrol>Html Editor Management</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-html-editor-management.dita#ref-ModuleHtmlEditorManagement/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-html-editor-management.dita#ref-ModuleHtmlEditorManagement/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-html-editor-management.dita#ref-ModuleHtmlEditorManagement/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-html-editor-management.dita#ref-module-html-editor-management/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-html-editor-management.dita#ref-module-html-editor-management/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-html-editor-management.dita#ref-module-html-editor-management/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-html-text.dita#ref-ModuleHtmlText/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-html-text.dita#ref-module-html-text/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-html-text.dita"><uicontrol>HTML / Text</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-html-text.dita#ref-ModuleHtmlText/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-html-text.dita#ref-ModuleHtmlText/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-html-text.dita#ref-ModuleHtmlText/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-html-text.dita#ref-module-html-text/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-html-text.dita#ref-module-html-text/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-html-text.dita#ref-module-html-text/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-ideas.dita#ref-ModuleIdeas/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-ideas.dita#ref-module-ideas/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-ideas.dita"><uicontrol>Ideas</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-ideas.dita#ref-ModuleIdeas/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-ideas.dita#ref-ModuleIdeas/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-ideas.dita#ref-ModuleIdeas/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-ideas.dita#ref-module-ideas/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-ideas.dita#ref-module-ideas/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-ideas.dita#ref-module-ideas/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-journal.dita#ref-ModuleJournal/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-journal.dita#ref-module-journal/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-journal.dita"><uicontrol>Journal</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-journal.dita#ref-ModuleJournal/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-journal.dita#ref-ModuleJournal/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-journal.dita#ref-ModuleJournal/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-journal.dita#ref-module-journal/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-journal.dita#ref-module-journal/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-journal.dita#ref-module-journal/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-languages.dita#ref-ModuleLanguages/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-languages.dita#ref-module-languages/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-languages.dita"><uicontrol>Languages</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-languages.dita#ref-ModuleLanguages/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-languages.dita#ref-ModuleLanguages/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-languages.dita#ref-ModuleLanguages/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-languages.dita#ref-module-languages/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-languages.dita#ref-module-languages/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-languages.dita#ref-module-languages/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-latest-challenges.dita#ref-module-latest-challenges/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-latest-challenges.dita"><uicontrol>Latest Challenges</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-latest-challenges.dita#ref-ModuleLatestChallenges/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-latest-challenges.dita#ref-module-latest-challenges/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-latest-challenges.dita#ref-module-latest-challenges/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-latest-challenges.dita#ref-module-latest-challenges/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-leaderboard.dita#ref-ModuleLeaderboard/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-leaderboard.dita#ref-module-leaderboard/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-leaderboard.dita"><uicontrol>Leaderboard</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-leaderboard.dita#ref-ModuleLeaderboard/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-leaderboard.dita#ref-ModuleLeaderboard/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-leaderboard.dita#ref-ModuleLeaderboard/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-leaderboard.dita#ref-module-leaderboard/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-leaderboard.dita#ref-module-leaderboard/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-leaderboard.dita#ref-module-leaderboard/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-license-activation-manager.dita#ref-module-license-activation-manager/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-license-activation-manager.dita"><uicontrol>License Activation Manager</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-license-activation-manager.dita#ref-ModuleLicenseActivationManager/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-license-activation-manager.dita#ref-module-license-activation-manager/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-license-activation-manager.dita#ref-module-license-activation-manager/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-license-activation-manager.dita#ref-module-license-activation-manager/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-lists.dita#ref-ModuleLists/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-lists.dita#ref-module-lists/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-lists.dita"><uicontrol>Lists</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-lists.dita#ref-ModuleLists/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-lists.dita#ref-ModuleLists/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-lists.dita#ref-ModuleLists/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-lists.dita#ref-module-lists/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-lists.dita#ref-module-lists/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-lists.dita#ref-module-lists/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-log-viewer.dita#ref-ModuleLogViewer/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-log-viewer.dita#ref-module-log-viewer/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-log-viewer.dita"><uicontrol>Log Viewer</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-log-viewer.dita#ref-ModuleLogViewer/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-log-viewer.dita#ref-ModuleLogViewer/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-log-viewer.dita#ref-ModuleLogViewer/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-log-viewer.dita#ref-module-log-viewer/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-log-viewer.dita#ref-module-log-viewer/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-log-viewer.dita#ref-module-log-viewer/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-marketo-forms.dita#ref-ModuleMarketoForms/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-marketo-forms.dita#ref-module-marketo-forms/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-marketo-forms.dita"><uicontrol>Marketo Forms</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-marketo-forms.dita#ref-ModuleMarketoForms/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-marketo-forms.dita#ref-ModuleMarketoForms/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-marketo-forms.dita#ref-ModuleMarketoForms/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-marketo-forms.dita#ref-module-marketo-forms/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-marketo-forms.dita#ref-module-marketo-forms/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-marketo-forms.dita#ref-module-marketo-forms/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-member-directory.dita#ref-ModuleMemberDirectory/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-member-directory.dita#ref-module-member-directory/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-member-directory.dita"><uicontrol>Member Directory</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-member-directory.dita#ref-ModuleMemberDirectory/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-member-directory.dita#ref-ModuleMemberDirectory/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-member-directory.dita#ref-ModuleMemberDirectory/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-member-directory.dita#ref-module-member-directory/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-member-directory.dita#ref-module-member-directory/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-member-directory.dita#ref-module-member-directory/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-message-center.dita#ref-ModuleMessageCenter/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-message-center.dita#ref-module-message-center/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-message-center.dita"><uicontrol>Message Center</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-message-center.dita#ref-ModuleMessageCenter/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-message-center.dita#ref-ModuleMessageCenter/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-message-center.dita#ref-ModuleMessageCenter/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-message-center.dita#ref-module-message-center/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-message-center.dita#ref-module-message-center/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-message-center.dita#ref-module-message-center/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-module-creator.dita#ref-ModuleModuleCreator/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-module-creator.dita#ref-module-module-creator/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-module-creator.dita"><uicontrol>Module Creator</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-module-creator.dita#ref-ModuleModuleCreator/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-module-creator.dita#ref-ModuleModuleCreator/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-module-creator.dita#ref-ModuleModuleCreator/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-module-creator.dita#ref-module-module-creator/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-module-creator.dita#ref-module-module-creator/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-module-creator.dita#ref-module-module-creator/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-my-status.dita#ref-ModuleMyStatus/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-my-status.dita#ref-module-my-status/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-my-status.dita"><uicontrol>My Status</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-my-status.dita#ref-ModuleMyStatus/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-my-status.dita#ref-ModuleMyStatus/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-my-status.dita#ref-ModuleMyStatus/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-my-status.dita#ref-module-my-status/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-my-status.dita#ref-module-my-status/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-my-status.dita#ref-module-my-status/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-pages.dita#ref-ModulePages/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-pages.dita#ref-module-pages/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-pages.dita"><uicontrol>Pages</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-pages.dita#ref-ModulePages/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-pages.dita#ref-ModulePages/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-pages.dita#ref-ModulePages/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-pages.dita#ref-module-pages/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-pages.dita#ref-module-pages/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-pages.dita#ref-module-pages/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-profile-dashboard.dita#ref-module-profile-dashboard/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-profile-dashboard.dita"><uicontrol>Profile Dashboard</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-profile-dashboard.dita#ref-ModuleProfileDashboard/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-profile-dashboard.dita#ref-module-profile-dashboard/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-profile-dashboard.dita#ref-module-profile-dashboard/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-profile-dashboard.dita#ref-module-profile-dashboard/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-publisher.dita#ref-ModulePublisher/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-publisher.dita#ref-module-publisher/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-publisher.dita"><uicontrol>Publisher</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-publisher.dita#ref-ModulePublisher/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-publisher.dita#ref-ModulePublisher/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-publisher.dita#ref-ModulePublisher/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-publisher.dita#ref-module-publisher/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-publisher.dita#ref-module-publisher/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-publisher.dita#ref-module-publisher/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-razor-host.dita#ref-ModuleRazorHost/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-razor-host.dita#ref-module-razor-host/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-razor-host.dita"><uicontrol>Razor Host</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-razor-host.dita#ref-ModuleRazorHost/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-razor-host.dita#ref-ModuleRazorHost/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-razor-host.dita#ref-ModuleRazorHost/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-razor-host.dita#ref-module-razor-host/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-razor-host.dita#ref-module-razor-host/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-razor-host.dita#ref-module-razor-host/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-recycle-bin.dita#ref-module-recycle-bin/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-recycle-bin.dita"><uicontrol>Recycle Bin</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-recycle-bin.dita#ref-ModuleRecycleBin/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-recycle-bin.dita#ref-module-recycle-bin/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-recycle-bin.dita#ref-module-recycle-bin/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-recycle-bin.dita#ref-module-recycle-bin/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-registration.dita#ref-ModuleRegistration/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-registration.dita#ref-module-registration/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-registration.dita"><uicontrol>Registration</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-registration.dita#ref-ModuleRegistration/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-registration.dita#ref-ModuleRegistration/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-registration.dita#ref-ModuleRegistration/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-registration.dita#ref-module-registration/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-registration.dita#ref-module-registration/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-registration.dita#ref-module-registration/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-related-content.dita#ref-ModuleRelatedContent/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-related-content.dita#ref-module-related-content/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-related-content.dita"><uicontrol>Related Content</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-related-content.dita#ref-ModuleRelatedContent/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-related-content.dita#ref-ModuleRelatedContent/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-related-content.dita#ref-ModuleRelatedContent/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-related-content.dita#ref-module-related-content/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-related-content.dita#ref-module-related-content/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-related-content.dita#ref-module-related-content/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-scheduler.dita#ref-ModuleScheduler/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-scheduler.dita#ref-module-scheduler/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-scheduler.dita"><uicontrol>Scheduler</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-scheduler.dita#ref-ModuleScheduler/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-scheduler.dita#ref-ModuleScheduler/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-scheduler.dita#ref-ModuleScheduler/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-scheduler.dita#ref-module-scheduler/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-scheduler.dita#ref-module-scheduler/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-scheduler.dita#ref-module-scheduler/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-search-admin.dita#ref-ModuleSearchAdmin/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-search-admin.dita#ref-module-search-admin/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-search-admin.dita"><uicontrol>Search Admin</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-search-admin.dita#ref-ModuleSearchAdmin/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-search-admin.dita#ref-ModuleSearchAdmin/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-search-admin.dita#ref-ModuleSearchAdmin/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-search-admin.dita#ref-module-search-admin/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-search-admin.dita#ref-module-search-admin/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-search-admin.dita#ref-module-search-admin/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-search-crawler-admin.dita#ref-module-search-crawler-admin/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-search-crawler-admin.dita"><uicontrol>Search Crawler Admin</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-search-crawler-admin.dita#ref-ModuleSearchCrawlerAdmin/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-search-crawler-admin.dita#ref-module-search-crawler-admin/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-search-crawler-admin.dita#ref-module-search-crawler-admin/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-search-crawler-admin.dita#ref-module-search-crawler-admin/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-search-results.dita#ref-ModuleSearchResults/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-search-results.dita#ref-module-search-results/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-search-results.dita"><uicontrol>Search Results</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-search-results.dita#ref-ModuleSearchResults/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-search-results.dita#ref-ModuleSearchResults/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-search-results.dita#ref-ModuleSearchResults/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-search-results.dita#ref-module-search-results/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-search-results.dita#ref-module-search-results/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-search-results.dita#ref-module-search-results/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-security-analyzer.dita#ref-module-security-analyzer/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-security-analyzer.dita"><uicontrol>Security Analyzer</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-security-analyzer.dita#ref-ModuleSecurityAnalyzer/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-security-analyzer.dita#ref-module-security-analyzer/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-security-analyzer.dita#ref-module-security-analyzer/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-security-analyzer.dita#ref-module-security-analyzer/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-security-center.dita#ref-ModuleSecurityCenter/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  TO BE DEPRECATED
+                    <stentry><ph conref="module-security-center.dita#ref-module-security-center/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-security-center.dita"><uicontrol>Security Center</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-security-center.dita#ref-ModuleSecurityCenter/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-security-center.dita#ref-ModuleSecurityCenter/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-security-center.dita#ref-ModuleSecurityCenter/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-security-center.dita#ref-module-security-center/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-security-center.dita#ref-module-security-center/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-security-center.dita#ref-module-security-center/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-sharepoint-connector.dita#ref-ModuleSharePointConnector/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  TO BE DEPRECATED
+                    <stentry><ph conref="module-sharepoint-connector.dita#ref-module-sharepoint-connector/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-sharepoint-connector.dita"><uicontrol>SharePoint Connector</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-sharepoint-connector.dita#ref-ModuleSharePointConnector/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-sharepoint-connector.dita#ref-ModuleSharePointConnector/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-sharepoint-connector.dita#ref-ModuleSharePointConnector/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-sharepoint-connector.dita#ref-module-sharepoint-connector/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-sharepoint-connector.dita#ref-module-sharepoint-connector/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-sharepoint-connector.dita#ref-module-sharepoint-connector/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  TO BE DEPRECATED
+                    <stentry><ph conref="module-sharepoint-viewer.dita#ref-module-sharepoint-viewer/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-sharepoint-viewer.dita"><uicontrol>SharePoint Viewer</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-sharepoint-viewer.dita#ref-module-sharepoint-viewer/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-sharepoint-viewer.dita#ref-module-sharepoint-viewer/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-sharepoint-viewer.dita#ref-module-sharepoint-viewer/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-site-groups.dita#ref-ModuleSiteGroups/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-site-groups.dita#ref-module-site-groups/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-site-groups.dita"><uicontrol>Site Groups</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-site-groups.dita#ref-ModuleSiteGroups/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-site-groups.dita#ref-ModuleSiteGroups/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-site-groups.dita#ref-ModuleSiteGroups/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-site-groups.dita#ref-module-site-groups/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-site-groups.dita#ref-module-site-groups/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-site-groups.dita#ref-module-site-groups/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-site-management.dita#ref-ModuleSiteManagement/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-site-management.dita#ref-module-site-management/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-site-management.dita"><uicontrol>Site Management</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-site-management.dita#ref-ModuleSiteManagement/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-site-management.dita#ref-ModuleSiteManagement/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-site-management.dita#ref-ModuleSiteManagement/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-site-management.dita#ref-module-site-management/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-site-management.dita#ref-module-site-management/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-site-management.dita#ref-module-site-management/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  TO BE DEPRECATED
+                    <stentry><ph conref="module-site-redirection-management.dita#ref-module-site-redirection-management/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-site-redirection-management.dita"><uicontrol>Site Redirection Management</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-site-redirection-management.dita#ref-ModuleSiteRedirectionManagement/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-site-redirection-management.dita#ref-module-site-redirection-management/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-site-redirection-management.dita#ref-module-site-redirection-management/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-site-redirection-management.dita#ref-module-site-redirection-management/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-site-wizard.dita#ref-ModuleSiteWizard/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  TO BE DEPRECATED
+                    <stentry><ph conref="module-site-wizard.dita#ref-module-site-wizard/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-site-wizard.dita"><uicontrol>Site Wizard</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-site-wizard.dita#ref-ModuleSiteWizard/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-site-wizard.dita#ref-ModuleSiteWizard/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-site-wizard.dita#ref-ModuleSiteWizard/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-site-wizard.dita#ref-module-site-wizard/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-site-wizard.dita#ref-module-site-wizard/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-site-wizard.dita#ref-module-site-wizard/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-sitemap.dita#ref-ModuleSitemap/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-sitemap.dita#ref-module-sitemap/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-sitemap.dita"><uicontrol>Sitemap</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-sitemap.dita#ref-ModuleSitemap/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-sitemap.dita#ref-ModuleSitemap/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-sitemap.dita#ref-ModuleSitemap/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-sitemap.dita#ref-module-sitemap/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-sitemap.dita#ref-module-sitemap/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-sitemap.dita#ref-module-sitemap/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-social-events.dita#ref-ModuleSocialEvents/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-social-events.dita#ref-module-social-events/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-social-events.dita"><uicontrol>Social Events</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-social-events.dita#ref-ModuleSocialEvents/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-social-events.dita#ref-ModuleSocialEvents/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-social-events.dita#ref-ModuleSocialEvents/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-social-events.dita#ref-module-social-events/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-social-events.dita#ref-module-social-events/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-social-events.dita#ref-module-social-events/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-social-groups.dita#ref-ModuleSocialGroups/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-social-groups.dita#ref-module-social-groups/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-social-groups.dita"><uicontrol>Social Groups</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-social-groups.dita#ref-ModuleSocialGroups/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-social-groups.dita#ref-ModuleSocialGroups/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-social-groups.dita#ref-ModuleSocialGroups/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-social-groups.dita#ref-module-social-groups/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-social-groups.dita#ref-module-social-groups/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-social-groups.dita#ref-module-social-groups/ph-bpproducts"></ph></stentry>
                 </strow>
                 <strow>
-                    <stentry><ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-social-sharing.dita#ref-module-social-sharing/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-social-sharing.dita"><uicontrol>Social Sharing</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-social-sharing.dita#ref-ModuleSocialSharing/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-social-sharing.dita#ref-module-social-sharing/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-social-sharing.dita#ref-module-social-sharing/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-social-sharing.dita#ref-module-social-sharing/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-sql.dita#ref-ModuleSQL/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-sql.dita#ref-module-sql/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-sql.dita"><uicontrol>SQL</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-sql.dita#ref-ModuleSQL/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-sql.dita#ref-ModuleSQL/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-sql.dita#ref-ModuleSQL/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-sql.dita#ref-module-sql/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-sql.dita#ref-module-sql/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-sql.dita#ref-module-sql/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-taxonomy-manager.dita#ref-ModuleTaxonomyManager/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-taxonomy-manager.dita#ref-module-taxonomy-manager/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-taxonomy-manager.dita"><uicontrol>Taxonomy Manager</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-taxonomy-manager.dita#ref-ModuleTaxonomyManager/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-taxonomy-manager.dita#ref-ModuleTaxonomyManager/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-taxonomy-manager.dita#ref-ModuleTaxonomyManager/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-taxonomy-manager.dita#ref-module-taxonomy-manager/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-taxonomy-manager.dita#ref-module-taxonomy-manager/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-taxonomy-manager.dita#ref-module-taxonomy-manager/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-themes.dita#ref-ModuleThemes/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-themes.dita#ref-module-themes/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-themes.dita"><uicontrol>Themes</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-themes.dita#ref-ModuleThemes/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-themes.dita#ref-ModuleThemes/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-themes.dita#ref-ModuleThemes/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-themes.dita#ref-module-themes/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-themes.dita#ref-module-themes/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-themes.dita#ref-module-themes/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-user-badges.dita#ref-ModuleUserBadges/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-user-badges.dita#ref-module-user-badges/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-user-badges.dita"><uicontrol>User Badges</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-user-badges.dita#ref-ModuleUserBadges/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-user-badges.dita#ref-ModuleUserBadges/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-user-badges.dita#ref-ModuleUserBadges/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-user-badges.dita#ref-module-user-badges/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-user-badges.dita#ref-module-user-badges/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-user-badges.dita#ref-module-user-badges/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-user-switcher.dita#ref-ModuleUserSwitcher/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  TO BE DEPRECATED
+                    <stentry><ph conref="module-user-switcher.dita#ref-module-user-switcher/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-user-switcher.dita"><uicontrol>User Switcher</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-user-switcher.dita#ref-ModuleUserSwitcher/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-user-switcher.dita#ref-ModuleUserSwitcher/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-user-switcher.dita#ref-ModuleUserSwitcher/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-user-switcher.dita#ref-module-user-switcher/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-user-switcher.dita#ref-module-user-switcher/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-user-switcher.dita#ref-module-user-switcher/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/ph-bpicon"></ph></stentry>
+				-->
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-users-and-roles.dita#ref-module-users-and-roles/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-users-and-roles.dita"><uicontrol>Users and Roles</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-users-and-roles.dita#ref-ModuleUsersandRoles/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-users-and-roles.dita#ref-module-users-and-roles/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-users-and-roles.dita#ref-module-users-and-roles/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-users-and-roles.dita#ref-module-users-and-roles/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-view-profile.dita#ref-ModuleViewProfile/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-view-profile.dita#ref-module-view-profile/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-view-profile.dita"><uicontrol>View Profile</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-view-profile.dita#ref-ModuleViewProfile/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-view-profile.dita#ref-ModuleViewProfile/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-view-profile.dita#ref-ModuleViewProfile/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-view-profile.dita#ref-module-view-profile/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-view-profile.dita#ref-module-view-profile/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-view-profile.dita#ref-module-view-profile/ph-bpproducts"></ph></stentry>
                 </strow>
                 <!-- <strow> For DNN 9.
-                    <stentry><ph conref="module-visualizer.dita#ref-ModuleVisualizer/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-visualizer.dita#ref-module-visualizer/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-visualizer.dita"><uicontrol>Visualizer</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-visualizer.dita#ref-ModuleVisualizer/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-visualizer.dita#ref-ModuleVisualizer/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-visualizer.dita#ref-ModuleVisualizer/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-visualizer.dita#ref-module-visualizer/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-visualizer.dita#ref-module-visualizer/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-visualizer.dita#ref-module-visualizer/ph-bpproducts"></ph></stentry>
                 </strow> -->
-                <strow>
-                    <stentry><ph conref="module-web-server-manager.dita#ref-ModuleWebServerManager/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-web-server-manager.dita#ref-module-web-server-manager/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-web-server-manager.dita"><uicontrol>Web Server Manager</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-web-server-manager.dita#ref-ModuleWebServerManager/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-web-server-manager.dita#ref-ModuleWebServerManager/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-web-server-manager.dita#ref-ModuleWebServerManager/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-web-server-manager.dita#ref-module-web-server-manager/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-web-server-manager.dita#ref-module-web-server-manager/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-web-server-manager.dita#ref-module-web-server-manager/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-wiki.dita#ref-ModuleWiki/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-wiki.dita#ref-module-wiki/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-wiki.dita"><uicontrol>Wiki</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-wiki.dita#ref-ModuleWiki/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-wiki.dita#ref-ModuleWiki/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-wiki.dita#ref-ModuleWiki/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-wiki.dita#ref-module-wiki/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-wiki.dita#ref-module-wiki/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-wiki.dita#ref-module-wiki/ph-bpproducts"></ph></stentry>
                 </strow>
-                <strow>
-                    <stentry><ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/ph-bpicon"></ph></stentry>
+                <!--
+				<strow>  MOVING TO PERSONA BAR; MODULE TO BE DEPRECATED
+                    <stentry><ph conref="module-workflow-management.dita#ref-module-workflow-management/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-workflow-management.dita"><uicontrol>Workflow Management</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-workflow-management.dita#ref-ModuleWorkflowManagement/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-workflow-management.dita#ref-module-workflow-management/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-workflow-management.dita#ref-module-workflow-management/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-workflow-management.dita#ref-module-workflow-management/ph-bpproducts"></ph></stentry>
                 </strow>
+				-->
                 <strow>
-                    <stentry><ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/ph-bpicon"></ph></stentry>
+                    <stentry><ph conref="module-zendesk-tickets.dita#ref-module-zendesk-tickets/ph-bpicon"></ph></stentry>
                     <stentry><xref format="dita" href="module-zendesk-tickets.dita"><uicontrol>Zendesk Tickets</uicontrol></xref></stentry>
-                    <stentry><ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/ph-bpshortdesc"></ph></stentry>
-                    <stentry><ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/ph-bpcategory"></ph></stentry>
-                    <stentry><ph conref="module-zendesk-tickets.dita#ref-ModuleZendeskTickets/ph-bpproducts"></ph></stentry>
+                    <stentry><ph conref="module-zendesk-tickets.dita#ref-module-zendesk-tickets/ph-bpshortdesc"></ph></stentry>
+                    <stentry><ph conref="module-zendesk-tickets.dita#ref-module-zendesk-tickets/ph-bpcategory"></ph></stentry>
+                    <stentry><ph conref="module-zendesk-tickets.dita#ref-module-zendesk-tickets/ph-bpproducts"></ph></stentry>
                 </strow>
 
             </simpletable>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleContentLayout">
+<reference xml:lang="en" id="ref-module-content-layout">
 
     <title>Module: Content Layout</title>
     <titlealts>
@@ -9,21 +9,21 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <audience type="other" othertype="content manager" job="customizing" />
             <prodinfo>
                 <prodname>Evoq Content</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
             </prodinfo>
         </metadata>
@@ -35,12 +35,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-content-layout.dita#ref-ModuleContentLayout/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-content-layout.dita#ref-module-content-layout/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Adds a dynamic content layout that can accommodate more modules.</ph></p>
 			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-content-layout.dita#ref-ModuleContentLayout/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-content-layout.dita#ref-module-content-layout/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ContentLayout.png"><alt>Content Layout module</alt></image>
             </sectiondiv>
@@ -51,13 +51,13 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-content-layout.dita#ref-ModuleContentLayout/sectiondiv-bpmoreinfo"></sectiondiv>
+            <!-- <sectiondiv conref="module-content-layout.dita#ref-module-content-layout/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			// Why is this available to add in a page in Evoq Content for Content Manager, but not in Evoq Engage?
 			-->
 
 
-            <!-- <sectiondiv conref="module-content-layout.dita#ref-ModuleContentLayout/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-content-layout.dita#ref-module-content-layout/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
                 <simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -68,18 +68,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-content-layout.dita#ref-ModuleContentLayout/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-content-layout.dita#ref-module-content-layout/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-contentlayout.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Content Layout</stentry>
                         <stentry>
-							<!-- <ph conref="module-content-layout.dita#ref-ModuleContentLayout/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-content-layout.dita#ref-module-content-layout/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Recommended</ph>  <!-- None in Evoq Content -->
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-content-layout.dita#ref-ModuleContentLayout/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-content-layout.dita#ref-module-content-layout/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoContent"></image>
                                 <image conkeyref="k-bptext/image-LogoEngage"></image>

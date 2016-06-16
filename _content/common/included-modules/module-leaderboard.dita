@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleLeaderboard">
+<reference xml:lang="en" id="ref-module-leaderboard">
 
     <title>Module: Leaderboard</title>
     <titlealts>
@@ -9,14 +9,16 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <audience type="other" othertype="content manager" job="customizing" />
+            <audience type="other" othertype="community manager" job="customizing" />
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
@@ -30,12 +32,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-leaderboard.dita#ref-ModuleLeaderboard/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-leaderboard.dita#ref-module-leaderboard/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Displays a list of users sorted by their reputation points.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-leaderboard.dita#ref-ModuleLeaderboard/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-leaderboard.dita#ref-module-leaderboard/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Leaderboard.png"><alt>Leaderboard module</alt></image>
             </sectiondiv>
@@ -46,13 +48,13 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-leaderboard.dita#ref-ModuleLeaderboard/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-leaderboard.dita#ref-module-leaderboard/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
                 <p>See <xref format="dita" href="module-member-directory.dita">Member Directory</xref>.</p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-leaderboard.dita#ref-ModuleLeaderboard/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-leaderboard.dita#ref-module-leaderboard/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
                 <simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -63,18 +65,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-leaderboard.dita#ref-ModuleLeaderboard/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-leaderboard.dita#ref-module-leaderboard/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-leaderboard.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Leaderboard</stentry>
                         <stentry>
-							<!-- <ph conref="module-leaderboard.dita#ref-ModuleLeaderboard/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-leaderboard.dita#ref-module-leaderboard/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Social</ph>
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-leaderboard.dita#ref-ModuleLeaderboard/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-leaderboard.dita#ref-module-leaderboard/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoEngage"></image>
                             </ph>

@@ -96,12 +96,25 @@
             </relcell>
         </relrow>
 
+		<!-- adm cmg publisher -->
+		<relrow>
+			<relcell/>
+			<relcell>
+				<topicref format="dita" type="task"  	 href="administrators/building-your-site/create-article-publisher.dita" />
+			</relcell>
+			<relcell>
+				<topicref format="dita" type="reference" href="administrators/included-modules/module-publisher.dita" />
+			</relcell>
+		</relrow>
+
         <!-- adm cmg -->
 		<relrow>
 			<relcell>
 				<topicref format="dita" type="topic" 	 href="administrators/building-your-site/building-your-site.dita" />
 			</relcell>
-			<relcell/>
+			<relcell>
+				<topicref format="dita" type="topic"     href="administrators/included-modules/creation-modules.dita" />
+			</relcell>
 			<relcell>
 				<topicref format="dita" type="reference" href="administrators/included-modules/included-modules.dita" />
 			</relcell>
@@ -150,9 +163,31 @@
 				<topicref format="dita" type="task"      href="administrators/configuring-your-site/configure-workflow-state.dita" />
 			</relcell>
 			<relcell>
-				<topicref format="dita" type="reference" href="administrators/included-modules/module-workflow-management.dita" />
+				<!-- <topicref format="dita" type="reference" href="administrators/included-modules/module-workflow-management.dita" /> // MOVING TO PERSONA BAR -->
 			</relcell>
 		</relrow>
+
+        <!-- adm sitemap -->
+		<relrow>
+			<relcell></relcell>
+			<relcell>
+				<topicref format="dita" type="task"      href="administrators/configuring-your-site/configure-sitemap.dita" />
+			</relcell>
+			<relcell>
+				<topicref format="dita" type="reference" href="administrators/included-modules/module-sitemap.dita" />
+			</relcell>
+		</relrow>
+
+        <!-- adm url management -->
+		<relrow>
+			<relcell></relcell>
+			<relcell></relcell>
+			<relcell>
+				<topicref format="dita" type="reference" href="administrators/included-modules/module-advanced-url-management.dita" />
+			</relcell>
+		</relrow>
+
+
 
     </reltable>
 

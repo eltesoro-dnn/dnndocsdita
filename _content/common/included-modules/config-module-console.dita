@@ -41,6 +41,7 @@
             <step>
 				<cmd>Go to the <uicontrol>Console Settings</uicontrol> tab.</cmd>
 				<info>
+					<p>Common settings</p>
 					<simpletable relcolwidth="1* 3*">
 						<sthead>
 							<stentry>Field</stentry>
@@ -56,38 +57,51 @@
 						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeHiddenPages"><stentry/></strow>
 						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Width"><stentry/></strow>
 					</simpletable>
-
-					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-Console-ModeNormal.png"><alt>Module Settings &#8212; Console &#8212; Mode Normal</alt></image>
-					<simpletable relcolwidth="1* 3*">
-						<sthead>
-							<stentry></stentry>
-							<stentry>Mode: Normal</stentry>
-						</sthead>
-						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowChildrenOf"><stentry/></strow>
-						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeParent"><stentry/></strow>
-					</simpletable>
-
-					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-Console-ModeProfile.png"><alt>Module Settings &#8212; Console &#8212; Mode Profile</alt></image>
-					<simpletable relcolwidth="1* 3*">
-						<sthead>
-							<stentry></stentry>
-							<stentry>Mode: Profile</stentry>
-						</sthead>
-						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageVisibilitySettings"><stentry/></strow>
-					</simpletable>
-
-					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-Console-ModeGroup.png"><alt>Module Settings &#8212; Console &#8212; Mode Group</alt></image>
-					<simpletable relcolwidth="1* 3*">
-						<sthead>
-							<stentry></stentry>
-							<stentry>Mode: Group</stentry>
-						</sthead>
-						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowChildrenOf"><stentry/></strow>
-						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeParent"><stentry/></strow>
-						<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageVisibilitySettings"><stentry/></strow>
-					</simpletable>
-
 				</info>
+				<substeps>
+					<substep>
+						<cmd>Mode: Normal</cmd>
+						<info>
+							<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-Console-ModeNormal.png"><alt>Module Settings &#8212; Console &#8212; Mode Normal</alt></image>
+							<simpletable relcolwidth="1* 3*">
+								<sthead>
+									<stentry>Field</stentry>
+									<stentry>Description</stentry>
+								</sthead>
+								<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowChildrenOf"><stentry/></strow>
+								<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeParent"><stentry/></strow>
+							</simpletable>
+						</info>
+					</substep>
+					<substep>
+						<cmd>Mode: Profile</cmd>
+						<info>
+							<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-Console-ModeProfile.png"><alt>Module Settings &#8212; Console &#8212; Mode Profile</alt></image>
+							<simpletable relcolwidth="1* 3*">
+								<sthead>
+									<stentry>Field</stentry>
+									<stentry>Description</stentry>
+								</sthead>
+								<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageVisibilitySettings"><stentry/></strow>
+							</simpletable>
+						</info>
+					</substep>
+					<substep>
+						<cmd>Mode: Group</cmd>
+						<info>
+							<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-Console-ModeGroup.png"><alt>Module Settings &#8212; Console &#8212; Mode Group</alt></image>
+							<simpletable relcolwidth="1* 3*">
+								<sthead>
+									<stentry>Field</stentry>
+									<stentry>Description</stentry>
+								</sthead>
+								<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowChildrenOf"><stentry/></strow>
+								<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeParent"><stentry/></strow>
+								<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageVisibilitySettings"><stentry/></strow>
+							</simpletable>
+						</info>
+					</substep>
+				</substeps>
             </step>
         </steps>
 

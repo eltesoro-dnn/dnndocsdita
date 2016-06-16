@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleAuthentication">
+<reference xml:lang="en" id="ref-module-authentication">
 
     <title>Module: Authentication</title>
     <titlealts>
@@ -9,14 +9,14 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -38,12 +38,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-authentication.dita#ref-module-authentication/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Allows administrators to manage authentication settings for sites that use Windows Authentication.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-authentication.dita#ref-module-authentication/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-AccountLogin.png"><alt>Account Login module</alt></image>
             </sectiondiv>
@@ -54,7 +54,7 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-authentication.dita#ref-module-authentication/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
                 <p>Includes:
 					<ul>
@@ -64,7 +64,7 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-authentication.dita#ref-module-authentication/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
 				<simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -75,18 +75,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-authentication.dita#ref-module-authentication/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-authentication.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Authentication</stentry>
                         <stentry>
-							<!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-authentication.dita#ref-module-authentication/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Admin</ph>  <!-- None in Platform -->
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-authentication.dita#ref-ModuleAuthentication/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-authentication.dita#ref-module-authentication/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoPlatform"></image>
                                 <image conkeyref="k-bptext/image-LogoContent"></image>

@@ -335,6 +335,25 @@
 				</strow>
 
 
+				<!-- ========== PUBLISHER ========== -->
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-Featured"><stentry/></strow> -->
+				<strow id="strow-field-Featured">
+					<stentry><uicontrol>Featured</uicontrol></stentry>
+					<stentry>If checked, the article is listed in the featured article section of the module.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-tags-cs"><stentry/></strow> -->
+				<strow id="strow-field-tags-cs">
+					<stentry><uicontrol>Tags</uicontrol></stentry>
+					<stentry>Comma-separated tags to associate with the article.</stentry>
+				</strow>
+
+
+
+
+
+
 				<!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-"><stentry/></strow>
 				<strow id="strow-field-">
 					<stentry><uicontrol></uicontrol></stentry>
@@ -385,8 +404,10 @@
 
 			<!--
 			<cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-page-permissions"></cmd>
-			<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-XX-Page-Permissions.png"><alt>Page Settings &gt; Permissions</alt></image></info>
-			<substeps conkeyref="k-bpsteps/substeps-configure-permissions"><substep><cmd/></substep></substeps>
+			<info>
+				<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-XX-Page-Permissions.png"><alt>Page Settings &gt; Permissions</alt></image>
+				<ul conkeyref="k-bpsteps/ul-configure-permissions"><li/></ul>
+			</info>
 			-->
 			<step>
 				<cmd id="cmd-xx-configure-page-permissions">(Optional) In the <uicontrol>Permissions</uicontrol> tab, configure which roles can do which actions on this page.</cmd>

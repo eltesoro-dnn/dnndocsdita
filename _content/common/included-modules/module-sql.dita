@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleSQL">
+<reference xml:lang="en" id="ref-module-sql">  <!-- MOVING TO PERSONA BAR -->
 
     <title>Module: SQL</title>
     <titlealts>
@@ -9,12 +9,13 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
             <prodinfo>
                 <prodname>Platform</prodname>
@@ -37,12 +38,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-sql.dita#ref-ModuleSQL/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-sql.dita#ref-module-sql/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Allows the host to execute SQL statements.</ph></p>
 			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-sql.dita#ref-ModuleSQL/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-sql.dita#ref-module-sql/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SQL.png"><alt>SQL module</alt></image>
             </sectiondiv>
@@ -54,12 +55,12 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-sql.dita#ref-ModuleSQL/sectiondiv-bpmoreinfo"></sectiondiv>
+            <!-- <sectiondiv conref="module-sql.dita#ref-module-sql/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
-            <!-- <sectiondiv conref="module-sql.dita#ref-ModuleSQL/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-sql.dita#ref-module-sql/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
 				<simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -70,18 +71,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-sql.dita#ref-ModuleSQL/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-sql.dita#ref-module-sql/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-sql.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>SQL</stentry>
                         <stentry>
-							<!-- <ph conref="module-sql.dita#ref-ModuleSQL/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-sql.dita#ref-module-sql/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Admin</ph>  <!-- Expected: Host -->
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-sql.dita#ref-ModuleSQL/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-sql.dita#ref-module-sql/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoPlatform"></image>
                                 <image conkeyref="k-bptext/image-LogoContent"></image>

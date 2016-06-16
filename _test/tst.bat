@@ -20,6 +20,8 @@ if _%_logfile%_     EQU __    set _logfile=%_logdir%\%_transtype%-test.log
 if _%_outext%_      EQU __    set _outext=.html
 :. If you change _outext, remember to replace the links in the root index.html
 
+set _imgdir=%_gitdir%\_content\common\img
+set _tstdir=%_gitdir%\_test
 set _expfiles=%~dp0expectedfiles.txt
 set _currfiles=%_logdir%\currfiles.txt
 set _tempfile=%_logdir%\temp.txt
@@ -60,6 +62,12 @@ echo ------------------------------------------------------------------------
 start http://www.drlinkcheck.com/
 if _%1_ NEQ __ goto :eof
 
+
+:T004
+
+powershell -file %_tstdir%\get-mentioned-images.ps1 %_gitdir% %_imgdir% >> %_logfile%
+call npp %_logfile%
+if _%1_ NEQ __ goto :eof
 
 
 goto :eof

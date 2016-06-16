@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleActivityStream">
+<reference xml:lang="en" id="ref-module-activity-stream">
 
     <title>Module: Activity Stream</title>
     <titlealts>
@@ -9,14 +9,16 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <audience type="other" othertype="content manager" job="customizing" />
+            <audience type="other" othertype="community manager" job="customizing" />
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
@@ -30,12 +32,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-activity-stream.dita#ref-ModuleActivityStream/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-activity-stream.dita#ref-module-activity-stream/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Displays a list of activities related to a user or a group in reverse chronological order. The inline editor also enables the user to create an entry. The <uicontrol>Activity Stream</uicontrol> is the advanced version of the <uicontrol>Journal</uicontrol> module.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-activity-stream.dita#ref-ModuleActivityStream/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-activity-stream.dita#ref-module-activity-stream/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-ActivityStream.png"><alt>Activity Stream module</alt></image>
             </sectiondiv>
@@ -46,7 +48,7 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-activity-stream.dita#ref-ModuleActivityStream/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-activity-stream.dita#ref-module-activity-stream/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
 				<p><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-companionmodules"></ph></p>
 				<ul>
@@ -55,7 +57,7 @@
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-activity-stream.dita#ref-ModuleActivityStream/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-activity-stream.dita#ref-module-activity-stream/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
 				<simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -66,18 +68,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-activity-stream.dita#ref-ModuleActivityStream/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-activity-stream.dita#ref-module-activity-stream/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-activitystream.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Activity Stream</stentry>
                         <stentry>
-							<!-- <ph conref="module-activity-stream.dita#ref-ModuleActivityStream/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-activity-stream.dita#ref-module-activity-stream/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Social</ph>
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-activity-stream.dita#ref-ModuleActivityStream/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-activity-stream.dita#ref-module-activity-stream/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoEngage"></image>
                             </ph>

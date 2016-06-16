@@ -14,6 +14,19 @@
 
     <taskbody>
 
+		<section>
+
+			<!-- <ul conref="bptext-steps.dita#tsk-bptext-steps/ul-configure-permissions"><li/></ul> -->
+			<!-- <ul conkeyref="k-bpsteps/ul-configure-permissions"><li/></ul> -->
+			<ul id="ul-configure-permissions">
+				<li>To filter the displayed roles, select the role group from the <uicontrol>Filter By Group</uicontrol> dropdown.</li>
+				<li>To add another role to the list, choose the additional role from the <uicontrol>Select Role</uicontrol> dropdown, and click/tap <uicontrol>Add</uicontrol>.</li>
+				<li>To add a specific user to the list, enter part of their display name, select the correct user from the list, and click/tap <uicontrol>Add</uicontrol>.</li>
+				<li>Check the appropriate checkboxes to enable each role to perform actions.</li>
+			</ul>
+
+		</section>
+
         <steps>
 
 			<!-- ========== MENU ========== -->
@@ -124,13 +137,13 @@
 			<!-- <step conkeyref="k-bpsteps/step-manageworkflowstates"><cmd/></step> -->
 			<step id="step-manageworkflowstates">
 				<cmd>Manage the workflow states.</cmd>
-				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-WorkflowMgmt-EditWorkflow.png"><alt>Workflow editing form</alt></image></info>
 				<choices>
 					<choice>To add a state to the workflow, click/tap the <uicontrol>Add a State</uicontrol> button. Then configure the workflow state.</choice>
 					<choice>To edit a state, click/tap the state's pencil icon in the <uicontrol>Actions</uicontrol> column. Then configure the workflow state.</choice>
 					<choice>To delete a state, click/tap the state's X icon in the <uicontrol>Actions</uicontrol> column.</choice>
 					<choice>To rearrange the order of the states, use the arrows in the <uicontrol>Move</uicontrol> column.</choice>
 				</choices>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-WorkflowMgmt-EditWorkflow.png"><alt>Workflow editing form</alt></image></info>
 			</step>
 
 			<!-- <step conkeyref="k-bpsteps/step-deleteworkflow"><cmd/></step> -->
@@ -138,6 +151,26 @@
 				<cmd>In the list, hover over the workflow to delete. Click/tap the X icon, then confirm.</cmd>
 				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-WorkflowMgmt-icons-X.png"><alt>X icon to delete the workflow</alt></image></info>
 			</step>
+
+
+			<!-- ========== MENU: SITEMAP ========== -->
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-menuadminsitemap"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-menuadminsitemap"><cmd/></step> -->
+            <step id="step-menuadminsitemap">
+				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Search Engine Sitemap</uicontrol></menucascade>.</cmd>
+                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="center" href="img/scr-menuAdminAdvanced-Sitemap.png"><alt>Admin &gt; Advanced Settings (double-gear tab) &gt; Search Engine Sitemap</alt></image></info>
+            </step>
+
+
+			<!-- ========== MENU: ADVANCED URL MANAGEMENT ========== -->
+
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-menuadminadvancedurlmgmt"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-menuadminadvancedurlmgmt"><cmd/></step> -->
+            <step id="step-menuadminadvancedurlmgmt">
+				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Advanced URL Management</uicontrol></menucascade>.</cmd>
+                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="center" href="img/scr-menuAdminAdvanced-AdvancedURLMgmt.png"><alt>Admin &gt; Advanced Settings (double-gear tab) &gt; Advanced URL Management</alt></image></info>
+            </step>
 
 
 
@@ -235,19 +268,6 @@
 					<choice><xref format="dita" href="building-your-site/copy-page-via-persona-bar.dita">Copy a page.</xref></choice>
 					<choice><xref format="dita" href="building-your-site/edit-page-via-persona-bar.dita">Edit a page.</xref></choice>
 				</choices>
-			</step>
-
-
-			<step>
-				<cmd></cmd>
-				<!-- <substeps conref="bptext-steps.dita#tsk-bptext-steps/substeps-configure-permissions"><substep><cmd/></substep></substeps> -->
-				<!-- <substeps conkeyref="k-bpsteps/substeps-configure-permissions"><substep><cmd/></substep></substeps> -->
-				<substeps id="substeps-configure-permissions">
-					<substep><cmd>(Optional) To filter the displayed roles, select the role group from the <uicontrol>Filter By Group</uicontrol> dropdown.</cmd></substep>
-					<substep><cmd>(Optional) To add another role to the list, choose the additional role from the <uicontrol>Select Role</uicontrol> dropdown, and click/tap <uicontrol>Add</uicontrol>.</cmd></substep>
-					<substep><cmd>(Optional) To add a specific user to the list, enter part of their display name, select the correct user from the list, and click/tap <uicontrol>Add</uicontrol>.</cmd></substep>
-					<substep><cmd>(Optional) Check the appropriate checkboxes to enable each role to perform actions.</cmd></substep>
-				</substeps>
 			</step>
 
 

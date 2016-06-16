@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleIdeas">
+<reference xml:lang="en" id="ref-module-ideas">
 
     <title>Module: Ideas</title>
     <titlealts>
@@ -9,14 +9,16 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <audience type="other" othertype="content manager" job="customizing" />
+            <audience type="other" othertype="community manager" job="customizing" />
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
@@ -30,12 +32,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-ideas.dita#ref-ModuleIdeas/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-ideas.dita#ref-module-ideas/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Allows registered users to share their ideas with other users and vote on other users' ideas.</ph></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-ideas.dita#ref-ModuleIdeas/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-ideas.dita#ref-module-ideas/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Ideas.png"><alt>Ideas module</alt></image>
             </sectiondiv>
@@ -46,20 +48,20 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-ideas.dita#ref-ModuleIdeas/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-ideas.dita#ref-module-ideas/sectiondiv-bpmoreinfo"></sectiondiv> -->
 			<sectiondiv id="sectiondiv-bpmoreinfo">
 				<p><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-companionmodules"></ph></p>
 				<ul>
-						<li><uicontrol>Ideas Vote Summary</uicontrol>. </li>
-						<li><uicontrol>Ideas Subscriptions</uicontrol>. Allows the user to subscribe to the idea list.</li>
-						<li><uicontrol>Ideas Search</uicontrol>. Allows the user to search the idea list.</li>
+					<li><uicontrol>Ideas Vote Summary</uicontrol>. </li>
+					<li><uicontrol>Ideas Subscriptions</uicontrol>. Allows the user to subscribe to the idea list.</li>
+					<li><uicontrol>Ideas Search</uicontrol>. Allows the user to search the idea list.</li>
 				</ul>
 
 				<p conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/p-companions-VisibleOnPage"></p>
             </sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-ideas.dita#ref-ModuleIdeas/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-ideas.dita#ref-module-ideas/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
                 <simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -70,18 +72,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-ideas.dita#ref-ModuleIdeas/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-ideas.dita#ref-module-ideas/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-ideas.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>Ideas</stentry>
                         <stentry>
-							<!-- <ph conref="module-ideas.dita#ref-ModuleIdeas/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-ideas.dita#ref-module-ideas/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Social</ph>
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-ideas.dita#ref-ModuleIdeas/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-ideas.dita#ref-module-ideas/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoEngage"></image>
                             </ph>

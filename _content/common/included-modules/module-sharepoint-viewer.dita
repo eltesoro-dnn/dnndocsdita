@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="ref-ModuleSharePointViewer">
+<reference xml:lang="en" id="ref-module-sharepoint-viewer">  <!-- DEPRECATED -->
 
     <title>Module: SharePoint Viewer</title>
     <titlealts>
@@ -9,12 +9,13 @@
 
 
     <prolog>
-        <author>wrET,orLY,edET</author>
+        <author>wrET,201605</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="other" othertype="host" job="customizing" />
             <audience type="administrator" job="customizing" />
             <prodinfo>
                 <prodname>Evoq Content</prodname>
@@ -33,12 +34,12 @@
         <section>
 
             <sectiondiv id="sectiondiv-bpdesc">
-				<!-- <ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/ph-bpshortdesc"></ph> -->
+				<!-- <ph conref="module-sharepoint-viewer.dita#ref-module-sharepoint-viewer/ph-bpshortdesc"></ph> -->
 				<p><ph id="ph-bpshortdesc">Displays content assets stored in SharePoint.</ph></p>
 			</sectiondiv>
 
 
-            <!-- <sectiondiv conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/sectiondiv-bpimg"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-sharepoint-viewer.dita#ref-module-sharepoint-viewer/sectiondiv-bpimg"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpimg">
                 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-SharePointViewer.png"><alt>SharePoint Viewer module</alt></image>
             </sectiondiv>
@@ -49,12 +50,12 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/sectiondiv-bpmoreinfo"></sectiondiv>
+            <!-- <sectiondiv conref="module-sharepoint-viewer.dita#ref-module-sharepoint-viewer/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo"/>
 			-->
 
 
-            <!-- <sectiondiv conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/sectiondiv-bpdetails"></sectiondiv> -->
+            <!-- <sectiondiv conref="module-sharepoint-viewer.dita#ref-module-sharepoint-viewer/sectiondiv-bpdetails"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpdetails">
 				<simpletable relcolwidth="1* 3* 3* 6*">
                     <sthead>
@@ -65,18 +66,18 @@
                     </sthead>
                     <strow>
                         <stentry>
-                            <!-- <ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/ph-bpicon"></ph> -->
+                            <!-- <ph conref="module-sharepoint-viewer.dita#ref-module-sharepoint-viewer/ph-bpicon"></ph> -->
                             <ph id="ph-bpicon">
                                 <image outputclass="img-ico" href="../../common/img/ico-module-sharepointviewer.png"><alt>icon</alt></image>
                             </ph>
                         </stentry>
                         <stentry>SharePoint Viewer</stentry>
                         <stentry>
-							<!-- <ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/sectiondiv-bpcategory"></ph> -->
+							<!-- <ph conref="module-sharepoint-viewer.dita#ref-module-sharepoint-viewer/sectiondiv-bpcategory"></ph> -->
 							<ph id="ph-bpcategory">Admin</ph>
 						</stentry>
                         <stentry>
-                            <!-- <ph conref="module-sharepoint-viewer.dita#ref-ModuleSharePointViewer/sectiondiv-bpproducts"></ph> -->
+                            <!-- <ph conref="module-sharepoint-viewer.dita#ref-module-sharepoint-viewer/sectiondiv-bpproducts"></ph> -->
                             <ph id="ph-bpproducts">
                                 <image conkeyref="k-bptext/image-LogoContent"></image>
                                 <image conkeyref="k-bptext/image-LogoEngage"></image>
