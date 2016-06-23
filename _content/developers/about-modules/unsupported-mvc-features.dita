@@ -5,7 +5,7 @@
     <title>Unsupported MVC Features</title>
 
     <prolog>
-        <author>wrET,orJB,edET,1601</author>
+        <author>wrET,orJB,trCP,edET,1606</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -41,13 +41,10 @@
 
                 <li>Controller Action Return Types. DNN 8 expects actions to return an ActionResult. All other result types are currently unsupported:
                     <ul>
-                        <li>PartialViewResult,</li>
-                        <li>JsonResult</li>
                         <li>ContentResult</li>
                         <li>EmptyResult</li>
                         <li>FileResult</li>
                         <li>FileStreamResult</li>
-                        <li>JavaScriptResult</li>
                         <li>RedirectResults</li>
                         <li>RedirectToRouteResult</li>
                     </ul>
@@ -63,10 +60,9 @@
 
 
         <section id="ComingSoon">
-            <p>The following features are expected in a future release soon:</p>
+            <p>The following features are expected in a future release:</p>
             <ul>
                 <li>AJAX Helpers</li>
-                <li>Partial view support</li>
             </ul>
         </section>
 

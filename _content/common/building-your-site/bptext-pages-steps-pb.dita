@@ -22,7 +22,7 @@
 			<step id="step-pb-gotopagemgmt">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Manage</uicontrol> <uicontrol>Pages</uicontrol></menucascade>.</cmd>
 				<info>
-					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarManage-Pages-cmg.png"><alt>Persona Bar &gt; Manage &gt; Pages</alt></image>
+					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarManage-Pages-cmg.png"><alt>Persona Bar &gt; Manage &gt; Pages</alt></image>
 				</info>
             </step>
 
@@ -33,7 +33,7 @@
 			<step id="step-pb-editpagepersonabar">
 				<cmd>In the <wintitle>Persona Bar</wintitle>, click/tap the pencil icon (<uicontrol>Edit</uicontrol>).</cmd>
 				<info>
-					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarEdit-cmg.png"><alt>Persona Bar &gt; Edit</alt></image>
+					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarEdit-cmg.png"><alt>Persona Bar &gt; Edit</alt></image>
 				</info>
 			</step>
 
@@ -131,7 +131,7 @@
 			<step id="step-pb-gototemplatelist">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Manage</uicontrol> <uicontrol>Templates</uicontrol></menucascade>.</cmd>
 				<info>
-					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarManage-Templates-cmg.png"><alt>Persona Bar &gt; Manage &gt; Templates</alt></image>
+					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarManage-Templates-cmg.png"><alt>Persona Bar &gt; Manage &gt; Templates</alt></image>
 				</info>
             </step>
 

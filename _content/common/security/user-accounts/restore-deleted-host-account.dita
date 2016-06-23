@@ -43,7 +43,7 @@
 
         <steps>
             <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotohostacctlist"><cmd/></step>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-searchforuser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#bptext-userssteps/step-searchfordeleteduser"><cmd/></step>
             <step conref="bptext-userssteps.dita#bptext-userssteps/step-restoredeleteduser"><cmd/></step>
         </steps>
 

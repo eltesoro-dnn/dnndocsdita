@@ -39,7 +39,7 @@
 
             <sectiondiv id="sectiondiv-bpdesc">
 				<!-- <ph conref="module-view-profile.dita#ref-module-view-profile/ph-bpshortdesc"></ph> -->
-				<p><ph id="ph-bpshortdesc">Displays a user profile.</ph></p>  <!-- ??? -->
+				<p><ph id="ph-bpshortdesc">Displays the user profile.</ph></p>  <!-- ??? -->
 			</sectiondiv>
 
 
@@ -54,9 +54,10 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-view-profile.dita#ref-module-view-profile/sectiondiv-bpmoreinfo"></sectiondiv>
-            <sectiondiv id="sectiondiv-bpmoreinfo"/>
-			-->
+            <!-- <sectiondiv conref="module-view-profile.dita#ref-module-view-profile/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpmoreinfo">
+				<note conkeyref="k-bptext/note-VisibleToAdminsOnly"></note>
+            </sectiondiv>
 
 
             <!-- <sectiondiv conref="module-view-profile.dita#ref-module-view-profile/sectiondiv-bpdetails"></sectiondiv> -->

@@ -59,7 +59,7 @@
             <!-- <sectiondiv conref="module-module-creator.dita#ref-module-module-creator/sectiondiv-bpmoreinfo"></sectiondiv> -->
             <sectiondiv id="sectiondiv-bpmoreinfo">
             	<note conkeyref="k-bptext/note-VisibleToAdminsOnly"></note>
-				<p>You must be a host user to create modules using this module. <ph conkeyref="k-bptext/ph-HostForModulesThemes"></ph></p>
+				<p>You must be a host user in a local DNN installation to create modules using this feature. <ph conkeyref="k-bptext/ph-HostForModulesThemes"></ph></p>
             </sectiondiv>
 
 

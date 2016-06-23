@@ -20,6 +20,7 @@
             <audience type="programmer" />
             <audience type="other" othertype="designer" />
         </metadata>
+		<!-- Source: http://www.dnnsoftware.com/platform/start/install#2047 -->
     </prolog>
 
     <refbody>
@@ -30,15 +31,12 @@
         <section id="OS">
             <title>Supported Operating Systems</title>
             <ul>
-                <li>Windows Vista</li>
                 <li>Windows 7</li>
                 <li>Windows 8</li>
                 <li>Windows 8.1</li>
-                <li>Windows Server 2008</li>
-                <li>Windows Server 2008 R2</li>
-                <li>Windows Server 2012</li>
-                <li>Windows Server 2012 R2</li>
                 <li>Windows 10</li>
+                <li>Windows Server 2008 R2</li>
+                <li>Windows Server 2012 R2</li>
             </ul>
         </section>
 
@@ -54,7 +52,7 @@
         <section id="websvr">
             <title>Web Server</title>
             <ul>
-                <li>Microsoft IIS 7.0, 7.5, 8.0, 8.5, 10</li>
+                <li>Microsoft IIS 7.5, 8.0, 8.5, 10</li>
             </ul>
         </section>
 
@@ -62,13 +60,13 @@
         <section id="dbsvr">
             <title>Database Server</title>
             <ul>
-                <li>Microsoft SQL Server 2008</li>
-                <li>Microsoft SQL Server 2008 Express</li>
                 <li>Microsoft SQL Server 2008 R2</li>
                 <li>Microsoft SQL Server 2008 Express R2</li>
                 <li>Microsoft SQL Server 2012</li>
                 <li>Microsoft SQL Server 2012 Express</li>
                 <li>Microsoft SQL Server 2014</li>
+                <li>Microsoft SQL Server 2014 Express</li>
+                <li>Microsoft SQL Server 2016 (for DNN 8.0.4+)</li>
                 <li>Microsoft Azure SQL Database</li>
             </ul>
         </section>
@@ -106,10 +104,10 @@
         <section id="recommended">
             <title>Recommended Environment</title>
             <ul>
-                <li>Windows 10</li>
-                <li>IIS 10</li>
+                <li>Windows Server 2012 R2</li>
+                <li>IIS 8.5</li>
                 <li>SQL Server 2014 Developer Edition</li>
-                <li>.NET Framework 4.5.2</li>
+                <!-- <li>.NET Framework 4.5.2</li> -->
                 <li><b>For developers:</b> Visual Studio 2015</li>
             </ul>
         </section>

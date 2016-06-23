@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-structured-content">
+
+    <title>Structured Content</title>
+
+    <!-- Topics -->
+	<topicref format="dita" type="topic" toc="yes" href="about-structured-content.dita" copy-to="index.dita" collection-type="family">
+		<!--
+		<topicref format="dita" type="topic" toc="yes" href="managing-content-types.dita" collection-type="family">  // Is this for admins only?
+			<topicref format="dita" type="task" toc="yes" href="create-content-type.dita" />
+			<topicref format="dita" type="task" toc="yes" href="edit-content-type.dita" />
+			<topicref format="dita" type="task" toc="yes" href="delete-content-type.dita" />
+			<topicref format="dita" type="task" toc="yes" href="create-content.dita" />
+			<topicref format="dita" type="task" toc="yes" href="edit-content.dita" />
+			<topicref format="dita" type="task" toc="yes" href="delete-content.dita" />
+
+		</topicref>
+
+
+		-->
+	</topicref>
+
+</map>

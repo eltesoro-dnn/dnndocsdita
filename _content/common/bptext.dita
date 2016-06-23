@@ -191,21 +191,6 @@
 		</ul>
 
 
-        <!-- ==================== Product Logos ==================== -->
-
-		<!-- <image conref="../../common/bptext.dita#top-bptext/image-LogoPlatform"></image> -->
-        <!-- <image conkeyref="k-bptext/image-LogoPlatform"></image> -->
-        <image id="image-LogoPlatform" outputclass="img-logoprod" href="img/ico-dnn-platform.png"><alt>Platform</alt></image>
-
-		<!-- <image conref="../../common/bptext.dita#top-bptext/image-LogoContent"></image> -->
-        <!-- <image conkeyref="k-bptext/image-LogoContent"></image> -->
-		<image id="image-LogoContent" outputclass="img-logoprod" href="img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
-
-		<!-- <image conref="../../common/bptext.dita#top-bptext/image-LogoEngage"></image> -->
-        <!-- <image conkeyref="k-bptext/image-LogoEngage"></image> -->
-		<image id="image-LogoEngage" outputclass="img-logoprod" href="img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
-
-
         <!-- ==================== Misc ==================== -->
 
         <p>
@@ -238,6 +223,21 @@
         &lt;/messageHandlers&gt;
     &lt;/authServices&gt;
         </codeblock>
+
+
+        <!-- ==================== Product Logos ==================== -->
+
+		<!-- <image conref="../../common/bptext.dita#top-bptext/image-LogoPlatform"></image> -->
+        <!-- <image conkeyref="k-bptext/image-LogoPlatform"></image> -->
+        <image id="image-LogoPlatform" outputclass="img-logoprod" href="img/ico-dnn-platform.png"><alt>Platform</alt></image>
+
+		<!-- <image conref="../../common/bptext.dita#top-bptext/image-LogoContent"></image> -->
+        <!-- <image conkeyref="k-bptext/image-LogoContent"></image> -->
+		<image id="image-LogoContent" outputclass="img-logoprod" href="img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+
+		<!-- <image conref="../../common/bptext.dita#top-bptext/image-LogoEngage"></image> -->
+        <!-- <image conkeyref="k-bptext/image-LogoEngage"></image> -->
+		<image id="image-LogoEngage" outputclass="img-logoprod" href="img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
 
 
     </body>

@@ -113,9 +113,35 @@
                 <info>
                     <p>You can use the <uicontrol>Search</uicontrol> textbox and dropdown at the top to search by a user account field, such as Username, Email, Display Name, Street, City, social media account, or Preferred Locale.</p>
 
-                    <p>You can also limit the displayed accounts using the predefined filter links. The alphabet links return accounts with usernames that start with that letter.</p>
+                    <p>You can also filter the displayed accounts using the predefined filter links. The alphabet links return accounts with usernames that start with that letter.</p>
 
                     <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListSearchFilter.png"><alt>User List &gt; Search field and dropdown</alt></image>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-searchfordeleteduser"><cmd/></step> -->
+            <step id="step-searchfordeleteduser">
+                <cmd>Search for the deleted user account.</cmd>
+                <info>
+                    <p>You can use the <uicontrol>Search</uicontrol> textbox and dropdown at the top to search by a user account field, such as Username, Email, Display Name, Street, City, social media account, or Preferred Locale.</p>
+
+                    <p>You can also filter the displayed accounts by clicking/tapping <uicontrol>Deleted</uicontrol>.</p>
+
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListSearchFilter.png"><alt>User List &gt; Search field and dropdown and predefined Deleted filter</alt></image>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-searchforunauthuser"><cmd/></step> -->
+            <step id="step-searchforunauthuser">
+                <cmd>Search for the unauthorized user account.</cmd>
+                <info>
+                    <p>You can use the <uicontrol>Search</uicontrol> textbox and dropdown at the top to search by a user account field, such as Username, Email, Display Name, Street, City, social media account, or Preferred Locale.</p>
+
+                    <p>You can also filter the displayed accounts by clicking/tapping <uicontrol>Unauthorized</uicontrol>.</p>
+
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-UserListSearchFilter.png"><alt>User List &gt; Search field and dropdown and predefined Unauthorized filter</alt></image>
                 </info>
             </step>
 

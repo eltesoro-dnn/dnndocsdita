@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-ModCtr">
+
+    <title>Community Manager</title>
+
+
+    <!-- Keys. NOTE: Do NOT use keys for topics that need to have an "active" tag in the toc. -->
+    <keydef keys="k-bptext"  href="common/bptext.dita#top-bptext" />
+    <keydef keys="k-bpsteps" href="common/bptext-steps.dita#tsk-bptext-steps" />
+
+
+    <!-- Topics -->
+    <topicref format="dita" type="topic" href="community-managers/index.dita" toc="yes">
+
+        <topicref format="dita" type="topic" navtitle="What's New"   toc="yes" href="community-managers/whats-new-dnn8.dita" />
+        <topicref format="dita" type="topic" navtitle="DNN Platform" toc="yes" href="community-managers/dnn-platform-overview.dita" />
+
+		<!-- Managing Your Community -->
+		<mapref href="community-managers/managing-your-community/managing-your-community.ditamap" />
+
+        <!-- Security -->
+        <mapref href="community-managers/security/security-mod.ditamap" />
+
+        <!-- References -->
+        <topicref format="dita" type="topic" toc="yes" href="community-managers/community-manager-references.dita" collection-type="family">
+			<topicref format="dita" type="reference" toc="yes" href="community-managers/included-modules/included-modules.dita" copy-to="community-managers/included-modules/index.dita" />
+			<topicref format="dita" type="reference" toc="yes" href="community-managers/product-versions.dita" />
+			<topicref format="dita" type="topic"     toc="yes" href="community-managers/dnn-license.dita" />
+            <!-- <topicref format="dita" type="topic"     toc="yes" href="community-managers/more-resources.dita" /> -->
+        </topicref>
+		<topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="community-managers/glossary.dita" >
+			<mapref href="common/glossary/glossary.ditamap" />
+		</topichead>
+
+    </topicref>
+
+
+    <!-- RelTables
+    <reltable>
+        <relheader>
+            <relcolspec type="concept"/>
+            <relcolspec type="task"/>
+            <relcolspec type="reference"/>
+        </relheader>
+
+        // adm dev dsg cmg mod
+
+    </reltable>
+	-->
+
+</map>

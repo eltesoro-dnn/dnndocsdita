@@ -25,6 +25,10 @@ set _tstdir=%_gitdir%\_test
 set _expfiles=%~dp0expectedfiles.txt
 set _currfiles=%_logdir%\currfiles.txt
 set _tempfile=%_logdir%\temp.txt
+set _staging=http://qa.dnncorp.biz/docs/
+
+set _urlmap=W:\_build\urlmap\urlmap.txt
+set _site=http://qa.dnncorp.biz/docs
 
 :. ----- Modify the environment settings above as needed. -----
 
@@ -64,9 +68,28 @@ if _%1_ NEQ __ goto :eof
 
 
 :T004
-
 powershell -file %_tstdir%\get-mentioned-images.ps1 %_gitdir% %_imgdir% >> %_logfile%
 call npp %_logfile%
+if _%1_ NEQ __ goto :eof
+
+
+goto :eof
+:T005 - Not yet tested.
+:testall
+:. Check the second parameter because "for" ignores blank first tokens.
+for /f "tokens=2,3" %%v in ( %_urlmap% ) do  if _%%w_ NEQ __  (
+    echo Testing URL %_site%/%%v  >> %_logfile%
+    curl %_site%/%%w > %_tempfile%
+    if ( _%%x_ NEQ __ )
+		comp %_staging%/%_tempfile% %%x /a /l /n:3  >> %_logfile%
+)
+:testonly
+for /f "tokens=1,2" %%u in ( %_urlmap% ) do  if _%%u_ EQU _testonly_  (
+    echo Testing URL %_site%/%%v  >> %_logfile%
+    start %_site%/%%v > %_tempfile%
+    if ( _%%x_ NEQ __ )
+		comp %_staging%/%_tempfile% %%x /a /l /n:3  >> %_logfile%
+)
 if _%1_ NEQ __ goto :eof
 
 

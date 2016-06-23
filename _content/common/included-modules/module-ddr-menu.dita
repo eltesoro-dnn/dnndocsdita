@@ -54,9 +54,10 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-ddr-menu.dita#ref-module-ddr-menu/sectiondiv-bpmoreinfo"></sectiondiv>
-            <sectiondiv id="sectiondiv-bpmoreinfo"/>
-			-->
+            <!-- <sectiondiv conref="module-ddr-menu.dita#ref-module-ddr-menu/sectiondiv-bpmoreinfo"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-bpmoreinfo">
+				<note conkeyref="k-bptext/note-VisibleToAdminsOnly"></note>
+            </sectiondiv>
 
 
             <!-- <sectiondiv conref="module-ddr-menu.dita#ref-module-ddr-menu/sectiondiv-bpdetails"></sectiondiv> -->

@@ -125,13 +125,11 @@
 	</topicref>
 
 
-    <!-- SECURITY / USER MANAGEMENT MODULES -->
+    <!-- SECURITY MODULES -->
 	<!--
 	<topicref format="dita" type="topic" toc="yes" href="...-modules.dita" collection-type="family">
-
 		<topicref format="dita" type="reference" toc="yes" href="module-authentication.dita" />  // Cannot add to page easily.
 		<topicref format="dita" type="reference" toc="yes" href="module-registration.dita" />  // Cannot add to page easily.
-
 	</topicref>
 	-->
 
@@ -155,6 +153,16 @@
 	-->
 
 
+    <!-- USER MANAGEMENT MODULES -->
+	<topicref format="dita" type="topic" toc="yes" href="user-management-modules.dita" collection-type="family">
+
+		<topicref format="dita" type="reference" toc="yes" href="module-view-profile.dita">
+		<topicref format="dita" type="task"      toc="yes" href="config-module-view-profile.dita" />
+		</topicref>
+
+	</topicref>
+
+
     <!-- CREATION MODULES -->
     <topicref format="dita" type="topic" toc="yes" href="creation-modules.dita" collection-type="family">
 
@@ -170,9 +178,8 @@
     <!-- ... MODULES -->
 	<!--
     <topicref format="dita" type="topic" toc="yes" href="...-modules.dita" collection-type="family">
-		<topicref format="dita" type="reference" toc="yes" href="module-ddr-menu.dita" />
+		<topicref format="dita" type="reference" toc="yes" href="module-ddr-menu.dita" />  // Already started the config* file. Need descriptions for fields.
 		<topicref format="dita" type="reference" toc="yes" href="module-razor-host.dita" />
-		<topicref format="dita" type="reference" toc="yes" href="module-view-profile.dita" />
 		<topicref format="dita" type="reference" toc="yes" href="module-visualizer.dita" />  For DNN 9.
 	</topicref>
 	-->

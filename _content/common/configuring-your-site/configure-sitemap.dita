@@ -35,7 +35,7 @@
     <taskbody>
 
 		<section id="overview">
-			<p>Sitemaps help search engine crawlers to navigate your site.</p>
+			<p conkeyref="k-bpsteps/p-overview-sitemaps"></p>
 		</section>
 
         <steps>
@@ -54,11 +54,11 @@
 							<stentry>Description</stentry>
 						</sthead>
 						<strow>
-							<stentry>Override Priority</stentry>
-							<stentry> <!-- What priority is it overriding? --> </stentry>
+							<stentry><uicontrol>Override Priority</uicontrol></stentry>
+							<stentry>If checked, the <uicontrol>Sitemap</uicontrol> module settings override the page prioritization rules of the provider. If unchecked, allows the provider to specify how the pages would be prioritized.</stentry>
 						</strow>
 						<strow>
-							<stentry>Priority</stentry>
+							<stentry><uicontrol>Priority</uicontrol></stentry>
 							<stentry>The order in which the providers would be used, if more than one provider is enabled.</stentry>
 						</strow>
 					</simpletable>
@@ -74,7 +74,7 @@
 							<stentry>Description</stentry>
 						</sthead>
 						<strow>
-							<stentry><uicontrol>Use page level based priorities?</uicontrol></stentry>
+							<stentry><uicontrol>Use page level based priorities?</uicontrol></stentry>  <!-- If they don't want hierarchical priority, can they set the priority for the page in the page? -->
 							<stentry>If checked, the priority for each page is computed based on its hierarchy level. Top level pages are assigned a priority of 1.0, and lower levels are 0.1 less than the next higher level (i.e., the second level pages are assigned a priority of 0.9; the third level, 0.8).</stentry>
 						</strow>
 						<strow>

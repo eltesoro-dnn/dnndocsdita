@@ -60,8 +60,11 @@
         <steps>
 			<step conref="../building-your-site/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-editpageformoduleconfig-basic"><cmd/></step>
 			<step>
-				<cmd>(Optional) Click/Tap the <uicontrol>Autoconfigure</uicontrol> button.</cmd>
-				<info><note type="tip">Even if you plan to customize the settings, run the autoconfiguration first to initialize the settings.</note></info>
+				<cmd>(Recommended) Click/Tap the <uicontrol>Autoconfigure</uicontrol> button.</cmd>
+				<info>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-SocialGroups-AutoConfig.png"><alt>Module Settings &#8212; Social Groups &#8212; Auto Configure</alt></image>
+					<note type="tip">Even if you plan to customize the settings, run the autoconfiguration first to initialize the settings.</note>
+				</info>
 			</step>
 			<step conref="../building-your-site/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step>
             <step>

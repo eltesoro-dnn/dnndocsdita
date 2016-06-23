@@ -23,11 +23,14 @@ if "%OS%"=="WINNT" @setlocal
 :. Currently available: html5, xhtml, word2dita.
 :. Future options: common-html, docbook, eclipsecontent, eclipsehelp, htmlhelp, javahelp, odt, pdf, pdf2, tocjs, troff, wordrtf.
 set _transtype=html5
-for %%v in ( html5 xhtml )   do  if _%1_ EQU _%%v_  set _transtype=%1
-for %%v in ( word2dita w2d ) do  if _%1_ EQU _w2d_  set _transtype=word2dita
+for %%v in ( %* ) do  for %%w in ( html5 xhtml )           do  if _%%v_ EQU _%%w_  set _transtype=%%w
+for %%v in ( %* ) do  for %%w in ( word2dita w2d )         do  if _%%v_ EQU _%%w_  set _transtype=word2dita
+
+set _bldtype=
+for %%v in ( %* ) do  for %%w in ( 4live )                 do  if _%%v_ EQU _%%w_  set _bldtype=%%w
 
 set _subbld=
-for %%v in ( adm dev dsg )   do  if _%1_ EQU _%%v_  set _subbld=-%1
+for %%v in ( %* ) do  for %%w in ( adm dev dsg cmg mod )   do  if _%%v_ EQU _%%w_  set _subbld=-%1
 
 if _%_gitdir%_      EQU __    set _gitdir=w:\.
 if _%_blddir%_      EQU __    set _blddir=v:\bld\%_transtype%
@@ -35,6 +38,8 @@ if _%_outdir%_      EQU __    set _outdir=v:\output\%_transtype%
 if _%_logdir%_      EQU __    set _logdir=v:\logs
 if _%_logfile%_     EQU __    set _logfile=%_logdir%\%_transtype%.log
 if _%_outext%_      EQU __    set _outext=.html
+
+
 :. If you change _outext, remember to replace the links in the root index.html
 
 if _"%JAVA_HOME%"_  EQU _""_  set JAVA_HOME=%ProgramFiles%\Java\jdk1.8.0_77
@@ -84,7 +89,7 @@ echo Building %_transtype%%_subbld% ....
 :. Must start at %DITA_HOME%
 cd /d %DITA_HOME%
 echo. > %_logfile%
-xcopy %_gitdir%\_build\dnn_build.xml  %DITA_HOME%\.  /v/y
+xcopy %_gitdir%\_build\dnn_build*.xml  %DITA_HOME%\.  /v/y
 call ant %_transtype%%_subbld% -f %DITA_HOME%\dnn_build.xml -l %_logfile%
 
 

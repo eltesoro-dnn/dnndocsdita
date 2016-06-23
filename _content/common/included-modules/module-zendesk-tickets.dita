@@ -48,11 +48,11 @@
 			-->
 
 
-            <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-module-zendesk-tickets/sectiondiv-bpmoreinfo"></sectiondiv>
+            <sectiondiv conref="module-zendesk-tickets.dita#ref-module-zendesk-tickets/sectiondiv-bpmoreinfo"></sectiondiv>
             <sectiondiv id="sectiondiv-bpmoreinfo">
-                <p>Includes the <uicontrol>User Desk</uicontrol>.</p>	// What is the User Desk?
+                <!-- <p>Includes the <uicontrol>User Desk</uicontrol>.</p>	// What is the User Desk? -->
+				<p>The Zendesk connector must also be configured.</p>
             </sectiondiv>
-			-->
 
 
             <!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-module-zendesk-tickets/sectiondiv-bpdetails"></sectiondiv> -->
@@ -93,12 +93,14 @@
         </section>
 
 
-		<!--
 		<section>
 			<title>Module Configuration</title>
-			<sectiondiv id="sectiondiv-bpconfig"/> See ditamap.
+
+			<!-- <sectiondiv conref="module-zendesk-tickets.dita#ref-module-zendesk-tickets/sectiondiv-bpconfig"></sectiondiv> -->
+			<sectiondiv id="sectiondiv-bpconfig">
+				<p>The <uicontrol>Zendesk Tickets</uicontrol> module does not have custom settings.</p>
+			</sectiondiv>
         </section>
-		 -->
 
     </refbody>
 

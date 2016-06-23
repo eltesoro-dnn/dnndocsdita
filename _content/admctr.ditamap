@@ -39,7 +39,7 @@
         </topicref>
 
 		<!-- Configuring Your Site -->
-		<mapref href="administrators/configuring-your-site/configuring-your-site.ditamap" />
+		<mapref href="administrators/configuring-your-site/configuring-your-site-pb.ditamap" />
 
         <!-- Security -->
         <mapref href="administrators/security/security-adm.ditamap" />
@@ -47,10 +47,14 @@
 		<!-- Building Your Site -->
 		<mapref href="administrators/building-your-site/building-your-site-via-control-bar.ditamap" />
 
+		<!-- Structured Content -->
+        <mapref href="administrators/structured-content/structured-content.ditamap" />
+
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="administrators/administrator-references.dita" collection-type="family">
             <topicref format="dita" type="topic"     toc="yes" href="administrators/providers.dita" />
 			<topicref format="dita" type="reference" toc="yes" href="administrators/included-modules/included-modules.dita" copy-to="administrators/included-modules/index.dita" />
+			<topicref format="dita" type="reference" toc="yes" href="administrators/requirements.dita" />
 			<topicref format="dita" type="reference" toc="yes" href="administrators/product-versions.dita" />
 			<topicref format="dita" type="topic"     toc="yes" href="administrators/dnn-license.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="administrators/more-resources.dita" />
@@ -148,22 +152,6 @@
 			<relcell/>
 			<relcell>
 				<topicref format="dita" type="reference" href="administrators/included-modules/included-modules.dita" />
-			</relcell>
-		</relrow>
-
-        <!-- adm workflows -->
-		<relrow>
-			<relcell>
-				<topicref format="dita" type="topic"     href="administrators/configuring-your-site/about-workflows.dita"/>
-			</relcell>
-			<relcell>
-				<topicref format="dita" type="task"      href="administrators/configuring-your-site/create-workflow.dita" />
-				<topicref format="dita" type="task"      href="administrators/configuring-your-site/edit-workflow.dita" />
-				<topicref format="dita" type="task"      href="administrators/configuring-your-site/delete-workflow.dita" />
-				<topicref format="dita" type="task"      href="administrators/configuring-your-site/configure-workflow-state.dita" />
-			</relcell>
-			<relcell>
-				<!-- <topicref format="dita" type="reference" href="administrators/included-modules/module-workflow-management.dita" /> // MOVING TO PERSONA BAR -->
 			</relcell>
 		</relrow>
 

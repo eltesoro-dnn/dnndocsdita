@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-delete-workflow">
+<task xml:lang="en" id="tsk-create-workflow-pb">
 
-    <title>Delete a Workflow</title>
+    <title>Create a Workflow</title>
     <titlealts>
-        <navtitle>Delete Workflow</navtitle>
+        <navtitle>Create Workflow</navtitle>
     </titlealts>
 
 
@@ -31,9 +31,14 @@
     <taskbody>
 
         <steps>
-            <step conkeyref="k-bpsteps/step-menuadminworkflowmgmt"><cmd/></step>
-			<step conkeyref="k-bpsteps/step-deleteworkflow"><cmd/></step>
+            <step conkeyref="k-bpsteps/step-pb-pbarsettingsworkflows"><cmd/></step>
+			<step conkeyref="k-bpsteps/step-pb-workflowlist"><cmd/></step>
+			<step conkeyref="k-bpsteps/step-pb-createworkflow"><cmd/></step>
         </steps>
+
+        <postreq>
+        	<xref format="dita" href="edit-workflow-pb.dita">Edit the workflow to add/edit/delete states.</xref>
+        </postreq>
 
     </taskbody>
 

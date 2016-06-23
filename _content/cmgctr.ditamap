@@ -16,15 +16,22 @@
         <topicref format="dita" type="topic" navtitle="What's New"   toc="yes" href="content-managers/whats-new-dnn8.dita" />
         <topicref format="dita" type="topic" navtitle="DNN Platform" toc="yes" href="content-managers/dnn-platform-overview.dita" />
 
+		<!-- Configuring Your Site for Content -->
+		<mapref href="content-managers/configuring-your-site/configuring-your-site-pb.ditamap" />
+
 		<!-- Building Your Site -->
 		<mapref href="content-managers/building-your-site/building-your-site-via-persona-bar.ditamap" />
 
         <!-- Security -->
         <mapref href="content-managers/security/security-cmg.ditamap" />
 
+		<!-- Structured Content -->
+        <mapref href="content-managers/structured-content/structured-content.ditamap" />
+
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="content-managers/content-manager-references.dita" collection-type="family">
 			<topicref format="dita" type="reference" toc="yes" href="content-managers/included-modules/included-modules.dita" copy-to="content-managers/included-modules/index.dita" />
+			<topicref format="dita" type="reference" toc="yes" href="content-managers/requirements.dita" />
 			<topicref format="dita" type="reference" toc="yes" href="content-managers/product-versions.dita" />
 			<topicref format="dita" type="topic"     toc="yes" href="content-managers/dnn-license.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="content-managers/more-resources.dita" />
@@ -47,7 +54,7 @@
         <!-- adm dev dsg cmg -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic"   href="content-managers/dnn-platform-overview.dita" />
+                <topicref format="dita" type="topic"     href="content-managers/dnn-platform-overview.dita" />
             </relcell>
             <relcell/>
             <relcell>
@@ -59,7 +66,7 @@
         <!-- adm cmg -->
 		<relrow>
 			<relcell>
-				<topicref format="dita" type="topic" href="content-managers/building-your-site/building-your-site.dita" />
+				<topicref format="dita" type="topic"     href="content-managers/building-your-site/building-your-site.dita" />
 			</relcell>
 			<relcell>
 				<topicref format="dita" type="topic"     href="content-managers/included-modules/creation-modules.dita" />
@@ -80,11 +87,27 @@
 			</relcell>
 		</relrow>
 
+        <!-- cmg workflows -->
+		<relrow>
+			<relcell>
+				<topicref format="dita" type="topic"     href="content-managers/configuring-your-site/about-workflows.dita"/>
+			</relcell>
+			<relcell>
+				<topicref format="dita" type="task"      href="content-managers/configuring-your-site/create-workflow-pb.dita" />
+				<topicref format="dita" type="task"      href="content-managers/configuring-your-site/edit-workflow-pb.dita" />
+				<topicref format="dita" type="task"      href="content-managers/configuring-your-site/delete-workflow-pb.dita" />
+				<topicref format="dita" type="task"      href="content-managers/configuring-your-site/configure-workflow-state-pb.dita" />
+			</relcell>
+			<relcell>
+				<!-- <topicref format="dita" type="reference" href="content-managers/included-modules/module-workflow-management.dita" /> // MOVING TO PERSONA BAR -->
+			</relcell>
+		</relrow>
+
         <!-- cmg -->
 		<relrow>
 			<relcell>
-				<topicref format="dita" type="topic" href="content-managers/building-your-site/building-your-site.dita" />
-				<topicref format="dita" type="topic" href="content-managers/security/roles/about-role-based-access.dita" />
+				<topicref format="dita" type="topic"     href="content-managers/building-your-site/building-your-site.dita" />
+				<topicref format="dita" type="topic"     href="content-managers/security/roles/about-role-based-access.dita" />
 			</relcell>
 			<relcell/>
 			<relcell/>

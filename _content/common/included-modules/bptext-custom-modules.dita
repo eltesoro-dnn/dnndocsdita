@@ -891,9 +891,84 @@
 				</strow>
 
 
+				<!-- ========== MODULE: VIEW PROFILE ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeEditButton"><stentry/></strow> -->
+				<strow id="strow-field-IncludeEditButton">
+					<stentry><uicontrol>Include Edit Button</uicontrol></stentry>
+					<stentry>If checked, the <uicontrol>Edit Profile</uicontrol> button is displayed.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ProfileTemplate"><stentry/></strow> -->
+				<strow id="strow-field-ProfileTemplate">
+					<stentry><uicontrol>Profile Template</uicontrol></stentry>
+					<stentry>The custom HTML template used to display the user profile. The default template uses a &lt;div&gt; tag.</stentry>
+				</strow>
 
 
-				<!-- ========== MODULE:  ========== -->
+				<!-- ========== MODULE: DDR MENU ========== -->
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MenuStyle"><stentry/></strow> -->
+				<strow id="strow-field-MenuStyle">
+					<stentry><uicontrol>Menu Style</uicontrol></stentry>
+					<stentry></stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NodeXMLOath"><stentry/></strow> -->
+				<strow id="strow-field-NodeXMLOath">
+					<stentry><uicontrol>Node XML Oath</uicontrol></stentry>
+					<stentry></stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NodeSelectionExpression"><stentry/></strow> -->
+				<strow id="strow-field-NodeSelectionExpression">
+					<stentry><uicontrol>Node Selection Expression</uicontrol></stentry>
+					<stentry></stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NodesToInclude"><stentry/></strow> -->
+				<strow id="strow-field-NodesToInclude">
+					<stentry><uicontrol>Nodes to Include</uicontrol></stentry>
+					<stentry></stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NodesToExclude"><stentry/></strow> -->
+				<strow id="strow-field-NodesToExclude">
+					<stentry><uicontrol>Nodes to Exclude</uicontrol></stentry>
+					<stentry></stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NodeManipulatorType"><stentry/></strow> -->
+				<strow id="strow-field-NodeManipulatorType">
+					<stentry><uicontrol>Node Manipulator Type</uicontrol></stentry>
+					<stentry></stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeContextInXML"><stentry/></strow> -->
+				<strow id="strow-field-IncludeContextInXML">
+					<stentry><uicontrol>Include Context in XML</uicontrol></stentry>
+					<stentry>If checked, ...</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeHiddenNodes"><stentry/></strow> -->
+				<strow id="strow-field-IncludeHiddenNodes">
+					<stentry><uicontrol>Include Hidden Nodes</uicontrol></stentry>
+					<stentry>If checked, ...</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TemplateArguments"><stentry/></strow> -->
+				<strow id="strow-field-TemplateArguments">
+					<stentry><uicontrol>Template Arguments</uicontrol></stentry>
+					<stentry></stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ClientOptions"><stentry/></strow> -->
+				<strow id="strow-field-ClientOptions">
+					<stentry><uicontrol>Client Options</uicontrol></stentry>
+					<stentry></stentry>
+				</strow>
+
+
 
 
 
