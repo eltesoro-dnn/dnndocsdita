@@ -2,10 +2,10 @@
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/map.dtd">
 <map xml:lang="en" id="map-security-adm">
 
-    <title>Security</title>
+    <title>Securing Your Site</title>
 
     <!-- Topics -->
-    <topicref format="dita" type="topic" navtitle="Security" toc="yes" href="security.dita" copy-to="index.dita" collection-type="family">
+    <topicref format="dita" type="topic" navtitle="Securing Your Site" toc="yes" href="security.dita" copy-to="index.dita" collection-type="family">
 
         <topicref format="dita" type="topic" toc="yes" href="user-accounts/about-user-accounts.dita" copy-to="user-accounts/index.dita" collection-type="family">
             <!-- Regular user accounts tasks -->

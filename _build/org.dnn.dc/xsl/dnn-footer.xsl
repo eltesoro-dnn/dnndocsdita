@@ -4,25 +4,16 @@
     <xsl:template name="gen-user-footer">
 
         <div class="footer">
-            <div class="social-media-wrapper">
-                <ul class="social-media horizontal-list">
-                    <li><a href="http://facebook.com/dotnetnuke" class="facebook"></a></li>
-                    <li><a href="http://twitter.com/dnncorp" class="twitter"></a></li>
-                    <li><a href="http://www.linkedin.com/company/207975" class="linkedin"></a></li>
-                    <li><a href="http://www.youtube.com/user/dotnetnuke#" class="youtube"></a></li>
-                    <!-- <li><a href="http://twitter.com/dnn" class="twitter"></a></li> -->
-                </ul>
-            </div>
 
             <div class="misc-wrapper">
                 <ul class="misc horizontal-list">
                     <li><a href="http://www.dnnsoftware.com/Terms">Terms of Use</a></li>
                     <li><a href="http://www.dnnsoftware.com/Privacy">Privacy</a></li>
-                    <li><span class="footer-span"> &#169; 2016 </span> <a href="http://www.dnnsoftware.com">DNN Corp.</a> <span class="footer-span"> All rights reserved. </span></li>
+                    <li><span class="footer-span">© 2016</span><a href="http://www.dnnsoftware.com">DNN Corp.</a><span class="footer-span"> All rights reserved.</span></li>
                 </ul>
             </div>
 
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+            <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
             <script src="/docs/_theme/scripts.js"></script>
         </div>
 

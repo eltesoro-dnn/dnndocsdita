@@ -38,10 +38,6 @@
             <isset property="env._logdir"/>
         </condition>
 
-        <condition property="bldtype" value="${env._bldtype}" else="" >
-            <isset property="env._bldtype"/>
-        </condition>
-
     </target>
 
 
@@ -161,42 +157,42 @@
     </target>
 
     <target name="html5-adm" depends="html5-prep">
-        <echo level="info">Building html5 Administrator Center ${bldtype} ....</echo>
+        <echo level="info">Building html5 Administrator Center ....</echo>
         <ant antfile="build.xml">
             <property name="sitetitle" value="Administrators"/>
-            <property name="args.input" location="${bld.dir}${file.separator}admctr${bldtype}.ditamap"/>
+            <property name="args.input" location="${bld.dir}${file.separator}admctr.ditamap"/>
         </ant>
     </target>
 
     <target name="html5-dev" depends="html5-prep">
-        <echo level="info">Building html5 Developer Center ${bldtype} ....</echo>
+        <echo level="info">Building html5 Developer Center ....</echo>
         <ant antfile="build.xml">
             <property name="sitetitle" value="Developers"/>
-            <property name="args.input" location="${bld.dir}${file.separator}devctr${bldtype}.ditamap"/>
+            <property name="args.input" location="${bld.dir}${file.separator}devctr.ditamap"/>
         </ant>
     </target>
 
     <target name="html5-dsg" depends="html5-prep">
-        <echo level="info">Building html5 Designer Center ${bldtype} ....</echo>
+        <echo level="info">Building html5 Designer Center ....</echo>
         <ant antfile="build.xml">
             <property name="sitetitle" value="Designers"/>
-            <property name="args.input" location="${bld.dir}${file.separator}dsgctr${bldtype}.ditamap"/>
+            <property name="args.input" location="${bld.dir}${file.separator}dsgctr.ditamap"/>
         </ant>
     </target>
 
     <target name="html5-cmg" depends="html5-prep">
-        <echo level="info">Building html5 Content Manager Center ${bldtype} ....</echo>
+        <echo level="info">Building html5 Content Manager Center ....</echo>
         <ant antfile="build.xml">
             <property name="sitetitle" value="Content Managers"/>
-            <property name="args.input" location="${bld.dir}${file.separator}cmgctr${bldtype}.ditamap"/>
+            <property name="args.input" location="${bld.dir}${file.separator}cmgctr.ditamap"/>
         </ant>
     </target>
 
     <target name="html5-mod" depends="html5-prep">
-        <echo level="info">Building html5 Community Manager Center ${bldtype} ....</echo>
+        <echo level="info">Building html5 Community Manager Center ....</echo>
         <ant antfile="build.xml">
             <property name="sitetitle" value="Community Managers"/>
-            <property name="args.input" location="${bld.dir}${file.separator}modctr${bldtype}.ditamap"/>
+            <property name="args.input" location="${bld.dir}${file.separator}modctr.ditamap"/>
         </ant>
     </target>
 

@@ -26,17 +26,22 @@ set _transtype=html5
 for %%v in ( %* ) do  for %%w in ( html5 xhtml )           do  if _%%v_ EQU _%%w_  set _transtype=%%w
 for %%v in ( %* ) do  for %%w in ( word2dita w2d )         do  if _%%v_ EQU _%%w_  set _transtype=word2dita
 
-set _bldtype=
-for %%v in ( %* ) do  for %%w in ( 4live )                 do  if _%%v_ EQU _%%w_  set _bldtype=%%w
-
 set _subbld=
 for %%v in ( %* ) do  for %%w in ( adm dev dsg cmg mod )   do  if _%%v_ EQU _%%w_  set _subbld=-%1
 
-if _%_gitdir%_      EQU __    set _gitdir=w:\.
-if _%_blddir%_      EQU __    set _blddir=v:\bld\%_transtype%
-if _%_outdir%_      EQU __    set _outdir=v:\output\%_transtype%
-if _%_logdir%_      EQU __    set _logdir=v:\logs
+set _bldtype=
+set _pref=
+for %%v in ( %* ) do  for %%w in ( 4live )                 do  if _%%v_ EQU _%%w_  (
+	set _bldtype=%%w
+	set _pref=%%w-
+)
+
+if _%_blddir%_      EQU __    set _blddir=v:\%_pref%bld\%_transtype%
+if _%_outdir%_      EQU __    set _outdir=v:\%_pref%output\%_transtype%
+if _%_logdir%_      EQU __    set _logdir=v:\%_pref%logs
+
 if _%_logfile%_     EQU __    set _logfile=%_logdir%\%_transtype%.log
+if _%_gitdir%_      EQU __    set _gitdir=w:\.
 if _%_outext%_      EQU __    set _outext=.html
 
 
@@ -68,6 +73,12 @@ goto %_transtype%
 :html5
 :xhtml
 
+echo.
+echo *========================================================================*
+echo  Building docs for %_transtype%%_subbld% - %_bldtype% ....
+echo *========================================================================*
+echo.
+
 echo Copying files required by the build ....
 xcopy %_gitdir%\_content\*.dita*         %_blddir%                /i/s/v/y
 xcopy %_gitdir%\_content\*.png           %_blddir%                /i/s/v/y
@@ -76,6 +87,10 @@ xcopy %_gitdir%\_content\common\samples  %_blddir%\common\samples /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\dnn*.css     %_blddir%\_themes\dnn    /i/s/v/y
 
 for %%v in ( administrators developers designers content-managers community-managers ) do  xcopy %_blddir%\common\*.dita* %_blddir%\%%v /i/s/v/y
+
+echo Copying ditamaps for %_bldtype% ....
+if _%_bldtype%_ NEQ __  powershell -file %_gitdir%\_build\replacemaps.ps1 %_blddir% %_bldtype%
+
 
 echo Integrating our own DITA-OT plugin ....
 rd /s/q %DITA_HOME%\plugins\org.dnn.dc >nul
@@ -119,7 +134,7 @@ if exist %_outdir%\common\glossary\*  rd /s/q %_outdir%\common\glossary >nul
 
 
 echo Creating an aboutbld.html file ....
-for /f "usebackq tokens=2" %%v in (`date /t`) do for /f "delims=/ tokens=1,2,3" %%w in ("%%v") do echo DocCenter v1.2 Build %%y%%w%%x > %_outdir%\aboutbld.html
+for /f "usebackq tokens=2" %%v in (`date /t`) do for /f "delims=/ tokens=1,2,3" %%w in ("%%v") do echo DocCenter v1.3 Build %%y%%w%%x > %_outdir%\aboutbld.html
 
 
 :. Test before opening up the folders.
@@ -130,7 +145,7 @@ for %%v in ( administrators developers designers content-managers community-mana
 :. runas /user:administrator /profile "%~f0\v2iis.bat %outdir%\%_transtype% c:\inetpub\wwwroot"
 :. start %_outdir%
 start c:\inetpub\wwwroot\docs
-start c:\z\docbuild\output\%_transtype%
+for %%v in ( %_outdir% ) do start c:\z\docbuild%%~pnv
 :. start explorer.exe
 :. echo Copy the following to the Windows Explorer address bar: ftp://66.29.195.16/DNN%20Staging/DNNSoftware.QA.Docs/
 :. echo In Filezilla, use the following:

@@ -902,7 +902,10 @@
 				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ProfileTemplate"><stentry/></strow> -->
 				<strow id="strow-field-ProfileTemplate">
 					<stentry><uicontrol>Profile Template</uicontrol></stentry>
-					<stentry>The custom HTML template used to display the user profile. The default template uses a &lt;div&gt; tag.</stentry>
+					<stentry>
+						<p>The custom HTML template used to display the user profile.</p>
+						<note type="tip"><uicontrol>Load Default</uicontrol> inserts HTML code wrapped inside a &lt;div&gt; tag. You can customize that code according to your needs.</note>
+					</stentry>
 				</strow>
 
 

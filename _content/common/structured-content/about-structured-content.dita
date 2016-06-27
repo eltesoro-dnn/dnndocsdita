@@ -30,7 +30,9 @@
 
     <body>
 		<section id="overview">
-			<p>Structured Content is a microservice that manages content.</p>
+			<p>Structured Content is a microservice that manages content so that you can present the content in any context, such as a webpage or a native mobile app.</p>
+
+			<p>Each content item is associated with a predefined content type, so that the item can be displayed correctly.</p>
 		</section>
 
 

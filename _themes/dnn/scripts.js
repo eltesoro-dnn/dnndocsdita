@@ -83,6 +83,12 @@ $(document).ready(function() {
        format: "multitoggle"
     });
 
+    // remove Search Documentation on click
+    $(".searchbox-home").click(function() {
+        $("p#dc-search-documentation-dummy").fadeOut('fast');
+        $(":input").select();
+    });
+
 });
 
 // hamburger menu
@@ -104,9 +110,11 @@ $(document).ready(function() {
           var mainmenu = $(this).next('ul');
           if (mainmenu.hasClass('open')) {
             mainmenu.hide().removeClass('open');
+            $('#dc-hamburger-white-box').hide();
           }
           else {
             mainmenu.show().addClass('open');
+            $('#dc-hamburger-white-box').show();
             if (settings.format === "dropdown") {
               mainmenu.find('ul').show();
             }

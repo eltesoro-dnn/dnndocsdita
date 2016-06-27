@@ -277,6 +277,15 @@
 			</relcell>
 		</relrow>
 
+		<!-- Profile Dashboard is the Evoq Engage version of View Profile. -->
+		<relrow>
+			<relcell/>
+			<relcell/>
+			<relcell>
+				<topicref format="dita" type="reference" toc="yes" href="module-profile-dashboard.dita" />
+				<topicref format="dita" type="reference" toc="yes" href="module-view-profile.dita" />
+			</relcell>
+		</relrow>
 
 		<!--
 		<relrow>

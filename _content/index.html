@@ -12,6 +12,8 @@
         <link rel="stylesheet" type="text/css" href="_theme/commonltr.css">
         <link rel="stylesheet" type="text/css" href="_theme/dnndocsltr.css">
 
+        <script language="JavaScript" src="_theme/crumbsnsearch.js"></script>
+
         <title>DNN Documentation Center</title>
     </head>
 
@@ -20,11 +22,10 @@
         <header role="banner">
 			<!--#include file="/docs/ssi/gtm.ssi" -->
 
-            <div class="header">
+            <div class="header-home">
 
                 <div class="header-logo-wrapper">
-                    <a class="logo" href="http://www.dnnsoftware.com/docs"><img src="_theme/DNN_logo_28px.png" alt="DNN Logo"></a>
-                    <!-- <div class="site-title">Documentation Center</div> -->
+                    <a class="dc-dnn-logo" href="/docs"><img src="_theme/dnn_doc_center_logo.svg" onerror="this.src='_theme/dnn_doc_center_logo.png'" alt="DNN Logo" /></a>
                 </div>
 
                 <div class="header-nav-wrapper">
@@ -34,127 +35,87 @@
                             <li id="header-subctr"><a href="#">Documentation</a>
                                 <ul id="header-subnav-subctr">
                                     <li class="subctr"><a href="administrators/index.html">Administrators</a></li>
+                                    <li class="subctr"><a href="content-managers/index.html">Content Managers</a></li>
                                     <li class="subctr"><a href="developers/index.html">Developers</a></li>
                                     <li class="subctr"><a href="designers/index.html">Designers</a></li>
-                                    <li class="subctr"><a href="content-managers/index.html">Content Managers</a></li>
 									<li class="subctr"><a href="community-managers/index.html">Community Managers</a></li>
                                 </ul>
                             </li>
                             <li><a href="http://www.dnnsoftware.com/community/download">Download</a></li>
-                            <li id="header-askq"> <a href="#">Ask a Question</a>
-                                <ul id="header-subnav-support">
-                                    <li><a href="http://www.dnnsoftware.com/answers">DNN Platform</a></li>
-                                    <li><a href="http://www.dnnsoftware.com/services/customer-support">DNN Evoq</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="http://www.dnnsoftware.com/answers">Ask the Community</a></li>
+                            <li><a href="http://www.dnnsoftware.com/services/customer-support">Contact Support</a></li>
                         </ul>
 
                     </nav>
+                    <div id="dc-hamburger-white-box"></div>
                 </div>
 
-            </div>
+				<div class="searchbox-home">
+					<div id="dc-search-icon"><img src="_theme/search.svg" onerror="this.src='_theme/search.png'" alt="Search icon" /></div>
+					<div id="dc-search-documentation"><p id="dc-search-documentation-dummy">Search Documentation</p></div>
+					<div class="gcse-searchbox-only" data-gname="docs1" data-as_sitesearch="www.dnnsoftware.com" data-newWindow="true" data-enableHistory="true" data-enableAutoComplete="true" data-autoCompleteMaxCompletions="5" data-queryParameterName="q"></div>
+				</div>
+
+			</div>
         </header>
 
         <main role="main-index">
             <article role="articleHome" aria-labelledby="ariaid-title1">
 
-                <!-- <h1 class="title topictitle1" id="ariaid-title1">DNN Documentation Center</h1> -->
-
                 <div class="row">
-                    <img alt="Welcome to the DNN Documentation Center" id="welcome-hero" src="_theme/welcome-hero.png" />
+                    <p id="landing-page-hero-welcome">Documentation Center</p>
                 </div>
 
-                <div class="row card-row">
-                    <div class="container">
+                <div id="doc-center-roles-icons">
 
-                        <div class="card-wrapper">
-                            <a class="home-card" id="admin-card" href="administrators/index.html">
-                                <div class="card-title">
-                                    Administrators
-                                </div>
-                                <div class="card-img-wrapper">
-                                    <img alt="Administrator Center" class="card-img" src="_theme/administrators.svg" onerror="this.src='_theme/admin.jpg'" />
-                                </div>
-                            </a>
+                    <a class="logo dc-left" href="administrators/index.html">
+                        <div class="dc-role-icon">
+							<img src="_theme/administrators.svg" onerror="this.src='_theme/administrators.png'" alt="Administrators logo" />
+                            <p class="dc-icon-title">Administrators</br>&nbsp;</p>
                         </div>
+                    </a>
 
-                        <div class="card-wrapper">
-                            <a class="home-card" id="contentmgr-card" href="content-managers/index.html">
-                                <div class="card-title">
-                                    Content&nbsp;Managers
-                                </div>
-                                <div class="card-img-wrapper">
-                                    <img alt="Content Manager Center" class="card-img" src="_theme/content_managers.svg" onerror="this.src='_theme/contentmgr.jpg'" />
-                                </div>
-                            </a>
+                    <a class="logo" href="content-managers/index.html">
+                        <div class="dc-role-icon">
+							<img src="_theme/content_managers.svg" onerror="this.src='_theme/content_managers.png'" alt="Content Managers logo" />
+                            <p class="dc-icon-title">Content</br>Managers</p>
                         </div>
+                    </a>
+
+                    <a class="logo" href="developers/index.html">
+                        <div class="dc-role-icon">
+							<img src="_theme/developers.svg" onerror="this.src='_theme/developers.png'" alt="Developers logo" />
+                            <p class="dc-icon-title">Developers</br>&nbsp;</p>
+                        </div>
+                    </a>
+
+                    <a class="logo" href="designers/index.html">
+                        <div class="dc-role-icon">
+							<img src="_theme/designers.svg" onerror="this.src='_theme/designers.png'" alt="Designers logo" />
+                            <p class="dc-icon-title">Designers</br>&nbsp;</p>
+                        </div>
+                    </a>
+
+
+                    <a class="logo dc-right" href="community-managers/index.html">
+                        <div class="dc-role-icon">
+							<img src="_theme/community_managers.svg" onerror="this.src='_theme/community_managers.png'" alt="Community Managers logo" />
+                            <p class="dc-icon-title">Community</br>Managers</p>
+                        </div>
+                    </a>
+
+                    <div class="dc-role-icon">
 
                     </div>
-                </div>
 
-                <div class="row card-row">
-                    <div class="container">
-
-                        <div class="card-wrapper">
-                            <a class="home-card" id="dev-card" href="developers/index.html">
-                                <div class="card-title">
-                                    Developers
-                                </div>
-                                <div class="card-img-wrapper">
-                                    <img alt="Developer Center" class="card-img" src="_theme/developers.svg" onerror="this.src='_theme/developer.jpg'" />
-                                </div>
-                            </a>
-                        </div>
-
-                        <div class="card-wrapper">
-                            <a class="home-card" id="designer-card" href="designers/index.html">
-                                <div class="card-title">
-                                    Designers
-                                </div>
-                                <div class="card-img-wrapper">
-                                    <img alt="Designer Center" class="card-img" src="_theme/designers.svg" onerror="this.src='_theme/designer.jpg'" />
-                                </div>
-                            </a>
-                        </div>
+                    <div class="dc-role-icon">
 
                     </div>
-                </div>
 
-                <div class="row card-row">
-                    <div class="container">
-
-                        <div class="card-wrapper">
-                            <a class="home-card" id="communitymgr-card" href="community-managers/index.html">
-                                <div class="card-title">
-                                    Community&nbsp;Managers
-                                </div>
-                                <div class="card-img-wrapper">
-                                    <img alt="Community Manager Center" class="card-img" src="_theme/community_managers.svg" onerror="this.src='_theme/communitymgr.jpg'" />
-                                </div>
-                            </a>
-                        </div>
-
-                    </div>
                 </div>
 
                 <div class="row link-row">
                     <div class="page-link-container">
-
-                        <a class="reference internal" href="administrators/dnn-platform-overview.html">
-                            <div class="page-link-wrapper">
-                                <div class="page-link link-left">
-                                    <span><em>DNN Platform</em></span>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="reference internal" href="administrators/requirements.html">
-                            <div class="page-link-wrapper">
-                                <div class="page-link link-center">
-                                    <span><em>DNN&nbsp;Platform&nbsp;Requirements</em></span>
-                                </div>
-                            </div>
-                        </a>
 
                         <a class="reference internal" href="administrators/whats-new-dnn8.html">
                             <div class="page-link-wrapper">
@@ -171,14 +132,6 @@
         </main>
 
         <div class="footer footer-index">
-            <div class="social-media-wrapper">
-                <ul class="social-media horizontal-list">
-                    <li><a href="http://facebook.com/dotnetnuke" class="facebook"></a></li>
-                    <li><a href="http://twitter.com/dnncorp" class="twitter"></a></li>
-                    <li><a href="http://www.linkedin.com/company/207975" class="linkedin"></a></li>
-                    <li><a href="http://www.youtube.com/user/dotnetnuke#" class="youtube"></a></li>
-                </ul>
-            </div>
 
             <div class="misc-wrapper">
                 <ul class="misc horizontal-list">

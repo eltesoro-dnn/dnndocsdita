@@ -25,9 +25,6 @@
         <!-- Security -->
         <mapref href="content-managers/security/security-cmg.ditamap" />
 
-		<!-- Structured Content -->
-        <mapref href="content-managers/structured-content/structured-content.ditamap" />
-
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="content-managers/content-manager-references.dita" collection-type="family">
 			<topicref format="dita" type="reference" toc="yes" href="content-managers/included-modules/included-modules.dita" copy-to="content-managers/included-modules/index.dita" />

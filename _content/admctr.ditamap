@@ -41,14 +41,11 @@
 		<!-- Configuring Your Site -->
 		<mapref href="administrators/configuring-your-site/configuring-your-site-pb.ditamap" />
 
-        <!-- Security -->
+        <!-- Securing Your Site -->
         <mapref href="administrators/security/security-adm.ditamap" />
 
 		<!-- Building Your Site -->
 		<mapref href="administrators/building-your-site/building-your-site-via-control-bar.ditamap" />
-
-		<!-- Structured Content -->
-        <mapref href="administrators/structured-content/structured-content.ditamap" />
 
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="administrators/administrator-references.dita" collection-type="family">

@@ -9,10 +9,8 @@
 			<xsl:comment>#include file="/docs/ssi/gtm.ssi" </xsl:comment>
 
             <div class="header-logo-wrapper">
-                <a class="logo" href="/docs"> <!-- href="http://www.dnnsoftware.com/docs"> -->
-                    <img src="/docs/_theme/DNN_logo_28px.png" alt="DNN Logo" />
-                </a>
-                <!-- <div class="site-title">Documentation Center</div> -->
+				<!-- href="http://www.dnnsoftware.com/docs"> -->
+				<a class="dc-dnn-logo" href="/docs"><img src="/docs/_theme/dnn_doc_center_logo.svg" onerror="this.src='/docs/_theme/dnn_doc_center_logo.png'" alt="DNN Logo" /></a>
             </div>
 
             <div id="header-subctr-wrapper">
@@ -59,13 +57,9 @@
                                 <xsl:if test="$sitetitle !='Community Managers'"><li class="subctr modctr"><a href="/docs/community-managers/index.html">Community Managers</a></li></xsl:if>
                             </ul>
                         </li>
-                        <li><a href="http://www.dnnsoftware.com/community/download">Download</a></li>
-                        <li id="header-askq"> <a href="#">Ask a Question</a>
-                            <ul id="header-subnav-support">
-                                <li><a href="http://www.dnnsoftware.com/answers">DNN Platform</a></li>
-                                <li><a href="http://www.dnnsoftware.com/services/customer-support">DNN Evoq</a></li>
-                            </ul>
-                        </li>
+						<li><a href="http://www.dnnsoftware.com/community/download">Download</a></li>
+						<li><a href="http://www.dnnsoftware.com/answers">Ask the Community</a></li>
+						<li><a href="http://www.dnnsoftware.com/services/customer-support">Contact Support</a></li>
                     </ul>
                 </nav>
             </div>

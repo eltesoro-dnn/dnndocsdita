@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
-<map xml:lang="en" id="map-building-your-site-via-control-bar">
+<map xml:lang="en" id="map-building-your-site-via-control-bar-4live">
 
     <title>Building Your Site</title>
 
@@ -31,7 +31,7 @@
 		</topicref>
 
 		<topicref format="dita" type="topic" toc="yes" href="creating-content.dita" collection-type="family">
-			<mapref href="../structured-content/structured-content.ditamap" />
+			<!-- <mapref href="../structured-content/structured-content.ditamap" /> -->
 			<topicref format="dita" type="task" toc="yes" href="create-article-publisher.dita" />
 		</topicref>
 
