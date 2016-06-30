@@ -144,14 +144,6 @@ $(document).ready(function() {
         resizeFix = function() {
           if ($( window ).width() > 992) {
             $("nav[role='toc']").show();
-
-            // show nav menu drop downs on hover toggle
-            $(".site-subtitle").hover(function () {
-                $(".sibling-sites").toggle();
-            })
-            $("#header-askq").hover(function () {
-                $(this).find('ul').toggle();
-            })
           }
 
           if ($(window).width() <= 992) {

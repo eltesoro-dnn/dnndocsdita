@@ -8,7 +8,7 @@
     </titlealts>
 
     <prolog>
-        <author>wrET,orAP,1604</author>
+        <author>wrET,orAP,trTS,1606</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -33,12 +33,30 @@
     </prolog>
 
     <refbody>
+        <!-- Source: https://dnntracker.atlassian.net/wiki/display/SUP/Product+Releases -->
         <simpletable relcolwidth="1* 1* 1*">
             <sthead>
                 <stentry>Date released to Codeplex</stentry>
                 <stentry>Platform</stentry>
                 <stentry>Evoq</stentry>
             </sthead>
+            <!--
+            <strow>
+                <stentry>TBD</stentry>
+                <stentry>8.0.5</stentry>
+                <stentry>9.0</stentry>
+            </strow>
+            <strow>
+                <stentry>TBD</stentry>
+                <stentry>8.0.4</stentry>
+                <stentry>8.5.0</stentry>
+            </strow>
+            -->
+            <strow>
+                <stentry>May 26, 2016</stentry>
+                <stentry>8.0.3</stentry>
+                <stentry>8.4.2</stentry>
+            </strow>
             <strow>
                 <stentry>Apr 18, 2016</stentry>
                 <stentry>8.0.2</stentry>

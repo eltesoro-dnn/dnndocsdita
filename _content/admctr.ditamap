@@ -11,7 +11,7 @@
 
 
     <!-- Topics -->
-    <topicref format="dita" type="topic" href="administrators/index.dita" toc="yes">
+    <topicref format="dita" type="topic" toc="yes" href="administrators/index.dita" >
 
         <topicref format="dita" type="topic" navtitle="What's New"   toc="yes" href="administrators/whats-new-dnn8.dita" />
         <topicref format="dita" type="topic" navtitle="DNN Platform" toc="yes" href="administrators/dnn-platform-overview.dita" />

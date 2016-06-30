@@ -80,6 +80,21 @@
 		<note type="tip" id="note-SecurityReviewLogs">Review your site's logs regularly to be familiar with your traffic patterns. This practice makes it easier for you to identify unusual patterns that might indicate suspicious activity.</note>
 
 
+        <!-- <note conref="../../common/bptext.dita#top-bptext/note-DNNContentTypesNoEdit"></note> -->
+        <!-- <note conkeyref="k-bptext/note-DNNContentTypesNoEdit"></note> -->
+		<note type="note" id="note-DNNContentTypesNoEdit">Content types provided by DNN cannot be edited. To use a DNN-provided content type as a template for your own content type, you can duplicate it and customize the copy.</note>
+
+        <!-- <note conref="../../common/bptext.dita#top-bptext/note-DNNContentTypesNoDel"></note> -->
+        <!-- <note conkeyref="k-bptext/note-DNNContentTypesNoDel"></note> -->
+		<note type="note" id="note-DNNContentTypesNoDel">Content types provided by DNN cannot be deleted.</note>
+
+
+
+
+
+
+
+
 
         <!-- ==================== Page and Module Settings ==================== -->
 
@@ -226,6 +241,24 @@
 
 
         <!-- ==================== Product Logos ==================== -->
+
+
+        <!-- Use the following in each page to indicate what product the feature is available in. -->
+
+		<!-- <image conref="../../common/bptext.dita#top-bptext/image-AvailLogoPlatform"></image> -->
+        <!-- <image conkeyref="k-bptext/image-AvailLogoPlatform"></image> -->
+        <image id="image-AvailLogoPlatform" outputclass="img-availprod" href="img/ico-dnn-platform.png"><alt>Platform</alt></image>
+
+		<!-- <image conref="../../common/bptext.dita#top-bptext/image-AvailLogoContent"></image> -->
+        <!-- <image conkeyref="k-bptext/image-AvailLogoContent"></image> -->
+		<image id="image-AvailLogoContent" outputclass="img-availprod" href="img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+
+		<!-- <image conref="../../common/bptext.dita#top-bptext/image-AvailLogoEngage"></image> -->
+        <!-- <image conkeyref="k-bptext/image-AvailLogoEngage"></image> -->
+		<image id="image-AvailLogoEngage" outputclass="img-availprod" href="img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+
+
+        <!-- Use the following in included-modules. -->
 
 		<!-- <image conref="../../common/bptext.dita#top-bptext/image-LogoPlatform"></image> -->
         <!-- <image conkeyref="k-bptext/image-LogoPlatform"></image> -->

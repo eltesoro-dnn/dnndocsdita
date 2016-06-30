@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-configure-field-multiple-choice">
+
+    <title>Configure Multiple Choice Field</title>
+    <titlealts>
+        <navtitle>Configure Multiple Choice</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1606</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+			<!--
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+			-->
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="5"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section id="prodavail">
+			<image conkeyref="k-bptext/image-AvailLogoEngage"></image>
+		</section>
+
+		<section id="overview"/>
+
+        <steps>
+            <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contenttype-configuregeneralsettings"><cmd/></step>
+
+            <step>
+                <cmd><ph conref="bptext-content-steps.dita#tsk-bptext-content-steps/ph-choosefieldformat"></ph></cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-MultipleChoice-formats.gif"><alt>Content type showing Multiple Choice field in various forms</alt></image>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry>Form/Appearance</stentry>
+							<stentry>Description</stentry>
+						</sthead>
+                        <strow>
+                            <stentry><uicontrol>Dropdown</uicontrol></stentry>
+                            <stentry>Displays the options in a dropdown. Can allow a single selection or multiple selections, depending on the <uicontrol>MultiSelect</uicontrol> setting.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Checkboxes</uicontrol></stentry>
+                            <stentry>Allows multiple selections.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Radio Buttons</uicontrol></stentry>
+                            <stentry>Allows only one selection.</stentry>
+                        </strow>
+					</simpletable>
+                </info>
+            </step>
+
+            <step>
+                <cmd><ph conref="bptext-content-steps.dita#tsk-bptext-content-steps/ph-addlfieldsettings"></ph></cmd>
+                <info>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry>Field</stentry>
+							<stentry>Description</stentry>
+						</sthead>
+                        <strow>
+                            <stentry><uicontrol>Choices</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li>To add options, click the <uicontrol>Add Choice</uicontrol> button.</li>
+                                    <li>To change the order of the options, drag and drop the options to a new position in the list.</li>
+                                    <li>To rename the option, click on its name.</li>
+                                    <li>To delete an option, click on the trash icon next to it.</li>
+                                </ul>
+                            </stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>MultiSelect</uicontrol></stentry>
+                            <stentry>For the <uicontrol>Dropdown</uicontrol> form. If enabled (<uicontrol>On</uicontrol>), the user can choose more than one from the list.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>List Orientation</uicontrol></stentry>
+                            <stentry><uicontrol>Horizontal</uicontrol> displays the options left-to-right and wraps to the next line. <uicontrol>Vertical</uicontrol> lists them, one per line.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Other as an Option</uicontrol></stentry>
+                            <stentry>If enabled (<uicontrol>On</uicontrol>), adds an <uicontrol>Other</uicontrol> and its associated text box.</stentry>
+                        </strow>
+					</simpletable>
+                </info>
+            </step>
+
+            <step>
+                <cmd><ph conref="bptext-content-steps.dita#tsk-bptext-content-steps/ph-configvalidation"></ph></cmd>
+                <info>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry>Format</stentry>
+							<stentry>Description</stentry>
+						</sthead>
+                        <strow conref="bptext-content-steps.dita#tsk-bptext-content-steps/strow-field-validatnerrormsg"><stentry/></strow>
+                        <strow conref="bptext-content-steps.dita#tsk-bptext-content-steps/strow-field-validatnrequired"><stentry/></strow>
+                        <strow conref="bptext-content-steps.dita#tsk-bptext-content-steps/strow-field-validatnchoiceorder"><stentry/></strow>
+					</simpletable>
+                </info>
+            </step>
+
+        </steps>
+
+    </taskbody>
+
+</task>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-configure-field-assets">
+
+    <title>Configure Assets Field</title>
+    <titlealts>
+        <navtitle>Configure Assets</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1606</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+			<!--
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+			-->
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="5"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section id="prodavail">
+			<image conkeyref="k-bptext/image-AvailLogoEngage"></image>
+		</section>
+
+		<section id="overview"/>
+
+        <steps>
+            <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contenttype-configuregeneralsettings"><cmd/></step>
+
+            <step>
+                <cmd><ph conref="bptext-content-steps.dita#tsk-bptext-content-steps/ph-choosefieldformat"></ph></cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Assets-formats.gif"><alt>Content type showing Assets field in various forms</alt></image>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry>Form/Appearance</stentry>
+							<stentry>Description</stentry>
+						</sthead>
+                        <strow>
+                            <stentry><uicontrol>Image</uicontrol></stentry>
+                            <stentry>Accepts image files, including jpg, png, and gif.</stentry>  <!-- What other files? -->
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Document</uicontrol></stentry>
+                            <stentry>Accepts any type of file.</stentry>  <!-- Is this correct? -->
+                        </strow>
+					</simpletable>
+                </info>
+            </step>
+
+            <step>
+                <cmd><ph conref="bptext-content-steps.dita#tsk-bptext-content-steps/ph-addlfieldsettings"></ph></cmd>
+                <info>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry>Field</stentry>
+							<stentry>Description</stentry>
+						</sthead>
+                        <strow>
+                            <stentry><uicontrol>Maximum Number of Assets</uicontrol></stentry>
+                            <stentry>The number of images or documents included in the content type.</stentry>
+                        </strow>
+					</simpletable>
+                </info>
+            </step>
+
+            <step>
+                <cmd><ph conref="bptext-content-steps.dita#tsk-bptext-content-steps/ph-configvalidation"></ph></cmd>
+                <info>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry>Field</stentry>
+							<stentry>Description</stentry>
+						</sthead>
+                        <strow conref="bptext-content-steps.dita#tsk-bptext-content-steps/strow-field-validatnerrormsg"><stentry/></strow>
+                        <strow conref="bptext-content-steps.dita#tsk-bptext-content-steps/strow-field-validatnrequired"><stentry/></strow>
+					</simpletable>
+                </info>
+            </step>
+
+        </steps>
+
+    </taskbody>
+
+</task>

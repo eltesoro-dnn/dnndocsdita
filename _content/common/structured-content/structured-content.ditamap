@@ -5,20 +5,32 @@
     <title>Structured Content</title>
 
     <!-- Topics -->
-	<topicref format="dita" type="topic" toc="yes" href="about-structured-content.dita" copy-to="index.dita" collection-type="family">
-		<!--
-		<topicref format="dita" type="topic" toc="yes" href="managing-content-types.dita" collection-type="family">  // Is this for admins only?
-			<topicref format="dita" type="task" toc="yes" href="create-content-type.dita" />
-			<topicref format="dita" type="task" toc="yes" href="edit-content-type.dita" />
-			<topicref format="dita" type="task" toc="yes" href="delete-content-type.dita" />
-			<topicref format="dita" type="task" toc="yes" href="create-content.dita" />
-			<topicref format="dita" type="task" toc="yes" href="edit-content.dita" />
-			<topicref format="dita" type="task" toc="yes" href="delete-content.dita" />
+	<topicref format="dita" type="topic" toc="yes" href="about-structured-content.dita" copy-to="index.dita" collection-type="family" />
 
-		</topicref>
+    <!-- <topicref format="dita" type="topic" toc="yes" href="managing-content-types.dita" collection-type="family"> -->
+        <topicref format="dita" type="task" toc="yes" href="create-content-type.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-content-type.dita" />
+        <topicref format="dita" type="task" toc="yes" href="delete-content-type.dita" />
+        <topicref format="dita" type="task" toc="yes" href="duplicate-content-type.dita" />
+    <!-- </topicref> -->
 
+    <!-- <topicref format="dita" type="topic" toc="yes" href="configuring-content-fields.dita" collection-type="family"> -->
+        <topicref format="dita" type="task" toc="yes" href="configure-field-single-line-text.dita" />
+        <topicref format="dita" type="task" toc="yes" href="configure-field-multi-line-text.dita" />
+        <topicref format="dita" type="task" toc="yes" href="configure-field-number.dita" />
+        <topicref format="dita" type="task" toc="yes" href="configure-field-multiple-choice.dita" />
+        <topicref format="dita" type="task" toc="yes" href="configure-field-date-time.dita" />
+        <topicref format="dita" type="task" toc="yes" href="configure-field-assets.dita" />
+        <topicref format="dita" type="task" toc="yes" href="configure-field-reference-object.dita" />
+        <topicref format="dita" type="task" toc="yes" href="configure-field-static-text.dita" />
+    <!-- </topicref> -->
 
-		-->
-	</topicref>
+    <!--
+    <topicref format="dita" type="topic" toc="yes" href="managing-content-items.dita" collection-type="family">
+        <topicref format="dita" type="task" toc="yes" href="create-content.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-content.dita" />
+        <topicref format="dita" type="task" toc="yes" href="delete-content.dita" />
+    </topicref>
+    -->
 
 </map>
