@@ -33,12 +33,14 @@
     </prolog>
 
     <refbody>
+
         <!-- Source: https://dnntracker.atlassian.net/wiki/display/SUP/Product+Releases -->
         <simpletable relcolwidth="1* 1* 1*">
             <sthead>
                 <stentry>Date released to Codeplex</stentry>
                 <stentry>Platform</stentry>
                 <stentry>Evoq</stentry>
+                <stentry></stentry>
             </sthead>
             <!--
             <strow>
@@ -54,43 +56,67 @@
             -->
             <strow>
                 <stentry>May 26, 2016</stentry>
-                <stentry>8.0.3</stentry>
-                <stentry>8.4.2</stentry>
+                <stentry><ph conref="release-notes/relnotes-2016-May-26.dita#top-relnotes-2016-May-26/ph-prodver-platform"></ph>
+                    <xref conref="release-notes/relnotes-2016-May-26.dita#top-relnotes-2016-May-26/xref-codeplex-link"></xref>
+                </stentry>
+                <stentry><ph conref="release-notes/relnotes-2016-May-26.dita#top-relnotes-2016-May-26/ph-prodver-evoq"></ph></stentry>
+                <stentry><xref format="dita" href="release-notes/relnotes-2016-May-26.dita">Release Notes</xref></stentry>
             </strow>
             <strow>
                 <stentry>Apr 18, 2016</stentry>
-                <stentry>8.0.2</stentry>
-                <stentry>8.4.1</stentry>
+                <stentry><ph conref="release-notes/relnotes-2016-Apr-18.dita#top-relnotes-2016-Apr-18/ph-prodver-platform"></ph>
+                    <xref conref="release-notes/relnotes-2016-Apr-18.dita#top-relnotes-2016-Apr-18/xref-codeplex-link"></xref>
+                </stentry>
+                <stentry><ph conref="release-notes/relnotes-2016-Apr-18.dita#top-relnotes-2016-Apr-18/ph-prodver-evoq"></ph></stentry>
+                <stentry><xref format="dita" href="release-notes/relnotes-2016-Apr-18.dita">Release Notes</xref></stentry>
             </strow>
             <strow>
                 <stentry>Mar 16, 2016</stentry>
-                <stentry>8.0.1</stentry>
-                <stentry>8.4.0</stentry>
+                <stentry><ph conref="release-notes/relnotes-2016-Mar-16.dita#top-relnotes-2016-Mar-16/ph-prodver-platform"></ph>
+                    <xref conref="release-notes/relnotes-2016-Mar-16.dita#top-relnotes-2016-Mar-16/xref-codeplex-link"></xref>
+                </stentry>
+                <stentry><ph conref="release-notes/relnotes-2016-Mar-16.dita#top-relnotes-2016-Mar-16/ph-prodver-evoq"></ph></stentry>
+                <stentry><xref format="dita" href="release-notes/relnotes-2016-Mar-16.dita">Release Notes</xref></stentry>
             </strow>
             <strow>
                 <stentry>Jan 14, 2016</stentry>
-                <stentry>8.0.0</stentry>
-                <stentry>8.3.0</stentry>
+                <stentry><ph conref="release-notes/relnotes-2016-Jan-14.dita#top-relnotes-2016-Jan-14/ph-prodver-platform"></ph>
+                    <xref conref="release-notes/relnotes-2016-Jan-14.dita#top-relnotes-2016-Jan-14/xref-codeplex-link"></xref>
+                </stentry>
+                <stentry><ph conref="release-notes/relnotes-2016-Jan-14.dita#top-relnotes-2016-Jan-14/ph-prodver-evoq"></ph></stentry>
+                <stentry><xref format="dita" href="release-notes/relnotes-2016-Jan-14.dita">Release Notes</xref></stentry>
             </strow>
             <strow>
                 <stentry>Oct 5, 2015</stentry>
-                <stentry>7.4.2</stentry>
-                <stentry>8.2.0</stentry>
+                <stentry><ph conref="release-notes/relnotes-2015-Oct-05.dita#top-relnotes-2015-Oct-05/ph-prodver-platform"></ph>
+                    <xref conref="release-notes/relnotes-2015-Oct-05.dita#top-relnotes-2015-Oct-05/xref-codeplex-link"></xref>
+                </stentry>
+                <stentry><ph conref="release-notes/relnotes-2015-Oct-05.dita#top-relnotes-2015-Oct-05/ph-prodver-evoq"></ph></stentry>
+                <stentry><xref format="dita" href="release-notes/relnotes-2015-Oct-05.dita">Release Notes</xref></stentry>
             </strow>
             <strow>
                 <stentry>May 26, 2015</stentry>
-                <stentry>7.4.1</stentry>
-                <stentry>8.1.0</stentry>
+                <stentry><ph conref="release-notes/relnotes-2015-May-26.dita#top-relnotes-2015-May-26/ph-prodver-platform"></ph>
+                    <xref conref="release-notes/relnotes-2015-May-26.dita#top-relnotes-2015-May-26/xref-codeplex-link"></xref>
+                </stentry>
+                <stentry><ph conref="release-notes/relnotes-2015-May-26.dita#top-relnotes-2015-May-26/ph-prodver-evoq"></ph></stentry>
+                <stentry><xref format="dita" href="release-notes/relnotes-2015-May-26.dita">Release Notes</xref></stentry>
             </strow>
             <strow>
                 <stentry>Feb 4, 2015</stentry>
-                <stentry>7.4.0</stentry>
-                <stentry>8.0.0</stentry>
+                <stentry><ph conref="release-notes/relnotes-2015-Feb-04.dita#top-relnotes-2015-Feb-04/ph-prodver-platform"></ph>
+                    <xref conref="release-notes/relnotes-2015-Feb-04.dita#top-relnotes-2015-Feb-04/xref-codeplex-link"></xref>
+                </stentry>
+                <stentry><ph conref="release-notes/relnotes-2015-Feb-04.dita#top-relnotes-2015-Feb-04/ph-prodver-evoq"></ph></stentry>
+                <stentry><xref format="dita" href="release-notes/relnotes-2015-Feb-04.dita">Release Notes</xref></stentry>
             </strow>
             <strow>
                 <stentry>Nov 12, 2014</stentry>
-                <stentry>7.3.4</stentry>
-                <stentry>7.3.4</stentry>
+                <stentry><ph conref="release-notes/relnotes-2014-Nov-12.dita#top-relnotes-2014-Nov-12/ph-prodver-platform"></ph>
+                    <xref conref="release-notes/relnotes-2014-Nov-12.dita#top-relnotes-2014-Nov-12/xref-codeplex-link"></xref>
+                </stentry>
+                <stentry><ph conref="release-notes/relnotes-2014-Nov-12.dita#top-relnotes-2014-Nov-12/ph-prodver-evoq"></ph></stentry>
+                <stentry><xref format="dita" href="release-notes/relnotes-2014-Nov-12.dita">Release Notes</xref></stentry>
             </strow>
         </simpletable>
 

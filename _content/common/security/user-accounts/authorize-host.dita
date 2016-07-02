@@ -32,6 +32,8 @@
 
     <taskbody>
 
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
         <section id="overview"><ph conref="bptext-userssteps.dita#bptext-userssteps/ph-introauthorize"></ph></section>
 
         <prereq><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></prereq>

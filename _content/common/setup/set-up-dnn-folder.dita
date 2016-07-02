@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/task.dtd">
-<task xml:lang="en" id="top-SetUpDNNFolder">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-SetUpDNNFolder">
 
     <title>Set Up the DNN Folder and the User Account</title>
     <titlealts>
@@ -17,10 +17,24 @@
             <audience type="administrator" job="installing" />
             <audience type="programmer" job="installing" />
             <audience type="other" othertype="designer" job="installing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
         </metadata>
     </prolog>
 
     <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <steps>
             <step><cmd><xref format="html" scope="external" href="http://www.dnnsoftware.com/community/download/">Download DNN and extract the files.</xref></cmd>

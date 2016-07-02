@@ -17,10 +17,6 @@
         <metadata>
             <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
             <prodinfo>
-                <prodname>Platform</prodname>
-                <vrmlist><vrm version="8" release="0"/></vrmlist>
-            </prodinfo>
-            <prodinfo>
                 <prodname>Evoq Content</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
             </prodinfo>
@@ -33,6 +29,8 @@
 
 
     <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-CE"></section>
 
 		<section>
 			<note conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/note-deletingpages"></note>

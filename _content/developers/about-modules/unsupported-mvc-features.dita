@@ -12,10 +12,24 @@
         </copyright>
         <metadata>
             <audience type="programmer" job="programming" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
         </metadata>
     </prolog>
 
     <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <section id="NotImplemented">
             <p>Some MVC features were not fully implemented in DNN 8 due to the differences between ASP.NET MVC and ASP.NET Web Forms frameworks.</p>

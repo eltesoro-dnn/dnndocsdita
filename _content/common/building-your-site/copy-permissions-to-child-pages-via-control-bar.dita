@@ -34,6 +34,8 @@
 
     <taskbody>
 
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
 		<section>
 			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/copy-permissions-to-child-pages-via-persona-bar.dita">Copy the Page's Permission Settings to Its Child Pages via the Persona Bar</xref> as a content manager.</p>
 		</section>

@@ -15,10 +15,24 @@
         </copyright>
         <metadata>
             <audience type="administrator" job="installing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
         </metadata>
     </prolog>
 
     <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <section id="overview">
 			<p>An administrator can grant <uicontrol>Deploy Module</uicontrol> permissions to a role, such as the <term>Content Manager</term>, to allow users in that role to add the module to a page.</p>

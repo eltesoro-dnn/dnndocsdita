@@ -12,10 +12,24 @@
         </copyright>
         <metadata>
             <audience type="other" othertype="designer" job="other" otherjob="designing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
         </metadata>
     </prolog>
 
     <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <section id="overview">
             <p>Themes are comprised of layout templates for the webpages, containers for modules, their associated CSS, and their DocType files. These files, along with the DNN Manifest, are packaged into a zip file, which is used to install your theme.</p>

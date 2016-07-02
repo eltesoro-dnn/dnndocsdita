@@ -32,6 +32,8 @@
 
     <taskbody>
 
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
         <section>
             <p><ph conref="bptext-userssteps.dita#bptext-userssteps/ph-hostfullperms"></ph></p>
             <note type="warning"><ph conref="bptext-userssteps.dita#bptext-userssteps/ph-hostscandemote"></ph></note>

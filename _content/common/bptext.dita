@@ -242,6 +242,36 @@
 
         <!-- ==================== Product Logos ==================== -->
 
+		<!-- <section conref="../../common/bptext.dita#top-bptext/section-prodavail-PCE"></section> -->
+        <!-- <section conkeyref="k-bptext/section-prodavail-PCE"></section> -->
+		<section id="section-prodavail-PCE">
+            <ul outputclass="ul-prodavail">
+                <li><image conkeyref="k-bptext/image-AvailLogoPlatform"></image></li>
+                <li><image conkeyref="k-bptext/image-AvailLogoContent"></image></li>
+                <li><image conkeyref="k-bptext/image-AvailLogoEngage"></image></li>
+            </ul>
+		</section>
+
+		<!-- <section conref="../../common/bptext.dita#top-bptext/section-prodavail-CE"></section> -->
+        <!-- <section conkeyref="k-bptext/section-prodavail-CE"></section> -->
+		<section id="section-prodavail-CE">
+            <ul outputclass="ul-prodavail">
+                <li><image conkeyref="k-bptext/image-AvailLogoContent"></image></li>
+                <li><image conkeyref="k-bptext/image-AvailLogoEngage"></image></li>
+            </ul>
+		</section>
+
+		<!-- <section conref="../../common/bptext.dita#top-bptext/section-prodavail-E"></section> -->
+        <!-- <section conkeyref="k-bptext/section-prodavail-E"></section> -->
+		<section id="section-prodavail-E">
+            <ul outputclass="ul-prodavail">
+                <li><image conkeyref="k-bptext/image-AvailLogoEngage"></image></li>
+            </ul>
+		</section>
+
+
+
+
 
         <!-- Use the following in each page to indicate what product the feature is available in. -->
 

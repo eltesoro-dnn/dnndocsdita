@@ -30,6 +30,8 @@
 
     <taskbody>
 
+		<section conkeyref="k-bptext/section-prodavail-CE"></section>
+
         <steps>
 			<step><cmd>Add/Edit a workflow and add/edit a state to the workflow.</cmd></step>
 			<stepsection>

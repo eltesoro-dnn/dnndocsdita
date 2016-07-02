@@ -32,9 +32,7 @@
 
     <taskbody>
 
-		<section id="prodavail">
-			<image conkeyref="k-bptext/image-AvailLogoEngage"></image>
-		</section>
+		<section conkeyref="k-bptext/section-prodavail-E"></section>
 
         <steps>
 			<step conkeyref="k-bpsteps/step-pb-gotomanagecontent"><cmd/></step>

@@ -26,6 +26,8 @@
 
     <taskbody>
 
+		<section conkeyref="k-bptext/section-prodavail-E"></section>
+
         <prereq><ph conkeyref="k-bptext/ph-PrereqCommunityMgr"></ph></prereq>
 
         <steps>

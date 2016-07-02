@@ -34,6 +34,8 @@
 
     <taskbody>
 
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
 		<section>
 			<p>The <uicontrol>Control Bar</uicontrol> is visible to <term>administrators</term> and <term>hosts</term>. See <xref format="dita" scope="peer" href="../../content-managers/building-your-site/view-hidden-page-via-persona-bar.dita">View a Hidden Page via the Persona Bar</xref> as a content manager.</p>
 		</section>

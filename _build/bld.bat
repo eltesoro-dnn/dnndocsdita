@@ -109,10 +109,13 @@ xcopy %_gitdir%\_build\dnn_build*.xml  %DITA_HOME%\.  /v/y
 call ant %_transtype%%_subbld% -f %DITA_HOME%\dnn_build.xml -l %_logfile%
 
 
+:. Test that the build was actually successful.
+for %%v in ( administrators developers designers content-managers community-managers ) do  if not exist %_outdir%\%%v\*  goto :ifbuilderror
+
+
 echo Copying additional files required to the output ....
 xcopy %_gitdir%\_content\index.html          %_outdir%\.                /i/s/v/y
 xcopy %_gitdir%\_content\searchresults.html  %_outdir%\.                /i/s/v/y
-xcopy %_gitdir%\_content\web.config          %_outdir%\.                /i/s/v/y
 xcopy %_gitdir%\_content\common\samples      %_outdir%\common\samples   /i/s/v/y
 xcopy %_gitdir%\_content\ssi                 %_outdir%\ssi              /i/s/v/y
 for %%v in ( jpg png gif svg ) do  xcopy %_gitdir%\_content\common\img\*.%%v    %_outdir%\common\img       /i/s/v/y
@@ -128,6 +131,11 @@ xcopy %_outdir%\developers\creating-modules\index.html %_outdir%\developers\exte
 xcopy %_outdir%\designers\creating-themes\index.html %_outdir%\designers\extensions /v
 
 
+echo Creating the web.config ....
+powershell -file %_gitdir%\_build\urlmap\urlmap.ps1 %_gitdir%\_build\urlmap\DC-URLmapping.csv %_outdir% > %_gitdir%\_content\web.config
+xcopy %_gitdir%\_content\web.config          %_outdir%\.                /i/s/v/y
+
+
 echo Deleting files we don't need ....
 if exist %_outdir%\toc.html           del %_outdir%\toc.html /q >nul
 if exist %_outdir%\common\glossary\*  rd /s/q %_outdir%\common\glossary >nul
@@ -135,11 +143,6 @@ if exist %_outdir%\common\glossary\*  rd /s/q %_outdir%\common\glossary >nul
 
 echo Creating an aboutbld.html file ....
 for /f "usebackq tokens=2" %%v in (`date /t`) do for /f "delims=/ tokens=1,2,3" %%w in ("%%v") do echo DocCenter v1.3 Build %%y%%w%%x > %_outdir%\aboutbld.html
-
-
-:. Test before opening up the folders.
-for %%v in ( administrators developers designers content-managers community-managers ) do  if not exist %_outdir%\%%v\*  goto :ifbuilderror
-:. for %%v in ( administrators developers designers content-managers community-managers ) do  if not exist %_outdir%\%%v\*  goto :eof
 
 
 :. runas /user:administrator /profile "%~f0\v2iis.bat %outdir%\%_transtype% c:\inetpub\wwwroot"

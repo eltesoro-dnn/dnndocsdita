@@ -12,10 +12,24 @@
         </copyright>
         <metadata>
             <audience type="other" othertype="designer" job="other" otherjob="designing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
         </metadata>
     </prolog>
 
     <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <section id="overview">
             <p>A design intended to be viewed using HTML 5 will not look correct if rendered using the XHTML or HTML 4 specification. You can force the theme to be rendered in XHTML or HTML5 by creating a DocType XML file (<filepath>skin.doctype.xml</filepath>), which is applied to all layouts in the theme. In addition, themes can contain a separate DocType file for any individual layout template to override the theme's DocType declaration.</p>

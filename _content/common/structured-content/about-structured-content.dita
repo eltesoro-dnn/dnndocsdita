@@ -32,9 +32,7 @@
 
     <body>
 
-		<section id="prodavail">
-			<image conkeyref="k-bptext/image-AvailLogoEngage"></image>
-		</section>
+		<section conkeyref="k-bptext/section-prodavail-E"></section>
 
 		<section id="overview">
 			<p>Structured Content is a microservice that manages content items, which can be presented in any context, such as a webpage or a native mobile app.</p>

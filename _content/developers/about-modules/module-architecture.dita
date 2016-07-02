@@ -12,10 +12,24 @@
         </copyright>
         <metadata>
             <audience type="programmer" job="programming" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
         </metadata>
     </prolog>
 
     <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <section id="Overview">
             <p>Although every module provides a different set of features and functionality, some architectural elements are common among modules. Most DNN modules are developed using an n-tier architecture. Whether you build a Web Forms module, an MVC module, or a SPA module, you implement most of these layers in your module.</p>

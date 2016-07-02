@@ -33,6 +33,9 @@
 
 
     <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
         <section id="overview">
             <p>Administrators can minimize the time required to manage permissions by assigning users to security roles based on their needs. Instead of managing permissions for each individual user, the administrator assigns permissions to the role, and those permissions are automatically extended to every user assigned to the role.</p>
         </section>

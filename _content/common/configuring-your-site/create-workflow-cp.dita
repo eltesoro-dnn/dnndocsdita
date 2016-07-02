@@ -30,6 +30,8 @@
 
     <taskbody>
 
+		<section conkeyref="k-bptext/section-prodavail-CE"></section>
+
         <steps>
             <step conkeyref="k-bpsteps/step-cp-menuadminworkflowmgmt"><cmd/></step>
 			<step conkeyref="k-bpsteps/step-cp-workflowlist"><cmd/></step>

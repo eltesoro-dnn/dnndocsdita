@@ -13,10 +13,24 @@
         <metadata>
             <audience type="programmer" job="programming" />
             <audience type="other" othertype="designer" job="designing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
         </metadata>
     </prolog>
 
     <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <section id="overview">
             <p>For easier distribution and installation, the components of an extension (theme or module) can be bundled into a package. An extension <term>package</term> is simply a zip file that contains all the files required by your extension. The most important part of the process is creating the <term>DNN Manifest</term>, which provides information required by the installer, such as the target locations for the files.</p>

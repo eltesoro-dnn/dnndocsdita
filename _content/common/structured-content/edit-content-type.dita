@@ -32,9 +32,7 @@
 
     <taskbody>
 
-		<section id="prodavail">
-			<image conkeyref="k-bptext/image-AvailLogoEngage"></image>
-		</section>
+		<section conkeyref="k-bptext/section-prodavail-E"></section>
 
 		<section id="overview">
 			<note conkeyref="k-bptext/note-DNNContentTypesNoEdit"></note>

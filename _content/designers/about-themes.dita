@@ -12,10 +12,24 @@
         </copyright>
         <metadata>
             <audience type="other" othertype="designer" job="other" otherjob="designing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
         </metadata>
     </prolog>
 
     <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <section id="components">
             <title> Components of a Theme </title>

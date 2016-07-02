@@ -15,7 +15,8 @@
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
-            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <audience type="other" othertype="content manager" job="other" otherjob="configuring" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="8" release="0"/></vrmlist>
@@ -33,6 +34,8 @@
 
 
     <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <steps>
 			<step conkeyref="k-bpsteps/step-menuadminsitemap"><cmd/></step>

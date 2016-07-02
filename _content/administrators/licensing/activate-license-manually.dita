@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/task.dtd">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
 <task xml:lang="en" id="tsk-ActivateLicMan">
 
     <title>Activate Your License Manually</title>
@@ -25,6 +25,8 @@
     </prolog>
 
     <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-CE"></section>
 
         <prereq>
             <p>To activate a license, you need the invoice number(s) sent to you in an email after your purchase and the email address associated with each invoice. Each license will have its own invoice number (e.g., INV00x-1, INV00x-2, INV00x-3).</p>

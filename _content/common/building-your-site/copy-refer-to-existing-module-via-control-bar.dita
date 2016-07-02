@@ -34,6 +34,8 @@
 
     <taskbody>
 
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
 		<section>
 			<p>You can choose to add a module instance as it is configured in another page, either by creating an independent copy of the module or by creating a reference to the same module instance.</p>
 

@@ -32,6 +32,8 @@
 
     <taskbody>
 
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
         <section>
             <note type="note"><ph conref="bptext-userssteps.dita#bptext-userssteps/ph-hostcannotbedemoted"></ph></note>
         </section>

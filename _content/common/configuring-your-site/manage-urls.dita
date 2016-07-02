@@ -15,7 +15,12 @@
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
             <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
             <prodinfo>
                 <prodname>Evoq Content</prodname>
                 <vrmlist><vrm version="8" release="3"/></vrmlist>
@@ -30,7 +35,9 @@
 
     <taskbody>
 
-		<section>You can manage your site's URLs for better search engine optimization (SEO).</section>
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+		<section id="overview">You can manage your site's URLs for better search engine optimization (SEO).</section>
 
 		<steps>
             <step conkeyref="k-bpsteps/step-menuadminadvancedurlmgmt"><cmd/></step>
