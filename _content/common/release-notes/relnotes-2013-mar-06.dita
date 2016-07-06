@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-relnotes-2013-mar-06">
+
+
+    <title>DNN Release Notes &#8212; <ph id="ph-reldate">2013 Mar 06</ph></title>
+    <titlealts>
+        <navtitle>Release Notes <ph conref="relnotes-2013-mar-06.dita#top-relnotes-2013-mar-06/ph-reldate"></ph></navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>orCP,edET,1607</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience job="evaluating" />
+            <audience job="installing" />
+            <audience type="administrator" />
+            <audience type="programmer" />
+            <audience type="other" othertype="designer" />
+        </metadata>
+
+        <!--
+        Sources:
+            http://www.dnnsoftware.com/services/customer-support/success-network/software-downloads/changelog-archive
+            http://dotnetnuke.codeplex.com/releases/
+        -->
+    </prolog>
+
+
+    <body>
+
+        <!-- <section conref="relnotes-2013-mar-06.dita#top-relnotes-2013-mar-06/section-relnotes-platform"></section> -->
+        <section id="section-relnotes-platform">
+            <!-- <ph conref="relnotes-2013-mar-06.dita#top-relnotes-2013-mar-06/ph-prodver-platform"></ph> -->
+            <title>DOTNETNUKE <ph id="ph-prodver-platform">7.0.4</ph></title>
+
+            <!-- <sectiondiv conref="relnotes-2013-mar-06.dita#top-relnotes-2013-mar-06/sectiondiv-relnotes-platform"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-relnotes-platform">
+                <!-- <xref conref="relnotes-2013-mar-06.dita#top-relnotes-2013-mar-06/xref-codeplex-link"></xref> -->
+                <p><xref id="xref-codeplex-link" format="html" scope="external" href="http://dotnetnuke.codeplex.com/releases/view/102566">CodePlex</xref></p>
+
+                <ul>
+                    <li>Fixed issue that caused message replies to now show in the feed.</li>
+                    <li>Fixed errors in Razor DDR Templates when upgrading to a version higher than 7.0.0.</li>
+                    <li>Fixed issue that prevented hosts users from changing their password.</li>
+                    <li>Fixed issue that caused line feeds to be removed from messages when using Firefox.</li>
+                    <li>Fixed UX issue when copying pages from the control panel.</li>
+                    <li>Fixed JS errors when creating pages using IE 10.</li>
+                    <li>Fixed issue where standard asp file input elements were rendered incorrectly.</li>
+                    <li>Fixed drag and drop functionality when updating a user's profile picture.</li>
+                    <li>Replaced the old style icons for modules shown in the control panel.</li>
+                    <li>Fixed issue that caused the server to hang when pages were moved using the Pages Module.</li>
+                    <li>Fixed issue that caused the site logo to not function correctly on child websites.</li>
+                    <li>Fixed issue that caused autocomplete to fail when a Console Module was added to a page.</li>
+                    <li>Fixed module actions positioning issues when using ajax to load content after the page is rendered.</li>
+                    <li>Enhanced the way user names are displayed when liking comments in the Journal Module.</li>
+                    <li>Fixed issue that caused multilingual sites to show duplicate entries in the site switching tool in the control panel.</li>
+                    <li>Fixed issue that caused multiple entries to be added to the ContentItems table when adding tags to modules.</li>
+                    <li>Updated the list of devices in the Preview Management Module to include the most popular devices to date.</li>
+
+                    <!-- Verify these. Found in release notes in dnnsoftware.com.
+                    <li>Enhanced caching to support out-of-process caching providers.</li>
+                    <li>Fixed error when updating a document in document library and a UNC provider is used.</li>
+                    <li>Fixed issue that caused pages not to be available after enabling SSL.</li>
+                    <li>Fixed issue that stopped users from registering when Q&amp;A was enabled.</li>
+                    <li>Fixed issue that affects users who try to move files to a folder that starts with a lower case.</li>
+                    <li>Fixed JS errors when editing https pages.</li>
+                    <li>Improved the performance of caching for large sites.</li>
+                    <li>Fixed issue in the Commerce Module when using multiple web heads.</li>
+                    <li>Fixed issue that stopped users from creating new pages and having them to open in a new window.</li>
+                    <li>Fixed issue that caused product property values in the commerce module to be saved as percent encoded.</li>
+                    <li>Fixed user profile module to display the correct user information after upgrading from 6.0.2.</li>
+                    <li>Fixed issue in the commerce module where changes are not saved when in edit mode.</li>
+                    <li>Updated the mobile device explorer to display the images of the devices.</li>
+                    <li>Enhanced the user experience in the delete role group flow.</li>
+                    <li>Fixed issue in the HTML Module Pro where the summary was not being saved when content approval was enabled.</li>
+                    <li>Enhanced the content staging functionality to avoid time outs when publishing large websites.</li>
+                    <li>Fixed issue in the HTML Module Pro where the provider was being switched when moving a module between panes.</li>
+                    <li>Fixed issue in SqlDataProvider where the connection was not being closed properly.</li>
+                    <li>Improved performance in the RadEditorProvider for websites with a large number of pages and roles.</li>
+                    -->
+                </ul>
+            </sectiondiv>
+        </section>
+
+    </body>
+
+</topic>

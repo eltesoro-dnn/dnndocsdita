@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-relnotes-2012-nov-28">
+
+
+    <title>DNN Release Notes &#8212; <ph id="ph-reldate">2012 Nov 28</ph></title>
+    <titlealts>
+        <navtitle>Release Notes <ph conref="relnotes-2012-nov-28.dita#top-relnotes-2012-nov-28/ph-reldate"></ph></navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>orCP,edET,1607</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience job="evaluating" />
+            <audience job="installing" />
+            <audience type="administrator" />
+            <audience type="programmer" />
+            <audience type="other" othertype="designer" />
+        </metadata>
+
+        <!--
+        Sources:
+            http://www.dnnsoftware.com/services/customer-support/success-network/software-downloads/changelog-archive
+            http://dotnetnuke.codeplex.com/releases/
+        -->
+    </prolog>
+
+
+    <body>
+
+        <!-- <section conref="relnotes-2012-nov-28.dita#top-relnotes-2012-nov-28/section-relnotes-platform"></section> -->
+        <section id="section-relnotes-platform">
+            <!-- <ph conref="relnotes-2012-nov-28.dita#top-relnotes-2012-nov-28/ph-prodver-platform"></ph> -->
+            <title>DOTNETNUKE PLATFORM <ph id="ph-prodver-platform">7.0.0</ph></title>
+
+            <!-- <sectiondiv conref="relnotes-2012-nov-28.dita#top-relnotes-2012-nov-28/sectiondiv-relnotes-platform"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-relnotes-platform">
+                <!-- <xref conref="relnotes-2012-nov-28.dita#top-relnotes-2012-nov-28/xref-codeplex-link"></xref> -->
+                <p><xref id="xref-codeplex-link" format="html" scope="external" href="http://dotnetnuke.codeplex.com/releases/view/97017">CodePlex</xref></p>
+
+                <ul>
+                    <li>Fixed issue that caused profiles of deleted users to be available.</li>
+                    <li>Removed the postback after checkboxes are selected in Page Settings > Taxonomy.</li>
+                    <li>Implemented the functionality required to edit security role names and social group names.</li>
+                    <li>Fixed JavaScript error when using a ";" semicolon as a profile property.</li>
+                    <li>Fixed issue when using DateTime properties in profiles.</li>
+                    <li>Fixed viewstate error when using Facebook authentication in conjunction with "require valid profile for login".</li>
+                    <li>Fixed issue where cached pages were not sending Content-Type in the response header.</li>
+                    <li>Fixed issue where deleting the razor host module caused the razorhelpers to be deleted too.</li>
+                    <li>Fixed issue where users could not upload a profile picture when a site belonged to a site group.</li>
+                    <li>Fixed issue where the Journal ignores the page size setting.</li>
+                    <li>Fixed issue where URLs were incorrect after moving a site with site groups enabled to a new serer.</li>
+                    <li>Fixed issue in the Journal that made image thumbnails not clickable.</li>
+                    <li>Fixed issue in the Journal where images were played like youtube videos.</li>
+                    <li>Security:
+                        <ul>
+                            <li>Fixed issue in the Member Directory module that could show members to non authenticated users.</li>
+                            <li>Fixed issue in the Lists module that could potentially be used for script / html injection.</li>
+                            <li>Fixed issue in Module's titles that would allow users to enter html or JavaScript code.</li>
+                            <li>Fixed issue where some validation was missing when uploading profile pictures.</li>
+                        </ul>
+                    </li>
+                    <li>Updated modules:
+                        <ul>
+                            <li>File Manager</li>
+                            <li>Journal</li>
+                            <li>Member Directory</li>
+                            <li>Message Center</li>
+                            <li>My Modules</li>
+                            <li>Social Groups</li>
+                        </ul>
+                    </li>
+
+
+                    <!-- Verify these. Found in release notes in dnnsoftware.com.
+                    <li>All updates included with DNN Platform 7.0.0.</li>
+                    <li>Fixed issue when deleting URL's in the Search Crawler Admin Module.</li>
+                    <li>Fixed issue where adding the Activity Feed in the menu did not redirect to the user's page.</li>
+                    <li>Fixed issue in the Journal when attaching link in child sites.</li>
+                    <li>Fixed issue in Content Staging that caused content to not get published to the production website.</li>
+                    <li>Fixed Viewstate error when using Facebook login.</li>
+                    <li>Fixed issue where users were not able to update their profile picture in child sites when site groups was enabled.</li>
+                    <li>Updated profile property dates to save dates in EN-US format.</li>
+                    <li>Fixed issue with special characters that caused JS errors on users' profiles.</li>
+                    <li>Fixed issue that caused pages using caching to not transmit a Content-Type value in the HTTP response header.</li>
+                    <li>Fixed issue that caused "display results by role" to not work when Content Localization was enabled.</li>
+                    -->
+                </ul>
+            </sectiondiv>
+        </section>
+
+    </body>
+
+</topic>
