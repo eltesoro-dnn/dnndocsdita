@@ -86,7 +86,43 @@
                 </ul>
             </sectiondiv>
 
-            <!-- <sectiondiv id="sectiondiv-relnotes-engage"/> -->
+            <!-- <sectiondiv conref="relnotes-2014-nov-12.dita#top-relnotes-2014-nov-12/sectiondiv-relnotes-engage"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-relnotes-engage">
+                <p>DNN EVOQ ENGAGE (EVOQ SOCIAL 2.0.1)</p>
+                <ul>
+                    <li>Comments now convert URLs to clickable links (Activity Stream).</li>
+                    <li>Added ability to include video in wall posts (Activity Stream).
+                        <ul>
+                            <li>Links from Youtube/Vimeo and others using Open Graph Protocol have preview and iframe embedded image on publish.</li>
+                        </ul>
+                    </li>
+                    <li>Now pulling Open Graph Protocol data when URL’s are typed/pasted into wall posts (Activity Stream).</li>
+                    <li>Added ability for moderators to accept an answer for a question author (Answers).</li>
+                    <li>Added capability to de-select an accepted answer (Answers).</li>
+                    <li>Added an add entry button to top portion of module, now consistent with other Social modules (Blogs).</li>
+                    <li>Now including primary image as part of RSS feed content for entry, if available (Blogs).</li>
+                    <li>Added ability to moderate new events (Events).</li>
+                    <li>Added support for commenting (Wiki).
+                        <ul>
+                            <li>Also added privileges for commenting unmoderated, editing own comments and integrated with gaming mechanics.</li>
+                        </ul>
+                    </li>
+                    <li>Added edit own comment privileges across all Social modules.</li>
+                    <li>Made publishing experience consistent across Social modules.
+                        <ul>
+                            <li>Approval checkbox in UI when applicable, single button instead of two.</li>
+                        </ul>
+                    </li>
+                    <li>Added auto-subscribe capability throughout Social modules (when commenting, positive voting, etc.).</li>
+                    <li>Performance updates: Analytics, Activity Stream, Group Spaces, Base platform.</li>
+                    <li>Added search tracking mechanics action to each module.</li>
+                    <li>Improved experience on Windows Phone 8 devices.</li>
+                    <li>Changed mobile modals to look inline.</li>
+                    <li>Changed chart axis scaling in dashboard to make better use of space.</li>
+                    <li>Added Sitemap providers for the 6 main modules (SEO).</li>
+                    <li>Made paging links in modules use proper anchor tags (SEO).</li>
+                </ul>
+            </sectiondiv>
         </section>
 
     </body>

@@ -80,7 +80,21 @@
                 </ul>
             </sectiondiv>
 
-            <!-- <sectiondiv id="sectiondiv-relnotes-engage"/> -->
+            <!-- <sectiondiv conref="relnotes-2014-jun-26.dita#top-relnotes-2014-jun-26/sectiondiv-relnotes-engage"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-relnotes-engage">
+                <p>DNN EVOQ ENGAGE (EVOQ SOCIAL 1.2.0)</p>
+                <ul>
+                    <li>Made comment experience consistent across modules and Activity Stream, where applicable.</li>
+                    <li>Enhanced Like Experience to provide more details in Activity Stream and several Social modules.</li>
+                    <li>Enhanced Answers and Wiki list UI's for usability.</li>
+                    <li>Moved to Platform subscriptions, in upgrade scenarios the data is migrated.</li>
+                    <li>Notifications in Social are now streamlined, these now include direct links to all content.</li>
+                    <li>Added Social Editor and integrated into 6 main Social modules.</li>
+                    <li>Performance Improvements around SQL queries, space usage and reduced amount of data sent to the browser across all Social modules.</li>
+                    <li>Added mobile support for most user facing Social modules.</li>
+                    <li>Additional minor bug fixes and improvements were also part of the release.</li>
+                </ul>
+            </sectiondiv>
         </section>
 
     </body>

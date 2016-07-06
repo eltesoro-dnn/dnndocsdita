@@ -91,7 +91,28 @@
                 </ul>
             </sectiondiv>
 
-            <!-- <sectiondiv id="sectiondiv-relnotes-engage"/> -->
+            <!-- <sectiondiv conref="relnotes-2014-aug-14.dita#top-relnotes-2014-aug-14/sectiondiv-relnotes-engage"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-relnotes-engage">
+                <p>DNN EVOQ ENGAGE (EVOQ SOCIAL 1.3.0)</p>
+                <ul>
+                    <li>Introduced Group Spaces and Directory which provide an enhanced set of features and options for social groups versus previous releases.
+                        <ul>
+                            <li>Group Directory allows groups to be searched, created, tagged, moderated and managed in a fashion similar to the rest of Evoq Social and it is also tightly integrated with gaming mechanics.</li>
+                            <li>Group Spaces provides more tools for group owners and administrators to help potential members find their groups (if public), as well as ways to invite new members through notifications or email.</li>
+                        </ul>
+                    </li>
+                    <li>The ability to see who liked a comment has been surfaced across the modules as well as the activity stream.</li>
+                    <li>Simplified the blog entry authoring experience.</li>
+                    <li>Added the ability to associate a primary image with a blog entry, this is then utilized by list views and Social Sharing.</li>
+                    <li>Unauthenticated users can now post a comment in the blog, and either sign in or register as they submit the comment.</li>
+                    <li>Community Managers, or anyone with edit permissions, can now see who voted on an Idea and how many votes they committed.</li>
+                    <li>The activity stream now does a check to see if new content was added to the stream since the user has viewed the page, if new content was added it let’s them know.</li>
+                    <li>Added additional scoring actions to allow rewarding of likes across the various modules.</li>
+                    <li>Updated several modules to be responsive which weren’t handled in the previous release: User Badges, Leaderboard, My Status (Expanded view for profile).</li>
+                    <li>The CSS across modules has been reduced, simplified and refactored.</li>
+                    <li>Made the analytics task run in batches in situations where lots of data was introduced in a short period of time (this can be a new site or import situations).</li>
+                </ul>
+            </sectiondiv>
         </section>
 
     </body>

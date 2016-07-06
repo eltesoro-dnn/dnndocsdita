@@ -1,5 +1,5 @@
 # Creates a web.config file.
-# USAGE: powershell -file w:\_build\urlmap\urlmap.ps1 DC-URLmapping.csv v:\4live-output\html5 > web.config
+# USAGE: powershell -file w:\_build\urlmap\urlmap.ps1 w:\_build\urlmap\DC-URLmapping.csv v:\4live-output\html5 > web.config
 
 if ( $args.Count -gt 1 )  {
     $legacycsv = $args[0]
@@ -20,16 +20,32 @@ if ( $args.Count -gt 1 )  {
 	{
         $old = $ln.old
         $new = $ln.new
+
         Write-Host( "                <rule name=""Rule-$global:i"" stopProcessing=""true"">" )
-        Write-Host( "                   <match url=""^(.*)$old$"" />" )
+
+        # External links
         if ( $new.StartsWith( "http:" ) )
         {
+            Write-Host( "                   <match url=""^(.*)$old$"" />" )
             Write-Host( "                   <action type=""Redirect"" url=""$new"" />" )
         }
+
+        # Internal links
         else
         {
-            Write-Host( "                   <action type=""Redirect"" url=""{R:1}$new"" />" )
+            # These suffixes are for directory name changes only. WARNING: Use with care; matches the prefix of $old, so the directory $oldanything will be replaced.
+            $suffixold = ""
+            $suffixnew = ""
+            if ( -Not $new.EndsWith( ".html" ) )
+            {
+                $suffixold = "(.*)"
+                $suffixnew = "{R:2}"
+            }
+
+            Write-Host( "                   <match url=""^(.*)$old$suffixold$"" />" )
+            Write-Host( "                   <action type=""Redirect"" url=""{R:1}$new$suffixnew"" />" )
         }
+
         Write-Host( "                </rule>" )
         $global:i++
 	}

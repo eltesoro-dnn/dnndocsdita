@@ -35,6 +35,8 @@
 		<section conkeyref="k-bptext/section-prodavail-E"></section>
 
 		<section id="overview">
+            <title>Structured Content Overview</title>
+
 			<p>Structured Content is a microservice that manages content items, which can be presented in any context, such as a webpage or a native mobile app.</p>
 
 			<p>Each content item is associated with a content type, so that the item can be displayed correctly. Default content types include <uicontrol>Content Block</uicontrol>, <uicontrol>Department</uicontrol>, <uicontrol>Job Posting</uicontrol>, and <uicontrol>People</uicontrol>. You can also create your own custom content types.</p>
@@ -60,6 +62,18 @@
 
             <note id="important">A content type must have at least one <uicontrol>Single-Line Text</uicontrol> field with <uicontrol>Required</uicontrol> set to <uicontrol>On</uicontrol>.</note>
 		</section>
+
+        <section id="create-content">
+            <p>To create and use structured content,
+                <ol>
+                    <li>Plan your <term>workflows</term>. A workflow moves your content through the creation and approval process, from drafting to editing to publishing.</li>
+                    <li>Choose what <term>content types</term> you would accept. Create custom content types, if needed.</li>
+                    <li>Add <term>content</term> items. You can associate a workflow with each content item.</li>
+                    <li>Choose which <term>visualizers</term> would display your content items. Create custom visualizers, if needed. </li>
+                    <li>Add your content items with their associated visualizers to your page or your app.</li>
+                </ol>
+            </p>
+        </section>
 
     </body>
 

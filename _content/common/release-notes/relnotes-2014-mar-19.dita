@@ -126,7 +126,20 @@
                 </ul>
             </sectiondiv>
 
-            <!-- <sectiondiv id="sectiondiv-relnotes-engage"/> -->
+            <!-- <sectiondiv conref="relnotes-2014-mar-19.dita#top-relnotes-2014-mar-19/sectiondiv-relnotes-engage"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-relnotes-engage">
+                <p>DNN EVOQ ENGAGE (EVOQ SOCIAL 1.1.1)</p>
+                <ul>
+                    <li>Localized additional items that were not localizable before (for translations) and corrected several bugs found when running in other languages.</li>
+                    <li>Improved the date and time selection experience in Social Events.</li>
+                    <li>Added content notifications (for people subscribed to a specific Question) for up-votes.</li>
+                    <li>Added content notifications (for people subscribed to a specific Idea) for votes assigned.</li>
+                    <li>Added ability to manage which companion modules (like Answers Subscriptions) are displayed on the page in an intuitive fashion.</li>
+                    <li>Separated leaderboard templates from ‘mode’ behavior, now you can choose ranking or top contributors mode and any template.</li>
+                    <li>Corrected several problems in Leaderboard and My Status when used across multiple portals.</li>
+                    <li>Additional minor bug fixes and improvements were also part of the release.</li>
+                </ul>
+            </sectiondiv>
         </section>
 
     </body>

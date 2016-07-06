@@ -89,7 +89,6 @@
                             <li>Ability to create new sites with the site root Folder on remote storage – separating user data from application data. Other Improvements.</li>
                         </ul>
                     </li>
-
                 </ul>
             </sectiondiv>
         </section>
@@ -131,7 +130,19 @@
                 </ul>
             </sectiondiv>
 
-            <!-- <sectiondiv id="sectiondiv-relnotes-engage"/> -->
+            <!-- <sectiondiv conref="relnotes-2014-jun-11.dita#top-relnotes-2014-jun-11/sectiondiv-relnotes-engage"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-relnotes-engage">
+                <p>DNN EVOQ ENGAGE (EVOQ SOCIAL 1.1.2)</p>
+                <ul>
+                    <li>Added ability to moderate new comments in Blogs.</li>
+                    <li>Added ability to edit comments and replies within the 6 main user driven content modules (as comment author, moderator, etc.).</li>
+                    <li>Added group mode support to additional modules (Answers, Wiki, Blogs).</li>
+                    <li>Added ability to delete Wiki articles.</li>
+                    <li>Improved date and time selection in Blogs (to match Social Events).</li>
+                    <li>Corrected several problems in multi-culture installs.</li>
+                    <li>Additional minor bug fixes and improvements were also part of the release.</li>
+                </ul>
+            </sectiondiv>
         </section>
 
     </body>

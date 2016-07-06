@@ -91,7 +91,36 @@
                 </ul>
             </sectiondiv>
 
-            <!-- <sectiondiv id="sectiondiv-relnotes-engage"/> -->
+            <!-- <sectiondiv conref="relnotes-2014-oct-01.dita#top-relnotes-2014-oct-01/sectiondiv-relnotes-engage"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-relnotes-engage">
+                <p>DNN EVOQ ENGAGE (EVOQ SOCIAL 2.0.0)</p>
+                <ul>
+                    <li>Enhanced the Community Manager Experience:
+                        <ul>
+                            <li>Created a new ‘control panel’ which replaces Social Dashboard and Gaming Mechanics Administration.</li>
+                            <li>Added additional analytic tracking and reporting options.</li>
+                            <li>Added community health indicators.</li>
+                            <li>Added ability to manage users.</li>
+                            <li>Surfaced tasks in this area.</li>
+                            <li>Centralized community setting management.</li>
+                        </ul>
+                    </li>
+                    <li>Enabled Friendly URL’s for the main 6 content oriented modules (great for SEO, also avoids duplicate page titles; cid/## will become /my-content-title).</li>
+                    <li>Surfaced comment moderation in additional areas (Discussions, Events and Ideas).</li>
+                    <li>Added ability to report a user which results in notifications to moderators and community managers.
+                        <ul>
+                            <li>Users can be removed from the profile area as well.</li>
+                        </ul>
+                    </li>
+                    <li>Added Upcoming events view in Social Events and made it the default view, shows only events currently in progress or scheduled in the future.</li>
+                    <li>Added ability to delete a user from the user’s profile page (this is a soft-delete) as well as promote them to a moderator role.</li>
+                    <li>Updated search control in the seven social modules that use it to be a companion module, and thus optional to show/hide for site administrators and page editors.
+                        <ul>
+                            <li>This also exposes a new ‘create’ button in the left hand footer of those modules too, to enable creation when search is not displayed (or without requiring a scroll to top for end users).</li>
+                        </ul>
+                    </li>
+                </ul>
+            </sectiondiv>
         </section>
 
     </body>

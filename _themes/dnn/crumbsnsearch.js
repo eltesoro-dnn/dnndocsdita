@@ -10,6 +10,7 @@ function breadcrumbs(){
     var stop = 0;
     var output = "<a href=\"/docs\">Home</a> &nbsp;&#187;&nbsp; ";
     sURL = location.href;
+    sURL = sURL.replace( /-/g, " " );
     sURL = sURL.slice(8,sURL.length);
     chunkStart = sURL.indexOf(sRoot);
     sURL = sURL.slice(chunkStart+sRoot.length+1,sURL.length)

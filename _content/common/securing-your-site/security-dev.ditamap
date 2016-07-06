@@ -5,7 +5,7 @@
     <title>Securing Your Site</title>
 
     <!-- Topics -->
-    <topicref format="dita" type="topic" navtitle="Securing Your Site" toc="yes" href="security.dita" copy-to="index.dita" collection-type="family">
+    <topicref format="dita" type="topic" navtitle="Securing Your Site" toc="yes" href="securing-your-site.dita" copy-to="index.dita" collection-type="family">
 
         <topicref format="dita" type="topic" toc="yes" href="jwt/about-jwt.dita" copy-to="jwt/index.dita" collection-type="family">
             <!-- JWT tasks -->

@@ -126,7 +126,59 @@
                 </ul>
             </sectiondiv>
 
-            <!-- <sectiondiv id="sectiondiv-relnotes-engage"/> -->
+            <!-- <sectiondiv conref="relnotes-2014-jan-21.dita#top-relnotes-2014-jan-21/sectiondiv-relnotes-engage"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-relnotes-engage">
+                <p>DNN EVOQ ENGAGE (EVOQ SOCIAL 1.1.0)</p>
+                <ul>
+                    <li>All 7.1 Platform Enhancements:
+                        <ul>
+                            <li>All user facing social modules now take full advantage of the new Search.</li>
+                        </ul>
+                    </li>
+                    <li>Answers:
+                        <ul>
+                            <li>New feature: Inline comment support added for both questions and answers.</li>
+                            <li>Additional mechanics activities are logged.</li>
+                        </ul>
+                    </li>
+                    <li>Azure Compatibility.</li>
+                    <li>Blogs:
+                        <ul>
+                            <li>Pinned blog entry support (1.0.2).</li>
+                            <li>More control over HTML layout of blog list view items (1.0.2).</li>
+                            <li>Enhanced 'blogger bar' to include drop down selector.</li>
+                        </ul>
+                    </li>
+                    <li>Design updates to provide a more consistent experience across all social modules.</li>
+                    <li>Ideas:
+                        <ul>
+                            <li>Locking enhanced for various statuses to disallow voting.</li>
+                            <li>Additional mechanics activities are logged.</li>
+                        </ul>
+                    </li>
+                    <li>Profile Dashboard enhanced to allow more control of influence/engagement calculations.</li>
+                    <li>Related Content updated to support tags in list views (when cid is not present in URL).</li>
+                    <li>Social Events now also integrated with Bing maps (1.0.2).</li>
+                    <li>Subscriptions:
+                        <ul>
+                            <li>New feature: Module content notifications (subscribe to new questions, enties, topics, ideas, events, articles).</li>
+                            <li>Subscribe option added to several modules where users author content (ask question, start topic, create idea).</li>
+                        </ul>
+                    </li>
+                    <li>Toast skin object updated to be proper skin object so it can be used with HTML skinning.</li>
+                    <li>New feature: Wiki (A new module slightly different from a traditional Wiki).
+                        <ul>
+                            <li>Gaming and reputation mechanics integrated from the start (like all other social modules).</li>
+                            <li>Pages are called articles to avoid ambiguity with pages and tabs in the platform.</li>
+                            <li>Use's Dnn's page design setup to move away from Wiki content templates by exposing companion modules.</li>
+                            <li>Utilizes cor metadata API.</li>
+                            <li>Users HTML and not Wiki markup or markdown (except for page links).</li>
+                            <li>Table of contents automatically build (in comanion module) based on h tags.</li>
+                        </ul>
+                    </li>
+                    <li>Implements new content revisions API for change management.</li>
+                </ul>
+            </sectiondiv>
         </section>
 
     </body>
