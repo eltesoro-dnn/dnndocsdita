@@ -51,7 +51,7 @@ if ( $args.Count -gt 1 )  {
 	}
 
     # Get the subdirectories in $bldoutdir and create rules that add /index.html to the path.
-	foreach ( $fn in ( Get-ChildItem -path $bldoutdir -recurse | ?{ $_.PSIsContainer } ) )
+	foreach ( $fn in ( Get-ChildItem -path $bldoutdir -recurse | Where-Object {$_.PSIsContainer -eq $True} ) )
 	{
         $fnclean = $fn.FullName.SubString( $bldoutdir.Length + 1 ).Replace( "\", "/" )
         Write-Host( "                <rule name=""Rule-$global:i"" stopProcessing=""true"">" )

@@ -21,7 +21,7 @@
 			<!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gotopagemgmt"><cmd/></step> -->
 			<step id="step-pb-gotopagemgmt">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Manage</uicontrol> <uicontrol>Pages</uicontrol></menucascade>.</cmd>
-				<info>
+				<info outputclass="init-hide">
 					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarManage-Pages-cmg.png"><alt>Persona Bar &gt; Manage &gt; Pages</alt></image>
 				</info>
             </step>
@@ -130,7 +130,7 @@
 			<!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gototemplatelist"><cmd/></step> -->
 			<step id="step-pb-gototemplatelist">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Manage</uicontrol> <uicontrol>Templates</uicontrol></menucascade>.</cmd>
-				<info>
+				<info outputclass="init-hide">
 					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarManage-Templates-cmg.png"><alt>Persona Bar &gt; Manage &gt; Templates</alt></image>
 				</info>
             </step>

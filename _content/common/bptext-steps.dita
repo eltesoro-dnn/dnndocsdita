@@ -42,7 +42,9 @@
 			<!-- <step conkeyref="k-bpsteps/step-menuhostextensions"><cmd/></step> -->
             <step id="step-menuhostextensions">
 				<cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-menuHostCommonExtensions.png"><alt>Host &gt; Extensions</alt></image></info>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-menuHostCommonExtensions.png"><alt>Host &gt; Extensions</alt></image>
+                </info>
             </step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-hostopenmoduleforediting"><cmd/></step> -->
@@ -66,7 +68,9 @@
 			<!-- <step conkeyref="k-bpsteps/step-menuadminextensions"><cmd/></step> -->
             <step id="step-menuadminextensions">
 				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Extensions</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-menuAdminAdvanced-Extensions.png"><alt>Admin &gt; Advanced Settings (double-gear tab) &gt; Extensions</alt></image></info>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-menuAdminAdvanced-Extensions.png"><alt>Admin &gt; Advanced Settings (double-gear tab) &gt; Extensions</alt></image>
+                </info>
             </step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-adminopenmoduleforediting"><cmd/></step> -->
@@ -89,7 +93,7 @@
 			<!-- <step conkeyref="k-bpsteps/step-cp-gotositesettings"><cmd/></step> -->
 			<step id="step-cp-gotositesettings">
 				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Site Settings</uicontrol></menucascade>.</cmd>
-				<info>
+				<info outputclass="init-hide">
 					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-menuAdminCommonSiteSettings.png"><alt>Admin &gt; Site Settings</alt></image>
 				</info>
             </step>
@@ -110,7 +114,9 @@
 			<!-- <step conkeyref="k-bpsteps/step-cp-menuadminworkflowmgmt"><cmd/></step> -->
             <step id="step-menuadminworkflowmgmt">
 				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Workflow Management</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-menuAdminAdvanced-WorkflowMgmt.png"><alt>Admin &gt; Advanced Settings (double-gear tab) &gt; Workflow Management</alt></image></info>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-menuAdminAdvanced-WorkflowMgmt.png"><alt>Admin &gt; Advanced Settings (double-gear tab) &gt; Workflow Management</alt></image>
+                </info>
             </step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-cp-workflowlist"><cmd/></step> -->
@@ -165,7 +171,9 @@
 			<!-- <step conkeyref="k-bpsteps/step-pb-pbarsettingsworkflows"><cmd/></step> -->
             <step id="step-pb-pbarsettingsworkflows">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Workflows</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarSettings-Workflows-cmg.png"><alt>Persona Bar &gt; Settings &gt; Workflows</alt></image></info>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarSettings-Workflows-cmg.png"><alt>Persona Bar &gt; Settings &gt; Workflows</alt></image>
+                </info>
             </step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-workflowlist"><cmd/></step> -->
@@ -220,7 +228,9 @@
 			<!-- <step conkeyref="k-bpsteps/step-menuadminsitemap"><cmd/></step> -->
             <step id="step-menuadminsitemap">
 				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Search Engine Sitemap</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-menuAdminAdvanced-Sitemap.png"><alt>Admin &gt; Advanced Settings (double-gear tab) &gt; Search Engine Sitemap</alt></image></info>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-menuAdminAdvanced-Sitemap.png"><alt>Admin &gt; Advanced Settings (double-gear tab) &gt; Search Engine Sitemap</alt></image>
+                </info>
             </step>
 
 
@@ -230,7 +240,9 @@
 			<!-- <step conkeyref="k-bpsteps/step-menuadminadvancedurlmgmt"><cmd/></step> -->
             <step id="step-menuadminadvancedurlmgmt">
 				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Advanced URL Management</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-menuAdminAdvanced-AdvancedURLMgmt.png"><alt>Admin &gt; Advanced Settings (double-gear tab) &gt; Advanced URL Management</alt></image></info>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-menuAdminAdvanced-AdvancedURLMgmt.png"><alt>Admin &gt; Advanced Settings (double-gear tab) &gt; Advanced URL Management</alt></image>
+                </info>
             </step>
 
 
@@ -240,7 +252,9 @@
 			<!-- <step conkeyref="k-bpsteps/step-pb-gotomanagecontent"><cmd/></step> -->
             <step id="step-pb-gotomanagecontent">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Manage</uicontrol> <uicontrol>Content</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarManage-Content-cmg.png"><alt>Persona Bar &gt; Manage &gt; Content</alt></image></info>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarManage-Content-cmg.png"><alt>Persona Bar &gt; Manage &gt; Content</alt></image>
+                </info>
             </step>
 
 
@@ -255,21 +269,27 @@
 			<!-- <step conkeyref="k-bpsteps/step-pb-gotosettingscommunity-mod"><cmd/></step> -->
             <step id="step-pb-gotosettingscommunity-mod">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Community</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarSettings-Community-mod.png"><alt>Persona Bar &gt; Settings &gt; Community</alt></image></info>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarSettings-Community-mod.png"><alt>Persona Bar &gt; Settings &gt; Community</alt></image>
+                </info>
             </step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-gotosettingsconnectors-mod"><cmd/></step> -->
 			<!-- <step conkeyref="k-bpsteps/step-pb-gotosettingsconnectors-mod"><cmd/></step> -->
             <step id="step-pb-gotosettingsconnectors-mod">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Connectors</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarSettings-Connectors-mod.png"><alt>Persona Bar &gt; Settings &gt; Connectors</alt></image></info>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarSettings-Connectors-mod.png"><alt>Persona Bar &gt; Settings &gt; Connectors</alt></image>
+                </info>
             </step>
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-gotosettingsgaming-mod"><cmd/></step> -->
 			<!-- <step conkeyref="k-bpsteps/step-pb-gotosettingsgaming-mod"><cmd/></step> -->
             <step id="step-pb-gotosettingsgaming-mod">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Gaming</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarSettings-Gaming-mod.png"><alt>Persona Bar &gt; Settings &gt; Gaming</alt></image></info>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarSettings-Gaming-mod.png"><alt>Persona Bar &gt; Settings &gt; Gaming</alt></image>
+                </info>
             </step>
 
 

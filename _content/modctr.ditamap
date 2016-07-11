@@ -25,7 +25,7 @@
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="community-managers/community-manager-references.dita" collection-type="family">
 			<topicref format="dita" type="reference" toc="yes" href="community-managers/included-modules/included-modules.dita" copy-to="community-managers/included-modules/index.dita" />
-			<topicref format="dita" type="reference" toc="yes" href="community-managers/product-versions.dita" />
+			<topicref format="dita" type="reference" toc="yes" href="community-managers/product-versions.dita" copy-to="community-managers/release-notes/index.dita" />
 			<topicref format="dita" type="topic"     toc="yes" href="community-managers/dnn-license.dita" />
             <!-- <topicref format="dita" type="topic"     toc="yes" href="community-managers/more-resources.dita" /> -->
         </topicref>

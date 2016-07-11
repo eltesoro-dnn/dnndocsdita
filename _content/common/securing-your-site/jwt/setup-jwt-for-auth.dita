@@ -60,7 +60,7 @@
             <step>
                 <cmd>(Optional) Enable JWT authentication for all Web API requests.</cmd>
                 <substeps>
-                    <substep><cmd><xref format="dita" href="../../configuring-your-site/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
+                    <substep><cmd>Access the <filepath>web.config</filepath> file.</cmd></substep>
                     <substep><cmd>Search for the newly-added JWTAuth line inside the <codeph>&lt;messageHandlers/&gt;</codeph> section.</cmd></substep>
                     <substep>
                     <cmd>Change JWTAuth's <codeph>enabled</codeph> and <codeph>defaultInclude</codeph> attributes to "true".</cmd>
@@ -88,7 +88,7 @@
                     <note type="warning">Enabling CORS allows external sites to access your site, therefore, making it vulnerable to cross-site scripting (XSS) attacks.</note>
                 </info>
                 <substeps>
-                    <substep><cmd><xref format="dita" href="../../configuring-your-site/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></substep>
+                    <substep><cmd>Access the <filepath>web.config</filepath> file.</cmd></substep>
                     <substep>
                         <cmd>In your <filepath>web.config</filepath> file, add these access control lines inside the <codeph>&lt;customHeaders/&gt;</codeph> section.</cmd>
                         <info>
@@ -105,7 +105,7 @@
             <step outputclass="audience-dev">
                 <cmd>(Optional) <ph outputclass="audience-dev">Developers:</ph> Enable additional logging for advanced debugging, testing, or troubleshooting.</cmd>
                 <substeps>
-                    <substep><cmd><xref format="dita" href="../../configuring-your-site/access-web-config.dita">Access the <filepath>DotNetNuke.log4net.config</filepath> file.</xref></cmd></substep>
+                    <substep><cmd>Access the <filepath>DotNetNuke.log4net.config</filepath> file.</cmd></substep>
                     <substep>
                         <cmd>In your DotNetNuke.log4net.config file, add the following logger lines after the <codeph>&lt;/root&gt;</codeph> closing tag.</cmd>
                         <info>
@@ -128,6 +128,7 @@
     </taskbody>
 
     <related-links>
+        <link format="dita" scope="peer"     href="../../../administrators/configuring-your-site/access-web-config.dita"><linktext>Access web.config and other .config files</linktext></link>
         <link format="html" scope="external" href="https://tools.ietf.org/html/rfc7519"><linktext>IETF RFC 7519</linktext></link>
         <link format="html" scope="external" href="http://www.slideshare.net/dnnsoftware/how-evoq-helps-you-build-modern-web-applications"><linktext>DNN Presentation: How Evoq Helps You Build Modern Web Applications by Will Morgenweck</linktext></link>
         <link format="html" scope="external" href="https://jwt.io/introduction/"><linktext>jwt.io</linktext></link>

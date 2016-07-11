@@ -56,7 +56,7 @@
 			<topicref format="dita" type="reference" toc="yes" href="developers/included-modules/included-modules.dita" copy-to="developers/included-modules/index.dita" />
             <topicref format="html" scope="external" navtitle="DNN API Reference" toc="yes" href="http://www.dnnsoftware.com/dnn-api/" />
 			<topicref format="dita" type="reference" toc="yes" href="developers/requirements.dita" />
-			<topicref format="dita" type="reference" toc="yes" href="developers/product-versions.dita" />
+			<topicref format="dita" type="reference" toc="yes" href="developers/product-versions.dita" copy-to="developers/release-notes/index.dita" />
 			<topicref format="dita" type="topic"     toc="yes" href="developers/dnn-license.dita" />
 			<topicref format="dita" type="topic"     toc="yes" href="developers/more-resources.dita" />
         </topicref>

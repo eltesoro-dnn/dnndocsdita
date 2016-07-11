@@ -36,8 +36,10 @@
         </glossAlt>
     </glossBody>
 
+    <!-- // Causes build errors.
     <related-links>
         <link format="dita" scope="peer" href="#token"><linktext>Token</linktext></link>
     </related-links>
+    -->
 
 </glossentry>

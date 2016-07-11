@@ -32,10 +32,10 @@
 			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-gotopagemgmt"><cmd/></step> -->
 			<step id="step-cp-gotopagemgmt">
 				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Page Management</uicontrol></menucascade>.</cmd>
-				<info>
+				<info outputclass="init-hide">
 					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuAdminCommonPageManagement.png"><alt>Admin &gt; Page Management</alt></image>
 				</info>
-				<stepresult>
+				<stepresult outputclass="init-hide">
 					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-PageManagement.png"><alt>Page Management &gt; hierarchy of pages</alt></image>
 				</stepresult>
             </step>
@@ -213,7 +213,7 @@
 			-->
 			<step id="step-cp-editpage">
 				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Edit This Page</uicontrol></menucascade>.</cmd>
-				<info>
+				<info outputclass="init-hide">
 					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageEditThis.png"><alt>Edit Page &gt; Edit This Page</alt></image>
 				</info>
 			</step>
@@ -224,7 +224,7 @@
 			-->
 			<step id="step-cp-editpagesettings">
 				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Page Settings</uicontrol></menucascade>.</cmd>
-				<info>
+				<info outputclass="init-hide">
 					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPagePageSettings.png"><alt>Edit Page &gt; Page Settings</alt></image>
 				</info>
 			</step>
@@ -235,7 +235,7 @@
 			-->
 			<step id="step-cp-deletepage">
 				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Delete Page</uicontrol></menucascade>.</cmd>
-				<info>
+				<info outputclass="init-hide">
 					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageDeletePage.png"><alt>Edit Page &gt; Delete Page</alt></image>
 				</info>
 			</step>
@@ -246,7 +246,9 @@
 			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step> -->
 			<step id="step-cp-openmodulelist">
                 <cmd>Go to <menucascade><uicontrol>Module</uicontrol> <uicontrol>Add New Module</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddNew.png"><alt>Module &gt; Add New Module</alt></image></info>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddNew.png"><alt>Module &gt; Add New Module</alt></image>
+                </info>
 			</step>
 
 			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-addmoduletopane"><cmd/></step> -->
@@ -258,7 +260,9 @@
 			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-addexistingmodule"><cmd/></step> -->
 			<step id="step-cp-addexistingmodule">
                 <cmd>Go to <menucascade><uicontrol>Module</uicontrol> <uicontrol>Add Existing Module</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddExisting.png"><alt>Module &gt; Add Existing Module</alt></image></info>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddExisting.png"><alt>Module &gt; Add Existing Module</alt></image>
+                </info>
 			</step>
 
 			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-chooseexistingmodule"><cmd/></step> -->

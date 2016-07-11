@@ -79,24 +79,10 @@ call npp %_logfile%
 :. if _%1_ NEQ __ goto :eof
 
 
-goto :eof
-:T005 - Not yet tested.
+:T005
 call :header "Testing win.config."  >> %_logfile%
-:testall
-:. Check the second parameter because "for" ignores blank first tokens.
-for /f "tokens=2,3" %%v in ( %_urlmap% ) do  if _%%w_ NEQ __  (
-    echo Testing URL %_site%/%%v  >> %_logfile%
-    curl %_site%/%%w > %_tempfile%
-    if ( _%%x_ NEQ __ )
-		comp %_staging%/%_tempfile% %%x /a /l /n:3  >> %_logfile%
-)
-:testonly
-for /f "tokens=1,2" %%u in ( %_urlmap% ) do  if _%%u_ EQU _testonly_  (
-    echo Testing URL %_site%/%%v  >> %_logfile%
-    start %_site%/%%v > %_tempfile%
-    if ( _%%x_ NEQ __ )
-		comp %_staging%/%_tempfile% %%x /a /l /n:3  >> %_logfile%
-)
+powershell -f %_tstdir%\testwinconfig.ps1 http://qa.dnncorp.biz/docs %_gitdir%\_build\urlmap\DC-URLmapping.csv %_outdir% >> %_logfile%
+
 :. if _%1_ NEQ __ goto :eof
 
 

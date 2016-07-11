@@ -48,7 +48,9 @@
             <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotohostacctlist"><cmd/></step> -->
             <step id="step-gotohostacctlist">
                 <cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>SuperUser Accounts</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuHostAdvancedSuperUserAccounts.png"><alt>Host &gt; Advanced Settings &gt; SuperUser Accounts</alt></image></info>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuHostAdvancedSuperUserAccounts.png"><alt>Host &gt; Advanced Settings &gt; SuperUser Accounts</alt></image>
+                </info>
             </step>
 
 
@@ -62,7 +64,9 @@
             <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotoaddusers"><cmd/></step> -->
             <step id="step-gotoaddusers">
                 <cmd>Go to <menucascade><uicontrol>Users</uicontrol> <uicontrol>Add New User</uicontrol></menucascade>.</cmd>
-                <info><image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuUsersAddNewUser.png"><alt>Users &gt; Add New User</alt></image></info>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuUsersAddNewUser.png"><alt>Users &gt; Add New User</alt></image>
+                </info>
             </step>
 
 
@@ -101,7 +105,7 @@
             <!-- <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotouseracctlist"><cmd/></step> -->
             <step id="step-gotouseracctlist">
                 <cmd>Go to <menucascade><uicontrol>Users</uicontrol> <uicontrol>Manage Users</uicontrol></menucascade>.</cmd>
-                <info>
+                <info outputclass="init-hide">
                     <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-menuUsersManageUsers.png"><alt>Users &gt; Manage Users</alt></image>
                 </info>
             </step>

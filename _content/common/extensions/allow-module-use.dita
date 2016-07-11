@@ -43,7 +43,7 @@
 			<ul>
 				<li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
 				<li><xref format="dita" href="../extensions/install-extension.dita">The host must install the extension package containing the module.</xref></li>
-				<li><xref format="dita" href="manage-premium-module.dita">If the module is set as premium, the host must allow the site to use it.</xref></li>
+				<li><xref format="dita" scope="peer" href="../../administrators/extensions/manage-premium-module.dita">If the module is set as premium, the host must allow the site to use it.</xref></li>
 			</ul>
         </prereq>
 
