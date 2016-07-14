@@ -42,6 +42,7 @@
 			<step conkeyref="k-bpsteps/step-pb-gotomanagecontent"><cmd/></step>
 			<step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttypetab-highlightellipses"><cmd/></step>
             <step><cmd>Select <uicontrol>Delete</uicontrol>.</cmd></step>
+            <step><cmd>Confirm.</cmd></step>
         </steps>
 
     </taskbody>

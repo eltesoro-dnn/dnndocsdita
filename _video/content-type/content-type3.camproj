@@ -1,0 +1,889 @@
+<?xml version="1.0"?>
+<Project_Data Version="8.00">
+<Project_Settings>
+<ProfileName>MP4 only (up to 720p)</ProfileName>
+<ProjectWidth>1280</ProjectWidth>
+<ProjectHeight>720</ProjectHeight>
+<IsCustomProject>0</IsCustomProject>
+<SavedProjectSettings>1</SavedProjectSettings>
+<LastFlashTemplate>-1</LastFlashTemplate>
+</Project_Settings>
+
+
+<AutoSaveFile>C:\Users\eleanor.tesoro\AppData\Local\TechSmith\Camtasia Studio\8.0\Auto-Saves\content-type38e1ccb6.autosave.camproj</AutoSaveFile>
+
+<ProjectID>686AED45-9A00-4A2D-B0C1-D06B1C4088A0</ProjectID>
+
+<PowerPointProject>0</PowerPointProject>
+
+<PowerPointFilename></PowerPointFilename>
+
+
+<Project_Notes>
+</Project_Notes>
+
+<Project_MetaData>
+<Project_MetaData_Object>
+<FieldArrayKey>8</FieldArrayKey>
+<Value>DNN Evoq - Content Type</Value>
+</Project_MetaData_Object>
+<Project_MetaData_Object>
+<FieldArrayKey>13</FieldArrayKey>
+<Value>2016-07-12 06:50:55 AM</Value>
+</Project_MetaData_Object>
+<Project_MetaData_Object>
+<FieldArrayKey>16</FieldArrayKey>
+<Value>ENU</Value>
+</Project_MetaData_Object>
+<Project_MetaData_Object>
+<FieldArrayKey>21</FieldArrayKey>
+<Value>No</Value>
+</Project_MetaData_Object>
+<Project_MetaData_Object>
+<FieldArrayKey>22</FieldArrayKey>
+<Value>No</Value>
+</Project_MetaData_Object>
+<Project_MetaData_Object>
+<FieldArrayKey>24</FieldArrayKey>
+<Value>Software How-To</Value>
+</Project_MetaData_Object>
+<Project_MetaData_Object>
+<FieldArrayKey>23</FieldArrayKey>
+<Value>DNN Evoq - Content Types</Value>
+</Project_MetaData_Object>
+</Project_MetaData>
+
+<CSMLData>
+<GoProject id="1" version="3.0" >
+ <Project id="2" editRate="30/1" version="3.0" >
+  <Author></Author>
+  <Comment></Comment>
+  <System></System>
+  <SourceBin id="3"  >
+    <Source id="4" src="W:\_video\content-type\content-type-Eleanor6.wav" lastMod="20160713T132452" rect="(0,0,0,0)" >
+      <SourceTrack range="(0,1001333333)" type="2" editRate="10000000/1" trackRect="(0,0,0,0)" sampleRate="48000/1" bitDepth="16" numChannels="2" filename="" metaData="" />
+    </Source>
+    <Source id="5" src="W:\_video\EvoqPoweredByDNN-bg.png" lastMod="20160712T211116" rect="(0,0,1280,720)" >
+      <SourceTrack range="(0,1)" type="1" editRate="10000000/1" trackRect="(0,0,1280,720)" sampleRate="0/1" bitDepth="32" numChannels="0" filename="" metaData="" />
+    </Source>
+    <Source id="6" src="W:\_video\content-type\capture-7.trec" lastMod="20160713T142357" rect="(0,0,1280,720)" >
+      <SourceTrack range="(0,3942)" type="0" editRate="30/1" trackRect="(0,0,1280,720)" sampleRate="0/1" bitDepth="0" numChannels="0" filename="capture-7.trec!Strack0.tsc2" metaData="capture-7.trec;" />
+    </Source>
+    <Source id="7" src="W:\_video\content-type\content-type3 (Time 0_01_42;18).png" lastMod="20160713T144517" rect="(0,0,1280,720)" >
+      <SourceTrack range="(0,1)" type="1" editRate="10000000/1" trackRect="(0,0,1280,720)" sampleRate="0/1" bitDepth="32" numChannels="0" filename="" metaData="" />
+    </Source>
+  </SourceBin>
+  <Timeline id="8"  >
+   <Attributes>
+    <Attribute id="9" value="1280" name="width"/>
+    <Attribute id="10" value="720" name="height"/>
+    <Attribute id="11" value="(255,255,255,255)" name="backgroundColor"/>
+   </Attributes>
+    <GenericMixer id="12"  name="Unified Mixer">
+     <MetaData>
+      <entry key="MixerType" val="TimelineMixer"/>
+     </MetaData>
+     <Tracks>
+      <GenericTrack id="13"  >
+       <Attributes>
+        <Attribute id="14" value="" name="ident"/>
+        <Attribute id="15" value="0" name="audioMuted"/>
+        <Attribute id="16" value="0" name="videoHidden"/>
+       </Attributes>
+       <MetaData>
+        <entry key="IsLocked" val="False"/>
+        <entry key="WinTrackHeight" val="100.18181818181819"/>
+       </MetaData>
+       <Medias>
+        <ScreenVMFile id="17" start="0" duration="2979" scalar="1/1" mediaStart="115/1" mediaDuration="2979/1" trackNumber="0" src="6" >
+         <Transformer>
+          <VectorParam id="18"  name="translation">
+           <InterpolatingParam id="19" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="20" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="21" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="22"  name="rotation">
+           <InterpolatingParam id="23" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="24" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="25" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="26"  name="shear">
+           <InterpolatingParam id="27" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="28" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="29" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="30"  name="scale">
+           <InterpolatingParam id="31" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="32" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="33" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="34"  name="anchor">
+           <InterpolatingParam id="35" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="36" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="37" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+         </Transformer>
+         <Parameters>
+          <VectorParam id="38"  name="sourceCrop">
+           <InterpolatingParam id="39" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="40" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="41" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="42" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="43"  name="geometryCrop">
+           <InterpolatingParam id="44" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="45" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="46" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="47" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <InterpolatingParam id="48" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  name="opacity"/>
+          <InterpolatingParam id="49" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="cursorOpacity"/>
+          <InterpolatingParam id="50" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="cursorScale"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="51" name = "CursorBaseEffectName" >
+           <Parameters>
+           <InterpolatingParam id="52" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="cursorSize"/>
+           <InterpolatingParam id="53" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="highlightBlurRadius"/>
+           <InterpolatingParam id="54" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="highlightColorBlue"/>
+           <InterpolatingParam id="55" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="highlightColorGreen"/>
+           <InterpolatingParam id="56" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="highlightColorRed"/>
+           <InterpolatingParam id="57" interp="linr"  time="-9999999/1" value="5" leadInLength="0/1"   name="highlightFeatherSize"/>
+           <InterpolatingParam id="58" interp="linr"  time="-9999999/1" value="2" leadInLength="0/1"   name="highlightMagnification"/>
+           <InterpolatingParam id="59" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="highlightOpacity"/>
+           <InterpolatingParam id="60" interp="linr"  time="-9999999/1" value="45" leadInLength="0/1"   name="highlightSize"/>
+           <Parameter id="61"   name="highlightType">
+            <Keyframes>
+            <Keyframe id="62"  time="-9999999/1" value="0" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="63" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="leftClickColorBlue"/>
+           <InterpolatingParam id="64" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="leftClickColorGreen"/>
+           <InterpolatingParam id="65" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="leftClickColorRed"/>
+           <InterpolatingParam id="66" interp="linr"  time="-9999999/1" value="0.80000000000000004" leadInLength="0/1"   name="leftClickDuration"/>
+           <InterpolatingParam id="67" interp="linr"  time="-9999999/1" value="20" leadInLength="0/1"   name="leftClickSize"/>
+           <Parameter id="68"   name="leftClickSoundFilename">
+            <Keyframes>
+            <Keyframe id="69"  time="-9999999/1" value="mouse_click_single.wav" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="70" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="leftClickSoundVolume"/>
+           <Parameter id="71"   name="leftClickType">
+            <Keyframes>
+            <Keyframe id="72"  time="-9999999/1" value="1" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="73" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="opacity"/>
+           <InterpolatingParam id="74" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="rightClickColorBlue"/>
+           <InterpolatingParam id="75" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="rightClickColorGreen"/>
+           <InterpolatingParam id="76" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="rightClickColorRed"/>
+           <InterpolatingParam id="77" interp="linr"  time="-9999999/1" value="0.80000000000000004" leadInLength="0/1"   name="rightClickDuration"/>
+           <InterpolatingParam id="78" interp="linr"  time="-9999999/1" value="20" leadInLength="0/1"   name="rightClickSize"/>
+           <Parameter id="79"   name="rightClickSoundFilename">
+            <Keyframes>
+            <Keyframe id="80"  time="-9999999/1" value="" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="81" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="rightClickSoundVolume"/>
+           <Parameter id="82"   name="rightClickType">
+            <Keyframes>
+            <Keyframe id="83"  time="-9999999/1" value="1" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="84" value="" name="ident"/>
+         </Attributes>
+         <MetaData>
+          <entry key="AutoAppliedSmartFocus" val="False"/>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+         <ExtraData>
+          <Entry key="ZoomPanBin">
+           <ZoomPanBin id="85"  >
+            <ZoomPanKeyframes>
+             <ZoomPanKeyframe id="86" timeRangeEnd="-9999999/1" timeRangeDuration="0/1" interpolaterName="linr"  />
+            </ZoomPanKeyframes>
+           </ZoomPanBin>
+          </Entry>
+          <Entry key="CursorEffectBin">
+           <CursorEffectBin id="87"  >
+            <CursorEffectKeyframes>
+             <CursorEffectKeyframe id="88" timeRangeEnd="-9999999/1" timeRangeDuration="0/1" interpolaterName=""  />
+            </CursorEffectKeyframes>
+           </CursorEffectBin>
+          </Entry>
+         </ExtraData>
+        </ScreenVMFile>
+        <ScreenVMFile id="89" start="2979" duration="83" scalar="1/1" mediaStart="3453/1" mediaDuration="83/1" trackNumber="0" src="6" >
+         <Transformer>
+          <VectorParam id="90"  name="translation">
+           <InterpolatingParam id="91" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="92" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="93" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="94"  name="rotation">
+           <InterpolatingParam id="95" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="96" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="97" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="98"  name="shear">
+           <InterpolatingParam id="99" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="100" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="101" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="102"  name="scale">
+           <InterpolatingParam id="103" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="104" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="105" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="106"  name="anchor">
+           <InterpolatingParam id="107" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="108" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="109" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+         </Transformer>
+         <Parameters>
+          <VectorParam id="110"  name="sourceCrop">
+           <InterpolatingParam id="111" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="112" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="113" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="114" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="115"  name="geometryCrop">
+           <InterpolatingParam id="116" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="117" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="118" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="119" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <InterpolatingParam id="120" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  name="opacity"/>
+          <InterpolatingParam id="121" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="cursorOpacity"/>
+          <InterpolatingParam id="122" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="cursorScale"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="123" name = "CursorBaseEffectName" >
+           <Parameters>
+           <InterpolatingParam id="124" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="cursorSize"/>
+           <InterpolatingParam id="125" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="highlightBlurRadius"/>
+           <InterpolatingParam id="126" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="highlightColorBlue"/>
+           <InterpolatingParam id="127" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="highlightColorGreen"/>
+           <InterpolatingParam id="128" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="highlightColorRed"/>
+           <InterpolatingParam id="129" interp="linr"  time="-9999999/1" value="5" leadInLength="0/1"   name="highlightFeatherSize"/>
+           <InterpolatingParam id="130" interp="linr"  time="-9999999/1" value="2" leadInLength="0/1"   name="highlightMagnification"/>
+           <InterpolatingParam id="131" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="highlightOpacity"/>
+           <InterpolatingParam id="132" interp="linr"  time="-9999999/1" value="45" leadInLength="0/1"   name="highlightSize"/>
+           <Parameter id="133"   name="highlightType">
+            <Keyframes>
+            <Keyframe id="134"  time="-9999999/1" value="0" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="135" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="leftClickColorBlue"/>
+           <InterpolatingParam id="136" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="leftClickColorGreen"/>
+           <InterpolatingParam id="137" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="leftClickColorRed"/>
+           <InterpolatingParam id="138" interp="linr"  time="-9999999/1" value="0.80000000000000004" leadInLength="0/1"   name="leftClickDuration"/>
+           <InterpolatingParam id="139" interp="linr"  time="-9999999/1" value="20" leadInLength="0/1"   name="leftClickSize"/>
+           <Parameter id="140"   name="leftClickSoundFilename">
+            <Keyframes>
+            <Keyframe id="141"  time="-9999999/1" value="" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="142" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="leftClickSoundVolume"/>
+           <Parameter id="143"   name="leftClickType">
+            <Keyframes>
+            <Keyframe id="144"  time="-9999999/1" value="0" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="145" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="opacity"/>
+           <InterpolatingParam id="146" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="rightClickColorBlue"/>
+           <InterpolatingParam id="147" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="rightClickColorGreen"/>
+           <InterpolatingParam id="148" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="rightClickColorRed"/>
+           <InterpolatingParam id="149" interp="linr"  time="-9999999/1" value="0.80000000000000004" leadInLength="0/1"   name="rightClickDuration"/>
+           <InterpolatingParam id="150" interp="linr"  time="-9999999/1" value="20" leadInLength="0/1"   name="rightClickSize"/>
+           <Parameter id="151"   name="rightClickSoundFilename">
+            <Keyframes>
+            <Keyframe id="152"  time="-9999999/1" value="" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="153" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="rightClickSoundVolume"/>
+           <Parameter id="154"   name="rightClickType">
+            <Keyframes>
+            <Keyframe id="155"  time="-9999999/1" value="0" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="156" value="" name="ident"/>
+         </Attributes>
+         <MetaData>
+          <entry key="AutoAppliedSmartFocus" val="False"/>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+         <ExtraData>
+          <Entry key="ZoomPanBin">
+           <ZoomPanBin id="157"  >
+            <ZoomPanKeyframes>
+             <ZoomPanKeyframe id="158" timeRangeEnd="-9999999/1" timeRangeDuration="0/1" interpolaterName="linr"  />
+            </ZoomPanKeyframes>
+           </ZoomPanBin>
+          </Entry>
+          <Entry key="CursorEffectBin">
+           <CursorEffectBin id="159"  >
+            <CursorEffectKeyframes>
+             <CursorEffectKeyframe id="160" timeRangeEnd="-9999999/1" timeRangeDuration="0/1" interpolaterName=""  />
+            </CursorEffectKeyframes>
+           </CursorEffectBin>
+          </Entry>
+         </ExtraData>
+        </ScreenVMFile>
+        <IMFile id="161" start="3062" duration="70" scalar="1/1" mediaStart="0/1" mediaDuration="1/1" trackNumber="0" src="7" trimStartSum="0/1" >
+         <Transformer>
+          <VectorParam id="162"  name="translation">
+           <InterpolatingParam id="163" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="164" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="165" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="166"  name="rotation">
+           <InterpolatingParam id="167" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="168" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="169" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="170"  name="shear">
+           <InterpolatingParam id="171" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="172" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="173" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="174"  name="scale">
+           <InterpolatingParam id="175" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="176" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="177" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="178"  name="anchor">
+           <InterpolatingParam id="179" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="180" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="181" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+         </Transformer>
+         <Parameters>
+          <VectorParam id="182"  name="sourceCrop">
+           <InterpolatingParam id="183" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="184" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="185" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="186" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="187"  name="geometryCrop">
+           <InterpolatingParam id="188" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="189" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="190" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="191" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <InterpolatingParam id="192" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  name="opacity"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="193" value="" name="ident"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+         <ExtraData>
+          <Entry key="ZoomPanBin">
+           <ZoomPanBin id="194"  >
+            <ZoomPanKeyframes>
+             <ZoomPanKeyframe id="195" timeRangeEnd="-9999999/1" timeRangeDuration="0/1" interpolaterName="linr"  />
+            </ZoomPanKeyframes>
+           </ZoomPanBin>
+          </Entry>
+         </ExtraData>
+        </IMFile>
+        <IMFile id="196" start="3132" duration="89" scalar="1/1" mediaStart="0/1" mediaDuration="1/1" trackNumber="0" src="5" trimStartSum="0/1" >
+         <Transformer>
+          <VectorParam id="197"  name="translation">
+           <InterpolatingParam id="198" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="199" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="200" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="201"  name="rotation">
+           <InterpolatingParam id="202" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="203" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="204" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="205"  name="shear">
+           <InterpolatingParam id="206" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="207" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="208" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="209"  name="scale">
+           <InterpolatingParam id="210" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="211" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="212" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="213"  name="anchor">
+           <InterpolatingParam id="214" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="215" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="216" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+         </Transformer>
+         <Parameters>
+          <VectorParam id="217"  name="sourceCrop">
+           <InterpolatingParam id="218" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="219" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="220" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="221" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="222"  name="geometryCrop">
+           <InterpolatingParam id="223" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="224" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="225" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="226" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <InterpolatingParam id="227" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  name="opacity"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="228" value="" name="ident"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+         <ExtraData>
+          <Entry key="ZoomPanBin">
+           <ZoomPanBin id="229"  >
+            <ZoomPanKeyframes>
+             <ZoomPanKeyframe id="230" timeRangeEnd="-9999999/1" timeRangeDuration="0/1" interpolaterName="linr"  />
+            </ZoomPanKeyframes>
+           </ZoomPanBin>
+          </Entry>
+         </ExtraData>
+        </IMFile>
+       </Medias>
+      </GenericTrack>
+      <GenericTrack id="231"  >
+       <Attributes>
+        <Attribute id="232" value="" name="ident"/>
+        <Attribute id="233" value="0" name="audioMuted"/>
+        <Attribute id="234" value="0" name="videoHidden"/>
+       </Attributes>
+       <MetaData>
+        <entry key="IsLocked" val="False"/>
+        <entry key="WinTrackHeight" val="100.18181818181819"/>
+       </MetaData>
+       <Medias>
+        <AMFile id="235" start="0" duration="1137" scalar="1/1" mediaStart="0/1" mediaDuration="1137/1" trackNumber="0" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="236" interp="linr"  time="0/1" value="2.5597128445998218" leadInLength="0/1"  name="volume"/>
+          <Parameter id="237"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="238" name = "WinCompression" >
+           <Parameters>
+           <InterpolatingParam id="239" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="attack"/>
+           <InterpolatingParam id="240" interp="linr"  time="0/1" value="3" leadInLength="0/1"   name="gain"/>
+           <Parameter id="241"   name="preset">
+            <Keyframes>
+            <Keyframe id="242"  time="0/1" value="2" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="243" interp="linr"  time="0/1" value="5" leadInLength="0/1"   name="ratio"/>
+           <InterpolatingParam id="244" interp="linr"  time="0/1" value="3500" leadInLength="0/1"   name="release"/>
+           <InterpolatingParam id="245" interp="linr"  time="0/1" value="-15" leadInLength="0/1"   name="threshold"/>
+           </Parameters>
+          </GenericEffect>
+          <GenericEffect id="246" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="247" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="248" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="249"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="250"  time="0/1" value="FBAAAAIAAABErAAAAQIAAK7hbsJleljCKMZlwv1xbMKEDXzCSviBwuw3hsL+xIvCgTKUwoB8mMLs&#xD;&#xa;WZ3CisydwlLJoMIQI6LCw8+hwp05ocKwZ6HCyXGlwnAEqsKWK6zCHdOrwg1arMIpqavChmepwlBr&#xD;&#xa;qsLAK7DClfmswsnQqsJlW63Chq+twjAfrMLNgK3Cz2avwn7FscKVXrPCSU+xwmUMs8JYirTCwamz&#xD;&#xa;woeHtcJoX7LCL0ywwq88t8IScLfCWnS0wg17tsLddrfCC/m3wlAUuMI8gbXCpCy2wuasuMJKVbnC&#xD;&#xa;Yqe5wtJ0usKPUrrCgwS+wjSzvcIGYr3CPLC6wj5nusK37LzCYHe9wvievMKmN77CJ5K+wosGvcJ0&#xD;&#xa;RrzCHmy/wpANwMJnjr3CpsS9wtjewcLgwsDCVl+/wlZgvsJGBr3CZWe/wkIBwcLYJsLC+k3FwuK/&#xD;&#xa;v8Iqwb3CWfu+wqzDwsLPf8bCjPHBwuTKwMKax7/CSSbBwkffwsK86cHC2JjAwvStv8LzEb/CAhO/&#xD;&#xa;woOhwcKhC8XCtsPCwiP0wsIae8PCJefFwhi2xMIxLcXC54fDwgmywcKDjMLCUIzDwiCCxcKkvMLC&#xD;&#xa;SjXCwiBAxML2ecTCEJrDwqSCw8KGRMLChF2+wliAwcLuisbCLH/FwjTuwsJRNcLCx8zDwgoOx8KV&#xD;&#xa;HMnC1kTHwvg5x8LuAcfCeT7Fwm4ixMKZ/8bCxaDHwq3CxcL7V8jCGAPKwpcax8LK2sfCfCvHwkiJ&#xD;&#xa;x8LAVsjCrsHFwihoxsL3WcXC/V/Ewq6ex8JWhsjCkojHwo7yyMJI4sjCzVHJwtzQzMKStcvCOzLK&#xD;&#xa;wm4LycLkysfCltPIwqKRxcJKj8XCd1fKwqKJzMJu18vCTkHJwp4rxsLMwcfCwr3JwpALzMLmP8nC&#xD;&#xa;szPJwp7EyMIaGcrCYvXKwpdFzMJ64cjC5/jJwsghy8I2tsrC1vfHwtAFysJo4crCY07KwsR+y8K7&#xD;&#xa;fcnC/FbIwsp/zMLKUMzCiavMwmLZz8LbW8vChbjJwkwey8L618rCxsrLwpC7zcLYT83CZEnMwiRh&#xD;&#xa;ysKeNcrCODLMwkL1zMLK+8nCIR3Jwr4CycIJU8rCAmPMwrKpzMJw7MrCyqDMwqxJzML+Ic7C/2PO&#xD;&#xa;wkN4y8I3+snCHMjLwrN1y8I64sfCYhXHwkkHy8IRbMvCEpfLwq5JysJIMMrCIFzLwre/y8ISfdDC&#xD;&#xa;Hc/Qwi6GzsJNSs/CNsnPwjqRy8L3IcvCnsnMwsRuzsIv2cvCZOXIwmJhysKCgc3CXV/NwnDOy8Lq&#xD;&#xa;bcvChGzMwi0dzcLycczC8u3LwnAly8KUiszCfrLMwhhBzMI3VczCl4rMwo62zcJ228vClCXNwmH8&#xD;&#xa;z8KQ0M/C8wbRwr6rzMLfosrC5J3Lwqziy8K0YtHCTlzQwuXUy8LItMzCslrPwrb6z8K7XM7CAIjN&#xD;&#xa;wl1wzMJw+M3CNl7QwuZczcIks83ConHPwiCfzcJE0MzCcqLQwlgSz8JQes7CsbXNwlq9zcL3rc7C&#xD;&#xa;StrOwi5bzsJmVM7CaSbOworMzcI5xc7C8N3Owie5zsK+0c3CT/rOwrP+zcLARc/CzZDPwmigzsIR&#xD;&#xa;Bs/CLjXPwpymzMKu0c3C/CLOwoHKzcL93M/CAXzOwmY/zsJ6qtDCNJjQwsTSzsJQGM/CQkPQwtqY&#xD;&#xa;z8JH48/CrFfSwuHL0sLjYdHCbkPOwvrBz8JufNLCSCXQwvagzsJ0ktDClIvRwhIs0MJKMtHCKo7S&#xD;&#xa;wkb20MK4eM3CsCXPwrRJ0MIFbc/CPKLTwite1MLWdtPC1K7Swqg+z8JMlc3CBJ3OwnJWz8JIj8/C&#xD;&#xa;VUXQwk5/08K2rNPCkq3Rwn5I0cKfFtLClqfRwma70MLOb8/CwGbSwiyY0cKWzc/CC8nTwu6a1cLi&#xD;&#xa;utLCCG7OwjpKzsJknM/C9N7RwmdK0cIu4tHC5tLUwm7H08LektDCsLfQwilt0cJ6gM7CuILQwt7x&#xD;&#xa;0cKcVdHCZ9bOwvdbz8JgT9HCTz7UwgNh1cLUMNPCsojRwl0j0cJcUdTCdEzVwrJE1MLnNdTC9QjX&#xD;&#xa;wlQK1MKqodLCELzOwgKazMJW68/CpF3TwhTW08LsJNPCohjYwpyK2cJEGNfCNjrXwqMc1sLIrNXC&#xD;&#xa;Ag7Vwpe61cIV/tPCwqnSwkK708L3OtTC8D3UwkVL1MIOHNPCehvTwngC08KZo9TCjCHWwiGe1cLt&#xD;&#xa;WtfCYkbWwmZu1MJbBNTCXbjVwryy1sLyEdTCUiPTwkgx1cIoLdbCtNTXwoXN2ML+ytTCisDUwkY/&#xD;&#xa;18Kn7tbClKPXwv+Q1MKBtdLCXyjUwmiI18I07tXCDsTWwlTA1cJcKdLCgRHSwtK+1MJEa9bC3EnW&#xD;&#xa;wnEk1sIqJ9fCUHjWwnLZ1cJQMtfCFIDUwiYx08KmyNfC5i/WwpTv1MLU3dXCst3UwonF0MIYoNDC&#xD;&#xa;Au7Rwpgz0sJebdTCzRnUwogT1cLhydTCfvjVwvZF1sIEOtbC8EzUwrP+1MIhmdTC76PVwkq11MKh&#xD;&#xa;sNTCwtDSwpmp1MJwI9XCHUPWwg+L2cI2N9jC5uXUwkbU08LKC9LCFFDVwp1j18I2tNLC4KrRwggg&#xD;&#xa;1MJ029XC2q7Xwi/I1cIxt9bCWsDYwhzE18K+L9jC6H3YwnE01sIyr9XCQ9LUwp9U0sJT3tTC7pPU&#xD;&#xa;wpIw1cISWtjCGiXWwoBi1ML5JtTCTpDUwhR408ImMNTCobrVwjC71MKHCNXCqx7UwjIK1cJgXdbC&#xD;&#xa;Ej7VwhKW1sKCt9fCQZblwutkb8IJ7ljCpShmwoXPbMJdbXzCaCeCwihvhsLP/YvCxmaUwvmcmMIO&#xD;&#xa;cp3C2xyewhb8oMKRL6LCdMmhwghpocLk66HCT6SlwpMdqsJswKzC0keswgJprMKV4avCurqpwvqS&#xD;&#xa;qsKABrDCBb+swjjAqsKaYK3CXCquwoR1rMJrca3ChqWvwvsMssJzn7PCxm+xwlC1ssLiVrTCOeez&#xD;&#xa;wkigtcLgxLLCTKCwwmgGt8Igc7fCz3q0wpwTtsJEoLbC7k63wnI5uMKwjrXC9u21wtyWuMJ6gbnC&#xD;&#xa;DPq5whjeusIAAbvCILi+wvwAvsISxrzCtLe6wkLlusL87LzCWDO9wruSvMLocb7CZlq/wvyBvcIO&#xD;&#xa;HrzCpve/wuzEwMKqPb7C5r2+wsSmwsKguMDCiOG+wrTNvcJg4bzCGvC/wlgZwMLc+MHC2l3Fwu8h&#xD;&#xa;v8K8lb3CyAK/whDZwsIGusbCmqDCwsQHwcIcsr/CjBzBwjxfwsJWrMHCVqnAwhFEv8IOSb7CifC+&#xD;&#xa;whGYwcLeUsXC7k/EwhQOxMLaoMTCYLTFwuy+xMKyDcbCYF3EwnrowcK8c8LCemrDwsbQxcLWzMLC&#xD;&#xa;sOjBwnWQwsIa58LCoknCwtx7xMK0ysLCCre+wlpnwsKeTsbCl5/Fwvynw8LuE8PCHlPFwqlvycJU&#xD;&#xa;DsrCARzIwtIbyMLApcfCZmPGwkZ3xcJ6VsfCSDPIwnCDxcK9d8fC99PHwseSxsJRscfCkk7Hwoot&#xD;&#xa;yMJICcrCHbvHwu82x8IU7sXC5KHFwnsKycIup8nCChPIwhQTysKeo8nCdGvJwjT1y8LmAcrC68LJ&#xD;&#xa;wnQIysLAAMfC9tXHwvoCxcKahsTCWd7IwggpzMKmbMrCzlTIwtq/xcKKRsjC5pXKwsJby8I4DcrC&#xD;&#xa;WxPJwmSWyMJvM8rCYlXMwqDUy8JsksjCvzbKwt82ysKqgMnCFqfHwjOVycLmA8vCPoTLwsN1y8KR&#xD;&#xa;ZMrCDVfKwkM1zsK8wMvCKDTLwh5Sz8JOtcrCqHHIwtaDysJwo8rCJljKwsatzMLHSM7CML/MwgaL&#xD;&#xa;ysKOLcrC+pnLwiZNzMJlq8nC5HTIwjZRysLuTMzCJjDPwuvgzMK9XMrCQM3MwkjtzMJiKs7CvGzO&#xD;&#xa;wsVuzMI8tsvCN3bMwhhNy8JwY8fCyM3GwjYCy8JsN8zCqrLMwva0ysL/tMrCBHDMwrQBzcKA8M/C&#xD;&#xa;LkzQwgDAzsLCRM/CVLrPwu8Ty8LWWMvCoADOwlTVz8IQzMzCQLDIwsBDycItHc/CyN7PwiBMzsK/&#xD;&#xa;nM3COdvMwrE/zMIGqMvCZIbLwhXQy8L76czCd5rMwoZxy8IcvM3C9B3OwkjazsIa7MzCZIfOwi/G&#xD;&#xa;0MJL4M/CfLLQwhO2zMImrsvCqB/MwoiwzcIYwdHCgA3PwkZgzMKgvs3CzijQwpiu0ML+hc7CR2fO&#xD;&#xa;wnTtzMJArM3CyOLPwgy6zcIkts7C2tPPwjVczcJleczCpOnOwhjAzsI6ys3CML7NwuXNzcJwmM3C&#xD;&#xa;NtbOwvYyz8K1fMzCDoTMwrNpzsKYbdDCggPRwjmmzsIUC83CtlbNwvqdzsJBadDCeyTPwhzxz8JC&#xD;&#xa;WM7CvlPPwrLOzMKKMs7CFibPwuzVz8JE9NHCed/OwjanzsJwXtDCAnXPwnTO0MIiZNHCZuHQwsIr&#xD;&#xa;z8JVw9DCIlvSwsoe08IWydDCmvTNwvL+z8JkYNHCHInPwlwyz8KhytDCXFjQwrJl0MKpgdLCTBPT&#xD;&#xa;wkBY0MI+QM/CThjRwh4o08L2z8/CrCLRwh770MLL6tHCahDSwpUB0MIU8M/CbX3QwkC20MKi4M/C&#xD;&#xa;NKvPwoCE0cLa19PCWuzQwgtA0cK+H9LCLnrQwiWG0MI86tHCpyrTwkiD0MKOIdDCR+rSwl6308LL&#xD;&#xa;L9PCkJfQwgzd0MKEUdLCeIbTwouX0cI6sdHCE2jTwjR70cLIZs7C0KbQwvBW0cIBk87CDsXPwhUv&#xD;&#xa;1ML7W9TCVPPPwhLH0MJKctPCjqrVwoao1cLyktLCbtLQwqw108Kkl9PC4CjVwtmZ1MKwpNPCGv7U&#xD;&#xa;wjg80sIE1tHCVDXQwvE3z8IiqdHCgo7Uwqim1cJxC9XC0rHYwkzu2cLtCdXCR4/WwvpL1sIoCNbC&#xD;&#xa;lHHUwqyu0sJU0dHCiN3QwnpV0sK949TCWoPWwtx31MI5DNTCw2TUwj5p08LoptXCUPLYwpgl2MJS&#xD;&#xa;4dfCJJrUwkNa0sIuVdHCI57TwqAx1MKmudLCwBXSwn4U1cJldNTCsRLWwujO2cJsd9bC4vHUwjBz&#xD;&#xa;1sKNUtbCJrvWwqwO1sIPktPCqCbVwkYx18J6ZtbCDAvYwjav1MIkgdPCHKzTwna11cL9HtbCMWfW&#xD;&#xa;whIw1cIaKNTC6N3Vwlk/18KCLdfCHm7Uwl9b08JeNdXCruLWwuZQ18I0FNbCNpPTwnjD0cLqStTC&#xD;&#xa;EV/Vwump1MIMBtPCUpHSwtJ61cIdXNbCBXzUwo+g1MI/YdXCYnLUwnLt1MLOnNbC0jPYwgLn2sIt&#xD;&#xa;HtnCYabUwvqk1MIgktTCd1zWwo4h1sIDhtfC7trWwiNG08IuDdPClG3WwmKH1sI29tLCHkDSwrav&#xD;&#xa;1MLOJ9TCLybUwt6w08IfPtbCKwLawrOQ2MKgyNbCcoXVwqRg1MIcNtPCi/vSwvxZ1MJk3NbCnh/W&#xD;&#xa;woqZ1MLoOdTC5pnVwulw1sLlHdfCMFLYwrZB1sLeYdPCRizSwl5f08K8r9XCkjTVwlCL1sIqRtTC&#xD;&#xa;wEfSwlLx08KCINfCh+rk" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="251" value="" name="ident"/>
+          <Attribute id="252" value="48000" name="sampleRate"/>
+          <Attribute id="253" value="16" name="bitDepth"/>
+          <Attribute id="254" value="1" name="gain"/>
+          <Attribute id="255" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="256" start="1216" duration="1154" scalar="1/1" mediaStart="1137/1" mediaDuration="1154/1" trackNumber="0" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="257" interp="linr"  time="0/1" value="2.5597128445998218" leadInLength="0/1"  name="volume"/>
+          <Parameter id="258"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="259" name = "WinCompression" >
+           <Parameters>
+           <InterpolatingParam id="260" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="attack"/>
+           <InterpolatingParam id="261" interp="linr"  time="0/1" value="3" leadInLength="0/1"   name="gain"/>
+           <Parameter id="262"   name="preset">
+            <Keyframes>
+            <Keyframe id="263"  time="0/1" value="2" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="264" interp="linr"  time="0/1" value="5" leadInLength="0/1"   name="ratio"/>
+           <InterpolatingParam id="265" interp="linr"  time="0/1" value="3500" leadInLength="0/1"   name="release"/>
+           <InterpolatingParam id="266" interp="linr"  time="0/1" value="-15" leadInLength="0/1"   name="threshold"/>
+           </Parameters>
+          </GenericEffect>
+          <GenericEffect id="267" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="268" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="269" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="270"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="271"  time="0/1" value="FBAAAAIAAABErAAAAQIAAK7hbsJleljCKMZlwv1xbMKEDXzCSviBwuw3hsL+xIvCgTKUwoB8mMLs&#xD;&#xa;WZ3CisydwlLJoMIQI6LCw8+hwp05ocKwZ6HCyXGlwnAEqsKWK6zCHdOrwg1arMIpqavChmepwlBr&#xD;&#xa;qsLAK7DClfmswsnQqsJlW63Chq+twjAfrMLNgK3Cz2avwn7FscKVXrPCSU+xwmUMs8JYirTCwamz&#xD;&#xa;woeHtcJoX7LCL0ywwq88t8IScLfCWnS0wg17tsLddrfCC/m3wlAUuMI8gbXCpCy2wuasuMJKVbnC&#xD;&#xa;Yqe5wtJ0usKPUrrCgwS+wjSzvcIGYr3CPLC6wj5nusK37LzCYHe9wvievMKmN77CJ5K+wosGvcJ0&#xD;&#xa;RrzCHmy/wpANwMJnjr3CpsS9wtjewcLgwsDCVl+/wlZgvsJGBr3CZWe/wkIBwcLYJsLC+k3FwuK/&#xD;&#xa;v8Iqwb3CWfu+wqzDwsLPf8bCjPHBwuTKwMKax7/CSSbBwkffwsK86cHC2JjAwvStv8LzEb/CAhO/&#xD;&#xa;woOhwcKhC8XCtsPCwiP0wsIae8PCJefFwhi2xMIxLcXC54fDwgmywcKDjMLCUIzDwiCCxcKkvMLC&#xD;&#xa;SjXCwiBAxML2ecTCEJrDwqSCw8KGRMLChF2+wliAwcLuisbCLH/FwjTuwsJRNcLCx8zDwgoOx8KV&#xD;&#xa;HMnC1kTHwvg5x8LuAcfCeT7Fwm4ixMKZ/8bCxaDHwq3CxcL7V8jCGAPKwpcax8LK2sfCfCvHwkiJ&#xD;&#xa;x8LAVsjCrsHFwihoxsL3WcXC/V/Ewq6ex8JWhsjCkojHwo7yyMJI4sjCzVHJwtzQzMKStcvCOzLK&#xD;&#xa;wm4LycLkysfCltPIwqKRxcJKj8XCd1fKwqKJzMJu18vCTkHJwp4rxsLMwcfCwr3JwpALzMLmP8nC&#xD;&#xa;szPJwp7EyMIaGcrCYvXKwpdFzMJ64cjC5/jJwsghy8I2tsrC1vfHwtAFysJo4crCY07KwsR+y8K7&#xD;&#xa;fcnC/FbIwsp/zMLKUMzCiavMwmLZz8LbW8vChbjJwkwey8L618rCxsrLwpC7zcLYT83CZEnMwiRh&#xD;&#xa;ysKeNcrCODLMwkL1zMLK+8nCIR3Jwr4CycIJU8rCAmPMwrKpzMJw7MrCyqDMwqxJzML+Ic7C/2PO&#xD;&#xa;wkN4y8I3+snCHMjLwrN1y8I64sfCYhXHwkkHy8IRbMvCEpfLwq5JysJIMMrCIFzLwre/y8ISfdDC&#xD;&#xa;Hc/Qwi6GzsJNSs/CNsnPwjqRy8L3IcvCnsnMwsRuzsIv2cvCZOXIwmJhysKCgc3CXV/NwnDOy8Lq&#xD;&#xa;bcvChGzMwi0dzcLycczC8u3LwnAly8KUiszCfrLMwhhBzMI3VczCl4rMwo62zcJ228vClCXNwmH8&#xD;&#xa;z8KQ0M/C8wbRwr6rzMLfosrC5J3Lwqziy8K0YtHCTlzQwuXUy8LItMzCslrPwrb6z8K7XM7CAIjN&#xD;&#xa;wl1wzMJw+M3CNl7QwuZczcIks83ConHPwiCfzcJE0MzCcqLQwlgSz8JQes7CsbXNwlq9zcL3rc7C&#xD;&#xa;StrOwi5bzsJmVM7CaSbOworMzcI5xc7C8N3Owie5zsK+0c3CT/rOwrP+zcLARc/CzZDPwmigzsIR&#xD;&#xa;Bs/CLjXPwpymzMKu0c3C/CLOwoHKzcL93M/CAXzOwmY/zsJ6qtDCNJjQwsTSzsJQGM/CQkPQwtqY&#xD;&#xa;z8JH48/CrFfSwuHL0sLjYdHCbkPOwvrBz8JufNLCSCXQwvagzsJ0ktDClIvRwhIs0MJKMtHCKo7S&#xD;&#xa;wkb20MK4eM3CsCXPwrRJ0MIFbc/CPKLTwite1MLWdtPC1K7Swqg+z8JMlc3CBJ3OwnJWz8JIj8/C&#xD;&#xa;VUXQwk5/08K2rNPCkq3Rwn5I0cKfFtLClqfRwma70MLOb8/CwGbSwiyY0cKWzc/CC8nTwu6a1cLi&#xD;&#xa;utLCCG7OwjpKzsJknM/C9N7RwmdK0cIu4tHC5tLUwm7H08LektDCsLfQwilt0cJ6gM7CuILQwt7x&#xD;&#xa;0cKcVdHCZ9bOwvdbz8JgT9HCTz7UwgNh1cLUMNPCsojRwl0j0cJcUdTCdEzVwrJE1MLnNdTC9QjX&#xD;&#xa;wlQK1MKqodLCELzOwgKazMJW68/CpF3TwhTW08LsJNPCohjYwpyK2cJEGNfCNjrXwqMc1sLIrNXC&#xD;&#xa;Ag7Vwpe61cIV/tPCwqnSwkK708L3OtTC8D3UwkVL1MIOHNPCehvTwngC08KZo9TCjCHWwiGe1cLt&#xD;&#xa;WtfCYkbWwmZu1MJbBNTCXbjVwryy1sLyEdTCUiPTwkgx1cIoLdbCtNTXwoXN2ML+ytTCisDUwkY/&#xD;&#xa;18Kn7tbClKPXwv+Q1MKBtdLCXyjUwmiI18I07tXCDsTWwlTA1cJcKdLCgRHSwtK+1MJEa9bC3EnW&#xD;&#xa;wnEk1sIqJ9fCUHjWwnLZ1cJQMtfCFIDUwiYx08KmyNfC5i/WwpTv1MLU3dXCst3UwonF0MIYoNDC&#xD;&#xa;Au7Rwpgz0sJebdTCzRnUwogT1cLhydTCfvjVwvZF1sIEOtbC8EzUwrP+1MIhmdTC76PVwkq11MKh&#xD;&#xa;sNTCwtDSwpmp1MJwI9XCHUPWwg+L2cI2N9jC5uXUwkbU08LKC9LCFFDVwp1j18I2tNLC4KrRwggg&#xD;&#xa;1MJ029XC2q7Xwi/I1cIxt9bCWsDYwhzE18K+L9jC6H3YwnE01sIyr9XCQ9LUwp9U0sJT3tTC7pPU&#xD;&#xa;wpIw1cISWtjCGiXWwoBi1ML5JtTCTpDUwhR408ImMNTCobrVwjC71MKHCNXCqx7UwjIK1cJgXdbC&#xD;&#xa;Ej7VwhKW1sKCt9fCQZblwutkb8IJ7ljCpShmwoXPbMJdbXzCaCeCwihvhsLP/YvCxmaUwvmcmMIO&#xD;&#xa;cp3C2xyewhb8oMKRL6LCdMmhwghpocLk66HCT6SlwpMdqsJswKzC0keswgJprMKV4avCurqpwvqS&#xD;&#xa;qsKABrDCBb+swjjAqsKaYK3CXCquwoR1rMJrca3ChqWvwvsMssJzn7PCxm+xwlC1ssLiVrTCOeez&#xD;&#xa;wkigtcLgxLLCTKCwwmgGt8Igc7fCz3q0wpwTtsJEoLbC7k63wnI5uMKwjrXC9u21wtyWuMJ6gbnC&#xD;&#xa;DPq5whjeusIAAbvCILi+wvwAvsISxrzCtLe6wkLlusL87LzCWDO9wruSvMLocb7CZlq/wvyBvcIO&#xD;&#xa;HrzCpve/wuzEwMKqPb7C5r2+wsSmwsKguMDCiOG+wrTNvcJg4bzCGvC/wlgZwMLc+MHC2l3Fwu8h&#xD;&#xa;v8K8lb3CyAK/whDZwsIGusbCmqDCwsQHwcIcsr/CjBzBwjxfwsJWrMHCVqnAwhFEv8IOSb7CifC+&#xD;&#xa;whGYwcLeUsXC7k/EwhQOxMLaoMTCYLTFwuy+xMKyDcbCYF3EwnrowcK8c8LCemrDwsbQxcLWzMLC&#xD;&#xa;sOjBwnWQwsIa58LCoknCwtx7xMK0ysLCCre+wlpnwsKeTsbCl5/Fwvynw8LuE8PCHlPFwqlvycJU&#xD;&#xa;DsrCARzIwtIbyMLApcfCZmPGwkZ3xcJ6VsfCSDPIwnCDxcK9d8fC99PHwseSxsJRscfCkk7Hwoot&#xD;&#xa;yMJICcrCHbvHwu82x8IU7sXC5KHFwnsKycIup8nCChPIwhQTysKeo8nCdGvJwjT1y8LmAcrC68LJ&#xD;&#xa;wnQIysLAAMfC9tXHwvoCxcKahsTCWd7IwggpzMKmbMrCzlTIwtq/xcKKRsjC5pXKwsJby8I4DcrC&#xD;&#xa;WxPJwmSWyMJvM8rCYlXMwqDUy8JsksjCvzbKwt82ysKqgMnCFqfHwjOVycLmA8vCPoTLwsN1y8KR&#xD;&#xa;ZMrCDVfKwkM1zsK8wMvCKDTLwh5Sz8JOtcrCqHHIwtaDysJwo8rCJljKwsatzMLHSM7CML/MwgaL&#xD;&#xa;ysKOLcrC+pnLwiZNzMJlq8nC5HTIwjZRysLuTMzCJjDPwuvgzMK9XMrCQM3MwkjtzMJiKs7CvGzO&#xD;&#xa;wsVuzMI8tsvCN3bMwhhNy8JwY8fCyM3GwjYCy8JsN8zCqrLMwva0ysL/tMrCBHDMwrQBzcKA8M/C&#xD;&#xa;LkzQwgDAzsLCRM/CVLrPwu8Ty8LWWMvCoADOwlTVz8IQzMzCQLDIwsBDycItHc/CyN7PwiBMzsK/&#xD;&#xa;nM3COdvMwrE/zMIGqMvCZIbLwhXQy8L76czCd5rMwoZxy8IcvM3C9B3OwkjazsIa7MzCZIfOwi/G&#xD;&#xa;0MJL4M/CfLLQwhO2zMImrsvCqB/MwoiwzcIYwdHCgA3PwkZgzMKgvs3CzijQwpiu0ML+hc7CR2fO&#xD;&#xa;wnTtzMJArM3CyOLPwgy6zcIkts7C2tPPwjVczcJleczCpOnOwhjAzsI6ys3CML7NwuXNzcJwmM3C&#xD;&#xa;NtbOwvYyz8K1fMzCDoTMwrNpzsKYbdDCggPRwjmmzsIUC83CtlbNwvqdzsJBadDCeyTPwhzxz8JC&#xD;&#xa;WM7CvlPPwrLOzMKKMs7CFibPwuzVz8JE9NHCed/OwjanzsJwXtDCAnXPwnTO0MIiZNHCZuHQwsIr&#xD;&#xa;z8JVw9DCIlvSwsoe08IWydDCmvTNwvL+z8JkYNHCHInPwlwyz8KhytDCXFjQwrJl0MKpgdLCTBPT&#xD;&#xa;wkBY0MI+QM/CThjRwh4o08L2z8/CrCLRwh770MLL6tHCahDSwpUB0MIU8M/CbX3QwkC20MKi4M/C&#xD;&#xa;NKvPwoCE0cLa19PCWuzQwgtA0cK+H9LCLnrQwiWG0MI86tHCpyrTwkiD0MKOIdDCR+rSwl6308LL&#xD;&#xa;L9PCkJfQwgzd0MKEUdLCeIbTwouX0cI6sdHCE2jTwjR70cLIZs7C0KbQwvBW0cIBk87CDsXPwhUv&#xD;&#xa;1ML7W9TCVPPPwhLH0MJKctPCjqrVwoao1cLyktLCbtLQwqw108Kkl9PC4CjVwtmZ1MKwpNPCGv7U&#xD;&#xa;wjg80sIE1tHCVDXQwvE3z8IiqdHCgo7Uwqim1cJxC9XC0rHYwkzu2cLtCdXCR4/WwvpL1sIoCNbC&#xD;&#xa;lHHUwqyu0sJU0dHCiN3QwnpV0sK949TCWoPWwtx31MI5DNTCw2TUwj5p08LoptXCUPLYwpgl2MJS&#xD;&#xa;4dfCJJrUwkNa0sIuVdHCI57TwqAx1MKmudLCwBXSwn4U1cJldNTCsRLWwujO2cJsd9bC4vHUwjBz&#xD;&#xa;1sKNUtbCJrvWwqwO1sIPktPCqCbVwkYx18J6ZtbCDAvYwjav1MIkgdPCHKzTwna11cL9HtbCMWfW&#xD;&#xa;whIw1cIaKNTC6N3Vwlk/18KCLdfCHm7Uwl9b08JeNdXCruLWwuZQ18I0FNbCNpPTwnjD0cLqStTC&#xD;&#xa;EV/Vwump1MIMBtPCUpHSwtJ61cIdXNbCBXzUwo+g1MI/YdXCYnLUwnLt1MLOnNbC0jPYwgLn2sIt&#xD;&#xa;HtnCYabUwvqk1MIgktTCd1zWwo4h1sIDhtfC7trWwiNG08IuDdPClG3WwmKH1sI29tLCHkDSwrav&#xD;&#xa;1MLOJ9TCLybUwt6w08IfPtbCKwLawrOQ2MKgyNbCcoXVwqRg1MIcNtPCi/vSwvxZ1MJk3NbCnh/W&#xD;&#xa;woqZ1MLoOdTC5pnVwulw1sLlHdfCMFLYwrZB1sLeYdPCRizSwl5f08K8r9XCkjTVwlCL1sIqRtTC&#xD;&#xa;wEfSwlLx08KCINfCh+rk" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="272" value="" name="ident"/>
+          <Attribute id="273" value="48000" name="sampleRate"/>
+          <Attribute id="274" value="16" name="bitDepth"/>
+          <Attribute id="275" value="1" name="gain"/>
+          <Attribute id="276" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="277" start="2459" duration="69" scalar="1/1" mediaStart="2296/1" mediaDuration="69/1" trackNumber="0" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="278" interp="linr"  time="0/1" value="2.5597128445998218" leadInLength="0/1"  name="volume"/>
+          <Parameter id="279"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="280" name = "WinCompression" >
+           <Parameters>
+           <InterpolatingParam id="281" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="attack"/>
+           <InterpolatingParam id="282" interp="linr"  time="0/1" value="3" leadInLength="0/1"   name="gain"/>
+           <Parameter id="283"   name="preset">
+            <Keyframes>
+            <Keyframe id="284"  time="0/1" value="2" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="285" interp="linr"  time="0/1" value="5" leadInLength="0/1"   name="ratio"/>
+           <InterpolatingParam id="286" interp="linr"  time="0/1" value="3500" leadInLength="0/1"   name="release"/>
+           <InterpolatingParam id="287" interp="linr"  time="0/1" value="-15" leadInLength="0/1"   name="threshold"/>
+           </Parameters>
+          </GenericEffect>
+          <GenericEffect id="288" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="289" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="290" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="291"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="292"  time="0/1" value="FBAAAAIAAABErAAAAQIAAK7hbsJleljCKMZlwv1xbMKEDXzCSviBwuw3hsL+xIvCgTKUwoB8mMLs&#xD;&#xa;WZ3CisydwlLJoMIQI6LCw8+hwp05ocKwZ6HCyXGlwnAEqsKWK6zCHdOrwg1arMIpqavChmepwlBr&#xD;&#xa;qsLAK7DClfmswsnQqsJlW63Chq+twjAfrMLNgK3Cz2avwn7FscKVXrPCSU+xwmUMs8JYirTCwamz&#xD;&#xa;woeHtcJoX7LCL0ywwq88t8IScLfCWnS0wg17tsLddrfCC/m3wlAUuMI8gbXCpCy2wuasuMJKVbnC&#xD;&#xa;Yqe5wtJ0usKPUrrCgwS+wjSzvcIGYr3CPLC6wj5nusK37LzCYHe9wvievMKmN77CJ5K+wosGvcJ0&#xD;&#xa;RrzCHmy/wpANwMJnjr3CpsS9wtjewcLgwsDCVl+/wlZgvsJGBr3CZWe/wkIBwcLYJsLC+k3FwuK/&#xD;&#xa;v8Iqwb3CWfu+wqzDwsLPf8bCjPHBwuTKwMKax7/CSSbBwkffwsK86cHC2JjAwvStv8LzEb/CAhO/&#xD;&#xa;woOhwcKhC8XCtsPCwiP0wsIae8PCJefFwhi2xMIxLcXC54fDwgmywcKDjMLCUIzDwiCCxcKkvMLC&#xD;&#xa;SjXCwiBAxML2ecTCEJrDwqSCw8KGRMLChF2+wliAwcLuisbCLH/FwjTuwsJRNcLCx8zDwgoOx8KV&#xD;&#xa;HMnC1kTHwvg5x8LuAcfCeT7Fwm4ixMKZ/8bCxaDHwq3CxcL7V8jCGAPKwpcax8LK2sfCfCvHwkiJ&#xD;&#xa;x8LAVsjCrsHFwihoxsL3WcXC/V/Ewq6ex8JWhsjCkojHwo7yyMJI4sjCzVHJwtzQzMKStcvCOzLK&#xD;&#xa;wm4LycLkysfCltPIwqKRxcJKj8XCd1fKwqKJzMJu18vCTkHJwp4rxsLMwcfCwr3JwpALzMLmP8nC&#xD;&#xa;szPJwp7EyMIaGcrCYvXKwpdFzMJ64cjC5/jJwsghy8I2tsrC1vfHwtAFysJo4crCY07KwsR+y8K7&#xD;&#xa;fcnC/FbIwsp/zMLKUMzCiavMwmLZz8LbW8vChbjJwkwey8L618rCxsrLwpC7zcLYT83CZEnMwiRh&#xD;&#xa;ysKeNcrCODLMwkL1zMLK+8nCIR3Jwr4CycIJU8rCAmPMwrKpzMJw7MrCyqDMwqxJzML+Ic7C/2PO&#xD;&#xa;wkN4y8I3+snCHMjLwrN1y8I64sfCYhXHwkkHy8IRbMvCEpfLwq5JysJIMMrCIFzLwre/y8ISfdDC&#xD;&#xa;Hc/Qwi6GzsJNSs/CNsnPwjqRy8L3IcvCnsnMwsRuzsIv2cvCZOXIwmJhysKCgc3CXV/NwnDOy8Lq&#xD;&#xa;bcvChGzMwi0dzcLycczC8u3LwnAly8KUiszCfrLMwhhBzMI3VczCl4rMwo62zcJ228vClCXNwmH8&#xD;&#xa;z8KQ0M/C8wbRwr6rzMLfosrC5J3Lwqziy8K0YtHCTlzQwuXUy8LItMzCslrPwrb6z8K7XM7CAIjN&#xD;&#xa;wl1wzMJw+M3CNl7QwuZczcIks83ConHPwiCfzcJE0MzCcqLQwlgSz8JQes7CsbXNwlq9zcL3rc7C&#xD;&#xa;StrOwi5bzsJmVM7CaSbOworMzcI5xc7C8N3Owie5zsK+0c3CT/rOwrP+zcLARc/CzZDPwmigzsIR&#xD;&#xa;Bs/CLjXPwpymzMKu0c3C/CLOwoHKzcL93M/CAXzOwmY/zsJ6qtDCNJjQwsTSzsJQGM/CQkPQwtqY&#xD;&#xa;z8JH48/CrFfSwuHL0sLjYdHCbkPOwvrBz8JufNLCSCXQwvagzsJ0ktDClIvRwhIs0MJKMtHCKo7S&#xD;&#xa;wkb20MK4eM3CsCXPwrRJ0MIFbc/CPKLTwite1MLWdtPC1K7Swqg+z8JMlc3CBJ3OwnJWz8JIj8/C&#xD;&#xa;VUXQwk5/08K2rNPCkq3Rwn5I0cKfFtLClqfRwma70MLOb8/CwGbSwiyY0cKWzc/CC8nTwu6a1cLi&#xD;&#xa;utLCCG7OwjpKzsJknM/C9N7RwmdK0cIu4tHC5tLUwm7H08LektDCsLfQwilt0cJ6gM7CuILQwt7x&#xD;&#xa;0cKcVdHCZ9bOwvdbz8JgT9HCTz7UwgNh1cLUMNPCsojRwl0j0cJcUdTCdEzVwrJE1MLnNdTC9QjX&#xD;&#xa;wlQK1MKqodLCELzOwgKazMJW68/CpF3TwhTW08LsJNPCohjYwpyK2cJEGNfCNjrXwqMc1sLIrNXC&#xD;&#xa;Ag7Vwpe61cIV/tPCwqnSwkK708L3OtTC8D3UwkVL1MIOHNPCehvTwngC08KZo9TCjCHWwiGe1cLt&#xD;&#xa;WtfCYkbWwmZu1MJbBNTCXbjVwryy1sLyEdTCUiPTwkgx1cIoLdbCtNTXwoXN2ML+ytTCisDUwkY/&#xD;&#xa;18Kn7tbClKPXwv+Q1MKBtdLCXyjUwmiI18I07tXCDsTWwlTA1cJcKdLCgRHSwtK+1MJEa9bC3EnW&#xD;&#xa;wnEk1sIqJ9fCUHjWwnLZ1cJQMtfCFIDUwiYx08KmyNfC5i/WwpTv1MLU3dXCst3UwonF0MIYoNDC&#xD;&#xa;Au7Rwpgz0sJebdTCzRnUwogT1cLhydTCfvjVwvZF1sIEOtbC8EzUwrP+1MIhmdTC76PVwkq11MKh&#xD;&#xa;sNTCwtDSwpmp1MJwI9XCHUPWwg+L2cI2N9jC5uXUwkbU08LKC9LCFFDVwp1j18I2tNLC4KrRwggg&#xD;&#xa;1MJ029XC2q7Xwi/I1cIxt9bCWsDYwhzE18K+L9jC6H3YwnE01sIyr9XCQ9LUwp9U0sJT3tTC7pPU&#xD;&#xa;wpIw1cISWtjCGiXWwoBi1ML5JtTCTpDUwhR408ImMNTCobrVwjC71MKHCNXCqx7UwjIK1cJgXdbC&#xD;&#xa;Ej7VwhKW1sKCt9fCQZblwutkb8IJ7ljCpShmwoXPbMJdbXzCaCeCwihvhsLP/YvCxmaUwvmcmMIO&#xD;&#xa;cp3C2xyewhb8oMKRL6LCdMmhwghpocLk66HCT6SlwpMdqsJswKzC0keswgJprMKV4avCurqpwvqS&#xD;&#xa;qsKABrDCBb+swjjAqsKaYK3CXCquwoR1rMJrca3ChqWvwvsMssJzn7PCxm+xwlC1ssLiVrTCOeez&#xD;&#xa;wkigtcLgxLLCTKCwwmgGt8Igc7fCz3q0wpwTtsJEoLbC7k63wnI5uMKwjrXC9u21wtyWuMJ6gbnC&#xD;&#xa;DPq5whjeusIAAbvCILi+wvwAvsISxrzCtLe6wkLlusL87LzCWDO9wruSvMLocb7CZlq/wvyBvcIO&#xD;&#xa;HrzCpve/wuzEwMKqPb7C5r2+wsSmwsKguMDCiOG+wrTNvcJg4bzCGvC/wlgZwMLc+MHC2l3Fwu8h&#xD;&#xa;v8K8lb3CyAK/whDZwsIGusbCmqDCwsQHwcIcsr/CjBzBwjxfwsJWrMHCVqnAwhFEv8IOSb7CifC+&#xD;&#xa;whGYwcLeUsXC7k/EwhQOxMLaoMTCYLTFwuy+xMKyDcbCYF3EwnrowcK8c8LCemrDwsbQxcLWzMLC&#xD;&#xa;sOjBwnWQwsIa58LCoknCwtx7xMK0ysLCCre+wlpnwsKeTsbCl5/Fwvynw8LuE8PCHlPFwqlvycJU&#xD;&#xa;DsrCARzIwtIbyMLApcfCZmPGwkZ3xcJ6VsfCSDPIwnCDxcK9d8fC99PHwseSxsJRscfCkk7Hwoot&#xD;&#xa;yMJICcrCHbvHwu82x8IU7sXC5KHFwnsKycIup8nCChPIwhQTysKeo8nCdGvJwjT1y8LmAcrC68LJ&#xD;&#xa;wnQIysLAAMfC9tXHwvoCxcKahsTCWd7IwggpzMKmbMrCzlTIwtq/xcKKRsjC5pXKwsJby8I4DcrC&#xD;&#xa;WxPJwmSWyMJvM8rCYlXMwqDUy8JsksjCvzbKwt82ysKqgMnCFqfHwjOVycLmA8vCPoTLwsN1y8KR&#xD;&#xa;ZMrCDVfKwkM1zsK8wMvCKDTLwh5Sz8JOtcrCqHHIwtaDysJwo8rCJljKwsatzMLHSM7CML/MwgaL&#xD;&#xa;ysKOLcrC+pnLwiZNzMJlq8nC5HTIwjZRysLuTMzCJjDPwuvgzMK9XMrCQM3MwkjtzMJiKs7CvGzO&#xD;&#xa;wsVuzMI8tsvCN3bMwhhNy8JwY8fCyM3GwjYCy8JsN8zCqrLMwva0ysL/tMrCBHDMwrQBzcKA8M/C&#xD;&#xa;LkzQwgDAzsLCRM/CVLrPwu8Ty8LWWMvCoADOwlTVz8IQzMzCQLDIwsBDycItHc/CyN7PwiBMzsK/&#xD;&#xa;nM3COdvMwrE/zMIGqMvCZIbLwhXQy8L76czCd5rMwoZxy8IcvM3C9B3OwkjazsIa7MzCZIfOwi/G&#xD;&#xa;0MJL4M/CfLLQwhO2zMImrsvCqB/MwoiwzcIYwdHCgA3PwkZgzMKgvs3CzijQwpiu0ML+hc7CR2fO&#xD;&#xa;wnTtzMJArM3CyOLPwgy6zcIkts7C2tPPwjVczcJleczCpOnOwhjAzsI6ys3CML7NwuXNzcJwmM3C&#xD;&#xa;NtbOwvYyz8K1fMzCDoTMwrNpzsKYbdDCggPRwjmmzsIUC83CtlbNwvqdzsJBadDCeyTPwhzxz8JC&#xD;&#xa;WM7CvlPPwrLOzMKKMs7CFibPwuzVz8JE9NHCed/OwjanzsJwXtDCAnXPwnTO0MIiZNHCZuHQwsIr&#xD;&#xa;z8JVw9DCIlvSwsoe08IWydDCmvTNwvL+z8JkYNHCHInPwlwyz8KhytDCXFjQwrJl0MKpgdLCTBPT&#xD;&#xa;wkBY0MI+QM/CThjRwh4o08L2z8/CrCLRwh770MLL6tHCahDSwpUB0MIU8M/CbX3QwkC20MKi4M/C&#xD;&#xa;NKvPwoCE0cLa19PCWuzQwgtA0cK+H9LCLnrQwiWG0MI86tHCpyrTwkiD0MKOIdDCR+rSwl6308LL&#xD;&#xa;L9PCkJfQwgzd0MKEUdLCeIbTwouX0cI6sdHCE2jTwjR70cLIZs7C0KbQwvBW0cIBk87CDsXPwhUv&#xD;&#xa;1ML7W9TCVPPPwhLH0MJKctPCjqrVwoao1cLyktLCbtLQwqw108Kkl9PC4CjVwtmZ1MKwpNPCGv7U&#xD;&#xa;wjg80sIE1tHCVDXQwvE3z8IiqdHCgo7Uwqim1cJxC9XC0rHYwkzu2cLtCdXCR4/WwvpL1sIoCNbC&#xD;&#xa;lHHUwqyu0sJU0dHCiN3QwnpV0sK949TCWoPWwtx31MI5DNTCw2TUwj5p08LoptXCUPLYwpgl2MJS&#xD;&#xa;4dfCJJrUwkNa0sIuVdHCI57TwqAx1MKmudLCwBXSwn4U1cJldNTCsRLWwujO2cJsd9bC4vHUwjBz&#xD;&#xa;1sKNUtbCJrvWwqwO1sIPktPCqCbVwkYx18J6ZtbCDAvYwjav1MIkgdPCHKzTwna11cL9HtbCMWfW&#xD;&#xa;whIw1cIaKNTC6N3Vwlk/18KCLdfCHm7Uwl9b08JeNdXCruLWwuZQ18I0FNbCNpPTwnjD0cLqStTC&#xD;&#xa;EV/Vwump1MIMBtPCUpHSwtJ61cIdXNbCBXzUwo+g1MI/YdXCYnLUwnLt1MLOnNbC0jPYwgLn2sIt&#xD;&#xa;HtnCYabUwvqk1MIgktTCd1zWwo4h1sIDhtfC7trWwiNG08IuDdPClG3WwmKH1sI29tLCHkDSwrav&#xD;&#xa;1MLOJ9TCLybUwt6w08IfPtbCKwLawrOQ2MKgyNbCcoXVwqRg1MIcNtPCi/vSwvxZ1MJk3NbCnh/W&#xD;&#xa;woqZ1MLoOdTC5pnVwulw1sLlHdfCMFLYwrZB1sLeYdPCRizSwl5f08K8r9XCkjTVwlCL1sIqRtTC&#xD;&#xa;wEfSwlLx08KCINfCh+rk" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="293" value="" name="ident"/>
+          <Attribute id="294" value="48000" name="sampleRate"/>
+          <Attribute id="295" value="16" name="bitDepth"/>
+          <Attribute id="296" value="1" name="gain"/>
+          <Attribute id="297" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="298" start="2528" duration="79" scalar="1/1" mediaStart="2368/1" mediaDuration="79/1" trackNumber="0" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="299" interp="linr"  time="0/1" value="2.5597128445998218" leadInLength="0/1"  name="volume"/>
+          <Parameter id="300"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="301" name = "WinCompression" >
+           <Parameters>
+           <InterpolatingParam id="302" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="attack"/>
+           <InterpolatingParam id="303" interp="linr"  time="0/1" value="3" leadInLength="0/1"   name="gain"/>
+           <Parameter id="304"   name="preset">
+            <Keyframes>
+            <Keyframe id="305"  time="0/1" value="2" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="306" interp="linr"  time="0/1" value="5" leadInLength="0/1"   name="ratio"/>
+           <InterpolatingParam id="307" interp="linr"  time="0/1" value="3500" leadInLength="0/1"   name="release"/>
+           <InterpolatingParam id="308" interp="linr"  time="0/1" value="-15" leadInLength="0/1"   name="threshold"/>
+           </Parameters>
+          </GenericEffect>
+          <GenericEffect id="309" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="310" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="311" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="312"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="313"  time="0/1" value="FBAAAAIAAABErAAAAQIAAK7hbsJleljCKMZlwv1xbMKEDXzCSviBwuw3hsL+xIvCgTKUwoB8mMLs&#xD;&#xa;WZ3CisydwlLJoMIQI6LCw8+hwp05ocKwZ6HCyXGlwnAEqsKWK6zCHdOrwg1arMIpqavChmepwlBr&#xD;&#xa;qsLAK7DClfmswsnQqsJlW63Chq+twjAfrMLNgK3Cz2avwn7FscKVXrPCSU+xwmUMs8JYirTCwamz&#xD;&#xa;woeHtcJoX7LCL0ywwq88t8IScLfCWnS0wg17tsLddrfCC/m3wlAUuMI8gbXCpCy2wuasuMJKVbnC&#xD;&#xa;Yqe5wtJ0usKPUrrCgwS+wjSzvcIGYr3CPLC6wj5nusK37LzCYHe9wvievMKmN77CJ5K+wosGvcJ0&#xD;&#xa;RrzCHmy/wpANwMJnjr3CpsS9wtjewcLgwsDCVl+/wlZgvsJGBr3CZWe/wkIBwcLYJsLC+k3FwuK/&#xD;&#xa;v8Iqwb3CWfu+wqzDwsLPf8bCjPHBwuTKwMKax7/CSSbBwkffwsK86cHC2JjAwvStv8LzEb/CAhO/&#xD;&#xa;woOhwcKhC8XCtsPCwiP0wsIae8PCJefFwhi2xMIxLcXC54fDwgmywcKDjMLCUIzDwiCCxcKkvMLC&#xD;&#xa;SjXCwiBAxML2ecTCEJrDwqSCw8KGRMLChF2+wliAwcLuisbCLH/FwjTuwsJRNcLCx8zDwgoOx8KV&#xD;&#xa;HMnC1kTHwvg5x8LuAcfCeT7Fwm4ixMKZ/8bCxaDHwq3CxcL7V8jCGAPKwpcax8LK2sfCfCvHwkiJ&#xD;&#xa;x8LAVsjCrsHFwihoxsL3WcXC/V/Ewq6ex8JWhsjCkojHwo7yyMJI4sjCzVHJwtzQzMKStcvCOzLK&#xD;&#xa;wm4LycLkysfCltPIwqKRxcJKj8XCd1fKwqKJzMJu18vCTkHJwp4rxsLMwcfCwr3JwpALzMLmP8nC&#xD;&#xa;szPJwp7EyMIaGcrCYvXKwpdFzMJ64cjC5/jJwsghy8I2tsrC1vfHwtAFysJo4crCY07KwsR+y8K7&#xD;&#xa;fcnC/FbIwsp/zMLKUMzCiavMwmLZz8LbW8vChbjJwkwey8L618rCxsrLwpC7zcLYT83CZEnMwiRh&#xD;&#xa;ysKeNcrCODLMwkL1zMLK+8nCIR3Jwr4CycIJU8rCAmPMwrKpzMJw7MrCyqDMwqxJzML+Ic7C/2PO&#xD;&#xa;wkN4y8I3+snCHMjLwrN1y8I64sfCYhXHwkkHy8IRbMvCEpfLwq5JysJIMMrCIFzLwre/y8ISfdDC&#xD;&#xa;Hc/Qwi6GzsJNSs/CNsnPwjqRy8L3IcvCnsnMwsRuzsIv2cvCZOXIwmJhysKCgc3CXV/NwnDOy8Lq&#xD;&#xa;bcvChGzMwi0dzcLycczC8u3LwnAly8KUiszCfrLMwhhBzMI3VczCl4rMwo62zcJ228vClCXNwmH8&#xD;&#xa;z8KQ0M/C8wbRwr6rzMLfosrC5J3Lwqziy8K0YtHCTlzQwuXUy8LItMzCslrPwrb6z8K7XM7CAIjN&#xD;&#xa;wl1wzMJw+M3CNl7QwuZczcIks83ConHPwiCfzcJE0MzCcqLQwlgSz8JQes7CsbXNwlq9zcL3rc7C&#xD;&#xa;StrOwi5bzsJmVM7CaSbOworMzcI5xc7C8N3Owie5zsK+0c3CT/rOwrP+zcLARc/CzZDPwmigzsIR&#xD;&#xa;Bs/CLjXPwpymzMKu0c3C/CLOwoHKzcL93M/CAXzOwmY/zsJ6qtDCNJjQwsTSzsJQGM/CQkPQwtqY&#xD;&#xa;z8JH48/CrFfSwuHL0sLjYdHCbkPOwvrBz8JufNLCSCXQwvagzsJ0ktDClIvRwhIs0MJKMtHCKo7S&#xD;&#xa;wkb20MK4eM3CsCXPwrRJ0MIFbc/CPKLTwite1MLWdtPC1K7Swqg+z8JMlc3CBJ3OwnJWz8JIj8/C&#xD;&#xa;VUXQwk5/08K2rNPCkq3Rwn5I0cKfFtLClqfRwma70MLOb8/CwGbSwiyY0cKWzc/CC8nTwu6a1cLi&#xD;&#xa;utLCCG7OwjpKzsJknM/C9N7RwmdK0cIu4tHC5tLUwm7H08LektDCsLfQwilt0cJ6gM7CuILQwt7x&#xD;&#xa;0cKcVdHCZ9bOwvdbz8JgT9HCTz7UwgNh1cLUMNPCsojRwl0j0cJcUdTCdEzVwrJE1MLnNdTC9QjX&#xD;&#xa;wlQK1MKqodLCELzOwgKazMJW68/CpF3TwhTW08LsJNPCohjYwpyK2cJEGNfCNjrXwqMc1sLIrNXC&#xD;&#xa;Ag7Vwpe61cIV/tPCwqnSwkK708L3OtTC8D3UwkVL1MIOHNPCehvTwngC08KZo9TCjCHWwiGe1cLt&#xD;&#xa;WtfCYkbWwmZu1MJbBNTCXbjVwryy1sLyEdTCUiPTwkgx1cIoLdbCtNTXwoXN2ML+ytTCisDUwkY/&#xD;&#xa;18Kn7tbClKPXwv+Q1MKBtdLCXyjUwmiI18I07tXCDsTWwlTA1cJcKdLCgRHSwtK+1MJEa9bC3EnW&#xD;&#xa;wnEk1sIqJ9fCUHjWwnLZ1cJQMtfCFIDUwiYx08KmyNfC5i/WwpTv1MLU3dXCst3UwonF0MIYoNDC&#xD;&#xa;Au7Rwpgz0sJebdTCzRnUwogT1cLhydTCfvjVwvZF1sIEOtbC8EzUwrP+1MIhmdTC76PVwkq11MKh&#xD;&#xa;sNTCwtDSwpmp1MJwI9XCHUPWwg+L2cI2N9jC5uXUwkbU08LKC9LCFFDVwp1j18I2tNLC4KrRwggg&#xD;&#xa;1MJ029XC2q7Xwi/I1cIxt9bCWsDYwhzE18K+L9jC6H3YwnE01sIyr9XCQ9LUwp9U0sJT3tTC7pPU&#xD;&#xa;wpIw1cISWtjCGiXWwoBi1ML5JtTCTpDUwhR408ImMNTCobrVwjC71MKHCNXCqx7UwjIK1cJgXdbC&#xD;&#xa;Ej7VwhKW1sKCt9fCQZblwutkb8IJ7ljCpShmwoXPbMJdbXzCaCeCwihvhsLP/YvCxmaUwvmcmMIO&#xD;&#xa;cp3C2xyewhb8oMKRL6LCdMmhwghpocLk66HCT6SlwpMdqsJswKzC0keswgJprMKV4avCurqpwvqS&#xD;&#xa;qsKABrDCBb+swjjAqsKaYK3CXCquwoR1rMJrca3ChqWvwvsMssJzn7PCxm+xwlC1ssLiVrTCOeez&#xD;&#xa;wkigtcLgxLLCTKCwwmgGt8Igc7fCz3q0wpwTtsJEoLbC7k63wnI5uMKwjrXC9u21wtyWuMJ6gbnC&#xD;&#xa;DPq5whjeusIAAbvCILi+wvwAvsISxrzCtLe6wkLlusL87LzCWDO9wruSvMLocb7CZlq/wvyBvcIO&#xD;&#xa;HrzCpve/wuzEwMKqPb7C5r2+wsSmwsKguMDCiOG+wrTNvcJg4bzCGvC/wlgZwMLc+MHC2l3Fwu8h&#xD;&#xa;v8K8lb3CyAK/whDZwsIGusbCmqDCwsQHwcIcsr/CjBzBwjxfwsJWrMHCVqnAwhFEv8IOSb7CifC+&#xD;&#xa;whGYwcLeUsXC7k/EwhQOxMLaoMTCYLTFwuy+xMKyDcbCYF3EwnrowcK8c8LCemrDwsbQxcLWzMLC&#xD;&#xa;sOjBwnWQwsIa58LCoknCwtx7xMK0ysLCCre+wlpnwsKeTsbCl5/Fwvynw8LuE8PCHlPFwqlvycJU&#xD;&#xa;DsrCARzIwtIbyMLApcfCZmPGwkZ3xcJ6VsfCSDPIwnCDxcK9d8fC99PHwseSxsJRscfCkk7Hwoot&#xD;&#xa;yMJICcrCHbvHwu82x8IU7sXC5KHFwnsKycIup8nCChPIwhQTysKeo8nCdGvJwjT1y8LmAcrC68LJ&#xD;&#xa;wnQIysLAAMfC9tXHwvoCxcKahsTCWd7IwggpzMKmbMrCzlTIwtq/xcKKRsjC5pXKwsJby8I4DcrC&#xD;&#xa;WxPJwmSWyMJvM8rCYlXMwqDUy8JsksjCvzbKwt82ysKqgMnCFqfHwjOVycLmA8vCPoTLwsN1y8KR&#xD;&#xa;ZMrCDVfKwkM1zsK8wMvCKDTLwh5Sz8JOtcrCqHHIwtaDysJwo8rCJljKwsatzMLHSM7CML/MwgaL&#xD;&#xa;ysKOLcrC+pnLwiZNzMJlq8nC5HTIwjZRysLuTMzCJjDPwuvgzMK9XMrCQM3MwkjtzMJiKs7CvGzO&#xD;&#xa;wsVuzMI8tsvCN3bMwhhNy8JwY8fCyM3GwjYCy8JsN8zCqrLMwva0ysL/tMrCBHDMwrQBzcKA8M/C&#xD;&#xa;LkzQwgDAzsLCRM/CVLrPwu8Ty8LWWMvCoADOwlTVz8IQzMzCQLDIwsBDycItHc/CyN7PwiBMzsK/&#xD;&#xa;nM3COdvMwrE/zMIGqMvCZIbLwhXQy8L76czCd5rMwoZxy8IcvM3C9B3OwkjazsIa7MzCZIfOwi/G&#xD;&#xa;0MJL4M/CfLLQwhO2zMImrsvCqB/MwoiwzcIYwdHCgA3PwkZgzMKgvs3CzijQwpiu0ML+hc7CR2fO&#xD;&#xa;wnTtzMJArM3CyOLPwgy6zcIkts7C2tPPwjVczcJleczCpOnOwhjAzsI6ys3CML7NwuXNzcJwmM3C&#xD;&#xa;NtbOwvYyz8K1fMzCDoTMwrNpzsKYbdDCggPRwjmmzsIUC83CtlbNwvqdzsJBadDCeyTPwhzxz8JC&#xD;&#xa;WM7CvlPPwrLOzMKKMs7CFibPwuzVz8JE9NHCed/OwjanzsJwXtDCAnXPwnTO0MIiZNHCZuHQwsIr&#xD;&#xa;z8JVw9DCIlvSwsoe08IWydDCmvTNwvL+z8JkYNHCHInPwlwyz8KhytDCXFjQwrJl0MKpgdLCTBPT&#xD;&#xa;wkBY0MI+QM/CThjRwh4o08L2z8/CrCLRwh770MLL6tHCahDSwpUB0MIU8M/CbX3QwkC20MKi4M/C&#xD;&#xa;NKvPwoCE0cLa19PCWuzQwgtA0cK+H9LCLnrQwiWG0MI86tHCpyrTwkiD0MKOIdDCR+rSwl6308LL&#xD;&#xa;L9PCkJfQwgzd0MKEUdLCeIbTwouX0cI6sdHCE2jTwjR70cLIZs7C0KbQwvBW0cIBk87CDsXPwhUv&#xD;&#xa;1ML7W9TCVPPPwhLH0MJKctPCjqrVwoao1cLyktLCbtLQwqw108Kkl9PC4CjVwtmZ1MKwpNPCGv7U&#xD;&#xa;wjg80sIE1tHCVDXQwvE3z8IiqdHCgo7Uwqim1cJxC9XC0rHYwkzu2cLtCdXCR4/WwvpL1sIoCNbC&#xD;&#xa;lHHUwqyu0sJU0dHCiN3QwnpV0sK949TCWoPWwtx31MI5DNTCw2TUwj5p08LoptXCUPLYwpgl2MJS&#xD;&#xa;4dfCJJrUwkNa0sIuVdHCI57TwqAx1MKmudLCwBXSwn4U1cJldNTCsRLWwujO2cJsd9bC4vHUwjBz&#xD;&#xa;1sKNUtbCJrvWwqwO1sIPktPCqCbVwkYx18J6ZtbCDAvYwjav1MIkgdPCHKzTwna11cL9HtbCMWfW&#xD;&#xa;whIw1cIaKNTC6N3Vwlk/18KCLdfCHm7Uwl9b08JeNdXCruLWwuZQ18I0FNbCNpPTwnjD0cLqStTC&#xD;&#xa;EV/Vwump1MIMBtPCUpHSwtJ61cIdXNbCBXzUwo+g1MI/YdXCYnLUwnLt1MLOnNbC0jPYwgLn2sIt&#xD;&#xa;HtnCYabUwvqk1MIgktTCd1zWwo4h1sIDhtfC7trWwiNG08IuDdPClG3WwmKH1sI29tLCHkDSwrav&#xD;&#xa;1MLOJ9TCLybUwt6w08IfPtbCKwLawrOQ2MKgyNbCcoXVwqRg1MIcNtPCi/vSwvxZ1MJk3NbCnh/W&#xD;&#xa;woqZ1MLoOdTC5pnVwulw1sLlHdfCMFLYwrZB1sLeYdPCRizSwl5f08K8r9XCkjTVwlCL1sIqRtTC&#xD;&#xa;wEfSwlLx08KCINfCh+rk" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="314" value="" name="ident"/>
+          <Attribute id="315" value="48000" name="sampleRate"/>
+          <Attribute id="316" value="16" name="bitDepth"/>
+          <Attribute id="317" value="1" name="gain"/>
+          <Attribute id="318" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="319" start="2623" duration="113" scalar="1/1" mediaStart="2464/1" mediaDuration="113/1" trackNumber="0" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="320" interp="linr"  time="0/1" value="2.5597128445998218" leadInLength="0/1"  name="volume"/>
+          <Parameter id="321"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="322" name = "WinCompression" >
+           <Parameters>
+           <InterpolatingParam id="323" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="attack"/>
+           <InterpolatingParam id="324" interp="linr"  time="0/1" value="3" leadInLength="0/1"   name="gain"/>
+           <Parameter id="325"   name="preset">
+            <Keyframes>
+            <Keyframe id="326"  time="0/1" value="2" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="327" interp="linr"  time="0/1" value="5" leadInLength="0/1"   name="ratio"/>
+           <InterpolatingParam id="328" interp="linr"  time="0/1" value="3500" leadInLength="0/1"   name="release"/>
+           <InterpolatingParam id="329" interp="linr"  time="0/1" value="-15" leadInLength="0/1"   name="threshold"/>
+           </Parameters>
+          </GenericEffect>
+          <GenericEffect id="330" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="331" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="332" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="333"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="334"  time="0/1" value="FBAAAAIAAABErAAAAQIAAK7hbsJleljCKMZlwv1xbMKEDXzCSviBwuw3hsL+xIvCgTKUwoB8mMLs&#xD;&#xa;WZ3CisydwlLJoMIQI6LCw8+hwp05ocKwZ6HCyXGlwnAEqsKWK6zCHdOrwg1arMIpqavChmepwlBr&#xD;&#xa;qsLAK7DClfmswsnQqsJlW63Chq+twjAfrMLNgK3Cz2avwn7FscKVXrPCSU+xwmUMs8JYirTCwamz&#xD;&#xa;woeHtcJoX7LCL0ywwq88t8IScLfCWnS0wg17tsLddrfCC/m3wlAUuMI8gbXCpCy2wuasuMJKVbnC&#xD;&#xa;Yqe5wtJ0usKPUrrCgwS+wjSzvcIGYr3CPLC6wj5nusK37LzCYHe9wvievMKmN77CJ5K+wosGvcJ0&#xD;&#xa;RrzCHmy/wpANwMJnjr3CpsS9wtjewcLgwsDCVl+/wlZgvsJGBr3CZWe/wkIBwcLYJsLC+k3FwuK/&#xD;&#xa;v8Iqwb3CWfu+wqzDwsLPf8bCjPHBwuTKwMKax7/CSSbBwkffwsK86cHC2JjAwvStv8LzEb/CAhO/&#xD;&#xa;woOhwcKhC8XCtsPCwiP0wsIae8PCJefFwhi2xMIxLcXC54fDwgmywcKDjMLCUIzDwiCCxcKkvMLC&#xD;&#xa;SjXCwiBAxML2ecTCEJrDwqSCw8KGRMLChF2+wliAwcLuisbCLH/FwjTuwsJRNcLCx8zDwgoOx8KV&#xD;&#xa;HMnC1kTHwvg5x8LuAcfCeT7Fwm4ixMKZ/8bCxaDHwq3CxcL7V8jCGAPKwpcax8LK2sfCfCvHwkiJ&#xD;&#xa;x8LAVsjCrsHFwihoxsL3WcXC/V/Ewq6ex8JWhsjCkojHwo7yyMJI4sjCzVHJwtzQzMKStcvCOzLK&#xD;&#xa;wm4LycLkysfCltPIwqKRxcJKj8XCd1fKwqKJzMJu18vCTkHJwp4rxsLMwcfCwr3JwpALzMLmP8nC&#xD;&#xa;szPJwp7EyMIaGcrCYvXKwpdFzMJ64cjC5/jJwsghy8I2tsrC1vfHwtAFysJo4crCY07KwsR+y8K7&#xD;&#xa;fcnC/FbIwsp/zMLKUMzCiavMwmLZz8LbW8vChbjJwkwey8L618rCxsrLwpC7zcLYT83CZEnMwiRh&#xD;&#xa;ysKeNcrCODLMwkL1zMLK+8nCIR3Jwr4CycIJU8rCAmPMwrKpzMJw7MrCyqDMwqxJzML+Ic7C/2PO&#xD;&#xa;wkN4y8I3+snCHMjLwrN1y8I64sfCYhXHwkkHy8IRbMvCEpfLwq5JysJIMMrCIFzLwre/y8ISfdDC&#xD;&#xa;Hc/Qwi6GzsJNSs/CNsnPwjqRy8L3IcvCnsnMwsRuzsIv2cvCZOXIwmJhysKCgc3CXV/NwnDOy8Lq&#xD;&#xa;bcvChGzMwi0dzcLycczC8u3LwnAly8KUiszCfrLMwhhBzMI3VczCl4rMwo62zcJ228vClCXNwmH8&#xD;&#xa;z8KQ0M/C8wbRwr6rzMLfosrC5J3Lwqziy8K0YtHCTlzQwuXUy8LItMzCslrPwrb6z8K7XM7CAIjN&#xD;&#xa;wl1wzMJw+M3CNl7QwuZczcIks83ConHPwiCfzcJE0MzCcqLQwlgSz8JQes7CsbXNwlq9zcL3rc7C&#xD;&#xa;StrOwi5bzsJmVM7CaSbOworMzcI5xc7C8N3Owie5zsK+0c3CT/rOwrP+zcLARc/CzZDPwmigzsIR&#xD;&#xa;Bs/CLjXPwpymzMKu0c3C/CLOwoHKzcL93M/CAXzOwmY/zsJ6qtDCNJjQwsTSzsJQGM/CQkPQwtqY&#xD;&#xa;z8JH48/CrFfSwuHL0sLjYdHCbkPOwvrBz8JufNLCSCXQwvagzsJ0ktDClIvRwhIs0MJKMtHCKo7S&#xD;&#xa;wkb20MK4eM3CsCXPwrRJ0MIFbc/CPKLTwite1MLWdtPC1K7Swqg+z8JMlc3CBJ3OwnJWz8JIj8/C&#xD;&#xa;VUXQwk5/08K2rNPCkq3Rwn5I0cKfFtLClqfRwma70MLOb8/CwGbSwiyY0cKWzc/CC8nTwu6a1cLi&#xD;&#xa;utLCCG7OwjpKzsJknM/C9N7RwmdK0cIu4tHC5tLUwm7H08LektDCsLfQwilt0cJ6gM7CuILQwt7x&#xD;&#xa;0cKcVdHCZ9bOwvdbz8JgT9HCTz7UwgNh1cLUMNPCsojRwl0j0cJcUdTCdEzVwrJE1MLnNdTC9QjX&#xD;&#xa;wlQK1MKqodLCELzOwgKazMJW68/CpF3TwhTW08LsJNPCohjYwpyK2cJEGNfCNjrXwqMc1sLIrNXC&#xD;&#xa;Ag7Vwpe61cIV/tPCwqnSwkK708L3OtTC8D3UwkVL1MIOHNPCehvTwngC08KZo9TCjCHWwiGe1cLt&#xD;&#xa;WtfCYkbWwmZu1MJbBNTCXbjVwryy1sLyEdTCUiPTwkgx1cIoLdbCtNTXwoXN2ML+ytTCisDUwkY/&#xD;&#xa;18Kn7tbClKPXwv+Q1MKBtdLCXyjUwmiI18I07tXCDsTWwlTA1cJcKdLCgRHSwtK+1MJEa9bC3EnW&#xD;&#xa;wnEk1sIqJ9fCUHjWwnLZ1cJQMtfCFIDUwiYx08KmyNfC5i/WwpTv1MLU3dXCst3UwonF0MIYoNDC&#xD;&#xa;Au7Rwpgz0sJebdTCzRnUwogT1cLhydTCfvjVwvZF1sIEOtbC8EzUwrP+1MIhmdTC76PVwkq11MKh&#xD;&#xa;sNTCwtDSwpmp1MJwI9XCHUPWwg+L2cI2N9jC5uXUwkbU08LKC9LCFFDVwp1j18I2tNLC4KrRwggg&#xD;&#xa;1MJ029XC2q7Xwi/I1cIxt9bCWsDYwhzE18K+L9jC6H3YwnE01sIyr9XCQ9LUwp9U0sJT3tTC7pPU&#xD;&#xa;wpIw1cISWtjCGiXWwoBi1ML5JtTCTpDUwhR408ImMNTCobrVwjC71MKHCNXCqx7UwjIK1cJgXdbC&#xD;&#xa;Ej7VwhKW1sKCt9fCQZblwutkb8IJ7ljCpShmwoXPbMJdbXzCaCeCwihvhsLP/YvCxmaUwvmcmMIO&#xD;&#xa;cp3C2xyewhb8oMKRL6LCdMmhwghpocLk66HCT6SlwpMdqsJswKzC0keswgJprMKV4avCurqpwvqS&#xD;&#xa;qsKABrDCBb+swjjAqsKaYK3CXCquwoR1rMJrca3ChqWvwvsMssJzn7PCxm+xwlC1ssLiVrTCOeez&#xD;&#xa;wkigtcLgxLLCTKCwwmgGt8Igc7fCz3q0wpwTtsJEoLbC7k63wnI5uMKwjrXC9u21wtyWuMJ6gbnC&#xD;&#xa;DPq5whjeusIAAbvCILi+wvwAvsISxrzCtLe6wkLlusL87LzCWDO9wruSvMLocb7CZlq/wvyBvcIO&#xD;&#xa;HrzCpve/wuzEwMKqPb7C5r2+wsSmwsKguMDCiOG+wrTNvcJg4bzCGvC/wlgZwMLc+MHC2l3Fwu8h&#xD;&#xa;v8K8lb3CyAK/whDZwsIGusbCmqDCwsQHwcIcsr/CjBzBwjxfwsJWrMHCVqnAwhFEv8IOSb7CifC+&#xD;&#xa;whGYwcLeUsXC7k/EwhQOxMLaoMTCYLTFwuy+xMKyDcbCYF3EwnrowcK8c8LCemrDwsbQxcLWzMLC&#xD;&#xa;sOjBwnWQwsIa58LCoknCwtx7xMK0ysLCCre+wlpnwsKeTsbCl5/Fwvynw8LuE8PCHlPFwqlvycJU&#xD;&#xa;DsrCARzIwtIbyMLApcfCZmPGwkZ3xcJ6VsfCSDPIwnCDxcK9d8fC99PHwseSxsJRscfCkk7Hwoot&#xD;&#xa;yMJICcrCHbvHwu82x8IU7sXC5KHFwnsKycIup8nCChPIwhQTysKeo8nCdGvJwjT1y8LmAcrC68LJ&#xD;&#xa;wnQIysLAAMfC9tXHwvoCxcKahsTCWd7IwggpzMKmbMrCzlTIwtq/xcKKRsjC5pXKwsJby8I4DcrC&#xD;&#xa;WxPJwmSWyMJvM8rCYlXMwqDUy8JsksjCvzbKwt82ysKqgMnCFqfHwjOVycLmA8vCPoTLwsN1y8KR&#xD;&#xa;ZMrCDVfKwkM1zsK8wMvCKDTLwh5Sz8JOtcrCqHHIwtaDysJwo8rCJljKwsatzMLHSM7CML/MwgaL&#xD;&#xa;ysKOLcrC+pnLwiZNzMJlq8nC5HTIwjZRysLuTMzCJjDPwuvgzMK9XMrCQM3MwkjtzMJiKs7CvGzO&#xD;&#xa;wsVuzMI8tsvCN3bMwhhNy8JwY8fCyM3GwjYCy8JsN8zCqrLMwva0ysL/tMrCBHDMwrQBzcKA8M/C&#xD;&#xa;LkzQwgDAzsLCRM/CVLrPwu8Ty8LWWMvCoADOwlTVz8IQzMzCQLDIwsBDycItHc/CyN7PwiBMzsK/&#xD;&#xa;nM3COdvMwrE/zMIGqMvCZIbLwhXQy8L76czCd5rMwoZxy8IcvM3C9B3OwkjazsIa7MzCZIfOwi/G&#xD;&#xa;0MJL4M/CfLLQwhO2zMImrsvCqB/MwoiwzcIYwdHCgA3PwkZgzMKgvs3CzijQwpiu0ML+hc7CR2fO&#xD;&#xa;wnTtzMJArM3CyOLPwgy6zcIkts7C2tPPwjVczcJleczCpOnOwhjAzsI6ys3CML7NwuXNzcJwmM3C&#xD;&#xa;NtbOwvYyz8K1fMzCDoTMwrNpzsKYbdDCggPRwjmmzsIUC83CtlbNwvqdzsJBadDCeyTPwhzxz8JC&#xD;&#xa;WM7CvlPPwrLOzMKKMs7CFibPwuzVz8JE9NHCed/OwjanzsJwXtDCAnXPwnTO0MIiZNHCZuHQwsIr&#xD;&#xa;z8JVw9DCIlvSwsoe08IWydDCmvTNwvL+z8JkYNHCHInPwlwyz8KhytDCXFjQwrJl0MKpgdLCTBPT&#xD;&#xa;wkBY0MI+QM/CThjRwh4o08L2z8/CrCLRwh770MLL6tHCahDSwpUB0MIU8M/CbX3QwkC20MKi4M/C&#xD;&#xa;NKvPwoCE0cLa19PCWuzQwgtA0cK+H9LCLnrQwiWG0MI86tHCpyrTwkiD0MKOIdDCR+rSwl6308LL&#xD;&#xa;L9PCkJfQwgzd0MKEUdLCeIbTwouX0cI6sdHCE2jTwjR70cLIZs7C0KbQwvBW0cIBk87CDsXPwhUv&#xD;&#xa;1ML7W9TCVPPPwhLH0MJKctPCjqrVwoao1cLyktLCbtLQwqw108Kkl9PC4CjVwtmZ1MKwpNPCGv7U&#xD;&#xa;wjg80sIE1tHCVDXQwvE3z8IiqdHCgo7Uwqim1cJxC9XC0rHYwkzu2cLtCdXCR4/WwvpL1sIoCNbC&#xD;&#xa;lHHUwqyu0sJU0dHCiN3QwnpV0sK949TCWoPWwtx31MI5DNTCw2TUwj5p08LoptXCUPLYwpgl2MJS&#xD;&#xa;4dfCJJrUwkNa0sIuVdHCI57TwqAx1MKmudLCwBXSwn4U1cJldNTCsRLWwujO2cJsd9bC4vHUwjBz&#xD;&#xa;1sKNUtbCJrvWwqwO1sIPktPCqCbVwkYx18J6ZtbCDAvYwjav1MIkgdPCHKzTwna11cL9HtbCMWfW&#xD;&#xa;whIw1cIaKNTC6N3Vwlk/18KCLdfCHm7Uwl9b08JeNdXCruLWwuZQ18I0FNbCNpPTwnjD0cLqStTC&#xD;&#xa;EV/Vwump1MIMBtPCUpHSwtJ61cIdXNbCBXzUwo+g1MI/YdXCYnLUwnLt1MLOnNbC0jPYwgLn2sIt&#xD;&#xa;HtnCYabUwvqk1MIgktTCd1zWwo4h1sIDhtfC7trWwiNG08IuDdPClG3WwmKH1sI29tLCHkDSwrav&#xD;&#xa;1MLOJ9TCLybUwt6w08IfPtbCKwLawrOQ2MKgyNbCcoXVwqRg1MIcNtPCi/vSwvxZ1MJk3NbCnh/W&#xD;&#xa;woqZ1MLoOdTC5pnVwulw1sLlHdfCMFLYwrZB1sLeYdPCRizSwl5f08K8r9XCkjTVwlCL1sIqRtTC&#xD;&#xa;wEfSwlLx08KCINfCh+rk" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="335" value="" name="ident"/>
+          <Attribute id="336" value="48000" name="sampleRate"/>
+          <Attribute id="337" value="16" name="bitDepth"/>
+          <Attribute id="338" value="1" name="gain"/>
+          <Attribute id="339" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="340" start="2736" duration="83" scalar="1/1" mediaStart="2602/1" mediaDuration="83/1" trackNumber="0" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="341" interp="linr"  time="0/1" value="2.5597128445998218" leadInLength="0/1"  name="volume"/>
+          <Parameter id="342"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="343" name = "WinCompression" >
+           <Parameters>
+           <InterpolatingParam id="344" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="attack"/>
+           <InterpolatingParam id="345" interp="linr"  time="0/1" value="3" leadInLength="0/1"   name="gain"/>
+           <Parameter id="346"   name="preset">
+            <Keyframes>
+            <Keyframe id="347"  time="0/1" value="2" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="348" interp="linr"  time="0/1" value="5" leadInLength="0/1"   name="ratio"/>
+           <InterpolatingParam id="349" interp="linr"  time="0/1" value="3500" leadInLength="0/1"   name="release"/>
+           <InterpolatingParam id="350" interp="linr"  time="0/1" value="-15" leadInLength="0/1"   name="threshold"/>
+           </Parameters>
+          </GenericEffect>
+          <GenericEffect id="351" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="352" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="353" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="354"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="355"  time="0/1" value="FBAAAAIAAABErAAAAQIAAK7hbsJleljCKMZlwv1xbMKEDXzCSviBwuw3hsL+xIvCgTKUwoB8mMLs&#xD;&#xa;WZ3CisydwlLJoMIQI6LCw8+hwp05ocKwZ6HCyXGlwnAEqsKWK6zCHdOrwg1arMIpqavChmepwlBr&#xD;&#xa;qsLAK7DClfmswsnQqsJlW63Chq+twjAfrMLNgK3Cz2avwn7FscKVXrPCSU+xwmUMs8JYirTCwamz&#xD;&#xa;woeHtcJoX7LCL0ywwq88t8IScLfCWnS0wg17tsLddrfCC/m3wlAUuMI8gbXCpCy2wuasuMJKVbnC&#xD;&#xa;Yqe5wtJ0usKPUrrCgwS+wjSzvcIGYr3CPLC6wj5nusK37LzCYHe9wvievMKmN77CJ5K+wosGvcJ0&#xD;&#xa;RrzCHmy/wpANwMJnjr3CpsS9wtjewcLgwsDCVl+/wlZgvsJGBr3CZWe/wkIBwcLYJsLC+k3FwuK/&#xD;&#xa;v8Iqwb3CWfu+wqzDwsLPf8bCjPHBwuTKwMKax7/CSSbBwkffwsK86cHC2JjAwvStv8LzEb/CAhO/&#xD;&#xa;woOhwcKhC8XCtsPCwiP0wsIae8PCJefFwhi2xMIxLcXC54fDwgmywcKDjMLCUIzDwiCCxcKkvMLC&#xD;&#xa;SjXCwiBAxML2ecTCEJrDwqSCw8KGRMLChF2+wliAwcLuisbCLH/FwjTuwsJRNcLCx8zDwgoOx8KV&#xD;&#xa;HMnC1kTHwvg5x8LuAcfCeT7Fwm4ixMKZ/8bCxaDHwq3CxcL7V8jCGAPKwpcax8LK2sfCfCvHwkiJ&#xD;&#xa;x8LAVsjCrsHFwihoxsL3WcXC/V/Ewq6ex8JWhsjCkojHwo7yyMJI4sjCzVHJwtzQzMKStcvCOzLK&#xD;&#xa;wm4LycLkysfCltPIwqKRxcJKj8XCd1fKwqKJzMJu18vCTkHJwp4rxsLMwcfCwr3JwpALzMLmP8nC&#xD;&#xa;szPJwp7EyMIaGcrCYvXKwpdFzMJ64cjC5/jJwsghy8I2tsrC1vfHwtAFysJo4crCY07KwsR+y8K7&#xD;&#xa;fcnC/FbIwsp/zMLKUMzCiavMwmLZz8LbW8vChbjJwkwey8L618rCxsrLwpC7zcLYT83CZEnMwiRh&#xD;&#xa;ysKeNcrCODLMwkL1zMLK+8nCIR3Jwr4CycIJU8rCAmPMwrKpzMJw7MrCyqDMwqxJzML+Ic7C/2PO&#xD;&#xa;wkN4y8I3+snCHMjLwrN1y8I64sfCYhXHwkkHy8IRbMvCEpfLwq5JysJIMMrCIFzLwre/y8ISfdDC&#xD;&#xa;Hc/Qwi6GzsJNSs/CNsnPwjqRy8L3IcvCnsnMwsRuzsIv2cvCZOXIwmJhysKCgc3CXV/NwnDOy8Lq&#xD;&#xa;bcvChGzMwi0dzcLycczC8u3LwnAly8KUiszCfrLMwhhBzMI3VczCl4rMwo62zcJ228vClCXNwmH8&#xD;&#xa;z8KQ0M/C8wbRwr6rzMLfosrC5J3Lwqziy8K0YtHCTlzQwuXUy8LItMzCslrPwrb6z8K7XM7CAIjN&#xD;&#xa;wl1wzMJw+M3CNl7QwuZczcIks83ConHPwiCfzcJE0MzCcqLQwlgSz8JQes7CsbXNwlq9zcL3rc7C&#xD;&#xa;StrOwi5bzsJmVM7CaSbOworMzcI5xc7C8N3Owie5zsK+0c3CT/rOwrP+zcLARc/CzZDPwmigzsIR&#xD;&#xa;Bs/CLjXPwpymzMKu0c3C/CLOwoHKzcL93M/CAXzOwmY/zsJ6qtDCNJjQwsTSzsJQGM/CQkPQwtqY&#xD;&#xa;z8JH48/CrFfSwuHL0sLjYdHCbkPOwvrBz8JufNLCSCXQwvagzsJ0ktDClIvRwhIs0MJKMtHCKo7S&#xD;&#xa;wkb20MK4eM3CsCXPwrRJ0MIFbc/CPKLTwite1MLWdtPC1K7Swqg+z8JMlc3CBJ3OwnJWz8JIj8/C&#xD;&#xa;VUXQwk5/08K2rNPCkq3Rwn5I0cKfFtLClqfRwma70MLOb8/CwGbSwiyY0cKWzc/CC8nTwu6a1cLi&#xD;&#xa;utLCCG7OwjpKzsJknM/C9N7RwmdK0cIu4tHC5tLUwm7H08LektDCsLfQwilt0cJ6gM7CuILQwt7x&#xD;&#xa;0cKcVdHCZ9bOwvdbz8JgT9HCTz7UwgNh1cLUMNPCsojRwl0j0cJcUdTCdEzVwrJE1MLnNdTC9QjX&#xD;&#xa;wlQK1MKqodLCELzOwgKazMJW68/CpF3TwhTW08LsJNPCohjYwpyK2cJEGNfCNjrXwqMc1sLIrNXC&#xD;&#xa;Ag7Vwpe61cIV/tPCwqnSwkK708L3OtTC8D3UwkVL1MIOHNPCehvTwngC08KZo9TCjCHWwiGe1cLt&#xD;&#xa;WtfCYkbWwmZu1MJbBNTCXbjVwryy1sLyEdTCUiPTwkgx1cIoLdbCtNTXwoXN2ML+ytTCisDUwkY/&#xD;&#xa;18Kn7tbClKPXwv+Q1MKBtdLCXyjUwmiI18I07tXCDsTWwlTA1cJcKdLCgRHSwtK+1MJEa9bC3EnW&#xD;&#xa;wnEk1sIqJ9fCUHjWwnLZ1cJQMtfCFIDUwiYx08KmyNfC5i/WwpTv1MLU3dXCst3UwonF0MIYoNDC&#xD;&#xa;Au7Rwpgz0sJebdTCzRnUwogT1cLhydTCfvjVwvZF1sIEOtbC8EzUwrP+1MIhmdTC76PVwkq11MKh&#xD;&#xa;sNTCwtDSwpmp1MJwI9XCHUPWwg+L2cI2N9jC5uXUwkbU08LKC9LCFFDVwp1j18I2tNLC4KrRwggg&#xD;&#xa;1MJ029XC2q7Xwi/I1cIxt9bCWsDYwhzE18K+L9jC6H3YwnE01sIyr9XCQ9LUwp9U0sJT3tTC7pPU&#xD;&#xa;wpIw1cISWtjCGiXWwoBi1ML5JtTCTpDUwhR408ImMNTCobrVwjC71MKHCNXCqx7UwjIK1cJgXdbC&#xD;&#xa;Ej7VwhKW1sKCt9fCQZblwutkb8IJ7ljCpShmwoXPbMJdbXzCaCeCwihvhsLP/YvCxmaUwvmcmMIO&#xD;&#xa;cp3C2xyewhb8oMKRL6LCdMmhwghpocLk66HCT6SlwpMdqsJswKzC0keswgJprMKV4avCurqpwvqS&#xD;&#xa;qsKABrDCBb+swjjAqsKaYK3CXCquwoR1rMJrca3ChqWvwvsMssJzn7PCxm+xwlC1ssLiVrTCOeez&#xD;&#xa;wkigtcLgxLLCTKCwwmgGt8Igc7fCz3q0wpwTtsJEoLbC7k63wnI5uMKwjrXC9u21wtyWuMJ6gbnC&#xD;&#xa;DPq5whjeusIAAbvCILi+wvwAvsISxrzCtLe6wkLlusL87LzCWDO9wruSvMLocb7CZlq/wvyBvcIO&#xD;&#xa;HrzCpve/wuzEwMKqPb7C5r2+wsSmwsKguMDCiOG+wrTNvcJg4bzCGvC/wlgZwMLc+MHC2l3Fwu8h&#xD;&#xa;v8K8lb3CyAK/whDZwsIGusbCmqDCwsQHwcIcsr/CjBzBwjxfwsJWrMHCVqnAwhFEv8IOSb7CifC+&#xD;&#xa;whGYwcLeUsXC7k/EwhQOxMLaoMTCYLTFwuy+xMKyDcbCYF3EwnrowcK8c8LCemrDwsbQxcLWzMLC&#xD;&#xa;sOjBwnWQwsIa58LCoknCwtx7xMK0ysLCCre+wlpnwsKeTsbCl5/Fwvynw8LuE8PCHlPFwqlvycJU&#xD;&#xa;DsrCARzIwtIbyMLApcfCZmPGwkZ3xcJ6VsfCSDPIwnCDxcK9d8fC99PHwseSxsJRscfCkk7Hwoot&#xD;&#xa;yMJICcrCHbvHwu82x8IU7sXC5KHFwnsKycIup8nCChPIwhQTysKeo8nCdGvJwjT1y8LmAcrC68LJ&#xD;&#xa;wnQIysLAAMfC9tXHwvoCxcKahsTCWd7IwggpzMKmbMrCzlTIwtq/xcKKRsjC5pXKwsJby8I4DcrC&#xD;&#xa;WxPJwmSWyMJvM8rCYlXMwqDUy8JsksjCvzbKwt82ysKqgMnCFqfHwjOVycLmA8vCPoTLwsN1y8KR&#xD;&#xa;ZMrCDVfKwkM1zsK8wMvCKDTLwh5Sz8JOtcrCqHHIwtaDysJwo8rCJljKwsatzMLHSM7CML/MwgaL&#xD;&#xa;ysKOLcrC+pnLwiZNzMJlq8nC5HTIwjZRysLuTMzCJjDPwuvgzMK9XMrCQM3MwkjtzMJiKs7CvGzO&#xD;&#xa;wsVuzMI8tsvCN3bMwhhNy8JwY8fCyM3GwjYCy8JsN8zCqrLMwva0ysL/tMrCBHDMwrQBzcKA8M/C&#xD;&#xa;LkzQwgDAzsLCRM/CVLrPwu8Ty8LWWMvCoADOwlTVz8IQzMzCQLDIwsBDycItHc/CyN7PwiBMzsK/&#xD;&#xa;nM3COdvMwrE/zMIGqMvCZIbLwhXQy8L76czCd5rMwoZxy8IcvM3C9B3OwkjazsIa7MzCZIfOwi/G&#xD;&#xa;0MJL4M/CfLLQwhO2zMImrsvCqB/MwoiwzcIYwdHCgA3PwkZgzMKgvs3CzijQwpiu0ML+hc7CR2fO&#xD;&#xa;wnTtzMJArM3CyOLPwgy6zcIkts7C2tPPwjVczcJleczCpOnOwhjAzsI6ys3CML7NwuXNzcJwmM3C&#xD;&#xa;NtbOwvYyz8K1fMzCDoTMwrNpzsKYbdDCggPRwjmmzsIUC83CtlbNwvqdzsJBadDCeyTPwhzxz8JC&#xD;&#xa;WM7CvlPPwrLOzMKKMs7CFibPwuzVz8JE9NHCed/OwjanzsJwXtDCAnXPwnTO0MIiZNHCZuHQwsIr&#xD;&#xa;z8JVw9DCIlvSwsoe08IWydDCmvTNwvL+z8JkYNHCHInPwlwyz8KhytDCXFjQwrJl0MKpgdLCTBPT&#xD;&#xa;wkBY0MI+QM/CThjRwh4o08L2z8/CrCLRwh770MLL6tHCahDSwpUB0MIU8M/CbX3QwkC20MKi4M/C&#xD;&#xa;NKvPwoCE0cLa19PCWuzQwgtA0cK+H9LCLnrQwiWG0MI86tHCpyrTwkiD0MKOIdDCR+rSwl6308LL&#xD;&#xa;L9PCkJfQwgzd0MKEUdLCeIbTwouX0cI6sdHCE2jTwjR70cLIZs7C0KbQwvBW0cIBk87CDsXPwhUv&#xD;&#xa;1ML7W9TCVPPPwhLH0MJKctPCjqrVwoao1cLyktLCbtLQwqw108Kkl9PC4CjVwtmZ1MKwpNPCGv7U&#xD;&#xa;wjg80sIE1tHCVDXQwvE3z8IiqdHCgo7Uwqim1cJxC9XC0rHYwkzu2cLtCdXCR4/WwvpL1sIoCNbC&#xD;&#xa;lHHUwqyu0sJU0dHCiN3QwnpV0sK949TCWoPWwtx31MI5DNTCw2TUwj5p08LoptXCUPLYwpgl2MJS&#xD;&#xa;4dfCJJrUwkNa0sIuVdHCI57TwqAx1MKmudLCwBXSwn4U1cJldNTCsRLWwujO2cJsd9bC4vHUwjBz&#xD;&#xa;1sKNUtbCJrvWwqwO1sIPktPCqCbVwkYx18J6ZtbCDAvYwjav1MIkgdPCHKzTwna11cL9HtbCMWfW&#xD;&#xa;whIw1cIaKNTC6N3Vwlk/18KCLdfCHm7Uwl9b08JeNdXCruLWwuZQ18I0FNbCNpPTwnjD0cLqStTC&#xD;&#xa;EV/Vwump1MIMBtPCUpHSwtJ61cIdXNbCBXzUwo+g1MI/YdXCYnLUwnLt1MLOnNbC0jPYwgLn2sIt&#xD;&#xa;HtnCYabUwvqk1MIgktTCd1zWwo4h1sIDhtfC7trWwiNG08IuDdPClG3WwmKH1sI29tLCHkDSwrav&#xD;&#xa;1MLOJ9TCLybUwt6w08IfPtbCKwLawrOQ2MKgyNbCcoXVwqRg1MIcNtPCi/vSwvxZ1MJk3NbCnh/W&#xD;&#xa;woqZ1MLoOdTC5pnVwulw1sLlHdfCMFLYwrZB1sLeYdPCRizSwl5f08K8r9XCkjTVwlCL1sIqRtTC&#xD;&#xa;wEfSwlLx08KCINfCh+rk" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="356" value="" name="ident"/>
+          <Attribute id="357" value="48000" name="sampleRate"/>
+          <Attribute id="358" value="16" name="bitDepth"/>
+          <Attribute id="359" value="1" name="gain"/>
+          <Attribute id="360" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="361" start="2819" duration="272" scalar="1/1" mediaStart="2707/1" mediaDuration="272/1" trackNumber="0" src="4" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="362" interp="linr"  time="0/1" value="2.5597128445998218" leadInLength="0/1"  name="volume"/>
+          <Parameter id="363"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="364" name = "WinCompression" >
+           <Parameters>
+           <InterpolatingParam id="365" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="attack"/>
+           <InterpolatingParam id="366" interp="linr"  time="0/1" value="3" leadInLength="0/1"   name="gain"/>
+           <Parameter id="367"   name="preset">
+            <Keyframes>
+            <Keyframe id="368"  time="0/1" value="2" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="369" interp="linr"  time="0/1" value="5" leadInLength="0/1"   name="ratio"/>
+           <InterpolatingParam id="370" interp="linr"  time="0/1" value="3500" leadInLength="0/1"   name="release"/>
+           <InterpolatingParam id="371" interp="linr"  time="0/1" value="-15" leadInLength="0/1"   name="threshold"/>
+           </Parameters>
+          </GenericEffect>
+          <GenericEffect id="372" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="373" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="374" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="375"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="376"  time="0/1" value="FBAAAAIAAABErAAAAQIAAK7hbsJleljCKMZlwv1xbMKEDXzCSviBwuw3hsL+xIvCgTKUwoB8mMLs&#xD;&#xa;WZ3CisydwlLJoMIQI6LCw8+hwp05ocKwZ6HCyXGlwnAEqsKWK6zCHdOrwg1arMIpqavChmepwlBr&#xD;&#xa;qsLAK7DClfmswsnQqsJlW63Chq+twjAfrMLNgK3Cz2avwn7FscKVXrPCSU+xwmUMs8JYirTCwamz&#xD;&#xa;woeHtcJoX7LCL0ywwq88t8IScLfCWnS0wg17tsLddrfCC/m3wlAUuMI8gbXCpCy2wuasuMJKVbnC&#xD;&#xa;Yqe5wtJ0usKPUrrCgwS+wjSzvcIGYr3CPLC6wj5nusK37LzCYHe9wvievMKmN77CJ5K+wosGvcJ0&#xD;&#xa;RrzCHmy/wpANwMJnjr3CpsS9wtjewcLgwsDCVl+/wlZgvsJGBr3CZWe/wkIBwcLYJsLC+k3FwuK/&#xD;&#xa;v8Iqwb3CWfu+wqzDwsLPf8bCjPHBwuTKwMKax7/CSSbBwkffwsK86cHC2JjAwvStv8LzEb/CAhO/&#xD;&#xa;woOhwcKhC8XCtsPCwiP0wsIae8PCJefFwhi2xMIxLcXC54fDwgmywcKDjMLCUIzDwiCCxcKkvMLC&#xD;&#xa;SjXCwiBAxML2ecTCEJrDwqSCw8KGRMLChF2+wliAwcLuisbCLH/FwjTuwsJRNcLCx8zDwgoOx8KV&#xD;&#xa;HMnC1kTHwvg5x8LuAcfCeT7Fwm4ixMKZ/8bCxaDHwq3CxcL7V8jCGAPKwpcax8LK2sfCfCvHwkiJ&#xD;&#xa;x8LAVsjCrsHFwihoxsL3WcXC/V/Ewq6ex8JWhsjCkojHwo7yyMJI4sjCzVHJwtzQzMKStcvCOzLK&#xD;&#xa;wm4LycLkysfCltPIwqKRxcJKj8XCd1fKwqKJzMJu18vCTkHJwp4rxsLMwcfCwr3JwpALzMLmP8nC&#xD;&#xa;szPJwp7EyMIaGcrCYvXKwpdFzMJ64cjC5/jJwsghy8I2tsrC1vfHwtAFysJo4crCY07KwsR+y8K7&#xD;&#xa;fcnC/FbIwsp/zMLKUMzCiavMwmLZz8LbW8vChbjJwkwey8L618rCxsrLwpC7zcLYT83CZEnMwiRh&#xD;&#xa;ysKeNcrCODLMwkL1zMLK+8nCIR3Jwr4CycIJU8rCAmPMwrKpzMJw7MrCyqDMwqxJzML+Ic7C/2PO&#xD;&#xa;wkN4y8I3+snCHMjLwrN1y8I64sfCYhXHwkkHy8IRbMvCEpfLwq5JysJIMMrCIFzLwre/y8ISfdDC&#xD;&#xa;Hc/Qwi6GzsJNSs/CNsnPwjqRy8L3IcvCnsnMwsRuzsIv2cvCZOXIwmJhysKCgc3CXV/NwnDOy8Lq&#xD;&#xa;bcvChGzMwi0dzcLycczC8u3LwnAly8KUiszCfrLMwhhBzMI3VczCl4rMwo62zcJ228vClCXNwmH8&#xD;&#xa;z8KQ0M/C8wbRwr6rzMLfosrC5J3Lwqziy8K0YtHCTlzQwuXUy8LItMzCslrPwrb6z8K7XM7CAIjN&#xD;&#xa;wl1wzMJw+M3CNl7QwuZczcIks83ConHPwiCfzcJE0MzCcqLQwlgSz8JQes7CsbXNwlq9zcL3rc7C&#xD;&#xa;StrOwi5bzsJmVM7CaSbOworMzcI5xc7C8N3Owie5zsK+0c3CT/rOwrP+zcLARc/CzZDPwmigzsIR&#xD;&#xa;Bs/CLjXPwpymzMKu0c3C/CLOwoHKzcL93M/CAXzOwmY/zsJ6qtDCNJjQwsTSzsJQGM/CQkPQwtqY&#xD;&#xa;z8JH48/CrFfSwuHL0sLjYdHCbkPOwvrBz8JufNLCSCXQwvagzsJ0ktDClIvRwhIs0MJKMtHCKo7S&#xD;&#xa;wkb20MK4eM3CsCXPwrRJ0MIFbc/CPKLTwite1MLWdtPC1K7Swqg+z8JMlc3CBJ3OwnJWz8JIj8/C&#xD;&#xa;VUXQwk5/08K2rNPCkq3Rwn5I0cKfFtLClqfRwma70MLOb8/CwGbSwiyY0cKWzc/CC8nTwu6a1cLi&#xD;&#xa;utLCCG7OwjpKzsJknM/C9N7RwmdK0cIu4tHC5tLUwm7H08LektDCsLfQwilt0cJ6gM7CuILQwt7x&#xD;&#xa;0cKcVdHCZ9bOwvdbz8JgT9HCTz7UwgNh1cLUMNPCsojRwl0j0cJcUdTCdEzVwrJE1MLnNdTC9QjX&#xD;&#xa;wlQK1MKqodLCELzOwgKazMJW68/CpF3TwhTW08LsJNPCohjYwpyK2cJEGNfCNjrXwqMc1sLIrNXC&#xD;&#xa;Ag7Vwpe61cIV/tPCwqnSwkK708L3OtTC8D3UwkVL1MIOHNPCehvTwngC08KZo9TCjCHWwiGe1cLt&#xD;&#xa;WtfCYkbWwmZu1MJbBNTCXbjVwryy1sLyEdTCUiPTwkgx1cIoLdbCtNTXwoXN2ML+ytTCisDUwkY/&#xD;&#xa;18Kn7tbClKPXwv+Q1MKBtdLCXyjUwmiI18I07tXCDsTWwlTA1cJcKdLCgRHSwtK+1MJEa9bC3EnW&#xD;&#xa;wnEk1sIqJ9fCUHjWwnLZ1cJQMtfCFIDUwiYx08KmyNfC5i/WwpTv1MLU3dXCst3UwonF0MIYoNDC&#xD;&#xa;Au7Rwpgz0sJebdTCzRnUwogT1cLhydTCfvjVwvZF1sIEOtbC8EzUwrP+1MIhmdTC76PVwkq11MKh&#xD;&#xa;sNTCwtDSwpmp1MJwI9XCHUPWwg+L2cI2N9jC5uXUwkbU08LKC9LCFFDVwp1j18I2tNLC4KrRwggg&#xD;&#xa;1MJ029XC2q7Xwi/I1cIxt9bCWsDYwhzE18K+L9jC6H3YwnE01sIyr9XCQ9LUwp9U0sJT3tTC7pPU&#xD;&#xa;wpIw1cISWtjCGiXWwoBi1ML5JtTCTpDUwhR408ImMNTCobrVwjC71MKHCNXCqx7UwjIK1cJgXdbC&#xD;&#xa;Ej7VwhKW1sKCt9fCQZblwutkb8IJ7ljCpShmwoXPbMJdbXzCaCeCwihvhsLP/YvCxmaUwvmcmMIO&#xD;&#xa;cp3C2xyewhb8oMKRL6LCdMmhwghpocLk66HCT6SlwpMdqsJswKzC0keswgJprMKV4avCurqpwvqS&#xD;&#xa;qsKABrDCBb+swjjAqsKaYK3CXCquwoR1rMJrca3ChqWvwvsMssJzn7PCxm+xwlC1ssLiVrTCOeez&#xD;&#xa;wkigtcLgxLLCTKCwwmgGt8Igc7fCz3q0wpwTtsJEoLbC7k63wnI5uMKwjrXC9u21wtyWuMJ6gbnC&#xD;&#xa;DPq5whjeusIAAbvCILi+wvwAvsISxrzCtLe6wkLlusL87LzCWDO9wruSvMLocb7CZlq/wvyBvcIO&#xD;&#xa;HrzCpve/wuzEwMKqPb7C5r2+wsSmwsKguMDCiOG+wrTNvcJg4bzCGvC/wlgZwMLc+MHC2l3Fwu8h&#xD;&#xa;v8K8lb3CyAK/whDZwsIGusbCmqDCwsQHwcIcsr/CjBzBwjxfwsJWrMHCVqnAwhFEv8IOSb7CifC+&#xD;&#xa;whGYwcLeUsXC7k/EwhQOxMLaoMTCYLTFwuy+xMKyDcbCYF3EwnrowcK8c8LCemrDwsbQxcLWzMLC&#xD;&#xa;sOjBwnWQwsIa58LCoknCwtx7xMK0ysLCCre+wlpnwsKeTsbCl5/Fwvynw8LuE8PCHlPFwqlvycJU&#xD;&#xa;DsrCARzIwtIbyMLApcfCZmPGwkZ3xcJ6VsfCSDPIwnCDxcK9d8fC99PHwseSxsJRscfCkk7Hwoot&#xD;&#xa;yMJICcrCHbvHwu82x8IU7sXC5KHFwnsKycIup8nCChPIwhQTysKeo8nCdGvJwjT1y8LmAcrC68LJ&#xD;&#xa;wnQIysLAAMfC9tXHwvoCxcKahsTCWd7IwggpzMKmbMrCzlTIwtq/xcKKRsjC5pXKwsJby8I4DcrC&#xD;&#xa;WxPJwmSWyMJvM8rCYlXMwqDUy8JsksjCvzbKwt82ysKqgMnCFqfHwjOVycLmA8vCPoTLwsN1y8KR&#xD;&#xa;ZMrCDVfKwkM1zsK8wMvCKDTLwh5Sz8JOtcrCqHHIwtaDysJwo8rCJljKwsatzMLHSM7CML/MwgaL&#xD;&#xa;ysKOLcrC+pnLwiZNzMJlq8nC5HTIwjZRysLuTMzCJjDPwuvgzMK9XMrCQM3MwkjtzMJiKs7CvGzO&#xD;&#xa;wsVuzMI8tsvCN3bMwhhNy8JwY8fCyM3GwjYCy8JsN8zCqrLMwva0ysL/tMrCBHDMwrQBzcKA8M/C&#xD;&#xa;LkzQwgDAzsLCRM/CVLrPwu8Ty8LWWMvCoADOwlTVz8IQzMzCQLDIwsBDycItHc/CyN7PwiBMzsK/&#xD;&#xa;nM3COdvMwrE/zMIGqMvCZIbLwhXQy8L76czCd5rMwoZxy8IcvM3C9B3OwkjazsIa7MzCZIfOwi/G&#xD;&#xa;0MJL4M/CfLLQwhO2zMImrsvCqB/MwoiwzcIYwdHCgA3PwkZgzMKgvs3CzijQwpiu0ML+hc7CR2fO&#xD;&#xa;wnTtzMJArM3CyOLPwgy6zcIkts7C2tPPwjVczcJleczCpOnOwhjAzsI6ys3CML7NwuXNzcJwmM3C&#xD;&#xa;NtbOwvYyz8K1fMzCDoTMwrNpzsKYbdDCggPRwjmmzsIUC83CtlbNwvqdzsJBadDCeyTPwhzxz8JC&#xD;&#xa;WM7CvlPPwrLOzMKKMs7CFibPwuzVz8JE9NHCed/OwjanzsJwXtDCAnXPwnTO0MIiZNHCZuHQwsIr&#xD;&#xa;z8JVw9DCIlvSwsoe08IWydDCmvTNwvL+z8JkYNHCHInPwlwyz8KhytDCXFjQwrJl0MKpgdLCTBPT&#xD;&#xa;wkBY0MI+QM/CThjRwh4o08L2z8/CrCLRwh770MLL6tHCahDSwpUB0MIU8M/CbX3QwkC20MKi4M/C&#xD;&#xa;NKvPwoCE0cLa19PCWuzQwgtA0cK+H9LCLnrQwiWG0MI86tHCpyrTwkiD0MKOIdDCR+rSwl6308LL&#xD;&#xa;L9PCkJfQwgzd0MKEUdLCeIbTwouX0cI6sdHCE2jTwjR70cLIZs7C0KbQwvBW0cIBk87CDsXPwhUv&#xD;&#xa;1ML7W9TCVPPPwhLH0MJKctPCjqrVwoao1cLyktLCbtLQwqw108Kkl9PC4CjVwtmZ1MKwpNPCGv7U&#xD;&#xa;wjg80sIE1tHCVDXQwvE3z8IiqdHCgo7Uwqim1cJxC9XC0rHYwkzu2cLtCdXCR4/WwvpL1sIoCNbC&#xD;&#xa;lHHUwqyu0sJU0dHCiN3QwnpV0sK949TCWoPWwtx31MI5DNTCw2TUwj5p08LoptXCUPLYwpgl2MJS&#xD;&#xa;4dfCJJrUwkNa0sIuVdHCI57TwqAx1MKmudLCwBXSwn4U1cJldNTCsRLWwujO2cJsd9bC4vHUwjBz&#xD;&#xa;1sKNUtbCJrvWwqwO1sIPktPCqCbVwkYx18J6ZtbCDAvYwjav1MIkgdPCHKzTwna11cL9HtbCMWfW&#xD;&#xa;whIw1cIaKNTC6N3Vwlk/18KCLdfCHm7Uwl9b08JeNdXCruLWwuZQ18I0FNbCNpPTwnjD0cLqStTC&#xD;&#xa;EV/Vwump1MIMBtPCUpHSwtJ61cIdXNbCBXzUwo+g1MI/YdXCYnLUwnLt1MLOnNbC0jPYwgLn2sIt&#xD;&#xa;HtnCYabUwvqk1MIgktTCd1zWwo4h1sIDhtfC7trWwiNG08IuDdPClG3WwmKH1sI29tLCHkDSwrav&#xD;&#xa;1MLOJ9TCLybUwt6w08IfPtbCKwLawrOQ2MKgyNbCcoXVwqRg1MIcNtPCi/vSwvxZ1MJk3NbCnh/W&#xD;&#xa;woqZ1MLoOdTC5pnVwulw1sLlHdfCMFLYwrZB1sLeYdPCRizSwl5f08K8r9XCkjTVwlCL1sIqRtTC&#xD;&#xa;wEfSwlLx08KCINfCh+rk" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="377" value="" name="ident"/>
+          <Attribute id="378" value="48000" name="sampleRate"/>
+          <Attribute id="379" value="16" name="bitDepth"/>
+          <Attribute id="380" value="1" name="gain"/>
+          <Attribute id="381" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+       </Medias>
+      </GenericTrack>
+      <GenericTrack id="382"  >
+       <Attributes>
+        <Attribute id="383" value="" name="ident"/>
+        <Attribute id="384" value="0" name="audioMuted"/>
+        <Attribute id="385" value="0" name="videoHidden"/>
+       </Attributes>
+       <MetaData>
+        <entry key="IsLocked" val="False"/>
+        <entry key="WinTrackHeight" val="100.18181818181819"/>
+       </MetaData>
+       <Medias>
+        <Caption id="386" start="51" duration="3040" scalar="1/1" mediaStart="0/1" mediaDuration="3040/1" maxMediaDuration="9.22337e+018"  allowTrimOut="1"  >
+         <Parameters>
+          <Parameter id="387"  name="captionData">
+           <Keyframes>
+           <Keyframe id="388"  time="-9999999/1" value="{16,In this video,  ,0}" leadInLength="0/1"  />
+           <Keyframe id="389"  time="40/1" value="{51,you will learn how to create a simple content type.,0}" leadInLength="0/1"  />
+           <Keyframe id="390"  time="112/1" value="{43,You must be logged in as a content manager ,0}" leadInLength="0/1"  />
+           <Keyframe id="391"  time="182/1" value="{58,to access the Persona Bar options for Structured Content. ,0}" leadInLength="0/1"  />
+           <Keyframe id="392"  time="302/1" value="{47,In the Persona Bar, go to Manage, then Content.,0}" leadInLength="0/1"  />
+           <Keyframe id="393"  time="436/1" value="{28,Go to the Content Types tab.,0}" leadInLength="0/1"  />
+           <Keyframe id="394"  time="511/1" value="{61,DNN provides you with default Content Types that you can use.,0}" leadInLength="0/1"  />
+           <Keyframe id="395"  time="639/1" value="{40,You can duplicate a default Content Type,0}" leadInLength="0/1"  />
+           <Keyframe id="396"  time="703/1" value="{46,and then customize it according to your needs.,0}" leadInLength="0/1"  />
+           <Keyframe id="397"  time="799/1" value="{46,Or you can create your own custom Content Type,0}" leadInLength="0/1"  />
+           <Keyframe id="398"  time="889/1" value="{43,by clicking the Create Content Type button.,0}" leadInLength="0/1"  />
+           <Keyframe id="399"  time="990/1" value="{47,Enter the name of the new Content Type up here.,0}" leadInLength="0/1"  />
+           <Keyframe id="400"  time="1180/1" value="{42,In the Settings section of the left panel,,0}" leadInLength="0/1"  />
+           <Keyframe id="401"  time="1252/1" value="{50,you can modify the properties of the Content Type,,0}" leadInLength="0/1"  />
+           <Keyframe id="402"  time="1326/1" value="{55,including its description and the icon to represent it.,0}" leadInLength="0/1"  />
+           <Keyframe id="403"  time="1471/1" value="{45,Under the Content tab, you&apos;ll find the canvas,0}" leadInLength="0/1"  />
+           <Keyframe id="404"  time="1556/1" value="{39,where you drag and drop content fields.,0}" leadInLength="0/1"  />
+           <Keyframe id="405"  time="1653/1" value="{46,You can modify the properties of the new field,0}" leadInLength="0/1"  />
+           <Keyframe id="406"  time="1708/1" value="{42,in the Settings section of the left panel.,0}" leadInLength="0/1"  />
+           <Keyframe id="407"  time="1813/1" value="{56,In the Validation field, you can make the field required,0}" leadInLength="0/1"  />
+           <Keyframe id="408"  time="1914/1" value="{33,or restrict what data is allowed.,0}" leadInLength="0/1"  />
+           <Keyframe id="409"  time="2007/1" value="{43,When you&apos;re done with the field properties,,0}" leadInLength="0/1"  />
+           <Keyframe id="410"  time="2077/1" value="{40,close the left panel to add more fields.,0}" leadInLength="0/1"  />
+           <Keyframe id="411"  time="2179/1" value="{79,Each type of field and each form of that field could have different properties.,0}" leadInLength="0/1"  />
+           <Keyframe id="412"  time="2319/1" value="{0,,0}" leadInLength="0/1"  />
+           <Keyframe id="413"  time="2414/1" value="{42,You can change the properties again later,,0}" leadInLength="0/1"  />
+           <Keyframe id="414"  time="2480/1" value="{46,simply by clicking the field you want to edit.,0}" leadInLength="0/1"  />
+           <Keyframe id="415"  time="2576/1" value="{61,You can also duplicate or delete the field using these icons.,0}" leadInLength="0/1"  />
+           <Keyframe id="416"  time="2688/1" value="{50,Duplicating the field copies the current settings.,0}" leadInLength="0/1"  />
+           <Keyframe id="417"  time="2779/1" value="{46,When you&apos;re done adding and configuring fields,0}" leadInLength="0/1"  />
+           <Keyframe id="418"  time="2836/1" value="{40,to your custom Content Type, click Save.,0}" leadInLength="0/1"  />
+           <Keyframe id="419"  time="2940/1" value="{47,Your new Content Type is now available for use.,0}" leadInLength="0/1"  />
+           </Keyframes>
+          </Parameter>
+          <Parameter id="420"  name="toc"/>
+          <Parameter id="421"  name="quiz"/>
+         </Parameters>
+         <Attributes>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </Caption>
+       </Medias>
+      </GenericTrack>
+      <GenericTrack id="422"  >
+       <Attributes>
+        <Attribute id="423" value="" name="ident"/>
+        <Attribute id="424" value="0" name="audioMuted"/>
+        <Attribute id="425" value="0" name="videoHidden"/>
+       </Attributes>
+       <MetaData>
+        <entry key="IsLocked" val="False"/>
+        <entry key="WinTrackHeight" val="100.18181818181819"/>
+       </MetaData>
+       <Medias>
+       </Medias>
+      </GenericTrack>
+     </Tracks>
+    </GenericMixer>
+   <CaptionAttributes id="426"  >
+    <Attribute id="427" value="1" name="captionsEnabled"/>
+    <Attribute id="428" value="Trebuchet MS" name="captionsFontName"/>
+    <Attribute id="429" value="20" name="captionsFontSize"/>
+    <Attribute id="430" value="(0,0,0,255)" name="captionsBackgroundColor"/>
+    <Attribute id="431" value="(255,255,255,255)" name="captionsForegroundColor"/>
+    <Attribute id="432" value="en" name="lang"/>
+    <Attribute id="433" value="0" name="captionsAlignment"/>
+    <Attribute id="434" value="0" name="captionsDefaultFontSize"/>
+    <Attribute id="435" value="0.5" name="captionsOpacity"/>
+    <Attribute id="436" value="1" name="captionsBackgroundEnabled"/>
+    <Attribute id="437" value="1" name="captionsBackgroundOnlyAroundText"/>
+   </CaptionAttributes>
+   <Parameters>
+    <VectorParam id="438"  name="eyePosition">
+     <InterpolatingParam id="439" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="440" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="441" interp="linr"  time="0/1" value="3000" leadInLength="0/1"  />
+    </VectorParam>
+    <VectorParam id="442"  name="eyeLookAtPosition">
+     <InterpolatingParam id="443" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="444" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="445" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+    </VectorParam>
+    <VectorParam id="446"  name="eyeUpVector">
+     <InterpolatingParam id="447" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="448" interp="linr"  time="0/1" value="1" leadInLength="0/1"  />
+     <InterpolatingParam id="449" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+    </VectorParam>
+    <InterpolatingParam id="450" interp="linr"  time="0/1" value="0.23885785" leadInLength="0/1"  name="fov"/>
+    <InterpolatingParam id="451" interp="linr"  time="0/1" value="1.5" leadInLength="0/1"  name="nearClipDistance"/>
+    <InterpolatingParam id="452" interp="linr"  time="0/1" value="6000" leadInLength="0/1"  name="farClipDistance"/>
+   </Parameters>
+  </Timeline>
+ </Project>
+</GoProject>
+</CSMLData>
+
+</Project_Data>

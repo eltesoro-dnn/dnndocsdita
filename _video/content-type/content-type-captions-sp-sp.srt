@@ -1,0 +1,123 @@
+﻿1
+00:00:01,700 --> 00:00:03,033
+En este vídeo,
+
+2
+00:00:03,033 --> 00:00:05,433
+aprenderás cómo crear un simple tipo de contenido.
+
+3
+00:00:05,433 --> 00:00:07,766
+Debe iniciar la sesión como un gestor de contenidos
+
+4
+00:00:07,766 --> 00:00:11,766
+para acceder a las opciones de la Persona Bar de contenido estructurado.
+
+5
+00:00:11,766 --> 00:00:16,232
+En la Persona Bar, vaya a Manage, a continuación, Content.
+
+6
+00:00:16,233 --> 00:00:18,733
+Ir a la ficha Content Types.
+
+7
+00:00:18,733 --> 00:00:22,999
+DNN le proporciona tipos de contenido por defecto que se pueden utilizar.
+
+8
+00:00:23,000 --> 00:00:25,133
+Puede duplicar el tipo de contenido por defecto
+
+9
+00:00:25,133 --> 00:00:28,333
+y luego personalizar de acuerdo a sus necesidades.
+
+10
+00:00:28,333 --> 00:00:31,333
+O bien, puede crear su propio Tipo de Contenido personalizado
+
+11
+00:00:31,333 --> 00:00:34,699
+haciendo clic en el botón Create Content Type.
+
+12
+00:00:34,700 --> 00:00:41,033
+Introduzca el nombre del nuevo tipo de contenido aquí.
+
+13
+00:00:41,033 --> 00:00:43,433
+En la sección Settings del panel de la izquierda,
+
+14
+00:00:43,433 --> 00:00:45,899
+se pueden modificar las propiedades del tipo de contenido,
+
+15
+00:00:45,900 --> 00:00:50,733
+incluyendo su descripción y el icono para representarla.
+
+16
+00:00:50,733 --> 00:00:53,566
+En la pestaña Content, encontrará el lienzo
+
+17
+00:00:53,566 --> 00:00:56,799
+donde arrastrar y soltar campos de contenido.
+
+18
+00:00:56,800 --> 00:00:58,633
+Puede modificar las propiedades del nuevo campo
+
+19
+00:00:58,633 --> 00:01:02,133
+en la sección Settings del panel de la izquierda.
+
+20
+00:01:02,133 --> 00:01:05,499
+En el ficha Validation, puede hacer que el campo sea obligatorio
+
+21
+00:01:05,500 --> 00:01:08,600
+o restringir los datos que se permitió.
+
+22
+00:01:08,600 --> 00:01:10,933
+Cuando haya terminado con las propiedades de los campos,
+
+23
+00:01:10,933 --> 00:01:14,333
+cerrar el panel de la izquierda para añadir más campos.
+
+24
+00:01:14,333 --> 00:01:18,999
+Cada tipo de campo y cada forma de ese campo podrían tener diferentes propiedades.
+
+26
+00:01:22,166 --> 00:01:24,366
+Puede cambiar las propiedades de nuevo más tarde,
+
+27
+00:01:24,366 --> 00:01:27,566
+simplemente haciendo clic en el campo que desea editar.
+
+28
+00:01:27,566 --> 00:01:31,299
+También puede duplicar o eliminar el campo de uso de estos iconos.
+
+29
+00:01:31,300 --> 00:01:34,333
+La duplicación de las copias de campo la configuración actual.
+
+30
+00:01:34,333 --> 00:01:36,233
+Cuando haya terminado de agregar y configurar los campos
+
+31
+00:01:36,233 --> 00:01:39,699
+a su tipo de contenido personalizado, haga clic en Save.
+
+32
+00:01:39,700 --> 00:01:43,033
+El nuevo tipo de contenido ya está disponible para su uso.

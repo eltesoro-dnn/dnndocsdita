@@ -34,6 +34,16 @@
 
 		<section conkeyref="k-bptext/section-prodavail-E"></section>
 
+        <section id="video">
+            <p>This video briefly demonstrates how to create a custom content type.</p>
+            <object width="640" height="360" data="http://fast.wistia.net/embed/iframe/z8zoa09xkx?videoFoam=true">
+                <param name="src" value="http://fast.wistia.net/embed/iframe/z8zoa09xkx?videoFoam=true"/>
+                <param name="movie" value="http://fast.wistia.net/embed/iframe/z8zoa09xkx?videoFoam=true"/>
+                <param name="allowFullScreen" value="true"/>
+                <param name="allowscriptaccess" value="always"/>
+            </object>
+        </section>
+
         <steps>
 			<step conkeyref="k-bpsteps/step-pb-gotomanagecontent"><cmd/></step>
 			<step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttypetab-createbtn"><cmd/></step>

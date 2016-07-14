@@ -84,6 +84,7 @@ xcopy %_gitdir%\_content\*.dita*         %_blddir%                /i/s/v/y
 xcopy %_gitdir%\_content\*.png           %_blddir%                /i/s/v/y
 xcopy %_gitdir%\_content\*.gif           %_blddir%                /i/s/v/y
 xcopy %_gitdir%\_content\*.svg           %_blddir%                /i/s/v/y
+:. xcopy %_gitdir%\_content\*.mp4           %_blddir%                /i/s/v/y
 xcopy %_gitdir%\_content\common\samples  %_blddir%\common\samples /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\dnn*.css     %_blddir%\_themes\dnn    /i/s/v/y
 
@@ -113,13 +114,14 @@ call ant %_transtype%%_subbld% -f %DITA_HOME%\dnn_build.xml -l %_logfile%
 for %%v in ( administrators developers designers content-managers community-managers ) do  if not exist %_outdir%\%%v\*  goto :ifbuilderror
 
 
-echo Copying additional files required to the output ....
+echo Copying additional required files to the output ....
 xcopy %_gitdir%\_content\index.html          %_outdir%\.                /i/s/v/y
 xcopy %_gitdir%\_content\searchresults.html  %_outdir%\.                /i/s/v/y
 xcopy %_gitdir%\_content\common\samples      %_outdir%\common\samples   /i/s/v/y
 xcopy %_gitdir%\_content\ssi                 %_outdir%\ssi              /i/s/v/y
 for %%v in ( jpg png gif svg ) do  xcopy %_gitdir%\_content\common\img\*.%%v    %_outdir%\common\img       /i/s/v/y
 for %%v in ( jpg png gif svg ) do  xcopy %_gitdir%\_themes\dnn\*.%%v            %_outdir%\_theme           /i/s/v/y
+:. for %%v in ( mp4 )             do  xcopy %_gitdir%\_content\common\vid\*.%%v    %_outdir%\common\vid       /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\26D3F6*          %_outdir%\_theme           /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\*.js             %_outdir%\_theme           /i/s/v/y
 

@@ -16,12 +16,12 @@
         </copyright>
         <metadata>
             <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
-			<!--
+            <!--
             <prodinfo>
                 <prodname>Evoq Content</prodname>
                 <vrmlist><vrm version="9" release="0"/></vrmlist>
             </prodinfo>
-			-->
+            -->
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
                 <vrmlist><vrm version="8" release="5"/></vrmlist>
@@ -32,22 +32,12 @@
 
     <taskbody>
 
-		<section conkeyref="k-bptext/section-prodavail-E"></section>
+        <section conkeyref="k-bptext/section-prodavail-E"></section>
 
         <steps>
-			<step conkeyref="k-bpsteps/step-pb-gotomanagecontent"><cmd/></step>
-
-            <step>
-            	<cmd></cmd>
-            </step>
-
-            <step>
-            	<cmd></cmd>
-            </step>
-
-            <step>
-            	<cmd></cmd>
-            </step>
+            <step conkeyref="k-bpsteps/step-pb-gotomanagecontent"><cmd/></step>
+            <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttab-ellipses-delete"><cmd/></step>
+            <step><cmd>Confirm.</cmd></step>
         </steps>
 
     </taskbody>
