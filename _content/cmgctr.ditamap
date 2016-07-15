@@ -26,7 +26,7 @@
 		<mapref href="content-managers/managing-your-community/managing-your-community.ditamap" />
 
         <!-- Securing Your Site -->
-        <mapref href="content-managers/securing-your-site/security-cmg.ditamap" />
+        <mapref href="content-managers/security/security-cmg.ditamap" />
 
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="content-managers/content-manager-references.dita" collection-type="family">
@@ -107,7 +107,7 @@
 		<relrow>
 			<relcell>
 				<topicref format="dita" type="topic"     href="content-managers/building-your-site/building-your-site.dita" />
-				<topicref format="dita" type="topic"     href="content-managers/securing-your-site/roles/about-role-based-access.dita" />
+				<topicref format="dita" type="topic"     href="content-managers/security/roles/about-role-based-access.dita" />
 			</relcell>
 			<relcell/>
 			<relcell/>

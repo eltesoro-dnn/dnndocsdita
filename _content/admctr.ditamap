@@ -42,7 +42,7 @@
 		<mapref href="administrators/configuring-your-site/configuring-your-site-pb.ditamap" />
 
         <!-- Securing Your Site -->
-        <mapref href="administrators/securing-your-site/security-adm.ditamap" />
+        <mapref href="administrators/security/security-adm.ditamap" />
 
 		<!-- Building Your Site -->
 		<mapref href="administrators/building-your-site/building-your-site-via-control-bar.ditamap" />
@@ -125,7 +125,7 @@
 		<relrow>
 			<relcell>
 				<topicref format="dita" type="topic"     href="administrators/building-your-site/building-your-site.dita" />
-				<topicref format="dita" type="topic"     href="administrators/securing-your-site/roles/about-role-based-access.dita" />
+				<topicref format="dita" type="topic"     href="administrators/security/roles/about-role-based-access.dita" />
 			</relcell>
 			<relcell/>
 			<relcell/>

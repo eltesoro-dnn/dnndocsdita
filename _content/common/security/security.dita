@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
-<topic xml:lang="en" id="top-securing-your-site">
+<topic xml:lang="en" id="top-security">
 
-    <title>Securing Your Site</title>
+    <title>Security</title>
     <titlealts>
-        <navtitle>Securing Your Site</navtitle>
+        <navtitle>Security</navtitle>
     </titlealts>
 
     <prolog>
@@ -39,7 +39,7 @@
         <section id="overview">
             <title>Overview</title>
 
-            <p>Security is comprised of two major components:</p>
+            <p>Security for any website is comprised of two major components:</p>
             <ul>
                 <li>Authentication (AuthN). Verifies if the user provides valid login credentials. </li> <!-- Add more info here. -->
                 <li>Authorization (AuthZ). Determines which site content or settings the user has access to. DNN products use role-based authorization to simplify permission management. Administrators assign roles to users based on the user's function, and each role is pre-assigned access to relevant content and settings, based on the typical needs of someone in that role. </li>
