@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-renewToken">
+
+    <title>Renew a JWT Access Token</title>
+    <titlealts>
+        <navtitle>Renew a Token</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>wrET,trGA,1604</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section id="renewToken">
+
+            <p>When an access token expires, the client can request a new one by sending a POST with a JSON object containing the <varname>renewalToken</varname>.</p>
+
+            <codeblock>
+    {
+     "rtoken":[renewalToken]
+    }
+            </codeblock>
+
+            <sectiondiv outputclass="sectionxmp" id="xmp-renewToken">
+                <p>A sample request for a new token:</p>
+                <codeblock>
+    POST http://testsitece.lvh.me/DesktopModules/JwtAuth/API/mobile/extendtoken HTTP/1.1
+    Host: testsitece.lvh.me
+    Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzaWQiOiIwNGIxZWUyZmMxNzk0NzRlODQwMzNiYmJhN2MwZGMzYSIsInJvbGUiOlsiQWRtaW5pc3RyYXRvcnMiLCJSZWdpc3RlcmVkIFVzZXJzIiwiU3Vic2NyaWJlcnMiXSwiaXNzIjoidGVzdHNpdGVjZS5sdmgubWUiLCJleHAiOjE0NTA4Mzg0MDAsIm5iZiI6MTQ1MDgzNDUwMH0.ly3OKNpSIHCfDQLhz8J_h4fb0fxjnt71D2dYWcF45ig
+    Content-Type: application/json; charset=utf-8
+    Content-Length: 77
+
+    {"rtoken":"0UKc7UX7nCCT+KJYgAgCB7GAtxggzeHj5j4ZYkb9Z/ZurXcigLjhVSkwpzOYBTPi"}
+                </codeblock>
+            </sectiondiv>
+
+            <note type="important">After this request, both the old access token and the old renewal token are invalidated.</note>
+
+            <p>The new access token is valid for one hour. The renewal token is valid for 14 days.</p>
+        </section>
+
+    </taskbody>
+
+</task>

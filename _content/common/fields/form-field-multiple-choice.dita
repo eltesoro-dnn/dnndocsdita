@@ -1,0 +1,151 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-form-field-multiple-choice">
+
+    <title>Form Field: Multiple Choice</title>
+    <titlealts>
+        <navtitle>Field: Multiple Choice</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1607</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+			<!--
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+			-->
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="5"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <refbody>
+
+		<section conkeyref="k-bptext/section-prodavail-E"></section>
+
+        <section id="overview">
+            <!-- <title>Overview</title> -->
+            <!-- <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormField-MultipleChoice.gif"><alt>Settings for Multiple Choice field</alt></image> -->
+        </section>
+
+        <section id="generalsettings">
+            <title>General Settings</title>
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormField-MultipleChoice-generalsettings-titlereq.gif"><alt>Settings for Multiple Choice field</alt></image>
+            <simpletable relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Field</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-title"><stentry/></strow>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-required"><stentry/></strow>
+            </simpletable>
+
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormField-MultipleChoice-generalsettings-appearance.gif"><alt>Settings for Multiple Choice field</alt></image>
+            <simpletable relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Field</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-appearancemultiplechoice-form"><stentry/></strow>
+            </simpletable>
+
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormField-MultipleChoice-generalsettings-choices.gif"><alt>Settings for Multiple Choice field</alt></image>
+            <simpletable relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Field</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-choices"><stentry/></strow>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-otherasanoption"><stentry/></strow>
+            </simpletable>
+
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormField-MultipleChoice-generalsettings-picturesother.gif"><alt>Settings for Multiple Choice field</alt></image>
+            <simpletable relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Field</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-multiselect"><stentry/></strow>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-rowsizeofimages"><stentry/></strow>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-selectshapeofimages"><stentry/></strow>
+            </simpletable>
+
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormField-MultipleChoice-generalsettings-choiceorder.gif"><alt>Settings for Multiple Choice field</alt></image>
+            <simpletable relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Field</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-choiceorder"><stentry/></strow>
+            </simpletable>
+
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormField-MultipleChoice-generalsettings-listorientation.gif"><alt>Settings for Multiple Choice field</alt></image>
+            <simpletable relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Field</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-listorientation"><stentry/></strow>
+            </simpletable>
+
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormField-MultipleChoice-generalsettings-customlabels.gif"><alt>Settings for Multiple Choice field</alt></image>
+            <simpletable relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Field</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-customlabels"><stentry/></strow>
+            </simpletable>
+        </section>
+
+        <section id="helptext">
+            <title>Help Text</title>
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormField-MultipleChoice-helptext.gif"><alt>Settings for Multiple Choice field</alt></image>
+            <simpletable relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Field</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-belowfield"><stentry/></strow>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-tooltip"><stentry/></strow>
+            </simpletable>
+        </section>
+
+        <section id="defaultvalue">
+            <title>Default Value</title>
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormField-MultipleChoice-defaultvalue.gif"><alt>Settings for Multiple Choice field</alt></image>
+            <simpletable relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Field</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-defaultvalue"><stentry/></strow>
+            </simpletable>
+        </section>
+
+        <section id="validation">
+            <title>Validation</title>
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormField-MultipleChoice-validation.png"><alt>Settings for Multiple Choice field</alt></image>
+            <simpletable relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Field</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-validatnerrormsg"><stentry/></strow>
+            </simpletable>
+        </section>
+
+    </refbody>
+
+</reference>

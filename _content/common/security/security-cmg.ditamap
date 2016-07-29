@@ -5,7 +5,7 @@
     <title>Securing Your Site</title>
 
     <!-- Topics -->
-    <topicref format="dita" type="topic" navtitle="Securing Your Site" toc="yes" href="security.dita" copy-to="index.dita" collection-type="family">
+    <topicref format="dita" type="topic" navtitle="Securing Your Site" locktitle="yes" toc="yes" href="security.dita" copy-to="index.dita" collection-type="family">
 
         <topicref format="dita" type="topic" toc="yes" href="user-accounts/about-user-accounts.dita" copy-to="user-accounts/index.dita" />
         <topicref format="dita" type="topic" toc="yes" href="roles/about-role-based-access.dita"     copy-to="roles/index.dita" />

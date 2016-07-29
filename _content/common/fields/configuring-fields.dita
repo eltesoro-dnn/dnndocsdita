@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-configuring-fields.dita">
+
+    <title>Configuring Fields</title>
+    <titlealts>
+        <navtitle>Fields</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1606</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+			<!--
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+			-->
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="5"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-E"></section>
+
+		<section id="overview">
+            <title>Fields</title>
+
+			<p>Content types and forms have similar field types. Although the underlying data types are similar, form fields are more specific to make it easier to enforce data formats, such as phone numbers and email addresses.</p>
+
+            <simpletable relcolwidth="1* 1*">
+                <sthead>
+                    <stentry>Form field</stentry>
+                    <stentry>Content type field</stentry>
+                </sthead>
+                <strow>
+                    <stentry>Single-Line Text</stentry>
+                    <stentry>Single-Line Text
+                        <p>Appearance: Single-Line</p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>Name</stentry>
+                    <stentry>(No equivalent.)</stentry>
+                </strow>
+                <strow>
+                    <stentry>Email</stentry>
+                    <stentry>Single-Line Text
+                        <p>Appearance: Email</p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>Phone Number</stentry>
+                    <stentry>Single-Line Text
+                        <p>Appearance: Phone Number</p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>Multi-Line Text</stentry>
+                    <stentry>Multi-Line Text</stentry>
+                </strow>
+                <strow>
+                    <stentry>Address</stentry>
+                    <stentry>(No equivalent.)</stentry>
+                </strow>
+                <strow>
+                    <stentry>Multiple Choice
+                        <p>Appearance options:
+                            <ul>
+                                <li>Checkboxes</li>
+                                <li>Radio Buttons</li>
+                            </ul>
+                        </p>
+                    </stentry>
+                    <stentry>Multiple Choice
+                        <p>Appearance options:
+                            <ul>
+                                <li>Checkboxes</li>
+                                <li>Radio Buttons</li>
+                            </ul>
+                        </p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>Multiple Choice
+                        <p>Appearance options:
+                            <ul>
+                                <li>Images</li>
+                                <li>Yes/No</li>
+                            </ul>
+                        </p>
+                    </stentry>
+                    <stentry>(No equivalent.)</stentry>
+                </strow>
+                <strow>
+                    <stentry>Dropdown</stentry>
+                    <stentry>Multiple Choice
+                        <p>Appearance options: Dropdown</p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>Number</stentry>
+                    <stentry>Number</stentry>
+                </strow>
+                <strow>
+                    <stentry>Date / Time</stentry>
+                    <stentry>Date / Time</stentry>
+                </strow>
+                <strow>
+                    <stentry>URL / Website</stentry>
+                    <stentry>Single-Line Text
+                        <p>Appearance: URL/Website</p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>Terms &amp; Conditions</stentry>
+                    <stentry>(No equivalent.)</stentry>
+                </strow>
+                <strow>
+                    <stentry>E-Signature</stentry>
+                    <stentry>(No equivalent.)</stentry>
+                </strow>
+                <strow>
+                    <stentry>Static Text</stentry>
+                    <stentry>Static Text</stentry>
+                </strow>
+            </simpletable>
+
+
+        </section>
+
+    </body>
+
+
+    <!-- <related-links>
+        <link format="" scope="external" href=""><linktext></linktext></link>
+    </related-links> -->
+
+</topic>

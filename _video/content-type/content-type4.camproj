@@ -1,0 +1,1168 @@
+<?xml version="1.0"?>
+<Project_Data Version="8.00">
+<Project_Settings>
+<ProfileName>MP4 only (up to 720p)</ProfileName>
+<ProjectWidth>1280</ProjectWidth>
+<ProjectHeight>720</ProjectHeight>
+<IsCustomProject>0</IsCustomProject>
+<SavedProjectSettings>1</SavedProjectSettings>
+<LastFlashTemplate>-1</LastFlashTemplate>
+</Project_Settings>
+
+
+<AutoSaveFile>C:\Users\eleanor.tesoro\AppData\Local\TechSmith\Camtasia Studio\8.0\Auto-Saves\content-type4fdab3b5.autosave.camproj</AutoSaveFile>
+
+<ProjectID>16AF48AB-1FCB-48A4-82F0-08475A36AD6B</ProjectID>
+
+<PowerPointProject>0</PowerPointProject>
+
+<PowerPointFilename></PowerPointFilename>
+
+
+<Project_Notes>
+</Project_Notes>
+
+<Project_MetaData>
+<Project_MetaData_Object>
+<FieldArrayKey>8</FieldArrayKey>
+<Value>DNN Evoq - Content Type</Value>
+</Project_MetaData_Object>
+<Project_MetaData_Object>
+<FieldArrayKey>13</FieldArrayKey>
+<Value>2016-07-12 06:50:55 AM</Value>
+</Project_MetaData_Object>
+<Project_MetaData_Object>
+<FieldArrayKey>16</FieldArrayKey>
+<Value>ENU</Value>
+</Project_MetaData_Object>
+<Project_MetaData_Object>
+<FieldArrayKey>21</FieldArrayKey>
+<Value>No</Value>
+</Project_MetaData_Object>
+<Project_MetaData_Object>
+<FieldArrayKey>22</FieldArrayKey>
+<Value>No</Value>
+</Project_MetaData_Object>
+<Project_MetaData_Object>
+<FieldArrayKey>24</FieldArrayKey>
+<Value>Software How-To</Value>
+</Project_MetaData_Object>
+<Project_MetaData_Object>
+<FieldArrayKey>23</FieldArrayKey>
+<Value>DNN Evoq - Content Types</Value>
+</Project_MetaData_Object>
+</Project_MetaData>
+
+<CSMLData>
+<GoProject id="1" version="3.0" >
+ <Project id="2" editRate="30/1" version="3.0" >
+  <Author></Author>
+  <Comment></Comment>
+  <System></System>
+  <SourceBin id="3"  >
+    <Source id="4" src="W:\_video\EvoqPoweredByDNN-bg.png" lastMod="20160712T211116" rect="(0,0,1280,720)" >
+      <SourceTrack range="(0,1)" type="1" editRate="10000000/1" trackRect="(0,0,1280,720)" sampleRate="0/1" bitDepth="32" numChannels="0" filename="" metaData="" />
+    </Source>
+    <Source id="5" src="W:\_video\content-type\capture-7.trec" lastMod="20160713T142357" rect="(0,0,1280,720)" >
+      <SourceTrack range="(0,3942)" type="0" editRate="30/1" trackRect="(0,0,1280,720)" sampleRate="0/1" bitDepth="0" numChannels="0" filename="capture-7.trec!Strack0.tsc2" metaData="capture-7.trec;" />
+    </Source>
+    <Source id="6" src="W:\_video\content-type\content-type3 (Time 0_01_42;18).png" lastMod="20160713T144517" rect="(0,0,1280,720)" >
+      <SourceTrack range="(0,1)" type="1" editRate="10000000/1" trackRect="(0,0,1280,720)" sampleRate="0/1" bitDepth="32" numChannels="0" filename="" metaData="" />
+    </Source>
+    <Source id="7" src="W:\_video\content-type\content-types-Eleanor9.m4a" lastMod="20160718T135955" rect="(0,0,0,0)" >
+      <SourceTrack range="(0,1004000000)" type="2" editRate="10000000/1" trackRect="(0,0,0,0)" sampleRate="44100/1" bitDepth="16" numChannels="2" filename="" metaData="" />
+    </Source>
+  </SourceBin>
+  <Timeline id="8"  >
+   <Attributes>
+    <Attribute id="9" value="1280" name="width"/>
+    <Attribute id="10" value="720" name="height"/>
+    <Attribute id="11" value="(255,255,255,255)" name="backgroundColor"/>
+   </Attributes>
+    <GenericMixer id="12"  name="Unified Mixer">
+     <MetaData>
+      <entry key="MixerType" val="TimelineMixer"/>
+     </MetaData>
+     <Tracks>
+      <GenericTrack id="13"  >
+       <Attributes>
+        <Attribute id="14" value="" name="ident"/>
+        <Attribute id="15" value="0" name="audioMuted"/>
+        <Attribute id="16" value="0" name="videoHidden"/>
+       </Attributes>
+       <MetaData>
+        <entry key="IsLocked" val="False"/>
+        <entry key="WinTrackHeight" val="83.47727272727272"/>
+       </MetaData>
+       <Medias>
+        <ScreenVMFile id="17" start="0" duration="2979" scalar="1/1" mediaStart="115/1" mediaDuration="2979/1" trackNumber="0" src="5" >
+         <Transformer>
+          <VectorParam id="18"  name="translation">
+           <InterpolatingParam id="19" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="20" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="21" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="22"  name="rotation">
+           <InterpolatingParam id="23" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="24" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="25" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="26"  name="shear">
+           <InterpolatingParam id="27" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="28" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="29" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="30"  name="scale">
+           <InterpolatingParam id="31" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="32" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="33" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="34"  name="anchor">
+           <InterpolatingParam id="35" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="36" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="37" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+         </Transformer>
+         <Parameters>
+          <VectorParam id="38"  name="sourceCrop">
+           <InterpolatingParam id="39" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="40" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="41" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="42" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="43"  name="geometryCrop">
+           <InterpolatingParam id="44" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="45" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="46" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="47" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <InterpolatingParam id="48" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  name="opacity"/>
+          <InterpolatingParam id="49" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="cursorOpacity"/>
+          <InterpolatingParam id="50" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="cursorScale"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="51" name = "CursorBaseEffectName" >
+           <Parameters>
+           <InterpolatingParam id="52" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="cursorSize"/>
+           <InterpolatingParam id="53" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="highlightBlurRadius"/>
+           <InterpolatingParam id="54" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="highlightColorBlue"/>
+           <InterpolatingParam id="55" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="highlightColorGreen"/>
+           <InterpolatingParam id="56" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="highlightColorRed"/>
+           <InterpolatingParam id="57" interp="linr"  time="-9999999/1" value="5" leadInLength="0/1"   name="highlightFeatherSize"/>
+           <InterpolatingParam id="58" interp="linr"  time="-9999999/1" value="2" leadInLength="0/1"   name="highlightMagnification"/>
+           <InterpolatingParam id="59" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="highlightOpacity"/>
+           <InterpolatingParam id="60" interp="linr"  time="-9999999/1" value="45" leadInLength="0/1"   name="highlightSize"/>
+           <Parameter id="61"   name="highlightType">
+            <Keyframes>
+            <Keyframe id="62"  time="-9999999/1" value="0" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="63" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="leftClickColorBlue"/>
+           <InterpolatingParam id="64" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="leftClickColorGreen"/>
+           <InterpolatingParam id="65" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="leftClickColorRed"/>
+           <InterpolatingParam id="66" interp="linr"  time="-9999999/1" value="0.80000000000000004" leadInLength="0/1"   name="leftClickDuration"/>
+           <InterpolatingParam id="67" interp="linr"  time="-9999999/1" value="20" leadInLength="0/1"   name="leftClickSize"/>
+           <Parameter id="68"   name="leftClickSoundFilename">
+            <Keyframes>
+            <Keyframe id="69"  time="-9999999/1" value="mouse_click_single.wav" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="70" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="leftClickSoundVolume"/>
+           <Parameter id="71"   name="leftClickType">
+            <Keyframes>
+            <Keyframe id="72"  time="-9999999/1" value="1" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="73" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="opacity"/>
+           <InterpolatingParam id="74" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="rightClickColorBlue"/>
+           <InterpolatingParam id="75" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="rightClickColorGreen"/>
+           <InterpolatingParam id="76" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="rightClickColorRed"/>
+           <InterpolatingParam id="77" interp="linr"  time="-9999999/1" value="0.80000000000000004" leadInLength="0/1"   name="rightClickDuration"/>
+           <InterpolatingParam id="78" interp="linr"  time="-9999999/1" value="20" leadInLength="0/1"   name="rightClickSize"/>
+           <Parameter id="79"   name="rightClickSoundFilename">
+            <Keyframes>
+            <Keyframe id="80"  time="-9999999/1" value="" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="81" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="rightClickSoundVolume"/>
+           <Parameter id="82"   name="rightClickType">
+            <Keyframes>
+            <Keyframe id="83"  time="-9999999/1" value="1" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="84" value="" name="ident"/>
+         </Attributes>
+         <MetaData>
+          <entry key="AutoAppliedSmartFocus" val="False"/>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+         <ExtraData>
+          <Entry key="ZoomPanBin">
+           <ZoomPanBin id="85"  >
+            <ZoomPanKeyframes>
+             <ZoomPanKeyframe id="86" timeRangeEnd="-9999999/1" timeRangeDuration="0/1" interpolaterName="linr"  />
+            </ZoomPanKeyframes>
+           </ZoomPanBin>
+          </Entry>
+          <Entry key="CursorEffectBin">
+           <CursorEffectBin id="87"  >
+            <CursorEffectKeyframes>
+             <CursorEffectKeyframe id="88" timeRangeEnd="-9999999/1" timeRangeDuration="0/1" interpolaterName=""  />
+            </CursorEffectKeyframes>
+           </CursorEffectBin>
+          </Entry>
+         </ExtraData>
+        </ScreenVMFile>
+        <ScreenVMFile id="89" start="2979" duration="83" scalar="1/1" mediaStart="3453/1" mediaDuration="83/1" trackNumber="0" src="5" >
+         <Transformer>
+          <VectorParam id="90"  name="translation">
+           <InterpolatingParam id="91" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="92" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="93" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="94"  name="rotation">
+           <InterpolatingParam id="95" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="96" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="97" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="98"  name="shear">
+           <InterpolatingParam id="99" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="100" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="101" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="102"  name="scale">
+           <InterpolatingParam id="103" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="104" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="105" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="106"  name="anchor">
+           <InterpolatingParam id="107" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="108" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="109" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+         </Transformer>
+         <Parameters>
+          <VectorParam id="110"  name="sourceCrop">
+           <InterpolatingParam id="111" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="112" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="113" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="114" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="115"  name="geometryCrop">
+           <InterpolatingParam id="116" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="117" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="118" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="119" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <InterpolatingParam id="120" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  name="opacity"/>
+          <InterpolatingParam id="121" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="cursorOpacity"/>
+          <InterpolatingParam id="122" interp="linr"  time="0/1" value="1" leadInLength="0/1"  name="cursorScale"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="123" name = "CursorBaseEffectName" >
+           <Parameters>
+           <InterpolatingParam id="124" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="cursorSize"/>
+           <InterpolatingParam id="125" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="highlightBlurRadius"/>
+           <InterpolatingParam id="126" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="highlightColorBlue"/>
+           <InterpolatingParam id="127" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="highlightColorGreen"/>
+           <InterpolatingParam id="128" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="highlightColorRed"/>
+           <InterpolatingParam id="129" interp="linr"  time="-9999999/1" value="5" leadInLength="0/1"   name="highlightFeatherSize"/>
+           <InterpolatingParam id="130" interp="linr"  time="-9999999/1" value="2" leadInLength="0/1"   name="highlightMagnification"/>
+           <InterpolatingParam id="131" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="highlightOpacity"/>
+           <InterpolatingParam id="132" interp="linr"  time="-9999999/1" value="45" leadInLength="0/1"   name="highlightSize"/>
+           <Parameter id="133"   name="highlightType">
+            <Keyframes>
+            <Keyframe id="134"  time="-9999999/1" value="0" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="135" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="leftClickColorBlue"/>
+           <InterpolatingParam id="136" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="leftClickColorGreen"/>
+           <InterpolatingParam id="137" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="leftClickColorRed"/>
+           <InterpolatingParam id="138" interp="linr"  time="-9999999/1" value="0.80000000000000004" leadInLength="0/1"   name="leftClickDuration"/>
+           <InterpolatingParam id="139" interp="linr"  time="-9999999/1" value="20" leadInLength="0/1"   name="leftClickSize"/>
+           <Parameter id="140"   name="leftClickSoundFilename">
+            <Keyframes>
+            <Keyframe id="141"  time="-9999999/1" value="" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="142" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="leftClickSoundVolume"/>
+           <Parameter id="143"   name="leftClickType">
+            <Keyframes>
+            <Keyframe id="144"  time="-9999999/1" value="0" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="145" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="opacity"/>
+           <InterpolatingParam id="146" interp="linr"  time="-9999999/1" value="255" leadInLength="0/1"   name="rightClickColorBlue"/>
+           <InterpolatingParam id="147" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="rightClickColorGreen"/>
+           <InterpolatingParam id="148" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"   name="rightClickColorRed"/>
+           <InterpolatingParam id="149" interp="linr"  time="-9999999/1" value="0.80000000000000004" leadInLength="0/1"   name="rightClickDuration"/>
+           <InterpolatingParam id="150" interp="linr"  time="-9999999/1" value="20" leadInLength="0/1"   name="rightClickSize"/>
+           <Parameter id="151"   name="rightClickSoundFilename">
+            <Keyframes>
+            <Keyframe id="152"  time="-9999999/1" value="" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           <InterpolatingParam id="153" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"   name="rightClickSoundVolume"/>
+           <Parameter id="154"   name="rightClickType">
+            <Keyframes>
+            <Keyframe id="155"  time="-9999999/1" value="0" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="156" value="" name="ident"/>
+         </Attributes>
+         <MetaData>
+          <entry key="AutoAppliedSmartFocus" val="False"/>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+         <ExtraData>
+          <Entry key="ZoomPanBin">
+           <ZoomPanBin id="157"  >
+            <ZoomPanKeyframes>
+             <ZoomPanKeyframe id="158" timeRangeEnd="-9999999/1" timeRangeDuration="0/1" interpolaterName="linr"  />
+            </ZoomPanKeyframes>
+           </ZoomPanBin>
+          </Entry>
+          <Entry key="CursorEffectBin">
+           <CursorEffectBin id="159"  >
+            <CursorEffectKeyframes>
+             <CursorEffectKeyframe id="160" timeRangeEnd="-9999999/1" timeRangeDuration="0/1" interpolaterName=""  />
+            </CursorEffectKeyframes>
+           </CursorEffectBin>
+          </Entry>
+         </ExtraData>
+        </ScreenVMFile>
+        <IMFile id="161" start="3062" duration="70" scalar="1/1" mediaStart="0/1" mediaDuration="1/1" trackNumber="0" src="6" trimStartSum="0/1" >
+         <Transformer>
+          <VectorParam id="162"  name="translation">
+           <InterpolatingParam id="163" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="164" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="165" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="166"  name="rotation">
+           <InterpolatingParam id="167" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="168" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="169" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="170"  name="shear">
+           <InterpolatingParam id="171" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="172" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="173" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="174"  name="scale">
+           <InterpolatingParam id="175" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="176" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="177" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="178"  name="anchor">
+           <InterpolatingParam id="179" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="180" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="181" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+         </Transformer>
+         <Parameters>
+          <VectorParam id="182"  name="sourceCrop">
+           <InterpolatingParam id="183" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="184" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="185" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="186" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="187"  name="geometryCrop">
+           <InterpolatingParam id="188" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="189" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="190" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="191" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <InterpolatingParam id="192" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  name="opacity"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="193" value="" name="ident"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+         <ExtraData>
+          <Entry key="ZoomPanBin">
+           <ZoomPanBin id="194"  >
+            <ZoomPanKeyframes>
+             <ZoomPanKeyframe id="195" timeRangeEnd="-9999999/1" timeRangeDuration="0/1" interpolaterName="linr"  />
+            </ZoomPanKeyframes>
+           </ZoomPanBin>
+          </Entry>
+         </ExtraData>
+        </IMFile>
+        <IMFile id="196" start="3132" duration="89" scalar="1/1" mediaStart="0/1" mediaDuration="1/1" trackNumber="0" src="4" trimStartSum="0/1" >
+         <Transformer>
+          <VectorParam id="197"  name="translation">
+           <InterpolatingParam id="198" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="199" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="200" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="201"  name="rotation">
+           <InterpolatingParam id="202" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="203" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="204" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="205"  name="shear">
+           <InterpolatingParam id="206" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="207" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="208" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="209"  name="scale">
+           <InterpolatingParam id="210" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="211" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+           <InterpolatingParam id="212" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="213"  name="anchor">
+           <InterpolatingParam id="214" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="215" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="216" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+         </Transformer>
+         <Parameters>
+          <VectorParam id="217"  name="sourceCrop">
+           <InterpolatingParam id="218" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="219" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="220" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="221" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <VectorParam id="222"  name="geometryCrop">
+           <InterpolatingParam id="223" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="224" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="225" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+           <InterpolatingParam id="226" interp="linr"  time="-9999999/1" value="0" leadInLength="0/1"  />
+          </VectorParam>
+          <InterpolatingParam id="227" interp="linr"  time="-9999999/1" value="1" leadInLength="0/1"  name="opacity"/>
+         </Parameters>
+         <Attributes>
+          <Attribute id="228" value="" name="ident"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+         <ExtraData>
+          <Entry key="ZoomPanBin">
+           <ZoomPanBin id="229"  >
+            <ZoomPanKeyframes>
+             <ZoomPanKeyframe id="230" timeRangeEnd="-9999999/1" timeRangeDuration="0/1" interpolaterName="linr"  />
+            </ZoomPanKeyframes>
+           </ZoomPanBin>
+          </Entry>
+         </ExtraData>
+        </IMFile>
+       </Medias>
+      </GenericTrack>
+      <GenericTrack id="231"  >
+       <Attributes>
+        <Attribute id="232" value="" name="ident"/>
+        <Attribute id="233" value="0" name="audioMuted"/>
+        <Attribute id="234" value="0" name="videoHidden"/>
+       </Attributes>
+       <MetaData>
+        <entry key="IsLocked" val="False"/>
+        <entry key="WinTrackHeight" val="83.47727272727272"/>
+       </MetaData>
+       <Medias>
+        <Caption id="235" start="51" duration="3040" scalar="1/1" mediaStart="0/1" mediaDuration="3040/1" maxMediaDuration="9.22337e+018"  allowTrimOut="1"  >
+         <Parameters>
+          <Parameter id="236"  name="captionData">
+           <Keyframes>
+           <Keyframe id="237"  time="-9999999/1" value="{16,In this video,  ,0}" leadInLength="0/1"  />
+           <Keyframe id="238"  time="19/1" value="{51,you will learn how to create a simple content type.,0}" leadInLength="0/1"  />
+           <Keyframe id="239"  time="112/1" value="{43,You must be logged in as a content manager ,0}" leadInLength="0/1"  />
+           <Keyframe id="240"  time="182/1" value="{58,to access the Persona Bar options for Structured Content. ,0}" leadInLength="0/1"  />
+           <Keyframe id="241"  time="302/1" value="{47,In the Persona Bar, go to Manage, then Content.,0}" leadInLength="0/1"  />
+           <Keyframe id="242"  time="436/1" value="{28,Go to the Content Types tab.,0}" leadInLength="0/1"  />
+           <Keyframe id="243"  time="511/1" value="{61,DNN provides you with default Content Types that you can use.,0}" leadInLength="0/1"  />
+           <Keyframe id="244"  time="639/1" value="{40,You can duplicate a default Content Type,0}" leadInLength="0/1"  />
+           <Keyframe id="245"  time="703/1" value="{46,and then customize it according to your needs.,0}" leadInLength="0/1"  />
+           <Keyframe id="246"  time="799/1" value="{46,Or you can create your own custom Content Type,0}" leadInLength="0/1"  />
+           <Keyframe id="247"  time="889/1" value="{43,by clicking the Create Content Type button.,0}" leadInLength="0/1"  />
+           <Keyframe id="248"  time="990/1" value="{47,Enter the name of the new Content Type up here.,0}" leadInLength="0/1"  />
+           <Keyframe id="249"  time="1180/1" value="{42,In the Settings section of the left panel,,0}" leadInLength="0/1"  />
+           <Keyframe id="250"  time="1252/1" value="{50,you can modify the properties of the Content Type,,0}" leadInLength="0/1"  />
+           <Keyframe id="251"  time="1326/1" value="{55,including its description and the icon to represent it.,0}" leadInLength="0/1"  />
+           <Keyframe id="252"  time="1471/1" value="{45,Under the Content tab, you&apos;ll find the canvas,0}" leadInLength="0/1"  />
+           <Keyframe id="253"  time="1534/1" value="{39,where you drag and drop content fields.,0}" leadInLength="0/1"  />
+           <Keyframe id="254"  time="1653/1" value="{46,You can modify the properties of the new field,0}" leadInLength="0/1"  />
+           <Keyframe id="255"  time="1723/1" value="{42,in the Settings section of the left panel.,0}" leadInLength="0/1"  />
+           <Keyframe id="256"  time="1813/1" value="{54,In the Validation tab, you can make the field required,0}" leadInLength="0/1"  />
+           <Keyframe id="257"  time="1914/1" value="{33,or restrict what data is allowed.,0}" leadInLength="0/1"  />
+           <Keyframe id="258"  time="2007/1" value="{43,When you&apos;re done with the field properties,,0}" leadInLength="0/1"  />
+           <Keyframe id="259"  time="2077/1" value="{40,close the left panel to add more fields.,0}" leadInLength="0/1"  />
+           <Keyframe id="260"  time="2179/1" value="{79,Each type of field and each form of that field could have different properties.,0}" leadInLength="0/1"  />
+           <Keyframe id="261"  time="2319/1" value="{0,,0}" leadInLength="0/1"  />
+           <Keyframe id="262"  time="2414/1" value="{42,You can change the properties again later,,0}" leadInLength="0/1"  />
+           <Keyframe id="263"  time="2480/1" value="{46,simply by clicking the field you want to edit.,0}" leadInLength="0/1"  />
+           <Keyframe id="264"  time="2563/1" value="{61,You can also duplicate or delete the field using these icons.,0}" leadInLength="0/1"  />
+           <Keyframe id="265"  time="2684/1" value="{50,Duplicating the field copies the current settings.,0}" leadInLength="0/1"  />
+           <Keyframe id="266"  time="2779/1" value="{46,When you&apos;re done adding and configuring fields,0}" leadInLength="0/1"  />
+           <Keyframe id="267"  time="2832/1" value="{40,to your custom Content Type, click Save.,0}" leadInLength="0/1"  />
+           <Keyframe id="268"  time="2940/1" value="{47,Your new Content Type is now available for use.,0}" leadInLength="0/1"  />
+           </Keyframes>
+          </Parameter>
+          <Parameter id="269"  name="toc"/>
+          <Parameter id="270"  name="quiz"/>
+         </Parameters>
+         <Attributes>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </Caption>
+       </Medias>
+      </GenericTrack>
+      <GenericTrack id="271"  >
+       <Attributes>
+        <Attribute id="272" value="" name="ident"/>
+        <Attribute id="273" value="0" name="audioMuted"/>
+        <Attribute id="274" value="0" name="videoHidden"/>
+       </Attributes>
+       <MetaData>
+        <entry key="IsLocked" val="False"/>
+        <entry key="WinTrackHeight" val="83.47727272727272"/>
+       </MetaData>
+       <Medias>
+        <AMFile id="275" start="47" duration="113" scalar="1/1" mediaStart="86/1" mediaDuration="113/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="276" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="277"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="278" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="279" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="280" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="281"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="282"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="283" value="" name="ident"/>
+          <Attribute id="284" value="44100" name="sampleRate"/>
+          <Attribute id="285" value="16" name="bitDepth"/>
+          <Attribute id="286" value="1" name="gain"/>
+          <Attribute id="287" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="288" start="172" duration="291" scalar="1/1" mediaStart="199/1" mediaDuration="291/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="289" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="290"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="291" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="292" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="293" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="294"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="295"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="296" value="" name="ident"/>
+          <Attribute id="297" value="44100" name="sampleRate"/>
+          <Attribute id="298" value="16" name="bitDepth"/>
+          <Attribute id="299" value="1" name="gain"/>
+          <Attribute id="300" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="301" start="475" duration="71" scalar="1/1" mediaStart="490/1" mediaDuration="71/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="302" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="303"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="304" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="305" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="306" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="307"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="308"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="309" value="" name="ident"/>
+          <Attribute id="310" value="44100" name="sampleRate"/>
+          <Attribute id="311" value="16" name="bitDepth"/>
+          <Attribute id="312" value="1" name="gain"/>
+          <Attribute id="313" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="314" start="561" duration="115" scalar="1/1" mediaStart="614/1" mediaDuration="115/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="315" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="316"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="317" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="318" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="319" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="320"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="321"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="322" value="" name="ident"/>
+          <Attribute id="323" value="44100" name="sampleRate"/>
+          <Attribute id="324" value="16" name="bitDepth"/>
+          <Attribute id="325" value="1" name="gain"/>
+          <Attribute id="326" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="327" start="693" duration="146" scalar="1/1" mediaStart="729/1" mediaDuration="146/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="328" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="329"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="330" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="331" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="332" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="333"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="334"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="335" value="" name="ident"/>
+          <Attribute id="336" value="44100" name="sampleRate"/>
+          <Attribute id="337" value="16" name="bitDepth"/>
+          <Attribute id="338" value="1" name="gain"/>
+          <Attribute id="339" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="340" start="844" duration="93" scalar="1/1" mediaStart="875/1" mediaDuration="93/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="341" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="342"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="343" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="344" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="345" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="346"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="347"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="348" value="" name="ident"/>
+          <Attribute id="349" value="44100" name="sampleRate"/>
+          <Attribute id="350" value="16" name="bitDepth"/>
+          <Attribute id="351" value="1" name="gain"/>
+          <Attribute id="352" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="353" start="939" duration="86" scalar="1/1" mediaStart="965/1" mediaDuration="86/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="354" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="355"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="356" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="357" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="358" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="359"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="360"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="361" value="" name="ident"/>
+          <Attribute id="362" value="44100" name="sampleRate"/>
+          <Attribute id="363" value="16" name="bitDepth"/>
+          <Attribute id="364" value="1" name="gain"/>
+          <Attribute id="365" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="366" start="1041" duration="102" scalar="1/1" mediaStart="1066/1" mediaDuration="102/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="367" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="368"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="369" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="370" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="371" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="372"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="373"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="374" value="" name="ident"/>
+          <Attribute id="375" value="44100" name="sampleRate"/>
+          <Attribute id="376" value="16" name="bitDepth"/>
+          <Attribute id="377" value="1" name="gain"/>
+          <Attribute id="378" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="379" start="1231" duration="416" scalar="1/1" mediaStart="1176/1" mediaDuration="416/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="380" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="381"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="382" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="383" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="384" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="385"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="386"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="387" value="" name="ident"/>
+          <Attribute id="388" value="44100" name="sampleRate"/>
+          <Attribute id="389" value="16" name="bitDepth"/>
+          <Attribute id="390" value="1" name="gain"/>
+          <Attribute id="391" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="392" start="1704" duration="135" scalar="1/1" mediaStart="1622/1" mediaDuration="135/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="393" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="394"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="395" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="396" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="397" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="398"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="399"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="400" value="" name="ident"/>
+          <Attribute id="401" value="44100" name="sampleRate"/>
+          <Attribute id="402" value="16" name="bitDepth"/>
+          <Attribute id="403" value="1" name="gain"/>
+          <Attribute id="404" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="405" start="1846" duration="108" scalar="1/1" mediaStart="1774/1" mediaDuration="108/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="406" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="407"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="408" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="409" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="410" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="411"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="412"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="413" value="" name="ident"/>
+          <Attribute id="414" value="44100" name="sampleRate"/>
+          <Attribute id="415" value="16" name="bitDepth"/>
+          <Attribute id="416" value="1" name="gain"/>
+          <Attribute id="417" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="418" start="1961" duration="76" scalar="1/1" mediaStart="1882/1" mediaDuration="76/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="419" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="420"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="421" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="422" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="423" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="424"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="425"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="426" value="" name="ident"/>
+          <Attribute id="427" value="44100" name="sampleRate"/>
+          <Attribute id="428" value="16" name="bitDepth"/>
+          <Attribute id="429" value="1" name="gain"/>
+          <Attribute id="430" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="431" start="2049" duration="69" scalar="1/1" mediaStart="1958/1" mediaDuration="69/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="432" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="433"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="434" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="435" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="436" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="437"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="438"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="439" value="" name="ident"/>
+          <Attribute id="440" value="44100" name="sampleRate"/>
+          <Attribute id="441" value="16" name="bitDepth"/>
+          <Attribute id="442" value="1" name="gain"/>
+          <Attribute id="443" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="444" start="2122" duration="88" scalar="1/1" mediaStart="2027/1" mediaDuration="88/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="445" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="446"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="447" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="448" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="449" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="450"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="451"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="452" value="" name="ident"/>
+          <Attribute id="453" value="44100" name="sampleRate"/>
+          <Attribute id="454" value="16" name="bitDepth"/>
+          <Attribute id="455" value="1" name="gain"/>
+          <Attribute id="456" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="457" start="2210" duration="136" scalar="1/1" mediaStart="2124/1" mediaDuration="136/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="458" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="459"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="460" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="461" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="462" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="463"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="464"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="465" value="" name="ident"/>
+          <Attribute id="466" value="44100" name="sampleRate"/>
+          <Attribute id="467" value="16" name="bitDepth"/>
+          <Attribute id="468" value="1" name="gain"/>
+          <Attribute id="469" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="470" start="2455" duration="148" scalar="1/1" mediaStart="2260/1" mediaDuration="148/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="471" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="472"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="473" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="474" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="475" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="476"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="477"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="478" value="" name="ident"/>
+          <Attribute id="479" value="44100" name="sampleRate"/>
+          <Attribute id="480" value="16" name="bitDepth"/>
+          <Attribute id="481" value="1" name="gain"/>
+          <Attribute id="482" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="483" start="2603" duration="117" scalar="1/1" mediaStart="2424/1" mediaDuration="117/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="484" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="485"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="486" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="487" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="488" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="489"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="490"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="491" value="" name="ident"/>
+          <Attribute id="492" value="44100" name="sampleRate"/>
+          <Attribute id="493" value="16" name="bitDepth"/>
+          <Attribute id="494" value="1" name="gain"/>
+          <Attribute id="495" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="496" start="2730" duration="88" scalar="1/1" mediaStart="2568/1" mediaDuration="88/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="497" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="498"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="499" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="500" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="501" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="502"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="503"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="504" value="" name="ident"/>
+          <Attribute id="505" value="44100" name="sampleRate"/>
+          <Attribute id="506" value="16" name="bitDepth"/>
+          <Attribute id="507" value="1" name="gain"/>
+          <Attribute id="508" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="509" start="2818" duration="161" scalar="1/1" mediaStart="2677/1" mediaDuration="161/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="510" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="511"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="512" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="513" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="514" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="515"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="516"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="517" value="" name="ident"/>
+          <Attribute id="518" value="44100" name="sampleRate"/>
+          <Attribute id="519" value="16" name="bitDepth"/>
+          <Attribute id="520" value="1" name="gain"/>
+          <Attribute id="521" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+        <AMFile id="522" start="2991" duration="100" scalar="1/1" mediaStart="2864/1" mediaDuration="100/1" trackNumber="0" src="7" channelNumber="0,1" >
+         <Parameters>
+          <InterpolatingParam id="523" interp="linr"  time="0/1" value="5" leadInLength="0/1"  name="volume"/>
+          <Parameter id="524"  name="captions"/>
+         </Parameters>
+         <Effects>
+          <GenericEffect id="525" name = "NoiseReduction" >
+           <Parameters>
+           <InterpolatingParam id="526" interp="linr"  time="0/1" value="20" leadInLength="0/1"   name="denoiserAmount"/>
+           <InterpolatingParam id="527" interp="linr"  time="0/1" value="0" leadInLength="0/1"   name="denoiserThreshold"/>
+           <Parameter id="528"   name="noiseProfile">
+            <Keyframes>
+            <Keyframe id="529"  time="0/1" value="FBAAAAIAAABErAAAAQIAAHJUasIKFFbCf7BlwvJucsI3IoPCiiGEwtdQiMJaq5HCWTSWwobll8LO&#xD;&#xa;pJvC+MufwlBSosKx86TCgeSkwnkhqMJqPqjCIu+owjcirMJFfarC3IaswkrhsMKN77DCMI+xwkQg&#xD;&#xa;r8KN167Ct+Gzwra+tMJcr7PCHF+ywp3js8K4FrfC+w22wpQbtsJMJ7jCIX65wpQCuMIRD7TCmei0&#xD;&#xa;wvvYuMJ7trjCdPK3wlSRuMIZibfCnKe4wkoTucIARLjC4Di3wkezucKqs7fCyEm6wpROusICx7nC&#xD;&#xa;SW27wv7JusKHHr3CAM69wivHvcKE4r/CcIu+wjNMvcJ/UrzCSm+7whaYvMJ4cLzCERq8wsa2vsKw&#xD;&#xa;YcLCaHPBwl4kvsIiK7/CRCnFwrXKx8Lob8PCCWrAws38wcLq9cHCekXCwgcawsKQ4MLCUNDBwsO1&#xD;&#xa;vsJEs8DC4JPCwj7HwsKgwMTCtiDHwt4yxcI2ZMXCL6vFwnc3w8JOpsDCvrXBwhrewMLQdcDCAKPA&#xD;&#xa;whZmwsLCh8PCxPPFwh83yMJUw8jCzJrHwhlwxsIQhMXC0wHEwhKcwsIM0sLCXhzDwmwxxML1QsTC&#xD;&#xa;cgjGwlKzxMKUF8fCtOvHwt6kx8LFBsfCanDAwkTawcKyxcnCR/XIwjCWx8Jf0sXC7EnFwhD6w8JG&#xD;&#xa;ScTCEa7Fwn2XxcL4d8jCUhTMwp37ysKqCsjCAbTFwmQ8yMLCisvCJpHIwoG8xsLsVsfCTT7IwrLe&#xD;&#xa;xsILmMfCfXTKwozDyMLeZsbCdpzHwnRJx8K17snCsnLJwj86x8LEK8nCGIrHwiIDxsJaWsXCgnHF&#xD;&#xa;wjiYycLEdszCBkPLwuS2ysKAIM3CiujLwm8EyMLC/cjCnQjLwoSgyMLCXsjC8JvIwqYny8I+4czC&#xD;&#xa;UqjMwnqeycL74MfC/afHwqxkyMKd4MvC5LDLwiacysLY88nCsNvLwmhSzMLsXsvCUnvKwutpysKi&#xD;&#xa;b8rCoKbJwqwgysKDOsrCRtvHwuD+yMLBXMzCGIzLwsBkzMKuLMzCkvDKwvG/ysLE+8nCQSPLwuJq&#xD;&#xa;y8J2RcvC7L/Qwkgx0sJKfcvCyqrGwrIFycIRxczCLFfOwvWbzsI/ks7CgofMwpRUzMJY7srCatTM&#xD;&#xa;wn6+z8IOus3CdmTLwlAAysLSps3ClgzQwsIA0cJM+M/CHLDPwj4Vz8LkRc7CVErOwlqYzsJof87C&#xD;&#xa;5R/OwuKgzMIdxc3CclPOwsgbzcKEsszC5rDPwmDw0MII5M3CV27Ows4gz8KaVNDCZ3LQwqXxy8Jg&#xD;&#xa;CsrCUr3NwlYuzcIoLMzC2iHPwsLXzsKX2M3CfRnNwrfPz8IJuc7Cgt/Owt6CzcIEUszCiufOwqwz&#xD;&#xa;z8JoG8/CBFfPwuAM0MI+1NDCBnDRwj6E0sJN8c7CYADNwgzFz8I3AM/CyNvOwlSLzcK+uc3CyvnP&#xD;&#xa;wtCt0MJfNM/CDJjNwlxKysI6lcrCAl7Kwk61zsLYV9LCgGPPwst7zcJ0Uc3Cz0TQwmEH08J1ts/C&#xD;&#xa;ukvNwtCszMIkLNDCc1DRwmJ60sKUotDCalrOwkwbz8JXy83C+BzMwo7vzsKqstHC+AHRwhyd0sK6&#xD;&#xa;GtLCUUjRwhKgz8I+udDCGBTTwgKtz8K8eNDCdNDPwhX8z8JQv8/Crz/PwhfYzsLYis3CBVXPwk49&#xD;&#xa;0cIQaNHCIs3RwsHL0MLcP87Cg6LLwtsFz8LWOtTCGZ/Swh6R0sLnbNHCKJTPwswS0MJ+ANDCIKbR&#xD;&#xa;wmAR0cJQw9HCiFPRwv5N0cJu79HCDzPTwtJ10cLbEc/COIrRwiAl0cKaz9HC3pXPwoYj0cIdu9PC&#xD;&#xa;gZfRws7a0MIe8tDCQkDQwhSj0cISZ9HCxt3QwhbD08LgF9TCIoLTwtOG1cL1JtLCvGfQwp0h0cJe&#xD;&#xa;CtHCzh3Qwv2C0MK5ltHCP0HTwuCR08KoB9XCV7PUwtbz0cLeq9HCEBLVwgCP0cJclM7CirHQwjDv&#xD;&#xa;0cK2qtDC6zzPwmAkz8KbqNDCtmjRwvFK1cIRI9PCbILSwgZU0cKcWNDCYurMwkYDz8IuqtHCqNXQ&#xD;&#xa;wua2zcKAJM3CPjzQwpOj0sIcdNHCqFHQwqTJ0cKO2tLCK2bPwvytz8KSeNHCqbHOwjJgzcJ8qs/C&#xD;&#xa;oP3Rwmjm0sIhd8/C5nDOwoUbz8IsbtDCpOTQwllb0cLKMtDCnCTSwupO08JwA9TCdGrUwjBi1cLe&#xD;&#xa;AdPCPgzQwsib0MKK/9DCgF7Twnsw1MIBMtXCckDUwlJu0sKG6dHCzX3Uwj7E1MIuHdPCeo/SwttR&#xD;&#xa;1MLIH9XC1MnRwqZyz8IAUtHCLALTwpDr0sIX+NPCpHrUwky70sIOqtPCUlzZwhiY2MIivdXCAnTV&#xD;&#xa;whw61cJtEtTCuFrUwvTL1ML2UtbCdnDWwoL31MJuWtTCim7UwgNQ1cJ8J9fCcDbZwiLi18KpotfC&#xD;&#xa;yGDYwkJV18IV1tbCZiHXwvDO18JqWdnCGjbfwlzM38IAGNzCDLvXwpRU2cIAYd3CPnDewpSc2MLN&#xD;&#xa;itrClLbdwiF+3MJY4tzCkvPdwioh28J+29rCMv/ZwoII28LGU97Ch+rewphp3cICVdzCTPzdwsi+&#xD;&#xa;3sKnNt3C0MPgwlLC38K/st7CSJDgwlZz48LTouDC8i/gwo5p38KrOeDCaIvgwmeF5MLECubCSHTj&#xD;&#xa;wkSV4cLTKuLCdrPmwmea5sKbVOjCM8vlwjbF5MJir+LCdWTjwvSS58JAv+rCPHjmwvLn48IyaOXC&#xD;&#xa;qunlwtBf5cJEjunChOr7woLuasJRkVbCuBJmwlrKcsK4SIPCPDeEwoVfiMIAtpHC2jmWwp/wl8LK&#xD;&#xa;rJvCI9Gfwr5eosJQFKXCEwGlwgwOqMLKIqjCPdCowvoirMLSd6rCflSswj01scL4xbDCMzixwjTz&#xD;&#xa;rsLscq7C1Mazwle/tMJcqbPC1Dmywveqs8Jq2rbCRvC1wjIMtsIOD7jCrb65wryHuMLcbrTCPmy1&#xD;&#xa;wv6nuMLdh7jCZd+3wgLXuMJeurfCsOe4wiEsucK/brjCvjO3wsXrucKiZbjCOCS7wtY7u8KVPLrC&#xD;&#xa;9IO7wpjGusKsj7zCjwq9wpjAvcKI77/C1Cu+wqIWvcIQe7zC3jK7wpcyvMLc07zClU28wraIvsIS&#xD;&#xa;ScLCCArBwng3vsJ0rL/CaInFwnZhx8KXV8PCVhXAwnYewsILz8HC+UTCwhKhwsLCaMPC2rTBwvJz&#xD;&#xa;vsJAo8DCQqLCwt2GwsJixcTCjkjHwvbXxMIyqMTC0RDFwl1Yw8KOqcDCronBwrcvwcLPaMDCPWfA&#xD;&#xa;wt9wwsJaocPCAv/EwtxSx8LiIsnCwWLIwnAxx8Lc/cXCyanEwiTBwsKMusLCMiLDwhivxMJSHcTC&#xD;&#xa;OFrEwhEAxMI8xsbCroTIwo69x8Jkv8bCQI/AwijewcLRKsnCiCzIwhUIx8Je2cXCKNzFwnJvxMIq&#xD;&#xa;ysTCEP7GwvcOxsIOAsjCcI3LwmQCy8LUJMjCgFPFwhIVyMImt8rC3FXIwpygxsKz/MbCLjDIwiXk&#xD;&#xa;xsKW8MfCS4HKwpKcyMIWB8bCGM3Gwkg2x8KIdcrCrN3IwlKaxsJ+68fCbBzHwgm0xsLS+MXCYvPF&#xD;&#xa;wvT1ycKslcvCfv/JwigcysImNs3CzZHLwpXlx8LhgMjC0kjKwuO/yMKMfsjCZy7JwozbysIYkMzC&#xD;&#xa;aVjMwuNqycK+McjCBnLIwvAoycLcDczCkvfKwpAYysJk3MjCJhvLwkprzMIKssvC64rKwmK4ysKj&#xD;&#xa;9srC3RzLwjTBysJUGMrC3JPHwqKhyMJs68vCFlfLwuc1zcLzAMzC5mnKwlZBycLq3MjC3M7KwnAD&#xD;&#xa;y8Iz1srC3jfRwkj+0cKtaczC1u3HwidoycIFsMzCcJvNwnJE0MJgj8/CHNnMwhpezMLzacvC2IPM&#xD;&#xa;wgXZzsLWWc7CyEDMwrDSycJOZs3CzqjNwq7Vz8IN/NDCj4jQwkNwz8KQ9M3CHqHOwhnSz8JOkM/C&#xD;&#xa;gUvOwr5JzMKa9MzCoTHNwgBpzcL+WczCEwnPwiAb0MIUDs3Csu3NwuAkzsLazc/CkkXQwgptzMIG&#xD;&#xa;VMrCFHPNwj5BzcLELMzCbP7Owm69zsLCz83CIt/MwnZjz8I0fs7CSQ3OwmdjzMIa9MvCKK/Owozw&#xD;&#xa;zsKu4c7CL4bQwk7f0MKm49DC0l/RwsBJ0sK55M7CyLvPwir10cJM587CInbOwuERzcKUac3CDknQ&#xD;&#xa;wn780cIT+s/CDRbMwqBBycJqScrCtGzKwgL4zcJyANHCHobPws1jzcKGfs3CFeHOwpLC0MJmaNDC&#xD;&#xa;EoTNwrbzzcK1y9HCnDzPwufhz8I3Ds/CBE3Nwt22zsJuIc7C/rLMwrCF0MIvitHCOkbRwqtb0sJ+&#xD;&#xa;v9HCcRzRwlRbz8IAjtDCtnnTwivL0MI419DCwPfQwrDV0cITEdDCWefOwuHNz8KAw87CrF/Pwqr2&#xD;&#xa;0MKIDtHCxhHSwh6F0cL36c/CBVnOwo4m0ML3ytTCDtPRwgKM0cJuxdLC5n/OwtyYz8JmJNHCZpPR&#xD;&#xa;woMg0cIksNHC6jnRwmgT0ML369DCMiXUwppK08KN3M/C1P3RwhIU0sLVq9HCNIfOwmSa0MI2INLC&#xD;&#xa;tAnSwvob0cIhzNDC3kPQwobY0cJvi9LCqJnSwlZ01MIG09HCKrzRws2i1MIcb9LCsAbRwkZZ0cIL&#xD;&#xa;q9DCUE3Pwoa20MLQTdPCH+3Vwmrs1MIEB9TCd0HVwuBV1MJYmNbChEfWwti+0cLYDs/CEmDSwkAL&#xD;&#xa;1MKC9M/CxjTOwl3VzcK+a9DCvOrRwj421MLsttHCfOjRwpjx0cIc88/CwqjMwoKAz8KOKtHC57vQ&#xD;&#xa;wq5MzcKGDc3CwEHQwrgW08L/hNDCPKHOwgx0zsKd+M/CoI/OwpRmzsKrkdHCmMfPwpZNzsKICdDC&#xD;&#xa;+ILRwrcE0sI+LNDCbvHOwuKbzsLQ+M/CSp/Rwkrlz8KyX87CLDzPwvg80sKsn9PCPjrVwp5J1sK5&#xD;&#xa;a9PClZTPwqrcz8KQtNDCyBDUwpAK1MI699LCRlzTwrMj08LJ/dHCaHvVwjIA1cKQxNDCbHrQwnrz&#xD;&#xa;0cKIJdXCJHXTwkRn0MKyMNHCF/HSwszi1cLM89XCoKPTwnhN08KyvtTCCtzZwpY218KaydPCpKzT&#xD;&#xa;wlJR1MJW+tPCPsHTwnQF1cLvi9bCVwnVwijo1cLyzNTCUyTWwlSN1sKM3NfC8hzYwiZP1sJehNbC&#xD;&#xa;QsjXwpqd18LQEtfCOB/Xwl0m18KB/9jCEqPewss14MLTD9zCiZPXwuNI2cIO99vC9zndwiUh28K4&#xD;&#xa;IdvCRp7awiNW2cLgoN3C143dwg+W2sLnT9nCtEbZwqiP2MJCmdvC6w3dwnvG3MJlI9zCCqDdwrgs&#xD;&#xa;3sJE5t7CTvbgwikO4MLMg97CcETgwo/u4cKu7t/C2h7gwoiZ4MKsLuDC8MPewgkR4sIwgOPCVrPh&#xD;&#xa;wmKv4cJpnOLCzyHmwpcF5sL9W+fCzB/owrpT5sIybeLCbqLkwsru6MJqUubCBv3jwrT+4sKnxOXC&#xD;&#xa;RgDlwugm5cLfROnCSAX+" leadInLength="0/1"  />
+            </Keyframes>
+           </Parameter>
+           </Parameters>
+          </GenericEffect>
+         </Effects>
+         <Attributes>
+          <Attribute id="530" value="" name="ident"/>
+          <Attribute id="531" value="44100" name="sampleRate"/>
+          <Attribute id="532" value="16" name="bitDepth"/>
+          <Attribute id="533" value="1" name="gain"/>
+          <Attribute id="534" value="0" name="mixToMono"/>
+         </Attributes>
+         <MetaData>
+          <entry key="WinSubProjectDisplayName" val=""/>
+         </MetaData>
+        </AMFile>
+       </Medias>
+      </GenericTrack>
+      <GenericTrack id="535"  >
+       <Attributes>
+        <Attribute id="536" value="" name="ident"/>
+        <Attribute id="537" value="0" name="audioMuted"/>
+        <Attribute id="538" value="0" name="videoHidden"/>
+       </Attributes>
+       <MetaData>
+        <entry key="IsLocked" val="False"/>
+        <entry key="WinTrackHeight" val="83.47727272727272"/>
+       </MetaData>
+       <Medias>
+       </Medias>
+      </GenericTrack>
+     </Tracks>
+    </GenericMixer>
+   <CaptionAttributes id="539"  >
+    <Attribute id="540" value="1" name="captionsEnabled"/>
+    <Attribute id="541" value="Trebuchet MS" name="captionsFontName"/>
+    <Attribute id="542" value="20" name="captionsFontSize"/>
+    <Attribute id="543" value="(0,0,0,255)" name="captionsBackgroundColor"/>
+    <Attribute id="544" value="(255,255,255,255)" name="captionsForegroundColor"/>
+    <Attribute id="545" value="en" name="lang"/>
+    <Attribute id="546" value="0" name="captionsAlignment"/>
+    <Attribute id="547" value="0" name="captionsDefaultFontSize"/>
+    <Attribute id="548" value="0.5" name="captionsOpacity"/>
+    <Attribute id="549" value="1" name="captionsBackgroundEnabled"/>
+    <Attribute id="550" value="1" name="captionsBackgroundOnlyAroundText"/>
+   </CaptionAttributes>
+   <Parameters>
+    <VectorParam id="551"  name="eyePosition">
+     <InterpolatingParam id="552" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="553" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="554" interp="linr"  time="0/1" value="3000" leadInLength="0/1"  />
+    </VectorParam>
+    <VectorParam id="555"  name="eyeLookAtPosition">
+     <InterpolatingParam id="556" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="557" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="558" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+    </VectorParam>
+    <VectorParam id="559"  name="eyeUpVector">
+     <InterpolatingParam id="560" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+     <InterpolatingParam id="561" interp="linr"  time="0/1" value="1" leadInLength="0/1"  />
+     <InterpolatingParam id="562" interp="linr"  time="0/1" value="0" leadInLength="0/1"  />
+    </VectorParam>
+    <InterpolatingParam id="563" interp="linr"  time="0/1" value="0.23885785" leadInLength="0/1"  name="fov"/>
+    <InterpolatingParam id="564" interp="linr"  time="0/1" value="1.5" leadInLength="0/1"  name="nearClipDistance"/>
+    <InterpolatingParam id="565" interp="linr"  time="0/1" value="6000" leadInLength="0/1"  name="farClipDistance"/>
+   </Parameters>
+  </Timeline>
+ </Project>
+</GoProject>
+</CSMLData>
+
+</Project_Data>

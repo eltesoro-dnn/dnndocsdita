@@ -13,8 +13,8 @@
     <!-- Topics -->
     <topicref format="dita" type="topic" toc="yes" href="content-managers/index.dita" >
 
-        <topicref format="dita" type="topic" navtitle="What's New"   toc="yes" href="content-managers/whats-new-dnn8.dita" />
-        <topicref format="dita" type="topic" navtitle="DNN Platform" toc="yes" href="content-managers/dnn-platform-overview.dita" />
+        <topicref format="dita" type="topic" navtitle="What's New"   locktitle="yes" toc="yes" href="content-managers/whats-new-dnn8.dita" />
+        <topicref format="dita" type="topic" navtitle="DNN Platform" locktitle="yes" toc="yes" href="content-managers/dnn-platform-overview.dita" />
 
 		<!-- Configuring Your Site for Content -->
 		<mapref href="content-managers/configuring-your-site/configuring-your-site-pb.ditamap" />
@@ -36,7 +36,8 @@
 			<topicref format="dita" type="topic"     toc="yes" href="content-managers/dnn-license.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="content-managers/more-resources.dita" />
         </topicref>
-		<topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="content-managers/glossary.dita" >
+		<topichead toc="yes" chunk="by-document to-content" copy-to="content-managers/glossary.dita" >
+            <topicmeta><navtitle>Glossary</navtitle></topicmeta>
 			<mapref href="common/glossary/glossary.ditamap" />
 		</topichead>
 

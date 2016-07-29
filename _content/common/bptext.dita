@@ -206,6 +206,27 @@
 		</ul>
 
 
+        <!-- ==================== Microservices ==================== -->
+
+        <p>
+            <!-- <ph conkeyref="k-bptext/ph-fieldadd"></ph> -->
+            <ph id="ph-fieldadd">To add a new field, drag and drop a field type to the canvas, then configure its settings.</ph>
+
+            <!-- <ph conkeyref="k-bptext/ph-fieldedit"></ph> -->
+            <ph id="ph-fieldedit">To edit a field, click/tap on the field in the canvas, then configure its settings.</ph>
+
+            <!-- <ph conkeyref="k-bptext/ph-fielddup"></ph> -->
+            <ph id="ph-fielddup">To duplicate a field, hover over the field in the canvas, click/tap the duplicate icon, then configure the settings of the new copy.</ph>
+
+            <!-- <ph conkeyref="k-bptext/ph-fielddel"></ph> -->
+            <ph id="ph-fielddel">To delete a field, hover over the field in the canvas, and click/tap the trash icon.</ph>
+        </p>
+
+
+
+
+
+
         <!-- ==================== Misc ==================== -->
 
         <p>

@@ -1,0 +1,558 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-bptext-fields-steps">
+
+    <title>Boilerplates &#8212; Fields Steps</title>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+    </prolog>
+
+    <taskbody>
+
+		<section>
+
+            <!-- MISCELLANEOUS BLURBS -->
+
+
+            <p>
+                <!-- <ph conref="bptext-content-steps.dita#tsk-bptext-content-steps/ph-choosefieldformat"></ph> -->
+                <ph id="ph-choosefieldformat">Choose the form of the field.</ph>
+
+
+                <!-- <ph conref="bptext-content-steps.dita#tsk-bptext-content-steps/ph-configvalidation"></ph> -->
+                <ph id="ph-configvalidation">Configure how the submitted value would be validated.</ph>
+
+
+                <!-- <ph conref="bptext-content-steps.dita#tsk-bptext-content-steps/ph-addlfieldsettings"></ph> -->
+                <ph id="ph-addlfieldsettings">Based on the selected form, additional settings might be customizable.</ph>
+            </p>
+
+
+
+
+
+
+		</section>
+
+
+		<section>
+
+			<!-- FIELD NAMES IN SIMPLETABLE -->
+
+			<simpletable relcolwidth="1* 3*">
+
+
+				<!-- ========== SUBROWS ========== -->
+
+                <strow>
+                    <stentry/>
+
+                </strow>
+
+
+
+				<!-- ========== CONTENT FIELDS: GENERAL SETTINGS ========== -->
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-title"><stentry/></strow> -->
+                <strow id="strow-field-title">
+                    <stentry><uicontrol>Title/Label</uicontrol></stentry>
+                    <stentry>Name of the field. You can change the name either in the <uicontrol>General Settings</uicontrol> panel or directly above the field on the canvas.</stentry>
+                </strow>
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-titletoggle"><stentry/></strow> -->
+                <strow id="strow-field-titletoggle">
+                    <stentry><uicontrol>Title/Label</uicontrol></stentry>
+                    <stentry>If enabled (<uicontrol>On</uicontrol>), displays the title/label you specify in the text box. <!-- Maximum length: 140 characters. Why does this have a limit but the non-toggle doesn't? --></stentry>
+                </strow>
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-required"><stentry/></strow> -->
+				<strow id="strow-field-required">
+					<stentry><uicontrol>Required</uicontrol></stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>),
+                        <ul>
+                            <li>The field name is marked as required.</li>
+                            <li>The message you enter in the provided text box will be displayed if the user does not provide a value in the field.</li>
+                        </ul>
+                    </stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-addressformat"><stentry/></strow> -->
+                <strow id="strow-field-addressformat">
+                    <stentry><uicontrol>Address Format</uicontrol></stentry>
+                    <stentry>Choose <uicontrol>US Address</uicontrol> or <uicontrol>International Address</uicontrol>.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-placeholder"><stentry/></strow> -->
+                <strow id="strow-field-placeholder">
+                    <stentry><uicontrol>Placeholder</uicontrol></stentry>
+                    <stentry>If enabled (<uicontrol>On</uicontrol>), displays help text to indicate which component of the address to enter in each text box.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-number-set"><stentry/></strow> -->
+                <strow id="strow-field-number-set">
+                    <stentry><uicontrol>Number Set</uicontrol></stentry>
+                    <stentry>The number type: <uicontrol>Integer</uicontrol>, <uicontrol>Decimal</uicontrol>, or <uicontrol>Percentage</uicontrol>.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-appearancesinglelinetext"><stentry/></strow> -->
+                <strow id="strow-field-appearancesinglelinetext">
+                    <stentry><uicontrol>Appearance</uicontrol></stentry>
+                    <stentry>
+                        <ul>
+                            <li><uicontrol>Single Line</uicontrol>. Plain text. You can restrict the length of the text under <uicontrol>Validation</uicontrol>.</li>
+                            <li><uicontrol>URL / Website</uicontrol>. The user can choose the protocol (e.g., http). <!-- What other protocols are available? Does it validate that there's a domain in the URL? --> </li>
+                            <li><uicontrol>Email</uicontrol>. <!-- Does it validate that the address is a valid email address with domain? --></li>
+                            <li><uicontrol>Phone Number</uicontrol>. To allow the user to include a country code, set <uicontrol>Phone Number Type</uicontrol> to <uicontrol>International</uicontrol>.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-appearancemultilinetext"><stentry/></strow> -->
+                <strow id="strow-field-appearancemultilinetext">
+                    <stentry><uicontrol>Appearance</uicontrol></stentry>
+                    <stentry>
+                        <ul>
+                            <li><uicontrol>Multi-Line</uicontrol>. Plain text. You can restrict the length of the text under <uicontrol>Validation</uicontrol>.</li>
+                            <li><uicontrol>Text Editor</uicontrol>. Formatted text. You can restrict the length of the text under <uicontrol>Validation</uicontrol>.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-appearancenumber"><stentry/></strow> -->
+				<strow id="strow-field-appearancenumber">
+					<stentry><uicontrol>Appearance</uicontrol></stentry>
+					<stentry>
+                        <ul>
+                            <li><uicontrol>Single Line</uicontrol>. The user must type in the number.</li>
+                            <li><uicontrol>Spinner</uicontrol>. The user can either type in the number or use the buttons to increment or decrement the number.</li>
+                            <li><uicontrol>Dropdown</uicontrol>. The user selects the number from the list.</li>
+                        </ul>
+                    </stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-appearancemultiplechoice-form"><stentry/></strow> -->
+				<strow id="strow-field-appearancemultiplechoice-form">
+					<stentry><uicontrol>Appearance</uicontrol></stentry>
+					<stentry>
+                        <ul>
+                            <li><uicontrol>Checkboxes</uicontrol>. Allows multiple selections.</li>
+                            <li><uicontrol>Radio Buttons</uicontrol>. Allows only one selection.</li>
+                            <li><uicontrol>Images</uicontrol>. Displays the images you specify as the choices. You can choose whether to allow multiple selections or to allow only one.</li>
+                            <li><uicontrol>Yes/No</uicontrol>. Offers two choices, whose labels can be customized.</li>
+                        </ul>
+                    </stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-appearancemultiplechoice-content"><stentry/></strow> -->
+				<strow id="strow-field-appearancemultiplechoice-content">
+					<stentry><uicontrol>Appearance</uicontrol></stentry>
+					<stentry>
+                        <ul>
+                            <li><uicontrol>Dropdown</uicontrol>. Displays the options in a dropdown. Can allow a single selection or multiple selections, depending on the <uicontrol>MultiSelect</uicontrol> setting.</li>
+                            <li><uicontrol>Checkboxes</uicontrol>. Allows multiple selections.</li>
+                            <li><uicontrol>Radio Buttons</uicontrol>. Allows only one selection.</li>
+                        </ul>
+                    </stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-appearancedatetime"><stentry/></strow> -->
+				<strow id="strow-field-appearancedatetime">
+					<stentry><uicontrol>Appearance</uicontrol></stentry>
+					<stentry>
+                        <ul>
+                            <li><uicontrol>Date</uicontrol>. The user can choose only the date.</li>
+                            <li><uicontrol>Date / Time</uicontrol>. The user can choose both the date and the time.</li>
+                            <li><uicontrol>Time</uicontrol>. The user can choose only the time.</li>
+                        </ul>
+                    </stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-appearancestatictext"><stentry/></strow> -->
+				<strow id="strow-field-appearancestatictext">
+					<stentry><uicontrol>Appearance</uicontrol></stentry>
+					<stentry>
+                        <ul>
+                            <li><uicontrol>Heading</uicontrol>. The text in the <uicontrol>Content</uicontrol> field is displayed and formatted as an HTML heading at the level you choose.</li>
+                            <li><uicontrol>Paragraph</uicontrol>. The text in the <uicontrol>Content</uicontrol> field is displayed as an HTML paragraph.</li>
+                        </ul>
+                    </stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-appearanceassets"><stentry/></strow> -->
+				<strow id="strow-field-appearanceassets">
+					<stentry><uicontrol>Appearance</uicontrol></stentry>
+					<stentry>
+                        <ul>
+                            <li><uicontrol>Image</uicontrol>. Accepts image files, including jpg, png, and gif.</li>  <!-- What other files? -->
+                            <li><uicontrol>Document</uicontrol>. Accepts any type of file.</li>  <!-- Is this correct? -->
+                        </ul>
+                    </stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-appearancerefobj"><stentry/></strow> -->
+				<strow id="strow-field-appearancerefobj">
+					<stentry><uicontrol>Appearance</uicontrol></stentry>
+					<stentry>
+                        <ul>
+                            <li><uicontrol>Single Reference</uicontrol>. Allows the user to link to only one content item.</li>
+                            <li><uicontrol>Multi Reference</uicontrol>. Allows the user to link to multiple content items.</li>
+                        </ul>
+                    </stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-spinner-dropdown-range"><stentry/></strow> -->
+                <strow id="strow-field-spinner-dropdown-range">
+                    <stentry>
+                        <p><uicontrol>Spinner Range</uicontrol></p>
+                        <p><uicontrol>Dropdown Range</uicontrol></p>
+                    </stentry>
+                    <stentry>The numeric range that the field will allow. The numbers are incremented/decremented by 1 (if integers) or 0.1 (if decimals or percentages).</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-spinner-orientation"><stentry/></strow> -->
+				<strow id="strow-field-spinner-orientation">
+					<stentry><uicontrol>Spinner Orientation</uicontrol></stentry>
+					<stentry>
+                        <ul>
+                            <li><uicontrol>Horizontal</uicontrol>. Displays the <uicontrol>-</uicontrol> and <uicontrol>+</uicontrol> on the sides of the main type-in box.</li>
+                            <li><uicontrol>Vertical</uicontrol>. Stacks the <uicontrol>-</uicontrol> and <uicontrol>+</uicontrol> on the right side of the type-in box.</li>
+                        </ul>
+                     </stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-dropdown-order"><stentry/></strow> -->
+				<strow id="strow-field-dropdown-order">
+					<stentry><uicontrol>Dropdown Order</uicontrol></stentry>
+					<stentry>
+                        <ul>
+                            <li>Ascending</li>
+                            <li>Descending</li>
+                            <li>Randomized</li>
+                        </ul>
+                    </stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-choices"><stentry/></strow> -->
+				<strow id="strow-field-choices">
+					<stentry><uicontrol>Choices</uicontrol></stentry>
+					<stentry>The list of options.
+                        <ul>
+                            <li>To add an option, click/tap <uicontrol>Add Choice</uicontrol> and enter the option label in the text field.</li>
+                            <li>To edit an option, click/tap an existing option and edit its label.</li>
+                            <li>To delete an option, click/tap the trash icon next to it.</li>
+                            <li>To rearrange the order of the options, drag and drop each option to a new position in the list.</li>
+                        </ul>
+                    </stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-otherasanoption"><stentry/></strow> -->
+				<strow id="strow-field-otherasanoption">
+					<stentry><uicontrol>Other As An Option</uicontrol></stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>), the user can enter a custom option in the text box and choose that option.</stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-multiselect"><stentry/></strow> -->
+				<strow id="strow-field-multiselect">
+					<stentry><uicontrol>Multiselect</uicontrol></stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>), the user can choose one or more options.</stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-selectshapeofimages"><stentry/></strow> -->
+				<strow id="strow-field-selectshapeofimages">
+					<stentry><uicontrol>Select Appearance</uicontrol></stentry>
+					<stentry>The shape of the images: square or circle.</stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-rowsizeofimages"><stentry/></strow> -->
+				<strow id="strow-field-rowsizeofimages">
+					<stentry><uicontrol>Row Size</uicontrol></stentry>
+					<stentry>The number of images displayed in each row.</stentry> <!-- What happens if the display is smaller? Smaller images? Wrapped rows? -->
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-choiceorder"><stentry/></strow> -->
+				<strow id="strow-field-choiceorder">
+					<stentry><uicontrol>Choice Order</uicontrol></stentry>
+					<stentry>
+                        <ul>
+                            <li><uicontrol>None</uicontrol></li>
+                            <li><uicontrol>Alphabetically</uicontrol></li>
+                            <li><uicontrol>Randomized</uicontrol></li>
+                        </ul>
+                    </stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-listorientation"><stentry/></strow> -->
+				<strow id="strow-field-listorientation">
+					<stentry><uicontrol>List Orientation</uicontrol></stentry>
+					<stentry>
+                        <ul>
+                            <li><uicontrol>Horizontal</uicontrol>. Displays the options left-to-right and wraps to the next line.</li>
+                            <li><uicontrol>Vertical</uicontrol>. Displays the options, one per line.</li>
+                        </ul>
+                    </stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-customlabels"><stentry/></strow> -->
+				<strow id="strow-field-customlabels">
+					<stentry><uicontrol>Custom Labels</uicontrol></stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>), you can replace the default <uicontrol>No</uicontrol> and <uicontrol>Yes</uicontrol> labels with the text you enter in the <uicontrol>No Label</uicontrol> and <uicontrol>Yes Label</uicontrol> fields, respectively.</stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-numberchoices"><stentry/></strow> -->
+				<strow id="strow-field-numberchoices">
+					<stentry><uicontrol>Number Of Choices</uicontrol></stentry>
+					<stentry conref="#tsk-bptext-fields-steps/stentry-numberofwithminmax"></stentry>
+				</strow>
+
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-dateformat"><stentry/></strow> -->
+				<strow id="strow-field-dateformat">
+					<stentry><uicontrol>Date Format</uicontrol></stentry>
+					<stentry>How the date is displayed.</stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-timeformat"><stentry/></strow> -->
+				<strow id="strow-field-timeformat">
+					<stentry><uicontrol>Time Format</uicontrol></stentry>
+					<stentry>How the time is displayed.</stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-timezone"><stentry/></strow> -->
+				<strow id="strow-field-timezone">
+					<stentry><uicontrol>Include Timezone</uicontrol></stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>), the time is stored with the specified timezone. <!-- Why is the content manager selecting the timezone for the time that the user enters and the user doesn't know what the timezone is? --></stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-termsconditions"><stentry/></strow> -->
+				<strow id="strow-field-termsconditions">
+					<stentry><uicontrol>Terms And Conditions</uicontrol></stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>), adds the link you specify in <uicontrol>Terms &amp; Conditions Link</uicontrol> with the link text you specify in <uicontrol>Link Label</uicontrol>.</stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-privacypolicy"><stentry/></strow> -->
+				<strow id="strow-field-privacypolicy">
+					<stentry><uicontrol>Privacy Policy</uicontrol></stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>), adds the link you specify in <uicontrol>Privacy Policy Link</uicontrol> with the link text you specify in <uicontrol>Link Label</uicontrol>.</stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-optionallegaltext"><stentry/></strow> -->
+				<strow id="strow-field-optionallegaltext">
+					<stentry><uicontrol>Optional Legal Text</uicontrol></stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>), displays the legal text you enter in the provided text box.</stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-maxnumassets"><stentry/></strow> -->
+				<strow id="strow-field-maxnumassets">
+                    <stentry><uicontrol>Maximum Number of Assets</uicontrol></stentry>
+                    <stentry>The number of images or documents included in the content type.</stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-allowedreftypes"><stentry/></strow> -->
+				<strow id="strow-field-allowedreftypes">
+                    <stentry><uicontrol>Allowed Reference Types</uicontrol></stentry>
+                    <stentry>The list of content types that the reference can point to.</stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-content"><stentry/></strow> -->
+				<strow id="strow-field-content">
+                    <stentry><uicontrol>Content</uicontrol></stentry>
+                    <stentry>The text to display. Maximum length is 140 single-byte characters.</stentry>
+				</strow>
+
+
+				<!-- ========== CONTENT FIELDS: HELP TEXT ========== -->
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-insidefield"><stentry/></strow> -->
+                <strow id="strow-field-insidefield">
+                    <stentry><uicontrol>Inside Field</uicontrol></stentry>
+                    <stentry>Help text to be displayed inside the field. Maximum length: 140 characters. (This value is not displayed if a default value is specified.)</stentry>
+                </strow>
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-belowfield"><stentry/></strow> -->
+                <strow id="strow-field-belowfield">
+                    <stentry><uicontrol>Below Field</uicontrol></stentry>
+                    <stentry>Help text to be displayed below the field. Maximum length: 140 characters.</stentry>
+                </strow>
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-description"><stentry/></strow> -->
+                <strow id="strow-field-description">
+                    <stentry><uicontrol>Description</uicontrol></stentry>
+                    <stentry>If enabled (<uicontrol>On</uicontrol>), displays the instructions or field description you enter in the provided text box. Maximum length: 140 characters.</stentry>
+                </strow>
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-tooltip"><stentry/></strow> -->
+                <strow id="strow-field-tooltip">
+                    <stentry><uicontrol>Tooltip</uicontrol></stentry>
+                    <stentry>If enabled (<uicontrol>On</uicontrol>) and the user hovers/clicks/taps over the information icon (i) next to the field name, displays the help text you enter in the provided text box. Maximum length: 140 characters.</stentry>
+                </strow>
+
+
+				<!-- ========== CONTENT FIELDS: DEFAULT VALUE ========== -->
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-defaultvalue"><stentry/></strow> -->
+                <strow id="strow-field-defaultvalue">
+                    <stentry><uicontrol>Default Value</uicontrol></stentry>
+                    <stentry>The value to assign to the field if the user does not provide a custom value. (If specified, the default value is displayed, instead of the <uicontrol>Help Text</uicontrol> <uicontrol>Inside Field</uicontrol> value.)</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-defaultvaluefirstlastnames"><stentry/></strow> -->
+                <strow id="strow-field-defaultvaluefirstlastnames">
+                    <stentry>
+                        <p><uicontrol>First Name Default Value</uicontrol></p>
+                        <p><uicontrol>Last Name Default Value</uicontrol></p>
+                    </stentry>
+                    <stentry>The value to assign to the field if the user does not provide a custom value.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-defaultvaluenumber"><stentry/></strow> -->
+                <strow id="strow-field-defaultvaluenumber">
+                    <stentry><uicontrol>Default Value</uicontrol></stentry>
+                    <stentry>The value to assign to the field if the user does not provide a custom value.
+                        <note type="note">If using the spinner or dropdown appearance, specify the <uicontrol>Min</uicontrol> and <uicontrol>Max</uicontrol> of the range to populate this <uicontrol>Default Value</uicontrol> dropdown list, then select the default value.</note>
+                    </stentry>
+                </strow>
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-setdefaultvalueashidden"><stentry/></strow> -->
+                <strow id="strow-field-setdefaultvalueashidden">
+                    <stentry><uicontrol>Set Default Value as Hidden</uicontrol></stentry>
+                    <stentry>If checked,
+                        <ul>
+                            <li>The default value is not displayed to the user.</li>
+                            <li><uicontrol>Required</uicontrol> must be <uicontrol>Off</uicontrol>.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+
+				<!-- ========== CONTENT FIELDS: VALIDATION ========== -->
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-validatnerrormsg"><stentry/></strow> -->
+				<strow id="strow-field-validatnerrormsg">
+					<stentry><uicontrol>Error Message</uicontrol></stentry>
+					<stentry>The message to display if the user entered data in the wrong format; e.g., if an email address does not include a domain.</stentry>
+				</strow>
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-validatnnumofchars"><stentry/></strow> -->
+				<strow id="strow-field-validatnnumofchars">
+					<stentry><uicontrol>Number of Characters</uicontrol></stentry>
+                    <stentry conref="#tsk-bptext-fields-steps/stentry-numberofwithminmax"></stentry>
+				</strow>
+
+
+
+
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-validatndropdownorder"><stentry/></strow> -->
+				<strow id="strow-field-validatndropdownorder">
+					<stentry><uicontrol>Dropdown Order</uicontrol></stentry>
+					<stentry>How the dropdown list is sorted: <uicontrol>Ascending</uicontrol>, <uicontrol>Descending</uicontrol>, or <uicontrol>Randomized</uicontrol>.</stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-validatnchoiceorder"><stentry/></strow> -->
+                <strow id="strow-field-validatnchoiceorder">
+					<stentry><uicontrol>Choice Order</uicontrol></stentry>
+					<stentry>
+                        <ul>
+                            <li><uicontrol>None</uicontrol>. The options are sorted in the same way they appear in the <uicontrol>Settings</uicontrol> tab.</li>
+                            <li><uicontrol>Alphabetically</uicontrol>. The options are sorted alphabetically.</li>
+                            <li><uicontrol>Randomized</uicontrol>. The options are sorted randomly.</li>
+                        </ul>
+                    </stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-validatndatetimerange"><stentry/></strow> -->
+				<strow id="strow-field-validatndatetimerange">
+					<stentry>
+                        <p><uicontrol>Time Range</uicontrol></p>
+                        <p><uicontrol>Date Range</uicontrol></p>
+                    </stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>), the message you enter in the provided text box will be displayed if the user selects a date/time outside the valid range. You must indicate the valid range:
+                        <ul>
+                            <li><uicontrol>Before</uicontrol>. The valid range is from infinity to the date/time you select.</li>
+                            <li><uicontrol>After</uicontrol>. The valid range is from the date/time you select to infinity.</li>
+                            <li><uicontrol>Between</uicontrol>. The valid range is from the date/time you select in the first field to the date/time you select in the second field. The first date/time value must be earlier than the second date/time value.</li>
+                        </ul>
+                    </stentry>
+				</strow>
+
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-validatnnumofrefs"><stentry/></strow> -->
+				<strow id="strow-field-validatnnumofrefs">
+					<stentry><uicontrol>Number of References</uicontrol></stentry>
+					<stentry conref="#tsk-bptext-fields-steps/stentry-numberofwithminmax"></stentry>
+				</strow>
+
+
+                <strow>
+                    <stentry/>
+
+                    <!-- <stentry conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/stentry-numberofwithminmax"><stentry/></stentry> -->
+                    <stentry id="stentry-numberofwithminmax">If enabled (<uicontrol>On</uicontrol>), the message you enter in the provided text box will be displayed if the user provides a value outside the valid range. You must indicate the valid range:
+                        <ul>
+                            <li><uicontrol>Minimum</uicontrol>. The valid range is from the value you enter in <uicontrol>Min</uicontrol> to infinity.</li>
+                            <li><uicontrol>Maximum</uicontrol>. The valid range is from infinity to the value you enter in <uicontrol>Max</uicontrol>.</li>
+                            <li><uicontrol>Between</uicontrol>. The valid range is from the value you enter in <uicontrol>Min</uicontrol> to the value you enter in <uicontrol>Max</uicontrol>.</li>
+                        </ul>
+                        <uicontrol>Min</uicontrol> must be less than <uicontrol>Max</uicontrol>.
+                    </stentry>
+                </strow>
+
+
+				<!-- ==========  ========== -->
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-"><stentry/></strow>
+				<strow id="strow-field-">
+					<stentry><uicontrol></uicontrol></stentry>
+					<stentry></stentry>
+				</strow>
+				-->
+
+			</simpletable>
+
+		</section>
+
+
+        <prereq>
+        </prereq>
+
+
+        <steps>
+
+			<!-- ========== FIELDS ========== -->
+
+
+            <step>
+                <!-- <ph conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/ph-field-configuregeneralsettings"></ph> -->
+                <cmd><ph id="ph-field-configuregeneralsettings">Configure the general settings.</ph></cmd>
+            </step>
+
+            <!-- TEMPLATE
+            <step>
+                <cmd><ph conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/ph-field-configuregeneralsettings"></ph></cmd>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Field-...-GeneralSettings.gif"><alt>Field general settings</alt></image>
+
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry>Field</stentry>
+							<stentry>Description</stentry>
+						</sthead>
+                        <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-title"><stentry/></strow>
+                        <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-defaultvalue"><stentry/></strow>
+                        <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-setdefaultvalueashidden"><stentry/></strow>
+                        <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-description"><stentry/></strow>
+                        <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-tooltip"><stentry/></strow>
+					</simpletable>
+				</info>
+            </step>
+            -->
+
+        </steps>
+
+    </taskbody>
+
+</task>

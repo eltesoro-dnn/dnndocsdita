@@ -81,7 +81,7 @@ call npp %_logfile%
 
 :T005
 call :header "Testing win.config."  >> %_logfile%
-powershell -f %_tstdir%\testwinconfig.ps1 http://qa.dnncorp.biz/docs %_gitdir%\_build\urlmap\DC-URLmapping.csv %_outdir% >> %_logfile%
+powershell -f %_tstdir%\testwinconfig.ps1 http://qa.dnncorp.biz/docs %_gitdir%\_build\urlmap\DC-URLmapping.csv %_outdir% %_tstdir%\indexfileexceptions.txt >> %_logfile%
 
 :. if _%1_ NEQ __ goto :eof
 

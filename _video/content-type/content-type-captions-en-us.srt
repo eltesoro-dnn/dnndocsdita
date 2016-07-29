@@ -1,9 +1,9 @@
 ﻿1
-00:00:01,700 --> 00:00:03,033
+00:00:01,700 --> 00:00:02,333
 In this video,
 
 2
-00:00:03,033 --> 00:00:05,433
+00:00:02,333 --> 00:00:05,433
 you will learn how to create a simple content type.
 
 3
@@ -12,7 +12,7 @@ You must be logged in as a content manager
 
 4
 00:00:07,766 --> 00:00:11,766
-to access the Persona Bar options for structured content.
+to access the Persona Bar options for Structured Content.
 
 5
 00:00:11,766 --> 00:00:16,232
@@ -24,11 +24,11 @@ Go to the Content Types tab.
 
 7
 00:00:18,733 --> 00:00:22,999
-DNN provides you with default content types that you can use.
+DNN provides you with default Content Types that you can use.
 
 8
 00:00:23,000 --> 00:00:25,133
-You can duplicate a default content type
+You can duplicate a default Content Type
 
 9
 00:00:25,133 --> 00:00:28,333
@@ -36,7 +36,7 @@ and then customize it according to your needs.
 
 10
 00:00:28,333 --> 00:00:31,333
-Or you can create your own custom content type
+Or you can create your own custom Content Type
 
 11
 00:00:31,333 --> 00:00:34,699
@@ -44,7 +44,7 @@ by clicking the Create Content Type button.
 
 12
 00:00:34,700 --> 00:00:41,033
-Enter the name of the new content type up here.
+Enter the name of the new Content Type up here.
 
 13
 00:00:41,033 --> 00:00:43,433
@@ -52,26 +52,26 @@ In the Settings section of the left panel,
 
 14
 00:00:43,433 --> 00:00:45,899
-you can modify the properties of the content type,
+you can modify the properties of the Content Type,
 
 15
 00:00:45,900 --> 00:00:50,733
 including its description and the icon to represent it.
 
 16
-00:00:50,733 --> 00:00:53,566
+00:00:50,733 --> 00:00:52,833
 Under the Content tab, you'll find the canvas
 
 17
-00:00:53,566 --> 00:00:56,799
+00:00:52,833 --> 00:00:56,799
 where you drag and drop content fields.
 
 18
-00:00:56,800 --> 00:00:58,633
+00:00:56,800 --> 00:00:59,133
 You can modify the properties of the new field
 
 19
-00:00:58,633 --> 00:01:02,133
+00:00:59,133 --> 00:01:02,133
 in the Settings section of the left panel.
 
 20
@@ -99,25 +99,26 @@ Each type of field and each form of that field could have different properties.
 You can change the properties again later,
 
 27
-00:01:24,366 --> 00:01:27,566
+00:01:24,366 --> 00:01:27,132
 simply by clicking the field you want to edit.
 
 28
-00:01:27,566 --> 00:01:31,299
+00:01:27,133 --> 00:01:31,166
 You can also duplicate or delete the field using these icons.
 
 29
-00:01:31,300 --> 00:01:34,333
+00:01:31,166 --> 00:01:34,332
 Duplicating the field copies the current settings.
 
 30
-00:01:34,333 --> 00:01:36,233
+00:01:34,333 --> 00:01:36,099
 When you're done adding and configuring fields
 
 31
-00:01:36,233 --> 00:01:39,699
-to your custom content type, click Save.
+00:01:36,100 --> 00:01:39,700
+to your custom Content Type, click Save.
 
 32
 00:01:39,700 --> 00:01:43,033
-Your new content type is now available for use.
+Your new Content Type is now available for use.
+

@@ -1,0 +1,334 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-bptext-forms-steps">
+
+    <title>Boilerplates &#8212; Forms Steps</title>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+    </prolog>
+
+    <taskbody>
+
+		<section>
+
+            <!-- MISCELLANEOUS BLURBS -->
+
+		</section>
+
+
+		<section>
+
+			<!-- FIELD NAMES IN SIMPLETABLE -->
+
+			<simpletable relcolwidth="1* 3*">
+
+
+				<!-- ========== SUBROWS ========== -->
+
+                <strow>
+                    <stentry/>
+
+
+                </strow>
+
+
+
+				<!-- ========== FORM FIELDS: GENERAL SETTINGS ========== -->
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-formname"><stentry/>`</strow> -->
+				<strow id="strow-field-formname">
+					<stentry><uicontrol>Form Name</uicontrol></stentry>
+					<stentry>This value appears at the top of the page.</stentry>
+				</strow>
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-tags"><stentry/></strow> -->
+				<strow id="strow-field-tags">
+					<stentry><uicontrol>Tags</uicontrol></stentry>
+					<stentry>A comma-separated list of tags to associate with the form. You can also press <uicontrol><shortcut>Enter</shortcut></uicontrol> after typing each tag.</stentry>
+				</strow>
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-campaigns"><stentry/></strow> -->
+				<strow id="strow-field-campaigns">
+					<stentry><uicontrol>Campaigns</uicontrol></stentry>
+					<stentry>Choose or create a marketing campaign that you want this form to be part of.</stentry>
+				</strow>
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-formdescription"><stentry/></strow> -->
+				<strow id="strow-field-formdescription">
+					<stentry><uicontrol>Form Description</uicontrol></stentry>
+					<stentry>Information about the form.</stentry>
+				</strow>
+
+
+				<!-- ========== FORM FIELDS: DATA COLLECTION ========== -->
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-database"><stentry/></strow> -->
+				<strow id="strow-field-database">
+					<stentry><uicontrol>Database</uicontrol></stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>), data in form submissions are sent to your DNN Evoq database for this site.</stentry>
+				</strow>
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-customurl"><stentry/></strow> -->
+				<strow id="strow-field-customurl">
+					<stentry><uicontrol>Custom URL</uicontrol></stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>), data in form submissions are sent to the specified URL for processing and storage.</stentry>
+				</strow>
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-googleanalytics"><stentry/></strow> -->
+				<strow id="strow-field-googleanalytics">
+					<stentry><uicontrol>Google Analytics</uicontrol></stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>), you must fill in information required by Google Analytics.
+                        <ul>
+                            <li><uicontrol>Tracking ID</uicontrol>. This is provided by Google Analytics.</li>
+                            <li><uicontrol>Event Category</uicontrol>.</li>
+                            <li><uicontrol>Event Action</uicontrol>.</li>
+                            <li><uicontrol>Event Label</uicontrol>.</li>
+                            <li><uicontrol>Event Value</uicontrol>.</li>
+                        </ul>
+
+                    </stentry>
+				</strow>
+
+
+				<!-- ========== FORM FIELDS: FORM SUBMISSION: EMAIL NOTIFICATION ========== -->
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-sendconfirmationemail"><stentry/></strow> -->
+				<strow id="strow-field-sendconfirmationemail">
+					<stentry><uicontrol>Send Confirmation Email</uicontrol></stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>), an email is sent to the user after submitting the form.</stentry>
+				</strow>
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-emailsubject"><stentry/></strow> -->
+				<strow id="strow-field-emailsubject">
+					<stentry><uicontrol>Email Subject</uicontrol></stentry>
+					<stentry>The subject of the email.</stentry>
+				</strow>
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-emailmessage"><stentry/></strow> -->
+				<strow id="strow-field-emailmessage">
+					<stentry><uicontrol>Email Message</uicontrol></stentry>
+					<stentry>The body of the email in HTML format. <!-- ??? --></stentry>
+				</strow>
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-emailrecipient"><stentry/></strow> -->
+				<strow id="strow-field-emailrecipient">
+					<stentry><uicontrol>Email Recipient</uicontrol></stentry>
+					<stentry>If the form includes an email address field, this field would be prepopulated with the email address entered in that field.</stentry>
+				</strow>
+
+
+				<!-- ========== FORM FIELDS: FORM SUBMISSION: MESSAGE NOTIFICATION ========== -->
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-displayconfirmationmsg"><stentry/></strow> -->
+				<strow id="strow-field-displayconfirmationmsg">
+					<stentry><uicontrol>Display Confirmation Message</uicontrol></stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>), displays the specified message after the user submits the form.</stentry>
+				</strow>
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-message"><stentry/></strow> -->
+				<strow id="strow-field-message">
+					<stentry><uicontrol>Message</uicontrol></stentry>
+					<stentry>The message displayed to the user after submitting the form.</stentry>
+				</strow>
+
+
+				<!-- ========== FORM FIELDS: FORM SUBMISSION: REDIRECT URL ========== -->
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-redirecttourl"><stentry/></strow> -->
+				<strow id="strow-field-redirecttourl">
+					<stentry><uicontrol>Redirect to URL</uicontrol></stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>), the user is redirected to the specified URL after the user submits the form.</stentry>
+				</strow>
+
+
+				<!-- ========== FORM FIELDS: FORM SUBMISSION: DOWNLOAD FILES ========== -->
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-downloadfiles"><stentry/></strow> -->
+				<strow id="strow-field-downloadfiles">
+					<stentry><uicontrol>Provide Files to Download</uicontrol></stentry>
+					<stentry>If enabled (<uicontrol>On</uicontrol>), allows the user to download the specified file(s) after the user submits the form.</stentry>
+				</strow>
+
+
+
+
+
+				<!-- ==========  ========== -->
+
+				<!-- <strow conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/strow-field-"><stentry/></strow>
+				<strow id="strow-field-">
+					<stentry><uicontrol></uicontrol></stentry>
+					<stentry></stentry>
+				</strow>
+				-->
+
+			</simpletable>
+
+		</section>
+
+
+        <prereq>
+        </prereq>
+
+
+        <steps>
+
+			<!-- ========== MENU - PERSONA BAR: MANAGE FORMS ========== -->
+
+			<!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-gotoforms-createbtn"><cmd/></step> -->
+			<step id="step-gotoforms-createbtn">
+				<cmd>Click/Tap <uicontrol>Create Form</uicontrol>.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-CreateBtn.png"><alt>Forms &gt; Create Form button</alt></image></info>
+			</step>
+
+			<!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-forms-enterformname"><cmd/></step> -->
+			<step id="step-forms-enterformname">
+				<cmd>Enter a title for the form.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-EnterTitle.png"><alt>Enter the form title.</alt></image>
+                </info>
+			</step>
+
+			<!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-forms-configurefields"><cmd/></step> -->
+            <step id="step-forms-configurefields">
+				<cmd>Manage the fields of the form.</cmd>
+                <info>
+                    <p>The <uicontrol>Submit</uicontrol> button is automatically added when the form has one or more fields.</p>
+                </info>
+				<substeps>
+					<substep>
+						<cmd><ph conkeyref="k-bptext/ph-fieldadd"></ph></cmd>
+						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormField-Add.png"><alt>Drag and drop a field to the canvas</alt></image></info>
+					</substep>
+					<substep>
+						<cmd><ph conkeyref="k-bptext/ph-fieldedit"></ph></cmd>
+						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormField-Edit.png"><alt>Click/Tap a field in the canvas</alt></image></info>
+					</substep>
+					<substep>
+						<cmd><ph conkeyref="k-bptext/ph-fielddup"></ph></cmd>
+						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormField-Hover-Dup.png"><alt>Click/Tap a field in the canvas</alt></image></info>
+					</substep>
+					<substep>
+						<cmd><ph conkeyref="k-bptext/ph-fielddel"></ph></cmd>
+						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormField-Hover-Del.png"><alt>Click/Tap a field in the canvas</alt></image></info>
+					</substep>
+				</substeps>
+            </step>
+
+
+			<!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-forms-configureform"><cmd/></step> -->
+			<step id="step-forms-configureform">
+				<cmd>Configure the properties of the form.</cmd>
+                <substeps>
+
+                    <substep>
+                        <cmd>In the <uicontrol>General Settings</uicontrol> tab.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-GeneralSettings.png"><alt>Form Configuration - General Settings</alt></image>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-formname"><stentry/></strow>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-tags"><stentry/></strow>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-campaigns"><stentry/></strow>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-formdescription"><stentry/></strow>
+                            </simpletable>
+                        </info>
+                    </substep>
+
+                    <substep>
+                        <cmd>In the <uicontrol>Data Collection</uicontrol> tab.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-DataCollection.png"><alt>Form Configuration - Data Collection</alt></image>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-database"><stentry/></strow>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-customurl"><stentry/></strow>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-googleanalytics"><stentry/></strow>
+                            </simpletable>
+                        </info>
+                    </substep>
+
+                    <substep>
+                        <cmd>In the <uicontrol>Form Submission</uicontrol> tab.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-FormSubmission.png"><alt>Form Configuration - Form Submission</alt></image>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-sendconfirmationemail"><stentry/></strow>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-emailsubject"><stentry/></strow>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-emailmessage"><stentry/></strow>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-emailrecipient"><stentry/></strow>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-displayconfirmationmsg"><stentry/></strow>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-message"><stentry/></strow>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-redirecttourl"><stentry/></strow>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-downloadfiles"><stentry/></strow>
+                            </simpletable>
+                        </info>
+                    </substep>
+
+                </substeps>
+			</step>
+
+            <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-highlightellipses-analytics"><cmd/></step> -->
+			<step id="step-highlightellipses-analytics">
+				<cmd>Click/Tap the ellipses for the form you want, and choose Analytics.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-ellipsesmenu-Analytics.png"><alt>Click/Tap the ellipses for the form &gt; Analytics</alt></image>
+                </info>
+			</step>
+
+            <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-highlightellipses-edit"><cmd/></step> -->
+			<step id="step-highlightellipses-edit">
+				<cmd>Click/Tap the ellipses for the form you want, and choose Edit.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-ellipsesmenu-Edit.png"><alt>Click/Tap the ellipses for the form &gt; Edit</alt></image>
+                </info>
+			</step>
+
+            <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-highlightellipses-duplicate"><cmd/></step> -->
+			<step id="step-highlightellipses-duplicate">
+				<cmd>Click/Tap the ellipses for the form you want, and choose Duplicate.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-ellipsesmenu-Duplicate.png"><alt>Click/Tap the ellipses for the form &gt; Duplicate</alt></image>
+                </info>
+			</step>
+
+            <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-highlightellipses-delete"><cmd/></step> -->
+			<step id="step-highlightellipses-delete">
+				<cmd>Click/Tap the ellipses for the form you want, and choose Delete.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-ellipsesmenu-Delete.png"><alt>Click/Tap the ellipses for the form &gt; Delete</alt></image>
+                </info>
+			</step>
+
+
+
+			<!--
+            <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-..."><cmd/></step>
+			<step id="step-...">
+				<cmd></cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-CreateBtn.png"><alt>Forms &gt; Create Form button</alt></image>
+                </info>
+			</step>
+            -->
+
+        </steps>
+
+    </taskbody>
+
+</task>

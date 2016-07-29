@@ -3,14 +3,14 @@
 // In the breadcrumbs position, add <script language="JavaScript"><!--breadcrumbs(); --></script>
 
 function breadcrumbs(){
+    sDivider = "&#187;";
     sRoot = new String( "/docs" );
     sURL = new String;
     bits = new Object;
     var x = 0;
     var stop = 0;
-    var output = "<a href=\"/docs\">Home</a> &nbsp;&#187;&nbsp; ";
+    var output = "<a href=\"/docs\">Home</a> &nbsp;" + sDivider + "&nbsp; ";
     sURL = location.href;
-    sURL = sURL.replace( /-/g, " " );
     sURL = sURL.slice(8,sURL.length);
     chunkStart = sURL.indexOf(sRoot);
     sURL = sURL.slice(chunkStart+sRoot.length+1,sURL.length)
@@ -29,7 +29,7 @@ function breadcrumbs(){
         for(y=1;y<x-i;y++){
             output += "../";
         }
-        output += bits[i] + "/\">" + bits[i] + "</a> &nbsp;&#187;&nbsp; ";
+        output += bits[i] + "/\">" + bits[i].replace( /-/g, " " ) + "</a> &nbsp;" + sDivider + "&nbsp; ";
     }
     document.write(output + document.title);
 }

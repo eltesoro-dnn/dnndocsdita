@@ -13,8 +13,8 @@
     <!-- Topics -->
     <topicref format="dita" type="topic" toc="yes" href="administrators/index.dita" >
 
-        <topicref format="dita" type="topic" navtitle="What's New"   toc="yes" href="administrators/whats-new-dnn8.dita"/>
-        <topicref format="dita" type="topic" navtitle="DNN Platform" toc="yes" href="administrators/dnn-platform-overview.dita" />
+        <topicref format="dita" type="topic" navtitle="What's New"   locktitle="yes" toc="yes" href="administrators/whats-new-dnn8.dita"/>
+        <topicref format="dita" type="topic" navtitle="DNN Platform" locktitle="yes" toc="yes" href="administrators/dnn-platform-overview.dita" />
 
         <!-- Setup -->
         <topicref format="dita" type="topic" toc="yes" href="administrators/setup/set-up-dnn.dita" copy-to="administrators/setup/index.dita" collection-type="sequence">
@@ -25,13 +25,13 @@
         </topicref>
 
         <!-- Extensions -->
-        <topicref format="dita" type="task" navtitle="Install an Extension" toc="yes" href="administrators/extensions/install-extension.dita" copy-to="administrators/extensions/index.dita">
+        <topicref format="dita" type="task" navtitle="Install an Extension" locktitle="yes" toc="yes" href="administrators/extensions/install-extension.dita" copy-to="administrators/extensions/index.dita">
 			<topicref format="dita" type="task" toc="yes" href="administrators/extensions/manage-premium-module.dita" />
 			<topicref format="dita" type="task" toc="yes" href="administrators/extensions/allow-module-use.dita" />
         </topicref>
 
         <!-- Licensing -->
-        <topicref format="dita" type="topic" navtitle="Licensing" toc="yes" href="administrators/licensing/licensing.dita" copy-to="administrators/licensing/index.dita" collection-type="family">
+        <topicref format="dita" type="topic" navtitle="Licensing" locktitle="yes" toc="yes" href="administrators/licensing/licensing.dita" copy-to="administrators/licensing/index.dita" collection-type="family">
             <topicref format="dita" type="task"  toc="yes" href="administrators/licensing/activate-license-automatically.dita" />
             <topicref format="dita" type="task"  toc="yes" href="administrators/licensing/activate-license-manually.dita" />
             <topicref format="dita" type="topic" toc="yes" href="administrators/licensing/faq-licensing.dita" />
@@ -56,7 +56,8 @@
 			<topicref format="dita" type="topic"     toc="yes" href="administrators/dnn-license.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="administrators/more-resources.dita" />
         </topicref>
-		<topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="administrators/glossary.dita" >
+		<topichead toc="yes" chunk="by-document to-content" copy-to="administrators/glossary.dita" >
+            <topicmeta><navtitle>Glossary</navtitle></topicmeta>
 			<mapref href="common/glossary/glossary.ditamap" />
 		</topichead>
 

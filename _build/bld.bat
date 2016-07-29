@@ -90,8 +90,8 @@ xcopy %_gitdir%\_themes\dnn\dnn*.css     %_blddir%\_themes\dnn    /i/s/v/y
 
 for %%v in ( administrators developers designers content-managers community-managers ) do  xcopy %_blddir%\common\*.dita* %_blddir%\%%v /i/s/v/y
 
-echo Copying ditamaps for %_bldtype% ....
-if _%_bldtype%_ NEQ __  powershell -file %_gitdir%\_build\replacemaps.ps1 %_blddir% %_bldtype%
+echo Copying dita maps and files for %_bldtype% ....
+if _%_bldtype%_ NEQ __  powershell -file %_gitdir%\_build\replacefiles.ps1 %_blddir% %_bldtype%
 
 
 echo Integrating our own DITA-OT plugin ....

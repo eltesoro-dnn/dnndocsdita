@@ -13,8 +13,8 @@
     <!-- Topics -->
     <topicref format="dita" type="topic" toc="yes" href="developers/index.dita" >
 
-        <topicref format="dita" type="topic"   navtitle="What's New"   toc="yes" href="developers/whats-new-dnn8.dita" />
-        <topicref format="dita" type="topic"   navtitle="DNN Platform" toc="yes" href="developers/dnn-platform-overview.dita" />
+        <topicref format="dita" type="topic"   navtitle="What's New"   locktitle="yes" toc="yes" href="developers/whats-new-dnn8.dita" />
+        <topicref format="dita" type="topic"   navtitle="DNN Platform" locktitle="yes" toc="yes" href="developers/dnn-platform-overview.dita" />
 
         <!-- Setup -->
         <topicref format="dita" type="topic" toc="yes" href="developers/setup/set-up-dnn.dita" copy-to="developers/setup/index.dita" collection-type="sequence">
@@ -40,8 +40,8 @@
             <topicref format="dita" type="task" toc="yes" href="developers/creating-modules/create-module-using-templates.dita" />
             <topicref format="dita" type="task" toc="yes" href="developers/creating-modules/start-vs-project-with-templates.dita" />
             <topicref format="dita" type="task" toc="yes" href="developers/creating-modules/test-module.dita" />
-            <topicref format="dita" type="task" navtitle="Pack the Module"  toc="yes" href="developers/extensions/pack-extension.dita" />
-            <topicref format="dita" type="task" navtitle="Install a Module" toc="yes" href="developers/extensions/install-extension.dita" />
+            <topicref format="dita" type="task" navtitle="Pack the Module"  locktitle="yes" toc="yes" href="developers/extensions/pack-extension.dita" />
+            <topicref format="dita" type="task" navtitle="Install a Module" locktitle="yes" toc="yes" href="developers/extensions/install-extension.dita" />
         </topicref>
 
         <!-- Securing Your Site -->
@@ -54,13 +54,14 @@
             <!-- <topicref format="dita" type="reference" toc="yes" href="developers/contents-module-pack.dita" /> Topic not ready. -->
             <topicref format="dita" type="reference" toc="yes" href="developers/extensions/dnn-manifest-schema.dita" />
 			<topicref format="dita" type="reference" toc="yes" href="developers/included-modules/included-modules.dita" copy-to="developers/included-modules/index.dita" />
-            <topicref format="html" scope="external" navtitle="DNN API Reference" toc="yes" href="http://www.dnnsoftware.com/dnn-api/" />
+            <topicref format="html" scope="external" navtitle="DNN API Reference" locktitle="yes" toc="yes" href="http://www.dnnsoftware.com/dnn-api/" />
 			<topicref format="dita" type="reference" toc="yes" href="developers/requirements.dita" />
 			<topicref format="dita" type="reference" toc="yes" href="developers/product-versions.dita" />
 			<topicref format="dita" type="topic"     toc="yes" href="developers/dnn-license.dita" />
 			<topicref format="dita" type="topic"     toc="yes" href="developers/more-resources.dita" />
         </topicref>
-		<topichead navtitle="Glossary" toc="yes" chunk="by-document to-content" copy-to="developers/glossary.dita" >
+		<topichead toc="yes" chunk="by-document to-content" copy-to="developers/glossary.dita" >
+            <topicmeta><navtitle>Glossary</navtitle></topicmeta>
 			<mapref href="common/glossary/glossary.ditamap" />
 		</topichead>
 
@@ -90,13 +91,13 @@
         <!-- adm dev dsg -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic"                                     href="developers/setup/set-up-dnn.dita" />
+                <topicref format="dita" type="topic"     href="developers/setup/set-up-dnn.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task"      navtitle="Install an Extension" href="developers/extensions/install-extension.dita" />
+                <topicref format="dita" type="task" navtitle="Install an Extension" locktitle="yes" href="developers/extensions/install-extension.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="reference"                                 href="developers/requirements.dita" />
+                <topicref format="dita" type="reference" href="developers/requirements.dita" />
             </relcell>
         </relrow>
 
@@ -104,8 +105,8 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task" navtitle="Pack Your Extension"  href="developers/extensions/pack-extension.dita" />
-                <topicref format="dita" type="task" navtitle="Install an Extension" href="developers/extensions/install-extension.dita" />
+                <topicref format="dita" type="task" navtitle="Pack Your Extension"  locktitle="yes" href="developers/extensions/pack-extension.dita" />
+                <topicref format="dita" type="task" navtitle="Install an Extension" locktitle="yes" href="developers/extensions/install-extension.dita" />
             </relcell>
             <relcell/>
         </relrow>
@@ -114,7 +115,7 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task" navtitle="Pack Your Extension" href="developers/extensions/pack-extension.dita" />
+                <topicref format="dita" type="task" navtitle="Pack Your Extension" locktitle="yes" href="developers/extensions/pack-extension.dita" />
             </relcell>
             <relcell>
                 <topicref format="dita" type="reference" href="developers/extensions/dnn-manifest-schema.dita" />
@@ -142,7 +143,7 @@
                 <topicref format="dita" type="topic" href="developers/creating-modules/create-module.dita" />
             </relcell>
             <relcell>
-                <topicref format="dita" type="task" navtitle="Pack Your Extension" href="developers/extensions/pack-extension.dita" />
+                <topicref format="dita" type="task" navtitle="Pack Your Extension" locktitle="yes" href="developers/extensions/pack-extension.dita" />
             </relcell>
             <relcell>
                 <topicref format="dita" type="topic"   href="developers/providers.dita" />
@@ -178,7 +179,7 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task" navtitle="Install an Extension" href="developers/extensions/install-extension.dita" />
+                <topicref format="dita" type="task" navtitle="Install an Extension" locktitle="yes" href="developers/extensions/install-extension.dita" />
                 <topicref format="dita" type="task" href="developers/creating-modules/test-module.dita" />
             </relcell>
             <relcell/>

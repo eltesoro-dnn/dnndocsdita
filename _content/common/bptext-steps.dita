@@ -61,6 +61,29 @@
 				</substeps>
             </step>
 
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-menuhostActivateLicense"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-menuhostActivateLicense"><cmd/></step> -->
+            <step id="step-menuhostActivateLicense">
+                <cmd conref="#cmd-menuhostActivateLicense"></cmd>
+                <info conref="#info-menuhostActivateLicense"></info>
+            </step>
+            <step>
+                <!-- <cmd conref="#cmd-menuhostActivateLicense"></cmd> -->
+                <cmd id="cmd-menuhostActivateLicense">Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Activate Your License</uicontrol></menucascade>.</cmd>
+                <!-- <cmd conref="#info-menuhostActivateLicense"></info> -->
+                <info id="info-menuhostActivateLicense">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-menuHostAdvActivateLic.png"><alt>Host &gt; Advanced Settings &gt; Activate Your License</alt></image>
+                </info>
+                <substeps>
+                    <!-- <substep conref="bptext-steps.dita#tsk-bptext-steps/substep-menuhostActivateLicense"><cmd/></substep> -->
+                    <!-- <substep conkeyref="k-bpsteps/substep-menuhostActivateLicense"><cmd/></substep> -->
+                    <substep id="substep-menuhostActivateLicense">
+                        <cmd conref="#cmd-menuhostActivateLicense"></cmd>
+                        <info conref="#info-menuhostActivateLicense"></info>
+                    </substep>
+                </substeps>
+            </step>
+
 
 			<!-- ========== MENU - CONTROL BAR: ADMIN EXTENSIONS ========== -->
 
@@ -260,7 +283,14 @@
 
 			<!-- ========== MENU - PERSONA BAR: FORMS ========== -->
 
-
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-gotomanageforms"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-pb-gotomanageforms"><cmd/></step> -->
+            <step id="step-pb-gotomanageforms">
+				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Manage</uicontrol> <uicontrol>Forms</uicontrol></menucascade>.</cmd>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarManage-Forms-cmg.png"><alt>Persona Bar &gt; Manage &gt; Forms</alt></image>
+                </info>
+            </step>
 
 
 			<!-- ========== MENU - PERSONA BAR: COMMUNITY MANAGER / MODERATOR ========== -->

@@ -4,8 +4,9 @@
 
     <!--
     To use:
-    <topichead navtitle="Glossary" chunk="by-document to-content" toc="yes" copy-to="admin/glossary-adm.dita" >
-        <mapref keyref="k-glossarymap" />
+    <topichead toc="yes" chunk="by-document to-content" copy-to="administrators/glossary.dita" >
+        <topicmeta><navtitle>Glossary</navtitle></topicmeta>
+        <mapref href="common/glossary/glossary.ditamap" />
     </topichead>
     -->
 
