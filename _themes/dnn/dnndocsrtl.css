@@ -851,38 +851,38 @@ ul.nav-tabs .toc-aria-arrow-open::before {
 nav[role="toc"]  ul  li  a {
   font-size: 15px;
 }
-#articleNavAffix > li > ul > li > ul > li > ul > li > ul > li {
+#articleNavAffix > li > ul > li > ul > li > ul > li > ul li {
   padding-top: 5px;
   padding-bottom: 5px;
   background: transparent;
   padding-left: 110px;
   margin-left: -135px;
 }
-#articleNavAffix > li > ul > li > ul > li > ul > li > ul > li:first-child {
+#articleNavAffix > li > ul > li > ul > li > ul > li > ul li:first-child {
   padding-top: 7px;
   margin-top: 0px;
 }
-#articleNavAffix > li > ul > li > ul > li > ul > li > ul > li:hover {
+#articleNavAffix > li > ul > li > ul > li > ul > li > ul li:hover {
   background-color: #9dc3d0;
 }
-#articleNavAffix > li > ul > li > ul > li > ul > li {
+#articleNavAffix > li > ul > li > ul > li > ul li {
   padding-top: 7px;
   padding-bottom: 2px;
   background: transparent;
   padding-left: 80px;
   margin-left: -65px;
 }
-#articleNavAffix > li > ul > li > ul > li > ul > li:last-child {
+#articleNavAffix > li > ul > li > ul > li > ul li:last-child {
   margin-bottom: 2px;
 }
-#articleNavAffix > li > ul > li > ul > li > ul > li > ul > li:last-child {
+#articleNavAffix > li > ul > li > ul > li > ul > li > ul li:last-child {
   padding-bottom: 5px;
 }
-#articleNavAffix > li > ul > li > ul > li > ul > li:first-child {
+#articleNavAffix > li > ul > li > ul > li > ul li:first-child {
   padding-top: 10px;
   margin-top: 5px;
 }
-#articleNavAffix > li > ul > li > ul > li > ul > li:hover {
+#articleNavAffix > li > ul > li > ul > li > ul li:hover {
   background-color: #afd0db;
 }
 .sub-nav-tabs > ul > li > ul > li {
@@ -932,10 +932,10 @@ nav[role="toc"] > ul > li.active {
 nav[role="toc"] > ul >li > ul > li.active {
   background-color: #dbeef4;
 }
-#articleNavAffix > li > ul > li > ul > li > ul > li.active {
+#articleNavAffix > li > ul > li > ul > li > ul li.active {
   background-color: #afd0db;
 }
-#articleNavAffix > li > ul > li > ul > li > ul > li > ul > li.active {
+#articleNavAffix > li > ul > li > ul > li > ul > li > ul li.active {
   background-color: #9dc3d0;
 }
 nav[role="toc"] > ul > li > a {
@@ -1937,6 +1937,9 @@ p#dc-search-documentation-dummy {
   p#landing-page-hero-welcome {
       font-size: 45px;
   }
+  img.image {
+      width: 100%;
+  }
 }
 
 /* Medium Devices, Desktops */
@@ -2082,7 +2085,7 @@ p#dc-search-documentation-dummy {
     min-height: 82vh;
   }
   img.image {
-    width: auto;
+    max-width: 100%;
   }
   img.img-logoprod {
     width: 50px;
@@ -2304,7 +2307,6 @@ and (orientation : portrait) {
   }
 
 }
-
 
 
 /* ------------------------------------------------------------

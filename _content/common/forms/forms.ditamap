@@ -9,7 +9,7 @@
 
         <topicref format="dita" type="topic" toc="yes" href="about-forms.dita" collection-type="family">
         <!-- <topichead outputclass="sub-nav-tabs"> -->
-            <topicmeta><navtitle>Forms</navtitle></topicmeta>
+            <!-- <topicmeta><navtitle>Forms</navtitle></topicmeta> -->
             <topicref format="dita" type="task" toc="yes" href="create-form.dita" />
             <topicref format="dita" type="task" toc="yes" href="edit-form.dita" />
             <topicref format="dita" type="task" toc="yes" href="duplicate-form.dita" />

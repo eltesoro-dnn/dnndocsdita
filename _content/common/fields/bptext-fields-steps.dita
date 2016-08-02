@@ -358,6 +358,12 @@
                     <stentry>The list of content types that the reference can point to.</stentry>
 				</strow>
 
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-htmlheadertag"><stentry/></strow> -->
+				<strow id="strow-field-htmlheadertag">
+                    <stentry><uicontrol>Heading</uicontrol></stentry>
+                    <stentry>The HTML header tag (H2 to H6) to use for the text.</stentry>
+				</strow>
+
                 <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-content"><stentry/></strow> -->
 				<strow id="strow-field-content">
                     <stentry><uicontrol>Content</uicontrol></stentry>

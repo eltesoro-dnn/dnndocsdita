@@ -19,7 +19,7 @@
 
         <topicref format="dita" type="topic" toc="yes" href="about-content-types.dita" collection-type="family">
         <!-- <topichead outputclass="sub-nav-tabs"> -->
-            <topicmeta><navtitle>Content Types</navtitle></topicmeta>
+            <!-- <topicmeta><navtitle>Content Types</navtitle></topicmeta> -->
             <topicref format="dita" type="task" toc="yes" href="create-content-type.dita" />
             <topicref format="dita" type="task" toc="yes" href="edit-content-type.dita" />
             <topicref format="dita" type="task" toc="yes" href="duplicate-content-type.dita" />
@@ -29,7 +29,7 @@
 
         <topicref format="dita" type="topic" toc="yes" href="../fields/about-content-fields.dita" collection-type="family">
         <!-- <topichead outputclass="sub-nav-tabs"> -->
-            <topicmeta><navtitle>Content Fields</navtitle></topicmeta>
+            <!-- <topicmeta><navtitle>Content Fields</navtitle></topicmeta> -->
             <topicref format="dita" type="reference" toc="yes" href="../fields/content-field-assets.dita" />
             <topicref format="dita" type="reference" toc="yes" href="../fields/content-field-date-time.dita" />
             <topicref format="dita" type="reference" toc="yes" href="../fields/content-field-multi-line-text.dita" />
