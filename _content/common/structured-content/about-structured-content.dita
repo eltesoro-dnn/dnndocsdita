@@ -34,14 +34,17 @@
 
 		<section conkeyref="k-bptext/section-prodavail-E"></section>
 
+
 		<section id="overview">
             <title>Structured Content Overview</title>
 
-			<p>Structured Content is a microservice that manages content items, which can be presented in any context, such as a webpage or a native mobile app.</p>
+			<p>Structured Content is a microservice that manages <term>content items</term> or pieces of content that can be presented in any context, such as a webpage or a native mobile app.</p>
 
-			<p>Each content item is associated with a content type, so that the item can be displayed correctly. Default content types include <uicontrol>Content Block</uicontrol>, <uicontrol>Department</uicontrol>, <uicontrol>Job Posting</uicontrol>, and <uicontrol>People</uicontrol>. You can also create your own custom content types.</p>
+			<p>A content item can be of any defined <term>content type</term>, which is a custom combination and configuration of content fields. Default content types include <uicontrol>Content Block</uicontrol>, <uicontrol>Department</uicontrol>, <uicontrol>Job Posting</uicontrol>, and <uicontrol>People</uicontrol>.</p>
 
-			<p>A <term>content type</term> holds one or more fields, and each field can be one of the following types:
+            <p>Example: The content item that contains the employee record for a specific employee can be based on the content type <uicontrol>People</uicontrol>.</p>
+
+			<p>You can also create your own custom content types with one or more fields of the following types:
 				<ul>
 					<li><term>Single-line text</term></li>
 					<li><term>Multi-line text</term></li>
@@ -54,14 +57,19 @@
 				</ul>
 			</p>
 
-            <p>An asset can be an image or a document. A reference object refers to another content item; reference objects cannot be nested.</p>
+            <p>An <term>asset</term> can be an image or a document. A <term>reference object</term> points to another content item; reference objects cannot be nested.</p>
 
             <p>Each field can also be formed differently and, therefore, serve a different purpose. Example: The single-line text field could be used to enter plain text, a URL, an email address, or a phone number, and each one would be validated based on the selected format.</p>
 
 			<p>Settings can be different among different field types and among different field formats.</p>
 
             <note id="important">A content type must have at least one <uicontrol>Single-Line Text</uicontrol> field with <uicontrol>Required</uicontrol> set to <uicontrol>On</uicontrol>.</note>
+
+            <p>A content type is associated with a <term>visualizer</term>, which defines how content items of that type are displayed. Visualizers are to content types, as containers are to modules.</p>
+
+            <p>You can define multiple visualizers for a single content type. Example: You could have content items based on the <uicontrol>Person</uicontrol>content type containing employee information. You might want to display the C-suite members in larger font with photos and the rest of the company in smaller font without photos. Therefore, you need two visualizers for the <uicontrol>Person</uicontrol> content type: one with larger font and photos, another with smaller font and no photos.</p>
 		</section>
+
 
         <section id="create-content">
             <title>Create Structured Content</title>
@@ -75,6 +83,7 @@
                 </ol>
             </p>
         </section>
+
 
         <!--
         <section id="workflows">

@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-configure-scheduler">
+
+    <title>Configure the Scheduler</title>
+    <titlealts>
+        <navtitle>Configure Scheduler</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1608</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li>
+            </ul>
+        </prereq>
+
+        <steps>
+            <step conkeyref="k-bpsteps/step-menuhostSchedule"><cmd/></step>
+
+            <step>
+                <cmd>Configure the Scheduler settings.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-HostSchedule-SchedulerMode.png"><alt>Host - Advanced - Schedule</alt></image>
+
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry>Field</stentry>
+							<stentry>Description</stentry>
+						</sthead>
+						<strow>
+							<stentry>Scheduler Mode</stentry>
+							<stentry>
+                                <ul>
+                                    <li><uicontrol>Disabled</uicontrol>. Prevents all tasks from running.</li>
+                                    <li><uicontrol>Timer Method</uicontrol>. Runs the scheduled tasks at the specified intervals in separate threads.</li>
+                                    <li><uicontrol>Request Method</uicontrol>. Runs the scheduled tasks when HTTP requests are made.</li>
+                                </ul>
+                            </stentry>
+						</strow>
+						<strow>
+							<stentry>Delay Schedule at Start</stentry>
+							<stentry>The number of minutes the system must wait before running scheduled jobs after a restart.</stentry>
+						</strow>
+					</simpletable>
+                </info>
+            </step>
+
+        </steps>
+
+    </taskbody>
+
+</task>

@@ -84,6 +84,17 @@
                 </substeps>
             </step>
 
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-menuhostSchedule"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-menuhostSchedule"><cmd/></step> -->
+            <step id="step-menuhostSchedule">
+                <cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Schedule</uicontrol></menucascade>.</cmd>
+                <info>
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-menuHostAdvancedSchedule.png"><alt>Host &gt; Advanced Settings &gt; Schedule</alt></image>
+                </info>
+            </step>
+
+
+
 
 			<!-- ========== MENU - CONTROL BAR: ADMIN EXTENSIONS ========== -->
 
@@ -304,6 +315,14 @@
                 </info>
             </step>
 
+			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-gotosettingsconnectors-cmg"><cmd/></step> -->
+			<!-- <step conkeyref="k-bpsteps/step-pb-gotosettingsconnectors-cmg"><cmd/></step> -->
+            <step id="step-pb-gotosettingsconnectors-cmg">
+				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Connectors</uicontrol></menucascade>.</cmd>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarSettings-Connectors-cmg.png"><alt>Persona Bar &gt; Settings &gt; Connectors</alt></image>
+                </info>
+            </step>
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-gotosettingsconnectors-mod"><cmd/></step> -->
 			<!-- <step conkeyref="k-bpsteps/step-pb-gotosettingsconnectors-mod"><cmd/></step> -->
             <step id="step-pb-gotosettingsconnectors-mod">

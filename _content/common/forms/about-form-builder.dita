@@ -2,7 +2,7 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
 <topic xml:lang="en" id="top-about-form-builder">
 
-    <title>About Forms and the Form Builder</title>
+    <title>About the Form Builder</title>
     <titlealts>
         <navtitle>Form Builder</navtitle>
     </titlealts>
@@ -37,9 +37,8 @@
 		<section id="overview">
             <title>Form Builder</title>
 
-            <p>The Form Builder allows you to create forms easily by dragging and dropping fields into a canvas. Each field is customizable; you can change its label, set limits on the data, or make the field required.</p>
+            <p>The Form Builder allows you to create forms easily by dragging and dropping fields into a canvas. Each field you add to the canvas is customizable; you can change its label, set limits on the data, or make the field required.</p>
 
-            <p>The field types available in the Form Builder correspond with the field types available in the content types, so you can easily convert the data collected from a form into a content item.</p>
 		</section>
 
 

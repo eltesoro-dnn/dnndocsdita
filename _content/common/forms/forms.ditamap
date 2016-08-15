@@ -7,20 +7,22 @@
     <!-- Topics -->
 	<topicref format="dita" type="topic" toc="yes" href="about-form-builder.dita" copy-to="index.dita" collection-type="family" >
 
-        <topicref format="dita" type="topic" toc="yes" href="about-forms.dita" collection-type="family">
-        <!-- <topichead outputclass="sub-nav-tabs"> -->
-            <!-- <topicmeta><navtitle>Forms</navtitle></topicmeta> -->
+        <!-- <topicref format="dita" type="topic" toc="yes" href="about-forms.dita" collection-type="family"> -->
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Forms</navtitle></topicmeta>
             <topicref format="dita" type="task" toc="yes" href="create-form.dita" />
             <topicref format="dita" type="task" toc="yes" href="edit-form.dita" />
             <topicref format="dita" type="task" toc="yes" href="duplicate-form.dita" />
             <topicref format="dita" type="task" toc="yes" href="delete-form.dita" />
+            <!-- <topicref format="dita" type="task" toc="yes" href="add-form-to-page.dita" /> -->
+            <!-- <topicref format="dita" type="task" toc="yes" href="publish-form.dita" /> -->
             <topicref format="dita" type="task" toc="yes" href="view-form-analytics.dita" />
-        <!-- </topichead> -->
-        </topicref>
+        </topichead>
+        <!-- </topicref> -->
 
-        <topicref format="dita" type="topic" toc="yes" href="../fields/about-form-fields.dita" collection-type="family">
-        <!-- <topichead outputclass="sub-nav-tabs"> -->
-            <!-- <topicmeta><navtitle>Form Fields</navtitle></topicmeta> -->
+        <!-- <topicref format="dita" type="topic" toc="yes" href="../fields/about-form-fields.dita" collection-type="family"> -->
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Form Fields</navtitle></topicmeta>
             <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-address.dita" />
             <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-date-time.dita" />
             <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-dropdown.dita" />
@@ -35,8 +37,8 @@
             <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-static-text.dita" />
             <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-terms-conditions.dita" />
             <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-url-website.dita" />
-        <!-- </topichead> -->
-        </topicref>
+        </topichead>
+        <!-- </topicref> -->
 
     </topicref>
 
@@ -50,7 +52,7 @@
 
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic" linking="targetonly" href="../fields/configuring-fields.dita" />
+                <topicref format="dita" type="topic" linking="targetonly" href="../fields/content-fields-versus-form-fields.dita" />
             </relcell>
             <relcell>
                 <topicref format="dita" type="task" href="create-form.dita" />
@@ -62,28 +64,30 @@
             <relcell/>
         </relrow>
 
+        <!--
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic"     toc="yes" href="../fields/configuring-fields.dita" />  <!-- // Already done in structured-content.ditamap: copy-to="../fields/index.dita"  -->
+                <topicref format="dita" type="topic"     href="../fields/content-fields-versus-form-fields.dita" />  // Already done in structured-content.ditamap: copy-to="../fields/index.dita"
             </relcell>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-address.dita" />
-                <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-date-time.dita" />
-                <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-dropdown.dita" />
-                <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-email.dita" />
-                <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-esignature.dita" />
-                <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-multi-line-text.dita" />
-                <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-multiple-choice.dita" />
-                <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-name.dita" />
-                <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-number.dita" />
-                <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-phone-number.dita" />
-                <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-single-line-text.dita" />
-                <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-static-text.dita" />
-                <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-terms-conditions.dita" />
-                <topicref format="dita" type="reference" toc="yes" href="../fields/form-field-url-website.dita" />
+                <topicref format="dita" type="reference" href="../fields/form-field-address.dita" />
+                <topicref format="dita" type="reference" href="../fields/form-field-date-time.dita" />
+                <topicref format="dita" type="reference" href="../fields/form-field-dropdown.dita" />
+                <topicref format="dita" type="reference" href="../fields/form-field-email.dita" />
+                <topicref format="dita" type="reference" href="../fields/form-field-esignature.dita" />
+                <topicref format="dita" type="reference" href="../fields/form-field-multi-line-text.dita" />
+                <topicref format="dita" type="reference" href="../fields/form-field-multiple-choice.dita" />
+                <topicref format="dita" type="reference" href="../fields/form-field-name.dita" />
+                <topicref format="dita" type="reference" href="../fields/form-field-number.dita" />
+                <topicref format="dita" type="reference" href="../fields/form-field-phone-number.dita" />
+                <topicref format="dita" type="reference" href="../fields/form-field-single-line-text.dita" />
+                <topicref format="dita" type="reference" href="../fields/form-field-static-text.dita" />
+                <topicref format="dita" type="reference" href="../fields/form-field-terms-conditions.dita" />
+                <topicref format="dita" type="reference" href="../fields/form-field-url-website.dita" />
             </relcell>
         </relrow>
+        -->
 
     </reltable>
 

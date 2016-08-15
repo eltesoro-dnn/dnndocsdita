@@ -22,16 +22,17 @@
             <topicref format="dita" type="task" toc="yes" href="administrators/setup/set-up-iis.dita" />
             <topicref format="dita" type="task" toc="yes" href="administrators/setup/set-up-sql.dita" />
             <topicref format="dita" type="task" toc="yes" href="administrators/setup/run-installation-wizard.dita" />
+            <topicref format="dita" type="task" toc="yes" href="administrators/setup/upgrade-evoq.dita" />
         </topicref>
 
         <!-- Extensions -->
-        <topicref format="dita" type="task" navtitle="Install an Extension" locktitle="yes" toc="yes" href="administrators/extensions/install-extension.dita" copy-to="administrators/extensions/index.dita">
+        <topicref format="dita" type="task" navtitle="Installing an Extension" locktitle="yes" toc="yes" href="administrators/extensions/install-extension.dita" copy-to="administrators/extensions/index.dita">
 			<topicref format="dita" type="task" toc="yes" href="administrators/extensions/manage-premium-module.dita" />
 			<topicref format="dita" type="task" toc="yes" href="administrators/extensions/allow-module-use.dita" />
         </topicref>
 
         <!-- Licensing -->
-        <topicref format="dita" type="topic" navtitle="Licensing" locktitle="yes" toc="yes" href="administrators/licensing/licensing.dita" copy-to="administrators/licensing/index.dita" collection-type="family">
+        <topicref format="dita" type="topic" navtitle="Licensing Evoq" locktitle="yes" toc="yes" href="administrators/licensing/licensing.dita" copy-to="administrators/licensing/index.dita" collection-type="family">
             <topicref format="dita" type="task"  toc="yes" href="administrators/licensing/activate-license-automatically.dita" />
             <topicref format="dita" type="task"  toc="yes" href="administrators/licensing/activate-license-manually.dita" />
             <topicref format="dita" type="topic" toc="yes" href="administrators/licensing/faq-licensing.dita" />
@@ -39,7 +40,7 @@
         </topicref>
 
 		<!-- Configuring Your Site -->
-		<mapref href="administrators/configuring-your-site/configuring-your-site-pb.ditamap" />
+		<mapref href="administrators/configuring-your-site/configuring-your-site-cp.ditamap" />
 
         <!-- Securing Your Site -->
         <mapref href="administrators/security/security-adm.ditamap" />
@@ -83,6 +84,19 @@
                 <topicref format="dita" type="reference" href="administrators/requirements.dita" />
                 <topicref format="dita" type="reference" href="administrators/product-versions.dita" />
             </relcell>
+        </relrow>
+
+        <!-- adm dev cmg -->
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="topic"                                                                                 href="administrators/microservices/about-microservices.dita" />
+                <topicref format="dita" type="topic"              linking="targetonly" navtitle="JWT Authentication" locktitle="yes" href="developers/security/jwt/about-jwt.dita" />
+                <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Licensing"          locktitle="yes" href="administrators/licensing/licensing.dita" />
+                <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Structured Content" locktitle="yes" href="content-managers/structured-content/about-structured-content.dita" />
+                <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Form Builder"       locktitle="yes" href="content-managers/forms/about-form-builder.dita" />
+            </relcell>
+            <relcell/>
+            <relcell/>
         </relrow>
 
         <!-- adm dev dsg -->
@@ -171,6 +185,16 @@
 			<relcell>
 				<topicref format="dita" type="reference" href="administrators/included-modules/module-advanced-url-management.dita" />
 			</relcell>
+		</relrow>
+
+        <!-- adm upgrading + licensing -->
+		<relrow>
+			<relcell></relcell>
+			<relcell>
+                <topicref format="dita" type="task"      href="administrators/licensing/activate-license-automatically.dita" />
+                <topicref format="dita" type="task"      href="administrators/setup/upgrade-evoq.dita" />
+            </relcell>
+			<relcell/>
 		</relrow>
 
     </reltable>

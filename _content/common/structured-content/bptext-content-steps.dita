@@ -64,7 +64,7 @@
 
         <steps>
 
-			<!-- ========== MENU - PERSONA BAR: MANAGE CONTENT ========== -->
+			<!-- ========== MENU - PERSONA BAR: MANAGE CONTENT TYPE ========== -->
 
 			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttypetab"><cmd/></step> -->
             <step id="step-gotocontenttypetab">
@@ -104,7 +104,7 @@
 						</strow>
 						<strow id="strow-field-contenttype-desc">
 							<stentry><uicontrol>Add a description</uicontrol></stentry>
-							<stentry>(Optional) A short description of the content type.</stentry>
+							<stentry>A short description of the content type.</stentry>
 						</strow>
 					</simpletable>
 				</info>
@@ -132,6 +132,103 @@
 					</substep>
 				</substeps>
             </step>
+
+
+			<!-- ========== MENU - PERSONA BAR: MANAGE VISUALIZER ========== -->
+
+			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotovisualizertab"><cmd/></step> -->
+            <step id="step-gotovisualizertab">
+				<cmd>Click/Tap the <uicontrol>Visualizers</uicontrol> tab.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-List-Tab.png"><alt>Content &gt; Visualizers tab</alt></image></info>
+            </step>
+
+			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotovisualizertab-createbtn"><cmd/></step> -->
+            <step id="step-gotovisualizertab-createbtn">
+				<cmd>In the <uicontrol>Visualizers</uicontrol> tab, click/tap <uicontrol>Create Visualizer</uicontrol>.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-List-TabCreateBtn.png"><alt>Content &gt; Visualizers tab &gt; Create Visualizer</alt></image></info>
+            </step>
+
+			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-choosevisualizer"><cmd/></step> -->
+            <step id="step-visualizer-choosevisualizer">
+				<cmd>Search for the visualizer you want, then click/tap on its icon.</cmd>
+                <info>
+                    <p>You can look in the list of visualizers, or you can use <uicontrol>Search</uicontrol>.</p>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-List-SearchClickTap.gif"><alt>Visualizers list - Click/Tap the visualizer you want.</alt></image>
+                </info>
+            </step>
+
+			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-configurevisualizerproperties"><cmd/></step> -->
+            <step id="step-visualizer-configurevisualizerproperties">
+				<cmd>Configure the properties of the visualizer.</cmd>
+                <info>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Details.png"><alt>Visualizer Details tab</alt></image>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry>Field</stentry>
+							<stentry>Description</stentry>
+						</sthead>
+						<strow id="strow-field-visualizer-name">
+							<stentry><uicontrol>Name</uicontrol></stentry>
+							<stentry>The name of the visualizer.
+                                <note type="tip">Include the name of the content type in the visualizer's name to make it easy to find all visualizers associated with the content type. If you plan to have multiple visualizers for the same content type, add a short phrase that briefly describes its function to distinguish it from other visualizers.</note>
+                            </stentry>
+						</strow>
+						<strow id="strow-field-visualizer-desc">
+							<stentry><uicontrol>Description</uicontrol></stentry>
+							<stentry>A short description of the visualizer.</stentry>
+						</strow>
+						<strow id="strow-field-visualizer-icon">
+							<stentry><uicontrol>Icon</uicontrol></stentry>
+							<stentry>The icon for the visualizer.</stentry>
+						</strow>
+						<strow id="strow-field-visualizer-content-type">
+							<stentry><uicontrol>Content Type</uicontrol></stentry>
+							<stentry>The content type to associate with this visualizer.
+                                <note type="warning">Changing the content type will replace any existing HTML code in the <menucascade><uicontrol>Editor</uicontrol> <uicontrol>Template</uicontrol></menucascade> editor.</note>
+                            </stentry>
+						</strow>
+					</simpletable>
+				</info>
+            </step>
+
+			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-codevisualizer"><cmd/></step> -->
+            <step id="step-visualizer-codevisualizer">
+				<cmd>In the <uicontrol>Editor</uicontrol> tab, design the visualizer.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>In the <uicontrol>Template</uicontrol> editor, enter the HTML code to format the content item.</cmd>
+                        <info>
+                            <note type="tip">Choose the content type in the <uicontrol>Details</uicontrol> tab before editing the visualizer HTML code. Then the fields of the selected content type are added to the <uicontrol>Template</uicontrol> editor as tokens, which you can use as placeholders for their values.</note>
+
+                            <p>Each token is the reformatted name of the content field enclosed in double curly brackets. Example: The token for the field called <userinput>Recipe Name</userinput> is <codeph>{{recipeName}}</codeph>.</p>
+
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Editor-Template.gif"><alt>Content &gt; Visualizers tab &gt; Editor &gt; Template with field tokens</alt></image>
+                        </info>
+                    </substep>
+
+                    <substep>
+                        <cmd>In the <uicontrol>Style</uicontrol> editor, enter CSS code for the visualizer.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Editor-Style.png"><alt>Content &gt; Visualizers tab &gt; Editor &gt; Style</alt></image>
+                        </info>
+                    </substep>
+
+                    <substep>
+                        <cmd>In the <uicontrol>Script</uicontrol> editor, enter JavaScript code for the visualizer, if needed.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Editor-Script.png"><alt>Content &gt; Visualizers tab &gt; Editor &gt; Style</alt></image></info>
+                    </substep>
+                </substeps>
+            </step>
+
+			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-delete"><cmd/></step> -->
+            <step id="step-visualizer-delete">
+				<cmd>Click/Tap <uicontrol>Delete</uicontrol>. Confirm.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Details-Delete.png"><alt>Content &gt; Visualizers tab &gt; choose the visualizer &gt; click/tap Delete</alt></image></info>
+            </step>
+
+
+
+			<!-- ========== MENU - PERSONA BAR: MANAGE CONTENT ITEM ========== -->
 
 			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttab"><cmd/></step> -->
             <step id="step-gotocontenttab">

@@ -1,7 +1,7 @@
 $(document).ready(function() {
 
     $(window).on('resize', function () {
-        if ($(window).width() > 992) {
+        if ($(window).width() > 976) {
             $('ul.header-nav').show();
         } else {
             $('ul.header-nav').hide();
@@ -40,7 +40,7 @@ $(document).ready(function() {
     // });
 
     // add triangle to parents
-    $("nav[role='toc'] > ul > li, nav[role='toc'] > ul > li > ul > li, nav[role='toc'] > ul > li > ul > li > ul > li, nav[role='toc'] > ul > li > ul > li > ul > li > ul > li").each(function(){
+    $("nav[role='toc'] > ul > li, nav[role='toc'] > ul > li > ul > li, nav[role='toc'] > ul > li > ul > li > ul > li, nav[role='toc'] > ul > li > ul > li > ul > li > ul > li, nav[role='toc'] > ul > li > ul > li > ul > li > ul > li > ul > li").each(function(){
         if($(this).has("ul").length){
             $(this).addClass('toc-aria-arrow-closed');
         };
@@ -142,11 +142,11 @@ $(document).ready(function() {
         if (settings.sticky === true) cssmenu.css('position', 'fixed');
 
         resizeFix = function() {
-          if ($( window ).width() > 992) {
+          if ($( window ).width() > 976) {
             $("nav[role='toc']").show();
           }
 
-          if ($(window).width() <= 992) {
+          if ($(window).width() <= 976) {
           	$("nav[role='toc']").hide();
           }
         };

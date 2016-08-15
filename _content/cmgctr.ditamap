@@ -64,6 +64,19 @@
             </relcell>
         </relrow>
 
+        <!-- adm dev cmg -->
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="topic"                                                                                 href="content-managers/microservices/about-microservices.dita" />
+                <topicref format="dita" type="topic"              linking="targetonly" navtitle="JWT Authentication" locktitle="yes" href="developers/security/jwt/about-jwt.dita" />
+                <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Licensing"          locktitle="yes" href="administrators/licensing/licensing.dita" />
+                <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Structured Content" locktitle="yes" href="content-managers/structured-content/about-structured-content.dita" />
+                <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Form Builder"       locktitle="yes" href="content-managers/forms/about-form-builder.dita" />
+            </relcell>
+            <relcell/>
+            <relcell/>
+        </relrow>
+
         <!-- adm cmg -->
 		<relrow>
 			<relcell>

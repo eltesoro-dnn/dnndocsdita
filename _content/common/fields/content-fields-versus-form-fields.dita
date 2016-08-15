@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
-<topic xml:lang="en" id="top-configuring-fields.dita">
+<topic xml:lang="en" id="top-content-fields-versus-form-fields">
 
-    <title>Configuring Fields</title>
+    <title>Content Fields versus Form Fields</title>
     <titlealts>
-        <navtitle>Fields</navtitle>
+        <navtitle>Content Fields vs Form Fields</navtitle>
     </titlealts>
 
 
@@ -35,7 +35,7 @@
 		<section conkeyref="k-bptext/section-prodavail-E"></section>
 
 		<section id="overview">
-            <title>Fields</title>
+            <!-- <title>Fields</title> -->
 
 			<p>Content types and forms have similar field types. Although the underlying data types are similar, form fields are more specific to make it easier to enforce data formats, such as phone numbers and email addresses.</p>
 
@@ -45,37 +45,37 @@
                     <stentry>Content type field</stentry>
                 </sthead>
                 <strow>
-                    <stentry>Single-Line Text</stentry>
-                    <stentry>Single-Line Text
+                    <stentry><xref format="dita" href="form-field-single-line-text.dita">Single-Line Text</xref></stentry>
+                    <stentry><xref format="dita" href="content-field-single-line-text.dita">Single-Line Text</xref>
                         <p>Appearance: Single-Line</p>
                     </stentry>
                 </strow>
                 <strow>
-                    <stentry>Name</stentry>
+                    <stentry><xref format="dita" href="form-field-name.dita">Name</xref></stentry>
                     <stentry>(No equivalent.)</stentry>
                 </strow>
                 <strow>
-                    <stentry>Email</stentry>
-                    <stentry>Single-Line Text
+                    <stentry><xref format="dita" href="form-field-email.dita">Email</xref></stentry>
+                    <stentry><xref format="dita" href="content-field-single-line-text.dita">Single-Line Text</xref>
                         <p>Appearance: Email</p>
                     </stentry>
                 </strow>
                 <strow>
-                    <stentry>Phone Number</stentry>
-                    <stentry>Single-Line Text
+                    <stentry><xref format="dita" href="form-field-phone-number.dita">Phone Number</xref></stentry>
+                    <stentry><xref format="dita" href="content-field-single-line-text.dita">Single-Line Text</xref>
                         <p>Appearance: Phone Number</p>
                     </stentry>
                 </strow>
                 <strow>
-                    <stentry>Multi-Line Text</stentry>
-                    <stentry>Multi-Line Text</stentry>
+                    <stentry><xref format="dita" href="form-field-multi-line-text.dita">Multi-Line Text</xref></stentry>
+                    <stentry><xref format="dita" href="content-field-multi-line-text.dita">Multi-Line Text</xref></stentry>
                 </strow>
                 <strow>
-                    <stentry>Address</stentry>
+                    <stentry><xref format="dita" href="form-field-address.dita">Address</xref></stentry>
                     <stentry>(No equivalent.)</stentry>
                 </strow>
                 <strow>
-                    <stentry>Multiple Choice
+                    <stentry><xref format="dita" href="form-field-multiple-choice.dita">Multiple Choice</xref>
                         <p>Appearance options:
                             <ul>
                                 <li>Checkboxes</li>
@@ -83,7 +83,7 @@
                             </ul>
                         </p>
                     </stentry>
-                    <stentry>Multiple Choice
+                    <stentry><xref format="dita" href="content-field-multiple-choice.dita">Multiple Choice</xref>
                         <p>Appearance options:
                             <ul>
                                 <li>Checkboxes</li>
@@ -93,7 +93,7 @@
                     </stentry>
                 </strow>
                 <strow>
-                    <stentry>Multiple Choice
+                    <stentry><xref format="dita" href="form-field-multiple-choice.dita">Multiple Choice</xref>
                         <p>Appearance options:
                             <ul>
                                 <li>Images</li>
@@ -104,36 +104,44 @@
                     <stentry>(No equivalent.)</stentry>
                 </strow>
                 <strow>
-                    <stentry>Dropdown</stentry>
-                    <stentry>Multiple Choice
+                    <stentry><xref format="dita" href="form-field-dropdown.dita">Dropdown</xref></stentry>
+                    <stentry><xref format="dita" href="content-field-multiple-choice.dita">Multiple Choice</xref>
                         <p>Appearance options: Dropdown</p>
                     </stentry>
                 </strow>
                 <strow>
-                    <stentry>Number</stentry>
-                    <stentry>Number</stentry>
+                    <stentry><xref format="dita" href="form-field-number.dita">Number</xref></stentry>
+                    <stentry><xref format="dita" href="content-field-number.dita">Number</xref></stentry>
                 </strow>
                 <strow>
-                    <stentry>Date / Time</stentry>
-                    <stentry>Date / Time</stentry>
+                    <stentry><xref format="dita" href="form-field-date-time.dita">Date / Time</xref></stentry>
+                    <stentry><xref format="dita" href="content-field-date-time.dita">Date / Time</xref></stentry>
                 </strow>
                 <strow>
-                    <stentry>URL / Website</stentry>
-                    <stentry>Single-Line Text
+                    <stentry><xref format="dita" href="form-field-url-website.dita">URL / Website</xref></stentry>
+                    <stentry><xref format="dita" href="content-field-single-line-text.dita">Single-Line Text</xref>
                         <p>Appearance: URL/Website</p>
                     </stentry>
                 </strow>
                 <strow>
-                    <stentry>Terms &amp; Conditions</stentry>
+                    <stentry><xref format="dita" href="form-field-terms-conditions.dita">Terms &amp; Conditions</xref></stentry>
                     <stentry>(No equivalent.)</stentry>
                 </strow>
                 <strow>
-                    <stentry>E-Signature</stentry>
+                    <stentry><xref format="dita" href="form-field-esignature.dita">E-Signature</xref></stentry>
                     <stentry>(No equivalent.)</stentry>
                 </strow>
                 <strow>
-                    <stentry>Static Text</stentry>
-                    <stentry>Static Text</stentry>
+                    <stentry><xref format="dita" href="form-field-static-text.dita">Static Text</xref></stentry>
+                    <stentry><xref format="dita" href="content-field-static-text.dita">Static Text</xref></stentry>
+                </strow>
+                <strow>
+                    <stentry>(No equivalent.)</stentry>
+                    <stentry><xref format="dita" href="content-field-assets.dita">Assets</xref></stentry>
+                </strow>
+                <strow>
+                    <stentry>(No equivalent.)</stentry>
+                    <stentry><xref format="dita" href="content-field-reference-object.dita">Reference Object</xref></stentry>
                 </strow>
             </simpletable>
 
