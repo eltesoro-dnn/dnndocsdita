@@ -146,7 +146,7 @@
 
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-cp-menuadminworkflowmgmt"><cmd/></step> -->
 			<!-- <step conkeyref="k-bpsteps/step-cp-menuadminworkflowmgmt"><cmd/></step> -->
-            <step id="step-menuadminworkflowmgmt">
+            <step id="step-cp-menuadminworkflowmgmt">
 				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Workflow Management</uicontrol></menucascade>.</cmd>
                 <info outputclass="init-hide">
                     <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-menuAdminAdvanced-WorkflowMgmt.png"><alt>Admin &gt; Advanced Settings (double-gear tab) &gt; Workflow Management</alt></image>

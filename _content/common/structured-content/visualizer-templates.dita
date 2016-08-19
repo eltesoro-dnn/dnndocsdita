@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-visualizer-templates">
+    <title>Visualizer Templates</title>
+    <titlealts>
+        <navtitle>Visualizer Templates</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1607</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+			<!--
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+			-->
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="5"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <refbody>
+
+        <section conkeyref="k-bptext/section-prodavail-E"></section>
+
+
+        <section id="overview">
+
+            <!-- <p>Evoq's Structured Content microservice uses the <xref format="html" scope="external" href="http://dotliquidmarkup.org/">DotLiquid</xref> templating system in the <uicontrol>Template</uicontrol> editor of visualizers. This gives you more control over the format of the data tokens before styling is applied. At the same time, DotLiquid ensures that the template is safe for the server.</p> -->
+
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Editor-Template.gif"><alt>Content &gt; Visualizers tab &gt; Editor &gt; Template</alt></image>
+
+            <p>After you choose the content type in the <uicontrol>Details</uicontrol> tab, the <uicontrol>Template</uicontrol> editor is populated with the tokens for each field in the selected content type. You can pipe the values of the tokens into filters that perform additional changes to the result.</p>
+
+            <p>Example: Without filters, a <uicontrol>Date / Time</uicontrol> field would return the full date and the full time. If you want to display only the time, you must pipe the value to the <codeph>date</codeph> filter with the mask <codeph>"HH:mm"</codeph>, which displays the time in the 24-hour format: <codeph>{{meetingTimeslot | date: "HH:mm"}}</codeph></p>
+
+        </section>
+
+    </refbody>
+
+
+    <!--
+    <related-links>
+        <link format="html" scope="external" href="http://dotliquidmarkup.org/"><linktext>DotLiquid</linktext></link>
+    </related-links>
+    -->
+
+</reference>

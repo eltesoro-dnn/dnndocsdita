@@ -203,6 +203,8 @@
                             <p>Each token is the reformatted name of the content field enclosed in double curly brackets. Example: The token for the field called <userinput>Recipe Name</userinput> is <codeph>{{recipeName}}</codeph>.</p>
 
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Editor-Template.gif"><alt>Content &gt; Visualizers tab &gt; Editor &gt; Template with field tokens</alt></image>
+
+                            <note type="tip">Because the tokens hide the inner tags, such as <codeph>&lt;img/&gt;</codeph> or <codeph>&lt;p/&gt;</codeph>, wrap the tokens with <codeph>&lt;div/&gt;</codeph> tags with <codeph>class</codeph> names or <codeph>id</codeph> names that you can refer to in the CSS code. Example: <codeph>&lt;div class=&quot;myimgdiv&quot;&gt;{{ myImg }}&lt;/div&gt;</codeph></note>
                         </info>
                     </substep>
 
@@ -210,6 +212,8 @@
                         <cmd>In the <uicontrol>Style</uicontrol> editor, enter CSS code for the visualizer.</cmd>
                         <info>
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Editor-Style.png"><alt>Content &gt; Visualizers tab &gt; Editor &gt; Style</alt></image>
+
+                            <note type="tip">If you wrapped a token, you can access the inner tag if you wrapped them in a named <codeph>&lt;div/&gt;</codeph> tag. Example: <codeph>.myimgdiv img { width: 50px }</codeph></note>
                         </info>
                     </substep>
 

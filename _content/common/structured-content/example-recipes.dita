@@ -1,0 +1,433 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-example-recipes">
+
+    <title>Example: Recipes as Structured Content</title>
+    <titlealts>
+        <navtitle>Example: Recipes as Structured Content</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1608</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <!--
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            -->
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="5"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <section conkeyref="k-bptext/section-prodavail-E"></section>
+
+        <section id="overview">
+            <p>This example walks you through creating a content type for recipes, two visualizers for that content type (one for the list of recipes, another for the individual recipe page), and two recipe content items. Then you'll create one page to display the list of recipe summaries and another page to display an entire recipe.</p>
+        </section>
+
+        <steps>
+            <step>
+                <cmd><xref format="dita" href="create-content-type.dita">Create a content type</xref> for recipes, named <userinput>Recipe Content Type</userinput>.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentTypes-Example-Recipe.gif"><alt>Create a content type for recipes.</alt></image>
+					<simpletable relcolwidth="1* 1* 4*">
+						<sthead>
+							<stentry>Field</stentry>
+							<stentry>Content field</stentry>
+                            <stentry>Custom settings</stentry>
+						</sthead>
+						<strow>
+							<stentry>Recipe Name</stentry>
+							<stentry><uicontrol>Single-Line Text</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><menucascade><uicontrol>Validation</uicontrol> <uicontrol>Required</uicontrol></menucascade>: <uicontrol>On</uicontrol></li>
+                                </ul>
+                            </stentry>
+						</strow>
+						<strow>
+							<stentry>Picture(s) of Dish</stentry>
+							<stentry><uicontrol>Assets</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>Appearance</uicontrol>: <uicontrol>Image</uicontrol></li>
+                                    <li><uicontrol>Maximum Number Of Assets</uicontrol>: <userinput>3</userinput></li>
+                                    <li><menucascade><uicontrol>Validation</uicontrol> <uicontrol>Required</uicontrol></menucascade>: <uicontrol>On</uicontrol></li>
+                                </ul>
+                            </stentry>
+						</strow>
+						<strow>
+							<stentry>Description</stentry>
+							<stentry><uicontrol>Multi-Line Text</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>Appearance</uicontrol>: <uicontrol>Text Editor</uicontrol></li>
+                                    <li><uicontrol>Description</uicontrol>: <uicontrol>On</uicontrol></li>
+                                    <li><uicontrol>Description</uicontrol> text box: <userinput>Say something about your recipe.</userinput></li>
+                                </ul>
+                            </stentry>
+						</strow>
+						<strow>
+							<stentry>Preparation Time</stentry>
+							<stentry><uicontrol>Date / Time</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>Appearance</uicontrol>: <uicontrol>Time</uicontrol></li>
+                                    <li><uicontrol>Time Format</uicontrol>: <uicontrol>00:00 - 24 HR</uicontrol></li>
+                                    <li><uicontrol>Include Timezone</uicontrol>: <uicontrol>Off</uicontrol></li>
+                                    <li><menucascade><uicontrol>Validation</uicontrol> <uicontrol>Required</uicontrol></menucascade>: <uicontrol>On</uicontrol></li>
+                                </ul>
+                            </stentry>
+						</strow>
+						<strow>
+							<stentry>Servings</stentry>
+							<stentry><uicontrol>Number</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>Default Value</uicontrol>: <userinput>2</userinput></li>
+                                </ul>
+                            </stentry>
+						</strow>
+						<strow>
+							<stentry>Ingredients</stentry>
+							<stentry><uicontrol>Multi-Line Text</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>Appearance</uicontrol>: <uicontrol>Text Editor</uicontrol></li>
+                                    <li><menucascade><uicontrol>Validation</uicontrol> <uicontrol>Required</uicontrol></menucascade>: <uicontrol>On</uicontrol></li>
+                                </ul>
+                            </stentry>
+						</strow>
+						<strow>
+							<stentry>Steps</stentry>
+							<stentry><uicontrol>Multi-Line Text</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>Appearance</uicontrol>: <uicontrol>Text Editor</uicontrol></li>
+                                    <li><menucascade><uicontrol>Validation</uicontrol> <uicontrol>Required</uicontrol></menucascade>: <uicontrol>On</uicontrol></li>
+                                </ul>
+                            </stentry>
+						</strow>
+					</simpletable>
+                </info>
+            </step>
+
+            <step>
+                <cmd><xref format="dita" href="create-visualizer.dita">Create a visualizer</xref> for <userinput>Recipe Content Type</userinput> for displaying recipes in a list.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeShort.gif"><alt>Create a visualizer for displaying recipes in a list.</alt></image></info>
+                <substeps>
+                    <substep>
+                        <cmd>Fill in the details of the visualizer.</cmd>
+                        <info>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow>
+                                    <stentry><uicontrol>Name</uicontrol></stentry>
+                                    <stentry><userinput>My Recipe Summary Visualizer</userinput></stentry>
+                                </strow>
+                                <strow>
+                                    <stentry><uicontrol>Description</uicontrol></stentry>
+                                    <stentry><userinput>This recipe visualizer is for lists of recipes.</userinput></stentry>
+                                </strow>
+                                <strow>
+                                    <stentry><uicontrol>Content Type</uicontrol></stentry>
+                                    <stentry><userinput>Recipe Content Type</userinput></stentry>
+                                </strow>
+                            </simpletable>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Enter the HTML code in the <uicontrol>Template</uicontrol> editor using the provided tokens for the recipe name, picture, and description.</cmd>
+                        <info>
+                            <codeblock>
+    &lt;div class=&quot;recipe-short-visualizer&quot;&gt;
+        &lt;h3&gt;{{recipeName}}&lt;/h3&gt;
+        &lt;div class=&quot;picturecol&quot;&gt;{{picturesofDish}}&lt;/div&gt;
+        &lt;div class=&quot;descriptioncol&quot;&gt;{{description}}&lt;/div&gt;
+    &lt;/div&gt;
+                            </codeblock>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Enter CSS code to style the images and text.</cmd>
+                        <info>
+                            <codeblock>
+    .recipe-short-visualizer {
+        background-color: LightBlue;
+        width: 100%;
+        height: 200px;
+    }
+
+    .picturecol {
+        width: 30%;
+        float: left;
+    }
+
+    .picturecol img {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    .descriptioncol {
+        width: 70%;
+        float: right;
+    }
+
+    .descriptioncol p {
+        width: 70%;
+    }
+                            </codeblock>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+
+            <step>
+                <cmd><xref format="dita" href="create-visualizer.dita">Create a visualizer</xref> for <userinput>Recipe Content Type</userinput> for displaying a complete recipe.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeFull.gif"><alt>Create a visualizer for displaying the entire recipe.</alt></image>
+                </info>
+                <substeps>
+                    <substep>
+                        <cmd>Fill in the details of the visualizer.</cmd>
+                        <info>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow>
+                                    <stentry><uicontrol>Name</uicontrol></stentry>
+                                    <stentry><userinput>My Recipe Full Visualizer</userinput></stentry>
+                                </strow>
+                                <strow>
+                                    <stentry><uicontrol>Description</uicontrol></stentry>
+                                    <stentry><userinput>This recipe visualizer displays the entire recipe in one page.</userinput></stentry>
+                                </strow>
+                                <strow>
+                                    <stentry><uicontrol>Content Type</uicontrol></stentry>
+                                    <stentry><userinput>Recipe Content Type</userinput></stentry>
+                                </strow>
+                            </simpletable>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Enter the HTML code in the <uicontrol>Template</uicontrol> editor using the provided tokens for all the fields.</cmd>
+                        <info>
+                            <codeblock>
+    &lt;div class=&quot;recipe-full-visualizer&quot;&gt;
+        &lt;h1&gt;{{recipeName}}&lt;/h1&gt;
+        &lt;div class=&quot;picturecol&quot;&gt;{{picturesofDish}}&lt;/div&gt;
+        &lt;div class=&quot;descriptioncol&quot;&gt;{{description}}&lt;/div&gt;
+        &lt;p class=&quot;prepsection&quot;&gt;Preparation time: {{preparationTime}}&lt;/p&gt;
+        &lt;p class=&quot;servessection&quot;&gt;Serves: {{servings}}&lt;/p&gt;
+        &lt;div class=&quot;ingredientstext&quot;&gt;{{ingredients}}&lt;/div&gt;
+        &lt;div class=&quot;stepstext&quot;&gt;{{steps}}&lt;/div&gt;
+    &lt;/div&gt;
+                            </codeblock>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Enter CSS code to style the images and text.</cmd>
+                        <info>
+                            <codeblock>
+    .recipe-full-visualizer {
+        background-color: lightskyblue;
+        width: 80%;
+        height: 100%;
+        text-align: center;
+        padding: 20px;
+        margin-left: 10%;
+    }
+
+    .picturecol,
+    .descriptioncol,
+    .prepsection,
+    .servessection,
+    .ingredientstext {
+        width: 70%;
+        margin-left: 15%;
+        text-align: center;
+    }
+
+    .picturecol img,
+    .descriptioncol p {
+        width: 100%;
+        padding: 20px;
+    }
+
+    .ingredientstext {
+        background-color: white;
+        padding: 20px;
+    }
+
+    .stepstext {
+        width: 70%;
+        margin-left: 15%;
+        text-align: left;
+        background-color: white;
+        padding: 20px;
+    }
+                            </codeblock>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+
+            <step>
+                <cmd><xref format="dita" href="create-content-item.dita">Create content items</xref> of the type <userinput>Recipe Content Type</userinput>.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>In the <uicontrol>Content</uicontrol> tab, click/tap <uicontrol>Create Content</uicontrol> and choose the <uicontrol>Recipe Content Type</uicontrol>.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-CreateContent.png"><alt>Create content item (Content Type = Recipe Content Type).</alt></image></info>
+                    </substep>
+                    <substep>
+                        <cmd>Enter the recipe by filling in the fields of the content type.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-FillInFields.png"><alt>Fill in the fields of the content.</alt></image></info>
+                    </substep>
+                </substeps>
+            </step>
+
+            <step>
+                <cmd><xref format="dita" href="../building-your-site/create-page-via-persona-bar.dita">Create a new page</xref> in which to display the details of a single recipe.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>Enter the details for the page.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeFullPage-Details.png"><alt>Create the page - Details tab.</alt></image>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow>
+                                    <stentry><uicontrol>Name</uicontrol></stentry>
+                                    <stentry><userinput>Chicken Adobo Recipe</userinput></stentry>
+                                </strow>
+                                <strow>
+                                    <stentry><uicontrol>Display in Menu</uicontrol></stentry>
+                                    <stentry><uicontrol>Off</uicontrol>. Depending on how you design your site, you might not want to display every recipe page in the navigation.</stentry>
+                                </strow>
+                            </simpletable>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Set the permissions to allow your registered users to view the page.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeFullPage-Permissions.png"><alt>Create the page - Permissions tab.</alt></image></info>
+                    </substep>
+                    <substep><cmd>Click/Tap <uicontrol>Create</uicontrol>.</cmd></substep>
+                    <substep>
+                        <cmd>Choose a content pane then add a module.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeFullPage-NewPage.png"><alt>Create the page - Choose pane and click/tap module icon.</alt></image></info>
+                    </substep>
+                    <substep>
+                        <cmd>Choose the Visualizer module.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeFullPage-AddModuleVisualizer.png"><alt>Choose the Visualizer module.</alt></image></info>
+                    </substep>
+                    <substep>
+                        <cmd>Select the <uicontrol>Recipe Content Type</uicontrol>.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeFullPage-SelectContentType.png"><alt>Select the Recipe Content Type.</alt></image></info>
+                    </substep>
+                    <substep>
+                        <cmd>Select the <uicontrol>My Recipe Full Visualizer</uicontrol>.</cmd>
+                        <info>
+                            <note type="note">Only the visualizers associated with the selected content type are displayed.</note>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeFullPage-SelectVisualizer.png"><alt>Choose the My Recipe Full Visualizer.</alt></image>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Select one content item from the list.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeFullPage-SelectContentItem.png"><alt>Select one content item from the list.</alt></image></info>
+                    </substep>
+                    <substep>
+                        <cmd>Review and publish.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeFullPage-ReviewAndPublish.png"><alt>Review that the content item is displayed correctly, then publish.</alt></image></info>
+                    </substep>
+                </substeps>
+            </step>
+
+
+            <step>
+                <cmd><xref format="dita" href="../building-your-site/create-page-via-persona-bar.dita">Create a new page</xref> in which to display the list of recipes with their names, pictures, and short descriptions.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>Enter the details for the page.</cmd>
+                        <info>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow>
+                                    <stentry><uicontrol>Name</uicontrol></stentry>
+                                    <stentry><userinput>All Recipes</userinput></stentry>
+                                </strow>
+                                <strow>
+                                    <stentry><uicontrol>Display in Menu</uicontrol></stentry>
+                                    <stentry><uicontrol>On</uicontrol>. Turn this <uicontrol>On</uicontrol> if you want your users to easily access this page in the navigation.</stentry>
+                                </strow>
+                            </simpletable>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Set the permissions to allow your registered users to view the page.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeFullPage-Permissions.png"><alt>Create the page - Permissions tab.</alt></image></info>
+                    </substep>
+                    <substep><cmd>Click/Tap <uicontrol>Create</uicontrol>.</cmd></substep>
+                    <substep>
+                        <cmd>Choose a content pane then add a module.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeFullPage-NewPage.png"><alt>Create the page - Choose pane and click/tap module icon.</alt></image></info>
+                    </substep>
+                    <substep>
+                        <cmd>Choose the Visualizer module.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeFullPage-AddModuleVisualizer.png"><alt>Choose the Visualizer module.</alt></image></info>
+                    </substep>
+                    <substep>
+                        <cmd>Select the <uicontrol>Recipe Content Type</uicontrol>.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeFullPage-SelectContentType.png"><alt>Select the Recipe Content Type.</alt></image></info>
+                    </substep>
+                    <substep>
+                        <cmd>Select the <uicontrol>My Recipe Summary</uicontrol>.</cmd>
+                        <info>
+                            <note type="note">Only the visualizers associated with the selected content type are displayed.</note>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeShortPage-SelectVisualizer.png"><alt>Choose the My Recipe Summary.</alt></image>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Select one or more content items from the list.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeShortPage-SelectContentItem.png"><alt>Select one content item from the list.</alt></image></info>
+                    </substep>
+                    <substep>
+                        <cmd>Review and publish.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Example-RecipeShortPage-ReviewAndPublish.png"><alt>Review that the content item is displayed correctly, then publish.</alt></image></info>
+                    </substep>
+                </substeps>
+            </step>
+
+        </steps>
+
+    </taskbody>
+
+
+    <related-links>
+        <link format="html" scope="external" href="https://commons.wikimedia.org/wiki/File%3AChicken_adobo.jpg"><linktext>Photo source: Adobo photo by dbgg1979, CC BY 2.0, Wikimedia Commons.</linktext></link>
+        <link format="html" scope="external" href="https://commons.wikimedia.org/w/index.php?curid=3708190"><linktext>Photo source: Ribs photo by Marcelo Teson (Asado de centro, Happening), CC BY 2.0, Wikimedia.org.</linktext></link>
+    </related-links>
+
+ </task>

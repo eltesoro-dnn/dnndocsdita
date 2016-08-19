@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-visualizer-templates-datetime">
+    <title>Visualizer Templates: Date / Time</title>
+    <titlealts>
+        <navtitle>Date / Time</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1607</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+			<!--
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+			-->
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="5"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <refbody>
+
+        <section conkeyref="k-bptext/section-prodavail-E"></section>
+
+        <section id="datetime">
+
+            <p>You can choose which components of a <uicontrol>Date / Time</uicontrol> field are displayed using the <codeph>date</codeph> filter in the token. Without the filter, the token would return the full date and the full time.</p>
+
+            <note type="important">When creating a content item, the value of a <uicontrol>Date / Time</uicontrol> field must be entered as Universal Time Coordinated (UTC) time or Greenwich Mean Time (GMT), not the local time. However, the date and time will be converted to the local time when the content item is displayed.</note>
+
+            <p>Example: Suppose the value of the "My Datetime" field (token: <userinput>{{ myDatetime }}</userinput>) is 2016 September 3, Saturday, 1:04 AM UTC. Suppose the local timezone is UTC+7; therefore the local time is 08:04 AM.
+                <ul>
+                    <li>The token with the <codeph>date</codeph> filter would be <codeph>{{ myDatetime | date: [format] }}</codeph>, where <codeph>[format]</codeph> is a string specifying how you want the datetime to look.</li>
+                    <li>You can combine the format components; therefore, <codeph>{{ myDatetime | date: "MMM dd, yyyy" }}</codeph> returns <systemoutput>Sep 03, 2016</systemoutput>.</li>
+                    <li>Without any filter, the field would be displayed as <uicontrol>9/3/2016 8:04:00 AM</uicontrol>, depending on your local settings.</li>
+                </ul>
+            </p>
+
+            <simpletable relcolwidth="1* 3* 3* 3*">
+                <sthead>
+                    <stentry>Format component</stentry>
+                    <stentry>Description</stentry>
+                    <stentry>Example</stentry>
+                    <stentry>Result</stentry>
+                </sthead>
+                <!-- <strow>
+                    <stentry>d</stentry>
+                    <stentry>Day of the month (1 &#8212; 31)</stentry>
+                    <stentry>{{ myDatetime | date: "d" }}</stentry>
+                    <stentry>3</stentry>
+                </strow> -->
+                <strow>
+                    <stentry><codeph>dd</codeph></stentry>
+                    <stentry>Day of the month, zero-padded (01 &#8212; 31)</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "dd" }}</codeph></stentry>
+                    <stentry><codeph>03</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>ddd</codeph></stentry>
+                    <stentry>Abbreviated name of the day of the week</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "ddd" }}</codeph></stentry>
+                    <stentry><codeph>Sat</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>dddd</codeph></stentry>
+                    <stentry>Full name of the day of the week</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "dddd" }}</codeph></stentry>
+                    <stentry><codeph>Saturday</codeph></stentry>
+                </strow>
+                <!-- <strow>
+                    <stentry><codeph>f</codeph></stentry>
+                    <stentry>Tenths of a second, including 0.</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "f" }}</codeph></stentry>
+                    <stentry><codeph></codeph></stentry>
+                </strow> -->
+                <!-- <strow>
+                    <stentry><codeph>F</codeph></stentry>
+                    <stentry>Tenths of a second, if not 0.</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "F" }}</codeph></stentry>
+                    <stentry><codeph></codeph></stentry>
+                </strow> -->
+                <!-- <strow>
+                    <stentry><codeph>g</codeph></stentry>
+                    <stentry>Era; e.g., B.C. or A.D.</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "g" }}</codeph></stentry>
+                    <stentry><codeph></codeph></stentry>
+                </strow> -->
+                <strow>
+                    <stentry><codeph>gg</codeph></stentry>
+                    <stentry>Era; e.g., B.C. or A.D.</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "gg" }}</codeph></stentry>
+                    <stentry><codeph>A.D.</codeph></stentry>
+                </strow>
+                <!-- <strow>
+                    <stentry><codeph>h</codeph></stentry>
+                    <stentry>Hour of the day, 12-hour clock (1 &#8212; 12)</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "h" }}</codeph></stentry>
+                    <stentry><codeph></codeph></stentry>
+                </strow> -->
+                <strow>
+                    <stentry><codeph>hh</codeph></stentry>
+                    <stentry>Hour of the day, 12-hour clock, zero-padded (01 &#8212; 12)</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "hh" }}</codeph></stentry>
+                    <stentry><codeph>08 (depending on local time)</codeph></stentry>
+                </strow>
+                <!-- <strow>
+                    <stentry><codeph>H</codeph></stentry>
+                    <stentry>Hour of the day, 24-hour clock (0 &#8212; 23)</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "H" }}</codeph></stentry>
+                    <stentry><codeph></codeph></stentry>
+                </strow> -->
+                <strow>
+                    <stentry><codeph>HH</codeph></stentry>
+                    <stentry>Hour of the day, 24-hour clock, zero-padded (00 &#8212; 23)</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "HH" }}</codeph></stentry>
+                    <stentry><codeph>08 (depending on local time)</codeph></stentry>
+                </strow>
+                <!-- <strow>
+                    <stentry><codeph>K</codeph></stentry>
+                    <stentry>Time zone name</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "K" }}</codeph></stentry>
+                    <stentry><codeph></codeph></stentry>
+                </strow> -->
+                <!-- <strow>
+                    <stentry><codeph>m</codeph></stentry>
+                    <stentry>Minute of the hour (0 &#8212; 59)</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "m" }}</codeph></stentry>
+                    <stentry><codeph></codeph></stentry>
+                </strow> -->
+                <strow>
+                    <stentry><codeph>mm</codeph></stentry>
+                    <stentry>Minute of the hour, zero-padded (00 &#8212; 59)</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "mm" }}</codeph></stentry>
+                    <stentry><codeph>04</codeph></stentry>
+                </strow>
+                <!-- <strow>
+                    <stentry><codeph>M</codeph></stentry>
+                    <stentry>Month of the year (1 &#8212; 12)</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "M" }}</codeph></stentry>
+                    <stentry><codeph>9</codeph></stentry>
+                </strow> -->
+                <strow>
+                    <stentry><codeph>MM</codeph></stentry>
+                    <stentry>Month of the year, zero-padded (01 &#8212; 12)</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "MM" }}</codeph></stentry>
+                    <stentry><codeph>09</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>MMM</codeph></stentry>
+                    <stentry>Abbreviated name of the month</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "MMM" }}</codeph></stentry>
+                    <stentry><codeph>Sep</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>MMMM</codeph></stentry>
+                    <stentry>Full name of the month</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "MMMM" }}</codeph></stentry>
+                    <stentry><codeph>September</codeph></stentry>
+                </strow>
+                <!-- <strow>
+                    <stentry><codeph>s</codeph></stentry>
+                    <stentry>Seconds of the minute (0 &#8212; 59)</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "s" }}</codeph></stentry>
+                    <stentry><codeph></codeph></stentry>
+                </strow> -->
+                <strow>
+                    <stentry><codeph>ss</codeph></stentry>
+                    <stentry>Seconds of the minute, zero-padded (00 &#8212; 59)</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "ss" }}</codeph></stentry>
+                    <stentry><codeph>00</codeph></stentry>
+                </strow>
+                <!-- <strow>
+                    <stentry><codeph>t</codeph></stentry>
+                    <stentry>First character of the AM/PM designator</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "t" }}</codeph></stentry>
+                    <stentry><codeph></codeph></stentry>
+                </strow> -->
+                <strow>
+                    <stentry><codeph>tt</codeph></stentry>
+                    <stentry>AM/PM designator</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "tt" }}</codeph></stentry>
+                    <stentry><codeph>AM</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>y</codeph></stentry>
+                    <stentry>Year without the century (0 &#8212; 99)</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "y" }}</codeph></stentry>
+                    <stentry><codeph>16</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>yy</codeph></stentry>
+                    <stentry>Year without the century, zero-padded (00 &#8212; 99)</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "yy" }}</codeph></stentry>
+                    <stentry><codeph>16</codeph></stentry>
+                </strow>
+                <strow>
+                    <stentry><codeph>yyyy</codeph></stentry>
+                    <stentry>Full year</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "yyyy" }}</codeph></stentry>
+                    <stentry><codeph>2016</codeph></stentry>
+                </strow>
+                <!-- <strow>
+                    <stentry><codeph>z</codeph></stentry>
+                    <stentry>Hours offset from UTC</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "z" }}</codeph></stentry>
+                    <stentry><codeph></codeph></stentry>
+                </strow> -->
+                <!-- <strow>
+                    <stentry><codeph>zz</codeph></stentry>
+                    <stentry>Hours offset from UTC, zero-padded</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "zz" }}</codeph></stentry>
+                    <stentry><codeph>+00</codeph></stentry>
+                </strow> -->
+                <!-- <strow>
+                    <stentry><codeph>zzz</codeph></stentry>
+                    <stentry>Hours and minutes offset from UTC</stentry>
+                    <stentry><codeph>{{ myDatetime | date: "zzz" }}</codeph></stentry>
+                    <stentry><codeph>+00:00</codeph></stentry>
+                </strow> -->
+            </simpletable>
+
+        </section>
+
+    </refbody>
+
+
+    <related-links>
+        <link format="html" scope="external" href="https://msdn.microsoft.com/en-us/library/8kb3ddd4(v=vs.110).aspx"><linktext>MSDN Custom Date and Time Format Strings</linktext></link>
+        <!-- <link format="html" scope="external" href="https://help.shopify.com/themes/liquid/filters/additional-filters#date"><linktext>Liquid for Designers - Additional Filters</linktext></link> -->
+    </related-links>
+
+</reference>

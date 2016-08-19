@@ -38,19 +38,25 @@
 		<section id="overview">
             <title>Structured Content Overview</title>
 
-			<p>Structured Content is a microservice that manages <term>content items</term> or pieces of content that can be presented in any context, such as a webpage or a native mobile app.</p>
+            <p>Structured Content is a microservice that manages <term>content items</term> or pieces of content that can be presented in any context, such as a webpage or a native mobile app.</p>
 
-			<p>A content item can be of any defined <term>content type</term>, which is a custom combination and configuration of content fields. Default content types include <uicontrol>Content Block</uicontrol>, <uicontrol>Department</uicontrol>, <uicontrol>Job Posting</uicontrol>, and <uicontrol>People</uicontrol>.</p>
+            <p>In Evoq, structured content has three types of components:
+                <ul>
+                    <li><uicontrol>Content Type</uicontrol>. Defines the combination of fields and configuration of a piece of content.</li>
+                    <li><uicontrol>Visualizer</uicontrol>. The visualizer defines how the content item is formatted and styled. Just as a container is used to format and style a module, the visualizer is used to format and style the content item.</li>
+                    <li><uicontrol>Content Item</uicontrol>. The individual pieces of content.</li>
+                </ul>
+            </p>
 
-            <p>Example: The content item that contains the employee record for a specific employee can be based on the content type <uicontrol>People</uicontrol>.</p>
+			<p>A content item can be of any defined <term>content type</term>. Default content types include <uicontrol>Content Block</uicontrol>, <uicontrol>Department</uicontrol>, <uicontrol>Job Posting</uicontrol>, and <uicontrol>People</uicontrol>. You can create a content type from scratch or you can customize a default content type by duplicating it and then editing the copy.</p>
 
-			<p>You can also create your own custom content types with one or more fields of the following types:
+            <p>Every content type is comprised of one or more fields of the following types:
 				<ul>
 					<li><term>Single-line text</term></li>
 					<li><term>Multi-line text</term></li>
 					<li><term>Number</term></li>
 					<li><term>Multiple choice</term></li>
-					<li><term>Date/Time</term></li>
+					<li><term>Date / Time</term></li>
 					<li><term>Assets</term></li>
 					<li><term>Reference object</term></li>
 					<li><term>Static text</term></li>
@@ -63,7 +69,30 @@
 
 			<p>Settings can be different among different field types and among different field formats.</p>
 
-            <note id="important">A content type must have at least one <uicontrol>Single-Line Text</uicontrol> field with <uicontrol>Required</uicontrol> set to <uicontrol>On</uicontrol>.</note>
+            <p>Example: The content item associated with a specific subscriber can be of the default content type <uicontrol>Person</uicontrol>. To create a content type <userinput>Employee</userinput>, you can duplicate the default content type <uicontrol>Person</uicontrol>, then add:
+                <simpletable relcolwidth="1* 1*">
+                    <sthead>
+                        <stentry>Field Name</stentry>
+                        <stentry>Field Type</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry><uicontrol>Employee Number</uicontrol></stentry>
+                        <stentry>Number</stentry>
+                    </strow>
+                    <strow>
+                        <stentry><uicontrol>Hire Date</uicontrol></stentry>
+                        <stentry>DateTime</stentry>
+                    </strow>
+                    <strow>
+                        <stentry><uicontrol>Annual Salary</uicontrol></stentry>
+                        <stentry>Number</stentry>
+                    </strow>
+                    <strow>
+                        <stentry><uicontrol>Direct Manager</uicontrol></stentry>
+                        <stentry>Reference object</stentry>
+                    </strow>
+                </simpletable>
+            </p>
 
             <p>A content type is associated with a <term>visualizer</term>, which defines how content items of that type are displayed. Visualizers are to content types, as containers are to modules.</p>
 
