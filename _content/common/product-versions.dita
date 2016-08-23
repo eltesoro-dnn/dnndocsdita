@@ -35,7 +35,7 @@
     <refbody>
 
         <!-- Source: https://dnntracker.atlassian.net/wiki/display/SUP/Product+Releases -->
-        <simpletable relcolwidth="1* 1* 1*">
+        <simpletable relcolwidth="1* 1* 1* 1*">
             <sthead>
                 <stentry>Date released to Codeplex</stentry>
                 <stentry>Platform</stentry>
@@ -54,6 +54,14 @@
                 <stentry>8.5.0</stentry>
             </strow>
             -->
+            <strow>
+                <stentry>2016 Aug 22</stentry>
+                <stentry><ph conref="release-notes/relnotes-2016-aug-22.dita#top-relnotes-2016-aug-22/ph-prodver-platform"></ph>
+                    <xref conref="release-notes/relnotes-2016-aug-22.dita#top-relnotes-2016-aug-22/xref-github-link"></xref>
+                </stentry>
+                <stentry><ph conref="release-notes/relnotes-2016-aug-22.dita#top-relnotes-2016-aug-22/ph-prodver-evoq"></ph></stentry>
+                <stentry><xref format="dita" href="release-notes/relnotes-2016-aug-22.dita">Release Notes</xref></stentry>
+            </strow>
             <strow>
                 <stentry>2016 May 26</stentry>
                 <stentry><ph conref="release-notes/relnotes-2016-may-26.dita#top-relnotes-2016-may-26/ph-prodver-platform"></ph>

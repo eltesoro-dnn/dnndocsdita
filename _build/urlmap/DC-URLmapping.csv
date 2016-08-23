@@ -1,6 +1,6 @@
 old,new,notes
 /,/index.html,To fix the index.html problem.
-DNN8-Whats-New.html,administrators/whats-new-dnn8.html,"Problems with infinite loop in web.config rules if the filenames are the same, case-insensitive."
+DNN8-Whats-New.html,administrators/whats-new-dnn.html,"Problems with infinite loop in web.config rules if the filenames are the same, case-insensitive."
 Overview-DNN-Platform.html,administrators/dnn-platform-overview.html,"Problems with infinite loop in web.config rules if the filenames are the same, case-insensitive."
 DNN8-Requirements.html,administrators/requirements.html,"Problems with infinite loop in web.config rules if the filenames are the same, case-insensitive."
 admin/GettingStarted/Install-Extensions.html,administrators/extensions/install-extension.html,
@@ -64,3 +64,13 @@ content-managers/securing-your-site,content-managers/security,
 developers/securing-your-site,developers/security,
 designers/securing-your-site,designers/security,
 community-managers/securing-your-site,community-managers/security,
+administrators/release-notes,administrators/whats-new-dnn.html,
+administrators/release-notes/,administrators/whats-new-dnn.html,
+content-managers/release-notes,content-managers/whats-new-dnn.html,
+content-managers/release-notes/,content-managers/whats-new-dnn.html,
+developers/release-notes,developers/whats-new-dnn.html,
+developers/release-notes/,developers/whats-new-dnn.html,
+designers/release-notes,designers/whats-new-dnn.html,
+designers/release-notes/,designers/whats-new-dnn.html,
+community-managers/release-notes,community-managers/whats-new-dnn.html,
+community-managers/release-notes/,community-managers/whats-new-dnn.html,

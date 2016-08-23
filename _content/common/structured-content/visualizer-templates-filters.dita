@@ -42,60 +42,107 @@
         <section id="math">
             <title>Math</title>
 
-            <simpletable relcolwidth="1* 3* 2* 1*">
+            <simpletable relcolwidth="1* 3* 2*">
                 <sthead>
                     <stentry>Filter</stentry>
                     <stentry>Description</stentry>
                     <stentry>Example</stentry>
-                    <stentry>Result</stentry>
                 </sthead>
                 <strow id="ceil">
-                    <stentry><codeph>ceil</codeph></stentry>
-                    <stentry>Rounds up to the nearest integer. Also see <xref format="dita" href="#ref-visualizer-templates-filters/floor">floor</xref>.</stentry>
-                    <stentry><codeph>{{ 4.6 | ceil }}</codeph></stentry>
-                    <stentry><codeph>5</codeph></stentry>
+                    <stentry><term>ceil</term></stentry>
+                    <stentry>Rounds up to the nearest integer. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/floor">floor</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ 4.6 | ceil }}
+                        </codeblock>
+                        <msgblock>
+5
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="dividedby">
-                    <stentry><codeph>divided_by</codeph></stentry>
-                    <stentry>Divides the piped value by the specified integer. Rounds the result. Also see <xref format="dita" href="#ref-visualizer-templates-filters/modulo">modulo</xref>.</stentry>
-                    <stentry><codeph>{{ 10 | divided_by: 3 }}</codeph></stentry>
-                    <stentry><codeph>3</codeph></stentry>
+                    <stentry><term>divided_by</term></stentry>
+                    <stentry>Divides the piped value by the specified integer. Rounds the result. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/modulo">modulo</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ 10 | divided_by: 3 }}
+                        </codeblock>
+                        <msgblock>
+3
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="floor">
-                    <stentry><codeph>floor</codeph></stentry>
-                    <stentry>Rounds up to the nearest integer. Also see <xref format="dita" href="#ref-visualizer-templates-filters/ceil">ceil</xref>.</stentry>
-                    <stentry><codeph>{{ 4.6 | floor }}</codeph></stentry>
-                    <stentry><codeph>4</codeph></stentry>
+                    <stentry><term>floor</term></stentry>
+                    <stentry>Rounds up to the nearest integer. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/ceil">ceil</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ 4.6 | floor }}
+                        </codeblock>
+                        <msgblock>
+4
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="minus">
-                    <stentry><codeph>minus</codeph></stentry>
-                    <stentry>Subtracts the specified value from the piped value. Also see <xref format="dita" href="#ref-visualizer-templates-filters/plus">plus</xref>.</stentry>
-                    <stentry><codeph>{{ 4 | minus: 2 }}</codeph></stentry>
-                    <stentry><codeph>2</codeph></stentry>
+                    <stentry><term>minus</term></stentry>
+                    <stentry>Subtracts the specified value from the piped value. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/plus">plus</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ 4 | minus: 2 }}
+                        </codeblock>
+                        <msgblock>
+2
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="modulo">
-                    <stentry><codeph>modulo</codeph></stentry>
-                    <stentry>Returns the modulo (remainder) when the piped value is divided by the specified value. Also see <xref format="dita" href="#ref-visualizer-templates-filters/dividedby">divided_by</xref>.</stentry>
-                    <stentry><codeph>{{ 3 | modulo: 2 }}</codeph></stentry>
-                    <stentry><codeph>1</codeph></stentry>
+                    <stentry><term>modulo</term></stentry>
+                    <stentry>Returns the modulo (remainder) when the piped value is divided by the specified value. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/dividedby">divided_by</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ 3 | modulo: 2 }}
+                        </codeblock>
+                        <msgblock>
+1
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="plus">
-                    <stentry><codeph>plus</codeph></stentry>
-                    <stentry>Adds the piped value and the specified value. If the values are numeric strings, the numbers are converted to integers, then added. Also see <xref format="dita" href="#ref-visualizer-templates-filters/minus">minus</xref>.</stentry>
-                    <stentry><codeph>{{ 1 | plus: 1 }}</codeph></stentry>
-                    <stentry><codeph>2</codeph></stentry>
+                    <stentry><term>plus</term></stentry>
+                    <stentry>Adds the piped value and the specified value. If the values are numeric strings, the numbers are converted to integers, then added. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/minus">minus</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ 1 | plus: 1 }}
+                        </codeblock>
+                        <msgblock>
+2
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="round">
-                    <stentry><codeph>round</codeph></stentry>
+                    <stentry><term>round</term></stentry>
                     <stentry>Rounds the piped value to the nearest integer for the specified number of decimals.</stentry>
-                    <stentry><codeph>{{ 4.5612 | round: 2 }}</codeph></stentry>
-                    <stentry><codeph>4.56</codeph></stentry>
+                    <stentry>
+                        <codeblock>
+{{ 4.5612 | round: 2 }}
+                        </codeblock>
+                        <msgblock>
+4.56
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="times">
-                    <stentry><codeph>times</codeph></stentry>
+                    <stentry><term>times</term></stentry>
                     <stentry>Multiplies the piped value with the specified value.</stentry>
-                    <stentry><codeph>{{ 5 | times: 4 }}</codeph></stentry>
-                    <stentry><codeph>20</codeph></stentry>
+                    <stentry>
+                        <codeblock>
+{{ 5 | times: 4 }}
+                        </codeblock>
+                        <msgblock>
+20
+                        </msgblock>
+                    </stentry>
                 </strow>
             </simpletable>
         </section>
@@ -104,120 +151,262 @@
         <section id="strings">
             <title>Strings</title>
 
-            <simpletable relcolwidth="1* 3* 2* 1*">
+            <simpletable relcolwidth="1* 3* 2*">
                 <sthead>
                     <stentry>Filter</stentry>
                     <stentry>Description</stentry>
                     <stentry>Example</stentry>
-                    <stentry>Result</stentry>
                 </sthead>
                 <strow id="append">
-                    <stentry><codeph>append</codeph></stentry>
-                    <stentry>Appends the specified string to the end of the piped string. Also see <xref format="dita" href="#ref-visualizer-templates-filters/prepend">prepend</xref>.</stentry>
-                    <stentry><codeph>{{ "foo" | append: "bar" }}</codeph></stentry>
-                    <stentry><codeph>foobar</codeph></stentry>
+                    <stentry><term>append</term></stentry>
+                    <stentry>
+                        Appends the specified string to the end of the piped string. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/prepend">prepend</xref>.
+                    </stentry>
+                    <stentry>
+                        <codeblock>
+{{ "the quick brown fox" | append: " jumped over" }}
+                        </codeblock>
+                        <msgblock>
+the quick brown fox jumped over
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="capitalize">
-                    <stentry><codeph>capitalize</codeph></stentry>
-                    <stentry>Capitalizes the first letters of words in the piped string. Also see <xref format="dita" href="#ref-visualizer-templates-filters/upcase">upcase</xref> and <xref format="dita" href="#ref-visualizer-templates-filters/downcase">downcase</xref>.</stentry>
-                    <stentry><codeph>{{ "capitalize me." | capitalize }}</codeph></stentry>
-                    <stentry><codeph>Capitalize Me.</codeph></stentry>
+                    <stentry><term>capitalize</term></stentry>
+                    <stentry>
+                        Capitalizes the first letters of words in the piped string. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/upcase">upcase</xref> and <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/downcase">downcase</xref>.
+                    </stentry>
+                    <stentry>
+                        <codeblock>
+{{ "the quick brown fox" | capitalize }}
+{{ "jUmPeD OvEr tHe lAzY dOg" | capitalize }}
+                        </codeblock>
+                        <msgblock>
+The Quick Brown Fox
+Jumped Over The Lazy Dog
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="downcase">
-                    <stentry><codeph>downcase</codeph></stentry>
-                    <stentry>Converts the piped string to lowercase. Also see <xref format="dita" href="#ref-visualizer-templates-filters/upcase">upcase</xref> and <xref format="dita" href="#ref-visualizer-templates-filters/capitalize">capitalize</xref>.</stentry>
-                    <stentry><codeph>{{ "This Is Not a Title-cased String." | downcase }}</codeph></stentry>
-                    <stentry><codeph>this is not a title-cased string.</codeph></stentry>
+                    <stentry><term>downcase</term></stentry>
+                    <stentry>Converts the piped string to lowercase. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/upcase">upcase</xref> and <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/capitalize">capitalize</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ "THE QUICK BROWN FOX" | downcase }}
+{{ "The QUICK Brown foX" | downcase }}
+                        </codeblock>
+                        <msgblock>
+the quick brown fox
+    the quick brown fox
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="lstrip">
-                    <stentry><codeph>lstrip</codeph></stentry>
-                    <stentry>Removes all whitespace from the beginning of the piped string. Also see <xref format="dita" href="#ref-visualizer-templates-filters/rstrip">rstrip</xref> and <xref format="dita" href="#ref-visualizer-templates-filters/strip">strip</xref>.</stentry>
-                    <stentry><codeph>{{ "   hello   " | lstrip }}</codeph></stentry>
-                    <stentry><codeph>"hello   "</codeph></stentry>
+                    <stentry><term>lstrip</term></stentry>
+                    <stentry>
+                        Removes all whitespace from the beginning of the piped string. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/rstrip">rstrip</xref> and <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/strip">strip</xref>.
+                        <note type="note">Because browsers remove extraneous whitespaces, multiple consecutive whitespaces would be reduced to a single whitespace, even without any <codeph>strip</codeph> filter.</note>
+                    </stentry>
+                    <stentry>
+                        <codeblock>
+.{{ "   hello   " | lstrip }}.</codeblock>
+                        <msgblock>
+.hello .
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="prepend">
-                    <stentry><codeph>prepend</codeph></stentry>
-                    <stentry>Prepends a string. Also see <xref format="dita" href="#ref-visualizer-templates-filters/append">append</xref>.</stentry>
-                    <stentry><codeph>{{ "bar" | prepend: "foo" }}</codeph></stentry>
-                    <stentry><codeph>foobar</codeph></stentry>
+                    <stentry><term>prepend</term></stentry>
+                    <stentry>Prepends a string. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/append">append</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ "the lazy dog" | prepend: "jumped over " }}
+                        </codeblock>
+                        <msgblock>
+jumped over the lazy dog
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="removefirst">
-                    <stentry><codeph>remove_first</codeph></stentry>
-                    <stentry>Removes the first occurrence of the specified string from the piped string. Also see <xref format="dita" href="#ref-visualizer-templates-filters/remove">remove</xref> and <xref format="dita" href="#ref-visualizer-templates-filters/replace">replace</xref>.</stentry>
-                    <stentry><codeph>{{ "barbar" | remove_first: "bar" }}</codeph></stentry>
-                    <stentry><codeph>bar</codeph></stentry>
+                    <stentry><term>remove_first</term></stentry>
+                    <stentry>Removes the first occurrence of the specified string from the piped string. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/remove">remove</xref> and <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/replace">replace</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ "peppers" | remove_first: "pe" }}
+                        </codeblock>
+                        <msgblock>
+ppers
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="remove">
-                    <stentry><codeph>remove</codeph></stentry>
-                    <stentry>Removes every occurrence of the specified string from the piped string. Also see <xref format="dita" href="#ref-visualizer-templates-filters/removefirst">remove_first</xref> and <xref format="dita" href="#ref-visualizer-templates-filters/replace">replace</xref>.</stentry>
-                    <stentry><codeph>{{ "foobarfoobar" | remove: "foo" }}</codeph></stentry>
-                    <stentry><codeph>barbar</codeph></stentry>
+                    <stentry><term>remove</term></stentry>
+                    <stentry>Removes every occurrence of the specified string from the piped string. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/removefirst">remove_first</xref> and <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/replace">replace</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ "peppers" | remove: "pe" }}
+                        </codeblock>
+                        <msgblock>
+prs
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="replacefirst">
-                    <stentry><codeph>replace_first</codeph></stentry>
-                    <stentry>Replaces the first occurrence of the first specified string with the second specified string. Also see <xref format="dita" href="#ref-visualizer-templates-filters/replace">replace</xref> and <xref format="dita" href="#ref-visualizer-templates-filters/removefirst">remove_first</xref>.</stentry>
-                    <stentry><codeph>{{ "barbar" | replace_first: "bar", "foo" }}</codeph></stentry>
-                    <stentry><codeph>foobar</codeph></stentry>
+                    <stentry><term>replace_first</term></stentry>
+                    <stentry>Replaces the first occurrence of the first specified string with the second specified string. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/replace">replace</xref> and <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/removefirst">remove_first</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ "peppers" | replace_first: "pe", "to" }}
+                        </codeblock>
+                        <msgblock>
+toppers
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="replace">
-                    <stentry><codeph>replace</codeph></stentry>
-                    <stentry>Replaces every occurrence of the first specified string with the second specified string. Also see <xref format="dita" href="#ref-visualizer-templates-filters/replacefirst">replace_first</xref> and <xref format="dita" href="#ref-visualizer-templates-filters/remove">remove</xref>.</stentry>
-                    <stentry><codeph>{{ "foofoo" | replace: "foo", "bar" }}</codeph></stentry>
-                    <stentry><codeph>barbar</codeph></stentry>
+                    <stentry><term>replace</term></stentry>
+                    <stentry>Replaces every occurrence of the first specified string with the second specified string. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/replacefirst">replace_first</xref> and <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/remove">remove</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ "peppers" | replace: "pe", "to" }}
+                        </codeblock>
+                        <msgblock>
+toptors
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="rstrip">
-                    <stentry><codeph>rstrip</codeph></stentry>
-                    <stentry>Removes all trailing (ending) whitespace characters from the piped string. Also see <xref format="dita" href="#ref-visualizer-templates-filters/lstrip">lstrip</xref> and <xref format="dita" href="#ref-visualizer-templates-filters/strip">strip</xref>.</stentry>
-                    <stentry><codeph>{{ "   hello   " | rstrip }}</codeph></stentry>
-                    <stentry><codeph>"   hello"</codeph></stentry>
+                    <stentry><term>rstrip</term></stentry>
+                    <stentry>
+                        Removes all trailing (ending) whitespace characters from the piped string. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/lstrip">lstrip</xref> and <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/strip">strip</xref>.
+                        <note type="note">Because browsers remove extraneous whitespaces, multiple consecutive whitespaces would be reduced to a single whitespace, even without any <codeph>strip</codeph> filter.</note>
+                    </stentry>
+                    <stentry>
+                        <codeblock>
+.{{ "   hello   " | rstrip }}.</codeblock>
+                        <msgblock>
+. hello.
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="sizestring">
-                    <stentry><codeph>size</codeph></stentry>
+                    <stentry><term>size</term></stentry>
                     <stentry>Returns the size of the piped array or string.</stentry>
-                    <stentry><codeph>{{ "hello" | size }}</codeph></stentry>
-                    <stentry><codeph>5</codeph></stentry>
+                    <stentry>
+                        <codeblock>
+{{ "hello" | size }}
+                        </codeblock>
+                        <msgblock>
+5
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="slice">
-                    <stentry><codeph>slice</codeph></stentry>
+                    <stentry><term>slice</term></stentry>
                     <stentry>Returns a substring from the piped string, from the specified offset and with the specified number of characters. A negative offset will start counting from the end of the string.</stentry>
-                    <stentry><codeph>{{ "hello" | slice: -3, 3 }}</codeph></stentry>
-                    <stentry><codeph>llo</codeph></stentry>
+                    <stentry>
+                        <codeblock>
+{{ "hello" | slice: 1, 2 }}
+{{ "hello" | slice: -3, 3 }}
+                        </codeblock>
+                        <msgblock>
+el
+llo
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="split">
-                    <stentry><codeph>split</codeph></stentry>
-                    <stentry>Splits the piped string where the specified pattern is found, not including the search pattern.</stentry>
-                    <stentry><codeph>{{ "a~b" | split: "~" }}</codeph></stentry>
-                    <stentry><codeph>["a","b"]</codeph></stentry>
+                    <stentry><term>split</term></stentry>
+                    <stentry>Splits the piped string where the specified pattern is found, not including the search pattern. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/arrays">Arrays</xref>.
+                        <note conref="bptext-content-steps.dita#tsk-bptext-content-steps/note-visualizer-arraytostring"></note>
+                    </stentry>
+                    <stentry>
+                        <codeblock>
+{{ "a,b" | split: "," }}
+{{ "a,b" | split: "," | join: "|"  }}
+                        </codeblock>
+                        <msgblock>
+ab
+a|b
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="stripnewlines">
-                    <stentry><codeph>strip_newlines</codeph></stentry>
+                    <stentry><term>strip_newlines</term></stentry>
                     <stentry>Removes all newline characters ("\n") from the piped string.</stentry>
-                    <stentry/>
-                    <stentry/>
+                    <stentry>
+                        <p>If <userinput>myMultiLineField</userinput> is set to:</p>
+                        <codeblock>
+Twinkle, twinkle,
+little star.
+How I wonder
+what you are.
+                        </codeblock>
+                        <codeblock>
+{{ myMultiLineText | strip_newlines }}
+                        </codeblock>
+                        <msgblock>
+Twinkle, twinkle,little star.How I wonderwhat you are.
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="strip">
-                    <stentry><codeph>strip</codeph></stentry>
-                    <stentry>Removes all leading and trailing whitespace characters from the piped string.</stentry>
-                    <stentry><codeph>{{ "   hello   " | lstrip }}</codeph></stentry>
-                    <stentry><codeph>"hello"</codeph></stentry>
+                    <stentry><term>strip</term></stentry>
+                    <stentry>
+                        Removes all leading and trailing whitespace characters from the piped string.
+                        <note type="note">Because browsers remove extraneous whitespaces, multiple consecutive whitespaces would be reduced to a single whitespace, even without any <codeph>strip</codeph> filter. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/lstrip">lstrip</xref> and <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/rstrip">rstrip</xref>.</note>
+                    </stentry>
+                    <stentry>
+                        <codeblock>
+.{{ "   hello   " | strip }}.</codeblock>
+                        <msgblock>
+.hello.
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="truncate">
-                    <stentry><codeph>truncate</codeph></stentry>
-                    <stentry>Truncates the piped string down to the specified number of characters and appends the optional second parameter.</stentry>
-                    <stentry><codeph>{{ "foobarfoobar" | truncate: 5, "." }}</codeph></stentry>
-                    <stentry><codeph>foob.</codeph></stentry>
+                    <stentry><term>truncate</term></stentry>
+                    <stentry>Truncates the piped string and appends the optional second parameter, so that the length of the final result is the first parameter.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ "supercalifragilistic" | truncate: 8, "man" }}
+{{ "supercalifragilistic" | truncate: 5, "nny" }}
+                        </codeblock>
+                        <msgblock>
+superman
+sunny
+                        </msgblock>
+                    </stentry>
                 </strow>
+                <!-- JIRA #
                 <strow id="truncatewords">
-                    <stentry><codeph>truncatewords</codeph></stentry>
+                    <stentry><term>truncatewords</term></stentry>
                     <stentry>Truncates the piped string down to the specified number of words.</stentry>
-                    <stentry><codeph>{{ "foo bar foo bar" | truncatewords: 3 }}</codeph></stentry>
-                    <stentry><codeph>foo bar foo</codeph></stentry>
+                    <stentry>
+                        <codeblock>
+{{ "the quick brown fox" | truncatewords: 1 }}
+{{ "the quick brown fox" | truncatewords: 2 }}
+{{ "the quick brown fox" | truncatewords: 3 }}
+                        </codeblock>
+                        <msgblock>
+the
+the quick
+the quick brown
+                        </msgblock>
+                    </stentry>
                 </strow>
+                -->
                 <strow id="upcase">
-                    <stentry><codeph>upcase</codeph></stentry>
+                    <stentry><term>upcase</term></stentry>
                     <stentry>Converts the piped string to uppercase.</stentry>
-                    <stentry><codeph>{{ "hello" | upcase }}</codeph></stentry>
-                    <stentry><codeph>HELLO</codeph></stentry>
+                    <stentry>
+                        <codeblock>
+{{ "hello" | upcase }}
+                        </codeblock>
+                        <msgblock>
+HELLO
+                        </msgblock>
+                    </stentry>
                 </strow>
             </simpletable>
         </section>
@@ -227,41 +416,35 @@
             <title>HTML and URL Encodings</title>
 
             <p></p>
-            <simpletable relcolwidth="1* 3* 2* 1*">
+            <simpletable relcolwidth="1* 3* 2*">
                 <sthead>
                     <stentry>Filter</stentry>
                     <stentry>Description</stentry>
                     <stentry>Example</stentry>
-                    <stentry>Result</stentry>
                 </sthead>
                 <strow id="escapeonce">
-                    <stentry><codeph>escape_once</codeph></stentry>
+                    <stentry><term>escape_once</term></stentry>
                     <stentry>Converts special characters in the string into HTML escape characters without affecting characters that are already HTML-escaped.</stentry>
-                    <stentry/>
                     <stentry/>
                 </strow>
                 <strow id="escapeall">
-                    <stentry><codeph>escape</codeph></stentry>
+                    <stentry><term>escape</term></stentry>
                     <stentry>Converts special characters in the string into HTML escape characters.</stentry>
-                    <stentry/>
                     <stentry/>
                 </strow>
                 <strow id="newlinetobr">
-                    <stentry><codeph>newline_to_br</codeph></stentry>
+                    <stentry><term>newline_to_br</term></stentry>
                     <stentry>Replaces each newline ("\n") with an HTML break (&lt;br/&gt;).</stentry>
-                    <stentry/>
                     <stentry/>
                 </strow>
                 <strow id="striphtml">
-                    <stentry><codeph>strip_html</codeph></stentry>
+                    <stentry><term>strip_html</term></stentry>
                     <stentry>Removes all HTML-encoded characters from the piped string.</stentry>
-                    <stentry/>
                     <stentry/>
                 </strow>
                 <strow id="urlencode">
-                    <stentry><codeph>url_encode</codeph></stentry>
+                    <stentry><term>url_encode</term></stentry>
                     <stentry>Converts the piped string to URL encoding.</stentry>
-                    <stentry/>
                     <stentry/>
                 </strow>
             </simpletable>
@@ -271,61 +454,107 @@
         <section id="arrays">
             <title>Arrays</title>
 
-            <simpletable relcolwidth="1* 3* 2* 1*">
+            <p>These examples accept a string with comma-separated values which is split into an array, before the filter is applied. If the result is an array, the <codeph>join</codeph> filter combines the elements into a string with the tilde "~" as separator.</p>
+            <note conref="bptext-content-steps.dita#tsk-bptext-content-steps/note-visualizer-arraytostring"></note>
+
+            <simpletable relcolwidth="1* 3* 2*">
                 <sthead>
                     <stentry>Filter</stentry>
                     <stentry>Description</stentry>
                     <stentry>Example</stentry>
-                    <stentry>Result</stentry>
                 </sthead>
                 <strow id="first">
-                    <stentry><codeph>first</codeph></stentry>
-                    <stentry>Returns the first element of the piped array. Also see <xref format="dita" href="#ref-visualizer-templates-filters/last">last</xref>.</stentry>
-                    <stentry><codeph>{{ ["dddd","bb","ccc","a"] | first }}</codeph></stentry>
-                    <stentry><codeph>dddd</codeph></stentry>
+                    <stentry><term>first</term></stentry>
+                    <stentry>Returns the first element of the piped array. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/last">last</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ "dddd,bb,ccc,a" | split: "," | first }}
+                        </codeblock>
+                        <msgblock>
+dddd
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="join">
-                    <stentry><codeph>join</codeph></stentry>
+                    <stentry><term>join</term></stentry>
                     <stentry>Combines the elements of the piped array with the specified character inserted between each element.</stentry>
-                    <stentry><codeph>{{ ["dddd","bb","ccc","a"] | join "-" }}</codeph></stentry>
-                    <stentry><codeph>dddd-bb-ccc-a</codeph></stentry>
+                    <stentry>
+                        <codeblock>
+{{ "dddd,bb,ccc,a" | split: "," | join "~" }}
+                        </codeblock>
+                        <msgblock>
+dddd~bb~ccc~a
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="last">
-                    <stentry><codeph>last</codeph></stentry>
-                    <stentry>Returns the last element of the piped array. Also see <xref format="dita" href="#ref-visualizer-templates-filters/first">first</xref>.</stentry>
-                    <stentry><codeph>{{ ["dddd","bb","ccc","a"] | last }}</codeph></stentry>
-                    <stentry><codeph>a</codeph></stentry>
+                    <stentry><term>last</term></stentry>
+                    <stentry>Returns the last element of the piped array. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/first">first</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ "dddd,bb,ccc,a" | split: "," | last }}
+                        </codeblock>
+                        <msgblock>
+a
+                        </msgblock>
+                    </stentry>
                 </strow>
-                <strow id="map">
-                    <stentry><codeph>map</codeph></stentry>
+                <!-- <strow id="map">
+                    <stentry><term>map</term></stentry>
                     <stentry>Maps/Collects an array on a given property.</stentry>
-                    <stentry><codeph></codeph></stentry>
-                    <stentry><codeph></codeph></stentry>
-                </strow>
+                    <stentry>
+                        <codeblock/>
+                        <msgblock/>
+                    </stentry>
+                </strow> -->
                 <strow id="reverse">
-                    <stentry><codeph>reverse</codeph></stentry>
-                    <stentry>Reverses the sort of the piped array. See <xref format="dita" href="#ref-visualizer-templates-filters/sort">sort</xref>.</stentry>
-                    <stentry><codeph>{{ ["dddd","bb","ccc","a"] | reverse }}</codeph></stentry>
-                    <stentry><codeph>["a","ccc","bb","dddd"]</codeph></stentry>
+                    <stentry><term>reverse</term></stentry>
+                    <stentry>Reverses the sort of the piped array. See <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/sort">sort</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ "dddd,bb,ccc,a" | split: "," | reverse | join "~" }}
+                        </codeblock>
+                        <msgblock>
+a~ccc~bb~dddd
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="sizearray">
-                    <stentry><codeph>size</codeph></stentry>
+                    <stentry><term>size</term></stentry>
                     <stentry>Returns the size of the piped array or string.</stentry>
-                    <stentry><codeph>{{ ["dddd","bb","ccc","a"] | size }}</codeph></stentry>
-                    <stentry><codeph>4</codeph></stentry>
+                    <stentry>
+                        <codeblock>
+{{ "dddd,bb,ccc,a" | split: "," | size }}
+                        </codeblock>
+                        <msgblock>
+4
+                        </msgblock>
+                    </stentry>
                 </strow>
                 <strow id="sort">
-                    <stentry><codeph>sort</codeph></stentry>
-                    <stentry>Sorts the elements of the array. See <xref format="dita" href="#ref-visualizer-templates-filters/reverse">reverse</xref>.</stentry>
-                    <stentry><codeph>{{ ["dddd","bb","ccc","a"] | sort }}</codeph></stentry>
-                    <stentry><codeph>["a","bb","ccc","dddd"]</codeph></stentry>
+                    <stentry><term>sort</term></stentry>
+                    <stentry>Sorts the elements of the array. See <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/reverse">reverse</xref>.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ "dddd,bb,ccc,a" | split: "," | sort | join "~" }}
+                        </codeblock>
+                        <msgblock>
+a~bb~ccc~dddd
+                        </msgblock>
+                    </stentry>
                 </strow>
-                <strow id="uniq">
-                    <stentry><codeph>uniq</codeph></stentry>
+                <!-- <strow id="uniq">
+                    <stentry><term>uniq</term></stentry>
                     <stentry>Removes duplicate elements from the piped array, using the specified (optional) property to test for uniqueness.</stentry>
-                    <stentry><codeph>{{ ["a","dddd","bb","ccc","a"] | uniq }}</codeph></stentry>
-                    <stentry><codeph>["dddd","bb","ccc","a"]</codeph></stentry>
-                </strow>
+                    <stentry>
+                        <codeblock>
+{{ ["a","dddd","bb","ccc","a"] | uniq | join "~" }}
+                        </codeblock>
+                        <msgblock>
+a~dddd~bb~ccc
+                        </msgblock>
+                    </stentry>
+                </strow> -->
             </simpletable>
         </section>
 
@@ -333,31 +562,48 @@
         <section id="misc">
             <title>Misc</title>
 
-            <simpletable relcolwidth="1* 3* 2* 1*">
+            <simpletable relcolwidth="1* 3* 2*">
                 <sthead>
                     <stentry>Filter</stentry>
                     <stentry>Description</stentry>
                     <stentry>Example</stentry>
-                    <stentry>Result</stentry>
                 </sthead>
                 <strow id="date">
-                    <stentry><codeph>date</codeph></stentry>
-                    <stentry>Reformats a date. (See <xref format="dita" href="visualizer-templates-datetime.dita">Datetime</xref>.)</stentry>
-                    <stentry><codeph>{{meetingTimeslot | date: "HH:mm"}}</codeph></stentry>
-                    <stentry><codeph>18:00</codeph></stentry>
+                    <stentry><term>date</term></stentry>
+                    <stentry>Reformats a date. (See <xref outputclass="in-page-anchor" format="dita" href="visualizer-templates-datetime.dita">Datetime</xref>.)</stentry>
+                    <stentry>
+                        <codeblock>
+{{meetingTimeslot | date: "HH:mm"}}
+                        </codeblock>
+                        <msgblock>
+18:00
+                        </msgblock>
+                    </stentry>
                 </strow>
-                <strow id="default">
-                    <stentry><codeph>default</codeph></stentry>
+                <!-- <strow id="default">
+                    <stentry><term>default</term></stentry>
                     <stentry>If the variable is <codeph>null</codeph> or the empty string, returns the given value. Otherwise, returns the value of the variable.</stentry>
-                    <stentry><codeph>{{ undefined_variable | default: "This default value" }}</codeph></stentry>
-                    <stentry><codeph>This default value</codeph></stentry>
-                </strow>
-                <strow id="pluralize">
-                    <stentry><codeph>pluralize</codeph></stentry>
+                    <stentry>
+                        <codeblock>
+                {{ undefined_variable | default: "This default value" }}
+                        </codeblock>
+                        <msgblock>
+                This default value
+                        </msgblock>
+                    </stentry>
+                </strow> -->
+                <!-- <strow id="pluralize">
+                    <stentry><term>pluralize</term></stentry>
                     <stentry>If the piped value is 1, returns the first word (which is the singular version) in a comma-separated pair of words. Otherwise, returns the second word (which is the plural version ).</stentry>
-                    <stentry><codeph>{{ 3 | pluralize: "item", "items" }}</codeph></stentry>
-                    <stentry><codeph>items</codeph></stentry>
-                </strow>
+                    <stentry>
+                        <codeblock>
+                {{ 3 | pluralize: "item", "items" }}
+                        </codeblock>
+                        <msgblock>
+                items
+                        </msgblock>
+                    </stentry>
+                </strow> -->
             </simpletable>
 
         </section>

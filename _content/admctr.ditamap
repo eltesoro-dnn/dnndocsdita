@@ -13,7 +13,7 @@
     <!-- Topics -->
     <topicref format="dita" type="topic" toc="yes" href="administrators/index.dita" >
 
-        <topicref format="dita" type="topic" navtitle="What's New"   locktitle="yes" toc="yes" href="administrators/whats-new-dnn8.dita"/>
+        <topicref format="dita" type="topic" navtitle="What's New"   locktitle="yes" toc="yes" href="administrators/whats-new-dnn.dita" />
         <topicref format="dita" type="topic" navtitle="DNN Platform" locktitle="yes" toc="yes" href="administrators/dnn-platform-overview.dita" />
 
         <!-- Setup -->

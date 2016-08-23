@@ -716,26 +716,33 @@ pre.screen {
 .wintitle {
   font-weight: bold;
 }
-.userinput {
-  font-size: 125%;
-}
 span.filepath {
   font-family: monospace;
   font-size: 125%;
 }
 .codeph,
-.codeblock {
+.codeblock,
+.userinput {
   font-family: monospace;
+  padding: 2px;
   background-color: #efefef;
   color: #005b7e;
   overflow: auto;
+  line-height: 110%;
+  font-size: 105%;
 }
-.codeph {
-  font-size: 125%;
+.msgph,
+.msgblock {
+  font-family: monospace;
+  padding: 2px;
+  overflow: auto;
+  line-height: 110%;
+  font-size: 105%;
 }
 .var {
   font-style: italic;
 }
+.term,
 .kwd {
   font-weight: bold;
 }
@@ -865,6 +872,7 @@ nav[role="toc"]  ul  li {
   background: transparent;
   padding-left: 110px;
   margin-left: -135px;
+  padding-right: 25px;
 }
 #articleNavAffix > li > ul > li > ul > li > ul > li > ul li:first-child {
   padding-top: 7px;
@@ -2327,6 +2335,7 @@ and (orientation : portrait) {
     padding: 63px 35px 63px 150px;
   }
 }
+
 
 
 /* ------------------------------------------------------------

@@ -28,6 +28,9 @@
                 </ol>
             </p>
 
+            <!-- <note conref="bptext-content-steps.dita#tsk-bptext-content-steps/note-visualizer-arraytostring"></note> -->
+            <note type="note" id="note-visualizer-arraytostring">Arrays are converted to a string for display simply by concatenating the elements. The <codeph>join</codeph> can be used to format the array with a delimiter between each element.</note>
+
 		</section>
 
 

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-relnotes-2016-aug-22">
+
+
+    <title>DNN Release Notes &#8212; <ph id="ph-reldate">2016 Aug 22</ph></title>
+    <titlealts>
+        <navtitle>Release Notes <ph conref="relnotes-2016-aug-22.dita#top-relnotes-2016-aug-22/ph-reldate"></ph></navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>orCP,edET,1607</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience job="evaluating" />
+            <audience job="installing" />
+            <audience type="administrator" />
+            <audience type="programmer" />
+            <audience type="other" othertype="designer" />
+        </metadata>
+
+        <!--
+        Sources:
+            http://www.dnnsoftware.com/services/customer-support/success-network/software-downloads/changelog-archive
+        -->
+    </prolog>
+
+
+    <body>
+
+        <!-- <section conref="relnotes-2016-aug-22.dita#top-relnotes-2016-aug-22/section-relnotes-platform"></section> -->
+        <section id="section-relnotes-platform">
+            <!-- <ph conref="relnotes-2016-aug-22.dita#top-relnotes-2016-aug-22/ph-prodver-platform"></ph> -->
+            <title>DNN PLATFORM <ph id="ph-prodver-platform">8.0.4</ph></title>
+
+            <!-- <sectiondiv conref="relnotes-2016-aug-22.dita#top-relnotes-2016-aug-22/sectiondiv-relnotes-platform"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-relnotes-platform">
+                <!-- <xref conref="relnotes-2016-aug-22.dita#top-relnotes-2016-aug-22/xref-github-link"></xref> -->
+                <p><xref id="xref-github-link" format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Platform/releases/tag/v8.0.4">GitHub</xref></p>
+
+                <ul>
+                    <li>MVC Module bug fixes and added MVC Controller Views Path.</li>
+                    <li>Extension Modules Usage Details defaults to current portal and uses proper links for pages.</li>
+                    <li>Web API performance improvements.</li>
+                    <li>Login and registration bugs addressed for redirects, email notifications, and password resets.</li>
+                    <li>Corrected several issues around character encoding.</li>
+                    <li>Page Manager bug fixes included fixes for duplicate pages and permissions.</li>
+                    <li>Fixed bugs related to SSL offloading.</li>
+                    <li>Tested and verified compatibility with SQL 2016.</li>
+                    <li>Consolidated SQL install/upgrade scripts.</li>
+                    <li>Additional minor enhancements and bug fixes.</li>
+                </ul>
+            </sectiondiv>
+        </section>
+
+
+        <!-- <section conref="relnotes-2016-aug-22.dita#top-relnotes-2016-aug-22/section-relnotes-evoq"></section> -->
+        <section id="section-relnotes-evoq">
+            <!-- <ph conref="relnotes-2016-aug-22.dita#top-relnotes-2016-aug-22/ph-prodver-evoq"></ph> -->
+            <title>DNN EVOQ <ph id="ph-prodver-evoq">8.5.0</ph></title>
+
+            <!-- <sectiondiv conref="relnotes-2016-aug-22.dita#top-relnotes-2016-aug-22/sectiondiv-relnotes-evoq"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-relnotes-evoq">
+                <p>DNN EVOQ CONTENT AND CONTENT BASIC</p>
+                <ul>
+                    <li>All updates included with DNN Platform 8.0.4.</li>
+                    <li>Improved functionality and user experience of <uicontrol>Add Module</uicontrol>.</li>
+                    <li>Added Azure and Amazon S3 file connectors.</li>
+                    <li>Improved user experience and performance of validation for Dropbox and Box connectors.</li>
+                    <li>Added description field to <uicontrol>Asset Manager</uicontrol> and added tracking when files are downloaded.</li>
+                    <li>Additional minor enhancements and bug fixes.</li>
+                </ul>
+
+                <p>DNN EVOQ ENGAGE</p>
+                <ul>
+                    <li>All updates included with DNN Platform 8.0.4.</li>
+                    <li>Added RSS support for the Activity Stream.</li>
+                    <li>Enabled auto-resizing of images in the Activity Stream for optimal performance.</li>
+                    <li>Introduced <xref format="html" scope="peer" href="../../content-managers/microservices/index.html">DNN Cloud Microservices</xref>. Microservices improve the overall performance of your site by hosting additional functionality on cloud servers. Microservices also enable easier and faster deployment of updates.
+                        <ul>
+                            <li><xref format="html" scope="peer" href="../../content-managers/structured-content/index.html">Structured Content</xref>. Separates content creation from design using a highly structured approach.
+                                <ul>
+                                    <li>Get started with the six predefined content types, which are based on common use cases.</li>
+                                    <li>Define custom content types using simple drag-and-drop functionality and dynamic layouts.</li>
+                                    <li>Create content items in a structured format without worrying about design.</li>
+                                </ul>
+                            </li>
+                            <li><xref format="html" scope="peer" href="../../content-managers/structured-content/create-visualizer.html">Visualizers</xref>. Defines and applies styling to content items.
+                                <ul>
+                                    <li>Use templates to define visualizers, which are bundles of HTML, CSS, and JavaScript.</li>
+                                    <li>Easily apply new design elements to content in web pages, using the included visualizers (more to be added with each update).</li>
+                                </ul>
+                            </li>
+                            <li><xref format="html" scope="peer" href="../../content-managers/forms/index.html">Form Builder</xref>. Builds and deploys dynamic forms.
+                                <ul>
+                                    <li>Customize the four predefined forms, which are based on common use cases. Or use them as is.</li>
+                                    <li>Display the list of responses in custom configurations to extract insights.</li>
+                                </ul>
+                            </li>
+                            <li>Migration of existing HTML content into Structured Content microservice.</li>
+                        </ul>
+                    </li>
+                    <li>Additional minor enhancements and bug fixes.</li>
+                </ul>
+            </sectiondiv>
+        </section>
+
+    </body>
+
+</topic>

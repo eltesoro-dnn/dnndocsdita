@@ -54,7 +54,7 @@ if ( $args.Count -gt 3 )  {
             }
             else
             {
-                Write-Host( "Exempted from testing: " + $fnclean )
+                Write-Host( "OK Exempted from testing: " + $fnclean )
             }
         }
     }

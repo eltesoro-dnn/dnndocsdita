@@ -8,6 +8,18 @@ $(document).ready(function() {
         }
     });
 
+    $('a.in-page-anchor').bind('click.smoothscroll',function (e) {
+      e.preventDefault();
+      var target = this.hash,
+          $target = $(target);
+
+      $('html, body').stop().animate( {
+        'scrollTop': $target.offset().top-104
+      }, 750, 'swing', function () {
+        window.location.hash = target;
+      } );
+    } );
+
     // adjust the HTML rendered by Sphinx for the TOC
     $('nav[role="toc"] > ul')
         .attr({
