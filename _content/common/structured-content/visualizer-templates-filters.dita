@@ -26,6 +26,12 @@
                 <vrmlist><vrm version="8" release="5"/></vrmlist>
             </prodinfo>
         </metadata>
+        <!--
+        Sources:
+            * (Internal. DO NOT PUBLISH) https://dnntracker.atlassian.net/wiki/display/EVOQ/DotLiquid+Filter+Support
+            * https://github.com/Shopify/liquid/wiki/liquid-for-designers
+            * JIRAs: CONTENT-7405, CONTENT-6802, CONTENT-7174, CONTENT-7175, CONTENT-7177, CONTENT-7178 (See the Comments of these JIRAs.)
+        -->
     </prolog>
 
 
@@ -48,6 +54,7 @@
                     <stentry>Description</stentry>
                     <stentry>Example</stentry>
                 </sthead>
+                <!-- JIRA CONTENT-7405
                 <strow id="ceil">
                     <stentry><term>ceil</term></stentry>
                     <stentry>Rounds up to the nearest integer. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/floor">floor</xref>.</stentry>
@@ -60,6 +67,7 @@
                         </msgblock>
                     </stentry>
                 </strow>
+                -->
                 <strow id="dividedby">
                     <stentry><term>divided_by</term></stentry>
                     <stentry>Divides the piped value by the specified integer. Rounds the result. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/modulo">modulo</xref>.</stentry>
@@ -72,6 +80,7 @@
                         </msgblock>
                     </stentry>
                 </strow>
+                <!-- JIRA CONTENT-7405
                 <strow id="floor">
                     <stentry><term>floor</term></stentry>
                     <stentry>Rounds up to the nearest integer. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/ceil">ceil</xref>.</stentry>
@@ -84,6 +93,7 @@
                         </msgblock>
                     </stentry>
                 </strow>
+                -->
                 <strow id="minus">
                     <stentry><term>minus</term></stentry>
                     <stentry>Subtracts the specified value from the piped value. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/plus">plus</xref>.</stentry>
@@ -120,6 +130,7 @@
                         </msgblock>
                     </stentry>
                 </strow>
+                <!-- JIRA CONTENT-7405
                 <strow id="round">
                     <stentry><term>round</term></stentry>
                     <stentry>Rounds the piped value to the nearest integer for the specified number of decimals.</stentry>
@@ -132,6 +143,7 @@
                         </msgblock>
                     </stentry>
                 </strow>
+                -->
                 <strow id="times">
                     <stentry><term>times</term></stentry>
                     <stentry>Multiplies the piped value with the specified value.</stentry>
@@ -201,6 +213,7 @@ the quick brown fox
                         </msgblock>
                     </stentry>
                 </strow>
+                <!-- JIRA CONTENT-7405
                 <strow id="lstrip">
                     <stentry><term>lstrip</term></stentry>
                     <stentry>
@@ -215,6 +228,7 @@ the quick brown fox
                         </msgblock>
                     </stentry>
                 </strow>
+                -->
                 <strow id="prepend">
                     <stentry><term>prepend</term></stentry>
                     <stentry>Prepends a string. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/append">append</xref>.</stentry>
@@ -275,6 +289,7 @@ toptors
                         </msgblock>
                     </stentry>
                 </strow>
+                <!-- JIRA CONTENT-7405
                 <strow id="rstrip">
                     <stentry><term>rstrip</term></stentry>
                     <stentry>
@@ -289,6 +304,7 @@ toptors
                         </msgblock>
                     </stentry>
                 </strow>
+                -->
                 <strow id="sizestring">
                     <stentry><term>size</term></stentry>
                     <stentry>Returns the size of the piped array or string.</stentry>
@@ -350,6 +366,7 @@ Twinkle, twinkle,little star.How I wonderwhat you are.
                         </msgblock>
                     </stentry>
                 </strow>
+                <!-- JIRA CONTENT-7405
                 <strow id="strip">
                     <stentry><term>strip</term></stentry>
                     <stentry>
@@ -364,6 +381,7 @@ Twinkle, twinkle,little star.How I wonderwhat you are.
                         </msgblock>
                     </stentry>
                 </strow>
+                -->
                 <strow id="truncate">
                     <stentry><term>truncate</term></stentry>
                     <stentry>Truncates the piped string and appends the optional second parameter, so that the length of the final result is the first parameter.</stentry>
@@ -378,7 +396,7 @@ sunny
                         </msgblock>
                     </stentry>
                 </strow>
-                <!-- JIRA #
+                <!-- JIRA CONTENT-7405
                 <strow id="truncatewords">
                     <stentry><term>truncatewords</term></stentry>
                     <stentry>Truncates the piped string down to the specified number of words.</stentry>
@@ -413,9 +431,9 @@ HELLO
 
 
         <section id="htmlandurlencodings">
-            <title>HTML and URL Encodings</title>
+            <title>HTML and URL Encodings for Strings</title>
 
-            <p></p>
+            <p>The following filters can be used if the field contains a string.</p>
             <simpletable relcolwidth="1* 3* 2*">
                 <sthead>
                     <stentry>Filter</stentry>
@@ -451,10 +469,67 @@ HELLO
         </section>
 
 
+        <section id="linkcreation">
+            <title>Link Creation for URLs</title>
+            <!-- Source: https://dnntracker.atlassian.net/browse/CONTENT-7174 -->
+
+            <p>The following filters can be used if the field contains a URL. The examples use the <codeph>{{ linkedIn }}</codeph> field token.</p>
+            <simpletable relcolwidth="1* 3* 2*">
+                <sthead>
+                    <stentry>Filter</stentry>
+                    <stentry>Description</stentry>
+                    <stentry>Example</stentry>
+                </sthead>
+                <strow id="urlfilternone">
+                    <stentry>(no filter)</stentry>
+                    <stentry>Returns the URL as plain text.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ linkedIn }}
+                        </codeblock>
+                        <msgblock>
+http://www.linkedin.com/in/myexample
+                        </msgblock>
+                    </stentry>
+                </strow>
+                <strow id="link">
+                    <stentry>link</stentry>
+                    <stentry>Creates a link that would load the target page in the same browser tab.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ linkedIn | link }}
+                        </codeblock>
+                        <msgblock>
+&lt;a href=&quot;http://www.linkedin.com/in/myexample&quot;&gt;
+    http://www.linkedin.com/in/myexample&lt;/a&gt;
+                        </msgblock>
+                    </stentry>
+                </strow>
+                <strow id="linknew">
+                    <stentry>link_new</stentry>
+                    <stentry>Creates a link that would load the target page in a new browser tab.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ linkedIn | link_new }}
+                        </codeblock>
+                        <msgblock>
+&lt;a href=&quot;http://www.linkedin.com/in/myexample&quot; target=&quot;_blank&quot;&gt;
+    http://www.linkedin.com/in/myexample&lt;/a&gt;
+                        </msgblock>
+                    </stentry>
+                </strow>
+            </simpletable>
+        </section>
+
+
         <section id="arrays">
             <title>Arrays</title>
 
-            <p>These examples accept a string with comma-separated values which is split into an array, before the filter is applied. If the result is an array, the <codeph>join</codeph> filter combines the elements into a string with the tilde "~" as separator.</p>
+            <p>Array indexes are zero-based; i.e., the first element's index is 0, and the last element's index is the number of elements minus 1. Example: If an array contains five elements, the index range is from 0 (for the first element) to 4 (for the last element).</p>
+
+            <p>Fields that are of the type <uicontrol>Assets</uicontrol> (images and documents) contain arrays; therefore, you can also use these filters with those fields.</p>
+
+            <p>These examples accept a string with comma-separated values, which is split into an array before the filter is applied. If the result is an array, the <codeph>join</codeph> filter combines the elements into a string with the tilde "~" as separator.</p>
             <note conref="bptext-content-steps.dita#tsk-bptext-content-steps/note-visualizer-arraytostring"></note>
 
             <simpletable relcolwidth="1* 3* 2*">
@@ -475,6 +550,22 @@ dddd
                         </msgblock>
                     </stentry>
                 </strow>
+                <!--
+                <strow id="indexat">
+                    // Source: https://dnntracker.atlassian.net/browse/CONTENT-7178
+                    // Seems broken.
+                    <stentry><term>index_at</term></stentry>
+                    <stentry>Returns the URL of the element at the specified index. If the specified index is outside the valid range (0 to number of elements minus 1), nothing is returned. </stentry>
+                    <stentry>
+                        <codeblock>
+{{ "dddd,bb,ccc,a" | split: "," | index_at: 2 }}
+                        </codeblock>
+                        <msgblock>
+ccc
+                        </msgblock>
+                    </stentry>
+                </strow>
+                -->
                 <strow id="join">
                     <stentry><term>join</term></stentry>
                     <stentry>Combines the elements of the piped array with the specified character inserted between each element.</stentry>
@@ -499,14 +590,17 @@ a
                         </msgblock>
                     </stentry>
                 </strow>
-                <!-- <strow id="map">
+                <!-- JIRA CONTENT-7405
+                <strow id="map">
                     <stentry><term>map</term></stentry>
                     <stentry>Maps/Collects an array on a given property.</stentry>
                     <stentry>
                         <codeblock/>
                         <msgblock/>
                     </stentry>
-                </strow> -->
+                </strow>
+                -->
+                <!-- JIRA CONTENT-7405
                 <strow id="reverse">
                     <stentry><term>reverse</term></stentry>
                     <stentry>Reverses the sort of the piped array. See <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/sort">sort</xref>.</stentry>
@@ -519,6 +613,7 @@ a~ccc~bb~dddd
                         </msgblock>
                     </stentry>
                 </strow>
+                -->
                 <strow id="sizearray">
                     <stentry><term>size</term></stentry>
                     <stentry>Returns the size of the piped array or string.</stentry>
@@ -543,7 +638,8 @@ a~bb~ccc~dddd
                         </msgblock>
                     </stentry>
                 </strow>
-                <!-- <strow id="uniq">
+                <!--  JIRA CONTENT-7405
+                <strow id="uniq">
                     <stentry><term>uniq</term></stentry>
                     <stentry>Removes duplicate elements from the piped array, using the specified (optional) property to test for uniqueness.</stentry>
                     <stentry>
@@ -554,7 +650,78 @@ a~bb~ccc~dddd
 a~dddd~bb~ccc
                         </msgblock>
                     </stentry>
-                </strow> -->
+                </strow>
+                -->
+            </simpletable>
+        </section>
+
+
+        <section id="assets">
+            <title>Assets (Images and Documents)</title>
+            <!--
+            Sources:
+                * https://dnntracker.atlassian.net/browse/CONTENT-7178
+                * https://dnntracker.atlassian.net/wiki/display/EVOQ/Use+of+Asset+Fields+in+Visualizers
+            -->
+
+            <p></p>
+            <simpletable relcolwidth="1* 3* 2*">
+                <sthead>
+                    <stentry>Filter</stentry>
+                    <stentry>Description</stentry>
+                    <stentry>Example</stentry>
+                </sthead>
+                <strow id="assetsfilternone">
+                    <stentry>(no filter)</stentry>
+                    <stentry>Returns all images/documents. Images are wrapped in <codeph>&lt;image/&gt;</codeph> tags. Documents are wrapped in <codeph>&lt;href/&gt;</codeph> tags.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ images }}
+{{ documents }}
+                        </codeblock>
+                        <!-- <msgblock/> -->
+                    </stentry>
+                </strow>
+                <strow id="imagesurl">
+                    <stentry>images_url</stentry>
+                    <stentry>Returns all the URLs of the images as plain text.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ images | images_url }}
+                        </codeblock>
+                        <!-- <msgblock/> -->
+                    </stentry>
+                </strow>
+                <strow id="imageslist">
+                    <stentry>images_list</stentry>
+                    <stentry>Returns an unordered list containing the images wrapped in <codeph>&lt;image /&gt;</codeph> tags.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ images | images_list }}
+                        </codeblock>
+                        <!-- <msgblock/> -->
+                    </stentry>
+                </strow>
+                <strow id="documentsurl">
+                    <stentry>documents_url</stentry>
+                    <stentry>Returns all the URLs of the documents as plain text.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ documents | documents_url }}
+                        </codeblock>
+                        <!-- <msgblock/> -->
+                    </stentry>
+                </strow>
+                <strow id="documentslist">
+                    <stentry>documents_list</stentry>
+                    <stentry>Returns an unordered list containing the document URLs wrapped in <codeph>&lt;href /&gt;</codeph> tags.</stentry>
+                    <stentry>
+                        <codeblock>
+{{ documents | documents_list }}
+                        </codeblock>
+                        <!-- <msgblock/> -->
+                    </stentry>
+                </strow>
             </simpletable>
         </section>
 
@@ -573,14 +740,15 @@ a~dddd~bb~ccc
                     <stentry>Reformats a date. (See <xref outputclass="in-page-anchor" format="dita" href="visualizer-templates-datetime.dita">Datetime</xref>.)</stentry>
                     <stentry>
                         <codeblock>
-{{meetingTimeslot | date: "HH:mm"}}
+{{ meetingTimeslot | date: "HH:mm" }}
                         </codeblock>
                         <msgblock>
 18:00
                         </msgblock>
                     </stentry>
                 </strow>
-                <!-- <strow id="default">
+                <!--  JIRA CONTENT-7405
+                <strow id="default">
                     <stentry><term>default</term></stentry>
                     <stentry>If the variable is <codeph>null</codeph> or the empty string, returns the given value. Otherwise, returns the value of the variable.</stentry>
                     <stentry>
@@ -592,7 +760,8 @@ a~dddd~bb~ccc
                         </msgblock>
                     </stentry>
                 </strow> -->
-                <!-- <strow id="pluralize">
+                <!--  JIRA CONTENT-7405
+                <strow id="pluralize">
                     <stentry><term>pluralize</term></stentry>
                     <stentry>If the piped value is 1, returns the first word (which is the singular version) in a comma-separated pair of words. Otherwise, returns the second word (which is the plural version ).</stentry>
                     <stentry>
@@ -603,9 +772,9 @@ a~dddd~bb~ccc
                 items
                         </msgblock>
                     </stentry>
-                </strow> -->
+                </strow>
+                -->
             </simpletable>
-
         </section>
 
     </refbody>

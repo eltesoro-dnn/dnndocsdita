@@ -29,7 +29,7 @@
             </p>
 
             <!-- <note conref="bptext-content-steps.dita#tsk-bptext-content-steps/note-visualizer-arraytostring"></note> -->
-            <note type="note" id="note-visualizer-arraytostring">Arrays are converted to a string for display simply by concatenating the elements. The <codeph>join</codeph> can be used to format the array with a delimiter between each element.</note>
+            <note type="note" id="note-visualizer-arraytostring">Arrays are converted to a string for display by simply concatenating the elements. The <codeph>join</codeph> can be used to format the array with a delimiter between each element.</note>
 
 		</section>
 
@@ -134,6 +134,32 @@
 						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Hover-Del.png"><alt>Click/Tap a field in the canvas</alt></image></info>
 					</substep>
 				</substeps>
+            </step>
+
+			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contenttype-configureproperties"><cmd/></step> -->
+            <step id="step-contenttype-configureproperties">
+				<cmd>Configure the content type's properties.</cmd>
+                <info>
+					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentTypes-Properties.png"><alt>Content Type properties</alt></image>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry>Field</stentry>
+							<stentry>Description</stentry>
+						</sthead>
+						<strow id="strow-field-contenttypeproperties-contentitemname">
+							<stentry><uicontrol>Content Item Name</uicontrol></stentry>
+							<stentry>The word or phrase that describes each item of this content type. Example: A content item based on the <uicontrol>Job Listing</uicontrol> content type could be called <userinput>job opening</userinput>.</stentry>
+						</strow>
+						<strow id="strow-field-contenttypeproperties-tags">
+							<stentry><uicontrol>Tags</uicontrol></stentry>
+							<stentry>Words or phrases to be associated with the content items based on this content type.</stentry>
+						</strow>
+						<strow id="strow-field-contenttypeproperties-desc">
+							<stentry><uicontrol>Description</uicontrol></stentry>
+							<stentry>A short description of the content items based on this content type.</stentry>
+						</strow>
+					</simpletable>
+				</info>
             </step>
 
 
@@ -254,8 +280,8 @@
 				<cmd>In the <uicontrol>Content</uicontrol> tab, fill in the fields of the content item.</cmd>
                 <info id="info-contentitem-fieldsofcontentitem">
                     <p>The fields would depend on the content type you selected.</p>
-                    <p>Example: The content type for the content item in this image is <uicontrol>Job Description</uicontrol>.</p>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Content-Item-JobDescription.png"><alt>Job Description content form</alt></image>
+                    <p>Example: The content type for the content item in this image is <uicontrol>Person</uicontrol>.</p>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Content-Item-JobDescription.png"><alt>Creating a Person content item</alt></image>
                 </info>
             </step>
 

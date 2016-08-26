@@ -149,8 +149,12 @@ for /f "usebackq tokens=2" %%v in (`date /t`) do for /f "delims=/ tokens=1,2,3" 
 
 :. runas /user:administrator /profile "%~f0\v2iis.bat %outdir%\%_transtype% c:\inetpub\wwwroot"
 :. start %_outdir%
+rd /s /q c:\inetpub\wwwroot\docs
+md c:\inetpub\wwwroot\docs
+for %%v in ( %_outdir% ) do set cbldir=c:\z\docbuild%%~pnv
+echo y | xcopy %cbldir%\* c:\inetpub\wwwroot\docs /i /s /v
+start %cbldir%
 start c:\inetpub\wwwroot\docs
-for %%v in ( %_outdir% ) do start c:\z\docbuild%%~pnv
 :. start explorer.exe
 :. echo Copy the following to the Windows Explorer address bar: ftp://66.29.195.16/DNN%20Staging/DNNSoftware.QA.Docs/
 :. echo In Filezilla, use the following:
@@ -159,12 +163,20 @@ for %%v in ( %_outdir% ) do start c:\z\docbuild%%~pnv
 :. echo Use your username and password from Birch.
 :. call "C:\Program Files\FileZilla FTP Client\filezilla.exe"
 
-goto :eof
+:. TODO: Display error/warn lines in the %_logfile%.
+
+
+echo Zipping the output ....
+powershell -file %_gitdir%\_build\zipbld.ps1 %_outdir%
+start %_outdir%\..
 
 
 :ifbuilderror
 call npp %_logfile%
 goto :eof
+
+
+
 
 
 :.----------------------------------------------------------------------------

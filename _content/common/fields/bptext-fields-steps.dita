@@ -117,8 +117,8 @@
                     <stentry><uicontrol>Appearance</uicontrol></stentry>
                     <stentry>
                         <ul>
-                            <li><uicontrol>Multi-Line</uicontrol>. Plain text. You can restrict the length of the text under <uicontrol>Validation</uicontrol>.</li>
-                            <li><uicontrol>Text Editor</uicontrol>. Formatted text. You can restrict the length of the text under <uicontrol>Validation</uicontrol>.</li>
+                            <li><uicontrol>Multi-Line</uicontrol>. Plain text. You can restrict the length of the text under <uicontrol>Validation</uicontrol>. Line breaks are replaced by <codeph>&lt;br/&gt;</codeph>.</li>
+                            <li><uicontrol>Text Editor</uicontrol>. Formatted text. You can restrict the length of the text under <uicontrol>Validation</uicontrol>. The generated HTML code is used as is.</li>
                         </ul>
                     </stentry>
                 </strow>
