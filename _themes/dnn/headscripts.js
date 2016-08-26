@@ -49,3 +49,16 @@ function breadcrumbs(){
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
 })();
+
+
+
+// Emolytics.com - feedback app
+var getsmily_id="6gtee4abmwbh83n";
+(function(d) {
+    var gs=d.createElement("script");
+    var gsf=d.getElementsByTagName("script")[0];
+    gs.async=1;
+    gs.src="https://cdn.emolytics.com/script/emolytics-widget.js";
+    gsf.parentNode.insertBefore(gs,gsf);
+})(document);
+
