@@ -12,7 +12,20 @@
         <link rel="stylesheet" type="text/css" href="_theme/commonltr.css">
         <link rel="stylesheet" type="text/css" href="_theme/dnndocsltr.css">
 
-        <script language="JavaScript" src="_theme/headscripts.js"></script>
+        <script language="JavaScript">
+            // Google Custom Search Engine
+            (function() {
+                var cx = '013510249882471164181:tip1lg7hloc';   // for live site
+                // var cx = '013510249882471164181:zacnxv7uabo';   // for the staging server
+                var gcse = document.createElement('script');
+                gcse.type = 'text/javascript';
+                gcse.async = true;
+                gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                    '//cse.google.com/cse.js?cx=' + cx;
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(gcse, s);
+            })();
+        </script>
 
         <title>DNN Documentation Center</title>
     </head>

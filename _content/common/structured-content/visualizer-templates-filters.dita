@@ -30,7 +30,7 @@
         Sources:
             * (Internal. DO NOT PUBLISH) https://dnntracker.atlassian.net/wiki/display/EVOQ/DotLiquid+Filter+Support
             * https://github.com/Shopify/liquid/wiki/liquid-for-designers
-            * JIRAs: CONTENT-7405, CONTENT-6802, CONTENT-7174, CONTENT-7175, CONTENT-7177, CONTENT-7178 (See the Comments of these JIRAs.)
+            * JIRAs: CONTENT-7405, CONTENT-6802, CONTENT-7174, CONTENT-7175, CONTENT-7176, CONTENT-7177, CONTENT-7178 (See the Comments of these JIRAs.)
         -->
     </prolog>
 
@@ -41,7 +41,7 @@
 
 
         <section id="overview">
-            <p>You can perform additional processing before displaying the value by passing the output through one or more filters separated by the pipeline.</p>
+            <p>You can perform additional processing before displaying the value by passing the output through one or more filters separated by the pipeline (<userinput>|</userinput>).</p>
         </section>
 
 
@@ -209,7 +209,7 @@ Jumped Over The Lazy Dog
                         </codeblock>
                         <msgblock>
 the quick brown fox
-    the quick brown fox
+the quick brown fox
                         </msgblock>
                     </stentry>
                 </strow>
@@ -656,6 +656,51 @@ a~dddd~bb~ccc
         </section>
 
 
+        <section id="multiplechoice">
+            <title>Multiple Choice</title>
+            <!-- Sources: https://dnntracker.atlassian.net/browse/CONTENT-7176 -->
+
+            <p>These filters apply only to fields of the type <uicontrol>Multiple Choice</uicontrol>.</p>
+            <simpletable relcolwidth="1* 3* 2*">
+                <sthead>
+                    <stentry>Filter</stentry>
+                    <stentry>Description</stentry>
+                    <stentry>Example</stentry>
+                </sthead>
+                <strow>
+                    <stentry>(no filter)</stentry>
+                    <stentry>For single-choice fields, returns the value of the selection. For multiple-selection fields, returns the list of the selections as a comma-separated list.</stentry>
+                    <stentry>
+                        <codeblock>
+                        </codeblock>
+                        <msgblock>
+                        </msgblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>list</stentry>
+                    <stentry>Returns an unordered list of the user's selections.</stentry>
+                    <stentry>
+                        <codeblock>
+                        </codeblock>
+                        <msgblock>
+                        </msgblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>numberedlist</stentry>
+                    <stentry>Returns an ordered list of the user's selections, in the order of the selection.</stentry>  <!-- Is this the correct order? Or in the order of how it appears in the list? -->
+                    <stentry>
+                        <codeblock>
+                        </codeblock>
+                        <msgblock>
+                        </msgblock>
+                    </stentry>
+                </strow>
+            </simpletable>
+        </section>
+
+
         <section id="assets">
             <title>Assets (Images and Documents)</title>
             <!--
@@ -664,7 +709,7 @@ a~dddd~bb~ccc
                 * https://dnntracker.atlassian.net/wiki/display/EVOQ/Use+of+Asset+Fields+in+Visualizers
             -->
 
-            <p></p>
+            <p>These filters apply only to fields of the type <uicontrol>Assets</uicontrol>.</p>
             <simpletable relcolwidth="1* 3* 2*">
                 <sthead>
                     <stentry>Filter</stentry>

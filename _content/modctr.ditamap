@@ -13,8 +13,8 @@
     <!-- Topics -->
     <topicref format="dita" type="topic" toc="yes" href="community-managers/index.dita" >
 
-        <topicref format="dita" type="topic" navtitle="What's New"   locktitle="yes" toc="yes" href="community-managers/whats-new-dnn.dita" />
-        <topicref format="dita" type="topic" navtitle="DNN Platform" locktitle="yes" toc="yes" href="community-managers/dnn-platform-overview.dita" />
+        <topicref format="dita" type="topic" navtitle="What's New"    locktitle="yes" toc="yes" href="community-managers/whats-new-dnn.dita" />
+        <topicref format="dita" type="topic" navtitle="DNN Solutions" locktitle="yes" toc="yes" href="community-managers/dnn-overview.dita" />
 
 		<!-- Managing Your Community -->
 		<mapref href="community-managers/managing-your-community/managing-your-community.ditamap" />

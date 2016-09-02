@@ -6,6 +6,7 @@
     <glossdef>
         <p>In an HTML content template, a placeholder for data to be injected into the HTML output. Example: <codeph>[User:UserName]</codeph> is replaced with the actual username.</p>
         <p>In an HTML layout template, a word that represents DNN-standard code for a <term id="themeobject">theme object</term>. Examples: [NAV], [COPYRIGHT], [LOGIN], [PRIVACY], [TERMS], and [SEARCH].</p>
+        <p>In a Visualizer template, a word that represents a field in the content type associated with the visualizer. Example: If the content type field is named <userinput>Meeting Timeslot</userinput>, the field's token would be <codeph>{{ meetingTimeslot }}</codeph>.</p>
     </glossdef>
 
     <prolog>

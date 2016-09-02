@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="con-DNNOverview">
+
+    <title>An Overview of DNN Solutions</title>
+    <titlealts>
+        <navtitle>DNN Solutions Overview</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,trCP,1608</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience job="evaluating" />
+            <audience job="installing" />
+            <audience type="administrator" />
+            <audience type="programmer" />
+            <audience type="other" othertype="designer" />
+        </metadata>
+    </prolog>
+
+    <body>
+
+        <section id="Products">
+            <title>DNN Products</title>
+
+            <p>DNN offers three primary products:</p>
+            <ul>
+                <li><term>DNN Platform</term> is an open, extensible, secure, and scalable content management system for ASP.NET. Hundreds of thousands of businesses around the world, <xref format="html" scope="external" href="http://www.dnnsoftware.com/solutions/our-customers">from small local businesses to Global 1000 companies</xref>, depend on the DNN Platform as their website authoring environment.</li>
+                <li><term>DNN Evoq Content</term> includes everything in the DNN Platform, plus additional features to make it easier to publish great content.</li>
+                <li><term>DNN Evoq Engage</term> includes everything in the DNN Evoq Content, plus additional features focused on building a community and on social activities.</li>
+            </ul>
+        </section>
+
+
+        <section id="Personas">
+            <title>Personas</title>
+
+            <p>DNN products are designed around the needs of several personas or organization roles involved in publishing a website.</p>
+            <ul>
+                <li><term>Hosts</term> (formerly <term>superusers</term>) manage the web servers and the DNN installation, which could support multiple websites. Hosts have full access to all websites in the DNN installation and are essentially site admins for all the sites.</li>
+                <li><term>Site administrators</term> manage an individual website (formerly <term>portal</term>). Site administrators have access only within their assigned website(s).</li>
+                <li><term>Developers</term> extend the functionality of DNN products by using the DNN APIs to build third-party add-on modules, which can be installed into the system.</li>
+                <li><term>Designers</term> provide a wide variety of themes (formerly <term>skins</term>) that change the appearance of the websites.</li>
+                <li><term>Content Editors</term> or <term>Content Creators</term> provide the content assets or components that are displayed on the website.</li>
+                <li><term>Content Managers</term> curate content and decide where each content asset appears on the website.</li>
+                <li><term>Community Managers</term> manage the online community through games and reward systems.</li>
+            </ul>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="center" href="../common/img/gra-DNNRoles.png"><alt>DNN workflow with roles</alt></image>
+        </section>
+
+
+        <section id="DocCenter">
+            <title>Documentation Center</title>
+
+            <p>The DNN Documentation Center is organized based on these persona groups:</p>
+            <ul>
+                <li><uicontrol>Administrators</uicontrol> includes hosts and site administrators.</li>
+                <li><uicontrol>Developers</uicontrol></li>
+                <li><uicontrol>Designers</uicontrol></li>
+                <li><uicontrol>Content Managers</uicontrol> includes content managers, editors, and creators.</li>
+                <li><uicontrol>Community Managers</uicontrol></li>
+            </ul>
+        </section>
+
+    </body>
+
+</topic>

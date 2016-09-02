@@ -240,7 +240,7 @@
                     <substep>
                         <cmd>In the <uicontrol>Form Submission</uicontrol> tab.</cmd>
                         <info>
-                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-FormSubmission.png"><alt>Form Configuration - Form Submission</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-Config-FormSubmission.gif"><alt>Form Configuration - Form Submission</alt></image>
                             <simpletable relcolwidth="1* 3*">
                                 <sthead>
                                     <stentry>Field</stentry>
@@ -257,11 +257,11 @@
                 </substeps>
 			</step>
 
-            <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-highlightellipses-analytics"><cmd/></step> -->
-			<step id="step-highlightellipses-analytics">
-				<cmd>Click/Tap the ellipses for the form you want, and choose Analytics.</cmd>
+            <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-highlightellipses-responses"><cmd/></step> -->
+			<step id="step-highlightellipses-responses">
+				<cmd>Click/Tap the ellipses for the form you want, and choose <uicontrol>Responses</uicontrol>.</cmd>
                 <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-ellipsesmenu-Analytics.png"><alt>Click/Tap the ellipses for the form &gt; Analytics</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-ellipsesmenu-Responses.png"><alt>Click/Tap the ellipses for the form &gt; Responses</alt></image>
                 </info>
 			</step>
 

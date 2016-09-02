@@ -13,8 +13,8 @@
     <!-- Topics -->
     <topicref format="dita" type="topic" toc="yes" href="developers/index.dita" >
 
-        <topicref format="dita" type="topic"   navtitle="What's New"   locktitle="yes" toc="yes" href="developers/whats-new-dnn.dita" />
-        <topicref format="dita" type="topic"   navtitle="DNN Platform" locktitle="yes" toc="yes" href="developers/dnn-platform-overview.dita" />
+        <topicref format="dita" type="topic"   navtitle="What's New"    locktitle="yes" toc="yes" href="developers/whats-new-dnn.dita" />
+        <topicref format="dita" type="topic"   navtitle="DNN Solutions" locktitle="yes" toc="yes" href="developers/dnn-overview.dita" />
 
         <!-- Setup -->
         <topicref format="dita" type="topic" toc="yes" href="developers/setup/set-up-dnn.dita" copy-to="developers/setup/index.dita" collection-type="sequence">
@@ -79,7 +79,7 @@
         <!-- adm dev dsg cmg -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic"     href="developers/dnn-platform-overview.dita" />
+                <topicref format="dita" type="topic"     href="developers/dnn-overview.dita" />
             </relcell>
             <relcell/>
             <relcell>

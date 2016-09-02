@@ -1,7 +1,7 @@
 old,new,notes
 /,/index.html,To fix the index.html problem.
 DNN8-Whats-New.html,administrators/whats-new-dnn.html,"Problems with infinite loop in web.config rules if the filenames are the same, case-insensitive."
-Overview-DNN-Platform.html,administrators/dnn-platform-overview.html,"Problems with infinite loop in web.config rules if the filenames are the same, case-insensitive."
+Overview-DNN-Platform.html,administrators/dnn-overview.html,"Problems with infinite loop in web.config rules if the filenames are the same, case-insensitive."
 DNN8-Requirements.html,administrators/requirements.html,"Problems with infinite loop in web.config rules if the filenames are the same, case-insensitive."
 admin/GettingStarted/Install-Extensions.html,administrators/extensions/install-extension.html,
 admin/Glossary.html,administrators/glossary.html,
@@ -59,18 +59,20 @@ dev/GettingStarted/Set-Up-DNN.html,developers/setup/set-up-dnn.html,
 dev/GettingStarted/Setup/Set-Up-IIS.html,developers/setup/set-up-iis.html,
 dev/GettingStarted/Setup/Set-Up-SQL-Server.html,developers/setup/set-up-sql.html,
 dev/API.html,http://www.dnnsoftware.com/dnn-api/,external
-administrators/securing-your-site,administrators/security,
-content-managers/securing-your-site,content-managers/security,
-developers/securing-your-site,developers/security,
-designers/securing-your-site,designers/security,
-community-managers/securing-your-site,community-managers/security,
-administrators/release-notes,administrators/whats-new-dnn.html,
-administrators/release-notes/,administrators/whats-new-dnn.html,
-content-managers/release-notes,content-managers/whats-new-dnn.html,
-content-managers/release-notes/,content-managers/whats-new-dnn.html,
-developers/release-notes,developers/whats-new-dnn.html,
-developers/release-notes/,developers/whats-new-dnn.html,
-designers/release-notes,designers/whats-new-dnn.html,
-designers/release-notes/,designers/whats-new-dnn.html,
-community-managers/release-notes,community-managers/whats-new-dnn.html,
-community-managers/release-notes/,community-managers/whats-new-dnn.html,
+administrators/securing-your-site,administrators/security,directory rename
+content-managers/securing-your-site,content-managers/security,directory rename
+developers/securing-your-site,developers/security,directory rename
+designers/securing-your-site,designers/security,directory rename
+community-managers/securing-your-site,community-managers/security,directory rename
+administrators/release-notes,administrators/whats-new-dnn.html,directory rename
+administrators/release-notes/,administrators/whats-new-dnn.html,directory rename
+content-managers/release-notes,content-managers/whats-new-dnn.html,directory rename
+content-managers/release-notes/,content-managers/whats-new-dnn.html,directory rename
+developers/release-notes,developers/whats-new-dnn.html,directory rename
+developers/release-notes/,developers/whats-new-dnn.html,directory rename
+designers/release-notes,designers/whats-new-dnn.html,directory rename
+designers/release-notes/,designers/whats-new-dnn.html,directory rename
+community-managers/release-notes,community-managers/whats-new-dnn.html,directory rename
+community-managers/release-notes/,community-managers/whats-new-dnn.html,directory rename
+dnn-platform-overview.html,dnn-overview.html,file rename
+view-form-analytics.html,view-form-responses.html,file rename

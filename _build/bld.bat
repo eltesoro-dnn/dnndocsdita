@@ -168,7 +168,6 @@ start c:\inetpub\wwwroot\docs
 
 echo Zipping the output ....
 powershell -file %_gitdir%\_build\zipbld.ps1 %_outdir%
-start %_outdir%\..
 
 
 :ifbuilderror

@@ -37,7 +37,6 @@ function breadcrumbs(){
 
 
 // Google Custom Search Engine
-
 (function() {
     var cx = '013510249882471164181:tip1lg7hloc';   // for live site
     // var cx = '013510249882471164181:zacnxv7uabo';   // for the staging server
@@ -62,3 +61,40 @@ var getsmily_id="6gtee4abmwbh83n";
     gsf.parentNode.insertBefore(gs,gsf);
 })(document);
 
+
+
+// Slideshow
+// Source: http://www.w3schools.com/w3css/w3css_slideshow.asp
+var slideIndex = 1;
+showDivs(slideIndex);
+function plusDivs(n) {
+    showDivs(slideIndex += n);
+}
+function showDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    if (n > x.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+    }
+    x[slideIndex-1].style.display = "block";
+}
+
+
+
+// Carousel
+// Source: http://www.w3schools.com/w3css/w3css_slideshow.asp
+var carouselIndex = 0;
+carousel();
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+      x[i].style.display = "none";
+    }
+    carouselIndex++;
+    if (carouselIndex > x.length) {carouselIndex = 1}
+    x[carouselIndex-1].style.display = "block";
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}

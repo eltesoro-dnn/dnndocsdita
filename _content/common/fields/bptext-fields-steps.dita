@@ -440,7 +440,7 @@
 				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-validatnerrormsg"><stentry/></strow> -->
 				<strow id="strow-field-validatnerrormsg">
 					<stentry><uicontrol>Error Message</uicontrol></stentry>
-					<stentry>The message to display if the user entered data in the wrong format; e.g., if an email address does not include a domain.</stentry>
+					<stentry>The message to display if the user entered data that does not meet the requirements for the field.</stentry>
 				</strow>
 
 				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-validatnnumofchars"><stentry/></strow> -->
@@ -448,10 +448,6 @@
 					<stentry><uicontrol>Number of Characters</uicontrol></stentry>
                     <stentry conref="#tsk-bptext-fields-steps/stentry-numberofwithminmax"></stentry>
 				</strow>
-
-
-
-
 
                 <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-validatndropdownorder"><stentry/></strow> -->
 				<strow id="strow-field-validatndropdownorder">
@@ -492,6 +488,11 @@
 					<stentry conref="#tsk-bptext-fields-steps/stentry-numberofwithminmax"></stentry>
 				</strow>
 
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-validatnnumofchoices"><stentry/></strow> -->
+				<strow id="strow-field-validatnnumofchoices">
+					<stentry><uicontrol>Number of Choices</uicontrol></stentry>
+					<stentry conref="#tsk-bptext-fields-steps/stentry-numberofwithminmax"></stentry>
+				</strow>
 
                 <strow>
                     <stentry/>

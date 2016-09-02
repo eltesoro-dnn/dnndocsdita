@@ -13,8 +13,8 @@
     <!-- Topics -->
     <topicref format="dita" type="topic" toc="yes" href="content-managers/index.dita" >
 
-        <topicref format="dita" type="topic" navtitle="What's New"   locktitle="yes" toc="yes" href="content-managers/whats-new-dnn.dita" />
-        <topicref format="dita" type="topic" navtitle="DNN Platform" locktitle="yes" toc="yes" href="content-managers/dnn-platform-overview.dita" />
+        <topicref format="dita" type="topic" navtitle="What's New"    locktitle="yes" toc="yes" href="content-managers/whats-new-dnn.dita" />
+        <topicref format="dita" type="topic" navtitle="DNN Solutions" locktitle="yes" toc="yes" href="content-managers/dnn-overview.dita" />
 
 		<!-- Configuring Your Site for Content -->
 		<mapref href="content-managers/configuring-your-site/configuring-your-site-pb.ditamap" />
@@ -55,7 +55,7 @@
         <!-- adm dev dsg cmg -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic"     href="content-managers/dnn-platform-overview.dita" />
+                <topicref format="dita" type="topic"     href="content-managers/dnn-overview.dita" />
             </relcell>
             <relcell/>
             <relcell>
