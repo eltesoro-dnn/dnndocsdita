@@ -52,14 +52,14 @@
 
             <p>Every content type is comprised of one or more fields of the following types:
 				<ul>
-					<li><term>Single-line text</term></li>
-					<li><term>Multi-line text</term></li>
-					<li><term>Number</term></li>
-					<li><term>Multiple choice</term></li>
-					<li><term>Date / Time</term></li>
-					<li><term>Assets</term></li>
-					<li><term>Reference object</term></li>
-					<li><term>Static text</term></li>
+					<li><xref format="dita" href="../fields/content-field-single-line-text.dita">Single-line text</xref></li>
+					<li><xref format="dita" href="../fields/content-field-multi-line-text.dita">Multi-line text</xref></li>
+					<li><xref format="dita" href="../fields/content-field-number.dita">Number</xref></li>
+					<li><xref format="dita" href="../fields/content-field-multiple-choice.dita">Multiple choice</xref></li>
+					<li><xref format="dita" href="../fields/content-field-date-time.dita">Date / Time</xref></li>
+					<li><xref format="dita" href="../fields/content-field-assets.dita">Assets</xref></li>
+					<li><xref format="dita" href="../fields/content-field-reference-object.dita">Reference object</xref></li>
+					<li><xref format="dita" href="../fields/content-field-static-text.dita">Static text</xref></li>
 				</ul>
 			</p>
 
@@ -124,8 +124,21 @@
     </body>
 
 
-    <!-- <related-links>
-        <link format="" scope="external" href=""><linktext></linktext></link>
-    </related-links> -->
+    <related-links>
+        <!-- Must be explicitly linked because the build ignores anything inside topichead tags. -->
+            <link format="dita" href="create-content-type.dita" ><linktext>Create Content Type</linktext></link>
+            <link format="dita" href="edit-content-type.dita" ><linktext>Edit Content Type</linktext></link>
+            <link format="dita" href="duplicate-content-type.dita" ><linktext>Duplicate Content Type</linktext></link>
+            <link format="dita" href="delete-content-type.dita" ><linktext>Delete Content Type</linktext></link>
+            <link format="dita" href="create-visualizer.dita" ><linktext>Create Visualizer</linktext></link>
+            <link format="dita" href="edit-visualizer.dita" ><linktext>Edit Visualizer</linktext></link>
+            <link format="dita" href="delete-visualizer.dita" ><linktext>Delete Visualizer</linktext></link>
+            <link format="dita" href="visualizer-templates.dita" ><linktext>Visualizer Templates</linktext></link>
+            <link format="dita" href="create-content-item.dita" ><linktext>Create Content Item</linktext></link>
+            <link format="dita" href="edit-content-item.dita" ><linktext>Edit Content Item</linktext></link>
+            <link format="dita" href="duplicate-content-item.dita" ><linktext>Duplicate Content Item</linktext></link>
+            <link format="dita" href="delete-content-item.dita" ><linktext>Delete Content Item</linktext></link>
+            <!-- <link format="dita" href="add-content-item-to-page.dita" ><linktext>Add Content Item to Page</linktext></link> -->
+    </related-links>
 
 </topic>

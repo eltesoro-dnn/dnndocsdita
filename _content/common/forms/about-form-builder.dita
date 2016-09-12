@@ -39,14 +39,41 @@
 
             <p>The Form Builder allows you to create forms easily by dragging and dropping fields into a canvas. Each field you add to the canvas is customizable; you can change its label, set limits on the data, or make the field required.</p>
 
-		</section>
+            <p>You can add any of the following types of fields to your form:
+				<ul>
+                    <li><xref format="dita" href="../fields/form-field-address.dita" >Address</xref></li>
+                    <li><xref format="dita" href="../fields/form-field-date-time.dita" >Date / Time</xref></li>
+                    <li><xref format="dita" href="../fields/form-field-dropdown.dita" >Dropdown</xref></li>
+                    <li><xref format="dita" href="../fields/form-field-email.dita" >Email</xref></li>
+                    <li><xref format="dita" href="../fields/form-field-esignature.dita" >E-Signature</xref></li>
+                    <li><xref format="dita" href="../fields/form-field-multi-line-text.dita" >Multi-Line Text</xref></li>
+                    <li><xref format="dita" href="../fields/form-field-multiple-choice.dita" >Multiple Choice</xref></li>
+                    <li><xref format="dita" href="../fields/form-field-name.dita" >Name</xref></li>
+                    <li><xref format="dita" href="../fields/form-field-number.dita" >Number</xref></li>
+                    <li><xref format="dita" href="../fields/form-field-phone-number.dita" >Phone Number</xref></li>
+                    <li><xref format="dita" href="../fields/form-field-single-line-text.dita" >Single-Line Text</xref></li>
+                    <li><xref format="dita" href="../fields/form-field-static-text.dita" >Static Text</xref></li>
+                    <li><xref format="dita" href="../fields/form-field-terms-conditions.dita" >Terms and Conditions</xref></li>
+                    <li><xref format="dita" href="../fields/form-field-url-website.dita" >URL / Website</xref></li>
+				</ul>
+            </p>
 
+            <p>You can also configure the <xref format="dita" href="../fields/form-field-submit.dita" ><uicontrol>Submit</uicontrol></xref> button.</p>
+
+		</section>
 
     </body>
 
 
-    <!-- <related-links>
-        <link format="" scope="external" href=""><linktext></linktext></link>
-    </related-links> -->
+    <related-links>
+        <!-- Must be explicitly linked because the build ignores anything inside topichead tags. -->
+            <link format="dita" href="create-form.dita" ><linktext>Create Form</linktext></link>
+            <link format="dita" href="edit-form.dita" ><linktext>Edit Form</linktext></link>
+            <link format="dita" href="duplicate-form.dita" ><linktext>Duplicate Form</linktext></link>
+            <link format="dita" href="delete-form.dita" ><linktext>Delete Form</linktext></link>
+            <!-- <link format="dita" href="add-form-to-page.dita" ><linktext>Add Form to Page</linktext></link> -->
+            <!-- <link format="dita" href="publish-form.dita" ><linktext>Publish Form</linktext></link> -->
+            <link format="dita" href="view-form-responses.dita" ><linktext>View Form Responses</linktext></link>
+    </related-links>
 
 </topic>

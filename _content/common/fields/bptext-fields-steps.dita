@@ -87,10 +87,16 @@
                     <stentry>Choose <uicontrol>US Address</uicontrol> or <uicontrol>International Address</uicontrol>.</stentry>
                 </strow>
 
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-phone-number-type"><stentry/></strow> -->
+                <strow id="strow-field-phone-number-type">
+                    <stentry><uicontrol>Phone Number Type</uicontrol></stentry>
+                    <stentry>Choose <uicontrol>US</uicontrol> or <uicontrol>International</uicontrol>. <uicontrol>International</uicontrol> allows the user to select a country code.</stentry>
+                </strow>
+
                 <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-placeholder"><stentry/></strow> -->
                 <strow id="strow-field-placeholder">
                     <stentry><uicontrol>Placeholder</uicontrol></stentry>
-                    <stentry>If enabled (<uicontrol>On</uicontrol>), displays help text to indicate which component of the address to enter in each text box.</stentry>
+                    <stentry>If enabled (<uicontrol>On</uicontrol>), displays help text to indicate which part to enter in each text box.</stentry>
                 </strow>
 
                 <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-number-set"><stentry/></strow> -->
@@ -403,16 +409,13 @@
 				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-defaultvalue"><stentry/></strow> -->
                 <strow id="strow-field-defaultvalue">
                     <stentry><uicontrol>Default Value</uicontrol></stentry>
-                    <stentry>The value to assign to the field if the user does not provide a custom value. (If specified, the default value is displayed, instead of the <uicontrol>Help Text</uicontrol> <uicontrol>Inside Field</uicontrol> value.)</stentry>
+                    <stentry>The value to assign to the field if the user does not provide a custom value. If blank, the <uicontrol>Help Text</uicontrol> <uicontrol>Inside Field</uicontrol> value is displayed.</stentry>
                 </strow>
 
                 <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-defaultvaluefirstlastnames"><stentry/></strow> -->
                 <strow id="strow-field-defaultvaluefirstlastnames">
-                    <stentry>
-                        <p><uicontrol>First Name Default Value</uicontrol></p>
-                        <p><uicontrol>Last Name Default Value</uicontrol></p>
-                    </stentry>
-                    <stentry>The value to assign to the field if the user does not provide a custom value.</stentry>
+                    <stentry><uicontrol>Default Text</uicontrol></stentry>
+                    <stentry>The values to assign to the name fields if the user does not provide custom values. If blank, the <uicontrol>Help Text</uicontrol> <uicontrol>Inside Field</uicontrol> values are displayed.</stentry>
                 </strow>
 
                 <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-defaultvaluenumber"><stentry/></strow> -->
@@ -432,6 +435,12 @@
                             <li><uicontrol>Required</uicontrol> must be <uicontrol>Off</uicontrol>.</li>
                         </ul>
                     </stentry>
+                </strow>
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-defaultvaluedropdown"><stentry/></strow> -->
+                <strow id="strow-field-defaultvaluedropdown">
+                    <stentry><uicontrol>Default Value</uicontrol></stentry>
+                    <stentry>The value to assign to the field if the user does not provide a custom value.</stentry>
                 </strow>
 
 
@@ -507,6 +516,28 @@
                         <uicontrol>Min</uicontrol> must be less than <uicontrol>Max</uicontrol>.
                     </stentry>
                 </strow>
+
+
+				<!-- ========== SUBMIT ========== -->
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-button-text"><stentry/></strow> -->
+                <strow id="strow-button-text">
+                    <stentry><uicontrol>Button Text</uicontrol></stentry>
+                    <stentry>Replaces the text on the <uicontrol>Submit</uicontrol> button.</stentry>
+                </strow>
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-button-cancel"><stentry/></strow> -->
+                <strow id="strow-button-cancel">
+                    <stentry><uicontrol>Cancel Button</uicontrol></stentry>
+                    <stentry>If enabled (<uicontrol>On</uicontrol>), displays the <uicontrol>Cancel</uicontrol> button next to the <uicontrol>Submit</uicontrol> button. </stentry>
+                </strow>
+
+				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-button-alignment"><stentry/></strow> -->
+                <strow id="strow-button-alignment">
+                    <stentry><uicontrol>Button Alignment</uicontrol></stentry>
+                    <stentry>Changes the position of the <uicontrol>Cancel</uicontrol> and <uicontrol>Submit</uicontrol> buttons. </stentry>
+                </strow>
+
 
 
 				<!-- ==========  ========== -->

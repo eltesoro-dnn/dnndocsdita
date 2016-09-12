@@ -63,7 +63,7 @@
                     <stentry>Field</stentry>
                     <stentry>Description</stentry>
                 </sthead>
-                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-insidefield"><stentry/></strow>
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-insidefield"><stentry/></strow> -->
                 <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-belowfield"><stentry/></strow>
                 <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-tooltip"><stentry/></strow>
             </simpletable>

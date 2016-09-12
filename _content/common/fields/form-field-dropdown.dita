@@ -53,8 +53,7 @@
                 <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-otherasanoption"><stentry/></strow>
                 <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-multiselect"><stentry/></strow>
                 <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-choiceorder"><stentry/></strow>
-                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-listorientation"><stentry/></strow>
-                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-customlabels"><stentry/></strow>
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-listorientation"><stentry/></strow> -->
             </simpletable>
         </section>
 
@@ -80,6 +79,7 @@
                     <stentry>Description</stentry>
                 </sthead>
                 <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-defaultvalue"><stentry/></strow>
+                <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-setdefaultvalueashidden"><stentry/></strow>
             </simpletable>
         </section>
 
