@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-about-hidden-fields">
+
+    <title>About Hidden Fields in Forms</title>
+    <titlealts>
+        <navtitle>Hidden Fields</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1609</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+			<!--
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+			-->
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="5"/></vrmlist>
+            </prodinfo>
+        </metadata>
+        <!-- WARNING: The product points directly to this topic. See JIRA FBM-184. Notify the Devs if the URL needs to be changed, or add a redirect rule in the web.config. -->
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-E"></section>
+
+		<section id="overview">
+            <title>Hidden Fields Overview</title>
+
+            <p>Your form can have two types of fields:
+                <ul>
+                    <li>visible fields that the user fills in, or</li>
+                    <li>hidden fields with values that are simply returned to the server when the completed form is submitted.</li>
+                </ul>
+            </p>
+            <simpletable relcolwidth="1* 1*">
+                <sthead>
+                    <stentry>Visible Fields</stentry>
+                    <stentry>Hidden Fields</stentry>
+                </sthead>
+                <strow>
+                    <stentry><image outputclass="img-scr img-half" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormFields-Vis.gif"><alt>Forms - visible fields</alt></image></stentry>
+                    <stentry><image outputclass="img-scr img-half" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormFields-Hid.gif"><alt>Forms - hidden fields</alt></image></stentry>
+                </strow>
+                <strow>
+                    <stentry>Defined in the <uicontrol>Form</uicontrol> tab of the Form Builder.</stentry>
+                    <stentry>Defined in the <menucascade><uicontrol>Configuration</uicontrol> <uicontrol>Data Collection</uicontrol></menucascade> section of the Form Builder.</stentry>
+                </strow>
+                <strow>
+                    <stentry>The user provides the values or accepts the defaults.</stentry>
+                    <stentry>The values are included in the blank form and returned unmodified with the completed form.</stentry>
+                </strow>
+                <strow>
+                    <stentry>The field type can be any of the predefined form fields.</stentry>
+                    <stentry>The field type is always text.</stentry>
+                </strow>
+                <strow>
+                    <stentry>Unlimited number of fields.</stentry>
+                    <stentry>Up to 10 field identifier-value pairs.</stentry>
+                </strow>
+                <strow>
+                    <stentry>Appear on the page or wherever the form is added.</stentry>
+                    <stentry>If static, not displayed. If dynamic, appear as part of the blank form's URL.</stentry>
+                </strow>
+                <strow>
+                    <stentry>The field's <uicontrol>Title/Label</uicontrol> becomes a column header in the table of responses.</stentry>
+                    <stentry>The <uicontrol>Field Identifier</uicontrol> becomes a column header in the table of responses.</stentry>
+                </strow>
+            </simpletable>
+
+            <p>Like the <uicontrol>Title/Label</uicontrol> of visible fields, the hidden <uicontrol>Field Identifier</uicontrol> can be any label you want to assign to the field.</p>
+
+            <p>Example uses: You can use hidden fields to associate a sale with a marketing campaign, to associate a candidate's job application with the job fair where the candidate was sourced, or to associate customer feedback with the representative that provided the support.</p>
+        </section>
+
+
+        <section id="hiddenvalues">
+            <title>Hidden Values</title>
+
+            <p>The hidden values can be <term>static</term> or <term>dynamic</term>.</p>
+
+            <p><term>Static</term>. You provide the exact text to assign to the field for all responses to the form you are configuring. Hidden fields with static values are not visible to the user.</p>
+
+            <p><term>Dynamic</term>. You define a unique placeholder (enclosed in curly brackets <userinput>{}</userinput>) and place it in the <uicontrol>Field Value</uicontrol> box. When you send out the form's URL, you must assign a value to that placeholder in the form's URL. If the form is accessed from another page in the website, not through its direct URL, the placeholder value is blank.</p>
+
+            <p>Example: If <uicontrol>Field Identifier</uicontrol> is <userinput>My Store Branch</userinput>, and <uicontrol>Field Value</uicontrol> is <userinput>{branch}</userinput>, then the form's URL could be <userinput>http://example.com/mypage?branch=San%20Mateo</userinput>.</p>
+
+            <note type="note">In the query portion of the form's URL, you must use the placeholder name (without the curly brackets), not the name of the <uicontrol>Field Identifier</uicontrol>.</note>
+        </section>
+
+
+        <section id="confighiddenfields">
+            <title>Configure Hidden Fields</title>
+
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormFields-Hidden-Configure.gif"><alt>Forms - Configure hidden fields.</alt></image>
+            <ul>
+                <li>To add a hidden field and its value, fill in the <uicontrol>Field Identifier</uicontrol> and the <uicontrol>Field Value</uicontrol>. Then click/tap <uicontrol>Add</uicontrol>.</li>
+                <li>To edit a hidden field and its value, click/tap the pencil icon next to it, and make changes. Then click/tap <uicontrol>Save</uicontrol>.</li>
+                <li>To delete a hidden field and its value, click/tap the trash icon next to it, and confirm.</li>
+            </ul>
+        </section>
+
+
+        <section id="example">
+            <title>Example</title>
+
+            <p>Suppose that you are organizing an event ("2016 User Convention") and you want people to respond to the invitation by filling out a form with their names and email addresses. You also have partners who will advertise the event in their own websites and blogs, and you want to track how many responses you get through each partner.</p>
+
+            <ol>
+                <li>
+                    <p><xref format="dita" href="create-form.dita">Create a form</xref> called <userinput>My 2016UC Invitation Response Form</userinput>. In the <uicontrol>Form</uicontrol> tab, add the fields <uicontrol>Name</uicontrol> and <uicontrol>Email</uicontrol>. Optionally, you can set <uicontrol>Email</uicontrol> as <uicontrol>Required</uicontrol>.</p>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormFields-Hidden-Example-CreateForm.png"><alt>Example - Create a form with name and email fields.</alt></image>
+                </li>
+
+                <li>
+                    <p>Go to the <uicontrol>Configuration</uicontrol> tab, then the <uicontrol>Data Collection</uicontrol> tab. In the <uicontrol>Hidden Fields</uicontrol> section, create these identifier-value pairs:</p>
+                    <simpletable relcolwidth="1* 1*">
+						<sthead>
+							<stentry>Field Identifier</stentry>
+							<stentry>Field Value</stentry>
+						</sthead>
+						<strow>
+							<stentry>Event Name</stentry>
+							<stentry>2016 User Convention</stentry>
+						</strow>
+						<strow>
+							<stentry>Partner</stentry>
+							<stentry>{PartnerID}</stentry>
+						</strow>
+					</simpletable>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormFields-Hidden-Example-HiddenFieldsConfig.png"><alt>Example - Configure the hidden fields.</alt></image>
+                </li>
+
+                <li>Save the configurations, then save the form.</li>
+
+                <li>
+                    <p><xref format="dita" href="../building-your-site/create-page-via-persona-bar.dita">Create a new page</xref> called <userinput>My New Page</userinput>. Add the form to it, using any form style. Give <uicontrol>View</uicontrol> permissions to <uicontrol>All Users</uicontrol>. Then publish the page.</p>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormFields-Hidden-Example-AddToPage.gif"><alt>Example - Add the form to a new page.</alt></image>
+                </li>
+
+                <li>Note the URL of the new page. In this example, we will use <userinput>http://example.com/My-New-Page</userinput>, which you will replace with the URL of your own page that contains the form.</li>
+
+                <li>While on the new page, enter a random name and a random email address, then <uicontrol>Submit</uicontrol>.
+                    <simpletable relcolwidth="3* 1* 1*">
+						<sthead>
+							<stentry>Form URL</stentry>
+							<stentry>Name</stentry>
+							<stentry>Email</stentry>
+						</sthead>
+						<strow>
+							<stentry>http://example.com/My-New-Page</stentry>
+							<stentry>Delphia Fredrickson</stentry>
+							<stentry>nj4cszzzenn5@example.com</stentry>
+						</strow>
+					</simpletable>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormFields-Hidden-Example-FillForm1.png"><alt>Example - Fill in the form.</alt></image>
+                </li>
+
+                <li>
+                    <p><xref format="dita" href="view-form-responses.dita">View the form responses.</xref> Note that <uicontrol>Partner</uicontrol> is blank and the <uicontrol>Event Name</uicontrol> is filled in.</p>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormFields-Hidden-Example-ViewResponses1.png"><alt>Example - View first response.</alt></image>
+                </li>
+
+                <li>Suppose you have two partner sites and you assign them the codes <userinput>Web1234</userinput> and <userinput>Blog789</userinput>. To track which partner generated a response, you must give each partner a different URL with a query string that includes the partner's code.
+                    <ul>
+                        <li>For partner <userinput>Web1234</userinput>, the URL is <userinput>http://example.com/My-New-Page?PartnerID=Web1234</userinput>.</li>
+                        <li>For partner <userinput>Blog789</userinput>, the URL is <userinput>http://example.com/My-New-Page?PartnerID=Blog789</userinput>.</li>
+                    </ul>
+                </li>
+
+                <li>To test, access the form through the browser's address bar using the URL with the partner's code, and fill in the fields.
+                    <simpletable relcolwidth="3* 1* 1*">
+						<sthead>
+							<stentry>Form URL</stentry>
+							<stentry>Name</stentry>
+							<stentry>Email</stentry>
+						</sthead>
+						<strow>
+							<stentry>http://example.com/My-New-Page?PartnerID=Web1234</stentry>
+							<stentry>Charity Beltran</stentry>
+							<stentry>pcxdpnwc1r16@example.com</stentry>
+						</strow>
+						<strow>
+							<stentry>http://example.com/My-New-Page?PartnerID=Blog789</stentry>
+							<stentry>Hank Rosenberg</stentry>
+							<stentry>xtvtcl41eh91@example.com</stentry>
+						</strow>
+					</simpletable>
+                    <!-- <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormFields-Hidden-Example-.png"><alt>Example - .</alt></image> -->
+                </li>
+
+                <li>
+                    <p><xref format="dita" href="view-form-responses.dita">View the form responses</xref> again. Note that <uicontrol>Partner</uicontrol> is filled in with the <userinput>PartnerID</userinput> value that you specified in the form's URL.</p>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormFields-Hidden-Example-ViewResponses3.png"><alt>Example - View three responses.</alt></image>
+                </li>
+            </ol>
+
+         </section>
+
+    </body>
+
+
+    <!-- <related-links>
+        <link format="" scope="external" href=""><linktext></linktext></link>
+    </related-links> -->
+
+</topic>

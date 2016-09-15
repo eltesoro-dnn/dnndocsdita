@@ -37,8 +37,36 @@
         <steps>
 			<step conkeyref="k-bpsteps/step-pb-gotomanageforms"><cmd/></step>
             <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-highlightellipses-responses"><cmd/></step>
+            <step>
+                <cmd>Configure the response table.</cmd>
+                <choices>
+                    <choice>
+                        <p>To filter the responses based on the response date, choose a day, a week, a month, a year, a custom date range, or <uicontrol>All Time</uicontrol>.</p>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormFields-ResponseTable-datefilter.gif"><alt>Filter by response date.</alt></image>
+                    </choice>
+                    <choice>
+                        <p>To change which columns are displayed, click/tap on <uicontrol>Manage Columns</uicontrol> to expand the column configuration panel, which contains these tabs:</p>
+                        <ul>
+                            <li><uicontrol>Response Fields</uicontrol> are the same fields that you added to your form. By default, all these fields are already included in the response table.</li>
+                            <li><uicontrol>Data Fields</uicontrol> are the metadata fields, such as the time the form was submitted and what percentage of the form was completed. </li>
+                        </ul>
+                        <p>To add a column, drag the name of the field from the column configuration panel to its new position in the table.</p>
+                        <p>To remove a column, click/tap the <uicontrol>X</uicontrol> in the column header. The name of the undisplayed column is moved to the column configuration panel under the appropriate tab.</p>
+                        <p>To rearrange the columns, drag and drop a column's header to its new position.</p>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormFields-ResponseTable-columns.gif"><alt></alt></image>
+                    </choice>
+                </choices>
+            </step>
+            <step>
+                <cmd>Manage the responses.</cmd>
+                <choices>
+                    <choice>To search for a specific response, enter a value in the <uicontrol>Search</uicontrol> field. All form fields are searched.</choice>
+                    <choice>To delete responses, check the boxes for the responses to delete, then click/tap <uicontrol>Delete</uicontrol>.</choice>
+                    <choice>To export responses to an Excel spreadsheet, check the boxes for the responses to export, then click/tap <uicontrol>Export</uicontrol>. Check your download folder for the .xslx file.</choice>
+                </choices>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-FormFields-ResponseTable-searchselectdeleteexport.gif"><alt></alt></image></info>
+            </step>
         </steps>
-
     </taskbody>
 
 </task>

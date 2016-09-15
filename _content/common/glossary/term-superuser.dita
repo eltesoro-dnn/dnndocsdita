@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
-<glossentry xml:lang="en" id="host">
+<glossentry xml:lang="en" id="superuser">
 
-    <glossterm>host</glossterm>
-    <glossdef>An administrator account used to manage the server and its apps. A host account is the most privileged administrative account and has complete access to all DNN functionality and all websites supported by the DNN installation.</glossdef>
+    <glossterm>superuser</glossterm>
+    <glossdef>The most privileged administrative account with complete access to all websites within the DNN installation and to all installed apps.</glossdef>
 
     <prolog>
-        <author>wrET,trJB,ceDS,1601</author>
+        <author>wrET,1609</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -28,8 +28,8 @@
     </prolog>
 
     <glossBody>
-        <glossAlt id="superuser">
-            <glossSynonym>super user</glossSynonym>
+        <glossAlt id="host">
+            <glossSynonym>host</glossSynonym>
             <glossUsage><ph conkeyref="k-bptext/ph-oldterm"></ph></glossUsage>
         </glossAlt>
     </glossBody>

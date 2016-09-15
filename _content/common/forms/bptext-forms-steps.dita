@@ -90,8 +90,13 @@
                             <li><uicontrol>Event Label</uicontrol>.</li>
                             <li><uicontrol>Event Value</uicontrol>.</li>
                         </ul>
-
                     </stentry>
+				</strow>
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-hiddenfields"><stentry/></strow> -->
+				<strow id="strow-field-hiddenfields">
+					<stentry><uicontrol>Hidden Fields</uicontrol></stentry>
+					<stentry>Enter up to 10 <uicontrol>Field Identifier</uicontrol>-<uicontrol>Value</uicontrol> pairs. These would be returned with the user's completed form.</stentry>
 				</strow>
 
 
@@ -233,6 +238,7 @@
                                 <strow conref="#tsk-bptext-forms-steps/strow-field-database"><stentry/></strow>
                                 <strow conref="#tsk-bptext-forms-steps/strow-field-customurl"><stentry/></strow>
                                 <strow conref="#tsk-bptext-forms-steps/strow-field-googleanalytics"><stentry/></strow>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-hiddenfields"><stentry/></strow>
                             </simpletable>
                         </info>
                     </substep>

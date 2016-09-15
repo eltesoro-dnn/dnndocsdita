@@ -766,10 +766,13 @@ span.filepath {
   width: 50px;
   padding-right: 10px;
 }
+.img-half {
+  size=50%;
+}
 .img-scr {
   -webkit-box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.4);
-	-moz-box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.4);
-	box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.4);
+  box-shadow: 3px 3px 10px 3px rgba(0,0,0,0.4);
 }
 
 /* ------------------------------------------------------------

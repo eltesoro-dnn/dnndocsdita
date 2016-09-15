@@ -42,7 +42,7 @@
 
             <p>DNN products are designed around the needs of several personas or organization roles involved in publishing a website.</p>
             <ul>
-                <li><term>Hosts</term> (formerly <term>superusers</term>) manage the web servers and the DNN installation, which could support multiple websites. Hosts have full access to all websites in the DNN installation and are essentially site admins for all the sites.</li>
+                <li><term>Superusers</term> (also known as <term>hosts</term>) manage the web servers and the DNN installation, which could support multiple websites. Superusers have full access to all websites in the DNN installation and are essentially site admins for all the sites.</li>
                 <li><term>Site administrators</term> manage an individual website (formerly <term>portal</term>). Site administrators have access only within their assigned website(s).</li>
                 <li><term>Developers</term> extend the functionality of DNN products by using the DNN APIs to build third-party add-on modules, which can be installed into the system.</li>
                 <li><term>Designers</term> provide a wide variety of themes (formerly <term>skins</term>) that change the appearance of the websites.</li>
@@ -59,7 +59,7 @@
 
             <p>The DNN Documentation Center is organized based on these persona groups:</p>
             <ul>
-                <li><uicontrol>Administrators</uicontrol> includes hosts and site administrators.</li>
+                <li><uicontrol>Administrators</uicontrol> includes superusers and site administrators.</li>
                 <li><uicontrol>Developers</uicontrol></li>
                 <li><uicontrol>Designers</uicontrol></li>
                 <li><uicontrol>Content Managers</uicontrol> includes content managers, editors, and creators.</li>

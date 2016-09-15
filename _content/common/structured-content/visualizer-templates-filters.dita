@@ -481,7 +481,7 @@ HELLO
                     <stentry>Example</stentry>
                 </sthead>
                 <strow id="urlfilternone">
-                    <stentry>(no filter)</stentry>
+                    <stentry><term>(no filter)</term></stentry>
                     <stentry>Returns the URL as plain text.</stentry>
                     <stentry>
                         <codeblock>
@@ -493,7 +493,7 @@ http://www.linkedin.com/in/myexample
                     </stentry>
                 </strow>
                 <strow id="link">
-                    <stentry>link</stentry>
+                    <stentry><term>link</term></stentry>
                     <stentry>Creates a link that would load the target page in the same browser tab.</stentry>
                     <stentry>
                         <codeblock>
@@ -506,7 +506,7 @@ http://www.linkedin.com/in/myexample
                     </stentry>
                 </strow>
                 <strow id="linknew">
-                    <stentry>link_new</stentry>
+                    <stentry><term>link_new</term></stentry>
                     <stentry>Creates a link that would load the target page in a new browser tab.</stentry>
                     <stentry>
                         <codeblock>
@@ -550,10 +550,9 @@ dddd
                         </msgblock>
                     </stentry>
                 </strow>
-                <!--
+
                 <strow id="indexat">
-                    // Source: https://dnntracker.atlassian.net/browse/CONTENT-7178
-                    // Seems broken.
+                    <!-- Source: JIRA CONTENT-7178 -->
                     <stentry><term>index_at</term></stentry>
                     <stentry>Returns the URL of the element at the specified index. If the specified index is outside the valid range (0 to number of elements minus 1), nothing is returned. </stentry>
                     <stentry>
@@ -565,7 +564,7 @@ ccc
                         </msgblock>
                     </stentry>
                 </strow>
-                -->
+
                 <strow id="join">
                     <stentry><term>join</term></stentry>
                     <stentry>Combines the elements of the piped array with the specified character inserted between each element.</stentry>
@@ -668,32 +667,46 @@ a~dddd~bb~ccc
                     <stentry>Example</stentry>
                 </sthead>
                 <strow>
-                    <stentry>(no filter)</stentry>
+                    <stentry><term>(no filter)</term></stentry>
                     <stentry>For single-choice fields, returns the value of the selection. For multiple-selection fields, returns the list of the selections as a comma-separated list.</stentry>
                     <stentry>
                         <codeblock>
+{{ mySingleSelection }}
+{{ myMultipleSelection }}
                         </codeblock>
                         <msgblock>
+Choice 1
+Choice 1, Choice 2
                         </msgblock>
                     </stentry>
                 </strow>
                 <strow>
-                    <stentry>list</stentry>
+                    <stentry><term>list</term></stentry>
                     <stentry>Returns an unordered list of the user's selections.</stentry>
                     <stentry>
                         <codeblock>
+{{ myMultipleSelection | list }}
                         </codeblock>
                         <msgblock>
+&lt;ul&gt;
+    &lt;li&gt;Choice 1&lt;/li&gt;
+    &lt;li&gt;Choice 2&lt;/li&gt;
+&lt;/ul&gt;
                         </msgblock>
                     </stentry>
                 </strow>
                 <strow>
-                    <stentry>numberedlist</stentry>
+                    <stentry><term>numberedlist</term></stentry>
                     <stentry>Returns an ordered list of the user's selections, in the order of the selection.</stentry>  <!-- Is this the correct order? Or in the order of how it appears in the list? -->
                     <stentry>
                         <codeblock>
+{{ myMultipleSelection | numberedlist }}
                         </codeblock>
                         <msgblock>
+&lt;ol&gt;
+    &lt;li&gt;Choice 1&lt;/li&gt;
+    &lt;li&gt;Choice 2&lt;/li&gt;
+&lt;/ol&gt;
                         </msgblock>
                     </stentry>
                 </strow>
@@ -717,54 +730,78 @@ a~dddd~bb~ccc
                     <stentry>Example</stentry>
                 </sthead>
                 <strow id="assetsfilternone">
-                    <stentry>(no filter)</stentry>
-                    <stentry>Returns all images/documents. Images are wrapped in <codeph>&lt;image/&gt;</codeph> tags. Documents are wrapped in <codeph>&lt;href/&gt;</codeph> tags.</stentry>
+                    <stentry><term>(no filter)</term></stentry>
+                    <stentry>Returns all images/documents. Images are wrapped in <codeph>&lt;img/&gt;</codeph> tags. Documents are wrapped in <codeph>&lt;a/&gt;</codeph> tags.</stentry>
                     <stentry>
                         <codeblock>
-{{ images }}
-{{ documents }}
+{{ myImages }}
+{{ myDocuments }}
                         </codeblock>
-                        <!-- <msgblock/> -->
+                        <msgblock>
+&lt;img src="https://example.com/img-folder/my-image-1.png" alt="my image 1" /&gt;
+&lt;img src="https://example.com/img-folder/my-image-2.png" alt="my image 2" /&gt;
+&lt;a target="__blank" href="https://example.com/doc-folder/my-document-1.pdf"&gt;Title of My Document 1&lt;/a&gt;
+&lt;a target="__blank" href="https://example.com/doc-folder/my-document-2.pdf"&gt;Title of My Document 2&lt;/a&gt;
+                        </msgblock>
+                        <p conkeyref="k-bpsteps/p-formatted-legibility"></p>
                     </stentry>
                 </strow>
                 <strow id="imagesurl">
-                    <stentry>images_url</stentry>
+                    <stentry><term>images_url</term></stentry>
                     <stentry>Returns all the URLs of the images as plain text.</stentry>
                     <stentry>
                         <codeblock>
-{{ images | images_url }}
+{{ myImages | images_url }}
                         </codeblock>
-                        <!-- <msgblock/> -->
+                        <msgblock>
+https://example.com/img-folder/my-image-1.png
+https://example.com/img-folder/my-image-2.png
+                        </msgblock>
+                        <p conkeyref="k-bpsteps/p-formatted-legibility"></p>
                     </stentry>
                 </strow>
                 <strow id="imageslist">
-                    <stentry>images_list</stentry>
-                    <stentry>Returns an unordered list containing the images wrapped in <codeph>&lt;image /&gt;</codeph> tags.</stentry>
+                    <stentry><term>images_list</term></stentry>
+                    <stentry>Returns an unordered list containing the images wrapped in <codeph>&lt;img /&gt;</codeph> tags.</stentry>
                     <stentry>
                         <codeblock>
-{{ images | images_list }}
+{{ myImages | images_list }}
                         </codeblock>
-                        <!-- <msgblock/> -->
+                        <msgblock>
+&lt;ul&gt;
+    &lt;li&gt;&lt;img src="https://example.com/img-folder/my-image-1.png" alt="my image 1" /&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;img src="https://example.com/img-folder/my-image-2.png" alt="my image 2" /&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                        </msgblock>
                     </stentry>
                 </strow>
                 <strow id="documentsurl">
-                    <stentry>documents_url</stentry>
+                    <stentry><term>documents_url</term></stentry>
                     <stentry>Returns all the URLs of the documents as plain text.</stentry>
                     <stentry>
                         <codeblock>
-{{ documents | documents_url }}
+{{ myDocuments | documents_url }}
                         </codeblock>
-                        <!-- <msgblock/> -->
+                        <msgblock>
+https://example.com/doc-folder/my-document-1.pdf
+https://example.com/doc-folder/my-document-2.pdf
+                        </msgblock>
+                        <p conkeyref="k-bpsteps/p-formatted-legibility"></p>
                     </stentry>
                 </strow>
                 <strow id="documentslist">
-                    <stentry>documents_list</stentry>
+                    <stentry><term>documents_list</term></stentry>
                     <stentry>Returns an unordered list containing the document URLs wrapped in <codeph>&lt;href /&gt;</codeph> tags.</stentry>
                     <stentry>
                         <codeblock>
-{{ documents | documents_list }}
+{{ myDocuments | documents_list }}
                         </codeblock>
-                        <!-- <msgblock/> -->
+                        <msgblock>
+&lt;ul&gt;
+    &lt;li&gt;&lt;a target="__blank" href="https://example.com/doc-folder/my-document-1.pdf"&gt;Title of My Document 1&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a target="__blank" href="https://example.com/doc-folder/my-document-2.pdf"&gt;Title of My Document 2&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+                        </msgblock>
                     </stentry>
                 </strow>
             </simpletable>

@@ -41,6 +41,7 @@
         </topichead>
         <!-- </topicref> -->
 
+        <topicref format="dita" type="topic" toc="yes" href="about-hidden-fields.dita" />
         <!-- <topicref format="dita" type="task" toc="yes" href="example-survey.dita" /> -->
 
     </topicref>
@@ -65,6 +66,19 @@
                 <topicref format="dita" type="task" href="view-form-responses.dita" />
             </relcell>
             <relcell/>
+        </relrow>
+
+        <relrow>
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="task" href="create-form.dita" />
+                <topicref format="dita" type="task" href="edit-form.dita" />
+                <topicref format="dita" type="task" href="duplicate-form.dita" />
+                <topicref format="dita" type="task" href="view-form-responses.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="topic" href="about-hidden-fields.dita" />
+            </relcell>
         </relrow>
 
         <!--

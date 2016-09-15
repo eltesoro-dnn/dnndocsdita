@@ -60,6 +60,8 @@
 
             <p>You can also configure the <xref format="dita" href="../fields/form-field-submit.dita" ><uicontrol>Submit</uicontrol></xref> button.</p>
 
+            <p>In addition, you can assign <xref format="dita" href="about-hidden-fields.dita">hidden fields</xref> with values that are sent back with the completed form.</p>
+
 		</section>
 
     </body>
@@ -74,6 +76,7 @@
             <!-- <link format="dita" href="add-form-to-page.dita" ><linktext>Add Form to Page</linktext></link> -->
             <!-- <link format="dita" href="publish-form.dita" ><linktext>Publish Form</linktext></link> -->
             <link format="dita" href="view-form-responses.dita" ><linktext>View Form Responses</linktext></link>
+            <link format="dita" href="about-hidden-fields.dita" ><linktext>About Hidden Fields</linktext></link>
     </related-links>
 
 </topic>

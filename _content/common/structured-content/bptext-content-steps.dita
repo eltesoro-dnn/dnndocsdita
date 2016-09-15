@@ -227,9 +227,11 @@
                     <substep>
                         <cmd>In the <uicontrol>Template</uicontrol> editor, enter the HTML code to format the content item.</cmd>
                         <info>
-                            <note type="tip">Choose the content type in the <uicontrol>Details</uicontrol> tab before editing the visualizer HTML code. Then the fields of the selected content type are added to the <uicontrol>Template</uicontrol> editor as tokens, which you can use as placeholders for their values.</note>
+                            <note type="tip">Choose the content type in the <uicontrol>Details</uicontrol> tab before editing the visualizer HTML code. Then the fields of the selected content type are added to the <uicontrol>Template</uicontrol> editor as placeholders for the field value(s).</note>
 
-                            <p>Each token is the reformatted name of the content field enclosed in double curly brackets. Example: The token for the field called <userinput>Recipe Name</userinput> is <codeph>{{recipeName}}</codeph>.</p>
+                            <p>Each placeholder is the reformatted name of the content field enclosed in double curly brackets. Example: The placeholder for the field called <userinput>Recipe Name</userinput> is <codeph>{{recipeName}}</codeph>.</p>
+
+                            <p>If the field has multiple values (e.g., multiple choice fields), the values are comma-separated.</p>
 
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Editor-Template.gif"><alt>Content &gt; Visualizers tab &gt; Editor &gt; Template with field tokens</alt></image>
 
@@ -242,7 +244,7 @@
                         <info>
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Editor-Style.png"><alt>Content &gt; Visualizers tab &gt; Editor &gt; Style</alt></image>
 
-                            <note type="tip">If you wrapped a token, you can access the inner tag if you wrapped them in a named <codeph>&lt;div/&gt;</codeph> tag. Example: <codeph>.myimgdiv img { width: 50px }</codeph></note>
+                            <note type="tip">If you wrapped a placeholder, you can access the inner tag if you wrapped them in a named <codeph>&lt;div/&gt;</codeph> tag. Example: <codeph>.myimgdiv img { width: 50px }</codeph></note>
                         </info>
                     </substep>
 
