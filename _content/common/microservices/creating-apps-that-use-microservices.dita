@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-creating-apps-that-use-microservices">
+
+    <title>Creating Apps That Use Microservices</title>
+    <titlealts>
+        <navtitle>Creating Apps That Use Microservices</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1609</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+            <!-- <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo> -->
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-CE"></section>
+
+        <section id="overview">
+            <title>Overview</title>
+
+            <p>DNN provides APIs that you can use to access the microservices from your app. Essentially, your app simply needs to generate HTTPS requests with specific information in the URL path, the URL query, or the body of the message, along with an authentication token in the header. The results are sent back in the body of the message from the server.</p>
+
+            <p>Each microservice has several groups of APIs related to each other.</p>
+            <ul>
+                <li>Structured Content has groups for content types, content items, published content items, the visualizer engine, visualizer definitions, and visualizer instances.</li>
+                <li>Form Builder has groups for campaigns, form templates (forms), form template user preferences, and form responses.</li>
+            </ul>
+
+            <p>Each API is an action: GET, POST, PUT, or DELETE. Example: The ContentTypes group under the Structured Content microservice allows you to do the following: </p>
+            <ul>
+                <li>GET to retrieve the list of all items or specific item</li>
+                <li>POST to create a new item</li>
+                <li>PUT to update an existing item</li>
+                <li>DELETE to remove an existing item</li>
+            </ul>
+
+            <p>An item might be a content type, a content item, a visualizer, a visualizer instance, a campaign, a form, a form response, or a set of user preferences for a form.</p>
+        </section>
+
+
+        <section id="params-results">
+            <title>Parameters and Results</title>
+
+            <p>The microservices expect the parameters of a microservice API in one of these locations:</p>
+            <ul>
+                <li>URL path. If the API retrieves (GET), modifies (PUT), or deletes (DELETE) a specific item, the ID of the item is typically added to the URL path.</li>
+                <li>URL query. If the API retrieves (GET) a list of items, according to a set of criteria, the criteria are specified as optional key-value pairs in the query portion of a URL.</li>
+                <li>Message body. If the API creates (POST) an item, the properties of the new item are specified in a JSON-serialized data transfer object (DTO) in the body of the request. The fields in a DTO vary depending on the item type.</li>
+            </ul>
+
+            <p>If the API returns an item or a list of items, the result is a JSON-serialized DTO in the body of the response.</p>
+        </section>
+
+
+        <section id="item-ID">
+            <title>Getting the Item ID</title>
+
+            <p>Each item has a unique ID that identifies it, regardless of its type. Many of the APIs require the ID of the specific item to act on.</p>
+
+            <p>You can determine the ID of a specific item by performing a filtered GET. Example: The GET /api/FormTemplates API returns a JSON-formatted list that match the criteria specified in the URL query. Each element of the resulting list includes a pair with the key <codeph>id</codeph>.</p>
+        </section>
+
+
+        <section id="example">
+            <title>Example</title>
+
+            <p>This example updates a content item using the <apiname>PUT /api/ContentItems/{id}</apiname> API, which takes three parameters:</p>
+            <ul>
+                <li><codeph>id</codeph>. (string) Required in the path.</li>
+                <li><codeph>contentItem</codeph>. (JSON-formatted string) Required as the request body.</li>
+                <li><codeph>publish</codeph>. (boolean) Optional parameter in the URL query.</li>
+            </ul>
+
+            <ol>
+                <li>If you don't know the content item's ID, use <apiname>GET /api/ContentItems</apiname> with parameters that match the criteria you want. Then find the content item you want from the returned list. The returned list of content item objects will be in this format:
+                    <codeblock>
+    {
+        "documents": [
+            {
+                "id": "11111111-...",
+                "contentTypeId": "myContentType",
+                "contentTypeName": "myContentType",
+                "name": "myContentItemName",
+                "description": "string",
+                "language": "string",
+                "alreadyPublished": true,
+                "details": {},
+                "currentVersion": 0,
+                "usages": 0,
+                "createdAt": "string",
+                "createdBy": {
+                    "id": "string",
+                    "name": "string",
+                    "thumbnail": "string"
+                },
+                "updatedAt": "string",
+                "updatedBy": "StructuredContent.Models.UserInfo",
+                "stateId": 0,
+                "tags": [
+                    "tag1", "tag2", "tag3"
+                ],
+                "clientReferenceId": "string"
+            },
+            {
+                "id": "22222222-...",
+                ...
+            },
+            {
+                "id": "33333333-...",
+                ...
+            }
+            ...
+        ],
+        "totalResultCount": "string"
+    }
+                    </codeblock>
+                </li>
+                <li>If you know the content item's ID, use <apiname>GET /api/ContentItems/{id}</apiname>. The returned content item object will be in this format:
+                    <codeblock>
+    {
+        "id": "11111111-...",
+        "contentTypeId": "string",
+        "contentTypeName": "string",
+        "name": "string",
+        "description": "string",
+        "language": "string",
+        "alreadyPublished": true,
+        "details": {},
+        "currentVersion": 0,
+        "usages": 0,
+        "createdAt": "string",
+        "createdBy": {
+            "id": "string",
+            "name": "string",
+            "thumbnail": "string"
+        },
+        "updatedAt": "string",
+        "updatedBy": "StructuredContent.Models.UserInfo",
+        "stateId": 0,
+        "tags": [
+            "tag1", "tag2", "tag3"
+        ],
+        "clientReferenceId": "string"
+    }
+                    </codeblock>
+                </li>
+                <li>Copy the values from the returned content item object and paste them to the body of your own PUT request. Then replace the values you want to change. The body parameter must be in this format:
+                    <codeblock>
+    {
+        "id": "11111111-...",
+        "contentTypeId": "string",
+        "contentTypeName": "string",
+        "name": "My New Name",
+        "description": "My new description goes here.",
+        "language": "string",
+        "alreadyPublished": true,
+        "details": {},
+        "currentVersion": 0,
+        "usages": 0,
+        "createdAt": "string",
+        "createdBy": {
+            "id": "string",
+            "name": "string",
+            "thumbnail": "string"
+        },
+        "updatedAt": "string",
+        "updatedBy": "StructuredContent.Models.UserInfo",
+        "stateId": 0,
+        "tags": [
+            "tag1", "tag2", "tag3", "my new tag"
+        ],
+        "clientReferenceId": "string"
+    }
+                    </codeblock>
+                    <note type="note">You cannot change the ID.</note>
+                </li>
+                <li>Construct the URL of your PUT request to contain the path parameter (<varname>id</varname>) and the optional query parameter (<varname>publish</varname>). Example: If <varname>id</varname> is "11111111-1111-1111" and you want the changes to be published immediately, then the URL would be as follows:
+                    <codeblock>
+    https://example.com/api/ContentItems/11111111-1111-1111?publish=true
+                    </codeblock>
+                </li>
+            </ol>
+
+            <note type="remember">Include the authentication token in the header.</note>
+
+        </section>
+
+    </body>
+
+
+    <!--
+    <related-links>
+        <link format="html" scope="external" href="https://en.wikipedia.org/wiki/Microservices"><linktext>Microservices (Wikipedia)</linktext></link>
+        <link format="html" scope="external" href="http://www.oreilly.com/programming/free/microservices-vs-service-oriented-architecture.csp"><linktext>Microservices vs. Service-Oriented Architecture (O'Reilly)</linktext></link>
+    </related-links>
+    -->
+
+</topic>

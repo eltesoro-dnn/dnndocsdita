@@ -388,10 +388,6 @@ main:after {
  | DITA-specific labels.
  */
 
-.term {
-  font-style: normal;
-  font-weight: bold;
-}
 .unresolved {
   background-color: skyblue;
 }
@@ -742,8 +738,14 @@ span.filepath {
 .var {
   font-style: italic;
 }
+.apiname {
+  font-family: monospace;
+  font-style: normal;
+  font-weight: bold;
+}
 .term,
 .kwd {
+  font-style: normal;
   font-weight: bold;
 }
 .parmname {

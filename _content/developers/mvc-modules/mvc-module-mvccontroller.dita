@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-mvc-module-mvccontroller">
+
+    <title>MVC Controller</title>
+
+    <prolog>
+        <author>wrSW,edET,1609</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+
+        <section id="overview">
+            <title>Overview</title>
+
+			<p>In a Web Forms module, the module controls are <codeph>.ascx</codeph> user controls, which are rendered within the page. However, in an MVC module, the module controls are MVC controller action methods that return an MVC view, which is rendered within the page.</p>
+		</section>
+
+
+        <section id="Action">
+            <title>Action Methods</title>
+
+			<p>To render an MVC module control, DNN uses the module's control source definition. When generating your project from the template, the DNN manifest defines a default view with the following control source:</p>
+			<codeblock>
+    &lt;moduleControl&gt;
+        &lt;controlKey /&gt;
+        &lt;controlSrc&gt;Dnn.Modules.CompanyName.MyMvcModule.Controllers/Item/Index.mvc&lt;/controlSrc&gt;
+        ...
+    &lt;/moduleControl&gt;
+			</codeblock>
+
+            <note type="note">The <codeph>controlSrc</codeph> value is not a file path. In an MVC module, the control sources are specified using the format: <codeph>{Controller Namespace}/{Controller Name}Controller/{Action Method Name}.mvc</codeph>.</note>
+
+			<p>The above control source looks for the method <apiname>Index()</apiname> in the class <apiname>Dnn.Modules.CompanyName.MyMvcModule.Controllers.ItemController</apiname>. The <apiname>ItemController</apiname> class is expected to implement the abstract base class <apiname>DotNetNuke.Web.Mvc.Framework.Controllers.DnnController</apiname>.</p>
+
+            <sectiondiv outputclass="sectionxmp" id="xmp-ActionMethod" >
+                <p>Example: In the following code, the action method asks the data layer (<apiname>ItemManager</apiname>) for the list of all item objects for that module instance.</p>
+                <codeblock>
+    public class ItemController : DnnController
+    {
+        public ActionResult Index()
+        {
+            var items = ItemManager.Instance.GetItems(ModuleContext.ModuleId);
+            return View(items);
+        }
+    }
+                </codeblock>
+                <p>The resulting list is the Model data, which is then passed to the View component and returned. </p>
+            </sectiondiv>
+        </section>
+
+
+        <section id="ModuleAction">
+            <title>Module Action Menu</title>
+
+            <!-- Using an existing image for consistency. -->
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-edit-icons.png"><alt>Module action menu</alt></image>
+
+			<p>The module action menu can be customized for your MVC module by adding <apiname>DotNetNuke.Web.Mvc.Framework.ActionFilters.ModuleActionAttribute</apiname> to the default view's action method.</p>
+
+            <!-- Is this what you meant? -->
+            <p>The following code excerpt is found above the <apiname>ItemController.Index()</apiname> method in the example provided by the MVC template project.</p>
+			<codeblock>
+    [ModuleAction(ControlKey = "Edit", TitleKey = "AddItem")]
+    public ActionResult Index()
+    {
+        ...
+    }
+			</codeblock>
+
+			<p>The ModuleActionAttribute properties include the following:</p>
+			<ul>
+				<li><term>ControlKey</term>. The name of the module view control's key, used to specify the controller action that is invoked when the user clicks the menu item.</li>
+				<li><term>Icon</term>. The image to be used as the icon next to the menu item text. The default is the pencil icon.</li>
+				<li><term>SecurityAccessLevel</term>. The access level needed in order to access the menu item. One of the enumerated values in <apiname>DotNetNuke.Security.SecurityAccessLevel</apiname>.</li>
+				<li><term>Title</term>. The menu item text.</li>
+				<li><term>TitleKey</term>. The menu item key. If getting the text from a resource file, use this instead of the <term>Title</term> attribute. In the above example, it expects a resource named <codeph>AddItem.Text</codeph> in the <filepath>Item.resx</filepath> file.</li>
+			</ul>
+        </section>
+
+
+        <section id="ReturnActionResult">
+            <title>Returning the ActionResult</title>
+
+			<p>The main purpose of the MVC controller action methods is to populate a view with the model data. The return type of the action methods is the abstract <apiname>System.Web.Mvc.ActionResult</apiname>, which has many possible subtypes, including the two return types that are most commonly used for a DNN MVC module: <apiname>ViewResult</apiname> and <apiname>RedirectToRouteResult</apiname>.</p>
+
+			<p><apiname>ViewResult</apiname> returns a rendered view that is named after the action method. <apiname>RedirectToRouteResult</apiname> redirects to another controller action. Likewise, the <apiname>DnnController.RedirectToDefaultRoute()</apiname> is typically called to redirect to the default module view.</p>
+
+            <note type="note">See <xref format="dita" href="../mvc-modules/unsupported-mvc-features.dita">Unsupported MVC Features</xref> for the list of unsupported <apiname>ActionResult</apiname> types.</note>
+
+        </section>
+
+
+        <section id="PassingDataToView">
+            <title>Passing Data to the View</title>
+
+			<p>The two constructs typically used to pass data into the view are the <term>Model</term> and the <term>ViewBag</term>.</p>
+
+			<ul>
+				<li><term>Model</term>
+					<p>The <term>Model</term> is a "plain old CLR object" (POCO).  When using your module's data layer, it is common to use a DAL2 entity class as your model.  From the template-generated code, the <apiname>ItemManager</apiname> is a DAL2 data repository class that populates an <apiname>IEnumerable</apiname> list of <apiname>Item</apiname> objects. The list is passed to the View, where the Razor code generates the HTML code.</p>
+
+					<codeblock>
+    public ActionResult Index()
+    {
+        var items = ItemManager.Instance.GetItems(ModuleContext.ModuleId);
+        return View(items);
+    }
+					</codeblock>
+				</li>
+
+				<li><term>ViewBag</term>
+					<p>MVC views are built to render a specific model. Occasionally, passing extra data to the view outside of the model's scope can be helpful; e.g., to pass the module's relative path to avoid hardcoding a stylesheet in the view. Because the <term>ViewBag</term> allows dynamic properties, you can define a new dynamic property (e.g., <apiname>ModulePath</apiname>) for the action method and use that property in your view.</p>
+
+                    <p>Example: In <filepath>ItemController.cs</filepath>:</p>
+					<codeblock>
+    public ActionResult Index()
+    {
+        var items = ItemManager.Instance.GetItems(ModuleContext.ModuleId);
+        ViewBag.ModulePath = $"~/DesktopModules/MVC/{ModuleContext.Configuration.DesktopModule.FolderName}";
+        return View(items);
+    }
+					</codeblock>
+
+					<p>In <filepath>Index.cshtml</filepath>:</p>
+					<codeblock>
+    @{
+        ClientResourceManager.RegisterStyleSheet(Dnn.DnnPage, ViewBag.ModulePath + "/Resources/bootstrap/css/bootstrap.min.css");
+    }
+					</codeblock>
+				</li>
+			</ul>
+		</section>
+
+	</body>
+
+</topic>

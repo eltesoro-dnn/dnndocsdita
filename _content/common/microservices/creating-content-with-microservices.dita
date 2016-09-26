@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-about-microservices">
+
+    <title>Creating Content with Microservices</title>
+    <titlealts>
+        <navtitle>Creating Content with Microservices</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1607</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <!-- <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo> -->
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-E"></section>
+
+        <section id="about">
+            <title>About Microservices</title>
+            <p>Learn about <xref format="dita" href="about-microservices.dita">microservices</xref>.</p>
+        </section>
+
+        <section id="using-microservices">
+            <title>Using Microservices</title>
+
+            <p>Using the built-in microservices in an Evoq website is as simple as adding a module to a page. Evoq provides default content types and forms that you can use as is or customize.</p>
+
+            <p>
+            Example: To add a survey,
+                <ol>
+                    <li>Create the survey form and configure the fields.</li>
+                    <li>Create a new page or edit an existing one.</li>
+                    <li>In any content pane, click/tap the module icon and choose <uicontrol>Forms</uicontrol>.</li>
+                    <li>Choose the form you created.</li>
+                    <li>Publish the page.</li>
+                    <li>Review the responses to your form.</li>
+                </ol>
+            </p>
+
+            <!-- <p>The DNN microservices can also be used by non-browser apps through the microservice's APIs.</p> -->
+        </section>
+
+    </body>
+
+
+    <!--
+    <related-links>
+        <link format="html" scope="external" href="https://en.wikipedia.org/wiki/Microservices"><linktext>Microservices (Wikipedia)</linktext></link>
+        <link format="html" scope="external" href="http://www.oreilly.com/programming/free/microservices-vs-service-oriented-architecture.csp"><linktext>Microservices vs. Service-Oriented Architecture (O'Reilly)</linktext></link>
+    </related-links>
+    -->
+
+</topic>

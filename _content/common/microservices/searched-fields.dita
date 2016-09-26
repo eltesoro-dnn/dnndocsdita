@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-searched-fields">
+
+    <title>Microservices: Searched Fields</title>
+    <titlealts>
+        <navtitle>Searched Fields</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1609</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="5"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <refbody>
+
+		<section conkeyref="k-bptext/section-prodavail-CE"></section>
+
+
+        <section id="overview">
+            <title>Overview</title>
+
+            <p>Some APIs accept <codeph>searchtext</codeph> as one of the criteria used to determine which items to return. Depending on the API object's type, the value of <codeph>searchtext</codeph> is compared with a different set of fields in the data.</p>
+        </section>
+
+
+        <section id="structuredcontent">
+            <title>In Structured Content</title>
+
+            <simpletable relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Item Type</stentry>
+                    <stentry>Searched Fields</stentry>
+                </sthead>
+                <strow>
+                    <stentry>all Structured Content items</stentry>
+                    <stentry>
+                        <ul>
+                            <li>TenantId</li>
+                            <li>Name</li>
+                            <li>Label</li>
+                        </ul>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>content items</stentry>
+                    <stentry>
+                        <ul>
+                            <li>TenantId</li>
+                            <li>Name</li>
+                            <li>ParentId</li>
+                            <li>CreatedBy</li>
+                            <li>UpdatedBy</li>
+                            <li>Description</li>
+                            <li>Details</li>
+                            <li>ContentTypeId</li>
+                            <li>ContentTypeName</li>
+                            <li>Language</li>
+                            <li>Tags</li>
+                            <li>PreviousName</li>      <!-- What are these previous* fields? Most recent update? Or a historical list? -->
+                            <li>PreviousValues</li>
+                            <li>PreviousUpdatedBy</li>
+                            <li>DraftName</li>      <!-- What are these draft* fields? -->
+                            <li>DraftUpdatedBy</li>
+                            <li>DraftDescription</li>
+                            <li>DraftDetails</li>
+                            <li>DraftTags</li>
+                        </ul>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>visualizers</stentry>
+                    <stentry>
+                        <ul>
+                            <li>TenantId</li>
+                            <li>Name</li>
+                            <li>Description</li>
+                            <li>ContentTypeId</li>
+                            <li>ContentTypeName</li>
+                            <li>CreatedBy</li>
+                            <li>UpdatedBy</li>
+                        </ul>
+                    </stentry>
+                </strow>
+            </simpletable>
+        </section>
+
+
+        <!--
+        <section id="formbuilder">
+            <title>In Form Builder</title>
+
+            <simpletable relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Item Type</stentry>
+                    <stentry>Searched Fields</stentry>
+                </sthead>
+                <strow>
+                    <stentry>all Structured Content items</stentry>
+                    <stentry>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+                <strow>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+                <strow>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+                <strow>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+                <strow>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+                <strow>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+                <strow>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+                <strow>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+                <strow>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+                <strow>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+            </simpletable>
+        </section>
+        -->
+
+    </refbody>
+
+</reference>

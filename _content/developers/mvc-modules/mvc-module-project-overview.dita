@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-mvc-module-project-overview">
+
+    <title>MVC Module Project Overview</title>
+
+    <prolog>
+        <author>wrSW,edET,1609</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+
+        <section id="overview">
+            <title>Overview of an MVC Module Project</title>
+
+			<p>After creating your MVC module project from a template, the following project structure is scaffolded in your Visual Studio project:</p>
+
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-mvc-project-vssolution.png"><alt>Visual Studio MVC project</alt></image>
+            <ul>
+                <li><filepath>Models</filepath>, <filepath>Views</filepath>, <filepath>Controllers</filepath> folders and sample code</li>
+                <li><filepath>Components</filepath> folder with skeleton module business controller and DAL class</li>
+                <li>Sample module packaging files: DNN manifest file, release notes and license text, and SQL scripts for installation and uninstallation</li>
+                <li>MSBuild module packaging process to build the .zip executable file</li>
+            </ul>
+		</section>
+
+
+        <section id="InitialProjectCode">
+            <title>Initial Project Code from Template</title>
+
+			<p>After creating the module and building the package, go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Extensions</uicontrol></menucascade> to install the package. After installation, you can add the module to a page for testing. The initial code created by the template should look like this:</p>
+
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-mvc-module-template-view.png"><alt>Initial MVC DNN Module</alt></image>
+
+			<p>Whether you use the DNN 8 MVC template or a similar MVC template, the generated code produces a fully functioning application that allows you to add items to a list. The default view is the item list. Each model data or item consists of a title, content description, and user. The template generates the MVC controllers, views, and model entities, as well as a data controller class. If your module will perform CRUD (Create, Read, Update, Delete) data operations, you can customize this code. Otherwise, you can remove what you don't need.</p>
+
+        </section>
+
+    </body>
+
+</topic>

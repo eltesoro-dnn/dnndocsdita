@@ -119,7 +119,7 @@ xcopy %_gitdir%\_content\index.html          %_outdir%\.                /i/s/v/y
 xcopy %_gitdir%\_content\searchresults.html  %_outdir%\.                /i/s/v/y
 xcopy %_gitdir%\_content\common\samples      %_outdir%\common\samples   /i/s/v/y
 xcopy %_gitdir%\_content\ssi                 %_outdir%\ssi              /i/s/v/y
-for %%v in ( jpg png gif svg ) do  xcopy %_gitdir%\_content\common\img\*.%%v    %_outdir%\common\img       /i/s/v/y
+for %%v in ( jpg png gif svg ) do  xcopy %_gitdir%\_content\common\img\*.%%v    %_outdir%\common\img       /i  /v/y
 for %%v in ( jpg png gif svg ) do  xcopy %_gitdir%\_themes\dnn\*.%%v            %_outdir%\_theme           /i/s/v/y
 :. for %%v in ( mp4 )             do  xcopy %_gitdir%\_content\common\vid\*.%%v    %_outdir%\common\vid       /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\26D3F6*          %_outdir%\_theme           /i/s/v/y

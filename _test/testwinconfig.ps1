@@ -29,16 +29,23 @@ if ( $args.Count -gt 3 )  {
     $legacycsv = $args[1]
 	$bldoutdir = $args[2]
     $exceptnfile = $args[3]
+    $exceptnarr = Get-Content $exceptnfile
 
     # Test the old paths in $legacycsv.
     foreach ( $ln in ( Import-csv $legacycsv ) )
     {
         $url = $UrlPrefix + "/" + $ln.old
-        testUrl( $url )
+        if ( -not ( $exceptnarr -contains $url ) )
+        {
+            testUrl( $url )
+        }
+        else
+        {
+            Write-Host( "OK Exempted from testing: " + $url )
+        }
     }
 
     # Test the persona subdirectories in $bldoutdir
-    $exceptnarr = Get-Content $exceptnfile
     $personalist = @( "administrators", "content-managers", "developers", "designers", "community-managers" )
     foreach ( $persona in $personalist )
     {

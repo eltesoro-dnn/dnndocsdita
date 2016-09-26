@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "https://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-api-results-pagination">
+
+    <title>Microservices: Results Pagination</title>
+    <titlealts>
+        <navtitle>Results Pagination</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1609</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+            <!-- <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo> -->
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <refbody>
+
+		<section conkeyref="k-bptext/section-prodavail-CE"></section>
+
+
+        <section id="overview">
+            <title>Overview</title>
+
+            <p>In APIs that return a list of items, you can filter the results to return only the items that meet the criteria you specify. You can also define the portion (page) of the list that is sent back.</p>
+
+            <p>Pagination depends on two parameters:</p>
+            <ul>
+                <li><codeph>startindex</codeph>. The index in the results list at which to start the portion to return.</li>
+                <li><codeph>maxitems</codeph>. The maximum number of items to return.</li>
+            </ul>
+        </section>
+
+
+        <section id="example">
+            <title>Example</title>
+
+            <p>Suppose you want a list of content items whose name that has the word "new" in its text fields. Then your query would be:</p>
+            <p><filepath>https://example.com/api/ContentItems?searchtext=new</filepath></p>
+
+            <simpletable relcolwidth="2* 1* 1* 1* 1* 1* 1* 1* 1* 1* 1*">
+                <strow>
+                    <stentry>index</stentry>
+                    <stentry>0</stentry>
+                    <stentry>1</stentry>
+                    <stentry>2</stentry>
+                    <stentry>3</stentry>
+                    <stentry>4</stentry>
+                    <stentry>5</stentry>
+                    <stentry>6</stentry>
+                    <stentry>7</stentry>
+                    <stentry>8</stentry>
+                    <stentry>9</stentry>
+                </strow>
+                <strow>
+                    <stentry>item</stentry>
+                    <stentry>newA</stentry>
+                    <stentry>newB</stentry>
+                    <stentry>newC</stentry>
+                    <stentry>newD</stentry>
+                    <stentry>newE</stentry>
+                    <stentry>newF</stentry>
+                    <stentry>newG</stentry>
+                    <stentry>newH</stentry>
+                    <stentry>newI</stentry>
+                    <stentry>newJ</stentry>
+                </strow>
+                <strow>
+                    <stentry>returned</stentry>
+                    <stentry>yes</stentry>
+                    <stentry>yes</stentry>
+                    <stentry>yes</stentry>
+                    <stentry>yes</stentry>
+                    <stentry>yes</stentry>
+                    <stentry>yes</stentry>
+                    <stentry>yes</stentry>
+                    <stentry>yes</stentry>
+                    <stentry>yes</stentry>
+                    <stentry>yes</stentry>
+                </strow>
+            </simpletable>
+
+            <p>If you want each page to have a maximum of three content items, then set <codeph>maxitems</codeph> to <userinput>3</userinput>.</p>
+            <p><filepath>https://example.com/api/ContentItems?searchtext=new&amp;maxitems=3</filepath></p>
+
+            <p>To display the third page of the results, then set <codeph>startindex</codeph> to the first index of that page. That is, <codeph>(pagenumber - 1) * maxitems</codeph>. The list has zero-based indexing; therefore, if <codeph>maxitems</codeph> is <userinput>3</userinput>, then the <codeph>startindex</codeph> for the third page is <userinput>6</userinput>.</p>
+            <p><filepath>https://example.com/api/ContentItems?searchtext=new&amp;maxitems=3&amp;startindex=6</filepath></p>
+
+            <simpletable relcolwidth="2* 1* 1* 1* 1* 1* 1* 1* 1* 1* 1*">
+                <strow>
+                    <stentry>index</stentry>
+                    <stentry>0</stentry>
+                    <stentry>1</stentry>
+                    <stentry>2</stentry>
+                    <stentry>3</stentry>
+                    <stentry>4</stentry>
+                    <stentry>5</stentry>
+                    <stentry>6</stentry>
+                    <stentry>7</stentry>
+                    <stentry>8</stentry>
+                    <stentry>9</stentry>
+                </strow>
+                <strow>
+                    <stentry>item</stentry>
+                    <stentry>newA</stentry>
+                    <stentry>newB</stentry>
+                    <stentry>newC</stentry>
+                    <stentry>newD</stentry>
+                    <stentry>newE</stentry>
+                    <stentry>newF</stentry>
+                    <stentry>newG</stentry>
+                    <stentry>newH</stentry>
+                    <stentry>newI</stentry>
+                    <stentry>newJ</stentry>
+                </strow>
+                <strow>
+                    <stentry>returned</stentry>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                    <stentry>yes</stentry>
+                    <stentry>yes</stentry>
+                    <stentry>yes</stentry>
+                    <stentry></stentry>
+                </strow>
+            </simpletable>
+
+            <p>However, the pagination does not have to be equal pages. You can choose to ignore the first two items and display the next five items.</p>
+            <p><filepath>https://example.com/api/ContentItems?searchtext=new&amp;maxitems=5&amp;startindex=2</filepath></p>
+
+            <simpletable relcolwidth="2* 1* 1* 1* 1* 1* 1* 1* 1* 1* 1*">
+                <strow>
+                    <stentry>index</stentry>
+                    <stentry>0</stentry>
+                    <stentry>1</stentry>
+                    <stentry>2</stentry>
+                    <stentry>3</stentry>
+                    <stentry>4</stentry>
+                    <stentry>5</stentry>
+                    <stentry>6</stentry>
+                    <stentry>7</stentry>
+                    <stentry>8</stentry>
+                    <stentry>9</stentry>
+                </strow>
+                <strow>
+                    <stentry>item</stentry>
+                    <stentry>newA</stentry>
+                    <stentry>newB</stentry>
+                    <stentry>newC</stentry>
+                    <stentry>newD</stentry>
+                    <stentry>newE</stentry>
+                    <stentry>newF</stentry>
+                    <stentry>newG</stentry>
+                    <stentry>newH</stentry>
+                    <stentry>newI</stentry>
+                    <stentry>newJ</stentry>
+                </strow>
+                <strow>
+                    <stentry>returned</stentry>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                    <stentry>yes</stentry>
+                    <stentry>yes</stentry>
+                    <stentry>yes</stentry>
+                    <stentry>yes</stentry>
+                    <stentry>yes</stentry>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+            </simpletable>
+
+        </section>
+
+    </refbody>
+
+</reference>
