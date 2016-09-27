@@ -32,7 +32,6 @@
 
 		<section conkeyref="k-bptext/section-prodavail-CE"></section>
 
-
         <section id="overview">
             <title>Overview</title>
 
@@ -43,7 +42,7 @@
         <section id="structuredcontent">
             <title>In Structured Content</title>
 
-            <simpletable relcolwidth="1* 3*">
+            <simpletable relcolwidth="3* 3* 3*">
                 <sthead>
                     <stentry>Item Type</stentry>
                     <stentry>Searched Fields</stentry>
@@ -102,7 +101,6 @@
         </section>
 
 
-        <!--
         <section id="formbuilder">
             <title>In Form Builder</title>
 
@@ -112,58 +110,27 @@
                     <stentry>Searched Fields</stentry>
                 </sthead>
                 <strow>
-                    <stentry>all Structured Content items</stentry>
+                    <stentry>form</stentry>
                     <stentry>
                         <ul>
-                            <li></li>
-                            <li></li>
-                            <li></li>
+                            <li>Title</li>
+                            <li>Tags</li>
+                            <li>StaticTexts</li>
+                            <li>CampaignLabel</li>
                         </ul>
                     </stentry>
                 </strow>
                 <strow>
-                    <stentry></stentry>
-                    <stentry></stentry>
-                </strow>
-                <strow>
-                    <stentry></stentry>
-                    <stentry></stentry>
-                </strow>
-                <strow>
-                    <stentry></stentry>
-                    <stentry></stentry>
-                </strow>
-                <strow>
-                    <stentry></stentry>
-                    <stentry></stentry>
-                </strow>
-                <strow>
-                    <stentry></stentry>
-                    <stentry></stentry>
-                </strow>
-                <strow>
-                    <stentry></stentry>
-                    <stentry></stentry>
-                </strow>
-                <strow>
-                    <stentry></stentry>
-                    <stentry></stentry>
-                </strow>
-                <strow>
-                    <stentry></stentry>
-                    <stentry></stentry>
-                </strow>
-                <strow>
-                    <stentry></stentry>
-                    <stentry></stentry>
-                </strow>
-                <strow>
-                    <stentry></stentry>
-                    <stentry></stentry>
+                    <stentry>response</stentry>
+                    <stentry>
+                        <ul>
+                            <li>Location</li>
+                            <li>UrlResponses</li>
+                        </ul>
+                    </stentry>
                 </strow>
             </simpletable>
         </section>
-        -->
 
     </refbody>
 

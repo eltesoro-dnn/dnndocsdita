@@ -52,6 +52,7 @@
             <topicref format="dita" type="topic" navtitle="MVC Modules" locktitle="yes" toc="yes" href="developers/mvc-modules/mvc-module-development.dita" collection-type="family" >
                 <topicref format="dita" type="topic" toc="yes" href="developers/mvc-modules/mvc-module-project-overview.dita" copy-to="developers/mvc-modules/index.dita" />
                 <topicref format="dita" type="topic" toc="yes" href="developers/mvc-modules/mvc-module-mvccontroller.dita" />
+                <topicref format="dita" type="topic" toc="yes" href="developers/mvc-modules/mvc-module-mvcviews.dita" />
                 <topicref format="dita" type="topic" toc="yes" href="developers/mvc-modules/unsupported-mvc-features.dita" />
             </topicref>
 

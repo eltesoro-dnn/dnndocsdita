@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-mvc-module-mvcviews">
+
+    <title>MVC Views</title>
+
+    <prolog>
+        <author>wrSW,edET,1609</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section id="_ViewStart">
+            <title>The _ViewStart.cshtml</title>
+			<p>
+				In ASP.NET MVC3 and later versions, you can define a Razor view named <filepath>_ViewStart.cshtml</filepath> (or <filepath>_ViewStart.vbhtml</filepath> for VB) in the root of the <filepath>Views</filepath> folder. This optional file defines the common view code that executes when each view starts to render. Example: Code within <filepath>_ViewStart.cshtml</filepath> can programmatically set each View's <varname>Layout</varname> property to <filepath>Views/Shared/_Layout.cshtml</filepath> by default.
+			</p>
+
+			<p>Example: In <filepath>Views/_ViewStart.cshtml</filepath>:</p>
+			<codeblock>
+	@{
+		Layout = "~/DesktopModules/MVC/CompanyName_MyMvcModule/Views/Shared/_Layout.cshtml";
+	}
+			</codeblock>
+
+			<p>Example: In <filepath>Views/Shared/_Layout.cshtml</filepath>:</p>
+			<codeblock>
+	&lt;div id="mvcContainer-@Dnn.ActiveModule.ModuleID"&gt;
+		@RenderBody()
+	&lt;/div&gt;
+			</codeblock>
+			<p>
+				The above files, which are generated from the MVC project template, ensure that all views returned by a controller action will always have a wrapper &lt;div&gt; with an id that includes the current module's ID.
+				If you choose to exclude the <filepath>_ViewStart.cshtml</filepath> in your project, your individual action views will simply render without a common wrapping.
+			</p>
+		</section>
+
+		<section id="Conventions">
+            <title>View Naming Conventions</title>
+			<p>
+				According to  MVC pattern conventions, views reside in folders within the <filepath>Views</filepath> folder.  Each controller must have a View folder named after it.
+				For example, the template-generated project created two MVC controllers: <apiname>ItemController</apiname> and <apiname>SettingsController</apiname> with their respective controllers: <filepath>Views/Item</filepath> and <filepath>Views/Settings</filepath>.
+			</p>
+
+			<note type="note">View folders typically the name of their corresponding controllers, but without the word "Controller".</note>
+
+			<p>
+				Likewise, your Razor view files must be named according to the action method names in their associated controller. Example: We have two C# Razor views in the <filepath>Views/Item</filepath>
+				folder called <filepath>Index.cshtml</filepath> and <filepath>Edit.cshtml</filepath>, which correspond to the <apiname>ItemController.Index()</apiname> and <apiname>ItemController.Edit()</apiname> action methods.
+			</p>
+		</section>
+
+		<section id="BindingData">
+            <title>Binding Data in Your View</title>
+			<p>Aside from HTML and javascript, the following server objects can be used to populate your view:</p>
+
+			<ul>
+				<li><term>Model</term>
+					The model object that is returned in the action is bound to the view in the generic declaration inside the <apiname>@inherits</apiname> statement at the top of the view.
+					<codeblock>
+    @inherits DotNetNuke.Web.Mvc.Framework.DnnWebViewPage&lt;Dnn.Modules.CompanyName.MyMvcModule.Models.Item&lt;
+					</codeblock>
+					The above line will make the <apiname>Item</apiname> class available for access in the Razor view via the <apiname>Model</apiname> property.  Then you can inject the model attributes into the html:
+					<codeblock>
+    &lt;span&gt;@Model.ItemName&lt;/span&gt;
+					</codeblock>
+				</li>
+				<li><term>ViewBag</term>
+					ViewBag attributes are available from the Razor view.
+					<codeblock>
+    &lt;span class="@ViewBag.TitleClass"&gt;@Model.Name&lt;/span&gt;
+					</codeblock>
+				</li>
+				<li><term>HTML Helper</term>
+					Helpers are classes that generate HTML elements using the model class. ASP.NET MVC includes an <apiname>@HTML</apiname> helper class, which constructs form elements, such as dropdown lists, text boxes, and labels.
+					<codeblock>
+    @Html.TextBoxFor(m =&gt; m.Description)
+					</codeblock>
+				</li>
+				<li><term>DNN Helper</term>
+					DNN's own helper class (<apiname>@Dnn</apiname>) provides DNN core objects that you can use in your Razor view.  PortalSettings, ModuleContext, User and other objects provide access to the underlying CMS structure of your page.
+					<codeblock>
+    &lt;div id="Items-@Dnn.ModuleContext.ModuleId"&gt;
+					</codeblock>
+				</li>
+			</ul>
+		</section>
+
+		<section id="ViewNavigation">
+            <title>View Navigation</title>
+			<p>
+				To navigate to another view or another controller action, you can use the action method of the <apiname>@Url</apiname> helper to create a URL action method that you can place in an anchor tag or button.
+				Example, in the template-generated Item <apiname>Index</apiname> view, a hyperlink in each item can lead the user to the single item's <uicontrol>Edit</uicontrol> view. <!-- Need to clarify sentence. -->
+			</p>
+			<codeblock>
+	&lt;a href="@Url.Action("Edit", "Item", new {ctl = "Edit", itemId = item.ItemId})"&gt;@Dnn.LocalizeString("EditItem")&lt;/a&gt;
+			</codeblock>
+
+			<!-- //TODO: -->
+		</section>
+
+		<section id="ClientScripting">
+            <title>Client Scripting</title>
+			<p>
+				The mechanisms used in registering scripts, stylesheets, or Javascript libraries in a DNN module have been modified to work with MVC modules.
+			</p>
+
+			Registering a stylesheet or script using the Client Resource Manager, or register a Javascript Library Extension:
+			<codeblock>
+	@using DotNetNuke.Web.Client.ClientResourceManagement
+	@using DotNetNuke.Framework.JavaScriptLibraries
+	@{
+		// Register a stylesheet
+		ClientResourceManager.RegisterStyleSheet(Dnn.DnnPage, "~/DesktopModules/MVC/CompanyName_MyMvcModule/Resources/css/module.css");
+
+		// Register a custom javascript
+		ClientResourceManager.RegisterScript(Dnn.DnnPage, "~/DesktopModules/MVC/CompanyName_MyMvcModule/Resources/js/module.js", 101);
+
+		// Register an existing Javascript Library Extension
+		JavaScript.RequestRegistration("Knockout");
+	}
+			</codeblock>
+		</section>
+
+		<section id="Localization">
+            <title>Localization</title>
+			<p>
+				One of the base methods on the <apiname>@Dnn</apiname> MVC helper is <apiname>LocalizeString()</apiname>. The resource files for Views are organized at the controller level in the <filepath>App_LocalResources</filepath> folder in the root of the module project.
+				By convention, the <apiname>ItemController</apiname> should have a resource file named <filepath>App_LocalResources/Item.resx</filepath>.
+				If there was a resource key called "lblName.Text", you can pull that content into your view using the following code:
+			</p>
+			<codeblock>
+	&lt;label for="itemName"&gt;@Dnn.LocalizeString("lblName")&lt;/label&gt;
+			</codeblock>
+		</section>
+
+	</body>
+
+</topic>
