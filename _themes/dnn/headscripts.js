@@ -36,7 +36,8 @@ function breadcrumbs(){
 
 
 
-// Google Custom Search Engine
+// Google Custom Search Engine (free)
+/*
 (function() {
     var cx = '013510249882471164181:tip1lg7hloc';   // for live site
     // var cx = '013510249882471164181:zacnxv7uabo';   // for the staging server
@@ -48,6 +49,19 @@ function breadcrumbs(){
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(gcse, s);
 })();
+*/
+
+// Google Custom Search Engine (paid)
+(function() {
+    var cx = '016176756762944518590:no_iejs4yi4';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+})();
+
 
 
 
