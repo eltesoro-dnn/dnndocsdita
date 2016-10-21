@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-mvc-module-unittests">
+
+    <title>Create a Unit Test for an MVC module</title>
+    <titlealts>
+        <navtitle>Create an MVC Unit Test</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>wrSW,edET,1610</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section id="Overview">
+			<title>Overview</title>
+
+			<p>Because MVC controllers are the central business logic of an MVC module, it is a best practice to create automated unit tests to ensure they behave as intended. This example illustrates how to create a unit test for your module's MVC controller.</p>
+
+            <note type="note">This unit test procedure is applicable only to modules created with the DNN MVC module template.</note>
+		</section>
+
+
+        <prereq>
+        	<ul>
+                <li>A module created with the DNN MVC module template in Visual Studio as a Project with Templates.</li>
+                <li><xref format="html" scope="external" href="https://www.nuget.org/packages/Moq/">Moq</xref>, a simulation framework for C#/.NET.</li>
+            </ul>
+        </prereq>
+
+
+		<steps>
+			<step>
+				<cmd>Add a new unit test project to the MVC module solution.</cmd>
+				<substeps>
+                    <substep>
+						<cmd>In Visual Studio's <uicontrol>Solution Explorer</uicontrol>, right-click on your MVC module solution and select <menucascade><uicontrol>Add</uicontrol> <uicontrol>New Project</uicontrol></menucascade>.</cmd>
+						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-mvc-unittest-addproject.png"><alt>Add New Project</alt></image></info>
+					</substep>
+                    <substep>
+						<cmd>In the <uicontrol>Add New Project</uicontrol> dialog, select <uicontrol>Unit Test Project</uicontrol>, enter a name, and select the local folder to store it in.</cmd>
+						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-mvc-unittest-create.png"><alt>Create Unit Test project</alt></image></info>
+					</substep>
+                </substeps>
+			</step>
+
+
+			<step>
+				<cmd>Add the necessary MVC and DNN assembly references.</cmd>
+                <info>
+                    <p>For each assembly to be added to the new unit test project, right-click on the project's <ph>References</ph> node and add an assembly reference.</p>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-mvc-unittest-projref.png"><alt>Project Reference</alt></image>
+
+                    <p>Add references to the following assemblies, as well as others that your module specifically needs:</p>
+                    <ul>
+                        <li>DotNetNuke</li>
+                        <li>DotNetNuke.Web.Mvc</li>
+                        <li>System.Web.Mvc</li>
+                    </ul>
+                </info>
+			</step>
+
+
+			<step>
+				<cmd>(Optional) Use <term>Moq</term> to simulate a data store.</cmd>
+                <info>
+                    <p><term>Moq</term> is a simulation framework for C#/.NET, typically used in unit testing to quickly create dependency objects that mimic the actual objects. This project uses Moq to simulate an <apiname>ItemManager</apiname> object in order to run tests without requiring a database.</p>
+
+                    <note type="note">This step is not required for the example test, but it is needed in most real-world test cases.</note>
+                </info>
+                <substeps>
+                    <substep><cmd>In Visual Studio's <uicontrol>Solution Explorer</uicontrol>, right-click on your unit test project.</cmd></substep>
+
+                    <substep><cmd>Choose <uicontrol>Manage Nuget Packages</uicontrol>.</cmd></substep>
+
+                    <substep>
+                        <cmd>Search for Moq and install.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-mvc-unittest-moqnuget.png"><alt>Moq Nuget Installation</alt></image></info>
+                    </substep>
+ 				</substeps>
+
+                <stepxmp>
+                    <p>This example creates a <apiname>MockStores</apiname> class for use with Moq to simulate a database and its behavior.</p>
+
+                    <p>Create a folder called <filepath>Mocks</filepath> and create a <filepath>MockStores.cs</filepath> file inside the folder. Enter the following code in <filepath>MockStores.cs</filepath>:</p>
+                    <codeblock>
+    using System.Collections.Generic;
+    using System.Linq;
+    using Dnn.Modules.CompanyName.MyMvcModule.Components;
+    using Dnn.Modules.CompanyName.MyMvcModule.Models;
+    using Moq;
+
+    namespace MyMvcModuleTests.Mocks
+    {
+        class MockStores
+        {
+            public static Mock&lt;IItemManager&gt; MockItemManager()
+            {
+                var allItems = new List&lt;Item&gt;();
+                var mock = new Mock&lt;IItemManager&gt;();
+
+                // void CreateItem(Item t);
+                mock.Setup(x =&gt; x.CreateItem(It.IsAny&lt;Item&gt;()))
+                    .Callback((Item i) =&gt;
+                    {
+                        allItems.Add(i);
+                    });
+
+                // void DeleteItem(int itemId, int moduleId);
+                mock.Setup(x =&gt; x.DeleteItem(It.IsAny&lt;int&gt;(), It.IsAny&lt;int&gt;()))
+                    .Callback((int id, int mid) =&gt;
+                    {
+                        var remItem = allItems.FirstOrDefault(i =&gt; i.ItemId == id &amp;&amp; i.ModuleId == mid);
+                        allItems.Remove(remItem);
+                    });
+
+                // void DeleteItem(Item t);
+                mock.Setup(x =&gt; x.DeleteItem(It.IsAny&lt;Item&gt;()))
+                    .Callback((Item di) =&gt;
+                    {
+                        var remItem = allItems.FirstOrDefault(i =&gt; i.ItemId == di.ItemId);
+                        allItems.Remove(remItem);
+                    });
+
+                // IEnumerable&lt;Item&gt; GetItems(int moduleId);
+                mock.Setup(x =&gt; x.GetItems(It.IsAny&lt;int&gt;()))
+                    .Returns((int mid) =&gt; allItems.Where(x =&gt; x.ModuleId == mid));
+
+                // Item GetItem(int itemId, int moduleId);
+                mock.Setup(x =&gt; x.GetItem(It.IsAny&lt;int&gt;(), It.IsAny&lt;int&gt;()))
+                    .Returns((int id, int mid) =&gt; allItems.FirstOrDefault(i =&gt; i.ItemId == id &amp;&amp; i.ModuleId == mid));
+
+                // void UpdateItem(Item t);
+                mock.Setup(x =&gt; x.UpdateItem(It.IsAny&lt;Item&gt;()))
+                    .Callback((Item i) =&gt;
+                    {
+                        allItems.Add(i);
+                    });
+
+                return mock;
+            }
+        }
+    }
+                    </codeblock>
+
+                    <p>The static <apiname>MockItemManager()</apiname> method in the <apiname>MockStores</apiname> class simulates all methods of an <apiname>IItemManager</apiname> implementation. Therefore, <apiname>MockStores</apiname> can be used in the controller as the <apiname>IItemManager</apiname> implementation.</p>
+
+                    <p>The <varname>allItems</varname> variable is a generic list of <apiname>Item</apiname> objects and serves as the data store.</p>
+                </stepxmp>
+			</step>
+
+
+			<step>
+				<cmd>Create the unit test.</cmd>
+
+                <info>
+                    <note type="tip">Unit test method names should be more descriptive than typical methods. Ideally, the test method name includes the name of the method being tested, the test being performed, and the expected result.
+                        Example: <codeph>Edit_CreateNewItem_ModuleIdAssignedinModel</codeph> could be the name of a test method that verifies if an <apiname>Edit()</apiname> method creates a new item (if the item does not yet exist) by checking if the <apiname>moduleID</apiname> is assigned in the view's model.
+                    </note>
+                </info>
+
+                <stepxmp>
+                    <p>This example creates a unit test for the <apiname>ItemController</apiname> class.</p>
+
+                    <p>You can rename the sample unit test file <filepath>UnitTest1.cs</filepath> (included as a default when the new unit test project was created) to <filepath>ItemControllerTests.cs</filepath> or create a new file. Then enter the following code in <filepath>ItemControllerTests.cs</filepath>:</p>
+                    <codeblock>
+	using System.Web.Mvc;
+	using Dnn.Modules.CompanyName.MyMvcModule.Controllers;
+	using Dnn.Modules.CompanyName.MyMvcModule.Models;
+	using Microsoft.VisualStudio.TestTools.UnitTesting;
+	using MyMvcModuleTests.Mocks;
+
+	namespace MyMvcModuleTests
+	{
+		[TestClass]
+		public class ItemControllerTests
+		{
+			[TestMethod]
+			public void Edit_CreateNewItem_ModuleIdAssignedinModel()
+			{
+				// 1 - Arrange
+				int moduleId = 2;
+				var mockData = MockStores.MockItemManager();
+				var modTwoItemCntrl = new ItemController(mockData.Object, moduleId); // Create a controller for the module with moduleId=2.
+
+				// 2 - Act
+				var actionResult = (ViewResult)modTwoItemCntrl.Edit(); // Call the edit view with no item Id (Add New).
+
+				// 3 - Assert
+				var itemModel = (Item)actionResult.Model;
+				Assert.IsTrue(itemModel != null &amp;&amp; itemModel.ModuleId == moduleId);
+			}
+		}
+	}
+                    </codeblock>
+
+                    <p>This sample unit test uses the Arrange Act Assert pattern of unit testing:
+                        <ul>
+                            <li>Arrange: A new instance of <apiname>ItemController</apiname> is created with a new <apiname>MockStores.MockItemManager</apiname> instance and the <varname>moduleId</varname>. (The next step retrofits the <apiname>ItemController</apiname> constructor to work with this unit test.</li>
+                            <li>Act: The <apiname>Edit()</apiname> method of the control is called without any parameters, and the result is saved.</li>
+                            <li>Assert: The test verifies that the <varname>moduleId</varname> is set in the resulting View module before the add/edit-item view is rendered.</li>
+                        </ul>
+                    </p>
+                    <p>If your controller has more complex business logic, you can automate the validation of the unit test.</p>
+                </stepxmp>
+			</step>
+
+
+			<step>
+				<cmd>Retrofit the <apiname>ItemController.Edit()</apiname> method to work with unit tests.</cmd>
+				<info>
+				    <p>In code that was generated using the MVC module templates, the <apiname>ItemController</apiname> has no dependency-injection capability for the data layer. In addition, some basic DNN environment objects, such as <apiname>PortalSettings</apiname> and <apiname>ModuleContext</apiname> are not available when running unit tests. Retrofitting the <apiname>ItemController.Edit()</apiname> method fixes these limitations.</p>
+				</info>
+				<stepxmp>
+                    <p>This example adds a constructor and class variable to the <apiname>ItemController</apiname> to inject the <apiname>IItemManager</apiname> implementation/simulator and <varname>moduleId</varname>.</p>
+                    <codeblock>
+    public ActionResult Edit(int itemId = -1)
+    {
+        // Ignore registration errors for unit tests.
+        try { DotNetNuke.Framework.JavaScriptLibraries.JavaScript.RequestRegistration(CommonJs.DnnPlugins); }
+        catch { }
+
+        if (PortalSettings != null)
+        {
+            var userlist = UserController.GetUsers(PortalSettings.PortalId);
+            var users = from user in userlist.Cast&lt;UserInfo&gt;().ToList()
+            select new SelectListItem { Text = user.DisplayName, Value = user.UserID.ToString() };
+
+            ViewBag.Users = users;
+        }
+
+        if (ModuleContext != null)
+        {
+            _moduleId = ModuleContext.ModuleId;
+        }
+
+        var item = (itemId == -1)
+            ? new Item { ModuleId = _moduleId }
+            : ItemManager.Instance.GetItem(itemId, _moduleId);
+
+        return View(item);
+    }
+                    </codeblock>
+
+                    <p>Some lines in the default <apiname>ItemController</apiname> are not applicable to this sample unit test, which uses an <apiname>ItemController</apiname> simulation.</p>
+
+                    <p>To ignore those lines when running the unit test, the retrofitted <apiname>ItemController.Edit()</apiname> method checks <varname>PortalSettings</varname> and <varname>ModuleContext</varname>, which get their values from the module's runtime engine. During the unit test, the runtime engine is bypassed by the <apiname>ItemController</apiname> simulation; therefore, these variables are set to <codeph>null</codeph> when the unit test is running.</p>
+                    <!-- Did I interpret this correctly? If so, this sounds like a hack. Is there a cleaner way to do this? -->
+
+                    <p>The <varname>_moduleId</varname> variable is passed to the constructor as the <varname>itemId</varname> parameter by the sample unit test and
+                    	the ItemManager.Instance will be our mock instance because our unit test overrode the implementation in the constructor.</p>
+                    <!-- _moduleId is not defined if ModuleContext is null. Please confirm. -->
+                    <!-- Also, the Act portion in the previous step calls Edit() without parameters, therefore, itemId == -1 and this line is run: new Item { ModuleId = _moduleId } ... Is this correct? -->
+				</stepxmp>
+			</step>
+
+
+			<step>
+				<cmd>Run the unit test.</cmd>
+				<info>
+                    <p>You can run a unit test in Visual Studio:
+                        <ul>
+                            <li><menucascade><uicontrol>Test</uicontrol> <uicontrol>Debug</uicontrol></menucascade></li>
+                            <li><menucascade><uicontrol>Test</uicontrol> <uicontrol>Run</uicontrol></menucascade></li>
+                        </ul>
+                    </p>
+
+                    <p>The <uicontrol>Test Explorer</uicontrol> window gives you a quick view of all tests, the test results, and the commands to run them.</p>
+
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-mvc-unittest-testexplorer.png"><alt>Test Explorer</alt></image>
+
+                    <p>For more advanced users, unit tests can be scheduled to run automatically as part of your build process.</p>
+				</info>
+			</step>
+
+		</steps>
+
+	</taskbody>
+
+
+    <related-links>
+        <link format="html" scope="external" href="https://msdn.microsoft.com/en-us/library/hh694602.aspx"><linktext>Microsoft MSDN: Unit Test Basics</linktext></link>
+        <link format="html" scope="external" href="https://www.visualstudio.com/en-gb/docs/test/continuous-testing/test-build"><linktext>Microsoft Visual Studio: Run tests with your builds for continuous integration</linktext></link>
+        <link format="html" scope="external" href="https://www.nuget.org/packages/Moq/"><linktext>Moq</linktext></link>
+    </related-links>
+
+</task>
