@@ -4,6 +4,7 @@
 
 #default, if no parameters
 $src = v:\output\html5
+$dropbox = "C:\Users\eleanor.tesoro\Dropbox (DNN Corp)\DocCenter - originals\_archives\DC1.3 archive"
 
 if ( $args.Count -gt 0 )  {
     $src = $args[0]
@@ -19,3 +20,5 @@ if ( test-path $tgtzip )  { remove-item $tgtzip }
 Write-Host( "Zipping to $tgtzip....")
 
 compress-archive -Path $srcdir -DestinationPath $tgtzip
+
+copy-item $tgtzip $dropbox

@@ -61,6 +61,12 @@ if ( $args.Count -gt 1 )  {
         $global:i++
 	}
 
+    # 85 folder
+    Write-Host( "                <rule name=""Rule-$global:i"" stopProcessing=""true"">" )
+    Write-Host( "                   <match url=""^(.*)85$"" />" )
+    Write-Host( "                   <action type=""Redirect"" url=""{R:1}85/index.html"" />" )
+    Write-Host( "                </rule>" )
+
     # Suffix for web.config
 	Write-Host( "                <rule name=""LowerCaseRule1"" stopProcessing=""true"">" )
 	Write-Host( "                    <match url=""[A-Z]"" ignoreCase=""false"" />" )

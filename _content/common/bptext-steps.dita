@@ -210,7 +210,7 @@
             <step id="step-pb-pbarsettingsworkflows">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Workflows</uicontrol></menucascade>.</cmd>
                 <info outputclass="init-hide">
-                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarSettings-Workflows-cmg.png"><alt>Persona Bar &gt; Settings &gt; Workflows</alt></image>
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbar-cmg-Settings-Workflows.png"><alt>Persona Bar &gt; Settings &gt; Workflows</alt></image>
                 </info>
             </step>
 
@@ -291,7 +291,7 @@
             <step id="step-pb-gotomanagecontent">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Manage</uicontrol> <uicontrol>Content</uicontrol></menucascade>.</cmd>
                 <info outputclass="init-hide">
-                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarManage-Content-cmg.png"><alt>Persona Bar &gt; Manage &gt; Content</alt></image>
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbar-cmg-Manage-Content.png"><alt>Persona Bar &gt; Manage &gt; Content</alt></image>
                 </info>
             </step>
 
@@ -303,7 +303,7 @@
             <step id="step-pb-gotomanageforms">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Manage</uicontrol> <uicontrol>Forms</uicontrol></menucascade>.</cmd>
                 <info outputclass="init-hide">
-                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarManage-Forms-cmg.png"><alt>Persona Bar &gt; Manage &gt; Forms</alt></image>
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbar-cmg-Manage-Forms.png"><alt>Persona Bar &gt; Manage &gt; Forms</alt></image>
                 </info>
             </step>
 
@@ -315,7 +315,7 @@
             <step id="step-pb-gotosettingscommunity-mod">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Community</uicontrol></menucascade>.</cmd>
                 <info outputclass="init-hide">
-                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarSettings-Community-mod.png"><alt>Persona Bar &gt; Settings &gt; Community</alt></image>
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbar-mod-Settings-Community.png"><alt>Persona Bar &gt; Settings &gt; Community</alt></image>
                 </info>
             </step>
 
@@ -324,7 +324,7 @@
             <step id="step-pb-gotosettingsconnectors-cmg">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Connectors</uicontrol></menucascade>.</cmd>
                 <info outputclass="init-hide">
-                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarSettings-Connectors-cmg.png"><alt>Persona Bar &gt; Settings &gt; Connectors</alt></image>
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbar-cmg-Settings-Connectors.png"><alt>Persona Bar &gt; Settings &gt; Connectors</alt></image>
                 </info>
             </step>
 			<!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-gotosettingsconnectors-mod"><cmd/></step> -->
@@ -332,7 +332,7 @@
             <step id="step-pb-gotosettingsconnectors-mod">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Connectors</uicontrol></menucascade>.</cmd>
                 <info outputclass="init-hide">
-                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarSettings-Connectors-mod.png"><alt>Persona Bar &gt; Settings &gt; Connectors</alt></image>
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbar-mod-Settings-Connectors.png"><alt>Persona Bar &gt; Settings &gt; Connectors</alt></image>
                 </info>
             </step>
 
@@ -341,7 +341,7 @@
             <step id="step-pb-gotosettingsgaming-mod">
 				<cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Gaming</uicontrol></menucascade>.</cmd>
                 <info outputclass="init-hide">
-                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbarSettings-Gaming-mod.png"><alt>Persona Bar &gt; Settings &gt; Gaming</alt></image>
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="img/scr-pbar-mod-Settings-Gaming.png"><alt>Persona Bar &gt; Settings &gt; Gaming</alt></image>
                 </info>
             </step>
 

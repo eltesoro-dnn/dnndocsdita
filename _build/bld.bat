@@ -31,7 +31,7 @@ for %%v in ( %* ) do  for %%w in ( adm dev dsg cmg mod )   do  if _%%v_ EQU _%%w
 
 set _bldtype=
 set _pref=
-for %%v in ( %* ) do  for %%w in ( 4live )                 do  if _%%v_ EQU _%%w_  (
+for %%v in ( %* ) do  for %%w in ( 4live 85 )              do  if _%%v_ EQU _%%w_  (
 	set _bldtype=%%w
 	set _pref=%%w-
 )
