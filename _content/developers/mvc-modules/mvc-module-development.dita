@@ -37,11 +37,11 @@
         <section id="Overview">
             <title>Overview</title>
 
-            <p>The MVC module type integrates ASP.NET MVC 5 with the DNN platform. The DNN MVC implementation focuses on creating a familiar development experience for ASP.NET MVC and DNN module developers.</p>
+            <p>The MVC module type integrates ASP.NET MVC 5 with the DNN platform.</p>
 
             <note type="note">Incompatibilities between ASP.NET MVC and ASP.NET Web Forms cause conflicts with pre-existing Web Forms features in the DNN platform. Therefore, DNN implementations of some ASP.NET features, such as MVC routing, are limited.</note>
 
-            <p>MVC modules can use all of the standard DNN module features. All DNN module types can co-exist on a single page, and the user should not be able to distinguish which framework was used to build the module.</p>
+            <p>MVC modules can use any of the standard DNN module features. All DNN module types can co-exist on a single page, and the user should not be able to distinguish which framework was used to build the module.</p>
         </section>
 
 

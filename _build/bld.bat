@@ -31,14 +31,15 @@ for %%v in ( %* ) do  for %%w in ( adm dev dsg cmg mod )   do  if _%%v_ EQU _%%w
 
 set _bldtype=
 set _pref=
-for %%v in ( %* ) do  for %%w in ( 4live 85 )              do  if _%%v_ EQU _%%w_  (
+for %%v in ( %* ) do  for %%w in ( 4live )                 do  if _%%v_ EQU _%%w_  (
 	set _bldtype=%%w
 	set _pref=%%w-
 )
 
 if _%_blddir%_      EQU __    set _blddir=v:\%_pref%bld\%_transtype%
-if _%_outdir%_      EQU __    set _outdir=v:\%_pref%output\%_transtype%
 if _%_logdir%_      EQU __    set _logdir=v:\%_pref%logs
+if _%_outdir%_      EQU __    set _outdir=v:\%_pref%output\%_transtype%
+for %%v in ( %* ) do  for %%w in ( 85 )  do  if _%%v_ EQU _%%w_  set _outdir=%_outdir%\85
 
 if _%_logfile%_     EQU __    set _logfile=%_logdir%\%_transtype%.log
 if _%_gitdir%_      EQU __    set _gitdir=w:\.
@@ -90,13 +91,18 @@ xcopy %_gitdir%\_themes\dnn\dnn*.css     %_blddir%\_themes\dnn    /i/s/v/y
 
 for %%v in ( administrators developers designers content-managers community-managers ) do  xcopy %_blddir%\common\*.dita* %_blddir%\%%v /i/s/v/y
 
-echo Copying dita maps and files for %_bldtype% ....
+echo Replacing dita maps and files for %_bldtype% ....
 if _%_bldtype%_ NEQ __  powershell -file %_gitdir%\_build\replacefiles.ps1 %_blddir% %_bldtype%
 
 
 echo Integrating our own DITA-OT plugin ....
 rd /s/q %DITA_HOME%\plugins\org.dnn.dc >nul
 xcopy %_gitdir%\_build\org.dnn.dc\*.*  %DITA_HOME%\plugins\org.dnn.dc  /i/s/v/y
+
+for %%v in ( %* ) do  for %%w in ( 85 )  do  if _%%v_ EQU _%%w_  (
+    echo Replacing xsl files for 85 ....
+    powershell -file %_gitdir%\_build\replacefiles.ps1 %DITA_HOME%\plugins\org.dnn.dc 85
+)
 cd /d   %DITA_HOME%
 call ant -f integrator.xml strict
 
@@ -115,8 +121,8 @@ for %%v in ( administrators developers designers content-managers community-mana
 
 
 echo Copying additional required files to the output ....
-xcopy %_gitdir%\_content\index.html          %_outdir%\.                /i/s/v/y
-xcopy %_gitdir%\_content\searchresults.html  %_outdir%\.                /i/s/v/y
+xcopy %_gitdir%\_content\index*.html         %_outdir%\.                /i/s/v/y
+xcopy %_gitdir%\_content\searchresults*.html %_outdir%\.                /i/s/v/y
 xcopy %_gitdir%\_content\common\samples      %_outdir%\common\samples   /i/s/v/y
 xcopy %_gitdir%\_content\ssi                 %_outdir%\ssi              /i/s/v/y
 for %%v in ( jpg png gif svg ) do  xcopy %_gitdir%\_content\common\img\*.%%v    %_outdir%\common\img       /i  /v/y
@@ -126,6 +132,9 @@ xcopy %_gitdir%\_themes\dnn\26D3F6*          %_outdir%\_theme           /i/s/v/y
 xcopy %_gitdir%\_themes\dnn\*.js             %_outdir%\_theme           /i/s/v/y
 
 del %_outdir%\common\img\*__4gif.png /q
+
+echo Replacing additional required files in the output for %_bldtype% ....
+if _%_bldtype%_ NEQ __  powershell -file %_gitdir%\_build\replacefiles.ps1 %_outdir% %_bldtype%
 
 
 :. The following is a hack.
