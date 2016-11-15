@@ -38,7 +38,7 @@ dev/Concepts/Concepts.html,developers/about-modules/index.html,
 dev/Concepts/ModuleDevelopment/Module-Architecture.html,developers/about-modules/module-architecture.html,
 dev/Concepts/ModuleDevelopment/Develop-Modules.html,developers/about-modules/module-development.html,
 dev/Concepts/ModuleDevelopment/Module-Features.html,developers/about-modules/module-features.html,
-dev/Concepts/ModuleDevelopment/MVC-Module-Development.html,developers/about-modules/mvc-module-development.html,
+dev/Concepts/ModuleDevelopment/MVC-Module-Development.html,developers/mvc-modules/mvc-module-development.html,new MVC folder for 9.0
 dev/Concepts/ModuleDevelopment/SPA-Module-Development.html,developers/about-modules/spa-module-development.html,
 dev/Concepts/ModuleDevelopment/Unsupported-MVC-Features.html,developers/about-modules/unsupported-mvc-features.html,
 dev/Concepts/ModuleDevelopment/Web-Forms-Module-Development.html,developers/about-modules/web-forms-module-development.html,
@@ -77,6 +77,10 @@ community-managers/release-notes/,community-managers/whats-new-dnn.html,director
 dnn-platform-overview.html,dnn-overview.html,file rename
 view-form-analytics.html,view-form-responses.html,file rename
 content-managers/building-your-site/about-microservices.html,content-managers/building-your-site/creating-content-with-microservices.html,file rename
-about-modules/mvc-module-development.html,mvc-modules/mvc-module-development.html,new MVC folder
-about-modules/unsupported-mvc-features.html,mvc-modules/unsupported-mvc-features.html,new MVC folder
-administrators/structured-content,content-managers/structured-content,redirect for Google Search
+developers/about-modules/mvc-module-development.html,developers/mvc-modules/mvc-module-development.html,new MVC folder
+developers/about-modules/unsupported-mvc-features.html,developers/mvc-modules/unsupported-mvc-features.html,new MVC folder
+content-managers/(.*)-via-persona-bar(.*).html,content-managers/{R:2}-via-persona-bar-cmg{R:3}.html,Renaming the default for Evoq 9.0 (Admin Persona Bar).
+administrators/(.*)-via-persona-bar(.*).html,administrators/{R:2}-via-persona-bar-adm{R:3}.html,This one might be unnecessary.
+administrators/(.*)-cp.html,administrators/(R:2)-cp-adm.html,
+content-managers/(.*)-pb.html,content-managers/(R:2)-pb-cmg.html,
+85/administrators/structured-content,85/content-managers/structured-content,redirect for Google Search; delete for 9.0

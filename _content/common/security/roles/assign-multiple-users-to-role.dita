@@ -44,9 +44,9 @@
 
 
         <steps>
-            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-manageroles"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-searchforrole"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-manageusers"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-manageroles"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-searchforrole"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-manageusers"><cmd/></step>
             <step>
                 <cmd>In the <wintitle>Manage Users in Role</wintitle> page, select the users to add to the role.</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageUsersInRole.png"><alt>Manage Users in Role page</alt></image></info>

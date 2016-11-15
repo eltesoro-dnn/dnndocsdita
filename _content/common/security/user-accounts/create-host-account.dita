@@ -37,10 +37,9 @@
 		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <section>
-            <p><ph conref="bptext-userssteps.dita#bptext-userssteps/ph-hostfullperms"></ph></p>
+            <p><ph conref="bptext-userssteps.dita#tsk-bptext-userssteps/ph-hostfullperms"></ph></p>
             <note type="warning">
-                <p><ph conref="bptext-userssteps.dita#bptext-userssteps/ph-hostscandemote"></ph></p>
-                <p><ph conref="bptext-userssteps.dita#bptext-userssteps/ph-hostcannotbedemoted"></ph></p>
+                <p><ph conref="bptext-userssteps.dita#tsk-bptext-userssteps/ph-hostscandemote"></ph></p>
             </note>
         </section>
 
@@ -51,9 +50,9 @@
         </prereq>
 
         <steps>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotohostacctlist"><cmd/></step>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-clicktapaddnewuser"><cmd/></step>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-enteruserinfo"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-gotohostacctlist"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-clicktapaddnewuser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-enteruserinfo"><cmd/></step>
         </steps>
 
     </taskbody>

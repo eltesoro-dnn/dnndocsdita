@@ -34,15 +34,14 @@
 
         <section id="overview">
             <title>Overview</title>
-
-			<p>In a Web Forms module, the module controls are <codeph>.ascx</codeph> user controls, which are rendered within the page. However, in an MVC module, the module controls are MVC controller action methods that return an MVC view, which is rendered within the page.</p>
+			<p>In a Web Forms module, the module is controlled by <codeph>.ascx</codeph> user controls, which are rendered on the page. However, in an MVC module, the module is controlled by MVC controller action methods that return an MVC view, which is rendered on the page.</p>
 		</section>
 
 
         <section id="Action">
             <title>Action Methods</title>
 
-			<p>To render an MVC module control, DNN uses the module's control source definition. When generating your project from the template, the DNN manifest defines a default view with the following control source:</p>
+			<p>To render an MVC module control, DNN uses the module's control source definition. If your project was created from the DNN MVC template, the manifest defines a default view with the following control source:</p>
 			<codeblock>
     &lt;moduleControl&gt;
         &lt;controlKey /&gt;
@@ -53,7 +52,7 @@
 
             <note type="note">The <codeph>controlSrc</codeph> value is not a file path. In an MVC module, the control sources are specified using the format: <codeph>{Controller Namespace}/{Controller Name}Controller/{Action Method Name}.mvc</codeph>.</note>
 
-			<p>The above control source looks for the method <apiname>Index()</apiname> in the class <apiname>Dnn.Modules.CompanyName.MyMvcModule.Controllers.ItemController</apiname>. The <apiname>ItemController</apiname> class is expected to implement the abstract base class <apiname>DotNetNuke.Web.Mvc.Framework.Controllers.DnnController</apiname>.</p>
+			<p>The above control source looks for the method <apiname>Index()</apiname> in the class <apiname>Dnn.Modules.CompanyName.MyMvcModule.Controllers.ItemController</apiname>, which implements the abstract base class <apiname>DotNetNuke.Web.Mvc.Framework.Controllers.DnnController</apiname>.</p>
 
             <sectiondiv outputclass="sectionxmp" id="xmp-ActionMethod" >
                 <p>Example: In the following code, the action method asks the data layer (<apiname>ItemManager</apiname>) for the list of all item objects for that module instance.</p>

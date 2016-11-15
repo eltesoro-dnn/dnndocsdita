@@ -6,8 +6,9 @@
 
 
     <!-- Keys. NOTE: Do NOT use keys for topics that need to have an "active" tag in the toc. -->
-    <keydef keys="k-bptext"  href="common/bptext.dita#top-bptext" />
-    <keydef keys="k-bpsteps" href="common/bptext-steps.dita#tsk-bptext-steps" />
+    <keydef keys="k-bptext"   href="common/bptext.dita#top-bptext" />
+    <keydef keys="k-bpsteps"  href="common/bptext-steps.dita#tsk-bptext-steps" />
+    <keydef keys="k-bppbar"   href="common/bptext-pbar.dita#tsk-bptext-pbar" />
 
 
     <!-- Topics -->
@@ -16,23 +17,23 @@
         <topicref format="dita" type="topic" navtitle="What's New"    locktitle="yes" toc="yes" href="community-managers/whats-new-dnn.dita" />
         <topicref format="dita" type="topic" navtitle="DNN Solutions" locktitle="yes" toc="yes" href="community-managers/dnn-overview.dita" />
 
-		<!-- Managing Your Community -->
-		<mapref href="community-managers/managing-your-community/managing-your-community.ditamap" />
+        <!-- Managing Your Community -->
+        <mapref href="community-managers/managing-your-community/managing-your-community.ditamap" />
 
         <!-- Securing Your Site -->
         <mapref href="community-managers/security/security-mod.ditamap" />
 
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="community-managers/community-manager-references.dita" collection-type="family">
-			<topicref format="dita" type="reference" toc="yes" href="community-managers/included-modules/included-modules.dita" copy-to="community-managers/included-modules/index.dita" />
-			<topicref format="dita" type="reference" toc="yes" href="community-managers/product-versions.dita" />
-			<topicref format="dita" type="topic"     toc="yes" href="community-managers/dnn-license.dita" />
+            <topicref format="dita" type="reference" toc="yes" href="community-managers/included-modules/included-modules.dita" copy-to="community-managers/included-modules/index.dita" />
+            <topicref format="dita" type="reference" toc="yes" href="community-managers/product-versions.dita" />
+            <topicref format="dita" type="topic"     toc="yes" href="community-managers/dnn-license.dita" />
             <!-- <topicref format="dita" type="topic"     toc="yes" href="community-managers/more-resources.dita" /> -->
         </topicref>
-		<topichead toc="yes" chunk="by-document to-content" copy-to="community-managers/glossary.dita" >
+        <topichead toc="yes" chunk="by-document to-content" copy-to="community-managers/glossary.dita" >
             <topicmeta><navtitle>Glossary</navtitle></topicmeta>
-			<mapref href="common/glossary/glossary.ditamap" />
-		</topichead>
+            <mapref href="common/glossary/glossary.ditamap" />
+        </topichead>
 
     </topicref>
 
@@ -48,6 +49,6 @@
         // adm dev dsg cmg mod
 
     </reltable>
-	-->
+    -->
 
 </map>

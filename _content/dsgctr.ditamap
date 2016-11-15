@@ -8,8 +8,9 @@
     <!-- Keys. NOTE: Do NOT use keys for topics that need to have an "active" tag in the toc. -->
     <keydef keys="k-bptext"   href="common/bptext.dita#top-bptext" />
     <keydef keys="k-bpsteps"  href="common/bptext-steps.dita#tsk-bptext-steps" />
+    <keydef keys="k-bppbar"   href="common/bptext-pbar.dita#tsk-bptext-pbar" />
     <keydef keys="k-themeobj" href="designers/theme-objects.dita#ref-ThemeObjects" />
-    <keydef keys="k-themedef" href="designers/bp-themedef.dita#bp-themedef" />
+    <keydef keys="k-themedef" href="designers/bp-themedef.dita#tsk-bp-themedef" />
 
 
     <!-- Topics -->
@@ -44,18 +45,18 @@
         <topicref format="dita" type="topic" toc="yes" href="designers/designer-references.dita" collection-type="family">
             <topicref format="dita" type="reference" toc="yes" href="designers/theme-objects.dita" />
             <topicref format="dita" type="reference" toc="yes" href="designers/extensions/dnn-manifest-schema.dita" />
-			<topicref format="dita" type="reference" toc="yes" href="designers/included-modules/included-modules.dita" copy-to="designers/included-modules/index.dita" />
+            <topicref format="dita" type="reference" toc="yes" href="designers/included-modules/included-modules.dita" copy-to="designers/included-modules/index.dita" />
             <topicref format="html" scope="external" navtitle="DNN UX Guide" locktitle="yes" toc="yes" href="http://uxguide.dnnsoftware.com/" />
             <!-- <topicref format="dita" type="reference" toc="yes" href="designers/contents-theme-pack.dita" /> Topic not ready. -->
-			<topicref format="dita" type="reference" toc="yes" href="designers/requirements.dita" />
-			<topicref format="dita" type="reference" toc="yes" href="designers/product-versions.dita" />
-			<topicref format="dita" type="topic"     toc="yes" href="designers/dnn-license.dita" />
-			<topicref format="dita" type="topic"     toc="yes" href="designers/more-resources.dita" />
+            <topicref format="dita" type="reference" toc="yes" href="designers/requirements.dita" />
+            <topicref format="dita" type="reference" toc="yes" href="designers/product-versions.dita" />
+            <topicref format="dita" type="topic"     toc="yes" href="designers/dnn-license.dita" />
+            <topicref format="dita" type="topic"     toc="yes" href="designers/more-resources.dita" />
         </topicref>
-		<topichead toc="yes" chunk="by-document to-content" copy-to="designers/glossary.dita" >
+        <topichead toc="yes" chunk="by-document to-content" copy-to="designers/glossary.dita" >
             <topicmeta><navtitle>Glossary</navtitle></topicmeta>
-			<mapref href="common/glossary/glossary.ditamap" />
-		</topichead>
+            <mapref href="common/glossary/glossary.ditamap" />
+        </topichead>
 
     </topicref>
 

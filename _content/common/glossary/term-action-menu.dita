@@ -2,7 +2,7 @@
 <!DOCTYPE glossentry PUBLIC "-//OASIS//DTD DITA Glossary Entry//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/glossentry.dtd">
 <glossentry xml:lang="en" id="actionmenu">
 
-    <glossterm>module action menu</glossterm>
+    <glossterm>action menu</glossterm>
     <glossdef>The set of menus that provides access to the functionality of a module. Available only if the page is in <b>Edit</b> mode. The menus can include the <uicontrol>Edit</uicontrol> menu (pencil icon), the <uicontrol>Manage</uicontrol> menu (gear icon), and the <uicontrol>Move</uicontrol> menu (four-arrow icon). The DNN Platform provides actions that are common to all modules; however, a module might provide additional actions. If the module instance is independent, then actions performed through the module action menu affect only that specific module instance in that specific webpage. If the same module instance is referenced in multiple pages, then changes made to the module instance from any of those pages are reflected in all those pages.</glossdef>
 
     <prolog>

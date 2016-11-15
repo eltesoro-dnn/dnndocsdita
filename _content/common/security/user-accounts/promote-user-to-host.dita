@@ -35,16 +35,16 @@
 		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <section>
-            <p><ph conref="bptext-userssteps.dita#bptext-userssteps/ph-hostfullperms"></ph></p>
-            <note type="warning"><ph conref="bptext-userssteps.dita#bptext-userssteps/ph-hostscandemote"></ph></note>
+            <p><ph conref="bptext-userssteps.dita#tsk-bptext-userssteps/ph-hostfullperms"></ph></p>
+            <note type="warning"><ph conref="bptext-userssteps.dita#tsk-bptext-userssteps/ph-hostscandemote"></ph></note>
         </section>
 
         <prereq><ph conkeyref="k-bptext/ph-PrereqHost"></ph></prereq>
 
         <steps>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotouseracctlist"><cmd/></step>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-searchforuser"><cmd/></step>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-edituser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-gotouseracctlist"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-searchforuser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-edituser"><cmd/></step>
             <step>
                 <cmd>Click/Tap <uicontrol>Make Super User</uicontrol>.</cmd>
                 <info>

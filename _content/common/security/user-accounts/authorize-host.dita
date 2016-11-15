@@ -34,15 +34,15 @@
 
 		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
-        <section id="overview"><ph conref="bptext-userssteps.dita#bptext-userssteps/ph-introauthorize"></ph></section>
+        <section id="overview"><ph conref="bptext-userssteps.dita#tsk-bptext-userssteps/ph-introauthorize"></ph></section>
 
         <prereq><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></prereq>
 
         <steps>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotohostacctlist"><cmd/></step>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-searchforuser"><cmd/></step>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-edituser"><cmd/></step>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-authorizeuser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-gotohostacctlist"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-searchforuser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-edituser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-authorizeuser"><cmd/></step>
         </steps>
 
     </taskbody>

@@ -14,308 +14,308 @@
 
     <taskbody>
 
-		<!-- <section conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/section-importexportoverview"></section> -->
-		<section id="section-importexportoverview">
-			<p>Exporting and importing a page converts it to and from a template file, which is an XML file that contains pertinent information about the source page and about each module contained in it.</p>
+        <!-- <section conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/section-importexportoverview"></section> -->
+        <section id="section-importexportoverview">
+            <p>Exporting and importing a page converts it to and from a template file, which is an XML file that contains pertinent information about the source page and about each module contained in it.</p>
 
-			<p>If a theme was applied specifically to an exported page, a reference to the theme is stored in the XML file, however, the theme package itself is not copied and must be installed on the target site separately.</p>
+            <p>If a theme was applied specifically to an exported page, a reference to the theme is stored in the XML file, however, the theme package itself is not copied and must be installed on the target site separately.</p>
 
-			<p>Folders are not shared among sites, even within the same DNN installation. Therefore, after exporting a page, an administrator must copy the resulting template file to the target site before it can be imported as a page.</p>
-		</section>
+            <p>Folders are not shared among sites, even within the same DNN site collection. Therefore, after exporting a page, an administrator must copy the resulting template file to the target site before it can be imported as a page.</p>
+        </section>
 
 
 
         <steps>
 
-			<!-- PAGES MENU (CP) PAGES: ADD, EDIT -->
+            <!-- PAGES MENU (CP) PAGES: ADD, EDIT -->
 
-			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-gotopagemgmt"><cmd/></step> -->
-			<step id="step-cp-gotopagemgmt">
-				<cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Page Management</uicontrol></menucascade>.</cmd>
-				<info outputclass="init-hide">
-					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuAdminCommonPageManagement.png"><alt>Admin &gt; Page Management</alt></image>
-				</info>
-				<stepresult outputclass="init-hide">
-					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-PageManagement.png"><alt>Page Management &gt; hierarchy of pages</alt></image>
-				</stepresult>
+            <!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-gotopagemgmt"><cmd/></step> -->
+            <step id="step-cp-gotopagemgmt">
+                <cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Page Management</uicontrol></menucascade>.</cmd>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuAdminCommonPageManagement.png"><alt>Admin &gt; Page Management</alt></image>
+                </info>
+                <stepresult outputclass="init-hide">
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-PageManagement.png"><alt>Page Management &gt; hierarchy of pages</alt></image>
+                </stepresult>
             </step>
 
-			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-configure-page-details"><cmd/></step> -->
-			<step id="step-cp-configure-page-details">
-				<cmd>In the <uicontrol>Page Details</uicontrol> tab, configure the page.</cmd>
-				<info>
-					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-PageDetails.png"><alt>Page Details</alt></image>
-					<simpletable relcolwidth="1* 3*">
-						<sthead>
-							<stentry>Field</stentry>
-							<stentry>Description</stentry>
-						</sthead>
-						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagename"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagetitle"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pageurl"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-donotredirect"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-keywords"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-tags"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-parentpageinsertpage"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-templatefolderpagetemplate"><stentry/></strow>
-						<strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-includeinmenu"><stentry/></strow>
-					</simpletable>
-				</info>
-			</step>
+            <!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-configure-page-details"><cmd/></step> -->
+            <step id="step-cp-configure-page-details">
+                <cmd>In the <uicontrol>Page Details</uicontrol> tab, configure the page.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-PageDetails.png"><alt>Page Details</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagename"><stentry/></strow>
+                        <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagetitle"><stentry/></strow>
+                        <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pageurl"><stentry/></strow>
+                        <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-donotredirect"><stentry/></strow>
+                        <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-keywords"><stentry/></strow>
+                        <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-tags"><stentry/></strow>
+                        <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-parentpageinsertpage"><stentry/></strow>
+                        <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-templatefolderpagetemplate"><stentry/></strow>
+                        <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-includeinmenu"><stentry/></strow>
+                    </simpletable>
+                </info>
+            </step>
 
-			<!--
-			<cmd conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/cmd-cp-configure-page-copy-optional"></cmd>
-			<substeps conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/substeps-cp-configure-page-copy"><substep><cmd/></substep></substeps>
-			-OR-
-			<cmd conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/cmd-cp-configure-page-copy"></cmd>
-			<substeps conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/substeps-cp-configure-page-copy"><substep><cmd/></substep></substeps>
-			-->
-			<step>
-				<cmd id="cmd-cp-configure-page-copy-optional">(Optional) In the <uicontrol>Copy Page</uicontrol> tab, copy an existing page to use as a starting point for the new page.</cmd>
-			</step>
-			<step>
-				<cmd id="cmd-cp-configure-page-copy">In the <uicontrol>Copy Page</uicontrol> tab, copy an existing page and choose the modules to copy.</cmd>
-				<substeps id="substeps-cp-configure-page-copy">
-					<substep>
-						<cmd>In the <uicontrol>Copy From Page</uicontrol> dropdown, choose the page to copy from.</cmd>
-						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-CopyPage.png"><alt>Add Page &gt; CopyPage</alt></image></info>
-					</substep>
-					<substep>
-						<cmd>If the source page contains modules, select which modules to create, copy, or reference in the new page.</cmd>
-						<info>
-							<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-CopyPage-SpecifyModules.png"><alt>Add Page &gt; CopyPage &gt; Specify Modules</alt></image>
-							<ul>
-								<li><uicontrol>New</uicontrol> creates a new module instance with default settings and no content.</li>
-								<li><uicontrol>Copy</uicontrol> creates a new module instance with the same settings as the module in the source page and also creates independent copies of the content. This option is disabled for modules that don't have content, such as the <uicontrol>Account Login</uicontrol> module.</li>
-								<li><uicontrol>Reference</uicontrol> shares content between the original and the new pages.</li>
-							</ul>
-						</info>
-					</substep>
-				</substeps>
-			</step>
+            <!--
+            <cmd conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/cmd-cp-configure-page-copy-optional"></cmd>
+            <substeps conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/substeps-cp-configure-page-copy"><substep><cmd/></substep></substeps>
+            -OR-
+            <cmd conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/cmd-cp-configure-page-copy"></cmd>
+            <substeps conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/substeps-cp-configure-page-copy"><substep><cmd/></substep></substeps>
+            -->
+            <step>
+                <cmd id="cmd-cp-configure-page-copy-optional">(Optional) In the <uicontrol>Copy Page</uicontrol> tab, copy an existing page to use as a starting point for the new page.</cmd>
+            </step>
+            <step>
+                <cmd id="cmd-cp-configure-page-copy">In the <uicontrol>Copy Page</uicontrol> tab, copy an existing page and choose the modules to copy.</cmd>
+                <substeps id="substeps-cp-configure-page-copy">
+                    <substep>
+                        <cmd>In the <uicontrol>Copy From Page</uicontrol> dropdown, choose the page to copy from.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-CopyPage.png"><alt>Add Page &gt; CopyPage</alt></image></info>
+                    </substep>
+                    <substep>
+                        <cmd>If the source page contains modules, select which modules to create, copy, or reference in the new page.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-CopyPage-SpecifyModules.png"><alt>Add Page &gt; CopyPage &gt; Specify Modules</alt></image>
+                            <ul>
+                                <li><uicontrol>New</uicontrol> creates a new module instance with default settings and no content.</li>
+                                <li><uicontrol>Copy</uicontrol> creates a new module instance with the same settings as the module in the source page and also creates independent copies of the content. This option is disabled for modules that don't have content, such as the <uicontrol>Account Login</uicontrol> module.</li>
+                                <li><uicontrol>Reference</uicontrol> shares content between the original and the new pages.</li>
+                            </ul>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
 
-			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-configure-page-advanced"><cmd/></step> -->
-			<step id="step-configure-page-advanced">
-				<cmd>(Optional) In the <uicontrol>Advanced Settings</uicontrol> tab, configure the page.</cmd>
-				<info>
-					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings.png"><alt>Page Settings &gt; Advanced Settings</alt></image>
+            <!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-configure-page-advanced"><cmd/></step> -->
+            <step id="step-configure-page-advanced">
+                <cmd>(Optional) In the <uicontrol>Advanced Settings</uicontrol> tab, configure the page.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-AddPage-AdvancedSettings.png"><alt>Page Settings &gt; Advanced Settings</alt></image>
 
-					<simpletable relcolwidth="1* 3*">
-						<sthead>
-							<stentry></stentry>
-							<stentry>Appearance</stentry>
-						</sthead>
-						<strow>
-							<stentry>
-								<lines><uicontrol>Icon</uicontrol>
-									   <uicontrol>Large Icon</uicontrol></lines>
-							</stentry>
-							<stentry>
-								The icons to be displayed in the navigation (small icon) and in any <uicontrol>Console</uicontrol> module (small icon and large icon).
-								<!-- DOCBUG: What sizes should these be? -->
-								<ul>
-									<li conkeyref="k-bptext/li-AddPageChooseSiteFile"></li>
-									<li conkeyref="k-bptext/li-AddPageUploadFile"></li>
-									<li conkeyref="k-bptext/li-ChooseSystemImage"></li>
-								</ul>
-							</stentry>
-						</strow>
-						<strow>
-							<stentry>
-								<lines><uicontrol>Page Theme</uicontrol>
-									   <uicontrol>Page Container</uicontrol>
-									   <uicontrol>Page Stylesheet</uicontrol></lines>
-							</stentry>
-							<stentry>The custom theme for the page, the custom container for the modules in the page, and the custom stylesheet for the page, respectively. To inherit from the parent, leave as <uicontrol>None Specified</uicontrol> or blank. Additional files for themes, containers, and stylesheets can be uploaded by an administrator.</stentry>
-						</strow>
-						<strow>
-							<stentry><uicontrol>Disabled</uicontrol></stentry>
-							<stentry>If checked, the page appears on the navigation as static (unclickable) text, instead of a link.</stentry>
-						</strow>
-						<strow>
-							<stentry><uicontrol>Refresh interval</uicontrol></stentry>
-							<stentry>The number of seconds between automatic page refreshes. To disable automatic page refreshes, leave blank.</stentry>
-						</strow>
-						<strow>
-							<stentry><uicontrol>Page Header Tags</uicontrol></stentry>
-							<stentry>Tags that you want to be included in the META tag inside the HEAD tag of the page.</stentry>
-						</strow>
-					</simpletable>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry></stentry>
+                            <stentry>Appearance</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry>
+                                <lines><uicontrol>Icon</uicontrol>
+                                       <uicontrol>Large Icon</uicontrol></lines>
+                            </stentry>
+                            <stentry>
+                                The icons to be displayed in the navigation (small icon) and in any <uicontrol>Console</uicontrol> module (small icon and large icon).
+                                <!-- DOCBUG: What sizes should these be? -->
+                                <ul>
+                                    <li conkeyref="k-bptext/li-AddPageChooseSiteFile"></li>
+                                    <li conkeyref="k-bptext/li-AddPageUploadFile"></li>
+                                    <li conkeyref="k-bptext/li-ChooseSystemImage"></li>
+                                </ul>
+                            </stentry>
+                        </strow>
+                        <strow>
+                            <stentry>
+                                <lines><uicontrol>Page Theme</uicontrol>
+                                       <uicontrol>Page Container</uicontrol>
+                                       <uicontrol>Page Stylesheet</uicontrol></lines>
+                            </stentry>
+                            <stentry>The custom theme for the page, the custom container for the modules in the page, and the custom stylesheet for the page, respectively. To inherit from the parent, leave as <uicontrol>None Specified</uicontrol> or blank. Additional files for themes, containers, and stylesheets can be uploaded by an administrator.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Disabled</uicontrol></stentry>
+                            <stentry>If checked, the page appears on the navigation as static (unclickable) text, instead of a link.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Refresh interval</uicontrol></stentry>
+                            <stentry>The number of seconds between automatic page refreshes. To disable automatic page refreshes, leave blank.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Page Header Tags</uicontrol></stentry>
+                            <stentry>Tags that you want to be included in the META tag inside the HEAD tag of the page.</stentry>
+                        </strow>
+                    </simpletable>
 
-					<simpletable relcolwidth="1* 3*">
-						<sthead>
-							<stentry></stentry>
-							<stentry>Cache Settings</stentry>
-						</sthead>
-						<strow>
-							<stentry><uicontrol>Output Cache Provider</uicontrol></stentry>
-							<stentry>The cache provider to use for this page. The dropdown list includes the <xref format="dita" scope="peer" href="/docs/administrators/providers.html#top-providers__outcacheprov">output caching providers</xref> installed on the site.
-								<ul>
-									<li><uicontrol>DatabaseOutputCachingProvider</uicontrol> saves cached items to the database.</li>
-									<li><uicontrol>FileOutputCachingProvider</uicontrol> saves cached items to a file system. Ideal for a shared hosting environment.</li>
-									<li><uicontrol>MemoryOutputCachingProvider</uicontrol> saves cached items in memory. This is the fastest caching method. Ideal if the website has a large amount of RAM. Not suitable in a shared hosting environment.</li>
-								</ul>
-							</stentry>
-						</strow>
-					</simpletable>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry></stentry>
+                            <stentry>Cache Settings</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry><uicontrol>Output Cache Provider</uicontrol></stentry>
+                            <stentry>The cache provider to use for this page. The dropdown list includes the <xref format="dita" scope="peer" href="/docs/administrators/providers.html#top-providers__outcacheprov">output caching providers</xref> installed on the site.
+                                <ul>
+                                    <li><uicontrol>DatabaseOutputCachingProvider</uicontrol> saves cached items to the database.</li>
+                                    <li><uicontrol>FileOutputCachingProvider</uicontrol> saves cached items to a file system. Ideal for a shared hosting environment.</li>
+                                    <li><uicontrol>MemoryOutputCachingProvider</uicontrol> saves cached items in memory. This is the fastest caching method. Ideal if the website has a large amount of RAM. Not suitable in a shared hosting environment.</li>
+                                </ul>
+                            </stentry>
+                        </strow>
+                    </simpletable>
 
-					<simpletable relcolwidth="1* 3*">
-						<sthead>
-							<stentry></stentry>
-							<stentry>Other Settings</stentry>
-						</sthead>
-						<strow>
-							<stentry><uicontrol>Secure?</uicontrol></stentry>
-							<stentry>If checked, the page requires a secure connection (SSL). This option is available only if the administrator enabled SSL for the site.
-								<!-- DOCBUG: Is the protocol automatically switched to https if they used http? -->
-							</stentry>
-						</strow>
-						<strow>
-							<stentry><uicontrol>Allow Indexing</uicontrol></stentry>
-							<stentry>If checked, search crawlers are allowed to index the page, using the INDEX/NOINDEX values for the ROBOTS meta tag.</stentry>
-						</strow>
-						<strow>
-							<stentry><uicontrol>Site Map Priority</uicontrol></stentry>
-							<stentry>A priority level that helps Google determine the page's importance, compared to the rest of the pages on the site. Ranges from 0.0 to 1.0, where 1.0 is the highest priority. The default is 0.5.</stentry>
-						</strow>
-						<strow>
-							<stentry>
-								<lines><uicontrol>Start Date</uicontrol>
-									   <uicontrol>End Date</uicontrol></lines>
-							</stentry>
-							<stentry>
-								<p conkeyref="k-bptext/p-clicktapcalendarclockicons"></p>
-								<ul conkeyref="k-bptext/ul-publisheddatespages"><li/></ul>
-								<note type="note">Administrators can manage expired pages from <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Page Management</uicontrol></menucascade></note>
-							</stentry>
-						</strow>
-						<strow>
-							<stentry><uicontrol>Link URL</uicontrol></stentry>
-							<stentry>
-								<p conkeyref="k-bptext/p-AddPageLinkType"></p>
-							</stentry>
-						</strow>
-						<strow>
-							<stentry><uicontrol>Permanently Redirect</uicontrol></stentry>
-							<stentry>
-								<p>If checked, the URL to this page is permanently mapped to the <uicontrol>Link URL</uicontrol> value, so that search engines can go directly to the target URL.</p>
-								<note type="note">This setting is ignored if <uicontrol>Link Type</uicontrol> is <uicontrol>None</uicontrol>.</note>
-							</stentry>
-						</strow>
-					</simpletable>
-				</info>
-			</step>
-
-
-			<!--
-			<step><cmd>Go to the page to edit.</cmd></step>
-			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
-			-->
-			<step id="step-cp-editpage">
-				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Edit This Page</uicontrol></menucascade>.</cmd>
-				<info outputclass="init-hide">
-					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageEditThis.png"><alt>Edit Page &gt; Edit This Page</alt></image>
-				</info>
-			</step>
-
-			<!--
-			<step><cmd>Go to the page to configure.</cmd></step>
-			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-editpagesettings"><cmd/></step>
-			-->
-			<step id="step-cp-editpagesettings">
-				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Page Settings</uicontrol></menucascade>.</cmd>
-				<info outputclass="init-hide">
-					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPagePageSettings.png"><alt>Edit Page &gt; Page Settings</alt></image>
-				</info>
-			</step>
-
-			<!--
-			<step><cmd>Go to the page to delete.</cmd></step>
-			<step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-deletepage"><cmd/></step>
-			-->
-			<step id="step-cp-deletepage">
-				<cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Delete Page</uicontrol></menucascade>.</cmd>
-				<info outputclass="init-hide">
-					<image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageDeletePage.png"><alt>Edit Page &gt; Delete Page</alt></image>
-				</info>
-			</step>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry></stentry>
+                            <stentry>Other Settings</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry><uicontrol>Secure?</uicontrol></stentry>
+                            <stentry>If checked, the page requires a secure connection (SSL). This option is available only if the administrator enabled SSL for the site.
+                                <!-- DOCBUG: Is the protocol automatically switched to https if they used http? -->
+                            </stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Allow Indexing</uicontrol></stentry>
+                            <stentry>If checked, search crawlers are allowed to index the page, using the INDEX/NOINDEX values for the ROBOTS meta tag.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Site Map Priority</uicontrol></stentry>
+                            <stentry>A priority level that helps Google determine the page's importance, compared to the rest of the pages on the site. Ranges from 0.0 to 1.0, where 1.0 is the highest priority. The default is 0.5.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>
+                                <lines><uicontrol>Start Date</uicontrol>
+                                       <uicontrol>End Date</uicontrol></lines>
+                            </stentry>
+                            <stentry>
+                                <p conkeyref="k-bptext/p-clicktapcalendarclockicons"></p>
+                                <ul conkeyref="k-bptext/ul-publisheddatespages"><li/></ul>
+                                <note type="note">Administrators can manage expired pages from <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Page Management</uicontrol></menucascade></note>
+                            </stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Link URL</uicontrol></stentry>
+                            <stentry>
+                                <p conkeyref="k-bptext/p-AddPageLinkType"></p>
+                            </stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Permanently Redirect</uicontrol></stentry>
+                            <stentry>
+                                <p>If checked, the URL to this page is permanently mapped to the <uicontrol>Link URL</uicontrol> value, so that search engines can go directly to the target URL.</p>
+                                <note type="note">This setting is ignored if <uicontrol>Link Type</uicontrol> is <uicontrol>None</uicontrol>.</note>
+                            </stentry>
+                        </strow>
+                    </simpletable>
+                </info>
+            </step>
 
 
-			<!-- MODULES: ADD, EDIT -->
+            <!--
+            <step><cmd>Go to the page to edit.</cmd></step>
+            <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-editpage"><cmd/></step>
+            -->
+            <step id="step-cp-editpage">
+                <cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Edit This Page</uicontrol></menucascade>.</cmd>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageEditThis.png"><alt>Edit Page &gt; Edit This Page</alt></image>
+                </info>
+            </step>
 
-			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step> -->
-			<step id="step-cp-openmodulelist">
+            <!--
+            <step><cmd>Go to the page to configure.</cmd></step>
+            <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-editpagesettings"><cmd/></step>
+            -->
+            <step id="step-cp-editpagesettings">
+                <cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Page Settings</uicontrol></menucascade>.</cmd>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPagePageSettings.png"><alt>Edit Page &gt; Page Settings</alt></image>
+                </info>
+            </step>
+
+            <!--
+            <step><cmd>Go to the page to delete.</cmd></step>
+            <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-deletepage"><cmd/></step>
+            -->
+            <step id="step-cp-deletepage">
+                <cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Delete Page</uicontrol></menucascade>.</cmd>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageDeletePage.png"><alt>Edit Page &gt; Delete Page</alt></image>
+                </info>
+            </step>
+
+
+            <!-- MODULES: ADD, EDIT -->
+
+            <!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step> -->
+            <step id="step-cp-openmodulelist">
                 <cmd>Go to <menucascade><uicontrol>Module</uicontrol> <uicontrol>Add New Module</uicontrol></menucascade>.</cmd>
                 <info outputclass="init-hide">
                     <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddNew.png"><alt>Module &gt; Add New Module</alt></image>
                 </info>
-			</step>
+            </step>
 
-			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-addmoduletopane"><cmd/></step> -->
-			<step id="step-cp-addmoduletopane">
-				<cmd>Drag the module to a pane in the current page.</cmd>
-				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-ModulesList-Drag.png"><alt>Drag module to pane.</alt></image></info>
-			</step>
+            <!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-addmoduletopane"><cmd/></step> -->
+            <step id="step-cp-addmoduletopane">
+                <cmd>Drag the module to a pane in the current page.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-ModulesList-Drag.png"><alt>Drag module to pane.</alt></image></info>
+            </step>
 
-			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-addexistingmodule"><cmd/></step> -->
-			<step id="step-cp-addexistingmodule">
+            <!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-addexistingmodule"><cmd/></step> -->
+            <step id="step-cp-addexistingmodule">
                 <cmd>Go to <menucascade><uicontrol>Module</uicontrol> <uicontrol>Add Existing Module</uicontrol></menucascade>.</cmd>
                 <info outputclass="init-hide">
                     <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuModulesAddExisting.png"><alt>Module &gt; Add Existing Module</alt></image>
                 </info>
-			</step>
+            </step>
 
-			<!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-chooseexistingmodule"><cmd/></step> -->
-			<step id="step-cp-chooseexistingmodule">
+            <!-- <step conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-chooseexistingmodule"><cmd/></step> -->
+            <step id="step-cp-chooseexistingmodule">
                 <cmd>Choose a module from another page.</cmd>
-				<substeps>
-					<substep>
-						<cmd>Search for or choose the page containing the configured module instance to refer to.</cmd>
-						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ExistingModule-ChoosePage.png"><alt>From the first dropdown, choose the page containing the module to refer to.</alt></image></info>
-						<stepresult>The modules list panel below the dropdown is populated with the list of modules that exist in the selected page.</stepresult>
-					</substep>
+                <substeps>
+                    <substep>
+                        <cmd>Search for or choose the page containing the configured module instance to refer to.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ExistingModule-ChoosePage.png"><alt>From the first dropdown, choose the page containing the module to refer to.</alt></image></info>
+                        <stepresult>The modules list panel below the dropdown is populated with the list of modules that exist in the selected page.</stepresult>
+                    </substep>
 
-					<substep>
-						<cmd>Choose who can view the module.</cmd>
-						<info>
-							<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ExistingModule-Viewers.png"><alt>From the second dropdown, choose who can view the module.</alt></image>
-							<simpletable relcolwidth="1* 3*">
-								<sthead>
-									<stentry>Field</stentry>
-									<stentry>Description</stentry>
-								</sthead>
-								<strow>
-									<stentry><uicontrol>Same as Page</uicontrol></stentry>
-									<stentry>Inherits the permissions from the current page.</stentry>
-								</strow>
-								<strow>
-									<stentry><uicontrol>Page Editors Only</uicontrol></stentry>
-									<stentry>Displays the module only to users who are allowed to edit the page. You can also use this option to hide content to be published later.</stentry>
-								</strow>
-							</simpletable>
-						</info>
-					</substep>
+                    <substep>
+                        <cmd>Choose who can view the module.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ExistingModule-Viewers.png"><alt>From the second dropdown, choose who can view the module.</alt></image>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow>
+                                    <stentry><uicontrol>Same as Page</uicontrol></stentry>
+                                    <stentry>Inherits the permissions from the current page.</stentry>
+                                </strow>
+                                <strow>
+                                    <stentry><uicontrol>Page Editors Only</uicontrol></stentry>
+                                    <stentry>Displays the module only to users who are allowed to edit the page. You can also use this option to hide content to be published later.</stentry>
+                                </strow>
+                            </simpletable>
+                        </info>
+                    </substep>
 
-					<substep>
-						<cmd>(Optional) Check <uicontrol>Make a Copy</uicontrol>.</cmd>
-						<info>
-							<ul>
-								<li>If unchecked, you create a reference to the module, and any changes to the module configuration or the associated data would be displayed in all pages that refer to that module instance.</li>
-								<li>If checked, you create a copy of the configured module, and future changes to the configuration would not be reflected in the new instance.</li>
-							</ul>
-						</info>
-					</substep>
+                    <substep>
+                        <cmd>(Optional) Check <uicontrol>Make a Copy</uicontrol>.</cmd>
+                        <info>
+                            <ul>
+                                <li>If unchecked, you create a reference to the module, and any changes to the module configuration or the associated data would be displayed in all pages that refer to that module instance.</li>
+                                <li>If checked, you create a copy of the configured module, and future changes to the configuration would not be reflected in the new instance.</li>
+                            </ul>
+                        </info>
+                    </substep>
 
-					<substep>
-						<cmd>Drag the module to a pane in the current page.</cmd>
-						<info>
-							<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-ConfiguredModulesList-Drag.png"><alt>Drag module to pane.</alt></image>
-							<note type="note">You cannot create multiple references of the same module on the same page. However, you can create multiple copies of the same module on the same page.</note>
-						</info>
-					</substep>
-				</substeps>
+                    <substep>
+                        <cmd>Drag the module to a pane in the current page.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-cp-ConfiguredModulesList-Drag.png"><alt>Drag module to pane.</alt></image>
+                            <note type="note">You cannot create multiple references of the same module on the same page. However, you can create multiple copies of the same module on the same page.</note>
+                        </info>
+                    </substep>
+                </substeps>
 
-			</step>
+            </step>
 
         </steps>
 

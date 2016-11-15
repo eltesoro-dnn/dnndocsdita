@@ -36,27 +36,20 @@
         </prereq>
 
         <steps>
-
-            <step>
-                <cmd>Go to <menucascade><uicontrol>Host</uicontrol> <uicontrol>Advanced Settings (double-gear tab)</uicontrol> <uicontrol>Activate Your License</uicontrol></menucascade>.</cmd>
-                <info>
-                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuHostAdvActivateLic.png"><alt>Host &gt; Advanced Settings &gt; Activate Your License</alt></image>
-                </info>
-            </step>
-
+            <step conkeyref="k-bppbar/step-pb-host-Settings-About-E90"><cmd/></step>
             <step>
                 <cmd>Click <uicontrol>Add License</uicontrol>.</cmd>
                 <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingActivate.png"><alt>Click Add License.</alt></image>
+                    <fig outputclass="img-scr-menu">
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingActivate-E90.png"><alt>Click Add License.</alt></image>
+                    </fig>
                 </info>
             </step>
-
             <step>
                 <cmd>Fill in the required information.</cmd>
                 <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingAddMan.png"><alt>Choose License Type, enter Account Email and Invoice Number, then click Manual Activation.</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingAddAuto-E90.png"><alt>Choose License Type, enter Account Email and Invoice Number, then click Automatic Activation.</alt></image>
                 </info>
-
                 <substeps>
                     <substep><cmd>Select the <uicontrol>License Type</uicontrol> from the list.</cmd>
                         <info>
@@ -77,11 +70,10 @@
                     <substep><cmd>Click <uicontrol>Manual Activation</uicontrol>.</cmd></substep>
                 </substeps>
             </step>
-
             <step>
                 <cmd>Get an activation key.</cmd>
                 <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingManual.png"><alt>Copy the encoded server ID, paste it in the website to get an activation key, paste the activation key, then click Submit Activation Key.</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingManual-E90.png"><alt>Copy the encoded server ID, paste it in the website to get an activation key, paste the activation key, then click Submit Activation Key.</alt></image>
                     <note type="tip">If your server does not have access to the Internet, you can access the DNN Professional License Request page on dnnsoftware.com from another machine and transfer the keys through a local network or a secure flash drive.</note>
                 </info>
 
@@ -105,10 +97,6 @@
             </step>
 
         </steps>
-
-        <result>
-            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingActivate.png"><alt>License has been activated successfully.</alt></image>
-        </result>
 
     </taskbody>
 

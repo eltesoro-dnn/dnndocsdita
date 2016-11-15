@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-copy-page-pb-cmg">
+
+    <title>Copy a Page via the Persona Bar</title>
+    <titlealts>
+        <navtitle>Copy Page</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orLY,edET,1605</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <section conkeyref="k-bptext/section-prodavail-CE"></section>
+
+        <steps>
+            <step conkeyref="k-bppbar/step-pb-cmg-Content-Pages-E90"><cmd/></step>
+            <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gearicon"><cmd/></step>
+            <step>
+                <cmd>Click/Tap <uicontrol>Duplicate Page</uicontrol>.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-ConfigPage-DuplicatePage.png"><alt>Pages &gt; Duplicate Page</alt></image>
+                </info>
+            </step>
+            <step>
+                <cmd conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/cmd-pb-configurepage"></cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details.png"><alt>Add Page &gt; Details</alt></image>
+                    <simpletable conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/simpletable-pb-configurepage"><strow/></simpletable>
+                </info>
+            </step>
+            <step>
+                <cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-page-permissions"></cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Page-Permissions.png"><alt>Add Page &gt; Permissions</alt></image>
+                    <ul conkeyref="k-bpsteps/ul-configure-permissions"><li/></ul>
+                </info>
+            </step>
+            <step><cmd>Click/Tap <uicontrol>Save</uicontrol>.</cmd></step>
+            <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-addfloatingpagetohierarchy"><cmd/></step>
+        </steps>
+
+        <result>The page is displayed in edit mode. You can click/tap on any of the panes to add content or modules.</result>
+
+    </taskbody>
+
+</task>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-create-template-based-on-page-pb-cmg">
+
+    <title>Create a Template Based on an Page via the Persona Bar</title>
+    <titlealts>
+        <navtitle>Create Template Based on Page</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orLY,edET,1605</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <section conkeyref="k-bptext/section-prodavail-CE"></section>
+
+        <steps>
+            <step conkeyref="k-bppbar/step-pb-cmg-Content-Pages-E90"><cmd/></step>
+            <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gearicon"><cmd/></step>
+            <step>
+                <cmd>Click/Tap <uicontrol>Save as Template</uicontrol>.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-ConfigPage-SaveAsTemplate.png"><alt>Pages &gt; Save as Template</alt></image>
+                </info>
+            </step>
+            <step>
+                <cmd>Enter a name and a description for the template.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-SaveTemplate.png"><alt>Enter template name and description.</alt></image>
+                </info>
+            </step>
+        </steps>
+
+        <result>
+            <p>The list of templates is displayed with the new template.</p>
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageTemplates-NewTemplate.png"><alt>List of templates including the new template.</alt></image>
+        </result>
+
+    </taskbody>
+
+</task>

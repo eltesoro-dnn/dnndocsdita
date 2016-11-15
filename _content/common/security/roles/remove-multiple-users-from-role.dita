@@ -43,9 +43,9 @@
         </prereq>
 
         <steps>
-            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-manageroles"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-searchforrole"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-manageusers"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-manageroles"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-searchforrole"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-manageusers"><cmd/></step>
             <step>
                 <cmd>In the <wintitle>Manage Users in Role</wintitle> page, search for the user and remove.</cmd>
                 <choices>

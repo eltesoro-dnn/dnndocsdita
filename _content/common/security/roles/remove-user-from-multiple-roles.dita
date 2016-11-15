@@ -37,9 +37,9 @@
         <prereq><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></prereq>
 
         <steps>
-            <step conref="../user-accounts/bptext-userssteps.dita#bptext-userssteps/step-gotouseracctlist"><cmd/></step>
-            <step conref="../user-accounts/bptext-userssteps.dita#bptext-userssteps/step-searchforuser"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-managerolesforuser"><cmd/></step>
+            <step conref="../user-accounts/bptext-userssteps.dita#tsk-bptext-userssteps/step-gotouseracctlist"><cmd/></step>
+            <step conref="../user-accounts/bptext-userssteps.dita#tsk-bptext-userssteps/step-searchforuser"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-managerolesforuser"><cmd/></step>
             <step>
                 <cmd>For each role to remove from the user,</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageRolesForUserDelete.png"><alt>Click/Tap trash icon for each role to remove.</alt></image></info>

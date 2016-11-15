@@ -34,16 +34,12 @@
 
 		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
-        <section>
-            <note type="note"><ph conref="bptext-userssteps.dita#bptext-userssteps/ph-hostcannotbedemoted"></ph></note>
-        </section>
-
         <prereq><ph conkeyref="k-bptext/ph-PrereqHost"></ph></prereq>
 
         <steps>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotohostacctlist"><cmd/></step>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-searchforuser"><cmd/></step>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-edituser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-gotohostacctlist"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-searchforuser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-edituser"><cmd/></step>
             <step>
                 <cmd>Click/Tap <uicontrol>Make Regular User</uicontrol>.</cmd>
                 <info>

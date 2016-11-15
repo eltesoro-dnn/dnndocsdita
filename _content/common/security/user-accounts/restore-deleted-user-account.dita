@@ -44,9 +44,9 @@
 
 
         <steps>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotouseracctlist"><cmd/></step>
-			<step conref="bptext-userssteps.dita#bptext-userssteps/step-searchfordeleteduser"><cmd/></step>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-restoredeleteduser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-gotouseracctlist"><cmd/></step>
+			<step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-searchfordeleteduser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-restoredeleteduser"><cmd/></step>
         </steps>
 
     </taskbody>

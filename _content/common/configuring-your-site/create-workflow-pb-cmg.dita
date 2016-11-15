@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-create-workflow-pb-cmg">
+
+    <title>Create a Workflow</title>
+    <titlealts>
+        <navtitle>Create Workflow</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1606</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-CE"></section>
+
+        <steps>
+            <step conkeyref="k-bppbar/step-pb-cmg-Settings-Workflow-E90"><cmd/></step>
+			<step conkeyref="k-bpsteps/step-pb-workflowlist"><cmd/></step>
+			<step conkeyref="k-bpsteps/step-pb-createworkflow"><cmd/></step>
+			<step conkeyref="k-bpsteps/step-pb-manageworkflowstates"><cmd/></step>
+        </steps>
+
+        <postreq>
+        	<xref format="dita" href="edit-workflow-pb-cmg.dita">Edit the workflow to add/edit/delete states.</xref>
+        </postreq>
+
+    </taskbody>
+
+</task>

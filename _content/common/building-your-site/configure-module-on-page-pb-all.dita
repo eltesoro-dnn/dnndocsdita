@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-configure-module-on-page-pb-all">
+
+    <title>Configure a Module on a Page via the Persona Bar</title>
+    <titlealts>
+        <navtitle>Configure Module</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orLY,edET,1605</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <section conkeyref="k-bptext/section-prodavail-CE"></section>
+
+        <steps>
+            <step><cmd>Go to the page containing the module to configure.</cmd></step>
+            <step conkeyref="k-bppbar/step-pb-all-Edit-E90"><cmd/></step>
+            <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step>
+            <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-modulesettings"><cmd/></step>
+            <step>
+                <cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-module-permissions"></cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Module-Permissions.png"><alt>Module Settings &gt; Permissions</alt></image></info>
+                <substeps conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/substeps-xx-configure-module-permissions"><substep><cmd/></substep></substeps>
+            </step>
+            <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-pagesettings"><cmd/></step>
+            <step conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-modulemanagesettings-customsettings"><cmd/></step>
+        </steps>
+
+    </taskbody>
+
+</task>

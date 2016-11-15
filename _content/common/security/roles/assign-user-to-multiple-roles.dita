@@ -37,9 +37,9 @@
         <prereq><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></prereq>
 
         <steps>
-            <step conref="../user-accounts/bptext-userssteps.dita#bptext-userssteps/step-gotouseracctlist"><cmd/></step>
-            <step conref="../user-accounts/bptext-userssteps.dita#bptext-userssteps/step-searchforuser"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#bptext-rolessteps/step-managerolesforuser"><cmd/></step>
+            <step conref="../user-accounts/bptext-userssteps.dita#tsk-bptext-userssteps/step-gotouseracctlist"><cmd/></step>
+            <step conref="../user-accounts/bptext-userssteps.dita#tsk-bptext-userssteps/step-searchforuser"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-managerolesforuser"><cmd/></step>
             <step>
                 <cmd>For each role to add to the user,</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../../common/img/scr-ManageRolesForUserAdd.png"><alt>Select each role and optionally assign effective or expiry dates. Then click/tap Add Role to User.</alt></image></info>

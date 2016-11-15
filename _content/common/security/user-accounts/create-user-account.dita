@@ -43,8 +43,8 @@
         </prereq>
 
         <steps>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotoaddusers"><cmd/></step>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-enteruserinfo"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-gotoaddusers"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-enteruserinfo"><cmd/></step>
         </steps>
 
     </taskbody>

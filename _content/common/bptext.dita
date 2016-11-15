@@ -67,145 +67,145 @@
 
         <!-- <note conref="../../common/bptext.dita#top-bptext/note-ModuleSecurityForHosts"></note> -->
         <!-- <note conkeyref="k-bptext/note-ModuleSecurityForHosts"></note> -->
-		<note type="important" id="note-ModuleSecurityForHosts">To improve security, grant module access only to host users, and disable the module if not used regularly.</note>
+        <note type="important" id="note-ModuleSecurityForHosts">To improve security, grant module access only to host users, and disable the module if not used regularly.</note>
 
 
         <!-- <note conref="../../common/bptext.dita#top-bptext/note-ModuleSecurityForAdmins"></note> -->
         <!-- <note conkeyref="k-bptext/note-ModuleSecurityForAdmins"></note> -->
-		<note type="important" id="note-ModuleSecurityForAdmins">To improve security, restrict permissions for modules that perform administrative tasks.</note>
+        <note type="important" id="note-ModuleSecurityForAdmins">To improve security, restrict permissions for modules that perform administrative tasks.</note>
 
 
         <!-- <note conref="../../common/bptext.dita#top-bptext/note-SecurityReviewLogs"></note> -->
         <!-- <note conkeyref="k-bptext/note-SecurityReviewLogs"></note> -->
-		<note type="tip" id="note-SecurityReviewLogs">Review your site's logs regularly to be familiar with your traffic patterns. This practice makes it easier for you to identify unusual patterns that might indicate suspicious activity.</note>
+        <note type="tip" id="note-SecurityReviewLogs">Review your site's logs regularly to be familiar with your traffic patterns. This practice makes it easier for you to identify unusual patterns that might indicate suspicious activity.</note>
 
 
         <!-- <note conref="../../common/bptext.dita#top-bptext/note-DNNContentTypesNoEdit"></note> -->
         <!-- <note conkeyref="k-bptext/note-DNNContentTypesNoEdit"></note> -->
-		<note type="note" id="note-DNNContentTypesNoEdit">Content types provided by DNN cannot be edited. To use a DNN-provided content type as a template for your own content type, you can duplicate it and customize the copy.</note>
+        <note type="note" id="note-DNNContentTypesNoEdit">Content types provided by DNN cannot be edited. To use a DNN-provided content type as a template for your own content type, you can duplicate it and customize the copy.</note>
 
         <!-- <note conref="../../common/bptext.dita#top-bptext/note-DNNContentTypesNoDel"></note> -->
         <!-- <note conkeyref="k-bptext/note-DNNContentTypesNoDel"></note> -->
-		<note type="note" id="note-DNNContentTypesNoDel">Content types provided by DNN cannot be deleted.</note>
+        <note type="note" id="note-DNNContentTypesNoDel">Content types provided by DNN cannot be deleted.</note>
 
         <!-- <note conref="../../common/bptext.dita#top-bptext/note-DNNVisualizersNoEdit"></note> -->
         <!-- <note conkeyref="k-bptext/note-DNNVisualizersNoEdit"></note> -->
-		<note type="note" id="note-DNNVisualizersNoEdit">Visualizers provided by DNN cannot be edited.</note>
+        <note type="note" id="note-DNNVisualizersNoEdit">Visualizers provided by DNN cannot be edited.</note>
 
         <!-- <note conref="../../common/bptext.dita#top-bptext/note-DNNVisualizersNoDel"></note> -->
         <!-- <note conkeyref="k-bptext/note-DNNVisualizersNoDel"></note> -->
-		<note type="note" id="note-DNNVisualizersNoDel">Visualizers provided by DNN cannot be deleted.</note>
+        <note type="note" id="note-DNNVisualizersNoDel">Visualizers provided by DNN cannot be deleted.</note>
 
 
 
         <!-- ==================== Page and Module Settings ==================== -->
 
-		<!-- <ul conref="../../common/bptext.dita#top-bptext/ul-publisheddatespages"><li/></ul> -->
-		<!-- <ul conkeyref="k-bptext/ul-publisheddatespages"><li/></ul> -->
-		<ul id="ul-publisheddatespages">
-			<li>The page is published after the specified start date. If <uicontrol>Start Date</uicontrol> is not set, the page is published immediately.</li>
-			<li>The page is hidden after the specified end date. If <uicontrol>End Date</uicontrol> is not set, the page is visible indefinitely.</li>
-		</ul>
+        <!-- <ul conref="../../common/bptext.dita#top-bptext/ul-publisheddatespages"><li/></ul> -->
+        <!-- <ul conkeyref="k-bptext/ul-publisheddatespages"><li/></ul> -->
+        <ul id="ul-publisheddatespages">
+            <li>The page is published after the specified start date. If <uicontrol>Start Date</uicontrol> is not set, the page is published immediately.</li>
+            <li>The page is hidden after the specified end date. If <uicontrol>End Date</uicontrol> is not set, the page is visible indefinitely.</li>
+        </ul>
 
-		<!-- <ul conref="../../common/bptext.dita#top-bptext/ul-publisheddatesmodules"><li/></ul> -->
-		<!-- <ul conkeyref="k-bptext/ul-publisheddatesmodules"><li/></ul> -->
-		<ul id="ul-publisheddatesmodules">
-			<li>The module is published after the specified start date. If <uicontrol>Start Date</uicontrol> is not set, the module is published immediately.</li>
-			<li>The module is hidden after the specified end date. If <uicontrol>End Date</uicontrol> is not set, the module is visible indefinitely.</li>
-		</ul>
-
-
-		<!-- <p conref="../../common/bptext.dita#top-bptext/p-clicktapcalendarclockicons"></p> -->
-		<!-- <p conkeyref="k-bptext/p-clicktapcalendarclockicons"></p> -->
-		<p id="p-clicktapcalendarclockicons">Click/Tap on the calendar icon to choose the date (server date); the default is the current date. Click/Tap on the clock icon to choose the time; the default is 12:00 AM (server time).</p>
+        <!-- <ul conref="../../common/bptext.dita#top-bptext/ul-publisheddatesmodules"><li/></ul> -->
+        <!-- <ul conkeyref="k-bptext/ul-publisheddatesmodules"><li/></ul> -->
+        <ul id="ul-publisheddatesmodules">
+            <li>The module is published after the specified start date. If <uicontrol>Start Date</uicontrol> is not set, the module is published immediately.</li>
+            <li>The module is hidden after the specified end date. If <uicontrol>End Date</uicontrol> is not set, the module is visible indefinitely.</li>
+        </ul>
 
 
-		<!-- <p conref="../../common/bptext.dita#top-bptext/p-AddPageLinkType"></p> -->
-		<!-- <p conkeyref="k-bptext/p-AddPageLinkType"></p> -->
-		<p id="p-AddPageLinkType">
-			<uicontrol>Link Type</uicontrol>
-			<ul>
-				<li><uicontrol>None</uicontrol> creates a new page and adds it to the site's navigation.</li>
-				<li><uicontrol>URL</uicontrol> creates a navigation link to an external resource outside the site. Add a new URL in <uicontrol>Location</uicontrol> or select from the dropdown list of previously entered URLs.</li>
-				<li><uicontrol>Page</uicontrol> creates a navigation link to a page in the same site. Choose the page from the <uicontrol>Page</uicontrol> dropdown.</li>
-				<li><uicontrol>File</uicontrol> creates a navigation link to a file in the same site. Choose a file that is already on your site or upload a file.</li>
-			</ul>
-		</p>
+        <!-- <p conref="../../common/bptext.dita#top-bptext/p-clicktapcalendarclockicons"></p> -->
+        <!-- <p conkeyref="k-bptext/p-clicktapcalendarclockicons"></p> -->
+        <p id="p-clicktapcalendarclockicons">Click/Tap on the calendar icon to choose the date (server date); the default is the current date. Click/Tap on the clock icon to choose the time; the default is 12:00 AM (server time).</p>
 
 
-		<ul>
-			<!-- <li conref="../../common/bptext.dita#top-bptext/li-AddPageChooseSiteFile"></li> -->
-			<!-- <li conkeyref="k-bptext/li-AddPageChooseSiteFile"></li> -->
-			<li id="li-AddPageChooseSiteFile">
-				To choose a file that is already on your site,
-				<ol>
-					<li>Select <uicontrol>File (A File on Your Site)</uicontrol>.</li>
-					<li>Choose the <uicontrol>Folder</uicontrol> where the file can be found.</li>
-					<li>Choose the <uicontrol>File</uicontrol>.</li>
-				</ol>
-			</li>
-
-			<!-- <li conref="../../common/bptext.dita#top-bptext/li-AddPageUploadFile"></li> -->
-			<!-- <li conkeyref="k-bptext/li-AddPageUploadFile"></li> -->
-			<li id="li-AddPageUploadFile">
-				To upload a file to your site,
-				<ol>
-					<li>Choose the <uicontrol>Folder</uicontrol> where the file should be stored.</li>
-					<li>Drag and drop the files from your local drive to the <uicontrol>Drop File(s) Here</uicontrol> box.</li>
-					<li>Click/Tap <uicontrol>Upload File</uicontrol>.</li>
-				</ol>
-			</li>
-
-			<!-- <li conref="../../common/bptext.dita#top-bptext/li-ChooseUploadSiteFile"></li> -->
-			<!-- <li conkeyref="k-bptext/li-ChooseUploadSiteFile"></li> -->
-			<li id="li-ChooseUploadSiteFile">
-				<p>Choose <uicontrol>File</uicontrol> to provide your own file.</p>
-				<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-ChooseUploadSiteFile.png"><alt>Choose a file from your site.</alt></image>
-				<p>To choose a file that is already on your site,
-					<ol>
-						<li>Select <uicontrol>File (A File on Your Site)</uicontrol>.</li>
-						<li>Choose the <uicontrol>Folder</uicontrol> where the file can be found.</li>
-						<li>Choose the <uicontrol>File</uicontrol>.</li>
-					</ol>
-				</p>
-				<p>To upload a file,
-					<ol>
-						<li>Select <uicontrol>File (A File on Your Site)</uicontrol>.</li>
-						<li>Choose the <uicontrol>Folder</uicontrol> where the uploaded file should go.</li>
-						<li>Drag and drop the files from your local storage to the <uicontrol>Drop File(s) Here</uicontrol> area.</li>
-					</ol>
-				</p>
-				<p>Alternately, you can copy a file from a URL to your site.
-					<ol>
-						<li>Select <uicontrol>File (A File on Your Site)</uicontrol>.</li>
-						<li>Click/Tap <uicontrol>Upload File</uicontrol>.</li>
-						<li>In the <uicontrol>Upload Files</uicontrol> dialog,
-							<ol>
-								<li>click/tap <uicontrol>From URL</uicontrol>,</li>
-								<li>choose the target location on your site,</li>
-								<li>enter the source URL, and</li>
-								<li>click/tap <uicontrol>Upload</uicontrol>.</li>
-							</ol>
-							<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-UploadFileFromURL.png"><alt>Upload File from URL dialog</alt></image>
-						</li>
-					</ol>
-				</p>
-			</li>
-
-			<!-- <li conref="../../common/bptext.dita#top-bptext/li-ChooseSystemImage"></li> -->
-			<!-- <li conkeyref="k-bptext/li-ChooseSystemImage"></li> -->
-			<li id="li-ChooseSystemImage">
-				<p>To choose an image that shipped with DNN,
-					<ol>
-						<li>Select <uicontrol>System Image</uicontrol>.</li>
-						<li>Choose the image from the <uicontrol>Image</uicontrol> dropdown.</li>
-					</ol>
-				</p>
-				<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-ChooseASystemImage.png"><alt>Choose an image that shipped with DNN.</alt></image>
-			</li>
+        <!-- <p conref="../../common/bptext.dita#top-bptext/p-AddPageLinkType"></p> -->
+        <!-- <p conkeyref="k-bptext/p-AddPageLinkType"></p> -->
+        <p id="p-AddPageLinkType">
+            <uicontrol>Link Type</uicontrol>
+            <ul>
+                <li><uicontrol>None</uicontrol> creates a new page and adds it to the site's navigation.</li>
+                <li><uicontrol>URL</uicontrol> creates a navigation link to an external resource outside the site. Add a new URL in <uicontrol>Location</uicontrol> or select from the dropdown list of previously entered URLs.</li>
+                <li><uicontrol>Page</uicontrol> creates a navigation link to a page in the same site. Choose the page from the <uicontrol>Page</uicontrol> dropdown.</li>
+                <li><uicontrol>File</uicontrol> creates a navigation link to a file in the same site. Choose a file that is already on your site or upload a file.</li>
+            </ul>
+        </p>
 
 
-		</ul>
+        <ul>
+            <!-- <li conref="../../common/bptext.dita#top-bptext/li-AddPageChooseSiteFile"></li> -->
+            <!-- <li conkeyref="k-bptext/li-AddPageChooseSiteFile"></li> -->
+            <li id="li-AddPageChooseSiteFile">
+                To choose a file that is already on your site,
+                <ol>
+                    <li>Select <uicontrol>File (A File on Your Site)</uicontrol>.</li>
+                    <li>Choose the <uicontrol>Folder</uicontrol> where the file can be found.</li>
+                    <li>Choose the <uicontrol>File</uicontrol>.</li>
+                </ol>
+            </li>
+
+            <!-- <li conref="../../common/bptext.dita#top-bptext/li-AddPageUploadFile"></li> -->
+            <!-- <li conkeyref="k-bptext/li-AddPageUploadFile"></li> -->
+            <li id="li-AddPageUploadFile">
+                To upload a file to your site,
+                <ol>
+                    <li>Choose the <uicontrol>Folder</uicontrol> where the file should be stored.</li>
+                    <li>Drag and drop the files from your local drive to the <uicontrol>Drop File(s) Here</uicontrol> box.</li>
+                    <li>Click/Tap <uicontrol>Upload File</uicontrol>.</li>
+                </ol>
+            </li>
+
+            <!-- <li conref="../../common/bptext.dita#top-bptext/li-ChooseUploadSiteFile"></li> -->
+            <!-- <li conkeyref="k-bptext/li-ChooseUploadSiteFile"></li> -->
+            <li id="li-ChooseUploadSiteFile">
+                <p>Choose <uicontrol>File</uicontrol> to provide your own file.</p>
+                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-ChooseUploadSiteFile.png"><alt>Choose a file from your site.</alt></image>
+                <p>To choose a file that is already on your site,
+                    <ol>
+                        <li>Select <uicontrol>File (A File on Your Site)</uicontrol>.</li>
+                        <li>Choose the <uicontrol>Folder</uicontrol> where the file can be found.</li>
+                        <li>Choose the <uicontrol>File</uicontrol>.</li>
+                    </ol>
+                </p>
+                <p>To upload a file,
+                    <ol>
+                        <li>Select <uicontrol>File (A File on Your Site)</uicontrol>.</li>
+                        <li>Choose the <uicontrol>Folder</uicontrol> where the uploaded file should go.</li>
+                        <li>Drag and drop the files from your local storage to the <uicontrol>Drop File(s) Here</uicontrol> area.</li>
+                    </ol>
+                </p>
+                <p>Alternately, you can copy a file from a URL to your site.
+                    <ol>
+                        <li>Select <uicontrol>File (A File on Your Site)</uicontrol>.</li>
+                        <li>Click/Tap <uicontrol>Upload File</uicontrol>.</li>
+                        <li>In the <uicontrol>Upload Files</uicontrol> dialog,
+                            <ol>
+                                <li>click/tap <uicontrol>From URL</uicontrol>,</li>
+                                <li>choose the target location on your site,</li>
+                                <li>enter the source URL, and</li>
+                                <li>click/tap <uicontrol>Upload</uicontrol>.</li>
+                            </ol>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-UploadFileFromURL.png"><alt>Upload File from URL dialog</alt></image>
+                        </li>
+                    </ol>
+                </p>
+            </li>
+
+            <!-- <li conref="../../common/bptext.dita#top-bptext/li-ChooseSystemImage"></li> -->
+            <!-- <li conkeyref="k-bptext/li-ChooseSystemImage"></li> -->
+            <li id="li-ChooseSystemImage">
+                <p>To choose an image that shipped with DNN,
+                    <ol>
+                        <li>Select <uicontrol>System Image</uicontrol>.</li>
+                        <li>Choose the image from the <uicontrol>Image</uicontrol> dropdown.</li>
+                    </ol>
+                </p>
+                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-ChooseASystemImage.png"><alt>Choose an image that shipped with DNN.</alt></image>
+            </li>
+
+
+        </ul>
 
 
         <!-- ==================== Microservices ==================== -->
@@ -250,7 +250,7 @@
 
         <!-- <note conref="../../common/bptext.dita#top-bptext/note-VisibleToAdminsOnly"></note> -->
         <!-- <note conkeyref="k-bptext/note-VisibleToAdminsOnly"></note> -->
-		<note type="note" id="note-VisibleToAdminsOnly">This module is visible to administrators only.</note>
+        <note type="note" id="note-VisibleToAdminsOnly">This module is visible to administrators only.</note>
 
 
 
@@ -270,32 +270,32 @@
 
         <!-- ==================== Product Logos ==================== -->
 
-		<!-- <section conref="../../common/bptext.dita#top-bptext/section-prodavail-PCE"></section> -->
+        <!-- <section conref="../../common/bptext.dita#top-bptext/section-prodavail-PCE"></section> -->
         <!-- <section conkeyref="k-bptext/section-prodavail-PCE"></section> -->
-		<section id="section-prodavail-PCE">
+        <section id="section-prodavail-PCE">
             <ul outputclass="ul-prodavail">
                 <li><image conkeyref="k-bptext/image-AvailLogoPlatform"></image></li>
                 <li><image conkeyref="k-bptext/image-AvailLogoContent"></image></li>
                 <li><image conkeyref="k-bptext/image-AvailLogoEngage"></image></li>
             </ul>
-		</section>
+        </section>
 
-		<!-- <section conref="../../common/bptext.dita#top-bptext/section-prodavail-CE"></section> -->
+        <!-- <section conref="../../common/bptext.dita#top-bptext/section-prodavail-CE"></section> -->
         <!-- <section conkeyref="k-bptext/section-prodavail-CE"></section> -->
-		<section id="section-prodavail-CE">
+        <section id="section-prodavail-CE">
             <ul outputclass="ul-prodavail">
                 <li><image conkeyref="k-bptext/image-AvailLogoContent"></image></li>
                 <li><image conkeyref="k-bptext/image-AvailLogoEngage"></image></li>
             </ul>
-		</section>
+        </section>
 
-		<!-- <section conref="../../common/bptext.dita#top-bptext/section-prodavail-E"></section> -->
+        <!-- <section conref="../../common/bptext.dita#top-bptext/section-prodavail-E"></section> -->
         <!-- <section conkeyref="k-bptext/section-prodavail-E"></section> -->
-		<section id="section-prodavail-E">
+        <section id="section-prodavail-E">
             <ul outputclass="ul-prodavail">
                 <li><image conkeyref="k-bptext/image-AvailLogoEngage"></image></li>
             </ul>
-		</section>
+        </section>
 
 
 
@@ -303,32 +303,32 @@
 
         <!-- Use the following in each page to indicate what product the feature is available in. -->
 
-		<!-- <image conref="../../common/bptext.dita#top-bptext/image-AvailLogoPlatform"></image> -->
+        <!-- <image conref="../../common/bptext.dita#top-bptext/image-AvailLogoPlatform"></image> -->
         <!-- <image conkeyref="k-bptext/image-AvailLogoPlatform"></image> -->
         <image id="image-AvailLogoPlatform" outputclass="img-availprod" href="img/ico-dnn-platform.png"><alt>Platform</alt></image>
 
-		<!-- <image conref="../../common/bptext.dita#top-bptext/image-AvailLogoContent"></image> -->
+        <!-- <image conref="../../common/bptext.dita#top-bptext/image-AvailLogoContent"></image> -->
         <!-- <image conkeyref="k-bptext/image-AvailLogoContent"></image> -->
-		<image id="image-AvailLogoContent" outputclass="img-availprod" href="img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+        <image id="image-AvailLogoContent" outputclass="img-availprod" href="img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
 
-		<!-- <image conref="../../common/bptext.dita#top-bptext/image-AvailLogoEngage"></image> -->
+        <!-- <image conref="../../common/bptext.dita#top-bptext/image-AvailLogoEngage"></image> -->
         <!-- <image conkeyref="k-bptext/image-AvailLogoEngage"></image> -->
-		<image id="image-AvailLogoEngage" outputclass="img-availprod" href="img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+        <image id="image-AvailLogoEngage" outputclass="img-availprod" href="img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
 
 
         <!-- Use the following in included-modules. -->
 
-		<!-- <image conref="../../common/bptext.dita#top-bptext/image-LogoPlatform"></image> -->
+        <!-- <image conref="../../common/bptext.dita#top-bptext/image-LogoPlatform"></image> -->
         <!-- <image conkeyref="k-bptext/image-LogoPlatform"></image> -->
         <image id="image-LogoPlatform" outputclass="img-logoprod" href="img/ico-dnn-platform.png"><alt>Platform</alt></image>
 
-		<!-- <image conref="../../common/bptext.dita#top-bptext/image-LogoContent"></image> -->
+        <!-- <image conref="../../common/bptext.dita#top-bptext/image-LogoContent"></image> -->
         <!-- <image conkeyref="k-bptext/image-LogoContent"></image> -->
-		<image id="image-LogoContent" outputclass="img-logoprod" href="img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
+        <image id="image-LogoContent" outputclass="img-logoprod" href="img/ico-evoq-content.png"><alt>Evoq Content</alt></image>
 
-		<!-- <image conref="../../common/bptext.dita#top-bptext/image-LogoEngage"></image> -->
+        <!-- <image conref="../../common/bptext.dita#top-bptext/image-LogoEngage"></image> -->
         <!-- <image conkeyref="k-bptext/image-LogoEngage"></image> -->
-		<image id="image-LogoEngage" outputclass="img-logoprod" href="img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
+        <image id="image-LogoEngage" outputclass="img-logoprod" href="img/ico-evoq-engage.png"><alt>Evoq Engage</alt></image>
 
 
     </body>

@@ -14,1081 +14,1081 @@
 
     <taskbody>
 
-		<section>
-
-			<!-- FIELD NAMES IN SIMPLETABLE -->
-
-			<simpletable relcolwidth="1* 3*">
-
-				<!-- ========== MODULE: JOURNAL AND ACTIVITY STREAM [FILTER] ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableJournalEditor"><stentry/></strow> -->
-				<strow id="strow-field-EnableJournalEditor">
-					<stentry><uicontrol>Enable Journal Editor</uicontrol></stentry>
-					<stentry>If checked, the user can add new entries using the inline editor. Otherwise, the user can only read the journal entries.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableActivityStreamEditor"><stentry/></strow> -->
-				<strow id="strow-field-EnableActivityStreamEditor">
-					<stentry><uicontrol>Enable Activity Stream Editor</uicontrol></stentry>
-					<stentry>If checked, the user can add new entries using the inline editor. Otherwise, the user can only read the activity entries.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableFileAttachments"><stentry/></strow> -->
-				<strow id="strow-field-EnableFileAttachments">
-					<stentry><uicontrol>Enable File Attachments</uicontrol></stentry>
-					<stentry>If checked:
-						<ul>
-							<li>The paperclip icon is displayed in the inline editor, so that users can attach files to their entries.</li>
-							<li>Existing entries that include attachments are displayed in the list.</li>
-							<li>When possible, a preview of the attachment is displayed.</li>
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnablePhotoAttachments"><stentry/></strow> -->
-				<strow id="strow-field-EnablePhotoAttachments">
-					<stentry><uicontrol>Enable Photo Attachments</uicontrol></stentry>
-					<stentry>If checked:
-						<ul>
-							<li>The photo icon is displayed in the inline editor, so that users can use a photo as their entry.</li>
-							<li>Existing photo entries are displayed in the list.</li>
-							<li>The photo is resized and compressed for improved performance.</li>
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ResizePhotos"><stentry/></strow> -->
-				<strow id="strow-field-ResizePhotos">
-					<stentry><uicontrol>Resize Photos</uicontrol></stentry>
-					<stentry>If checked, attached photos would be resized proportionately as the page size changes.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MaxFilesPerJournal"><stentry/></strow> -->
-				<strow id="strow-field-MaxFilesPerJournal">
-					<stentry><uicontrol>Max Files Per Journal</uicontrol></stentry>
-					<stentry>The maximum number of attachments per entry</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableViewFilters"><stentry/></strow> -->
-				<strow id="strow-field-EnableViewFilters">
-					<stentry><uicontrol>Enable View Filters</uicontrol></stentry>
-					<stentry>If checked, the user is allowed to filter the list based on activity type.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableGroupingOfPosts"><stentry/></strow> -->
-				<strow id="strow-field-EnableGroupingOfPosts">
-					<stentry><uicontrol>Enable Grouping of Posts</uicontrol></stentry>
-					<stentry>If checked, entries of the same type are represented on the list as a single entry.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DefaultPageSize"><stentry/></strow> -->
-				<strow id="strow-field-DefaultPageSize">
-					<stentry><uicontrol>Default Page Size</uicontrol></stentry>
-					<stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesizecumulativeGetMore"></ph></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MaximumCharactersPerMessage"><stentry/></strow> -->
-				<strow id="strow-field-MaximumCharactersPerMessage">
-					<stentry><uicontrol>Maximum Characters per Message</uicontrol></stentry>
-					<stentry>The maximum number of single-byte characters in the text entry. The actual number of characters might be fewer with multi-byte characters.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-JournalTypes"><stentry/></strow> -->
-				<strow id="strow-field-JournalTypes">
-					<stentry><uicontrol>Journal Types</uicontrol></stentry>
-					<!-- <stentry conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/stentry-desc-JournalActivityTypes"></stentry> -->
-					<stentry id="stentry-desc-JournalActivityTypes">
-						<p>Content types that are displayed in the list of entries. Old content of a disabled type still remain in the database, and new content of a disabled type can still be created without error; however, they are not displayed in the list until the type is enabled again.</p>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ActivityTypes"><stentry/></strow> -->
-				<strow id="strow-field-ActivityTypes">
-					<stentry><uicontrol>Activity Types</uicontrol></stentry>
-					<stentry conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/stentry-desc-JournalActivityTypes"></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AvailableActivityFilterTypes"><stentry/></strow> -->
-				<strow id="strow-field-AvailableActivityFilterTypes">
-					<stentry><uicontrol>Available Activity Filter Types</uicontrol></stentry>
-					<stentry>(In the <uicontrol>Activity Stream Filter</uicontrol> module settings.) Content types that are included in the <uicontrol>Filter by activity</uicontrol> dropdown list.</stentry>
-				</strow>
-
+        <section>
+
+            <!-- FIELD NAMES IN SIMPLETABLE -->
+
+            <simpletable relcolwidth="1* 3*">
+
+                <!-- ========== MODULE: JOURNAL AND ACTIVITY STREAM [FILTER] ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableJournalEditor"><stentry/></strow> -->
+                <strow id="strow-field-EnableJournalEditor">
+                    <stentry><uicontrol>Enable Journal Editor</uicontrol></stentry>
+                    <stentry>If checked, the user can add new entries using the inline editor. Otherwise, the user can only read the journal entries.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableActivityStreamEditor"><stentry/></strow> -->
+                <strow id="strow-field-EnableActivityStreamEditor">
+                    <stentry><uicontrol>Enable Activity Stream Editor</uicontrol></stentry>
+                    <stentry>If checked, the user can add new entries using the inline editor. Otherwise, the user can only read the activity entries.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableFileAttachments"><stentry/></strow> -->
+                <strow id="strow-field-EnableFileAttachments">
+                    <stentry><uicontrol>Enable File Attachments</uicontrol></stentry>
+                    <stentry>If checked:
+                        <ul>
+                            <li>The paperclip icon is displayed in the inline editor, so that users can attach files to their entries.</li>
+                            <li>Existing entries that include attachments are displayed in the list.</li>
+                            <li>When possible, a preview of the attachment is displayed.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnablePhotoAttachments"><stentry/></strow> -->
+                <strow id="strow-field-EnablePhotoAttachments">
+                    <stentry><uicontrol>Enable Photo Attachments</uicontrol></stentry>
+                    <stentry>If checked:
+                        <ul>
+                            <li>The photo icon is displayed in the inline editor, so that users can use a photo as their entry.</li>
+                            <li>Existing photo entries are displayed in the list.</li>
+                            <li>The photo is resized and compressed for improved performance.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ResizePhotos"><stentry/></strow> -->
+                <strow id="strow-field-ResizePhotos">
+                    <stentry><uicontrol>Resize Photos</uicontrol></stentry>
+                    <stentry>If checked, attached photos would be resized proportionately as the page size changes.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MaxFilesPerJournal"><stentry/></strow> -->
+                <strow id="strow-field-MaxFilesPerJournal">
+                    <stentry><uicontrol>Max Files Per Journal</uicontrol></stentry>
+                    <stentry>The maximum number of attachments per entry</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableViewFilters"><stentry/></strow> -->
+                <strow id="strow-field-EnableViewFilters">
+                    <stentry><uicontrol>Enable View Filters</uicontrol></stentry>
+                    <stentry>If checked, the user is allowed to filter the list based on activity type.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableGroupingOfPosts"><stentry/></strow> -->
+                <strow id="strow-field-EnableGroupingOfPosts">
+                    <stentry><uicontrol>Enable Grouping of Posts</uicontrol></stentry>
+                    <stentry>If checked, entries of the same type are represented on the list as a single entry.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DefaultPageSize"><stentry/></strow> -->
+                <strow id="strow-field-DefaultPageSize">
+                    <stentry><uicontrol>Default Page Size</uicontrol></stentry>
+                    <stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesizecumulativeGetMore"></ph></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MaximumCharactersPerMessage"><stentry/></strow> -->
+                <strow id="strow-field-MaximumCharactersPerMessage">
+                    <stentry><uicontrol>Maximum Characters per Message</uicontrol></stentry>
+                    <stentry>The maximum number of single-byte characters in the text entry. The actual number of characters might be fewer with multi-byte characters.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-JournalTypes"><stentry/></strow> -->
+                <strow id="strow-field-JournalTypes">
+                    <stentry><uicontrol>Journal Types</uicontrol></stentry>
+                    <!-- <stentry conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/stentry-desc-JournalActivityTypes"></stentry> -->
+                    <stentry id="stentry-desc-JournalActivityTypes">
+                        <p>Content types that are displayed in the list of entries. Old content of a disabled type still remain in the database, and new content of a disabled type can still be created without error; however, they are not displayed in the list until the type is enabled again.</p>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ActivityTypes"><stentry/></strow> -->
+                <strow id="strow-field-ActivityTypes">
+                    <stentry><uicontrol>Activity Types</uicontrol></stentry>
+                    <stentry conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/stentry-desc-JournalActivityTypes"></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AvailableActivityFilterTypes"><stentry/></strow> -->
+                <strow id="strow-field-AvailableActivityFilterTypes">
+                    <stentry><uicontrol>Available Activity Filter Types</uicontrol></stentry>
+                    <stentry>(In the <uicontrol>Activity Stream Filter</uicontrol> module settings.) Content types that are included in the <uicontrol>Filter by activity</uicontrol> dropdown list.</stentry>
+                </strow>
+
 
-				<!-- ========== MODULE: MEMBER DIRECTORY ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateOdd"><stentry/></strow> -->
-				<strow id="strow-field-ItemTemplateOdd">
-					<stentry><uicontrol>Item Template</uicontrol></stentry>
-					<stentry>The HTML template used to display the first and every other (odd-numbered) item in the directory.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateEven"><stentry/></strow> -->
-				<strow id="strow-field-ItemTemplateEven">
-					<stentry><uicontrol>Alternate Item Template</uicontrol></stentry>
-					<stentry>The HTML template used to display the second and every other (even-numbered) item in the directory. Leave this blank to use the <uicontrol>Item Template</uicontrol> for all members.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnablePopUp"><stentry/></strow> -->
-				<strow id="strow-field-EnablePopUp">
-					<stentry><uicontrol>Enable PopUp</uicontrol></stentry>
-					<stentry>If checked, the member details are displayed in a pop-up window when the user hovers over the member's listing.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PopUpTemplate"><stentry/></strow> -->
-				<strow id="strow-field-PopUpTemplate">
-					<stentry><uicontrol>PopUp Template</uicontrol></stentry>
-					<stentry>The HTML template used to display a member's details in a pop-up window.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FilterBy"><stentry/></strow> -->
-				<strow id="strow-field-FilterBy">
-					<stentry><uicontrol>Filter By</uicontrol></stentry>
-					<stentry>
-						<ul>
-							<li><uicontrol>No Filter</uicontrol>. Displays all members.</li>
-							<li><uicontrol>User</uicontrol>. Displays the profile of the current user.</li>
-							<li><uicontrol>Group</uicontrol>. Displays only the members of the selected group.
-								<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory-FilterGroup.png"><alt>Module Settings &#8212; Member Directory &#8212; Filter by Group</alt></image>
-							</li>
-							<li><uicontrol>Relationship</uicontrol>. Displays only the members with the selected relationship to the current user. (Friends or Followers)
-								<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory-FilterRelationship.png"><alt>Module Settings &#8212; Member Directory &#8212; Filter by Relationship</alt></image>
-							</li>
-							<li><uicontrol>Profile Property</uicontrol>. Displays only the members who have the specified value for the selected property.
-								<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory-FilterProfileProperty.png"><alt>Module Settings &#8212; Member Directory &#8212; Filter by Property</alt></image>
-							</li>
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SortFieldListBy"><stentry/></strow> -->
-				<strow id="strow-field-SortFieldListBy">
-					<stentry>
-						<lines><uicontrol>Sort Field</uicontrol>
-							   <uicontrol>Sort List By</uicontrol></lines>
-					</stentry>
-					<stentry>Sorts the list based on the selected field.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SortOrderDirection"><stentry/></strow> -->
-				<strow id="strow-field-SortOrderDirection">
-					<stentry>
-						<lines><uicontrol>Sort Order</uicontrol>
-							   <uicontrol>Sort Direction</uicontrol>
-						</lines>
-					</stentry>
-					<stentry>Sorts the list in ascending or descending order.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ExcludeHostUsers"><stentry/></strow> -->
-				<strow id="strow-field-ExcludeHostUsers">
-					<stentry><uicontrol>Exclude Host Users</uicontrol></stentry>
-					<stentry>
-						<p>If checked, hosts are excluded from the resulting list.</p>
-						<note type="tip">Checking this option is useful for security. By hiding users with maximum permissions, you reduce the risk of hackers targeting those accounts or leveraging the names of those users in social engineering attacks.</note>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisplaySearch"><stentry/></strow> -->
-				<strow id="strow-field-DisplaySearch">
-					<stentry><uicontrol>Display Search</uicontrol></stentry>
-					<stentry>
-						<ul>
-							<li><uicontrol>None</uicontrol>. Removes the search capability.</li>
-							<li><uicontrol>Simple Search</uicontrol>. Provides a basic case-insensitive search of the <uicontrol>Display Name</uicontrol> field only.</li>
-							<li><uicontrol>Simple and Advanced Search</uicontrol>. Provides both the basic search and the advanced search. The <uicontrol>Advanced Search</uicontrol> allows you to narrow the search results by performing a case-insensitive Boolean-AND search on the specified <uicontrol>Search Field</uicontrol>s.</li>
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SearchField"><stentry/></strow> -->
-				<strow id="strow-field-SearchField">
-					<stentry>
-						<lines><uicontrol>Search Field 1</uicontrol>
-							   <uicontrol>Search Field 2</uicontrol>
-							   <uicontrol>Search Field 3</uicontrol>
-							   <uicontrol>Search Field 4</uicontrol></lines>
-					</stentry>
-					<stentry>The fields to be used in the <uicontrol>Advanced Search</uicontrol>.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisablePaging"><stentry/></strow> -->
-				<strow id="strow-field-DisablePaging">
-					<stentry><uicontrol>Disable Paging</uicontrol></stentry>
-					<stentry>If checked, only the first page of the results is displayed and the <uicontrol>Load more</uicontrol> button is hidden.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize1"><stentry/></strow> -->
-				<strow id="strow-field-PageSize1">
-					<stentry><uicontrol>Page Size</uicontrol></stentry>
-					<stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesize"></ph> (1 &#8212; 100)</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize5"><stentry/></strow> -->
-				<strow id="strow-field-PageSize5">
-					<stentry><uicontrol>Page Size</uicontrol></stentry>
-					<stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesize"></ph> (5 &#8212; 100)</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: SOCIAL GROUPS ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisplayUsersGroupsOnly"><stentry/></strow> -->
-				<strow id="strow-field-DisplayUsersGroupsOnly">
-					<stentry><uicontrol>Display User's Groups Only</uicontrol></stentry>
-					<stentry>If checked, displays only the groups that the current user belongs to.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DefaultRoleGroup"><stentry/></strow> -->
-				<strow id="strow-field-DefaultRoleGroup">
-					<stentry><uicontrol>Default Role Group</uicontrol></stentry>
-					<stentry>The role group that is displayed by default.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ModuleViewMode"><stentry/></strow> -->
-				<strow id="strow-field-ModuleViewMode">
-					<stentry><uicontrol>Module View Mode</uicontrol></stentry>
-					<stentry>The mode for the current module instance.
-						<ul>
-							<li><uicontrol>List</uicontrol>. Choose this setting for the page that lists the groups.</li>
-							<li><uicontrol>View</uicontrol>. Choose this setting for the page that displays the details of the selected group.</li>
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GroupViewPage"><stentry/></strow> -->
-				<strow id="strow-field-GroupViewPage">
-					<stentry><uicontrol>Group View Page</uicontrol></stentry>
-					<stentry>The page that displays the details of the selected group.
-						<note type="important">In the target page, the <uicontrol>Social Groups</uicontrol> module instance must be configured with <uicontrol>Module View Mode</uicontrol> set to <uicontrol>View</uicontrol>.</note>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GroupListTemplate"><stentry/></strow> -->
-				<strow id="strow-field-GroupListTemplate">
-					<stentry>
-						<lines><uicontrol>Group List Template</uicontrol>
-							   <uicontrol>Group View Template</uicontrol></lines>
-					</stentry>
-					<stentry>The custom HTML template used to display the group list or details. You can use the following tokens in the template:
-						<ul>
-							<li>[groupitem:GroupName]</li>
-							<li>[groupitem:GroupDescription]</li>
-							<li>[groupitem:PhotoURL]</li>
-							<li>[groupviewurl]</li>
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GroupListPageSize"><stentry/></strow> -->
-				<strow id="strow-field-GroupListPageSize">
-					<stentry><uicontrol>Group List Page Size</uicontrol></stentry>
-					<stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesizecumulativeGetMore"></ph></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableGroupSearch"><stentry/></strow> -->
-				<strow id="strow-field-EnableGroupSearch">
-					<stentry><uicontrol>Enable Group Search</uicontrol></stentry>
-					<stentry>If checked, provides case-insensitive search by group name.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GroupCreationRequiresApproval"><stentry/></strow> -->
-				<strow id="strow-field-GroupCreationRequiresApproval">
-					<stentry><uicontrol>Group Creation Requires Approval</uicontrol></stentry>
-					<stentry>If checked, a user with <uicontrol>Moderators</uicontrol> permissions or an administrator must approve new groups.</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: ANSWERS ========== -->
-
-				<!-- (See also: strow-field-ModeConsole.) -->
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ModeSocialModules"><stentry/></strow> -->
-				<strow id="strow-field-ModeSocialModules">
-					<stentry><uicontrol>Mode</uicontrol></stentry>
-					<stentry>The mode for the current module instance.
-						<ul>  <!-- Is this correct? -->
-							<li><uicontrol>Normal</uicontrol>. If selected, the contents of the module are available to all registered users of the site.</li>
-							<li><uicontrol>Group</uicontrol>. If selected, the contents of the module are restricted to group members.</li>
-						</ul>
-					</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: CALENDAR ========== -->
-
-				<strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisplayModeCalendar"><stentry/></strow>
-				<strow id="strow-field-DisplayModeCalendar">
-					<stentry><uicontrol>Display Mode</uicontrol></stentry>
-					<stentry>The mode for the current module instance.
-						<ul>  <!-- Is this correct? -->
-							<li><uicontrol>List</uicontrol>. If selected, the items are displayed in a list.</li>
-							<li><uicontrol>Calendar</uicontrol>. If selected, a calendar for the month is displayed.</li>
-						</ul>
-					</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: BLOGS ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ModeBlogs"><stentry/></strow> -->
-				<strow id="strow-field-ModeBlogs">
-					<stentry><uicontrol>Mode</uicontrol></stentry>
-					<stentry>The mode for the current module instance.
-						<ul>  <!-- Is this correct? -->
-							<li><uicontrol>Normal</uicontrol>. If selected, the contents of the module are available to all registered users of the site.</li>
-							<li><uicontrol>Group</uicontrol>. If selected, the blog and all entries is associated with a group.</li>
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AllowWindowsLiveWriter"><stentry/></strow> -->
-				<strow id="strow-field-AllowWindowsLiveWriter">
-					<stentry><uicontrol>Allow Windows Live Writer</uicontrol></stentry>
-					<stentry>If checked, bloggers can use Windows Live Writer (or other remote blogging tools that use the MetaWeblog API) to post and edit blog posts.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-UseExcerptinWindowsLiveWriter"><stentry/></strow> -->
-				<strow id="strow-field-UseExcerptinWindowsLiveWriter">
-					<stentry><uicontrol>Use Excerpt in Windows Live Writer</uicontrol></stentry>
-					<stentry>If checked, bloggers can use the <uicontrol>Excerpt</uicontrol> in Windows Live Writer to create a summary of the post in plain text.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-CommentMode"><stentry/></strow> -->
-				<strow id="strow-field-CommentMode">
-					<stentry><uicontrol>Comment Mode</uicontrol></stentry>
-					<stentry>
-						Entries can be individually set to allow or disallow comments.
-						<ul>
-							<li><uicontrol>None</uicontrol>. If selected, comments are disabled.</li>
-							<li><uicontrol>Default</uicontrol>. If selected, the default comment settings for the site are used.</li>  <!-- ??? -->
-							<li><uicontrol>Inline Login/Registration</uicontrol>. If selected, a login/registration link is displayed in the module for unauthenticated (anonymous) users who try to leave a comment.</li>
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MakeEntrySummaryMandatory"><stentry/></strow> -->
-				<strow id="strow-field-MakeEntrySummaryMandatory">
-					<stentry><uicontrol>Make Entry Summary Mandatory</uicontrol></stentry>
-					<stentry>If checked, the blogger is required to include a summary when posting a blog entry.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-LimitAutoGeneratedEntrySummaryto"><stentry/></strow> -->
-				<strow id="strow-field-LimitAutoGeneratedEntrySummaryto">
-					<stentry><uicontrol>Limit Auto-Generated Entry Summary to</uicontrol></stentry>
-					<stentry>The maximum number of single-byte characters for the entry's summary. Enter "0" for unlimited characters. If <uicontrol>Enforce Entry Summary Limit</uicontrol> is unchecked, this limit applies to automatically generated summaries only.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnforceEntrySummaryLimit"><stentry/></strow> -->
-				<strow id="strow-field-EnforceEntrySummaryLimit">
-					<stentry><uicontrol>Enforce Entry Summary Limit</uicontrol></stentry>
-					<stentry>If checked, <uicontrol>Limit Auto-Generated Entry Summary to</uicontrol> applies to both automatically generated summaries and blogger-generated summaries.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeSummaryinEntry"><stentry/></strow> -->
-				<strow id="strow-field-IncludeSummaryinEntry">
-					<stentry><uicontrol>Include Summary in Entry</uicontrol></stentry>
-					<stentry>If checked, the summary is displayed at the top of each entry, when entries are listed.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AllowSummaryHTML"><stentry/></strow> -->
-				<strow id="strow-field-AllowSummaryHTML">
-					<stentry><uicontrol>Allow Summary HTML</uicontrol></stentry>
-					<stentry>If checked, the blogger can format their entry summary in HTML.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ListRowTemplate"><stentry/></strow> -->
-				<strow id="strow-field-ListRowTemplate">
-					<stentry><uicontrol>List Row Template</uicontrol></stentry>
-					<stentry>The template to use when displaying the blog entries in a list.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DetailViewTemplate"><stentry/></strow> -->
-				<strow id="strow-field-DetailViewTemplate">
-					<stentry><uicontrol>Detail View Template</uicontrol></stentry>
-					<stentry>The template to use when displaying the details of a single blog entry.</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: FORM BUILDER ========== -->
-
-
-				<!-- ========== MODULE: GROUP DIRECTORY ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ViewMode"><stentry/></strow> -->
-				<strow id="strow-field-ViewMode">
-					<stentry><uicontrol>View Mode</uicontrol></stentry>
-					<stentry>
-						<ul>
-							<li><uicontrol>Thumbnail</uicontrol>. Displays the thumbnail logos of the groups in a grid.</li>
-							<li><uicontrol>List</uicontrol>. Displays the list of group names.</li>
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-RoleGroup"><stentry/></strow> -->
-				<strow id="strow-field-RoleGroup">
-					<stentry><uicontrol>Role Group</uicontrol></stentry>
-					<stentry>Filters the list to show only the groups in the selected role group.</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: IDEAS ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TotalVotesPerIdea"><stentry/></strow> -->
-				<strow id="strow-field-TotalVotesPerIdea">
-					<stentry><uicontrol>Total Votes per Idea</uicontrol></stentry>
-					<stentry>The maximum number of votes that a user can give to a single idea. The votes can be given at different times, but the cumulative number cannot exceed this value.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TotalVotesPerUser"><stentry/></strow> -->
-				<strow id="strow-field-TotalVotesPerUser">
-					<stentry><uicontrol>Total Votes per User</uicontrol></stentry>
-					<stentry>The total number of votes that a single user can distribute among any number of ideas within the current module. While voting is enabled, votes can be changed, and revoked votes return to the user's voting pool. <!-- Set to 0 for unlimited votes. --></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AcceptNewIdeas"><stentry/></strow> -->
-				<strow id="strow-field-AcceptNewIdeas">
-					<stentry><uicontrol>Accept New Ideas</uicontrol></stentry>
-					<stentry>If checked, registered <!-- ??? --> users can submit their own ideas. If you are performing a survey, uncheck this option.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PermitVoting"><stentry/></strow> -->
-				<strow id="strow-field-PermitVoting">
-					<stentry><uicontrol>Permit Voting</uicontrol></stentry>
-					<stentry>If checked, voting is allowed. You can allow users to preview ideas before voting by keeping this box unchecked, then you can check this box when voting begins. To end the voting period, uncheck this box again.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SearchResults"><stentry/></strow> -->
-				<strow id="strow-field-SearchResults">
-					<stentry><uicontrol>Search Results</uicontrol></stentry>
-					<stentry><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesize"></ph></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowCategories"><stentry/></strow> -->
-				<strow id="strow-field-ShowCategories">
-					<stentry><uicontrol>Show Categories</uicontrol></stentry>
-					<stentry>If checked, users adding new ideas would be required to choose a category from the selected vocabulary.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-RootVocabulary"><stentry/></strow> -->
-				<strow id="strow-field-RootVocabulary">
-					<stentry><uicontrol>Root Vocabulary</uicontrol></stentry>
-					<stentry>A node in a vocabulary tree to use as the root node. <!-- Is this correct? --> The vocabulary must already be defined in the site's taxonomy. The <uicontrol>Manage Vocabularies</uicontrol> link takes you to the <uicontrol>Taxonomy Manager</uicontrol> so you can create or update vocabularies. The <uicontrol>Refresh</uicontrol> link updates the <uicontrol>Root Vocabulary</uicontrol> dropdown box.</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: LEADERBOARD ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize"><stentry/></strow> -->
-				<strow id="strow-field-PageSize">
-					<stentry><uicontrol>Page Size</uicontrol></stentry>
-					<stentry><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesize"></ph></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Interval"><stentry/></strow> -->
-				<strow id="strow-field-Interval">
-					<stentry><uicontrol>Interval</uicontrol></stentry>
-					<stentry>The time period when the rankings would be based. Example: If you choose <uicontrol>Last Week</uicontrol>, the rankings would be based on points earned by users in the past seven days only.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowSearchPanel"><stentry/></strow> -->
-				<strow id="strow-field-ShowSearchPanel">
-					<stentry><uicontrol>Show Search Panel</uicontrol></stentry>
-					<stentry>If checked, allows users to search for members by name in the displayed list.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowModeSwitchButtons"><stentry/></strow> -->
-				<strow id="strow-field-ShowModeSwitchButtons">
-					<stentry><uicontrol>Show Mode Switch Buttons</uicontrol></stentry>
-					<stentry>Displays relevant buttons that can be used by the user to further filter what is displayed.
-						<ul>
-							<li><uicontrol>Everyone</uicontrol>. Displays all the results.</li>
-							<li><uicontrol>Friends</uicontrol>. Displays only the current user's friends who are included in the results.</li>
-							<li><uicontrol>Members</uicontrol>. Displays only the members of the group specified in <uicontrol>Membership in Group</uicontrol>.</li>
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisplayMode"><stentry/></strow> -->
-				<strow id="strow-field-DisplayMode">
-					<stentry><uicontrol>Display Mode</uicontrol></stentry>
-					<stentry>
-						<ul>
-							<li><uicontrol>All Users</uicontrol>. Ranks and returns all registered users of the site.</li>
-							<li><uicontrol>Friends</uicontrol>. Ranks and returns only the friends of the current user.</li>
-							<li><uicontrol>Members</uicontrol>. Ranks and returns only members of the specified group.</li>
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MembershipInGroup"><stentry/></strow> -->
-				<strow id="strow-field-MembershipInGroup">
-					<stentry><uicontrol>Membership in Group</uicontrol></stentry>
-					<stentry>The group whose members to display. This field appears only if <uicontrol>Display Mode</uicontrol> is <uicontrol>Members</uicontrol>. If the selected group is <uicontrol>None</uicontrol>, all registered users will be included. <!-- Is this correct? --> </stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Behavior"><stentry/></strow> -->
-				<strow id="strow-field-Behavior">
-					<stentry><uicontrol>Behavior</uicontrol></stentry>
-					<stentry>
-						<ul>
-							<li><uicontrol>Relative Ranking</uicontrol>. Displays users in order of ranking.</li>
-							<li><uicontrol>Top Contributors</uicontrol>. Displays only the users with the highest points.</li>
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Template"><stentry/></strow> -->
-				<strow id="strow-field-Template">
-					<stentry><uicontrol>Template</uicontrol></stentry>
-					<stentry>Template to use for the leaderboard. Some predefined templates are provided by DNN. If you choose <uicontrol>Custom</uicontrol>, the next four fields are displayed to allow you to enter custom HTML to be used with the current module instance only.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HeaderTemplateLeaderboard"><stentry/></strow> -->
-				<strow id="strow-field-HeaderTemplateLeaderboard">
-					<stentry><uicontrol>Header Template</uicontrol></stentry>
-					<stentry><ph conref="#tsk-bptext-custom-modules/ph-HeaderTemplate"></ph> Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateLeaderboard"><stentry/></strow> -->
-				<strow id="strow-field-ItemTemplateLeaderboard">
-					<stentry><uicontrol>Item Template</uicontrol></stentry>
-					<stentry><ph conref="#tsk-bptext-custom-modules/ph-ItemTemplate"></ph> Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HighlightedItemTemplateLeaderboard"><stentry/></strow> -->
-				<strow id="strow-field-HighlightedItemTemplateLeaderboard">
-					<stentry><uicontrol>Highlighted Item Template</uicontrol></stentry>
-					<stentry><ph conref="#tsk-bptext-custom-modules/ph-HighlightedItemTemplate"></ph> Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FooterTemplateLeaderboard"><stentry/></strow> -->
-				<strow id="strow-field-FooterTemplateLeaderboard">
-					<stentry><uicontrol>Footer Template</uicontrol></stentry>
-					<stentry><ph conref="#tsk-bptext-custom-modules/ph-FooterTemplate"></ph> Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: MY STATUS ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TemplateInfoTypes"><stentry/></strow> -->
-				<strow id="strow-field-TemplateInfoTypes">
-					<stentry><uicontrol>Template</uicontrol></stentry>
-					<stentry>The information type(s) that should be displayed by this module.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GraphColor1"><stentry/></strow> -->
-				<strow id="strow-field-GraphColor1">
-					<stentry><uicontrol>Graph Color 1</uicontrol></stentry>
-					<stentry>The starting color of the gradient used in the Profile Completion graphic.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GraphColor2"><stentry/></strow> -->
-				<strow id="strow-field-GraphColor2">
-					<stentry><uicontrol>Graph Color 2</uicontrol></stentry>
-					<stentry>The ending color of the gradient used in the Profile Completion graphic.</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: RELATED CONTENT ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemsToDisplay "><stentry/></strow> -->
-				<strow id="strow-field-ItemsToDisplay">
-					<stentry><uicontrol>Items to Display</uicontrol></stentry>
-					<stentry><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-singlepagesize"></ph></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SortingColumn"><stentry/></strow> -->
-				<strow id="strow-field-SortingColumn">
-					<stentry><uicontrol>Sorting Column</uicontrol></stentry>
-					<stentry>Sorts the list based on the selected column.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FilterRelatedItemsOnTaxonomyTag"><stentry/></strow> -->
-				<strow id="strow-field-FilterRelatedItemsOnTaxonomyTag">
-					<stentry><uicontrol>Filter Related Items on Taxonomy Tag</uicontrol></stentry>
-					<stentry>Returns only the related items that have the specified tag. The tag must be defined in a <term>Taxonomy</term> directory.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FilterRelatedItemsOnContentType"><stentry/></strow> -->
-				<strow id="strow-field-FilterRelatedItemsOnContentType">
-					<stentry><uicontrol>Filter Related Items on Content Type</uicontrol></stentry>
-					<stentry>Returns only the related items that are of the selected content type.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HeaderTemplateRelatedContent"><stentry/></strow> -->
-				<strow id="strow-field-HeaderTemplateRelatedContent">
-					<stentry><uicontrol>Header Template</uicontrol></stentry>
-					<stentry><ph conref="#tsk-bptext-custom-modules/ph-HeaderTemplate"></ph></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateRelatedContent"><stentry/></strow> -->
-				<strow id="strow-field-ItemTemplateRelatedContent">
-					<stentry><uicontrol>Item Template</uicontrol></stentry>
-					<stentry><ph conref="#tsk-bptext-custom-modules/ph-ItemTemplate"></ph></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FooterTemplateRelatedContent"><stentry/></strow> -->
-				<strow id="strow-field-FooterTemplateRelatedContent">
-					<stentry><uicontrol>Footer Template</uicontrol></stentry>
-					<stentry><ph conref="#tsk-bptext-custom-modules/ph-FooterTemplate"></ph></stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: SOCIAL EVENTS  ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MapProvider"><stentry/></strow> -->
-				<strow id="strow-field-MapProvider">
-					<stentry><uicontrol>Map Provider</uicontrol></stentry>
-					<stentry>The map provider to use if the event includes a reference to a location. If <uicontrol>None</uicontrol> is selected, a map is not included in the event details.</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: SOCIAL SETTINGS ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowShareLabel"><stentry/></strow> -->
-				<strow id="strow-field-ShowShareLabel">
-					<stentry><uicontrol>Show Share Label</uicontrol></stentry>
-					<stentry>If checked, the word "Share" is displayed.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableGooglePlus"><stentry/></strow> -->
-				<strow id="strow-field-EnableGooglePlus">
-					<stentry><uicontrol>Enable Google+</uicontrol></stentry>
-					<stentry>If checked, users can share in Google Plus.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableTwitter"><stentry/></strow> -->
-				<strow id="strow-field-EnableTwitter">
-					<stentry><uicontrol>Enable Twitter</uicontrol></stentry>
-					<stentry>If checked, users can share in Twitter.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableLinkedIn"><stentry/></strow> -->
-				<strow id="strow-field-EnableLinkedIn">
-					<stentry><uicontrol>Enable LinkedIn</uicontrol></stentry>
-					<stentry>If checked, users can share in LinkedIn.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableFacebook"><stentry/></strow> -->
-				<strow id="strow-field-EnableFacebook">
-					<stentry><uicontrol>Enable Facebook</uicontrol></stentry>
-					<stentry>If checked, users can share in Facebook.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnablePinterest"><stentry/></strow> -->
-				<strow id="strow-field-EnablePinterest">
-					<stentry><uicontrol>Enable Pinterest</uicontrol></stentry>
-					<stentry>If checked, users can share in Pinterest.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FacebookLikeButton"><stentry/></strow> -->
-				<strow id="strow-field-FacebookLikeButton">
-					<stentry><uicontrol>Facebook Like Button</uicontrol></stentry>
-					<stentry>If checked, Facebook's <uicontrol>Like</uicontrol> button is also displayed.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FacebookLikeStyle"><stentry/></strow> -->
-				<strow id="strow-field-FacebookLikeStyle">
-					<stentry><uicontrol>Facebook Like Style</uicontrol></stentry>
-					<stentry>  <!-- Add screenshots of each style when SOCIAL-4523 is fixed. -->
-						<ul>
-							<li><uicontrol>Standard</uicontrol></li>
-							<li><uicontrol>Like button only</uicontrol></li>
-							<li><uicontrol>Like button, Share count</uicontrol></li>
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-LinkShorteningService"><stentry/></strow> -->
-				<strow id="strow-field-LinkShorteningService">
-					<stentry><uicontrol>Link Shortening Service</uicontrol></stentry>
-					<stentry>If the page link is included in the share message, the selected service is used to shorten the link.</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: USER BADGES ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NumberOfBadges"><stentry/></strow> -->
-				<strow id="strow-field-NumberOfBadges">
-					<stentry><uicontrol>Number of Badges</uicontrol></stentry>
-					<stentry><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesizecumulativeViewMore"></ph></stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: WIKI ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableCommentsOnArticles"><stentry/></strow> -->
-				<strow id="strow-field-EnableCommentsOnArticles">
-					<stentry><uicontrol>Enable Comments on Articles</uicontrol></stentry>
-					<stentry>If checked, users can comment on individual wiki articles.</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: CONSOLE ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ModeConsole"><stentry/></strow> -->
-				<strow id="strow-field-ModeConsole">
-					<stentry><uicontrol>Mode</uicontrol></stentry>
-					<stentry>The mode for the current module instance.
-						<ul>  <!-- Is this correct? -->
-							<li><uicontrol>Normal</uicontrol>. If selected, the module displays the child pages of the current page.</li>
-							<li><uicontrol>Profile</uicontrol>. If selected, the module displays the child pages of the current user's profile information.</li>
-							<li><uicontrol>Group</uicontrol>. If selected, the module displays the child pages of the group page.</li>  <!-- Where do they specify the group? -->
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageVisibilitySettings"><stentry/></strow> -->
-				<strow id="strow-field-PageVisibilitySettings">
-					<stentry><uicontrol>Page Visibility Settings</uicontrol></stentry>
-					<stentry>Who can see each specified page.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowChildrenOf"><stentry/></strow> -->
-				<strow id="strow-field-ShowChildrenOf">
-					<stentry><uicontrol>Show Children of</uicontrol></stentry>
-					<stentry>The page whose children to display.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeParent"><stentry/></strow> -->
-				<strow id="strow-field-IncludeParent">
-					<stentry><uicontrol>Include Parent</uicontrol></stentry>
-					<stentry>If checked, the parent is also included in the tree/list of its children.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DefaultIconSize"><stentry/></strow>  // self-explanatory -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AllowIconResize"><stentry/></strow>  // self-explanatory -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DefaultView"><stentry/></strow> -->
-				<strow id="strow-field-DefaultView">
-					<stentry><uicontrol>Default View</uicontrol></stentry>
-					<stentry>The initial configuration of the module's contents.
-						<ul>
-							<li><uicontrol>Simple View</uicontrol></li>
-							<li><uicontrol>Detailed View</uicontrol></li>
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AllowViewChange"><stentry/></strow> -->
-				<strow id="strow-field-AllowViewChange">
-					<stentry><uicontrol>Allow View Change</uicontrol></stentry>
-					<stentry>If checked, the user can toggle between the <uicontrol>Simple View</uicontrol> and the <uicontrol>Detailed View</uicontrol>.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowTooltip"><stentry/></strow> -->
-				<strow id="strow-field-ShowTooltip">
-					<stentry><uicontrol>Show Tooltip</uicontrol></stentry>
-					<stentry>If checked, displays a detailed description when the user hovers over each icon.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-OrderItemsByHierarchy"><stentry/></strow> -->
-				<strow id="strow-field-OrderItemsByHierarchy">
-					<stentry><uicontrol>Order Items by Hierarchy</uicontrol></stentry>
-					<stentry>If checked, displays the child pages immediately after their respective parent pages. Otherwise, all pages are displayed alphabetically in a flat list.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeHiddenPages"><stentry/></strow> -->
-				<strow id="strow-field-IncludeHiddenPages">
-					<stentry><uicontrol>Include Hidden Pages</uicontrol></stentry>
-					<stentry>If checked, the tree/list includes hidden pages.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Width"><stentry/></strow> -->
-				<strow id="strow-field-Width">
-					<stentry><uicontrol>Width</uicontrol></stentry>
-					<stentry>The maximum width (in pixels) of the icons to reduce the width of the module. If blank, the icons can expand horizontally based on the window size. Example: You can enter 400 to simulate a grid with two columns of icons.</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: HTML PRO ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ReplaceTokens"><stentry/></strow> -->
-				<strow id="strow-field-ReplaceTokens">
-					<stentry><uicontrol>Replace Tokens</uicontrol></stentry>
-					<stentry>If checked, tokens in the HTML text are replaced.
-						<note type="note">If checked, inline editing and module caching are also disabled.</note>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MaxLengthOfDescriptionInSearch"><stentry/></strow> -->
-				<strow id="strow-field-MaxLengthOfDescriptionInSearch">
-					<stentry><uicontrol>Max Length of Description in Search</uicontrol></stentry>
-					<stentry>The maximum number of single-byte characters from the text that are displayed in site search results.</stentry> <!-- Is this correct? Shouldn't this be in the Search module? -->
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-UseFormDecoration"><stentry/></strow> -->
-				<strow id="strow-field-UseFormDecoration">
-					<stentry><uicontrol>Use Form Decoration</uicontrol></stentry>
-					<stentry>If checked, the HTML controls in the module's contents are decorated to match the style in other instances of the <uicontrol>HTML</uicontrol> module in the site.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Workflow"><stentry/></strow> -->
-				<strow id="strow-field-Workflow">
-					<stentry><uicontrol>Workflow</uicontrol></stentry>
-					<stentry>The predefined workflow to use for content creation using this module. Workflows are defined by content managers or administrators in the <uicontrol>Workflow Management</uicontrol> module.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ApplyWorkflowTo"><stentry/></strow> -->
-				<strow id="strow-field-ApplyWorkflowTo">
-					<stentry><uicontrol>Apply Workflow To</uicontrol></stentry>
-					<stentry>
-						<ul>
-							<li><uicontrol>Module</uicontrol>. The selected workflow is used only for the current instance of the module.</li>
-							<li><uicontrol>Page</uicontrol>. The selected workflow is used for all HTML module instances in the same page.</li>
-							<li><uicontrol>Site</uicontrol>. The selected workflow is used for all HTML module instances in the entire site.</li>
-						</ul>
-					</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: SEARCH RESULTS ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TitleLinkTarget"><stentry/></strow> -->
-				<strow id="strow-field-TitleLinkTarget">
-					<stentry><uicontrol>Title Link Target</uicontrol></stentry>
-					<stentry>Where the results would be displayed:
-						<ul>
-							<li>On Same Page</li>
-							<li>Open New Page</li>
-						</ul>
-					</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ResultsScopeforContentTypes"><stentry/></strow> -->
-				<strow id="strow-field-ResultsScopeforContentTypes">
-					<stentry><uicontrol>Results Scope for Content Type(s)</uicontrol></stentry>
-					<stentry>The content types that would be included in the results.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableWildcardSearchesbyDefault"><stentry/></strow> -->
-				<strow id="strow-field-EnableWildcardSearchesbyDefault">
-					<stentry><uicontrol>Enable Wildcard Searches by Default</uicontrol></stentry>
-					<stentry>If checked, users can enter partial words as search terms. Example, "org" will return "organization" and "organize".
-						<note type="tip">If too many searches take too long, uncheck this option.</note>
-					</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: PUBLISHER ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TopTagsPageSize"><stentry/></strow> -->
-				<strow id="strow-field-TopTagsPageSize">
-					<stentry><uicontrol>Top Tags Page Size</uicontrol></stentry>
-					<stentry>The number of tags to display in each result page.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TopAuthorsPageSize"><stentry/></strow> -->
-				<strow id="strow-field-TopAuthorsPageSize">
-					<stentry><uicontrol>Top Authors Page Size</uicontrol></stentry>
-					<stentry>The number of authors to display in each result page.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableSharing"><stentry/></strow> -->
-				<strow id="strow-field-EnableSharing">
-					<stentry><uicontrol>Enable Sharing</uicontrol></stentry>
-					<stentry>Content added to this module can be shared in the selected social media site(s).</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: VIEW PROFILE ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeEditButton"><stentry/></strow> -->
-				<strow id="strow-field-IncludeEditButton">
-					<stentry><uicontrol>Include Edit Button</uicontrol></stentry>
-					<stentry>If checked, the <uicontrol>Edit Profile</uicontrol> button is displayed.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ProfileTemplate"><stentry/></strow> -->
-				<strow id="strow-field-ProfileTemplate">
-					<stentry><uicontrol>Profile Template</uicontrol></stentry>
-					<stentry>
-						<p>The custom HTML template used to display the user profile.</p>
-						<note type="tip"><uicontrol>Load Default</uicontrol> inserts HTML code wrapped inside a &lt;div&gt; tag. You can customize that code according to your needs.</note>
-					</stentry>
-				</strow>
-
-
-				<!-- ========== MODULE: DDR MENU ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MenuStyle"><stentry/></strow> -->
-				<strow id="strow-field-MenuStyle">
-					<stentry><uicontrol>Menu Style</uicontrol></stentry>
-					<stentry></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NodeXMLOath"><stentry/></strow> -->
-				<strow id="strow-field-NodeXMLOath">
-					<stentry><uicontrol>Node XML Oath</uicontrol></stentry>
-					<stentry></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NodeSelectionExpression"><stentry/></strow> -->
-				<strow id="strow-field-NodeSelectionExpression">
-					<stentry><uicontrol>Node Selection Expression</uicontrol></stentry>
-					<stentry></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NodesToInclude"><stentry/></strow> -->
-				<strow id="strow-field-NodesToInclude">
-					<stentry><uicontrol>Nodes to Include</uicontrol></stentry>
-					<stentry></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NodesToExclude"><stentry/></strow> -->
-				<strow id="strow-field-NodesToExclude">
-					<stentry><uicontrol>Nodes to Exclude</uicontrol></stentry>
-					<stentry></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NodeManipulatorType"><stentry/></strow> -->
-				<strow id="strow-field-NodeManipulatorType">
-					<stentry><uicontrol>Node Manipulator Type</uicontrol></stentry>
-					<stentry></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeContextInXML"><stentry/></strow> -->
-				<strow id="strow-field-IncludeContextInXML">
-					<stentry><uicontrol>Include Context in XML</uicontrol></stentry>
-					<stentry>If checked, ...</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeHiddenNodes"><stentry/></strow> -->
-				<strow id="strow-field-IncludeHiddenNodes">
-					<stentry><uicontrol>Include Hidden Nodes</uicontrol></stentry>
-					<stentry>If checked, ...</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TemplateArguments"><stentry/></strow> -->
-				<strow id="strow-field-TemplateArguments">
-					<stentry><uicontrol>Template Arguments</uicontrol></stentry>
-					<stentry></stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ClientOptions"><stentry/></strow> -->
-				<strow id="strow-field-ClientOptions">
-					<stentry><uicontrol>Client Options</uicontrol></stentry>
-					<stentry></stentry>
-				</strow>
-
-
-
-
-
-
-
-
-
-				<!-- ========== MODULE:  ========== -->
-
-				<!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-"><stentry/></strow>
-				<strow id="strow-field-">
-					<stentry><uicontrol></uicontrol></stentry>
-					<stentry></stentry>
-				</strow>
-				-->
-
-			</simpletable>
-
-		</section>
-
-
-		<section>
-
-			<!--
-			<title>Photo entries and photo attachments</title>
-			<sectiondiv conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/sectiondiv-photoentriesattachments"></sectiondiv>
-			-->
-			<sectiondiv id="sectiondiv-photoentriesattachments">
-				<p>This module distinguishes between:
-					<ul>
-						<li>entries that are of type <uicontrol>Photos</uicontrol>, and</li>
-						<li>entries that have photo/image attachments.</li>
-					</ul>
-				</p>
-
-				<p>If the type <uicontrol>Photos</uicontrol> is checked, photo entries are displayed. If unchecked, photo entries are hidden.</p>
-
-				<p>If either <uicontrol>Enable File Attachments</uicontrol> or <uicontrol>Enable Photo Attachments</uicontrol> is checked, entries with photo/image attachments are displayed. If both are unchecked, entries with photo/image attachments are hidden.</p>
-
-				<note type="note">If <uicontrol>Enable Photo Attachments</uicontrol> is checked, be sure to also check the type <uicontrol>Photos</uicontrol>. Otherwise, a user could create an entry with an attached photo, but they would not know that it was actually created, because they cannot see it.</note>
-
-				<p>A photo entry cannot have a file attachment. However, an entry with a photo attachment can have additional attachments.</p>
-			</sectiondiv>
-
-
-			<!-- ========== COMPANION MODULES ========== -->
-
-			<p>
-				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-companionmodules"></ph> -->
-				<ph id="ph-companionmodules">Companion modules are displayed automatically when the main module is added to a page and are configured separately.</ph>
-			</p>
-
-			<!-- <p conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/p-companions-VisibleOnPage"></p> -->
-			<p id="p-companions-VisibleOnPage">To display/hide companion module(s),
-				<ul>
-					<li>
-						From the main module's action menu, go to <menucascade><uicontrol>Edit (pencil icon)</uicontrol> <uicontrol>Add Companion Modules...</uicontrol></menucascade>.
-						<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-edit-addcompanionmodules.png"><alt>Edit (pencil icon) action menu &gt; Add Companion Modules...</alt></image>
-					</li>
-					<li>
-						Check/Uncheck the <uicontrol>Visible on Page</uicontrol> box for the companion module that you want to be displayed/hidden.
-						<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-companions-VisibleOnPage.png"><alt></alt></image>
-					</li>
-				</ul>
-			</p>
-
-
-			<!-- ========== PAGE SIZE ========== -->
-			<!-- Also see <strow conref="managing-your-community/bptext-community-steps.dita#tsk-bptext-community-steps/strow-field-PageSize"><stentry/></strow>. -->
-
-			<p>
-				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-singlepagesize"></ph> -->
-				<ph id="ph-singlepagesize">The number of items to display.</ph>
-
-				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesize"></ph> -->
-				<ph id="ph-pagesize">The number of items to display in each result page.</ph>
-
-				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesizecumulativeGetMore"></ph> -->
-				<ph id="ph-pagesizecumulativeGetMore">The number of items to initially display, and the number of additional items to display when the <uicontrol>Get More</uicontrol> button is clicked/tapped.</ph>
-
-				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesizecumulativeViewMore"></ph> -->
-				<ph id="ph-pagesizecumulativeViewMore">The number of items to initially display, and the number of additional items to display when the <uicontrol>View More</uicontrol> button is clicked/tapped.</ph>
-			</p>
-
-
-			<!-- ========== HTML TEMPLATE ========== -->
-			<p>
-
-				<!-- <ph conref="#tsk-bptext-custom-modules/ph-HeaderTemplate"></ph> -->
-				<ph id="ph-HeaderTemplate">The custom HTML template used as the prefix to the list. Typically the starting tags for the table or list.</ph>
-
-				<!-- <ph conref="#tsk-bptext-custom-modules/ph-ItemTemplate"></ph> -->
-				<ph id="ph-ItemTemplate">The custom HTML template used to display each item in the list. Typically an entire row of the table or a bullet in the list. </ph>
-
-				<!-- <ph conref="#tsk-bptext-custom-modules/ph-HighlightedItemTemplate"></ph> -->
-				<ph id="ph-HighlightedItemTemplate">The custom HTML template used to display the selected item in the list. Typically an entire row of the table or a bullet in the list. </ph>
-
-				<!-- <ph conref="#tsk-bptext-custom-modules/ph-FooterTemplate"></ph> -->
-				<ph id="ph-FooterTemplate">The custom HTML template used as the suffix to the list. Typically the terminating tags for the table or list.</ph>
-
-
-				<!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-"></ph>
-				<ph id="ph-"></ph>
-				-->
-
-			</p>
-
-
-		</section>
+                <!-- ========== MODULE: MEMBER DIRECTORY ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateOdd"><stentry/></strow> -->
+                <strow id="strow-field-ItemTemplateOdd">
+                    <stentry><uicontrol>Item Template</uicontrol></stentry>
+                    <stentry>The HTML template used to display the first and every other (odd-numbered) item in the directory.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateEven"><stentry/></strow> -->
+                <strow id="strow-field-ItemTemplateEven">
+                    <stentry><uicontrol>Alternate Item Template</uicontrol></stentry>
+                    <stentry>The HTML template used to display the second and every other (even-numbered) item in the directory. Leave this blank to use the <uicontrol>Item Template</uicontrol> for all members.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnablePopUp"><stentry/></strow> -->
+                <strow id="strow-field-EnablePopUp">
+                    <stentry><uicontrol>Enable PopUp</uicontrol></stentry>
+                    <stentry>If checked, the member details are displayed in a pop-up window when the user hovers over the member's listing.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PopUpTemplate"><stentry/></strow> -->
+                <strow id="strow-field-PopUpTemplate">
+                    <stentry><uicontrol>PopUp Template</uicontrol></stentry>
+                    <stentry>The HTML template used to display a member's details in a pop-up window.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FilterBy"><stentry/></strow> -->
+                <strow id="strow-field-FilterBy">
+                    <stentry><uicontrol>Filter By</uicontrol></stentry>
+                    <stentry>
+                        <ul>
+                            <li><uicontrol>No Filter</uicontrol>. Displays all members.</li>
+                            <li><uicontrol>User</uicontrol>. Displays the profile of the current user.</li>
+                            <li><uicontrol>Group</uicontrol>. Displays only the members of the selected group.
+                                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory-FilterGroup.png"><alt>Module Settings &#8212; Member Directory &#8212; Filter by Group</alt></image>
+                            </li>
+                            <li><uicontrol>Relationship</uicontrol>. Displays only the members with the selected relationship to the current user. (Friends or Followers)
+                                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory-FilterRelationship.png"><alt>Module Settings &#8212; Member Directory &#8212; Filter by Relationship</alt></image>
+                            </li>
+                            <li><uicontrol>Profile Property</uicontrol>. Displays only the members who have the specified value for the selected property.
+                                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-modulesettings-MemberDirectory-FilterProfileProperty.png"><alt>Module Settings &#8212; Member Directory &#8212; Filter by Property</alt></image>
+                            </li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SortFieldListBy"><stentry/></strow> -->
+                <strow id="strow-field-SortFieldListBy">
+                    <stentry>
+                        <lines><uicontrol>Sort Field</uicontrol>
+                               <uicontrol>Sort List By</uicontrol></lines>
+                    </stentry>
+                    <stentry>Sorts the list based on the selected field.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SortOrderDirection"><stentry/></strow> -->
+                <strow id="strow-field-SortOrderDirection">
+                    <stentry>
+                        <lines><uicontrol>Sort Order</uicontrol>
+                               <uicontrol>Sort Direction</uicontrol>
+                        </lines>
+                    </stentry>
+                    <stentry>Sorts the list in ascending or descending order.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ExcludeHostUsers"><stentry/></strow> -->
+                <strow id="strow-field-ExcludeHostUsers">
+                    <stentry><uicontrol>Exclude Host Users</uicontrol></stentry>
+                    <stentry>
+                        <p>If checked, hosts are excluded from the resulting list.</p>
+                        <note type="tip">Checking this option is useful for security. By hiding users with maximum permissions, you reduce the risk of hackers targeting those accounts or leveraging the names of those users in social engineering attacks.</note>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisplaySearch"><stentry/></strow> -->
+                <strow id="strow-field-DisplaySearch">
+                    <stentry><uicontrol>Display Search</uicontrol></stentry>
+                    <stentry>
+                        <ul>
+                            <li><uicontrol>None</uicontrol>. Removes the search capability.</li>
+                            <li><uicontrol>Simple Search</uicontrol>. Provides a basic case-insensitive search of the <uicontrol>Display Name</uicontrol> field only.</li>
+                            <li><uicontrol>Simple and Advanced Search</uicontrol>. Provides both the basic search and the advanced search. The <uicontrol>Advanced Search</uicontrol> allows you to narrow the search results by performing a case-insensitive Boolean-AND search on the specified <uicontrol>Search Field</uicontrol>s.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SearchField"><stentry/></strow> -->
+                <strow id="strow-field-SearchField">
+                    <stentry>
+                        <lines><uicontrol>Search Field 1</uicontrol>
+                               <uicontrol>Search Field 2</uicontrol>
+                               <uicontrol>Search Field 3</uicontrol>
+                               <uicontrol>Search Field 4</uicontrol></lines>
+                    </stentry>
+                    <stentry>The fields to be used in the <uicontrol>Advanced Search</uicontrol>.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisablePaging"><stentry/></strow> -->
+                <strow id="strow-field-DisablePaging">
+                    <stentry><uicontrol>Disable Paging</uicontrol></stentry>
+                    <stentry>If checked, only the first page of the results is displayed and the <uicontrol>Load more</uicontrol> button is hidden.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize1"><stentry/></strow> -->
+                <strow id="strow-field-PageSize1">
+                    <stentry><uicontrol>Page Size</uicontrol></stentry>
+                    <stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesize"></ph> (1 &#8212; 100)</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize5"><stentry/></strow> -->
+                <strow id="strow-field-PageSize5">
+                    <stentry><uicontrol>Page Size</uicontrol></stentry>
+                    <stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesize"></ph> (5 &#8212; 100)</stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: SOCIAL GROUPS ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisplayUsersGroupsOnly"><stentry/></strow> -->
+                <strow id="strow-field-DisplayUsersGroupsOnly">
+                    <stentry><uicontrol>Display User's Groups Only</uicontrol></stentry>
+                    <stentry>If checked, displays only the groups that the current user belongs to.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DefaultRoleGroup"><stentry/></strow> -->
+                <strow id="strow-field-DefaultRoleGroup">
+                    <stentry><uicontrol>Default Role Group</uicontrol></stentry>
+                    <stentry>The role group that is displayed by default.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ModuleViewMode"><stentry/></strow> -->
+                <strow id="strow-field-ModuleViewMode">
+                    <stentry><uicontrol>Module View Mode</uicontrol></stentry>
+                    <stentry>The mode for the current module instance.
+                        <ul>
+                            <li><uicontrol>List</uicontrol>. Choose this setting for the page that lists the groups.</li>
+                            <li><uicontrol>View</uicontrol>. Choose this setting for the page that displays the details of the selected group.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GroupViewPage"><stentry/></strow> -->
+                <strow id="strow-field-GroupViewPage">
+                    <stentry><uicontrol>Group View Page</uicontrol></stentry>
+                    <stentry>The page that displays the details of the selected group.
+                        <note type="important">In the target page, the <uicontrol>Social Groups</uicontrol> module instance must be configured with <uicontrol>Module View Mode</uicontrol> set to <uicontrol>View</uicontrol>.</note>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GroupListTemplate"><stentry/></strow> -->
+                <strow id="strow-field-GroupListTemplate">
+                    <stentry>
+                        <lines><uicontrol>Group List Template</uicontrol>
+                               <uicontrol>Group View Template</uicontrol></lines>
+                    </stentry>
+                    <stentry>The custom HTML template used to display the group list or details. You can use the following tokens in the template:
+                        <ul>
+                            <li>[groupitem:GroupName]</li>
+                            <li>[groupitem:GroupDescription]</li>
+                            <li>[groupitem:PhotoURL]</li>
+                            <li>[groupviewurl]</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GroupListPageSize"><stentry/></strow> -->
+                <strow id="strow-field-GroupListPageSize">
+                    <stentry><uicontrol>Group List Page Size</uicontrol></stentry>
+                    <stentry><ph conref="#tsk-bptext-custom-modules/ph-pagesizecumulativeGetMore"></ph></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableGroupSearch"><stentry/></strow> -->
+                <strow id="strow-field-EnableGroupSearch">
+                    <stentry><uicontrol>Enable Group Search</uicontrol></stentry>
+                    <stentry>If checked, provides case-insensitive search by group name.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GroupCreationRequiresApproval"><stentry/></strow> -->
+                <strow id="strow-field-GroupCreationRequiresApproval">
+                    <stentry><uicontrol>Group Creation Requires Approval</uicontrol></stentry>
+                    <stentry>If checked, a user with <uicontrol>Moderators</uicontrol> permissions or an administrator must approve new groups.</stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: ANSWERS ========== -->
+
+                <!-- (See also: strow-field-ModeConsole.) -->
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ModeSocialModules"><stentry/></strow> -->
+                <strow id="strow-field-ModeSocialModules">
+                    <stentry><uicontrol>Mode</uicontrol></stentry>
+                    <stentry>The mode for the current module instance.
+                        <ul>  <!-- Is this correct? -->
+                            <li><uicontrol>Normal</uicontrol>. If selected, the contents of the module are available to all registered users of the site.</li>
+                            <li><uicontrol>Group</uicontrol>. If selected, the contents of the module are restricted to group members.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: CALENDAR ========== -->
+
+                <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisplayModeCalendar"><stentry/></strow>
+                <strow id="strow-field-DisplayModeCalendar">
+                    <stentry><uicontrol>Display Mode</uicontrol></stentry>
+                    <stentry>The mode for the current module instance.
+                        <ul>  <!-- Is this correct? -->
+                            <li><uicontrol>List</uicontrol>. If selected, the items are displayed in a list.</li>
+                            <li><uicontrol>Calendar</uicontrol>. If selected, a calendar for the month is displayed.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: BLOGS ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ModeBlogs"><stentry/></strow> -->
+                <strow id="strow-field-ModeBlogs">
+                    <stentry><uicontrol>Mode</uicontrol></stentry>
+                    <stentry>The mode for the current module instance.
+                        <ul>  <!-- Is this correct? -->
+                            <li><uicontrol>Normal</uicontrol>. If selected, the contents of the module are available to all registered users of the site.</li>
+                            <li><uicontrol>Group</uicontrol>. If selected, the blog and all entries is associated with a group.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AllowWindowsLiveWriter"><stentry/></strow> -->
+                <strow id="strow-field-AllowWindowsLiveWriter">
+                    <stentry><uicontrol>Allow Windows Live Writer</uicontrol></stentry>
+                    <stentry>If checked, bloggers can use Windows Live Writer (or other remote blogging tools that use the MetaWeblog API) to post and edit blog posts.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-UseExcerptinWindowsLiveWriter"><stentry/></strow> -->
+                <strow id="strow-field-UseExcerptinWindowsLiveWriter">
+                    <stentry><uicontrol>Use Excerpt in Windows Live Writer</uicontrol></stentry>
+                    <stentry>If checked, bloggers can use the <uicontrol>Excerpt</uicontrol> in Windows Live Writer to create a summary of the post in plain text.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-CommentMode"><stentry/></strow> -->
+                <strow id="strow-field-CommentMode">
+                    <stentry><uicontrol>Comment Mode</uicontrol></stentry>
+                    <stentry>
+                        Entries can be individually set to allow or disallow comments.
+                        <ul>
+                            <li><uicontrol>None</uicontrol>. If selected, comments are disabled.</li>
+                            <li><uicontrol>Default</uicontrol>. If selected, the default comment settings for the site are used.</li>  <!-- ??? -->
+                            <li><uicontrol>Inline Login/Registration</uicontrol>. If selected, a login/registration link is displayed in the module for unauthenticated (anonymous) users who try to leave a comment.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MakeEntrySummaryMandatory"><stentry/></strow> -->
+                <strow id="strow-field-MakeEntrySummaryMandatory">
+                    <stentry><uicontrol>Make Entry Summary Mandatory</uicontrol></stentry>
+                    <stentry>If checked, the blogger is required to include a summary when posting a blog entry.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-LimitAutoGeneratedEntrySummaryto"><stentry/></strow> -->
+                <strow id="strow-field-LimitAutoGeneratedEntrySummaryto">
+                    <stentry><uicontrol>Limit Auto-Generated Entry Summary to</uicontrol></stentry>
+                    <stentry>The maximum number of single-byte characters for the entry's summary. Enter "0" for unlimited characters. If <uicontrol>Enforce Entry Summary Limit</uicontrol> is unchecked, this limit applies to automatically generated summaries only.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnforceEntrySummaryLimit"><stentry/></strow> -->
+                <strow id="strow-field-EnforceEntrySummaryLimit">
+                    <stentry><uicontrol>Enforce Entry Summary Limit</uicontrol></stentry>
+                    <stentry>If checked, <uicontrol>Limit Auto-Generated Entry Summary to</uicontrol> applies to both automatically generated summaries and blogger-generated summaries.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeSummaryinEntry"><stentry/></strow> -->
+                <strow id="strow-field-IncludeSummaryinEntry">
+                    <stentry><uicontrol>Include Summary in Entry</uicontrol></stentry>
+                    <stentry>If checked, the summary is displayed at the top of each entry, when entries are listed.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AllowSummaryHTML"><stentry/></strow> -->
+                <strow id="strow-field-AllowSummaryHTML">
+                    <stentry><uicontrol>Allow Summary HTML</uicontrol></stentry>
+                    <stentry>If checked, the blogger can format their entry summary in HTML.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ListRowTemplate"><stentry/></strow> -->
+                <strow id="strow-field-ListRowTemplate">
+                    <stentry><uicontrol>List Row Template</uicontrol></stentry>
+                    <stentry>The template to use when displaying the blog entries in a list.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DetailViewTemplate"><stentry/></strow> -->
+                <strow id="strow-field-DetailViewTemplate">
+                    <stentry><uicontrol>Detail View Template</uicontrol></stentry>
+                    <stentry>The template to use when displaying the details of a single blog entry.</stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: FORM BUILDER ========== -->
+
+
+                <!-- ========== MODULE: GROUP DIRECTORY ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ViewMode"><stentry/></strow> -->
+                <strow id="strow-field-ViewMode">
+                    <stentry><uicontrol>View Mode</uicontrol></stentry>
+                    <stentry>
+                        <ul>
+                            <li><uicontrol>Thumbnail</uicontrol>. Displays the thumbnail logos of the groups in a grid.</li>
+                            <li><uicontrol>List</uicontrol>. Displays the list of group names.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-RoleGroup"><stentry/></strow> -->
+                <strow id="strow-field-RoleGroup">
+                    <stentry><uicontrol>Role Group</uicontrol></stentry>
+                    <stentry>Filters the list to show only the groups in the selected role group.</stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: IDEAS ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TotalVotesPerIdea"><stentry/></strow> -->
+                <strow id="strow-field-TotalVotesPerIdea">
+                    <stentry><uicontrol>Total Votes per Idea</uicontrol></stentry>
+                    <stentry>The maximum number of votes that a user can give to a single idea. The votes can be given at different times, but the cumulative number cannot exceed this value.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TotalVotesPerUser"><stentry/></strow> -->
+                <strow id="strow-field-TotalVotesPerUser">
+                    <stentry><uicontrol>Total Votes per User</uicontrol></stentry>
+                    <stentry>The total number of votes that a single user can distribute among any number of ideas within the current module. While voting is enabled, votes can be changed, and revoked votes return to the user's voting pool. <!-- Set to 0 for unlimited votes. --></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AcceptNewIdeas"><stentry/></strow> -->
+                <strow id="strow-field-AcceptNewIdeas">
+                    <stentry><uicontrol>Accept New Ideas</uicontrol></stentry>
+                    <stentry>If checked, registered <!-- ??? --> users can submit their own ideas. If you are performing a survey, uncheck this option.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PermitVoting"><stentry/></strow> -->
+                <strow id="strow-field-PermitVoting">
+                    <stentry><uicontrol>Permit Voting</uicontrol></stentry>
+                    <stentry>If checked, voting is allowed. You can allow users to preview ideas before voting by keeping this box unchecked, then you can check this box when voting begins. To end the voting period, uncheck this box again.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SearchResults"><stentry/></strow> -->
+                <strow id="strow-field-SearchResults">
+                    <stentry><uicontrol>Search Results</uicontrol></stentry>
+                    <stentry><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesize"></ph></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowCategories"><stentry/></strow> -->
+                <strow id="strow-field-ShowCategories">
+                    <stentry><uicontrol>Show Categories</uicontrol></stentry>
+                    <stentry>If checked, users adding new ideas would be required to choose a category from the selected vocabulary.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-RootVocabulary"><stentry/></strow> -->
+                <strow id="strow-field-RootVocabulary">
+                    <stentry><uicontrol>Root Vocabulary</uicontrol></stentry>
+                    <stentry>A node in a vocabulary tree to use as the root node. <!-- Is this correct? --> The vocabulary must already be defined in the site's taxonomy. The <uicontrol>Manage Vocabularies</uicontrol> link takes you to the <uicontrol>Taxonomy Manager</uicontrol> so you can create or update vocabularies. The <uicontrol>Refresh</uicontrol> link updates the <uicontrol>Root Vocabulary</uicontrol> dropdown box.</stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: LEADERBOARD ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageSize"><stentry/></strow> -->
+                <strow id="strow-field-PageSize">
+                    <stentry><uicontrol>Page Size</uicontrol></stentry>
+                    <stentry><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesize"></ph></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Interval"><stentry/></strow> -->
+                <strow id="strow-field-Interval">
+                    <stentry><uicontrol>Interval</uicontrol></stentry>
+                    <stentry>The time period when the rankings would be based. Example: If you choose <uicontrol>Last Week</uicontrol>, the rankings would be based on points earned by users in the past seven days only.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowSearchPanel"><stentry/></strow> -->
+                <strow id="strow-field-ShowSearchPanel">
+                    <stentry><uicontrol>Show Search Panel</uicontrol></stentry>
+                    <stentry>If checked, allows users to search for members by name in the displayed list.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowModeSwitchButtons"><stentry/></strow> -->
+                <strow id="strow-field-ShowModeSwitchButtons">
+                    <stentry><uicontrol>Show Mode Switch Buttons</uicontrol></stentry>
+                    <stentry>Displays relevant buttons that can be used by the user to further filter what is displayed.
+                        <ul>
+                            <li><uicontrol>Everyone</uicontrol>. Displays all the results.</li>
+                            <li><uicontrol>Friends</uicontrol>. Displays only the current user's friends who are included in the results.</li>
+                            <li><uicontrol>Members</uicontrol>. Displays only the members of the group specified in <uicontrol>Membership in Group</uicontrol>.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DisplayMode"><stentry/></strow> -->
+                <strow id="strow-field-DisplayMode">
+                    <stentry><uicontrol>Display Mode</uicontrol></stentry>
+                    <stentry>
+                        <ul>
+                            <li><uicontrol>All Users</uicontrol>. Ranks and returns all registered users of the site.</li>
+                            <li><uicontrol>Friends</uicontrol>. Ranks and returns only the friends of the current user.</li>
+                            <li><uicontrol>Members</uicontrol>. Ranks and returns only members of the specified group.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MembershipInGroup"><stentry/></strow> -->
+                <strow id="strow-field-MembershipInGroup">
+                    <stentry><uicontrol>Membership in Group</uicontrol></stentry>
+                    <stentry>The group whose members to display. This field appears only if <uicontrol>Display Mode</uicontrol> is <uicontrol>Members</uicontrol>. If the selected group is <uicontrol>None</uicontrol>, all registered users will be included. <!-- Is this correct? --> </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Behavior"><stentry/></strow> -->
+                <strow id="strow-field-Behavior">
+                    <stentry><uicontrol>Behavior</uicontrol></stentry>
+                    <stentry>
+                        <ul>
+                            <li><uicontrol>Relative Ranking</uicontrol>. Displays users in order of ranking.</li>
+                            <li><uicontrol>Top Contributors</uicontrol>. Displays only the users with the highest points.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Template"><stentry/></strow> -->
+                <strow id="strow-field-Template">
+                    <stentry><uicontrol>Template</uicontrol></stentry>
+                    <stentry>Template to use for the leaderboard. Some predefined templates are provided by DNN. If you choose <uicontrol>Custom</uicontrol>, the next four fields are displayed to allow you to enter custom HTML to be used with the current module instance only.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HeaderTemplateLeaderboard"><stentry/></strow> -->
+                <strow id="strow-field-HeaderTemplateLeaderboard">
+                    <stentry><uicontrol>Header Template</uicontrol></stentry>
+                    <stentry><ph conref="#tsk-bptext-custom-modules/ph-HeaderTemplate"></ph> Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateLeaderboard"><stentry/></strow> -->
+                <strow id="strow-field-ItemTemplateLeaderboard">
+                    <stentry><uicontrol>Item Template</uicontrol></stentry>
+                    <stentry><ph conref="#tsk-bptext-custom-modules/ph-ItemTemplate"></ph> Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HighlightedItemTemplateLeaderboard"><stentry/></strow> -->
+                <strow id="strow-field-HighlightedItemTemplateLeaderboard">
+                    <stentry><uicontrol>Highlighted Item Template</uicontrol></stentry>
+                    <stentry><ph conref="#tsk-bptext-custom-modules/ph-HighlightedItemTemplate"></ph> Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FooterTemplateLeaderboard"><stentry/></strow> -->
+                <strow id="strow-field-FooterTemplateLeaderboard">
+                    <stentry><uicontrol>Footer Template</uicontrol></stentry>
+                    <stentry><ph conref="#tsk-bptext-custom-modules/ph-FooterTemplate"></ph> Available only if <uicontrol>Template</uicontrol> is set to <uicontrol>Custom</uicontrol>.</stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: MY STATUS ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TemplateInfoTypes"><stentry/></strow> -->
+                <strow id="strow-field-TemplateInfoTypes">
+                    <stentry><uicontrol>Template</uicontrol></stentry>
+                    <stentry>The information type(s) that should be displayed by this module.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GraphColor1"><stentry/></strow> -->
+                <strow id="strow-field-GraphColor1">
+                    <stentry><uicontrol>Graph Color 1</uicontrol></stentry>
+                    <stentry>The starting color of the gradient used in the Profile Completion graphic.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-GraphColor2"><stentry/></strow> -->
+                <strow id="strow-field-GraphColor2">
+                    <stentry><uicontrol>Graph Color 2</uicontrol></stentry>
+                    <stentry>The ending color of the gradient used in the Profile Completion graphic.</stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: RELATED CONTENT ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemsToDisplay "><stentry/></strow> -->
+                <strow id="strow-field-ItemsToDisplay">
+                    <stentry><uicontrol>Items to Display</uicontrol></stentry>
+                    <stentry><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-singlepagesize"></ph></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-SortingColumn"><stentry/></strow> -->
+                <strow id="strow-field-SortingColumn">
+                    <stentry><uicontrol>Sorting Column</uicontrol></stentry>
+                    <stentry>Sorts the list based on the selected column.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FilterRelatedItemsOnTaxonomyTag"><stentry/></strow> -->
+                <strow id="strow-field-FilterRelatedItemsOnTaxonomyTag">
+                    <stentry><uicontrol>Filter Related Items on Taxonomy Tag</uicontrol></stentry>
+                    <stentry>Returns only the related items that have the specified tag. The tag must be defined in a <term>Taxonomy</term> directory.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FilterRelatedItemsOnContentType"><stentry/></strow> -->
+                <strow id="strow-field-FilterRelatedItemsOnContentType">
+                    <stentry><uicontrol>Filter Related Items on Content Type</uicontrol></stentry>
+                    <stentry>Returns only the related items that are of the selected content type.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-HeaderTemplateRelatedContent"><stentry/></strow> -->
+                <strow id="strow-field-HeaderTemplateRelatedContent">
+                    <stentry><uicontrol>Header Template</uicontrol></stentry>
+                    <stentry><ph conref="#tsk-bptext-custom-modules/ph-HeaderTemplate"></ph></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ItemTemplateRelatedContent"><stentry/></strow> -->
+                <strow id="strow-field-ItemTemplateRelatedContent">
+                    <stentry><uicontrol>Item Template</uicontrol></stentry>
+                    <stentry><ph conref="#tsk-bptext-custom-modules/ph-ItemTemplate"></ph></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FooterTemplateRelatedContent"><stentry/></strow> -->
+                <strow id="strow-field-FooterTemplateRelatedContent">
+                    <stentry><uicontrol>Footer Template</uicontrol></stentry>
+                    <stentry><ph conref="#tsk-bptext-custom-modules/ph-FooterTemplate"></ph></stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: SOCIAL EVENTS  ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MapProvider"><stentry/></strow> -->
+                <strow id="strow-field-MapProvider">
+                    <stentry><uicontrol>Map Provider</uicontrol></stentry>
+                    <stentry>The map provider to use if the event includes a reference to a location. If <uicontrol>None</uicontrol> is selected, a map is not included in the event details.</stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: SOCIAL SETTINGS ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowShareLabel"><stentry/></strow> -->
+                <strow id="strow-field-ShowShareLabel">
+                    <stentry><uicontrol>Show Share Label</uicontrol></stentry>
+                    <stentry>If checked, the word "Share" is displayed.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableGooglePlus"><stentry/></strow> -->
+                <strow id="strow-field-EnableGooglePlus">
+                    <stentry><uicontrol>Enable Google+</uicontrol></stentry>
+                    <stentry>If checked, users can share in Google Plus.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableTwitter"><stentry/></strow> -->
+                <strow id="strow-field-EnableTwitter">
+                    <stentry><uicontrol>Enable Twitter</uicontrol></stentry>
+                    <stentry>If checked, users can share in Twitter.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableLinkedIn"><stentry/></strow> -->
+                <strow id="strow-field-EnableLinkedIn">
+                    <stentry><uicontrol>Enable LinkedIn</uicontrol></stentry>
+                    <stentry>If checked, users can share in LinkedIn.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableFacebook"><stentry/></strow> -->
+                <strow id="strow-field-EnableFacebook">
+                    <stentry><uicontrol>Enable Facebook</uicontrol></stentry>
+                    <stentry>If checked, users can share in Facebook.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnablePinterest"><stentry/></strow> -->
+                <strow id="strow-field-EnablePinterest">
+                    <stentry><uicontrol>Enable Pinterest</uicontrol></stentry>
+                    <stentry>If checked, users can share in Pinterest.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FacebookLikeButton"><stentry/></strow> -->
+                <strow id="strow-field-FacebookLikeButton">
+                    <stentry><uicontrol>Facebook Like Button</uicontrol></stentry>
+                    <stentry>If checked, Facebook's <uicontrol>Like</uicontrol> button is also displayed.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-FacebookLikeStyle"><stentry/></strow> -->
+                <strow id="strow-field-FacebookLikeStyle">
+                    <stentry><uicontrol>Facebook Like Style</uicontrol></stentry>
+                    <stentry>  <!-- Add screenshots of each style when SOCIAL-4523 is fixed. -->
+                        <ul>
+                            <li><uicontrol>Standard</uicontrol></li>
+                            <li><uicontrol>Like button only</uicontrol></li>
+                            <li><uicontrol>Like button, Share count</uicontrol></li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-LinkShorteningService"><stentry/></strow> -->
+                <strow id="strow-field-LinkShorteningService">
+                    <stentry><uicontrol>Link Shortening Service</uicontrol></stentry>
+                    <stentry>If the page link is included in the share message, the selected service is used to shorten the link.</stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: USER BADGES ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NumberOfBadges"><stentry/></strow> -->
+                <strow id="strow-field-NumberOfBadges">
+                    <stentry><uicontrol>Number of Badges</uicontrol></stentry>
+                    <stentry><ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesizecumulativeViewMore"></ph></stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: WIKI ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableCommentsOnArticles"><stentry/></strow> -->
+                <strow id="strow-field-EnableCommentsOnArticles">
+                    <stentry><uicontrol>Enable Comments on Articles</uicontrol></stentry>
+                    <stentry>If checked, users can comment on individual wiki articles.</stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: CONSOLE ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ModeConsole"><stentry/></strow> -->
+                <strow id="strow-field-ModeConsole">
+                    <stentry><uicontrol>Mode</uicontrol></stentry>
+                    <stentry>The mode for the current module instance.
+                        <ul>  <!-- Is this correct? -->
+                            <li><uicontrol>Normal</uicontrol>. If selected, the module displays the child pages of the current page.</li>
+                            <li><uicontrol>Profile</uicontrol>. If selected, the module displays the child pages of the current user's profile information.</li>
+                            <li><uicontrol>Group</uicontrol>. If selected, the module displays the child pages of the group page.</li>  <!-- Where do they specify the group? -->
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-PageVisibilitySettings"><stentry/></strow> -->
+                <strow id="strow-field-PageVisibilitySettings">
+                    <stentry><uicontrol>Page Visibility Settings</uicontrol></stentry>
+                    <stentry>Who can see each specified page.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowChildrenOf"><stentry/></strow> -->
+                <strow id="strow-field-ShowChildrenOf">
+                    <stentry><uicontrol>Show Children of</uicontrol></stentry>
+                    <stentry>The page whose children to display.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeParent"><stentry/></strow> -->
+                <strow id="strow-field-IncludeParent">
+                    <stentry><uicontrol>Include Parent</uicontrol></stentry>
+                    <stentry>If checked, the parent is also included in the tree/list of its children.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DefaultIconSize"><stentry/></strow>  // self-explanatory -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AllowIconResize"><stentry/></strow>  // self-explanatory -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-DefaultView"><stentry/></strow> -->
+                <strow id="strow-field-DefaultView">
+                    <stentry><uicontrol>Default View</uicontrol></stentry>
+                    <stentry>The initial configuration of the module's contents.
+                        <ul>
+                            <li><uicontrol>Simple View</uicontrol></li>
+                            <li><uicontrol>Detailed View</uicontrol></li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-AllowViewChange"><stentry/></strow> -->
+                <strow id="strow-field-AllowViewChange">
+                    <stentry><uicontrol>Allow View Change</uicontrol></stentry>
+                    <stentry>If checked, the user can toggle between the <uicontrol>Simple View</uicontrol> and the <uicontrol>Detailed View</uicontrol>.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ShowTooltip"><stentry/></strow> -->
+                <strow id="strow-field-ShowTooltip">
+                    <stentry><uicontrol>Show Tooltip</uicontrol></stentry>
+                    <stentry>If checked, displays a detailed description when the user hovers over each icon.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-OrderItemsByHierarchy"><stentry/></strow> -->
+                <strow id="strow-field-OrderItemsByHierarchy">
+                    <stentry><uicontrol>Order Items by Hierarchy</uicontrol></stentry>
+                    <stentry>If checked, displays the child pages immediately after their respective parent pages. Otherwise, all pages are displayed alphabetically in a flat list.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeHiddenPages"><stentry/></strow> -->
+                <strow id="strow-field-IncludeHiddenPages">
+                    <stentry><uicontrol>Include Hidden Pages</uicontrol></stentry>
+                    <stentry>If checked, the tree/list includes hidden pages.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Width"><stentry/></strow> -->
+                <strow id="strow-field-Width">
+                    <stentry><uicontrol>Width</uicontrol></stentry>
+                    <stentry>The maximum width (in pixels) of the icons to reduce the width of the module. If blank, the icons can expand horizontally based on the window size. Example: You can enter 400 to simulate a grid with two columns of icons.</stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: HTML PRO ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ReplaceTokens"><stentry/></strow> -->
+                <strow id="strow-field-ReplaceTokens">
+                    <stentry><uicontrol>Replace Tokens</uicontrol></stentry>
+                    <stentry>If checked, tokens in the HTML text are replaced.
+                        <note type="note">If checked, inline editing and module caching are also disabled.</note>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MaxLengthOfDescriptionInSearch"><stentry/></strow> -->
+                <strow id="strow-field-MaxLengthOfDescriptionInSearch">
+                    <stentry><uicontrol>Max Length of Description in Search</uicontrol></stentry>
+                    <stentry>The maximum number of single-byte characters from the text that are displayed in site search results.</stentry> <!-- Is this correct? Shouldn't this be in the Search module? -->
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-UseFormDecoration"><stentry/></strow> -->
+                <strow id="strow-field-UseFormDecoration">
+                    <stentry><uicontrol>Use Form Decoration</uicontrol></stentry>
+                    <stentry>If checked, the HTML controls in the module's contents are decorated to match the style in other instances of the <uicontrol>HTML</uicontrol> module in the site.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-Workflow"><stentry/></strow> -->
+                <strow id="strow-field-Workflow">
+                    <stentry><uicontrol>Workflow</uicontrol></stentry>
+                    <stentry>The predefined workflow to use for content creation using this module. Workflows are defined by content managers or administrators in the <uicontrol>Workflow Management</uicontrol> module.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ApplyWorkflowTo"><stentry/></strow> -->
+                <strow id="strow-field-ApplyWorkflowTo">
+                    <stentry><uicontrol>Apply Workflow To</uicontrol></stentry>
+                    <stentry>
+                        <ul>
+                            <li><uicontrol>Module</uicontrol>. The selected workflow is used only for the current instance of the module.</li>
+                            <li><uicontrol>Page</uicontrol>. The selected workflow is used for all HTML module instances in the same page.</li>
+                            <li><uicontrol>Site</uicontrol>. The selected workflow is used for all HTML module instances in the entire site.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: SEARCH RESULTS ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TitleLinkTarget"><stentry/></strow> -->
+                <strow id="strow-field-TitleLinkTarget">
+                    <stentry><uicontrol>Title Link Target</uicontrol></stentry>
+                    <stentry>Where the results would be displayed:
+                        <ul>
+                            <li>On Same Page</li>
+                            <li>Open New Page</li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ResultsScopeforContentTypes"><stentry/></strow> -->
+                <strow id="strow-field-ResultsScopeforContentTypes">
+                    <stentry><uicontrol>Results Scope for Content Type(s)</uicontrol></stentry>
+                    <stentry>The content types that would be included in the results.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableWildcardSearchesbyDefault"><stentry/></strow> -->
+                <strow id="strow-field-EnableWildcardSearchesbyDefault">
+                    <stentry><uicontrol>Enable Wildcard Searches by Default</uicontrol></stentry>
+                    <stentry>If checked, users can enter partial words as search terms. Example, "org" will return "organization" and "organize".
+                        <note type="tip">If too many searches take too long, uncheck this option.</note>
+                    </stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: PUBLISHER ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TopTagsPageSize"><stentry/></strow> -->
+                <strow id="strow-field-TopTagsPageSize">
+                    <stentry><uicontrol>Top Tags Page Size</uicontrol></stentry>
+                    <stentry>The number of tags to display in each result page.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TopAuthorsPageSize"><stentry/></strow> -->
+                <strow id="strow-field-TopAuthorsPageSize">
+                    <stentry><uicontrol>Top Authors Page Size</uicontrol></stentry>
+                    <stentry>The number of authors to display in each result page.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-EnableSharing"><stentry/></strow> -->
+                <strow id="strow-field-EnableSharing">
+                    <stentry><uicontrol>Enable Sharing</uicontrol></stentry>
+                    <stentry>Content added to this module can be shared in the selected social media site(s).</stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: VIEW PROFILE ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeEditButton"><stentry/></strow> -->
+                <strow id="strow-field-IncludeEditButton">
+                    <stentry><uicontrol>Include Edit Button</uicontrol></stentry>
+                    <stentry>If checked, the <uicontrol>Edit Profile</uicontrol> button is displayed.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ProfileTemplate"><stentry/></strow> -->
+                <strow id="strow-field-ProfileTemplate">
+                    <stentry><uicontrol>Profile Template</uicontrol></stentry>
+                    <stentry>
+                        <p>The custom HTML template used to display the user profile.</p>
+                        <note type="tip"><uicontrol>Load Default</uicontrol> inserts HTML code wrapped inside a &lt;div&gt; tag. You can customize that code according to your needs.</note>
+                    </stentry>
+                </strow>
+
+
+                <!-- ========== MODULE: DDR MENU ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-MenuStyle"><stentry/></strow> -->
+                <strow id="strow-field-MenuStyle">
+                    <stentry><uicontrol>Menu Style</uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NodeXMLOath"><stentry/></strow> -->
+                <strow id="strow-field-NodeXMLOath">
+                    <stentry><uicontrol>Node XML Oath</uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NodeSelectionExpression"><stentry/></strow> -->
+                <strow id="strow-field-NodeSelectionExpression">
+                    <stentry><uicontrol>Node Selection Expression</uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NodesToInclude"><stentry/></strow> -->
+                <strow id="strow-field-NodesToInclude">
+                    <stentry><uicontrol>Nodes to Include</uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NodesToExclude"><stentry/></strow> -->
+                <strow id="strow-field-NodesToExclude">
+                    <stentry><uicontrol>Nodes to Exclude</uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-NodeManipulatorType"><stentry/></strow> -->
+                <strow id="strow-field-NodeManipulatorType">
+                    <stentry><uicontrol>Node Manipulator Type</uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeContextInXML"><stentry/></strow> -->
+                <strow id="strow-field-IncludeContextInXML">
+                    <stentry><uicontrol>Include Context in XML</uicontrol></stentry>
+                    <stentry>If checked, ...</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-IncludeHiddenNodes"><stentry/></strow> -->
+                <strow id="strow-field-IncludeHiddenNodes">
+                    <stentry><uicontrol>Include Hidden Nodes</uicontrol></stentry>
+                    <stentry>If checked, ...</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-TemplateArguments"><stentry/></strow> -->
+                <strow id="strow-field-TemplateArguments">
+                    <stentry><uicontrol>Template Arguments</uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-ClientOptions"><stentry/></strow> -->
+                <strow id="strow-field-ClientOptions">
+                    <stentry><uicontrol>Client Options</uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+
+
+
+
+
+
+
+
+
+                <!-- ========== MODULE:  ========== -->
+
+                <!-- <strow conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/strow-field-"><stentry/></strow>
+                <strow id="strow-field-">
+                    <stentry><uicontrol></uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+                -->
+
+            </simpletable>
+
+        </section>
+
+
+        <section>
+
+            <!--
+            <title>Photo entries and photo attachments</title>
+            <sectiondiv conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/sectiondiv-photoentriesattachments"></sectiondiv>
+            -->
+            <sectiondiv id="sectiondiv-photoentriesattachments">
+                <p>This module distinguishes between:
+                    <ul>
+                        <li>entries that are of type <uicontrol>Photos</uicontrol>, and</li>
+                        <li>entries that have photo/image attachments.</li>
+                    </ul>
+                </p>
+
+                <p>If the type <uicontrol>Photos</uicontrol> is checked, photo entries are displayed. If unchecked, photo entries are hidden.</p>
+
+                <p>If either <uicontrol>Enable File Attachments</uicontrol> or <uicontrol>Enable Photo Attachments</uicontrol> is checked, entries with photo/image attachments are displayed. If both are unchecked, entries with photo/image attachments are hidden.</p>
+
+                <note type="note">If <uicontrol>Enable Photo Attachments</uicontrol> is checked, be sure to also check the type <uicontrol>Photos</uicontrol>. Otherwise, a user could create an entry with an attached photo, but they would not know that it was actually created, because they cannot see it.</note>
+
+                <p>A photo entry cannot have a file attachment. However, an entry with a photo attachment can have additional attachments.</p>
+            </sectiondiv>
+
+
+            <!-- ========== COMPANION MODULES ========== -->
+
+            <p>
+                <!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-companionmodules"></ph> -->
+                <ph id="ph-companionmodules">Companion modules are displayed automatically when the main module is added to a page and are configured separately.</ph>
+            </p>
+
+            <!-- <p conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/p-companions-VisibleOnPage"></p> -->
+            <p id="p-companions-VisibleOnPage">To display/hide companion module(s),
+                <ul>
+                    <li>
+                        From the main module's action menu, go to <menucascade><uicontrol>Edit (pencil icon)</uicontrol> <uicontrol>Add Companion Modules...</uicontrol></menucascade>.
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-edit-addcompanionmodules.png"><alt>Edit (pencil icon) action menu &gt; Add Companion Modules...</alt></image>
+                    </li>
+                    <li>
+                        Check/Uncheck the <uicontrol>Visible on Page</uicontrol> box for the companion module that you want to be displayed/hidden.
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-companions-VisibleOnPage.png"><alt></alt></image>
+                    </li>
+                </ul>
+            </p>
+
+
+            <!-- ========== PAGE SIZE ========== -->
+            <!-- Also see <strow conref="managing-your-community/bptext-community-steps.dita#tsk-bptext-community-steps/strow-field-PageSize"><stentry/></strow>. -->
+
+            <p>
+                <!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-singlepagesize"></ph> -->
+                <ph id="ph-singlepagesize">The number of items to display.</ph>
+
+                <!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesize"></ph> -->
+                <ph id="ph-pagesize">The number of items to display in each result page.</ph>
+
+                <!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesizecumulativeGetMore"></ph> -->
+                <ph id="ph-pagesizecumulativeGetMore">The number of items to initially display, and the number of additional items to display when the <uicontrol>Get More</uicontrol> button is clicked/tapped.</ph>
+
+                <!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-pagesizecumulativeViewMore"></ph> -->
+                <ph id="ph-pagesizecumulativeViewMore">The number of items to initially display, and the number of additional items to display when the <uicontrol>View More</uicontrol> button is clicked/tapped.</ph>
+            </p>
+
+
+            <!-- ========== HTML TEMPLATE ========== -->
+            <p>
+
+                <!-- <ph conref="#tsk-bptext-custom-modules/ph-HeaderTemplate"></ph> -->
+                <ph id="ph-HeaderTemplate">The custom HTML template used as the prefix to the list. Typically the starting tags for the table or list.</ph>
+
+                <!-- <ph conref="#tsk-bptext-custom-modules/ph-ItemTemplate"></ph> -->
+                <ph id="ph-ItemTemplate">The custom HTML template used to display each item in the list. Typically an entire row of the table or a bullet in the list. </ph>
+
+                <!-- <ph conref="#tsk-bptext-custom-modules/ph-HighlightedItemTemplate"></ph> -->
+                <ph id="ph-HighlightedItemTemplate">The custom HTML template used to display the selected item in the list. Typically an entire row of the table or a bullet in the list. </ph>
+
+                <!-- <ph conref="#tsk-bptext-custom-modules/ph-FooterTemplate"></ph> -->
+                <ph id="ph-FooterTemplate">The custom HTML template used as the suffix to the list. Typically the terminating tags for the table or list.</ph>
+
+
+                <!-- <ph conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/ph-"></ph>
+                <ph id="ph-"></ph>
+                -->
+
+            </p>
+
+
+        </section>
 
 
         <steps>
 
-			<step><cmd></cmd></step>
+            <step><cmd></cmd></step>
 
         </steps>
 

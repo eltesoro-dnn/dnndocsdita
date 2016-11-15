@@ -36,22 +36,20 @@
         </prereq>
 
         <steps>
-
-            <step conkeyref="k-bpsteps/step-menuhostActivateLicense"><cmd/></step>
-
+            <step conkeyref="k-bppbar/step-pb-host-Settings-About-E90"><cmd/></step>
             <step>
                 <cmd>Click <uicontrol>Add License</uicontrol>.</cmd>
                 <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingActivate.png"><alt>Click Add License.</alt></image>
+                    <fig outputclass="img-scr-menu">
+                        <image outputclass="img-scr" scalefit="yes" href="../../common/img/scr-LicensingActivate-E90.png"><alt>Click Add License.</alt></image>
+                    </fig>
                 </info>
             </step>
-
             <step>
                 <cmd>Fill in the required information.</cmd>
                 <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingAddAuto.png"><alt>Choose License Type, enter Account Email and Invoice Number, then click Automatic Activation.</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingAddAuto-E90.png"><alt>Choose License Type, enter Account Email and Invoice Number, then click Automatic Activation.</alt></image>
                 </info>
-
                 <substeps>
                     <substep><cmd>Select the <uicontrol>License Type</uicontrol> from the list.</cmd>
                         <info>
@@ -72,12 +70,7 @@
                     <substep><cmd>Click <uicontrol>Automatic Activation</uicontrol>.</cmd></substep>
                 </substeps>
             </step>
-
         </steps>
-
-        <result>
-            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-LicensingActivate.png"><alt>License has been activated successfully.</alt></image>
-        </result>
 
     </taskbody>
 

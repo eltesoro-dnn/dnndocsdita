@@ -14,137 +14,330 @@
 
     <taskbody>
 
-		<section>
+        <section>
 
-			<!-- FIELD NAMES IN SIMPLETABLE -->
+            <!-- FIELD NAMES IN SIMPLETABLE -->
 
-			<simpletable relcolwidth="1* 3*">
+            <simpletable relcolwidth="1* 3*">
 
-				<!-- ========== PAGE MANAGEMENT ========== -->
+                <!-- ========== PAGE MANAGEMENT ========== -->
 
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-SplashPage"><stentry/></strow> -->
-				<strow id="strow-field-SplashPage">
-					<stentry><uicontrol>Splash Page</uicontrol></stentry>
-					<stentry>The page displayed before the user sees the home page of the site. If <uicontrol>None Specified</uicontrol>, then the <uicontrol>Home Page</uicontrol> is displayed immediately.</stentry>
-				</strow>
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-SplashPage"><stentry/></strow> -->
+                <strow id="strow-field-SplashPage">
+                    <stentry><uicontrol>Splash Page</uicontrol></stentry>
+                    <stentry>The page displayed before the user sees the home page of the site. If <uicontrol>None Specified</uicontrol>, then the <uicontrol>Home Page</uicontrol> is displayed immediately.</stentry>
+                </strow>
 
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-HomePage"><stentry/></strow>  // self-explanatory -->
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-HomePage"><stentry/></strow>  // self-explanatory -->
 
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-LoginPage"><stentry/></strow> -->
-				<strow id="strow-field-LoginPage">
-					<stentry><uicontrol>Login Page</uicontrol></stentry>
-					<stentry>The page must include the <uicontrol>Authentication</uicontrol> module.</stentry>
-				</strow>
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-LoginPage"><stentry/></strow> -->
+                <strow id="strow-field-LoginPage">
+                    <stentry><uicontrol>Login Page</uicontrol></stentry>
+                    <stentry>The page must include the <uicontrol>Authentication</uicontrol> module.</stentry>
+                </strow>
 
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-RegistrationPage"><stentry/></strow> -->
-				<strow id="strow-field-RegistrationPage">
-					<stentry><uicontrol>Registration Page</uicontrol></stentry>
-					<stentry>The page can include the <uicontrol>Registration</uicontrol> module.</stentry>  <!-- // Not required? -->
-				</strow>
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-RegistrationPage"><stentry/></strow> -->
+                <strow id="strow-field-RegistrationPage">
+                    <stentry><uicontrol>Registration Page</uicontrol></stentry>
+                    <stentry>The page can include the <uicontrol>Registration</uicontrol> module.</stentry>  <!-- // Not required? -->
+                </strow>
 
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-UserProfilePage"><stentry/></strow> -->
-				<strow id="strow-field-UserProfilePage">
-					<stentry><uicontrol>User Profile Page</uicontrol></stentry>
-					<stentry>The page can include the <uicontrol>Profile Dashboard</uicontrol> module.</stentry>  <!-- // Not required? -->
-				</strow>
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-UserProfilePage"><stentry/></strow> -->
+                <strow id="strow-field-UserProfilePage">
+                    <stentry><uicontrol>User Profile Page</uicontrol></stentry>
+                    <stentry>The page can include the <uicontrol>Profile Dashboard</uicontrol> module.</stentry>  <!-- // Not required? -->
+                </strow>
 
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-SearchResultsPage"><stentry/></strow> -->
-				<strow id="strow-field-SearchResultsPage">
-					<stentry><uicontrol>Search Results Page</uicontrol></stentry>
-					<stentry>The page must include the <uicontrol>Search Results</uicontrol> module.</stentry>
-				</strow>
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-SearchResultsPage"><stentry/></strow> -->
+                <strow id="strow-field-SearchResultsPage">
+                    <stentry><uicontrol>Search Results Page</uicontrol></stentry>
+                    <stentry>The page must include the <uicontrol>Search Results</uicontrol> module.</stentry>
+                </strow>
 
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-404ErrorPage"><stentry/></strow> -->
-				<strow id="strow-field-404ErrorPage">
-					<stentry><uicontrol>404 Error Page</uicontrol></stentry>
-					<stentry>The page displayed if the requested page is not found.</stentry>
-				</strow>
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-404ErrorPage"><stentry/></strow> -->
+                <strow id="strow-field-404ErrorPage">
+                    <stentry><uicontrol>404 Error Page</uicontrol></stentry>
+                    <stentry>The page displayed if the requested page is not found.</stentry>
+                </strow>
 
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-500ErrorPage"><stentry/></strow> -->
-				<strow id="strow-field-500ErrorPage">
-					<stentry><uicontrol>500 Error Page</uicontrol></stentry>
-					<stentry>The page displayed if the requested page generates an error.</stentry>
-				</strow>
-
-
-				<!-- ========== ADVANCED URL MANAGEMENT ========== -->
-
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-UseLowercaseURLs"><stentry/></strow> -->
-				<strow id="strow-field-UseLowercaseURLs">
-					<stentry><uicontrol>Use Lowercase URLs</uicontrol></stentry>
-					<stentry>If checked, URLs will be converted to all lowercase characters.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-RedirectMixedCaseURLs"><stentry/></strow> -->
-				<strow id="strow-field-RedirectMixedCaseURLs">
-					<stentry><uicontrol>Redirect Mixed Case URLs</uicontrol></stentry>
-					<stentry>If checked, URLs with mixed-case characters would be redirected to the lowercase version of that URL.</stentry>  <!-- What's the diff between this and Use Lowercase URLs? -->
-				</strow>
-
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-URLSpaceEncodingValue"><stentry/></strow> -->
-				<strow id="strow-field-URLSpaceEncodingValue">
-					<stentry><uicontrol>URL Space Encoding Value</uicontrol></stentry>
-					<stentry>The value that replaces any space character in the parameter portion of a generated URL.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-ConvertAccentedCharacters"><stentry/></strow> -->
-				<strow id="strow-field-ConvertAccentedCharacters">
-					<stentry><uicontrol>Convert Accented Characters</uicontrol></stentry>
-					<stentry>If checked, accented characters are converted to their plain-ASCII equivalents.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-ReplaceTheseCharacters"><stentry/></strow> -->
-				<strow id="strow-field-ReplaceTheseCharacters">
-					<stentry><uicontrol>Replace These Characters</uicontrol></stentry>
-					<stentry>The list of characters to be replaced with the default character alternative, which can be a hyphen (-) or an underscore (_).</stentry>  <!-- Where do they set the default character? -->
-				</strow>
-
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-FindReplaceTheseCharacters"><stentry/></strow> -->
-				<strow id="strow-field-FindReplaceTheseCharacters">
-					<stentry><uicontrol>Find/Replace These Characters</uicontrol></stentry>
-					<stentry>A comma-delimited pair (<varname>f</varname>,<varname>r</varname>), where any occurrence of <varname>f</varname> is to be replaced by <varname>r</varname>. The value of <varname>f</varname> can only be a character; however, <varname>r</varname> can be a string.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-WarninLogAboutDuplicateURLs"><stentry/></strow> -->
-				<strow id="strow-field-WarninLogAboutDuplicateURLs">
-					<stentry><uicontrol>Warn in Log About Duplicate URLs</uicontrol></stentry>
-					<stentry>If checked, duplicate URLs are reported in the event log. The system chooses which page with the duplicate URL is returned.</stentry>
-				</strow>
-
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-EnableCustomURLProviders"><stentry/></strow> -->
-				<strow id="strow-field-EnableCustomURLProviders">
-					<stentry><uicontrol>Enable Custom URL Providers</uicontrol></stentry>
-					<stentry>If checked, custom URL providers are loaded and used. Otherwise, the default URL provider is used.</stentry>
-				</strow>
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-500ErrorPage"><stentry/></strow> -->
+                <strow id="strow-field-500ErrorPage">
+                    <stentry><uicontrol>500 Error Page</uicontrol></stentry>
+                    <stentry>The page displayed if the requested page generates an error.</stentry>
+                </strow>
 
 
+                <!-- ========== ADVANCED URL MANAGEMENT ========== -->
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-UseLowercaseURLs"><stentry/></strow> -->
+                <strow id="strow-field-UseLowercaseURLs">
+                    <stentry><uicontrol>Use Lowercase URLs</uicontrol></stentry>
+                    <stentry>If checked, URLs will be converted to all lowercase characters.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-RedirectMixedCaseURLs"><stentry/></strow> -->
+                <strow id="strow-field-RedirectMixedCaseURLs">
+                    <stentry><uicontrol>Redirect Mixed Case URLs</uicontrol></stentry>
+                    <stentry>If checked, URLs with mixed-case characters would be redirected to the lowercase version of that URL.</stentry>  <!-- What's the diff between this and Use Lowercase URLs? -->
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-URLSpaceEncodingValue"><stentry/></strow> -->
+                <strow id="strow-field-URLSpaceEncodingValue">
+                    <stentry><uicontrol>URL Space Encoding Value</uicontrol></stentry>
+                    <stentry>The value that replaces any space character in the parameter portion of a generated URL.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-ConvertAccentedCharacters"><stentry/></strow> -->
+                <strow id="strow-field-ConvertAccentedCharacters">
+                    <stentry><uicontrol>Convert Accented Characters</uicontrol></stentry>
+                    <stentry>If checked, accented characters are converted to their plain-ASCII equivalents.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-ReplaceTheseCharacters"><stentry/></strow> -->
+                <strow id="strow-field-ReplaceTheseCharacters">
+                    <stentry><uicontrol>Replace These Characters</uicontrol></stentry>
+                    <stentry>The list of characters to be replaced with the default character alternative, which can be a hyphen (-) or an underscore (_).</stentry>  <!-- Where do they set the default character? -->
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-FindReplaceTheseCharacters"><stentry/></strow> -->
+                <strow id="strow-field-FindReplaceTheseCharacters">
+                    <stentry><uicontrol>Find/Replace These Characters</uicontrol></stentry>
+                    <stentry>A comma-delimited pair (<varname>f</varname>,<varname>r</varname>), where any occurrence of <varname>f</varname> is to be replaced by <varname>r</varname>. The value of <varname>f</varname> can only be a character; however, <varname>r</varname> can be a string.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-WarninLogAboutDuplicateURLs"><stentry/></strow> -->
+                <strow id="strow-field-WarninLogAboutDuplicateURLs">
+                    <stentry><uicontrol>Warn in Log About Duplicate URLs</uicontrol></stentry>
+                    <stentry>If checked, duplicate URLs are reported in the event log. The system chooses which page with the duplicate URL is returned.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-EnableCustomURLProviders"><stentry/></strow> -->
+                <strow id="strow-field-EnableCustomURLProviders">
+                    <stentry><uicontrol>Enable Custom URL Providers</uicontrol></stentry>
+                    <stentry>If checked, custom URL providers are loaded and used. Otherwise, the default URL provider is used.</stentry>
+                </strow>
 
 
 
 
 
-				<!-- ========== ... ========== -->
+                <!-- ========== ... ========== -->
 
-				<!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-"><stentry/></strow>
-				<strow id="strow-field-">
-					<stentry><uicontrol></uicontrol></stentry>
-					<stentry></stentry>
-				</strow>
-				-->
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-"><stentry/></strow>
+                <strow id="strow-field-">
+                    <stentry><uicontrol></uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+                -->
 
 
-			</simpletable>
+            </simpletable>
 
-		</section>
+        </section>
 
+
+        <!-- <section conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/section-connectors-overview"></section> -->
+        <section id="section-connectors-overview">
+            <p>Connectors enable DNN to integrate sites to third-party service providers, including Google Analytics, Marketo, and Zendesk.</p>
+            <p>In some cases, you might need to get code from the third-party service provider and insert it into DNN. In other cases, you simply need to provide your account information for that provider and DNN takes care of the rest.</p>
+        </section>
 
 
         <steps>
 
-			<!-- ========== ... ========== -->
-			<step><cmd/>
+            <!-- ========== CONNECTORS ========== -->
 
-			</step>
+            <!-- <step conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/step-configure-connections"><cmd/></step> -->
+            <step id="step-configure-connections">
+                <cmd>Under <uicontrol>Configure Connections</uicontrol>, choose the service provider in the list and click/tap <uicontrol>Connect</uicontrol> or <uicontrol>Edit</uicontrol>.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarSettings-Connectors.gif"><alt>Configure Connections expanded tabs</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/step-provide-connection-info"><cmd/></step> -->
+            <step id="step-provide-connection-info">
+                <cmd>Provide the information required by the service provider.</cmd>
+
+                <info>
+                    <note type="tip">Some connectors can be configured further in the <uicontrol>Advanced Settings</uicontrol> dialog, if available. Simply click/tap <uicontrol>Connect</uicontrol>, then click/tap the gear icon for that connector.</note>
+                    <p><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarSettings-Connectors-Zendesk-gear.png"><alt>Connectors gear icon</alt></image></p>
+
+                    <simpletable relcolwidth="1* 2* 3*">
+                        <sthead>
+                            <stentry>Provider</stentry>
+                            <stentry>Fields</stentry>
+                        </sthead>
+
+                        <strow>
+                            <stentry><uicontrol>Amazon S3</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>Access Key ID</uicontrol></li>
+                                    <li><uicontrol>Secret Access Key</uicontrol></li>
+                                </ul>
+                                <p><xref format="html" scope="external" href="http://docs.aws.amazon.com/AWSSimpleQueueService/latest/SQSGettingStartedGuide/AWSCredentials.html">How to get your Amazon S3 access key ID and secret.</xref></p>
+                            </stentry>
+                        </strow>
+
+                        <strow>
+                            <stentry><uicontrol>Azure</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>Account Name</uicontrol></li>
+                                    <li><uicontrol>Account Key</uicontrol></li>
+                                    <li><uicontrol>Container</uicontrol>. The type of data that you want to be synchronized with Azure.  <!-- Is this correct? -->
+                                        <ul>
+                                            <li><uicontrol>backups</uicontrol></li>
+                                            <li><uicontrol>portals</uicontrol></li>
+                                            <li><uicontrol>wad-iis-logfiles</uicontrol> (Azure logfiles)</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                                <p><xref format="html" scope="external" href="https://azure.microsoft.com/en-us/documentation/articles/storage-create-storage-account/#create-a-storage-account">How to get your Azure account name and key.</xref></p>
+                            </stentry>
+                        </strow>
+
+                        <strow>
+                            <stentry><uicontrol>Box</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>Client ID</uicontrol></li>
+                                    <li><uicontrol>Client Secret</uicontrol></li>
+                                </ul>
+                                <p><xref format="html" scope="external" href="https://app.box.com/developers/services">How to get your Box client ID and secret.</xref></p>
+                            </stentry>
+                        </strow>
+
+                        <strow>
+                            <stentry><uicontrol>Disqus</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>Disqus Shortname</uicontrol></li>
+                                    <li><uicontrol>API Key</uicontrol></li>
+                                </ul>
+                                <p><xref format="html" scope="external" href="http://disqus.com/api/applications/">How to get your Disqus shortname and API key.</xref> <uicontrol>Disqus URL</uicontrol> is <uicontrol>Disqus Shortname</uicontrol>; the <uicontrol>Public Key</uicontrol> is the <uicontrol>API Key</uicontrol>. <!-- Source: https://docs.opendatasoft.com/en/manage_domain/disqus_configuration.html --></p>
+                            </stentry>
+                        </strow>
+
+                        <strow>
+                            <stentry><uicontrol>DropBox</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>App Key</uicontrol></li>
+                                    <li><uicontrol>App Secret</uicontrol></li>
+                                </ul>
+                                <p><xref format="html" scope="external" href="https://www.dropbox.com/developers/support">How to get your Dropbox app key and secret.</xref> Scroll down to "Where can I find my app key and secret?"</p>
+                            </stentry>
+                        </strow>
+
+                        <strow>
+                            <stentry><uicontrol>Facebook</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>App ID</uicontrol></li>
+                                    <li><uicontrol>App Secret</uicontrol></li>
+                                </ul>
+                                <p><xref format="html" scope="external" href="https://developers.facebook.com/docs/apps/register">How to get your Facebook app ID and secret.</xref></p>
+                            </stentry>
+                        </strow>
+
+                        <strow>
+                            <stentry><uicontrol>Google Analytics</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>Tracking ID</uicontrol></li>
+                                </ul>
+                                <p><xref format="html" scope="external" href="https://support.google.com/analytics/answer/1032385">How to get your Google Analytics tracking ID.</xref></p>
+                                <p>Click/tab the gear icon to create segmentation rules in <uicontrol>Advanced Settings</uicontrol>. For each rule,</p>
+                                <ul>
+                                    <li><uicontrol>Name</uicontrol>. The name of the rule.</li>
+                                    <li><uicontrol>Value</uicontrol>. <!-- What is this value? --></li>
+                                    <li><uicontrol>Page</uicontrol>. The pages whose associated activity to analyze.</li>
+                                    <li><uicontrol>Role</uicontrol>. The roles whose associated activity to analyze.</li>
+                                </ul>
+                                <p><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarSettings-Connectors-GoogleAnalyticsAdvSettings.png"><alt>Google Analytics Advanced Settings</alt></image></p>
+                            </stentry>
+                        </strow>
+
+                        <strow>
+                            <stentry><uicontrol>LinkedIn</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>API Key</uicontrol></li>
+                                    <li><uicontrol>API Secret</uicontrol></li>
+                                </ul>
+                                <p><xref format="html" scope="external" href="https://developer.linkedin.com/docs/oauth2">How to get your LinkedIn API key and secret.</xref></p>
+                            </stentry>
+                        </strow>
+
+                        <strow>
+                            <stentry><uicontrol>MailChimp</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>API Key</uicontrol></li>
+                                </ul>
+                                <p><xref format="html" scope="external" href="http://kb.mailchimp.com/integrations/api-integrations/about-api-keys">How to get your MailChimp API key.</xref></p>
+                                <p>After saving the API Key, click/tab the gear icon to configure user and list associations in <uicontrol>Advanced Settings</uicontrol>.</p>
+                                <p><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarSettings-Connectors-MailChimpAdvSettings.png"><alt>MailChimp Advanced Settings</alt></image></p>
+                            </stentry>
+                        </strow>
+
+                        <strow>
+                            <stentry><uicontrol>Marketo</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>Munchkin Account ID</uicontrol></li>
+                                </ul>
+                                <p><xref format="html" scope="external" href="http://docs.marketo.com/display/public/DOCS/Add+Munchkin+Tracking+Code+to+Your+Website">How to get your Marketo Munchkin account ID.</xref></p>
+                            </stentry>
+                        </strow>
+
+                        <strow>
+                            <stentry><uicontrol>Optimizely</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>Optimizely Snippet</uicontrol></li>
+                                </ul>
+                                <p><xref format="html" scope="external" href="https://help.optimizely.com/Set_Up_Optimizely/Implement_the_Optimizely_snippet#2._Retrieve_the_snippet">How to get your Optimizely snippet.</xref></p>
+                            </stentry>
+                        </strow>
+
+                        <strow>
+                            <stentry><uicontrol>Twitter</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>API Key</uicontrol></li>
+                                    <li><uicontrol>API Secret</uicontrol></li>
+                                </ul>
+                                <p><xref format="html" scope="external" href="https://dev.twitter.com/oauth/overview">How to get your Twitter API key and secret.</xref>   <!-- Exactly which of the scenarios in the link is the correct one? --></p>
+                            </stentry>
+                        </strow>
+
+                        <strow>
+                            <stentry><uicontrol>ZenDesk</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>Zendesk URL</uicontrol></li>
+                                    <li><uicontrol>Agent Email</uicontrol></li>
+                                    <li><uicontrol>Agent Password</uicontrol></li>
+                                </ul>
+                                <p><xref format="html" scope="external" href="https://support.zendesk.com/hc/en-us/articles/203661986-Adding-end-users-agents-and-administrators">How to create a ZenDesk agent.</xref></p>
+                                <p>Click/tab the gear icon to select fields to track in <uicontrol>Advanced Settings</uicontrol>.</p>
+                                <ul>
+                                    <li><uicontrol>Select Additional Fields</uicontrol></li>  <!-- Where did these fields come from? -->
+                                </ul>
+                                <p><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbarSettings-Connectors-ZendeskAdvSettings.png"><alt>Zendesk Advanced Settings</alt></image></p>
+                            </stentry>
+                        </strow>
+                    </simpletable>
+                </info>
+
+            </step>
+
+
+            <!-- ========== ... ========== -->
+            <step><cmd/>
+
+            </step>
 
 
         </steps>

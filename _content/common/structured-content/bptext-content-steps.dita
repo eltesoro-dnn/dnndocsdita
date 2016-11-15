@@ -14,7 +14,7 @@
 
     <taskbody>
 
-		<section>
+        <section>
 
             <!-- MISCELLANEOUS BLURBS -->
 
@@ -31,34 +31,34 @@
             <!-- <note conref="bptext-content-steps.dita#tsk-bptext-content-steps/note-visualizer-arraytostring"></note> -->
             <note type="note" id="note-visualizer-arraytostring">Arrays are converted to a string for display by simply concatenating the elements. The <codeph>join</codeph> can be used to format the array with a delimiter between each element.</note>
 
-		</section>
+        </section>
 
 
-		<section>
+        <section>
 
-			<!-- FIELD NAMES IN SIMPLETABLE -->
+            <!-- FIELD NAMES IN SIMPLETABLE -->
 
-			<simpletable relcolwidth="1* 3*">
+            <simpletable relcolwidth="1* 3*">
 
-				<strow id="strow-field-">
-					<stentry><uicontrol></uicontrol></stentry>
-					<stentry></stentry>
-				</strow>
-
-
-				<!-- ==========  ========== -->
-
-				<!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-"><stentry/></strow>
-				<strow id="strow-field-">
-					<stentry><uicontrol></uicontrol></stentry>
-					<stentry></stentry>
-				</strow>
-				-->
+                <strow id="strow-field-">
+                    <stentry><uicontrol></uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
 
 
-			</simpletable>
+                <!-- ==========  ========== -->
 
-		</section>
+                <!-- <strow conref="bptext-fields-steps.dita#tsk-bptext-fields-steps/strow-field-"><stentry/></strow>
+                <strow id="strow-field-">
+                    <stentry><uicontrol></uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+                -->
+
+
+            </simpletable>
+
+        </section>
 
 
         <prereq>
@@ -67,162 +67,162 @@
 
         <steps>
 
-			<!-- ========== MENU - PERSONA BAR: MANAGE CONTENT TYPE ========== -->
+            <!-- ========== MENU - PERSONA BAR: MANAGE CONTENT TYPE ========== -->
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttypetab"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttypetab"><cmd/></step> -->
             <step id="step-gotocontenttypetab">
-				<cmd>Click/Tap the <uicontrol>Content Types</uicontrol> tab.</cmd>
+                <cmd>Click/Tap the <uicontrol>Content Types</uicontrol> tab.</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentTypes-List-Tab.png"><alt>Content &gt; Content Types tab</alt></image></info>
             </step>
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttypetab-createbtn"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttypetab-createbtn"><cmd/></step> -->
             <step id="step-gotocontenttypetab-createbtn">
-				<cmd>In the <uicontrol>Content Types</uicontrol> tab, click/tap <uicontrol>Create Content Type</uicontrol>.</cmd>
+                <cmd>In the <uicontrol>Content Types</uicontrol> tab, click/tap <uicontrol>Create Content Type</uicontrol>.</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentTypes-List-TabCreateBtn.png"><alt>Content &gt; Content Types tab &gt; Create Content Type</alt></image></info>
             </step>
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttypetab-highlightellipses"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttypetab-highlightellipses"><cmd/></step> -->
             <step id="step-gotocontenttypetab-highlightellipses">
-				<cmd>In the <uicontrol>Content Types</uicontrol> tab, highlight a content type and click/tap the ellipses.</cmd>
+                <cmd>In the <uicontrol>Content Types</uicontrol> tab, highlight a content type and click/tap the ellipses.</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentTypes-List-TabEllipses.png"><alt>Content Type ellipses menu</alt></image></info>
             </step>
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contenttype-configurecontenttype"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contenttype-configurecontenttype"><cmd/></step> -->
             <step id="step-contenttype-configurecontenttype">
-				<cmd>Configure the content type.</cmd>
+                <cmd>Configure the content type.</cmd>
                 <info>
-					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentTypes-Settings.png"><alt>Content Type settings</alt></image>
-					<simpletable relcolwidth="1* 3*">
-						<sthead>
-							<stentry>Field</stentry>
-							<stentry>Description</stentry>
-						</sthead>
-						<strow id="strow-field-contenttype-name">
-							<stentry><uicontrol>Content Type Name</uicontrol></stentry>
-							<stentry>Can be edited at the top of the form where it is displayed.</stentry>
-						</strow>
-						<strow id="strow-field-contenttype-icon">
-							<stentry><uicontrol>Content Type Glyph / Icon</uicontrol></stentry>
-							<stentry>Expand the dropdown arrow to select or search.</stentry>
-						</strow>
-						<strow id="strow-field-contenttype-desc">
-							<stentry><uicontrol>Add a description</uicontrol></stentry>
-							<stentry>A short description of the content type.</stentry>
-						</strow>
-					</simpletable>
-				</info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentTypes-Settings.png"><alt>Content Type settings</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow id="strow-field-contenttype-name">
+                            <stentry><uicontrol>Content Type Name</uicontrol></stentry>
+                            <stentry>Can be edited at the top of the form where it is displayed.</stentry>
+                        </strow>
+                        <strow id="strow-field-contenttype-icon">
+                            <stentry><uicontrol>Content Type Glyph / Icon</uicontrol></stentry>
+                            <stentry>Expand the dropdown arrow to select or search.</stentry>
+                        </strow>
+                        <strow id="strow-field-contenttype-desc">
+                            <stentry><uicontrol>Add a description</uicontrol></stentry>
+                            <stentry>A short description of the content type.</stentry>
+                        </strow>
+                    </simpletable>
+                </info>
             </step>
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contenttype-configurefields"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contenttype-configurefields"><cmd/></step> -->
             <step id="step-contenttype-configurefields">
-				<cmd>Manage the fields of the content type.</cmd>
-				<substeps>
-					<substep>
-						<cmd><ph conkeyref="k-bptext/ph-fieldadd"></ph></cmd>
-						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Add.png"><alt>Drag and drop a field to the canvas</alt></image></info>
-					</substep>
-					<substep>
-						<cmd><ph conkeyref="k-bptext/ph-fieldedit"></ph></cmd>
-						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Edit.png"><alt>Click/Tap a field in the canvas</alt></image></info>
-					</substep>
-					<substep>
-						<cmd><ph conkeyref="k-bptext/ph-fielddup"></ph></cmd>
-						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Hover-Dup.png"><alt>Click/Tap a field in the canvas</alt></image></info>
-					</substep>
-					<substep>
-						<cmd><ph conkeyref="k-bptext/ph-fielddel"></ph></cmd>
-						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Hover-Del.png"><alt>Click/Tap a field in the canvas</alt></image></info>
-					</substep>
-				</substeps>
+                <cmd>Manage the fields of the content type.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd><ph conkeyref="k-bptext/ph-fieldadd"></ph></cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Add.png"><alt>Drag and drop a field to the canvas</alt></image></info>
+                    </substep>
+                    <substep>
+                        <cmd><ph conkeyref="k-bptext/ph-fieldedit"></ph></cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Edit.png"><alt>Click/Tap a field in the canvas</alt></image></info>
+                    </substep>
+                    <substep>
+                        <cmd><ph conkeyref="k-bptext/ph-fielddup"></ph></cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Hover-Dup.png"><alt>Click/Tap a field in the canvas</alt></image></info>
+                    </substep>
+                    <substep>
+                        <cmd><ph conkeyref="k-bptext/ph-fielddel"></ph></cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Hover-Del.png"><alt>Click/Tap a field in the canvas</alt></image></info>
+                    </substep>
+                </substeps>
             </step>
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contenttype-configureproperties"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contenttype-configureproperties"><cmd/></step> -->
             <step id="step-contenttype-configureproperties">
-				<cmd>Configure the content type's properties.</cmd>
+                <cmd>Configure the content type's properties.</cmd>
                 <info>
-					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentTypes-Properties.png"><alt>Content Type properties</alt></image>
-					<simpletable relcolwidth="1* 3*">
-						<sthead>
-							<stentry>Field</stentry>
-							<stentry>Description</stentry>
-						</sthead>
-						<strow id="strow-field-contenttypeproperties-contentitemname">
-							<stentry><uicontrol>Content Item Name</uicontrol></stentry>
-							<stentry>The word or phrase that describes each item of this content type. Example: A content item based on the <uicontrol>Job Listing</uicontrol> content type could be called <userinput>job opening</userinput>.</stentry>
-						</strow>
-						<strow id="strow-field-contenttypeproperties-tags">
-							<stentry><uicontrol>Tags</uicontrol></stentry>
-							<stentry>Words or phrases to be associated with the content items based on this content type.</stentry>
-						</strow>
-						<strow id="strow-field-contenttypeproperties-desc">
-							<stentry><uicontrol>Description</uicontrol></stentry>
-							<stentry>A short description of the content items based on this content type.</stentry>
-						</strow>
-					</simpletable>
-				</info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentTypes-Properties.png"><alt>Content Type properties</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow id="strow-field-contenttypeproperties-contentitemname">
+                            <stentry><uicontrol>Content Item Name</uicontrol></stentry>
+                            <stentry>The word or phrase that describes each item of this content type. Example: A content item based on the <uicontrol>Job Listing</uicontrol> content type could be called <userinput>job opening</userinput>.</stentry>
+                        </strow>
+                        <strow id="strow-field-contenttypeproperties-tags">
+                            <stentry><uicontrol>Tags</uicontrol></stentry>
+                            <stentry>Words or phrases to be associated with the content items based on this content type.</stentry>
+                        </strow>
+                        <strow id="strow-field-contenttypeproperties-desc">
+                            <stentry><uicontrol>Description</uicontrol></stentry>
+                            <stentry>A short description of the content items based on this content type.</stentry>
+                        </strow>
+                    </simpletable>
+                </info>
             </step>
 
 
-			<!-- ========== MENU - PERSONA BAR: MANAGE VISUALIZER ========== -->
+            <!-- ========== MENU - PERSONA BAR: MANAGE VISUALIZER ========== -->
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotovisualizertab"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotovisualizertab"><cmd/></step> -->
             <step id="step-gotovisualizertab">
-				<cmd>Click/Tap the <uicontrol>Visualizers</uicontrol> tab.</cmd>
+                <cmd>Click/Tap the <uicontrol>Visualizers</uicontrol> tab.</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-List-Tab.png"><alt>Content &gt; Visualizers tab</alt></image></info>
             </step>
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotovisualizertab-createbtn"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotovisualizertab-createbtn"><cmd/></step> -->
             <step id="step-gotovisualizertab-createbtn">
-				<cmd>In the <uicontrol>Visualizers</uicontrol> tab, click/tap <uicontrol>Create Visualizer</uicontrol>.</cmd>
+                <cmd>In the <uicontrol>Visualizers</uicontrol> tab, click/tap <uicontrol>Create Visualizer</uicontrol>.</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-List-TabCreateBtn.png"><alt>Content &gt; Visualizers tab &gt; Create Visualizer</alt></image></info>
             </step>
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-choosevisualizer"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-choosevisualizer"><cmd/></step> -->
             <step id="step-visualizer-choosevisualizer">
-				<cmd>Search for the visualizer you want, then click/tap on its icon.</cmd>
+                <cmd>Search for the visualizer you want, then click/tap on its icon.</cmd>
                 <info>
                     <p>You can look in the list of visualizers, or you can use <uicontrol>Search</uicontrol>.</p>
                     <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-List-SearchClickTap.gif"><alt>Visualizers list - Click/Tap the visualizer you want.</alt></image>
                 </info>
             </step>
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-configurevisualizerproperties"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-configurevisualizerproperties"><cmd/></step> -->
             <step id="step-visualizer-configurevisualizerproperties">
-				<cmd>Configure the properties of the visualizer.</cmd>
+                <cmd>Configure the properties of the visualizer.</cmd>
                 <info>
-					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Details.png"><alt>Visualizer Details tab</alt></image>
-					<simpletable relcolwidth="1* 3*">
-						<sthead>
-							<stentry>Field</stentry>
-							<stentry>Description</stentry>
-						</sthead>
-						<strow id="strow-field-visualizer-name">
-							<stentry><uicontrol>Name</uicontrol></stentry>
-							<stentry>The name of the visualizer.
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Details.png"><alt>Visualizer Details tab</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow id="strow-field-visualizer-name">
+                            <stentry><uicontrol>Name</uicontrol></stentry>
+                            <stentry>The name of the visualizer.
                                 <note type="tip">Include the name of the content type in the visualizer's name to make it easy to find all visualizers associated with the content type. If you plan to have multiple visualizers for the same content type, add a short phrase that briefly describes its function to distinguish it from other visualizers.</note>
                             </stentry>
-						</strow>
-						<strow id="strow-field-visualizer-desc">
-							<stentry><uicontrol>Description</uicontrol></stentry>
-							<stentry>A short description of the visualizer.</stentry>
-						</strow>
-						<strow id="strow-field-visualizer-icon">
-							<stentry><uicontrol>Icon</uicontrol></stentry>
-							<stentry>The icon for the visualizer.</stentry>
-						</strow>
-						<strow id="strow-field-visualizer-content-type">
-							<stentry><uicontrol>Content Type</uicontrol></stentry>
-							<stentry>The content type to associate with this visualizer.
+                        </strow>
+                        <strow id="strow-field-visualizer-desc">
+                            <stentry><uicontrol>Description</uicontrol></stentry>
+                            <stentry>A short description of the visualizer.</stentry>
+                        </strow>
+                        <strow id="strow-field-visualizer-icon">
+                            <stentry><uicontrol>Icon</uicontrol></stentry>
+                            <stentry>The icon for the visualizer.</stentry>
+                        </strow>
+                        <strow id="strow-field-visualizer-content-type">
+                            <stentry><uicontrol>Content Type</uicontrol></stentry>
+                            <stentry>The content type to associate with this visualizer.
                                 <note type="warning">Changing the content type will replace any existing HTML code in the <menucascade><uicontrol>Editor</uicontrol> <uicontrol>Template</uicontrol></menucascade> editor.</note>
                             </stentry>
-						</strow>
-					</simpletable>
-				</info>
+                        </strow>
+                    </simpletable>
+                </info>
             </step>
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-codevisualizer"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-codevisualizer"><cmd/></step> -->
             <step id="step-visualizer-codevisualizer">
-				<cmd>In the <uicontrol>Editor</uicontrol> tab, design the visualizer.</cmd>
+                <cmd>In the <uicontrol>Editor</uicontrol> tab, design the visualizer.</cmd>
                 <substeps>
                     <substep>
                         <cmd>In the <uicontrol>Template</uicontrol> editor, enter the HTML code to format the content item.</cmd>
@@ -255,31 +255,31 @@
                 </substeps>
             </step>
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-delete"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-delete"><cmd/></step> -->
             <step id="step-visualizer-delete">
-				<cmd>Click/Tap <uicontrol>Delete</uicontrol>. Confirm.</cmd>
+                <cmd>Click/Tap <uicontrol>Delete</uicontrol>. Confirm.</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Details-Delete.png"><alt>Content &gt; Visualizers tab &gt; choose the visualizer &gt; click/tap Delete</alt></image></info>
             </step>
 
 
 
-			<!-- ========== MENU - PERSONA BAR: MANAGE CONTENT ITEM ========== -->
+            <!-- ========== MENU - PERSONA BAR: MANAGE CONTENT ITEM ========== -->
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttab"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttab"><cmd/></step> -->
             <step id="step-gotocontenttab">
-				<cmd>Click/Tap the <uicontrol>Content</uicontrol> tab.</cmd>
+                <cmd>Click/Tap the <uicontrol>Content</uicontrol> tab.</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Content-List-Tab.png"><alt>Content &gt; Content tab</alt></image></info>
             </step>
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttab-createwithtype"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttab-createwithtype"><cmd/></step> -->
             <step id="step-gotocontenttab-createwithtype">
-				<cmd>In the <uicontrol>Content</uicontrol> tab, click/tap <uicontrol>Create Content</uicontrol>, then select the type for this content item.</cmd>
+                <cmd>In the <uicontrol>Content</uicontrol> tab, click/tap <uicontrol>Create Content</uicontrol>, then select the type for this content item.</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Content-List-CreateContentWithType.png"><alt>Content tab &gt; Create Content &gt; Select Content Type</alt></image></info>
             </step>
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contentitem-fillinfieldsofcontentitem"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contentitem-fillinfieldsofcontentitem"><cmd/></step> -->
             <step id="step-contentitem-fillinfieldsofcontentitem">
-				<cmd>In the <uicontrol>Content</uicontrol> tab, fill in the fields of the content item.</cmd>
+                <cmd>In the <uicontrol>Content</uicontrol> tab, fill in the fields of the content item.</cmd>
                 <info id="info-contentitem-fieldsofcontentitem">
                     <p>The fields would depend on the content type you selected.</p>
                     <p>Example: The content type for the content item in this image is <uicontrol>Person</uicontrol>.</p>
@@ -287,75 +287,75 @@
                 </info>
             </step>
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contentitem-updatefieldsofcontentitem"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contentitem-updatefieldsofcontentitem"><cmd/></step> -->
             <step id="step-contentitem-updatefieldsofcontentitem">
-				<cmd>In the <uicontrol>Content</uicontrol> tab, update the field values of the content item.</cmd>
+                <cmd>In the <uicontrol>Content</uicontrol> tab, update the field values of the content item.</cmd>
                 <info conref="#tsk-bptext-content-steps/info-contentitem-fieldsofcontentitem"></info>
             </step>
 
             <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttab-ellipses-edit"><cmd/></step> -->
             <step id="step-gotocontenttab-ellipses-edit">
-				<cmd>In the <uicontrol>Content</uicontrol> tab, click/tap the ellipses <uicontrol>...</uicontrol> for the specific content item, and then select <uicontrol>Edit</uicontrol>.</cmd>
+                <cmd>In the <uicontrol>Content</uicontrol> tab, click/tap the ellipses <uicontrol>...</uicontrol> for the specific content item, and then select <uicontrol>Edit</uicontrol>.</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Content-List-ellipsesmenu-Edit.png"><alt>Content tab &gt; ellipses menu &gt; Edit</alt></image></info>
             </step>
 
             <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttab-ellipses-duplicate"><cmd/></step> -->
             <step id="step-gotocontenttab-ellipses-duplicate">
-				<cmd>In the <uicontrol>Content</uicontrol> tab, click/tap the ellipses <uicontrol>...</uicontrol> for the specific content item, and then select <uicontrol>Duplicate</uicontrol>.</cmd>
+                <cmd>In the <uicontrol>Content</uicontrol> tab, click/tap the ellipses <uicontrol>...</uicontrol> for the specific content item, and then select <uicontrol>Duplicate</uicontrol>.</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Content-List-ellipsesmenu-Duplicate.png"><alt>Content tab &gt; ellipses menu &gt; Duplicate</alt></image></info>
             </step>
 
             <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttab-ellipses-delete"><cmd/></step> -->
             <step id="step-gotocontenttab-ellipses-delete">
-				<cmd>In the <uicontrol>Content</uicontrol> tab, click/tap the ellipses <uicontrol>...</uicontrol> for the specific content item, and then select <uicontrol>Delete</uicontrol>.</cmd>
+                <cmd>In the <uicontrol>Content</uicontrol> tab, click/tap the ellipses <uicontrol>...</uicontrol> for the specific content item, and then select <uicontrol>Delete</uicontrol>.</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Content-List-ellipsesmenu-Delete.png"><alt>Content tab &gt; ellipses menu &gt; Delete</alt></image></info>
             </step>
 
-			<!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contentitem-configurecontentitem"><cmd/></step> -->
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contentitem-configurecontentitem"><cmd/></step> -->
             <step id="step-contentitem-configurecontentitem">
-				<cmd>Configure the content item.</cmd>
+                <cmd>Configure the content item.</cmd>
                 <info>
                     <p>In the <uicontrol>Properties</uicontrol> tab,</p>
-					<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Content-Item-properties.png"><alt>Content Item properties</alt></image>
-					<simpletable relcolwidth="1* 3*">
-						<sthead>
-							<stentry>Field</stentry>
-							<stentry>Description</stentry>
-						</sthead>
-						<strow id="strow-field-contentitem-name">
-							<stentry><uicontrol>Content Item Name</uicontrol></stentry>
-							<stentry>The name used to refer to the content item.</stentry>
-						</strow>
-						<strow id="strow-field-contentitem-tags">
-							<stentry><uicontrol>Tags</uicontrol></stentry>
-							<stentry>A comma-separated list of tags to associate with the content item. You can also press <uicontrol><shortcut>Enter</shortcut></uicontrol> after typing each tag.</stentry>
-						</strow>
-						<strow id="strow-field-contentitem-description">
-							<stentry><uicontrol>Description</uicontrol></stentry>
-							<stentry>A short description of the content item.</stentry>
-						</strow>
-					</simpletable>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Content-Item-properties.png"><alt>Content Item properties</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow id="strow-field-contentitem-name">
+                            <stentry><uicontrol>Content Item Name</uicontrol></stentry>
+                            <stentry>The name used to refer to the content item.</stentry>
+                        </strow>
+                        <strow id="strow-field-contentitem-tags">
+                            <stentry><uicontrol>Tags</uicontrol></stentry>
+                            <stentry>A comma-separated list of tags to associate with the content item. You can also press <uicontrol><shortcut>Enter</shortcut></uicontrol> after typing each tag.</stentry>
+                        </strow>
+                        <strow id="strow-field-contentitem-description">
+                            <stentry><uicontrol>Description</uicontrol></stentry>
+                            <stentry>A short description of the content item.</stentry>
+                        </strow>
+                    </simpletable>
                 </info>
             </step>
 
             <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contentitem-closesavepublish"><cmd/></step> -->
             <step id="step-contentitem-closesavepublish">
-				<cmd>Close, save, or publish.</cmd>
+                <cmd>Close, save, or publish.</cmd>
                 <info>
-					<simpletable relcolwidth="1* 3*">
-						<strow>
-							<stentry><uicontrol>Close</uicontrol></stentry>
-							<stentry>Discards changes made in this session.</stentry>
-						</strow>
-						<strow>
-							<stentry><uicontrol>Save &amp; Close</uicontrol></stentry>
-							<stentry>Saves changes made in this session, then closes the window. The content item is hidden from the public.</stentry>
-						</strow>
-						<strow>
-							<stentry><uicontrol>Publish</uicontrol></stentry>
-							<stentry>Saves changes made in this session, then closes the window. The content item moves forward to the next step in the workflow. <!-- Is this correct? --></stentry>
-						</strow>
-					</simpletable>
+                    <simpletable relcolwidth="1* 3*">
+                        <strow>
+                            <stentry><uicontrol>Close</uicontrol></stentry>
+                            <stentry>Discards changes made in this session.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Save &amp; Close</uicontrol></stentry>
+                            <stentry>Saves changes made in this session, then closes the window. The content item is hidden from the public.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Publish</uicontrol></stentry>
+                            <stentry>Saves changes made in this session, then closes the window. The content item moves forward to the next step in the workflow. <!-- Is this correct? --></stentry>
+                        </strow>
+                    </simpletable>
                 </info>
             </step>
 

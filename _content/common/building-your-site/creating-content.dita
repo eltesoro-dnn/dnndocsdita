@@ -34,18 +34,18 @@
 
     <body>
 
-		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+        <section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
-		<section id="overview">
-			<p>DNN includes these modules which enable you to create content directly in DNN:
-				<ul>
-					<li>The <uicontrol>HTML</uicontrol> and <uicontrol>HTML Pro</uicontrol> modules allow you to enter static HTML text into your page.</li>
-					<li>The <uicontrol>Publisher</uicontrol> module allows you to create articles, such as announcements, news, and press releases.</li>
-					<li>The <uicontrol>Module Creator</uicontrol> enables a developer to create simple modules with custom functionality. (Requires administrator permissions on a local installation.)</li>
-				</ul>
-			</p>
-			<p>You can also crowdsource your content by adding a <term>Social</term> module (e.g., <uicontrol>Blogs</uicontrol>, <uicontrol>Journal</uicontrol>, or <uicontrol>Wiki</uicontrol>) to a page in your site.</p>
-		</section>
+        <section id="overview">
+            <p>DNN includes these modules which enable you to create content directly in DNN:
+                <ul>
+                    <li>The <uicontrol>HTML</uicontrol> and <uicontrol>HTML Pro</uicontrol> modules allow you to enter static HTML text into your page.</li>
+                    <li>The <uicontrol>Publisher</uicontrol> module allows you to create articles, such as announcements, news, and press releases.</li>
+                    <li>The <uicontrol>Module Creator</uicontrol> enables a developer to create simple modules with custom functionality. (Requires administrator permissions on a local installation.)</li>
+                </ul>
+            </p>
+            <p>You can also crowdsource your content by adding a <term>Social</term> module (e.g., <uicontrol>Blogs</uicontrol>, <uicontrol>Journal</uicontrol>, or <uicontrol>Wiki</uicontrol>) to a page in your site.</p>
+        </section>
     </body>
 
 </topic>

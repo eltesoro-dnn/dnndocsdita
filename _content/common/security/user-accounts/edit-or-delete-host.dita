@@ -44,10 +44,10 @@
 
 
         <steps>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-gotohostacctlist"><cmd/></step>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-searchforuser"><cmd/></step>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-editdeleteuser"><cmd/></step>
-            <step conref="bptext-userssteps.dita#bptext-userssteps/step-optpurgeuser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-gotohostacctlist"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-searchforuser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-editdeleteuser"><cmd/></step>
+            <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-optpurgeuser"><cmd/></step>
         </steps>
 
     </taskbody>

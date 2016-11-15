@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-create-template-based-on-page-cp-adm">
+
+    <title>Create a Template Based on an Page (Export Page) via the Control Bar</title>
+    <titlealts>
+        <navtitle>Create Template Based on Page</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orLY,edET,1605</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section conref="bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/section-importexportoverview"></section>
+
+        <steps>
+            <step>
+                <cmd>Go to <menucascade><uicontrol>Edit Page</uicontrol> <uicontrol>Export Page</uicontrol></menucascade>.</cmd>
+                <info>
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuEditPageExportPage.png"><alt>Edit Page &gt; Export Page</alt></image>
+                </info>
+            </step>
+
+            <step>
+                <cmd>Configure export settings.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ExportPageTemplateSettings.png"><alt>Export Page settings</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-foldertemplateexport"><stentry/></strow>
+                        <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-descriptionexport"><stentry/></strow>
+                        <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-includecontentexport"><stentry/></strow>
+                    </simpletable>
+                </info>
+            </step>
+
+        </steps>
+
+    </taskbody>
+
+</task>

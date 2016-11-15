@@ -6,8 +6,9 @@
 
 
     <!-- Keys. NOTE: Do NOT use keys for topics that need to have an "active" tag in the toc. -->
-    <keydef keys="k-bptext"  href="common/bptext.dita#top-bptext" />
-    <keydef keys="k-bpsteps" href="common/bptext-steps.dita#tsk-bptext-steps" />
+    <keydef keys="k-bptext"   href="common/bptext.dita#top-bptext" />
+    <keydef keys="k-bpsteps"  href="common/bptext-steps.dita#tsk-bptext-steps" />
+    <keydef keys="k-bppbar"   href="common/bptext-pbar.dita#tsk-bptext-pbar" />
 
 
     <!-- Topics -->
@@ -25,12 +26,6 @@
             <topicref format="dita" type="task" toc="yes" href="administrators/setup/upgrade-evoq.dita" />
         </topicref>
 
-        <!-- Extensions -->
-        <topicref format="dita" type="task" navtitle="Installing an Extension" locktitle="yes" toc="yes" href="administrators/extensions/install-extension.dita" copy-to="administrators/extensions/index.dita">
-			<topicref format="dita" type="task" toc="yes" href="administrators/extensions/manage-premium-module.dita" />
-			<topicref format="dita" type="task" toc="yes" href="administrators/extensions/allow-module-use.dita" />
-        </topicref>
-
         <!-- Licensing -->
         <topicref format="dita" type="topic" navtitle="Licensing Evoq" locktitle="yes" toc="yes" href="administrators/licensing/licensing.dita" copy-to="administrators/licensing/index.dita" collection-type="family">
             <topicref format="dita" type="task"  toc="yes" href="administrators/licensing/activate-license-automatically.dita" />
@@ -39,28 +34,43 @@
             <topicref format="dita" type="topic" toc="yes" href="administrators/licensing/troubleshooting-licensing.dita" />
         </topicref>
 
-		<!-- Configuring Your Site -->
-		<mapref href="administrators/configuring-your-site/configuring-your-site-cp.ditamap" />
+        <!-- Enabling Extensions -->
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Enabling Extensions</navtitle></topicmeta>
+            <topicref format="dita" type="task" navtitle="Installing an Extension" locktitle="yes" toc="yes" href="administrators/extensions/install-extension.dita" copy-to="administrators/extensions/index.dita" />
+            <topicref format="dita" type="task" toc="yes" href="administrators/extensions/manage-premium-module.dita" />
+            <topicref format="dita" type="task" toc="yes" href="administrators/extensions/allow-module-use.dita" />
+        </topichead>
+
+        <!-- Configuring Your Site -->
+        <!-- <mapref href="administrators/configuring-your-site/configuring-your-site-cp-adm.ditamap" />  for Evoq 8.5 -->
+        <mapref href="administrators/configuring-your-site/configuring-your-site-pb-adm.ditamap" />  <!-- for Evoq 9.0 -->
 
         <!-- Securing Your Site -->
         <mapref href="administrators/security/security-adm.ditamap" />
 
-		<!-- Building Your Site -->
-		<mapref href="administrators/building-your-site/building-your-site-via-control-bar.ditamap" />
+        <!-- Building Your Site -->
+        <!-- <mapref href="administrators/building-your-site/building-your-site-cp-adm.ditamap" />  for Evoq 8.5 -->
+        <mapref href="administrators/building-your-site/building-your-site-pb-adm.ditamap" />  <!-- for Evoq 9.0 -->
+
+        <!-- Analyzing Your Site
+        viewing your site analytics
+        analyzing-your-community
+         -->
 
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="administrators/administrator-references.dita" collection-type="family">
             <topicref format="dita" type="topic"     toc="yes" href="administrators/providers.dita" />
-			<topicref format="dita" type="reference" toc="yes" href="administrators/included-modules/included-modules.dita" copy-to="administrators/included-modules/index.dita" />
-			<topicref format="dita" type="reference" toc="yes" href="administrators/requirements.dita" />
-			<topicref format="dita" type="reference" toc="yes" href="administrators/product-versions.dita" />
-			<topicref format="dita" type="topic"     toc="yes" href="administrators/dnn-license.dita" />
+            <topicref format="dita" type="reference" toc="yes" href="administrators/included-modules/included-modules.dita" copy-to="administrators/included-modules/index.dita" />
+            <topicref format="dita" type="reference" toc="yes" href="administrators/requirements.dita" />
+            <topicref format="dita" type="reference" toc="yes" href="administrators/product-versions.dita" />
+            <topicref format="dita" type="topic"     toc="yes" href="administrators/dnn-license.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="administrators/more-resources.dita" />
         </topicref>
-		<topichead toc="yes" chunk="by-document to-content" copy-to="administrators/glossary.dita" >
+        <topichead toc="yes" chunk="by-document to-content" copy-to="administrators/glossary.dita" >
             <topicmeta><navtitle>Glossary</navtitle></topicmeta>
-			<mapref href="common/glossary/glossary.ditamap" />
-		</topichead>
+            <mapref href="common/glossary/glossary.ditamap" />
+        </topichead>
 
     </topicref>
 
@@ -112,90 +122,106 @@
             </relcell>
         </relrow>
 
-		<!-- adm cmg publisher -->
-		<relrow>
-			<relcell/>
-			<relcell>
-				<topicref format="dita" type="task"  	 href="administrators/building-your-site/create-article-publisher.dita" />
-			</relcell>
-			<relcell>
-				<topicref format="dita" type="reference" href="administrators/included-modules/module-publisher.dita" />
-			</relcell>
-		</relrow>
+        <!-- adm cmg publisher -->
+        <relrow>
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="task"       href="administrators/building-your-site/create-article-publisher.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="reference" href="administrators/included-modules/module-publisher.dita" />
+            </relcell>
+        </relrow>
 
         <!-- adm cmg -->
-		<relrow>
-			<relcell>
-				<topicref format="dita" type="topic" 	 href="administrators/building-your-site/building-your-site.dita" />
-			</relcell>
-			<relcell>
-				<topicref format="dita" type="topic"     href="administrators/included-modules/creation-modules.dita" />
-			</relcell>
-			<relcell>
-				<topicref format="dita" type="reference" href="administrators/included-modules/included-modules.dita" />
-			</relcell>
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="topic"      href="administrators/building-your-site/building-your-site.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="topic"     href="administrators/included-modules/creation-modules.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="reference" href="administrators/included-modules/included-modules.dita" />
+            </relcell>
         </relrow>
 
         <!-- adm -->
-		<relrow>
-			<relcell>
-				<topicref format="dita" type="topic"     href="administrators/building-your-site/building-your-site.dita" />
-				<topicref format="dita" type="topic"     href="administrators/security/roles/about-role-based-access.dita" />
-			</relcell>
-			<relcell/>
-			<relcell/>
-		</relrow>
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="topic"     href="administrators/building-your-site/building-your-site.dita" />
+                <topicref format="dita" type="topic"     href="administrators/security/roles/about-role-based-access.dita" />
+            </relcell>
+            <relcell/>
+            <relcell/>
+        </relrow>
+
+        <!-- adm workflows -->
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="topic"     href="content-managers/configuring-your-site/about-workflows.dita"/>
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="task"      href="administrators/configuring-your-site/create-workflow-pb-adm.dita" />
+                <topicref format="dita" type="task"      href="administrators/configuring-your-site/edit-workflow-pb-adm.dita" />
+                <topicref format="dita" type="task"      href="administrators/configuring-your-site/delete-workflow-pb-adm.dita" />
+                <topicref format="dita" type="task"      href="administrators/configuring-your-site/configure-workflow-state-pb-all.dita" />
+            </relcell>
+            <relcell>
+                <!-- <topicref format="dita" type="reference" href="administrators/included-modules/module-workflow-management.dita" /> // MOVING TO PERSONA BAR -->
+            </relcell>
+        </relrow>
 
         <!-- adm -->
-		<relrow>
-			<relcell/>
-			<relcell>
-				<topicref format="dita" type="task" href="administrators/extensions/manage-premium-module.dita" />
-				<topicref format="dita" type="task" href="administrators/extensions/allow-module-use.dita" />
-			</relcell>
-			<relcell/>
-		</relrow>
+        <relrow>
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="task" href="administrators/extensions/manage-premium-module.dita" />
+                <topicref format="dita" type="task" href="administrators/extensions/allow-module-use.dita" />
+            </relcell>
+            <relcell/>
+        </relrow>
 
         <!-- adm -->
-		<relrow>
-			<relcell>
-				<topicref format="dita" type="task" 	 href="administrators/building-your-site/add-module-to-page-via-control-bar.dita" />
-			</relcell>
-			<relcell/>
-			<relcell>
-				<topicref format="dita" type="reference" href="administrators/included-modules/included-modules.dita" />
-			</relcell>
-		</relrow>
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="task"      href="administrators/building-your-site/add-module-to-page-cp-adm.dita" />
+            </relcell>
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="reference" href="administrators/included-modules/included-modules.dita" />
+            </relcell>
+        </relrow>
 
         <!-- adm sitemap -->
-		<relrow>
-			<relcell></relcell>
-			<relcell>
-				<topicref format="dita" type="task"      href="administrators/configuring-your-site/configure-sitemap.dita" />
-			</relcell>
-			<relcell>
-				<topicref format="dita" type="reference" href="administrators/included-modules/module-sitemap.dita" />
-			</relcell>
-		</relrow>
+        <relrow>
+            <relcell></relcell>
+            <relcell>
+                <topicref format="dita" type="task"      href="administrators/configuring-your-site/configure-sitemap.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="reference" href="administrators/included-modules/module-sitemap.dita" />
+            </relcell>
+        </relrow>
 
         <!-- adm url management -->
-		<relrow>
-			<relcell></relcell>
-			<relcell></relcell>
-			<relcell>
-				<topicref format="dita" type="reference" href="administrators/included-modules/module-advanced-url-management.dita" />
-			</relcell>
-		</relrow>
+        <relrow>
+            <relcell></relcell>
+            <relcell></relcell>
+            <relcell>
+                <topicref format="dita" type="reference" href="administrators/included-modules/module-advanced-url-management.dita" />
+            </relcell>
+        </relrow>
 
         <!-- adm upgrading + licensing -->
-		<relrow>
-			<relcell></relcell>
-			<relcell>
+        <relrow>
+            <relcell></relcell>
+            <relcell>
                 <topicref format="dita" type="task"      href="administrators/licensing/activate-license-automatically.dita" />
                 <topicref format="dita" type="task"      href="administrators/setup/upgrade-evoq.dita" />
             </relcell>
-			<relcell/>
-		</relrow>
+            <relcell/>
+        </relrow>
 
     </reltable>
 
