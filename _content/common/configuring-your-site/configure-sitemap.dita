@@ -41,67 +41,34 @@
 		</section>
 
         <steps>
-			<step conkeyref="k-bpsteps/step-menuadminsitemap"><cmd/></step>
+			<step conkeyref="k-bppbar/step-pb-host-Settings-SEO-E90"><cmd/></step>
+            <step><cmd>Go to the <uicontrol>Sitemap Settings</uicontrol> tab.</cmd></step>
 
 			<stepsection>
-				<image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SitemapConfig-Platform.png"><alt>Sitemap configuration form</alt></image>
+                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SEO-SiteMapSettings-Initial-E90.png"><alt>SEO Sitemap settings</alt></image>
 			</stepsection>
 
-            <step>
-				<cmd>To configure the sitemap provider, click/tap its pencil icon in the first column of the table.</cmd>
+            <step id="step-general-sitemap-settings">
+                <cmd>Update the <uicontrol>General Sitemap Settings</uicontrol>.</cmd>
                 <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SEO-SiteMapSettings-General-E90.png"><alt>SEO Sitemap general settings</alt></image>
 					<simpletable relcolwidth="1* 3*">
 						<sthead>
 							<stentry>Field</stentry>
 							<stentry>Description</stentry>
 						</sthead>
 						<strow>
-							<stentry><uicontrol>Override Priority</uicontrol></stentry>
-							<stentry>If checked, the <uicontrol>Sitemap</uicontrol> module settings override the page prioritization rules of the provider. If unchecked, allows the provider to specify how the pages would be prioritized.</stentry>
+							<stentry><uicontrol>Sitemap URL</uicontrol></stentry>
+							<stentry>The location of the sitemap.</stentry>
 						</strow>
-						<strow>
-							<stentry><uicontrol>Priority</uicontrol></stentry>
-							<stentry>The order in which the providers would be used, if more than one provider is enabled.</stentry>
-						</strow>
-					</simpletable>
-                </info>
-            </step>
-
-            <step>
-				<cmd>Configure the settings for general DNN pages.</cmd>
-            	<info>
-					<simpletable relcolwidth="1* 3*">
-						<sthead>
-							<stentry>Field</stentry>
-							<stentry>Description</stentry>
-						</sthead>
-						<strow>
-							<stentry><uicontrol>Use page level based priorities?</uicontrol></stentry>  <!-- If they don't want hierarchical priority, can they set the priority for the page in the page? -->
-							<stentry>If checked, the priority for each page is computed based on its hierarchy level. Top level pages are assigned a priority of 1.0, and lower levels are 0.1 less than the next higher level (i.e., the second level pages are assigned a priority of 0.9; the third level, 0.8).</stentry>
-						</strow>
-						<strow>
-							<stentry><uicontrol>Minimum Priority for Pages</uicontrol></stentry>
-							<stentry>If <uicontrol>Use page level based priorities?</uicontrol> is checked, the lowest priority used. Example: If minimum priority is set to 0.7, all pages on the fourth level, as well as pages on all lower levels, will be assigned a priority of 0.7.</stentry>
-						</strow>
-						<strow>
-							<stentry><uicontrol>Include Hidden Pages?</uicontrol></stentry>
-							<stentry>If checked, pages that are not visible in the menu are also included in the sitemap.</stentry>
-						</strow>
-					</simpletable>
-				</info>
-            </step>
-
-            <step>
-				<cmd>Configure the settings for the sitemap.</cmd>
-            	<info>
-					<simpletable relcolwidth="1* 3*">
-						<sthead>
-							<stentry>Field</stentry>
-							<stentry>Description</stentry>
-						</sthead>
 						<strow>
 							<stentry><uicontrol>Exclude URLs With a Priority Lower Than</uicontrol></stentry>
-							<stentry>The minimum priority to include in the sitemap.</stentry>
+							<stentry>The lowest priority to include in the sitemap.
+                            </stentry>
+						</strow>
+						<strow>
+							<stentry><uicontrol>Include Hidden Pages</uicontrol></stentry>
+							<stentry>If enabled (<uicontrol>On</uicontrol>), pages that are not visible in the menu are also included in the sitemap.</stentry>
 						</strow>
 						<strow>
 							<stentry><uicontrol>Days to Cache Sitemap For</uicontrol></stentry>
@@ -109,15 +76,52 @@
 								<note type="tip">If you have a large site (i.e., at least 50,000 URLs), cache the sitemap for at least one day to help improve your site's performance.</note>
 							</stentry>
 						</strow>
-						<strow>
-							<stentry><uicontrol>Clear Cache</uicontrol></stentry>
+                        <strow>
+                            <stentry><uicontrol>Clear Cache</uicontrol></stentry>
 							<stentry>Click/Tap to delete all cached sitemaps. A new sitemap is generated at the next request.</stentry>  <!-- Is the second sentence true? -->
+                        </strow>
+						<strow>
+							<stentry><uicontrol>Minimum Priority for Pages</uicontrol></stentry>
+                            <stentry>If <uicontrol>Use page level based priorities?</uicontrol> is checked, the lowest priority to assign to pages. Example, if the minimum priority is 0.7,
+                                <ul>
+                                    <li>Root/Level 1 gets a priority of 1.0.</li>
+                                    <li>Level 2 gets a priority of 0.9.</li>
+                                    <li>Level 3 gets a priority of 0.8.</li>
+                                    <li>Level 4 and all lower levels get a priority of 0.7.</li>
+                                </ul>
+                            </stentry>
 						</strow>
-					</simpletable>
-				</info>
+						<strow>
+							<stentry><uicontrol>Use Page Level Based Priorities</uicontrol></stentry>
+							<stentry>If enabled (<uicontrol>On</uicontrol>), the priority for each page is computed based on its hierarchy level. Top level pages are assigned a priority of 1.0, and lower levels are 0.1 less than the next higher level (i.e., the second level pages are assigned a priority of 0.9; the third level, 0.8).</stentry>
+						</strow>
+                    </simpletable>
+                </info>
             </step>
 
-			<step><cmd>Click/Tap <uicontrol>Save Sitemap Configuration</uicontrol>.</cmd></step>
+            <step>
+				<cmd>Enable and configure the sitemap providers you want to use.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SEO-SiteMapSettings-Providers-E90.png"><alt>SEO Sitemap Provider settings</alt></image>
+                    <p>Click/Tap the pencil icon in the first column of the table for the appropriate provider.</p>
+					<simpletable relcolwidth="1* 3*">
+						<sthead>
+							<stentry>Field</stentry>
+							<stentry>Description</stentry>
+						</sthead>
+						<strow>
+							<stentry><uicontrol>Enable Sitemap Provider</uicontrol></stentry>
+							<stentry>The order in which the providers would be used, if more than one provider is enabled.</stentry>
+						</strow>
+						<strow>
+							<stentry><uicontrol>Override Priority</uicontrol></stentry>
+							<stentry>The priority of the provider, if more than one provider is enabled. The sitemap generated by a provider with a higher priority is preferred over the sitemap generated by a provider with a lower priority.</stentry>
+						</strow>
+					</simpletable>
+                </info>
+            </step>
+
+			<step><cmd>Click/Tap <uicontrol>Save</uicontrol>.</cmd></step>
 
             <step><cmd>(Optional) <xref format="dita" href="submit-site-Google-search.dita">Submit your site to Google Search for indexing.</xref></cmd></step>
 

@@ -11,16 +11,18 @@
 
 		<topicref format="dita" type="task"  toc="yes" href="assign-key-pages.dita" />
 
-		<topicref format="dita" type="topic" toc="yes" href="about-workflows.dita" collection-type="family">
+		<topicref format="dita" type="topic" toc="yes" href="about-workflows.dita" collection-type="family" >
 			<topicref format="dita" type="task" toc="yes" href="create-workflow-pb-adm.dita" />
 			<topicref format="dita" type="task" toc="yes" href="edit-workflow-pb-adm.dita" />
 			<topicref format="dita" type="task" toc="yes" href="delete-workflow-pb-adm.dita" />
 			<topicref format="dita" type="task" toc="yes" href="configure-workflow-state-pb-all.dita" />
 		</topicref>
 
-		<topicref format="dita" type="task"  toc="yes" href="configure-sitemap.dita" collection-type="family">
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Sitemaps</navtitle></topicmeta>
+            <topicref format="dita" type="task" toc="yes" href="configure-sitemap.dita" />
 			<topicref format="dita" type="task" toc="yes" href="submit-site-Google-search.dita" />
-		</topicref>
+		</topichead>
 
         <topicref format="dita" type="task" toc="yes" href="configure-connections-pb-adm.dita" />
 

@@ -37,11 +37,15 @@
 
 		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
-        <steps>
-			<step conkeyref="k-bpsteps/step-menuadminsitemap"><cmd/></step>
+        <prereq>
+			<ul>
+				<li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li>
+			</ul>
+		</prereq>
 
+        <steps>
 			<step>
-				<cmd>Submit your site's URL.</cmd>
+				<cmd>Submit your sitemap's URL to Google.</cmd>
 				<substeps>
 					<substep>
 						<cmd>Choose <uicontrol>Google</uicontrol> from the <uicontrol>Search Engine</uicontrol> dropdown. Click/Tap <uicontrol>Submit</uicontrol>.</cmd>
@@ -50,7 +54,9 @@
 					<substep><cmd>Log in with your Google account for Google Webmaster Tools.</cmd></substep>
 					<substep>
 						<cmd>Enter the URL to your site and submit.</cmd>
-						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-GoogleSearchConsoleSubmitURL.png"><alt>Google Search Console - URL Submit Request</alt></image></info>
+						<info>
+                            <!-- Evoq 8.5 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-GoogleSearchConsoleSubmitURL.png"><alt>Google Search Console - URL Submit Request</alt></image> -->
+                        </info>
 					</substep>
 				</substeps>
 			</step>
@@ -60,7 +66,7 @@
 				<substeps>
 					<substep><cmd>In the Google Verification page, choose <uicontrol>Upload an HTML File</uicontrol>, and copy the filename provided by Google.</cmd></substep>  <!-- Needs screenshot. -->
 					<substep>
-						<cmd>In this page, paste the filename to the <uicontrol>Verification</uicontrol> field, and click/tap <uicontrol>Create</uicontrol>.</cmd>
+						<cmd>In this DNN page, paste the filename to the <uicontrol>Verification</uicontrol> field, and click/tap <uicontrol>Create</uicontrol>.</cmd>
 						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SitemapConfig-SiteSubmission-Verification.png"><alt>Site Submission &gt; Verification</alt></image></info>
 					</substep>
 					<substep><cmd>In the Google Verification page, click/tap <uicontrol>Verify</uicontrol>.</cmd></substep>  <!-- Needs screenshot. -->
@@ -79,15 +85,14 @@
 					<substep><cmd>Paste your sitemap URL.</cmd></substep>
 				</substeps>
 			</step>
+
 		</steps>
 
     </taskbody>
 
 
-	<!--
-    <related-links>
-        <link format="" scope="external" href=""><linktext></linktext></link>
-    </related-links>
-	-->
+	<related-links>
+	        <link format="html" scope="external" href="https://developers.google.com/analytics/devguides/collection/gajs/eventTrackerGuide?csw=1"><linktext>Google: Setting Up Event Tracking</linktext></link>
+	    </related-links>
 
 </task>

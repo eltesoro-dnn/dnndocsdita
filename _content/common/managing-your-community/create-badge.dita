@@ -31,7 +31,7 @@
         <prereq><ph conkeyref="k-bptext/ph-PrereqCommunityMgr"></ph></prereq>
 
         <steps>
-			<step conkeyref="k-bpsteps/step-pb-gotosettingsgaming-mod"><cmd/></step>
+			<step conkeyref="k-bppbar/step-pb-mod-Settings-Gamification-E90"><cmd/></step>
 			<step>
 				<cmd>Click/Tap <uicontrol>Create New</uicontrol>.</cmd>
 				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Gaming-BadgesNew.png"><alt>Gaming &#8212; Create a Badge.</alt></image></info>

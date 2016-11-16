@@ -147,10 +147,11 @@
             <property name="args.cssroot" value="${thm.src.dir}"/>
             <property name="args.csspath" value="_theme"/>
 
-            <property name="args.logdir" value="${bld.dir}${file.separator}logs"/>
             <property name="args.xhtml.toc" value="toc"/>
             <property name="nav-toc" value="full"/>
             <property name="processing-mode" value="strict"/>
+
+            <property name="args.logdir" value="${bld.dir}${file.separator}logs"/>
 
             <!-- DITA-OT: Specifies whether to generate locale-based default headings for sections within task topics. -->
             <property name="args.gen.task.lbl" value="YES"/>
@@ -161,6 +162,7 @@
         <ant antfile="build.xml">
             <property name="sitetitle" value="Administrators"/>
             <property name="args.input" location="${bld.dir}${file.separator}admctr.ditamap"/>
+            <property name="args.filter" location="${bld.dir}${file.separator}admctr.ditaval"/>
         </ant>
     </target>
 
@@ -169,6 +171,7 @@
         <ant antfile="build.xml">
             <property name="sitetitle" value="Developers"/>
             <property name="args.input" location="${bld.dir}${file.separator}devctr.ditamap"/>
+            <property name="args.filter" location="${bld.dir}${file.separator}devctr.ditaval"/>
         </ant>
     </target>
 
@@ -177,6 +180,7 @@
         <ant antfile="build.xml">
             <property name="sitetitle" value="Designers"/>
             <property name="args.input" location="${bld.dir}${file.separator}dsgctr.ditamap"/>
+            <property name="args.filter" location="${bld.dir}${file.separator}dsgctr.ditaval"/>
         </ant>
     </target>
 
@@ -185,6 +189,7 @@
         <ant antfile="build.xml">
             <property name="sitetitle" value="Content Managers"/>
             <property name="args.input" location="${bld.dir}${file.separator}cmgctr.ditamap"/>
+            <property name="args.filter" location="${bld.dir}${file.separator}cmgctr.ditaval"/>
         </ant>
     </target>
 
@@ -193,6 +198,7 @@
         <ant antfile="build.xml">
             <property name="sitetitle" value="Community Managers"/>
             <property name="args.input" location="${bld.dir}${file.separator}modctr.ditamap"/>
+            <property name="args.filter" location="${bld.dir}${file.separator}modctr.ditaval"/>
         </ant>
     </target>
 

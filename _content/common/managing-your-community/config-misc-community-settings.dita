@@ -31,7 +31,7 @@
         <prereq><ph conkeyref="k-bptext/ph-PrereqCommunityMgr"></ph></prereq>
 
         <steps>
-			<step conkeyref="k-bpsteps/step-pb-gotosettingscommunity-mod"><cmd/></step>
+			<step conkeyref="k-bppbar/step-pb-mod-Settings-Community-E90"><cmd/></step>
 			<step>
 				<cmd>Configure the community settings.</cmd>
 				<info>
