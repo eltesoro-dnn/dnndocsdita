@@ -42,11 +42,11 @@
 
         <steps>
 			<step conkeyref="k-bppbar/step-pb-host-Settings-SEO-E90"><cmd/></step>
-            <step><cmd>Go to the <uicontrol>Sitemap Settings</uicontrol> tab.</cmd></step>
 
-			<stepsection>
-                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SEO-SiteMapSettings-Initial-E90.png"><alt>SEO Sitemap settings</alt></image>
-			</stepsection>
+            <step>
+                <cmd>Go to the <uicontrol>Sitemap Settings</uicontrol> tab.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SEO-SiteMapSettings-TitleGeneral-E90.png"><alt>SEO Sitemap settings</alt></image></info>
+            </step>
 
             <step id="step-general-sitemap-settings">
                 <cmd>Update the <uicontrol>General Sitemap Settings</uicontrol>.</cmd>
@@ -72,7 +72,7 @@
 						</strow>
 						<strow>
 							<stentry><uicontrol>Days to Cache Sitemap For</uicontrol></stentry>
-							<stentry>The number of days before the sitemap is regenerated. If set to <uicontrol>Disable Caching</uicontrol>, the sitemap is regenerated whenever requested.
+							<stentry>The number of days before the sitemap is regenerated. If set to <uicontrol>Disable Caching</uicontrol>, the sitemap is regenerated, only when requested.
 								<note type="tip">If you have a large site (i.e., at least 50,000 URLs), cache the sitemap for at least one day to help improve your site's performance.</note>
 							</stentry>
 						</strow>
@@ -122,6 +122,10 @@
             </step>
 
 			<step><cmd>Click/Tap <uicontrol>Save</uicontrol>.</cmd></step>
+
+			<stepsection>
+                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SEO-SiteMapSettings-Submission-E90.png"><alt>SEO Site Submission settings</alt></image>
+			</stepsection>
 
             <step><cmd>(Optional) <xref format="dita" href="submit-site-Google-search.dita">Submit your site to Google Search for indexing.</xref></cmd></step>
 

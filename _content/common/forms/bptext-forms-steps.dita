@@ -40,7 +40,7 @@
 
                 <!-- ========== FORM FIELDS: GENERAL SETTINGS ========== -->
 
-                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-formname"><stentry/>`</strow> -->
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-formname"><stentry/></strow> -->
                 <strow id="strow-field-formname">
                     <stentry><uicontrol>Form Name</uicontrol></stentry>
                     <stentry>This value appears at the top of the page.</stentry>

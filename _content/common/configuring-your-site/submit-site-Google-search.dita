@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="submit-submit-site-Google-search">
+<task xml:lang="en" id="tsk-submit-site-Google-search">
 
     <title>Submit Your Site to Google Search for Indexing</title>
     <titlealts>
@@ -44,45 +44,50 @@
 		</prereq>
 
         <steps>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-SEO-E90"><cmd/></step>
+
+            <step>
+                <cmd>Go to the <uicontrol>Sitemap Settings</uicontrol> tab.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SEO-SiteMapSettings-TitleGeneral-E90.png"><alt>SEO Sitemap settings</alt></image></info>
+            </step>
+
 			<step>
-				<cmd>Submit your sitemap's URL to Google.</cmd>
+				<cmd>Submit your sitemap's URL to Google for indexing.</cmd>
 				<substeps>
 					<substep>
 						<cmd>Choose <uicontrol>Google</uicontrol> from the <uicontrol>Search Engine</uicontrol> dropdown. Click/Tap <uicontrol>Submit</uicontrol>.</cmd>
-						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SitemapConfig-SiteSubmission-SearchEngine.png"><alt>Site Submission &gt; Search Engine</alt></image></info>
+						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SEO-SiteMapSettings-Submission-SearchEngine-E90.png"><alt>Site Submission &gt; Search Engine</alt></image></info>
+                        <stepresult>You will be directed to the Google Search Console page in a new browser tab.</stepresult>
 					</substep>
-					<substep><cmd>Log in with your Google account for Google Webmaster Tools.</cmd></substep>
-					<substep>
-						<cmd>Enter the URL to your site and submit.</cmd>
-						<info>
-                            <!-- Evoq 8.5 <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-GoogleSearchConsoleSubmitURL.png"><alt>Google Search Console - URL Submit Request</alt></image> -->
-                        </info>
-					</substep>
+					<substep><cmd>Log in with your Google account.</cmd></substep>
+                    <substep>
+                        <cmd>In Google's Search Console, enter the URL to your site and <uicontrol>Submit Request</uicontrol>.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-GoogleSearchConsoleSubmitURL-small.png"><alt>Site URL Submission</alt></image></info>
+                    </substep>
 				</substeps>
 			</step>
 
-			<step>  <!-- Confirm step. -->
+			<step>
 				<cmd>Verify that you own the site.</cmd>
 				<substeps>
-					<substep><cmd>In the Google Verification page, choose <uicontrol>Upload an HTML File</uicontrol>, and copy the filename provided by Google.</cmd></substep>  <!-- Needs screenshot. -->
+                    <substep><cmd>Go to the <xref format="html" href="https://www.google.com/webmasters/tools/home">Google Webmasters Tools</xref> page.</cmd></substep>
+                    <substep>
+                        <cmd>Choose <uicontrol>Website</uicontrol> from the dropdown and enter the URL to your site. Click/Tap <uicontrol>Add a Property</uicontrol>.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-GoogleSearchConsoleSubmitURL-big.png"><alt>Site URL Submission</alt></image></info>
+                        <stepresult>You will be directed to a set of instructions for <uicontrol>Recommended method</uicontrol> and <uicontrol>Alternate methods</uicontrol>.</stepresult>
+                    </substep>
+                    <substep>
+                        <cmd>Go to the <uicontrol>Recommended method</uicontrol> tab (<uicontrol>HTML file upload</uicontrol>) and copy the filename provided by Google.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-GoogleSearchConsole-VerificationFile.png"><alt>Site URL Submission</alt></image></info>
+                    </substep>
 					<substep>
-						<cmd>In this DNN page, paste the filename to the <uicontrol>Verification</uicontrol> field, and click/tap <uicontrol>Create</uicontrol>.</cmd>
-						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SitemapConfig-SiteSubmission-Verification.png"><alt>Site Submission &gt; Verification</alt></image></info>
+						<cmd>In the DNN <uicontrol>Sitemap Settings</uicontrol> page, in the <uicontrol>Site Submission</uicontrol> section, paste the filename to the <uicontrol>Verification</uicontrol> field, and click/tap <uicontrol>Create</uicontrol>.</cmd>
+						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SEO-SiteMapSettings-Submission-Verification-E90.png"><alt>Site Submission &gt; Verification</alt></image></info>
 					</substep>
-					<substep><cmd>In the Google Verification page, click/tap <uicontrol>Verify</uicontrol>.</cmd></substep>  <!-- Needs screenshot. -->
-				</substeps>
-			</step>
-
-			<step>  <!-- Confirm step. -->
-				<cmd>After Google successfully verifies your ownership of the site, provide your sitemap.</cmd>
-				<substeps>
 					<substep>
-						<cmd>In the Search Engine Sitemap page, copy the <uicontrol>Sitemap URL</uicontrol>.</cmd>
-						<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SitemapConfig-SitemapURL-Platform.png"><alt>Sitemap URL</alt></image></info>
-					</substep>
-					<substep><cmd>In the Google Verification page, go to the <uicontrol>Google Sitemaps</uicontrol> tab.</cmd></substep>
-					<substep><cmd>Select <uicontrol>Add General Web Sitemap</uicontrol>.</cmd></substep>
-					<substep><cmd>Paste your sitemap URL.</cmd></substep>
+                        <cmd>In the <uicontrol>Google Verification</uicontrol> page, click/tap <uicontrol>Verify</uicontrol>.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-GoogleSearchConsole-Verify.png"><alt>Site URL Submission</alt></image></info>
+                    </substep>
 				</substeps>
 			</step>
 
