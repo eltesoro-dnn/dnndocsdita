@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
+<reference xml:lang="en" id="ref-persona-bar-style-guide">
+
+    <title>Persona Bar Style Guide</title>
+    <titlealts>
+        <navtitle>Persona Bar Style Guide</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>orSS,edET,1611</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="designer" />
+        </metadata>
+    </prolog>
+
+    <refbody>
+
+        <!--
+        Internal sources:
+        * https://dnntracker.atlassian.net/wiki/display/DP/EVOQ+-+COLOR+AND+STYLE+GUIDE
+        * https://www.dropbox.com/sh/3kzb6qk3292yk9h/AADIG4EvOmXdw6FADsqEqqL6a?dl=0 (png files)
+        -->
+
+        <section>
+            <sectiondiv outputclass="anchor" id="pagetoc"></sectiondiv>
+            <ul outputclass="compressedlist">
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/evoq-color-palette">Evoq Color Palette</xref></li>
+                <!-- <li><xref format="dita" href="#ref-persona-bar-style-guide/persona-bar">Persona Bar</xref></li> -->
+                <!-- <li><xref format="dita" href="#ref-persona-bar-style-guide/tasks-slideout">Tasks Slideout</xref></li> -->
+                <!-- <li><xref format="dita" href="#ref-persona-bar-style-guide/x-icon">"X" Icon - Collapse Persona Bar Tray</xref></li> -->
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/large-buttons">Large Buttons</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/small-buttons">Small Buttons</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/label">Label</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/tool-tips">Tool Tips</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/large-single-line-text-field">Large Single-Line Text Field</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/small-single-line-text-field">Small Single-Line Text Field</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/multi-line-text-field">Multi-Line Text Field</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/large-dropdown">Large Dropdown</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/small-dropdown">Small Dropdown</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/searchable-pill-field">Searchable Pill Field</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/on-off-switch">On / Off Switch</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/radio-button">Radio Button</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/check-box">Check Box</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/primary-tabs">Primary Tabs - Workspace Tray</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/secondary-tabs">Secondary Tabs - Workspace Tray</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/control-bar">Control Bar - Workspace Tray</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/date-picker">Date Picker</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/date-and-time-picker">Date and Time Picker</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/date-range-picker">Date Range Picker</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/page-selector">Page Selector</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/image-upload-field">Image Upload Field</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/notification-iconography">Notification Iconography</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/minimum-width-notification">Minimum Width Notification</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/maximum-width-notification">Maximum Width Notification</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/maximum-height-notification">Maximum Height Notification</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/button-notification">Button Notification</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/loader-bar">Loader Bar</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/back-to-link">Back-to Link</xref></li>
+                <li><xref format="dita" href="#ref-persona-bar-style-guide/breadcrumb-navigation">Breadcrumb Navigation</xref></li>
+            </ul>
+        </section>
+
+
+        <section>
+
+            <sectiondiv outputclass="anchor" id="evoq-color-palette"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-01-evoq-color-palette.png"><alt>Persona Bar Style Guide - Evoq Color Palette</alt></image>
+
+            <!--
+            <sectiondiv outputclass="anchor" id="persona-bar"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-02-persona-bar.png"><alt>Persona Bar Style Guide - Persona Bar</alt></image>
+            -->
+
+            <!--
+            <sectiondiv outputclass="anchor" id="tasks-slideout"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-03-tasks-slideout.png"><alt>Persona Bar Style Guide - Tasks Slideout</alt></image>
+            -->
+
+            <!--
+            <sectiondiv outputclass="anchor" id="x-icon-collapse-persona-bar-tray"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-31-x-icon-collapse-persona-bar-tray.png"><alt>Persona Bar Style Guide - X Icon - Collapse Persona Bar Tray</alt></image>
+            -->
+
+            <sectiondiv outputclass="anchor" id="large-buttons"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-04-large-buttons.png"><alt>Persona Bar Style Guide - Large Buttons</alt></image>
+
+            <sectiondiv outputclass="anchor" id="small-buttons"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-05-small-buttons.png"><alt>Persona Bar Style Guide - Small Buttons</alt></image>
+
+            <sectiondiv outputclass="anchor" id="label"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-20-label.png"><alt>Persona Bar Style Guide - Label</alt></image>
+
+            <sectiondiv outputclass="anchor" id="tool-tips"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-16-tool-tips.png"><alt>Persona Bar Style Guide - Tool Tips</alt></image>
+
+            <sectiondiv outputclass="anchor" id="large-single-line-text-field"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-06-large-single-line-text-field.png"><alt>Persona Bar Style Guide - Large Single-Line Text Field</alt></image>
+
+            <sectiondiv outputclass="anchor" id="small-single-line-text-field"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-07-small-single-line-text-field.png"><alt>Persona Bar Style Guide - Small Single-Line Text Field</alt></image>
+
+            <sectiondiv outputclass="anchor" id="multi-line-text-field"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-08-multi-line-text-field.png"><alt>Persona Bar Style Guide - Multi-Line Text Field</alt></image>
+
+            <sectiondiv outputclass="anchor" id="large-dropdown"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-09-large-dropdown.png"><alt>Persona Bar Style Guide - Large Dropdown</alt></image>
+
+            <sectiondiv outputclass="anchor" id="small-dropdown"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-10-small-dropdown.png"><alt>Persona Bar Style Guide - Small Dropdown</alt></image>
+
+            <sectiondiv outputclass="anchor" id="searchable-pill-field"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-22-searchable-pill-field.png"><alt>Persona Bar Style Guide - Searchable Pill Field</alt></image>
+
+            <sectiondiv outputclass="anchor" id="on-off-switch"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-11-on-off-switch.png"><alt>Persona Bar Style Guide - On / Off Switch</alt></image>
+
+            <sectiondiv outputclass="anchor" id="radio-button"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-12-radio-button.png"><alt>Persona Bar Style Guide - Radio Button</alt></image>
+
+            <sectiondiv outputclass="anchor" id="check-box"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-24-check-box.png"><alt>Persona Bar Style Guide - Check Box</alt></image>
+
+            <sectiondiv outputclass="anchor" id="primary-tabs-workspace-tray"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-13-primary-tabs-workspace-tray.png"><alt>Persona Bar Style Guide - Primary Tabs - Workspace Tray</alt></image>
+
+            <sectiondiv outputclass="anchor" id="secondary-tabs-workspace-tray"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-14-secondary-tabs-workspace-tray.png"><alt>Persona Bar Style Guide - Secondary Tabs - Workspace Tray</alt></image>
+
+            <sectiondiv outputclass="anchor" id="control-bar-workspace-tray"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-15-control-bar-workspace-tray.png"><alt>Persona Bar Style Guide - Control Bar - Workspace Tray</alt></image>
+
+            <sectiondiv outputclass="anchor" id="date-picker"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-17-date-picker.png"><alt>Persona Bar Style Guide - Date Picker</alt></image>
+
+            <sectiondiv outputclass="anchor" id="date-and-time-picker"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-18-date-and-time-picker.png"><alt>Persona Bar Style Guide - Date And Time Picker</alt></image>
+
+            <sectiondiv outputclass="anchor" id="date-range-picker"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-19-date-range-picker.png"><alt>Persona Bar Style Guide - Date Range Picker</alt></image>
+
+            <sectiondiv outputclass="anchor" id="page-selector"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-23-page-selector.png"><alt>Persona Bar Style Guide - Page Selector</alt></image>
+
+            <sectiondiv outputclass="anchor" id="image-upload-field"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-21-image-upload-field.png"><alt>Persona Bar Style Guide - Image Upload Field</alt></image>
+
+            <sectiondiv outputclass="anchor" id="notification-iconography"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-25-notification-iconography.png"><alt>Persona Bar Style Guide - Notification Iconography</alt></image>
+
+            <sectiondiv outputclass="anchor" id="minimum-width-notification"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-26-minimum-width-notification.png"><alt>Persona Bar Style Guide - Minimum Width Notification</alt></image>
+
+            <sectiondiv outputclass="anchor" id="maximum-width-notification"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-27-maximum-width-notification.png"><alt>Persona Bar Style Guide - Maximum Width Notification</alt></image>
+
+            <sectiondiv outputclass="anchor" id="maximum-height-notification"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-28-maximum-height-notification.png"><alt>Persona Bar Style Guide - Maximum Height Notification</alt></image>
+
+            <sectiondiv outputclass="anchor" id="button-notification"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-29-button-notification.png"><alt>Persona Bar Style Guide - Button Notification</alt></image>
+
+            <sectiondiv outputclass="anchor" id="loader-bar"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-30-loader-bar.png"><alt>Persona Bar Style Guide - Loader Bar</alt></image>
+
+            <sectiondiv outputclass="anchor" id="back-to-link"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-32-back-to-link.png"><alt>Persona Bar Style Guide - Back-to Link</alt></image>
+
+            <sectiondiv outputclass="anchor" id="breadcrumb-navigation"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-33-breadcrumb-navigation.png"><alt>Persona Bar Style Guide - Breadcrumb Navigation</alt></image>
+
+            <!--
+            <sectiondiv outputclass="anchor" id="xxx"></sectiondiv>
+            <p><xref format="dita" href="#ref-persona-bar-style-guide/pagetoc">top</xref></p>
+            <image outputclass="img-gra" scalefit="yes" placement="break" align="left" href="../common/img/gra-pbarstyles-99-xxx.png"><alt>Persona Bar Style Guide - Yyy</alt></image>
+            -->
+
+        </section>
+
+    </refbody>
+
+</reference>

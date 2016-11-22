@@ -43,6 +43,7 @@
 
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="designers/designer-references.dita" collection-type="family">
+            <topicref format="dita" type="reference" toc="yes" href="designers/persona-bar-style-guide.dita" />
             <topicref format="dita" type="reference" toc="yes" href="designers/theme-objects.dita" />
             <topicref format="dita" type="reference" toc="yes" href="designers/extensions/dnn-manifest-schema.dita" />
             <topicref format="dita" type="reference" toc="yes" href="designers/included-modules/included-modules.dita" copy-to="designers/included-modules/index.dita" />

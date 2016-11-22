@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-configure-connections-pb-cmg">
+<task xml:lang="en" id="tsk-configure-connections-pb-all">
 
     <title>Configure Connections to External Service Providers</title>
     <titlealts>
@@ -36,7 +36,8 @@
         <section conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/section-connectors-overview"></section>
 
         <steps>
-            <step conkeyref="k-bppbar/step-pb-cmg-Settings-Connectors-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Settings-Connectors-E90"><cmd/></step>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Settings-Connectors-E90"><cmd/></step>
             <step conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/step-configure-connections"><cmd/></step>
             <step conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/step-provide-connection-info"><cmd/></step>
             <step><cmd>Click/tap <uicontrol>Save</uicontrol>.</cmd></step>

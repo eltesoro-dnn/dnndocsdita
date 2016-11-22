@@ -416,6 +416,11 @@ main:after {
   color: #333;
   margin-top: 1em;
 }
+.compressedlist > .li {
+  font-size: 14px;
+  line-height: 100%;
+  margin-top: 0;
+}
 .figcap {
   font-style: italic;
 }
@@ -786,7 +791,12 @@ span.filepath {
 .img-scr-menu {
   align-content: left;
 }
-
+.anchor{
+  display: block;
+  height: 105px; /*same height as header*/
+  margin-top: -105px; /*same height as header*/
+  visibility: hidden;
+}
 
 /* ------------------------------------------------------------
  | Persona Bar arrow positions
@@ -2536,6 +2546,7 @@ and (orientation : portrait) {
     padding: 63px 35px 63px 150px;
   }
 }
+
 
 
 
