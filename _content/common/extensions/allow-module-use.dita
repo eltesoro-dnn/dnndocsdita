@@ -49,30 +49,22 @@
 
 
         <steps>
-			<step conkeyref="k-bpsteps/step-menuadminextensions"><cmd/></step>
-			<step conkeyref="k-bpsteps/step-adminopenmoduleforediting"><cmd/></step>
+			<step conkeyref="k-bppbar/step-pb-adm-Settings-Extensions-E90"><cmd/></step>
+			<step conkeyref="k-bpsteps/step-pb-host-openmoduleforediting-E90"><cmd/></step>
+            <step><cmd>Go to the <uicontrol>Site Settings</uicontrol> tab.</cmd></step>
 			<step>
-				<cmd>If the role/user you want is already in the table, check the <uicontrol>Deploy Module</uicontrol> box for that role/user.</cmd>
-				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-AdminEditExtension.png"><alt>Check Deploy Module box for that role/user.</alt></image></info>
+				<cmd>If the role/user you want is already in the table, check the <uicontrol>Can Deploy</uicontrol> box for that role/user.</cmd>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-Extensions-Edit-SiteSettings-CanDeploy-E90.png"><alt>Check the Can Deploy box for that role/user.</alt></image></info>
 			</step>
 			<step>
-				<cmd>If the role/user you want is not yet in the table, add.</cmd>
-				<choices>
-					<choice>
-						<p>To add a role, expand the <uicontrol>Select Role</uicontrol> dropdown and choose the role you want to allow. Click/Tap <uicontrol>Add</uicontrol>.</p>
-						<image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-AdminEditExtension-AddRole.png"><alt>Add the role to the table.</alt></image>
-					</choice>
-					<choice>
-						<p>To add a user, start entering the user's display name in the <uicontrol>Display Name</uicontrol> field. A few names with partial matches will be offered. Choose the correct one, then click/tap <uicontrol>Add</uicontrol>.</p>
-						<image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-AdminEditExtension-AddUser.png"><alt>Add a user to the table.</alt></image>
-					</choice>
-				</choices>
+				<cmd>If the role/user you want is not yet in the table, search for the role/user and click/tap <uicontrol>+ Add</uicontrol>.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-Extensions-Edit-SiteSettings-AddRoleUser-E90.png"><alt>Search for the role/user and "+ Add".</alt></image></info>
 			</step>
         </steps>
 
 		<result>
-			<p>The added role/user is automatically assigned <uicontrol>Deploy Module</uicontrol> permissions.</p>
-			<image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-AdminEditExtension-AddedRoleUser.png"><alt>After adding a role and a user.</alt></image>
+			<p>The newly added role/user is automatically assigned <uicontrol>Deploy Module</uicontrol> permissions.</p>
+
 		</result>
 
     </taskbody>

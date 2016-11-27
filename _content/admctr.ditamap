@@ -35,12 +35,11 @@
         </topicref>
 
         <!-- Enabling Extensions -->
-        <topichead outputclass="sub-nav-tabs" collection-type="family" >
-            <topicmeta><navtitle>Enabling Extensions</navtitle></topicmeta>
-            <topicref format="dita" type="task" navtitle="Installing an Extension" locktitle="yes" toc="yes" href="administrators/extensions/install-extension.dita" copy-to="administrators/extensions/index.dita" />
+        <topicref format="dita" type="task" navtitle="Enabling Extensions" locktitle="yes" toc="yes" href="administrators/extensions/about-extensions.dita" copy-to="administrators/extensions/index.dita" collection-type="family" >
+            <topicref format="dita" type="task" toc="yes" href="administrators/extensions/install-extension.dita" />
             <topicref format="dita" type="task" toc="yes" href="administrators/extensions/manage-premium-module.dita" />
             <topicref format="dita" type="task" toc="yes" href="administrators/extensions/allow-module-use.dita" />
-        </topichead>
+        </topicref>
 
         <!-- Configuring Your Site -->
         <!-- <mapref href="administrators/configuring-your-site/configuring-your-site-cp-adm.ditamap" />  for Evoq 8.5 -->

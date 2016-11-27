@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-about-extensions">
+
+    <title>About Extensions</title>
+
+    <prolog>
+        <author>wrET,1611</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="installing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section id="overview">
+            <p>A DNN extension can contain a <term>module</term>, a <term>theme</term>, or other components that extend the functionality of the DNN Platform.</p>
+
+            <p conkeyref="k-bptext/p-3rdPartyExtensions"></p>
+
+            <p>You can also create your custom <xref format="dita" scope="peer" href="../../developers/creating-modules/create-module.dita">modules</xref> and <xref format="dita" scope="peer" href="../../designers/creating-themes/create-theme.dita">themes</xref>.</p>
+
+            <p>To use an extension:</p>
+            <ul>
+                <li><xref format="dita" href="install-extension.dita">Add the extension package to the DNN installation.</xref> Requires <term>host</term> permissions.</li>
+                <li><xref format="dita" href="manage-premium-module.dita">Set the installed extension as <uicontrol>Premium</uicontrol> and enable it for the websites that are authorized to use it.</xref> Requires <term>host</term> permissions.</li>
+                <li>Apply the extension to the site. Requires <term>administrator</term> or <term>host</term> permissions. If the extension is a module, you can also <xref format="dita" href="allow-module-use.dita">set <uicontrol>Deploy Module</uicontrol> permissions to a role</xref>, in order for members of that role to be able to add a module to a page.</li>
+            </ul>
+
+        </section>
+
+    </body>
+
+</topic>

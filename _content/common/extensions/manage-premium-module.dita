@@ -48,14 +48,15 @@
 
         <steps>
 			<stepsection>Installing a module requires <term>host</term> permissions.</stepsection>
-            <step conkeyref="k-bpsteps/step-menuhostextensions"><cmd/></step>
-			<step conkeyref="k-bpsteps/step-hostopenmoduleforediting"><cmd/></step>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-Extensions-E90"><cmd/></step>
+			<step conkeyref="k-bpsteps/step-pb-host-openmoduleforediting-E90"><cmd/></step>
+            <step><cmd>Go to the <uicontrol>Extension Settings</uicontrol> tab and scroll down to the <uicontrol>Premium Module Assignment</uicontrol> section.</cmd></step>
 			<step>
 				<cmd>Set the module to premium, and select the sites that you allow to use the module.</cmd>
-				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-HostEditExtension-Premium.png"><alt>Check Is Premium Module? &gt; then drag websites from Unassigned to Assigned.</alt></image></info>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-Extensions-Edit-ExtensionSettings-PremiumModule-E90.png"><alt>Check Is Premium Module? &gt; then drag websites from Unassigned to Assigned.</alt></image></info>
 				<substeps>
 					<substep><cmd>Check the <uicontrol>Is Premium Module?</uicontrol> box.</cmd></substep>
-					<substep><cmd>In <uicontrol>Assigned Premium Modules</uicontrol>, drag the websites to enable from the <uicontrol>Unassigned</uicontrol> panel to the <uicontrol>Assigned</uicontrol> panel.</cmd></substep>
+					<substep><cmd>Drag a website to the <uicontrol>Assigned</uicontrol> panel or to the <uicontrol>Unassigned</uicontrol> panel to enable or disable the module for that website.</cmd></substep>
 				</substeps>
 			</step>
         </steps>

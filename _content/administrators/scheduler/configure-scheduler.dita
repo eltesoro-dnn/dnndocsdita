@@ -41,7 +41,7 @@
         </prereq>
 
         <steps>
-            <step conkeyref="k-bpsteps/step-menuhostSchedule"><cmd/></step>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-Scheduler-E90"><cmd/></step>
 
             <step>
                 <cmd>Configure the Scheduler settings.</cmd>

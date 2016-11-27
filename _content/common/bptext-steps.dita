@@ -160,6 +160,24 @@
             </step>
 
 
+            <!-- ========== MENU - PERSONA BAR: HOST EXTENSIONS ========== -->
+
+            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-host-openmoduleforediting-E90"><cmd/></step> -->
+            <!-- <step conkeyref="k-bpsteps/step-pb-host-openmoduleforediting-E90"><cmd/></step> -->
+            <step id="step-pb-host-openmoduleforediting-E90">
+                <cmd>Open the module for editing.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-Extensions-Installed-edit-E90.png"><alt>Installed Extensions tab &gt; Showing: Modules &gt; click/tap the pencil icon for the module to edit.</alt></image>
+                </info>
+                <substeps>
+                    <substep><cmd>Go to the <uicontrol>Installed Extensions</uicontrol> tab.</cmd></substep>
+                    <substep><cmd>In the <uicontrol>Showing</uicontrol> dropdown, choose <uicontrol>Modules</uicontrol>.</cmd></substep>
+                    <substep><cmd>Click/Tap the pencil icon for the module you want.</cmd></substep>
+                </substeps>
+            </step>
+
+
+
 
             <!-- ========== MENU - CONTROL BAR ========== -->
 
