@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-assets">
+
+    <title>Assets</title>
+
+    <!-- Topics -->
+	<topicref format="dita" type="topic" navtitle="Managing Assets" locktitle="yes" toc="yes" href="about-assets.dita" copy-to="index.dita" collection-type="family" >
+
+        <topicref format="dita" type="task" toc="yes" href="add-assets.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-asset-properties.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-asset-permissions.dita" />
+        <topicref format="dita" type="task" toc="yes" href="move-asset.dita" />
+        <topicref format="dita" type="task" toc="yes" href="delete-asset.dita" />
+
+        <topicref format="dita" type="task" toc="yes" href="create-folder.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-folder-properties.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-folder-permissions.dita" />
+        <topicref format="dita" type="task" toc="yes" href="move-folder.dita" />
+        <topicref format="dita" type="task" toc="yes" href="delete-folder.dita" />
+
+    </topicref>
+
+</map>
+

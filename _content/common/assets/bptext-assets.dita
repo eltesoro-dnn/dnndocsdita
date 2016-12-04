@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-bptext-assets">
+
+    <title>Boilerplates: Assets</title>
+
+    <prolog>
+        <author>wrET,1611</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+    </prolog>
+
+    <taskbody>
+
+        <steps>
+
+            <step>
+                <cmd/>
+                <info>
+                    <!-- <note conref="bptext-assets.dita#tsk-bptext-assets/note-assets-breadcrumbs"></note> -->
+                    <note type="tip" id="note-assets-breadcrumbs">
+                        <p>The breadcrumbs show your current location in the folder hierarchy.</p>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-breadcrumbs-E90.png"><alt>Breadcrumbs</alt></image>
+                    </note>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-go-to-target-folder"><cmd/></step> -->
+            <!-- <cmd conref="bptext-assets.dita#tsk-bptext-assets/cmd-assets-go-to-target-folder"></cmd> -->
+            <!-- <choices conref="bptext-assets.dita#tsk-bptext-assets/choices-assets-go-to-target-folder"></choices> -->
+            <step id="step-assets-go-to-target-folder">
+                <cmd id="cmd-assets-go-to-target-folder">Go to the target folder.</cmd>
+                <choices id="choices-assets-go-to-target-folder">
+                    <choice>
+                        <p>If the target folder does not exist, <xref format="dita" href="create-folder.dita">create a new folder.</xref></p>
+                    </choice>
+                    <choice>
+                        <p>If the target folder is within the current folder, select it from the cards.</p>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-assetlist-grid-E90.png"><alt>Assets grid</alt></image>
+                    </choice>
+                    <choice>
+                        <p>Otherwise, select it from the folder dropdown, which displays the hierarchy of all folders.</p>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-folderdropdown-E90.png"><alt>Folder selection</alt></image>
+                    </choice>
+                </choices>
+                <info><note conref="bptext-assets.dita#tsk-bptext-assets/note-assets-breadcrumbs"></note></info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-go-to-containing-folder"><cmd/></step> -->
+            <!-- <cmd conref="bptext-assets.dita#tsk-bptext-assets/cmd-assets-go-to-containing-folder"></cmd> -->
+            <!-- <choices conref="bptext-assets.dita#tsk-bptext-assets/choices-assets-go-to-containing-folder"></choices> -->
+            <step id="step-assets-go-to-containing-folder">
+                <cmd id="cmd-assets-go-to-containing-folder">Go to the folder that contains the asset or subfolder.</cmd>
+                <choices id="choices-assets-go-to-containing-folder">
+                    <choice>
+                        <p>If the containing folder is within the current folder, select it from the cards.</p>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-assetlist-grid-E90.png"><alt>Assets grid</alt></image>
+                    </choice>
+                    <choice>
+                        <p>Otherwise, select it from the folder dropdown, which displays the hierarchy of all folders.</p>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-folderdropdown-E90.png"><alt>Folder selection</alt></image>
+                    </choice>
+                </choices>
+                <info><note conref="bptext-assets.dita#tsk-bptext-assets/note-assets-breadcrumbs"></note></info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-go-to-parent-folder"><cmd/></step> -->
+            <!-- <cmd conref="bptext-assets.dita#tsk-bptext-assets/cmd-assets-go-to-parent-folder"></cmd> -->
+            <!-- <choices conref="bptext-assets.dita#tsk-bptext-assets/choices-assets-go-to-parent-folder"></choices> -->
+            <step id="step-assets-go-to-parent-folder">
+                <cmd id="cmd-assets-go-to-parent-folder">Go to the folder that will contain the new subfolder.</cmd>
+                <choices id="choices-assets-go-to-parent-folder">
+                    <choice>
+                        <p>If the intended parent folder is within the current folder, select it from the cards.</p>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-assetlist-grid-E90.png"><alt>Assets grid</alt></image>
+                    </choice>
+                    <choice>
+                        <p>Otherwise, select it from the folder dropdown, which displays the hierarchy of all folders.</p>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-folderdropdown-E90.png"><alt>Folder selection</alt></image>
+                    </choice>
+                </choices>
+                <info><note conref="bptext-assets.dita#tsk-bptext-assets/note-assets-breadcrumbs"></note></info>
+            </step>
+
+
+            <!-- ASSET/FOLDER CARD ICONBARS -->
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-assetcard-hover-edit"><cmd/></step> -->
+            <step id="step-assets-assetcard-hover-edit">
+                <cmd>Hover over the asset card in the grid to expose the vertical icon bar. Click/Tap the pencil icon.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-assetcard-iconbar-edit-E90.png"><alt>Asset card iconbar - pencil</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-assetcard-hover-move"><cmd/></step> -->
+            <step id="step-assets-assetcard-hover-move">
+                <cmd>Hover over the asset card in the grid to expose the vertical icon bar. Click/Tap the move icon.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-assetcard-iconbar-move-E90.png"><alt>Asset card iconbar - move</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-assetcard-hover-copy"><cmd/></step> -->
+            <step id="step-assets-assetcard-hover-copy">
+                <cmd>Hover over the asset card in the grid to expose the vertical icon bar. Click/Tap the copy icon.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-assetcard-iconbar-copy-E90.png"><alt>Asset card iconbar - copy</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-assetcard-hover-download"><cmd/></step> -->
+            <step id="step-assets-assetcard-hover-download">
+                <cmd>Hover over the asset card in the grid to expose the vertical icon bar. Click/Tap the download icon.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-assetcard-iconbar-download-E90.png"><alt>Asset card iconbar - download</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-assetcard-hover-delete"><cmd/></step> -->
+            <step id="step-assets-assetcard-hover-delete">
+                <cmd>Hover over the asset card in the grid to expose the vertical icon bar. Click/Tap the trash icon.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-assetcard-iconbar-delete-E90.png"><alt>Asset card iconbar - trash</alt></image></info>
+            </step>
+
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-foldercard-hover-edit"><cmd/></step> -->
+            <step id="step-assets-foldercard-hover-edit">
+                <cmd>Hover over the folder card in the grid to expose the vertical icon bar. Click/Tap the pencil icon.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-foldercard-iconbar-edit-E90.png"><alt>Folder card iconbar - pencil</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-foldercard-hover-move"><cmd/></step> -->
+            <step id="step-assets-foldercard-hover-move">
+                <cmd>Hover over the folder card in the grid to expose the vertical icon bar. Click/Tap the move icon.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-foldercard-iconbar-move-E90.png"><alt>Folder card iconbar - move</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-foldercard-hover-delete"><cmd/></step> -->
+            <step id="step-assets-foldercard-hover-delete">
+                <cmd>Hover over the folder card in the grid to expose the vertical icon bar. Click/Tap the trash icon.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-foldercard-iconbar-delete-E90.png"><alt>Folder card iconbar - trash</alt></image>
+                    <note type="important">You must delete the contents of a folder before deleting the folder itself.</note>
+                </info>
+            </step>
+
+
+
+            <!-- ASSET -->
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-asset-edit-properties"><cmd/></step> -->
+            <!-- <cmd conref="bptext-assets.dita#tsk-bptext-assets/cmd-assets-asset-edit-properties"></cmd> -->
+            <!-- <info conref="bptext-assets.dita#tsk-bptext-assets/info-assets-asset-edit-properties"></info> -->
+            <!-- <strow conref="#tsk-bptext-assets/strow-field-asset-"><stentry/></strow> -->
+            <step id="step-assets-asset-edit-properties">
+                <cmd id="cmd-assets-asset-edit-properties">In the <uicontrol>Details</uicontrol> tab, edit the properties of the asset.</cmd>
+                <info id="info-assets-asset-edit-properties">
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-asset-edit-details-E90.png"><alt>Asset properties - Details</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow id="strow-field-asset-subscribe">
+                            <stentry>Subscribe</stentry>
+                            <stentry>If enabled (<uicontrol>On</uicontrol>), users can subscribe to updates to this asset.</stentry>
+                        </strow>
+                        <strow id="strow-field-asset-name">
+                            <stentry>Name</stentry>
+                            <stentry>The asset's filename.</stentry>
+                        </strow>
+                        <strow id="strow-field-asset-title">
+                            <stentry>Title</stentry>
+                            <stentry>The asset's friendly name.</stentry>
+                        </strow>
+                        <strow id="strow-field-asset-tags">
+                            <stentry>Tags</stentry>
+                            <stentry>Tags to associate with the asset. <!-- ??? Where might this be useful? Filters? Search? Are these tags the same as the vocabularies? --></stentry>
+                        </strow>
+                        <strow id="strow-field-asset-description">
+                            <stentry>Description</stentry>
+                            <stentry>Displayed in lists of assets. <!-- ??? --></stentry>
+                        </strow>
+                        <strow id="strow-field-asset-created">
+                            <stentry>Created</stentry>
+                            <stentry>Not modifiable. The date that the asset was uploaded and by whom.</stentry>
+                        </strow>
+                        <strow id="strow-field-asset-last-modified">
+                            <stentry>Last Modified</stentry>
+                            <stentry>Not modifiable. The date that the asset was last modified and by whom.</stentry>
+                        </strow>
+                        <strow id="strow-field-asset-size">
+                            <stentry>Size</stentry>
+                            <stentry>Not modifiable. The file size of the asset.</stentry>
+                        </strow>
+                        <strow id="strow-field-asset-url">
+                            <stentry>URL</stentry>
+                            <stentry>Not modifiable. The permalink to the asset.</stentry>
+                        </strow>
+                    </simpletable>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-asset-edit-permissions"><cmd/></step> -->
+            <!-- <cmd conref="bptext-assets.dita#tsk-bptext-assets/cmd-assets-asset-edit-permissions"></cmd> -->
+            <!-- <info conref="bptext-assets.dita#tsk-bptext-assets/info-assets-asset-edit-permissions"></info> -->
+            <!-- <strow conref="#tsk-bptext-assets/strow-field-asset-"><stentry/></strow> -->
+            <step id="step-assets-asset-edit-permissions">
+                <cmd id="cmd-assets-asset-edit-permissions">In the <uicontrol>Permissions</uicontrol> tab, assign permissions to different roles.</cmd>
+                <info id="info-assets-asset-edit-permissions">
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-folder-edit-permissions-E90.png"><alt>Asset properties - Permissions</alt></image>
+                    <ul conkeyref="k-bpsteps/ul-configure-permissions"><li/></ul>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-asset-move"><cmd/></step> -->
+            <step id="step-assets-asset-move">
+                <cmd>...</cmd>
+                <!-- <info><image id="image-assets-..." scalefit="yes" href="img/scr-assets-....png"><alt>...</alt></image></info> -->
+            </step>
+
+
+
+            <!-- FOLDER -->
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-folder-edit-properties"><cmd/></step> -->
+            <!-- <cmd conref="bptext-assets.dita#tsk-bptext-assets/cmd-assets-folder-edit-properties"></cmd> -->
+            <!-- <info conref="bptext-assets.dita#tsk-bptext-assets/info-assets-folder-edit-properties"></info> -->
+            <!-- <strow conref="#tsk-bptext-assets/strow-field-asset-"><stentry/></strow> -->
+            <step id="step-assets-folder-edit-properties">
+                <cmd id="cmd-assets-folder-edit-properties">In the <uicontrol>Details</uicontrol> tab, edit the properties of the folder.</cmd>
+                <info id="info-assets-folder-edit-properties">
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-folder-edit-details-E90.png"><alt>Folder properties - Details</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow conref="#tsk-bptext-assets/strow-field-asset-created"><stentry/></strow>
+                        <strow conref="#tsk-bptext-assets/strow-field-asset-last-modified"><stentry/></strow>
+                        <strow id="strow-field-asset-folder-type">
+                            <stentry>Folder type</stentry>
+                            <stentry>Not modifiable. The folder type selected when the folder was created. <!-- What is the benefit of an Azure folder? Why are there no other options? --></stentry>
+                        </strow>
+                        <strow conref="#tsk-bptext-assets/strow-field-asset-subscribe"><stentry/></strow>
+                        <strow conref="#tsk-bptext-assets/strow-field-asset-name"><stentry/></strow>
+                        <strow id="strow-field-asset-workflow">
+                            <stentry>Workflow</stentry>
+                            <stentry></stentry>
+                        </strow>
+                        <strow id="strow-field-asset-versioning">
+                            <stentry>Versioning</stentry>
+                            <stentry>If enabled (<uicontrol>On</uicontrol>), users can choose to view different versions of the asset. <!-- Example. --></stentry>
+                        </strow>
+                    </simpletable>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-folder-edit-permissions"><cmd/></step> -->
+            <!-- <cmd conref="bptext-assets.dita#tsk-bptext-assets/cmd-assets-folder-edit-permissions"></cmd> -->
+            <!-- <info conref="bptext-assets.dita#tsk-bptext-assets/info-assets-folder-edit-permissions"></info> -->
+            <!-- <strow conref="#tsk-bptext-assets/strow-field-asset-"><stentry/></strow> -->
+            <step id="step-assets-folder-edit-permissions">
+                <cmd id="cmd-assets-folder-edit-permissions">In the <uicontrol>Permissions</uicontrol> tab, assign permissions to different roles.</cmd>
+                <info id="info-assets-folder-edit-permissions">
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-folder-edit-permissions-E90.png"><alt>Folder properties - Permissions</alt></image>
+                    <ul conkeyref="k-bpsteps/ul-configure-permissions"><li/></ul>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-folder-move"><cmd/></step> -->
+            <step id="step-assets-folder-move">
+                <cmd>...</cmd>
+                <!-- <info><image id="image-assets-..." scalefit="yes" href="img/scr-assets-....png"><alt>...</alt></image></info> -->
+            </step>
+
+
+
+
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-asset-copy"><cmd/></step> -->
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-asset-download"><cmd/></step> -->
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-asset-delete"><cmd/></step> -->
+
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-folder-delete"><cmd/></step> -->
+
+
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-"><cmd/></step> -->
+            <!--
+            <step id="step-assets-">
+                <cmd>Go to <menucascade><uicontrol>...</uicontrol> <uicontrol>...</uicontrol> <uicontrol>...</uicontrol></menucascade>.</cmd>
+                <info><image id="image-assets-..." scalefit="yes" href="img/scr-assets-....png"><alt>...</alt></image></info>
+            </step>
+            -->
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-"><cmd/></step> -->
+            <!-- <cmd conref="bptext-assets.dita#tsk-bptext-assets/cmd-assets-"></cmd> -->
+            <!-- <info conref="bptext-assets.dita#tsk-bptext-assets/info-assets-"></info> -->
+            <!-- <fig conref="bptext-assets.dita#tsk-bptext-assets/fig-assets-"></fig> -->
+            <!--
+            <step id="step-assets-">
+                <cmd id="cmd-assets-">Go to <menucascade><uicontrol>...</uicontrol> <uicontrol>...</uicontrol> <uicontrol>...</uicontrol></menucascade>.</cmd>
+                <info id="info-assets-">
+                    <fig id="fig-assets-..." outputclass="img-scr">
+                        <image id="image-assets-..." scalefit="yes" href="img/scr-assets-....png"><alt>...</alt></image>
+                        <pre outputclass="ol">&#10122;</pre>
+                        <pre outputclass="ol">&#10123;</pre>
+                    </fig>
+                </info>
+            </step>
+            -->
+
+        </steps>
+
+    </taskbody>
+
+</task>

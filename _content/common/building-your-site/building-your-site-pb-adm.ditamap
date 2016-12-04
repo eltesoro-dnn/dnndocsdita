@@ -7,6 +7,8 @@
     <!-- Topics -->
 	<topicref format="dita" type="topic" toc="yes" href="building-your-site.dita" copy-to="index.dita" collection-type="family">
 
+        <mapref href="../assets/assets.ditamap" />
+
 		<topicref format="dita" type="topic" toc="yes" href="managing-pages-templates.dita" collection-type="family">
 			<topicref format="dita" type="task" toc="yes" href="create-page-pb-adm.dita" />
 			<topicref format="dita" type="task" toc="yes" href="configure-page-pb-adm.dita" />

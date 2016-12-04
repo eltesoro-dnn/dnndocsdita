@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-about-assets">
+
+    <title>About Assets</title>
+    <titlealts>
+        <navtitle>About Assets</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>wrET,1611</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="maintaining" />
+            <audience type="other" othertype="designer" job="other" otherjob="designing" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <audience type="other" othertype="community manager" job="other" otherjob="moderating" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+        <section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section id="overview">
+            <p>A DNN asset is any content stored as a file. You can then think of the Asset Management as a file system integrated with your site.</p>
+        </section>
+
+    </body>
+
+</topic>

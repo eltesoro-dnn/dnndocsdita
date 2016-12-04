@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-add-assets">
+
+    <title>Add Assets</title>
+    <titlealts>
+        <navtitle>Add Assets</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1611</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <steps>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Content-Assets-E90"><cmd/></step>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-Assets-E90"><cmd/></step>
+            <step audience="mod" conkeyref="k-bppbar/step-pb-mod-Content-Assets-E90"><cmd/></step>
+
+            <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-go-to-target-folder"><cmd/></step>
+
+            <step>
+                <cmd>Click/Tap <uicontrol>Add Asset</uicontrol>.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-assetlist-addasset-E90.png"><alt>Add Asset button</alt></image></info>
+            </step>
+
+            <step>
+                <cmd>Upload the asset(s).</cmd>
+                <choices>
+                    <choice>
+                        <p>From a local folder:</p>
+                        <ol>
+                            <li>Click/Tap the upload icon.</li>
+                            <li>Drag and drop the items from your local drive to the upload area.</li>
+                        </ol>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-addasset-upload-E90.png"><alt>Drag and drop the asset from a local drive.</alt></image>
+                    </choice>
+                    <choice>
+                        <p>From a resource URL:</p>
+                        <ol>
+                            <li>Click/Tap the link icon.</li>
+                            <li>Enter the source URL.</li>
+                            <li>Click/Tap <uicontrol>Upload</uicontrol>.</li>
+                        </ol>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-addasset-URL-E90.png"><alt>Enter a resource URL.</alt></image>
+                    </choice>
+                </choices>
+            </step>
+
+            <step>
+                <cmd>(Optional) You can also choose to automatically decompress any uploaded zip files.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-addasset-decompresszip-E90.png"><alt>Decompress zip files</alt></image></info>
+            </step>
+
+        </steps>
+
+        <result>Each new file will have its own card in the grid.</result>
+
+        <postreq><xref format="dita" href="edit-asset-properties.dita">Edit the properties of the new asset.</xref></postreq>
+
+    </taskbody>
+
+</task>

@@ -35,7 +35,7 @@
         </topicref>
 
         <!-- Enabling Extensions -->
-        <topicref format="dita" type="task" navtitle="Enabling Extensions" locktitle="yes" toc="yes" href="administrators/extensions/about-extensions.dita" copy-to="administrators/extensions/index.dita" collection-type="family" >
+        <topicref format="dita" type="topic" navtitle="Enabling Extensions" locktitle="yes" toc="yes" href="administrators/extensions/about-extensions.dita" copy-to="administrators/extensions/index.dita" collection-type="family" >
             <topicref format="dita" type="task" toc="yes" href="administrators/extensions/install-extension.dita" />
             <topicref format="dita" type="task" toc="yes" href="administrators/extensions/manage-premium-module.dita" />
             <topicref format="dita" type="task" toc="yes" href="administrators/extensions/allow-module-use.dita" />
