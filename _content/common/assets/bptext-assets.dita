@@ -210,8 +210,19 @@
 
             <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-asset-move"><cmd/></step> -->
             <step id="step-assets-asset-move">
-                <cmd>...</cmd>
-                <!-- <info><image id="image-assets-..." scalefit="yes" href="img/scr-assets-....png"><alt>...</alt></image></info> -->
+                <cmd>Choose the target folder. Click/Tap <uicontrol>Move</uicontrol>.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-MoveFileTo.png"><alt>Move File To folder selector</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-asset-copy"><cmd/></step> -->
+            <step id="step-assets-asset-copy">
+                <cmd>Choose the target folder. Click/Tap <uicontrol>Copy</uicontrol>.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-CopyFileTo.png"><alt>Copy File To folder selector</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-asset-download"><cmd/></step> -->
+            <step id="step-assets-asset-download">
+                <cmd>Choose the target local folder. Click/Tap <uicontrol>Save</uicontrol>.</cmd>
             </step>
 
 
@@ -265,28 +276,17 @@
 
             <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-folder-move"><cmd/></step> -->
             <step id="step-assets-folder-move">
-                <cmd>...</cmd>
-                <!-- <info><image id="image-assets-..." scalefit="yes" href="img/scr-assets-....png"><alt>...</alt></image></info> -->
+                <cmd>Choose the target folder. Click/Tap <uicontrol>Move</uicontrol>.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-MoveFolderto.png"><alt>Move Folder To folder selector</alt></image></info>
             </step>
-
-
-
-
-
-            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-asset-copy"><cmd/></step> -->
-            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-asset-download"><cmd/></step> -->
-            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-asset-delete"><cmd/></step> -->
-
-
-            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-folder-delete"><cmd/></step> -->
 
 
 
             <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-"><cmd/></step> -->
             <!--
             <step id="step-assets-">
-                <cmd>Go to <menucascade><uicontrol>...</uicontrol> <uicontrol>...</uicontrol> <uicontrol>...</uicontrol></menucascade>.</cmd>
-                <info><image id="image-assets-..." scalefit="yes" href="img/scr-assets-....png"><alt>...</alt></image></info>
+                <cmd></cmd>
+                <info><image id="image-assets-..." scalefit="yes" href="../../common/img/scr-assets-....png"><alt>...</alt></image></info>
             </step>
             -->
 

@@ -161,7 +161,7 @@ for /f "usebackq tokens=2" %%v in (`date /t`) do for /f "delims=/ tokens=1,2,3" 
 rd /s /q c:\inetpub\wwwroot\docs
 md c:\inetpub\wwwroot\docs
 for %%v in ( %_outdir% ) do set cbldir=c:\z\docbuild%%~pnv
-echo y | xcopy %cbldir%\* c:\inetpub\wwwroot\docs /i /s /v
+:. echo y | xcopy %cbldir%\* c:\inetpub\wwwroot\docs /i /s /v
 start %cbldir%
 start c:\inetpub\wwwroot\docs
 :. start explorer.exe

@@ -14,17 +14,22 @@
     <!-- Topics -->
     <topicref format="dita" type="topic" toc="yes" href="community-managers/index.dita" >
 
-        <topicref format="dita" type="topic" navtitle="What's New"    locktitle="yes" toc="yes" href="community-managers/whats-new-dnn.dita" />
-        <topicref format="dita" type="topic" navtitle="DNN Solutions" locktitle="yes" toc="yes" href="community-managers/dnn-overview.dita" />
+        <topicref format="dita" type="topic" navtitle="What's New in Features"      locktitle="yes" toc="yes" href="community-managers/whats-new-dnn.dita" />
+        <topicref format="dita" type="topic" navtitle="DNN Solutions"               locktitle="yes" toc="yes" href="community-managers/dnn-overview.dita" />
 
-        <!-- Managing Your Community -->
-        <mapref href="community-managers/managing-your-community/managing-your-community.ditamap" />
+        <!-- Configuring Your Site -->
+        <mapref href="community-managers/configuring-your-site/configuring-your-site-pb-mod.ditamap" />  <!-- for Evoq 9.0 -->
 
         <!-- Securing Your Site -->
         <mapref href="community-managers/security/security-mod.ditamap" />
 
+        <!-- Managing Your Community -->
+        <mapref href="community-managers/managing-your-community/managing-your-community.ditamap" />
+
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="community-managers/community-manager-references.dita" collection-type="family">
+            <topicref format="dita" type="topic"     toc="yes" href="community-managers/control-bar-to-persona-bar.dita" />
+            <topicref format="dita" type="topic"     toc="yes" href="community-managers/persona-bar-by-role.dita" />
             <topicref format="dita" type="reference" toc="yes" href="community-managers/included-modules/included-modules.dita" copy-to="community-managers/included-modules/index.dita" />
             <topicref format="dita" type="reference" toc="yes" href="community-managers/product-versions.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="community-managers/dnn-license.dita" />
@@ -38,7 +43,7 @@
     </topicref>
 
 
-    <!-- RelTables
+    <!-- RelTables -->
     <reltable>
         <relheader>
             <relcolspec type="concept"/>
@@ -46,9 +51,17 @@
             <relcolspec type="reference"/>
         </relheader>
 
-        // adm dev dsg cmg mod
+        <!-- all -->
+        <relrow>
+            <relcell/>
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="topic" href="community-managers/whats-new-dnn.dita" />
+                <topicref format="dita" type="topic" href="community-managers/control-bar-to-persona-bar.dita" />
+                <topicref format="dita" type="topic" href="community-managers/persona-bar-by-role.dita" />
+            </relcell>
+        </relrow>
 
     </reltable>
-    -->
 
 </map>

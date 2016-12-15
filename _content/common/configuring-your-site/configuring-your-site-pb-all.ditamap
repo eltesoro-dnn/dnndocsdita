@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-configuring-your-site-pb-all">
+
+    <title>Configuring Your Site for Content</title>
+
+    <!-- Topics -->
+	<topicref format="dita" type="topic" toc="yes" href="configuring-your-site.dita" copy-to="index.dita" collection-type="family">
+
+		<topicref audience="adm"         format="dita" type="task"  toc="yes" href="access-web-config.dita" />
+
+		<topicref audience="adm"         format="dita" type="task"  toc="yes" href="assign-key-pages.dita" />
+
+        <topicref audience="adm cmg mod" format="dita" type="task"  toc="yes" href="configure-connections-pb-all.dita" />
+
+		<topicref audience="adm cmg"     format="dita" type="topic" toc="yes" href="about-workflows.dita" collection-type="family">
+			<topicref format="dita" type="task" toc="yes" href="create-workflow-pb-all.dita" />
+			<topicref format="dita" type="task" toc="yes" href="edit-workflow-pb-all.dita" />
+			<topicref format="dita" type="task" toc="yes" href="delete-workflow-pb-all.dita" />
+			<topicref format="dita" type="task" toc="yes" href="configure-workflow-state-pb-all.dita" />
+		</topicref>
+
+		<topicref audience="adm"         format="dita" type="topic" toc="yes" href="about-sitemaps.dita" collection-type="family">
+            <topicref format="dita" type="task" toc="yes" href="configure-sitemap.dita" />
+			<topicref format="dita" type="task" toc="yes" href="submit-site-Google-search.dita" />
+		</topicref>
+
+	</topicref>
+
+</map>

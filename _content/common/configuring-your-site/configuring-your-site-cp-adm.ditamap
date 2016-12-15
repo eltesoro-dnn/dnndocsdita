@@ -18,7 +18,7 @@
 			<topicref format="dita" type="task" toc="yes" href="configure-workflow-state-cp-adm.dita" />
 		</topicref>
 
-		<topicref format="dita" type="task"  toc="yes" href="about-sitemaps.dita" collection-type="family">
+		<topicref format="dita" type="topic" toc="yes" href="about-sitemaps.dita" collection-type="family">
             <topicref format="dita" type="task" toc="yes" href="configure-sitemap.dita" />
 			<topicref format="dita" type="task" toc="yes" href="submit-site-Google-search.dita" />
 		</topicref>

@@ -7,7 +7,8 @@ $menusep = "&gt;"
 $fnprefix = "pbar-"
 $fnsuffix = ".csv"
 $asciibase = 64     # 'A' is 65.
-$px = "px"
+# $unit = "px"
+$unit = "%"
 
 
 
@@ -24,7 +25,7 @@ function GetPersonaFromFilename  {
 }
 
 function MkBlurb  {
-    param( [string] $prod, [string] $persona, [string] $menu1, [string] $menu2, [string] $left1, [string] $top1, [string] $left2, [string] $top2 )
+    param( [string] $prod, [string] $persona, [string] $menu1, [string] $menu2, [int] $left1, [int] $top1, [int] $left2, [int] $top2 )
 
     $menu1squashed = $menu1.Replace( " ", "" )
 
@@ -36,10 +37,10 @@ function MkBlurb  {
     }
 
     if ( $menu2 -eq "" )  {
-        Write-Host( ".olpb1-$menu1squashed-$prod$persona  { color: var( --color-overlay ); font-size: 300%; position: absolute; left: $left1$px; top: $top1$px; }" )
+        Write-Host( ".olpb1-$menu1squashed-$prod$persona  { color: var( --color-overlay ); font-size: 300%; position: absolute; left: $left1$unit; top: $top1$unit; }" )
     }
     else  {
-        Write-Host( ".olpb2-$menu1squashed-$menu2squashed-$prod$persona  { color: var( --color-overlay ); font-size: 300%; position: absolute; left: $left2$px; top: $top2$px; }" )
+        Write-Host( ".olpb2-$menu1squashed-$menu2squashed-$prod$persona  { color: var( --color-overlay ); font-size: 300%; position: absolute; left: $left2$unit; top: $top2$unit; }" )
     }
 
 }
@@ -72,6 +73,6 @@ if ( $args.Count -gt 0 )  {
             $j++
             $pos = [char]$i + [char]$j
         }
-        MkBlurb $prod $persona $ln.menu1 $ln.menu2 $ln.left1 $ln.top1 $ln.left2 $ln.top2
+        MkBlurb $prod $persona $ln.menu1 $ln.menu2 $ln.left1pc $ln.top1pc $ln.left2pc $ln.top2pc
     }
 }

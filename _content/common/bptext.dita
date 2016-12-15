@@ -232,7 +232,6 @@
         <!-- ==================== Misc ==================== -->
 
         <p>
-
             <!-- <ph conref="../../common/bptext.dita#top-bptext/ph-oldterm"></ph> -->
             <!-- <ph conkeyref="k-bptext/ph-oldterm"></ph> -->
             <ph id="ph-oldterm">This is the old term, still used in some APIs and UI controls.</ph>
@@ -240,6 +239,10 @@
             <!-- <ph conref="../../common/bptext.dita#top-bptext/ph-support-url"></ph> -->
             <!-- <ph conkeyref="k-bptext/ph-support-url"></ph> -->
             <ph id="ph-support-url"> <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support">Evoq Customer Support</xref></ph>
+
+            <!-- <ph conref="../../common/bptext.dita#top-bptext/ph-pbar-varies"></ph> -->
+            <!-- <ph conkeyref="k-bptext/ph-pbar-varies"></ph> -->
+            <ph id="ph-pbar-varies">The Persona Bar varies according to the product and to the permissions granted to the current authenticated (logged-in) user through roles. Examples: A host or superuser has access to almost all menu items, whereas a community manager would have access to only the features required to manage the community-related aspects of the site. Likewise, Evoq Content does not have the community-related menu items that Evoq Engage has.</ph>
         </p>
 
 

@@ -56,6 +56,7 @@ function MkBlurb  {
     Write-Host( "           <!-- <step conkeyref=""k-bppbar/step-$bpid""><cmd/></step> -->" )
     Write-Host( "           <!-- <cmd conkeyref=""k-bppbar/cmd-$bpid""></cmd> -->" )
     Write-Host( "           <!-- <info conkeyref=""k-bppbar/info-$bpid""></info> -->" )
+    Write-Host( "           <!-- <fig conkeyref=""k-bppbar/fig-$bpid""></fig> -->" )
     Write-Host( "           <step id=""step-$bpid"">" )
     if ( $menu2 -eq "" )  {
         Write-Host( "               <cmd id=""cmd-$bpid"">Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>$menu1</uicontrol></menucascade>.</cmd>" )

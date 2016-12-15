@@ -41,6 +41,17 @@
 
             <!-- ========== MENU - PERSONA BAR ========== -->
 
+            <!-- ========== MENU - PERSONA BAR: SITE SETTINGS ========== -->
+
+            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-sitesettings-sitebehavior-defaultpages"><cmd/></step> -->
+            <!-- <step conkeyref="k-bpsteps/step-pb-sitesettings-sitebehavior-defaultpages"><cmd/></step> -->
+            <step id="step-pb-sitesettings-sitebehavior-defaultpages">
+                <cmd>Go to the <uicontrol>Site Behavior</uicontrol> tab, then the <uicontrol>Default Pages</uicontrol> subtab.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-SiteSettings-SiteBehavior-DefaultPages.png"><alt>Site Settings &gt; Site Behavior &gt; Default Pages</alt></image>
+                </info>
+            </step>
+
             <!-- ========== MENU - PERSONA BAR: WORKFLOW MANAGEMENT ========== -->
 
             <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-pbarsettingsworkflows"><cmd/></step> -->
@@ -57,7 +68,7 @@
             <step id="step-pb-workflowlist">
                 <cmd>Click/Tap the <uicontrol>Create New Workflow</uicontrol> button.</cmd>
                 <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-WorkflowMgmt-List.png"><alt>Workflow list &gt; Create New Workflow button</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-Workflows-List.png"><alt>Workflow list &gt; Create New Workflow button</alt></image>
                 </info>
             </step>
 
@@ -66,7 +77,7 @@
             <step id="step-pb-createworkflow">
                 <cmd>Fill in the name and description for the workflow. Then <uicontrol>Save</uicontrol>.</cmd>
                 <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-WorkflowMgmt-Create.png"><alt>Create Workflow form</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-Workflows-Create.png"><alt>New Workflow form</alt></image>
                 </info>
             </step>
 
@@ -74,7 +85,7 @@
             <!-- <step conkeyref="k-bpsteps/step-pb-editworkflow"><cmd/></step> -->
             <step id="step-pb-editworkflow">
                 <cmd>In the list of workflows, hover over the workflow to edit. Then click/tap the pencil icon.</cmd>
-                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-WorkflowMgmt-icons-pencil.png"><alt>Pencil icon to edit the workflow</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-Workflows-icons-pencil.png"><alt>Pencil icon to edit the workflow</alt></image></info>
             </step>
 
             <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-manageworkflowstates"><cmd/></step> -->
@@ -83,18 +94,18 @@
                 <cmd>Manage the workflow states.</cmd>
                 <choices>
                     <choice>To add a state to the workflow, click/tap the <uicontrol>Add a State</uicontrol> button. Then configure the workflow state.</choice>
-                    <choice>To edit a state, click/tap the state's pencil icon in the <uicontrol>Actions</uicontrol> column. Then configure the workflow state.</choice>
-                    <choice>To delete a state, click/tap the state's X icon in the <uicontrol>Actions</uicontrol> column.</choice>
-                    <choice>To rearrange the order of the states, use the arrows in the <uicontrol>Move</uicontrol> column.</choice>
+                    <choice>To edit a custom state, click/tap the state's pencil icon in the <uicontrol>Actions</uicontrol> column. Then configure the workflow state.</choice>
+                    <choice>To delete a custom state, click/tap the state's X icon in the <uicontrol>Actions</uicontrol> column.</choice>
+                    <choice>To rearrange the order of the custom states, use the arrows in the <uicontrol>Move</uicontrol> column.</choice>
                 </choices>
-                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-WorkflowMgmt-EditWorkflow.png"><alt>Workflow editing form</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-Workflows-EditWorkflow.png"><alt>Workflow editing form</alt></image></info>
             </step>
 
             <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-deleteworkflow"><cmd/></step> -->
             <!-- <step conkeyref="k-bpsteps/step-pb-deleteworkflow"><cmd/></step> -->
             <step id="step-pb-deleteworkflow">
                 <cmd>In the list, hover over the workflow to delete. Click/tap the X icon, then confirm.</cmd>
-                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-WorkflowMgmt-icons-X.png"><alt>X icon to delete the workflow</alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-Workflows-icons-X.png"><alt>X icon to delete the workflow</alt></image></info>
             </step>
 
 
@@ -371,13 +382,13 @@
             <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createpage-cmg"><cmd/></step> -->
             <!-- <step conkeyref="k-bpsteps/step-createpage-cmg"><cmd/></step> -->
             <step id="step-createpage-cmg">
-                <cmd><xref format="dita" href="building-your-site/create-page-pb-cmg.dita">Create a page via the <uicontrol>Persona Bar</uicontrol>.</xref></cmd>
+                <cmd><xref format="dita" href="building-your-site/create-page-pb-all.dita">Create a page via the <uicontrol>Persona Bar</uicontrol>.</xref></cmd>
             </step>
 
             <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createpage-adm"><cmd/></step> -->
             <!-- <step conkeyref="k-bpsteps/step-createpage-adm"><cmd/></step> -->
             <step id="step-createpage-adm">
-                <cmd><xref format="dita" href="building-your-site/create-page-pb-adm.dita">Create a page via the <uicontrol>Persona Bar</uicontrol>.</xref></cmd>
+                <cmd><xref format="dita" href="building-your-site/create-page-pb-all.dita">Create a page via the <uicontrol>Persona Bar</uicontrol>.</xref></cmd>
             </step>
 
             <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createpage-8.5"><cmd/></step> -->
@@ -386,7 +397,7 @@
                 <cmd>Create a page.</cmd>
                 <choices>
                     <choice><ph outputclass="audience-adm">Administrators:</ph>   <xref format="dita" href="building-your-site/create-page-cp-adm.dita">Create a page via the <uicontrol>Control Bar</uicontrol>.</xref></choice>
-                    <choice><ph outputclass="audience-cmg">Content Managers:</ph> <xref format="dita" href="building-your-site/create-page-pb-cmg.dita">Create a page via the <uicontrol>Persona Bar</uicontrol>.</xref></choice>
+                    <choice><ph outputclass="audience-cmg">Content Managers:</ph> <xref format="dita" href="building-your-site/create-page-pb-all.dita">Create a page via the <uicontrol>Persona Bar</uicontrol>.</xref></choice>
                 </choices>
             </step>
 
@@ -412,11 +423,11 @@
                         </sthead>
                         <strow>
                             <stentry><xref format="dita" href="building-your-site/create-page-cp-adm.dita">Create a page via the <uicontrol>Control Bar</uicontrol>.</xref></stentry>
-                            <stentry><xref format="dita" href="building-your-site/create-page-pb-cmg.dita">Create a page via the <uicontrol>Persona Bar</uicontrol>.</xref></stentry>
+                            <stentry><xref format="dita" href="building-your-site/create-page-pb-all.dita">Create a page via the <uicontrol>Persona Bar</uicontrol>.</xref></stentry>
                         </strow>
                         <strow>
                             <stentry><xref format="dita" href="building-your-site/copy-page-cp-adm.dita">Copy a page via the <uicontrol>Control Bar</uicontrol>.</xref></stentry>
-                            <stentry><xref format="dita" href="building-your-site/copy-page-pb-cmg.dita">Copy a page via the <uicontrol>Persona Bar</uicontrol>.</xref></stentry>
+                            <stentry><xref format="dita" href="building-your-site/copy-page-pb-all.dita">Copy a page via the <uicontrol>Persona Bar</uicontrol>.</xref></stentry>
                         </strow>
                         <strow>
                             <stentry><xref format="dita" href="building-your-site/edit-page-cp-adm.dita">Edit a page via the <uicontrol>Control Bar</uicontrol>.</xref></stentry>
@@ -442,8 +453,8 @@
             <step id="step-createcopyeditpage-pb-cmg" outputclass="audience-cmg">
                 <cmd>Create, copy, or edit a page via the <uicontrol>Persona Bar</uicontrol>.</cmd>
                 <choices>
-                    <choice><xref format="dita" href="building-your-site/create-page-pb-cmg.dita">Create a page.</xref></choice>
-                    <choice><xref format="dita" href="building-your-site/copy-page-pb-cmg.dita">Copy a page.</xref></choice>
+                    <choice><xref format="dita" href="building-your-site/create-page-pb-all.dita">Create a page.</xref></choice>
+                    <choice><xref format="dita" href="building-your-site/copy-page-pb-all.dita">Copy a page.</xref></choice>
                     <choice><xref format="dita" href="building-your-site/edit-page-pb-all.dita">Edit a page.</xref></choice>
                 </choices>
             </step>

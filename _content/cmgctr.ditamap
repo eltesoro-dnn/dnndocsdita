@@ -14,20 +14,22 @@
     <!-- Topics -->
     <topicref format="dita" type="topic" toc="yes" href="content-managers/index.dita" >
 
-        <topicref format="dita" type="topic" navtitle="What's New"    locktitle="yes" toc="yes" href="content-managers/whats-new-dnn.dita" />
-        <topicref format="dita" type="topic" navtitle="DNN Solutions" locktitle="yes" toc="yes" href="content-managers/dnn-overview.dita" />
+        <topicref format="dita" type="topic" navtitle="What's New in Features"      locktitle="yes" toc="yes" href="content-managers/whats-new-dnn.dita" />
+        <topicref format="dita" type="topic" navtitle="DNN Solutions"               locktitle="yes" toc="yes" href="content-managers/dnn-overview.dita" />
 
         <!-- Configuring Your Site for Content -->
-        <mapref href="content-managers/configuring-your-site/configuring-your-site-pb-cmg.ditamap" />
+        <mapref href="content-managers/configuring-your-site/configuring-your-site-pb-all.ditamap" />
 
         <!-- Building Your Site -->
-        <mapref href="content-managers/building-your-site/building-your-site-pb-cmg.ditamap" />
+        <mapref href="content-managers/building-your-site/building-your-site-pb.ditamap" />
 
         <!-- Securing Your Site -->
         <mapref href="content-managers/security/security-cmg.ditamap" />
 
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="content-managers/content-manager-references.dita" collection-type="family">
+            <topicref format="dita" type="topic"     toc="yes" href="content-managers/control-bar-to-persona-bar.dita" />
+            <topicref format="dita" type="topic"     toc="yes" href="content-managers/persona-bar-by-role.dita" />
             <topicref format="dita" type="reference" toc="yes" href="content-managers/included-modules/included-modules.dita" copy-to="content-managers/included-modules/index.dita" />
             <topicref format="dita" type="reference" toc="yes" href="content-managers/requirements.dita" />
             <topicref format="dita" type="reference" toc="yes" href="content-managers/product-versions.dita" />
@@ -49,6 +51,17 @@
             <relcolspec type="task"/>
             <relcolspec type="reference"/>
         </relheader>
+
+        <!-- all -->
+        <relrow>
+            <relcell/>
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="topic" href="content-managers/whats-new-dnn.dita" />
+                <topicref format="dita" type="topic" href="content-managers/control-bar-to-persona-bar.dita" />
+                <topicref format="dita" type="topic" href="content-managers/persona-bar-by-role.dita" />
+            </relcell>
+        </relrow>
 
         <!-- adm dev dsg cmg -->
         <relrow>
@@ -105,9 +118,9 @@
                 <topicref format="dita" type="topic"     href="content-managers/configuring-your-site/about-workflows.dita"/>
             </relcell>
             <relcell>
-                <topicref format="dita" type="task"      href="content-managers/configuring-your-site/create-workflow-pb-cmg.dita" />
-                <topicref format="dita" type="task"      href="content-managers/configuring-your-site/edit-workflow-pb-cmg.dita" />
-                <topicref format="dita" type="task"      href="content-managers/configuring-your-site/delete-workflow-pb-cmg.dita" />
+                <topicref format="dita" type="task"      href="content-managers/configuring-your-site/create-workflow-pb-all.dita" />
+                <topicref format="dita" type="task"      href="content-managers/configuring-your-site/edit-workflow-pb-all.dita" />
+                <topicref format="dita" type="task"      href="content-managers/configuring-your-site/delete-workflow-pb-all.dita" />
                 <topicref format="dita" type="task"      href="content-managers/configuring-your-site/configure-workflow-state-pb-all.dita" />
             </relcell>
             <relcell>

@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-persona-bar-by-role">
+
+    <title>Persona Bar by Role</title>
+    <titlealts>
+        <navtitle>Persona Bar by Role</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>orMC,wrET,1611</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <audience type="administrator" job="installing" />
+            <audience type="administrator" job="maintaining" />
+            <audience type="administrator" job="troubleshooting" />
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <audience type="programmer" job="programming" />
+            <audience type="other" othertype="designer" job="other" otherjob="designing" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <audience type="other" othertype="community manager" job="other" otherjob="moderating" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="5"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section id="overview">
+            <title>About the Persona Bar</title>
+
+            <p>DNN introduced the Persona Bar for content managers and community managers in Evoq 8.5. In Evoq 9.0 and DNN Platform 9.0, DNN extended the Persona Bar to replace the Control Panel/Bar for hosts and administrators. Many forms and dialogs were also redesigned to be more intuitive.</p>
+
+            <p><ph conkeyref="k-bptext/ph-pbar-varies"></ph></p>
+
+            <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../common/img/scr-pbar-host.gif"><alt>Persona Bar menus in Evoq Engage 9.0 for host</alt></image>
+        </section>
+
+        <section id="by-role">
+            <title>The Persona Bar by Role</title>
+
+            <!-- Host info verified. Need to verify accuracy for other roles. -->
+
+            <simpletable relcolwidth="1* 1*">
+                <sthead>
+                    <stentry></stentry>
+                    <stentry><uicontrol>Host</uicontrol></stentry>
+                    <stentry><uicontrol>Admin</uicontrol></stentry>
+                    <stentry><uicontrol>Content Manager</uicontrol></stentry>
+                    <stentry><uicontrol>Content Editor</uicontrol></stentry>
+                    <stentry><uicontrol>Community Manager</uicontrol></stentry>
+                </sthead>
+
+                <strow>
+                    <stentry><lines>Logo</lines></stentry>
+                    <stentry id="host-logo">
+<lines>Product + Version
+.Net Framework Version
+Server Name
+License Key
+Documentation (link)
+Customer Portal (link)
+Contact Support (link)
+Logout</lines>
+                    </stentry>
+                    <stentry id="adm-logo">
+<lines>Product + Version
+Documentation (link)
+Customer Portal (link)
+Contact Support (link)
+Logout</lines>
+                    </stentry>
+                    <stentry id="cmg-logo">
+<lines>Product + Version
+Documentation (link)
+Customer Portal (link)
+Contact Support (link)
+Logout</lines>
+                    </stentry>
+                    <stentry id="ced-logo">
+<lines>Product + Version
+Documentation (link)
+Customer Portal (link)
+Contact Support (link)
+Logout</lines>
+                    </stentry>
+                    <stentry id="mod-logo">
+<lines>Product + Version
+Documentation (link)
+Customer Portal (link)
+Contact Support (link)
+Logout</lines>
+                    </stentry>
+                </strow>
+
+                <strow>
+                    <stentry><lines>Dashboard</lines></stentry>
+                    <stentry id="host-dashboard">
+<lines>Site Analytics
+Community Analytics</lines>
+                    </stentry>
+                    <stentry id="adm-dashboard">
+<lines>Site Analytics
+Community Analytics</lines>
+                    </stentry>
+                    <stentry id="cmg-dashboard"><lines>Site Analytics</lines></stentry>
+                    <stentry id="ced-dashboard"><lines>Site Analytics</lines></stentry>
+                    <stentry id="mod-dashboard"><lines>Community Analytics</lines></stentry>
+                </strow>
+
+                <strow>
+                    <stentry><lines>Content</lines></stentry>
+                    <stentry id="host-content">
+<lines>Assets
+Pages
+Forms
+Content Items
+Recycle Bin</lines>
+                    </stentry>
+                    <stentry id="adm-content">
+<lines>Assets
+Pages
+Forms
+Content Items
+Recycle Bin</lines>
+                    </stentry>
+                    <stentry id="cmg-content">
+<lines>Assets
+Pages
+Forms
+Content Items
+Recycle Bin</lines>
+                    </stentry>
+                    <stentry id="ced-content">
+<lines>Assets
+Pages
+Forms
+Content Items</lines>
+                    </stentry>
+                    <stentry id="mod-content"><lines>Assets</lines></stentry>
+                </strow>
+
+                <strow>
+                    <stentry><lines>Manage</lines></stentry>
+                    <stentry id="host-manage">
+<lines>Users
+Roles
+Templates
+Themes
+Sites
+Admin Logs</lines>
+                    </stentry>
+                    <stentry id="adm-manage">
+<lines>Users
+Roles
+Templates
+Themes
+Admin Logs</lines>
+                    </stentry>
+                    <stentry id="cmg-manage">
+<lines>Users
+Templates</lines>
+                    </stentry>
+                    <stentry id="ced-manage"><lines>(not available)</lines></stentry>
+                    <stentry id="mod-manage">
+<lines>Users
+Templates</lines>
+                    </stentry>
+                </strow>
+
+                <strow>
+                    <stentry><lines>Page Analytics</lines></stentry>
+                    <stentry id="host-analytics"><lines>(available)</lines></stentry>
+                    <stentry id="adm-analytics"><lines>(available)</lines></stentry>
+                    <stentry id="cmg-analytics"><lines>(available)</lines></stentry>
+                    <stentry id="ced-analytics"><lines>(available)</lines></stentry>
+                    <stentry id="mod-analytics"><lines>(available)</lines></stentry>
+                </strow>
+
+                <strow>
+                    <stentry><lines>Settings</lines></stentry>
+                    <stentry id="host-settings">
+<lines>Site Settings
+Security
+Workflow
+SEO
+Community
+Gamification
+Vocabularies
+Connectors
+Extensions
+Servers
+Scheduler
+Custom CSS
+SQL Console
+Config Manager
+About</lines>
+                    </stentry>
+                    <stentry id="adm-settings">
+<lines>Site Settings
+Security
+Workflow
+SEO
+Community
+Gamification
+Vocabularies
+Connectors
+Extensions
+Servers
+Custom CSS</lines>
+                    </stentry>
+                    <stentry id="cmg-settings">
+<lines>Workflow
+Connectors</lines>
+                    </stentry>
+                    <stentry id="ced-settings"><lines>(not available)</lines></stentry>
+                    <stentry id="mod-settings">
+<lines>Community
+Gamification
+Connectors</lines>
+                    </stentry>
+                </strow>
+
+                <strow>
+                    <stentry><lines>Edit Page</lines></stentry>
+                    <stentry id="host-edit"><lines>(available)</lines></stentry>
+                    <stentry id="adm-edit"><lines>(available)</lines></stentry>
+                    <stentry id="cmg-edit"><lines>(available)</lines></stentry>
+                    <stentry id="ced-edit"><lines>(available)</lines></stentry>
+                    <stentry id="mod-edit"><lines>(not available)</lines></stentry>
+                </strow>
+            </simpletable>
+
+        </section>
+
+    </body>
+
+</topic>

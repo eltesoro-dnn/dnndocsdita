@@ -1,6 +1,8 @@
 @echo off
 if _%1_ EQU __ goto :usage
 
+powershell -file convertxlsx2csv.ps1 W:\_tools\mkbp
+
 echo. > mkbp-pbar-steps.out
 echo. > mkbp-css.out
 for %%v in ( %* ) do  for /f "usebackq" %%w in ( `dir %%v /b` ) do (
@@ -13,3 +15,4 @@ goto :eof
 
 :usage
 echo USAGE: %0 pbar-xxxyyy.csv
+echo EXAMPLE: %0 *E90*csv
