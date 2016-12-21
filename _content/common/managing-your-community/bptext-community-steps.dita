@@ -43,8 +43,8 @@
                 <!-- <strow conref="bptext-community-steps.dita#tsk-bptext-community-steps/strow-field-MinMax"><stentry/></strow> -->
                 <strow id="strow-field-MinMax">
                     <stentry>
-                        <lines><uicontrol>Min Value</uicontrol>
-                               <uicontrol>Max Value</uicontrol></lines>
+<lines><uicontrol>Min Value</uicontrol>
+<uicontrol>Max Value</uicontrol></lines>
                     </stentry>
                     <stentry>The minimum and maximum allowed for <uicontrol>Value</uicontrol>.</stentry>
                 </strow>

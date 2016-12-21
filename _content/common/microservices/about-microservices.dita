@@ -4,7 +4,7 @@
 
     <title>About Microservices</title>
     <titlealts>
-        <navtitle>About Microservices</navtitle>
+        <navtitle>Microservices</navtitle>
     </titlealts>
 
 
@@ -52,6 +52,10 @@
                     <stentry>An infrastructure service that validates a user. Requires the client site's credentials and the user's credentials. Returns JWT containing the access and renewal tokens. The access token must be included in requests to other microservices to vouch for the user's identity.</stentry>
                 </strow>
                 <strow>
+                    <stentry>Analytics</stentry>
+                    <stentry>An infrastructure service that provides an interface with Google Analytics to help you analyze traffic on your site.</stentry>
+                </strow>
+                <strow>
                     <stentry>Structured Content</stentry>
                     <stentry>A functional service that stores and serves content items to be displayed in a webpage or an app. Includes content items, content types, and visualizers.</stentry>
                 </strow>
@@ -64,6 +68,8 @@
                     <stentry></stentry>
                 </strow> -->
             </simpletable>
+
+            <note type="important">Microservices must be enabled by the host/superuser for a site before they can be used.</note>
 
             <image outputclass="img-gra" href="../../common/img/gra-evoq-microservices-overview.png"><alt></alt></image>
 

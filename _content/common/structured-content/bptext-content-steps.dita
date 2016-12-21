@@ -81,10 +81,22 @@
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentTypes-List-TabCreateBtn.png"><alt>Content &gt; Content Types tab &gt; Create Content Type</alt></image></info>
             </step>
 
-            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttypetab-highlightellipses"><cmd/></step> -->
-            <step id="step-gotocontenttypetab-highlightellipses">
-                <cmd>In the <uicontrol>Content Types</uicontrol> tab, highlight a content type and click/tap the ellipses.</cmd>
-                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentTypes-List-TabEllipses.png"><alt>Content Type ellipses menu</alt></image></info>
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttypetab-highlightellipses-edit"><cmd/></step> -->
+            <step id="step-gotocontenttypetab-highlightellipses-edit">
+                <cmd>In the <uicontrol>Content Types</uicontrol> tab, highlight the content type, click/tap the ellipses, and choose <uicontrol>Edit</uicontrol>.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentTypes-List-TabEllipses-Edit.png"><alt>Content Type ellipses menu &gt; Edit</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttypetab-highlightellipses-duplicate"><cmd/></step> -->
+            <step id="step-gotocontenttypetab-highlightellipses-duplicate">
+                <cmd>In the <uicontrol>Content Types</uicontrol> tab, highlight the content type, click/tap the ellipses, and choose <uicontrol>Duplicate</uicontrol>.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentTypes-List-TabEllipses-Duplicate.png"><alt>Content Type ellipses menu &gt; Duplicate</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttypetab-highlightellipses-delete"><cmd/></step> -->
+            <step id="step-gotocontenttypetab-highlightellipses-delete">
+                <cmd>In the <uicontrol>Content Types</uicontrol> tab, highlight the content type, click/tap the ellipses, and choose <uicontrol>Delete</uicontrol>.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentTypes-List-TabEllipses-Delete.png"><alt>Content Type ellipses menu &gt; Delete</alt></image></info>
             </step>
 
             <!-- <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contenttype-configurecontenttype"><cmd/></step> -->
@@ -119,19 +131,19 @@
                 <substeps>
                     <substep>
                         <cmd><ph conkeyref="k-bptext/ph-fieldadd"></ph></cmd>
-                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Add.png"><alt>Drag and drop a field to the canvas</alt></image></info>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Add.png"><alt>Drag and drop a field to the canvas.</alt></image></info>
                     </substep>
                     <substep>
                         <cmd><ph conkeyref="k-bptext/ph-fieldedit"></ph></cmd>
-                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Edit.png"><alt>Click/Tap a field in the canvas</alt></image></info>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Edit.png"><alt>Click/Tap a field in the canvas, then configure its settings.</alt></image></info>
                     </substep>
                     <substep>
                         <cmd><ph conkeyref="k-bptext/ph-fielddup"></ph></cmd>
-                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Hover-Dup.png"><alt>Click/Tap a field in the canvas</alt></image></info>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Hover-Dup.png"><alt>Hover over a field in the canvas, then click/tap the duplicate icon.</alt></image></info>
                     </substep>
                     <substep>
                         <cmd><ph conkeyref="k-bptext/ph-fielddel"></ph></cmd>
-                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Hover-Del.png"><alt>Click/Tap a field in the canvas</alt></image></info>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentField-Hover-Del.png"><alt>Hover over a field in the canvas, then click/tap the trash icon.</alt></image></info>
                     </substep>
                 </substeps>
             </step>
@@ -225,17 +237,19 @@
                 <cmd>In the <uicontrol>Editor</uicontrol> tab, design the visualizer.</cmd>
                 <substeps>
                     <substep>
-                        <cmd>In the <uicontrol>Template</uicontrol> editor, enter the HTML code to format the content item.</cmd>
+                        <cmd>In the <uicontrol>Template</uicontrol> editor, enter the HTML code to format each content item (<uicontrol>Template</uicontrol>), as well as the <uicontrol>Header</uicontrol> and <uicontrol>Footer</uicontrol> of the list of content items.</cmd>
                         <info>
-                            <note type="tip">Choose the content type in the <uicontrol>Details</uicontrol> tab before editing the visualizer HTML code. Then the fields of the selected content type are added to the <uicontrol>Template</uicontrol> editor as placeholders for the field value(s).</note>
+                            <p>The header and the footer enclose the list of content items in a page. Example: If you want the content items to be displayed as bullets in an unordered list, the <uicontrol>Header</uicontrol> can contain the opening <codeph>&lt;ul&gt;</codeph> tag and the <uicontrol>Footer</uicontrol> can contain the closing <codeph>&lt;/ul&gt;</codeph> tag.</p>
 
-                            <p>Each placeholder is the reformatted name of the content field enclosed in double curly brackets. Example: The placeholder for the field called <userinput>Recipe Name</userinput> is <codeph>{{recipeName}}</codeph>.</p>
+                            <note type="tip">Choose the content type in the <uicontrol>Details</uicontrol> tab before editing the visualizer HTML code. The fields of the selected content type are added to the <uicontrol>Template</uicontrol> editor as placeholders for the field value(s). They are also displayed in a dropdown that appears when you press <uicontrol><shortcut>Ctrl+Space</shortcut></uicontrol>.</note>
+
+                            <p>Each placeholder is the reformatted name of the content field enclosed in double curly brackets. Example: The placeholder for a field called <userinput>Recipe Name</userinput> is <codeph>{{recipeName}}</codeph>.</p>
 
                             <p>If the field has multiple values (e.g., multiple choice fields), the values are comma-separated.</p>
 
-                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Editor-Template.gif"><alt>Content &gt; Visualizers tab &gt; Editor &gt; Template with field tokens</alt></image>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Editor-Template.gif"><alt>Content &gt; Visualizers tab &gt; Editor &gt; Template with field placeholders</alt></image>
 
-                            <note type="tip">Because the tokens hide the inner tags, such as <codeph>&lt;img/&gt;</codeph> or <codeph>&lt;p/&gt;</codeph>, wrap the tokens with <codeph>&lt;div/&gt;</codeph> tags with <codeph>class</codeph> names or <codeph>id</codeph> names that you can refer to in the CSS code. Example: <codeph>&lt;div class=&quot;myimgdiv&quot;&gt;{{ myImg }}&lt;/div&gt;</codeph></note>
+                            <note type="tip">Because the placeholders hide the inner tags, such as <codeph>&lt;img/&gt;</codeph> or <codeph>&lt;p/&gt;</codeph>, you can wrap the placeholders with <codeph>&lt;div/&gt;</codeph> tags with <codeph>class</codeph> names or <codeph>id</codeph> names that you can refer to in the CSS code. Example: <codeph>&lt;div class=&quot;myimgdiv&quot;&gt;{{ myImg }}&lt;/div&gt;</codeph></note>
                         </info>
                     </substep>
 

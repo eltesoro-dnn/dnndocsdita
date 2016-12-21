@@ -9,22 +9,20 @@
 
 
     <prolog>
-        <author>wrET,1607</author>
+        <author>wrET,1612</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
             <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
-			<!--
             <prodinfo>
                 <prodname>Evoq Content</prodname>
                 <vrmlist><vrm version="9" release="0"/></vrmlist>
             </prodinfo>
-			-->
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="8" release="5"/></vrmlist>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
             </prodinfo>
         </metadata>
     </prolog>
@@ -35,7 +33,9 @@
 		<section conkeyref="k-bptext/section-prodavail-E"></section>
 
         <steps>
-			<step conkeyref="k-bpsteps/step-pb-gotomanageforms"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Content-Forms-E90"><cmd/></step>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-Forms-E90"><cmd/></step>
+
             <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-highlightellipses-delete"><cmd/></step>
             <step><cmd>Confirm.</cmd></step>
         </steps>

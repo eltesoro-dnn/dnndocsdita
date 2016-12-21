@@ -34,12 +34,21 @@
         <!-- <ph conkeyref="k-bptext/ph-PrereqCommunityMgr"></ph> -->
         <ph id="ph-PrereqCommunityMgr"><b>A community manager account for the site.</b> Community managers have access to community-related features and settings in Evoq Engage.</ph>
 
+        <!-- <ph conref="../../common/bptext.dita#top-bptext/ph-PrereqMicroservicesEnabled"></ph> -->
+        <!-- <ph conkeyref="k-bptext/ph-PrereqMicroservicesEnabled"></ph> -->
+        <ph id="ph-PrereqMicroservicesEnabled"><b>Microservices must be enabled for your site.</b></ph>
 
+        <!-- <ph conref="../../common/bptext.dita#top-bptext/ph-PrereqFBSCMicroservicesEnabled"></ph> -->
+        <!-- <ph conkeyref="k-bptext/ph-PrereqFBSCMicroservicesEnabled"></ph> -->
+        <ph id="ph-PrereqFBSCMicroservicesEnabled"><b>Both the Form Builder and the Structured Content microservices must be enabled for your site.</b></ph>
 
         <!-- <ph conref="../../common/bptext.dita#top-bptext/ph-RFC2119"></ph> -->
         <!-- <ph conkeyref="k-bptext/ph-RFC2119"></ph> -->
         <ph id="ph-RFC2119">The key words "MUST", "MUST NOT", "REQUIRED", "SHALL", "SHALL NOT", "SHOULD", "SHOULD NOT", "RECOMMENDED",  "MAY", and "OPTIONAL" in this document are to be interpreted as described in <xref format="html" scope="external" href="https://www.ietf.org/rfc/rfc2119.txt">RFC 2119</xref>.
         </ph>
+
+
+
 
         </p>
 

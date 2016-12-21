@@ -35,9 +35,9 @@
 
         <section id="basics">
 
-            <p>In a Visualizer template, tokens represent the fields in the content type associated with the visualizer. The token is comprised of the field name with spaces stripped out and the first letter of the first word lowercased. Then the new word is enclosed in double curly brackets {{}}. Example: If the field is named <userinput>Meeting Timeslot</userinput>, the field's token would be <codeph>{{ meetingTimeslot }}</codeph>.</p>
+            <p>In a Visualizer template, placeholders represent the fields in the content type associated with the visualizer. The field placeholder is comprised of the field name with spaces stripped out and the first letter of the first word lowercased. Then the new word is enclosed in double curly brackets {{}}. Example: If the field is named <userinput>Meeting Timeslot</userinput>, the field's placeholder would be <codeph>{{ meetingTimeslot }}</codeph>.</p>
 
-            <note type="tip"><userinput>Ctrl+Space</userinput> displays a dropdown list of the fields in the associated content type. Choose the field from the list to automatically enter its token in the canvas.</note>
+            <note type="tip"><userinput>Ctrl+Space</userinput> displays a dropdown list of the fields in the associated content type. Choose the field from the list to automatically enter its placeholder in the canvas.</note>
 
             <p>The double curly brackets can also contain an expression, such as:</p>
             <simpletable relcolwidth="1* 3* 3* 2*">

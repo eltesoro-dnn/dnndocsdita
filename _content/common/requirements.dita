@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
-<reference xml:lang="en" id="DNN8Requirements">
+<reference xml:lang="en" id="top-requirements">
 
     <title>DNN Requirements</title>
     <titlealts>
@@ -8,7 +8,7 @@
     </titlealts>
 
     <prolog>
-        <author>wrET,trJB,ceDS,1601</author>
+        <author>wrET,trCP,1612</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -26,13 +26,12 @@
     <refbody>
 
         <section id="overview">
-            <p>The following are required for DNN Platform 8.0 and DNN Evoq 8.3.</p>
+            <p>The following are required for DNN Platform 9.0 and DNN Evoq 9.0.</p>
         </section>
 
         <section id="OS">
             <title>Supported Operating Systems</title>
             <ul>
-                <li>Windows 7</li>
                 <li>Windows 8</li>
                 <li>Windows 8.1</li>
                 <li>Windows 10</li>
@@ -78,7 +77,7 @@
             <ul>
                 <li>Chrome</li>
                 <li>Firefox</li>
-                <li>IE 9+</li>
+                <li>IE 11</li>
                 <li>Microsoft Edge</li>
                 <li>Safari for Mac</li>
             </ul>

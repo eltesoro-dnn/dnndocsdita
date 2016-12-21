@@ -11,7 +11,13 @@
 
 		<topicref audience="adm"         format="dita" type="task"  toc="yes" href="assign-key-pages.dita" />
 
-        <topicref audience="adm cmg mod" format="dita" type="task"  toc="yes" href="configure-connections-pb-all.dita" />
+		<topicref audience="adm cmg"     format="dita" type="topic" toc="yes" href="about-connectors.dita" collection-type="family">
+            <topicref audience="adm cmg mod" format="dita" type="task"  toc="yes" href="configure-connectors-pb-all.dita" />
+		</topicref>
+
+		<topicref audience="adm"        format="dita" type="topic" toc="yes" href="../microservices/about-microservices.dita" collection-type="family">
+            <topicref audience="adm"         format="dita" type="task"  toc="yes" href="enable-microservices-pb-all.dita" />
+		</topicref>
 
 		<topicref audience="adm cmg"     format="dita" type="topic" toc="yes" href="about-workflows.dita" collection-type="family">
 			<topicref format="dita" type="task" toc="yes" href="create-workflow-pb-all.dita" />
@@ -26,5 +32,26 @@
 		</topicref>
 
 	</topicref>
+
+
+    <!-- RelTables -->
+    <reltable>
+        <relheader>
+            <relcolspec type="concept"/>
+            <relcolspec type="task"/>
+            <relcolspec type="reference"/>
+        </relheader>
+
+        <!-- all -->
+        <relrow audience="adm">
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="task"  href="enable-microservices-pb-all.dita" />
+                <topicref format="dita" type="topic" href="../microservices/about-microservices.dita" />
+            </relcell>
+            <relcell/>
+        </relrow>
+
+    </reltable>
 
 </map>

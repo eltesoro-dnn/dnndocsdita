@@ -136,7 +136,13 @@
                            <li><uicontrol>Security Settings</uicontrol> subtab</li>
                        </ol>
                     </stentry>
-                    <stentry></stentry>
+                    <stentry>
+                       <ol>
+                           <li><menucascade><uicontrol>Settings</uicontrol> <uicontrol>Security</uicontrol></menucascade></li>
+                           <li><uicontrol>Login Settings</uicontrol> tab</li>
+                           <li><uicontrol>Basic Login Settings</uicontrol> subtab</li>
+                       </ol>
+                    </stentry>
                 </strow>
                 <strow>
                     <stentry>
@@ -146,7 +152,7 @@
                            <li><uicontrol>Payment Settings</uicontrol> subtab</li>
                        </ol>
                     </stentry>
-                    <stentry></stentry>
+                    <stentry>(deprecated)</stentry>
                 </strow>
                 <strow>
                     <stentry>
@@ -156,7 +162,13 @@
                            <li><uicontrol>Usability Settings</uicontrol> subtab</li>
                        </ol>
                     </stentry>
-                    <stentry></stentry>
+                    <stentry>
+                       <ol>
+                           <li><menucascade><uicontrol>Settings</uicontrol> <uicontrol>Site Settings</uicontrol></menucascade></li>
+                           <li><uicontrol>Site Info</uicontrol> tab</li>
+                       </ol>
+                       <p><uicontrol>Site TimeZone</uicontrol> only. The rest were deprecated.</p>
+                    </stentry>
                 </strow>
                 <strow>
                     <stentry>
@@ -304,7 +316,13 @@
                            <li><uicontrol>Page Output Settings</uicontrol> subtab</li>
                        </ol>
                     </stentry>
-                    <stentry></stentry>
+                    <stentry>
+                       <ol>
+                           <li><menucascade><uicontrol>Settings</uicontrol> <uicontrol>Site Behavior</uicontrol></menucascade></li>
+                           <li><uicontrol>Default Pages</uicontrol> tab</li>
+                       </ol>
+                       <p><uicontrol>HTML Page Header Tags</uicontrol> only. The rest were deprecated.</p>
+                    </stentry>
                 </strow>
                 <strow>
                     <stentry>
@@ -369,7 +387,13 @@
                            <li><uicontrol>URL Settings</uicontrol> subtab</li>
                        </ol>
                     </stentry>
-                    <stentry></stentry>
+                    <stentry>
+                       <ol>
+                           <li><menucascade><uicontrol>Settings</uicontrol> <uicontrol>SEO</uicontrol></menucascade></li>
+                           <li><uicontrol>URL Management</uicontrol> tab</li>
+                           <li><uicontrol>General Settings</uicontrol> subtab</li>
+                       </ol>
+                    </stentry>
                 </strow>
                 <strow>
                     <stentry>
@@ -379,7 +403,7 @@
                            <li><uicontrol>Extension URL Providers</uicontrol> subtab</li>
                        </ol>
                     </stentry>
-                    <stentry></stentry>
+                    <stentry>(not yet available)</stentry>
                 </strow>
                 <strow>
                     <stentry><menucascade><uicontrol>Admin</uicontrol> <uicontrol>User Accounts</uicontrol></menucascade></stentry>
@@ -882,7 +906,12 @@
                     </stentry>
                 </strow>
                 <strow>
-                    <stentry><menucascade><uicontrol>Host</uicontrol> <uicontrol>Security Analyzer</uicontrol></menucascade></stentry>
+                    <stentry>
+                       <ol>
+                           <li><menucascade><uicontrol>Host</uicontrol> <uicontrol>Security Analyzer</uicontrol></menucascade></li>
+                           <li><uicontrol>Audit Checks</uicontrol> tab</li>
+                       </ol>
+                    </stentry>
                     <stentry>
                        <ol>
                            <li><menucascade><uicontrol>Settings</uicontrol> <uicontrol>Security</uicontrol></menucascade></li>
@@ -892,7 +921,12 @@
                     </stentry>
                 </strow>
                 <strow>
-                    <stentry><menucascade><uicontrol>Host</uicontrol> <uicontrol>Security Analyzer</uicontrol></menucascade></stentry>
+                    <stentry>
+                       <ol>
+                           <li><menucascade><uicontrol>Host</uicontrol> <uicontrol>Security Analyzer</uicontrol></menucascade></li>
+                           <li><uicontrol>Search Filesystem and Database</uicontrol> tab</li>
+                       </ol>
+                    </stentry>
                     <stentry>
                        <ol>
                            <li><menucascade><uicontrol>Settings</uicontrol> <uicontrol>Security</uicontrol></menucascade></li>
@@ -902,7 +936,12 @@
                     </stentry>
                 </strow>
                 <strow>
-                    <stentry><menucascade><uicontrol>Host</uicontrol> <uicontrol>Security Analyzer</uicontrol></menucascade></stentry>
+                    <stentry>
+                       <ol>
+                           <li><menucascade><uicontrol>Host</uicontrol> <uicontrol>Security Analyzer</uicontrol></menucascade></li>
+                           <li><uicontrol>Super User Activity</uicontrol> tab</li>
+                       </ol>
+                    </stentry>
                     <stentry>
                        <ol>
                            <li><menucascade><uicontrol>Settings</uicontrol> <uicontrol>Security</uicontrol></menucascade></li>
@@ -912,7 +951,12 @@
                     </stentry>
                 </strow>
                 <strow>
-                    <stentry><menucascade><uicontrol>Host</uicontrol> <uicontrol>Security Analyzer</uicontrol></menucascade></stentry>
+                    <stentry>
+                       <ol>
+                           <li><menucascade><uicontrol>Host</uicontrol> <uicontrol>Security Analyzer</uicontrol></menucascade></li>
+                           <li><uicontrol>Recently Modified Files</uicontrol> tab</li>
+                       </ol>
+                    </stentry>
                     <stentry>
                        <ol>
                            <li><menucascade><uicontrol>Settings</uicontrol> <uicontrol>Security</uicontrol></menucascade></li>
@@ -922,7 +966,12 @@
                     </stentry>
                 </strow>
                 <strow>
-                    <stentry><menucascade><uicontrol>Host</uicontrol> <uicontrol>Security Analyzer</uicontrol></menucascade></stentry>
+                    <stentry>
+                       <ol>
+                           <li><menucascade><uicontrol>Host</uicontrol> <uicontrol>Security Analyzer</uicontrol></menucascade></li>
+                           <li><uicontrol>Recently Modified Settings</uicontrol> tab</li>
+                       </ol>
+                    </stentry>
                     <stentry>
                        <ol>
                            <li><menucascade><uicontrol>Settings</uicontrol> <uicontrol>Security</uicontrol></menucascade></li>

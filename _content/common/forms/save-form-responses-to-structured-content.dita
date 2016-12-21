@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-save-form-responses-to-structured-content">
+
+    <title>Save Form Responses to Structured Content</title>
+    <titlealts>
+        <navtitle>Save Form Responses to Structured Content</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1612</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-CE"></section>
+
+        <section id="overview">
+            <p>DNN provides a connector that links the Form Builder microservice with the Structured Content microservice. With this connector, you can save pieces of a response to a form as a structured content, which you can then reuse. Example: If your website uses a form to collect reviews and ratings from your readers, you can save those reviews and ratings in the Structured Content microservice to be published in another page in your website.</p>
+        </section>
+
+        <prereq><ph conkeyref="k-bptext/ph-PrereqFBSCMicroservicesEnabled"></ph></prereq>
+
+        <steps>
+			<step audience="adm" conkeyref="k-bppbar/step-pb-adm-Content-Forms-E90"><cmd/></step>
+			<step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-Forms-E90"><cmd/></step>
+
+            <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-createoreditform"><cmd/></step>
+
+            <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-forms-configurationtab"><cmd/></step>
+
+            <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-forms-config-datacollection"><cmd/></step>
+
+            <step><cmd>Click/Tap the <uicontrol>Configure</uicontrol> button for <uicontrol>Evoq Content Type</uicontrol>.</cmd></step>
+
+            <step>
+                <cmd>Choose the content type for the new content items that will hold data from the form submissions. Then click/tap <uicontrol>Save &amp; Configure</uicontrol>.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-Config-DataCollection-EvoqContentType-ContentType.png"><alt>Form Configuration - Data Collection - Evoq Content Type - Content Type, then Save &amp; Configure</alt></image>
+                </info>
+            </step>
+
+            <step>
+                <cmd>Fill in the content item information.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-Config-DataCollection-EvoqContentType-ContentItemInfo.png"><alt>Form Configuration - Data Collection - Evoq Content Type - Fill in the content item information.</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry>Content Item Name</stentry>
+                            <stentry>Choose the form field to use as the content item name.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>Content Item Tags</stentry>
+                            <stentry>Tags to associate with the created content items.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry>Content Item Description</stentry>
+                            <stentry>The description for each content item created.</stentry>
+                        </strow>
+                    </simpletable>
+                </info>
+            </step>
+
+            <step>
+                <cmd>Under <uicontrol>Configure Content Type Fields from Form (Mapping)</uicontrol>, choose the equivalent form field for every content type field.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-Config-DataCollection-EvoqContentType-Mapping.png"><alt>Form Configuration - Data Collection - Evoq Content Type - Map the fields of the form to the fields of the content type.</alt></image>
+                </info>
+            </step>
+
+        </steps>
+
+    </taskbody>
+
+</task>

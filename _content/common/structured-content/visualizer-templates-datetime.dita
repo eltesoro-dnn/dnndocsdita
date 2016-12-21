@@ -35,13 +35,13 @@
 
         <section id="datetime">
 
-            <p>You can choose which components of a <uicontrol>Date / Time</uicontrol> field are displayed using the <codeph>date</codeph> filter in the token. Without the filter, the token would return the full date and the full time.</p>
+            <p>You can choose which components of a <uicontrol>Date / Time</uicontrol> field are displayed using the <codeph>date</codeph> filter in the placeholder. Without the filter, the placeholder would return the full date and the full time.</p>
 
             <note type="important">When creating a content item, the value of a <uicontrol>Date / Time</uicontrol> field must be entered as Universal Time Coordinated (UTC) time or Greenwich Mean Time (GMT), not the local time. However, the date and time will be converted to the local time when the content item is displayed.</note>
 
-            <p>Example: Suppose the value of the "My Datetime" field (token: <userinput>{{ myDatetime }}</userinput>) is 2016 September 3, Saturday, 1:04 AM UTC. Suppose the local timezone is UTC+7; i.e., 08:04 AM Pacific Daylight Time.
+            <p>Example: Suppose the value of the "My Datetime" field (placeholder: <userinput>{{ myDatetime }}</userinput>) is 2016 September 3, Saturday, 1:04 AM UTC. Suppose the local timezone is UTC+7; i.e., 08:04 AM Pacific Daylight Time.
                 <ul>
-                    <li>The token with the <codeph>date</codeph> filter would be <codeph>{{ myDatetime | date: [format] }}</codeph>, where <codeph>[format]</codeph> is a string specifying which components of the date/time to use.</li>
+                    <li>The placeholder with the <codeph>date</codeph> filter would be <codeph>{{ myDatetime | date: [format] }}</codeph>, where <codeph>[format]</codeph> is a string specifying which components of the date/time to use.</li>
                     <li>You can combine the format components; therefore, <codeph>{{ myDatetime | date: "MMM dd, yyyy" }}</codeph> returns <systemoutput>Sep 03, 2016</systemoutput>.</li>
                     <li>Without filters, the field would be displayed as <uicontrol>9/3/2016 8:04:00 AM</uicontrol>, depending on the local settings.</li>
                 </ul>

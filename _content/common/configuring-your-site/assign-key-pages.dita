@@ -44,7 +44,7 @@
 
         <steps>
             <step conkeyref="k-bppbar/step-pb-adm-Settings-SiteSettings-E90"><cmd/></step>
-            <step conkeyref="k-bpsteps/step-pb-sitesettings-sitebehavior-defaultpages"><cmd/></step>
+            <step conkeyref="k-bpsteps/step-pb-SiteSettings-SiteBehavior-DefaultPages-E90"><cmd/></step>
             <step>
 				<cmd>Choose an existing page in your site to assign to each key page setting.</cmd>
 				<info>

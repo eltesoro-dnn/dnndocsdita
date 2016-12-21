@@ -14,8 +14,7 @@
             <topicref format="dita" type="task" toc="yes" href="edit-form.dita" />
             <topicref format="dita" type="task" toc="yes" href="duplicate-form.dita" />
             <topicref format="dita" type="task" toc="yes" href="delete-form.dita" />
-            <!-- <topicref format="dita" type="task" toc="yes" href="add-form-to-page.dita" /> -->
-            <!-- <topicref format="dita" type="task" toc="yes" href="publish-form.dita" /> -->
+            <topicref format="dita" type="task" toc="yes" href="embed-form.dita" />
             <topicref format="dita" type="task" toc="yes" href="view-form-responses.dita" />
         </topichead>
         <!-- </topicref> -->
@@ -43,6 +42,8 @@
 
         <topicref format="dita" type="topic" toc="yes" href="about-hidden-fields.dita" />
         <!-- <topicref format="dita" type="task" toc="yes" href="example-survey.dita" /> -->
+
+        <topicref format="dita" type="topic" toc="yes" href="save-form-responses-to-structured-content.dita" />
 
     </topicref>
 
@@ -78,6 +79,7 @@
             </relcell>
             <relcell>
                 <topicref format="dita" type="topic" href="about-hidden-fields.dita" />
+                <topicref format="dita" type="topic" href="save-form-responses-to-structured-content.dita" />
             </relcell>
         </relrow>
 

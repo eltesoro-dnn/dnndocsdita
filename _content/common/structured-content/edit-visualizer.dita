@@ -38,8 +38,12 @@
 			<note conkeyref="k-bptext/note-DNNVisualizersNoEdit"></note>
 		</section>
 
+        <prereq><ph conkeyref="k-bptext/ph-PrereqMicroservicesEnabled"></ph></prereq>
+
         <steps>
-			<step conkeyref="k-bpsteps/step-pb-gotomanagecontent"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Content-ContentItems-E90"><cmd/></step>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-ContentItems-E90"><cmd/></step>
+
             <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotovisualizertab"><cmd/></step>
             <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-choosevisualizer"><cmd/></step>
 			<step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-configurevisualizerproperties"><cmd/></step>

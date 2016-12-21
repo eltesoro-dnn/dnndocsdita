@@ -67,28 +67,35 @@
 
                 <!-- ========== FORM FIELDS: DATA COLLECTION ========== -->
 
+                <!-- Always on in Evoq 9.0. -->
                 <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-database"><stentry/></strow> -->
                 <strow id="strow-field-database">
                     <stentry><uicontrol>Database</uicontrol></stentry>
                     <stentry>If enabled (<uicontrol>On</uicontrol>), data in form submissions are sent to your DNN Evoq database for this site.</stentry>
                 </strow>
 
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-evoqcontenttype"><stentry/></strow> -->
+                <strow id="strow-field-evoqcontenttype">
+                    <stentry><uicontrol>Evoq Content Type</uicontrol></stentry>
+                    <stentry>If configured, data in form submissions are converted into content items of the specified content type for use as structured content. To configure, choose the content type for the new content items that would be populated with data from the form submissions, then map the form fields to the content type fields. See <xref format="dita" href="save-form-responses-to-structured-content.dita">Save Form Responses to Structured Content</xref>.</stentry>
+                </strow>
+
                 <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-customurl"><stentry/></strow> -->
                 <strow id="strow-field-customurl">
                     <stentry><uicontrol>Custom URL</uicontrol></stentry>
-                    <stentry>If enabled (<uicontrol>On</uicontrol>), data in form submissions are sent to the specified URL for processing and storage.</stentry>
+                    <stentry>If connected, data in form submissions are sent to the specified <uicontrol>Custom Endpoint URL</uicontrol> for processing and storage.</stentry>
                 </strow>
 
                 <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-googleanalytics"><stentry/></strow> -->
                 <strow id="strow-field-googleanalytics">
                     <stentry><uicontrol>Google Analytics</uicontrol></stentry>
-                    <stentry>If enabled (<uicontrol>On</uicontrol>), you must fill in information required by Google Analytics.
+                    <stentry>If connected, the form submissions are tracked using Google Analytics. To connect, click/tap <uicontrol>Connect</uicontrol> then fill in the information required by Google Analytics.
                         <ul>
                             <li><uicontrol>Tracking ID</uicontrol>. This is provided by Google Analytics.</li>
-                            <li><uicontrol>Event Category</uicontrol>.</li>
-                            <li><uicontrol>Event Action</uicontrol>.</li>
-                            <li><uicontrol>Event Label</uicontrol>.</li>
-                            <li><uicontrol>Event Value</uicontrol>.</li>
+                            <li><uicontrol>Event Category</uicontrol>. Leave as <uicontrol>Form</uicontrol>.</li>
+                            <li><uicontrol>Event Action</uicontrol>. Leave as <uicontrol>Submit</uicontrol>, if you want the event to be logged only when the user submits the form.</li>
+                            <li><uicontrol>Event Label</uicontrol>. The name of the event. Default: The name of the form.</li>
+                            <li><uicontrol>Event Value</uicontrol>. A value associated with the event. Default: 0.</li>
                         </ul>
                     </stentry>
                 </strow>
@@ -96,7 +103,7 @@
                 <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-hiddenfields"><stentry/></strow> -->
                 <strow id="strow-field-hiddenfields">
                     <stentry><uicontrol>Hidden Fields</uicontrol></stentry>
-                    <stentry>Enter up to 10 <uicontrol>Field Identifier</uicontrol>-<uicontrol>Value</uicontrol> pairs. These would be returned with the user's completed form.</stentry>
+                    <stentry>If configured, the specified <uicontrol>Field Identifier</uicontrol>-<uicontrol>Value</uicontrol> pairs (max 10) would be returned with the user's completed form. See <xref format="dita" href="about-hidden-fields.dita">About Hidden Fields</xref>.</stentry>
                 </strow>
 
 
@@ -105,7 +112,7 @@
                 <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-displayconfirmationmsg"><stentry/></strow> -->
                 <strow id="strow-field-displayconfirmationmsg">
                     <!-- <stentry><uicontrol>Display Confirmation Message</uicontrol></stentry> -->
-                    <stentry><uicontrol>Respondent Messaging</uicontrol></stentry>
+                    <stentry><uicontrol>Confirmation Message</uicontrol></stentry>
                     <stentry>If enabled (<uicontrol>On</uicontrol>), displays the specified message after the user submits the form.</stentry>
                 </strow>
 
@@ -115,7 +122,7 @@
                 <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-sendconfirmationemail"><stentry/></strow> -->
                 <strow id="strow-field-sendconfirmationemail">
                     <!-- <stentry><uicontrol>Send Confirmation Email</uicontrol></stentry> -->
-                    <stentry><uicontrol>Respondent Messaging</uicontrol></stentry>
+                    <stentry><uicontrol>Respondent Email Notification</uicontrol></stentry>
                     <stentry>If enabled (<uicontrol>On</uicontrol>), an email is sent to the user after submitting the form. If the form includes an email address field, the addressee (<uicontrol>To:</uicontrol>) would be prepopulated with the email address entered in that field.</stentry>
                 </strow>
 
@@ -140,6 +147,14 @@
                 </strow>
 
 
+                <!-- ========== FORM FIELDS: NOTIFICATIONS ========== -->
+
+                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-receiveselfnotifications"><stentry/></strow> -->
+                <strow id="strow-field-receiveselfnotifications">
+                    <stentry><uicontrol>Receive Self Notifications</uicontrol></stentry>
+                    <stentry>If enabled (<uicontrol>On</uicontrol>), you can configure a custom email to be sent to the specified address(es) whenever a completed form is submitted.</stentry>
+                </strow>
+
 
                 <!-- ==========  ========== -->
 
@@ -155,13 +170,18 @@
         </section>
 
 
-        <prereq>
-        </prereq>
-
-
         <steps>
 
-            <!-- ========== MENU - PERSONA BAR: MANAGE FORMS ========== -->
+            <!-- ========== MENU - PERSONA BAR: FORMS ========== -->
+
+            <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-createoreditform"><cmd/></step> -->
+            <step id="step-createoreditform">
+                <cmd>Create or edit a form.</cmd>
+                <choices>
+                    <choice><xref format="dita" href="create-form.dita">Create a form.</xref></choice>
+                    <choice><xref format="dita" href="edit-form.dita">Edit a form.</xref></choice>
+                </choices>
+            </step>
 
             <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-gotoforms-createbtn"><cmd/></step> -->
             <step id="step-gotoforms-createbtn">
@@ -204,15 +224,64 @@
             </step>
 
 
+            <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-forms-configurationtab"><cmd/></step> -->
+            <!-- <cmd conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/cmd-forms-configurationtab"></cmd> -->
+            <!-- <info conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/info-forms-configurationtab"></info> -->
+            <step id="step-forms-configurationtab">
+                <cmd id="cmd-forms-configurationtab">Click/Tap the <uicontrol>Configuration</uicontrol> tab.</cmd>
+                <info id="info-forms-configurationtab"><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-ConfigurationTab.png"><alt>Form &gt; Configuration</alt></image></info>
+            </step>
+
+
+            <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-forms-config-generalsettings"><cmd/></step> -->
+            <!-- <image conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/img-forms-config-generalsettings" /> -->
+            <step id="step-forms-configuration-generalsettings">
+                <cmd>Go to the <uicontrol>General Settings</uicontrol> tab.</cmd>
+                <info>
+                    <image id="img-form-config-generalsettings" outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-Config-GeneralSettings.png"><alt>Form Configuration - General Settings</alt></image>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-forms-config-datacollection"><cmd/></step> -->
+            <!-- <image conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/img-forms-config-datacollection" /> -->
+            <step id="step-forms-config-datacollection">
+                <cmd>Go to the <uicontrol>Data Collection</uicontrol> tab.</cmd>
+                <info>
+                    <image id="img-form-config-datacollection" outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-Config-DataCollection.png"><alt>Form Configuration - Data Collection</alt></image>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-forms-config-formsubmission"><cmd/></step> -->
+            <!-- <image conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/img-forms-config-formsubmission" /> -->
+            <step id="step-forms-configuration-formsubmission">
+                <cmd>Go to the <uicontrol>Form Submission</uicontrol> tab.</cmd>
+                <info>
+                    <image id="img-form-config-formsubmission" outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-Config-FormSubmission.png"><alt>Form Configuration - Form Submission</alt></image>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-forms-config-notifications"><cmd/></step> -->
+            <!-- <image conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/img-forms-config-notifications" /> -->
+            <step id="step-forms-configuration-notifications">
+                <cmd>Go to the <uicontrol>Notifications</uicontrol> tab.</cmd>
+                <info>
+                    <image id="img-form-config-notifications" outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-Config-Notifications.png"><alt>Form Configuration - Notifications</alt></image>
+                </info>
+            </step>
+
             <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-forms-configureform"><cmd/></step> -->
             <step id="step-forms-configureform">
                 <cmd>Configure the properties of the form.</cmd>
                 <substeps>
+                    <substep>
+                        <cmd conref="#tsk-bptext-forms-steps/cmd-forms-configurationtab"></cmd>
+                        <info conref="#tsk-bptext-forms-steps/info-forms-configurationtab"></info>
+                    </substep>
 
                     <substep>
                         <cmd>In the <uicontrol>General Settings</uicontrol> tab.</cmd>
                         <info>
-                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-GeneralSettings.png"><alt>Form Configuration - General Settings</alt></image>
+                            <image conref="#tsk-bptext-forms-steps/img-form-config-generalsettings"/>
                             <simpletable relcolwidth="1* 3*">
                                 <sthead>
                                     <stentry>Field</stentry>
@@ -229,13 +298,14 @@
                     <substep>
                         <cmd>In the <uicontrol>Data Collection</uicontrol> tab.</cmd>
                         <info>
-                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-DataCollection.png"><alt>Form Configuration - Data Collection</alt></image>
+                            <image conref="#tsk-bptext-forms-steps/img-form-config-datacollection"/>
                             <simpletable relcolwidth="1* 3*">
                                 <sthead>
                                     <stentry>Field</stentry>
                                     <stentry>Description</stentry>
                                 </sthead>
-                                <strow conref="#tsk-bptext-forms-steps/strow-field-database"><stentry/></strow>
+                                <!-- <strow conref="#tsk-bptext-forms-steps/strow-field-database"><stentry/></strow> Always checked. -->
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-evoqcontenttype"><stentry/></strow>
                                 <strow conref="#tsk-bptext-forms-steps/strow-field-customurl"><stentry/></strow>
                                 <strow conref="#tsk-bptext-forms-steps/strow-field-googleanalytics"><stentry/></strow>
                                 <strow conref="#tsk-bptext-forms-steps/strow-field-hiddenfields"><stentry/></strow>
@@ -246,7 +316,7 @@
                     <substep>
                         <cmd>In the <uicontrol>Form Submission</uicontrol> tab.</cmd>
                         <info>
-                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Form-Config-FormSubmission.gif"><alt>Form Configuration - Form Submission</alt></image>
+                            <image conref="#tsk-bptext-forms-steps/img-form-config-formsubmission"/>
                             <simpletable relcolwidth="1* 3*">
                                 <sthead>
                                     <stentry>Field</stentry>
@@ -260,39 +330,52 @@
                         </info>
                     </substep>
 
+                    <substep>
+                        <cmd>In the <uicontrol>Notifications</uicontrol> tab.</cmd>
+                        <info>
+                            <image conref="#tsk-bptext-forms-steps/img-form-config-notifications"/>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow conref="#tsk-bptext-forms-steps/strow-field-receiveselfnotifications"><stentry/></strow>
+                            </simpletable>
+                        </info>
+                    </substep>
+
                 </substeps>
             </step>
+
 
             <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-highlightellipses-responses"><cmd/></step> -->
             <step id="step-highlightellipses-responses">
                 <cmd>Click/Tap the ellipses for the form you want, and choose <uicontrol>Responses</uicontrol>.</cmd>
-                <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-ellipsesmenu-Responses.png"><alt>Click/Tap the ellipses for the form &gt; Responses</alt></image>
-                </info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-ellipsesmenu-Responses.png"><alt>Click/Tap the ellipses for the form &gt; Responses</alt></image></info>
             </step>
 
             <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-highlightellipses-edit"><cmd/></step> -->
             <step id="step-highlightellipses-edit">
                 <cmd>Click/Tap the ellipses for the form you want, and choose Edit.</cmd>
-                <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-ellipsesmenu-Edit.png"><alt>Click/Tap the ellipses for the form &gt; Edit</alt></image>
-                </info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-ellipsesmenu-Edit.png"><alt>Click/Tap the ellipses for the form &gt; Edit</alt></image></info>
             </step>
 
             <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-highlightellipses-duplicate"><cmd/></step> -->
             <step id="step-highlightellipses-duplicate">
                 <cmd>Click/Tap the ellipses for the form you want, and choose Duplicate.</cmd>
-                <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-ellipsesmenu-Duplicate.png"><alt>Click/Tap the ellipses for the form &gt; Duplicate</alt></image>
-                </info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-ellipsesmenu-Duplicate.png"><alt>Click/Tap the ellipses for the form &gt; Duplicate</alt></image></info>
             </step>
 
             <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-highlightellipses-delete"><cmd/></step> -->
             <step id="step-highlightellipses-delete">
                 <cmd>Click/Tap the ellipses for the form you want, and choose Delete.</cmd>
-                <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-ellipsesmenu-Delete.png"><alt>Click/Tap the ellipses for the form &gt; Delete</alt></image>
-                </info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-ellipsesmenu-Delete.png"><alt>Click/Tap the ellipses for the form &gt; Delete</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-highlightellipses-embed"><cmd/></step> -->
+            <step id="step-highlightellipses-embed">
+                <cmd>Click/Tap the ellipses for the form you want, and choose Embed.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Forms-List-ellipsesmenu-Embed.png"><alt>Click/Tap the ellipses for the form &gt; Embed</alt></image></info>
             </step>
 
 
