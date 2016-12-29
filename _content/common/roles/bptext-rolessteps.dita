@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-bptext-rolessteps">
+
+    <title>Boilerplates &#8212; Role-related Steps</title>
+
+    <prolog>
+        <author>wrET,1604</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+    </prolog>
+
+    <taskbody>
+
+        <steps>
+
+            <!-- USE THIS: <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-manageroles"><cmd/></step> -->
+            <step id="step-manageroles">
+                <cmd>Go to <menucascade><uicontrol>Users</uicontrol> <uicontrol>Manage Roles</uicontrol></menucascade>.</cmd>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuUsersManageRoles.png"><alt>Users &gt; Manage Roles</alt></image>
+                </info>
+            </step>
+
+            <!-- WILL BE DEPRECATED: <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-admsecroles"><cmd/></step> -->
+            <step id="step-admsecroles">
+                <cmd>Go to <menucascade><uicontrol>Admin</uicontrol> <uicontrol>Security Roles</uicontrol></menucascade>.</cmd>
+                <info outputclass="init-hide">
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuAdminCommonSecurityRoles.png"><alt>Admin &gt; Security Roles</alt></image>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-searchforrole"><cmd/></step> -->
+            <step id="step-searchforrole">
+                <cmd>Search for the role to manage.</cmd>
+                <info>
+                    <note type="tip">You can use the <uicontrol>Filter by Role Group</uicontrol> dropdown at the top to narrow your search.</note>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-RoleList-FilterByRoleGroup.png"><alt>Role List &gt; Filter by Role Group dropdown</alt></image>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-manageusers"><cmd/></step> -->
+            <step id="step-manageusers">
+                <cmd>Click/tap the <uicontrol>Manage Users</uicontrol> icon for the role.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-RoleList-Edit.png"><alt>Click/Tap the Manage Users icon to add a user to the role.</alt></image></info>
+            </step>
+
+
+            <!-- <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-managerolesforuser"><cmd/></step> -->
+            <step id="step-managerolesforuser">
+                <cmd>Click/Tap the shield icon for the user account to manage that user's roles.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserListManageRoles.png"><alt>User List &gt; Manage Roles</alt></image></info>
+            </step>
+
+        </steps>
+
+    </taskbody>
+
+</task>

@@ -6,9 +6,13 @@
 
 
     <!-- Keys. NOTE: Do NOT use keys for topics that need to have an "active" tag in the toc. -->
-    <keydef keys="k-bptext"   href="common/bptext.dita#top-bptext" />
-    <keydef keys="k-bpsteps"  href="common/bptext-steps.dita#tsk-bptext-steps" />
-    <keydef keys="k-bppbar"   href="common/bptext-pbar.dita#tsk-bptext-pbar" />
+    <keydef keys="k-bptext"     href="common/bptext.dita#top-bptext" />
+    <keydef keys="k-bpsteps"    href="common/bptext-steps.dita#tsk-bptext-steps" />
+    <keydef keys="k-bppbar"     href="common/bptext-pbar.dita#tsk-bptext-pbar" />
+
+    <keydef keys="k-bppagespb"  href="administrators/pages-templates/bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb" />
+    <keydef keys="k-bppagesxx"  href="administrators/pages-templates/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx" />
+    <keydef keys="k-bpmodules"  href="administrators/content-with-modules/bptext-modules-steps.dita#tsk-bptext-modules-steps" />
 
 
     <!-- Topics -->
@@ -34,23 +38,14 @@
             <topicref format="dita" type="topic" toc="yes" href="administrators/licensing/troubleshooting-licensing.dita" />
         </topicref>
 
-        <!-- Enabling Extensions -->
-        <topicref format="dita" type="topic" navtitle="Enabling Extensions" locktitle="yes" toc="yes" href="administrators/extensions/about-extensions.dita" copy-to="administrators/extensions/index.dita" collection-type="family" >
-            <topicref format="dita" type="task" toc="yes" href="administrators/extensions/install-extension.dita" />
-            <topicref format="dita" type="task" toc="yes" href="administrators/extensions/manage-premium-module.dita" />
-            <topicref format="dita" type="task" toc="yes" href="administrators/extensions/allow-module-use.dita" />
-        </topicref>
-
         <!-- Configuring Your Site -->
-        <!-- <mapref href="administrators/configuring-your-site/configuring-your-site-cp-adm.ditamap" />  for Evoq 8.5 -->
-        <mapref href="administrators/configuring-your-site/configuring-your-site-pb-all.ditamap" />  <!-- for Evoq 9.0 -->
+        <mapref href="administrators/configuring-your-site-pb-all.ditamap" />
 
         <!-- Securing Your Site -->
-        <mapref href="administrators/security/security-adm.ditamap" />
+        <mapref href="administrators/security.ditamap" />
 
         <!-- Building Your Site -->
-        <!-- <mapref href="administrators/building-your-site/building-your-site-cp-adm.ditamap" />  for Evoq 8.5 -->
-        <mapref href="administrators/building-your-site/building-your-site-pb.ditamap" />  <!-- for Evoq 9.0 -->
+        <mapref href="administrators/building-your-site-pb.ditamap" />
 
         <!-- Analyzing Your Site
         viewing your site analytics
@@ -61,7 +56,8 @@
             <topicref format="dita" type="topic"     toc="yes" href="administrators/control-bar-to-persona-bar.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="administrators/persona-bar-by-role.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="administrators/providers.dita" />
-            <topicref format="dita" type="reference" toc="yes" href="administrators/included-modules/included-modules.dita" copy-to="administrators/included-modules/index.dita" />
+            <mapref href="administrators/included-modules/included-modules.dita" />
+            <!-- <topicref format="dita" type="reference" toc="yes" href="administrators/included-modules/included-modules.dita" copy-to="administrators/included-modules/index.dita" /> -->
             <topicref format="dita" type="reference" toc="yes" href="administrators/requirements.dita" />
             <topicref format="dita" type="reference" toc="yes" href="administrators/product-versions.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="administrators/dnn-license.dita" />
@@ -110,7 +106,7 @@
         <relrow>
             <relcell>
                 <topicref format="dita" type="topic"                                                                                 href="content-managers/microservices/creating-content-with-microservices.dita" />
-                <topicref format="dita" type="topic"              linking="targetonly" navtitle="JWT Authentication" locktitle="yes" href="developers/security/jwt/about-jwt.dita" />
+                <topicref format="dita" type="topic"              linking="targetonly" navtitle="JWT Authentication" locktitle="yes" href="developers/jwt/about-jwt.dita" />
                 <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Licensing"          locktitle="yes" href="administrators/licensing/licensing.dita" />
                 <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Structured Content" locktitle="yes" href="content-managers/structured-content/about-structured-content.dita" />
                 <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Form Builder"       locktitle="yes" href="content-managers/forms/about-form-builder.dita" />
@@ -136,7 +132,7 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task"       href="administrators/building-your-site/create-article-publisher.dita" />
+                <topicref format="dita" type="task"       href="administrators/content-with-modules/create-article-publisher.dita" />
             </relcell>
             <relcell>
                 <topicref format="dita" type="reference" href="administrators/included-modules/module-publisher.dita" />
@@ -160,26 +156,10 @@
         <relrow>
             <relcell>
                 <topicref format="dita" type="topic"     href="administrators/building-your-site/building-your-site.dita" />
-                <topicref format="dita" type="topic"     href="administrators/security/roles/about-role-based-access.dita" />
+                <topicref format="dita" type="topic"     href="administrators/roles/about-role-based-access.dita" />
             </relcell>
             <relcell/>
             <relcell/>
-        </relrow>
-
-        <!-- adm workflows -->
-        <relrow>
-            <relcell>
-                <topicref format="dita" type="topic"     href="content-managers/configuring-your-site/about-workflows.dita"/>
-            </relcell>
-            <relcell>
-                <topicref format="dita" type="task"      href="administrators/configuring-your-site/create-workflow-pb-all.dita" />
-                <topicref format="dita" type="task"      href="administrators/configuring-your-site/edit-workflow-pb-all.dita" />
-                <topicref format="dita" type="task"      href="administrators/configuring-your-site/delete-workflow-pb-all.dita" />
-                <topicref format="dita" type="task"      href="administrators/configuring-your-site/configure-workflow-state-pb-all.dita" />
-            </relcell>
-            <relcell>
-                <!-- <topicref format="dita" type="reference" href="administrators/included-modules/module-workflow-management.dita" /> // MOVING TO PERSONA BAR -->
-            </relcell>
         </relrow>
 
         <!-- adm -->
@@ -195,7 +175,7 @@
         <!-- adm -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="task"      href="administrators/building-your-site/add-module-to-page-cp-adm.dita" />
+                <topicref format="dita" type="task"      href="administrators/content-with-modules/add-module-to-page-pb-all.dita" />
             </relcell>
             <relcell/>
             <relcell>
@@ -205,9 +185,9 @@
 
         <!-- adm sitemap -->
         <relrow>
-            <relcell></relcell>
+            <relcell/>
             <relcell>
-                <topicref format="dita" type="task"      href="administrators/configuring-your-site/configure-sitemap.dita" />
+                <topicref format="dita" type="task"      href="administrators/sitemaps/configure-sitemap.dita" />
             </relcell>
             <relcell>
                 <topicref format="dita" type="reference" href="administrators/included-modules/module-sitemap.dita" />

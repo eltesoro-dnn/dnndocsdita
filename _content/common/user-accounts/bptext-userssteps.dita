@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-bptext-userssteps">
+
+    <title>Boilerplates &#8212; User-related Steps</title>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+    </prolog>
+
+    <taskbody>
+
+        <section>
+
+            <p>
+                <!-- <ph conref="bptext-userssteps.dita#tsk-bptext-userssteps/ph-introauthorize"></ph> -->
+                <ph id="ph-introauthorize">A user account must be authorized for the account to be active. If you choose to delay the authorization, you can edit the account at a later time to authorize the account.</ph>
+            </p>
+
+
+            <p>
+                <!-- <ph conref="bptext-userssteps.dita#tsk-bptext-userssteps/ph-hostfullperms"></ph> -->
+                <ph id="ph-hostfullperms"><term>Hosts</term> (also known as <term>super users</term>) have full permissions to all sites within the DNN instance. Only a host can promote/demote a user account to/from a host account.</ph>
+            </p>
+
+
+            <p>
+                <!-- <ph conref="bptext-userssteps.dita#tsk-bptext-userssteps/ph-hostscandemote"></ph> -->
+                <ph id="ph-hostscandemote">Hosts can revoke permissions from or demote another host.</ph>
+            </p>
+
+
+            <p>
+                <!-- <ph conref="bptext-userssteps.dita#tsk-bptext-userssteps/ph-hostchangeownaccount"></ph> -->
+                <ph id="ph-hostchangeownaccount">Only the owner of a host/superuser account can make changes to their own account.</ph>
+            </p>
+
+
+            <!-- <sectiondiv conref="bptext-userssteps.dita#tsk-bptext-userssteps/sectiondiv-resetpw3ways"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-resetpw3ways">
+                <p>You can reset the user password in three ways:</p>
+                <ul>
+                    <li>You can change the password for the user. If the site is configured with password rules (i.e., minimum length), the initial password you assign must obey those password rules.</li>
+                    <li>You can send the user a password reset link. The link is valid for 24 hours.</li>
+                    <li>You can force the user to change their password at the next login. This action cannot be undone.</li>
+                </ul>
+            </sectiondiv>
+
+
+        </section>
+
+
+        <!-- ==================== USER LIST - COMMON ELLIPSES MENU SNIPPETS ==================== -->
+
+        <section>
+
+            <!-- PH -->
+
+            <!-- <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-viewuserprofile"></ph></cmd> -->
+            <ph id="ph-user-ellipsesmenu-viewuserprofile">Click/Tap the ellipses icon for the user, then choose <uicontrol>View Profile</uicontrol>.</ph>
+
+            <!-- <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-viewuserassets"></ph></cmd> -->
+            <ph id="ph-user-ellipsesmenu-viewuserassets">Click/Tap the ellipses icon for the user, then choose <uicontrol>View Assets</uicontrol>.</ph>
+
+            <!--
+            <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-passwordmgmt"></ph></cmd>
+            <choices conref="#tsk-bptext-userssteps/choices-user-ellipsesmenu-passwordmgmt"><choice/></choices>
+            -->
+            <ph id="ph-user-ellipsesmenu-passwordmgmt">Click/Tap the ellipses icon for the user, then choose the password action.</ph>
+
+            <!-- <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-authorizeuser"></ph></cmd> -->
+            <ph id="ph-user-ellipsesmenu-authorizeuser">Click/Tap the ellipses icon for the user, then choose <uicontrol>Authorize User</uicontrol>.</ph>
+
+            <!-- <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-deleteuser"></ph></cmd> -->
+            <ph id="ph-user-ellipsesmenu-deleteuser">Click/Tap the ellipses icon for the user, then choose <uicontrol>Delete User</uicontrol>.</ph>
+
+            <!-- <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-deleteeachuser"></ph></cmd> -->
+            <ph id="ph-user-ellipsesmenu-deleteeachuser">For each user to delete, click/tap the ellipses icon, then choose <uicontrol>Delete User</uicontrol>.</ph>
+
+            <!-- <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-makesuperuser"></ph></cmd> -->
+            <ph id="ph-user-ellipsesmenu-makesuperuser">Click/Tap the ellipses icon for the user, then choose <uicontrol>Make Superuser</uicontrol>.</ph>
+
+            <!-- <cmd><ph conref="#tsk-bptext-userssteps/ph-userhost-ellipsesmenu-makeregularuser"></ph></cmd> -->
+            <ph id="ph-userhost-ellipsesmenu-makeregularuser">Click/Tap the ellipses icon for the user, then choose <uicontrol>Make Regular User</uicontrol>.</ph>
+
+            <!-- <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-loginasuser"></ph></cmd> -->
+            <ph id="ph-user-ellipsesmenu-loginasuser">Click/Tap the ellipses icon for the user, then choose <uicontrol>Log in as User</uicontrol>.</ph>
+
+            <!-- <cmd><ph conref="#tsk-bptext-userssteps/ph-userdeleted-ellipsesmenu-removeuserpermanently"></ph></cmd> -->
+            <ph id="ph-userdeleted-ellipsesmenu-removeuserpermanently">Click/Tap the ellipses icon for the user, then choose <uicontrol>Remove User Permanently</uicontrol>.</ph>
+
+            <!-- <cmd><ph conref="#tsk-bptext-userssteps/ph-userdeleted-ellipsesmenu-restoreuser"></ph></cmd> -->
+            <ph id="ph-userdeleted-ellipsesmenu-restoreuser">Click/Tap the ellipses icon for the user, then choose <uicontrol>Restore User</uicontrol>.</ph>
+
+            <!-- <cmd><ph conref="#tsk-bptext-userssteps/ph-"></ph></cmd>
+            <ph id="ph-"></ph>
+            -->
+
+
+            <!-- Notes -->
+
+            <!-- <note conref="#tsk-bptext-userssteps/note-alreadyauthed"></note> -->
+            <note type="note" id="note-alreadyauthed">If the user is already authorized, the menu option changes to <uicontrol>Unauthorize User</uicontrol>.</note>
+
+            <!-- <note conref="#tsk-bptext-userssteps/note-deletion-limits"></note> -->
+            <note type="note" id="note-deletion-limits">Deletion simply makes the account unavailable and revokes user-specific permissions. You must also remove the user from assigned roles to revoke role-based permissions.</note>
+
+            <!-- <note conref="#tsk-bptext-userssteps/note-confirmbeforepurge"></note> -->
+            <note type="important" id="note-confirmbeforepurge">Confirm that the account is no longer needed before permanently deleting it.</note>
+
+            <!-- <note conref="#tsk-bptext-userssteps/note-"></note>
+            <note type="note" id="note-"></note>
+            -->
+
+        </section>
+
+
+        <steps>
+
+            <step>
+                <cmd>Generic</cmd>
+
+                <!--
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-passwordmgmt"></ph></cmd>
+                <choices conref="#tsk-bptext-userssteps/choices-user-ellipsesmenu-passwordmgmt"><choice/></choices>
+                -->
+                <choices id="choices-user-ellipsesmenu-passwordmgmt">
+                    <choice><uicontrol>Change Password</uicontrol></choice>
+                    <choice><uicontrol>Force Password Change</uicontrol></choice>
+                    <choice><uicontrol>Send Password Reset Link</uicontrol></choice>
+                </choices>
+
+                <!-- <choices conref="#tsk-bptext-userssteps/choices-"><choice/></choices>
+                <choices id="choices-">
+                </choices>
+                -->
+
+            </step>
+
+
+            <!-- ==================== ADD USER ==================== -->
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-adduser"><cmd/></step> -->
+            <step id="step-adduser">
+                <cmd>Click/Tap <uicontrol>Add User</uicontrol>.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-AddUser-E90.png"><alt>Add User button</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-enteruserinfo"><cmd/></step> -->
+            <step id="step-enteruserinfo">
+                <cmd>Enter the user's information.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-AddNewUserInfo-E90.png"><alt>Add New User</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry><uicontrol>Authorized</uicontrol></stentry>
+                            <stentry>If enabled (<uicontrol>On</uicontrol>), the user is immediately subscribed to the <uicontrol>Registered User</uicontrol> role and to other roles that have <uicontrol>Auto Assignment</uicontrol> enabled. If disabled (<uicontrol>Off</uicontrol>), the user account is created but not authorized; an administrator must authorize the user account before the user can access areas of the website that are restricted to <uicontrol>Registered User</uicontrol> members.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Random Password</uicontrol></stentry>
+                            <stentry>If enabled (<uicontrol>On</uicontrol>), generates a random password. Otherwise, you must provide a password.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Password</uicontrol></stentry>
+                            <stentry>If the site is configured with password rules (i.e., minimum length), the initial password you assign must obey those password rules.
+                            </stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Send an Email to New User</uicontrol></stentry>
+                            <stentry>If checked, the user is notified by email that the account is created. Can be checked at a later time to send the email belatedly.</stentry>
+                        </strow>
+                    </simpletable>
+                </info>
+            </step>
+
+
+            <!-- ==================== SEARCH FOR USER ==================== -->
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-searchforuser"><cmd/></step> -->
+            <step id="step-searchforuser">
+                <cmd>Search for the user account.</cmd>
+                <choices>
+                    <choice>Use the <uicontrol>Search Users</uicontrol> textbox at the top to search by a user account field, such as First Name, Last Name, User Name, or Email Address.</choice>
+                    <choice>Filter the displayed accounts by type, using the <uicontrol>Show</uicontrol> dropdown.</choice>
+                </choices>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserListSearchAndShow-E90.png"><alt>User List &gt; Search field and Show dropdown</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-searchfordeleteduser"><cmd/></step> -->
+            <step id="step-searchfordeleteduser">
+                <cmd>Search for the deleted user account.</cmd>
+                <substeps>
+                    <substep><cmd>From the <uicontrol>Show</uicontrol> dropdown, choose <uicontrol>Deleted</uicontrol> to filter the displayed accounts.</cmd></substep>
+                    <substep><cmd>Browse the list for the user account.</cmd></substep>
+                </substeps>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserListShowDropdown-Deleted-E90.png"><alt>User List &gt; Show dropdown &gt; Deleted</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-searchforsuperuser"><cmd/></step> -->
+            <step id="step-searchforsuperuser">
+                <cmd>Search for the super user account.</cmd>
+                <substeps>
+                    <substep><cmd>From the <uicontrol>Show</uicontrol> dropdown, choose <uicontrol>Superusers</uicontrol> to filter the displayed accounts.</cmd></substep>
+                    <substep><cmd>Browse the list for the user account.</cmd></substep>
+                </substeps>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserListShowDropdown-SuperUser-E90.png"><alt>User List &gt; Show dropdown &gt; Superusers</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-searchforunauthuser"><cmd/></step> -->
+            <step id="step-searchforunauthuser">
+                <cmd>Search for the unauthorized user.</cmd>
+                <substeps>
+                    <substep><cmd>From the <uicontrol>Show</uicontrol> dropdown, choose <uicontrol>Unauthorized</uicontrol> to filter the displayed accounts.</cmd></substep>
+                    <substep><cmd>Browse the list for the user account.</cmd></substep>
+                </substeps>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserListShowDropdown-Unauthorized-E90.png"><alt>User List &gt; Show dropdown &gt; Unauthorized</alt></image></info>
+            </step>
+
+
+            <!-- ==================== USER LIST ICONS ==================== -->
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-user-activity"><cmd/></step> -->
+            <step id="step-user-activity">
+                <cmd>Click/Tap the <uicontrol>User Activity</uicontrol> icon for the user.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-Activity-E90.png"><alt>User List &gt; find the user &gt; User Activity</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-user-roles"><cmd/></step> -->
+            <step id="step-user-roles">
+                <cmd>Click/Tap the <uicontrol>User Roles</uicontrol> icon for the user.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-Roles-E90.png"><alt>User List &gt; find the user &gt; User Roles</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-user-profilesettings"><cmd/></step> -->
+            <!-- <image conref="bptext-userssteps.dita#tsk-bptext-userssteps/image-user-profilesettings"></image> -->
+            <!-- <ph conref="bptext-userssteps.dita#tsk-bptext-userssteps/ph-user-profilesettings"></ph> -->
+            <step id="step-user-profilesettings">
+                <cmd><ph id="ph-user-profilesettings">Click/Tap the <uicontrol>Profile Settings</uicontrol> icon for the user.</ph></cmd>
+                <info><image id="image-user-profilesettings" outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-ProfileSettings-E90.png"><alt>User List &gt; find the user &gt; Profile Settings</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-user-accountsettings"><cmd/></step> -->
+            <!-- <image conref="bptext-userssteps.dita#tsk-bptext-userssteps/image-user-accountsettings"></image> -->
+            <!-- <ph conref="bptext-userssteps.dita#tsk-bptext-userssteps/ph-user-accountsettings"></ph> -->
+            <step id="step-user-accountsettings">
+                <cmd><ph id="ph-user-accountsettings">Click/Tap the <uicontrol>Account Settings</uicontrol> (gear) icon for the user.</ph></cmd>
+                <info><image id="image-user-accountsettings" outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-AccountSettings-E90.png"><alt>User List &gt; find the user &gt; Account Settings</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-user-edit"><cmd/></step> -->
+            <step id="step-user-edit">
+                <cmd>Edit the user's profile or account.</cmd>
+                <choices>
+                    <choice>
+                        <p>To edit the user's profile: <ph conref="#tsk-bptext-userssteps/ph-user-profilesettings"></ph></p>
+                        <image conref="bptext-userssteps.dita#tsk-bptext-userssteps/image-user-profilesettings"></image>
+                    </choice>
+                    <choice>
+                        <p>To edit the user's account: <ph conref="#tsk-bptext-userssteps/ph-user-accountsettings"></ph></p>
+                        <image conref="bptext-userssteps.dita#tsk-bptext-userssteps/image-user-accountsettings"></image>
+                    </choice>
+                </choices>
+            </step>
+
+
+            <!-- ==================== USER LIST - REGULAR USER ELLIPSES MENU OPTIONS ==================== -->
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-user-ellipsesmenu-viewuserprofile"><cmd/></step> -->
+            <step id="step-user-ellipsesmenu-viewuserprofile">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-viewuserprofile"></ph></cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-ellipsesmenu-ViewProfile-E90.png"><alt>User List &gt; find the user &gt; ellipses icon &gt; View Profile</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-user-ellipsesmenu-viewuserassets"><cmd/></step> -->
+            <step id="step-user-ellipsesmenu-viewuserassets">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-viewuserassets"></ph></cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-ellipsesmenu-ViewAssets-E90.png"><alt>User List &gt; find the user &gt; ellipses icon &gt; View Assets</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-user-ellipsesmenu-passwordmgmt"><cmd/></step> -->
+            <step id="step-user-ellipsesmenu-passwordmgmt">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-passwordmgmt"></ph></cmd>
+                <choices conref="#tsk-bptext-userssteps/choices-user-ellipsesmenu-passwordmgmt"><choice/></choices>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-ellipsesmenu-PasswordAll-E90.png"><alt>User List &gt; find the user &gt; ellipses icon &gt; Change Password / Force Password Change / Send Password Reset Link</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-user-ellipsesmenu-authorizeuser"><cmd/></step> -->
+            <step id="step-user-ellipsesmenu-authorizeuser">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-authorizeuser"></ph></cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-unauthellipsesmenu-AuthorizeUser-E90.png"><alt>User List &gt; find the user &gt; ellipses icon &gt; </alt></image>
+                    <note conref="#tsk-bptext-userssteps/note-alreadyauthed"></note>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-user-ellipsesmenu-deleteuser"><cmd/></step> -->
+            <step id="step-user-ellipsesmenu-deleteuser">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-deleteuser"></ph></cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-ellipsesmenu-DeleteUser-E90.png"><alt>User List &gt; find the user &gt; ellipses icon &gt; Delete User</alt></image>
+                    <note conref="#tsk-bptext-userssteps/note-deletion-limits"></note>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-user-ellipsesmenu-deleteeachuser"><cmd/></step> -->
+            <step id="step-user-ellipsesmenu-deleteeachuser">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-deleteeachuser"></ph></cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-ellipsesmenu-DeleteUser-E90.png"><alt>User List &gt; find the user &gt; ellipses icon &gt; Delete User</alt></image>
+                    <note conref="#tsk-bptext-userssteps/note-deletion-limits"></note>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-user-ellipsesmenu-makesuperuser"><cmd/></step> -->
+            <step id="step-user-ellipsesmenu-makesuperuser">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-makesuperuser"></ph></cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-ellipsesmenu-MakeSuperUser-E90.png"><alt>User List &gt; find the user &gt; ellipses icon &gt; Make Superuser</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-user-ellipsesmenu-loginasuser"><cmd/></step> -->
+            <step id="step-user-ellipsesmenu-loginasuser">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-loginasuser"></ph></cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-ellipsesmenu-LogInAsUser-E90.png"><alt>User List &gt; find the user &gt; ellipses icon &gt; Log in as User</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-userdeleted-ellipsesmenu-removeuserpermanently"><cmd/></step> -->
+            <!-- <ph conref="bptext-userssteps.dita#tsk-bptext-userssteps/id-confirmbeforepurge"></ph> -->
+            <step id="step-userdeleted-ellipsesmenu-removeuserpermanently">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-userdeleted-ellipsesmenu-removeuserpermanently"></ph></cmd>
+                <info>
+                    <note conref="#tsk-bptext-userssteps/note-confirmbeforepurge"></note>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-deletedellipsesmenu-RemoveUserPermanently-E90.png"><alt>User List &gt; Show: Deleted &gt; find the user &gt; ellipses icon &gt; Remove User Permanently</alt></image>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-userdeleted-ellipsesmenu-restoreuser"><cmd/></step> -->
+            <step id="step-userdeleted-ellipsesmenu-restoreuser">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-userdeleted-ellipsesmenu-restoreuser"></ph></cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-deletedellipsesmenu-RestoreUser-E90.png"><alt>User List &gt; Show: Deleted &gt; find the user &gt; ellipses icon &gt; Restore User</alt></image></info>
+            </step>
+
+
+            <!-- ==================== USER LIST - SUPERUSER ELLIPSES MENU OPTIONS ==================== -->
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-userhost-ellipsesmenu-viewuserprofile"><cmd/></step> -->
+            <step id="step-userhost-ellipsesmenu-viewuserprofile">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-viewuserprofile"></ph></cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-hostellipsesmenu-ViewProfile-E90.png"><alt>User List &gt; Show: Superusers &gt; find the user &gt; ellipses icon &gt; View Profile</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-userhost-ellipsesmenu-viewuserassets"><cmd/></step> -->
+            <step id="step-userhost-ellipsesmenu-viewuserassets">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-viewuserassets"></ph></cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-hostellipsesmenu-ViewAssets-E90.png"><alt>User List &gt; Show: Superusers &gt; find the user &gt; ellipses icon &gt; View Assets</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-userhost-ellipsesmenu-passwordmgmt"><cmd/></step> -->
+            <step id="step-userhost-ellipsesmenu-passwordmgmt">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-passwordmgmt"></ph></cmd>
+                <choices conref="#tsk-bptext-userssteps/choices-user-ellipsesmenu-passwordmgmt"><choice/></choices>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-hostellipsesmenu-PasswordAll-E90.png"><alt>User List &gt; Show: Superusers &gt; find the user &gt; ellipses icon &gt; Change Password / Force Password Change / Send Password Reset Link</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-userhost-ellipsesmenu-authorizeuser"><cmd/></step> -->
+            <step id="step-userhost-ellipsesmenu-authorizeuser">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-authorizeuser"></ph></cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-unauthellipsesmenu-AuthorizeUser-E90.png"><alt>User List &gt; Show: Superusers &gt; find the user &gt; ellipses icon &gt; </alt></image>
+                    <note conref="#tsk-bptext-userssteps/note-alreadyauthed"></note>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-userhost-ellipsesmenu-deleteuser"><cmd/></step> -->
+            <step id="step-userhost-ellipsesmenu-deleteuser">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-deleteuser"></ph></cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-hostellipsesmenu-DeleteUser-E90.png"><alt>User List &gt; Show: Superusers &gt; find the user &gt; ellipses icon &gt; Delete User</alt></image>
+                    <note conref="#tsk-bptext-userssteps/note-deletion-limits"></note>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-userhost-ellipsesmenu-deleteeachuser"><cmd/></step> -->
+            <step id="step-userhost-ellipsesmenu-deleteeachuser">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-user-ellipsesmenu-deleteeachuser"></ph></cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-hostellipsesmenu-DeleteUser-E90.png"><alt>User List &gt; Show: Superusers &gt; find the user &gt; ellipses icon &gt; Delete User</alt></image>
+                    <note conref="#tsk-bptext-userssteps/note-deletion-limits"></note>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-userhost-ellipsesmenu-removeuserpermanently"><cmd/></step> -->
+            <step id="step-userhost-ellipsesmenu-removeuserpermanently">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-userdeleted-ellipsesmenu-removeuserpermanently"></ph></cmd>
+                <info>
+                    <note conref="#tsk-bptext-userssteps/note-confirmbeforepurge"></note>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-deletedhostellipsesmenu-RemoveUserPermanently-E90.png"><alt>User List &gt; Show: Superusers &gt; find the user (names of deleted hosts are crossed out) &gt; ellipses icon &gt; Remove User Permanently</alt></image>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-userhost-ellipsesmenu-restoreuser"><cmd/></step> -->
+            <step id="step-userhost-ellipsesmenu-restoreuser">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-userdeleted-ellipsesmenu-restoreuser"></ph></cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-deletedhostellipsesmenu-RestoreUser-E90.png"><alt>User List &gt; Show: Superusers &gt; find the user (names of deleted hosts are crossed out) &gt; ellipses icon &gt; Restore User</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-userhost-ellipsesmenu-makeregularuser"><cmd/></step> -->
+            <step id="step-userhost-ellipsesmenu-makeregularuser">
+                <cmd><ph conref="#tsk-bptext-userssteps/ph-userhost-ellipsesmenu-makeregularuser"></ph></cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-hostellipsesmenu-MakeRegularUser-E90.png"><alt>User List &gt; Show: Superuser &gt; find the user &gt; ellipses icon &gt; Make Regular User</alt></image></info>
+            </step>
+
+
+        </steps>
+
+        <!-- <postreq conref="bptext-userssteps.dita#tsk-bptext-userssteps/postreq-purgeuser"></postreq> -->
+        <postreq id="postreq-purgeuser">(Optional) You can purge the user account(s) if you want to permanently delete the user account and its associated information.</postreq>
+
+    </taskbody>
+
+</task>

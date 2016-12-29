@@ -1,0 +1,86 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="top-EditDatesUserSubscriptionToRole">
+
+    <title>Edit Dates of a User's Subscription to a Role</title>
+    <titlealts>
+        <navtitle>Edit User Subscription</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
+            </ul>
+        </prereq>
+
+
+        <steps>
+            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-manageroles"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-searchforrole"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-manageusers"><cmd/></step>
+            <step>
+                <cmd>In the <wintitle>Manage Users in Role</wintitle> page, select the users to edit.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ManageUsersInRole.png"><alt>Manage Users in Role page</alt></image></info>
+                <substeps>
+                    <substep>
+                        <cmd>Select the user from the <uicontrol>User Name</uicontrol> dropdown.</cmd>
+                    </substep>
+
+                    <substep>
+                        <cmd>(Optional) Change the <uicontrol>Effective Date</uicontrol> to assign the role to the user at a future date.</cmd>
+                        <info>If <uicontrol>Effective Date</uicontrol> is empty, the role is assigned to the user immediately.</info>
+                    </substep>
+
+                    <substep>
+                        <cmd>(Optional) Change the <uicontrol>Expiry Date</uicontrol> to remove the user from the role at a future date.</cmd>
+                        <info>If <uicontrol>Expiry Date</uicontrol> is empty, the user is assigned that role indefinitely.</info>
+                    </substep>
+
+                    <substep>
+                        <cmd>(Optional) Check <uicontrol>Send Email</uicontrol> to notify the user of the change.</cmd>
+                    </substep>
+
+                    <substep>
+                        <cmd>Click/Tap <uicontrol>Update User Role</uicontrol>.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+
+
+        <result>
+            <note type="note">The user might need to refresh their browser to see the effects of the change.</note>
+        </result>
+
+    </taskbody>
+
+</task>

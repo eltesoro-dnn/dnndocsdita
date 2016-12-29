@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-configuring-your-site-pb-all">
+
+    <title>Configuring Your Site for Content</title>
+
+    <!-- Topics -->
+	<topicref format="dita" type="topic" toc="yes" href="configuring-your-site/configuring-your-site.dita" copy-to="configuring-your-site/index.dita" collection-type="family">
+
+		<topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/access-web-config.dita" />
+		<topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/assign-key-pages.dita" />
+
+        <mapref audience="adm cmg"      href="extensions/extensions.ditamap" />
+        <mapref audience="adm cmg mod"  href="connectors/connectors.ditamap" />
+        <mapref audience="adm cmg"      href="microservices/microservices.ditamap" />
+        <mapref audience="adm cmg"      href="workflows/workflows.ditamap" />
+        <mapref audience="adm"          href="sitemaps/sitemaps.ditamap" />
+
+	</topicref>
+
+</map>

@@ -10,6 +10,10 @@
     <keydef keys="k-bpsteps"  href="common/bptext-steps.dita#tsk-bptext-steps" />
     <keydef keys="k-bppbar"   href="common/bptext-pbar.dita#tsk-bptext-pbar" />
 
+    <keydef keys="k-bppagespb"  href="community-managers/pages-templates/bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb" />
+    <keydef keys="k-bppagesxx"  href="community-managers/pages-templates/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx" />
+    <keydef keys="k-bpmodules"  href="community-managers/content-with-modules/bptext-modules-steps.dita#tsk-bptext-modules-steps" />
+
 
     <!-- Topics -->
     <topicref format="dita" type="topic" toc="yes" href="community-managers/index.dita" >
@@ -18,10 +22,10 @@
         <topicref format="dita" type="topic" navtitle="DNN Solutions"               locktitle="yes" toc="yes" href="community-managers/dnn-overview.dita" />
 
         <!-- Configuring Your Site -->
-        <mapref href="community-managers/configuring-your-site/configuring-your-site-pb-mod.ditamap" />  <!-- for Evoq 9.0 -->
+        <mapref href="community-managers/configuring-your-site-pb-all.ditamap" />
 
         <!-- Securing Your Site -->
-        <mapref href="community-managers/security/security-mod.ditamap" />
+        <mapref href="community-managers/security.ditamap" />
 
         <!-- Managing Your Community -->
         <mapref href="community-managers/managing-your-community/managing-your-community.ditamap" />
@@ -30,7 +34,8 @@
         <topicref format="dita" type="topic" toc="yes" href="community-managers/community-manager-references.dita" collection-type="family">
             <topicref format="dita" type="topic"     toc="yes" href="community-managers/control-bar-to-persona-bar.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="community-managers/persona-bar-by-role.dita" />
-            <topicref format="dita" type="reference" toc="yes" href="community-managers/included-modules/included-modules.dita" copy-to="community-managers/included-modules/index.dita" />
+            <mapref href="community-managers/included-modules/included-modules.dita" />
+            <!-- <topicref format="dita" type="reference" toc="yes" href="community-managers/included-modules/included-modules.dita" copy-to="community-managers/included-modules/index.dita" /> -->
             <topicref format="dita" type="reference" toc="yes" href="community-managers/product-versions.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="community-managers/dnn-license.dita" />
             <!-- <topicref format="dita" type="topic"     toc="yes" href="community-managers/more-resources.dita" /> -->

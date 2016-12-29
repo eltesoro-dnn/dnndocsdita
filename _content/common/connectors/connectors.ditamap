@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-connectors">
+
+    <title>Connectors</title>
+
+    <topicref format="dita" type="topic" toc="yes" href="about-connectors.dita" copy-to="index.dita" collection-type="family">
+        <topicref format="dita" type="task"  toc="yes" href="configure-connectors-pb-all.dita" />
+    </topicref>
+
+</map>

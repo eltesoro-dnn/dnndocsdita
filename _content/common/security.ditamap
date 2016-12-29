@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/map.dtd">
+<map xml:lang="en" id="map-security">
+
+    <title>Securing Your Site</title>
+
+    <!-- Administrators -->
+    <topicref audience="adm" format="dita" type="topic" navtitle="Securing Your Site" locktitle="yes" toc="yes" href="security/security.dita" copy-to="security/index.dita" collection-type="family">
+        <mapref href="user-accounts/user-accounts.ditamap" />
+        <mapref href="roles/roles.ditamap" />
+        <mapref href="jwt/jwt.ditamap" />
+    </topicref>
+
+    <!-- Content Managers -->
+    <topicref audience="cmg" format="dita" type="topic" navtitle="Securing Your Site" locktitle="yes" toc="yes" href="security/security.dita" copy-to="security/index.dita" collection-type="family">
+        <topicref format="dita" type="topic" toc="yes" href="user-accounts/about-user-accounts.dita" copy-to="user-accounts/index.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="roles/about-role-based-access.dita"     copy-to="roles/index.dita" />
+    </topicref>
+
+    <!-- Developers -->
+    <topicref audience="dev" format="dita" type="topic" navtitle="Security" locktitle="yes" toc="yes" href="security/security.dita" copy-to="security/index.dita" collection-type="family">
+        <mapref href="jwt/jwt.ditamap" />
+    </topicref>
+
+    <!-- Community Managers -->
+    <topicref audience="mod" format="dita" type="topic" navtitle="Security" locktitle="yes" toc="yes" href="security/security.dita" copy-to="security/index.dita" collection-type="family">
+        <topicref format="dita" type="topic" toc="yes" href="user-accounts/about-user-accounts.dita" copy-to="user-accounts/index.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="roles/about-role-based-access.dita"     copy-to="roles/index.dita" />
+    </topicref>
+
+</map>

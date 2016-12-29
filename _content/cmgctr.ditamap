@@ -6,9 +6,13 @@
 
 
     <!-- Keys. NOTE: Do NOT use keys for topics that need to have an "active" tag in the toc. -->
-    <keydef keys="k-bptext"   href="common/bptext.dita#top-bptext" />
-    <keydef keys="k-bpsteps"  href="common/bptext-steps.dita#tsk-bptext-steps" />
-    <keydef keys="k-bppbar"   href="common/bptext-pbar.dita#tsk-bptext-pbar" />
+    <keydef keys="k-bptext"     href="common/bptext.dita#top-bptext" />
+    <keydef keys="k-bpsteps"    href="common/bptext-steps.dita#tsk-bptext-steps" />
+    <keydef keys="k-bppbar"     href="common/bptext-pbar.dita#tsk-bptext-pbar" />
+
+    <keydef keys="k-bppagespb"  href="content-managers/pages-templates/bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb" />
+    <keydef keys="k-bppagesxx"  href="content-managers/pages-templates/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx" />
+    <keydef keys="k-bpmodules"  href="content-managers/content-with-modules/bptext-modules-steps.dita#tsk-bptext-modules-steps" />
 
 
     <!-- Topics -->
@@ -18,19 +22,20 @@
         <topicref format="dita" type="topic" navtitle="DNN Solutions"               locktitle="yes" toc="yes" href="content-managers/dnn-overview.dita" />
 
         <!-- Configuring Your Site for Content -->
-        <mapref href="content-managers/configuring-your-site/configuring-your-site-pb-all.ditamap" />
+        <mapref href="content-managers/configuring-your-site-pb-all.ditamap" />
 
         <!-- Building Your Site -->
-        <mapref href="content-managers/building-your-site/building-your-site-pb.ditamap" />
+        <mapref href="content-managers/building-your-site-pb.ditamap" />
 
         <!-- Securing Your Site -->
-        <mapref href="content-managers/security/security-cmg.ditamap" />
+        <mapref href="content-managers/security.ditamap" />
 
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="content-managers/content-manager-references.dita" collection-type="family">
             <topicref format="dita" type="topic"     toc="yes" href="content-managers/control-bar-to-persona-bar.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="content-managers/persona-bar-by-role.dita" />
-            <topicref format="dita" type="reference" toc="yes" href="content-managers/included-modules/included-modules.dita" copy-to="content-managers/included-modules/index.dita" />
+            <mapref href="content-managers/included-modules/included-modules.dita" />
+            <!-- <topicref format="dita" type="reference" toc="yes" href="content-managers/included-modules/included-modules.dita" copy-to="content-managers/included-modules/index.dita" /> -->
             <topicref format="dita" type="reference" toc="yes" href="content-managers/requirements.dita" />
             <topicref format="dita" type="reference" toc="yes" href="content-managers/product-versions.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="content-managers/dnn-license.dita" />
@@ -79,7 +84,7 @@
         <relrow>
             <relcell>
                 <topicref format="dita" type="topic"                                                                                 href="content-managers/microservices/creating-content-with-microservices.dita" />
-                <topicref format="dita" type="topic"              linking="targetonly" navtitle="JWT Authentication" locktitle="yes" href="developers/security/jwt/about-jwt.dita" />
+                <topicref format="dita" type="topic"              linking="targetonly" navtitle="JWT Authentication" locktitle="yes" href="developers/jwt/about-jwt.dita" />
                 <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Licensing"          locktitle="yes" href="administrators/licensing/licensing.dita" />
                 <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Structured Content" locktitle="yes" href="content-managers/structured-content/about-structured-content.dita" />
                 <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Form Builder"       locktitle="yes" href="content-managers/forms/about-form-builder.dita" />
@@ -105,26 +110,10 @@
         <relrow>
             <relcell/>
             <relcell>
-                <topicref format="dita" type="task"       href="content-managers/building-your-site/create-article-publisher.dita" />
+                <topicref format="dita" type="task"       href="content-managers/content-with-modules/create-article-publisher.dita" />
             </relcell>
             <relcell>
                 <topicref format="dita" type="reference" href="content-managers/included-modules/module-publisher.dita" />
-            </relcell>
-        </relrow>
-
-        <!-- cmg workflows -->
-        <relrow>
-            <relcell>
-                <topicref format="dita" type="topic"     href="content-managers/configuring-your-site/about-workflows.dita"/>
-            </relcell>
-            <relcell>
-                <topicref format="dita" type="task"      href="content-managers/configuring-your-site/create-workflow-pb-all.dita" />
-                <topicref format="dita" type="task"      href="content-managers/configuring-your-site/edit-workflow-pb-all.dita" />
-                <topicref format="dita" type="task"      href="content-managers/configuring-your-site/delete-workflow-pb-all.dita" />
-                <topicref format="dita" type="task"      href="content-managers/configuring-your-site/configure-workflow-state-pb-all.dita" />
-            </relcell>
-            <relcell>
-                <!-- <topicref format="dita" type="reference" href="content-managers/included-modules/module-workflow-management.dita" /> // MOVING TO PERSONA BAR -->
             </relcell>
         </relrow>
 
@@ -132,7 +121,7 @@
         <relrow>
             <relcell>
                 <topicref format="dita" type="topic"     href="content-managers/building-your-site/building-your-site.dita" />
-                <topicref format="dita" type="topic"     href="content-managers/security/roles/about-role-based-access.dita" />
+                <topicref format="dita" type="topic"     href="content-managers/roles/about-role-based-access.dita" />
             </relcell>
             <relcell/>
             <relcell/>
@@ -140,7 +129,7 @@
 
         <!-- cmg -->
         <relrow>
-            <relcell><topicref format="dita" type="task" toc="yes" href="content-managers/building-your-site/add-module-to-page-cp-adm.dita" />
+            <relcell><topicref format="dita" type="task" toc="yes" href="content-managers/content-with-modules/add-module-to-page-pb-all.dita" />
             </relcell>
             <relcell/>
             <relcell><topicref format="dita" type="reference" href="content-managers/included-modules/included-modules.dita" /></relcell>

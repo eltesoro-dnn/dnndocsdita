@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-workflows">
+
+    <title>Workflows</title>
+
+    <topicref format="dita" type="topic" toc="yes" href="about-workflows.dita" copy-to="index.dita" collection-type="family">
+        <topicref format="dita" type="task" toc="yes" href="create-workflow-pb-all.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-workflow-pb-all.dita" />
+        <topicref format="dita" type="task" toc="yes" href="delete-workflow-pb-all.dita" />
+        <topicref format="dita" type="task" toc="yes" href="configure-workflow-state-pb-all.dita" />
+    </topicref>
+
+</map>

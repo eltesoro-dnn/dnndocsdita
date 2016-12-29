@@ -209,8 +209,6 @@
             </step>
 
 
-
-
             <!-- ========== MENU - CONTROL BAR ========== -->
 
             <!-- ========== MENU - CONTROL BAR: HOST EXTENSIONS ========== -->
@@ -400,90 +398,16 @@
 
             <!-- ========== PAGES, combined Administrators and Content Managers ========== -->
 
-            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createpage-cmg"><cmd/></step> -->
-            <!-- <step conkeyref="k-bpsteps/step-createpage-cmg"><cmd/></step> -->
-            <step id="step-createpage-cmg">
-                <cmd><xref format="dita" href="building-your-site/create-page-pb-all.dita">Create a page via the <uicontrol>Persona Bar</uicontrol>.</xref></cmd>
-            </step>
-
-            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createpage-adm"><cmd/></step> -->
-            <!-- <step conkeyref="k-bpsteps/step-createpage-adm"><cmd/></step> -->
-            <step id="step-createpage-adm">
-                <cmd><xref format="dita" href="building-your-site/create-page-pb-all.dita">Create a page via the <uicontrol>Persona Bar</uicontrol>.</xref></cmd>
-            </step>
-
-            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createpage-8.5"><cmd/></step> -->
-            <!-- <step conkeyref="k-bpsteps/step-createpage-8.5"><cmd/></step> -->
-            <step id="step-createpage-8.5">
-                <cmd>Create a page.</cmd>
-                <choices>
-                    <choice><ph outputclass="audience-adm">Administrators:</ph>   <xref format="dita" href="building-your-site/create-page-cp-adm.dita">Create a page via the <uicontrol>Control Bar</uicontrol>.</xref></choice>
-                    <choice><ph outputclass="audience-cmg">Content Managers:</ph> <xref format="dita" href="building-your-site/create-page-pb-all.dita">Create a page via the <uicontrol>Persona Bar</uicontrol>.</xref></choice>
-                </choices>
-            </step>
-
-            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-editpage"><cmd/></step> -->
-            <!-- <step conkeyref="k-bpsteps/step-editpage"><cmd/></step> -->
-            <step id="step-editpage">
-                <cmd>Select and edit a page.</cmd>
-                <choices>
-                    <choice><ph outputclass="audience-adm">Administrators:</ph>   <xref format="dita" href="building-your-site/edit-page-cp-adm.dita">Edit a page via the <uicontrol>Control Bar</uicontrol>.</xref></choice>
-                    <choice><ph outputclass="audience-cmg">Content Managers:</ph> <xref format="dita" href="building-your-site/edit-page-pb-all.dita">Edit a page via the <uicontrol>Persona Bar</uicontrol>.</xref></choice>
-                </choices>
-            </step>
-
-            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createcopyeditpage"><strow/></step> -->
-            <!-- <step conkeyref="k-bpsteps/step-createcopyeditpage"><strow/></step> -->
+            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createcopyeditpage"><cmd/></step> -->
+            <!-- <step conkeyref="k-bpsteps/step-createcopyeditpage"><cmd/></step> -->
             <step id="step-createcopyeditpage">
                 <cmd>Create, copy, or edit a page.</cmd>
-                <info>
-                    <simpletable relcolwidth="1* 3* 3* 6*">
-                        <sthead>
-                            <stentry>Administrators</stentry>
-                            <stentry>Content Managers</stentry>
-                        </sthead>
-                        <strow>
-                            <stentry><xref format="dita" href="building-your-site/create-page-cp-adm.dita">Create a page via the <uicontrol>Control Bar</uicontrol>.</xref></stentry>
-                            <stentry><xref format="dita" href="building-your-site/create-page-pb-all.dita">Create a page via the <uicontrol>Persona Bar</uicontrol>.</xref></stentry>
-                        </strow>
-                        <strow>
-                            <stentry><xref format="dita" href="building-your-site/copy-page-cp-adm.dita">Copy a page via the <uicontrol>Control Bar</uicontrol>.</xref></stentry>
-                            <stentry><xref format="dita" href="building-your-site/copy-page-pb-all.dita">Copy a page via the <uicontrol>Persona Bar</uicontrol>.</xref></stentry>
-                        </strow>
-                        <strow>
-                            <stentry><xref format="dita" href="building-your-site/edit-page-cp-adm.dita">Edit a page via the <uicontrol>Control Bar</uicontrol>.</xref></stentry>
-                            <stentry><xref format="dita" href="building-your-site/edit-page-pb-all.dita">Edit a page via the <uicontrol>Persona Bar</uicontrol>.</xref></stentry>
-                        </strow>
-                    </simpletable>
-                </info>
-            </step>
-
-            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createcopyeditpage-cp"><cmd/></step> -->
-            <!-- <step conkeyref="k-bpsteps/step-createcopyeditpage-cp"><cmd/></step> -->
-            <step id="step-createcopyeditpage-cp" outputclass="audience-adm">
-                <cmd>Create, copy, or edit a page via the <uicontrol>Control Bar</uicontrol>.</cmd>
                 <choices>
-                    <choice><xref format="dita" href="building-your-site/create-page-cp-adm.dita">Create a page.</xref></choice>
-                    <choice><xref format="dita" href="building-your-site/copy-page-cp-adm.dita">Copy a page.</xref></choice>
-                    <choice><xref format="dita" href="building-your-site/edit-page-cp-adm.dita">Edit a page.</xref></choice>
+                    <choice><xref format="dita" href="pages-templates/create-page-pb-all.dita">Create a page.</xref></choice>
+                    <choice><xref format="dita" href="pages-templates/copy-page-pb-all.dita">Copy a page.</xref></choice>
+                    <choice><xref format="dita" href="pages-templates/edit-page-pb-all.dita">Edit a page.</xref></choice>
                 </choices>
             </step>
-
-            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-createcopyeditpage-pb-cmg"><cmd/></step> -->
-            <!-- <step conkeyref="k-bpsteps/step-createcopyeditpage-pb-cmg"><cmd/></step> -->
-            <step id="step-createcopyeditpage-pb-cmg" outputclass="audience-cmg">
-                <cmd>Create, copy, or edit a page via the <uicontrol>Persona Bar</uicontrol>.</cmd>
-                <choices>
-                    <choice><xref format="dita" href="building-your-site/create-page-pb-all.dita">Create a page.</xref></choice>
-                    <choice><xref format="dita" href="building-your-site/copy-page-pb-all.dita">Copy a page.</xref></choice>
-                    <choice><xref format="dita" href="building-your-site/edit-page-pb-all.dita">Edit a page.</xref></choice>
-                </choices>
-            </step>
-
-
-
-            <!-- MODULES: ADD, EDIT -->
-
 
         </steps>
 

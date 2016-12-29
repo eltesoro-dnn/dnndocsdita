@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-microservices">
+
+    <title>Microservices</title>
+
+    <!-- about-microservices is already built in another ditamap. -->
+    <topichead outputclass="sub-nav-tabs" collection-type="family" >
+        <topicmeta><navtitle>Microservices</navtitle></topicmeta>
+        <topicref format="dita" type="task"  toc="yes" href="enable-microservices-pb-all.dita" />
+    </topichead>
+
+
+    <!-- RelTables -->
+    <reltable>
+        <relheader>
+            <relcolspec type="concept"/>
+            <relcolspec type="task"/>
+            <relcolspec type="reference"/>
+        </relheader>
+
+        <!-- all -->
+        <relrow audience="adm">
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="task"  href="enable-microservices-pb-all.dita" />
+                <topicref format="dita" type="topic" href="about-microservices.dita" />
+            </relcell>
+            <relcell/>
+        </relrow>
+
+    </reltable>
+
+</map>

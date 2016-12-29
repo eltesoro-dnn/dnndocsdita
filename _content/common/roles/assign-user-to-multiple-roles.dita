@@ -1,0 +1,82 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-AssignUserToMultipleRoles">
+
+    <title>Assign a Single User to Multiple Roles</title>
+    <titlealts>
+        <navtitle>Assign User to Multiple Roles</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>wrET,orLY,edET</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <prereq><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></prereq>
+
+        <steps>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Manage-Users-E90"><cmd/></step>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Manage-Users-E90"><cmd/></step>
+            <step audience="mod" conkeyref="k-bppbar/step-pb-mod-Manage-Users-E90"><cmd/></step>
+
+            <step conref="../user-accounts/bptext-userssteps.dita#tsk-bptext-userssteps/step-searchforuser"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-managerolesforuser"><cmd/></step>
+            <step>
+                <cmd>For each role to add to the user,</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ManageRolesForUserAdd.png"><alt>Select each role and optionally assign effective or expiry dates. Then click/tap Add Role to User.</alt></image></info>
+                <substeps>
+                    <substep>
+                        <cmd>Select a role from the <uicontrol>Security Role</uicontrol> dropdown.</cmd>
+                    </substep>
+
+                    <substep>
+                        <cmd>(Optional) Add an <uicontrol>Effective Date</uicontrol> to assign the role to the user at a future date.</cmd>
+                        <info>If <uicontrol>Effective Date</uicontrol> is empty, the role is assigned to the user immediately.</info>
+                    </substep>
+
+                    <substep>
+                        <cmd>(Optional) Add an <uicontrol>Expiry Date</uicontrol> to remove the user from the role at a future date.</cmd>
+                        <info>If <uicontrol>Expiry Date</uicontrol> is empty, the user is assigned that role indefinitely.</info>
+                    </substep>
+
+                    <substep>
+                        <cmd>(Optional) Check <uicontrol>Is Owner</uicontrol> to allow the user to moderate other users in the role.</cmd>
+                        <info>This option is available only if the role's <uicontrol>Security Mode</uicontrol> is set to <uicontrol>SocialGroup</uicontrol>.</info>
+                    </substep>
+
+                    <substep>
+                        <cmd>(Optional) Check <uicontrol>Send Email</uicontrol> to notify the user of the change.</cmd>
+                    </substep>
+
+                    <substep>
+                        <cmd>Click/Tap <uicontrol>Add Role to User</uicontrol>.</cmd>
+                    </substep>
+                </substeps>
+            </step>
+        </steps>
+
+    </taskbody>
+
+</task>

@@ -36,8 +36,8 @@
     <taskbody>
 
         <steps>
-			<step conref="../building-your-site/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-editpageformoduleconfig-basic"><cmd/></step>
-			<step conref="../building-your-site/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/step-xx-actionmenu-manage-settings"><cmd/></step>
+			<step conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/step-editpageformoduleconfig-basic"><cmd/></step>
+			<step conkeyref="k-bpmodules/step-actionmenu-manage-settings"><cmd/></step>
             <step>
 				<cmd>Go to the <uicontrol>Menu Settings</uicontrol> tab.</cmd>
 				<info>
@@ -67,7 +67,7 @@
 
     <related-links>
         <!-- Evoq 8.5 <link format="dita" scope="peer" href="../building-your-site/configure-module-on-page-cp-adm.dita"><linktext>Configure a Module on a Page via the Control Bar</linktext></link> -->
-        <link format="dita" scope="peer" href="../building-your-site/configure-module-on-page-pb-all.dita"><linktext>Configure a Module on a Page via the Persona Bar</linktext></link>
+        <link format="dita" scope="peer" href="../content-with-modules/configure-module-on-page-pb-all.dita"><linktext>Configure a Module on a Page via the Persona Bar</linktext></link>
     </related-links>
 
 </task>

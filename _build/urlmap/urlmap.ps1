@@ -1,5 +1,5 @@
 # Creates a web.config file.
-# USAGE: powershell -file w:\_build\urlmap\urlmap.ps1 w:\_build\urlmap\DC-URLmapping.csv v:\4live-output\html5 > web.config
+# USAGE: powershell -file w:\_build\urlmap\urlmap.ps1 w:\_build\urlmap\DC-URLmapping.csv v:\output\html5 > web.config
 
 if ( $args.Count -gt 1 )  {
     $legacycsv = $args[0]

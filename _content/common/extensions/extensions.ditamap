@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-extensions">
+
+    <title>Extensions</title>
+
+    <topicref format="dita" type="topic" toc="yes" href="about-extensions.dita" copy-to="index.dita" collection-type="family" >
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="install-extension.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="manage-premium-module.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="allow-module-use.dita" />
+    </topicref>
+
+</map>

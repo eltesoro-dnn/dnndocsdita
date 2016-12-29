@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/map.dtd">
+<map xml:lang="en" id="map-roles">
+
+    <title>Roles</title>
+
+    <topicref format="dita" type="topic" toc="yes" href="about-role-based-access.dita" copy-to="index.dita" collection-type="family">
+        <topicref format="dita" type="task" toc="yes" href="create-or-edit-role.dita" />
+        <topicref format="dita" type="task" toc="yes" href="delete-role.dita" />
+        <topicref format="dita" type="task" toc="yes" href="create-role-group.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-or-delete-role-group.dita" />
+        <topicref format="dita" type="task" toc="yes" href="assign-user-to-multiple-roles.dita" />
+        <topicref format="dita" type="task" toc="yes" href="assign-multiple-users-to-role.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-dates-of-user-subscription-to-role.dita" />
+        <topicref format="dita" type="task" toc="yes" href="remove-user-from-multiple-roles.dita" />
+        <topicref format="dita" type="task" toc="yes" href="remove-multiple-users-from-role.dita" />
+    </topicref>
+
+</map>

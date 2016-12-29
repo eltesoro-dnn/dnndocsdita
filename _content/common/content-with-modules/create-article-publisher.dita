@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-create-article-publisher">
+
+    <title>Create an Article in the Publisher Module</title>
+    <titlealts>
+        <navtitle>Create Article in Publisher</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1606</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <section conkeyref="k-bptext/section-prodavail-CE"></section>
+
+        <section>
+            <p>An article can be announcements, news, press releases.</p>
+        </section>
+
+        <steps>
+            <step><cmd>Go to a page with the <uicontrol>Publisher</uicontrol> module.</cmd></step>
+
+            <step>
+                <cmd>Click/Tap <uicontrol>Create Post</uicontrol>.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-module-Publisher-EditBar-CreatePost.png"><alt>Publisher module with the Edit Bar</alt></image>
+                </info>
+            </step>
+
+            <step>
+                <cmd>Create your article.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Publisher-CreatePost.png"><alt>Create an article with the Publisher module</alt></image>
+                </info>
+                <substeps>
+                    <substep>
+                        <cmd>Add an image to be displayed above your article.</cmd>
+                        <info>
+                            <p>You can:</p>
+                            <ul>
+                                <li>upload a file,</li>
+                                <li>choose a file that is already in your site, or</li>
+                                <li>copy a file from the web.</li>
+                            </ul>
+                            <note type="note">Please be mindful of copyrights when using images from the web.</note>
+                        </info>
+                    </substep>
+
+                    <substep>
+                        <cmd>(Optional) After adding the image, you can replace or delete the image by clicking the pencil icon or X icon, respectively.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Publisher-ReplaceDeleteImage.png"><alt></alt></image>
+                        </info>
+                    </substep>
+
+                    <substep>
+                        <cmd>Enter the title and text for your topic.</cmd>
+                        <info>
+                            <p>Clicking/Tapping <uicontrol>Type your story here</uicontrol> opens a text-editing panel, where you can format the body of the text, create links, and add more images.</p>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Publisher-TextEditingPanel2.png"><alt></alt></image>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+
+            <step>
+                <cmd>(Optional) Edit the properties of the article.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Publisher-EditPostDetails.png"><alt></alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow conkeyref="k-bppagesxx/strow-field-pageurl"><stentry/></strow>
+                        <strow conkeyref="k-bpmodules/strow-field-Featured"><stentry/></strow>
+                        <strow conkeyref="k-bpmodules/strow-field-tags-cs"><stentry/></strow>
+                    </simpletable>
+                </info>
+            </step>
+
+            <step>
+                <cmd>(Optional) Change the author of the article.</cmd>
+                <info>
+                    <p>By default, the current user is specified as the author of the article; however, you can override this setting and select a different author from the list.</p>
+                    <note type="tip">If an author is not included in the list, verify that they belong to a role that has <uicontrol>View</uicontrol> permissions for the module.</note>
+                    <!-- It's odd that the author only needs View access to the module even if they have no access at all to the page. -->
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Publisher-PostAuthor.png"><alt></alt></image>
+                </info>
+            </step>
+        </steps>
+
+    </taskbody>
+
+</task>

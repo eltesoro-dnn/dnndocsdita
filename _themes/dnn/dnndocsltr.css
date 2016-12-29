@@ -1310,7 +1310,8 @@ nav[role="toc"] > ul > li > ul > li > ul {
   background-color: #f4f4f4!important;
   margin-left: -70px;
 }
-nav[role="toc"] > ul > li > ul > li > ul > li > a {
+nav[role="toc"] a,
+nav[role="toc"] span {
   margin-left: 25px;
 }
 

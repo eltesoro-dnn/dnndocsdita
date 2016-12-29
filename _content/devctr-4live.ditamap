@@ -10,6 +10,10 @@
     <keydef keys="k-bpsteps"  href="common/bptext-steps.dita#tsk-bptext-steps" />
     <keydef keys="k-bppbar"   href="common/bptext-pbar.dita#tsk-bptext-pbar" />
 
+    <keydef keys="k-bppagespb"  href="developers/pages-templates/bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb" />
+    <keydef keys="k-bppagesxx"  href="developers/pages-templates/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx" />
+    <keydef keys="k-bpmodules"  href="developers/content-with-modules/bptext-modules-steps.dita#tsk-bptext-modules-steps" />
+
 
     <!-- Topics -->
     <topicref format="dita" type="topic" toc="yes" href="developers/index.dita" >
@@ -66,7 +70,7 @@
         </topicref>
 
         <!-- Securing Your Site -->
-        <mapref href="developers/security/security-dev.ditamap" />
+        <mapref href="developers/security.ditamap" />
 
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="developers/developer-references.dita" collection-type="family">
@@ -76,7 +80,8 @@
             <topicref format="dita" type="topic"     toc="yes" href="developers/about-evs.dita" />
             <!-- <topicref format="dita" type="reference" toc="yes" href="developers/contents-module-pack.dita" /> Topic not ready. -->
             <topicref format="dita" type="reference" toc="yes" href="developers/extensions/dnn-manifest-schema.dita" />
-            <topicref format="dita" type="reference" toc="yes" href="developers/included-modules/included-modules.dita" copy-to="developers/included-modules/index.dita" />
+            <mapref href="developers/included-modules/included-modules.dita" />
+            <!-- <topicref format="dita" type="reference" toc="yes" href="developers/included-modules/included-modules.dita" copy-to="developers/included-modules/index.dita" /> -->
             <topicref format="html" scope="external" navtitle="DNN API Reference" locktitle="yes" toc="yes" href="http://www.dnnsoftware.com/dnn-api/" />
             <topicref format="dita" type="reference" toc="yes" href="developers/requirements.dita" />
             <topicref format="dita" type="reference" toc="yes" href="developers/product-versions.dita" />
@@ -126,7 +131,7 @@
         <relrow>
             <relcell>
                 <topicref format="dita" type="topic"                                                                                 href="content-managers/microservices/creating-content-with-microservices.dita" />
-                <topicref format="dita" type="topic"              linking="targetonly" navtitle="JWT Authentication" locktitle="yes" href="developers/security/jwt/about-jwt.dita" />
+                <topicref format="dita" type="topic"              linking="targetonly" navtitle="JWT Authentication" locktitle="yes" href="developers/jwt/about-jwt.dita" />
                 <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Licensing"          locktitle="yes" href="administrators/licensing/licensing.dita" />
                 <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Structured Content" locktitle="yes" href="content-managers/structured-content/about-structured-content.dita" />
                 <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Form Builder"       locktitle="yes" href="content-managers/forms/about-form-builder.dita" />
@@ -260,7 +265,7 @@
         <!-- dev -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic" linking="targetonly" navtitle="JWT Authentication" locktitle="yes" href="developers/security/jwt/about-jwt.dita" />
+                <topicref format="dita" type="topic" linking="targetonly" navtitle="JWT Authentication" locktitle="yes" href="developers/jwt/about-jwt.dita" />
             </relcell>
             <relcell>
                 <topicref format="dita" type="topic" href="developers/microservices/creating-apps-that-use-microservices.dita" />

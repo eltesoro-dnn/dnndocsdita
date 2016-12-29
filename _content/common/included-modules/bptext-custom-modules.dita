@@ -1088,7 +1088,11 @@
 
         <steps>
 
-            <step><cmd></cmd></step>
+            <!-- <step conref="bptext-custom-modules.dita#tsk-bptext-custom-modules/step-editpageformoduleconfig-basic"><cmd/></step> -->
+            <step id="step-editpageformoduleconfig-basic">
+                <cmd>Go to the page containing the module to configure. Edit the page.</cmd>
+            </step>
+
 
         </steps>
 

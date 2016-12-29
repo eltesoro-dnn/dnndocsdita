@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-control-bar-to-persona-bar">
+
+
+    <title>Control Bar to Persona Bar</title>
+    <titlealts>
+        <navtitle>Control Bar to Persona Bar</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>wrET,1612</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience job="evaluating" />
+            <audience job="installing" />
+            <audience type="administrator" />
+            <audience type="programmer" />
+            <audience type="other" othertype="designer" />
+        </metadata>
+    </prolog>
+
+    <body>
+        <section id="section-menu-changes">
+            <!-- <title>Where do I find ...?</title> -->
+
+            <p>The following tables show the correspondence between the old Control Panel/Bar and the new Persona Bar.</p>
+
+            <note type="note"><ph conkeyref="k-bptext/ph-pbar-varies"></ph></note>
+        </section>
+
+
+        <section id="section-control-panel">
+            <p>Click on a menu item in the Control Bar image below to see the equivalent in the Persona Bar.</p>
+
+            <imagemap id="imgmap-menuAdminCommon" outputclass="ctrlbar">
+                <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../common/img/scr-menuAdminCommon.png"><alt>Old Control Bar menu - Admin - Common</alt></image>
+                <area><shape>rect</shape><coords>317,133,172,76</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Manage-AdminLogs">Event Viewer</xref></area>
+                <area><shape>rect</shape><coords>319,76,465,134</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Content-Assets">File Management</xref></area>
+                <area><shape>rect</shape><coords>465,76,612,133</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Content-Pages">Page Management</xref></area>
+                <area><shape>rect</shape><coords>614,78,758,132</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Content-RecycleBin">Recycle Bin</xref></area>
+                <area><shape>rect</shape><coords>173,135,316,188</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Manage-Roles">Security Roles</xref></area>
+                <area><shape>rect</shape><coords>320,135,464,188</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-dialogs-SiteSettings">Site Settings</xref></area>
+                <area><shape>rect</shape><coords>468,135,610,190</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Manage-Users">User Accounts</xref></area>
+            </imagemap>
+
+            <imagemap id="imgmap-menuAdminAdvanced" outputclass="ctrlbar">
+                <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../common/img/scr-menuAdminAdvanced.png"><alt>Old Control Panel/Bar menu - Admin - Advanced</alt></image>
+                <area><shape>rect</shape><coords>171,77,317,132</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-AdvancedURLManagement">Advanced URL Management</xref></area>
+                <area><shape>rect</shape><coords>319,77,464,132</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Extensions">Extensions</xref></area>
+                <area><shape>rect</shape><coords>465,77,611,132</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-GoogleAnalyticsPro">Google Analytics Pro</xref></area>
+                <area><shape>rect</shape><coords>613,77,759,132</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Languages">Languages</xref></area>
+                <area><shape>rect</shape><coords>171,134,317,189</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Lists">Lists</xref></area>
+                <area><shape>rect</shape><coords>319,134,464,189</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-SearchAdmin">Search Admin</xref></area>
+                <area><shape>rect</shape><coords>465,134,611,189</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-SearchEngineSiteMap">Search Engine Site Map</xref></area>
+                <area><shape>rect</shape><coords>613,134,759,189</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-SharePointConnector">SharePoint Connector</xref></area>
+                <area><shape>rect</shape><coords>171,191,317,246</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-SiteWizard">Site Wizard</xref></area>
+                <area><shape>rect</shape><coords>319,134,464,246</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Taxonomy">Taxonomy</xref></area>
+                <area><shape>rect</shape><coords>465,134,611,246</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Themes">Themes</xref></area>
+                <area><shape>rect</shape><coords>613,134,759,246</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-UserSwitcher">User Switcher</xref></area>
+                <area><shape>rect</shape><coords>171,247,317,303</coords><xref href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-WorkflowManagement">Workflow Management</xref></area>
+            </imagemap>
+
+        </section>
+
+
+        <section id="section-dialogs">
+
+            <sectiondiv id="sectiondiv-dialogs-SiteSettings">
+                <imagemap id="imgmap-dialogs-SiteSettings" outputclass="dialogs">
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../common/img/scr-BasicSettings-abbr-E85.png"><alt></alt></image>
+                    <area><shape>rect</shape><coords>53,34,161,72</coords><xref type="topic" href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-dialogs-BasicSettings">Basic Settings</xref></area>
+                    <area><shape>rect</shape><coords>170,34,304,72</coords><xref type="topic" href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Settings-SiteSettings-AdvancedSettings">Advanced Settings</xref></area>
+                    <area><shape>rect</shape><coords>310,34,472,72</coords><xref type="topic" href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Settings-SiteSettings-UserAccountSettings">User Account Settings</xref></area>
+                    <area><shape>rect</shape><coords>479,34,604,72</coords><xref type="topic" href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Settings-SiteSettings-StylesheetEditor">Stylesheet Editor</xref></area>
+                    <area><shape>rect</shape><coords>611,34,780,72</coords><xref type="topic" href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Settings-SiteSettings-AdvancedURLSettings">Advanced URL Settings</xref></area>
+                </imagemap>
+            </sectiondiv>
+
+            <sectiondiv id="sectiondiv-dialogs-BasicSettings">
+                <imagemap id="imgmap-dialogs-BasicSettings" outputclass="dialogs">
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../common/img/scr-BasicSettings-abbr-E85.png"><alt></alt></image>
+                    <area><shape>rect</shape><coords>46,134,922,179</coords><xref type="topic" href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Settings-SiteSettings-BasicSettings-SiteDetails">Site Details</xref></area>
+                    <area><shape>rect</shape><coords>46,192,922,236</coords><xref type="topic" href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Settings-SiteSettings-BasicSettings-SiteMarketing">Site Marketing</xref></area>
+                    <area><shape>rect</shape><coords>46,251,922,297</coords><xref type="topic" href="#top-control-bar-to-persona-bar?id=top-control-bar-to-persona-bar__sectiondiv-pbar-Settings-SiteSettings-BasicSettings-Appearance">Appearance</xref></area>
+                </imagemap>
+            </sectiondiv>
+
+        </section>
+
+
+        <section id="section-persona-bar">
+
+            <!-- CONTROL BAR >> ADMIN >> BASIC -->
+
+            <!-- Control Bar >> Admin >> Event Viewer -->
+            <sectiondiv id="sectiondiv-pbar-Manage-AdminLogs" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Manage-AdminLogs-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> File Management -->
+            <sectiondiv id="sectiondiv-pbar-Content-Assets" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Content-Assets-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Page Management -->
+            <sectiondiv id="sectiondiv-pbar-Content-Pages" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Content-Pages-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Recycle Bin -->
+            <sectiondiv id="sectiondiv-pbar-Content-RecycleBin" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Content-RecycleBin-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Security Roles -->
+            <sectiondiv id="sectiondiv-pbar-Manage-Roles" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Manage-Roles-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Site Settings -->
+            <sectiondiv id="sectiondiv-pbar-Settings-SiteSettings" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Settings-SiteSettings-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Site Settings >> Basic Settings >> Site Details -->
+            <sectiondiv id="sectiondiv-pbar-Settings-SiteSettings-BasicSettings-SiteDetails" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Settings-SiteSettings-E90"></fig></p>
+                <!-- fig ... -->
+                <!-- fig ... -->
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Site Settings >> Basic Settings >> SiteMarketing -->
+            <sectiondiv id="sectiondiv-pbar-Settings-SiteSettings-BasicSettings-SiteMarketing" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Settings-SiteSettings-E90"></fig></p>
+                <!-- fig ... -->
+                <!-- fig ... -->
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Site Settings >> Basic Settings >> Appearance -->
+            <sectiondiv id="sectiondiv-pbar-Settings-SiteSettings-BasicSettings-Appearance" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Settings-SiteSettings-E90"></fig></p>
+                <!-- fig ... -->
+                <!-- fig ... -->
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Site Settings >> Advanced Settings -->
+            <sectiondiv id="sectiondiv-pbar-Settings-SiteSettings-AdvancedSettings" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Settings-SiteSettings-E90"></fig></p>
+                <!-- fig ... -->
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Site Settings >> User Account Settings -->
+            <sectiondiv id="sectiondiv-pbar-Settings-SiteSettings-UserAccountSettings" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Settings-SiteSettings-E90"></fig></p>
+                <!-- fig ... -->
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Site Settings >> Stylesheet Editor -->
+            <sectiondiv id="sectiondiv-pbar-Settings-SiteSettings-StylesheetEditor" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Settings-SiteSettings-E90"></fig></p>
+                <!-- fig ... -->
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Site Settings >> Advanced URL Settings -->
+            <sectiondiv id="sectiondiv-pbar-Settings-SiteSettings-AdvancedURLSettings" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Settings-SiteSettings-E90"></fig></p>
+                <!-- fig ... -->
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> User Accounts -->
+            <sectiondiv id="sectiondiv-pbar-Manage-Users" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Manage-Users-E90"></fig></p>
+            </sectiondiv>
+
+
+            <!-- CONTROL BAR >> ADMIN >> ADVANCED -->
+
+            <!-- Control Bar >> Admin >> Advanced URL Management -->
+            <sectiondiv id="sectiondiv-pbar-AdvancedURLManagement" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-AdvancedURLManagement-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Advanced URL Management >> General -->
+            <sectiondiv id="sectiondiv-pbar-AdvancedURLManagement-General" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-AdvancedURLManagement-E90"></fig></p>
+                <!-- fig ... -->
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Advanced URL Management >> Regular Expressions -->
+            <sectiondiv id="sectiondiv-pbar-AdvancedURLManagement-RegularExpressions" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-AdvancedURLManagement-E90"></fig></p>
+                <!-- fig ... -->
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Advanced URL Management >> Test URL -->
+            <sectiondiv id="sectiondiv-pbar-AdvancedURLManagement-TestURL" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-AdvancedURLManagement-E90"></fig></p>
+                <!-- fig ... -->
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Extensions -->
+            <sectiondiv id="sectiondiv-pbar-Extensions" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Extensions-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Google Analytics Pro -->
+            <sectiondiv id="sectiondiv-pbar-GoogleAnalyticsPro" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-GoogleAnalyticsPro-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Languages -->
+            <sectiondiv id="sectiondiv-pbar-Languages" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Languages-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Lists -->
+            <sectiondiv id="sectiondiv-pbar-Lists" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Lists-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Search Admin >> General-->
+            <sectiondiv id="sectiondiv-pbar-Settings-SiteSettings-General" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Settings-SiteSettings-General-E90"></fig></p>
+                <!-- fig ... -->
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Search Admin >> Synonyms -->
+            <sectiondiv id="sectiondiv-pbar-Settings-SiteSettings-Synonyms" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Settings-SiteSettings-Synonyms-E90"></fig></p>
+                <!-- fig ... -->
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Search Admin >> Ignore Words -->
+            <sectiondiv id="sectiondiv-pbar-Settings-SiteSettings-IgnoreWords" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Settings-SiteSettings-IgnoreWords-E90"></fig></p>
+                <!-- fig ... -->
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Search Admin >> Advanced Crawlers -->
+            <sectiondiv id="sectiondiv-pbar-Settings-SiteSettings-AdvancedCrawlers" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Settings-SiteSettings-AdvancedCrawlers-E90"></fig></p>
+                <!-- fig ... -->
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Search Engine Site Map -->
+            <sectiondiv id="sectiondiv-pbar-SearchEngineSiteMap" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-SearchEngineSiteMap-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> SharePoint Connector -->
+            <sectiondiv id="sectiondiv-pbar-SharePointConnector" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-SharePointConnector-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Site Wizard -->
+            <sectiondiv id="sectiondiv-pbar-SiteWizard" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-SiteWizard-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Taxonomy -->
+            <sectiondiv id="sectiondiv-pbar-Taxonomy" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Taxonomy-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Themes -->
+            <sectiondiv id="sectiondiv-pbar-Themes" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-Themes-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> User Switcher -->
+            <sectiondiv id="sectiondiv-pbar-UserSwitcher" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-UserSwitcher-E90"></fig></p>
+            </sectiondiv>
+
+            <!-- Control Bar >> Admin >> Workflow Management -->
+            <sectiondiv id="sectiondiv-pbar-WorkflowManagement" outputclass="pbar-equiv">
+                <p><fig conkeyref="k-bppbar/fig-pb-adm-WorkflowManagement-E90"></fig></p>
+            </sectiondiv>
+
+        </section>
+
+    </body>
+
+</topic>

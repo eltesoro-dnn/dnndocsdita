@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/map.dtd">
+<map xml:lang="en" id="map-jwt">
+
+    <title>JWT Authentication</title>
+
+    <topicref format="dita" type="topic" toc="yes" href="about-jwt.dita" copy-to="index.dita" collection-type="family">
+        <!-- JWT tasks -->
+        <topicref format="dita" type="task" toc="yes" href="setup-jwt-for-auth.dita" />
+        <!-- JWT references -->
+        <topicref format="dita" type="topic" toc="yes" href="jwt-user-credentials.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="jwt-server-response.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="jwt-access-token.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="jwt-page-request.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="jwt-auth-handler.dita" />
+        <!-- JWT example -->
+        <!-- <topicref format="dita" type="task" toc="yes" href="tutorial-jwt-moniker-mobile-app.dita" /> Topic not ready. -->
+    </topicref>
+
+
+    <!-- RelTables -->
+    <reltable>
+        <relheader>
+            <relcolspec type="concept"/>
+            <relcolspec type="task"/>
+            <relcolspec type="reference"/>
+        </relheader>
+
+        <!-- adm: JWT top level topics. -->
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="topic" href="about-jwt.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="task"  href="setup-jwt-for-auth.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="topic" href="jwt-user-credentials.dita" />
+                <topicref format="dita" type="topic" href="jwt-server-response.dita" />
+                <topicref format="dita" type="topic" href="jwt-access-token.dita" />
+                <topicref format="dita" type="topic" href="jwt-page-request.dita" />
+                <topicref format="dita" type="topic" href="jwt-auth-handler.dita" />
+            </relcell>
+        </relrow>
+
+        <!-- dev: JWT tutorial (Topic not ready.)
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="topic"    href="tutorial-jwt-moniker-mobile-app.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="task"     href="../jwt/setup-jwt-for-auth.dita" />
+            </relcell>
+            <relcell/>
+        </relrow>
+         -->
+
+    </reltable>
+
+</map>

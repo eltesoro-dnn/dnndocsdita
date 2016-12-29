@@ -32,9 +32,10 @@
 
 		<section conkeyref="k-bptext/section-prodavail-E"></section>
 
-        <section id="about">
+        <section id="section-about-microservices">
             <title>About Microservices</title>
-            <p>Learn about <xref format="dita" href="about-microservices.dita">microservices</xref>.</p>
+
+            <sectiondiv conref="about-microservices.dita#top-about-microservices/sectiondiv-about-microservices"></sectiondiv>
         </section>
 
         <section id="using-microservices">

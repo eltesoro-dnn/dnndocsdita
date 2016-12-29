@@ -81,6 +81,14 @@ developers/about-modules/mvc-module-development.html,developers/mvc-modules/mvc-
 developers/about-modules/unsupported-mvc-features.html,developers/mvc-modules/unsupported-mvc-features.html,new MVC folder
 content-managers/(.*)-via-persona-bar(.*).html,content-managers/{R:2}-via-persona-bar-cmg{R:3}.html,Renaming the default for Evoq 9.0 (Admin Persona Bar).
 administrators/(.*)-via-persona-bar(.*).html,administrators/{R:2}-via-persona-bar-adm{R:3}.html,This one might be unnecessary.
-administrators/(.*)-cp.html,administrators/(R:2)-cp-adm.html,
-content-managers/(.*)-pb.html,content-managers/(R:2)-pb-cmg.html,
-85/administrators/structured-content,85/content-managers/structured-content,redirect for Google Search; delete for 9.0
+administrators/(.*)-cp.html,administrators/{R:2}-cp-adm.html,
+content-managers/(.*)-pb.html,content-managers/{R:2}-pb-cmg.html,
+configuring-your-site/(.*)connectors(.*).html,connectors/{R:2}connectors{R:3}.html,reorg
+configuring-your-site/(.*)microservices(.*).html,microservices/{R:2}microservices{R:3}.html,reorg
+configuring-your-site/(.*)sitemap(.*).html,sitemaps/{R:2}sitemap{R:3}.html,reorg
+configuring-your-site/submit-site-Google-search.html,sitemaps/submit-site-Google-search.html,reorg
+configuring-your-site/(.*)workflows(.*).html,workflows/{R:2}workflows{R:3}.html,reorg
+security/user-accounts/(.*).html,user-accounts/{R:2}.html,reorg
+security/roles/(.*).html,roles/{R:2}.html,reorg
+security/jwt/(.*).html,jwt/{R:2}.html,reorg
+edit-host.html,edit-user.html,new behavior in v9.0 - Cannot edit another host's account.

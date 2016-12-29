@@ -49,9 +49,11 @@
         </prereq>
 
         <steps>
-			<step conkeyref="k-bpsteps/step-createcopyeditpage-cp"><cmd/></step>
+			<step conkeyref="k-bpsteps/step-createcopyeditpage"><cmd/></step>
+			<step conkeyref="k-bpmodules/step-openmodulelist-inpane"><cmd/></step>
 
-			<step conref="../../common/building-your-site/bptext-pages-steps-cp.dita#tsk-bptext-pages-steps-cp/step-cp-openmodulelist"><cmd/></step>
+
+            <!-- The following have not been verified in Evoq 9.0. -->
 
             <step>
                 <cmd>Search for the Module Creator among the installed modules.</cmd>

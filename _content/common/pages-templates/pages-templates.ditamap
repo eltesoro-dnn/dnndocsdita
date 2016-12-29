@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-pages-templates">
+
+    <title>Pages and Templates</title>
+
+    <topicref format="dita" type="topic" toc="yes" href="managing-pages-templates.dita" copy-to="index.dita" collection-type="family">
+        <topicref format="dita" type="task" toc="yes" href="create-page-pb-all.dita" />
+        <topicref format="dita" type="task" toc="yes" href="configure-page-pb-all.dita" />
+        <topicref format="dita" type="task" toc="yes" href="copy-page-pb-all.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-page-pb-all.dita" />
+        <topicref format="dita" type="task" toc="yes" href="view-hidden-page-pb-all.dita" />
+        <topicref format="dita" type="task" toc="yes" href="delete-page-pb-all.dita" />
+        <topicref format="dita" type="task" toc="yes" href="copy-permissions-to-child-pages-pb-all.dita" />
+        <topicref format="dita" type="task" toc="yes" href="create-template-based-on-page-pb-all.dita" />
+        <topicref format="dita" type="task" toc="yes" href="create-template-based-on-another-template-pb-all.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-delete-template-pb-all.dita" />
+    </topicref>
+
+</map>

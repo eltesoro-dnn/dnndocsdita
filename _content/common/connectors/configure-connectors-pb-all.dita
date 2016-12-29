@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-configure-connectors-pb-all">
+
+    <title>Configure Connections to External Service Providers</title>
+    <titlealts>
+        <navtitle>Configure Connections to External Services</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1612</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <steps>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Settings-Connectors-E90"><cmd/></step>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Settings-Connectors-E90"><cmd/></step>
+            <step conref="bptext-connectors.dita#tsk-bptext-connectors/step-configure-connections"><cmd/></step>
+            <step conref="bptext-connectors.dita#tsk-bptext-connectors/step-provide-connection-info"><cmd/></step>
+            <step><cmd>Click/tap <uicontrol>Save</uicontrol>.</cmd></step>
+        </steps>
+
+        <!-- <postreq/> How do they verify that it works? -->
+
+    </taskbody>
+
+    <!--
+	<related-links>
+        <link format="html" scope="external" href="http://docs.marketo.com/display/public/DOCS/Add+Munchkin+Tracking+Code+to+Your+Website"><linktext>Add Munchkin Tracking Code to Your Website</linktext></link>
+        <link format="" scope="external" href=""><linktext></linktext></link>
+    </related-links>
+    -->
+
+</task>
