@@ -74,21 +74,23 @@ designers/release-notes,designers/whats-new-dnn.html,directory rename
 designers/release-notes/,designers/whats-new-dnn.html,directory rename
 community-managers/release-notes,community-managers/whats-new-dnn.html,directory rename
 community-managers/release-notes/,community-managers/whats-new-dnn.html,directory rename
-dnn-platform-overview.html,dnn-overview.html,file rename
-view-form-analytics.html,view-form-responses.html,file rename
+(.*)/dnn-platform-overview.html,{R:2}/dnn-overview.html,file rename
+(.*)/view-form-analytics.html,{R:2}/view-form-responses.html,file rename
 content-managers/building-your-site/about-microservices.html,content-managers/building-your-site/creating-content-with-microservices.html,file rename
 developers/about-modules/mvc-module-development.html,developers/mvc-modules/mvc-module-development.html,new MVC folder
 developers/about-modules/unsupported-mvc-features.html,developers/mvc-modules/unsupported-mvc-features.html,new MVC folder
 content-managers/(.*)-via-persona-bar(.*).html,content-managers/{R:2}-via-persona-bar-cmg{R:3}.html,Renaming the default for Evoq 9.0 (Admin Persona Bar).
 administrators/(.*)-via-persona-bar(.*).html,administrators/{R:2}-via-persona-bar-adm{R:3}.html,This one might be unnecessary.
 administrators/(.*)-cp.html,administrators/{R:2}-cp-adm.html,
-content-managers/(.*)-pb.html,content-managers/{R:2}-pb-cmg.html,
-configuring-your-site/(.*)connectors(.*).html,connectors/{R:2}connectors{R:3}.html,reorg
-configuring-your-site/(.*)microservices(.*).html,microservices/{R:2}microservices{R:3}.html,reorg
-configuring-your-site/(.*)sitemap(.*).html,sitemaps/{R:2}sitemap{R:3}.html,reorg
-configuring-your-site/submit-site-Google-search.html,sitemaps/submit-site-Google-search.html,reorg
-configuring-your-site/(.*)workflows(.*).html,workflows/{R:2}workflows{R:3}.html,reorg
-security/user-accounts/(.*).html,user-accounts/{R:2}.html,reorg
-security/roles/(.*).html,roles/{R:2}.html,reorg
-security/jwt/(.*).html,jwt/{R:2}.html,reorg
-edit-host.html,edit-user.html,new behavior in v9.0 - Cannot edit another host's account.
+content-managers/(.*)-pb.html,content-managers/{R:2}-pb-all.html,
+(.*)/configuring-your-site/(.*)connectors(.*).html,{R:2}/connectors/{R:3}connectors{R:4}.html,reorg
+(.*)/configuring-your-site/(.*)microservices(.*).html,{R:2}/microservices/{R:3}microservices{R:4}.html,reorg
+(.*)/configuring-your-site/(.*)sitemap(.*).html,{R:2}/sitemaps/{R:3}sitemap{R:4}.html,reorg
+(.*)/configuring-your-site/submit-site-Google-search.html,{R:2}/sitemaps/submit-site-Google-search.html,reorg
+(.*)/configuring-your-site/(.*)workflows(.*).html,{R:2}/workflows/{R:3}workflows{R:4}.html,reorg
+(.*)/security/user-accounts/(.*).html,{R:2}/user-accounts/{R:3}.html,reorg
+(.*)/security/roles/assign-user-to-multiple-roles.html,{R:2}/user-accounts/assign-user-to-multiple-roles.html,reorg
+(.*)/security/roles/remove-user-from-multiple-roles.html,{R:2}/user-accounts/remove-user-from-multiple-roles.html,reorg
+(.*)/security/roles/(.*).html,{R:2}/roles/{R:3}.html,reorg
+(.*)/security/jwt/(.*).html,{R:2}/jwt/{R:3}.html,reorg
+(.*)/edit-host.html,{R:2}/edit-user.html,new behavior in v9.0 - Cannot edit another host's account.

@@ -234,9 +234,11 @@
             </step>
 
             <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-user-roles"><cmd/></step> -->
+            <!-- <cmd conref="bptext-userssteps.dita#tsk-bptext-userssteps/cmd-user-roles"></cmd> -->
+            <!-- <info conref="bptext-userssteps.dita#tsk-bptext-userssteps/info-user-roles"></info> -->
             <step id="step-user-roles">
-                <cmd>Click/Tap the <uicontrol>User Roles</uicontrol> icon for the user.</cmd>
-                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-Roles-E90.png"><alt>User List &gt; find the user &gt; User Roles</alt></image></info>
+                <cmd id="cmd-user-roles">Click/Tap the <uicontrol>User Roles</uicontrol> icon for the user.</cmd>
+                <info id="info-user-roles"><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-Roles-E90.png"><alt>User List &gt; find the user &gt; User Roles</alt></image></info>
             </step>
 
             <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-user-profilesettings"><cmd/></step> -->
@@ -417,6 +419,64 @@
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserList-hostellipsesmenu-MakeRegularUser-E90.png"><alt>User List &gt; Show: Superuser &gt; find the user &gt; ellipses icon &gt; Make Regular User</alt></image></info>
             </step>
 
+
+
+            <!-- ==================== USERS - ROLES : MENU OPTIONS ==================== -->
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-hover-and-delete-role"><cmd/></step> -->
+            <step id="step-hover-and-delete-role">
+                <cmd>Hover over the role, then click/tap the <uicontrol>X</uicontrol> icon for that role.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Users-Roles-Delete-E90.png"><alt></alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-hover-and-calendar-role"><cmd/></step> -->
+            <!-- <cmd conref="bptext-userssteps.dita#tsk-bptext-userssteps/cmd-hover-and-calendar-role"></cmd> -->
+            <!-- <info conref="bptext-userssteps.dita#tsk-bptext-userssteps/info-hover-and-calendar-role"></info> -->
+            <step id="step-hover-and-calendar-role">
+                <cmd id="cmd-hover-and-calendar-role">(Optional) Hover over the role, then click/tap the calendar start and end icons for that role to define the date range when the user is assigned to the role.</cmd>
+                <info id="info-hover-and-calendar-role"><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Users-Roles-Calendar-E90.png"><alt></alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-opt-limit-dates-for-role-membership"><cmd/></step> -->
+            <step id="step-opt-limit-dates-for-role-membership">
+                <cmd>(Optional) Limit the date range when the user is a member of a specific role.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd conref="bptext-userssteps.dita#tsk-bptext-userssteps/cmd-user-roles"></cmd>
+                        <info conref="bptext-userssteps.dita#tsk-bptext-userssteps/info-user-roles"></info>
+                    </substep>
+                    <substep>
+                        <cmd conref="bptext-userssteps.dita#tsk-bptext-userssteps/cmd-hover-and-calendar-role"></cmd>
+                        <info conref="bptext-userssteps.dita#tsk-bptext-userssteps/info-hover-and-calendar-role"></info>
+                    </substep>
+                </substeps>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-opt-check-send-email"><cmd/></step> -->
+            <step id="step-opt-check-send-email">
+                <cmd>(Optional) Check the <uicontrol>Send Email</uicontrol> box to notify the user of changes to their role(s).</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Users-Roles-SendEmail-E90.png"><alt></alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-add-role-by-name"><cmd/></step> -->
+            <step id="step-add-role-by-name">
+                <cmd>Add the role by name.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>Search for the role by typing its name.</cmd>
+                        <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Users-Roles-AddRole-E90.png"><alt>Type the role name in the field.</alt></image></info>
+                    </substep>
+                    <substep>
+                        <cmd>(Optional) Check the <uicontrol>Is Owner</uicontrol> box to designate the user as the owner of the role.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Roles-Users-IsOwner-E90.png"><alt>Designate the user as the owner of the role.</alt></image>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Click/Tap <uicontrol>+Add</uicontrol>.</cmd>
+                    </substep>
+                </substeps>
+            </step>
 
         </steps>
 

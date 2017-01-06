@@ -67,9 +67,11 @@ function MkBlurb  {
     Write-Host( "               <info id=""info-$bpid"" outputclass=""init-hide"">" )
     Write-Host( "                   <fig id=""fig-$bpid"" outputclass=""img-scr-menu"">" )
     Write-Host( "                       <image id=""image-$bpid"" scalefit=""yes"" href=""img/$imgfn""><alt>$cascadealt</alt></image>" )
-    Write-Host( "                       <pre outputclass=""olpb1-$menu1squashed-$prod$persona"">$pbicon1</pre>" )
-    if ( $menu2 -ne "" )  {
-        Write-Host( "                       <pre outputclass=""olpb2-$menu1squashed-$menu2squashed-$prod$persona"">$pbicon2</pre>" )
+    if (( $menu1 -ne "Profile" ) -and ( $menu1 -ne "Edit" ))  {
+        Write-Host( "                       <pre outputclass=""olpb1-$menu1squashed-$prod$persona"">$pbicon1</pre>" )
+        if ( $menu2 -ne "" )  {
+            Write-Host( "                       <pre outputclass=""olpb2-$menu1squashed-$menu2squashed-$prod$persona"">$pbicon2</pre>" )
+        }
     }
     Write-Host( "                   </fig>" )
     Write-Host( "               </info>" )

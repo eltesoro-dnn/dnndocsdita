@@ -10,7 +10,6 @@
         <mapref href="assets/assets.ditamap" />
         <mapref href="pages-templates/pages-templates.ditamap" />
         <mapref href="content-with-modules/content-with-modules.ditamap" />
-        <mapref href="included-modules/included-modules.ditamap" />
 
         <topicref format="dita" type="topic" toc="yes" href="microservices/creating-content-with-microservices.dita" copy-to="microservices/index.dita" collection-type="family">
             <!-- <topicref format="dita" type="topic" toc="yes" href="microservices/about-microservices.dita" /> -->
@@ -37,7 +36,9 @@
             <relcell>
                 <topicref format="dita" type="task"  href="pages-templates/edit-page-pb-all.dita" />
             </relcell>
-            <relcell/>
+            <relcell>
+                <topicref format="html" scope="peer" type="reference" navtitle="Included Modules" locktitle="yes" href="included-modules/index.html" />
+            </relcell>
         </relrow>
     </reltable>
 

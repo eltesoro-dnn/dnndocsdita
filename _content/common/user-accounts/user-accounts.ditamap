@@ -9,23 +9,25 @@
         <!-- Regular user accounts tasks -->
         <topicref format="dita" type="task" toc="yes" href="create-user-account.dita" />
         <topicref format="dita" type="task" toc="yes" href="authorize-user.dita" />
-        <topicref format="dita" type="task" toc="yes" href="delete-all-unauthorized-users.dita" />
+        <topicref format="dita" type="task" toc="yes" href="assign-user-to-multiple-roles.dita" />
+        <topicref format="dita" type="task" toc="yes" href="remove-user-from-multiple-roles.dita" />
         <topicref format="dita" type="task" toc="yes" href="edit-user.dita" />
-        <topicref format="dita" type="task" toc="yes" href="delete-user.dita" />
         <topicref format="dita" type="task" toc="yes" href="manage-user-password.dita" />
+        <topicref format="dita" type="task" toc="yes" href="delete-user.dita" />
+        <topicref format="dita" type="task" toc="yes" href="delete-all-unauthorized-users.dita" />
         <topicref format="dita" type="task" toc="yes" href="restore-deleted-user-account.dita" />
         <topicref format="dita" type="task" toc="yes" href="purge-user-account.dita" />
 
         <!-- Host/superuser accounts tasks -->
         <topicref audience="adm" format="dita" type="task" toc="yes" href="create-host-account.dita" />
         <topicref audience="adm" format="dita" type="task" toc="yes" href="authorize-host.dita" />
-        <topicref audience="adm" format="dita" type="task" toc="yes" href="delete-all-unauthorized-hosts.dita" />
-        <topicref audience="adm" format="dita" type="task" toc="yes" href="delete-host.dita" />
-        <topicref audience="adm" format="dita" type="task" toc="yes" href="manage-host-password.dita" />
-        <topicref audience="adm" format="dita" type="task" toc="yes" href="restore-deleted-host-account.dita" />
-        <topicref audience="adm" format="dita" type="task" toc="yes" href="purge-host-account.dita" />
         <topicref audience="adm" format="dita" type="task" toc="yes" href="promote-user-to-host.dita" />
         <topicref audience="adm" format="dita" type="task" toc="yes" href="demote-from-host.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="manage-host-password.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="delete-host.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="delete-all-unauthorized-hosts.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="restore-deleted-host-account.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="purge-host-account.dita" />
 
         <!-- Added the following to web.config to point to the user version.
         <topicref audience="adm" format="dita" type="task" toc="yes" href="edit-host.dita" />

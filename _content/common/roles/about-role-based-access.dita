@@ -1,6 +1,6 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
-<topic xml:lang="en" id="top-AboutRoleBasedAccess">
+<topic xml:lang="en" id="top-about-role-based-access">
 
     <title>About Role-Based Access</title>
     <titlealts>
@@ -134,6 +134,8 @@
                 <li><userinput>Sales</userinput></li>
                 <li><userinput>Information Technology</userinput></li>
             </ol>
+
+            <note type="note">A role can be a member of only one group. To remove a role from a custom group, assign it to <uicontrol>[Global Roles]</uicontrol>.</note>
 
         </section>
 

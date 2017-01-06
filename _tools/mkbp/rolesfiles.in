@@ -1,0 +1,144 @@
+nav: Create Role
+title: Create a Role
+#--
+#. step-pbar-Manage-Roles adm cmg
+#. step-create-new-role
+#. step-config-new-role-properties
+#. Save.
+--#
+
+
+nav: Edit Role
+title: Edit a Role
+note: note-editing-default-role
+#--
+#. step-pbar-Manage-Roles adm cmg
+#. step-search-for-role
+#. step-pencil-icon
+#. step-edit-role-properties
+#. Save.
+--#
+
+
+nav: Delete Role
+title: Delete a Role
+note: note-deleting-default-role
+#--
+#. step-pbar-Manage-Roles adm cmg
+#. step-search-for-role
+#. step-pencil-icon
+#. step-delete-button
+#. Confirm.
+--#
+
+
+nav: Assign Users to Role
+title: Assign Users to a Role
+#--
+#. step-pbar-Manage-Roles adm cmg
+#. step-search-for-role
+#. step-users-in-role
+#. step-opt-check-send-email
+#. step-opt-check-is-owner
+#. step-add-user
+--#
+result: <ph conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/ph-users-gain-role-access-immediately"></ph>
+
+
+nav: Remove Users from Role
+title: Remove Users from a Role
+#--
+#. step-pbar-Manage-Roles adm cmg
+#. step-search-for-role
+#. step-users-in-role
+#. step-opt-check-send-email
+#. step-search-for-user
+#. step-hover-and-delete-user
+#. Confirm.
+--#
+
+
+nav: Edit Date Range for Role Membership
+title: Edit the Date Range for a Role Membership
+#--
+#. step-pbar-Manage-Roles adm cmg
+#. step-search-for-role
+#. step-users-in-role
+#. step-opt-check-send-email
+#. step-search-for-user
+#. step-hover-and-calendar-user
+--#
+
+
+nav: Add Role to New Group
+title: Add a Role to a New Group
+#--
+#. step-pbar-Manage-Roles adm cmg
+#. step-create-or-edit-role
+#. step-create-new-role-group
+#. step-edit-new-role-group-properties
+#. Save.
+--#
+
+
+nav: Add Role to Existing Group
+title: Add a Role to an Existing Group
+#--
+#. step-pbar-Manage-Roles adm cmg
+#. step-create-or-edit-role
+#. step-choose-role-group
+#. Save.
+--#
+
+
+nav: Remove Role from Group
+title: Remove a Role from a Group
+note: ph-exactly-one-group
+#--
+#. step-pbar-Manage-Roles adm cmg
+#. step-search-for-role
+#. step-pencil-icon
+#. step-choose-global-roles-group
+#. Save.
+--#
+
+
+nav: View Roles Included in Group
+title: View the List of Roles Included in a Group
+#--
+#. step-pbar-Manage-Roles adm cmg
+#. step-filter-by-role-group
+--#
+
+
+nav: View Users Assigned to Role
+title: View the List of Users Assigned to a Role
+#--
+#. step-pbar-Manage-Roles adm cmg
+#. step-search-for-role
+#. step-users-in-role
+--#
+result: <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Roles-Users-E90.png"><alt></alt></image>
+
+
+nav: Edit Custom Role Group
+title: Edit a Custom Role Group
+note: note-default-groups
+#--
+#. step-pbar-Manage-Roles adm cmg
+#. step-filter-by-custom-role-group
+#. step-edit-custom-role-group
+#. step-edit-existing-role-group-properties
+#. Save.
+--#
+
+
+nav: Delete Custom Role Group
+title: Delete a Custom Role Group
+#--
+#. step-pbar-Manage-Roles adm cmg
+#. step-filter-by-custom-role-group
+#. Remove all roles from the custom group.
+#. step-delete-custom-role-group
+#. Confirm.
+--#

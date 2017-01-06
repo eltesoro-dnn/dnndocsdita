@@ -34,7 +34,7 @@
         <topicref format="dita" type="topic" toc="yes" href="content-managers/content-manager-references.dita" collection-type="family">
             <topicref format="dita" type="topic"     toc="yes" href="content-managers/control-bar-to-persona-bar.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="content-managers/persona-bar-by-role.dita" />
-            <mapref href="content-managers/included-modules/included-modules.dita" />
+            <mapref href="content-managers/included-modules/included-modules.ditamap" />
             <!-- <topicref format="dita" type="reference" toc="yes" href="content-managers/included-modules/included-modules.dita" copy-to="content-managers/included-modules/index.dita" /> -->
             <topicref format="dita" type="reference" toc="yes" href="content-managers/requirements.dita" />
             <topicref format="dita" type="reference" toc="yes" href="content-managers/product-versions.dita" />
@@ -65,6 +65,16 @@
                 <topicref format="dita" type="topic" href="content-managers/whats-new-dnn.dita" />
                 <topicref format="dita" type="topic" href="content-managers/control-bar-to-persona-bar.dita" />
                 <topicref format="dita" type="topic" href="content-managers/persona-bar-by-role.dita" />
+            </relcell>
+        </relrow>
+
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="topic"     href="content-managers/content-with-modules/creating-content-with-modules.dita" />
+            </relcell>
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="reference" href="content-managers/included-modules/included-modules.dita" />
             </relcell>
         </relrow>
 
@@ -132,7 +142,9 @@
             <relcell><topicref format="dita" type="task" toc="yes" href="content-managers/content-with-modules/add-module-to-page-pb-all.dita" />
             </relcell>
             <relcell/>
-            <relcell><topicref format="dita" type="reference" href="content-managers/included-modules/included-modules.dita" /></relcell>
+            <relcell>
+                <topicref format="dita" type="reference" href="content-managers/included-modules/included-modules.dita" />
+            </relcell>
         </relrow>
 
     </reltable>

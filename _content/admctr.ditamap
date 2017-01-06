@@ -56,7 +56,7 @@
             <topicref format="dita" type="topic"     toc="yes" href="administrators/control-bar-to-persona-bar.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="administrators/persona-bar-by-role.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="administrators/providers.dita" />
-            <mapref href="administrators/included-modules/included-modules.dita" />
+            <mapref href="administrators/included-modules/included-modules.ditamap" />
             <!-- <topicref format="dita" type="reference" toc="yes" href="administrators/included-modules/included-modules.dita" copy-to="administrators/included-modules/index.dita" /> -->
             <topicref format="dita" type="reference" toc="yes" href="administrators/requirements.dita" />
             <topicref format="dita" type="reference" toc="yes" href="administrators/product-versions.dita" />
@@ -87,6 +87,16 @@
                 <topicref format="dita" type="topic" href="administrators/whats-new-dnn.dita" />
                 <topicref format="dita" type="topic" href="administrators/control-bar-to-persona-bar.dita" />
                 <topicref format="dita" type="topic" href="administrators/persona-bar-by-role.dita" />
+            </relcell>
+        </relrow>
+
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="topic"     href="administrators/content-with-modules/creating-content-with-modules.dita" />
+            </relcell>
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="reference" href="administrators/included-modules/included-modules.dita" />
             </relcell>
         </relrow>
 

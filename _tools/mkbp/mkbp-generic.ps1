@@ -1,4 +1,4 @@
-# Creates the boilerplates for the Persona Bar images.
+# Creates the boilerplates for steps.
 # USAGE: powershell -file mkbp-generic.ps1 generic.csv > mkbp-generic.out
 #
 # WARNINGS:
@@ -13,6 +13,8 @@ $fnsuffix = ".csv"
 $asciibase = 64     # 'A' is 65.
 $pbicon1 = "&#10122;"
 $pbicon2 = "&#10123;"
+$ditafn = "bptext-steps"
+$stepprefix = "pb-SiteSettings"
 
 
 function MkBlurb  {
@@ -26,9 +28,8 @@ function MkBlurb  {
     }
 
     Write-Host( "" )
-    Write-Host( "            <!-- <step conref=""bptext-steps.dita#tsk-bptext-steps/step-pb-SiteSettings$tababbr$subtababbr-E90""><cmd/></step> -->" )
-    Write-Host( "            <!-- <step conkeyref=""k-bpsteps/step-pb-SiteSettings$tababbr$subtababbr-E90""><cmd/></step> -->" )
-    Write-Host( "            <step id=""step-pb-SiteSettings$tababbr$subtababbr-E90"">" )
+    Write-Host( "            <!-- <step conref=""$ditafn.dita#tsk-$ditafn/step-$stepprefix$tababbr$subtababbr-E90""><cmd/></step> -->" )
+    Write-Host( "            <step id=""step-$stepprefix$tababbr$subtababbr-E90"">" )
     Write-Host( "                <cmd>Go to the <uicontrol>$tab</uicontrol> tab, then the <uicontrol>$subtab</uicontrol> subtab.</cmd>" )
     Write-Host( "                <info><image outputclass=""img-scr"" scalefit=""yes"" placement=""break"" align=""left"" href=""img/scr-SiteSettings$tababbr$subtababbr-E90.png""><alt>Settings &gt; Site Settings &gt; $tab &gt; $subtab</alt></image></info>" )
     Write-Host( "            </step>" )

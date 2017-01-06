@@ -1,18 +1,26 @@
 @echo off
-if _%1_ EQU __ goto :usage
+if _%1_ EQU __  goto :usage
 
-powershell -file convertxlsx2csv.ps1 W:\_tools\mkbp
+cd /d %~p0
+if not exist out\*  md out > nul
+goto %1
 
-echo. > mkbp-pbar-steps.out
-echo. > mkbp-css.out
-for %%v in ( %* ) do  for /f "usebackq" %%w in ( `dir %%v /b` ) do (
-    powershell -file mkbp-pbar-steps.ps1 %%w >> mkbp-pbar-steps.out
-    powershell -file mkbp-css.ps1 %%w >> mkbp-css.out
-)
-npp mkbp-pbar-steps.out mkbp-css.out
 
+:roles
+powershell -file mkbp-generic-steps.ps1 rolessteps.in .\out-%1\bptext-rolessteps.dita
+powershell -file mkbp-generic-files.ps1 rolesfiles.in bptext-rolessteps prolog.txt presteps.txt .\out-%1
+:. powershell -file mkbp-compare-copy.ps1
+start windiff W:\_content\common\roles\* out-%1\*
+:. for /f "usebackq" %%v in (`dir out-%1\*.dita /b`) do fc W:\_content\common\roles\%%v out-%1\%%v
+:. for /f "usebackq" %%v in (`dir out-%1\*.dita /b`) do if _%%v_ NEQ _bptext-rolessteps.dita_ xcopy out-%1\%%v W:\_content\common\roles /v /y
+:. for /f "usebackq" %v in (`dir out-%1\*.dita /b`) do if _%v_ NEQ _bptext-rolessteps.dita_ xcopy out-%1\%v W:\_content\common\roles /v /y
+npp W:\_content\common\roles\bp*
+npp out-%1\bp*
 goto :eof
 
+
 :usage
-echo USAGE: %0 pbar-xxxyyy.csv
-echo EXAMPLE: %0 *E90*csv
+echo.
+echo USAGE: %0 folder
+echo EXAMPLE: %0 roles
+goto :eof

@@ -61,11 +61,16 @@
 
             <!-- <sectiondiv conref="relnotes-2016-dec-09.dita#top-relnotes-2016-dec-09/sectiondiv-relnotes-evoq"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-evoq">
-                <p>DNN EVOQ CONTENT AND CONTENT BASIC</p>
+                <p>DNN EVOQ CONTENT BASIC</p>
                 <ul>
                     <li>All updates included with DNN Platform 9.0.0.</li>
                     <li>Site Groups was folded into Site Management. The Site Groups module now displays a snapshot of each portal’s home page as a thumbnail card.</li>
                     <li>Content localization was simplified, and redundancies were removed. Content localization now occurs at the page level.</li>
+                </ul>
+
+                <p>DNN EVOQ CONTENT</p>
+                <ul>
+                    <li>All updates included with DNN Evoq Content Basic 9.0.0.</li>
                     <li>The new MailChimp connector allows new users or subscribers to be automatically mapped to your MailChimp subscription lists. The connector also includes an Unsubscribe module for users to be automatically removed if they opt out.</li>
                     <li>New Evoq Analytics service replaces the old built-in analytics functionality. The new service connects to Google Analytics and displays visualizations, data, and insights inside the Evoq interface.<xref href="#top-relnotes-2016-dec-09/fn-cloud-based" type="fn" /></li>
                     <li>Form Builder: You can now build and deploy dynamic forms.<xref href="#top-relnotes-2016-dec-09/fn-cloud-based" type="fn" />

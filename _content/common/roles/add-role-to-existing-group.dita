@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-add-role-to-existing-group">
+
+    <title>Add a Role to an Existing Group</title>
+    <titlealts>
+        <navtitle>Add Role to Existing Group</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,201701</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
+            </ul>
+        </prereq>
+
+        <steps>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Manage-Roles-E90"><cmd/></step>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Manage-Roles-E90"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-create-or-edit-role"><cmd/></step>
+            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-choose-role-group"><cmd/></step>
+            <step><cmd>Save.</cmd></step>
+        </steps>
+
+    </taskbody>
+
+</task>
+

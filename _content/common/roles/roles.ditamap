@@ -5,15 +5,22 @@
     <title>Roles</title>
 
     <topicref format="dita" type="topic" toc="yes" href="about-role-based-access.dita" copy-to="index.dita" collection-type="family">
-        <topicref format="dita" type="task" toc="yes" href="create-or-edit-role.dita" />
+
+        <topicref format="dita" type="task" toc="yes" href="create-role.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-role.dita" />
         <topicref format="dita" type="task" toc="yes" href="delete-role.dita" />
-        <topicref format="dita" type="task" toc="yes" href="create-role-group.dita" />
-        <topicref format="dita" type="task" toc="yes" href="edit-or-delete-role-group.dita" />
-        <topicref format="dita" type="task" toc="yes" href="assign-user-to-multiple-roles.dita" />
-        <topicref format="dita" type="task" toc="yes" href="assign-multiple-users-to-role.dita" />
-        <topicref format="dita" type="task" toc="yes" href="edit-dates-of-user-subscription-to-role.dita" />
-        <topicref format="dita" type="task" toc="yes" href="remove-user-from-multiple-roles.dita" />
-        <topicref format="dita" type="task" toc="yes" href="remove-multiple-users-from-role.dita" />
+        <topicref format="dita" type="task" toc="yes" href="assign-users-to-role.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-date-range-for-role-membership.dita" />
+        <topicref format="dita" type="task" toc="yes" href="view-users-assigned-to-role.dita" />
+        <topicref format="dita" type="task" toc="yes" href="remove-users-from-role.dita" />
+
+        <topicref format="dita" type="task" toc="yes" href="add-role-to-new-group.dita" />
+        <topicref format="dita" type="task" toc="yes" href="add-role-to-existing-group.dita" />
+        <topicref format="dita" type="task" toc="yes" href="view-roles-included-in-group.dita" />
+        <topicref format="dita" type="task" toc="yes" href="remove-role-from-group.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-custom-role-group.dita" />
+        <topicref format="dita" type="task" toc="yes" href="delete-custom-role-group.dita" />
+
     </topicref>
 
 </map>
