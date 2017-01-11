@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-assign-users-to-role">
+<task xml:lang="en" id="tsk-clear-cache">
 
-    <title>Assign Users to a Role</title>
+    <title>Clear Cache</title>
     <titlealts>
-        <navtitle>Assign Users to Role</navtitle>
+        <navtitle>Clear Cache</navtitle>
     </titlealts>
 
 
@@ -34,7 +34,7 @@
 
     <taskbody>
 
-        <section conkeyref="k-bptext/section-prodavail-PCE"></section>
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <prereq>
             <ul>
@@ -42,18 +42,10 @@
             </ul>
         </prereq>
 
-
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Manage-Roles-E90"><cmd/></step>
-            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Manage-Roles-E90"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-search-for-role"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-users-in-role"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-opt-check-send-email"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-opt-check-is-owner"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-add-user"><cmd/></step>
+            <step conkeyref="k-bppbar/step-pb-adm-Settings-Servers-E90"><cmd/></step>
+            <step conref="bptext-servers.dita#tsk-bptext-servers/step-clear-cache-button"><cmd/></step>
         </steps>
-
-        <result><ph conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/ph-users-gain-role-access-immediately"></ph></result>
 
     </taskbody>
 

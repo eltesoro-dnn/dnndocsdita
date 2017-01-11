@@ -1,23 +1,37 @@
 @echo off
 if _%1_ EQU __  goto :usage
-
-cd /d %~p0
-if not exist out\*  md out > nul
 goto %1
 
 
 :roles
-powershell -file mkbp-generic-steps.ps1 rolessteps.in .\out-%1\bptext-rolessteps.dita
-powershell -file mkbp-generic-files.ps1 rolesfiles.in bptext-rolessteps prolog.txt presteps.txt .\out-%1
+call %0 runme json\rolesfiles.json bptext-rolessteps W:\_content\common\roles
+goto :eof
+
+
+
+
+
+:runme
+if _%4_ EQU __  goto :error
+cd /d %~p0
+if not exist %~dp0out\*  md %~dp0out > nul
+powershell -file mkbp-generic-files-json.ps1 %2 %3 prolog.txt presteps.txt %~dp0out
+start windiff %4\* %~dp0out\*
+npp %4\bp*
+npp %~dp0out\bp*
+goto :eof
+
 :. powershell -file mkbp-compare-copy.ps1
-start windiff W:\_content\common\roles\* out-%1\*
 :. for /f "usebackq" %%v in (`dir out-%1\*.dita /b`) do fc W:\_content\common\roles\%%v out-%1\%%v
 :. for /f "usebackq" %%v in (`dir out-%1\*.dita /b`) do if _%%v_ NEQ _bptext-rolessteps.dita_ xcopy out-%1\%%v W:\_content\common\roles /v /y
 :. for /f "usebackq" %v in (`dir out-%1\*.dita /b`) do if _%v_ NEQ _bptext-rolessteps.dita_ xcopy out-%1\%v W:\_content\common\roles /v /y
-npp W:\_content\common\roles\bp*
-npp out-%1\bp*
-goto :eof
 
+
+
+:error
+echo.
+echo ERROR: Insufficient parameters in internal call.
+goto :eof
 
 :usage
 echo.

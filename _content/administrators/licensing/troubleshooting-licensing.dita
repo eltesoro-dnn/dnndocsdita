@@ -8,16 +8,16 @@
     </titlealts>
 
     <prolog>
-        <author>wrET,trBC,1607</author>
+        <author>wrET,trBC,1607,1701</author>
         <metadata>
             <audience type="administrator" job="troubleshooting" />
             <prodinfo>
                 <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="8" release="3"/></vrmlist>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="8" release="3"/></vrmlist>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
             </prodinfo>
         </metadata>
     </prolog>
@@ -38,16 +38,26 @@
             <p><systemoutput>You are using a trial version of Evoq .... You currently have ... days remaining before your trial period expires.</systemoutput></p>
         </section>
 
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li>
+            </ul>
+        </prereq>
+
         <steps-unordered>
             <step>
-                <cmd>Verify that your license is activated.</cmd>
+                <cmd>Verify that your license is activated and that you are using the correct license type.</cmd>
                 <substeps>
                     <substep>
                         <cmd conkeyref="k-bppbar/cmd-pb-host-Settings-About-E90"></cmd>
                         <info conkeyref="k-bppbar/info-pb-host-Settings-About-E90"></info>
                     </substep>
+                    <substep><cmd>Check that the invoice number appears in the list and that a check appears in the <uicontrol>Activated</uicontrol> column for this license.</cmd></substep>
                     <substep>
-                        <cmd>Check that the invoice number for this installation appears in the list and that the <uicontrol>Activated</uicontrol> box is checked.</cmd>
+                        <cmd>Verify that the correct invoice number, email, and license type are used.</cmd>
+                        <info>
+                            <p>An invoice for one Evoq product cannot be used to license a different Evoq product. Example: An Evoq Content invoice is invalid for Evoq Engage. </p>
+                        </info>
                     </substep>
                 </substeps>
                 <info>
@@ -56,18 +66,8 @@
                         <li><xref format="dita" href="activate-license-automatically.dita">Activate License Automatically</xref>.</li>
                         <li>If the server does not have Internet access while the license is being activated on it, see <xref format="dita" href="activate-license-manually.dita">Activate License Manually</xref>.</li>
                     </ul>
+                    <p>If the license type is incorrect, <ph conkeyref="k-bptext/ph-contactSupport"></ph>.</p>
                 </info>
-            </step>
-
-            <step>
-                <cmd>Did you use the correct license type?</cmd>
-                <info>
-                    <p>An invoice for one Evoq product cannot be used to license a different Evoq product. Example: An Evoq Content invoice is invalid for Evoq Engage. </p>
-                </info>
-                <substeps>
-                    <substep conkeyref="k-bpsteps/substep-menuhostActivateLicense"><cmd/></substep>
-                    <substep><cmd>Verify that the correct invoice number, email, and license type are used.</cmd></substep>
-                </substeps>
             </step>
 
             <step>
@@ -78,11 +78,7 @@
             </step>
 
             <step>
-                <cmd>Clear your cache.</cmd>
-                <info>
-                    <p>While logged in as a <term>Host</term>, go to <menucascade><uicontrol>Tools</uicontrol> <uicontrol>Clear Cache</uicontrol></menucascade>.</p>
-                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-menuToolsClearCache.png"><alt>Tools &gt; Clear Cache</alt></image>
-                </info>
+                <cmd><xref format="dita" href="../servers/clear-cache.dita">Clear your cache.</xref></cmd>
             </step>
 
             <step>

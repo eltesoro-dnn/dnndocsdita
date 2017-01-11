@@ -53,10 +53,9 @@
 
             <p>You must activate a license for each IIS instance. Example: If you host two websites on a server, you need two licenses and you must activate one license in each website.</p>
 
-            <p>By default, each production/staging/test/failover license can be activated only once. For extenuating circumstances (e.g., if your server crashes or a database overwrite corrupts your site's license information), please contact <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support">Customer Support</xref> to reactivate your existing license.</p>
+            <p>By default, each production/staging/test/failover license can be activated only once. For extenuating circumstances (e.g., if your server crashes or a database overwrite corrupts your site's license information), <ph conkeyref="k-bptext/ph-contactSupport"></ph> to reactivate your existing license.</p>
 
-            <p>In contrast, a development license can be activated as many times as needed. To request additional activations for an existing development license, please contact <xref format="html" scope="external" href="http://www.dnnsoftware.com/services/customer-support">Customer Support</xref>.
-            </p>
+            <p>In contrast, a development license can be activated as many times as needed. To request additional activations for an existing development license, <ph conkeyref="k-bptext/ph-contactSupport"></ph>.</p>
 
             <note type="important">If switching to a different development server, make sure that the old license is deleted before activating a new license on the new server.</note>
             <draft-comment><!-- Is this note still valid? If so, why is it necessary to delete the old license in the old server? What if they already deleted the old site? Is this only for development licenses? --></draft-comment>

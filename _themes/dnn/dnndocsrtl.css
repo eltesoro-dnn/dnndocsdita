@@ -951,8 +951,7 @@ figure {
 .olpb2-Settings-CustomCSS-E90host  { color: var( --color-overlay ); font-size: 300%; position: absolute; left: 55%; top: 65%; }
 .olpb2-Settings-SQLConsole-E90host  { color: var( --color-overlay ); font-size: 300%; position: absolute; left: 55%; top: 70%; }
 .olpb2-Settings-ConfigManager-E90host  { color: var( --color-overlay ); font-size: 300%; position: absolute; left: 55%; top: 74%; }
-.olpb2-Settings-OnDemand-E90host  { color: var( --color-overlay ); font-size: 300%; position: absolute; left: 55%; top: 79%; }
-.olpb2-Settings-About-E90host  { color: var( --color-overlay ); font-size: 300%; position: absolute; left: 55%; top: 84%; }
+.olpb2-Settings-About-E90host  { color: var( --color-overlay ); font-size: 300%; position: absolute; left: 55%; top: 79%; }
 
 
  /*
@@ -2549,6 +2548,7 @@ and (orientation : portrait) {
     padding: 63px 35px 63px 150px;
   }
 }
+
 
 
 /* ------------------------------------------------------------

@@ -91,6 +91,12 @@ content-managers/(.*)-pb.html,content-managers/{R:2}-pb-all.html,
 (.*)/security/user-accounts/(.*).html,{R:2}/user-accounts/{R:3}.html,reorg
 (.*)/security/roles/assign-user-to-multiple-roles.html,{R:2}/user-accounts/assign-user-to-multiple-roles.html,reorg
 (.*)/security/roles/remove-user-from-multiple-roles.html,{R:2}/user-accounts/remove-user-from-multiple-roles.html,reorg
+(.*)/security/roles/assign-multiple-users-to-role.html,{R:2}/roles/assign-users-to-role.dita,reorg
+(.*)/security/roles/create-or-edit-role.html,{R:2}/roles/create-role.dita,reorg
+(.*)/security/roles/create-role-group.html,{R:2}/roles/add-role-to-new-group.dita,reorg
+(.*)/security/roles/edit-dates-of-user-subscription-to-role.html,{R:2}/roles/edit-date-range-for-role-membership.dita,reorg
+(.*)/security/roles/edit-or-delete-role-group.html,{R:2}/roles/edit-custom-role-group.dita,reorg
+(.*)/security/roles/remove-multiple-users-from-role.html,{R:2}/roles/remove-users-from-role.dita,reorg
 (.*)/security/roles/(.*).html,{R:2}/roles/{R:3}.html,reorg
 (.*)/security/jwt/(.*).html,{R:2}/jwt/{R:3}.html,reorg
 (.*)/edit-host.html,{R:2}/edit-user.html,new behavior in v9.0 - Cannot edit another host's account.
