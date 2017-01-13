@@ -1,0 +1,222 @@
+{
+    "global" : {
+        "avail" : "PCE"
+    },
+
+
+    "bpsection" : [
+    ],
+
+
+    "bpsteps" : [
+        {
+            "id" : "step-tab-sites",
+            "cmd" : "Go to the <uicontrol>Sites</uicontrol> tab.",
+            "img" : "scr-Sites-SitesTab-E90.png"
+        },
+        {
+            "id" : "step-tab-sitegroups",
+            "cmd" : "Go to the <uicontrol>Site Groups</uicontrol> tab.",
+            "img" : "scr-Sites-SiteGroupsTab-E90.png"
+        },
+        {
+            "id" : "step-add-new-site-button",
+            "cmd" : "Click/Tap <uicontrol>Add New Site</uicontrol>.",
+            "img" : "scr-Sites-AddNewSite-E90.png"
+        },
+        {
+            "id" : "step-fill-in-site-props",
+            "cmd" : "Enter the title for the new site, and choose the template to use.",
+            "img" : "scr-AddNewSite-E90.png"
+        },
+        {
+            "id" : "step-opt-change-site-type",
+            "cmd" : "(Optional) Change the site type.",
+            "choices" : [
+                "<uicontrol>Domain</uicontrol>. The site's root folder is at the root of the domain.",
+                "<uicontrol>Directory</uicontrol>. The site's root folder is a subfolder of the domain. <uicontrol>Site URL</uicontrol> is propagated with the default Site URL, which includes the domain name and the subfolder name."
+            ],
+            "img" : "scr-AddNewSite-SiteTypeURL-E90.png"
+        },
+        {
+            "id" : "step-opt-create-new-admin-for-new-site",
+            "cmd" : "(Optional) Create a new administrator account for the site.",
+            "img" : "scr-AddNewSite-NewAdministrator-E90.png",
+            "substeps" : [
+                {
+                    "cmd" : "Disable (<uicontrol>Off</uicontrol>) <uicontrol>Assign Current User as Administrator</uicontrol>."
+                },
+                {
+                    "cmd" : "Enter the information for the new administrator account."
+                }
+            ]
+        },
+        {
+            "id" : "step-hover-and-view-site",
+            "cmd" : "Hover over the site's listing, then click/tap the <uicontrol>View Site</uicontrol> (eye) icon.",
+            "img" : "scr-Sites-Sites-SiteIcons-View-E90.png"
+        },
+        {
+            "id" : "step-hover-and-edit-site-settings",
+            "cmd" : "Hover over the site's listing, then click/tap the <uicontrol>Site Settings</uicontrol> (gear) icon.",
+            "img" : "scr-Sites-Sites-SiteIcons-SiteSettings-E90.png"
+        },
+        {
+            "id" : "step-hover-and-export-site-template",
+            "cmd" : "Hover over the site's listing, then click/tap the <uicontrol>Export Template</uicontrol> (layout) icon.",
+            "img" : "scr-Sites-Sites-SiteIcons-ExportTemplate-E90.png"
+        },
+        {
+            "id" : "step-hover-and-delete-site",
+            "cmd" : "Hover over the site's listing, then click/tap the <uicontrol>Delete Site</uicontrol> (trash) icon.",
+            "img" : "scr-Sites-Sites-SiteIcons-Delete-E90.png"
+        },
+        {
+            "id" : "step-add-site-group-button",
+            "cmd" : "Click/Tap <uicontrol>+ Add Site Group</uicontrol>.",
+            "img" : "scr-Sites-SiteGroups-AddSiteGroup-E90.png"
+        },
+        {
+            "id" : "step-fill-in-site-group-props",
+            "cmd" : "Enter the name and description for the new site, and choose the master site.",
+            "img" : "scr-AddNewSiteGroup-E90.png",
+            "info" : "conref=simpletable-sitegroup-props"
+        },
+        {
+            "id" : "step-locate-and-expand-site-group",
+            "cmd" : "Locate the site group from the list. Then click/tap the arrow to expand it.",
+            "img" : "scr-Sites-SiteGroups-Arrow-E90.png"
+        },
+        {
+            "id" : "step-edit-site-group-properties",
+            "cmd" : "Click/Tap the pencil icon for the property to edit.",
+            "img" : "scr-Sites-SiteGroups-Edit-Properties-E90.png",
+            "info" : "conref=simpletable-sitegroup-props"
+        },
+        {
+            "id" : "step-add-remove-sites",
+            "cmd" : "Add or remove sites from the group.",
+            "substeps" : [
+                {
+                    "cmd" : "Click/Tap the <uicontrol>Add / Remove Sites</uicontrol> link.",
+                    "img" : "scr-Sites-SiteGroups-Edit-AddRemoveSites-E90.png"
+                },
+                {
+                    "cmd" : "Check the sites to include in the group. Uncheck the sites to exclude.",
+                    "img" : "scr-Sites-SiteGroups-Edit-AddRemoveSites-List-E90.png"
+                },
+                {
+                    "cmd" : "Click/Tap <uicontrol>Save</uicontrol>."
+                }
+            ]
+        },
+        {
+            "id" : "step-delete-site-group",
+            "cmd" : "Click/Tap the <uicontrol>Delete</uicontrol> button.",
+            "img" : "scr-Sites-SiteGroups-Edit-Delete-E90.png"
+        }
+    ],
+
+
+
+    "topics" : [
+        {
+            "nav" : "Create Site",
+            "title" : "Create a Site",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ],
+            "steps" : [
+                "step-pbar-Manage-Sites host",
+                "step-tab-sites",
+                "step-add-new-site-button",
+                "step-fill-in-site-props",
+                "step-opt-change-site-type",
+                "step-opt-create-new-admin-for-new-site",
+                "Click/Tap <uicontrol>Create Site</uicontrol>."
+            ],
+            "result" : "The list of sites is displayed, including the new site."
+        },
+        {
+            "nav" : "View Site",
+            "title" : "View a Site",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ],
+            "steps" : [
+                "step-pbar-Manage-Sites host",
+                "step-tab-sites",
+                "step-search-for-site",
+                "step-hover-and-view-site"
+            ]
+        },
+        {
+            "nav" : "Edit Site Properties",
+            "title" : "Edit a Site's Properties",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ],
+            "steps" : [
+                "step-pbar-Manage-Sites host",
+                "step-tab-sites",
+                "step-search-for-site",
+                "step-hover-and-edit-site-settings",
+                "Configure the site settings."
+            ]
+        },
+        {
+            "nav" : "Delete Site",
+            "title" : "Delete a Site",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ],
+            "steps" : [
+                "step-pbar-Manage-Sites host",
+                "step-tab-sites",
+                "step-search-for-site",
+                "step-hover-and-delete-site",
+                "Confirm."
+            ]
+        },
+        {
+            "nav" : "Create Site Group",
+            "title" : "Create a Site Group",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ],
+            "steps" : [
+                "step-pbar-Manage-Sites host",
+                "step-tab-sitegroups",
+                "step-add-site-group-button",
+                "step-fill-in-site-group-props",
+                "Click/Tap <uicontrol>Create Site Group</uicontrol>."
+            ],
+            "postreq" : "Edit the site group to add sites."
+        },
+        {
+            "nav" : "Add or Remove Sites in Group",
+            "title" : "Add or Remove Sites in a Group",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ],
+            "steps" : [
+                "step-pbar-Manage-Sites host",
+                "step-tab-sitegroups",
+                "step-locate-and-expand-site-group",
+                "step-add-remove-sites"
+            ]
+        },
+        {
+            "nav" : "Edit Site Group",
+            "title" : "Edit Site Group",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ],
+            "steps" : [
+                "step-pbar-Manage-Sites host",
+                "step-tab-sitegroups",
+                "step-locate-and-expand-site-group",
+                "step-edit-site-group-properties",
+                "step-add-remove-sites"
+            ]
+        },
+        {
+            "nav" : "Delete Site Group",
+            "title" : "Delete Site Group",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ],
+            "steps" : [
+                "step-pbar-Manage-Sites host",
+                "step-tab-sitegroups",
+                "step-locate-and-expand-site-group",
+                "step-delete-site-group",
+                "Confirm."
+            ]
+        }
+    ]
+}

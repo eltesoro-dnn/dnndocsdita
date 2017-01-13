@@ -125,20 +125,22 @@
 
 
     <related-links>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/blog/what-is-structured-content-definition-benefits-and-how-to-get-started" ><linktext>What Is Structured Content: Definition, Benefits, and How to Get Started</linktext></link>
+
         <!-- Must be explicitly linked because the build ignores anything inside topichead tags. -->
-            <link format="dita" href="create-content-type.dita" ><linktext>Create Content Type</linktext></link>
-            <link format="dita" href="edit-content-type.dita" ><linktext>Edit Content Type</linktext></link>
-            <link format="dita" href="duplicate-content-type.dita" ><linktext>Duplicate Content Type</linktext></link>
-            <link format="dita" href="delete-content-type.dita" ><linktext>Delete Content Type</linktext></link>
-            <link format="dita" href="create-visualizer.dita" ><linktext>Create Visualizer</linktext></link>
-            <link format="dita" href="edit-visualizer.dita" ><linktext>Edit Visualizer</linktext></link>
-            <link format="dita" href="delete-visualizer.dita" ><linktext>Delete Visualizer</linktext></link>
-            <link format="dita" href="visualizer-templates.dita" ><linktext>Visualizer Templates</linktext></link>
-            <link format="dita" href="create-content-item.dita" ><linktext>Create Content Item</linktext></link>
-            <link format="dita" href="edit-content-item.dita" ><linktext>Edit Content Item</linktext></link>
-            <link format="dita" href="duplicate-content-item.dita" ><linktext>Duplicate Content Item</linktext></link>
-            <link format="dita" href="delete-content-item.dita" ><linktext>Delete Content Item</linktext></link>
-            <!-- <link format="dita" href="add-content-item-to-page.dita" ><linktext>Add Content Item to Page</linktext></link> -->
+        <link format="dita" href="create-content-type.dita" ><linktext>Create Content Type</linktext></link>
+        <link format="dita" href="edit-content-type.dita" ><linktext>Edit Content Type</linktext></link>
+        <link format="dita" href="duplicate-content-type.dita" ><linktext>Duplicate Content Type</linktext></link>
+        <link format="dita" href="delete-content-type.dita" ><linktext>Delete Content Type</linktext></link>
+        <link format="dita" href="create-visualizer.dita" ><linktext>Create Visualizer</linktext></link>
+        <link format="dita" href="edit-visualizer.dita" ><linktext>Edit Visualizer</linktext></link>
+        <link format="dita" href="delete-visualizer.dita" ><linktext>Delete Visualizer</linktext></link>
+        <link format="dita" href="visualizer-templates.dita" ><linktext>Visualizer Templates</linktext></link>
+        <link format="dita" href="create-content-item.dita" ><linktext>Create Content Item</linktext></link>
+        <link format="dita" href="edit-content-item.dita" ><linktext>Edit Content Item</linktext></link>
+        <link format="dita" href="duplicate-content-item.dita" ><linktext>Duplicate Content Item</linktext></link>
+        <link format="dita" href="delete-content-item.dita" ><linktext>Delete Content Item</linktext></link>
+        <!-- <link format="dita" href="add-content-item-to-page.dita" ><linktext>Add Content Item to Page</linktext></link> -->
     </related-links>
 
 </topic>

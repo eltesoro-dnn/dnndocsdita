@@ -42,7 +42,9 @@
             </ul>
         </prereq>
 
-        <section><note conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/note-editing-default-role"></note></section>
+        <section>
+            <note conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/note-editing-default-role"></note>
+        </section>
 
         <steps>
             <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Manage-Roles-E90"><cmd/></step>

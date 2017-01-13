@@ -1,4 +1,9 @@
 {
+    "global" : {
+        "avail" : "PCE"
+    },
+
+
     "bpsection" : [
         {
             "id" : "note-editing-default-role",
@@ -32,11 +37,6 @@
             "id" : "step-create-new-role",
             "cmd" : "Click/Tap <uicontrol>Create New Role</uicontrol>.",
             "img" : "scr-RoleList-CreateRole-E90.png"
-        },
-        {
-            "id" : "step-search-for-role",
-            "cmd" : "Search for the role.",
-            "substeps" : "conref=substeps-filter-list"
         },
         {
             "id" : "step-config-new-role-properties",
@@ -152,6 +152,7 @@
         {
             "nav" : "Create Role",
             "title" : "Create a Role",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
             "steps" : [
                 "step-pbar-Manage-Roles adm cmg",
                 "step-create-new-role",
@@ -163,7 +164,8 @@
         {
             "nav" : "Edit Role",
             "title" : "Edit a Role",
-            "note" : "note-editing-default-role",
+            "section" : "conref=note-editing-default-role",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
             "steps" : [
                 "step-pbar-Manage-Roles adm cmg",
                 "step-search-for-role",
@@ -176,7 +178,8 @@
         {
             "nav" : "Delete Role",
             "title" : "Delete a Role",
-            "note" : "note-deleting-default-role",
+            "section" : "conref=note-deleting-default-role",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
             "steps" : [
                 "step-pbar-Manage-Roles adm cmg",
                 "step-search-for-role",
@@ -189,6 +192,7 @@
         {
             "nav" : "Assign Users to Role",
             "title" : "Assign Users to a Role",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
             "steps" : [
                 "step-pbar-Manage-Roles adm cmg",
                 "step-search-for-role",
@@ -203,6 +207,7 @@
         {
             "nav" : "Remove Users from Role",
             "title" : "Remove Users from a Role",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
             "steps" : [
                 "step-pbar-Manage-Roles adm cmg",
                 "step-search-for-role",
@@ -217,6 +222,7 @@
         {
             "nav" : "Edit Date Range for Role Membership",
             "title" : "Edit the Date Range for a Role Membership",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
             "steps" : [
                 "step-pbar-Manage-Roles adm cmg",
                 "step-search-for-role",
@@ -230,6 +236,7 @@
         {
             "nav" : "Add Role to New Group",
             "title" : "Add a Role to a New Group",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
             "steps" : [
                 "step-pbar-Manage-Roles adm cmg",
                 "step-create-or-edit-role",
@@ -242,6 +249,7 @@
         {
             "nav" : "Add Role to Existing Group",
             "title" : "Add a Role to an Existing Group",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
             "steps" : [
                 "step-pbar-Manage-Roles adm cmg",
                 "step-create-or-edit-role",
@@ -253,7 +261,13 @@
         {
             "nav" : "Remove Role from Group",
             "title" : "Remove a Role from a Group",
-            "note" : "ph-exactly-one-group",
+            "section" : [
+                {
+                    "text" : "conref=ph-exactly-one-group",
+                    "wrapper" : "note"
+                }
+            ],
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
             "steps" : [
                 "step-pbar-Manage-Roles adm cmg",
                 "step-search-for-role",
@@ -266,6 +280,7 @@
         {
             "nav" : "View Roles Included in Group",
             "title" : "View the List of Roles Included in a Group",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
             "steps" : [
                 "step-pbar-Manage-Roles adm cmg",
                 "step-filter-by-role-group"
@@ -275,6 +290,7 @@
         {
             "nav" : "View Users Assigned to Role",
             "title" : "View the List of Users Assigned to a Role",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
             "steps" : [
                 "step-pbar-Manage-Roles adm cmg",
                 "step-search-for-role",
@@ -286,7 +302,8 @@
         {
             "nav" : "Edit Custom Role Group",
             "title" : "Edit a Custom Role Group",
-            "note" : "note-default-groups",
+            "section" : "conref=note-default-groups",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
             "steps" : [
                 "step-pbar-Manage-Roles adm cmg",
                 "step-filter-by-custom-role-group",
@@ -299,6 +316,7 @@
         {
             "nav" : "Delete Custom Role Group",
             "title" : "Delete a Custom Role Group",
+            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
             "steps" : [
                 "step-pbar-Manage-Roles adm cmg",
                 "step-filter-by-custom-role-group",

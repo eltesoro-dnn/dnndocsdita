@@ -6,20 +6,26 @@
 
     <topicref format="dita" type="topic" toc="yes" href="about-role-based-access.dita" copy-to="index.dita" collection-type="family">
 
-        <topicref format="dita" type="task" toc="yes" href="create-role.dita" />
-        <topicref format="dita" type="task" toc="yes" href="edit-role.dita" />
-        <topicref format="dita" type="task" toc="yes" href="delete-role.dita" />
-        <topicref format="dita" type="task" toc="yes" href="assign-users-to-role.dita" />
-        <topicref format="dita" type="task" toc="yes" href="edit-date-range-for-role-membership.dita" />
-        <topicref format="dita" type="task" toc="yes" href="view-users-assigned-to-role.dita" />
-        <topicref format="dita" type="task" toc="yes" href="remove-users-from-role.dita" />
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Roles</navtitle></topicmeta>
+            <topicref format="dita" type="task" toc="yes" href="create-role.dita" />
+            <topicref format="dita" type="task" toc="yes" href="edit-role.dita" />
+            <topicref format="dita" type="task" toc="yes" href="delete-role.dita" />
+            <topicref format="dita" type="task" toc="yes" href="assign-users-to-role.dita" />
+            <topicref format="dita" type="task" toc="yes" href="edit-date-range-for-role-membership.dita" />
+            <topicref format="dita" type="task" toc="yes" href="view-users-assigned-to-role.dita" />
+            <topicref format="dita" type="task" toc="yes" href="remove-users-from-role.dita" />
+        </topichead>
 
-        <topicref format="dita" type="task" toc="yes" href="add-role-to-new-group.dita" />
-        <topicref format="dita" type="task" toc="yes" href="add-role-to-existing-group.dita" />
-        <topicref format="dita" type="task" toc="yes" href="view-roles-included-in-group.dita" />
-        <topicref format="dita" type="task" toc="yes" href="remove-role-from-group.dita" />
-        <topicref format="dita" type="task" toc="yes" href="edit-custom-role-group.dita" />
-        <topicref format="dita" type="task" toc="yes" href="delete-custom-role-group.dita" />
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Role Groups</navtitle></topicmeta>
+            <topicref format="dita" type="task" toc="yes" href="add-role-to-new-group.dita" />
+            <topicref format="dita" type="task" toc="yes" href="add-role-to-existing-group.dita" />
+            <topicref format="dita" type="task" toc="yes" href="view-roles-included-in-group.dita" />
+            <topicref format="dita" type="task" toc="yes" href="remove-role-from-group.dita" />
+            <topicref format="dita" type="task" toc="yes" href="edit-custom-role-group.dita" />
+            <topicref format="dita" type="task" toc="yes" href="delete-custom-role-group.dita" />
+        </topichead>
 
     </topicref>
 

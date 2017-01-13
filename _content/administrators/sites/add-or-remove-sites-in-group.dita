@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-remove-role-from-group">
+<task xml:lang="en" id="tsk-add-or-remove-sites-in-group">
 
-    <title>Remove a Role from a Group</title>
+    <title>Add or Remove Sites in a Group</title>
     <titlealts>
-        <navtitle>Remove Role from Group</navtitle>
+        <navtitle>Add or Remove Sites in Group</navtitle>
     </titlealts>
 
 
@@ -38,21 +38,16 @@
 
         <prereq>
             <ul>
-                <li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
+                <li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li>
             </ul>
         </prereq>
 
-        <section>
-            <note><ph conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/ph-exactly-one-group"></ph></note>
-        </section>
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Manage-Roles-E90"><cmd/></step>
-            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Manage-Roles-E90"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-search-for-role"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-pencil-icon"><cmd/></step>
-            <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-choose-global-roles-group"><cmd/></step>
-            <step><cmd>Save.</cmd></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Manage-Sites-E90"><cmd/></step>
+            <step conref="bptext-sites.dita#tsk-bptext-sites/step-tab-sitegroups"><cmd/></step>
+            <step conref="bptext-sites.dita#tsk-bptext-sites/step-locate-and-expand-site-group"><cmd/></step>
+            <step conref="bptext-sites.dita#tsk-bptext-sites/step-add-remove-sites"><cmd/></step>
         </steps>
 
     </taskbody>

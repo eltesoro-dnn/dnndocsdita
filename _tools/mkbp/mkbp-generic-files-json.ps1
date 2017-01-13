@@ -23,75 +23,109 @@ function MkEndSection  {
     Write-Output ""
 }
 
-function MkBPNote( [string] $conreffile, [string] $id, [string] $text )  {
+function MkBPNote( [string] $conreffile, [PSCustomObject] $node )  {
+    $id = $node.id
+    $text = $node.text
     Write-Output ""
     Write-Output "            <!-- <note conref=""$conreffile/$id""></note> -->"
     Write-Output "            <note type=""note"" id=""$id"">$text</note>"
 }
 
-function MkBPPh( [string] $conreffile, [string] $id, [string] $text )  {
+function MkBPPh( [string] $conreffile, [PSCustomObject] $node )  {
+    $id = $node.id
+    $text = $node.text
     Write-Output ""
     Write-Output "            <!-- <ph conref=""$conreffile/$id""></ph> -->"
     Write-Output "            <p><ph id=""$id"">$text</ph></p>"
 }
 
-function MkConref( [string] $str, [boolean] $wrapph )  {
-    $refname = $str
-    if ( $str.StartsWith("conref=") )  {
-        $refname = $str.Substring( "conref=".Length )
-        return( ExpandConref $refname $wrapph )
-    }
-    elseif ( $str.StartsWith("img=") )  {
-        $refname = $str.Substring( "img=".Length )
-        return( ExpandedImg $refname )
-    }
+function MkBPSimpleTable( [string] $conreffile, [PSCustomObject] $node )  {
+    $id = $node.id
+    $widths = ([string[]]$node.header.widths) -join " "
 
+    Write-Output ""
+    Write-Output "            <!-- <simpletable conref=""$conreffile/$id""><sthead><stentry/></sthead><strow><stentry/></strow></simpletable> -->"
+    Write-Output "            <simpletable id= relcolwidth=""1* 3*"">"
+    Write-Output "                <sthead>"
+    foreach( $title in $node.header.titles )  {
+        Write-Output "                    <stentry>$title</stentry>"
+    }
+    Write-Output "                </sthead>"
+
+    foreach( $row in $node.rows )  {
+        Write-Output "                <strow>"
+        foreach( $entry in $row )  {
+            Write-Output "                    <stentry>$entry</stentry>"
+        }
+        Write-Output "                </strow>"
+    }
+    Write-Output "            </simpletable>"
 }
 
-function ExpandConref( [string] $str, [boolean] $wrapph )  {
-    $refarr = $str.Split( "-", [System.StringSplitOptions]::None )
-    $reftype = $refarr[0]
+function MkConref( [string] $str, [string] $wrapph )  {
+    $refarr = $str.Split( "=/", [System.StringSplitOptions]::None )
+
+    if ( $refarr[0] -eq "conref" )  {
+        $name = $refarr[1]
+        $namearr = $name.Split( "-", [System.StringSplitOptions]::None )
+        $fullref = "conref=""$conreffilelocal/$name"""
+        return( ExpandedConref $namearr[0] $fullref $wrapph )
+    }
+
+    elseif ( $refarr[0] -eq "conkeyref" )  {
+        $name = $refarr[1]
+        $namearr = $name.Split( "-", [System.StringSplitOptions]::None )
+        $refkey = $refarr[2]
+        $fullref = "conkeyref=""$refkey/$name"""
+        return( ExpandedConref $namearr[0] $fullref $wrapph )
+    }
+
+    elseif ( $refarr[0] -eq "img" )  {
+        return( ExpandedImg $refarr[1] )
+    }
+    else  {
+        return( $str )
+    }
+}
+
+# Only called by function MkConref.
+function ExpandedConref( [string] $reftype, [string] $conrefstr, [string] $wrapph )  {
 
     if ( $reftype -eq "simpletable" )  {
-        return "<simpletable conref=""$conreffile/$str""><sthead><stentry/></sthead><strow><stentry/></strow></simpletable>"
+        return "<simpletable $conrefstr><sthead><stentry/></sthead><strow><stentry/></strow></simpletable>"
     }
     elseif ( $reftype -eq "substeps" )  {
-        return "<substeps conref=""$conreffile/$str""><substep><cmd/></substep></substeps>"
+        return "<substeps $conrefstr><substep><cmd/></substep></substeps>"
     }
     elseif ( $reftype -eq "choices" )  {
-        return "<choices conref=""$conreffile/$str""><choice/></choices>"
+        return "<choices $conrefstr><choice/></choices>"
     }
     elseif ( $reftype -eq "ph" )  {
         if ( $wrapph )  {
-            return "<p><ph conref=""$conreffile/$str""></ph></p>"
+            return "<$wrapph><ph $conrefstr></ph></$wrapph>"
         }
         else  {
-            return "<ph conref=""$conreffile/$str""></ph>"
+            return "<ph $conrefstr></ph>"
         }
     }
     else  {
-        return "<$reftype conref=""$conreffile/$str""></$reftype>"
+        return "<$reftype $conrefstr></$reftype>"
     }
 }
 
 function ExpandedImg( [string] $img )  {
-    if ( $img.StartsWith( "scr-" ) )  {
-        return "<image outputclass=""img-scr"" scalefit=""yes"" placement=""break"" align=""left"" href=""../../common/img/$img""><alt></alt></image>"
+    $outputclass = "img"
+    foreach ( $imgtype in ( "scr", "gra", "ico" ) ) {
+        if ( $img.StartsWith( "$imgtype-" ) ) {
+            $outputclass = "img-$imgtype"
+        }
     }
-    elseif ( $img.StartsWith( "gra-" ) )  {
-        return "<image outputclass=""img-gra"" scalefit=""yes"" placement=""break"" align=""left"" href=""../../common/img/$img""><alt></alt></image>"
-    }
-    elseif ( $img.StartsWith( "ico-" ) )  {
-        return "<image outputclass=""img-ico"" scalefit=""yes"" placement=""break"" align=""left"" href=""../../common/img/$img""><alt></alt></image>"
-    }
-    else  {
-        return "<image outputclass=""img"" scalefit=""yes"" placement=""break"" align=""left"" href=""../../common/img/$img""><alt></alt></image>"
-    }
+    return "<image outputclass=""$outputclass"" scalefit=""yes"" placement=""break"" align=""left"" href=""../../common/img/$img""><alt></alt></image>"
 }
 
 function MkInfo( [string] $img, [string] $info, [string] $indent )  {
     if (( $img ) -and ( $info ))  {
-        $info = MkConref $info $TRUE
+        $info = MkConref $info "p"
         Write-Output "$indent<info>"
         Write-Output "$indent    $expimg"
         Write-Output "$indent    $info"
@@ -101,7 +135,7 @@ function MkInfo( [string] $img, [string] $info, [string] $indent )  {
         Write-Output "$indent<info>$expimg</info>"
     }
     elseif ( $info )  {
-        $info = MkConref $info $TRUE
+        $info = MkConref $info "p"
         Write-Output "$indent<info>$info</info>"
     }
 }
@@ -120,8 +154,8 @@ function MkStep( [string] $conreffile, [PSCustomObject] $step )  {
 
     if ( $substeps )  {
         if ( $substeps -is [system.array] )  {
+            Write-Output "                <substeps>"
             foreach ( $substep in $substeps )  {
-                Write-Output "                <substeps>"
                 Write-Output "                    <substep>"
                 if ( $substep.cmd )  {
                     $cmd = $substep.cmd
@@ -133,11 +167,18 @@ function MkStep( [string] $conreffile, [PSCustomObject] $step )  {
                     MkInfo $img $info "                        "
                 }
                 Write-Output "                    </substep>"
-                Write-Output "                </substeps>"
             }
+            Write-Output "                </substeps>"
+        }
+        elseif ( $choices -is [system.array] )  {
+            Write-Output "                <choices>"
+            foreach ( $choice in $choices )  {
+                Write-Output "                    <choice>$choice</choice>"
+            }
+            Write-Output "                </choices>"
         }
         else  {
-            $expanded = MkConref $substeps $FALSE
+            $expanded = MkConref $substeps
             Write-Output "                $expanded"
         }
     }
@@ -150,13 +191,13 @@ function MkStep( [string] $conreffile, [PSCustomObject] $step )  {
 
 function NavDashed( [PSCustomObject] $topic )  {
     if ( $nav )  {
-        return ($topic.nav.ToLower()).Replace( " ", "-" )
+        return ( $topic.nav.ToLower()).Replace( " ", "-" )
     }
     elseif ( $title )  {
-        return ($topic.title.ToLower()).Replace( " ", "-" )
+        return ( $topic.title.ToLower()).Replace( " ", "-" )
     }
     else  {
-        return ""
+        return ( "" )
     }
 }
 
@@ -197,40 +238,70 @@ function MkTopic( [string] $topictype, [string] $conreffile, [PSCustomObject] $t
     if ( -not $navdashed )  {
         Write-Host "ERROR: No title or navtitle in:`r`n$topic"
     }
-
-    Write-Output "<?xml version=""1.0"" encoding=""utf-8"" standalone=""no""?>"
-    WriteDocType $topictype $navdashed
-
-    $title = $topic.title
-    Write-Output ""
-    Write-Output "    <title>$title</title>"
-    if ( $topic.nav )  {
-        $nav = $topic.nav
-        Write-Output "    <titlealts>"
-        Write-Output "        <navtitle>$nav</navtitle>"
-        Write-Output "    </titlealts>"
+    else  {
+        Write-Output "<?xml version=""1.0"" encoding=""utf-8"" standalone=""no""?>"
+        WriteDocType $topictype $navdashed
     }
-    Write-Output  ""
-    Write-Output  ""
-    Get-Content $prologfn
-    Write-Output ""
-    Write-Output ""
+
+    if ( $topic.title )  {
+        $title = $topic.title
+        Write-Output ""
+        Write-Output "    <title>$title</title>"
+        if ( $topic.nav )  {
+            $nav = $topic.nav
+            Write-Output "    <titlealts>"
+            Write-Output "        <navtitle>$nav</navtitle>"
+            Write-Output "    </titlealts>"
+        }
+    }
+
+    if ( $prologfn )  {
+        Write-Output  ""
+        Write-Output  ""
+        Get-Content $prologfn
+    }
 
     $bodytag = BodyTag $topictype
+    Write-Output ""
+    Write-Output ""
     Write-Output "    <$bodytag>"
 
+
     Write-Output ""
-    Get-Content $prestepsfn
+    if ( $g_avail )  {
+        Write-Output "        <section conkeyref=""k-bptext/section-prodavail-$g_avail""></section>"
+    }
+    else  {
+        Write-Output "        <section conkeyref=""k-bptext/section-prodavail-PCE""></section>"
+    }
+
+    if ( $topic.prereqs )  {
+        Write-Output ""
+        Write-Output "        <prereq>"
+        Write-Output "            <ul>"
+        foreach ( $prereq in $topic.prereqs )  {
+            $expanded = MkConref $prereq
+            Write-Output "                <li>$expanded</li>"
+        }
+        Write-Output "            </ul>"
+        Write-Output "        </prereq>"
+    }
+
     Write-Output ""
 
-    if ( $topic.note )  {
-        $note = ExpandConref $topic.note
-        if ( $topic.note.StartsWith( "note-" ) )  {
-            Write-Output "        <section>$note</section>"
+    if ( $topic.section )  {
+        Write-Output "        <section>"
+        if ( $topic.section -is [system.array] )  {
+            foreach ( $node in $topic.section )  {
+                $text = MkConref $node.text $node.wrapper
+                Write-Output "            $text"
+            }
         }
         else  {
-            Write-Output "        <section><note>$note</note></section>"
+            $text = MkConref $topic.section
+            Write-Output "            $text"
         }
+        Write-Output "        </section>"
     }
 
     if (( $topic.steps ) -and ( $topictype -eq "task" ))  {
@@ -241,7 +312,12 @@ function MkTopic( [string] $topictype, [string] $conreffile, [PSCustomObject] $t
                 $arr = $step.Split( " ", [System.StringSplitOptions]::None )
                 $name = $arr[0].SubString( "step-pbar-".Length )
                 foreach( $role in @($arr[1..($arr.length-1)]) )  {
-                    Write-Output "            <step audience=""$role"" conkeyref=""k-bppbar/step-pb-$role-$name-E90""><cmd/></step>"
+                    if ( $role -eq "host" )  {
+                        Write-Output "            <step audience=""adm"" conkeyref=""k-bppbar/step-pb-host-$name-E90""><cmd/></step>"
+                    }
+                    else  {
+                        Write-Output "            <step audience=""$role"" conkeyref=""k-bppbar/step-pb-$role-$name-E90""><cmd/></step>"
+                    }
                 }
             }
             elseif ( $step.StartsWith( "step-" ) )  {
@@ -256,8 +332,14 @@ function MkTopic( [string] $topictype, [string] $conreffile, [PSCustomObject] $t
     }
 
     if ( $topic.result )  {
-        $resultfull = MkConref $topic.result $FALSE
+        $resultfull = MkConref $topic.result
         Write-Output "        <result>$resultfull</result>"
+        Write-Output ""
+    }
+
+    if ( $topic.postreq )  {
+        $text = MkConref $topic.postreq
+        Write-Output "        <postreq>$text</postreq>"
         Write-Output ""
     }
 
@@ -271,15 +353,13 @@ function MkTopic( [string] $topictype, [string] $conreffile, [PSCustomObject] $t
 
 
 # MAIN
-if ( $args.Count -gt 0 )  {
+if ( $args.Count -gt 3 )  {
     $srcfn = $args[0]
     $bpfnbase = $args[1]
     $prologfn = $args[2]
-    $prestepsfn = $args[3]
-    $tgtdir = $args[4]
+    $tgtdir = $args[3]
 
-    $conreffile = "$bpfnbase.dita#tsk-$bpfnbase"
-    $tgtfile = "$tgtdir\$bpfnbase.dita"
+    $conreffilelocal = "$bpfnbase.dita#tsk-$bpfnbase"
 
     $thisscript = $MyInvocation.MyCommand.Name
     $params = [string]::Join( " ", $args )
@@ -287,33 +367,47 @@ if ( $args.Count -gt 0 )  {
     $myjson = Get-Content -Raw -Path $srcfn | ConvertFrom-Json
 
 
+    # GLOBAL -------------------------------------------------------
+
+    foreach ( $node in $myjson.global ) {
+        if ( $node.avail ) {
+            $g_avail = $node.avail
+        }
+    }
 
 
     # BPTEXT -------------------------------------------------------
 
+    $tgtfile = "$tgtdir\$bpfnbase.dita"
     Write-Output "" | Out-File $tgtfile -Encoding DEFAULT
 
     # NOTES in bptext*
-    MkStartSection $thisscript $params | Out-File $tgtfile -Append -Encoding DEFAULT
-    foreach ( $pair in $myjson.bpsection ) {
-        $id = $pair.id
-        if ( $id.StartsWith( "note-" ) )  {
-            MkBPNote $conreffile $id $pair.text | Out-File $tgtfile -Append -Encoding DEFAULT
+    if ( $myjson.bpsection.Count -gt 0 )  {
+        MkStartSection $thisscript $params | Out-File $tgtfile -Append -Encoding DEFAULT
+        foreach ( $node in $myjson.bpsection ) {
+            $id = $node.id
+            if ( $id.StartsWith( "note-" ) )  {
+                MkBPNote $conreffilelocal $node | Out-File $tgtfile -Append -Encoding DEFAULT
+            }
+            elseif ( $id.StartsWith( "ph-" ) )  {
+                MkBPPh $conreffilelocal $node | Out-File $tgtfile -Append -Encoding DEFAULT
+            }
+            elseif ( $id.StartsWith( "simpletable-" ) )  {
+                MkBPSimpleTable $conreffilelocal $node | Out-File $tgtfile -Append -Encoding DEFAULT
+            }
+            # elseif ( $id.StartsWith( "...-" ) )
         }
-        elseif ( $id.StartsWith( "ph-" ) )  {
-            MkBPPh $conreffile $id $pair.text | Out-File $tgtfile -Append -Encoding DEFAULT
-        }
-        # elseif ( $id.StartsWith( "...-" ) )
+        MkEndSection | Out-File $tgtfile -Append -Encoding DEFAULT
     }
-    MkEndSection | Out-File $tgtfile -Append -Encoding DEFAULT
 
     # STEPS in bptext*
-    MkStartSection $thisscript $params | Out-File $tgtfile -Append -Encoding DEFAULT
-    foreach ( $step in $myjson.bpsteps ) {
-        MkStep $conreffile $step | Out-File $tgtfile -Append -Encoding DEFAULT
+    if ( $myjson.bpsteps.Count -gt 0 )  {
+        MkStartSection $thisscript $params | Out-File $tgtfile -Append -Encoding DEFAULT
+        foreach ( $step in $myjson.bpsteps ) {
+            MkStep $conreffilelocal $step | Out-File $tgtfile -Append -Encoding DEFAULT
+        }
+        MkEndSection | Out-File $tgtfile -Append -Encoding DEFAULT
     }
-    MkEndSection | Out-File $tgtfile -Append -Encoding DEFAULT
-
 
 
 
@@ -329,7 +423,7 @@ if ( $args.Count -gt 0 )  {
             $tgtfile = $tgtdir + "\" + ($topic.title.ToLower()).Replace( " ", "-" ) + ".dita"
         }
         Write-Host "Creating $tgtfile...."
-        MkTopic "task" $conreffile $topic | Out-File $tgtfile -Encoding DEFAULT
+        MkTopic "task" $conreffilelocal $topic | Out-File $tgtfile -Encoding DEFAULT
     }
 
 }

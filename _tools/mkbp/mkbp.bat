@@ -4,19 +4,24 @@ goto %1
 
 
 :roles
-call %0 runme json\rolesfiles.json bptext-rolessteps W:\_content\common\roles
+call %0 runme json\roles.json bptext-rolessteps W:\_content\common\roles
+goto :eof
+
+:sites
+call %0 runme json\sites.json bptext-sites W:\_content\administrators\sites
 goto :eof
 
 
 
-
-
 :runme
-if _%4_ EQU __  goto :error
-cd /d %~p0
+if _%3_ EQU __  goto :error
+cd /d %~dp0
 if not exist %~dp0out\*  md %~dp0out > nul
-powershell -file mkbp-generic-files-json.ps1 %2 %3 prolog.txt presteps.txt %~dp0out
-start windiff %4\* %~dp0out\*
+del %~dp0out\* /q
+powershell -file mkbp-generic-files-json.ps1 %2 %3 prolog.txt %~dp0out
+call windiff %4\* %~dp0out\*
+start %4
+start %~dp0out
 npp %4\bp*
 npp %~dp0out\bp*
 goto :eof

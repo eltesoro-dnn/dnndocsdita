@@ -38,6 +38,9 @@
             <topicref format="dita" type="topic" toc="yes" href="administrators/licensing/troubleshooting-licensing.dita" />
         </topicref>
 
+        <!-- Managing Sites and Site Groups -->
+        <mapref href="administrators/sites/sites.ditamap" />
+
         <!-- Configuring Your Site -->
         <mapref href="administrators/configuring-your-site-pb-all.ditamap" />
 
@@ -50,6 +53,9 @@
         <!-- Analyzing Your Site
         viewing your site analytics
         -->
+
+        <!-- Maintaining Your Site -->
+        <!-- <topicref format="dita" type="task"  toc="yes" href="administrators/clear-cache.dita" /> -->
 
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="administrators/administrator-references.dita" collection-type="family">

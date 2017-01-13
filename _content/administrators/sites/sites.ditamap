@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/map.dtd">
+<map xml:lang="en" id="map-sites">
+
+    <title>Sites and Site Groups</title>
+
+    <topicref audience="adm" format="dita" type="topic" navtitle="Managing Sites and Site Groups" locktitle="yes" toc="yes" href="about-sites.dita" copy-to="index.dita" collection-type="family">
+
+        <topicref format="dita" type="task" toc="yes" href="create-site.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-site-properties.dita" />
+        <topicref format="dita" type="task" toc="yes" href="view-site.dita" />
+        <topicref format="dita" type="task" toc="yes" href="delete-site.dita" />
+        <topicref format="dita" type="task" toc="yes" href="create-site-group.dita" />
+        <topicref format="dita" type="task" toc="yes" href="add-or-remove-sites-in-group.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-site-group.dita" />
+        <topicref format="dita" type="task" toc="yes" href="delete-site-group.dita" />
+
+    </topicref>
+
+</map>

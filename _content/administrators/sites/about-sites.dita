@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-about-sites">
+
+    <title>About Sites and Site Groups</title>
+    <titlealts>
+        <navtitle>Sites and Site Groups</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,trCP,1701</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+			<!--
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+			-->
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="5"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+		<section id="overview">
+
+            <p>DNN sites that share content and users can be combined into a site group. A site can belong to one group only.</p>
+
+            <p>When creating a site group, you must also select a master site from the list of ungrouped sites. The master site can perform these tasks:</p>
+            <ul>
+                <li>Authentication of users that are shared among the sites in the same group. You can also specify a different domain to handle authentication for the group.</li>
+                <li>Storing content that is reused by sites in the same group. However, the master site cannot reuse content from other member sites. <!-- Need to test if sibling sites can share content with each other. --></li>
+            </ul>
+
+        </section>
+
+    </body>
+
+</topic>
+

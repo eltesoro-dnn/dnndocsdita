@@ -1,0 +1,46 @@
+{
+    "global" : {
+        "avail" : "PCE"
+    },
+
+
+    "bpsection" : [
+    ],
+
+
+    "bpsteps" : [
+        {
+            "id" : "step-clear-cache-button",
+            "cmd" : "Click/Tap <uicontrol>Clear Cache</uicontrol>.",
+            "img" : "scr-Servers-buttons-ClearCache.png"
+        },
+        {
+            "id" : "step-restart-application-button",
+            "cmd" : "Click/Tap <uicontrol>Restart Application</uicontrol>.",
+            "img" : "scr-Servers-buttons-RestartApplication.png"
+        },
+    ],
+
+
+    "topics" : [
+
+        {
+            "nav" : "Clear Cache",
+            "title" : "Clear Cache",
+            "steps" : [
+                "step-pbar-Settings-Servers host",
+                "step-clear-cache-button"
+            ]
+        },
+
+        {
+            "nav" : "Restart Application",
+            "title" : "Restart the Application",
+            "steps" : [
+                "step-pbar-Settings-Servers host",
+                "step-restart-application-button"
+            ]
+        }
+
+    ]
+}
