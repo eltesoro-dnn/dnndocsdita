@@ -99,11 +99,11 @@
         <!-- <section conref="relnotes-2016-jan-14.dita#top-relnotes-2016-jan-14/section-relnotes-evoq"></section> -->
         <section id="section-relnotes-evoq">
             <!-- <ph conref="relnotes-2016-jan-14.dita#top-relnotes-2016-jan-14/ph-prodver-evoq"></ph> -->
-            <title>DNN EVOQ <ph id="ph-prodver-evoq">8.3.0</ph></title>
+            <title>EVOQ <ph id="ph-prodver-evoq">8.3.0</ph></title>
 
             <!-- <sectiondiv conref="relnotes-2016-jan-14.dita#top-relnotes-2016-jan-14/sectiondiv-relnotes-contentbasic"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-contentbasic">
-                <p>DNN EVOQ CONTENT BASIC</p>
+                <p>EVOQ CONTENT BASIC</p>
                 <ul>
                     <li>All updates included with DNN Platform 8.0.0.</li>
                     <li>Added ability to manage a user’s roles within the Users section of the Persona Bar.</li>
@@ -114,7 +114,7 @@
 
             <!-- <sectiondiv conref="relnotes-2016-jan-14.dita#top-relnotes-2016-jan-14/sectiondiv-relnotes-content"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-content">
-                <p>DNN EVOQ CONTENT</p>
+                <p>EVOQ CONTENT</p>
                 <ul>
                     <li>All updates included with Evoq Content Basic 8.3.0.</li>
                     <li>Added Optimizely connector and module that provides a way to do A/B (split) testing within Evoq.</li>
@@ -124,7 +124,7 @@
 
             <!-- <sectiondiv conref="relnotes-2016-jan-14.dita#top-relnotes-2016-jan-14/sectiondiv-relnotes-engage"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-engage">
-                <p>DNN EVOQ ENGAGE</p>
+                <p>EVOQ ENGAGE</p>
                 <ul>
                     <li>All updates included with Evoq Content 8.3.</li>
                     <li>Added ability to subscribe to activity stream posts and their comments (for items created within the activity stream).</li>

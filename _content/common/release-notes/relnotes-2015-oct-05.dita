@@ -73,11 +73,11 @@
         <!-- <section conref="relnotes-2015-oct-05.dita#top-relnotes-2015-oct-05/section-relnotes-evoq"></section> -->
         <section id="section-relnotes-evoq">
             <!-- <ph conref="relnotes-2015-oct-05.dita#top-relnotes-2015-oct-05/ph-prodver-evoq"></ph> -->
-            <title>DNN EVOQ <ph id="ph-prodver-evoq">8.2.0</ph></title>
+            <title>EVOQ <ph id="ph-prodver-evoq">8.2.0</ph></title>
 
             <!-- <sectiondiv conref="relnotes-2015-oct-05.dita#top-relnotes-2015-oct-05/sectiondiv-relnotes-contentbasic"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-contentbasic">
-                <p>DNN EVOQ CONTENT BASIC</p>
+                <p>EVOQ CONTENT BASIC</p>
                 <ul>
                     <li>All updates included with DNN Platform 7.4.2.</li>
                     <li>Added mobile view and support for the Persona Bar's Recycle Bin and Workflow sections.</li>
@@ -89,7 +89,7 @@
 
             <!-- <sectiondiv conref="relnotes-2015-oct-05.dita#top-relnotes-2015-oct-05/sectiondiv-relnotes-content"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-content">
-                <p>DNN EVOQ CONTENT</p>
+                <p>EVOQ CONTENT</p>
                 <ul>
                     <li>All updates included with Evoq Content Basic 8.2.0.</li>
                     <li>Added region support to content personalization (requires purchase of GeoIP data from MaxMind).</li>
@@ -103,7 +103,7 @@
 
              <!-- <sectiondiv conref="relnotes-2015-oct-05.dita#top-relnotes-2015-oct-05/sectiondiv-relnotes-engage"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-engage">
-                <p>DNN EVOQ ENGAGE</p>
+                <p>EVOQ ENGAGE</p>
                 <ul>
                     <li>All updates included with Evoq Content 8.2.0.</li>
                     <li>Added ability to create Zendesk tickets from topics or questions (if Zendesk connector setup).</li>

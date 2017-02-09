@@ -105,13 +105,13 @@
         <!-- <section conref="relnotes-2014-mar-19.dita#top-relnotes-2014-mar-19/section-relnotes-evoq"></section> -->
         <section id="section-relnotes-evoq">
             <!-- <ph conref="relnotes-2014-mar-19.dita#top-relnotes-2014-mar-19/ph-prodver-evoq"></ph> -->
-            <title>DNN EVOQ <ph id="ph-prodver-evoq">7.2.2</ph></title>
+            <title>EVOQ <ph id="ph-prodver-evoq">7.2.2</ph></title>
 
             <!-- <sectiondiv id="sectiondiv-relnotes-contentbasic"/> -->
 
             <!-- <sectiondiv conref="relnotes-2014-mar-19.dita#top-relnotes-2014-mar-19/sectiondiv-relnotes-content"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-content">
-                <p>DNN EVOQ CONTENT</p>
+                <p>EVOQ CONTENT</p>
                 <ul>
                     <li>All updates included with DNN Platform 7.2.2.</li>
                     <li>Added new Print button to Commerce receipts.</li>
@@ -128,7 +128,7 @@
 
             <!-- <sectiondiv conref="relnotes-2014-mar-19.dita#top-relnotes-2014-mar-19/sectiondiv-relnotes-engage"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-engage">
-                <p>DNN EVOQ ENGAGE (EVOQ SOCIAL 1.1.1)</p>
+                <p>EVOQ ENGAGE (EVOQ SOCIAL 1.1.1)</p>
                 <ul>
                     <li>Localized additional items that were not localizable before (for translations) and corrected several bugs found when running in other languages.</li>
                     <li>Improved the date and time selection experience in Social Events.</li>

@@ -9,7 +9,7 @@
     </titlealts>
 
     <prolog>
-        <author>orJK,edET,1707</author>
+        <author>orJK,trCP,edET,1701</author>
         <copyright>
             <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -56,21 +56,26 @@
         <!-- <section conref="relnotes-2017-jan-25.dita#top-relnotes-2017-jan-25/section-relnotes-evoq"></section> -->
         <section id="section-relnotes-evoq">
             <!-- <ph conref="relnotes-2017-jan-25.dita#top-relnotes-2017-jan-25/ph-prodver-evoq"></ph> -->
-            <title>DNN EVOQ <ph id="ph-prodver-evoq">9.0.1</ph></title>
+            <title>EVOQ <ph id="ph-prodver-evoq">9.0.1</ph></title>
 
             <!-- <sectiondiv conref="relnotes-2017-jan-25.dita#top-relnotes-2017-jan-25/sectiondiv-relnotes-evoq"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-evoq">
-                <p>DNN EVOQ CONTENT</p>
+                <p>EVOQ CONTENT BASIC</p>
                 <ul>
                     <li>All updates included with DNN Platform 9.0.1.</li>
-                    <li>The Connectors feature has a new option for UNC folder providers.</li>
                     <li>The Assets feature now supports recursive indexing to sync all installed folders.</li>
+                </ul>
+
+                <p>EVOQ CONTENT</p>
+                <ul>
+                    <li>All updates included with Evoq Content Basic 9.0.1.</li>
+                    <li>The Connectors feature has a new option for UNC folder providers.</li>
                     <li>Bug fixes specific to Evoq Content.</li>
                 </ul>
 
-                <p>DNN EVOQ ENGAGE</p>
+                <p>EVOQ ENGAGE</p>
                 <ul>
-                    <li>All updates included with DNN Evoq Content 9.0.1.</li>
+                    <li>All updates included with Evoq Content 9.0.1.</li>
                     <li>Bug fixes specific to Evoq Engage.</li>
                 </ul>
             </sectiondiv>

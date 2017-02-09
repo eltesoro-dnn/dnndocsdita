@@ -418,6 +418,9 @@ main:after {
   color: #333;
   margin-top: 1em;
 }
+.stentry .ul .li {
+  margin-top: 0;
+}
 .compressedlist > .li {
   font-size: 14px;
   line-height: 100%;
@@ -2548,7 +2551,6 @@ and (orientation : portrait) {
     padding: 63px 35px 63px 150px;
   }
 }
-
 
 
 /* ------------------------------------------------------------

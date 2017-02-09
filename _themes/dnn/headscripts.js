@@ -79,6 +79,7 @@ var getsmily_id="6gtee4abmwbh83n";
 
 // Slideshow
 // Source: http://www.w3schools.com/w3css/w3css_slideshow.asp
+/*
 var slideIndex = 1;
 showDivs(slideIndex);
 function plusDivs(n) {
@@ -92,7 +93,7 @@ function showDivs(n) {
     for (i = 0; i < x.length; i++) {
         x[i].style.display = "none";
     }
-    x[slideIndex-1].style.display = "block";
+    x[slideIndex-1].style.display = "block";  // BUGBUG: Cannot read property 'style' of undefined.
 }
 
 
@@ -112,3 +113,4 @@ function carousel() {
     x[carouselIndex-1].style.display = "block";
     setTimeout(carousel, 2000); // Change image every 2 seconds
 }
+*/

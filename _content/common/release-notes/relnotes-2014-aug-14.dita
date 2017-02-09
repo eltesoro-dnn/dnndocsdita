@@ -72,13 +72,13 @@
         <!-- <section conref="relnotes-2014-aug-14.dita#top-relnotes-2014-aug-14/section-relnotes-evoq"></section> -->
         <section id="section-relnotes-evoq">
             <!-- <ph conref="relnotes-2014-aug-14.dita#top-relnotes-2014-aug-14/ph-prodver-evoq"></ph> -->
-            <title>DNN EVOQ <ph id="ph-prodver-evoq">7.3.2</ph></title>
+            <title>EVOQ <ph id="ph-prodver-evoq">7.3.2</ph></title>
 
             <!-- <sectiondiv id="sectiondiv-relnotes-contentbasic"/> -->
 
             <!-- <sectiondiv conref="relnotes-2014-aug-14.dita#top-relnotes-2014-aug-14/sectiondiv-relnotes-content"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-content">
-                <p>DNN EVOQ CONTENT</p>
+                <p>EVOQ CONTENT</p>
                 <ul>
                     <li>All updates included with DNN Platform 7.3.2.</li>
                     <li>Improved Captcha logic and mitigated against automated registration attacks.</li>
@@ -93,7 +93,7 @@
 
             <!-- <sectiondiv conref="relnotes-2014-aug-14.dita#top-relnotes-2014-aug-14/sectiondiv-relnotes-engage"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-engage">
-                <p>DNN EVOQ ENGAGE (EVOQ SOCIAL 1.3.0)</p>
+                <p>EVOQ ENGAGE (EVOQ SOCIAL 1.3.0)</p>
                 <ul>
                     <li>Introduced Group Spaces and Directory which provide an enhanced set of features and options for social groups versus previous releases.
                         <ul>

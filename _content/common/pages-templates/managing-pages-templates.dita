@@ -18,15 +18,24 @@
             <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
             <prodinfo>
                 <prodname>Platform</prodname>
-                <vrmlist><vrm version="8" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="8" release="0"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="8" release="3"/></vrmlist>
+                <vrmlist>
+                    <vrm version="8" release="3"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="8" release="3"/></vrmlist>
+                <vrmlist>
+                    <vrm version="8" release="3"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
             </prodinfo>
         </metadata>
     </prolog>
