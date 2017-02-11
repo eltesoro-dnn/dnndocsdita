@@ -156,7 +156,7 @@ function RobocopyExcludeDirs( [string] $src, [string] $tgt, [string] $excludedir
 
 
 function RefreshLog()  {
-    Write-Host "Recreating logfile ...."
+    Write-Host "Recreating $logfile ...."
 
     if ( -not( Test-Path -Path $logdir ) )  {
         New-Item  $logdir  -Type directory  -Force | Out-Null
@@ -251,7 +251,7 @@ function AssembleOutput()  {
     Copy-Item  -Path "$gitdir\_content\index*.html"          -Destination "$outdir"  -Force | Out-Null
     Copy-Item  -Path "$gitdir\_content\searchresults*.html"  -Destination "$outdir"  -Force | Out-Null
     RobocopyBasic         "$gitdir\_content\common\samples"   "$outdir\common\samples"                                          "/s"
-    RobocopyBasic         "$gitdir\_content\ssi"              "$outdir\ssi"                                                     "/s"
+    # RobocopyBasic         "$gitdir\_content\ssi"              "$outdir\ssi"                                                     "/s"
     RobocopyIncludeArray  "$gitdir\_content\common\img"       "$outdir\common\img"      "*.jpg,*.png,*.gif,*.svg"
     RobocopyIncludeArray  "$gitdir\_themes\dnn"               "$outdir\_theme"          "*.jpg,*.png,*.gif,*.svg,26d3f6*,*.js"
 
@@ -264,8 +264,7 @@ function AssembleOutput()  {
     if ( Test-Path $outdir\common\glossary\* )  { Remove-Item $outdir\common\glossary -Recurse -Force | Out-Null }
 
     Write-Host "Creating the web.config ...."
-    & $gitdir\_build\urlmap\urlmap.ps1 $gitdir\_build\urlmap\DC-URLmapping.csv $outdir | Set-Content $gitdir\_content\web.config
-    Copy-Item  -Path $gitdir\_content\web.config  -Destination $outdir
+    & $gitdir\_build\urlmap\urlmap.ps1 $gitdir\_build\urlmap\DC-URLmapping.csv $outdir $outdir\web.config
 
     Write-Host "Creating an aboutbld.html file ...."
     $today = Get-Date  -Format "yyyyMMdd"

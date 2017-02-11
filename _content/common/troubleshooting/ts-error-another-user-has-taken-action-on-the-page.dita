@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="troubleshooting-ts-error-another-user-has-taken-action-on-the-page">
+
+    <title>Error: Another User Has Taken Action on the Page</title>
+    <titlealts>
+        <navtitle>Error: Another User Has Taken Action</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrSUPP,1702</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="troubleshooting" />
+            <audience type="programmer" job="troubleshooting" />
+            <audience type="other" othertype="designer" job="troubleshooting" />
+            <audience type="other" othertype="content manager" job="troubleshooting" />
+            <audience type="other" othertype="community manager" job="troubleshooting" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+
+        <section outputclass="condition">
+            <title>Symptom</title>
+            <p>Error:</p>
+            <systemoutput>Another user has taken action on the page and its state has been changed. Please refresh the page to see the current state.</systemoutput>
+        </section>
+
+
+        <bodydiv outputclass="troubleSolution">
+            <section outputclass="cause">
+                <title>Possible Cause</title>
+
+                <p>Another user made a change that conflicts with your changes.</p>
+            </section>
+
+            <section outputclass="remedy">
+                <title>Solution</title>
+
+                <ol outputclass="steps">
+                    <li outputclass="step stepexpand">Exit the edit mode and refresh the page.</li>
+                    <li outputclass="step stepexpand">Enter the edit mode.</li>
+                    <li outputclass="step stepexpand">Redo your changes, if necessary.</li>
+                    <li outputclass="step stepexpand">Publish the changes.</li>
+                </ol>
+            </section>
+        </bodydiv>
+
+    </body>
+
+    <!--
+    <related-links>
+        <link format="dita" href="ts-page-remains-in-draft.dita"><linktext>Troubleshooting: Page Remains in Draft Mode</linktext></link>
+    </related-links>
+    -->
+
+</topic>

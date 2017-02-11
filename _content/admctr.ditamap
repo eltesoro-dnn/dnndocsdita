@@ -57,6 +57,9 @@
         <!-- Maintaining Your Site -->
         <!-- <topicref format="dita" type="task"  toc="yes" href="administrators/clear-cache.dita" /> -->
 
+        <!-- Troubleshooting -->
+        <mapref href="administrators/troubleshooting/troubleshooting.ditamap" />
+
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="administrators/administrator-references.dita" collection-type="family">
             <topicref format="dita" type="topic"     toc="yes" href="administrators/control-bar-to-persona-bar.dita" />
@@ -73,6 +76,7 @@
             <topicmeta><navtitle>Glossary</navtitle></topicmeta>
             <mapref href="common/glossary/glossary.ditamap" />
         </topichead>
+
 
     </topicref>
 

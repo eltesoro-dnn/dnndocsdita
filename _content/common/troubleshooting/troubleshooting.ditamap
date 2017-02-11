@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/map.dtd">
+<map xml:lang="en" id="map-troubleshooting">
+
+    <title>Troubleshooting</title>
+
+	<topicref format="dita" type="topic" toc="yes" href="about-troubleshooting.dita" copy-to="index.dita" collection-type="family" >
+
+        <topicref format="dita" type="topic" toc="yes" href="ts-error-another-user-has-taken-action-on-the-page.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="ts-page-remains-in-draft.dita" />
+
+    </topicref>
+
+</map>
