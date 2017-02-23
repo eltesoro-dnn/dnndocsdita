@@ -1,15 +1,7 @@
 /*
- | This file is part of the DITA Open Toolkit project.
- | See the accompanying license.txt file for applicable licenses.
+ | Based on the DITA Open Toolkit project.
+ | ?ver=170221
 */
-/*
- | (c) Copyright IBM Corp. 2004, 2005 All Rights Reserved.
- */
-/*
- | History of changes:
- |      201602xx (eleanor.tesoro@dnnsoftware.com): Incorped dnn.styles.css.
- |      201603xx (james.hellesen@dnnsoftware.com): Updates to match Joe's and other changes.
- */
 
 
 /* ------------------------------------------------------------
@@ -1432,7 +1424,8 @@ article[role="articleHome"] {
 .page-link span:hover {
   opacity: .5;
 }
-.page-link-container {
+.page-link-container,
+.page-link-wrapper {
   margin: auto;
   width: 100%;
   text-align: center;

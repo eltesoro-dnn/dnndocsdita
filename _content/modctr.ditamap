@@ -6,9 +6,10 @@
 
 
     <!-- Keys. NOTE: Do NOT use keys for topics that need to have an "active" tag in the toc. -->
-    <keydef keys="k-bptext"   href="common/bptext.dita#top-bptext" />
-    <keydef keys="k-bpsteps"  href="common/bptext-steps.dita#tsk-bptext-steps" />
-    <keydef keys="k-bppbar"   href="common/bptext-pbar.dita#tsk-bptext-pbar" />
+    <keydef keys="k-bptext"     href="common/bptext.dita#top-bptext" />
+    <keydef keys="k-bpsteps"    href="common/bptext-steps.dita#tsk-bptext-steps" />
+    <keydef keys="k-bppbar"     href="common/bptext-pbar.dita#tsk-bptext-pbar" />
+    <keydef keys="k-bppbtabs"   href="common/bptext-pbtabs.dita#tsk-bptext-pbtabs" />
 
     <keydef keys="k-bppagespb"  href="community-managers/pages-templates/bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb" />
     <keydef keys="k-bppagesxx"  href="community-managers/pages-templates/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx" />

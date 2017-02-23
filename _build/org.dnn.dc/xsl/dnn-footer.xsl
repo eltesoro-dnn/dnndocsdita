@@ -9,7 +9,7 @@
                 <ul class="misc horizontal-list">
                     <li><a href="http://www.dnnsoftware.com/Terms">Terms of Use</a></li>
                     <li><a href="http://www.dnnsoftware.com/Privacy">Privacy</a></li>
-                    <li><span class="footer-span">© 2016</span><a href="http://www.dnnsoftware.com">DNN Corp.</a><span class="footer-span"> All rights reserved.</span></li>
+                    <li><span class="footer-span">© 2017</span><a href="http://www.dnnsoftware.com">DNN Corp.</a><span class="footer-span"> All rights reserved.</span></li>
                 </ul>
             </div>
 

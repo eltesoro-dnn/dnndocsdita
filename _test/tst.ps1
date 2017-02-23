@@ -9,7 +9,7 @@
 $transtype = "html5"
 $subbldarr = "administrators", "developers", "designers", "content-managers", "community-managers"
 
-$bldroot   = "v:" + "\20170207-copy2staging"
+$bldroot   = "v:"
 $gitroot   = "w:"
 
 $outdir = $bldroot + "\output\" + $transtype
@@ -25,13 +25,15 @@ $currfiles = $logdir + "\currfiles.txt"
 
 $expfile   = $tstdir + "\expectedfiles.txt"
 
+$staging = "http://doccenterqa.azurewebsites.net/docs"
+
 # set _tempfile=%_logdir%\temp.txt
-# set _staging=http://qa.dnncorp.biz/docs/
 # set _urlmap=W:\_build\urlmap\urlmap.txt
-# set _site=http://qa.dnncorp.biz/docs
 
 
 function WriteHeader( [string] $msg )  {
+    Write-Host $msg
+
     Write-Output "`r`n--------------------------------------------------"
     Write-Output $msg
 }
@@ -107,14 +109,14 @@ function T003()  {
 
     $imgfiles | foreach  {
         if ( !( Test-Path $imgdir\$_ ) )  {
-            Write-Host $_
+            Write-Output $_
         }
     }
 }
 
 
 function T004()  {
-    WriteHeader "In Dr. Link Check, enter http://qa.dnncorp.biz/docs/ and click Start."
+    WriteHeader "In Dr. Link Check, enter $staging and click Start."
     Start http://www.drlinkcheck.com/
 }
 
@@ -123,7 +125,7 @@ function T004()  {
 function T005()  {
     WriteHeader "Testing win.config."
 
-    $UrlPrefix = "http://qa.dnncorp.biz/docs"
+    $UrlPrefix = $staging
     $legacycsv = $gitdir + "\_build\urlmap\DC-URLmapping.csv"
     $exceptnfile = $tstdir + "\indexfileexceptions.txt"
 
@@ -176,10 +178,10 @@ RefreshFile $tstlog
 Get-Date | Out-File $tstlog
 
 
-# T001 | Out-File -Append $tstlog
-# T002 | Out-File -Append $tstlog
-# T003 | Out-File -Append $tstlog
-# T004 | Out-File -Append $tstlog
+T001 | Out-File -Append $tstlog
+T002 | Out-File -Append $tstlog
+T003 | Out-File -Append $tstlog
+T004 | Out-File -Append $tstlog
 T005 | Out-File -Append $tstlog
 
 & "cmd.exe" /c npp.bat $tstlog

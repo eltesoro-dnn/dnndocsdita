@@ -1,3 +1,9 @@
+/*
+ | Loaded at the end of the page.
+ | ?ver=170221
+*/
+
+
 $(document).ready(function() {
 
     $(window).on('resize', function () {

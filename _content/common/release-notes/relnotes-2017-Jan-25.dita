@@ -41,7 +41,7 @@
                 <!-- <xref conref="relnotes-2017-jan-25.dita#top-relnotes-2017-jan-25/xref-github-link"></xref> -->
                 <p><xref id="xref-github-link" format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Platform/releases/tag/v9.0.1">GitHub</xref></p>
                 <ul>
-                    <li>The Platform Persona Bar menu items are now curated icons, which enhance the design aesthetic and localization capabilities of the new Admin Persona Bar experience.</li>
+                    <li>The Platform Persona Bar menu items were converted to icons to enhance the design and localizability of the new Admin Persona Bar.</li>
                     <li>Legacy scheduled tasks were removed.</li>
                     <li>Users can now be soft-deleted (sent to the recycle bin) and later purged (permanently deleted).</li>
                     <li>The host/superuser can now select a global site and language.</li>

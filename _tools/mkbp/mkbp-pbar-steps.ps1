@@ -27,6 +27,16 @@ function RefreshFile( [string] $fn )  {
     New-Item  $fn  -Type file  -Force | Out-Null
 }
 
+function IsValid( [string] $s )  {
+    if ( $s -eq $NULL )  {
+        return $FALSE
+    }
+    elseif ( $s -eq "" )  {
+        return $FALSE
+    }
+    return $TRUE
+}
+
 function WriteHeader( [string] $prod, [string] $persona, [string] $script, [string[]] $arglist )  {
     Write-Output( "`r`n" )
     Write-Output( "        <!-- ==================== $prod - $persona ==================== -->" )
@@ -38,34 +48,28 @@ function WriteTail()  {
     Write-Output( "        <!-- END GENERATED SECTION -->" )
 }
 
-function GetProdFromFilename  {
-    param( [string] $fn )
+function GetProdFromFilename( [string] $fn )  {
     $cleanfn = $fn.TrimStart( $fnprefix ).TrimEnd( $fnsuffix )
     return $cleanfn.Substring( 0, 3 )
 }
 
-function GetPersonaFromFilename  {
-    param( [string] $fn )
+function GetPersonaFromFilename( [string] $fn )  {
     $cleanfn = $fn.TrimStart( $fnprefix ).TrimEnd( $fnsuffix )
     return $cleanfn.Substring( 3, $cleanfn.Length - 3 )
 }
 
 function MkBlurb( [string] $prod, [string] $persona, [string] $menu1, [string] $menu2 )  {
-    $cascadealt = "Persona Bar $menusep $menu1"
-    if ( $menu2 -ne "" )  {
-        $cascadealt = "Persona Bar $menusep $menu1 $menusep $menu2"
-    }
-
     $menu1squashed = $menu1.Replace( " ", "" )
-
     $menu2squashed = ""
     $bpid = "pb-$persona-$menu1squashed-$prod"
-    if ( $menu2 -ne "" )  {
+    $imgfn = "scr-pbar-$persona-$menu1squashed-$prod.png"
+    $cascadealt = "Persona Bar $menusep $menu1"
+    if ( IsValid $menu2 )  {
         $menu2squashed = $menu2.Replace( " ", "" ).Replace( ".NET", "NET" )
         $bpid  = "pb-$persona-$menu1squashed-$menu2squashed-$prod"
+        $imgfn = "scr-pbar-$persona-$menu1squashed-$menu2squashed-$prod.png"
+        $cascadealt = "Persona Bar $menusep $menu1 $menusep $menu2"
     }
-
-    $imgfn = "scr-pbar-$persona-$menu1squashed-$prod.png"
 
     Write-Output( "" )
     Write-Output( "" )
@@ -113,7 +117,7 @@ if ( $args.Count -gt 1 )  {
     $i = $asciibase
     $j = $asciibase
 	foreach ( $ln in ( Import-Csv $infile ) )  {
-        if ( $ln.menu2 -eq "" )  {
+        if ( IsValid $ln.menu2 )  {
             $i++
             $j = $asciibase
             $pos = [char]$i

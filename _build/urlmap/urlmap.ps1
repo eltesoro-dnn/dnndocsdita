@@ -101,27 +101,27 @@ if ( $args.Count -gt 2 )  {
 
     RefreshFile $outfile
 
-    Write-Prefix | Out-File $outfile
+    Write-Prefix | Out-File  -FilePath $outfile  -Encoding "Default"
 
     $i = 1
 
     # Process the old paths from DCv1.0.
 	Import-Csv $legacycsv | foreach  {
-        Process-Line $_.old $_.new $i | Out-File -Append $outfile
+        Process-Line $_.old $_.new $i | Out-File  -FilePath $outfile  -Encoding "Default"  -Append
         $i++
 	}
 
     # Get the subdirectories in $bldoutdir and create rules that add /index.html to the path.
 	foreach ( $fn in ( Get-ChildItem -Path $bldoutdir -Recurse | Where-Object { $_.PSIsContainer -eq $True } ) )
 	{
-        IndexHtmlRules $fn.FullName $i | Out-File -Append $outfile
+        IndexHtmlRules $fn.FullName $i | Out-File  -FilePath $outfile  -Encoding "Default"  -Append
         $i++
 	}
 
-    Write85Folder $i | Out-File -Append $outfile
+    Write85Folder $i | Out-File  -FilePath $outfile  -Encoding "Default"  -Append
     $i++
 
-    WriteSuffix | Out-File -Append $outfile
+    WriteSuffix | Out-File  -FilePath $outfile  -Encoding "Default"  -Append
 }
 
 # ============================================================

@@ -1,3 +1,9 @@
+/*
+ | Loaded at the head of the page.
+ | ?ver=170221
+*/
+
+
 // By Justin Whitford, from http://www.webreference.com/js/scripts/breadcrumbs/index.html
 // In the header, add <script language="JavaScript" src="breadcrumbs.js"></script>
 // In the breadcrumbs position, add <script language="JavaScript"><!--breadcrumbs(); --></script>
