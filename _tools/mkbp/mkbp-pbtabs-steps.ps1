@@ -96,12 +96,16 @@ if ( $args.Count -gt 1 )  {
     RefreshFile $outfile
     $cmdargs = $args
 
+    $csv = Import-Csv $infile
+
     WriteHeader $MyInvocation.MyCommand.Name $cmdargs | Out-File -Append $outfile
-    ( "host", "adm", "cmg", "mod" ) | foreach  {
+    ( "all", "host", "adm", "cmg", "mod" ) | foreach  {
         WriteSectionHeader $prod $_ | Out-File -Append $outfile
-        foreach ( $ln in ( Import-Csv $infile ) )  {
-            if (( IsValid $ln.tab1 ) -and ( IsValid $ln.$_ ))  {
-                MkBlurb $prod $_ $ln.menu1 $ln.menu2 $ln.tab1 $ln.tab2 | Out-File -Append $outfile
+        foreach ( $ln in $csv )  {
+            if ( IsValid $ln.tab1 )  {
+                if (( $ln.$_ -eq $_ ) -or ( $ln.host -eq $_ ))  {
+                    MkBlurb $prod $_ $ln.menu1 $ln.menu2 $ln.tab1 $ln.tab2 | Out-File -Append $outfile
+                }
             }
         }
     }

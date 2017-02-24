@@ -6,6 +6,10 @@
 
 	<topicref format="dita" type="topic" toc="yes" href="about-troubleshooting.dita" copy-to="index.dita" collection-type="family" >
 
+        <!-- Security -->
+        <topicref format="dita" type="topic" toc="yes" href="ts-error-login-ip-filtering-is-currently-disabled.dita" />
+
+        <!-- Page Editing -->
         <topicref format="dita" type="topic" toc="yes" href="ts-error-another-user-has-taken-action-on-the-page.dita" />
         <topicref format="dita" type="topic" toc="yes" href="ts-page-remains-in-draft.dita" />
 

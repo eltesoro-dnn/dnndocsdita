@@ -105,11 +105,11 @@ function T003()  {
     WriteHeader "Verifying that mentioned images exist."
     Write-Output "Missing image files:"
 
-    $imgfiles = Get-ChildItem -Path $ctndir\*.dita -Recurse | Select-String -Pattern "(scr[a-zA-Z0-9_-]+.png)|(scr[a-zA-Z0-9_-]+.gif)|(scr[a-zA-Z0-9_-]+.svg)" -AllMatches | Select-String -Pattern "<!--" -notmatch | %{$_.Matches} | %{$_.Value}
+    $imgfiles = Get-ChildItem -Path $ctndir\*.dita -Recurse | Select-String -Pattern "(scr[a-zA-Z0-9_-]+.png)|(scr[a-zA-Z0-9_-]+.gif)|(scr[a-zA-Z0-9_-]+.svg)" -AllMatches | foreach { $_ -match "img/(?<content>.*)""><alt>" | Out-Null; $matches['content'] }
 
-    $imgfiles | foreach  {
-        if ( !( Test-Path $imgdir\$_ ) )  {
-            Write-Output $_
+    foreach ( $img in $imgfiles )  {
+        if (!( Test-Path $imgdir\$img )) {
+            Write-Output "`t$img"
         }
     }
 }

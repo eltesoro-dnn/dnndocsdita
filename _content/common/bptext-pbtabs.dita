@@ -27,215 +27,322 @@
         <!-- START GENERATED SECTION -->
 
 
+        <!-- ==================== E90 - all ==================== -->
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Dashboard-SiteAnalytics-Summary-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Dashboard-SiteAnalytics-Summary-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-SiteAnalytics-Summary-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Dashboard-SiteAnalytics-Summary-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Dashboard-SiteAnalytics-Summary-E90"></info> -->
+           <step id="step-pbtabs-all-Dashboard-SiteAnalytics-Summary-E90">
+               <cmd id="cmd-pbtabs-all-Dashboard-SiteAnalytics-Summary-E90"><ph id="ph-pbtabs-all-Dashboard-SiteAnalytics-Summary-E90">Go to the <uicontrol>Summary</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Dashboard-SiteAnalytics-Summary-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Dashboard-SiteAnalytics-Summary-E90" scalefit="yes" href="img/scr-pbtabs-all-Dashboard-SiteAnalytics-Summary-E90.png"><alt>Summary</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Dashboard-SiteAnalytics-Conversions-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Dashboard-SiteAnalytics-Conversions-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-SiteAnalytics-Conversions-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Dashboard-SiteAnalytics-Conversions-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Dashboard-SiteAnalytics-Conversions-E90"></info> -->
+           <step id="step-pbtabs-all-Dashboard-SiteAnalytics-Conversions-E90">
+               <cmd id="cmd-pbtabs-all-Dashboard-SiteAnalytics-Conversions-E90"><ph id="ph-pbtabs-all-Dashboard-SiteAnalytics-Conversions-E90">Go to the <uicontrol>Conversions</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Dashboard-SiteAnalytics-Conversions-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Dashboard-SiteAnalytics-Conversions-E90" scalefit="yes" href="img/scr-pbtabs-all-Dashboard-SiteAnalytics-Conversions-E90.png"><alt>Conversions</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Dashboard-SiteAnalytics-Traffic-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Dashboard-SiteAnalytics-Traffic-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-SiteAnalytics-Traffic-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Dashboard-SiteAnalytics-Traffic-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Dashboard-SiteAnalytics-Traffic-E90"></info> -->
+           <step id="step-pbtabs-all-Dashboard-SiteAnalytics-Traffic-E90">
+               <cmd id="cmd-pbtabs-all-Dashboard-SiteAnalytics-Traffic-E90"><ph id="ph-pbtabs-all-Dashboard-SiteAnalytics-Traffic-E90">Go to the <uicontrol>Traffic</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Dashboard-SiteAnalytics-Traffic-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Dashboard-SiteAnalytics-Traffic-E90" scalefit="yes" href="img/scr-pbtabs-all-Dashboard-SiteAnalytics-Traffic-E90.png"><alt>Traffic</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Dashboard-CommunityAnalytics-Answers-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Dashboard-CommunityAnalytics-Answers-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-CommunityAnalytics-Answers-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Dashboard-CommunityAnalytics-Answers-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Dashboard-CommunityAnalytics-Answers-E90"></info> -->
+           <step id="step-pbtabs-all-Dashboard-CommunityAnalytics-Answers-E90">
+               <cmd id="cmd-pbtabs-all-Dashboard-CommunityAnalytics-Answers-E90"><ph id="ph-pbtabs-all-Dashboard-CommunityAnalytics-Answers-E90">Go to the <uicontrol>Answers</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Dashboard-CommunityAnalytics-Answers-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Dashboard-CommunityAnalytics-Answers-E90" scalefit="yes" href="img/scr-pbtabs-all-Dashboard-CommunityAnalytics-Answers-E90.png"><alt>Answers</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Dashboard-CommunityAnalytics-Blogs-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Dashboard-CommunityAnalytics-Blogs-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-CommunityAnalytics-Blogs-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Dashboard-CommunityAnalytics-Blogs-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Dashboard-CommunityAnalytics-Blogs-E90"></info> -->
+           <step id="step-pbtabs-all-Dashboard-CommunityAnalytics-Blogs-E90">
+               <cmd id="cmd-pbtabs-all-Dashboard-CommunityAnalytics-Blogs-E90"><ph id="ph-pbtabs-all-Dashboard-CommunityAnalytics-Blogs-E90">Go to the <uicontrol>Blogs</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Dashboard-CommunityAnalytics-Blogs-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Dashboard-CommunityAnalytics-Blogs-E90" scalefit="yes" href="img/scr-pbtabs-all-Dashboard-CommunityAnalytics-Blogs-E90.png"><alt>Blogs</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Dashboard-CommunityAnalytics-Challenges-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Dashboard-CommunityAnalytics-Challenges-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-CommunityAnalytics-Challenges-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Dashboard-CommunityAnalytics-Challenges-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Dashboard-CommunityAnalytics-Challenges-E90"></info> -->
+           <step id="step-pbtabs-all-Dashboard-CommunityAnalytics-Challenges-E90">
+               <cmd id="cmd-pbtabs-all-Dashboard-CommunityAnalytics-Challenges-E90"><ph id="ph-pbtabs-all-Dashboard-CommunityAnalytics-Challenges-E90">Go to the <uicontrol>Challenges</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Dashboard-CommunityAnalytics-Challenges-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Dashboard-CommunityAnalytics-Challenges-E90" scalefit="yes" href="img/scr-pbtabs-all-Dashboard-CommunityAnalytics-Challenges-E90.png"><alt>Challenges</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Dashboard-CommunityAnalytics-Discussions-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Dashboard-CommunityAnalytics-Discussions-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-CommunityAnalytics-Discussions-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Dashboard-CommunityAnalytics-Discussions-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Dashboard-CommunityAnalytics-Discussions-E90"></info> -->
+           <step id="step-pbtabs-all-Dashboard-CommunityAnalytics-Discussions-E90">
+               <cmd id="cmd-pbtabs-all-Dashboard-CommunityAnalytics-Discussions-E90"><ph id="ph-pbtabs-all-Dashboard-CommunityAnalytics-Discussions-E90">Go to the <uicontrol>Discussions</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Dashboard-CommunityAnalytics-Discussions-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Dashboard-CommunityAnalytics-Discussions-E90" scalefit="yes" href="img/scr-pbtabs-all-Dashboard-CommunityAnalytics-Discussions-E90.png"><alt>Discussions</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Dashboard-CommunityAnalytics-Events-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Dashboard-CommunityAnalytics-Events-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-CommunityAnalytics-Events-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Dashboard-CommunityAnalytics-Events-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Dashboard-CommunityAnalytics-Events-E90"></info> -->
+           <step id="step-pbtabs-all-Dashboard-CommunityAnalytics-Events-E90">
+               <cmd id="cmd-pbtabs-all-Dashboard-CommunityAnalytics-Events-E90"><ph id="ph-pbtabs-all-Dashboard-CommunityAnalytics-Events-E90">Go to the <uicontrol>Events</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Dashboard-CommunityAnalytics-Events-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Dashboard-CommunityAnalytics-Events-E90" scalefit="yes" href="img/scr-pbtabs-all-Dashboard-CommunityAnalytics-Events-E90.png"><alt>Events</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Dashboard-CommunityAnalytics-Ideas-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Dashboard-CommunityAnalytics-Ideas-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-CommunityAnalytics-Ideas-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Dashboard-CommunityAnalytics-Ideas-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Dashboard-CommunityAnalytics-Ideas-E90"></info> -->
+           <step id="step-pbtabs-all-Dashboard-CommunityAnalytics-Ideas-E90">
+               <cmd id="cmd-pbtabs-all-Dashboard-CommunityAnalytics-Ideas-E90"><ph id="ph-pbtabs-all-Dashboard-CommunityAnalytics-Ideas-E90">Go to the <uicontrol>Ideas</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Dashboard-CommunityAnalytics-Ideas-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Dashboard-CommunityAnalytics-Ideas-E90" scalefit="yes" href="img/scr-pbtabs-all-Dashboard-CommunityAnalytics-Ideas-E90.png"><alt>Ideas</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Dashboard-CommunityAnalytics-Wiki-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Dashboard-CommunityAnalytics-Wiki-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-CommunityAnalytics-Wiki-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Dashboard-CommunityAnalytics-Wiki-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Dashboard-CommunityAnalytics-Wiki-E90"></info> -->
+           <step id="step-pbtabs-all-Dashboard-CommunityAnalytics-Wiki-E90">
+               <cmd id="cmd-pbtabs-all-Dashboard-CommunityAnalytics-Wiki-E90"><ph id="ph-pbtabs-all-Dashboard-CommunityAnalytics-Wiki-E90">Go to the <uicontrol>Wiki</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Dashboard-CommunityAnalytics-Wiki-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Dashboard-CommunityAnalytics-Wiki-E90" scalefit="yes" href="img/scr-pbtabs-all-Dashboard-CommunityAnalytics-Wiki-E90.png"><alt>Wiki</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Content-ContentItems-Content-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Content-ContentItems-Content-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Content-ContentItems-Content-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Content-ContentItems-Content-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Content-ContentItems-Content-E90"></info> -->
+           <step id="step-pbtabs-all-Content-ContentItems-Content-E90">
+               <cmd id="cmd-pbtabs-all-Content-ContentItems-Content-E90"><ph id="ph-pbtabs-all-Content-ContentItems-Content-E90">Go to the <uicontrol>Content</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Content-ContentItems-Content-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Content-ContentItems-Content-E90" scalefit="yes" href="img/scr-pbtabs-all-Content-ContentItems-Content-E90.png"><alt>Content</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Content-ContentItems-ContentTypes-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Content-ContentItems-ContentTypes-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Content-ContentItems-ContentTypes-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Content-ContentItems-ContentTypes-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Content-ContentItems-ContentTypes-E90"></info> -->
+           <step id="step-pbtabs-all-Content-ContentItems-ContentTypes-E90">
+               <cmd id="cmd-pbtabs-all-Content-ContentItems-ContentTypes-E90"><ph id="ph-pbtabs-all-Content-ContentItems-ContentTypes-E90">Go to the <uicontrol>Content Types</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Content-ContentItems-ContentTypes-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Content-ContentItems-ContentTypes-E90" scalefit="yes" href="img/scr-pbtabs-all-Content-ContentItems-ContentTypes-E90.png"><alt>Content Types</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Content-ContentItems-Visualizers-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Content-ContentItems-Visualizers-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Content-ContentItems-Visualizers-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Content-ContentItems-Visualizers-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Content-ContentItems-Visualizers-E90"></info> -->
+           <step id="step-pbtabs-all-Content-ContentItems-Visualizers-E90">
+               <cmd id="cmd-pbtabs-all-Content-ContentItems-Visualizers-E90"><ph id="ph-pbtabs-all-Content-ContentItems-Visualizers-E90">Go to the <uicontrol>Visualizers</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Content-ContentItems-Visualizers-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Content-ContentItems-Visualizers-E90" scalefit="yes" href="img/scr-pbtabs-all-Content-ContentItems-Visualizers-E90.png"><alt>Visualizers</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Content-RecycleBin-Pages-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Content-RecycleBin-Pages-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Content-RecycleBin-Pages-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Content-RecycleBin-Pages-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Content-RecycleBin-Pages-E90"></info> -->
+           <step id="step-pbtabs-all-Content-RecycleBin-Pages-E90">
+               <cmd id="cmd-pbtabs-all-Content-RecycleBin-Pages-E90"><ph id="ph-pbtabs-all-Content-RecycleBin-Pages-E90">Go to the <uicontrol>Pages</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Content-RecycleBin-Pages-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Content-RecycleBin-Pages-E90" scalefit="yes" href="img/scr-pbtabs-all-Content-RecycleBin-Pages-E90.png"><alt>Pages</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Content-RecycleBin-Modules-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Content-RecycleBin-Modules-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Content-RecycleBin-Modules-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Content-RecycleBin-Modules-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Content-RecycleBin-Modules-E90"></info> -->
+           <step id="step-pbtabs-all-Content-RecycleBin-Modules-E90">
+               <cmd id="cmd-pbtabs-all-Content-RecycleBin-Modules-E90"><ph id="ph-pbtabs-all-Content-RecycleBin-Modules-E90">Go to the <uicontrol>Modules</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Content-RecycleBin-Modules-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Content-RecycleBin-Modules-E90" scalefit="yes" href="img/scr-pbtabs-all-Content-RecycleBin-Modules-E90.png"><alt>Modules</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Content-RecycleBin-Templates-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Content-RecycleBin-Templates-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Content-RecycleBin-Templates-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Content-RecycleBin-Templates-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Content-RecycleBin-Templates-E90"></info> -->
+           <step id="step-pbtabs-all-Content-RecycleBin-Templates-E90">
+               <cmd id="cmd-pbtabs-all-Content-RecycleBin-Templates-E90"><ph id="ph-pbtabs-all-Content-RecycleBin-Templates-E90">Go to the <uicontrol>Templates</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Content-RecycleBin-Templates-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Content-RecycleBin-Templates-E90" scalefit="yes" href="img/scr-pbtabs-all-Content-RecycleBin-Templates-E90.png"><alt>Templates</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Settings-SiteSettings-SiteInfo-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Settings-SiteSettings-SiteInfo-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-SiteSettings-SiteInfo-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Settings-SiteSettings-SiteInfo-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Settings-SiteSettings-SiteInfo-E90"></info> -->
+           <step id="step-pbtabs-all-Settings-SiteSettings-SiteInfo-E90">
+               <cmd id="cmd-pbtabs-all-Settings-SiteSettings-SiteInfo-E90"><ph id="ph-pbtabs-all-Settings-SiteSettings-SiteInfo-E90">Go to the <uicontrol>Site Info</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Settings-SiteSettings-SiteInfo-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Settings-SiteSettings-SiteInfo-E90" scalefit="yes" href="img/scr-pbtabs-all-Settings-SiteSettings-SiteInfo-E90.png"><alt>Site Info</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Settings-SiteSettings-Search-Synonyms-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Settings-SiteSettings-Search-Synonyms-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-SiteSettings-Search-Synonyms-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Settings-SiteSettings-Search-Synonyms-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Settings-SiteSettings-Search-Synonyms-E90"></info> -->
+           <step id="step-pbtabs-all-Settings-SiteSettings-Search-Synonyms-E90">
+               <cmd id="cmd-pbtabs-all-Settings-SiteSettings-Search-Synonyms-E90"><ph id="ph-pbtabs-all-Settings-SiteSettings-Search-Synonyms-E90">Go to the <uicontrol>Search</uicontrol> tab, and then the  <uicontrol>Synonyms</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-all-Settings-SiteSettings-Search-Synonyms-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Settings-SiteSettings-Search-Synonyms-E90" scalefit="yes" href="img/scr-pbtabs-all-Settings-SiteSettings-Search-Synonyms-E90.png"><alt>Search &gt; Synonyms</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Settings-SiteSettings-Search-IgnoreWords-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Settings-SiteSettings-Search-IgnoreWords-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-SiteSettings-Search-IgnoreWords-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Settings-SiteSettings-Search-IgnoreWords-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Settings-SiteSettings-Search-IgnoreWords-E90"></info> -->
+           <step id="step-pbtabs-all-Settings-SiteSettings-Search-IgnoreWords-E90">
+               <cmd id="cmd-pbtabs-all-Settings-SiteSettings-Search-IgnoreWords-E90"><ph id="ph-pbtabs-all-Settings-SiteSettings-Search-IgnoreWords-E90">Go to the <uicontrol>Search</uicontrol> tab, and then the  <uicontrol>Ignore Words</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-all-Settings-SiteSettings-Search-IgnoreWords-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Settings-SiteSettings-Search-IgnoreWords-E90" scalefit="yes" href="img/scr-pbtabs-all-Settings-SiteSettings-Search-IgnoreWords-E90.png"><alt>Search &gt; Ignore Words</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Settings-SiteSettings-Search-Crawling-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Settings-SiteSettings-Search-Crawling-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-SiteSettings-Search-Crawling-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Settings-SiteSettings-Search-Crawling-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Settings-SiteSettings-Search-Crawling-E90"></info> -->
+           <step id="step-pbtabs-all-Settings-SiteSettings-Search-Crawling-E90">
+               <cmd id="cmd-pbtabs-all-Settings-SiteSettings-Search-Crawling-E90"><ph id="ph-pbtabs-all-Settings-SiteSettings-Search-Crawling-E90">Go to the <uicontrol>Search</uicontrol> tab, and then the  <uicontrol>Crawling</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-all-Settings-SiteSettings-Search-Crawling-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Settings-SiteSettings-Search-Crawling-E90" scalefit="yes" href="img/scr-pbtabs-all-Settings-SiteSettings-Search-Crawling-E90.png"><alt>Search &gt; Crawling</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Settings-SiteSettings-Search-FileExtensions-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Settings-SiteSettings-Search-FileExtensions-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-SiteSettings-Search-FileExtensions-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Settings-SiteSettings-Search-FileExtensions-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Settings-SiteSettings-Search-FileExtensions-E90"></info> -->
+           <step id="step-pbtabs-all-Settings-SiteSettings-Search-FileExtensions-E90">
+               <cmd id="cmd-pbtabs-all-Settings-SiteSettings-Search-FileExtensions-E90"><ph id="ph-pbtabs-all-Settings-SiteSettings-Search-FileExtensions-E90">Go to the <uicontrol>Search</uicontrol> tab, and then the  <uicontrol>File Extensions</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-all-Settings-SiteSettings-Search-FileExtensions-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Settings-SiteSettings-Search-FileExtensions-E90" scalefit="yes" href="img/scr-pbtabs-all-Settings-SiteSettings-Search-FileExtensions-E90.png"><alt>Search &gt; File Extensions</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Settings-Gamification-Actions-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Settings-Gamification-Actions-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-Gamification-Actions-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Settings-Gamification-Actions-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Settings-Gamification-Actions-E90"></info> -->
+           <step id="step-pbtabs-all-Settings-Gamification-Actions-E90">
+               <cmd id="cmd-pbtabs-all-Settings-Gamification-Actions-E90"><ph id="ph-pbtabs-all-Settings-Gamification-Actions-E90">Go to the <uicontrol>Actions</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Settings-Gamification-Actions-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Settings-Gamification-Actions-E90" scalefit="yes" href="img/scr-pbtabs-all-Settings-Gamification-Actions-E90.png"><alt>Actions</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Settings-Gamification-Privileges-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Settings-Gamification-Privileges-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-Gamification-Privileges-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Settings-Gamification-Privileges-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Settings-Gamification-Privileges-E90"></info> -->
+           <step id="step-pbtabs-all-Settings-Gamification-Privileges-E90">
+               <cmd id="cmd-pbtabs-all-Settings-Gamification-Privileges-E90"><ph id="ph-pbtabs-all-Settings-Gamification-Privileges-E90">Go to the <uicontrol>Privileges</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Settings-Gamification-Privileges-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Settings-Gamification-Privileges-E90" scalefit="yes" href="img/scr-pbtabs-all-Settings-Gamification-Privileges-E90.png"><alt>Privileges</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-all-Settings-Gamification-Badges-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-all-Settings-Gamification-Badges-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-Gamification-Badges-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-all-Settings-Gamification-Badges-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-all-Settings-Gamification-Badges-E90"></info> -->
+           <step id="step-pbtabs-all-Settings-Gamification-Badges-E90">
+               <cmd id="cmd-pbtabs-all-Settings-Gamification-Badges-E90"><ph id="ph-pbtabs-all-Settings-Gamification-Badges-E90">Go to the <uicontrol>Badges</uicontrol> tab.</ph></cmd>
+               <info id="info-pbtabs-all-Settings-Gamification-Badges-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-all-Settings-Gamification-Badges-E90" scalefit="yes" href="img/scr-pbtabs-all-Settings-Gamification-Badges-E90.png"><alt>Badges</alt></image>
+               </info>
+           </step>
+
+
         <!-- ==================== E90 - host ==================== -->
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Dashboard-SiteAnalytics-Summary-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Dashboard-SiteAnalytics-Summary-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Dashboard-SiteAnalytics-Summary-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Dashboard-SiteAnalytics-Summary-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Dashboard-SiteAnalytics-Summary-E90"></info> -->
-           <step id="step-pbtabs-host-Dashboard-SiteAnalytics-Summary-E90">
-               <cmd id="cmd-pbtabs-host-Dashboard-SiteAnalytics-Summary-E90"><ph id="ph-pbtabs-host-Dashboard-SiteAnalytics-Summary-E90">Go to the <uicontrol>Summary</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Dashboard-SiteAnalytics-Summary-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Dashboard-SiteAnalytics-Summary-E90" scalefit="yes" href="img/scr-pbtabs-host-Dashboard-SiteAnalytics-Summary-E90.png"><alt>Summary</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Dashboard-SiteAnalytics-Conversions-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Dashboard-SiteAnalytics-Conversions-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Dashboard-SiteAnalytics-Conversions-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Dashboard-SiteAnalytics-Conversions-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Dashboard-SiteAnalytics-Conversions-E90"></info> -->
-           <step id="step-pbtabs-host-Dashboard-SiteAnalytics-Conversions-E90">
-               <cmd id="cmd-pbtabs-host-Dashboard-SiteAnalytics-Conversions-E90"><ph id="ph-pbtabs-host-Dashboard-SiteAnalytics-Conversions-E90">Go to the <uicontrol>Conversions</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Dashboard-SiteAnalytics-Conversions-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Dashboard-SiteAnalytics-Conversions-E90" scalefit="yes" href="img/scr-pbtabs-host-Dashboard-SiteAnalytics-Conversions-E90.png"><alt>Conversions</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Dashboard-SiteAnalytics-Traffic-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Dashboard-SiteAnalytics-Traffic-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Dashboard-SiteAnalytics-Traffic-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Dashboard-SiteAnalytics-Traffic-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Dashboard-SiteAnalytics-Traffic-E90"></info> -->
-           <step id="step-pbtabs-host-Dashboard-SiteAnalytics-Traffic-E90">
-               <cmd id="cmd-pbtabs-host-Dashboard-SiteAnalytics-Traffic-E90"><ph id="ph-pbtabs-host-Dashboard-SiteAnalytics-Traffic-E90">Go to the <uicontrol>Traffic</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Dashboard-SiteAnalytics-Traffic-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Dashboard-SiteAnalytics-Traffic-E90" scalefit="yes" href="img/scr-pbtabs-host-Dashboard-SiteAnalytics-Traffic-E90.png"><alt>Traffic</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Dashboard-CommunityAnalytics-Answers-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Dashboard-CommunityAnalytics-Answers-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Dashboard-CommunityAnalytics-Answers-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Dashboard-CommunityAnalytics-Answers-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Dashboard-CommunityAnalytics-Answers-E90"></info> -->
-           <step id="step-pbtabs-host-Dashboard-CommunityAnalytics-Answers-E90">
-               <cmd id="cmd-pbtabs-host-Dashboard-CommunityAnalytics-Answers-E90"><ph id="ph-pbtabs-host-Dashboard-CommunityAnalytics-Answers-E90">Go to the <uicontrol>Answers</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Dashboard-CommunityAnalytics-Answers-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Dashboard-CommunityAnalytics-Answers-E90" scalefit="yes" href="img/scr-pbtabs-host-Dashboard-CommunityAnalytics-Answers-E90.png"><alt>Answers</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Dashboard-CommunityAnalytics-Blogs-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Dashboard-CommunityAnalytics-Blogs-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Dashboard-CommunityAnalytics-Blogs-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Dashboard-CommunityAnalytics-Blogs-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Dashboard-CommunityAnalytics-Blogs-E90"></info> -->
-           <step id="step-pbtabs-host-Dashboard-CommunityAnalytics-Blogs-E90">
-               <cmd id="cmd-pbtabs-host-Dashboard-CommunityAnalytics-Blogs-E90"><ph id="ph-pbtabs-host-Dashboard-CommunityAnalytics-Blogs-E90">Go to the <uicontrol>Blogs</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Dashboard-CommunityAnalytics-Blogs-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Dashboard-CommunityAnalytics-Blogs-E90" scalefit="yes" href="img/scr-pbtabs-host-Dashboard-CommunityAnalytics-Blogs-E90.png"><alt>Blogs</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Dashboard-CommunityAnalytics-Challenges-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Dashboard-CommunityAnalytics-Challenges-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Dashboard-CommunityAnalytics-Challenges-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Dashboard-CommunityAnalytics-Challenges-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Dashboard-CommunityAnalytics-Challenges-E90"></info> -->
-           <step id="step-pbtabs-host-Dashboard-CommunityAnalytics-Challenges-E90">
-               <cmd id="cmd-pbtabs-host-Dashboard-CommunityAnalytics-Challenges-E90"><ph id="ph-pbtabs-host-Dashboard-CommunityAnalytics-Challenges-E90">Go to the <uicontrol>Challenges</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Dashboard-CommunityAnalytics-Challenges-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Dashboard-CommunityAnalytics-Challenges-E90" scalefit="yes" href="img/scr-pbtabs-host-Dashboard-CommunityAnalytics-Challenges-E90.png"><alt>Challenges</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Dashboard-CommunityAnalytics-Discussions-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Dashboard-CommunityAnalytics-Discussions-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Dashboard-CommunityAnalytics-Discussions-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Dashboard-CommunityAnalytics-Discussions-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Dashboard-CommunityAnalytics-Discussions-E90"></info> -->
-           <step id="step-pbtabs-host-Dashboard-CommunityAnalytics-Discussions-E90">
-               <cmd id="cmd-pbtabs-host-Dashboard-CommunityAnalytics-Discussions-E90"><ph id="ph-pbtabs-host-Dashboard-CommunityAnalytics-Discussions-E90">Go to the <uicontrol>Discussions</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Dashboard-CommunityAnalytics-Discussions-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Dashboard-CommunityAnalytics-Discussions-E90" scalefit="yes" href="img/scr-pbtabs-host-Dashboard-CommunityAnalytics-Discussions-E90.png"><alt>Discussions</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Dashboard-CommunityAnalytics-Events-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Dashboard-CommunityAnalytics-Events-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Dashboard-CommunityAnalytics-Events-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Dashboard-CommunityAnalytics-Events-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Dashboard-CommunityAnalytics-Events-E90"></info> -->
-           <step id="step-pbtabs-host-Dashboard-CommunityAnalytics-Events-E90">
-               <cmd id="cmd-pbtabs-host-Dashboard-CommunityAnalytics-Events-E90"><ph id="ph-pbtabs-host-Dashboard-CommunityAnalytics-Events-E90">Go to the <uicontrol>Events</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Dashboard-CommunityAnalytics-Events-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Dashboard-CommunityAnalytics-Events-E90" scalefit="yes" href="img/scr-pbtabs-host-Dashboard-CommunityAnalytics-Events-E90.png"><alt>Events</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Dashboard-CommunityAnalytics-Ideas-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Dashboard-CommunityAnalytics-Ideas-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Dashboard-CommunityAnalytics-Ideas-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Dashboard-CommunityAnalytics-Ideas-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Dashboard-CommunityAnalytics-Ideas-E90"></info> -->
-           <step id="step-pbtabs-host-Dashboard-CommunityAnalytics-Ideas-E90">
-               <cmd id="cmd-pbtabs-host-Dashboard-CommunityAnalytics-Ideas-E90"><ph id="ph-pbtabs-host-Dashboard-CommunityAnalytics-Ideas-E90">Go to the <uicontrol>Ideas</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Dashboard-CommunityAnalytics-Ideas-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Dashboard-CommunityAnalytics-Ideas-E90" scalefit="yes" href="img/scr-pbtabs-host-Dashboard-CommunityAnalytics-Ideas-E90.png"><alt>Ideas</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Dashboard-CommunityAnalytics-Wiki-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Dashboard-CommunityAnalytics-Wiki-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Dashboard-CommunityAnalytics-Wiki-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Dashboard-CommunityAnalytics-Wiki-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Dashboard-CommunityAnalytics-Wiki-E90"></info> -->
-           <step id="step-pbtabs-host-Dashboard-CommunityAnalytics-Wiki-E90">
-               <cmd id="cmd-pbtabs-host-Dashboard-CommunityAnalytics-Wiki-E90"><ph id="ph-pbtabs-host-Dashboard-CommunityAnalytics-Wiki-E90">Go to the <uicontrol>Wiki</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Dashboard-CommunityAnalytics-Wiki-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Dashboard-CommunityAnalytics-Wiki-E90" scalefit="yes" href="img/scr-pbtabs-host-Dashboard-CommunityAnalytics-Wiki-E90.png"><alt>Wiki</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Content-ContentItems-Content-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Content-ContentItems-Content-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Content-ContentItems-Content-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Content-ContentItems-Content-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Content-ContentItems-Content-E90"></info> -->
-           <step id="step-pbtabs-host-Content-ContentItems-Content-E90">
-               <cmd id="cmd-pbtabs-host-Content-ContentItems-Content-E90"><ph id="ph-pbtabs-host-Content-ContentItems-Content-E90">Go to the <uicontrol>Content</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Content-ContentItems-Content-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Content-ContentItems-Content-E90" scalefit="yes" href="img/scr-pbtabs-host-Content-ContentItems-Content-E90.png"><alt>Content</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Content-ContentItems-ContentTypes-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Content-ContentItems-ContentTypes-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Content-ContentItems-ContentTypes-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Content-ContentItems-ContentTypes-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Content-ContentItems-ContentTypes-E90"></info> -->
-           <step id="step-pbtabs-host-Content-ContentItems-ContentTypes-E90">
-               <cmd id="cmd-pbtabs-host-Content-ContentItems-ContentTypes-E90"><ph id="ph-pbtabs-host-Content-ContentItems-ContentTypes-E90">Go to the <uicontrol>Content Types</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Content-ContentItems-ContentTypes-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Content-ContentItems-ContentTypes-E90" scalefit="yes" href="img/scr-pbtabs-host-Content-ContentItems-ContentTypes-E90.png"><alt>Content Types</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Content-ContentItems-Visualizers-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Content-ContentItems-Visualizers-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Content-ContentItems-Visualizers-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Content-ContentItems-Visualizers-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Content-ContentItems-Visualizers-E90"></info> -->
-           <step id="step-pbtabs-host-Content-ContentItems-Visualizers-E90">
-               <cmd id="cmd-pbtabs-host-Content-ContentItems-Visualizers-E90"><ph id="ph-pbtabs-host-Content-ContentItems-Visualizers-E90">Go to the <uicontrol>Visualizers</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Content-ContentItems-Visualizers-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Content-ContentItems-Visualizers-E90" scalefit="yes" href="img/scr-pbtabs-host-Content-ContentItems-Visualizers-E90.png"><alt>Visualizers</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Content-RecycleBin-Pages-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Content-RecycleBin-Pages-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Content-RecycleBin-Pages-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Content-RecycleBin-Pages-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Content-RecycleBin-Pages-E90"></info> -->
-           <step id="step-pbtabs-host-Content-RecycleBin-Pages-E90">
-               <cmd id="cmd-pbtabs-host-Content-RecycleBin-Pages-E90"><ph id="ph-pbtabs-host-Content-RecycleBin-Pages-E90">Go to the <uicontrol>Pages</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Content-RecycleBin-Pages-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Content-RecycleBin-Pages-E90" scalefit="yes" href="img/scr-pbtabs-host-Content-RecycleBin-Pages-E90.png"><alt>Pages</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Content-RecycleBin-Modules-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Content-RecycleBin-Modules-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Content-RecycleBin-Modules-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Content-RecycleBin-Modules-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Content-RecycleBin-Modules-E90"></info> -->
-           <step id="step-pbtabs-host-Content-RecycleBin-Modules-E90">
-               <cmd id="cmd-pbtabs-host-Content-RecycleBin-Modules-E90"><ph id="ph-pbtabs-host-Content-RecycleBin-Modules-E90">Go to the <uicontrol>Modules</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Content-RecycleBin-Modules-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Content-RecycleBin-Modules-E90" scalefit="yes" href="img/scr-pbtabs-host-Content-RecycleBin-Modules-E90.png"><alt>Modules</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Content-RecycleBin-Templates-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Content-RecycleBin-Templates-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Content-RecycleBin-Templates-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Content-RecycleBin-Templates-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Content-RecycleBin-Templates-E90"></info> -->
-           <step id="step-pbtabs-host-Content-RecycleBin-Templates-E90">
-               <cmd id="cmd-pbtabs-host-Content-RecycleBin-Templates-E90"><ph id="ph-pbtabs-host-Content-RecycleBin-Templates-E90">Go to the <uicontrol>Templates</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Content-RecycleBin-Templates-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Content-RecycleBin-Templates-E90" scalefit="yes" href="img/scr-pbtabs-host-Content-RecycleBin-Templates-E90.png"><alt>Templates</alt></image>
-               </info>
-           </step>
 
 
            <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Manage-Sites-Sites-E90"><cmd/></step> -->
@@ -286,19 +393,6 @@
                <cmd id="cmd-pbtabs-host-Manage-AdminLogs-LogSettings-E90"><ph id="ph-pbtabs-host-Manage-AdminLogs-LogSettings-E90">Go to the <uicontrol>Log Settings</uicontrol> tab.</ph></cmd>
                <info id="info-pbtabs-host-Manage-AdminLogs-LogSettings-E90" outputclass="init-hide">
                    <image id="image-pbtabs-host-Manage-AdminLogs-LogSettings-E90" scalefit="yes" href="img/scr-pbtabs-host-Manage-AdminLogs-LogSettings-E90.png"><alt>Log Settings</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-SiteSettings-SiteInfo-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SiteSettings-SiteInfo-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SiteSettings-SiteInfo-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-SiteSettings-SiteInfo-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-SiteSettings-SiteInfo-E90"></info> -->
-           <step id="step-pbtabs-host-Settings-SiteSettings-SiteInfo-E90">
-               <cmd id="cmd-pbtabs-host-Settings-SiteSettings-SiteInfo-E90"><ph id="ph-pbtabs-host-Settings-SiteSettings-SiteInfo-E90">Go to the <uicontrol>Site Info</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Settings-SiteSettings-SiteInfo-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Settings-SiteSettings-SiteInfo-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-SiteSettings-SiteInfo-E90.png"><alt>Site Info</alt></image>
                </info>
            </step>
 
@@ -390,58 +484,6 @@
                <cmd id="cmd-pbtabs-host-Settings-SiteSettings-Search-BasicSettings-E90"><ph id="ph-pbtabs-host-Settings-SiteSettings-Search-BasicSettings-E90">Go to the <uicontrol>Search</uicontrol> tab, and then the  <uicontrol>Basic Settings</uicontrol> subtab.</ph></cmd>
                <info id="info-pbtabs-host-Settings-SiteSettings-Search-BasicSettings-E90" outputclass="init-hide">
                    <image id="image-pbtabs-host-Settings-SiteSettings-Search-BasicSettings-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-SiteSettings-Search-BasicSettings-E90.png"><alt>Search &gt; Basic Settings</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-SiteSettings-Search-Synonyms-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SiteSettings-Search-Synonyms-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SiteSettings-Search-Synonyms-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-SiteSettings-Search-Synonyms-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-SiteSettings-Search-Synonyms-E90"></info> -->
-           <step id="step-pbtabs-host-Settings-SiteSettings-Search-Synonyms-E90">
-               <cmd id="cmd-pbtabs-host-Settings-SiteSettings-Search-Synonyms-E90"><ph id="ph-pbtabs-host-Settings-SiteSettings-Search-Synonyms-E90">Go to the <uicontrol>Search</uicontrol> tab, and then the  <uicontrol>Synonyms</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-host-Settings-SiteSettings-Search-Synonyms-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Settings-SiteSettings-Search-Synonyms-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-SiteSettings-Search-Synonyms-E90.png"><alt>Search &gt; Synonyms</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-SiteSettings-Search-IgnoreWords-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SiteSettings-Search-IgnoreWords-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SiteSettings-Search-IgnoreWords-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-SiteSettings-Search-IgnoreWords-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-SiteSettings-Search-IgnoreWords-E90"></info> -->
-           <step id="step-pbtabs-host-Settings-SiteSettings-Search-IgnoreWords-E90">
-               <cmd id="cmd-pbtabs-host-Settings-SiteSettings-Search-IgnoreWords-E90"><ph id="ph-pbtabs-host-Settings-SiteSettings-Search-IgnoreWords-E90">Go to the <uicontrol>Search</uicontrol> tab, and then the  <uicontrol>Ignore Words</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-host-Settings-SiteSettings-Search-IgnoreWords-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Settings-SiteSettings-Search-IgnoreWords-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-SiteSettings-Search-IgnoreWords-E90.png"><alt>Search &gt; Ignore Words</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-SiteSettings-Search-Crawling-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SiteSettings-Search-Crawling-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SiteSettings-Search-Crawling-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-SiteSettings-Search-Crawling-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-SiteSettings-Search-Crawling-E90"></info> -->
-           <step id="step-pbtabs-host-Settings-SiteSettings-Search-Crawling-E90">
-               <cmd id="cmd-pbtabs-host-Settings-SiteSettings-Search-Crawling-E90"><ph id="ph-pbtabs-host-Settings-SiteSettings-Search-Crawling-E90">Go to the <uicontrol>Search</uicontrol> tab, and then the  <uicontrol>Crawling</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-host-Settings-SiteSettings-Search-Crawling-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Settings-SiteSettings-Search-Crawling-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-SiteSettings-Search-Crawling-E90.png"><alt>Search &gt; Crawling</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-SiteSettings-Search-FileExtensions-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SiteSettings-Search-FileExtensions-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SiteSettings-Search-FileExtensions-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-SiteSettings-Search-FileExtensions-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-SiteSettings-Search-FileExtensions-E90"></info> -->
-           <step id="step-pbtabs-host-Settings-SiteSettings-Search-FileExtensions-E90">
-               <cmd id="cmd-pbtabs-host-Settings-SiteSettings-Search-FileExtensions-E90"><ph id="ph-pbtabs-host-Settings-SiteSettings-Search-FileExtensions-E90">Go to the <uicontrol>Search</uicontrol> tab, and then the  <uicontrol>File Extensions</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-host-Settings-SiteSettings-Search-FileExtensions-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Settings-SiteSettings-Search-FileExtensions-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-SiteSettings-Search-FileExtensions-E90.png"><alt>Search &gt; File Extensions</alt></image>
                </info>
            </step>
 
@@ -628,80 +670,80 @@
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Gamification-Actions-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Gamification-Actions-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Gamification-Actions-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Gamification-Actions-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Gamification-Actions-E90"></info> -->
-           <step id="step-pbtabs-host-Settings-Gamification-Actions-E90">
-               <cmd id="cmd-pbtabs-host-Settings-Gamification-Actions-E90"><ph id="ph-pbtabs-host-Settings-Gamification-Actions-E90">Go to the <uicontrol>Actions</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Settings-Gamification-Actions-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Settings-Gamification-Actions-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-Gamification-Actions-E90.png"><alt>Actions</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Vocabularies-All-Tags-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-All-Tags-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-All-Tags-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Vocabularies-All-Tags-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Vocabularies-All-Tags-E90"></info> -->
+           <step id="step-pbtabs-host-Settings-Vocabularies-All-Tags-E90">
+               <cmd id="cmd-pbtabs-host-Settings-Vocabularies-All-Tags-E90"><ph id="ph-pbtabs-host-Settings-Vocabularies-All-Tags-E90">Go to the <uicontrol>All</uicontrol> tab, and then the  <uicontrol>Tags</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-host-Settings-Vocabularies-All-Tags-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-host-Settings-Vocabularies-All-Tags-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-Vocabularies-All-Tags-E90.png"><alt>All &gt; Tags</alt></image>
                </info>
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Gamification-Privileges-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Gamification-Privileges-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Gamification-Privileges-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Gamification-Privileges-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Gamification-Privileges-E90"></info> -->
-           <step id="step-pbtabs-host-Settings-Gamification-Privileges-E90">
-               <cmd id="cmd-pbtabs-host-Settings-Gamification-Privileges-E90"><ph id="ph-pbtabs-host-Settings-Gamification-Privileges-E90">Go to the <uicontrol>Privileges</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Settings-Gamification-Privileges-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Settings-Gamification-Privileges-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-Gamification-Privileges-E90.png"><alt>Privileges</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90"></info> -->
+           <step id="step-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90">
+               <cmd id="cmd-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90"><ph id="ph-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90">Go to the <uicontrol>All</uicontrol> tab, and then the  <uicontrol>Module_Categories</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90.png"><alt>All &gt; Module_Categories</alt></image>
                </info>
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Gamification-Badges-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Gamification-Badges-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Gamification-Badges-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Gamification-Badges-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Gamification-Badges-E90"></info> -->
-           <step id="step-pbtabs-host-Settings-Gamification-Badges-E90">
-               <cmd id="cmd-pbtabs-host-Settings-Gamification-Badges-E90"><ph id="ph-pbtabs-host-Settings-Gamification-Badges-E90">Go to the <uicontrol>Badges</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Settings-Gamification-Badges-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Settings-Gamification-Badges-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-Gamification-Badges-E90.png"><alt>Badges</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Vocabularies-All-Test-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-All-Test-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-All-Test-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Vocabularies-All-Test-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Vocabularies-All-Test-E90"></info> -->
+           <step id="step-pbtabs-host-Settings-Vocabularies-All-Test-E90">
+               <cmd id="cmd-pbtabs-host-Settings-Vocabularies-All-Test-E90"><ph id="ph-pbtabs-host-Settings-Vocabularies-All-Test-E90">Go to the <uicontrol>All</uicontrol> tab, and then the  <uicontrol>Test</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-host-Settings-Vocabularies-All-Test-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-host-Settings-Vocabularies-All-Test-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-Vocabularies-All-Test-E90.png"><alt>All &gt; Test</alt></image>
                </info>
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Vocabularies-All-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-All-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-All-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Vocabularies-All-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Vocabularies-All-E90"></info> -->
-           <step id="step-pbtabs-host-Settings-Vocabularies-All-E90">
-               <cmd id="cmd-pbtabs-host-Settings-Vocabularies-All-E90"><ph id="ph-pbtabs-host-Settings-Vocabularies-All-E90">Go to the <uicontrol>All</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Settings-Vocabularies-All-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Settings-Vocabularies-All-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-Vocabularies-All-E90.png"><alt>All</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Vocabularies-Global-Tags-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-Global-Tags-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-Global-Tags-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Vocabularies-Global-Tags-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Vocabularies-Global-Tags-E90"></info> -->
+           <step id="step-pbtabs-host-Settings-Vocabularies-Global-Tags-E90">
+               <cmd id="cmd-pbtabs-host-Settings-Vocabularies-Global-Tags-E90"><ph id="ph-pbtabs-host-Settings-Vocabularies-Global-Tags-E90">Go to the <uicontrol>Global</uicontrol> tab, and then the  <uicontrol>Tags</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-host-Settings-Vocabularies-Global-Tags-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-host-Settings-Vocabularies-Global-Tags-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-Vocabularies-Global-Tags-E90.png"><alt>Global &gt; Tags</alt></image>
                </info>
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Vocabularies-Global-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-Global-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-Global-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Vocabularies-Global-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Vocabularies-Global-E90"></info> -->
-           <step id="step-pbtabs-host-Settings-Vocabularies-Global-E90">
-               <cmd id="cmd-pbtabs-host-Settings-Vocabularies-Global-E90"><ph id="ph-pbtabs-host-Settings-Vocabularies-Global-E90">Go to the <uicontrol>Global</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Settings-Vocabularies-Global-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Settings-Vocabularies-Global-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-Vocabularies-Global-E90.png"><alt>Global</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90"></info> -->
+           <step id="step-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90">
+               <cmd id="cmd-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90"><ph id="ph-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90">Go to the <uicontrol>Global</uicontrol> tab, and then the  <uicontrol>Module_Categories</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90.png"><alt>Global &gt; Module_Categories</alt></image>
                </info>
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Vocabularies-Website-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-Website-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-Website-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Vocabularies-Website-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Vocabularies-Website-E90"></info> -->
-           <step id="step-pbtabs-host-Settings-Vocabularies-Website-E90">
-               <cmd id="cmd-pbtabs-host-Settings-Vocabularies-Website-E90"><ph id="ph-pbtabs-host-Settings-Vocabularies-Website-E90">Go to the <uicontrol>Website</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Settings-Vocabularies-Website-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Settings-Vocabularies-Website-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-Vocabularies-Website-E90.png"><alt>Website</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Vocabularies-Website-Test-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-Website-Test-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-Website-Test-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Vocabularies-Website-Test-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Vocabularies-Website-Test-E90"></info> -->
+           <step id="step-pbtabs-host-Settings-Vocabularies-Website-Test-E90">
+               <cmd id="cmd-pbtabs-host-Settings-Vocabularies-Website-Test-E90"><ph id="ph-pbtabs-host-Settings-Vocabularies-Website-Test-E90">Go to the <uicontrol>Website</uicontrol> tab, and then the  <uicontrol>Test</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-host-Settings-Vocabularies-Website-Test-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-host-Settings-Vocabularies-Website-Test-E90" scalefit="yes" href="img/scr-pbtabs-host-Settings-Vocabularies-Website-Test-E90.png"><alt>Website &gt; Test</alt></image>
                </info>
            </step>
 
@@ -891,214 +933,6 @@
         <!-- ==================== E90 - adm ==================== -->
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Dashboard-SiteAnalytics-Summary-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Dashboard-SiteAnalytics-Summary-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Dashboard-SiteAnalytics-Summary-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Dashboard-SiteAnalytics-Summary-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Dashboard-SiteAnalytics-Summary-E90"></info> -->
-           <step id="step-pbtabs-adm-Dashboard-SiteAnalytics-Summary-E90">
-               <cmd id="cmd-pbtabs-adm-Dashboard-SiteAnalytics-Summary-E90"><ph id="ph-pbtabs-adm-Dashboard-SiteAnalytics-Summary-E90">Go to the <uicontrol>Summary</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Dashboard-SiteAnalytics-Summary-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Dashboard-SiteAnalytics-Summary-E90" scalefit="yes" href="img/scr-pbtabs-adm-Dashboard-SiteAnalytics-Summary-E90.png"><alt>Summary</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Dashboard-SiteAnalytics-Conversions-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Dashboard-SiteAnalytics-Conversions-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Dashboard-SiteAnalytics-Conversions-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Dashboard-SiteAnalytics-Conversions-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Dashboard-SiteAnalytics-Conversions-E90"></info> -->
-           <step id="step-pbtabs-adm-Dashboard-SiteAnalytics-Conversions-E90">
-               <cmd id="cmd-pbtabs-adm-Dashboard-SiteAnalytics-Conversions-E90"><ph id="ph-pbtabs-adm-Dashboard-SiteAnalytics-Conversions-E90">Go to the <uicontrol>Conversions</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Dashboard-SiteAnalytics-Conversions-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Dashboard-SiteAnalytics-Conversions-E90" scalefit="yes" href="img/scr-pbtabs-adm-Dashboard-SiteAnalytics-Conversions-E90.png"><alt>Conversions</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Dashboard-SiteAnalytics-Traffic-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Dashboard-SiteAnalytics-Traffic-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Dashboard-SiteAnalytics-Traffic-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Dashboard-SiteAnalytics-Traffic-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Dashboard-SiteAnalytics-Traffic-E90"></info> -->
-           <step id="step-pbtabs-adm-Dashboard-SiteAnalytics-Traffic-E90">
-               <cmd id="cmd-pbtabs-adm-Dashboard-SiteAnalytics-Traffic-E90"><ph id="ph-pbtabs-adm-Dashboard-SiteAnalytics-Traffic-E90">Go to the <uicontrol>Traffic</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Dashboard-SiteAnalytics-Traffic-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Dashboard-SiteAnalytics-Traffic-E90" scalefit="yes" href="img/scr-pbtabs-adm-Dashboard-SiteAnalytics-Traffic-E90.png"><alt>Traffic</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Dashboard-CommunityAnalytics-Answers-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Dashboard-CommunityAnalytics-Answers-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Dashboard-CommunityAnalytics-Answers-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Dashboard-CommunityAnalytics-Answers-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Dashboard-CommunityAnalytics-Answers-E90"></info> -->
-           <step id="step-pbtabs-adm-Dashboard-CommunityAnalytics-Answers-E90">
-               <cmd id="cmd-pbtabs-adm-Dashboard-CommunityAnalytics-Answers-E90"><ph id="ph-pbtabs-adm-Dashboard-CommunityAnalytics-Answers-E90">Go to the <uicontrol>Answers</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Dashboard-CommunityAnalytics-Answers-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Dashboard-CommunityAnalytics-Answers-E90" scalefit="yes" href="img/scr-pbtabs-adm-Dashboard-CommunityAnalytics-Answers-E90.png"><alt>Answers</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Dashboard-CommunityAnalytics-Blogs-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Dashboard-CommunityAnalytics-Blogs-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Dashboard-CommunityAnalytics-Blogs-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Dashboard-CommunityAnalytics-Blogs-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Dashboard-CommunityAnalytics-Blogs-E90"></info> -->
-           <step id="step-pbtabs-adm-Dashboard-CommunityAnalytics-Blogs-E90">
-               <cmd id="cmd-pbtabs-adm-Dashboard-CommunityAnalytics-Blogs-E90"><ph id="ph-pbtabs-adm-Dashboard-CommunityAnalytics-Blogs-E90">Go to the <uicontrol>Blogs</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Dashboard-CommunityAnalytics-Blogs-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Dashboard-CommunityAnalytics-Blogs-E90" scalefit="yes" href="img/scr-pbtabs-adm-Dashboard-CommunityAnalytics-Blogs-E90.png"><alt>Blogs</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Dashboard-CommunityAnalytics-Challenges-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Dashboard-CommunityAnalytics-Challenges-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Dashboard-CommunityAnalytics-Challenges-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Dashboard-CommunityAnalytics-Challenges-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Dashboard-CommunityAnalytics-Challenges-E90"></info> -->
-           <step id="step-pbtabs-adm-Dashboard-CommunityAnalytics-Challenges-E90">
-               <cmd id="cmd-pbtabs-adm-Dashboard-CommunityAnalytics-Challenges-E90"><ph id="ph-pbtabs-adm-Dashboard-CommunityAnalytics-Challenges-E90">Go to the <uicontrol>Challenges</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Dashboard-CommunityAnalytics-Challenges-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Dashboard-CommunityAnalytics-Challenges-E90" scalefit="yes" href="img/scr-pbtabs-adm-Dashboard-CommunityAnalytics-Challenges-E90.png"><alt>Challenges</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Dashboard-CommunityAnalytics-Discussions-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Dashboard-CommunityAnalytics-Discussions-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Dashboard-CommunityAnalytics-Discussions-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Dashboard-CommunityAnalytics-Discussions-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Dashboard-CommunityAnalytics-Discussions-E90"></info> -->
-           <step id="step-pbtabs-adm-Dashboard-CommunityAnalytics-Discussions-E90">
-               <cmd id="cmd-pbtabs-adm-Dashboard-CommunityAnalytics-Discussions-E90"><ph id="ph-pbtabs-adm-Dashboard-CommunityAnalytics-Discussions-E90">Go to the <uicontrol>Discussions</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Dashboard-CommunityAnalytics-Discussions-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Dashboard-CommunityAnalytics-Discussions-E90" scalefit="yes" href="img/scr-pbtabs-adm-Dashboard-CommunityAnalytics-Discussions-E90.png"><alt>Discussions</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Dashboard-CommunityAnalytics-Events-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Dashboard-CommunityAnalytics-Events-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Dashboard-CommunityAnalytics-Events-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Dashboard-CommunityAnalytics-Events-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Dashboard-CommunityAnalytics-Events-E90"></info> -->
-           <step id="step-pbtabs-adm-Dashboard-CommunityAnalytics-Events-E90">
-               <cmd id="cmd-pbtabs-adm-Dashboard-CommunityAnalytics-Events-E90"><ph id="ph-pbtabs-adm-Dashboard-CommunityAnalytics-Events-E90">Go to the <uicontrol>Events</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Dashboard-CommunityAnalytics-Events-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Dashboard-CommunityAnalytics-Events-E90" scalefit="yes" href="img/scr-pbtabs-adm-Dashboard-CommunityAnalytics-Events-E90.png"><alt>Events</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Dashboard-CommunityAnalytics-Ideas-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Dashboard-CommunityAnalytics-Ideas-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Dashboard-CommunityAnalytics-Ideas-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Dashboard-CommunityAnalytics-Ideas-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Dashboard-CommunityAnalytics-Ideas-E90"></info> -->
-           <step id="step-pbtabs-adm-Dashboard-CommunityAnalytics-Ideas-E90">
-               <cmd id="cmd-pbtabs-adm-Dashboard-CommunityAnalytics-Ideas-E90"><ph id="ph-pbtabs-adm-Dashboard-CommunityAnalytics-Ideas-E90">Go to the <uicontrol>Ideas</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Dashboard-CommunityAnalytics-Ideas-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Dashboard-CommunityAnalytics-Ideas-E90" scalefit="yes" href="img/scr-pbtabs-adm-Dashboard-CommunityAnalytics-Ideas-E90.png"><alt>Ideas</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Dashboard-CommunityAnalytics-Wiki-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Dashboard-CommunityAnalytics-Wiki-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Dashboard-CommunityAnalytics-Wiki-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Dashboard-CommunityAnalytics-Wiki-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Dashboard-CommunityAnalytics-Wiki-E90"></info> -->
-           <step id="step-pbtabs-adm-Dashboard-CommunityAnalytics-Wiki-E90">
-               <cmd id="cmd-pbtabs-adm-Dashboard-CommunityAnalytics-Wiki-E90"><ph id="ph-pbtabs-adm-Dashboard-CommunityAnalytics-Wiki-E90">Go to the <uicontrol>Wiki</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Dashboard-CommunityAnalytics-Wiki-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Dashboard-CommunityAnalytics-Wiki-E90" scalefit="yes" href="img/scr-pbtabs-adm-Dashboard-CommunityAnalytics-Wiki-E90.png"><alt>Wiki</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Content-ContentItems-Content-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Content-ContentItems-Content-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Content-ContentItems-Content-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Content-ContentItems-Content-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Content-ContentItems-Content-E90"></info> -->
-           <step id="step-pbtabs-adm-Content-ContentItems-Content-E90">
-               <cmd id="cmd-pbtabs-adm-Content-ContentItems-Content-E90"><ph id="ph-pbtabs-adm-Content-ContentItems-Content-E90">Go to the <uicontrol>Content</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Content-ContentItems-Content-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Content-ContentItems-Content-E90" scalefit="yes" href="img/scr-pbtabs-adm-Content-ContentItems-Content-E90.png"><alt>Content</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Content-ContentItems-ContentTypes-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Content-ContentItems-ContentTypes-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Content-ContentItems-ContentTypes-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Content-ContentItems-ContentTypes-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Content-ContentItems-ContentTypes-E90"></info> -->
-           <step id="step-pbtabs-adm-Content-ContentItems-ContentTypes-E90">
-               <cmd id="cmd-pbtabs-adm-Content-ContentItems-ContentTypes-E90"><ph id="ph-pbtabs-adm-Content-ContentItems-ContentTypes-E90">Go to the <uicontrol>Content Types</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Content-ContentItems-ContentTypes-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Content-ContentItems-ContentTypes-E90" scalefit="yes" href="img/scr-pbtabs-adm-Content-ContentItems-ContentTypes-E90.png"><alt>Content Types</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Content-ContentItems-Visualizers-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Content-ContentItems-Visualizers-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Content-ContentItems-Visualizers-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Content-ContentItems-Visualizers-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Content-ContentItems-Visualizers-E90"></info> -->
-           <step id="step-pbtabs-adm-Content-ContentItems-Visualizers-E90">
-               <cmd id="cmd-pbtabs-adm-Content-ContentItems-Visualizers-E90"><ph id="ph-pbtabs-adm-Content-ContentItems-Visualizers-E90">Go to the <uicontrol>Visualizers</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Content-ContentItems-Visualizers-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Content-ContentItems-Visualizers-E90" scalefit="yes" href="img/scr-pbtabs-adm-Content-ContentItems-Visualizers-E90.png"><alt>Visualizers</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Content-RecycleBin-Pages-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Content-RecycleBin-Pages-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Content-RecycleBin-Pages-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Content-RecycleBin-Pages-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Content-RecycleBin-Pages-E90"></info> -->
-           <step id="step-pbtabs-adm-Content-RecycleBin-Pages-E90">
-               <cmd id="cmd-pbtabs-adm-Content-RecycleBin-Pages-E90"><ph id="ph-pbtabs-adm-Content-RecycleBin-Pages-E90">Go to the <uicontrol>Pages</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Content-RecycleBin-Pages-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Content-RecycleBin-Pages-E90" scalefit="yes" href="img/scr-pbtabs-adm-Content-RecycleBin-Pages-E90.png"><alt>Pages</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Content-RecycleBin-Modules-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Content-RecycleBin-Modules-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Content-RecycleBin-Modules-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Content-RecycleBin-Modules-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Content-RecycleBin-Modules-E90"></info> -->
-           <step id="step-pbtabs-adm-Content-RecycleBin-Modules-E90">
-               <cmd id="cmd-pbtabs-adm-Content-RecycleBin-Modules-E90"><ph id="ph-pbtabs-adm-Content-RecycleBin-Modules-E90">Go to the <uicontrol>Modules</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Content-RecycleBin-Modules-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Content-RecycleBin-Modules-E90" scalefit="yes" href="img/scr-pbtabs-adm-Content-RecycleBin-Modules-E90.png"><alt>Modules</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Content-RecycleBin-Templates-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Content-RecycleBin-Templates-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Content-RecycleBin-Templates-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Content-RecycleBin-Templates-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Content-RecycleBin-Templates-E90"></info> -->
-           <step id="step-pbtabs-adm-Content-RecycleBin-Templates-E90">
-               <cmd id="cmd-pbtabs-adm-Content-RecycleBin-Templates-E90"><ph id="ph-pbtabs-adm-Content-RecycleBin-Templates-E90">Go to the <uicontrol>Templates</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Content-RecycleBin-Templates-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Content-RecycleBin-Templates-E90" scalefit="yes" href="img/scr-pbtabs-adm-Content-RecycleBin-Templates-E90.png"><alt>Templates</alt></image>
-               </info>
-           </step>
-
-
            <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Manage-AdminLogs-AdminLogs-E90"><cmd/></step> -->
            <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Manage-AdminLogs-AdminLogs-E90"><cmd/></step> -->
            <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Manage-AdminLogs-AdminLogs-E90"></ph></li> -->
@@ -1108,32 +942,6 @@
                <cmd id="cmd-pbtabs-adm-Manage-AdminLogs-AdminLogs-E90"><ph id="ph-pbtabs-adm-Manage-AdminLogs-AdminLogs-E90">Go to the <uicontrol>Admin Logs</uicontrol> tab.</ph></cmd>
                <info id="info-pbtabs-adm-Manage-AdminLogs-AdminLogs-E90" outputclass="init-hide">
                    <image id="image-pbtabs-adm-Manage-AdminLogs-AdminLogs-E90" scalefit="yes" href="img/scr-pbtabs-adm-Manage-AdminLogs-AdminLogs-E90.png"><alt>Admin Logs</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Manage-AdminLogs-LogSettings-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Manage-AdminLogs-LogSettings-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Manage-AdminLogs-LogSettings-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Manage-AdminLogs-LogSettings-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Manage-AdminLogs-LogSettings-E90"></info> -->
-           <step id="step-pbtabs-adm-Manage-AdminLogs-LogSettings-E90">
-               <cmd id="cmd-pbtabs-adm-Manage-AdminLogs-LogSettings-E90"><ph id="ph-pbtabs-adm-Manage-AdminLogs-LogSettings-E90">Go to the <uicontrol>Log Settings</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Manage-AdminLogs-LogSettings-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Manage-AdminLogs-LogSettings-E90" scalefit="yes" href="img/scr-pbtabs-adm-Manage-AdminLogs-LogSettings-E90.png"><alt>Log Settings</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-SiteSettings-SiteInfo-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-SiteSettings-SiteInfo-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SiteSettings-SiteInfo-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-SiteSettings-SiteInfo-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-SiteSettings-SiteInfo-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-SiteSettings-SiteInfo-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-SiteSettings-SiteInfo-E90"><ph id="ph-pbtabs-adm-Settings-SiteSettings-SiteInfo-E90">Go to the <uicontrol>Site Info</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-SiteSettings-SiteInfo-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-SiteSettings-SiteInfo-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-SiteSettings-SiteInfo-E90.png"><alt>Site Info</alt></image>
                </info>
            </step>
 
@@ -1177,32 +985,6 @@
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-SiteSettings-SiteBehavior-SiteAliases-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-SiteSettings-SiteBehavior-SiteAliases-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SiteSettings-SiteBehavior-SiteAliases-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-SiteSettings-SiteBehavior-SiteAliases-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-SiteSettings-SiteBehavior-SiteAliases-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-SiteSettings-SiteBehavior-SiteAliases-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-SiteSettings-SiteBehavior-SiteAliases-E90"><ph id="ph-pbtabs-adm-Settings-SiteSettings-SiteBehavior-SiteAliases-E90">Go to the <uicontrol>Site Behavior</uicontrol> tab, and then the  <uicontrol>Site Aliases</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-SiteSettings-SiteBehavior-SiteAliases-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-SiteSettings-SiteBehavior-SiteAliases-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-SiteSettings-SiteBehavior-SiteAliases-E90.png"><alt>Site Behavior &gt; Site Aliases</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-SiteSettings-SiteBehavior-More-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-SiteSettings-SiteBehavior-More-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SiteSettings-SiteBehavior-More-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-SiteSettings-SiteBehavior-More-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-SiteSettings-SiteBehavior-More-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-SiteSettings-SiteBehavior-More-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-SiteSettings-SiteBehavior-More-E90"><ph id="ph-pbtabs-adm-Settings-SiteSettings-SiteBehavior-More-E90">Go to the <uicontrol>Site Behavior</uicontrol> tab, and then the  <uicontrol>More</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-SiteSettings-SiteBehavior-More-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-SiteSettings-SiteBehavior-More-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-SiteSettings-SiteBehavior-More-E90.png"><alt>Site Behavior &gt; More</alt></image>
-               </info>
-           </step>
-
-
            <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-SiteSettings-Language-E90"><cmd/></step> -->
            <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-SiteSettings-Language-E90"><cmd/></step> -->
            <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SiteSettings-Language-E90"></ph></li> -->
@@ -1229,58 +1011,6 @@
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-SiteSettings-Search-Synonyms-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-SiteSettings-Search-Synonyms-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SiteSettings-Search-Synonyms-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-SiteSettings-Search-Synonyms-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-SiteSettings-Search-Synonyms-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-SiteSettings-Search-Synonyms-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-SiteSettings-Search-Synonyms-E90"><ph id="ph-pbtabs-adm-Settings-SiteSettings-Search-Synonyms-E90">Go to the <uicontrol>Search</uicontrol> tab, and then the  <uicontrol>Synonyms</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-SiteSettings-Search-Synonyms-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-SiteSettings-Search-Synonyms-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-SiteSettings-Search-Synonyms-E90.png"><alt>Search &gt; Synonyms</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-SiteSettings-Search-IgnoreWords-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-SiteSettings-Search-IgnoreWords-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SiteSettings-Search-IgnoreWords-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-SiteSettings-Search-IgnoreWords-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-SiteSettings-Search-IgnoreWords-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-SiteSettings-Search-IgnoreWords-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-SiteSettings-Search-IgnoreWords-E90"><ph id="ph-pbtabs-adm-Settings-SiteSettings-Search-IgnoreWords-E90">Go to the <uicontrol>Search</uicontrol> tab, and then the  <uicontrol>Ignore Words</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-SiteSettings-Search-IgnoreWords-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-SiteSettings-Search-IgnoreWords-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-SiteSettings-Search-IgnoreWords-E90.png"><alt>Search &gt; Ignore Words</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-SiteSettings-Search-Crawling-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-SiteSettings-Search-Crawling-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SiteSettings-Search-Crawling-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-SiteSettings-Search-Crawling-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-SiteSettings-Search-Crawling-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-SiteSettings-Search-Crawling-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-SiteSettings-Search-Crawling-E90"><ph id="ph-pbtabs-adm-Settings-SiteSettings-Search-Crawling-E90">Go to the <uicontrol>Search</uicontrol> tab, and then the  <uicontrol>Crawling</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-SiteSettings-Search-Crawling-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-SiteSettings-Search-Crawling-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-SiteSettings-Search-Crawling-E90.png"><alt>Search &gt; Crawling</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-SiteSettings-Search-FileExtensions-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-SiteSettings-Search-FileExtensions-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SiteSettings-Search-FileExtensions-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-SiteSettings-Search-FileExtensions-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-SiteSettings-Search-FileExtensions-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-SiteSettings-Search-FileExtensions-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-SiteSettings-Search-FileExtensions-E90"><ph id="ph-pbtabs-adm-Settings-SiteSettings-Search-FileExtensions-E90">Go to the <uicontrol>Search</uicontrol> tab, and then the  <uicontrol>File Extensions</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-SiteSettings-Search-FileExtensions-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-SiteSettings-Search-FileExtensions-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-SiteSettings-Search-FileExtensions-E90.png"><alt>Search &gt; File Extensions</alt></image>
-               </info>
-           </step>
-
-
            <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Security-LoginSettings-BasicLoginSettings-E90"><cmd/></step> -->
            <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Security-LoginSettings-BasicLoginSettings-E90"><cmd/></step> -->
            <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Security-LoginSettings-BasicLoginSettings-E90"></ph></li> -->
@@ -1290,32 +1020,6 @@
                <cmd id="cmd-pbtabs-adm-Settings-Security-LoginSettings-BasicLoginSettings-E90"><ph id="ph-pbtabs-adm-Settings-Security-LoginSettings-BasicLoginSettings-E90">Go to the <uicontrol>Login Settings</uicontrol> tab, and then the  <uicontrol>Basic Login Settings</uicontrol> subtab.</ph></cmd>
                <info id="info-pbtabs-adm-Settings-Security-LoginSettings-BasicLoginSettings-E90" outputclass="init-hide">
                    <image id="image-pbtabs-adm-Settings-Security-LoginSettings-BasicLoginSettings-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Security-LoginSettings-BasicLoginSettings-E90.png"><alt>Login Settings &gt; Basic Login Settings</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Security-LoginSettings-LoginIPFilters-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Security-LoginSettings-LoginIPFilters-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Security-LoginSettings-LoginIPFilters-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Security-LoginSettings-LoginIPFilters-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Security-LoginSettings-LoginIPFilters-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Security-LoginSettings-LoginIPFilters-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Security-LoginSettings-LoginIPFilters-E90"><ph id="ph-pbtabs-adm-Settings-Security-LoginSettings-LoginIPFilters-E90">Go to the <uicontrol>Login Settings</uicontrol> tab, and then the  <uicontrol>Login IP Filters</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Security-LoginSettings-LoginIPFilters-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Security-LoginSettings-LoginIPFilters-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Security-LoginSettings-LoginIPFilters-E90.png"><alt>Login Settings &gt; Login IP Filters</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Security-MemberAccounts-MemberManagement-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Security-MemberAccounts-MemberManagement-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Security-MemberAccounts-MemberManagement-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Security-MemberAccounts-MemberManagement-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Security-MemberAccounts-MemberManagement-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Security-MemberAccounts-MemberManagement-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Security-MemberAccounts-MemberManagement-E90"><ph id="ph-pbtabs-adm-Settings-Security-MemberAccounts-MemberManagement-E90">Go to the <uicontrol>Member Accounts</uicontrol> tab, and then the  <uicontrol>Member Management</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Security-MemberAccounts-MemberManagement-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Security-MemberAccounts-MemberManagement-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Security-MemberAccounts-MemberManagement-E90.png"><alt>Member Accounts &gt; Member Management</alt></image>
                </info>
            </step>
 
@@ -1333,58 +1037,6 @@
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Security-SecurityAnalyzer-AuditChecks-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Security-SecurityAnalyzer-AuditChecks-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Security-SecurityAnalyzer-AuditChecks-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Security-SecurityAnalyzer-AuditChecks-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Security-SecurityAnalyzer-AuditChecks-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Security-SecurityAnalyzer-AuditChecks-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Security-SecurityAnalyzer-AuditChecks-E90"><ph id="ph-pbtabs-adm-Settings-Security-SecurityAnalyzer-AuditChecks-E90">Go to the <uicontrol>Security Analyzer</uicontrol> tab, and then the  <uicontrol>Audit Checks</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Security-SecurityAnalyzer-AuditChecks-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Security-SecurityAnalyzer-AuditChecks-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Security-SecurityAnalyzer-AuditChecks-E90.png"><alt>Security Analyzer &gt; Audit Checks</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Security-SecurityAnalyzer-ScannerCheck-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Security-SecurityAnalyzer-ScannerCheck-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Security-SecurityAnalyzer-ScannerCheck-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Security-SecurityAnalyzer-ScannerCheck-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Security-SecurityAnalyzer-ScannerCheck-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Security-SecurityAnalyzer-ScannerCheck-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Security-SecurityAnalyzer-ScannerCheck-E90"><ph id="ph-pbtabs-adm-Settings-Security-SecurityAnalyzer-ScannerCheck-E90">Go to the <uicontrol>Security Analyzer</uicontrol> tab, and then the  <uicontrol>Scanner Check</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Security-SecurityAnalyzer-ScannerCheck-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Security-SecurityAnalyzer-ScannerCheck-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Security-SecurityAnalyzer-ScannerCheck-E90.png"><alt>Security Analyzer &gt; Scanner Check</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Security-SecurityAnalyzer-SuperuserActivity-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Security-SecurityAnalyzer-SuperuserActivity-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Security-SecurityAnalyzer-SuperuserActivity-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Security-SecurityAnalyzer-SuperuserActivity-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Security-SecurityAnalyzer-SuperuserActivity-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Security-SecurityAnalyzer-SuperuserActivity-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Security-SecurityAnalyzer-SuperuserActivity-E90"><ph id="ph-pbtabs-adm-Settings-Security-SecurityAnalyzer-SuperuserActivity-E90">Go to the <uicontrol>Security Analyzer</uicontrol> tab, and then the  <uicontrol>Superuser Activity</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Security-SecurityAnalyzer-SuperuserActivity-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Security-SecurityAnalyzer-SuperuserActivity-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Security-SecurityAnalyzer-SuperuserActivity-E90.png"><alt>Security Analyzer &gt; Superuser Activity</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Security-SecurityBulletins-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Security-SecurityBulletins-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Security-SecurityBulletins-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Security-SecurityBulletins-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Security-SecurityBulletins-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Security-SecurityBulletins-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Security-SecurityBulletins-E90"><ph id="ph-pbtabs-adm-Settings-Security-SecurityBulletins-E90">Go to the <uicontrol>Security Bulletins</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Security-SecurityBulletins-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Security-SecurityBulletins-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Security-SecurityBulletins-E90.png"><alt>Security Bulletins</alt></image>
-               </info>
-           </step>
-
-
            <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Security-More-SSLSettings-E90"><cmd/></step> -->
            <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Security-More-SSLSettings-E90"><cmd/></step> -->
            <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Security-More-SSLSettings-E90"></ph></li> -->
@@ -1398,19 +1050,6 @@
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Security-More-MoreSecuritySettings-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Security-More-MoreSecuritySettings-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Security-More-MoreSecuritySettings-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Security-More-MoreSecuritySettings-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Security-More-MoreSecuritySettings-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Security-More-MoreSecuritySettings-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Security-More-MoreSecuritySettings-E90"><ph id="ph-pbtabs-adm-Settings-Security-More-MoreSecuritySettings-E90">Go to the <uicontrol>More</uicontrol> tab, and then the  <uicontrol>More Security Settings</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Security-More-MoreSecuritySettings-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Security-More-MoreSecuritySettings-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Security-More-MoreSecuritySettings-E90.png"><alt>More &gt; More Security Settings</alt></image>
-               </info>
-           </step>
-
-
            <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-SEO-URLManagement-GeneralSettings-E90"><cmd/></step> -->
            <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-SEO-URLManagement-GeneralSettings-E90"><cmd/></step> -->
            <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SEO-URLManagement-GeneralSettings-E90"></ph></li> -->
@@ -1420,19 +1059,6 @@
                <cmd id="cmd-pbtabs-adm-Settings-SEO-URLManagement-GeneralSettings-E90"><ph id="ph-pbtabs-adm-Settings-SEO-URLManagement-GeneralSettings-E90">Go to the <uicontrol>URL Management</uicontrol> tab, and then the  <uicontrol>General Settings</uicontrol> subtab.</ph></cmd>
                <info id="info-pbtabs-adm-Settings-SEO-URLManagement-GeneralSettings-E90" outputclass="init-hide">
                    <image id="image-pbtabs-adm-Settings-SEO-URLManagement-GeneralSettings-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-SEO-URLManagement-GeneralSettings-E90.png"><alt>URL Management &gt; General Settings</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-SEO-URLManagement-Expressions-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-SEO-URLManagement-Expressions-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SEO-URLManagement-Expressions-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-SEO-URLManagement-Expressions-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-SEO-URLManagement-Expressions-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-SEO-URLManagement-Expressions-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-SEO-URLManagement-Expressions-E90"><ph id="ph-pbtabs-adm-Settings-SEO-URLManagement-Expressions-E90">Go to the <uicontrol>URL Management</uicontrol> tab, and then the  <uicontrol>Expressions</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-SEO-URLManagement-Expressions-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-SEO-URLManagement-Expressions-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-SEO-URLManagement-Expressions-E90.png"><alt>URL Management &gt; Expressions</alt></image>
                </info>
            </step>
 
@@ -1463,106 +1089,80 @@
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Gamification-Actions-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Gamification-Actions-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Gamification-Actions-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Gamification-Actions-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Gamification-Actions-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Gamification-Actions-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Gamification-Actions-E90"><ph id="ph-pbtabs-adm-Settings-Gamification-Actions-E90">Go to the <uicontrol>Actions</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Gamification-Actions-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Gamification-Actions-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Gamification-Actions-E90.png"><alt>Actions</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Vocabularies-All-Tags-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-All-Tags-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-All-Tags-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Vocabularies-All-Tags-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Vocabularies-All-Tags-E90"></info> -->
+           <step id="step-pbtabs-adm-Settings-Vocabularies-All-Tags-E90">
+               <cmd id="cmd-pbtabs-adm-Settings-Vocabularies-All-Tags-E90"><ph id="ph-pbtabs-adm-Settings-Vocabularies-All-Tags-E90">Go to the <uicontrol>All</uicontrol> tab, and then the  <uicontrol>Tags</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-adm-Settings-Vocabularies-All-Tags-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-adm-Settings-Vocabularies-All-Tags-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Vocabularies-All-Tags-E90.png"><alt>All &gt; Tags</alt></image>
                </info>
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Gamification-Privileges-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Gamification-Privileges-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Gamification-Privileges-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Gamification-Privileges-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Gamification-Privileges-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Gamification-Privileges-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Gamification-Privileges-E90"><ph id="ph-pbtabs-adm-Settings-Gamification-Privileges-E90">Go to the <uicontrol>Privileges</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Gamification-Privileges-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Gamification-Privileges-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Gamification-Privileges-E90.png"><alt>Privileges</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90"></info> -->
+           <step id="step-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90">
+               <cmd id="cmd-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90"><ph id="ph-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90">Go to the <uicontrol>All</uicontrol> tab, and then the  <uicontrol>Module_Categories</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90.png"><alt>All &gt; Module_Categories</alt></image>
                </info>
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Gamification-Badges-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Gamification-Badges-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Gamification-Badges-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Gamification-Badges-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Gamification-Badges-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Gamification-Badges-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Gamification-Badges-E90"><ph id="ph-pbtabs-adm-Settings-Gamification-Badges-E90">Go to the <uicontrol>Badges</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Gamification-Badges-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Gamification-Badges-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Gamification-Badges-E90.png"><alt>Badges</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Vocabularies-All-Test-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-All-Test-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-All-Test-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Vocabularies-All-Test-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Vocabularies-All-Test-E90"></info> -->
+           <step id="step-pbtabs-adm-Settings-Vocabularies-All-Test-E90">
+               <cmd id="cmd-pbtabs-adm-Settings-Vocabularies-All-Test-E90"><ph id="ph-pbtabs-adm-Settings-Vocabularies-All-Test-E90">Go to the <uicontrol>All</uicontrol> tab, and then the  <uicontrol>Test</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-adm-Settings-Vocabularies-All-Test-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-adm-Settings-Vocabularies-All-Test-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Vocabularies-All-Test-E90.png"><alt>All &gt; Test</alt></image>
                </info>
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Vocabularies-All-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-All-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-All-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Vocabularies-All-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Vocabularies-All-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Vocabularies-All-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Vocabularies-All-E90"><ph id="ph-pbtabs-adm-Settings-Vocabularies-All-E90">Go to the <uicontrol>All</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Vocabularies-All-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Vocabularies-All-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Vocabularies-All-E90.png"><alt>All</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Vocabularies-Global-Tags-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-Global-Tags-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-Global-Tags-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Vocabularies-Global-Tags-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Vocabularies-Global-Tags-E90"></info> -->
+           <step id="step-pbtabs-adm-Settings-Vocabularies-Global-Tags-E90">
+               <cmd id="cmd-pbtabs-adm-Settings-Vocabularies-Global-Tags-E90"><ph id="ph-pbtabs-adm-Settings-Vocabularies-Global-Tags-E90">Go to the <uicontrol>Global</uicontrol> tab, and then the  <uicontrol>Tags</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-adm-Settings-Vocabularies-Global-Tags-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-adm-Settings-Vocabularies-Global-Tags-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Vocabularies-Global-Tags-E90.png"><alt>Global &gt; Tags</alt></image>
                </info>
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Vocabularies-Global-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-Global-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-Global-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Vocabularies-Global-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Vocabularies-Global-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Vocabularies-Global-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Vocabularies-Global-E90"><ph id="ph-pbtabs-adm-Settings-Vocabularies-Global-E90">Go to the <uicontrol>Global</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Vocabularies-Global-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Vocabularies-Global-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Vocabularies-Global-E90.png"><alt>Global</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90"></info> -->
+           <step id="step-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90">
+               <cmd id="cmd-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90"><ph id="ph-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90">Go to the <uicontrol>Global</uicontrol> tab, and then the  <uicontrol>Module_Categories</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90.png"><alt>Global &gt; Module_Categories</alt></image>
                </info>
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Vocabularies-Website-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-Website-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-Website-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Vocabularies-Website-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Vocabularies-Website-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Vocabularies-Website-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Vocabularies-Website-E90"><ph id="ph-pbtabs-adm-Settings-Vocabularies-Website-E90">Go to the <uicontrol>Website</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Vocabularies-Website-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Vocabularies-Website-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Vocabularies-Website-E90.png"><alt>Website</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Extensions-InstalledExtensions-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Extensions-InstalledExtensions-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Extensions-InstalledExtensions-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Extensions-InstalledExtensions-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Extensions-InstalledExtensions-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Extensions-InstalledExtensions-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Extensions-InstalledExtensions-E90"><ph id="ph-pbtabs-adm-Settings-Extensions-InstalledExtensions-E90">Go to the <uicontrol>Installed Extensions</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Extensions-InstalledExtensions-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Extensions-InstalledExtensions-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Extensions-InstalledExtensions-E90.png"><alt>Installed Extensions</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Extensions-AvailableExtensions-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Extensions-AvailableExtensions-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Extensions-AvailableExtensions-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Extensions-AvailableExtensions-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Extensions-AvailableExtensions-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Extensions-AvailableExtensions-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Extensions-AvailableExtensions-E90"><ph id="ph-pbtabs-adm-Settings-Extensions-AvailableExtensions-E90">Go to the <uicontrol>Available Extensions</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Extensions-AvailableExtensions-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Extensions-AvailableExtensions-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Extensions-AvailableExtensions-E90.png"><alt>Available Extensions</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Vocabularies-Website-Test-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-Website-Test-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-Website-Test-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Vocabularies-Website-Test-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Vocabularies-Website-Test-E90"></info> -->
+           <step id="step-pbtabs-adm-Settings-Vocabularies-Website-Test-E90">
+               <cmd id="cmd-pbtabs-adm-Settings-Vocabularies-Website-Test-E90"><ph id="ph-pbtabs-adm-Settings-Vocabularies-Website-Test-E90">Go to the <uicontrol>Website</uicontrol> tab, and then the  <uicontrol>Test</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-adm-Settings-Vocabularies-Website-Test-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-adm-Settings-Vocabularies-Website-Test-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Vocabularies-Website-Test-E90.png"><alt>Website &gt; Test</alt></image>
                </info>
            </step>
 
@@ -1580,45 +1180,6 @@
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Servers-SystemInfo-Web-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Servers-SystemInfo-Web-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Servers-SystemInfo-Web-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Servers-SystemInfo-Web-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Servers-SystemInfo-Web-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Servers-SystemInfo-Web-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Servers-SystemInfo-Web-E90"><ph id="ph-pbtabs-adm-Settings-Servers-SystemInfo-Web-E90">Go to the <uicontrol>System Info</uicontrol> tab, and then the  <uicontrol>Web</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Servers-SystemInfo-Web-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Servers-SystemInfo-Web-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Servers-SystemInfo-Web-E90.png"><alt>System Info &gt; Web</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Servers-SystemInfo-Database-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Servers-SystemInfo-Database-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Servers-SystemInfo-Database-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Servers-SystemInfo-Database-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Servers-SystemInfo-Database-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Servers-SystemInfo-Database-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Servers-SystemInfo-Database-E90"><ph id="ph-pbtabs-adm-Settings-Servers-SystemInfo-Database-E90">Go to the <uicontrol>System Info</uicontrol> tab, and then the  <uicontrol>Database</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Servers-SystemInfo-Database-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Servers-SystemInfo-Database-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Servers-SystemInfo-Database-E90.png"><alt>System Info &gt; Database</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Servers-ServerSettings-WebServers-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Servers-ServerSettings-WebServers-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Servers-ServerSettings-WebServers-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Servers-ServerSettings-WebServers-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Servers-ServerSettings-WebServers-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Servers-ServerSettings-WebServers-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Servers-ServerSettings-WebServers-E90"><ph id="ph-pbtabs-adm-Settings-Servers-ServerSettings-WebServers-E90">Go to the <uicontrol>Server Settings</uicontrol> tab, and then the  <uicontrol>Web Servers</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Servers-ServerSettings-WebServers-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Servers-ServerSettings-WebServers-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Servers-ServerSettings-WebServers-E90.png"><alt>Server Settings &gt; Web Servers</alt></image>
-               </info>
-           </step>
-
-
            <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Servers-ServerSettings-SMTPServer-E90"><cmd/></step> -->
            <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Servers-ServerSettings-SMTPServer-E90"><cmd/></step> -->
            <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Servers-ServerSettings-SMTPServer-E90"></ph></li> -->
@@ -1632,285 +1193,13 @@
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Servers-ServerSettings-Performance-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Servers-ServerSettings-Performance-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Servers-ServerSettings-Performance-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Servers-ServerSettings-Performance-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Servers-ServerSettings-Performance-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Servers-ServerSettings-Performance-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Servers-ServerSettings-Performance-E90"><ph id="ph-pbtabs-adm-Settings-Servers-ServerSettings-Performance-E90">Go to the <uicontrol>Server Settings</uicontrol> tab, and then the  <uicontrol>Performance</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Servers-ServerSettings-Performance-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Servers-ServerSettings-Performance-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Servers-ServerSettings-Performance-E90.png"><alt>Server Settings &gt; Performance</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Servers-ServerSettings-Logs-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Servers-ServerSettings-Logs-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Servers-ServerSettings-Logs-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Servers-ServerSettings-Logs-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Servers-ServerSettings-Logs-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Servers-ServerSettings-Logs-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Servers-ServerSettings-Logs-E90"><ph id="ph-pbtabs-adm-Settings-Servers-ServerSettings-Logs-E90">Go to the <uicontrol>Server Settings</uicontrol> tab, and then the  <uicontrol>Logs</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Servers-ServerSettings-Logs-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Servers-ServerSettings-Logs-E90" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Servers-ServerSettings-Logs-E90.png"><alt>Server Settings &gt; Logs</alt></image>
-               </info>
-           </step>
-
-
         <!-- ==================== E90 - cmg ==================== -->
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-cmg-Dashboard-SiteAnalytics-Summary-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-cmg-Dashboard-SiteAnalytics-Summary-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-cmg-Dashboard-SiteAnalytics-Summary-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-cmg-Dashboard-SiteAnalytics-Summary-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-cmg-Dashboard-SiteAnalytics-Summary-E90"></info> -->
-           <step id="step-pbtabs-cmg-Dashboard-SiteAnalytics-Summary-E90">
-               <cmd id="cmd-pbtabs-cmg-Dashboard-SiteAnalytics-Summary-E90"><ph id="ph-pbtabs-cmg-Dashboard-SiteAnalytics-Summary-E90">Go to the <uicontrol>Summary</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-cmg-Dashboard-SiteAnalytics-Summary-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-cmg-Dashboard-SiteAnalytics-Summary-E90" scalefit="yes" href="img/scr-pbtabs-cmg-Dashboard-SiteAnalytics-Summary-E90.png"><alt>Summary</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-cmg-Dashboard-SiteAnalytics-Conversions-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-cmg-Dashboard-SiteAnalytics-Conversions-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-cmg-Dashboard-SiteAnalytics-Conversions-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-cmg-Dashboard-SiteAnalytics-Conversions-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-cmg-Dashboard-SiteAnalytics-Conversions-E90"></info> -->
-           <step id="step-pbtabs-cmg-Dashboard-SiteAnalytics-Conversions-E90">
-               <cmd id="cmd-pbtabs-cmg-Dashboard-SiteAnalytics-Conversions-E90"><ph id="ph-pbtabs-cmg-Dashboard-SiteAnalytics-Conversions-E90">Go to the <uicontrol>Conversions</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-cmg-Dashboard-SiteAnalytics-Conversions-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-cmg-Dashboard-SiteAnalytics-Conversions-E90" scalefit="yes" href="img/scr-pbtabs-cmg-Dashboard-SiteAnalytics-Conversions-E90.png"><alt>Conversions</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-cmg-Dashboard-SiteAnalytics-Traffic-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-cmg-Dashboard-SiteAnalytics-Traffic-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-cmg-Dashboard-SiteAnalytics-Traffic-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-cmg-Dashboard-SiteAnalytics-Traffic-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-cmg-Dashboard-SiteAnalytics-Traffic-E90"></info> -->
-           <step id="step-pbtabs-cmg-Dashboard-SiteAnalytics-Traffic-E90">
-               <cmd id="cmd-pbtabs-cmg-Dashboard-SiteAnalytics-Traffic-E90"><ph id="ph-pbtabs-cmg-Dashboard-SiteAnalytics-Traffic-E90">Go to the <uicontrol>Traffic</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-cmg-Dashboard-SiteAnalytics-Traffic-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-cmg-Dashboard-SiteAnalytics-Traffic-E90" scalefit="yes" href="img/scr-pbtabs-cmg-Dashboard-SiteAnalytics-Traffic-E90.png"><alt>Traffic</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-cmg-Content-ContentItems-Content-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-cmg-Content-ContentItems-Content-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-cmg-Content-ContentItems-Content-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-cmg-Content-ContentItems-Content-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-cmg-Content-ContentItems-Content-E90"></info> -->
-           <step id="step-pbtabs-cmg-Content-ContentItems-Content-E90">
-               <cmd id="cmd-pbtabs-cmg-Content-ContentItems-Content-E90"><ph id="ph-pbtabs-cmg-Content-ContentItems-Content-E90">Go to the <uicontrol>Content</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-cmg-Content-ContentItems-Content-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-cmg-Content-ContentItems-Content-E90" scalefit="yes" href="img/scr-pbtabs-cmg-Content-ContentItems-Content-E90.png"><alt>Content</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-cmg-Content-ContentItems-ContentTypes-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-cmg-Content-ContentItems-ContentTypes-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-cmg-Content-ContentItems-ContentTypes-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-cmg-Content-ContentItems-ContentTypes-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-cmg-Content-ContentItems-ContentTypes-E90"></info> -->
-           <step id="step-pbtabs-cmg-Content-ContentItems-ContentTypes-E90">
-               <cmd id="cmd-pbtabs-cmg-Content-ContentItems-ContentTypes-E90"><ph id="ph-pbtabs-cmg-Content-ContentItems-ContentTypes-E90">Go to the <uicontrol>Content Types</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-cmg-Content-ContentItems-ContentTypes-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-cmg-Content-ContentItems-ContentTypes-E90" scalefit="yes" href="img/scr-pbtabs-cmg-Content-ContentItems-ContentTypes-E90.png"><alt>Content Types</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-cmg-Content-ContentItems-Visualizers-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-cmg-Content-ContentItems-Visualizers-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-cmg-Content-ContentItems-Visualizers-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-cmg-Content-ContentItems-Visualizers-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-cmg-Content-ContentItems-Visualizers-E90"></info> -->
-           <step id="step-pbtabs-cmg-Content-ContentItems-Visualizers-E90">
-               <cmd id="cmd-pbtabs-cmg-Content-ContentItems-Visualizers-E90"><ph id="ph-pbtabs-cmg-Content-ContentItems-Visualizers-E90">Go to the <uicontrol>Visualizers</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-cmg-Content-ContentItems-Visualizers-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-cmg-Content-ContentItems-Visualizers-E90" scalefit="yes" href="img/scr-pbtabs-cmg-Content-ContentItems-Visualizers-E90.png"><alt>Visualizers</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-cmg-Content-RecycleBin-Pages-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-cmg-Content-RecycleBin-Pages-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-cmg-Content-RecycleBin-Pages-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-cmg-Content-RecycleBin-Pages-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-cmg-Content-RecycleBin-Pages-E90"></info> -->
-           <step id="step-pbtabs-cmg-Content-RecycleBin-Pages-E90">
-               <cmd id="cmd-pbtabs-cmg-Content-RecycleBin-Pages-E90"><ph id="ph-pbtabs-cmg-Content-RecycleBin-Pages-E90">Go to the <uicontrol>Pages</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-cmg-Content-RecycleBin-Pages-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-cmg-Content-RecycleBin-Pages-E90" scalefit="yes" href="img/scr-pbtabs-cmg-Content-RecycleBin-Pages-E90.png"><alt>Pages</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-cmg-Content-RecycleBin-Modules-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-cmg-Content-RecycleBin-Modules-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-cmg-Content-RecycleBin-Modules-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-cmg-Content-RecycleBin-Modules-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-cmg-Content-RecycleBin-Modules-E90"></info> -->
-           <step id="step-pbtabs-cmg-Content-RecycleBin-Modules-E90">
-               <cmd id="cmd-pbtabs-cmg-Content-RecycleBin-Modules-E90"><ph id="ph-pbtabs-cmg-Content-RecycleBin-Modules-E90">Go to the <uicontrol>Modules</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-cmg-Content-RecycleBin-Modules-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-cmg-Content-RecycleBin-Modules-E90" scalefit="yes" href="img/scr-pbtabs-cmg-Content-RecycleBin-Modules-E90.png"><alt>Modules</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-cmg-Content-RecycleBin-Templates-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-cmg-Content-RecycleBin-Templates-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-cmg-Content-RecycleBin-Templates-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-cmg-Content-RecycleBin-Templates-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-cmg-Content-RecycleBin-Templates-E90"></info> -->
-           <step id="step-pbtabs-cmg-Content-RecycleBin-Templates-E90">
-               <cmd id="cmd-pbtabs-cmg-Content-RecycleBin-Templates-E90"><ph id="ph-pbtabs-cmg-Content-RecycleBin-Templates-E90">Go to the <uicontrol>Templates</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-cmg-Content-RecycleBin-Templates-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-cmg-Content-RecycleBin-Templates-E90" scalefit="yes" href="img/scr-pbtabs-cmg-Content-RecycleBin-Templates-E90.png"><alt>Templates</alt></image>
-               </info>
-           </step>
 
 
         <!-- ==================== E90 - mod ==================== -->
 
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-mod-Dashboard-CommunityAnalytics-Answers-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-mod-Dashboard-CommunityAnalytics-Answers-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-mod-Dashboard-CommunityAnalytics-Answers-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-mod-Dashboard-CommunityAnalytics-Answers-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-mod-Dashboard-CommunityAnalytics-Answers-E90"></info> -->
-           <step id="step-pbtabs-mod-Dashboard-CommunityAnalytics-Answers-E90">
-               <cmd id="cmd-pbtabs-mod-Dashboard-CommunityAnalytics-Answers-E90"><ph id="ph-pbtabs-mod-Dashboard-CommunityAnalytics-Answers-E90">Go to the <uicontrol>Answers</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-mod-Dashboard-CommunityAnalytics-Answers-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-mod-Dashboard-CommunityAnalytics-Answers-E90" scalefit="yes" href="img/scr-pbtabs-mod-Dashboard-CommunityAnalytics-Answers-E90.png"><alt>Answers</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-mod-Dashboard-CommunityAnalytics-Blogs-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-mod-Dashboard-CommunityAnalytics-Blogs-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-mod-Dashboard-CommunityAnalytics-Blogs-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-mod-Dashboard-CommunityAnalytics-Blogs-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-mod-Dashboard-CommunityAnalytics-Blogs-E90"></info> -->
-           <step id="step-pbtabs-mod-Dashboard-CommunityAnalytics-Blogs-E90">
-               <cmd id="cmd-pbtabs-mod-Dashboard-CommunityAnalytics-Blogs-E90"><ph id="ph-pbtabs-mod-Dashboard-CommunityAnalytics-Blogs-E90">Go to the <uicontrol>Blogs</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-mod-Dashboard-CommunityAnalytics-Blogs-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-mod-Dashboard-CommunityAnalytics-Blogs-E90" scalefit="yes" href="img/scr-pbtabs-mod-Dashboard-CommunityAnalytics-Blogs-E90.png"><alt>Blogs</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-mod-Dashboard-CommunityAnalytics-Challenges-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-mod-Dashboard-CommunityAnalytics-Challenges-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-mod-Dashboard-CommunityAnalytics-Challenges-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-mod-Dashboard-CommunityAnalytics-Challenges-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-mod-Dashboard-CommunityAnalytics-Challenges-E90"></info> -->
-           <step id="step-pbtabs-mod-Dashboard-CommunityAnalytics-Challenges-E90">
-               <cmd id="cmd-pbtabs-mod-Dashboard-CommunityAnalytics-Challenges-E90"><ph id="ph-pbtabs-mod-Dashboard-CommunityAnalytics-Challenges-E90">Go to the <uicontrol>Challenges</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-mod-Dashboard-CommunityAnalytics-Challenges-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-mod-Dashboard-CommunityAnalytics-Challenges-E90" scalefit="yes" href="img/scr-pbtabs-mod-Dashboard-CommunityAnalytics-Challenges-E90.png"><alt>Challenges</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-mod-Dashboard-CommunityAnalytics-Discussions-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-mod-Dashboard-CommunityAnalytics-Discussions-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-mod-Dashboard-CommunityAnalytics-Discussions-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-mod-Dashboard-CommunityAnalytics-Discussions-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-mod-Dashboard-CommunityAnalytics-Discussions-E90"></info> -->
-           <step id="step-pbtabs-mod-Dashboard-CommunityAnalytics-Discussions-E90">
-               <cmd id="cmd-pbtabs-mod-Dashboard-CommunityAnalytics-Discussions-E90"><ph id="ph-pbtabs-mod-Dashboard-CommunityAnalytics-Discussions-E90">Go to the <uicontrol>Discussions</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-mod-Dashboard-CommunityAnalytics-Discussions-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-mod-Dashboard-CommunityAnalytics-Discussions-E90" scalefit="yes" href="img/scr-pbtabs-mod-Dashboard-CommunityAnalytics-Discussions-E90.png"><alt>Discussions</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-mod-Dashboard-CommunityAnalytics-Events-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-mod-Dashboard-CommunityAnalytics-Events-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-mod-Dashboard-CommunityAnalytics-Events-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-mod-Dashboard-CommunityAnalytics-Events-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-mod-Dashboard-CommunityAnalytics-Events-E90"></info> -->
-           <step id="step-pbtabs-mod-Dashboard-CommunityAnalytics-Events-E90">
-               <cmd id="cmd-pbtabs-mod-Dashboard-CommunityAnalytics-Events-E90"><ph id="ph-pbtabs-mod-Dashboard-CommunityAnalytics-Events-E90">Go to the <uicontrol>Events</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-mod-Dashboard-CommunityAnalytics-Events-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-mod-Dashboard-CommunityAnalytics-Events-E90" scalefit="yes" href="img/scr-pbtabs-mod-Dashboard-CommunityAnalytics-Events-E90.png"><alt>Events</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-mod-Dashboard-CommunityAnalytics-Ideas-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-mod-Dashboard-CommunityAnalytics-Ideas-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-mod-Dashboard-CommunityAnalytics-Ideas-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-mod-Dashboard-CommunityAnalytics-Ideas-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-mod-Dashboard-CommunityAnalytics-Ideas-E90"></info> -->
-           <step id="step-pbtabs-mod-Dashboard-CommunityAnalytics-Ideas-E90">
-               <cmd id="cmd-pbtabs-mod-Dashboard-CommunityAnalytics-Ideas-E90"><ph id="ph-pbtabs-mod-Dashboard-CommunityAnalytics-Ideas-E90">Go to the <uicontrol>Ideas</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-mod-Dashboard-CommunityAnalytics-Ideas-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-mod-Dashboard-CommunityAnalytics-Ideas-E90" scalefit="yes" href="img/scr-pbtabs-mod-Dashboard-CommunityAnalytics-Ideas-E90.png"><alt>Ideas</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-mod-Dashboard-CommunityAnalytics-Wiki-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-mod-Dashboard-CommunityAnalytics-Wiki-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-mod-Dashboard-CommunityAnalytics-Wiki-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-mod-Dashboard-CommunityAnalytics-Wiki-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-mod-Dashboard-CommunityAnalytics-Wiki-E90"></info> -->
-           <step id="step-pbtabs-mod-Dashboard-CommunityAnalytics-Wiki-E90">
-               <cmd id="cmd-pbtabs-mod-Dashboard-CommunityAnalytics-Wiki-E90"><ph id="ph-pbtabs-mod-Dashboard-CommunityAnalytics-Wiki-E90">Go to the <uicontrol>Wiki</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-mod-Dashboard-CommunityAnalytics-Wiki-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-mod-Dashboard-CommunityAnalytics-Wiki-E90" scalefit="yes" href="img/scr-pbtabs-mod-Dashboard-CommunityAnalytics-Wiki-E90.png"><alt>Wiki</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-mod-Settings-Gamification-Actions-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-mod-Settings-Gamification-Actions-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-mod-Settings-Gamification-Actions-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-mod-Settings-Gamification-Actions-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-mod-Settings-Gamification-Actions-E90"></info> -->
-           <step id="step-pbtabs-mod-Settings-Gamification-Actions-E90">
-               <cmd id="cmd-pbtabs-mod-Settings-Gamification-Actions-E90"><ph id="ph-pbtabs-mod-Settings-Gamification-Actions-E90">Go to the <uicontrol>Actions</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-mod-Settings-Gamification-Actions-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-mod-Settings-Gamification-Actions-E90" scalefit="yes" href="img/scr-pbtabs-mod-Settings-Gamification-Actions-E90.png"><alt>Actions</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-mod-Settings-Gamification-Privileges-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-mod-Settings-Gamification-Privileges-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-mod-Settings-Gamification-Privileges-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-mod-Settings-Gamification-Privileges-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-mod-Settings-Gamification-Privileges-E90"></info> -->
-           <step id="step-pbtabs-mod-Settings-Gamification-Privileges-E90">
-               <cmd id="cmd-pbtabs-mod-Settings-Gamification-Privileges-E90"><ph id="ph-pbtabs-mod-Settings-Gamification-Privileges-E90">Go to the <uicontrol>Privileges</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-mod-Settings-Gamification-Privileges-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-mod-Settings-Gamification-Privileges-E90" scalefit="yes" href="img/scr-pbtabs-mod-Settings-Gamification-Privileges-E90.png"><alt>Privileges</alt></image>
-               </info>
-           </step>
-
-
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-mod-Settings-Gamification-Badges-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-mod-Settings-Gamification-Badges-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-mod-Settings-Gamification-Badges-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-mod-Settings-Gamification-Badges-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-mod-Settings-Gamification-Badges-E90"></info> -->
-           <step id="step-pbtabs-mod-Settings-Gamification-Badges-E90">
-               <cmd id="cmd-pbtabs-mod-Settings-Gamification-Badges-E90"><ph id="ph-pbtabs-mod-Settings-Gamification-Badges-E90">Go to the <uicontrol>Badges</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-mod-Settings-Gamification-Badges-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-mod-Settings-Gamification-Badges-E90" scalefit="yes" href="img/scr-pbtabs-mod-Settings-Gamification-Badges-E90.png"><alt>Badges</alt></image>
-               </info>
-           </step>
-
         <!-- END GENERATED SECTION -->
+
 
         </steps>
 
