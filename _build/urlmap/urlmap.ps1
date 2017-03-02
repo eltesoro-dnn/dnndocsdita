@@ -57,7 +57,7 @@ function IndexHtmlRules( [string] $dirname, [int] $i )  {
 function Write85Folder( [int] $i )  {
     Write-Output( "                <rule name=""Rule-$i"" stopProcessing=""true"">" )
     Write-Output( "                   <match url=""^(.*)85$"" />" )
-    Write-Output( "                   <action type=""Redirect"" url=""{R:1}85/index.html"" />" )
+    Write-Output( "                   <action type=""Redirect"" url=""http://archive.dnnsoftware.com/docs/85/index.html"" />" )
     Write-Output( "                </rule>" )
 }
 

@@ -267,6 +267,18 @@
         <!-- <note conkeyref="k-bptext/note-VisibleToAdminsOnly"></note> -->
         <note type="note" id="note-VisibleToAdminsOnly">This module is visible to administrators only.</note>
 
+        <!-- <p conref="../../common/bptext.dita#top-bptext/p-selectfilebox"></p> -->
+        <!-- <p conkeyref="k-bptext/p-selectfilebox"></p> -->
+        <p id="p-selectfilebox">
+            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-selectfilebox.gif"><alt>Select file box</alt></image>
+            You can use one of the following methods to select the file:
+            <ul>
+                <li>Drag and drop the file to the box.</li>
+                <li>Select from the files in your site folder.</li>
+                <li>Upload a file.</li>
+                <li>Link to a file.</li>
+            </ul>
+        </p>
 
 
         <!-- ==================== Code ==================== -->

@@ -31,6 +31,17 @@ $staging = "http://doccenterqa.azurewebsites.net/docs"
 # set _urlmap=W:\_build\urlmap\urlmap.txt
 
 
+function IsValid( [string] $s )  {
+    if ( $s -eq $NULL )  {
+        return $FALSE
+    }
+    elseif ( $s -eq "" )  {
+        return $FALSE
+    }
+    return $TRUE
+}
+
+
 function WriteHeader( [string] $msg )  {
     Write-Host $msg
 
@@ -105,7 +116,9 @@ function T003()  {
     WriteHeader "Verifying that mentioned images exist."
     Write-Output "Missing image files:"
 
-    $imgfiles = Get-ChildItem -Path $ctndir\*.dita -Recurse | Select-String -Pattern "(scr[a-zA-Z0-9_-]+.png)|(scr[a-zA-Z0-9_-]+.gif)|(scr[a-zA-Z0-9_-]+.svg)" -AllMatches | foreach { $_ -match "img/(?<content>.*)""><alt>" | Out-Null; $matches['content'] }
+    # $imgfiles = Get-ChildItem -Path $ctndir\*.dita -Recurse | Select-String -Pattern "(scr[a-zA-Z0-9_-]+.png)|(scr[a-zA-Z0-9_-]+.gif)|(scr[a-zA-Z0-9_-]+.svg)" -AllMatches | foreach { $_ -match "img/(?<content>.*)"" alt" | Out-Null; $matches['content'] }
+
+    $imgfiles = Get-ChildItem -Path $outdir\*.html -Recurse | Select-String -Pattern "(scr[a-zA-Z0-9_-]+.png)|(scr[a-zA-Z0-9_-]+.gif)|(scr[a-zA-Z0-9_-]+.svg)" -AllMatches | foreach { $_ -match "img/(?<content>.*)"" alt" | Out-Null; $matches['content'] }
 
     foreach ( $img in $imgfiles )  {
         if (!( Test-Path $imgdir\$img )) {
@@ -133,7 +146,13 @@ function T005()  {
 
     # Test the old paths in $legacycsv.
     Import-csv $legacycsv | foreach  {
-        $url = $UrlPrefix + "/" + $_.old
+        if ( IsValid $_.example ) {
+            $url = $UrlPrefix + "/" + $_.example
+        }
+        else {
+            $url = $UrlPrefix + "/" + $_.old
+        }
+
         if ( $exceptnarr -contains $url )  {
             Write-Output( "OK Exempted from testing: " + $url )
         }
@@ -185,8 +204,6 @@ T004 | Out-File -Append $tstlog
 T005 | Out-File -Append $tstlog
 
 & "cmd.exe" /c npp.bat $tstlog
-
-
 
 
 # ============================================================

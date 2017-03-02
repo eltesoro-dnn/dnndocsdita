@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-add-user-profile-field">
+
+    <title>Add a User Profile Field</title>
+    <titlealts>
+        <navtitle>Add User Profile Field</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1702</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <prereq>
+			<ul>
+				<li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
+			</ul>
+		</prereq>
+
+        <steps>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-SiteSettings-E90"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SiteSettings-SiteBehavior-UserProfiles-E90"><cmd/></step>
+            <step>
+                <cmd>Click/Tap <uicontrol>+ Add Field</uicontrol>.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SiteSettings-SiteBehavior-UserProfiles-UserProfileFields-Add-E90.png"><alt>Site Settings &gt; Site Behavior &gt; User Profiles &gt; User Profile Fields &gt; Add</alt></image>
+                </info>
+            </step>
+            <step>
+                <cmd>Configure the properties of the new field.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SiteSettings-SiteBehavior-UserProfiles-UserProfileFields-NewField-E90.png"><alt>Site Settings &gt; Site Behavior &gt; User Profiles &gt; User Profile Fields &gt; New Field</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-fieldname"><stentry/></strow>
+                        <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-propertycategory"><stentry/></strow>
+                        <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-defaultvalue"><stentry/></strow>
+                        <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-required"><stentry/></strow>
+                        <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-visible"><stentry/></strow>
+                        <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-defaultvisibility"><stentry/></strow>
+                        <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-datatype"><stentry/></strow>
+                        <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-length"><stentry/></strow>
+                        <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-validationexpression"><stentry/></strow>
+                        <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-readonly"><stentry/></strow>
+                        <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-vieworder"><stentry/></strow>
+                    </simpletable>
+                </info>
+            </step>
+        </steps>
+
+    </taskbody>
+
+</task>

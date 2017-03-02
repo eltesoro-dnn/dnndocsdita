@@ -85,7 +85,7 @@ WHERE TabID = (
                             </li>
                         </ol>
                     </li>
-                    <li outputclass="step stepexpand"><xref format="dita" href="http://www.dnnsoftware.com/docs/administrators/servers/clear-cache.html">Clear the site cache.</xref></li>
+                    <li outputclass="step stepexpand"><xref format="dita" href="../servers/clear-cache.dita">Clear the server cache.</xref></li>
                     <li outputclass="step stepexpand">Restart the application pool to allow the changes to take effect.</li>  <!-- TODO: Link this to a how-to topic about restarting the application pool. -->
                 </ol>
             </section>

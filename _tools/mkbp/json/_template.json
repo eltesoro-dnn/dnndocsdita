@@ -1,0 +1,46 @@
+{
+    "global" : {
+        "avail" : "PCE"
+    },
+
+
+    "bpsection" : [
+    ],
+
+
+    "bpsteps" : [
+        {
+            "id" : "step-",
+            "cmd" : "Click/Tap <uicontrol></uicontrol>.",
+            "img" : "scr-.png"
+        },
+        {
+            "id" : "step-",
+            "cmd" : "Click/Tap <uicontrol></uicontrol>.",
+            "img" : "scr-.png"
+        }
+    ],
+
+
+    "topics" : [
+
+        {
+            "nav" : "...",
+            "title" : "...",
+            "steps" : [
+                "step-",
+                "step-"
+            ]
+        },
+
+        {
+            "nav" : "...",
+            "title" : "...",
+            "steps" : [
+                "step-",
+                "step-"
+            ]
+        },
+
+    ]
+}

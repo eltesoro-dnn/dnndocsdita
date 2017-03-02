@@ -353,7 +353,7 @@ function AssembleOutput()  {
     if ( Test-Path $outdir\toc.html          )  { Remove-Item $outdir\toc.html -Force | Out-Null }
     if ( Test-Path $outdir\common\glossary\* )  { Remove-Item $outdir\common\glossary -Recurse -Force | Out-Null }
 
-    Write-Host "Adding versioning to .css and .js calls in html files ...."
+    # Write-Host "Adding versioning to .css and .js calls in html files ...."
     AddVersioning $outdir "*.html"
 
     Write-Host "Creating the web.config ...."

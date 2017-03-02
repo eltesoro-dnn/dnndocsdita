@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-organize-user-profile-fields">
+
+    <title>Organize User Profile Fields</title>
+    <titlealts>
+        <navtitle>Organize User Profile Fields</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1702</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <prereq>
+			<ul>
+				<li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
+			</ul>
+		</prereq>
+
+        <steps>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-SiteSettings-E90"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SiteSettings-SiteBehavior-UserProfiles-E90"><cmd/></step>
+            <step>
+                <cmd>To rearrange the order of the fields as they appear in the user profile page, use the arrows for that field.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SiteSettings-SiteBehavior-UserProfiles-UserProfileFields-Reorder-E90.png"><alt>Site Settings &gt; Site Behavior &gt; User Profiles &gt; User Profile Fields &gt; Reorder</alt></image>
+                </info>
+            </step>
+            <step>
+                <cmd>To group the fields into separate tabs in the user profile page, edit the fields and assign the same <uicontrol>Property Category</uicontrol> for fields that should be together.</cmd>
+                <info>
+                    <p>The <uicontrol>Property Category</uicontrol> also becomes the label for the tab.</p>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SiteSettings-SiteBehavior-UserProfiles-UserProfileFields-EditField-PropertyCategory-E90.png"><alt>Site Settings &gt; Site Behavior &gt; User Profiles &gt; User Profile Fields &gt; Edit Field &gt; Property Category</alt></image>
+                </info>
+                <stepresult>
+                    <p>Fields with the same <uicontrol>Property Category</uicontrol> are grouped in the same tab in the user's profile page.</p>
+                    <image conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/image-userprofile-propertycategories"></image>
+                </stepresult>
+            </step>
+        </steps>
+
+    </taskbody>
+
+</task>

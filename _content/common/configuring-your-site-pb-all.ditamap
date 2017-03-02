@@ -7,8 +7,19 @@
     <!-- Topics -->
 	<topicref format="dita" type="topic" toc="yes" href="configuring-your-site/configuring-your-site.dita" copy-to="configuring-your-site/index.dita" collection-type="family">
 
-		<topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/access-web-config.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/update-site-info.dita" />
 		<topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/assign-key-pages.dita" />
+		<topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/configure-messaging.dita" />
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>User Profiles</navtitle></topicmeta>
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/configure-user-profile-visibility.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/configure-user-profile-vanity-url.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/add-user-profile-field.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/edit-user-profile-field.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/delete-user-profile-field.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/organize-user-profile-fields.dita" />
+        </topichead>
+		<topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/access-web-config.dita" />
 
         <mapref audience="adm cmg"      href="extensions/extensions.ditamap" />
         <mapref audience="adm cmg mod"  href="connectors/connectors.ditamap" />

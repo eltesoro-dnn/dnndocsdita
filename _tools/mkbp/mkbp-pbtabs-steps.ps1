@@ -80,7 +80,7 @@ function MkBlurb( [string] $prod, [string] $persona, [string] $menu1, [string] $
         Write-Output( "               <cmd id=""cmd-$bpid""><ph id=""ph-$bpid"">Go to the <uicontrol>$tab1</uicontrol> tab, and then the  <uicontrol>$tab2</uicontrol> subtab.</ph></cmd>" )
     }
     Write-Output( "               <info id=""info-$bpid"" outputclass=""init-hide"">" )
-    Write-Output( "                   <image id=""image-$bpid"" scalefit=""yes"" href=""img/$imgfn""><alt>$cascadealt</alt></image>" )
+    Write-Output( "                   <image id=""image-$bpid"" outputclass=""img-scr"" scalefit=""yes"" href=""img/$imgfn""><alt>$cascadealt</alt></image>" )
     Write-Output( "               </info>" )
     Write-Output( "           </step>" )
 }

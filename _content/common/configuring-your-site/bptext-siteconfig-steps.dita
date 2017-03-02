@@ -20,6 +20,265 @@
 
             <simpletable relcolwidth="1* 3*">
 
+
+                <!-- ========== SITE INFO ========== -->
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-sitetitle"><stentry/></strow> -->
+                <strow id="strow-field-sitetitle">
+                    <stentry><uicontrol>Site Title</uicontrol></stentry>
+                    <stentry>Used in the web browser's title bar and in the tooltip that appears when hovering over the site logo.</stentry>
+                </strow>
+
+                <!-- Description: Self-explanatory -->
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-sitetimezone"><stentry/></strow> -->
+                <strow id="strow-field-sitetimezone">
+                    <stentry><uicontrol>Site Time Zone</uicontrol></stentry>
+                    <stentry>The default time zone used where dates are displayed, such as in blogs and community forums. Anonymous users see dates in the site time zone. Authenticated users (registered and logged in) see dates in the time zone specified in their profile preferences. Dates are internally stored in UTC/GMT.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-copyright"><stentry/></strow> -->
+                <strow id="strow-field-copyright">
+                    <stentry><uicontrol>Copyright</uicontrol></stentry>
+                    <stentry>The copyright notice to display in all pages. You can use the token <codeph>[year]</codeph>, which is replaced with the current year.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-keywords"><stentry/></strow> -->
+                <strow id="strow-field-keywords">
+                    <stentry><uicontrol>Keywords</uicontrol></stentry>
+                    <stentry>Used by search engines to help index the site.</stentry>
+                </strow>
+
+                <!-- GUID: Used primarily when dealing with Support. -->
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-homedirectory"><stentry/></strow> -->
+                <strow id="strow-field-homedirectory">
+                    <stentry><uicontrol>Home Directory</uicontrol></stentry>
+                    <stentry>Not editable. The root folder where all files associated with the current site are stored.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-sitelogofavicon"><stentry/></strow> -->
+                <strow id="strow-field-sitelogofavicon">
+                    <stentry><uicontrol>Site Logo and Favicon</uicontrol></stentry>
+                    <stentry><p conkeyref="k-bptext/p-selectfilebox"></p></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-iconset"><stentry/></strow> -->
+                <strow id="strow-field-iconset">
+                    <stentry><uicontrol>Icon Set</uicontrol></stentry>
+                    <stentry>Icons used primarily for the module action menu to keep a consistent look-and-feel among modules from different sources.</stentry>
+                </strow>
+
+
+                <!-- ========== SITE BEHAVIOR - MESSAGING ========== -->
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-disableprivatemessage"><stentry/></strow> -->
+                <strow id="strow-field-disableprivatemessage">
+                    <stentry><uicontrol>Disable Private Message</uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-throttlingintervalinminutes"><stentry/></strow> -->
+                <strow id="strow-field-throttlingintervalinminutes">
+                    <stentry><uicontrol>Throttling Interval in Minutes</uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-recipientlimit"><stentry/></strow> -->
+                <strow id="strow-field-recipientlimit">
+                    <stentry><uicontrol>Recipient Limit</uicontrol></stentry>
+                    <stentry>The maximum number of recipients in a message. A role is considered one recipient.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-enableprofanityfilters"><stentry/></strow> -->
+                <strow id="strow-field-enableprofanityfilters">
+                    <stentry><uicontrol>Enable Profanity Filters</uicontrol></stentry>
+                    <stentry>If enabled, all messages would be scanned for words that are included in the ....</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-includeattachments"><stentry/></strow> -->
+                <strow id="strow-field-includeattachments">
+                    <stentry><uicontrol>Include Attachments</uicontrol></stentry>
+                    <stentry>If enabled, messages </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-allowattachments"><stentry/></strow> -->
+                <strow id="strow-field-allowattachments">
+                    <stentry><uicontrol>Allow Attachments</uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-sendemails"><stentry/></strow> -->
+                <strow id="strow-field-sendemails">
+                    <stentry><uicontrol>Send Emails</uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+
+
+                <!-- ========== SITE BEHAVIOR - USER PROFILES ========== -->
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-defaultprofilevisibilitymode"><stentry/></strow> -->
+                <!-- <ul conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/ul-visibilityoptions"><stentry/><li/></ul> -->
+                <strow id="strow-field-defaultprofilevisibilitymode">
+                    <stentry><uicontrol>Default Profile Visibility Mode</uicontrol></stentry>
+                    <stentry>
+                        <p>The default set of users who can view user profile pages. Options include:</p>
+                        <ul id="ul-visibilityoptions">
+                            <li><uicontrol>All Users</uicontrol>. Including anonymous users.</li>
+                            <li><uicontrol>Members Only</uicontrol>. Registered users only.</li>
+                            <li><uicontrol>Admin Only</uicontrol>. Administrators and hosts/superusers only.</li>
+                            <li><uicontrol>Friends and Group</uicontrol>. Friends of the user and members of groups that the user belongs to.</li>
+                        </ul>
+                        <p>Visibility for each user profile field can also be configured individually by editing the field.</p>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-displayprofilevisibility"><stentry/></strow> -->
+                <strow id="strow-field-displayprofilevisibility">
+                    <stentry><uicontrol>Display Profile Visibility</uicontrol></stentry>
+                    <stentry>
+                        <p>If enabled, users can choose who can view each field in their profile.</p>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserProfile-FieldVisibilityControls.png"><alt>Field visibility controls for each field in the user's profile page.</alt></image>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-vanityurlprefix"><stentry/></strow> -->
+                <strow id="strow-field-vanityurlprefix">
+                    <stentry><uicontrol>Vanity URL Prefix</uicontrol></stentry>
+                    <stentry>
+                        <p>The prefix for the user's vanity URL that leads to their profile page.</p>
+                        <!--
+                        <p>The user profile vanity URL is comprised of:
+                            <ul>
+                                <li>the base URL of the site</li>
+                                <li>this prefix</li>
+                                <li>the value of <uicontrol>Profile URL</uicontrol> in the user's Account Settings</li>
+                            </ul>
+                        </p>
+                        -->
+                        <!-- Profile URL appears in the user's Account Settings page only if a setting is turned on for the entire site to allow it. What is that setting? -->
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-redirectoldprofileurls"><stentry/></strow> -->
+                <strow id="strow-field-redirectoldprofileurls">
+                    <stentry><uicontrol>Redirect Old Profile URLs</uicontrol></stentry>
+                    <stentry>If enabled, profile URLs in the old styles will be redirected to the current vanity profile URL.</stentry>
+                </strow>
+
+
+
+                <!-- ========== SITE BEHAVIOR - USER PROFILES - PROFILE FIELD PROPERTIES ========== -->
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-fieldname"><stentry/></strow> -->
+                <strow id="strow-field-fieldname">
+                    <stentry><uicontrol>Field Name</uicontrol></stentry>
+                    <stentry>The internal name for this field. This field name cannot be modified after the new field is saved. You can enter different field labels for different countries/cultures in the next page.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-propertycategory"><stentry/></strow> -->
+                <!-- <image conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/image-userprofile-propertycategories"></image> -->
+                <strow id="strow-field-propertycategory">
+                    <stentry><uicontrol>Property Category</uicontrol></stentry>
+                    <stentry>
+                        <p>Fields with the same property category are grouped together when displayed in the user profile page.</p>
+                        <note type="note">Also used as the category's tab label un the user profile page.</note>
+                        <p>The default fields are grouped in the following categories:</p>
+                        <ul>
+                            <li><uicontrol>Name</uicontrol></li>
+                            <li><uicontrol>Address</uicontrol></li>
+                            <li><uicontrol>Contact Info</uicontrol></li>
+                            <li><uicontrol>Preferences</uicontrol></li>
+                        </ul>
+                        <image id="image-userprofile-propertycategories" outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-UserProfile-PropertyCategories.png"><alt>Property Categories in the user profile page</alt></image>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-defaultvalue"><stentry/></strow> -->
+                <strow id="strow-field-defaultvalue">
+                    <stentry><uicontrol>Default Value</uicontrol></stentry>
+                    <stentry>(Optional) The value used if the user does not enter a value.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-required"><stentry/></strow> -->
+                <strow id="strow-field-required">
+                    <stentry><uicontrol>Required</uicontrol></stentry>
+                    <stentry>If enabled, the user must provide a value for this field.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-visible"><stentry/></strow> -->
+                <strow id="strow-field-visible">
+                    <stentry><uicontrol>Visible</uicontrol></stentry>
+                    <stentry>If enabled, the user can edit this field in their own profile. Otherwise, only the administrators and hosts/superusers can.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-defaultvisibility"><stentry/></strow> -->
+                <strow id="strow-field-defaultvisibility">
+                    <stentry><uicontrol>Default Visibility</uicontrol></stentry>
+                    <stentry>
+                        <p>The default set of other users who can view this field on a user's profile. Options include:</p>
+                        <ul conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/ul-visibilityoptions"><li/></ul>
+                        <p>If <uicontrol>Display Profile Visibility</uicontrol> is enabled, the user can change this setting for each field in their own profile.</p>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-datatype"><stentry/></strow> -->
+                <strow id="strow-field-datatype">
+                    <stentry><uicontrol>Data Type</uicontrol></stentry>
+                    <stentry>
+                        <p>Options include:</p>
+                        <ul>
+                            <li><uicontrol>AutoComplete</uicontrol></li>
+                            <li><uicontrol>Checkbox</uicontrol></li>
+                            <li><uicontrol>Country</uicontrol></li>
+                            <li><uicontrol>List</uicontrol></li>  <!-- Nowhere to define the list. Reported to CP 20170228. -->
+                            <li><uicontrol>Locale</uicontrol></li>
+                            <li><uicontrol>Page</uicontrol></li>
+                            <li><uicontrol>Region</uicontrol></li>
+                            <li><uicontrol>RichText</uicontrol></li>
+                            <li><uicontrol>TimeZone</uicontrol></li>
+                            <li><uicontrol>Integer</uicontrol></li>
+                            <li><uicontrol>Multi-line Text</uicontrol></li>
+                            <li><uicontrol>Text</uicontrol></li>
+                            <li><uicontrol>TrueFalse</uicontrol></li>
+                            <li><uicontrol>Image</uicontrol></li>
+                            <li><uicontrol>TimeZoneInfo</uicontrol></li>
+                            <li><uicontrol>Date</uicontrol></li>
+                            <li><uicontrol>DateTime</uicontrol></li>
+                            <li><uicontrol>Unknown</uicontrol></li>
+                        </ul>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-length"><stentry/></strow> -->
+                <strow id="strow-field-length">
+                    <stentry><uicontrol>Length</uicontrol></stentry>
+                    <stentry>The maximum number of single-byte characters allowed in the field. This restriction applies to certain data types, such as <uicontrol>Text</uicontrol>.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-validationexpression"><stentry/></strow> -->
+                <strow id="strow-field-validationexpression">
+                    <stentry><uicontrol>Validation Expression</uicontrol></stentry>
+                    <stentry>A regular expression used to validate the value entered in this field. Example: To accept only email addresses from the example.com domain, use <codeph>[a-zA-Z0-9._%+-]+@example.com</codeph> .</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-readonly"><stentry/></strow> -->
+                <strow id="strow-field-readonly">
+                    <stentry><uicontrol>Read Only</uicontrol></stentry>
+                    <stentry>If enabled, the field can be edited only by administrators and hosts/superusers.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-vieworder"><stentry/></strow> -->
+                <strow id="strow-field-vieworder">
+                    <stentry><uicontrol>View Order</uicontrol></stentry>
+                    <stentry>The position of the field, relative to the list of fields displayed in the user profile page. Automatically assigned and adjusted every time a new field is added or a field in the list is moved.</stentry>
+                </strow>
+
+
+
+
+
+
                 <!-- ========== PAGE MANAGEMENT ========== -->
 
                 <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-SplashPage"><stentry/></strow> -->

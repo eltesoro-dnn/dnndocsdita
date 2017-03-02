@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-configure-user-profile-visibility">
+
+    <title>Configure the Visibility of User Profiles</title>
+    <titlealts>
+        <navtitle>Configure User Profile Visibility</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1702</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section id="overview">
+            <p>The visibility of the user profile can be managed at the profile level and at the field level.</p>
+
+            <simpletable relcolwidth="1* 3* 3*">
+                <sthead>
+                    <stentry>Role</stentry>
+                    <stentry>At the profile level</stentry>
+                    <stentry>At the field level</stentry>
+                </sthead>
+                <strow>
+                    <stentry>
+<lines>Administrators
+Hosts/Superusers</lines>
+                    </stentry>
+                    <stentry>Set the <uicontrol>Default Profile Visibility Mode</uicontrol>.</stentry>
+                    <stentry>
+                        <ul>
+                            <li>Set the <uicontrol>Default Visibility</uicontrol> property for each field.</li>
+                            <li>Set the <uicontrol>Display Profile Visibility</uicontrol> to allow users to configure the visibility for each field.</li>
+                        </ul>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>Users</stentry>
+                    <stentry>(Not configurable by users.)</stentry>
+                    <stentry>
+                        <ol>
+                            <li>Click/Tap the user display name and select <uicontrol>Edit Profile</uicontrol>.</li>
+                            <li>Go to the <uicontrol>Manage Profile</uicontrol> tab.</li>
+                            <li>Click/Tap the eye icon next to each field to set the visibility for that field.</li>
+                        </ol>
+                    </stentry>
+                </strow>
+            </simpletable>
+        </section>
+
+        <prereq>
+			<ul>
+				<li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
+			</ul>
+		</prereq>
+
+        <steps>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-SiteSettings-E90"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SiteSettings-SiteBehavior-UserProfiles-E90"><cmd/></step>
+            <step>
+                <cmd>Configure the visibility of user profiles.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SiteSettings-SiteBehavior-UserProfiles-UserProfileSettings-Visibility-E90.png"><alt>Site Settings &gt; Site Behavior &gt; User Profiles &#8212; visibility settings</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-defaultprofilevisibilitymode"><stentry/></strow>
+                        <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-displayprofilevisibility"><stentry/></strow>
+                    </simpletable>
+                </info>
+            </step>
+        </steps>
+
+    </taskbody>
+
+</task>

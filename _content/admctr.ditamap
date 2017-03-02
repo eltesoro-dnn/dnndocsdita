@@ -55,8 +55,8 @@
         viewing your site analytics
         -->
 
-        <!-- Maintaining Your Site -->
-        <!-- <topicref format="dita" type="task"  toc="yes" href="administrators/clear-cache.dita" /> -->
+        <!-- Maintaining Your Servers -->
+        <topicref format="dita" type="task"  toc="yes" href="administrators/servers/clear-cache.dita" />
 
         <!-- Troubleshooting -->
         <mapref href="administrators/troubleshooting/troubleshooting.ditamap" />
