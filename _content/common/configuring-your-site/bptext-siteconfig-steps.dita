@@ -16,6 +16,21 @@
 
         <section>
 
+            <!-- NORMAL PARAGRAPHS -->
+
+
+            <!-- ========== SITE BEHAVIOR - SITE ALIASES ========== -->
+
+            <!-- <note conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/note-currentsitealiasrestrictions"></note> -->
+            <note type="note" id="note-currentsitealiasrestrictions">The current site alias cannot be edited, deleted, or set as primary. Log into the site using a different site alias to edit or delete the currently used alias.</note>
+
+
+        </section>
+
+
+
+        <section>
+
             <!-- FIELD NAMES IN SIMPLETABLE -->
 
             <simpletable relcolwidth="1* 3*">
@@ -75,43 +90,48 @@
                 <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-disableprivatemessage"><stentry/></strow> -->
                 <strow id="strow-field-disableprivatemessage">
                     <stentry><uicontrol>Disable Private Message</uicontrol></stentry>
-                    <stentry></stentry>
+                    <stentry>If enabled, users will be unable to send messages directly to other users or to groups.</stentry>
                 </strow>
 
                 <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-throttlingintervalinminutes"><stentry/></strow> -->
                 <strow id="strow-field-throttlingintervalinminutes">
                     <stentry><uicontrol>Throttling Interval in Minutes</uicontrol></stentry>
-                    <stentry></stentry>
+                    <stentry>The minimum number of minutes to wait before allowing the same user to send another message. If 0, users can send another message immediately after the first one.</stentry>
                 </strow>
 
                 <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-recipientlimit"><stentry/></strow> -->
                 <strow id="strow-field-recipientlimit">
                     <stentry><uicontrol>Recipient Limit</uicontrol></stentry>
-                    <stentry>The maximum number of recipients in a message. A role is considered one recipient.</stentry>
-                </strow>
-
-                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-enableprofanityfilters"><stentry/></strow> -->
-                <strow id="strow-field-enableprofanityfilters">
-                    <stentry><uicontrol>Enable Profanity Filters</uicontrol></stentry>
-                    <stentry>If enabled, all messages would be scanned for words that are included in the ....</stentry>
-                </strow>
-
-                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-includeattachments"><stentry/></strow> -->
-                <strow id="strow-field-includeattachments">
-                    <stentry><uicontrol>Include Attachments</uicontrol></stentry>
-                    <stentry>If enabled, messages </stentry>
+                    <stentry>The maximum number of recipients allowed in a message. A role is considered one recipient.</stentry>
                 </strow>
 
                 <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-allowattachments"><stentry/></strow> -->
                 <strow id="strow-field-allowattachments">
                     <stentry><uicontrol>Allow Attachments</uicontrol></stentry>
-                    <stentry></stentry>
+                    <stentry>If enabled, users are allowed to attach files to their messages to other users or to groups.</stentry>
                 </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-enableprofanityfilters"><stentry/></strow> -->
+                <!-- JIRA DNN-9504 - Missing the UI to manage the profanity lists. Only alternative is to manually update the SQL tables.
+                <strow id="strow-field-enableprofanityfilters">
+                    <stentry><uicontrol>Enable Profanity Filters</uicontrol></stentry>
+                    <stentry>
+                        If enabled, all messages would be scanned for words that are included in the profanity list.
+                        See also Settings > Community > Profanity Filtering.
+                    </stentry>
+                </strow>
+                -->
 
                 <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-sendemails"><stentry/></strow> -->
                 <strow id="strow-field-sendemails">
                     <stentry><uicontrol>Send Emails</uicontrol></stentry>
-                    <stentry></stentry>
+                    <stentry>If enabled, the system sends an email to the user for each message and notification.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/strow-field-includeattachments"><stentry/></strow> -->
+                <strow id="strow-field-includeattachments">
+                    <stentry><uicontrol>Include Attachments</uicontrol></stentry>
+                    <stentry>If enabled, system emails can include file attachments.</stentry>
                 </strow>
 
 
@@ -275,6 +295,9 @@
                 </strow>
 
 
+                <!-- ========== SITE BEHAVIOR - SITE ALIASES ========== -->
+
+
 
 
 
@@ -394,8 +417,79 @@
 
         <steps>
 
-            <!-- ========== ... ========== -->
-            <step><cmd/></step>
+            <!-- ========== SITE BEHAVIOR - SITE ALIASES ========== -->
+
+            <!-- <step conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/step-AddSiteAliasButton"><cmd/></step> -->
+            <step id="step-AddSiteAliasButton">
+                <cmd>Click/Tap <uicontrol>+ Add Alias</uicontrol>.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SiteSettings-SiteBehavior-SiteAliases-AddAlias-button-E90.png"><alt>Site Settings &gt; Site Behavior &gt; Site Aliases &#8212; Add Alias</alt></image>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/step-EditSiteAliasIcon"><cmd/></step> -->
+            <step id="step-EditSiteAliasIcon">
+                <cmd>Click/Tap the pencil icon for the site alias.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SiteSettings-SiteBehavior-SiteAliases-Edit-E90.png"><alt>Site Settings &gt; Site Behavior &gt; Site Aliases &#8212; Edit</alt></image>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/step-DeleteSiteAliasIcon"><cmd/></step> -->
+            <step id="step-DeleteSiteAliasIcon">
+                <cmd>Click/Tap the trash icon for the site alias. Confirm.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SiteSettings-SiteBehavior-SiteAliases-Delete-E90.png"><alt>Site Settings &gt; Site Behavior &gt; Site Aliases &#8212; Delete</alt></image>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/step-AddSiteAliasProperties"><cmd/></step> -->
+            <!-- <cmd conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/cmd-ConfigAliasProperties"></cmd> -->
+            <!-- <image conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/image-SiteAliases-AddProperties"><alt/></image> -->
+            <!-- <simpletable conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/simpletable-SiteAliasProperties"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable> -->
+            <step id="step-AddSiteAliasProperties">
+                <cmd id="cmd-ConfigAliasProperties">Configure the properties of the site alias.</cmd>
+                <info>
+                    <image id="image-SiteAliases-AddProperties" outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SiteSettings-SiteBehavior-SiteAliases-AddProperties-E90.png"><alt>Site Settings &gt; Site Behavior &gt; Site Aliases &#8212; Add Alias</alt></image>
+                    <simpletable id="simpletable-SiteAliasProperties" relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry><uicontrol>Site Alias</uicontrol></stentry>
+                            <stentry>The alternative URL (without the protocol) which can be used to access the same site.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Browser</uicontrol></stentry>
+                            <stentry>
+                                <ul>
+                                    <li><uicontrol>Normal</uicontrol>. If the site alias is intended for normal web browsers.</li>
+                                    <li><uicontrol>Mobile</uicontrol>. If the site alias is intended for mobile devices.</li>
+                                </ul>
+                            </stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Theme</uicontrol></stentry>
+                            <stentry>The site theme to use if the site is accessed with this alias.</stentry>
+                        </strow>
+                    </simpletable>
+
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/step-EditSiteAliasProperties"><cmd/></step> -->
+            <!-- <image conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/image-SiteAliases-EditProperties"><alt/></image> -->
+            <step id="step-EditSiteAliasProperties">
+                <cmd conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/cmd-ConfigAliasProperties"></cmd>
+                <info>
+                    <image id="image-SiteAliases-EditProperties" outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SiteSettings-SiteBehavior-SiteAliases-EditProperties-E90.png"><alt>Site Settings &gt; Site Behavior &gt; Site Aliases &#8212; Edit Alias</alt></image>
+                    <simpletable conref="bptext-siteconfig-steps.dita#tsk-bptext-siteconfig-steps/simpletable-SiteAliasProperties"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable>
+                </info>
+            </step>
+
+
 
         </steps>
 

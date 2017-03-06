@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-configure-url-mapping-site-aliases">
+
+    <title>Configure URL Mapping for Site Aliases</title>
+    <titlealts>
+        <navtitle>Configure URL Mapping for Site Aliases</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1703</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
+            </ul>
+        </prereq>
+
+        <steps>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-SiteSettings-E90"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SiteSettings-SiteBehavior-SiteAliases-E90"><cmd/></step>
+            <step>
+                <cmd>Select the <uicontrol>Site Alias Mapping Mode</uicontrol>.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SiteSettings-SiteBehavior-SiteAliases-MappingMode-E90.png"><alt>Site Settings &gt; Site Behavior &gt; Site Aliases &#8212; Site Alias Mapping Mode</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Option</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry><uicontrol>Canonical</uicontrol></stentry>
+                            <stentry>Recommended for SEO. Most useful when a page's content is dynamic or if the page contains a list that is split into multiple pages.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Redirect</uicontrol></stentry>
+                            <stentry>Calls to non-primary site aliases are redirected to the primary site alias. The user sees the primary site alias in the browser's address field.</stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>None</uicontrol></stentry>
+                            <stentry>Site aliases are not mapped to any other site alias.
+                                <note type="warning">This option can negatively affect your SEO score.</note>
+                            </stentry>
+                        </strow>
+                    </simpletable>
+                </info>
+            </step>
+            <step>
+                <cmd>(Optional) If available, enable <uicontrol>Auto Add Site Alias</uicontrol>.</cmd>
+                <info>
+                    <p>This option is available if you have only one site in the DNN installation. If enabled, DNN automatically extracts the site alias from the original page request and adds it to the list of aliases.</p>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SiteSettings-SiteBehavior-SiteAliases-AutoAdd-E90.png"><alt>Site Settings &gt; Site Behavior &gt; Site Aliases &#8212; Auto Add Site Alias</alt></image>
+                    <note type="warning">Enabling this setting can be a security risk.</note>
+                </info>
+            </step>
+        </steps>
+
+    </taskbody>
+
+</task>
