@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-page-file-versioning">
+
+    <title>Page/File Versioning</title>
+    <titlealts>
+        <navtitle>Page/File Versioning</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1703</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+        <section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section id="overview">
+            <p>With versioning, you can store multiple versions of a page or an asset/file in the history and later restore an older version. Only the most recent versions are stored, and no more than the maximum number you specify.</p>
+
+            <p>The host/superuser must first enable page versioning and/or file versioning for each site. Page versioning does not require additional steps; however, file versioning must also be enabled for each asset folder.</p>
+
+            <table frame="all" colsep="1" rowsep="1" >
+                <tgroup cols="3" align="center">
+                    <colspec colnum="1" colname="cnum"    colwidth="10%" />
+                    <colspec colnum="2" colname="cassets" colwidth="45%" />
+                    <colspec colnum="3" colname="cpages"  colwidth="45%" />
+                    <thead>
+                        <row>
+                            <entry/>
+                            <entry>Asset/File Versioning</entry>
+                            <entry>Page Versioning</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>1</entry>
+                            <entry namest="cassets" nameend="cpages"><term>Host/Superuser</term>: <xref format="dita" href="configure-page-file-versioning-for-site.dita">Enable versioning for the site.</xref></entry>
+                        </row>
+                        <row>
+                            <entry>2</entry>
+                            <entry><xref format="dita" href="../assets/configure-folder-file-versioning.dita">Enable one or more folders for asset/file versioning.</xref></entry>
+                            <entry></entry>
+                        </row>
+                        <row>
+                            <entry morerows="3">3</entry>
+                            <entry><xref format="dita" href="../assets/view-file-versions.dita">View a version of an asset/file.</xref></entry>
+                            <entry><xref format="dita" href="../pages-templates/view-page-versions.dita">View a version of a page.</xref></entry>
+                        </row>
+                        <row>
+                            <!-- <entry/> -->
+                            <entry/>
+                            <entry><xref format="dita" href="../pages-templates/compare-page-versions.dita">Compare two versions of a page.</xref></entry>
+                        </row>
+                        <row>
+                            <!-- <entry/> -->
+                            <entry><xref format="dita" href="../assets/restore-file-version.dita">Restore a version of an asset/file.</xref></entry>
+                            <entry><xref format="dita" href="../pages-templates/restore-page-version.dita">Restore a version of a page.</xref></entry>
+                        </row>
+                        <row>
+                            <!-- <entry/> -->
+                            <entry><xref format="dita" href="../assets/delete-file-version.dita">Delete a version of an asset/file.</xref></entry>
+                            <entry><xref format="dita" href="../pages-templates/delete-page-version.dita">Delete a version of a page.</xref></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+
+        </section>
+
+    </body>
+
+</topic>
+
+
+
+
+
+
+
+

@@ -6,12 +6,19 @@
 
 function Write-Prefix()  {
     # Prefix for web.config
-	Write-Output( "<?xml version=""1.0"" encoding=""UTF-8""?>" )
-	Write-Output( "<configuration>" )
-	Write-Output( "    <system.webServer>" )
-	Write-Output( "        <rewrite>" )
-	Write-Output( "            <rules>" )
-	Write-Output( "                <clear />" )
+    Write-Output( "<?xml version=""1.0"" encoding=""UTF-8""?>" )
+    Write-Output( "<configuration>" )
+    Write-Output( "    <system.webServer>" )
+    Write-Output( "        <rewrite>" )
+    Write-Output( "            <rules>" )
+    Write-Output( "                <clear />" )
+    Write-Output( "                <rule name=""www"" enabled=""true"" patternSyntax=""Wildcard"" stopProcessing=""true"">" )
+    Write-Output( "                    <match url=""*"" />" )
+    Write-Output( "                    <conditions logicalGrouping=""MatchAll"" trackAllCaptures=""false"">" )
+    Write-Output( "                        <add input=""{HTTP_HOST}"" pattern=""dnnsoftware.com/docs"" />" )
+    Write-Output( "                    </conditions>" )
+    Write-Output( "                    <action type=""Redirect"" url=""http://www.dnnsoftware.com/docs/{R:1}"" />" )
+    Write-Output( "                </rule>" )
 }
 
 
@@ -64,21 +71,21 @@ function Write85Folder( [int] $i )  {
 
 function WriteSuffix( [int] $i )  {
     # Suffix for web.config
-	Write-Output( "                <rule name=""LowerCaseRule1"" stopProcessing=""true"">" )
-	Write-Output( "                    <match url=""[A-Z]"" ignoreCase=""false"" />" )
-	Write-Output( "                    <action type=""Redirect"" url=""{ToLower:{URL}}"" />" )
-	Write-Output( "                </rule>" )
-	Write-Output( "            </rules>" )
-	Write-Output( "        </rewrite>" )
+    Write-Output( "                <rule name=""LowerCaseRule1"" stopProcessing=""true"">" )
+    Write-Output( "                    <match url=""[A-Z]"" ignoreCase=""false"" />" )
+    Write-Output( "                    <action type=""Redirect"" url=""{ToLower:{URL}}"" />" )
+    Write-Output( "                </rule>" )
+    Write-Output( "            </rules>" )
+    Write-Output( "        </rewrite>" )
 
     <# Removed this after the move to Azure servers.
-	Write-Output( "        <handlers>" )
-	Write-Output( "            <add name=""SSI-html"" path=""*.html"" verb=""*"" modules=""ServerSideIncludeModule"" resourceType=""Unspecified"" />" )
-	Write-Output( "        </handlers>" )
+    Write-Output( "        <handlers>" )
+    Write-Output( "            <add name=""SSI-html"" path=""*.html"" verb=""*"" modules=""ServerSideIncludeModule"" resourceType=""Unspecified"" />" )
+    Write-Output( "        </handlers>" )
     #>
 
-	Write-Output( "    </system.webServer>" )
-	Write-Output( "</configuration>" )
+    Write-Output( "    </system.webServer>" )
+    Write-Output( "</configuration>" )
 }
 
 
@@ -96,7 +103,7 @@ function RefreshFile( $fn )  {
 
 if ( $args.Count -gt 2 )  {
     $legacycsv = $args[0]
-	$bldoutdir = $args[1]
+    $bldoutdir = $args[1]
     $outfile   = $args[2]
 
     RefreshFile $outfile
@@ -106,17 +113,17 @@ if ( $args.Count -gt 2 )  {
     $i = 1
 
     # Process the old paths from DCv1.0.
-	Import-Csv $legacycsv | foreach  {
+    Import-Csv $legacycsv | foreach  {
         Process-Line $_.old $_.new $i | Out-File  -FilePath $outfile  -Encoding "Default"  -Append
         $i++
-	}
+    }
 
     # Get the subdirectories in $bldoutdir and create rules that add /index.html to the path.
-	foreach ( $fn in ( Get-ChildItem -Path $bldoutdir -Recurse | Where-Object { $_.PSIsContainer -eq $True } ) )
-	{
+    foreach ( $fn in ( Get-ChildItem -Path $bldoutdir -Recurse | Where-Object { $_.PSIsContainer -eq $True } ) )
+    {
         IndexHtmlRules $fn.FullName $i | Out-File  -FilePath $outfile  -Encoding "Default"  -Append
         $i++
-	}
+    }
 
     Write85Folder $i | Out-File  -FilePath $outfile  -Encoding "Default"  -Append
     $i++

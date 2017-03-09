@@ -44,27 +44,13 @@
                     <li>Evoq Engage adds user engagement features over Evoq Content.</li>
                 </ul>
             </p>
-
             <p>You can <xref format="html" scope="external" href="http://www.dnnsoftware.com/products/compare-dnn-platform-to-evoq">compare the features</xref> in detail.</p>
-
-            <draft-comment>
-                <!--
-                Cover older versions in the next iteration of the docs website.
-                <li><b>Determine what DNN version to install.</b> Decide on the oldest DNN version that you are willing to support.
-                    <ul>
-                        <li>What is the oldest DNN version that you or your clients have in production?</li>
-                        <li>If there is a specific feature that you want to use, which DNN version introduced that feature?</li>
-                    </ul>
-                    <p><b>Note:</b> DNN 8.0 is mostly backward-compatible, except where noted in DNN 8 compatibility page. If you compile your module on an older DNN version, it will likely be compatible with newer versions; however, you should test your module on newer versions to ensure compatibility.
-                </li>
-                -->
-            </draft-comment>
         </section>
 
         <section id="DNNRequirements">
             <title>Requirements</title>
             <ul>
-                <li><xref format="dita" scope="peer" href="../requirements.dita">DNN 8.0 Requirements</xref></li>
+                <li><xref format="dita" scope="peer" href="../requirements.dita">DNN Requirements</xref></li>
                 <li><b>Developers:</b> Visual Studio 2015 is the recommended IDE for developing DNN modules. It is required if you are contributing to the DNN Platform.</li>
             </ul>
         </section>

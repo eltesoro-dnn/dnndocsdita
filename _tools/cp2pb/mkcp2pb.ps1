@@ -207,10 +207,10 @@ if ( $args.Count -gt 2 )  {
     $tgt = $args[1]
     $orig = $args[2]
 
-    CopyTopLines $orig "===========" | Out-File $tgt
+    CopyTopLines $orig "===========" | Out-File  -FilePath $tgt  -Encoding "Default"
 
     $cmd = $MyInvocation.MyCommand.Name
-    WriteHeader $cmd $args | Out-File -Append $tgt
+    WriteHeader $cmd $args | Out-File  -FilePath $tgt  -Encoding "Default"  -Append
 
     # input csv - Select only the valid menu lines.
     $menulines = Import-Csv $src | Where { $_.pb1 }
@@ -224,30 +224,30 @@ if ( $args.Count -gt 2 )  {
         $ln1 = $cpdivlines[0]
 
         # Start the section.
-        StartSection $ln1.cp1 $ln1.cp2 | Out-File -Append $tgt
+        StartSection $ln1.cp1 $ln1.cp2 | Out-File  -FilePath $tgt  -Encoding "Default"  -Append
 
         # Write the image.
-        WriteImg $ln1.cp1 $ln1.cp2 $ln1.cpimage | Out-File -Append $tgt
+        WriteImg $ln1.cp1 $ln1.cp2 $ln1.cpimage | Out-File  -FilePath $tgt  -Encoding "Default"  -Append
 
         # Start the table.
-        StartTable | Out-File -Append $tgt
+        StartTable | Out-File  -FilePath $tgt  -Encoding "Default"  -Append
 
         # Process each line. (1 line = 1 row)
         foreach ( $ln in $cpdivlines ) {
-            Write-Output( "                <strow>" ) | Out-File -Append $tgt
-            WriteStentry @( $ln.cp1, $ln.cp3 ) $ln.cptab1 $ln.cptab2 $ln.cpfield | Out-File -Append $tgt
-            WriteStentry @( $ln.pb1, $ln.pb2 ) $ln.pbtab1 $ln.pbtab2 $ln.pbfield $ln.howto $ln.addinfo | Out-File -Append $tgt
-            Write-Output( "                </strow>" ) | Out-File -Append $tgt
+            Write-Output( "                <strow>" ) | Out-File  -FilePath $tgt  -Encoding "Default"  -Append
+            WriteStentry @( $ln.cp1, $ln.cp3 ) $ln.cptab1 $ln.cptab2 $ln.cpfield | Out-File  -FilePath $tgt  -Encoding "Default"  -Append
+            WriteStentry @( $ln.pb1, $ln.pb2 ) $ln.pbtab1 $ln.pbtab2 $ln.pbfield $ln.howto $ln.addinfo | Out-File  -FilePath $tgt  -Encoding "Default"  -Append
+            Write-Output( "                </strow>" ) | Out-File  -FilePath $tgt  -Encoding "Default"  -Append
         }
 
         # End the table.
-        EndTable | Out-File -Append $tgt
+        EndTable | Out-File  -FilePath $tgt  -Encoding "Default"  -Append
 
         # End the section.
-        EndSection $ln1.cp2 | Out-File -Append $tgt
+        EndSection $ln1.cp2 | Out-File  -FilePath $tgt  -Encoding "Default"  -Append
     }
 
-    WriteTail | Out-File -Append $tgt
+    WriteTail | Out-File  -FilePath $tgt  -Encoding "Default"  -Append
 
-    CloseFile $orig "END GENERATED SECTION" | Out-File -Append $tgt
+    CloseFile $orig "END GENERATED SECTION" | Out-File  -FilePath $tgt  -Encoding "Default"  -Append
 }

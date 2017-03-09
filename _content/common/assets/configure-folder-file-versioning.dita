@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-configure-folder-file-versioning.dita">
+
+    <title>Configure Folder/File Versioning</title>
+    <titlealts>
+        <navtitle>Configure Folder/File Versioning</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1703</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <audience type="other" othertype="community manager" job="other" otherjob="moderating" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section>
+            <note type="note">Versioning is enabled at the folder level; i.e., versioning affects all files inside the folder. However, you can manage the file versions individually.</note>
+            <!-- ??? What happens to the history if you move the folder from a revisioned folder to a non-revisioned folder? Is the history lost? -->
+        </section>
+
+        <prereq>
+			<ul>
+				<li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li>
+			</ul>
+		</prereq>
+
+        <steps>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Content-Assets-E90"><cmd/></step>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-Assets-E90"><cmd/></step>
+            <step audience="mod" conkeyref="k-bppbar/step-pb-mod-Content-Assets-E90"><cmd/></step>
+            <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-foldercard-hover-edit"><cmd/></step>
+            <step>
+				<cmd>Under <uicontrol>Details</uicontrol>, set <uicontrol>Versioning</uicontrol> to <uicontrol>On</uicontrol>.</cmd>
+				<info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-asset-edit-enableversioning-E90.png"><alt>Content &gt; Assets &#8212; Edit &gt; Detail &gt; Versioning</alt></image>
+				</info>
+            </step>
+        </steps>
+
+    </taskbody>
+
+</task>

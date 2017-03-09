@@ -238,9 +238,6 @@
 
 
 
-
-
-
         <!-- ==================== Misc ==================== -->
 
         <p>
@@ -256,6 +253,16 @@
             <!-- <ph conkeyref="k-bptext/ph-pbar-varies"></ph> -->
             <ph id="ph-pbar-varies">The Persona Bar varies according to the product and to the permissions granted to the current authenticated (logged-in) user through roles. Examples: A host or superuser has access to almost all menu items, whereas a community manager would have access to only the features required to manage the community-related aspects of the site. Likewise, Evoq Content does not have the community-related menu items that Evoq Engage has.</ph>
         </p>
+
+
+        <!-- <note conref="../../common/bptext.dita#top-bptext/note-GlobalSetting"></note> -->
+        <!-- <note conkeyref="k-bptext/note-GlobalSetting"></note> -->
+        <note type="warning" id="note-GlobalSetting">This setting affects all sites in your installation.</note>
+
+
+        <!-- <note conref="../../common/bptext.dita#top-bptext/note-RestoredVersion"></note> -->
+        <!-- <note conkeyref="k-bptext/note-RestoredVersion"></note> -->
+        <note type="note" id="note-RestoredVersion">The restored version is copied to the top of the list as the most recent version.</note>
 
 
         <!-- <note conref="../../common/bptext.dita#top-bptext/note-CloudSupport"></note> -->

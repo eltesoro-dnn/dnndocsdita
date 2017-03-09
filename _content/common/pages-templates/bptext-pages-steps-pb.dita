@@ -72,7 +72,7 @@
             <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-pencilicon"><cmd/></step> -->
             <!-- <step conkeyref="k-bppagespb/step-pb-pencilicon"><cmd/></step> -->
             <step id="step-pb-pencilicon">
-                <cmd>In the <wintitle>Page Management</wintitle> page, hover over the page to edit, then click/tap the pencil icon.</cmd>
+                <cmd>In the <wintitle>Pages</wintitle> page, hover over the page to edit, then click/tap the pencil icon.</cmd>
                 <info>
                     <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageManagement-Edit.png"><alt>Page Management &gt; Edit</alt></image>
                 </info>
@@ -104,7 +104,6 @@
                     <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageManagement-Delete.png"><alt>Page Management &gt; Delete</alt></image>
                 </info>
             </step>
-
 
 
             <!--
@@ -156,6 +155,38 @@
                         <!-- <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-DragAsChild.png"><alt>Add Page &gt; Drag as child.</alt></image></info> -->
                     </substep>
                 </substeps>
+            </step>
+
+
+
+            <!-- PAGE VERSION MENU -->
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pages-pageversion-preview"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pages-pageversion-preview"><cmd/></step> -->
+            <step id="step-pages-pageversion-preview">
+				<cmd>In the list, hover over the page version you want, then click/tap the eye (<uicontrol>Show</uicontrol>) icon in the <uicontrol>Actions</uicontrol> column.</cmd>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Pages-pageversioning-preview-E90.png"><alt>Page History &gt; Actions &#8212; Show</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pages-pageversion-compare"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pages-pageversion-compare"><cmd/></step> -->
+            <step id="step-pages-pageversion-compare">
+				<cmd>In the list, check the <uicontrol>Compare</uicontrol> boxes for the two page versions to compare, then click/tap the <uicontrol>Compare</uicontrol> button.</cmd>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Pages-pageversioning-compare-E90.png"><alt>Page History &#8212; Compare</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pages-pageversion-restore"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pages-pageversion-restore"><cmd/></step> -->
+            <step id="step-pages-pageversion-restore">
+				<cmd>In the list, hover over the page version you want, then click/tap the circular arrow (<uicontrol>Restore</uicontrol>) icon in the <uicontrol>Actions</uicontrol> column.</cmd>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Pages-pageversioning-rollback-E90.png"><alt>Page History &gt; Actions &#8212; Restore</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pages-pageversion-delete"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pages-pageversion-delete"><cmd/></step> -->
+            <step id="step-pages-pageversion-delete">
+				<cmd>In the list, hover over the page version you want, then click/tap the X (<uicontrol>Delete</uicontrol>) icon in the <uicontrol>Actions</uicontrol> column.</cmd>
+				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Pages-pageversioning-delete-E90.png"><alt>Page History &gt; Actions &#8212; Delete</alt></image></info>
             </step>
 
 

@@ -28,6 +28,9 @@
         <!-- Securing Your Site -->
         <mapref href="community-managers/security.ditamap" />
 
+        <!-- Building Your Site -->
+        <mapref href="community-managers/building-your-site-pb.ditamap" />
+
         <!-- Managing Your Community -->
         <mapref href="community-managers/managing-your-community/managing-your-community.ditamap" />
 
@@ -76,6 +79,23 @@
             <relcell>
                 <topicref format="dita" type="reference" href="community-managers/included-modules/included-modules.dita" />
             </relcell>
+        </relrow>
+
+        <!-- adm cmg mod -->
+        <relrow>
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="task"  href="content-managers/pages-templates/view-page-versions.dita" />
+                <topicref format="dita" type="task"  href="content-managers/pages-templates/compare-page-versions.dita" />
+                <topicref format="dita" type="task"  href="content-managers/pages-templates/restore-page-version.dita" />
+                <topicref format="dita" type="task"  href="content-managers/pages-templates/delete-page-version.dita" />
+
+                <topicref format="dita" type="task"  href="content-managers/assets/configure-folder-file-versioning.dita" />
+                <topicref format="dita" type="task"  href="content-managers/assets/view-file-versions.dita" />
+                <topicref format="dita" type="task"  href="content-managers/assets/restore-file-version.dita" />
+                <topicref format="dita" type="task"  href="content-managers/assets/delete-file-version.dita" />
+            </relcell>
+            <relcell/>
         </relrow>
 
     </reltable>

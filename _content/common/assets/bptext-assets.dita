@@ -117,7 +117,6 @@
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-assetcard-iconbar-delete-E90.png"><alt>Asset card iconbar - trash</alt></image></info>
             </step>
 
-
             <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-foldercard-hover-edit"><cmd/></step> -->
             <step id="step-assets-foldercard-hover-edit">
                 <cmd>Hover over the folder card in the grid to expose the vertical icon bar. Click/Tap the pencil icon.</cmd>
@@ -207,6 +206,25 @@
                     <ul conkeyref="k-bpsteps/ul-configure-permissions"><li/></ul>
                 </info>
             </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-assetversion-preview"><cmd/></step> -->
+            <step id="step-assets-assetversion-preview">
+                <cmd>In the <uicontrol>Versioning</uicontrol> tab, click/tap the eye (<uicontrol>Preview</uicontrol>) icon for the version you want.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-asset-edit-versioning-preview-E90.png"><alt>Asset &gt; Edit &gt; Versioning &#8212; Preview</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-assetversion-restore"><cmd/></step> -->
+            <step id="step-assets-assetversion-restore">
+                <cmd>In the <uicontrol>Versioning</uicontrol> tab, click/tap the circular arrow (<uicontrol>Rollback</uicontrol>) icon for the version you want.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-asset-edit-versioning-rollback-E90.png"><alt>Asset &gt; Edit &gt; Versioning &#8212; Rollback</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-assetversion-delete"><cmd/></step> -->
+            <step id="step-assets-assetversion-delete">
+                <cmd>In the <uicontrol>Versioning</uicontrol> tab, click/tap the trash (<uicontrol>Delete</uicontrol>) icon for the version you want.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Assets-asset-edit-versioning-delete-E90.png"><alt>Asset &gt; Edit &gt; Versioning &#8212; Delete</alt></image></info>
+            </step>
+
 
             <!-- <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-asset-move"><cmd/></step> -->
             <step id="step-assets-asset-move">

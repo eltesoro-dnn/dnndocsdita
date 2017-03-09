@@ -1452,7 +1452,14 @@
                 </strow>
                 <strow>
                     <stentry><menucascade><uicontrol>Host</uicontrol> <uicontrol>HTML Editor Manager</uicontrol></menucascade></stentry>
-                    <stentry><menucascade><uicontrol>Settings</uicontrol> <uicontrol>Custom CSS</uicontrol></menucascade></stentry>
+                    <stentry>
+                        <ol>
+                            <li><menucascade><uicontrol>Settings</uicontrol> <uicontrol>Site Settings</uicontrol></menucascade></li>
+                            <li><uicontrol>Site Behavior</uicontrol> tab</li>
+                            <li><uicontrol>More</uicontrol> subtab</li>
+                        </ol>
+                        <p>Field: <uicontrol>HTML Editor Manager</uicontrol></p>
+                    </stentry>
                 </strow>
                 <strow>
                     <stentry><menucascade><uicontrol>Host</uicontrol> <uicontrol>License Management</uicontrol></menucascade></stentry>
@@ -1938,6 +1945,7 @@
                 </strow>
             </simpletable>
         </section>
+
 
 
         <!-- END GENERATED SECTION -->

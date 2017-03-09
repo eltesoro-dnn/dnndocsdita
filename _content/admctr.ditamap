@@ -160,10 +160,29 @@
             </relcell>
         </relrow>
 
+        <!-- adm cmg mod -->
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="topic" linking="targetonly" href="administrators/configuring-your-site/page-file-versioning.dita" />
+            </relcell>
+            <relcell>
+                <topicref format="dita" type="task"  linking="normal"     href="administrators/configuring-your-site/configure-page-file-versioning-for-site.dita" />
+                <topicref format="dita" type="task"  href="administrators/pages-templates/view-page-versions.dita" />
+                <topicref format="dita" type="task"  href="administrators/pages-templates/compare-page-versions.dita" />
+                <topicref format="dita" type="task"  href="administrators/pages-templates/restore-page-version.dita" />
+                <topicref format="dita" type="task"  href="administrators/pages-templates/delete-page-version.dita" />
+                <topicref format="dita" type="task"  href="administrators/assets/configure-folder-file-versioning.dita" />
+                <topicref format="dita" type="task"  href="administrators/assets/view-file-versions.dita" />
+                <topicref format="dita" type="task"  href="administrators/assets/restore-file-version.dita" />
+                <topicref format="dita" type="task"  href="administrators/assets/delete-file-version.dita" />
+            </relcell>
+            <relcell/>
+        </relrow>
+
         <!-- adm cmg -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic"      href="administrators/building-your-site/building-your-site.dita" />
+                <topicref format="dita" type="topic"     href="administrators/building-your-site/building-your-site.dita" />
             </relcell>
             <relcell>
                 <topicref format="dita" type="topic"     href="administrators/included-modules/creation-modules.dita" />

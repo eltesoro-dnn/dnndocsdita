@@ -6,21 +6,33 @@
 
     <!-- Topics -->
 	<topicref format="dita" type="topic" navtitle="Managing Assets" locktitle="yes" toc="yes" href="about-assets.dita" copy-to="index.dita" collection-type="family" >
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Assets/Files</navtitle></topicmeta>
+            <topicref format="dita" type="task" toc="yes" href="add-assets.dita" />
+            <topicref format="dita" type="task" toc="yes" href="edit-asset-properties.dita" />
+            <topicref format="dita" type="task" toc="yes" href="edit-asset-permissions.dita" />
+            <topicref format="dita" type="task" toc="yes" href="move-asset.dita" />
+            <topicref format="dita" type="task" toc="yes" href="copy-asset.dita" />
+            <topicref format="dita" type="task" toc="yes" href="download-asset.dita" />
+            <topicref format="dita" type="task" toc="yes" href="delete-asset.dita" />
+        </topichead>
 
-        <topicref format="dita" type="task" toc="yes" href="add-assets.dita" />
-        <topicref format="dita" type="task" toc="yes" href="edit-asset-properties.dita" />
-        <topicref format="dita" type="task" toc="yes" href="edit-asset-permissions.dita" />
-        <topicref format="dita" type="task" toc="yes" href="move-asset.dita" />
-        <topicref format="dita" type="task" toc="yes" href="copy-asset.dita" />
-        <topicref format="dita" type="task" toc="yes" href="download-asset.dita" />
-        <topicref format="dita" type="task" toc="yes" href="delete-asset.dita" />
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Folders</navtitle></topicmeta>
+            <topicref format="dita" type="task" toc="yes" href="create-folder.dita" />
+            <topicref format="dita" type="task" toc="yes" href="edit-folder-properties.dita" />
+            <topicref format="dita" type="task" toc="yes" href="edit-folder-permissions.dita" />
+            <topicref format="dita" type="task" toc="yes" href="move-folder.dita" />
+            <topicref format="dita" type="task" toc="yes" href="delete-folder.dita" />
+        </topichead>
 
-        <topicref format="dita" type="task" toc="yes" href="create-folder.dita" />
-        <topicref format="dita" type="task" toc="yes" href="edit-folder-properties.dita" />
-        <topicref format="dita" type="task" toc="yes" href="edit-folder-permissions.dita" />
-        <topicref format="dita" type="task" toc="yes" href="move-folder.dita" />
-        <topicref format="dita" type="task" toc="yes" href="delete-folder.dita" />
-
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Asset/File Versioning</navtitle></topicmeta>
+            <topicref format="dita" type="task" toc="yes" href="configure-folder-file-versioning.dita" />
+            <topicref format="dita" type="task" toc="yes" href="view-file-versions.dita" />
+            <topicref format="dita" type="task" toc="yes" href="restore-file-version.dita" />
+            <topicref format="dita" type="task" toc="yes" href="delete-file-version.dita" />
+        </topichead>
     </topicref>
 
 </map>

@@ -11,24 +11,36 @@
         <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/assign-key-pages.dita" />
         <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/add-metadata-to-pages.dita" />
         <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/configure-messaging.dita" />
-        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+        <topichead audience="adm" outputclass="sub-nav-tabs" collection-type="family" >
             <topicmeta><navtitle>User Profiles</navtitle></topicmeta>
-            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/configure-user-profile-visibility.dita" />
-            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/configure-user-profile-vanity-url.dita" />
-            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/add-user-profile-field.dita" />
-            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/edit-user-profile-field.dita" />
-            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/delete-user-profile-field.dita" />
-            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/organize-user-profile-fields.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/configure-user-profile-visibility.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/configure-user-profile-vanity-url.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/add-user-profile-field.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/edit-user-profile-field.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/delete-user-profile-field.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/organize-user-profile-fields.dita" />
         </topichead>
-        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+        <topichead audience="adm" outputclass="sub-nav-tabs" collection-type="family" >
             <topicmeta><navtitle>Site Aliases</navtitle></topicmeta>
-            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/configure-url-mapping-site-aliases.dita" />
-            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/add-site-alias.dita" />
-            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/edit-site-alias.dita" />
-            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/delete-site-alias.dita" />
-            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/change-primary-site-alias.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/configure-url-mapping-site-aliases.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/add-site-alias.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/edit-site-alias.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/delete-site-alias.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/change-primary-site-alias.dita" />
         </topichead>
+
+
+        <topicref audience="adm" format="dita" type="topic" toc="yes" href="configuring-your-site/page-file-versioning.dita" collection-type="family" >
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/configure-page-file-versioning-for-site.dita" />
+        </topicref>
+
+        <!-- wip
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/configure-html-editor.dita" />
+        -->
+
         <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/access-web-config.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/configure-check-for-new-version.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/participate-in-improvement-program.dita" />
 
         <mapref audience="adm cmg"      href="extensions/extensions.ditamap" />
         <mapref audience="adm cmg mod"  href="connectors/connectors.ditamap" />

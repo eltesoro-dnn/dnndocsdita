@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-configure-page-file-versioning-for-site">
+
+    <title>Configure Page/File Versioning for a Site</title>
+    <titlealts>
+        <navtitle>Configure Page/File Versioning for Site</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1703</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <prereq>
+			<ul>
+				<li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li>
+			</ul>
+		</prereq>
+
+        <steps>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-SiteSettings-E90"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SiteSettings-SiteBehavior-More-E90"><cmd/></step>
+            <step>
+				<cmd>Configure the <uicontrol>Versioning</uicontrol> options for pages and for files/assets.</cmd>
+				<info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SiteSettings-SiteBehavior-More-Versioning.png"><alt>Site Settings &gt; Site Behavior &gt; More &#8212; Versioning</alt></image>
+                    <simpletable relcolwidth="2* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry>
+<lines>Enable Page Versioning
+Enable File Versioning</lines>
+                            </stentry>
+                            <stentry>
+                                <p>If enabled (<uicontrol>On</uicontrol>), the most recent versions of versioning-enabled page/file/asset are stored, up to the specified maximum number of versions.</p>
+                            </stentry>
+                        </strow>
+                        <strow>
+                            <stentry>
+<lines>Maximum Number of Page Versions Kept
+Maximum Number of File Versions Kept</lines>
+                            </stentry>
+                            <stentry>The maximum number of versions stored. For pages, this value must be from 1 to 20. For files/assets, this value must be from 5 to 25.</stentry>
+                        </strow>
+                    </simpletable>
+				</info>
+            </step>
+        </steps>
+
+    </taskbody>
+
+</task>

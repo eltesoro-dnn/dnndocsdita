@@ -65,7 +65,7 @@
             <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-editworkflow"><cmd/></step> -->
             <!-- <step conkeyref="k-bpsteps/step-pb-editworkflow"><cmd/></step> -->
             <step id="step-pb-editworkflow">
-                <cmd>In the list of workflows, hover over the workflow to edit. Then click/tap the pencil icon.</cmd>
+                <cmd>In the list, hover over the workflow to edit. Then click/tap the pencil icon.</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-Workflows-icons-pencil.png"><alt>Pencil icon to edit the workflow</alt></image></info>
             </step>
 
@@ -105,6 +105,52 @@
                     <substep><cmd>Click/Tap the pencil icon for the module you want.</cmd></substep>
                 </substeps>
             </step>
+
+
+            <!-- ========== MENU - EDIT BAR ========== -->
+
+            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-editbar-addmodule"><cmd/></step> -->
+            <!-- <step conkeyref="k-bpsteps/step-pb-editbar-addmodule"><cmd/></step> -->
+            <step id="step-pb-editbar-addmodule">
+                <cmd>In the <uicontrol>Edit Bar</uicontrol>, click/tap the <uicontrol>Add Module</uicontrol> icon.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-EditBar-AddModule.png"><alt>Add Module icon</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-editbar-addexistingmodule"><cmd/></step> -->
+            <!-- <step conkeyref="k-bpsteps/step-pb-editbar-addexistingmodule"><cmd/></step> -->
+            <step id="step-pb-editbar-addexistingmodule">
+                <cmd>In the <uicontrol>Edit Bar</uicontrol>, click/tap the <uicontrol>Add Existing Module</uicontrol> icon.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-EditBar-AddExistingModule.png"><alt>Add Existing Module icon</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-editbar-pagesettings"><cmd/></step> -->
+            <!-- <step conkeyref="k-bpsteps/step-pb-editbar-pagesettings"><cmd/></step> -->
+            <step id="step-pb-editbar-pagesettings">
+                <cmd>In the <uicontrol>Edit Bar</uicontrol>, click/tap the <uicontrol>Page Settings</uicontrol> icon.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-EditBar-PageSettings.png"><alt>Page Settings icon</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-editbar-pagehistory"><cmd/></step> -->
+            <!-- <step conkeyref="k-bpsteps/step-pb-editbar-pagehistory"><cmd/></step> -->
+            <step id="step-pb-editbar-pagehistory">
+                <cmd>In the <uicontrol>Edit Bar</uicontrol>, click/tap the <uicontrol>Page History</uicontrol> icon.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-EditBar-PageHistory.png"><alt>Page History icon</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-editbar-viewsite"><cmd/></step> -->
+            <!-- <step conkeyref="k-bpsteps/step-pb-editbar-viewsite"><cmd/></step> -->
+            <step id="step-pb-editbar-viewsite">
+                <cmd>In the <uicontrol>Edit Bar</uicontrol>, click/tap the <uicontrol>View Site</uicontrol> icon.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-EditBar-ViewSite.png"><alt>View Site icon</alt></image></info>
+            </step>
+
+            <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-editbar-personalization"><cmd/></step> -->
+            <!-- <step conkeyref="k-bpsteps/step-pb-editbar-personalization"><cmd/></step> -->
+            <step id="step-pb-editbar-personalization">
+                <cmd>In the <uicontrol>Edit Bar</uicontrol>, click/tap the <uicontrol>Personalization</uicontrol> icon.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-EditBar-Personalization.png"><alt>Personalization icon</alt></image></info>
+            </step>
+
 
 
             <!-- ========== MENU - CONTROL BAR ========== -->

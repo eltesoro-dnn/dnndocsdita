@@ -255,6 +255,14 @@
 
         <steps>
 
+            <!-- <step conref="bptext-modules-steps.dita#tsk-bptext-modules-steps/step-openmodulelist-inpane"><cmd/></step> -->
+            <!-- <step conkeyref="k-bpmodules/step-openmodulelist-inpane"><cmd/></step> -->
+            <step id="step-openmodulelist-inpane">
+                <cmd>Within a pane, click/tap on the module icon.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pane-with-content-icons-module.png"><alt>Pane with content icons</alt></image></info>
+            </step>
+
+
             <!-- <step conref="bptext-modules-steps.dita#tsk-bptext-modules-steps/step-quicklyaddcontenttopane"><cmd/></step> -->
             <!-- <step conkeyref="k-bpmodules/step-quicklyaddcontenttopane"><cmd/></step> -->
             <step id="step-quicklyaddcontenttopane">
@@ -277,21 +285,6 @@
                         <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-actionmenu-move.png"><alt>Click/Tap on the four-arrow icon, then choose the target pane from the list.</alt></image>
                     </choice>
                 </choices>
-            </step>
-
-
-            <!-- <step conref="bptext-modules-steps.dita#tsk-bptext-modules-steps/step-openmodulelist"><cmd/></step> -->
-            <!-- <step conkeyref="k-bpmodules/step-openmodulelist"><cmd/></step> -->
-            <step id="step-openmodulelist">
-                <cmd>In the <uicontrol>Edit Bar</uicontrol>, click/tap the <uicontrol>Add Module</uicontrol> icon.</cmd>
-                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-EditBar-AddModule.png"><alt>Edit Bar &gt; Add Module</alt></image></info>
-            </step>
-
-            <!-- <step conref="bptext-modules-steps.dita#tsk-bptext-modules-steps/step-openmodulelist-inpane"><cmd/></step> -->
-            <!-- <step conkeyref="k-bpmodules/step-openmodulelist-inpane"><cmd/></step> -->
-            <step id="step-openmodulelist-inpane">
-                <cmd>In the pane you want, click/tap the <uicontrol>Add Module</uicontrol> icon.</cmd>
-                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-inpane-AddModule.png"><alt>In the pane you want, click/tap the module icon.</alt></image></info>
             </step>
 
 
