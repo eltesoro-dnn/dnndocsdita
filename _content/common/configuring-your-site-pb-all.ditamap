@@ -11,6 +11,15 @@
         <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/assign-key-pages.dita" />
         <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/add-metadata-to-pages.dita" />
         <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/configure-messaging.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/access-web-config.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/configure-check-for-new-version.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/participate-in-improvement-program.dita" />
+
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/configure-html-editor.dita" />
+        <!-- wip: target v9.1.1 See DOC-121
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/configure-ckeditor-provider.dita" />
+        -->
+
         <topichead audience="adm" outputclass="sub-nav-tabs" collection-type="family" >
             <topicmeta><navtitle>User Profiles</navtitle></topicmeta>
             <topicref format="dita" type="task" toc="yes" href="configuring-your-site/configure-user-profile-visibility.dita" />
@@ -29,18 +38,9 @@
             <topicref format="dita" type="task" toc="yes" href="configuring-your-site/change-primary-site-alias.dita" />
         </topichead>
 
-
         <topicref audience="adm" format="dita" type="topic" toc="yes" href="configuring-your-site/page-file-versioning.dita" collection-type="family" >
             <topicref format="dita" type="task" toc="yes" href="configuring-your-site/configure-page-file-versioning-for-site.dita" />
         </topicref>
-
-        <!-- wip
-        <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/configure-html-editor.dita" />
-        -->
-
-        <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/access-web-config.dita" />
-        <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/configure-check-for-new-version.dita" />
-        <topicref audience="adm" format="dita" type="task" toc="yes" href="configuring-your-site/participate-in-improvement-program.dita" />
 
         <mapref audience="adm cmg"      href="extensions/extensions.ditamap" />
         <mapref audience="adm cmg mod"  href="connectors/connectors.ditamap" />

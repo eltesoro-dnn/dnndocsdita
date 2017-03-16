@@ -42,6 +42,7 @@
             <!-- <topicref format="dita" type="reference" toc="yes" href="community-managers/included-modules/included-modules.dita" copy-to="community-managers/included-modules/index.dita" /> -->
             <topicref format="dita" type="reference" toc="yes" href="community-managers/product-versions.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="community-managers/dnn-license.dita" />
+            <topicref format="dita" type="topic"     toc="yes" href="community-managers/DNN-security.dita" />
             <!-- <topicref format="dita" type="topic"     toc="yes" href="community-managers/more-resources.dita" /> -->
         </topicref>
         <topichead toc="yes" chunk="by-document to-content" copy-to="community-managers/glossary.dita" >
