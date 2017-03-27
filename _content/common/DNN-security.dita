@@ -67,15 +67,15 @@
                 </sthead>
                 <strow>
                     <stentry><term>Critical</term></stentry>
-                    <stentry>The security issue can be exploited by a remote attacker to gain access to DNN data or functionality. Security bulletins for all critical issues include a recommended workaround or a fix that must be applied as soon as possible.</stentry>
+                    <stentry>The security issue could be exploited by a remote attacker to gain access to DNN data or functionality. Security bulletins for all critical issues include a recommended workaround or a fix that must be applied as soon as possible.</stentry>
                 </strow>
                 <strow>
                     <stentry><term>Moderate</term></stentry>
-                    <stentry>The security issue can compromise data or functionality on a portal/website only, if some other condition is met; e.g., if a specific module is installed or if a user in a specific role logs in. Security bulletins for moderate issues typically include recommended actions to resolve the issue.</stentry>
+                    <stentry>The security issue could compromise data or functionality, only if another condition is met; e.g., if a specific module is installed or if a user in a specific role logs in. Security bulletins for moderate issues typically include recommended actions to resolve the issue.</stentry>
                 </strow>
                 <strow>
                     <stentry><term>Low</term></stentry>
-                    <stentry>The security issue is very difficult to exploit or has a limited potential impact.</stentry>
+                    <stentry>The security issue is very difficult to exploit, or its potential impact is limited.</stentry>
                 </strow>
             </simpletable>
         </section>

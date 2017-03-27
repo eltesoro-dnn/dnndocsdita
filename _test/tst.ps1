@@ -99,9 +99,9 @@ function T002()  {
 
     $index = $outdir.Length + 1
     Get-ChildItem -Path $outdir -File -Recurse | foreach  {
-        ($_.FullName).Substring( $index ) | Out-File -Append $currfiles
+        ($_.FullName).Substring( $index ) | Out-File   -Encoding "UTF8"  -Append $currfiles
     }
-    Write-Output "foo.txt" | Out-File -Append $currfiles
+    Write-Output "foo.txt" | Out-File   -Encoding "UTF8"  -Append $currfiles
     & "cmd.exe" /c windiff $expfile $currfiles
 
     $confirm = Read-Host "Copy the new list? [y/n]"
@@ -194,7 +194,7 @@ if ( !( Test-Path $logdir ) )  { New-Item $logdir  -Type directory  -Force | Out
 
 # Rebuild the test log.
 RefreshFile $tstlog
-Get-Date | Out-File $tstlog
+Get-Date | Out-File $tstlog  -Encoding "UTF8"
 
 
 T001 | Out-File -Append $tstlog

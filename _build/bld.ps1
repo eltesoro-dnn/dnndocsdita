@@ -53,7 +53,7 @@ function RunBat( [string[]] $exeandparams, [string] $runAsAdmin )  {
         Write-Output $_
     } | Out-File  -FilePath $tempbat  -Encoding "Default"  -Append
 
-    # For cmd.exe, use /k (instead of /c) to keep the cmd window open.
+    # WARNING: cmd.exe with /k causes the script to hang. Unknown reason.
     if (( $runAsAdmin ) -and (-NOT ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole] "Administrator")) )  {
         Start-Process -FilePath "cmd.exe" -Verb runAs -ArgumentList "/c $tempbat"
     }
@@ -327,10 +327,12 @@ function Publish2Localhost()  {
     }
 
     Write-Host "Copying built files from $srcdir to $lochostdocdir ...."
-    RunBat @( "rd /s /q $lochostdocdir",
-              "md $lochostdocdir > null",
+    RunBat @( "@echo off",
+              "for /f ""usebackq"" %%v in (``dir $lochostdocdir /a:d /b``)  do rd /s /q $lochostdocdir\%%v",
+              "del /q $lochostdocdir\*",
+              "if not exist $lochostdocdir\*  md $lochostdocdir",
               "robocopy $srcdir $lochostdocdir /s /mt /log+:$cpylog",
-              "del $lochostdocdir\web.config" ) "runasadmin"
+              "if exist $lochostdocdir\web.config  del $lochostdocdir\web.config" ) "runasadmin"
 
     # Write-Host "TO DO: Manually copy the files from $srcdir to $lochostdocdir."
     # Explorer $srcdir

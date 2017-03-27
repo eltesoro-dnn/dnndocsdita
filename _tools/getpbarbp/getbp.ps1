@@ -76,8 +76,8 @@ if ( $args.Count -gt 1 )  {
         $tagsarr = @()
         $tagsstr = ""
     }
-    Write-Host "$pbarstr"
-    Write-Host "$tagsstr"
+    # Write-Host "$pbarstr"
+    # Write-Host "$tagsstr"
 
     $root = $PSCommandPath | Split-Path
     $pbarlistfn = "$root\$pbarlistfn"

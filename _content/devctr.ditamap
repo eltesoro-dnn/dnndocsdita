@@ -165,6 +165,16 @@
             </relcell>
         </relrow>
 
+        <!-- dev adm -->
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="topic"     href="developers/release-notes/relnotes-2017-apr-26-extensions.dita" />
+                <topicref format="dita" type="topic"     href="developers/release-notes/relnotes-2017-apr-26-telerik-removal.dita" />
+            </relcell>
+            <relcell/>
+            <relcell/>
+        </relrow>
+
         <!-- dev dsg -->
         <relrow>
             <relcell/>

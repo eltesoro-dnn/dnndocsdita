@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-about-search">
+
+    <title>About Search</title>
+    <titlealts>
+        <navtitle>Search</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1703</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section id="overview">
+            <p>DNN uses <xref format="html" scope="external" href="https://lucene.apache.org/">Apache Lucene</xref> as the default search engine for each site. You can specify what it indexes through various settings.</p>
+            <ul>
+                <li>To select webpages, set <uicontrol>URL Paths</uicontrol>.</li>
+                <li>To select asset file folders, set <uicontrol>Included Directories</uicontrol> and <uicontrol>Excluded Directories</uicontrol>.</li>
+                <li>To select asset file extensions, set <uicontrol>Included File Extensions</uicontrol> and <uicontrol>Excluded File Extensions</uicontrol>.</li>
+            </ul>
+
+            <p>All indexes are stored in the <term>Index Store</term>.</p>
+        </section>
+
+        <!--
+            scr-SiteSettings-Search-BasicSettings-E90.png
+            scr-SiteSettings-Search-BasicSettings-index-E90.png
+            scr-SiteSettings-Search-BasicSettings-index-info-E90.png
+
+            scr-SiteSettings-Search-Crawling-E90.png
+            scr-SiteSettings-Search-Crawling-url-paths-E90.png
+
+            scr-SiteSettings-Search-Crawling-included-directories-E90.png
+            scr-SiteSettings-Search-Crawling-excluded-directories-E90.png
+            scr-SiteSettings-Search-Crawling-directorytree-E90.png
+        -->
+
+    </body>
+
+</topic>

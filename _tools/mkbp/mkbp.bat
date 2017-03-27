@@ -11,6 +11,12 @@ goto :eof
 call %0 runme json\sites.json bptext-sites W:\_content\administrators\sites
 goto :eof
 
+:search
+call %0 runme json\search.json bptext-search W:\_content\common\search
+:. robocopy W:\_tools\mkbp\out W:\_content\common\search *.dita /xf bptext-search-tmp.dita /mt
+:. Explorer W:\_tools\mkbp\out
+:. Explorer W:\_content\common\search
+goto :eof
 
 
 :runme

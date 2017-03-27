@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-search">
+
+    <title>Search</title>
+
+    <!-- Topics -->
+    <topicref format="dita" type="topic" toc="yes" href="about-search.dita" copy-to="index.dita" collection-type="family">
+
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="configure-search.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="prioritize-search-items.dita" />
+
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Synonyms</navtitle></topicmeta>
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="add-group-of-synonyms.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="edit-group-of-synonyms.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="delete-group-of-synonyms.dita" />
+        </topichead>
+
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Words to Ignore</navtitle></topicmeta>
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="create-list-of-words-to-ignore.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="edit-list-of-words-to-ignore.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="delete-list-of-words-to-ignore.dita" />
+        </topichead>
+
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Crawling Filters</navtitle></topicmeta>
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="add-starting-url-to-crawl-list.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="edit-starting-url-in-crawl-list.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="delete-starting-url-from-crawl-list.dita" />
+
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="add-directory-to-included-list.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="delete-directory-from-included-list.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="add-directory-to-excluded-list.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="delete-directory-from-excluded-list.dita" />
+
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="add-file-extension-to-included-or-excluded-list.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="delete-file-extension-from-included-or-excluded-list.dita" />
+        </topichead>
+
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Dynamic Pages</navtitle></topicmeta>
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="add-regex-pattern-for-duplicate-pages.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="edit-regex-pattern-for-duplicate-pages.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="delete-regex-pattern-for-duplicate-pages.dita" />
+        </topichead>
+
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Indexes</navtitle></topicmeta>
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="compress-indexes.dita" />
+            <topicref audience="adm" format="dita" type="task" toc="yes" href="reindex-content.dita" />
+        </topichead>
+
+    </topicref>
+
+</map>

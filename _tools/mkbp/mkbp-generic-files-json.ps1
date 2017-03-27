@@ -1,10 +1,37 @@
 # Creates the boilerplates for steps.
-# USAGE: powershell -file mkbp-generic-files-json.ps1 rolesfiles.json bptext-rolessteps prolog.txt presteps.txt .\out
+# USAGE: powershell -file mkbp-generic-files-json.ps1 json\foo.json bptext-foo prolog.txt .\out
 #
 # WARNINGS:
 #   * For overlays on the image:
 #       - Do NOT use "align=". It creates a <div> around the image.
 #       - Do NOT use "placement="break"". It adds <br/> before and after the image.
+
+
+$fnPbarList = "..\getpbarbp\pbarbplist.txt"
+$fnTagsList = "..\getpbarbp\tagsbplist.txt"
+
+
+function IsValid( [string] $s )  {
+    if ( $s -eq $NULL )  {
+        return $FALSE
+    }
+    elseif ( $s -eq "" )  {
+        return $FALSE
+    }
+    return $TRUE
+}
+
+function AddAudience( [string] $s )  {
+    if ( $s.Contains( "-host-" ) )  {
+        $s = $s.Replace( "<step ", "<step audience=""adm"" " ).Replace( "<li ", "<li audience=""adm"" " )
+    }
+    ( "adm", "cmg", "mod" ) | foreach  {
+        if ( $s.Contains( "-$_-" ) )  {
+            $s = $s.Replace( "<step ", "<step audience=""$_"" " ).Replace( "<li ", "<li audience=""$_"" " )
+        }
+    }
+    return $s
+}
 
 
 function MkStartSection( [string] $thisscript, [string] $params )  {
@@ -29,6 +56,14 @@ function MkBPNote( [string] $conreffile, [PSCustomObject] $node )  {
     Write-Output ""
     Write-Output "            <!-- <note conref=""$conreffile/$id""></note> -->"
     Write-Output "            <note type=""note"" id=""$id"">$text</note>"
+}
+
+function MkBPP( [string] $conreffile, [PSCustomObject] $node )  {
+    $id = $node.id
+    $text = $node.text
+    Write-Output ""
+    Write-Output "            <!-- <p conref=""$conreffile/$id""></p> -->"
+    Write-Output "            <p id=""$id"">$text</p>"
 }
 
 function MkBPPh( [string] $conreffile, [PSCustomObject] $node )  {
@@ -147,6 +182,7 @@ function MkStep( [string] $conreffile, [PSCustomObject] $step )  {
     $img = $step.img
     $expimg = ExpandedImg $img
     $info = $step.info
+    $xmp = $step.xmp
     Write-Output ""
     Write-Output "            <!-- <step conref=""$conreffile/$id""><cmd/></step> -->"
     Write-Output "            <step id=""$id"">"
@@ -185,6 +221,10 @@ function MkStep( [string] $conreffile, [PSCustomObject] $step )  {
 
     MkInfo $img $info "                "
 
+    if ( $xmp )  {
+        Write-Output "                <stepxmp>Example: $xmp</stepxmp>"
+    }
+
     Write-Output "            </step>"
 }
 
@@ -219,6 +259,7 @@ function WriteDocType( [string] $topictype, [string] $navdashed )  {
     }
 }
 
+
 function BodyTag( [string] $topictype )  {
     switch ( $topictype )  {
         "task"  {
@@ -232,6 +273,25 @@ function BodyTag( [string] $topictype )  {
         }
     }
 }
+
+
+function FindLines( [string] $fn, [string] $stepli, [string] $pathhyphen )  {
+    $s = @()
+    if ( Test-Path $fn )  {
+        # Filter based on the hyphenated menu options (pathhyphen).
+        Get-Content $fn | Where { $_.ToLower().Contains( $stepli.ToLower() ) -and $_.ToLower().Contains( $pathhyphen.ToLower() ) } | foreach  {
+            $s += AddAudience $_
+        }
+
+        # BUGBUG: If there's both an adm line and a host line for pbar, choose host.
+        $i = ( $s -like "*audience=""adm""*" ).Length
+        if ( $i -gt 1 )  {
+            $s = $s -notlike "*-adm-*"
+        }
+    }
+    return $s
+}
+
 
 function MkTopic( [string] $topictype, [string] $conreffile, [PSCustomObject] $topic )  {
     $navdashed = NavDashed $topic
@@ -311,17 +371,22 @@ function MkTopic( [string] $topictype, [string] $conreffile, [PSCustomObject] $t
             if ( $step.StartsWith( "step-pbar-" ) )  {
                 $arr = $step.Split( " ", [System.StringSplitOptions]::None )
                 $name = $arr[0].SubString( "step-pbar-".Length )
-                foreach( $role in @($arr[1..($arr.length-1)]) )  {
-                    if ( $role -eq "host" )  {
-                        Write-Output "            <step audience=""adm"" conkeyref=""k-bppbar/step-pb-host-$name-E90""><cmd/></step>"
-                    }
-                    else  {
-                        Write-Output "            <step audience=""$role"" conkeyref=""k-bppbar/step-pb-$role-$name-E90""><cmd/></step>"
-                    }
+                FindLines $fnPbarList "<step" $name | foreach {
+                    Write-Output "            $_"
+                }
+            }
+            elseif ( $step.StartsWith( "step-pbtabs" ) )  {
+                $arr = $step.Split( " ", [System.StringSplitOptions]::None )
+                $name = $arr[0].SubString( "step-pbtabs-".Length )
+                FindLines $fnTagsList "<step" $name | foreach {
+                    Write-Output "            $_"
                 }
             }
             elseif ( $step.StartsWith( "step-" ) )  {
                 Write-Output "            <step conref=""$conreffile/$step""><cmd/></step>"
+            }
+            elseif ( $step.StartsWith( "stepsection-" ) )  {
+                Write-Output "            <stepsection conref=""$conreffile/$step""><cmd/></stepsection>"
             }
             else  {
                 Write-Output "            <step><cmd>$step</cmd></step>"
@@ -388,6 +453,9 @@ if ( $args.Count -gt 3 )  {
             $id = $node.id
             if ( $id.StartsWith( "note-" ) )  {
                 MkBPNote $conreffilelocal $node | Out-File $tgtfile -Append -Encoding DEFAULT
+            }
+            elseif ( $id.StartsWith( "p-" ) )  {
+                MkBPP $conreffilelocal $node | Out-File $tgtfile -Append -Encoding DEFAULT
             }
             elseif ( $id.StartsWith( "ph-" ) )  {
                 MkBPPh $conreffilelocal $node | Out-File $tgtfile -Append -Encoding DEFAULT

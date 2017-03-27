@@ -193,6 +193,16 @@
             </relcell>
         </relrow>
 
+        <!-- adm dev -->
+        <relrow>
+            <relcell>
+                <topicref format="dita" type="topic"     href="administrators/release-notes/relnotes-2017-apr-26-extensions.dita" />
+                <topicref format="dita" type="topic"     href="administrators/release-notes/relnotes-2017-apr-26-telerik-removal.dita" />
+            </relcell>
+            <relcell/>
+            <relcell/>
+        </relrow>
+
         <!-- adm -->
         <relrow>
             <relcell>
@@ -233,6 +243,15 @@
             <relcell>
                 <topicref format="dita" type="reference" href="administrators/included-modules/module-sitemap.dita" />
             </relcell>
+        </relrow>
+
+        <relrow>
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="topic"      href="administrators/sitemaps/about-sitemaps.dita" />
+                <topicref format="dita" type="topic"      href="administrators/search/about-search.dita" />
+            </relcell>
+            <relcell/>
         </relrow>
 
         <!-- adm url management -->

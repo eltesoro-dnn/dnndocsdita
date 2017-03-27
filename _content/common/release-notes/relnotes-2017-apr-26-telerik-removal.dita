@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-relnotes-2017-apr-26-telerik-removal">
+
+
+    <title>Upcoming in v9.1 &#8212; Telerik Removal</title>
+    <titlealts>
+        <navtitle>Upcoming in v9.1 &#8212; Telerik Removal</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>orAP,trWM,edET,1703</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience job="evaluating" />
+            <audience job="installing" />
+            <audience type="administrator" />
+            <audience type="programmer" />
+            <audience type="other" othertype="designer" />
+        </metadata>
+    </prolog>
+
+    <body>
+
+        <!--
+        Sources:
+            https://dnntracker.atlassian.net/wiki/display/DP/FAQ
+        -->
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section id="overview">
+            <title>Overview of Telerik Removal</title>
+
+            <p>Telerik UI controls were originally introduced to DNN products to make it easier for extension developers to build UI components and to provide consistency in the appearance of various modules on a page. However, most developers have switched to lightweight client-side frameworks for UI rendering and to Microsoft's Web API for business logic. Therefore, Telerik components have become unnecessary to the core product. Removing Telerik will likely provide significant performance improvements through more efficient memory utilization, faster application start-up, and smaller page sizes.</p>
+
+            <note type="important">Creators of third-party modules are strongly advised to replace their dependencies on Telerik with other solutions.</note>
+        </section>
+
+        <section id="installation">
+            <title>Installation</title>
+
+            <p>DNN Platform still ships with the <term>Digital Asset Management (DAM)</term> component, which requires Telerik DLLs; therefore, Telerik is still installed as part of the DNN Platform.</p>
+
+            <p>With Evoq, Telerik is not installed during a clean installation. However, Telerik is not removed in an Evoq upgrade either, in order to avoid breaking third-party modules that depend on it.</p>
+        </section>
+
+        <section id="details">
+            <title>Replacements</title>
+
+            <p>DNN plans to introduce smaller client-side libraries that developers can use instead of Telerik. The following replacements are now available.</p>
+
+            <simpletable relcolwidth="1* 1* 1*">
+                <sthead>
+                    <stentry>Telerik</stentry>
+                    <stentry>Replacement</stentry>
+                    <stentry>Notes</stentry>
+                </sthead>
+                <strow>
+                    <stentry><apiname>RadComboBox</apiname></stentry>
+                    <stentry>Recommended: <xref format="html" scope="external" href="http://selectize.github.io/selectize.js/">Selectize</xref>, which is a hybrid textbox and selection box.</stentry>
+                    <stentry>Also used in advanced search filter options in DNN pages.</stentry>
+                </strow>
+                <strow>
+                    <stentry><apiname>RadScriptManager </apiname></stentry>
+                    <stentry>Microsoft's <apiname>ScriptManager</apiname></stentry>
+                    <stentry>Previously registered on every page.</stentry>
+                </strow>
+                <strow>
+                    <stentry><apiname>RadStyleSheetManager</apiname></stentry>
+                    <stentry>(Deleted without replacement.)</stentry>
+                    <stentry>Previously registered on every page.</stentry>
+                </strow>
+                <strow>
+                    <stentry><apiname>RadAjaxPanel</apiname> via DNN's <apiname>DnnAjaxPanel</apiname></stentry>
+                    <stentry>Microsoft's <apiname>UpdatePanel</apiname> control</stentry>
+                    <stentry></stentry>
+                </strow>
+                <strow>
+                    <stentry><filepath>DotNetNuke.Web.Deprecated.dll</filepath></stentry>
+                    <stentry><filepath>DotNetNuke.Web.dll</filepath></stentry>
+                    <stentry>The names of the controls might not be the same.</stentry>
+                </strow>
+                <strow>
+                    <stentry>Telerik client-side commands to locate HTML elements. Examples:
+                        <ul>
+                            <li><codeph>$find(#myid)</codeph></li>
+                            <li><codeph>$get_value(#myid)</codeph></li>
+                            <li><codeph>$get_items(#myid)</codeph></li>
+                        </ul>
+                    </stentry>
+                    <stentry>jQuery <codeph>$('#'+id).cmd()</codeph>, where <varname>id</varname> is the HTML element identifier. Examples:
+                        <ul>
+                            <li><codeph>$('#myid').find();</codeph></li> <!--  or <codeph>$('.myclass').find();</codeph> -->
+                            <li><codeph>$('#myid').val();</codeph></li>
+                            <li><codeph>#('#myid').get();</codeph></li>
+                        </ul>
+                    </stentry>
+                    <stentry></stentry>
+                </strow>
+                <!--
+                <strow>
+                    <stentry><term></term></stentry>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+                -->
+            </simpletable>
+
+        </section>
+
+        <section id="packaging">
+            <title>Packaging Changes</title>
+
+            <p>The following module packages have been changed.</p>
+
+            <simpletable relcolwidth="2* 1* 1* 1* 1*">
+                <sthead>
+                    <stentry>Package</stentry>
+                    <stentry>Upgrade - Platform</stentry>
+                    <stentry>Upgrade - Evoq</stentry>
+                    <stentry>Clean Install - Platform</stentry>
+                    <stentry>Clean Install - Evoq</stentry>
+                </sthead>
+                <strow>
+                    <stentry>
+                        <filepath>Telerik_08.00.01_Install.zip</filepath>
+
+                        <p>A library package that deploys the two Telerik DLLs (<filepath>Telerik.Web.UI.dll</filepath> and <filepath>Telerik.Web.UI.Skins.dll</filepath>). The installation also adds Telerik-related handles and HTTP module entries into web.config.</p>
+                    </stentry>
+                    <stentry>Reinstalled.</stentry>
+                    <stentry>Not installed; previous installations are untouched.</stentry>
+                    <stentry>Installed.</stentry>
+                    <stentry>Not installed.</stentry>
+                </strow>
+                <strow>
+                    <stentry>
+                        <filepath>DNNCE_01_Web.Deprecated_09.01.00_Install.zip</filepath>
+
+                        <p>A new library package that contains <filepath>DotNetNuke.Web.Deprecated.dll</filepath>, which was previously shipped as part of the <filepath>bin</filepath> folder since DNN Platform 8.0.0.</p>
+                    </stentry>
+                    <stentry>Installed.</stentry>
+                    <stentry>Not installed; previous installations are untouched.</stentry>
+                    <stentry>Installed.</stentry>
+                    <stentry>Not installed; previous installations are untouched.</stentry>
+                </strow>
+                <strow>
+                    <stentry>
+                        <filepath>RadEditorProvider_09.01.00_Install.resources</filepath>
+
+                        <p>Previously available as an optional install package.</p>
+                    </stentry>
+                    <stentry>Not installed; previous installations are untouched.</stentry>
+                    <stentry>Not installed; previous installations are untouched.</stentry>
+                    <stentry>Not installed.</stentry>
+                    <stentry>Not installed.</stentry>
+                </strow>
+            </simpletable>
+        </section>
+
+    </body>
+
+</topic>

@@ -1,0 +1,44 @@
+Extension,Type,Platform - Clean Install,Platform - Upgrade,Evoq - Clean Install,Evoq - Upgrade,Folder Name
+DotNetNuke.Web.Deprecated,Library,Installed.,,,,
+Evoq.GoogleTagManagerConnector,EvoqConnector,,Installed.,Installed.,Installed.,DesktopModules/DnnCorp/Connectors/GoogleTagManager
+Selectize,JavaScript_Library,Installed.,Installed.,Installed.,Installed.,
+DigitalAssetsManagement,Module,,,Removed.,,DesktopModules/DigitalAssets
+DigitalAssetsManagementPro,Library,,,Removed.,,DesktopModules/DigitalAssets
+Dnn.Themes,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/SkinManagement
+DocumentViewer,Module,,,Removed.,,DesktopModules/DNNCorp/DocumentViewer
+DotNetNuke.Configuration Manager,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/XmlMerge
+DotNetNuke.Console,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/Console
+DotNetNuke.Dashboard,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/Dashboard
+DotNetNuke.Dashboard.Database,DashboardControl,Removed.,Removed.,Removed.,Removed.,
+DotNetNuke.Dashboard.Host,DashboardControl,Removed.,Removed.,Removed.,Removed.,
+DotNetNuke.Dashboard.Modules,DashboardControl,Removed.,Removed.,Removed.,Removed.,
+DotNetNuke.Dashboard.Portals,DashboardControl,Removed.,Removed.,Removed.,Removed.,
+DotNetNuke.Dashboard.Skins,DashboardControl,Removed.,Removed.,Removed.,Removed.,
+DotNetNuke.Dashboard.WebServer,DashboardControl,Removed.,Removed.,Removed.,Removed.,
+DotNetNuke.Enterprise.ContentStaging,Module,,Removed.,Removed.,Removed.,DesktopModules/DNNCorp/ContentStaging
+DotNetNuke.Extensions,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/Extensions
+DotNetNuke.Google Analytics,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/Analytics
+DotNetNuke.GoogleAnalyticsPro,Module,,Removed.,Removed.,Removed.,DesktopModules/DNNCorp/GoogleAnalytics
+DotNetNuke.HostSettings,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/HostSettings
+DotNetNuke.IntegrityChecker,Module,,Removed.,Removed.,Removed.,DesktopModules/DNNCorp/IntegrityChecker
+DotNetNuke.Languages,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/Languages
+DotNetNuke.LicenseActivation,Module,,Removed.,Removed.,Removed.,DesktopModules/DNNCorp/LicenseActivation
+DotNetNuke.Lists,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/Lists
+DotNetNuke.LogViewer,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/LogViewer
+DotNetNuke.MobileManagement,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/MobileManagement
+DotNetNuke.Modules.PreviewProfileManagement,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/DevicePreviewManagement
+DotNetNuke.Portals,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/Portals
+DotNetNuke.Professional.PortalGroups,Module,,Removed.,Removed.,Removed.,DesktopModules/DNNCorp/PortalGroups
+DotNetNuke.RecycleBin,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/RecycleBin
+DotNetNuke.Scheduler,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/Scheduler
+DotNetNuke.SearchAdmin,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/SearchAdmin
+DotNetNuke.SecurityCenter,Module,,Removed.,Removed.,Removed.,DesktopModules/DNNCorp/SecurityCenter
+DotNetNuke.Sitemap,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/Sitemap
+DotNetNuke.SiteWizard,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/SiteWizard
+DotNetNuke.SQL,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/Sql
+DotNetNuke.Tabs,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/Tabs
+DotNetNuke.Taxonomy,Module,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/Taxonomy
+DotNetNuke.Telerik.Web,Library,,,Removed.,,
+DotNetNuke.UserSwitcher,Module,,Removed.,Removed.,Removed.,DesktopModules/DNNCorp/UserSwitcher
+DotNetNuke.WebServerManager,Module,,Removed.,Removed.,Removed.,DesktopModules/DNNCorp/WebServerManager
+UrlManagement,Library,Removed.,Removed.,Removed.,Removed.,DesktopModules/Admin/UrlManagement

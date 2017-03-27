@@ -46,6 +46,7 @@
         <mapref audience="adm cmg mod"  href="connectors/connectors.ditamap" />
         <mapref audience="adm cmg"      href="microservices/microservices.ditamap" />
         <mapref audience="adm cmg"      href="workflows/workflows.ditamap" />
+        <mapref audience="adm"          href="search/search.ditamap" />
         <mapref audience="adm"          href="sitemaps/sitemaps.ditamap" />
 
     </topicref>
