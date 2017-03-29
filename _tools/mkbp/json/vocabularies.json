@@ -1,0 +1,158 @@
+{
+    "global" : {
+        "avail" : "PCE"
+    },
+
+
+    "bpsection" : [
+        {
+            "id" : "note-all-global-website"
+            , "text" : "If you know the vocabulary's scope, you can also search for it in the <uicontrol>Global</uicontrol> or <uicontrol>Website</uicontrol> tabs."
+        },
+        {
+            "id" : "note-uneditable-type-scope"
+            , "text" : "You cannot change a vocabulary's type or scope after it is created."
+        }
+    ],
+
+
+    "bpsteps" : [
+        {
+            "id" : "step-create-vocab-button"
+            , "cmd" : "Click/Tap <uicontrol>Create New Vocabulary</uicontrol>."
+            , "img" : "scr-vocabularies-list-create-btn-E90.png"
+        },
+        {
+            "id" : "step-create-vocab"
+            , "cmd" : "Fill in the properties of the vocabulary."
+            , "img" : "scr-vocabularies-create-new-vocabulary-dialog-E90.png"
+            , "info" : "conref=simpletable-create-vocab"
+        },
+        {
+            "id" : "step-search-and-expand-edit"
+            , "cmd" : "In the <uicontrol>All</uicontrol> tab, search for and expand the vocabulary to edit."
+            , "info" : "conref=note-all-global-website"
+            , "img" : "scr-vocabularies-list-all-tab-E90.png"
+        },
+        {
+            "id" : "step-search-and-expand-delete"
+            , "cmd" : "In the <uicontrol>All</uicontrol> tab, search for and expand the vocabulary to delete."
+            , "info" : "conref=note-all-global-website"
+            , "img" : "scr-vocabularies-list-all-tab-E90.png"
+        },
+        {
+            "id" : "step-edit-vocab"
+            , "cmd" : "Edit the description or the list of terms."
+            , "img" : "scr-vocabularies-edit-vocab-edit-E90.png"
+        },
+        {
+            "id" : "step-delete-vocab"
+            , "cmd" : "Click/Tap <uicontrol>Delete</uicontrol>."
+            , "img" : "scr-vocabularies-edit-vocab-delete-E90.png"
+        },
+        {
+            "id" : "step-add-term-button"
+            , "cmd" : "Click/Tap <uicontrol>+ Add Term</uicontrol>."
+            , "img" : "scr-vocabularies-edit-vocab-add-term-btn-E90.png"
+        },
+        {
+            "id" : "step-add-term"
+            , "cmd" : "Enter a name and a description for the term."
+            , "img" : "scr-vocabularies-add-term-E90.png"
+        },
+        {
+            "id" : "step-edit-term-icon-edit"
+            , "cmd" : "Hover over the term to edit, then click/tap the pencil icon."
+            , "img" : "scr-vocabularies-edit-term-icon-E90.png"
+        },
+        {
+            "id" : "step-edit-term-icon-delete"
+            , "cmd" : "Hover over the term to delete, then click/tap the pencil icon."
+            , "img" : "scr-vocabularies-edit-term-icon-E90.png"
+        },
+        {
+            "id" : "step-edit-term"
+            , "cmd" : "Edit the term's name and/or description."
+            , "img" : "scr-vocabularies-edit-term-edit-E90.png"
+        },
+        {
+            "id" : "step-delete-term"
+            , "cmd" : "Click/Tap <uicontrol>Delete</uicontrol>."
+            , "img" : "scr-vocabularies-edit-term-delete-E90.png"
+        }
+    ],
+
+
+    "topics" : [
+
+        {
+            "nav" : "Create Vocabulary"
+            , "title" : "Create a Vocabulary"
+            , "section" : "conref=note-uneditable-type-scope"
+            , "steps" : [
+                "step-pbar-Settings-Vocabularies"
+                , "step-create-vocab-button"
+                , "step-create-vocab"
+                , "Click/Tap <uicontrol>Create</uicontrol>."
+            ]
+        },
+
+        {
+            "nav" : "Edit Vocabulary"
+            , "title" : "Edit a Vocabulary"
+            , "section" : "conref=note-uneditable-type-scope"
+            , "steps" : [
+                "step-pbar-Settings-Vocabularies"
+                , "step-search-and-expand-edit"
+                , "step-edit-vocab"
+            ]
+        },
+
+        {
+            "nav" : "Delete Vocabulary"
+            , "title" : "Delete a Vocabulary"
+            , "steps" : [
+                "step-pbar-Settings-Vocabularies"
+                , "step-search-and-expand-delete"
+                , "step-delete-vocab"
+                , "Confirm."
+            ]
+        },
+
+        {
+            "nav" : "Add Term to Vocabulary"
+            , "title" : "Add a Term to a Vocabulary"
+            , "steps" : [
+                "step-pbar-Settings-Vocabularies"
+                , "step-search-and-expand-edit"
+                , "step-add-term-button"
+                , "step-add-term"
+                , "Click/Tap <uicontrol>Update</uicontrol>."
+            ]
+        },
+
+        {
+            "nav" : "Edit Term in Vocabulary"
+            , "title" : "Edit a Term in a Vocabulary"
+            , "steps" : [
+                "step-pbar-Settings-Vocabularies"
+                , "step-search-and-expand-edit"
+                , "step-edit-term-icon-edit"
+                , "step-edit-term"
+                , "Click/Tap <uicontrol>Update</uicontrol>."
+            ]
+        },
+
+        {
+            "nav" : "Delete Term from Vocabulary"
+            , "title" : "Delete a Term from a Vocabulary"
+            , "steps" : [
+                "step-pbar-Settings-Vocabularies"
+                , "step-search-and-expand-edit"
+                , "step-edit-term-icon-delete"
+                , "step-delete-term"
+                , "Confirm."
+            ]
+        }
+    ]
+}

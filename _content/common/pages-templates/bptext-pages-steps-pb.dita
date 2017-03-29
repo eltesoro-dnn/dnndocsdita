@@ -14,6 +14,33 @@
 
     <taskbody>
 
+        <section>
+
+            <simpletable relcolwidth="1* 3*">
+
+                <!-- <strow conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/strow-field-tags"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagespb/strow-field-tags"><stentry/></strow> -->
+                <strow id="strow-field-tags">
+                    <stentry><uicontrol>Tags</uicontrol></stentry>
+                    <stentry>Tags to help search engines categorize and find this page.<!-- Tags that are added here are also added to the <uicontrol>Tags</uicontrol> system vocabulary. --></stentry>
+                </strow>
+
+
+                <!-- ==========  ========== -->
+
+                <!--
+                <strow conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/strow-field-"><stentry/></strow>
+                <strow conkeyref="k-bppagespb/strow-field-"><stentry/></strow>
+                <strow id="strow-field-">
+                    <stentry><uicontrol></uicontrol></stentry>
+                    <stentry></stentry>
+                </strow>
+                -->
+
+            </simpletable>
+
+        </section>
+
         <steps>
 
             <!-- PERSONA BAR (PB) MANAGE PAGES: ADD, EDIT -->
@@ -128,7 +155,7 @@
                         <strow conkeyref="k-bppagesxx/strow-field-pagetitle"><stentry/></strow>
                         <strow conkeyref="k-bppagesxx/strow-field-pageurl"><stentry/></strow>
                         <strow conkeyref="k-bppagesxx/strow-field-keywords"><stentry/></strow>
-                        <strow conkeyref="k-bppagesxx/strow-field-tags"><stentry/></strow>
+                        <strow conkeyref="k-bppagespb/strow-field-tags"><stentry/></strow>
                         <strow conkeyref="k-bppagesxx/strow-field-workflow"><stentry/></strow>
                         <strow conkeyref="k-bppagesxx/strow-field-displayinmenu"><stentry/></strow>
                         <strow conkeyref="k-bppagesxx/strow-field-linktracking"><stentry/></strow>

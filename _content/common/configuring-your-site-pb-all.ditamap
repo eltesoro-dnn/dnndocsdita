@@ -48,6 +48,7 @@
         <mapref audience="adm cmg"      href="workflows/workflows.ditamap" />
         <mapref audience="adm"          href="search/search.ditamap" />
         <mapref audience="adm"          href="sitemaps/sitemaps.ditamap" />
+        <mapref audience="adm"          href="vocabularies/vocabularies.ditamap" /> <!-- BUGBUG: Add cmg, after the Tags field in Page Settings is linked to Tag vocabulary. -->
 
     </topicref>
 

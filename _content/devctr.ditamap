@@ -90,10 +90,13 @@
             <topicref format="dita" type="topic"     toc="yes" href="developers/DNN-security.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="developers/more-resources.dita" />
         </topicref>
+        <topicref format="dita" type="topic"     toc="yes" href="developers/glossary.dita" />
+        <!--
         <topichead toc="yes" chunk="by-document to-content" copy-to="developers/glossary.dita" >
             <topicmeta><navtitle>Glossary</navtitle></topicmeta>
             <mapref href="common/glossary/glossary.ditamap" />
         </topichead>
+        -->
 
     </topicref>
 

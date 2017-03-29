@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-about-vocabularies">
+
+    <title>About Vocabularies</title>
+    <titlealts>
+        <navtitle>Vocabularies</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1703</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section id="overview">
+            <p>Vocabularies are sets of related terms that are used to categorize modules or content throughout a specific website or throughout all sites in a DNN installation. <!-- Example: ... --></p>
+
+            <p>A vocabulary's type can be:
+                <ul conref="bptext-vocabularies.dita#tsk-bptext-vocabularies/ul-vocab-types"><li/></ul>
+            </p>
+
+            <p>DNN provides two system vocabulary sets that can be edited but not deleted:
+                <ul>
+                    <li><uicontrol>Tags</uicontrol>. Terms that can be defined by anyone to categorize content. Tags can also be added to the vocabulary while editing a page.</li>
+                    <li><uicontrol>Module_Categories</uicontrol>. Terms defined by the host/superuser to categorize modules.</li>
+                </ul>
+            </p>
+
+        </section>
+
+    </body>
+
+</topic>

@@ -18,6 +18,11 @@ call %0 runme json\search.json bptext-search W:\_content\common\search
 :. Explorer W:\_content\common\search
 goto :eof
 
+:vocab
+:vocabularies
+call %0 runme json\vocabularies.json bptext-vocabularies W:\_content\common\vocabularies
+goto :eof
+
 
 :runme
 if _%3_ EQU __  goto :error

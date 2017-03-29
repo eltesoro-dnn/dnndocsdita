@@ -74,10 +74,13 @@
             <topicref format="dita" type="topic"     toc="yes" href="administrators/DNN-security.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="administrators/more-resources.dita" />
         </topicref>
+        <topicref format="dita" type="topic"     toc="yes" href="administrators/glossary.dita" />
+        <!--
         <topichead toc="yes" chunk="by-document to-content" copy-to="administrators/glossary.dita" >
             <topicmeta><navtitle>Glossary</navtitle></topicmeta>
             <mapref href="common/glossary/glossary.ditamap" />
         </topichead>
+        -->
 
 
     </topicref>

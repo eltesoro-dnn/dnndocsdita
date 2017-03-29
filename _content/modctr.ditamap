@@ -45,10 +45,13 @@
             <topicref format="dita" type="topic"     toc="yes" href="community-managers/DNN-security.dita" />
             <!-- <topicref format="dita" type="topic"     toc="yes" href="community-managers/more-resources.dita" /> -->
         </topicref>
+        <topicref format="dita" type="topic"     toc="yes" href="community-managers/glossary.dita" />
+        <!--
         <topichead toc="yes" chunk="by-document to-content" copy-to="community-managers/glossary.dita" >
             <topicmeta><navtitle>Glossary</navtitle></topicmeta>
             <mapref href="common/glossary/glossary.ditamap" />
         </topichead>
+        -->
 
     </topicref>
 

@@ -5,19 +5,23 @@
 
 
     "bpsection" : [
+        {
+            "id" : ""
+            , "text" : ""
+        },
     ],
 
 
     "bpsteps" : [
         {
-            "id" : "step-",
-            "cmd" : "Click/Tap <uicontrol></uicontrol>.",
-            "img" : "scr-.png"
+            "id" : "step-"
+            , "cmd" : "Click/Tap <uicontrol></uicontrol>."
+            , "img" : "scr-.png"
         },
         {
-            "id" : "step-",
-            "cmd" : "Click/Tap <uicontrol></uicontrol>.",
-            "img" : "scr-.png"
+            "id" : "step-"
+            , "cmd" : "Click/Tap <uicontrol></uicontrol>."
+            , "img" : "scr-.png"
         }
     ],
 
@@ -25,20 +29,22 @@
     "topics" : [
 
         {
-            "nav" : "...",
-            "title" : "...",
-            "steps" : [
-                "step-",
+            "nav" : "..."
+            , "title" : "..."
+            , "steps" : [
                 "step-"
+                , "step-"
+                , "step-"
             ]
         },
 
         {
-            "nav" : "...",
-            "title" : "...",
-            "steps" : [
-                "step-",
+            "nav" : "..."
+            , "title" : "..."
+            , "steps" : [
                 "step-"
+                , "step-"
+                , "step-"
             ]
         },
 

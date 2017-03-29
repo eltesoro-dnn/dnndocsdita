@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-glossary-all">
+
+    <title>Glossary</title>
+    <titlealts>
+        <navtitle>Glossary</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,trJB,ceDS,1601</author>
+        <copyright>
+            <copyryear year="2016"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="8" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="8" release="3"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>  <!-- All three products. -->
+
+        <dl>
+            <dlentry>
+                <dt>action menu</dt>
+                <dd>The set of menus that provides access to the functionality of a module. Available only if the page is in <b>Edit</b> mode. The menus can include the <uicontrol>Edit</uicontrol> menu (pencil icon), the <uicontrol>Manage</uicontrol> menu (gear icon), and the <uicontrol>Move</uicontrol> menu (four-arrow icon). The DNN Platform provides actions that are common to all modules; however, a module might provide additional actions. If the module instance is independent, then actions performed through the module action menu affect only that specific module instance in that specific webpage. If the same module instance is referenced in multiple pages, then changes made to the module instance from any of those pages are reflected in all those pages.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>Advanced URL Management</dt>
+                <dd>The latest implementation of the Friendly URL Rewriter. Includes additional tools that give DNN administrators greater control over the formatting of URLs within DNN.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>container</dt>
+                <dd>A set of related components that define the look and feel of a module. In contrast, a <term id="skin">skin</term> or <term id="theme">theme</term> defines the look and feel of an entire webpage or website.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>culture</dt>
+                <dd>The RFC 4646 code for the language and region. Example: en-US for English (US) and fr-FR for French (France).
+                    <!-- Source: https://msdn.microsoft.com/en-us/library/system.globalization.cultureinfo(v=vs.110).aspx -->
+                </dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>databaseOwner</dt>
+                <dd>A token used in database scripts to refer to the SQL Server database schema that is used during DNN installation. Default: <codeph>dbo</codeph>.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>engagement</dt>
+                <dd>A score that measures how involved the member is with the rest of the community.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>Experience Points</dt>
+                <dd>An unlimited lifetime cumulative score based on the activities of the user on the site.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>extension</dt>
+                <dd>A combination of themes, modules, or other components that replace or extend specific features of the DNN Platform.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>Forge</dt>
+                <dd>The <xref format="html" scope="external" href="http://www.dnnsoftware.com/forge">list of open-source extensions</xref> (including modules and themes) from the DNN community.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>friendly URL</dt>
+                <dd>A URL that hides a coded path. Example: <filepath>http://www.example.com/myanswerpage</filepath> might actually resolve to <filepath>http://www.example.com/default.aspx?tabid=42</filepath>. DNN provides three modes of friendly URLs:
+                    <ul>
+                        <li><b>Advanced</b> provides both human-friendly and search-friendly URLs.</li>
+                        <li><b>HumanFriendly</b> uses simple URLs for page names and uses <codeph>tabid</codeph> in more complicated URLs. Limited redirect support.</li>
+                        <li><b>SearchFriendly</b> includes <codeph>tabid</codeph> patterns in URLs.</li>
+                    </ul>
+                </dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>influence</dt>
+                <dd>A score that measures the positive or negative effect of the member on the community.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>manifest</dt>
+                <dd>An XML file (e.g., MyExtension.dnn) that specifies how to install an extension. The manifest contains information regarding the extension type, and the various components that make up the extension.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>module</dt>
+                <dd>A DNN extension that provides content or some functionality in a page. Example: A module could produce dynamic content that is displayed in a <term id="pane">pane</term> on the page.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>objectQualifier</dt>
+                <dd>A custom string used as a prefix to names of DNN-related SQL objects, such as tables and stored procedures. This allows you to identify the DNN objects in a database that supports other applications besides DNN. Default: blank.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>package</dt>
+                <dd>The zip file that contains all files required to install an extension in a DNN-based website. Also, a section of the DNN Manifest schema that specifies how the core components of the extension are installed.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>page</dt>
+                <dd>A DNN object that includes all components of a webpage, including scripts and UI components.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>pane</dt>
+                <dd>A layout template area that holds a module. Theme designers determine the names and positions of panes. Administrators and webpage editors select the pane for each module added to the webpage. When the webpage is viewed, the pane can display content, depending on the module's functionality.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>portal alias</dt>
+                <dd>A URL that refers to a specific website in a DNN installation. Examples: <codeph>http://www.example.com</codeph> (parent portal alias), <codeph>http://www.example.com/pathname</codeph> (child portal alias). Each website can have one or more portal aliases.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>premium</dt>
+                <dd>A module setting that indicates that use of the module can be restricted for security reasons. Example: Modules that expose confidential user information and modules that manage security access to the site should be premium.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>provider</dt>
+                <dd>A type of DNN extension that provides an alternative implementation of a specific functionality of the DNN Platform. Examples: authentication providers, data providers, and navigation providers. In most cases, even if multiple implementations are available in a DNN installation, only one implementation of each provider type is active at any time.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>Reputation Points</dt>
+                <dd>A set of points based on how members of the site perceive the trustworthiness of a user.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>site</dt>
+                <dd>A specific website in a DNN installation, which can host multiple websites that share files and resources.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>superuser</dt>
+                <dd>The most privileged administrative account with complete access to all websites within the DNN installation and to all installed apps.</dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>theme object</dt>
+                <dd>A type of DNN extension used in themes to provide additional functionality for common UI elements on a webpage. Examples: menu bar, copyright notice, login/registration links, privacy link, terms of service link, and search box. Theme objects are configured by the theme designer.
+                    <note conkeyref="k-bptext/note-TipSkinningTool"></note>
+                </dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>theme</dt>
+                <dd>A set of related components that define the look and feel of a webpage or website. These components include:
+                    <ul>
+                        <li>one or more layout templates, and</li>
+                        <li>an optional CSS for each of the templates, or an optional master CSS for the entire website.</li>
+                    </ul>
+                    <p>In contrast, a <term id="container">container</term> and any associated CSS define the look and feel of a module in a single pane of a page.</p>
+                </dd>
+            </dlentry>
+
+            <dlentry>
+                <dt>token</dt>
+                <dd>
+                    <p>In an HTML content template, a placeholder for data to be injected into the HTML output. Example: <codeph>[User:UserName]</codeph> is replaced with the actual username.</p>
+                    <p>In an HTML layout template, a word that represents DNN-standard code for a <term id="themeobject">theme object</term>. Examples: [NAV], [COPYRIGHT], [LOGIN], [PRIVACY], [TERMS], and [SEARCH].</p>
+                    <p>In a Visualizer template, a word that represents a field in the content type associated with the visualizer. Example: If the content type field is named <userinput>Meeting Timeslot</userinput>, the field's token would be <codeph>{{ meetingTimeslot }}</codeph>.</p>
+                </dd>
+            </dlentry>
+
+        </dl>
+
+    </body>
+
+    <related-links>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/dotnetnuke-glossary"><linktext>DNN Wiki: DNN Glossary</linktext></link>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/international-glossary"><linktext>DNN Wiki: Globalization Glossary</linktext></link>
+    </related-links>
+
+</topic>

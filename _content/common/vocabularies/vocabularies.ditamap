@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-vocabularies">
+
+    <title>Vocabularies</title>
+
+    <!-- Topics -->
+    <topicref format="dita" type="topic" toc="yes" href="about-vocabularies.dita" copy-to="index.dita" collection-type="family">
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="create-vocabulary.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="edit-vocabulary.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="delete-vocabulary.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="add-term-to-vocabulary.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="edit-term-in-vocabulary.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="delete-term-from-vocabulary.dita" />
+        <!-- <topicref audience="adm cmg" format="dita" type="task" toc="yes" href="add-tag-while-editing-page.dita" /> BUGBUG: Not yet working in the product. -->
+    </topicref>
+
+</map>
