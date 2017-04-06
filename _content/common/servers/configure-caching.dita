@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-configure-caching">
+
+    <title>Configure Caching</title>
+    <titlealts>
+        <navtitle>Configure Caching</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1704</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <audience type="administrator" job="maintaining" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-CE"></section>
+
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li>
+            </ul>
+        </prereq>
+
+        <steps>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-Servers-E90"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Servers-ServerSettings-Performance-E90"><cmd/></step>
+            <step>
+                <cmd>Choose how the page's state is persisted (<uicontrol>Page State Persistence</uicontrol>).</cmd>
+                <choices>
+                    <choice><uicontrol>Page</uicontrol>. Information about the page's state is stored in a hidden field in the page. Recommended.</choice>
+                    <choice><uicontrol>Memory</uicontrol>. Information about the page's state is cached in memory.</choice>
+                </choices>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Servers-ServerSettings-Performance-PageStatePersistence-E90.png"><alt>Page State Persistence</alt></image>
+                </info>
+            </step>
+            <step>
+                <cmd>Choose the caching providers.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Servers-ServerSettings-Performance-CachingProviders-E90.png"><alt>Caching Providers</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry><uicontrol>Caching Provider</uicontrol></stentry>
+                            <stentry>
+                                <p>The default caching provider for the site.</p>
+                                <ul>
+                                    <li><uicontrol>WebRequestCachingProvider</uicontrol>. Default for Evoq products. Uses a server web request adapter to automatically synchronize the caches of enabled web servers.</li>
+                                    <li><uicontrol>FileBasedCachingProvider</uicontrol>. Default for the DNN Platform. Cache synchronization is not automated.</li>
+                                </ul>
+                            </stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Module Cache Provider</uicontrol></stentry>
+                            <stentry>
+                                <p>The default caching provider for modules. Each module can override this setting.</p>
+                                <ul>
+                                    <li><ph conref="bptext-servers.dita#tsk-bptext-servers/ph-cache-to-file"></ph> Default.</li>
+                                    <li><ph conref="bptext-servers.dita#tsk-bptext-servers/ph-cache-to-memory"></ph></li>
+                                    <li><ph conref="bptext-servers.dita#tsk-bptext-servers/ph-cache-to-database"></ph> To be deprecated.</li>
+                                </ul>
+                            </stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>Page Output Cache Provider</uicontrol></stentry>
+                            <stentry>
+                                <p>The default caching provider for pages. Caching is enabled for a page, only if the cache timeout is set for that page.</p>
+                                <!-- TODO: New topic about how to set cache timeout for a page. -->
+                                <ul>
+                                    <li><ph conref="bptext-servers.dita#tsk-bptext-servers/ph-cache-to-file"></ph></li>
+                                    <li><ph conref="bptext-servers.dita#tsk-bptext-servers/ph-cache-to-memory"></ph></li>
+                                    <li><ph conref="bptext-servers.dita#tsk-bptext-servers/ph-cache-to-database"></ph> Default.</li>
+                                </ul>
+                            </stentry>
+                        </strow>
+                    </simpletable>
+                </info>
+
+            </step>
+            <step>
+                <cmd>Configure the caching behavior.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Servers-ServerSettings-Performance-CachingBehavior-E90.png"><alt>Cachin behavior settings</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow>
+                            <stentry><uicontrol>Cache Setting</uicontrol></stentry>
+                            <stentry>
+                                <p>The relative length of time that items remain in cache.</p>
+                                <ul>
+                                    <li><uicontrol>NoCaching</uicontrol>. No caching. Worst performance.</li>
+                                    <li><uicontrol>LightCaching</uicontrol>. Items are held in cache for the shortest time. </li>
+                                    <li><uicontrol>ModerateCaching</uicontrol>. Items are held in cache for a moderate length of time. </li>
+                                    <li><uicontrol>HeavyCaching</uicontrol>. Items are held in cache for the longest time. Best performance. Default.</li>
+                                </ul>
+                            </stentry>
+                        </strow>
+                        <strow>
+                            <stentry>
+<lines><uicontrol>Authenticated Cacheability</uicontrol>
+<uicontrol>Unauthenticated Cacheability</uicontrol></lines>
+                            </stentry>
+                            <stentry>
+                                <p>The value of the <varname>Cache-Control</varname> field in the HTTP general header. The <varname>Cache-Control</varname> field indicates how caching is done. <uicontrol>Authenticated Cacheability</uicontrol> specifies the caching behavior for authenticated users; <uicontrol>Unauthenticated Cacheability</uicontrol> for anonymous users.</p>
+                                <ul>
+                                    <li><uicontrol>NoCache</uicontrol></li>
+                                    <li><uicontrol>Private</uicontrol></li>
+                                    <li><uicontrol>Public</uicontrol></li>
+                                    <li><uicontrol>Server</uicontrol></li>
+                                    <li><uicontrol>ServerAndNoCache</uicontrol>. Default.</li>
+                                    <li><uicontrol>ServerAndPrivate</uicontrol></li>
+                                </ul>
+                                <p>These values are defined in <xref format="html" scope="external" href="https://msdn.microsoft.com/en-us/system.web.httpcacheability.aspx">HttpCacheability Enumeration</xref>.</p>
+                            </stentry>
+                        </strow>
+                        <strow>
+                            <stentry><uicontrol>SSL for Cache Synchronization</uicontrol></stentry>
+                            <stentry>(Optional) If enabled (<uicontrol>On</uicontrol>), a secure connection is used when synchronizing the caches of enabled web servers.</stentry>
+                        </strow>
+                    </simpletable>
+                </info>
+            </step>
+            <step><cmd>Save.</cmd></step>
+        </steps>
+
+    </taskbody>
+
+    <related-links>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/caching-providers"><linktext>Caching Providers</linktext></link>
+    </related-links>
+
+</task>

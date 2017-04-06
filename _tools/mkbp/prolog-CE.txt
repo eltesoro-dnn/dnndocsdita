@@ -5,11 +5,8 @@
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
-            <audience type="administrator" job="customizing" />
-            <prodinfo>
-                <prodname>Platform</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
-            </prodinfo>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <audience type="administrator" job="maintaining" />
             <prodinfo>
                 <prodname>Evoq Content</prodname>
                 <vrmlist><vrm version="9" release="0"/></vrmlist>

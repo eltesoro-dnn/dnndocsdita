@@ -194,14 +194,14 @@ if ( !( Test-Path $logdir ) )  { New-Item $logdir  -Type directory  -Force | Out
 
 # Rebuild the test log.
 RefreshFile $tstlog
-Get-Date | Out-File $tstlog  -Encoding "UTF8"
+Get-Date | Out-File $tstlog  -Encoding "Default"
 
 
-T001 | Out-File -Append $tstlog
-T002 | Out-File -Append $tstlog
-T003 | Out-File -Append $tstlog
-T004 | Out-File -Append $tstlog
-T005 | Out-File -Append $tstlog
+T001 | Out-File  -File $tstlog  -Encoding "Default"  -Append
+T002 | Out-File  -File $tstlog  -Encoding "Default"  -Append
+T003 | Out-File  -File $tstlog  -Encoding "Default"  -Append
+T004 | Out-File  -File $tstlog  -Encoding "Default"  -Append
+T005 | Out-File  -File $tstlog  -Encoding "Default"  -Append
 
 & "cmd.exe" /c npp.bat $tstlog
 

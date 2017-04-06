@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-minify-resource-files">
+
+    <title>Minify Resource Files</title>
+    <titlealts>
+        <navtitle>Minify Resource Files</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1704</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <audience type="administrator" job="maintaining" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-CE"></section>
+
+        <section id="overview">You can speed up page downloads in two steps:
+            <ul>
+                <li>Minify the resources (CSS and JavaScript files) to reduce their sizes.</li>
+                <li>Combine the resources into composite files to reduce the number of file requests that the browser makes.</li>
+            </ul>
+        </section>
+
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li>
+            </ul>
+        </prereq>
+
+        <steps>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-Servers-E90"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Servers-ServerSettings-Performance-E90"><cmd/></step>
+            <stepsection><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Servers-ServerSettings-Performance-ClientResourceMgmt-E90.png"><alt></alt></image></stepsection>
+            <step>
+                <cmd>Choose the scope of the settings.</cmd>
+                <choices>
+                    <choice><uicontrol>Global</uicontrol>. Applies the Client Resource Management settings to all sites in the installation.</choice>
+                    <choice>The name of the current site. Applies the Client Resource Management settings only to the current site.</choice>
+                </choices>
+            </step>
+            <step><cmd>Set <uicontrol>Enable Composite Files</uicontrol> to <uicontrol>On</uicontrol>.</cmd></step>
+            <step><cmd>Set <uicontrol>Minify CSS</uicontrol> and <uicontrol>Minify JS</uicontrol> to <uicontrol>On</uicontrol>.</cmd></step>
+            <step>
+                <cmd>Save.</cmd>
+                <info><note type="note">You must save the settings to force the creation of a new composite file before incrementing the version number.</note></info>
+            </step>
+            <step><cmd>Click/Tap <uicontrol>Increment Version</uicontrol>.</cmd></step>
+            <step><cmd>Confirm.</cmd></step>
+        </steps>
+
+    </taskbody>
+
+    <related-links>
+        <link format="html" scope="external" href="http://www.dnnsoftware.com/wiki/caching-providers"><linktext>Caching Providers</linktext></link>
+    </related-links>
+
+</task>

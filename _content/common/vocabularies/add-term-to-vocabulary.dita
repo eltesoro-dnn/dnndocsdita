@@ -36,6 +36,11 @@
 
         <section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
+            </ul>
+        </prereq>
 
         <steps>
             <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Vocabularies-E90"><cmd/></step>

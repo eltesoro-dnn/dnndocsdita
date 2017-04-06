@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-clear-cache">
+<task xml:lang="en" id="tsk-expire-cached-item-in-web-server">
 
-    <title>Clear Cache</title>
+    <title>Expire a Cached Item in a Web Server</title>
     <titlealts>
-        <navtitle>Clear Cache</navtitle>
+        <navtitle>Expire Cached Item in Web Server</navtitle>
     </titlealts>
 
 
@@ -39,10 +39,17 @@
             </ul>
         </prereq>
 
+        <section>
+            <p>These steps allow you delete individual items in the cache. To delete all cache items at once, use the <uicontrol>Clear Cache</uicontrol> button.</p>
+        </section>
 
         <steps>
             <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Servers-E90"><cmd/></step>
-            <step conref="bptext-servers.dita#tsk-bptext-servers/step-clear-cache-button"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Servers-ServerSettings-WebServers-E90"><cmd/></step>
+            <step conref="bptext-servers.dita#tsk-bptext-servers/step-edit-server"><cmd/></step>
+            <step conref="bptext-servers.dita#tsk-bptext-servers/step-load-cache-items"><cmd/></step>
+            <step conref="bptext-servers.dita#tsk-bptext-servers/step-expire-individual-cache-items"><cmd/></step>
+            <step><cmd>Click/Tap the <uicontrol>X</uicontrol> when done.</cmd></step>
         </steps>
 
     </taskbody>

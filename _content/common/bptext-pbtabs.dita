@@ -682,15 +682,15 @@
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90"></info> -->
-           <step id="step-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90">
-               <cmd id="cmd-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90"><ph id="ph-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90">Go to the <uicontrol>All</uicontrol> tab, and then the  <uicontrol>Module_Categories</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90" outputclass="img-scr" scalefit="yes" href="img/scr-pbtabs-host-Settings-Vocabularies-All-Module_Categories-E90.png"><alt>All &gt; Module_Categories</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Vocabularies-All-Module-Categories-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-All-Module-Categories-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-All-Module-Categories-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Vocabularies-All-Module-Categories-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Vocabularies-All-Module-Categories-E90"></info> -->
+           <step id="step-pbtabs-host-Settings-Vocabularies-All-Module-Categories-E90">
+               <cmd id="cmd-pbtabs-host-Settings-Vocabularies-All-Module-Categories-E90"><ph id="ph-pbtabs-host-Settings-Vocabularies-All-Module-Categories-E90">Go to the <uicontrol>All</uicontrol> tab, and then the  <uicontrol>Module_Categories</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-host-Settings-Vocabularies-All-Module-Categories-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-host-Settings-Vocabularies-All-Module-Categories-E90" outputclass="img-scr" scalefit="yes" href="img/scr-pbtabs-host-Settings-Vocabularies-All-Module-Categories-E90.png"><alt>All &gt; Module_Categories</alt></image>
                </info>
            </step>
 
@@ -721,15 +721,15 @@
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90"></info> -->
-           <step id="step-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90">
-               <cmd id="cmd-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90"><ph id="ph-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90">Go to the <uicontrol>Global</uicontrol> tab, and then the  <uicontrol>Module_Categories</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90" outputclass="img-scr" scalefit="yes" href="img/scr-pbtabs-host-Settings-Vocabularies-Global-Module_Categories-E90.png"><alt>Global &gt; Module_Categories</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-Vocabularies-Global-Module-Categories-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-Global-Module-Categories-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-Global-Module-Categories-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-Vocabularies-Global-Module-Categories-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-Vocabularies-Global-Module-Categories-E90"></info> -->
+           <step id="step-pbtabs-host-Settings-Vocabularies-Global-Module-Categories-E90">
+               <cmd id="cmd-pbtabs-host-Settings-Vocabularies-Global-Module-Categories-E90"><ph id="ph-pbtabs-host-Settings-Vocabularies-Global-Module-Categories-E90">Go to the <uicontrol>Global</uicontrol> tab, and then the  <uicontrol>Module-Categories</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-host-Settings-Vocabularies-Global-Module-Categories-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-host-Settings-Vocabularies-Global-Module-Categories-E90" outputclass="img-scr" scalefit="yes" href="img/scr-pbtabs-host-Settings-Vocabularies-Global-Module-Categories-E90.png"><alt>Global &gt; Module-Categories</alt></image>
                </info>
            </step>
 
@@ -1101,15 +1101,15 @@
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90"><ph id="ph-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90">Go to the <uicontrol>All</uicontrol> tab, and then the  <uicontrol>Module_Categories</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90" outputclass="img-scr" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Vocabularies-All-Module_Categories-E90.png"><alt>All &gt; Module_Categories</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Vocabularies-All-Module-Categories-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-All-Module-Categories-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-All-Module-Categories-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Vocabularies-All-Module-Categories-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Vocabularies-All-Module-Categories-E90"></info> -->
+           <step id="step-pbtabs-adm-Settings-Vocabularies-All-Module-Categories-E90">
+               <cmd id="cmd-pbtabs-adm-Settings-Vocabularies-All-Module-Categories-E90"><ph id="ph-pbtabs-adm-Settings-Vocabularies-All-Module-Categories-E90">Go to the <uicontrol>All</uicontrol> tab, and then the  <uicontrol>Module-Categories</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-adm-Settings-Vocabularies-All-Module-Categories-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-adm-Settings-Vocabularies-All-Module-Categories-E90" outputclass="img-scr" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Vocabularies-All-Module-Categories-E90.png"><alt>All &gt; Module-Categories</alt></image>
                </info>
            </step>
 
@@ -1140,15 +1140,15 @@
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90"><cmd/></step> -->
-           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90"></ph></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90"></info> -->
-           <step id="step-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90">
-               <cmd id="cmd-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90"><ph id="ph-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90">Go to the <uicontrol>Global</uicontrol> tab, and then the  <uicontrol>Module_Categories</uicontrol> subtab.</ph></cmd>
-               <info id="info-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90" outputclass="init-hide">
-                   <image id="image-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90" outputclass="img-scr" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Vocabularies-Global-Module_Categories-E90.png"><alt>Global &gt; Module_Categories</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-adm-Settings-Vocabularies-Global-Module-Categories-E90"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-Global-Module-Categories-E90"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-Global-Module-Categories-E90"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-adm-Settings-Vocabularies-Global-Module-Categories-E90"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-adm-Settings-Vocabularies-Global-Module-Categories-E90"></info> -->
+           <step id="step-pbtabs-adm-Settings-Vocabularies-Global-Module-Categories-E90">
+               <cmd id="cmd-pbtabs-adm-Settings-Vocabularies-Global-Module-Categories-E90"><ph id="ph-pbtabs-adm-Settings-Vocabularies-Global-Module-Categories-E90">Go to the <uicontrol>Global</uicontrol> tab, and then the  <uicontrol>Module-Categories</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-adm-Settings-Vocabularies-Global-Module-Categories-E90" outputclass="init-hide">
+                   <image id="image-pbtabs-adm-Settings-Vocabularies-Global-Module-Categories-E90" outputclass="img-scr" scalefit="yes" href="img/scr-pbtabs-adm-Settings-Vocabularies-Global-Module-Categories-E90.png"><alt>Global &gt; Module-Categories</alt></image>
                </info>
            </step>
 

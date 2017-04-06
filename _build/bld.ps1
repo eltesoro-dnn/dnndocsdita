@@ -304,6 +304,7 @@ function AssembleOutput()  {
     Write-Host "Deleting files we don't need ...."
     if ( Test-Path $outdir\toc.html          )  { Remove-Item $outdir\toc.html -Force | Out-Null }
     if ( Test-Path $outdir\common\glossary\* )  { Remove-Item $outdir\common\glossary -Recurse -Force | Out-Null }
+    RunBat @( "del $outdir\bptext*.html /s /q" )  # BUGBUG: This is a hack. Haven't figured out why the build created these files.
 
     # Write-Host "Adding versioning to .css and .js calls in html files ...."
     AddVersioning $outdir "*.html"

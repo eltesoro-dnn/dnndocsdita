@@ -1,2 +1,2 @@
 @echo off
-powershell -file getbp.ps1 %*
+powershell -file W:\_tools\getpbarbp\getbp.ps1 %*

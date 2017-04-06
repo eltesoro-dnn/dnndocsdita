@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-clear-cache">
+<task xml:lang="en" id="tsk-view-server-logs">
 
-    <title>Clear Cache</title>
+    <title>View Server Logs</title>
     <titlealts>
-        <navtitle>Clear Cache</navtitle>
+        <navtitle>View Server Logs</navtitle>
     </titlealts>
 
 
@@ -31,7 +31,7 @@
 
     <taskbody>
 
-        <section conkeyref="k-bptext/section-prodavail-CE"></section>
+		<section conkeyref="k-bptext/section-prodavail-CE"></section>
 
         <prereq>
             <ul>
@@ -39,13 +39,15 @@
             </ul>
         </prereq>
 
-
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Servers-E90"><cmd/></step>
-            <step conref="bptext-servers.dita#tsk-bptext-servers/step-clear-cache-button"><cmd/></step>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-Servers-E90"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Servers-ServerSettings-Logs-E90"><cmd/></step>
+            <step>
+                <cmd>From the <uicontrol>Log Files</uicontrol> dropdown, choose the log to view.</cmd>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Servers-ServerSettings-Logs-dropdown-E90.png"><alt></alt></image></info>
+            </step>
         </steps>
 
     </taskbody>
 
 </task>
-

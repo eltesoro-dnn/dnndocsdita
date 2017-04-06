@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-test-smtp-settings">
+
+    <title>Test the SMTP Settings</title>
+    <titlealts>
+        <navtitle>Test SMTP</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1704</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <audience type="administrator" job="maintaining" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-CE"></section>
+
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
+            </ul>
+        </prereq>
+
+        <steps>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-Servers-E90"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Servers-ServerSettings-SMTPServer-E90"><cmd/></step>
+            <step>
+                <cmd>Choose the settings to test.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Servers-ServerSettings-SMTPServer-SMTPServerMode-E90.png"><alt>SMTP Server Mode</alt></image>
+                </info>
+                <choices>
+                    <choice><uicontrol>Global</uicontrol>. Tests the SMTP settings for all sites in the installation.</choice>
+                    <choice>The name of the current site. Tests the SMTP settings for the current site.</choice>
+                </choices>
+            </step>
+            <step><cmd>(Optional) Click/Tap <uicontrol>Test SMTP Settings</uicontrol> to confirm that you can connect to the SMTP server with the specified settings.</cmd></step>
+        </steps>
+
+    </taskbody>
+
+</task>

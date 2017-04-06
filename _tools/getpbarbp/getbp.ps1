@@ -1,5 +1,6 @@
 # ============================================================
 # Displays the boilerplate based on answers to questions.
+# USAGE: powershell -file getbp2.ps1 menuoption
 # ============================================================
 
 # GLOBAL VARIABLES -------------------------------------------
@@ -15,9 +16,9 @@ $stepliarr = @( "step", "li" )
 
 function Usage()  {
     $script = $MyInvocation.ScriptName
-    $usage = "powershell -file $script [step|li] persona-bar-steps-and-tags"
+    $usage = "powershell -file $script [li] menus-or-tabs"
     $examples = @(
-        "powershell -file $script [step|li] settings ""site settings"" ""site info"""
+        "powershell -file $script [li] ""site info"""
         )
 
     Write-Host "Usage: " $usage
@@ -43,59 +44,53 @@ function IsValid( [string] $s )  {
 }
 
 
-function AddAudience( [string] $s )  {
-    if ( $s.Contains( "-host-" ) )  {
-        $s = $s.Replace( "<step ", "<step audience=""adm"" " ).Replace( "<li ", "<li audience=""adm"" " )
-    }
-    ( "adm", "cmg", "mod" ) | foreach  {
-        if ( $s.Contains( "-$_-" ) )  {
-            $s = $s.Replace( "<step ", "<step audience=""$_"" " ).Replace( "<li ", "<li audience=""$_"" " )
-        }
-    }
-    return $s
-}
 
 
 # MAIN -------------------------------------------------------
 
-if ( $args.Count -gt 1 )  {
+if ( $args.Count -gt 0 )  {
+
+    # step or bullet?
+    $stepli = "<step"
     if ( $stepliarr.Contains( $args[0] ) )  {
         $stepli = "<" + $args[0]
     }
-    else {
-        Usage
-        return
-    }
-    $pbararr = @( $args[1], $args[2] ) | ? { $_ }
-    $pbarstr = [string]::Join( "-", $pbararr.Replace( " ", "" ) )
-    if ( $args.Count -gt 3 )  {
-        $tagsarr = @( $args[1], $args[2], $args[3], $args[4] ) | ? { $_ }
-        $tagsstr = [string]::Join( "-", $tagsarr.Replace( " ", "" ) )
-    }
-    else  {
-        $tagsarr = @()
-        $tagsstr = ""
-    }
-    # Write-Host "$pbarstr"
-    # Write-Host "$tagsstr"
 
     $root = $PSCommandPath | Split-Path
     $pbarlistfn = "$root\$pbarlistfn"
     $tagslistfn = "$root\$tagslistfn"
-    if (( Test-Path $pbarlistfn ) -and ( Test-Path $tagslistfn ))  {
-        Write-Host ""
-        Get-Content $pbarlistfn | Where { $_.ToLower().Contains( $stepli.ToLower() ) -and $_.ToLower().Contains( $pbarstr.ToLower() ) } | foreach  {
-            $s = AddAudience $_
-            Write-Host "    $s"
-        }
+    if ( !( Test-Path $pbarlistfn ) )  { Write-Host "File doesn't exist: $pbarlistfn"; return }
+    if ( !( Test-Path $tagslistfn ) )  { Write-Host "File doesn't exist: $tagslistfn"; return }
 
-        Write-Host ""
-        if (( $tagsarr.Length -gt 0 ) -and ( IsValid $tagsstr ))  {
-            Get-Content $tagslistfn | Where { $_.ToLower().Contains( $stepli.ToLower() ) -and $_.ToLower().Contains( $tagsstr.ToLower() ) } | foreach  {
-                $s = AddAudience $_
-                Write-Host "    $s"
-            }
+    $tagsstr = "*" + $stepli + "*" + ([string]::Join( "*", $args)).Replace( " ", "" ).ToLower() + "-*"
+
+    # search for it in tagslistfn
+    $tags = Get-Content $tagslistfn | Where { ( $_.ToLower() -Like $tagsstr ) }
+
+    # if found, get the matching pbar menu.
+    if ( $tags.Count -gt 0 )  {
+        if ( $tags.Count -eq 1 )  {
+            $ln = $tags
         }
+        else  {
+            $ln = $tags[0]
+        }
+        $arr = $ln.Split( "-", [System.StringSplitOptions]::None )
+        $pbarstr = "*" + $stepli + "*" + ([string]::Join( "-", $arr[4..5])).Replace( " ", "" ).ToLower() + "-*"
+    }
+
+    # if not found, just search for it in pbarlistfn
+    if ( $tags.Count -eq 0 )  {
+        $pbarstr = $tagsstr
+    }
+
+    $pbar = Get-Content $pbarlistfn | Where { ( $_.ToLower() -Like $pbarstr ) }
+
+    Write-Host ""
+    $pbar | foreach  { Write-Host "`t$_" }
+    if ( $tags.Count -gt 0 )  {
+        Write-Host ""
+        $tags | foreach  { Write-Host "`t$_" }
     }
 }
 

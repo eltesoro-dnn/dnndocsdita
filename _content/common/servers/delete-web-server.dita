@@ -1,25 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-delete-vocabulary">
+<task xml:lang="en" id="tsk-delete-web-server">
 
-    <title>Delete a Vocabulary</title>
+    <title>Delete a Web Server</title>
     <titlealts>
-        <navtitle>Delete Vocabulary</navtitle>
+        <navtitle>Delete Web Server</navtitle>
     </titlealts>
 
 
     <prolog>
-        <author>wrET,201703</author>
+        <author>wrET,1704</author>
         <copyright>
             <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
-            <audience type="administrator" job="customizing" />
-            <prodinfo>
-                <prodname>Platform</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
-            </prodinfo>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <audience type="administrator" job="maintaining" />
             <prodinfo>
                 <prodname>Evoq Content</prodname>
                 <vrmlist><vrm version="9" release="0"/></vrmlist>
@@ -34,18 +31,19 @@
 
     <taskbody>
 
-        <section conkeyref="k-bptext/section-prodavail-PCE"></section>
+        <section conkeyref="k-bptext/section-prodavail-CE"></section>
 
         <prereq>
             <ul>
-                <li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
+                <li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li>
             </ul>
         </prereq>
 
+
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Vocabularies-E90"><cmd/></step>
-            <step conref="bptext-vocabularies.dita#tsk-bptext-vocabularies/step-search-and-expand-delete"><cmd/></step>
-            <step conref="bptext-vocabularies.dita#tsk-bptext-vocabularies/step-delete-vocab"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Servers-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Servers-ServerSettings-WebServers-E90"><cmd/></step>
+            <step conref="bptext-servers.dita#tsk-bptext-servers/step-delete-server"><cmd/></step>
             <step><cmd>Confirm.</cmd></step>
         </steps>
 

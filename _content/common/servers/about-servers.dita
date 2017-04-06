@@ -1,11 +1,21 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-about-servers">
+
+    <title>Maintaining Your Servers</title>
+    <titlealts>
+        <navtitle>Maintaining Your Servers</navtitle>
+    </titlealts>
+
+
     <prolog>
-        <author>wrET,1704</author>
+        <author>wrET,1703</author>
         <copyright>
             <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
-            <audience type="administrator" job="customizing" />
+            <audience type="administrator" job="maintaining" />
             <prodinfo>
                 <prodname>Platform</prodname>
                 <vrmlist><vrm version="9" release="0"/></vrmlist>
@@ -20,3 +30,14 @@
             </prodinfo>
         </metadata>
     </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-CE"></section>
+
+        <section id="overview"/>
+
+    </body>
+
+</topic>

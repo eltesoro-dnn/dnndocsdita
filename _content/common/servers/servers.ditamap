@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-servers">
+
+    <title>Maintaining Your Servers</title>
+
+    <!-- Topics -->
+    <topicref audience="adm" format="dita" type="topic" toc="yes" href="about-servers.dita" copy-to="index.dita" collection-type="family" >
+
+    <!--
+    <topichead outputclass="sub-nav-tabs" collection-type="family" >
+        <topicmeta><navtitle>Maintaining Your Servers</navtitle></topicmeta>
+    -->
+
+        <topicref format="dita" type="task" toc="yes" href="retrieve-system-info.dita" />
+        <topicref format="dita" type="task" toc="yes" href="view-server-logs.dita" />
+        <topicref format="dita" type="task" toc="yes" href="restart-application.dita" />
+
+        <topicref format="dita" type="topic" toc="yes" href="about-web-servers.dita" collection-type="family" >
+            <topicref format="dita" type="task" toc="yes" href="enable-or-disable-web-server.dita" />
+            <topicref format="dita" type="task" toc="yes" href="change-url-of-web-server.dita" />
+            <topicref format="dita" type="task" toc="yes" href="assign-web-server-to-server-group.dita" />
+            <topicref format="dita" type="task" toc="yes" href="replace-web-request-adapter.dita" />
+            <topicref format="dita" type="task" toc="yes" href="delete-web-server.dita" />
+        </topicref>
+
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>SMTP Servers</navtitle></topicmeta>
+            <topicref format="dita" type="task" toc="yes" href="configure-smtp-server.dita" />
+            <topicref format="dita" type="task" toc="yes" href="test-smtp-settings.dita" />
+        </topichead>
+
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Server Performance</navtitle></topicmeta>
+            <topicref format="dita" type="task" toc="yes" href="configure-caching.dita" />
+            <topicref format="dita" type="task" toc="yes" href="clear-cache.dita" />
+            <topicref format="dita" type="task" toc="yes" href="expire-cached-item-in-web-server.dita" />
+            <topicref format="dita" type="task" toc="yes" href="minify-resource-files.dita" />
+        </topichead>
+
+
+    <!-- </topichead> -->
+
+    </topicref>
+
+    <!-- RelTables -->
+    <reltable>
+        <relheader>
+            <relcolspec type="concept"/>
+            <relcolspec type="task"/>
+            <relcolspec type="reference"/>
+        </relheader>
+
+        <relrow>
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="task" href="replace-web-request-adapter.dita" />
+                <topicref format="dita" type="task" href="configure-caching.dita" />
+            </relcell>
+            <relcell/>
+        </relrow>
+
+    </reltable>
+
+</map>

@@ -40,6 +40,12 @@
             <note conref="bptext-vocabularies.dita#tsk-bptext-vocabularies/note-uneditable-type-scope"></note>
         </section>
 
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
+            </ul>
+        </prereq>
+
         <steps>
             <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Vocabularies-E90"><cmd/></step>
             <step conref="bptext-vocabularies.dita#tsk-bptext-vocabularies/step-create-vocab-button"><cmd/></step>

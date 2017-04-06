@@ -10,6 +10,8 @@
 $fnPbarList = "..\getpbarbp\pbarbplist.txt"
 $fnTagsList = "..\getpbarbp\tagsbplist.txt"
 
+$notetypes = @( "note", "important", "remember", "tip", "warning", "trouble" )
+
 
 function IsValid( [string] $s )  {
     if ( $s -eq $NULL )  {
@@ -20,6 +22,9 @@ function IsValid( [string] $s )  {
     }
     return $TRUE
 }
+
+function IsNotValid( [string] $s )  { return ( !(IsValid $s) ) }
+
 
 function AddAudience( [string] $s )  {
     if ( $s.Contains( "-host-" ) )  {
@@ -50,12 +55,15 @@ function MkEndSection  {
     Write-Output ""
 }
 
-function MkBPNote( [string] $conreffile, [PSCustomObject] $node )  {
+function MkBPNote( [string] $conreffile, [PSCustomObject] $node, [string] $type )  {
     $id = $node.id
     $text = $node.text
+    if ( IsNotValid $type )  {
+        $type = "note"
+    }
     Write-Output ""
     Write-Output "            <!-- <note conref=""$conreffile/$id""></note> -->"
-    Write-Output "            <note type=""note"" id=""$id"">$text</note>"
+    Write-Output "            <note type=""$type"" id=""$id"">$text</note>"
 }
 
 function MkBPP( [string] $conreffile, [PSCustomObject] $node )  {
@@ -126,7 +134,10 @@ function MkConref( [string] $str, [string] $wrapph )  {
 # Only called by function MkConref.
 function ExpandedConref( [string] $reftype, [string] $conrefstr, [string] $wrapph )  {
 
-    if ( $reftype -eq "simpletable" )  {
+    if ( $notetypes -contains $reftype )  {
+        return "<note type=""$reftype"" $conrefstr></note>"
+    }
+    elseif ( $reftype -eq "simpletable" )  {
         return "<simpletable $conrefstr><sthead><stentry/></sthead><strow><stentry/></strow></simpletable>"
     }
     elseif ( $reftype -eq "substeps" )  {
@@ -159,8 +170,15 @@ function ExpandedImg( [string] $img )  {
 }
 
 function MkInfo( [string] $img, [string] $info, [string] $indent )  {
-    if (( $img ) -and ( $info ))  {
+    if ( IsValid $img )  {
+        $expimg = ExpandedImg $img
+    }
+
+    if ( IsValid $info )  {
         $info = MkConref $info "p"
+    }
+
+    if (( $img ) -and ( $info ))  {
         Write-Output "$indent<info>"
         Write-Output "$indent    $expimg"
         Write-Output "$indent    $info"
@@ -170,7 +188,6 @@ function MkInfo( [string] $img, [string] $info, [string] $indent )  {
         Write-Output "$indent<info>$expimg</info>"
     }
     elseif ( $info )  {
-        $info = MkConref $info "p"
         Write-Output "$indent<info>$info</info>"
     }
 }
@@ -183,6 +200,7 @@ function MkStep( [string] $conreffile, [PSCustomObject] $step )  {
     $expimg = ExpandedImg $img
     $info = $step.info
     $xmp = $step.xmp
+    $result = $step.result
     Write-Output ""
     Write-Output "            <!-- <step conref=""$conreffile/$id""><cmd/></step> -->"
     Write-Output "            <step id=""$id"">"
@@ -194,13 +212,13 @@ function MkStep( [string] $conreffile, [PSCustomObject] $step )  {
             foreach ( $substep in $substeps )  {
                 Write-Output "                    <substep>"
                 if ( $substep.cmd )  {
-                    $cmd = $substep.cmd
-                    Write-Output "                        <cmd>$cmd</cmd>"
+                    $subcmd = $substep.cmd
+                    Write-Output "                        <cmd>$subcmd</cmd>"
                 }
-                if ( $substep.img -and $substep.info )  {
-                    $img = $substep.img
-                    $info = $substep.info
-                    MkInfo $img $info "                        "
+                if ( $substep.img -or $substep.info )  {
+                    $subimg = $substep.img
+                    $subinfo = $substep.info
+                    MkInfo $subimg $subinfo "                        "
                 }
                 Write-Output "                    </substep>"
             }
@@ -223,6 +241,10 @@ function MkStep( [string] $conreffile, [PSCustomObject] $step )  {
 
     if ( $xmp )  {
         Write-Output "                <stepxmp>Example: $xmp</stepxmp>"
+    }
+
+    if ( $result )  {
+        Write-Output "                <stepresult>Result: $result</stepresult>"
     }
 
     Write-Output "            </step>"
@@ -451,19 +473,19 @@ if ( $args.Count -gt 3 )  {
         MkStartSection $thisscript $params | Out-File $tgtfile -Append -Encoding DEFAULT
         foreach ( $node in $myjson.bpsection ) {
             $id = $node.id
-            if ( $id.StartsWith( "note-" ) )  {
-                MkBPNote $conreffilelocal $node | Out-File $tgtfile -Append -Encoding DEFAULT
+            $prefix = ($id.Split( "-", [System.StringSplitOptions]::None ))[0]
+
+            # if it's a note
+            if ( $notetypes -contains $prefix )  {
+                MkBPNote $conreffilelocal $node $prefix | Out-File $tgtfile -Append -Encoding DEFAULT
             }
-            elseif ( $id.StartsWith( "p-" ) )  {
-                MkBPP $conreffilelocal $node | Out-File $tgtfile -Append -Encoding DEFAULT
+
+            # if it's something else
+            switch ( $prefix ) {
+                "p"             { MkBPP $conreffilelocal $node  | Out-File $tgtfile -Append -Encoding DEFAULT }
+                "ph"            { MkBPPh $conreffilelocal $node | Out-File $tgtfile -Append -Encoding DEFAULT }
+                "simpletable"   { MkBPSimpleTable $conreffilelocal $node | Out-File $tgtfile -Append -Encoding DEFAULT }
             }
-            elseif ( $id.StartsWith( "ph-" ) )  {
-                MkBPPh $conreffilelocal $node | Out-File $tgtfile -Append -Encoding DEFAULT
-            }
-            elseif ( $id.StartsWith( "simpletable-" ) )  {
-                MkBPSimpleTable $conreffilelocal $node | Out-File $tgtfile -Append -Encoding DEFAULT
-            }
-            # elseif ( $id.StartsWith( "...-" ) )
         }
         MkEndSection | Out-File $tgtfile -Append -Encoding DEFAULT
     }
