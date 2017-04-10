@@ -58,6 +58,9 @@
         viewing your site analytics
         -->
 
+        <!-- Managing Your Site Logs -->
+        <mapref href="administrators/sitelogs/sitelogs.ditamap" />
+
         <!-- Troubleshooting -->
         <mapref href="administrators/troubleshooting/troubleshooting.ditamap" />
 

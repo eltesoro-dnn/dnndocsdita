@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-edit-logged-event-type">
+
+    <title>Edit a Logged Event Type</title>
+    <titlealts>
+        <navtitle>Edit Logged Event Type</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1704</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="customizing" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li>
+            </ul>
+        </prereq>
+
+
+        <steps>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Manage-AdminLogs-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Manage-AdminLogs-LogSettings-E90"><cmd/></step>
+            <step conref="bptext-sitelogs.dita#tsk-bptext-sitelogs/step-edit-icon-event-type-edit"><cmd/></step>
+            <step conref="bptext-sitelogs.dita#tsk-bptext-sitelogs/step-enable-logging-edit"><cmd/></step>
+            <step conref="bptext-sitelogs.dita#tsk-bptext-sitelogs/step-configure-logging-settings-edit"><cmd/></step>
+            <step conref="bptext-sitelogs.dita#tsk-bptext-sitelogs/step-configure-email-notification-settings-edit"><cmd/></step>
+            <step><cmd>Save.</cmd></step>
+        </steps>
+
+    </taskbody>
+
+</task>
+

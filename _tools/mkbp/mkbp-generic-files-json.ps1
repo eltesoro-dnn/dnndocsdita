@@ -127,7 +127,12 @@ function MkConref( [string] $str, [string] $wrapph )  {
         return( ExpandedImg $refarr[1] )
     }
     else  {
-        return( $str )
+        if ( IsValid $wrapph )  {
+            return( "<$wrapph>$str</$wrapph>" )
+        }
+        else  {
+            return( $str )
+        }
     }
 }
 
@@ -145,6 +150,9 @@ function ExpandedConref( [string] $reftype, [string] $conrefstr, [string] $wrapp
     }
     elseif ( $reftype -eq "choices" )  {
         return "<choices $conrefstr><choice/></choices>"
+    }
+    elseif ( $reftype -eq "ul" )  {
+        return "<ul $conrefstr><li/></ul>"
     }
     elseif ( $reftype -eq "ph" )  {
         if ( $wrapph )  {
@@ -178,23 +186,23 @@ function MkInfo( [string] $img, [string] $info, [string] $indent )  {
         $info = MkConref $info "p"
     }
 
-    if (( $img ) -and ( $info ))  {
+    if (( IsValid $img ) -and ( IsValid $info ))  {
         Write-Output "$indent<info>"
         Write-Output "$indent    $expimg"
         Write-Output "$indent    $info"
         Write-Output "$indent</info>"
     }
-    elseif ( $img )  {
+    elseif ( IsValid $img )  {
         Write-Output "$indent<info>$expimg</info>"
     }
-    elseif ( $info )  {
+    elseif ( IsValid $info )  {
         Write-Output "$indent<info>$info</info>"
     }
 }
 
 function MkStep( [string] $conreffile, [PSCustomObject] $step )  {
     $id = $step.id
-    $cmd = $step.cmd
+    $cmd = MkConRef $step.cmd cmd
     $substeps = $step.substeps
     $img = $step.img
     $expimg = ExpandedImg $img
@@ -204,7 +212,9 @@ function MkStep( [string] $conreffile, [PSCustomObject] $step )  {
     Write-Output ""
     Write-Output "            <!-- <step conref=""$conreffile/$id""><cmd/></step> -->"
     Write-Output "            <step id=""$id"">"
-    Write-Output "                <cmd>$cmd</cmd>"
+    Write-Output "                $cmd"
+
+    MkInfo $img $info "                "
 
     if ( $substeps )  {
         if ( $substeps -is [system.array] )  {
@@ -236,8 +246,6 @@ function MkStep( [string] $conreffile, [PSCustomObject] $step )  {
             Write-Output "                $expanded"
         }
     }
-
-    MkInfo $img $info "                "
 
     if ( $xmp )  {
         Write-Output "                <stepxmp>Example: $xmp</stepxmp>"

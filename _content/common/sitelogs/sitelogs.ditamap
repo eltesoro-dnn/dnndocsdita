@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/map.dtd">
+<map xml:lang="en" id="map-sitelogs">
+
+    <title>Site Logs</title>
+
+    <topicref audience="adm" format="dita" type="topic" navtitle="Managing Your Site Logs" locktitle="yes" toc="yes" href="about-site-logs.dita" copy-to="index.dita" collection-type="family">
+
+       <!--  <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Site Logs</navtitle></topicmeta> -->
+            <topicref format="dita" type="task" href="view-site-logs.dita" />
+            <topicref format="dita" type="task" href="view-entry-details.dita" />
+            <topicref format="dita" type="task" href="clear-log.dita" />
+            <topicref format="dita" type="task" href="delete-entries.dita" />
+            <topicref format="dita" type="task" href="share-entries.dita" />
+        <!-- </topichead> -->
+
+        <!-- <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Logged Events</navtitle></topicmeta> -->
+            <topicref format="dita" type="task" href="add-event-type.dita" />
+            <topicref format="dita" type="task" href="edit-logged-event-type.dita" />
+            <topicref format="dita" type="task" href="delete-logged-event-type.dita" />
+            <topicref format="dita" type="task" href="toggle-logging-for-event-type.dita" />
+            <topicref format="dita" type="task" href="configure-notices.dita" />
+        <!-- </topichead> -->
+
+    </topicref>
+
+</map>

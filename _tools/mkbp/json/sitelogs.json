@@ -1,0 +1,302 @@
+{
+    "global" : {
+        "avail" : "PCE"
+    },
+
+
+    "bpsection" : [
+        {
+            "id" : "note-host-admin-filtering"
+            , "text" : "Hosts/Superusers can filter by site and by event type. Administrators can view only their own site's log and can filter by event type only."
+        },
+        {
+            "id" : "note-one-or-all-sites"
+            , "text" : "For hosts/superusers, the selected site's log is cleared. If <uicontrol>All</uicontrol> is selected, the logs of all sites in the installation are cleared. For administrators, their own site's log is cleared. To delete some log entries, instead of the entire log, use <uicontrol>Delete Selected</uicontrol>."
+        },
+        {
+            "id" : "ph-enable-logging"
+            , "text" : "Turn on <uicontrol>Logging</uicontrol> to start logging the event type."
+        },
+        {
+            "id" : "ph-toggle-logging"
+            , "text" : "Toggle <uicontrol>Logging</uicontrol> on/off to start/stop logging the event type."
+        },
+        {
+            "id" : "ph-configure-logging-settings"
+            , "text" : "Choose the values for the logging settings."
+        },
+        {
+            "id" : "ph-configure-email-notification-settings"
+            , "text" : "Configure the <uicontrol>Email Notification Settings</uicontrol>."
+        },
+        {
+            "id" : "tip-disable-logging"
+            , "text" : "If you might want to log the event again in the future, you can turn off <uicontrol>Logging</uicontrol> to stop logging the event type, instead of deleting it."
+        },
+        {
+            "id" : "p-multiple-entries-delete"
+            , "text" : "If multiple entries for the same event type exist, delete the global one (<uicontrol>Website</uicontrol> is set to <uicontrol>All</uicontrol>) before deleting the specific ones (<uicontrol>Website</uicontrol> is set to a specific site)."
+        }
+    ],
+
+
+    "bpsteps" : [
+        {
+            "id" : "step-filter-by-site-event"
+            , "cmd" : "To filter the entries, use the dropdown(s) to choose the site and/or logged event type (log type)."
+            , "img" : "scr-AdminLogs-adminlogslist-filters-E90.gif"
+            , "info" : "conref=note-host-admin-filtering"
+        },
+        {
+            "id" : "step-expand-entry-details"
+            , "cmd" : "Click/Tap the log entry in the table to show or hide the details."
+            , "img" : "scr-AdminLogs-adminlogs-expand-entry-details-E90.gif"
+        },
+        {
+            "id" : "step-clear-log-button"
+            , "cmd" : "Click/Tap <uicontrol>Clear Log</uicontrol>."
+            , "img" : "scr-AdminLogs-adminlogslist-clear-log-buttons-E90.png"
+            , "info" : "conref=note-one-or-all-sites"
+        },
+        {
+            "id" : "step-find-entry"
+            , "cmd" : "Look for the entry in the list."
+            , "img" : "scr-AdminLogs-adminlogslist-find-entry-E90.png"
+        },
+        {
+            "id" : "step-select-entries-delete"
+            , "cmd" : "Check the boxes for the entries to delete."
+            , "img" : "scr-AdminLogs-adminlogslist-checkboxes-E90.png"
+        },
+        {
+            "id" : "step-select-entries-email"
+            , "cmd" : "Check the boxes for the entries to email."
+            , "img" : "scr-AdminLogs-adminlogslist-checkboxes-E90.png"
+        },
+        {
+            "id" : "step-delete-selected-button"
+            , "cmd" : "Click/Tap <uicontrol>Delete Selected</uicontrol>."
+            , "img" : "scr-AdminLogs-adminlogslist-delete-selected-buttons-E90.png"
+        },
+        {
+            "id" : "step-email-selected-button"
+            , "cmd" : "Click/Tap <uicontrol>Email Selected</uicontrol>."
+            , "img" : "scr-AdminLogs-adminlogslist-email-selected-buttons-E90.png"
+        },
+        {
+            "id" : "step-fill-email-info"
+            , "cmd" : "Fill in the email address, subject, and message."
+            , "img" : "scr-AdminLogs-adminlogs-fill-email-info-E90.png"
+        },
+        {
+            "id" : "step-add-log-setting-button"
+            , "cmd" : "Click/Tap <uicontrol>+ Add Log Setting</uicontrol>."
+            , "img" : "scr-AdminLogs-logsettingslist-add-log-setting-button-E90.png"
+        },
+        {
+            "id" : "step-edit-icon-event-type-edit"
+            , "cmd" : "Click/Tap the pencil icon for the logged event type to edit."
+            , "img" : "scr-AdminLogs-logsettingslist-edit-icon-event-type-E90.png"
+        },
+        {
+            "id" : "step-edit-icon-event-type-delete"
+            , "cmd" : "Click/Tap the pencil icon for the logged event type to delete."
+            , "img" : "scr-AdminLogs-logsettingslist-edit-icon-event-type-E90.png"
+        },
+        {
+            "id" : "step-edit-icon-event-type-activate"
+            , "cmd" : "Click/Tap the pencil icon for the logged event type to activate or deactivate."
+            , "img" : "scr-AdminLogs-logsettingslist-edit-icon-event-type-E90.png"
+        },
+        {
+            "id" : "step-edit-icon-event-type-configure"
+            , "cmd" : "Click/Tap the pencil icon for the logged event type to configure."
+            , "img" : "scr-AdminLogs-logsettingslist-edit-icon-event-type-E90.png"
+        },
+        {
+            "id" : "step-event-delete-button"
+            , "cmd" : "Click/Tap <uicontrol>Delete</uicontrol>."
+            , "img" : "scr-AdminLogs-logsettings-editevent-delete-button-E90.png"
+        },
+        {
+            "id" : "step-enable-logging-add"
+            , "cmd" : "conref=ph-enable-logging"
+            , "img" : "scr-AdminLogs-logsettings-addevent-enable-logging-add-E90.png"
+        },
+        {
+            "id" : "step-enable-logging-edit"
+            , "cmd" : "conref=ph-enable-logging"
+            , "img" : "scr-AdminLogs-logsettings-editevent-enable-logging-edit-E90.png"
+        },
+        {
+            "id" : "step-configure-logging-settings-add"
+            , "cmd" : "conref=ph-configure-logging-settings"
+            , "img" : "scr-AdminLogs-logsettings-addevent-configure-logging-settings-add-E90.png"
+            , "info" : "conref=simpletable-logging-settings"
+        },
+        {
+            "id" : "step-configure-logging-settings-edit"
+            , "cmd" : "conref=ph-configure-logging-settings"
+            , "img" : "scr-AdminLogs-logsettings-editevent-configure-logging-settings-edit-E90.png"
+            , "info" : "conref=simpletable-logging-settings"
+        },
+        {
+            "id" : "step-toggle-logging-edit"
+            , "cmd" : "conref=ph-toggle-logging"
+            , "img" : "scr-AdminLogs-logsettings-editevent-enable-logging-edit-E90.png"
+        },
+        {
+            "id" : "step-configure-email-notification-settings-add"
+            , "cmd" : "conref=ph-configure-email-notification-settings"
+            , "img" : "scr-AdminLogs-logsettings-addevent-email-notification-settings-add-E90.png"
+            , "substeps" : "conref=substeps-configure-email-notification-settings"
+        },
+        {
+            "id" : "step-configure-email-notification-settings-edit"
+            , "cmd" : "conref=ph-configure-email-notification-settings"
+            , "img" : "scr-AdminLogs-logsettings-editevent-email-notification-settings-edit-E90.png"
+            , "substeps" : "conref=substeps-configure-email-notification-settings"
+        }
+    ],
+
+
+    "topics" : [
+
+        {
+            "nav" : "View Site Logs"
+            , "title" : "View Site Logs"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Manage-AdminLogs adm"
+                , "step-pbtabs-Manage-AdminLogs-AdminLogs adm"
+                , "step-filter-by-site-event"
+            ]
+        },
+
+        {
+            "nav" : "View Entry Details"
+            , "title" : "View Log Entry Details"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Manage-AdminLogs adm"
+                , "step-pbtabs-Manage-AdminLogs-AdminLogs adm"
+                , "step-find-entry"
+                , "step-expand-entry-details"
+            ]
+        },
+
+        {
+            "nav" : "Clear Log"
+            , "title" : "Clear Log"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Manage-AdminLogs"
+                , "step-pbtabs-Manage-AdminLogs-AdminLogs"
+                , "step-clear-log-button"
+                , "Confirm."
+            ]
+        },
+
+        {
+            "nav" : "Delete Entries"
+            , "title" : "Delete Log Entries"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Manage-AdminLogs"
+                , "step-pbtabs-Manage-AdminLogs-AdminLogs"
+                , "step-select-entries-delete"
+                , "step-delete-selected-button"
+                , "Confirm."
+            ]
+        },
+
+        {
+            "nav" : "Share Entries"
+            , "title" : "Share Log Entries by Email"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Manage-AdminLogs"
+                , "step-pbtabs-Manage-AdminLogs-AdminLogs"
+                , "step-select-entries-email"
+                , "step-email-selected-button"
+                , "step-fill-email-info"
+                , "Send."
+            ]
+            , "result" : "An XML file containing the selected entries is attached to the email."
+        },
+
+        {
+            "nav" : "Add Event Type"
+            , "title" : "Add an Event Type to Be Logged"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Manage-AdminLogs"
+                , "step-pbtabs-Manage-AdminLogs-LogSettings"
+                , "step-add-log-setting-button"
+                , "step-enable-logging-add"
+                , "step-configure-logging-settings-add"
+                , "step-configure-email-notification-settings-add"
+                , "Save."
+            ]
+            , "result" : "conref=ul-duplicate-logged-event-type"
+        },
+
+        {
+            "nav" : "Edit Logged Event Type"
+            , "title" : "Edit a Logged Event Type"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Manage-AdminLogs"
+                , "step-pbtabs-Manage-AdminLogs-LogSettings"
+                , "step-edit-icon-event-type-edit"
+                , "step-enable-logging-edit"
+                , "step-configure-logging-settings-edit"
+                , "step-configure-email-notification-settings-edit"
+                , "Save."
+            ]
+        },
+
+        {
+            "nav" : "Delete Logged Event Type"
+            , "title" : "Delete a Logged Event Type"
+            , "section" : [
+                "conref=p-multiple-entries-delete"
+                , "conref=tip-disable-logging"
+            ]
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Manage-AdminLogs"
+                , "step-pbtabs-Manage-AdminLogs-LogSettings"
+                , "step-edit-icon-event-type-delete"
+                , "step-event-delete-button"
+                , "Confirm."
+            ]
+        },
+
+        {
+            "nav" : "Toggle Logging for Event Type"
+            , "title" : "Toggle Logging for an Event Type"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Manage-AdminLogs"
+                , "step-pbtabs-Manage-AdminLogs-LogSettings"
+                , "step-edit-icon-event-type-activate"
+                , "step-toggle-logging-edit"
+                , "Save."
+            ]
+        },
+
+        {
+            "nav" : "Configure Notices"
+            , "title" : "Configure Notices About a Logged Event"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Manage-AdminLogs"
+                , "step-pbtabs-Manage-AdminLogs-LogSettings"
+                , "step-edit-icon-event-type-configure"
+                , "step-configure-email-notification-settings-edit"
+                , "Save."
+            ]
+        }
+    ]
+}

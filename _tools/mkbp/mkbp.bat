@@ -24,8 +24,11 @@ call %0 runme json\vocabularies.json bptext-vocabularies W:\_content\common\voca
 goto :eof
 
 :servers
-:servers
 call %0 runme json\servers.json bptext-servers W:\_content\common\servers prolog-CE.txt
+goto :eof
+
+:sitelogs
+call %0 runme json\sitelogs.json bptext-sitelogs W:\_content\common\sitelogs prolog-PCE.txt
 goto :eof
 
 

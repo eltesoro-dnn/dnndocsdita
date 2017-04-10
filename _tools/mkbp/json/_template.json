@@ -16,12 +16,30 @@
         {
             "id" : "step-"
             , "cmd" : "Click/Tap <uicontrol></uicontrol>."
+            , "info" : ""
             , "img" : "scr-.png"
+            , "substeps" : [
+                {
+                    "cmd" : ""
+                    , "img" : "scr-.png"
+                    , "info" : ""
+                    , "result" : ""
+                },
+                {
+                    "cmd" : "Click/Tap <uicontrol>Expire Cache Item</uicontrol>."
+                }
+            ]
+            , "xmp" : "Example: <userinput>omg,lol,lmao</userinput>"
+            ]
         },
         {
             "id" : "step-"
             , "cmd" : "Click/Tap <uicontrol></uicontrol>."
             , "img" : "scr-.png"
+            , "###" : [
+                "* "
+                , "* "
+            ]
         }
     ],
 
@@ -31,18 +49,23 @@
         {
             "nav" : "..."
             , "title" : "..."
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
             , "steps" : [
-                "step-"
+                "step-pbar- adm"
+                , "step-pbtabs- adm"
                 , "step-"
                 , "step-"
             ]
+            , "result" : "An XML file containing the selected entries is attached to the email."
         },
 
         {
             "nav" : "..."
             , "title" : "..."
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
             , "steps" : [
-                "step-"
+                "step-pbar- host"
+                , "step-pbtabs- host"
                 , "step-"
                 , "step-"
             ]

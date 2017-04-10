@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-about-site-logs">
+
+    <title>About Site Logs</title>
+    <titlealts>
+        <navtitle>Site Logs</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1704</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section id="overview">
+            <p>Each site maintains its own log of events that the host chooses. Notices can be sent by email if the logged event exceeds a threshold, such as a specified number of occurences within a specified length of time.</p>
+
+            <note type="tip">Monitor your logs to be familiar with your site's traffic patterns. It would help you identify unusual patterns that might indicate attempted security attacks.</note>
+            <!-- CHRISP : Please review. -->
+        </section>
+
+    </body>
+
+</topic>
