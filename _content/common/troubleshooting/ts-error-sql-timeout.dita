@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="SQL-timeout-error">
+
+    <title>Error: SQL Timeout</title>
+    <titlealts>
+        <navtitle>Error: SQL Timeout</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrMF,1704</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="troubleshooting" />
+            <audience type="programmer" job="troubleshooting" />
+            <audience type="other" othertype="designer" job="troubleshooting" />
+            <audience type="other" othertype="content manager" job="troubleshooting" />
+            <audience type="other" othertype="community manager" job="troubleshooting" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+
+        <section outputclass="condition">
+            <title>Symptom</title>
+            <p>Error:</p>
+            <systemoutput>Log Viewer is currently unavailable. DotNetNuke.Services.Exceptions.ModuleLoadException:
+			Timeout expired. The timeout period elapsed prior to completion of the operation or the server is not responding.
+			---> System.Data.SqlClient.SqlException: Timeout expired. The timeout period elapsed prior to completion of the
+			operation or the server is not responding. ---> System.ComponentModel.Win32Exception: The wait operation timed out
+			--- End of inner exception stack trace --- at System.Data.SqlClient.SqlInternalConnection.OnError(
+			SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)</systemoutput>
+        </section>
+
+
+        <bodydiv outputclass="troubleSolution">
+            <section outputclass="cause">
+                <title>Possible Cause</title>
+
+                <p>Some SQL tables have grown too large, specifically <filepath>EventLog</filepath>, <filepath>SiteLog</filepath>, and <filepath>ScheduleHistory</filepath>.</p>
+            </section>
+
+            <section outputclass="remedy">
+                <title>Solution</title>
+
+                <ol outputclass="steps">
+                    <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E90"></ph></li>
+					<li outputclass="step"><ph outputclass="cmd">Check the sizes of <filepath>EventLog</filepath>, <filepath>SiteLog</filepath>, and <filepath>ScheduleHistory</filepath>.</ph>
+						<ol outputclass="substeps">
+							<li outputclass="substep"><ph outputclass="cmd">Copy and paste the following SQL script.</ph>
+								<codeblock>
+SELECT t.NAME AS TableName
+	,p.rows AS RowCounts
+	,SUM(a.total_pages) * 8 AS TotalSpaceKB
+	,SUM(a.used_pages) * 8 AS UsedSpaceKB
+	,(SUM(a.total_pages) - SUM(a.used_pages)) * 8 AS UnusedSpaceKB
+FROM sys.tables t
+INNER JOIN sys.indexes i ON t.OBJECT_ID = i.object_id
+INNER JOIN sys.partitions p ON i.object_id = p.OBJECT_ID
+	AND i.index_id = p.index_id
+INNER JOIN sys.allocation_units a ON p.partition_id = a.container_id
+LEFT JOIN sys.schemas s ON t.schema_id = s.schema_id
+WHERE t.NAME NOT LIKE 'dt%'
+	AND t.is_ms_shipped = 0
+	AND i.OBJECT_ID > 255
+	AND t.name in ('ScheduleHistory', 'EventLog', 'SiteLog')
+GROUP BY t.NAME
+	,s.NAME
+	,p.Rows
+ORDER BY TotalSpaceKB DESC
+								</codeblock>
+							</li>
+							<li outputclass="substep"><ph outputclass="cmd">Click/Tap <uicontrol>Run Script</uicontrol>.</ph></li>
+							<li outputclass="substep"><ph outputclass="cmd">In the result, note the <uicontrol>RowCounts</uicontrol> values for <filepath>EventLog</filepath>, <filepath>SiteLog</filepath>, and <filepath>ScheduleHistory</filepath>.</ph></li>
+						</ol>
+                    </li>
+                    <li outputclass="step"><ph outputclass="cmd">Clear <filepath>EventLog</filepath>.</ph>
+                        <ol outputclass="substeps">
+							<li outputclass="substep"><ph outputclass="cmd">Copy and paste the following SQL script.</ph>
+								<codeblock>
+DELETE TOP (1000)
+FROM EventLog;
+								</codeblock>
+								<note type="note">To clear <filepath>EventLog</filepath>, replace <codeph>1000</codeph> with the <uicontrol>RowCounts</uicontrol> value. To reduce the size of <filepath>EventLog</filepath> (instead of clearing it), replace <codeph>1000</codeph> with the number of rows you want to delete.</note>
+							</li>
+							<li outputclass="substep"><ph outputclass="cmd">Click/Tap <uicontrol>Run Script</uicontrol>.</ph></li>
+                        </ol>
+                    </li>
+                    <li outputclass="step"><ph outputclass="cmd">Delete the <filepath>SiteLog</filepath> and <filepath>ScheduleHistory</filepath> tables.</ph>
+                        <ol outputclass="substeps">
+							<li outputclass="substep"><ph outputclass="cmd">Copy and paste the following SQL script.</ph>
+								<codeblock>
+TRUNCATE TABLE SiteLog;
+TRUNCATE TABLE ScheduleHistory;
+								</codeblock>
+							</li>
+							<li outputclass="substep"><ph outputclass="cmd">Click/Tap <uicontrol>Run Script</uicontrol>.</ph></li>
+						</ol>
+                    </li>
+					<li outputclass="step"><ph outputclass="cmd"><xref href="../servers/restart-application.dita">Restart the application</xref> to allow the changes to take effect.</ph></li>
+					<li outputclass="step"><ph outputclass="cmd">To test, try to <xref format="dita" href="../sitelogs/view-site-logs.dita">access the Admin Logs</xref>.</ph></li>
+                </ol>
+            </section>
+
+        </bodydiv>
+
+    </body>
+
+</topic>
