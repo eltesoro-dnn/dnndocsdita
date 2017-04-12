@@ -1,6 +1,6 @@
 /*
  | Based on the DITA Open Toolkit project.
- | ?ver=170221
+ | ?ver=170411
 */
 
 
@@ -588,6 +588,30 @@ dt.prereq {
 .note .note__title {
   font-weight: 700;
   color: #006d97;
+}
+.announcement-left {
+    text-align: left;
+}
+.announcement-center {
+    text-align: center;
+}
+.announcement-left,
+.announcement-center {
+  background-color: #e2f4fc;
+  padding: 1em;
+  margin: 1em;
+}
+.announcement-title  {
+  color: #006d97;
+  font-size: 150%;
+  font-weight: bold;
+  padding: 0;
+  margin: 0;
+}
+.announcement-text  {
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
 }
 /* Simple lists do not get a bullet */
 ul.horizontal-list,

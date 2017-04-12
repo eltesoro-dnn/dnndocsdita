@@ -218,6 +218,7 @@ function CopyTimeSensitiveFiles( [string] $src, [string] $tgt, [string] $filter 
             if ( isActiveDate $prefix $fnarr[1] ) {
                 $fn = $_.FullName
                 $path = $_.DirectoryName
+                Write-Host "  $fn"
                 if ( $tgt -ne $NULL )  {
                     $path.Replace( $src, $tgt )
                 }
@@ -259,8 +260,8 @@ function CopyBldFolders()  {
     Write-Host "Copying files required by the build ...."
 
     Write-Host "Copying from $gitdir\_content to $blddir"
-    RobocopyIncludeArray  "$gitdir\_content"                 "$blddir"                 "*.dita*,*.png,*.gif,*.svg" "/s"
-    RobocopyBasic         "$gitdir\_content\common\samples"  "$blddir\common\samples"                              "/s"
+    RobocopyIncludeArray  "$gitdir\_content"                 "$blddir"                 "*.html,*.dita*,*.png,*.gif,*.svg" "/s"
+    RobocopyBasic         "$gitdir\_content\common\samples"  "$blddir\common\samples"                                     "/s"
     RobocopyIncludeArray  "$gitdir\_themes\dnn"              "$blddir\_themes\dnn"     "dnn*.css"
 
     CopyTimeSensitiveFiles $blddir $blddir

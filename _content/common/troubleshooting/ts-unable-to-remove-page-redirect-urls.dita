@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="troubleshooting-ts-unable-to-remove-page-redirect-urls">
+
+    <title>Troubleshooting: Unable to Remove Page Redirect URLs</title>
+    <titlealts>
+        <navtitle>Troubleshooting: Unable to Remove Page Redirect URLs</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrMF, orCL,1704</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="troubleshooting" />
+            <audience type="programmer" job="troubleshooting" />
+            <audience type="other" othertype="designer" job="troubleshooting" />
+            <audience type="other" othertype="content manager" job="troubleshooting" />
+            <audience type="other" othertype="community manager" job="troubleshooting" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+
+        <section outputclass="condition">
+            <title>Symptom</title>
+            <p>Unable to remove page redirect URLs through the web UI.</p>
+        </section>
+
+
+        <bodydiv outputclass="troubleSolution">
+            <section outputclass="cause">
+                <title>Possible Cause</title>
+
+                <p>Unknown.</p>
+            </section>
+
+            <section outputclass="remedy">
+                <title>Solution</title>
+
+                <ol outputclass="steps">
+                    <li outputclass="step stepexpand">Back up the site and the database.</li>  <!-- TODO: Link this to a how-to topic about backing up the site and the database. -->
+                    <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E90"></ph></li>
+                    <li outputclass="step stepexpand">
+                        <ph outputclass="cmd">Find the identifier (<uicontrol>TabID</uicontrol>) of the problematic page.</ph>
+						<ol outputclass="substeps">
+							 <li outputclass="substep">
+                                <ph outputclass="cmd">Copy and paste the following SQL script.</ph>
+                                <p  outputclass="info">
+                                    <codeblock>
+SELECT TabID FROM tabs
+WHERE TabName = '@NameOfPage'
+                                    </codeblock>, where <varname>@NameOfPage</varname> is the name of the page.
+                                </p>
+                             </li>
+							 <li outputclass="substep"><ph outputclass="cmd">Click/Tap <uicontrol>Run Script</uicontrol>.</ph></li>
+						</ol>
+                        <p outputclass="info"><note type="note">You will need the TabID returned by the query in the following steps.</note></p>
+					</li>
+                    <li outputclass="step stepexpand">
+                        <ph outputclass="cmd">Delete all redirects.</ph>
+                        <ol outputclass="substeps">
+                            <li outputclass="substep">
+                                <ph outputclass="cmd">Copy and paste the following SQL script.</ph>
+                                <p  outputclass="info">
+                                    <codeblock>
+DELETE FROM taburls
+WHERE TabID = @X AND HttpStatus = 301
+                                    </codeblock>, where <varname>@X</varname> is the identifier of the page.
+                                </p>
+
+                            </li>
+                            <li outputclass="substep"><ph outputclass="cmd">Click/Tap <uicontrol>Run Script</uicontrol>.</ph></li>
+                        </ol>
+					</li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Delete specific redirects.</ph>
+						<ol outputclass="substeps">
+                            <li outputclass="substep">
+                                <ph outputclass="cmd">Copy and paste the following SQL script.</ph>
+                                <p  outputclass="info">
+                                    <codeblock>
+DELETE FROM taburls
+WHERE Tabid = @X AND HttpStatus = 301 AND Url = '@Y'
+                                    </codeblock>, where
+                                    <ul>
+                                        <li><varname>@X</varname> is the identifier of the page, and</li>
+                                        <li><varname>@Y</varname> is the URL to remove.</li>
+                                    </ul>
+                                </p>
+                            </li>
+                            <li outputclass="substep"><ph outputclass="cmd">Click/Tap <uicontrol>Run Script</uicontrol>.</ph></li>
+                        </ol>
+					</li>
+                </ol>
+            </section>
+
+        </bodydiv>
+
+    </body>
+
+</topic>
