@@ -10,8 +10,8 @@
         <topichead outputclass="sub-nav-tabs" collection-type="family" >
             <topicmeta><navtitle>Content Types</navtitle></topicmeta>
             <topicref format="dita" type="task" toc="yes" href="create-content-type.dita" />
-            <topicref format="dita" type="task" toc="yes" href="edit-content-type.dita" />
             <topicref format="dita" type="task" toc="yes" href="duplicate-content-type.dita" />
+            <topicref format="dita" type="task" toc="yes" href="edit-content-type.dita" />
             <topicref format="dita" type="task" toc="yes" href="delete-content-type.dita" />
         </topichead>
 
@@ -20,20 +20,25 @@
             <topicref format="dita" type="task"      toc="yes" href="create-visualizer.dita" />
             <topicref format="dita" type="task"      toc="yes" href="edit-visualizer.dita" />
             <topicref format="dita" type="task"      toc="yes" href="delete-visualizer.dita" />
+            <topicref format="dita" type="task"      toc="yes" href="import-visualizer.dita" />
+            <topicref format="dita" type="task"      toc="yes" href="export-visualizer.dita" />
             <topicref format="dita" type="reference" toc="yes" href="visualizer-templates.dita" collection-type="family" >
                 <topicref format="dita" type="reference" toc="yes" href="visualizer-templates-basics.dita" />
                 <topicref format="dita" type="reference" toc="yes" href="visualizer-templates-filters.dita" />
                 <topicref format="dita" type="reference" toc="yes" href="visualizer-templates-datetime.dita" />
             </topicref>
+            <!-- <topicref format="dita" type="topic"     toc="yes" href="visualizer-package.dita" /> 201704 Per Chris, do not write this yet. It will continue to change. -->
         </topichead>
 
         <topichead outputclass="sub-nav-tabs" collection-type="family" >
             <topicmeta><navtitle>Content Items</navtitle></topicmeta>
             <topicref format="dita" type="task" toc="yes" href="create-content-item.dita" />
-            <topicref format="dita" type="task" toc="yes" href="edit-content-item.dita" />
             <topicref format="dita" type="task" toc="yes" href="duplicate-content-item.dita" />
+            <topicref format="dita" type="task" toc="yes" href="edit-content-item.dita" />
             <topicref format="dita" type="task" toc="yes" href="delete-content-item.dita" />
             <!-- <topicref format="dita" type="task" toc="yes" href="add-content-item-to-page.dita" /> -->
+            <topicref format="dita" type="task" toc="yes" href="share-in-social-media.dita" />
+            <topicref format="dita" type="task" toc="yes" href="get-embed-code.dita" />
         </topichead>
 
         <topichead outputclass="sub-nav-tabs" collection-type="family" >
@@ -46,6 +51,14 @@
             <topicref format="dita" type="reference" toc="yes" href="../fields/content-field-reference-object.dita" />
             <topicref format="dita" type="reference" toc="yes" href="../fields/content-field-single-line-text.dita" />
             <topicref format="dita" type="reference" toc="yes" href="../fields/content-field-static-text.dita" />
+        </topichead>
+
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>API Keys</navtitle></topicmeta>
+            <topicref format="dita" type="task" toc="yes" href="create-api-key.dita" />
+            <topicref format="dita" type="task" toc="yes" href="get-existing-api-key.dita" />
+            <topicref format="dita" type="task" toc="yes" href="edit-or-reset-api-key.dita" />
+            <topicref format="dita" type="task" toc="yes" href="delete-api-key.dita" />
         </topichead>
 
         <topicref format="dita" type="task" toc="yes" href="example-recipes.dita" />

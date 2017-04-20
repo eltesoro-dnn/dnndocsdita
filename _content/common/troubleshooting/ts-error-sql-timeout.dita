@@ -64,7 +64,7 @@
                 <title>Solution</title>
 
                 <ol outputclass="steps">
-                    <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E90"></ph></li>
+                    <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E91"></ph></li>
 					<li outputclass="step"><ph outputclass="cmd">Check the sizes of <filepath>EventLog</filepath>, <filepath>SiteLog</filepath>, and <filepath>ScheduleHistory</filepath>.</ph>
 						<ol outputclass="substeps">
 							<li outputclass="substep">

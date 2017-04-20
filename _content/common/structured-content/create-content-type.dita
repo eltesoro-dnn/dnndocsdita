@@ -9,22 +9,20 @@
 
 
     <prolog>
-        <author>wrET,1606</author>
+        <author>wrET,1704</author>
         <copyright>
-            <copyryear year="2016"></copyryear>
+            <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
             <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
-			<!--
-            <prodinfo>
-                <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
-            </prodinfo>
-			-->
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="8" release="5"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
         </metadata>
     </prolog>
@@ -32,30 +30,30 @@
 
     <taskbody>
 
-		<section conkeyref="k-bptext/section-prodavail-E"></section>
+        <section conkeyref="k-bptext/section-prodavail-E"></section>
 
-        <section id="video">
-            <p>This video briefly demonstrates how to create a custom content type.</p>
-            <object width="640" height="360" data="http://fast.wistia.net/embed/iframe/z8zoa09xkx?videoFoam=true">
-                <param name="src" value="http://fast.wistia.net/embed/iframe/z8zoa09xkx?videoFoam=true"/>
-                <param name="movie" value="http://fast.wistia.net/embed/iframe/z8zoa09xkx?videoFoam=true"/>
-                <param name="allowFullScreen" value="true"/>
-                <param name="allowscriptaccess" value="always"/>
-            </object>
+        <section>
+            <sectiondiv conref="bptext-content.dita#tsk-bptext-content/sectiondiv-video-create-content-type"></sectiondiv>
         </section>
 
-        <prereq><ph conkeyref="k-bptext/ph-PrereqMicroservicesEnabled"></ph></prereq>
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqMicroservicesEnabled"></ph></li>
+            </ul>
+        </prereq>
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Content-ContentItems-E90"><cmd/></step>
-            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-ContentItems-E90"><cmd/></step>
-
-			<step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotocontenttypetab-createbtn"><cmd/></step>
-			<step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contenttype-configurecontenttype"><cmd/></step>
-			<step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contenttype-configurefields"><cmd/></step>
-            <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-contenttype-configureproperties"><cmd/></step>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-ContentLibrary-E91"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Content-ContentLibrary-E91"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-all-Content-ContentLibrary-ContentTypes-E91"><cmd/></step>
+            <step conref="bptext-content.dita#tsk-bptext-content/step-contenttype-createbtn"><cmd/></step>
+            <step conref="bptext-content.dita#tsk-bptext-content/step-contenttype-configurecontenttype"><cmd/></step>
+            <step conref="bptext-content.dita#tsk-bptext-content/step-contenttype-configurefields"><cmd/></step>
+            <step conref="bptext-content.dita#tsk-bptext-content/step-contenttype-configureproperties"><cmd/></step>
+            <step><cmd>Save.</cmd></step>
         </steps>
 
     </taskbody>
 
 </task>
+

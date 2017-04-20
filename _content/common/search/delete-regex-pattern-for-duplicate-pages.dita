@@ -47,8 +47,8 @@
         </section>
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-SiteSettings-E90"><cmd/></step>
-            <step conkeyref="k-bppbtabs/step-pbtabs-all-Settings-SiteSettings-Search-Crawling-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-SiteSettings-E91"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-all-Settings-SiteSettings-Search-Crawling-E91"><cmd/></step>
             <step conref="bptext-search.dita#tsk-bptext-search/step-duplicates-delete"><cmd/></step>
             <step><cmd>Confirm.</cmd></step>
         </steps>

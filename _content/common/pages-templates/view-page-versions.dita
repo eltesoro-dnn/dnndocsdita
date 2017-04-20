@@ -45,7 +45,7 @@
 
         <steps>
             <step><cmd>Go to the page to edit.</cmd></step>
-            <step conkeyref="k-bppbar/step-pb-all-Edit-E90"><cmd/></step>
+            <step conkeyref="k-bppbar/step-pb-all-Edit-E91"><cmd/></step>
             <step conkeyref="k-bpsteps/step-pb-editbar-pagehistory"><cmd/></step>
             <step conkeyref="k-bppagespb/step-pages-pageversion-preview"><cmd/></step>
             <step><cmd>Click/Tap <uicontrol>Close</uicontrol> to return to the <uicontrol>Page History</uicontrol> list.</cmd></step>

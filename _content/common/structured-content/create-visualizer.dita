@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
 <task xml:lang="en" id="tsk-create-visualizer">
 
@@ -9,22 +9,20 @@
 
 
     <prolog>
-        <author>wrET,1608</author>
+        <author>wrET,1704</author>
         <copyright>
-            <copyryear year="2016"></copyryear>
+            <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
             <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
-            <!--
-            <prodinfo>
-                <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
-            </prodinfo>
-            -->
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="8" release="5"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
         </metadata>
     </prolog>
@@ -34,17 +32,23 @@
 
         <section conkeyref="k-bptext/section-prodavail-E"></section>
 
-        <prereq><ph conkeyref="k-bptext/ph-PrereqMicroservicesEnabled"></ph></prereq>
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqMicroservicesEnabled"></ph></li>
+            </ul>
+        </prereq>
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Content-ContentItems-E90"><cmd/></step>
-            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-ContentItems-E90"><cmd/></step>
-
-			<step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-gotovisualizertab-createbtn"><cmd/></step>
-			<step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-configurevisualizerproperties"><cmd/></step>
-            <step conref="bptext-content-steps.dita#tsk-bptext-content-steps/step-visualizer-codevisualizer"><cmd/></step>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-ContentLibrary-E91"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Content-ContentLibrary-E91"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-all-Content-ContentLibrary-Visualizers-E91"><cmd/></step>
+            <step conref="bptext-content.dita#tsk-bptext-content/step-visualizer-createbtn-new"><cmd/></step>
+            <step conref="bptext-content.dita#tsk-bptext-content/step-visualizer-configurevisualizerproperties"><cmd/></step>
+            <step conref="bptext-content.dita#tsk-bptext-content/step-visualizer-codevisualizer"><cmd/></step>
+            <step><cmd>Save.</cmd></step>
         </steps>
 
     </taskbody>
 
 </task>
+

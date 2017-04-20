@@ -49,8 +49,8 @@
                 <cmd>Verify that your license is activated and that you are using the correct license type.</cmd>
                 <substeps>
                     <substep>
-                        <cmd conkeyref="k-bppbar/cmd-pb-host-Settings-About-E90"></cmd>
-                        <info conkeyref="k-bppbar/info-pb-host-Settings-About-E90"></info>
+                        <cmd conkeyref="k-bppbar/cmd-pb-host-Settings-About-E91"></cmd>
+                        <info conkeyref="k-bppbar/info-pb-host-Settings-About-E91"></info>
                     </substep>
                     <substep><cmd>Check that the invoice number appears in the list and that a check appears in the <uicontrol>Activated</uicontrol> column for this license.</cmd></substep>
                     <substep>

@@ -334,7 +334,7 @@ llo
                 <strow id="split">
                     <stentry><term>split</term></stentry>
                     <stentry>Splits the piped string where the specified pattern is found, not including the search pattern. Also see <xref outputclass="in-page-anchor" format="dita" href="#ref-visualizer-templates-filters/arrays">Arrays</xref>.
-                        <note conref="bptext-content-steps.dita#tsk-bptext-content-steps/note-visualizer-arraytostring"></note>
+                        <note conref="bptext-content.dita#tsk-bptext-content/note-visualizer-arraytostring"></note>
                     </stentry>
                     <stentry>
                         <codeblock>
@@ -530,7 +530,7 @@ http://www.linkedin.com/in/myexample
             <p>Fields that are of the type <uicontrol>Assets</uicontrol> (images and documents) contain arrays; therefore, you can also use these filters with those fields.</p>
 
             <p>These examples accept a string with comma-separated values, which is split into an array before the filter is applied. If the result is an array, the <codeph>join</codeph> filter combines the elements into a string with the tilde "~" as separator.</p>
-            <note conref="bptext-content-steps.dita#tsk-bptext-content-steps/note-visualizer-arraytostring"></note>
+            <note conref="bptext-content.dita#tsk-bptext-content/note-visualizer-arraytostring"></note>
 
             <simpletable relcolwidth="1* 3* 2*">
                 <sthead>

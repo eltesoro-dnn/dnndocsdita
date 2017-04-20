@@ -100,14 +100,9 @@
         <!-- <note conkeyref="k-bptext/note-DNNContentTypesNoDel"></note> -->
         <note type="note" id="note-DNNContentTypesNoDel">Content types provided by DNN cannot be deleted.</note>
 
-        <!-- <note conref="../../common/bptext.dita#top-bptext/note-DNNVisualizersNoEdit"></note> -->
-        <!-- <note conkeyref="k-bptext/note-DNNVisualizersNoEdit"></note> -->
-        <note type="note" id="note-DNNVisualizersNoEdit">Visualizers provided by DNN cannot be edited.</note>
-
-        <!-- <note conref="../../common/bptext.dita#top-bptext/note-DNNVisualizersNoDel"></note> -->
-        <!-- <note conkeyref="k-bptext/note-DNNVisualizersNoDel"></note> -->
-        <note type="note" id="note-DNNVisualizersNoDel">Visualizers provided by DNN cannot be deleted.</note>
-
+        <!-- <note conref="../../common/bptext.dita#top-bptext/note-DNNVisualizersNoMod"></note> -->
+        <!-- <note conkeyref="k-bptext/note-DNNVisualizersNoMod"></note> -->
+        <note type="note" id="note-DNNVisualizersNoMod">Visualizers provided by DNN cannot be edited, replaced, exported, or deleted.</note>
 
 
         <!-- ==================== Page and Module Settings ==================== -->

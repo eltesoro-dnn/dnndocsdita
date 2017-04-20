@@ -20,15 +20,15 @@
 
 
             <p>
-                <!-- <ph conref="bptext-content-steps.dita#tsk-bptext-content-steps/ph-choosefieldformat"></ph> -->
+                <!-- <ph conref="bptext-content.dita#tsk-bptext-content/ph-choosefieldformat"></ph> -->
                 <ph id="ph-choosefieldformat">Choose the form of the field.</ph>
 
 
-                <!-- <ph conref="bptext-content-steps.dita#tsk-bptext-content-steps/ph-configvalidation"></ph> -->
+                <!-- <ph conref="bptext-content.dita#tsk-bptext-content/ph-configvalidation"></ph> -->
                 <ph id="ph-configvalidation">Configure how the submitted value would be validated.</ph>
 
 
-                <!-- <ph conref="bptext-content-steps.dita#tsk-bptext-content-steps/ph-addlfieldsettings"></ph> -->
+                <!-- <ph conref="bptext-content.dita#tsk-bptext-content/ph-addlfieldsettings"></ph> -->
                 <ph id="ph-addlfieldsettings">Based on the selected form, additional settings might be customizable.</ph>
             </p>
 
@@ -38,6 +38,8 @@
 
 
         </section>
+
+
 
 
         <section>

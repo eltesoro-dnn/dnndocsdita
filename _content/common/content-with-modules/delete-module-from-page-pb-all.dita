@@ -34,7 +34,7 @@
 
         <steps>
             <step><cmd>Go to the page containing the module to delete.</cmd></step>
-            <step conkeyref="k-bppbar/step-pb-all-Edit-E90"><cmd/></step>
+            <step conkeyref="k-bppbar/step-pb-all-Edit-E91"><cmd/></step>
             <step conref="bptext-modules-steps.dita#tsk-bptext-modules-steps/step-actionmenu-manage-delete"><cmd/></step>
         </steps>
 

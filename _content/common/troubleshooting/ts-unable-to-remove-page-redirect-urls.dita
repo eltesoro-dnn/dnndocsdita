@@ -59,7 +59,7 @@
 
                 <ol outputclass="steps">
                     <li outputclass="step stepexpand">Back up the site and the database.</li>  <!-- TODO: Link this to a how-to topic about backing up the site and the database. -->
-                    <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E90"></ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E91"></ph></li>
                     <li outputclass="step stepexpand">
                         <ph outputclass="cmd">Find the identifier (<uicontrol>TabID</uicontrol>) of the problematic page.</ph>
 						<ol outputclass="substeps">

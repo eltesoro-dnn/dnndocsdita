@@ -31,7 +31,7 @@
         <prereq><ph conkeyref="k-bptext/ph-PrereqCommunityMgr"></ph></prereq>
 
         <steps>
-			<step conkeyref="k-bppbar/step-pb-mod-Settings-Gamification-E90"><cmd/></step>
+			<step conkeyref="k-bppbar/step-pb-mod-Settings-Gamification-E91"><cmd/></step>
 			<step>
 				<cmd>Highlight the badge to delete. Then Click/Tap the X icon under the <uicontrol>Actions</uicontrol> column.</cmd>
 				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Gaming-BadgesActions-Delete.png"><alt>Gaming &#8212; Highlight and delete the badge.</alt></image></info>

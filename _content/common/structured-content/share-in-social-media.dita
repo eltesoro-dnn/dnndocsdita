@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-share-in-social-media">
+
+    <title>Share a Content Item in Social Media</title>
+    <titlealts>
+        <navtitle>Share in Social Media</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1704</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <section conkeyref="k-bptext/section-prodavail-E"></section>
+
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqMicroservicesEnabled"></ph></li>
+            </ul>
+        </prereq>
+
+        <steps>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-ContentLibrary-E91"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Content-ContentLibrary-E91"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-all-Content-ContentLibrary-Content-E91"><cmd/></step>
+            <step conref="bptext-content.dita#tsk-bptext-content/step-contentitem-searchsortfilter"><cmd/></step>
+            <step conref="bptext-content.dita#tsk-bptext-content/step-contentitem-share-icon"><cmd/></step>
+            <step conref="bptext-content.dita#tsk-bptext-content/step-contentitem-share-socialmedia-icon"><cmd/></step>
+            <step conref="bptext-content.dita#tsk-bptext-content/step-contentitem-prepare-publish-post"><cmd/></step>
+        </steps>
+
+    </taskbody>
+
+</task>
+

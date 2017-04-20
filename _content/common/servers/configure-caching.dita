@@ -40,8 +40,8 @@
         </prereq>
 
         <steps>
-            <step conkeyref="k-bppbar/step-pb-host-Settings-Servers-E90"><cmd/></step>
-            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Servers-ServerSettings-Performance-E90"><cmd/></step>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-Servers-E91"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Servers-ServerSettings-Performance-E91"><cmd/></step>
             <step>
                 <cmd>Choose how the page's state is persisted (<uicontrol>Page State Persistence</uicontrol>).</cmd>
                 <choices>

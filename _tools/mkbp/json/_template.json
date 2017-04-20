@@ -21,7 +21,10 @@
             , "substeps" : [
                 {
                     "cmd" : ""
-                    , "img" : "scr-.png"
+                    , "img" : {
+                        "fn" : "scr-.png"
+                        , "alt" : "Alt text here."
+                    }
                     , "info" : ""
                     , "result" : ""
                 },
@@ -31,6 +34,24 @@
             ]
             , "xmp" : "Example: <userinput>omg,lol,lmao</userinput>"
             ]
+        },
+        {
+            "id" : "step-"
+            , "cmd" : "Click/Tap <uicontrol></uicontrol>."
+            , "img" : {
+                "fn" : "scr-.png"
+                , "alt" : "Alt text here."
+            }
+            , "info" : "conref=simpletable-"
+        },
+        {
+            "id" : ""
+            , "cmd" : ""
+            , "img" : {
+                "fn" : ""
+                , "alt" : ""
+            }
+            , "info" : "conref="
         },
         {
             "id" : "step-"

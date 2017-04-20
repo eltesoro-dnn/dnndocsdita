@@ -31,7 +31,7 @@
         <prereq><ph conkeyref="k-bptext/ph-PrereqCommunityMgr"></ph></prereq>
 
         <steps>
-			<step conkeyref="k-bppbar/step-pb-mod-Settings-Gamification-E90"><cmd/></step>
+			<step conkeyref="k-bppbar/step-pb-mod-Settings-Gamification-E91"><cmd/></step>
 			<step>
 				<cmd>Highlight the badge to edit. Then Click/Tap the pencil icon under the <uicontrol>Actions</uicontrol> column.</cmd>
 				<info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Gaming-BadgesActions-Edit.png"><alt>Gaming &#8212; Highlight and edit the item.</alt></image></info>

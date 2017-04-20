@@ -44,7 +44,7 @@
 
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Manage-Sites-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Manage-Sites-E91"><cmd/></step>
             <step conref="bptext-sites.dita#tsk-bptext-sites/step-tab-sitegroups"><cmd/></step>
             <step conref="bptext-sites.dita#tsk-bptext-sites/step-add-site-group-button"><cmd/></step>
             <step conref="bptext-sites.dita#tsk-bptext-sites/step-fill-in-site-group-props"><cmd/></step>

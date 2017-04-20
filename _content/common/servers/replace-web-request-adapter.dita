@@ -46,8 +46,8 @@
         </section>
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Servers-E90"><cmd/></step>
-            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Servers-ServerSettings-WebServers-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Servers-E91"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Servers-ServerSettings-WebServers-E91"><cmd/></step>
             <step conref="bptext-servers.dita#tsk-bptext-servers/step-choose-web-request-adapter"><cmd/></step>
             <step><cmd>Save.</cmd></step>
         </steps>

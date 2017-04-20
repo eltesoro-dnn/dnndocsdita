@@ -44,8 +44,8 @@
 
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Manage-Roles-E90"><cmd/></step>
-            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Manage-Roles-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Manage-Roles-E91"><cmd/></step>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Manage-Roles-E91"><cmd/></step>
             <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-filter-by-custom-role-group"><cmd/></step>
             <step><cmd>Remove all roles from the custom group.</cmd></step>
             <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-delete-custom-role-group"><cmd/></step>

@@ -9,11 +9,17 @@
             <audience type="administrator" job="maintaining" />
             <prodinfo>
                 <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
         </metadata>
     </prolog>

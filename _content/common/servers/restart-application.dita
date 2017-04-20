@@ -41,7 +41,7 @@
 
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Servers-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Servers-E91"><cmd/></step>
             <step conref="bptext-servers.dita#tsk-bptext-servers/step-restart-application-button"><cmd/></step>
         </steps>
 

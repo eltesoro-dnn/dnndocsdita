@@ -34,8 +34,8 @@
 		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Settings-Connectors-E90"><cmd/></step>
-            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Settings-Connectors-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Settings-Connectors-E91"><cmd/></step>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Settings-Connectors-E91"><cmd/></step>
             <step conref="bptext-connectors.dita#tsk-bptext-connectors/step-configure-connections"><cmd/></step>
             <step conref="bptext-connectors.dita#tsk-bptext-connectors/step-provide-connection-info"><cmd/></step>
             <step><cmd>Click/tap <uicontrol>Save</uicontrol>.</cmd></step>

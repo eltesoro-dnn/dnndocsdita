@@ -37,7 +37,7 @@
 		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <steps>
-            <step conkeyref="k-bppbar/step-pb-host-Settings-ConfigManager-E90"><cmd/></step>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-ConfigManager-E91"><cmd/></step>
             <step>
                 <cmd>In the <uicontrol>Config Files</uicontrol> tab, choose the configuration file from the dropdown list.</cmd>
                 <info>

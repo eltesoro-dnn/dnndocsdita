@@ -34,7 +34,7 @@
 
         <steps>
             <step><cmd>Go to the page to edit.</cmd></step>
-            <step conkeyref="k-bppbar/step-pb-all-Edit-E90"><cmd/></step>
+            <step conkeyref="k-bppbar/step-pb-all-Edit-E91"><cmd/></step>
             <step><cmd>Add, configure, edit, delete, or move the modules on the page.</cmd></step>
         </steps>
 

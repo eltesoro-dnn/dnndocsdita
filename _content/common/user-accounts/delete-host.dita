@@ -43,9 +43,9 @@
         </prereq>
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Manage-Users-E90"><cmd/></step>
-            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Manage-Users-E90"><cmd/></step>
-            <step audience="mod" conkeyref="k-bppbar/step-pb-mod-Manage-Users-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Manage-Users-E91"><cmd/></step>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Manage-Users-E91"><cmd/></step>
+            <step audience="mod" conkeyref="k-bppbar/step-pb-mod-Manage-Users-E91"><cmd/></step>
             <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-searchforsuperuser"><cmd/></step>
             <step conref="bptext-userssteps.dita#tsk-bptext-userssteps/step-userhost-ellipsesmenu-deleteuser"><cmd/></step>
         </steps>

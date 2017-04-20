@@ -44,8 +44,8 @@
 
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Manage-AdminLogs-E90"><cmd/></step>
-            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Manage-AdminLogs-LogSettings-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Manage-AdminLogs-E91"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Manage-AdminLogs-LogSettings-E91"><cmd/></step>
             <step conref="bptext-sitelogs.dita#tsk-bptext-sitelogs/step-edit-icon-event-type-configure"><cmd/></step>
             <step conref="bptext-sitelogs.dita#tsk-bptext-sitelogs/step-configure-email-notification-settings-edit"><cmd/></step>
             <step><cmd>Save.</cmd></step>

@@ -60,8 +60,8 @@
                 <title>Solution</title>
 
                 <ol outputclass="steps">
-                    <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Security-E90"></ph></li>
-                    <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Security-MemberAccounts-MemberManagement-E90"></ph></li>
+                    <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Security-E91"></ph></li>
+                    <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Security-MemberAccounts-MemberManagement-E91"></ph></li>
                     <li outputclass="step stepexpand">Turn on <uicontrol>Enable IP Address Checking</uicontrol>.</li>
                 </ol>
             </section>

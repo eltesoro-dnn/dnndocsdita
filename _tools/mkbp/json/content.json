@@ -1,0 +1,696 @@
+{
+    "global" : {
+        "avail" : "E"
+    },
+
+
+    "bpsection" : [
+        {
+            "id" : "warning-must-be-in-correct-site"
+            , "text" : "Verify that you are at the site that will be associated with the API key before creating the key."
+        },
+        {
+            "id" : "note-permissions-for-current-site-only"
+            , "text" : "An API key is associated with the content items of a specific site; i.e., the site that was current when the key was created."
+        },
+        {
+            "id" : "note-same-as-clipboard-icon"
+            , "text" : "The <uicontrol>Copy Key</uicontrol> does the same thing as the clipboard icon in the list."
+        },
+        {
+            "id" : "warning-reset-key"
+            , "text" : "This action cannot be undone, whether other changes are saved or not. <uicontrol>Reset Key</uicontrol> immediately deletes the old key and replaces it with a new one. Third-party apps that use the old key will no longer be able to access your content items unless you provide them with the new key."
+        }
+    ],
+
+
+    "bpsteps" : [
+
+        {
+            "id" : "step-contenttype-createbtn"
+            , "cmd" : "Click/Tap <uicontrol>Create Content Type</uicontrol>."
+            , "img" : {
+                "fn" : "scr-pbtabs-all-Content-ContentLibrary-ContentTypes-CreateContentTypeButton-E91.png"
+                , "alt" : "Content &gt; Content Types tab &gt; Create Content Type"
+            }
+        },
+        {
+            "id" : "step-contenttype-highlightellipses-edit"
+            , "cmd" : "Highlight the content type, click/tap the ellipses, and choose <uicontrol>Edit</uicontrol>."
+            , "img" : {
+                "fn" : "scr-ContentTypes-Ellipses-Edit-E91.png"
+                , "alt" : "Content Type ellipses menu &gt; Edit"
+            }
+        },
+        {
+            "id" : "step-contenttype-highlightellipses-duplicate"
+            , "cmd" : "Highlight the content type, click/tap the ellipses, and choose <uicontrol>Duplicate</uicontrol>."
+            , "img" : {
+                "fn" : "scr-ContentTypes-Ellipses-Duplicate-E91.png"
+                , "alt" : "Content Type ellipses menu &gt; Duplicate"
+            }
+        },
+        {
+            "id" : "step-contenttype-highlightellipses-delete"
+            , "cmd" : "Highlight the content type, click/tap the ellipses, and choose <uicontrol>Delete</uicontrol>."
+            , "img" : {
+                "fn" : "scr-ContentTypes-Ellipses-Delete-E91.png"
+                , "alt" : "Content Type ellipses menu &gt; Delete"
+            }
+        },
+        {
+            "id" : "step-contenttype-configurecontenttype"
+            , "cmd" : "Configure the content type."
+            , "img" : {
+                "fn" : "scr-ContentTypes-Settings.png"
+                , "alt" : "Content Type settings"
+            }
+            , "info" : "conref=simpletable-contenttype-configurecontenttype"
+        },
+        {
+            "id" : "step-contenttype-configurefields"
+            , "cmd" : "Manage the fields of the content type."
+            , "substeps" : [
+                {
+                    "cmd" : "<ph conkeyref=\"k-bptext/ph-fieldadd\"></ph>"
+                    , "img" : {
+                        "fn" : "scr-ContentField-Add.png"
+                        , "alt" : "Drag and drop a field to the canvas."
+                    }
+                },
+                {
+                    "cmd" : "<ph conkeyref=\"k-bptext/ph-fieldedit\"></ph>"
+                    , "img" : {
+                        "fn" : "scr-ContentField-Edit.png"
+                        , "alt" : "Click/Tap a field in the canvas, then configure its settings."
+                    }
+                },
+                {
+                    "cmd" : "<ph conkeyref=\"k-bptext/ph-fielddup\"></ph>"
+                    , "img" : {
+                        "fn" : "scr-ContentField-Hover-Dup.png"
+                        , "alt" : "Hover over a field in the canvas, then click/tap the duplicate icon."
+                    }
+                },
+                {
+                    "cmd" : "<ph conkeyref=\"k-bptext/ph-fielddel\"></ph>"
+                    , "img" : {
+                        "fn" : "scr-ContentField-Hover-Del.png"
+                        , "alt" : "Hover over a field in the canvas, then click/tap the trash icon."
+                    }
+                }
+            ]
+        },
+        {
+            "id" : "step-contenttype-configureproperties"
+            , "cmd" : "Configure the content type's properties."
+            , "img" : {
+                "fn" : "scr-ContentTypes-Properties.png"
+                , "alt" : "Content Type properties"
+            }
+            , "info" : "conref=simpletable-contenttype-configureproperties"
+        },
+
+
+        {
+            "id" : "step-visualizer-createbtn-new"
+            , "cmd" : "Click/Tap <uicontrol>Create Visualizer</uicontrol>."
+            , "img" : {
+                "fn" : "scr-Visualizers-CreateBtn-New-E91.png"
+                , "alt" : "Content Library &gt; Visualizers tab &gt; Create Visualizer &gt; New Visualizer"
+            }
+        },
+        {
+            "id" : "step-visualizer-createbtn-import"
+            , "cmd" : "Click/Tap <uicontrol>Create Visualizer</uicontrol>."
+            , "img" : {
+                "fn" : "scr-Visualizers-CreateBtn-Import-E91.png"
+                , "alt" : "Content Library &gt; Visualizers tab &gt; Create Visualizer &gt; Import Visualizer"
+            }
+        },
+        {
+            "id" : "step-visualizer-choose-zip-import"
+            , "cmd" : "Choose the visualizer zip file to import."
+            , "info" : [
+                "The imported zip file must be a valid visualizer package."
+                , "If the visualizer already exists, choose whether to override it or create a new copy."
+            ]
+        },
+        {
+            "id" : "step-visualizer-choosevisualizer"
+            , "cmd" : "Search for the visualizer you want, then click/tap on its icon."
+            , "img" : {
+                "fn" : "scr-Visualizers-List-SearchClickTap-E91.gif"
+                , "alt" : "Visualizers list - Click/Tap the visualizer you want."
+            }
+            , "info" : "You can browse the list of visualizers, or you can use <uicontrol>Search</uicontrol> field."
+        },
+        {
+            "id" : "step-visualizer-configurevisualizerproperties"
+            , "cmd" : "Configure the properties of the visualizer."
+            , "img" : {
+                "fn" : "scr-Visualizers-Details-E91.png"
+                , "alt" : "Visualizer Details tab"
+            }
+            , "info" : "conref=simpletable-visualizer-configurevisualizerproperties"
+        },
+        {
+            "id" : "step-visualizer-export"
+            , "cmd" : "Click/Tap the <uicontrol>Export File</uicontrol> button."
+            , "img" : "scr-Visualizers-Details-Export-E91.png"
+        },
+        {
+            "id" : "step-visualizer-choose-zip-export"
+            , "cmd" : "Choose the path and filename of the visualizer zip file to create."
+        },
+        {
+            "id" : "step-visualizer-delete"
+            , "cmd" : "Click/Tap <uicontrol>Delete</uicontrol>."
+            , "img" : {
+                "fn" : "scr-Visualizers-Details-Delete-E91.png"
+                , "alt" : "Content &gt; Visualizers tab &gt; choose the visualizer &gt; click/tap Delete"
+            }
+        },
+
+
+        {
+            "id" : "step-contentitem-createwithtype"
+            , "cmd" : "Click/Tap <uicontrol>Create Content</uicontrol>, then select the type for this content item."
+            , "img" : {
+                "fn" : "scr-ContentItems-CreateContentWithType-E91.png"
+                , "alt" : "Content tab &gt; Create Content &gt; Select Content Type"
+            }
+        },
+        {
+            "id" : "step-contentitem-fillinfieldsofcontentitem"
+            , "cmd" : "Fill in the fields of the content item."
+            , "info" : "conref=p-contentitem-fieldsofcontentitem"
+        },
+        {
+            "id" : "step-contentitem-updatefieldsofcontentitem"
+            , "cmd" : "Update the field values of the content item."
+            , "info" : "conref=p-contentitem-fieldsofcontentitem"
+        },
+        {
+            "id" : "step-contentitem-searchsortfilter"
+            , "cmd" : "Search for the content item in the list."
+            , "info" : "You can use the <uicontrol>Search</uicontrol> field, the <uicontrol>Sort By</uicontrol>, or the filters (<uicontrol>Content Type</uicontrol>, <uicontrol>Status</uicontrol>, and <uicontrol>Dates</uicontrol>)."
+            , "img" : "scr-ContentItems-searchsortfilter-E91.gif"
+        },
+        {
+            "id" : "step-contentitem-pencil-icon"
+            , "cmd" : "Click/Tap the pencil icon for the specific content item."
+            , "img" : {
+                "fn" : "scr-ContentItems-item-pencil-icon-E91.png"
+                , "alt" : "Content tab &gt; pencil icon"
+            }
+        },
+        {
+            "id" : "step-contentitem-share-icon"
+            , "cmd" : "Click/Tap the <term>Share</term> icon for the specific content item."
+            , "img" : {
+                "fn" : "scr-ContentItems-item-share-icon-E91.png"
+                , "alt" : "Content tab &gt; Share icon"
+            }
+        },
+        {
+            "id" : "step-contentitem-share-socialmedia-icon"
+            , "cmd" : "Click/Tap the icon for Facebook, LinkedIn, or Twitter."
+            , "img" : {
+                "fn" : "scr-ContentItems-item-share-socialmedia-icons-E91.png"
+                , "alt" : "Content tab &gt; Share &gt; social media icons"
+            }
+        },
+        {
+            "id" : "step-contentitem-prepare-publish-post"
+            , "cmd" : "Prepare and publish the post for publication."
+            , "img" : {
+                "fn" : "scr-ContentItems-item-share-content-with-social-channels-E91.gif"
+                , "alt" : "Content tab &gt; Share &gt; social media &gt; prepare post"
+            }
+            , "substeps" : [
+                {
+                    "cmd" : "Choose one or more profiles to use as the sender or poster."
+                    , "info" : "<note type=\"note\">Facebook pages cannot be used as profiles for posting.</note>"
+                },
+                {
+                    "cmd" : "(Optional) Add a message and/or a URL link to include with the content item."
+                },
+                {
+                    "cmd" : "(Optional) Schedule the publishing date and time for the post."
+                    , "info" : "If not specified, the post is published immediately."
+                },
+                {
+                    "cmd" : "Post."
+                }
+            ]
+        },
+        {
+            "id" : "step-contentitem-share-embedcode-icon"
+            , "cmd" : "Click/Tap the icon for the embed code."
+            , "img" : {
+                "fn" : "scr-ContentItems-item-share-embedcode-icon-E91.png"
+                , "alt" : "Content tab &gt; Share &gt; embed code icon"
+            }
+        },
+        {
+            "id" : "step-contentitem-embedcode-choose-visualizer"
+            , "cmd" : "Choose the visualizer to use in the embed code."
+            , "img" : {
+                "fn" : "scr-ContentItems-item-embedcode-choose-visualizer-E91.png"
+                , "alt" : "Content tab &gt; Share &gt; Embed Code &gt; Choose Visualizer"
+            }
+        },
+        {
+            "id" : "step-contentitem-embedcode-preview"
+            , "cmd" : "Review how the content item would look, then click/tap <uicontrol>Done</uicontrol>."
+            , "img" : {
+                "fn" : "scr-ContentItems-item-embedcode-preview-E91.png"
+                , "alt" : "Content tab &gt; Share &gt; Embed Code &gt; Preview"
+            }
+        },
+        {
+            "id" : "step-contentitem-embedcode-copy-to-clipboard"
+            , "cmd" : "Click/Tap <uicontrol>Copy to Clipboard</uicontrol>."
+            , "img" : {
+                "fn" : "scr-ContentItems-item-embedcode-copy-to-clipboard-E91.png"
+                , "alt" : "Content tab &gt; Share &gt; Embed Code &gt; Copy to Clipboard"
+            }
+        },
+        {
+            "id" : "step-contentitem-ellipses-duplicate"
+            , "cmd" : "Click/Tap the ellipses <uicontrol>...</uicontrol> for the specific content item, and then select <uicontrol>Duplicate</uicontrol>."
+            , "img" : {
+                "fn" : "scr-ContentItems-item-ellipsesmenu-Duplicate-E91.png"
+                , "alt" : "Content tab &gt; ellipses menu &gt; Duplicate"
+            }
+        },
+        {
+            "id" : "step-contentitem-ellipses-delete"
+            , "cmd" : "Click/Tap the ellipses <uicontrol>...</uicontrol> for the specific content item, and then select <uicontrol>Delete</uicontrol>."
+            , "img" : {
+                "fn" : "scr-ContentItems-item-ellipsesmenu-Delete-E91.png"
+                , "alt" : "Content tab &gt; ellipses menu &gt; Delete"
+            }
+        },
+        {
+            "id" : "step-contentitem-configurecontentitem-properties"
+            , "cmd" : "In the <uicontrol>Properties</uicontrol> tab, configure the properties of the content item."
+            , "img" : {
+                "fn" : "scr-ContentItems-properties-E91.png"
+                , "alt" : "Content Item properties"
+            }
+            , "info" : "conref=simpletable-contentitem-configurecontentitem-properties"
+        },
+        {
+            "id" : "step-contentitem-configurecontentitem-seo"
+            , "cmd" : "In the <uicontrol>SEO</uicontrol> tab, configure the SEO for the content item."
+            , "img" : {
+                "fn" : "scr-ContentItems-SEO-E91.png"
+                , "alt" : "Content Item SEO"
+            }
+            , "info" : "conref=simpletable-contentitem-configurecontentitem-seo"
+        },
+        {
+            "id" : "step-contentitem-closesavedraftsavecomplete"
+            , "cmd" : "Close, save as draft, or save as completed."
+            , "info" : "conref=simpletable-contentitem-closesavedraftsavecomplete"
+        },
+
+
+        {
+            "id" : "step-apikey-add-new"
+            , "cmd" : "Click/Tap <uicontrol>Add New API Key</uicontrol>."
+            , "img" : {
+                "fn" : "scr-APIKey-AddNew-E91.png"
+                , "alt" : "Add New API Key button"
+            }
+        },
+        {
+            "id" : "step-apikey-enter-properties"
+            , "cmd" : "Enter the properties of the API key."
+            , "substeps" : [
+                {
+                    "cmd" : "Enter a human-friendly name for the API key."
+                },
+                {
+                    "cmd" : "Choose the permissions to grant to the app that uses the API key."
+                    , "info" : "conref=note-permissions-for-current-site-only"
+                }
+            ]
+            , "img" : {
+                "fn" : "scr-APIKey-properties-new-E91.png"
+                , "alt" : "API key name and permissions"
+            }
+        },
+        {
+            "id" : "step-apikey-update-properties"
+            , "cmd" : "Update the properties of the API key."
+            , "substeps" : [
+                {
+                    "cmd" : "Update a human-friendly name for the API key."
+                },
+                {
+                    "cmd" : "Change the permissions associated with the API key."
+                    , "info" : "conref=note-permissions-for-current-site-only"
+                },
+                {
+                    "cmd" : "(Optional) To copy the API key to your clipboard, click/tap the <uicontrol>Copy Key</uicontrol>."
+                    , "info" : "conref=note-same-as-clipboard-icon"
+                },
+                {
+                    "cmd" : "(Optional) To reset the API key, click/tap the <uicontrol>Reset Key</uicontrol>."
+                    , "info" : "conref=warning-reset-key"
+                }
+            ]
+            , "img" : {
+                "fn" : "scr-APIKey-properties-existing-E91.png"
+                , "alt" : "API key name and permissions"
+            }
+        },
+        {
+            "id" : "step-apikey-search-in-list"
+            , "cmd" : "Search for the API key in the list."
+            , "img" : {
+                "fn" : "scr-APIKey-list-E91.png"
+                , "alt" : "API key list"
+            }
+        },
+        {
+            "id" : "step-apikey-clipboard-icon"
+            , "cmd" : "To copy the API key to your clipboard, click/tap the clipboard icon in the <uicontrol>API Key</uicontrol> column."
+            , "img" : {
+                "fn" : "scr-APIKey-list-clipboard-icon-E91.png"
+                , "alt" : "API key list &gt; clipboard icon"
+            }
+        },
+        {
+            "id" : "step-apikey-pencil-icon"
+            , "cmd" : "Click/Tap the pencil icon for the API key."
+            , "img" : {
+                "fn" : "scr-APIKey-list-pencil-icon-E91.png"
+                , "alt" : "API key list &gt; pencil icon"
+            }
+        },
+        {
+            "id" : "step-apikey-trash-icon"
+            , "cmd" : "Click/Tap the trash icon for the API key."
+            , "img" : {
+                "fn" : "scr-APIKey-list-trash-icon-E91.png"
+                , "alt" : "API key list &gt; trash icon"
+            }
+        }
+    ],
+
+
+    "topics" : [
+
+        {
+            "nav" : "Create Content Type"
+            , "title" : "Create a Content Type"
+            , "section" : "conref=sectiondiv-video-create-content-type"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary adm cmg"
+                , "step-pbtabs-Content-ContentLibrary-ContentTypes all"
+                , "step-contenttype-createbtn"
+                , "step-contenttype-configurecontenttype"
+                , "step-contenttype-configurefields"
+                , "step-contenttype-configureproperties"
+                , "Save."
+            ]
+        },
+
+        {
+            "nav" : "Duplicate Content Type"
+            , "title" : "Duplicate a Content Type"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary adm cmg"
+                , "step-pbtabs-Content-ContentLibrary-ContentTypes all"
+                , "step-contenttype-highlightellipses-duplicate"
+                , "step-contenttype-configurecontenttype"
+                , "step-contenttype-configureproperties"
+                , "step-contenttype-configurefields"
+                , "Save."
+            ]
+        },
+
+        {
+            "nav" : "Edit Content Type"
+            , "title" : "Edit a Content Type"
+            , "section" : "<note conkeyref=\"k-bptext/note-DNNContentTypesNoEdit\"></note>"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary adm cmg"
+                , "step-pbtabs-Content-ContentLibrary-ContentTypes all"
+                , "step-contenttype-highlightellipses-edit"
+                , "step-contenttype-configurecontenttype"
+                , "step-contenttype-configureproperties"
+                , "step-contenttype-configurefields"
+                , "Save."
+            ]
+        },
+
+        {
+            "nav" : "Delete Content Type"
+            , "title" : "Delete a Content Type"
+            , "section" : "<note conkeyref=\"k-bptext/note-DNNContentTypesNoDel\"></note>"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary adm cmg"
+                , "step-pbtabs-Content-ContentLibrary-ContentTypes all"
+                , "step-contenttype-highlightellipses-delete"
+                , "Confirm."
+            ]
+        },
+
+        {
+            "nav" : "Create Visualizer"
+            , "title" : "Create a Visualizer"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary adm cmg"
+                , "step-pbtabs-Content-ContentLibrary-Visualizers all"
+                , "step-visualizer-createbtn-new"
+                , "step-visualizer-configurevisualizerproperties"
+                , "step-visualizer-codevisualizer"
+                , "Save."
+            ]
+        },
+
+        {
+            "nav" : "Edit Visualizer"
+            , "title" : "Edit a Visualizer"
+            , "section" : "<note conkeyref=\"k-bptext/note-DNNVisualizersNoMod\"></note>"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary adm cmg"
+                , "step-pbtabs-Content-ContentLibrary-Visualizers all"
+                , "step-visualizer-choosevisualizer"
+                , "step-visualizer-configurevisualizerproperties"
+                , "step-visualizer-codevisualizer"
+                , "Save."
+            ]
+        },
+
+        {
+            "nav" : "Delete Visualizer"
+            , "title" : "Delete a Visualizer"
+            , "section" : "<note conkeyref=\"k-bptext/note-DNNVisualizersNoMod\"></note>"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary adm cmg"
+                , "step-pbtabs-Content-ContentLibrary-Visualizers all"
+                , "step-visualizer-choosevisualizer"
+                , "step-visualizer-delete"
+                , "Confirm."
+            ]
+        },
+
+        {
+            "nav" : "Import Visualizer"
+            , "title" : "Import a Visualizer"
+            , "section" : "<note conkeyref=\"k-bptext/note-DNNVisualizersNoMod\"></note>"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary adm cmg"
+                , "step-pbtabs-Content-ContentLibrary-Visualizers all"
+                , "step-visualizer-createbtn-import"
+                , "step-visualizer-choose-zip-import"
+            ]
+        },
+
+        {
+            "nav" : "Export Visualizer"
+            , "title" : "Export a Visualizer"
+            , "section" : "<note conkeyref=\"k-bptext/note-DNNVisualizersNoMod\"></note>"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary adm cmg"
+                , "step-pbtabs-Content-ContentLibrary-Visualizers all"
+                , "step-visualizer-choosevisualizer"
+                , "step-visualizer-export"
+                , "step-visualizer-choose-zip-export"
+            ]
+        },
+
+        {
+            "nav" : "Create Content Item"
+            , "title" : "Create a Content Item"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary adm cmg"
+                , "step-pbtabs-Content-ContentLibrary-Content- all"
+                , "step-contentitem-createwithtype"
+                , "step-contentitem-fillinfieldsofcontentitem"
+                , "step-contentitem-configurecontentitem-properties"
+                , "step-contentitem-configurecontentitem-seo"
+                , "step-contentitem-closesavedraftsavecomplete"
+            ]
+        },
+
+        {
+            "nav" : "Duplicate Content Item"
+            , "title" : "Duplicate a Content Item"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary adm cmg"
+                , "step-pbtabs-Content-ContentLibrary-Content- all"
+                , "step-contentitem-searchsortfilter"
+                , "step-contentitem-ellipses-duplicate"
+                , "step-contentitem-updatefieldsofcontentitem"
+                , "step-contentitem-configurecontentitem-properties"
+                , "step-contentitem-configurecontentitem-seo"
+                , "step-contentitem-closesavedraftsavecomplete"
+            ]
+        },
+
+        {
+            "nav" : "Edit Content Item"
+            , "title" : "Edit a Content Item"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary adm cmg"
+                , "step-pbtabs-Content-ContentLibrary-Content- all"
+                , "step-contentitem-searchsortfilter"
+                , "step-contentitem-pencil-icon"
+                , "step-contentitem-updatefieldsofcontentitem"
+                , "step-contentitem-configurecontentitem-properties"
+                , "step-contentitem-configurecontentitem-seo"
+                , "step-contentitem-closesavedraftsavecomplete"
+            ]
+        },
+
+        {
+            "nav" : "Delete Content Item"
+            , "title" : "Delete a Content Item"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary adm cmg"
+                , "step-pbtabs-Content-ContentLibrary-Content- all"
+                , "step-contentitem-searchsortfilter"
+                , "step-contentitem-ellipses-delete"
+                , "Confirm."
+            ]
+        },
+
+        {
+            "nav" : "Share in Social Media"
+            , "title" : "Share a Content Item in Social Media"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary adm cmg"
+                , "step-pbtabs-Content-ContentLibrary-Content- all"
+                , "step-contentitem-searchsortfilter"
+                , "step-contentitem-share-icon"
+                , "step-contentitem-share-socialmedia-icon"
+                , "step-contentitem-prepare-publish-post"
+            ]
+        },
+
+        {
+            "nav" : "Get Embed Code"
+            , "title" : "Get the Embed Code for a Content Item"
+            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>" ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary adm cmg"
+                , "step-pbtabs-Content-ContentLibrary-Content- all"
+                , "step-contentitem-searchsortfilter"
+                , "step-contentitem-share-icon"
+                , "step-contentitem-share-embedcode-icon"
+                , "step-contentitem-embedcode-choose-visualizer"
+                , "step-contentitem-embedcode-preview"
+                , "step-contentitem-embedcode-copy-to-clipboard"
+                , "Click/Tap <uicontrol>Done</uicontrol>."
+            ]
+        },
+
+        {
+            "nav" : "Create API Key"
+            , "title" : "Create an API Key"
+            , "section" : "conref=warning-must-be-in-correct-site"
+            , "prereqs" : [
+                "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>"
+                , "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>"
+            ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary host"
+                , "step-pbtabs-Content-ContentLibrary-APIKeys host"
+                , "step-apikey-add-new"
+                , "step-apikey-enter-properties"
+                , "Click/Tap <uicontrol>Create</uicontrol>."
+                , "step-apikey-search-in-list"
+                , "step-apikey-clipboard-icon"
+            ]
+        },
+
+        {
+            "nav" : "Get Existing API Key"
+            , "title" : "Get an Existing API Key"
+            , "prereqs" : [
+                "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>"
+                , "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>"
+            ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary host"
+                , "step-pbtabs-Content-ContentLibrary-APIKeys host"
+                , "step-apikey-search-in-list"
+                , "step-apikey-clipboard-icon"
+            ]
+        },
+
+        {
+            "nav" : "Edit or Reset API Key"
+            , "title" : "Edit or Reset the API Key"
+            , "prereqs" : [
+                "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>"
+                , "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>"
+            ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary host"
+                , "step-pbtabs-Content-ContentLibrary-APIKeys host"
+                , "step-apikey-search-in-list"
+                , "step-apikey-pencil-icon"
+                , "step-apikey-update-properties"
+                , "Save."
+            ]
+        },
+
+        {
+            "nav" : "Delete API Key"
+            , "title" : "Delete the API Key"
+            , "prereqs" : [
+                "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>"
+                , "<ph conkeyref=\"k-bptext/ph-PrereqMicroservicesEnabled\"></ph>"
+            ]
+            , "steps" : [
+                "step-pbar-Content-ContentLibrary host"
+                , "step-pbtabs-Content-ContentLibrary-APIKeys host"
+                , "step-apikey-search-in-list"
+                , "step-apikey-trash-icon"
+                , "Confirm."
+            ]
+        }
+    ]
+}

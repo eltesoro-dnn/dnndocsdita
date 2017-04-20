@@ -43,7 +43,7 @@
         </prereq>
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Vocabularies-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Vocabularies-E91"><cmd/></step>
             <step conref="bptext-vocabularies.dita#tsk-bptext-vocabularies/step-search-and-expand-edit"><cmd/></step>
             <step conref="bptext-vocabularies.dita#tsk-bptext-vocabularies/step-add-term-button"><cmd/></step>
             <step conref="bptext-vocabularies.dita#tsk-bptext-vocabularies/step-add-term"><cmd/></step>

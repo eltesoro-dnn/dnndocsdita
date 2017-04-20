@@ -40,8 +40,8 @@
         </prereq>
 
         <steps>
-            <step conkeyref="k-bppbar/step-pb-host-Settings-Servers-E90"><cmd/></step>
-            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Servers-ServerSettings-SMTPServer-E90"><cmd/></step>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-Servers-E91"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Servers-ServerSettings-SMTPServer-E91"><cmd/></step>
             <step>
                 <cmd>Choose the settings to test.</cmd>
                 <info>

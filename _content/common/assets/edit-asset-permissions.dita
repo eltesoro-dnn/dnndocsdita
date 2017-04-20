@@ -37,9 +37,9 @@
 		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Content-Assets-E90"><cmd/></step>
-            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-Assets-E90"><cmd/></step>
-            <step audience="mod" conkeyref="k-bppbar/step-pb-mod-Content-Assets-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Content-Assets-E91"><cmd/></step>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-Assets-E91"><cmd/></step>
+            <step audience="mod" conkeyref="k-bppbar/step-pb-mod-Content-Assets-E91"><cmd/></step>
             <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-go-to-containing-folder"><cmd/></step>
             <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-assetcard-hover-edit"><cmd/></step>
             <step conref="bptext-assets.dita#tsk-bptext-assets/step-assets-asset-edit-permissions"><cmd/></step>

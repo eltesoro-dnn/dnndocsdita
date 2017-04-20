@@ -167,32 +167,32 @@ function ExpandedConref( [string] $reftype, [string] $conrefstr, [string] $wrapp
     }
 }
 
-function ExpandedImg( [string] $img )  {
+function ExpandedImg( [string] $img, [string] $alt )  {
     $outputclass = "img"
     foreach ( $imgtype in ( "scr", "gra", "ico" ) ) {
         if ( $img.StartsWith( "$imgtype-" ) ) {
             $outputclass = "img-$imgtype"
         }
     }
-    return "<image outputclass=""$outputclass"" scalefit=""yes"" placement=""break"" align=""left"" href=""../../common/img/$img""><alt></alt></image>"
+    return "<image outputclass=""$outputclass"" scalefit=""yes"" placement=""break"" align=""left"" href=""../../common/img/$img""><alt>$alt</alt></image>"
 }
 
-function MkInfo( [string] $img, [string] $info, [string] $indent )  {
-    if ( IsValid $img )  {
-        $expimg = ExpandedImg $img
+function MkInfo( [string] $imgfn, [string] $imgalt, [string] $info, [string] $indent )  {
+    if ( IsValid $imgfn )  {
+        $expimg = ExpandedImg $imgfn $imgalt
     }
 
     if ( IsValid $info )  {
         $info = MkConref $info "p"
     }
 
-    if (( IsValid $img ) -and ( IsValid $info ))  {
+    if (( IsValid $imgfn ) -and ( IsValid $info ))  {
         Write-Output "$indent<info>"
         Write-Output "$indent    $expimg"
         Write-Output "$indent    $info"
         Write-Output "$indent</info>"
     }
-    elseif ( IsValid $img )  {
+    elseif ( IsValid $imgfn )  {
         Write-Output "$indent<info>$expimg</info>"
     }
     elseif ( IsValid $info )  {
@@ -205,7 +205,6 @@ function MkStep( [string] $conreffile, [PSCustomObject] $step )  {
     $cmd = MkConRef $step.cmd cmd
     $substeps = $step.substeps
     $img = $step.img
-    $expimg = ExpandedImg $img
     $info = $step.info
     $xmp = $step.xmp
     $result = $step.result
@@ -214,7 +213,12 @@ function MkStep( [string] $conreffile, [PSCustomObject] $step )  {
     Write-Output "            <step id=""$id"">"
     Write-Output "                $cmd"
 
-    MkInfo $img $info "                "
+    if ( $img -is [String] )  {
+        MkInfo $img "" $info "                "
+    }
+    else  {
+        MkInfo $img.fn $img.alt $info "                "
+    }
 
     if ( $substeps )  {
         if ( $substeps -is [system.array] )  {
@@ -228,7 +232,12 @@ function MkStep( [string] $conreffile, [PSCustomObject] $step )  {
                 if ( $substep.img -or $substep.info )  {
                     $subimg = $substep.img
                     $subinfo = $substep.info
-                    MkInfo $subimg $subinfo "                        "
+                    if ( $img -is [String] )  {
+                        MkInfo $subimg "" $subinfo "                        "
+                    }
+                    else  {
+                        MkInfo $subimg.fn $subimg.alt $subinfo "                        "
+                    }
                 }
                 Write-Output "                    </substep>"
             }
@@ -365,21 +374,8 @@ function MkTopic( [string] $topictype, [string] $conreffile, [PSCustomObject] $t
         Write-Output "        <section conkeyref=""k-bptext/section-prodavail-PCE""></section>"
     }
 
-    if ( $topic.prereqs )  {
-        Write-Output ""
-        Write-Output "        <prereq>"
-        Write-Output "            <ul>"
-        foreach ( $prereq in $topic.prereqs )  {
-            $expanded = MkConref $prereq
-            Write-Output "                <li>$expanded</li>"
-        }
-        Write-Output "            </ul>"
-        Write-Output "        </prereq>"
-    }
-
-    Write-Output ""
-
     if ( $topic.section )  {
+        Write-Output ""
         Write-Output "        <section>"
         if ( $topic.section -is [system.array] )  {
             foreach ( $node in $topic.section )  {
@@ -392,6 +388,18 @@ function MkTopic( [string] $topictype, [string] $conreffile, [PSCustomObject] $t
             Write-Output "            $text"
         }
         Write-Output "        </section>"
+    }
+
+    if ( $topic.prereqs )  {
+        Write-Output ""
+        Write-Output "        <prereq>"
+        Write-Output "            <ul>"
+        foreach ( $prereq in $topic.prereqs )  {
+            $expanded = MkConref $prereq
+            Write-Output "                <li>$expanded</li>"
+        }
+        Write-Output "            </ul>"
+        Write-Output "        </prereq>"
     }
 
     if (( $topic.steps ) -and ( $topictype -eq "task" ))  {
@@ -423,21 +431,21 @@ function MkTopic( [string] $topictype, [string] $conreffile, [PSCustomObject] $t
             }
         }
         Write-Output "        </steps>"
-        Write-Output ""
     }
 
     if ( $topic.result )  {
         $resultfull = MkConref $topic.result
-        Write-Output "        <result>$resultfull</result>"
         Write-Output ""
+        Write-Output "        <result>$resultfull</result>"
     }
 
     if ( $topic.postreq )  {
         $text = MkConref $topic.postreq
-        Write-Output "        <postreq>$text</postreq>"
         Write-Output ""
+        Write-Output "        <postreq>$text</postreq>"
     }
 
+    Write-Output ""
     Write-Output "    </$bodytag>"
     Write-Output ""
     Write-Output "</$topictype>"

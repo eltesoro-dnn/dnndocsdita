@@ -34,7 +34,7 @@
 
         <steps>
             <step><cmd>Go to the page containing the module to configure.</cmd></step>
-            <step conkeyref="k-bppbar/step-pb-all-Edit-E90"><cmd/></step>
+            <step conkeyref="k-bppbar/step-pb-all-Edit-E91"><cmd/></step>
             <step conkeyref="k-bpmodules/step-actionmenu-manage-settings"><cmd/></step>
             <step conkeyref="k-bpmodules/step-modulemanagesettings-modulesettings"><cmd/></step>
             <step conkeyref="k-bpmodules/step-configure-module-permissions"><cmd/></step>

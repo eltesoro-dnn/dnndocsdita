@@ -44,8 +44,8 @@
 
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Manage-AdminLogs-E90"><cmd/></step>
-            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Manage-AdminLogs-AdminLogs-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Manage-AdminLogs-E91"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Manage-AdminLogs-AdminLogs-E91"><cmd/></step>
             <step conref="bptext-sitelogs.dita#tsk-bptext-sitelogs/step-find-entry"><cmd/></step>
             <step conref="bptext-sitelogs.dita#tsk-bptext-sitelogs/step-expand-entry-details"><cmd/></step>
         </steps>

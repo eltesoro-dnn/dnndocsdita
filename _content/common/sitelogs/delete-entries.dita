@@ -44,8 +44,8 @@
 
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Manage-AdminLogs-E90"><cmd/></step>
-            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Manage-AdminLogs-AdminLogs-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Manage-AdminLogs-E91"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Manage-AdminLogs-AdminLogs-E91"><cmd/></step>
             <step conref="bptext-sitelogs.dita#tsk-bptext-sitelogs/step-select-entries-delete"><cmd/></step>
             <step conref="bptext-sitelogs.dita#tsk-bptext-sitelogs/step-delete-selected-button"><cmd/></step>
             <step><cmd>Confirm.</cmd></step>

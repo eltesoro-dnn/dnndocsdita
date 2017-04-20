@@ -65,7 +65,7 @@
                     <li outputclass="step stepexpand">Log into the site as a host/superuser.</li>
                     <li outputclass="step stepexpand"><p outputclass="cmd">Publish the page through SQL.</p>
                         <ol outputclass="substeps">
-                            <li outputclass="substep"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E90"></ph></li>
+                            <li outputclass="substep"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E91"></ph></li>
                             <li outputclass="substep"><p outputclass="cmd">Enter the following SQL script in the multi-line text field.</p>
                                 <codeblock>
 DECLARE @PageName VARCHAR(250);

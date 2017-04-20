@@ -48,7 +48,7 @@
 
         <steps>
 			<stepsection>Installing a module requires <term>host</term> permissions.</stepsection>
-            <step conkeyref="k-bppbar/step-pb-host-Settings-Extensions-E90"><cmd/></step>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-Extensions-E91"><cmd/></step>
 			<step conkeyref="k-bpsteps/step-pb-host-openmoduleforediting-E90"><cmd/></step>
             <step><cmd>Go to the <uicontrol>Extension Settings</uicontrol> tab and scroll down to the <uicontrol>Premium Module Assignment</uicontrol> section.</cmd></step>
 			<step>

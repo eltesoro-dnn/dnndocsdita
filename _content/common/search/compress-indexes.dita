@@ -47,8 +47,8 @@
         </section>
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-SiteSettings-E90"><cmd/></step>
-            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SiteSettings-Search-BasicSettings-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-SiteSettings-E91"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SiteSettings-Search-BasicSettings-E91"><cmd/></step>
             <step conref="bptext-search.dita#tsk-bptext-search/step-compress-index"><cmd/></step>
         </steps>
 

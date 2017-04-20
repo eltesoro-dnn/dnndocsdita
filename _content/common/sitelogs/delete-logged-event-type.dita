@@ -48,8 +48,8 @@
         </section>
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Manage-AdminLogs-E90"><cmd/></step>
-            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Manage-AdminLogs-LogSettings-E90"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Manage-AdminLogs-E91"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Manage-AdminLogs-LogSettings-E91"><cmd/></step>
             <step conref="bptext-sitelogs.dita#tsk-bptext-sitelogs/step-edit-icon-event-type-delete"><cmd/></step>
             <step conref="bptext-sitelogs.dita#tsk-bptext-sitelogs/step-event-delete-button"><cmd/></step>
             <step><cmd>Confirm.</cmd></step>

@@ -43,8 +43,8 @@
 		</prereq>
 
         <steps>
-            <step conkeyref="k-bppbar/step-pb-host-Settings-SiteSettings-E90"><cmd/></step>
-            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SiteSettings-SiteBehavior-UserProfiles-E90"><cmd/></step>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-SiteSettings-E91"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SiteSettings-SiteBehavior-UserProfiles-E91"><cmd/></step>
             <step>
                 <cmd>Click/Tap the pencil icon for the field to edit.</cmd>
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-SiteSettings-SiteBehavior-UserProfiles-UserProfileFields-Edit-E90.png"><alt>Site Settings &gt; Site Behavior &gt; User Profiles &gt; User Profile Fields &gt; Edit</alt></image></info>

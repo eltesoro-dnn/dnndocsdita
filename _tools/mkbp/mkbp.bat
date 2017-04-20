@@ -31,6 +31,10 @@ goto :eof
 call %0 runme json\sitelogs.json bptext-sitelogs W:\_content\common\sitelogs prolog-PCE.txt
 goto :eof
 
+:content
+call %0 runme json\content.json bptext-content W:\_content\common\structured-content prolog-E.txt
+goto :eof
+
 
 :runme
 if _%3_ EQU __  goto :error

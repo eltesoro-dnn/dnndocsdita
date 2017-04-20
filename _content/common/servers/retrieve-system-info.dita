@@ -44,24 +44,24 @@
         </prereq>
 
         <steps>
-            <step conkeyref="k-bppbar/step-pb-host-Settings-Servers-E90"><cmd/></step>
+            <step conkeyref="k-bppbar/step-pb-host-Settings-Servers-E91"><cmd/></step>
 
             <step>
                 <cmd>In the <uicontrol>System Info</uicontrol> tab, browse the subtabs.</cmd>
                 <choices>
                     <choice>
-                        <p><ph conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Servers-SystemInfo-Application-E90"></ph></p>
-                        <image conkeyref="k-bppbtabs/image-pbtabs-host-Settings-Servers-SystemInfo-Application-E90"></image>
+                        <p><ph conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Servers-SystemInfo-Application-E91"></ph></p>
+                        <image conkeyref="k-bppbtabs/image-pbtabs-host-Settings-Servers-SystemInfo-Application-E91"></image>
                         <simpletable conref="bptext-servers.dita#tsk-bptext-servers/simpletable-sysinfo-application"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable>
                     </choice>
                     <choice>
-                        <p><ph conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Servers-SystemInfo-Web-E90"></ph></p>
-                        <image conkeyref="k-bppbtabs/image-pbtabs-host-Settings-Servers-SystemInfo-Web-E90"></image>
+                        <p><ph conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Servers-SystemInfo-Web-E91"></ph></p>
+                        <image conkeyref="k-bppbtabs/image-pbtabs-host-Settings-Servers-SystemInfo-Web-E91"></image>
                         <simpletable conref="bptext-servers.dita#tsk-bptext-servers/simpletable-sysinfo-web"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable>
                     </choice>
                     <choice>
-                        <p><ph conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Servers-SystemInfo-Database-E90"></ph></p>
-                        <image conkeyref="k-bppbtabs/image-pbtabs-host-Settings-Servers-SystemInfo-Database-E90"></image>
+                        <p><ph conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Servers-SystemInfo-Database-E91"></ph></p>
+                        <image conkeyref="k-bppbtabs/image-pbtabs-host-Settings-Servers-SystemInfo-Database-E91"></image>
                         <simpletable conref="bptext-servers.dita#tsk-bptext-servers/simpletable-sysinfo-database"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable>
                     </choice>
                 </choices>
