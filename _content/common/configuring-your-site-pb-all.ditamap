@@ -21,6 +21,21 @@
         -->
 
         <topichead audience="adm" outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Site Aliases</navtitle></topicmeta>
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/configure-url-mapping-site-aliases.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/add-site-alias.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/edit-site-alias.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/delete-site-alias.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/change-primary-site-alias.dita" />
+        </topichead>
+
+        <topichead audience="adm" outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>SEO</navtitle></topicmeta>
+            <!-- <mapref audience="adm"      href="urlmanagement/urlmanagement.ditamap" /> -->
+            <mapref audience="adm"      href="sitemaps/sitemaps.ditamap" />
+        </topichead>
+
+        <topichead audience="adm" outputclass="sub-nav-tabs" collection-type="family" >
             <topicmeta><navtitle>User Profiles</navtitle></topicmeta>
             <topicref format="dita" type="task" toc="yes" href="configuring-your-site/configure-user-profile-visibility.dita" />
             <topicref format="dita" type="task" toc="yes" href="configuring-your-site/configure-user-profile-vanity-url.dita" />
@@ -28,14 +43,6 @@
             <topicref format="dita" type="task" toc="yes" href="configuring-your-site/edit-user-profile-field.dita" />
             <topicref format="dita" type="task" toc="yes" href="configuring-your-site/delete-user-profile-field.dita" />
             <topicref format="dita" type="task" toc="yes" href="configuring-your-site/organize-user-profile-fields.dita" />
-        </topichead>
-        <topichead audience="adm" outputclass="sub-nav-tabs" collection-type="family" >
-            <topicmeta><navtitle>Site Aliases</navtitle></topicmeta>
-            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/configure-url-mapping-site-aliases.dita" />
-            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/add-site-alias.dita" />
-            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/edit-site-alias.dita" />
-            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/delete-site-alias.dita" />
-            <topicref format="dita" type="task" toc="yes" href="configuring-your-site/change-primary-site-alias.dita" />
         </topichead>
 
         <topicref audience="adm" format="dita" type="topic" toc="yes" href="configuring-your-site/page-file-versioning.dita" collection-type="family" >
@@ -47,7 +54,6 @@
         <mapref audience="adm cmg"      href="microservices/microservices.ditamap" />
         <mapref audience="adm cmg"      href="workflows/workflows.ditamap" />
         <mapref audience="adm"          href="search/search.ditamap" />
-        <mapref audience="adm"          href="sitemaps/sitemaps.ditamap" />
         <mapref audience="adm"          href="vocabularies/vocabularies.ditamap" /> <!-- BUGBUG: Add cmg, after the Tags field in Page Settings is linked to Tag vocabulary. -->
 
     </topicref>

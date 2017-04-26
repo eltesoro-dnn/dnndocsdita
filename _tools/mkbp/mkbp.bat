@@ -35,6 +35,16 @@ goto :eof
 call %0 runme json\content.json bptext-content W:\_content\common\structured-content prolog-E.txt
 goto :eof
 
+:urlmanagement
+call %0 runme json\urlmanagement.json bptext-content W:\_content\common\urlmanagement prolog-PCE.txt
+goto :eof
+
+:analytics
+call %0 runme json\analytics.json bptext-content W:\_content\common\analytics json\analytics-prolog.txt
+goto :eof
+
+
+
 
 :runme
 if _%3_ EQU __  goto :error

@@ -9,7 +9,7 @@
 
 
     <prolog>
-        <author>wrET,201703</author>
+        <author>wrET,1704</author>
         <copyright>
             <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -18,15 +18,24 @@
             <audience type="administrator" job="customizing" />
             <prodinfo>
                 <prodname>Platform</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
         </metadata>
     </prolog>
@@ -45,8 +54,8 @@
         <steps>
             <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Vocabularies-E91"><cmd/></step>
             <step conref="bptext-vocabularies.dita#tsk-bptext-vocabularies/step-search-and-expand-edit"><cmd/></step>
-            <step conref="bptext-vocabularies.dita#tsk-bptext-vocabularies/step-edit-term-icon-delete"><cmd/></step>
-            <step conref="bptext-vocabularies.dita#tsk-bptext-vocabularies/step-delete-term"><cmd/></step>
+            <step conref="bptext-vocabularies.dita#tsk-bptext-vocabularies/step-edit-term-pencil-icon"><cmd/></step>
+            <step conref="bptext-vocabularies.dita#tsk-bptext-vocabularies/step-edit-term-delete"><cmd/></step>
             <step><cmd>Confirm.</cmd></step>
         </steps>
 

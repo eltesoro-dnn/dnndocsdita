@@ -67,7 +67,6 @@ function MkBlurb( [string] $prod, [string] $persona, [string] $menu1, [string] $
     if ( IsValid $menu2 )  {
         $menu2squashed = $menu2.Replace( " ", "" ).Replace( ".NET", "NET" )
         $bpid  = "pb-$persona-$menu1squashed-$menu2squashed-$prod"
-        $imgfn = "scr-pbar-$persona-$menu1squashed-$menu2squashed-$prod.png"
         $cascadealt = "Persona Bar $menusep $menu1 $menusep $menu2"
     }
 

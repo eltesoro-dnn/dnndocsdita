@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-relnotes-2017-apr-26">
+
+
+    <title>DNN Release Notes &#8212; 2017 Apr 26</title>
+    <titlealts>
+        <navtitle>Release Notes 2017 Apr 26</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>orJK,trCP,edET,1704</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience job="evaluating" />
+            <audience job="installing" />
+            <audience type="administrator" />
+            <audience type="programmer" />
+            <audience type="other" othertype="designer" />
+        </metadata>
+    </prolog>
+
+    <body>
+
+        <section id="section-reldate">
+            <!-- <ph conref="relnotes-2017-apr-26.dita#top-relnotes-2017-apr-26/ph-reldate"></ph> -->
+            <p>Released <ph id="ph-reldate">2017 Apr 26</ph>.</p>
+        </section>
+
+
+        <!-- <section conref="relnotes-2017-apr-26.dita#top-relnotes-2017-apr-26/section-relnotes-platform"></section> -->
+        <section id="section-relnotes-platform">
+            <!-- <ph conref="relnotes-2017-apr-26.dita#top-relnotes-2017-apr-26/ph-prodver-platform"></ph> -->
+            <title>DNN PLATFORM <ph id="ph-prodver-platform">9.1.0</ph></title>
+
+            <!-- <sectiondiv conref="relnotes-2017-apr-26.dita#top-relnotes-2017-apr-26/sectiondiv-relnotes-platform"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-relnotes-platform">
+                <!-- <xref conref="relnotes-2017-apr-26.dita#top-relnotes-2017-apr-26/xref-github-link"></xref> -->
+                <p><xref id="xref-github-link" format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Platform/releases/tag/v9.1.0">GitHub</xref></p>
+                <dl>
+                    <dlentry>
+                        <dt>ADA Compliance</dt>
+                        <dd>
+                            <p>DNN complies with accessibility requirements defined by the Americans with Disabilities Act (ADA). Anonymous site visitors with those requirements can now use accessibility tools to browse and interact with any DNN site. Authenticated users can additionally use an accessibility tool to navigate the Persona Bar and to perform other actions. New accessibility features include:</p>
+                            <ul>
+                                <li>Ability to add alternative text for every image on a site.</li>
+                                <li>Ability to post documents in text format, so text-to-speech and other assistive technologies can vocalize the content.</li>
+                                <li>Full control over colors and font settings to allow the creation of web pages with high contrast and large fonts.</li>
+                            </ul>
+                            <p>Although DNN provides the capability and assistance in creating ADA-compliant web pages, site managers are still responsible for choosing and adopting appropriate content creation strategies.</p>
+                        </dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Import/Export</dt>
+                        <dd>DNN now ships with a standalone module that exports/imports entire websites, as well as more granular components, such as individual site pages, the user database, and the content database. The exported data is stored in a single portable package that contains everything required to recreate that site or component in a different installation.</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Telerik Removal</dt>
+                        <dd>Additional changes were made to continue phasing out Telerik from DNN products. <xref format="dita" href="relnotes-2017-apr-26-telerik-removal.dita">See details.</xref></dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Added and Deprecated Extensions</dt>
+                        <dd>Some extensions were added and others deprecated depending on the product and the installation/upgrade scenario. <xref format="dita" href="relnotes-2017-apr-26-extensions.dita">See details.</xref></dd>
+                    </dlentry>
+                </dl>
+            </sectiondiv>
+        </section>
+
+
+        <!-- <section conref="relnotes-2017-apr-26.dita#top-relnotes-2017-apr-26/section-relnotes-evoq"></section> -->
+        <section id="section-relnotes-evoq">
+            <!-- <ph conref="relnotes-2017-apr-26.dita#top-relnotes-2017-apr-26/ph-prodver-evoq"></ph> -->
+            <title>EVOQ <ph id="ph-prodver-evoq">9.1.0</ph></title>
+
+            <!-- <sectiondiv conref="relnotes-2017-apr-26.dita#top-relnotes-2017-apr-26/sectiondiv-relnotes-evoq"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-relnotes-evoq">
+                <p outputclass="sectiondivtitle">EVOQ BASIC</p>
+                <dl>
+                    <dlentry>
+                        <dt>All updates included with DNN Platform 9.1.0.</dt>
+                        <dd>
+                            <!-- <note conref="#top-relnotes-2017-apr-26/note-telerik-add-delete-extensions"></note> -->
+                            <note id="note-telerik-add-delete-extensions" type="note">Changes for <xref format="dita" href="relnotes-2017-apr-26-telerik-removal.dita">Telerik Removal</xref> and for <xref format="dita" href="relnotes-2017-apr-26-extensions.dita">Added and Deprecated Extensions</xref> are different for each product.</note>
+                        </dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Global Asset Management</dt>
+                        <dd>Superusers/Hosts can now manage and browse all assets (from all Evoq sites within the installation) through the Asset Manager. Previously, assets could only be viewed at the site level.</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Multiple Connector Support</dt>
+                        <dd>Evoq now allows connecting to multiple accounts for the same folder provider. Example: You can sync the folders of different Dropbox accounts with Evoq. Each folder path is given a unique name and is managed independently.</dd>
+                    </dlentry>
+                </dl>
+
+                <p outputclass="sectiondivtitle">EVOQ CONTENT</p>
+                <dl>
+                    <dlentry>
+                        <dt>All updates included with Evoq Content Basic 9.1.0.</dt>
+                        <dd><note conref="#top-relnotes-2017-apr-26/note-telerik-add-delete-extensions"></note></dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>In-context Editing for Liquid Content&#8482;</dt>
+                        <dd>You can add content, edit content, and manage the visualizer within the module interface. Module permissions have been added to restrict access to either the visualizer or content editing functions. Changing the content or visualizer also triggers page workflow and versioning. Currently, workflow is triggered with content item visualizers only; list workflow events are coming soon.</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>New Google Tag Manager Connector</dt>
+                        <dd>You can now connect to Google Tag Manager to administer and analyze your website dynamically, to define segments of pages, and to manage campaigns.</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Analytics Updates</dt>
+                        <dd>Rich dynamic charts were added to further segment data and understand interactions on the website. Charts are updated in real time, as users modify dimensions or date ranges. Conversion tracking was enhanced to include segmentation based on individual conversion metrics, as well as visitor pathway analysis and attribute page conversion performance.</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Multi-Step Forms</dt>
+                        <dd>You can create and deploy forms with multiple steps. Useful for surveys, questionnaires, and quizzes. You can customize the look and feel of the form, including the transition between steps, and then you can view the results for each step.</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>New Form Submission Event to Collect Form Response Data</dt>
+                        <dd>The webhook capability of forms was updated to provide developers a deeper access point to the form response data. </dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Visualizer Import/Export</dt>
+                        <dd>For designers and developers who hate copying and pasting code from environment to environment, we’ve added export and import capability for visualizers and their accompanying content types.</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Content Item Revision History</dt>
+                        <dd>Liquid Content&#8482; now saves every version of a content item. You can preview and roll back to prior versions.</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Auto-Suggest Tagging in Visualizers and Content Items to Assist with List Visualizers</dt>
+                        <dd>During the creation of a <term>List</term> or <term>List/Detail</term> visualizer, tags will be suggested to help filter content elements. This enables marketers to deploy brand-consistent content and to easily find the content they’re looking for. Tag suggestions are based on the taxonomy of the content library and on what has already been published on the page.</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Content Item &lt;meta&gt; Tag Support</dt>
+                        <dd>All content items now support the Open Graph Protocol, which allows a title, a description, keywords, and an image to be used as the content preview when shared in social channels.</dd>
+                    </dlentry>
+                </dl>
+
+                <p outputclass="sectiondivtitle">EVOQ ENGAGE</p>
+                <dl>
+                    <dlentry>
+                        <dt>All updates included with Evoq Content 9.1.0.</dt>
+                        <dd><note conref="#top-relnotes-2017-apr-26/note-telerik-add-delete-extensions"></note></dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Content Item Analytics</dt>
+                        <dd>Analytics is now available for individual content items to provide information such as:
+                            <ul>
+                                <li>how they are used on the web (in an Evoq site or embedded in an app)</li>
+                                <li>how often they were shared</li>
+                                <li>how much engagement they received</li>
+                            </ul>
+                        </dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Multichannel Publishing : API Key Management</dt>
+                        <dd>You can easily generate an API key to allow other applications and services to access the Liquid Content&#8482; REST API, which provides access to content and which communicates with external services. You can integrate Liquid Content with native mobile apps, digital signage, or even another CMS.</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Multichannel Publishing : Content Item Embed Code</dt>
+                        <dd>You can generate an embed code to allow your content to live anywhere on the web. Evoq’s content analytics also tracks what URLs your content lives in and how much reach it gets.</dd>
+                    </dlentry>
+                    <dlentry>
+                        <dt>Multichannel Publishing : Social Publishing</dt>
+                        <dd>Using Liquid Content's publishing application, users can connect their social profiles and publish content directly to Facebook, Twitter, or LinkedIn. Evoq saves a rendering of that post, the date/time it was published, and how much engagement it received.</dd>
+                    </dlentry>
+                </dl>
+            </sectiondiv>
+         </section>
+
+    </body>
+
+</topic>

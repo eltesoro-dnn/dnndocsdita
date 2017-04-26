@@ -33,7 +33,7 @@
 		<section conkeyref="k-bptext/section-prodavail-CE"></section>
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Settings-Workflow-E91"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Workflow-E91"><cmd/></step>
             <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Settings-Workflow-E91"><cmd/></step>
 
 			<step conkeyref="k-bpsteps/step-pb-editworkflow"><cmd/></step>

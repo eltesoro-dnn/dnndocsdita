@@ -9,7 +9,7 @@
 
 
     <prolog>
-        <author>wrET,201703</author>
+        <author>wrET,1704</author>
         <copyright>
             <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -18,15 +18,24 @@
             <audience type="administrator" job="customizing" />
             <prodinfo>
                 <prodname>Platform</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
         </metadata>
     </prolog>
@@ -37,7 +46,7 @@
         <section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <section>
-            <note conref="bptext-vocabularies.dita#tsk-bptext-vocabularies/note-uneditable-type-scope"></note>
+            <note type="note" conref="bptext-vocabularies.dita#tsk-bptext-vocabularies/note-uneditable-type-scope"></note>
         </section>
 
         <prereq>

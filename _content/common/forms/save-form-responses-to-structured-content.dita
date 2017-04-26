@@ -39,7 +39,7 @@
         <prereq><ph conkeyref="k-bptext/ph-PrereqFBSCMicroservicesEnabled"></ph></prereq>
 
         <steps>
-			<step audience="adm" conkeyref="k-bppbar/step-pb-adm-Content-Forms-E91"><cmd/></step>
+			<step audience="adm" conkeyref="k-bppbar/step-pb-host-Content-Forms-E91"><cmd/></step>
 			<step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-Forms-E91"><cmd/></step>
 
             <step conref="bptext-forms-steps.dita#tsk-bptext-forms-steps/step-createoreditform"><cmd/></step>

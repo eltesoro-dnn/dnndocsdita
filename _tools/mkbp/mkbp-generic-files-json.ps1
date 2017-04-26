@@ -82,13 +82,26 @@ function MkBPPh( [string] $conreffile, [PSCustomObject] $node )  {
     Write-Output "            <p><ph id=""$id"">$text</ph></p>"
 }
 
+function MakeBPStrow( [string] $conreffile, [PSCustomObject] $node )  {
+    $stringed = ($node.fld).Replace( " ", "-" ).Replace( ",", "" ).ToLower()
+    $id = "strow-field-$stringed"
+
+    Write-Output ( "                <!-- <strow conref=""$conreffile/$id""><stentry/></strow> -->" )
+    Write-Output ( "                <strow id=""$id"">" )
+    Write-Output ( "                    <stentry><uicontrol>$node.fld</uicontrol></stentry>" )
+    Write-Output ( "                    <stentry>$node.desc</stentry>" )
+    Write-Output ( "                </strow>" )
+    Write-Output ( "" )
+
+}
+
 function MkBPSimpleTable( [string] $conreffile, [PSCustomObject] $node )  {
     $id = $node.id
     $widths = ([string[]]$node.header.widths) -join " "
 
     Write-Output ""
     Write-Output "            <!-- <simpletable conref=""$conreffile/$id""><sthead><stentry/></sthead><strow><stentry/></strow></simpletable> -->"
-    Write-Output "            <simpletable id= relcolwidth=""1* 3*"">"
+    Write-Output "            <simpletable id=""$id"" relcolwidth=""1* 3*"">"
     Write-Output "                <sthead>"
     foreach( $title in $node.header.titles )  {
         Write-Output "                    <stentry>$title</stentry>"
@@ -96,11 +109,7 @@ function MkBPSimpleTable( [string] $conreffile, [PSCustomObject] $node )  {
     Write-Output "                </sthead>"
 
     foreach( $row in $node.rows )  {
-        Write-Output "                <strow>"
-        foreach( $entry in $row )  {
-            Write-Output "                    <stentry>$entry</stentry>"
-        }
-        Write-Output "                </strow>"
+        MakeBPStrow $conreffile $row
     }
     Write-Output "            </simpletable>"
 }
@@ -332,6 +341,76 @@ function FindLines( [string] $fn, [string] $stepli, [string] $pathhyphen )  {
 }
 
 
+function MkRellink( [PSCustomObject] $node )  {
+    if ( $node.format )  {
+        $format = " format=\"" + $node.format + "\""
+    }
+    if ( $node.scope )  {
+        $scope = " scope=\"" + $node.scope + "\""
+    }
+    if ( $node.href )  {
+        $href = " href=\"" + $node.href + "\""
+    }
+    if ( $node.text )  {
+        $text = $node.text
+    }
+    return ( "<link $format$scope$href><linktext>$text</linktext></link>" )
+}
+
+
+function MkAudience( [PSCustomObject] $aud )  {
+    $validtypes = @( "user", "purchaser", "administrator", "programmer", "executive", "services" )
+    $validjobs  = @( "installing", "customizing", "administering", "programming", "using", "maintaining", "troubleshooting", "evaluating", "planning", "migrating" )
+
+    $type = $aud.audtype
+    if ( $type )  {
+        if ( $validtypes -contains $type )  {
+            $type = "type=""$type"""
+        }
+        else  {
+            $type = "type=""other"" othertype=""$type"""
+        }
+    }
+
+    $job = $aud.audjob
+    if ( $job )  {
+        if ( $validjobs -contains $job )  {
+            $job = "job=""$job"""
+        }
+        else  {
+            $job = "job=""other"" otherjob=""$job"""
+        }
+    }
+
+    return ( "<audience $type $job />" )
+}
+
+
+function MkProdInfo( [string] $prod, [string] $indent )  {
+    $pcode = ($prod.Substring( 0, 0 )).ToUpper()
+    $pverma = $prod.Substring( 1, 1 )
+    $pvermi = $prod.Substring( 2, 2 )
+
+    Write-Output  "$indent<prodinfo>"
+
+    switch ($pcode)
+    {
+        "E"  {
+            Write-Output  "$indent    <prodname>Engage</prodname>"
+        }
+        "C"  {
+            Write-Output  "$indent    <prodname>Content</prodname>"
+        }
+        "P"  {
+            Write-Output  "$indent    <prodname>Platform</prodname>"
+        }
+    }
+
+    Write-Output  "$indent    <vrmlist><vrm version=""$pverma"" release=""$pvermi""/></vrmlist>"
+    Write-Output  "$indent</prodinfo>"
+}
+
+
 function MkTopic( [string] $topictype, [string] $conreffile, [PSCustomObject] $topic )  {
     $navdashed = NavDashed $topic
     if ( -not $navdashed )  {
@@ -354,7 +433,33 @@ function MkTopic( [string] $topictype, [string] $conreffile, [PSCustomObject] $t
         }
     }
 
-    if ( $prologfn )  {
+    if ( $g_author )  {
+        Write-Output  ""
+        Write-Output  ""
+        Write-Output  "    <prolog>"
+        Write-Output  "        <author$g_author</author>"
+        Write-Output  "        <copyright>"
+        Write-Output  "            <copyryear year="2017"></copyryear>"
+        Write-Output  "            <copyrholder>DNN Corp</copyrholder>"
+        Write-Output  "        </copyright>"
+        Write-Output  "        <metadata>"
+
+        if ( $g_audience )  {
+            $audience = MkAudience $g_audience
+        }
+        Write-Output  "            $audience"
+
+        if ( $g_products  -is [system.array] )  {
+            $g_products | foreach { MkProdInfo $_ "            " }
+        }
+        else  {
+            MkProdInfo $_ "            "
+        }
+
+        Write-Output  "        </metadata>"
+        Write-Output  "    </prolog>"
+    }
+    elseif ( $prologfn )  {
         Write-Output  ""
         Write-Output  ""
         Get-Content $prologfn
@@ -365,6 +470,10 @@ function MkTopic( [string] $topictype, [string] $conreffile, [PSCustomObject] $t
     Write-Output ""
     Write-Output "    <$bodytag>"
 
+    if ( $g_source ) {
+        Write-Output ""
+        Write-Output "        <!-- Source: $g_source -->"
+    }
 
     Write-Output ""
     if ( $g_avail )  {
@@ -445,6 +554,22 @@ function MkTopic( [string] $topictype, [string] $conreffile, [PSCustomObject] $t
         Write-Output "        <postreq>$text</postreq>"
     }
 
+    if ( $topic.rellinks )  {
+        Write-Output ""
+        Write-Output "	<related-links>"
+        if ( $topic.rellinks -is [system.array] )  {
+            $topic.rellinks | foreach {
+                $link = MkRellink $_
+                Write-Output "        $link"
+            }
+        }
+        else  {
+            $link = MkRellink $topic.rellinks
+            Write-Output "        $link"
+        }
+        Write-Output "    </related-links>"
+    }
+
     Write-Output ""
     Write-Output "    </$bodytag>"
     Write-Output ""
@@ -476,6 +601,18 @@ if ( $args.Count -gt 3 )  {
         if ( $node.avail ) {
             $g_avail = $node.avail
         }
+        if ( $node.author ) {
+            $g_author = $node.author
+        }
+        if ( $node.audience ) { #custom object
+            $g_audience = $node.audience
+        }
+        if ( $node.products ) { #array
+            $g_products = $node.products
+        }
+        if ( $node.source ) {
+            $g_source = $node.source
+        }
     }
 
 
@@ -502,6 +639,24 @@ if ( $args.Count -gt 3 )  {
                 "ph"            { MkBPPh $conreffilelocal $node | Out-File $tgtfile -Append -Encoding DEFAULT }
                 "simpletable"   { MkBPSimpleTable $conreffilelocal $node | Out-File $tgtfile -Append -Encoding DEFAULT }
             }
+        }
+        MkEndSection | Out-File $tgtfile -Append -Encoding DEFAULT
+    }
+
+    # STROWS in bptext*
+    if ( $myjson.bpstrows.Count -gt 0 )  {
+        MkStartSection $thisscript $params | Out-File $tgtfile -Append -Encoding DEFAULT
+        foreach( $row in $bpstrows )  {
+            MakeBPStrow $conreffilelocal $row | Out-File $tgtfile -Append -Encoding DEFAULT
+        }
+        MkEndSection | Out-File $tgtfile -Append -Encoding DEFAULT
+    }
+
+    # TABLES in bptext*
+    if ( $myjson.bptables.Count -gt 0 )  {
+        MkStartSection $thisscript $params | Out-File $tgtfile -Append -Encoding DEFAULT
+        foreach( $table in $bptables )  {
+            MkBPSimpleTable $conreffilelocal $table | Out-File $tgtfile -Append -Encoding DEFAULT
         }
         MkEndSection | Out-File $tgtfile -Append -Encoding DEFAULT
     }

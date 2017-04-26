@@ -33,7 +33,7 @@
         <section conkeyref="k-bptext/section-prodavail-CE"></section>
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Content-Pages-E91"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Content-Pages-E91"><cmd/></step>
             <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-Pages-E91"><cmd/></step>
 
             <step conkeyref="k-bppagespb/step-pb-gearicon"><cmd/></step>

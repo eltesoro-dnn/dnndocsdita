@@ -1,6 +1,15 @@
 {
     "global" : {
         "avail" : "PCE"
+        , "author" : "wrET,orBC,1704"
+        , "audience" : [
+            {
+                "audtype" : "administrator"
+                , "audjob" : "configuring"
+            }
+        ]
+        , "products" : [ "C91", "E91" ]
+        , "source" : "https://dnntracker.atlassian.net/wiki/display/EVOQ/Configure+Google+Tag+Manager+for+working+with+Evoq+Analytics"
     },
 
 
@@ -9,6 +18,34 @@
             "id" : ""
             , "text" : ""
         },
+        {
+            "id" : ""
+            , "text" : "To escape double quotes, use \"backslash\"."
+
+        }
+    ],
+
+
+    "bpstrows" : [
+        {
+            , "fld" : "Standard Replacement Character"
+            , "desc" : "The value that replaces any space character in the parameter portion of a generated URL. The replacement can be a hyphen (-) or an underscore (_)."
+        },
+        {
+            , "fld" : "Concatenate Page URLs"
+            , "desc" : ""
+        }
+    ],
+
+
+    "bptables" : [
+        {
+            "id" : "simpletable-"
+            , "rows" : [
+                "strow-field-standard-replacement-character"
+                , "strow-field-concatenate-page-urls"
+            ]
+        }
     ],
 
 
@@ -83,6 +120,14 @@
         {
             "nav" : "..."
             , "title" : "..."
+            , "author" : "wrET,orBC,1704"
+            , "audience" : [
+                {
+                    "type" : "administrator"
+                    , "job" : "configuring"
+                }
+            ]
+            , "products" : [ "C91", "E91" ]
             , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
             , "steps" : [
                 "step-pbar- host"

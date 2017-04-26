@@ -5,9 +5,9 @@
     <title>Boilerplates: Images with overlays for Persona Bar</title>
 
     <prolog>
-        <author>wrET,1611</author>
+        <author>wrET,1704</author>
         <copyright>
-            <copyryear year="2016"></copyryear>
+            <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
     </prolog>
@@ -19,6 +19,7 @@
         <!-- ======================================================================================== -->
         <!-- DO NOT MAKE INDIVIDUAL CHANGES BECAUSE IT COULD BE OVERWRITTEN BY THE AUTOMATED PROCESS. -->
         <!-- ======================================================================================== -->
+
 
 
 
@@ -1929,6 +1930,24 @@
                        <image id="image-pb-host-Settings-Servers-E91" scalefit="yes" href="img/scr-pbar-host-Settings-E91.png"><alt>Persona Bar &gt; Settings &gt; Servers</alt></image>
                        <pre outputclass="olpb1-Settings-E91host">&#10122;</pre>
                        <pre outputclass="olpb2-Settings-Servers-E91host">&#10123;</pre>
+                   </fig>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbar.dita#tsk-bptext-pbar/step-pb-host-Settings-Import-Export-E91"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbar/step-pb-host-Settings-Import-Export-E91"><cmd/></step> -->
+           <!-- <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Import-Export-E91"></ph></li> -->
+           <!-- <cmd conkeyref="k-bppbar/cmd-pb-host-Settings-Import-Export-E91"></cmd> -->
+           <!-- <info conkeyref="k-bppbar/info-pb-host-Settings-Import-Export-E91"></info> -->
+           <!-- <fig conkeyref="k-bppbar/fig-pb-host-Settings-Import-Export-E91"></fig> -->
+           <step id="step-pb-host-Settings-Import-Export-E91">
+               <cmd id="cmd-pb-host-Settings-Import-Export-E91"><ph id="ph-pb-host-Settings-Import-Export-E91">Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Settings</uicontrol> <uicontrol>Import-Export</uicontrol></menucascade>.</ph></cmd>
+               <info id="info-pb-host-Settings-Import-Export-E91" outputclass="init-hide">
+                   <fig id="fig-pb-host-Settings-Import-Export-E91" outputclass="img-scr-menu">
+                       <image id="image-pb-host-Settings-Import-Export-E91" scalefit="yes" href="img/scr-pbar-host-Settings-E91.png"><alt>Persona Bar &gt; Settings &gt; Import-Export</alt></image>
+                       <pre outputclass="olpb1-Settings-E91host">&#10122;</pre>
+                       <pre outputclass="olpb2-Settings-Import-Export-E91host">&#10123;</pre>
                    </fig>
                </info>
            </step>

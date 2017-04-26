@@ -136,7 +136,7 @@
                 <topicref format="dita" type="topic"                                                                                 href="content-managers/microservices/creating-content-with-microservices.dita" />
                 <topicref format="dita" type="topic"              linking="targetonly" navtitle="JWT Authentication" locktitle="yes" href="developers/jwt/about-jwt.dita" />
                 <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Licensing"          locktitle="yes" href="administrators/licensing/licensing.dita" />
-                <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Structured Content" locktitle="yes" href="content-managers/structured-content/about-structured-content.dita" />
+                <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Liquid Content&#8482;" locktitle="yes" href="content-managers/structured-content/about-structured-content.dita" />
                 <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Form Builder"       locktitle="yes" href="content-managers/forms/about-form-builder.dita" />
             </relcell>
             <relcell/>

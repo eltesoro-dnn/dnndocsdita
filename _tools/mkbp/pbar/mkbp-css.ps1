@@ -1,6 +1,6 @@
 # Creates the CSS variables for the Persona Bar images.
-# USAGE:   powershell -file mkbp-css.ps1 pbar-E90host.csv mkbp-css.out
-# EXAMPLE: powershell -file mkbp-css.ps1 pbar-E90host.csv mkbp-css.out
+# USAGE:   powershell -file mkbp-css.ps1 pbar-E91host.csv mkbp-css.out
+# EXAMPLE: powershell -file mkbp-css.ps1 pbar-E91host.csv mkbp-css.out
 
 
 $menusep = "&gt;"

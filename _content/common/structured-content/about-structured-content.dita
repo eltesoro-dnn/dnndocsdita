@@ -2,9 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
 <topic xml:lang="en" id="top-about-structured-content">
 
-    <title>About Structured Content</title>
+    <title>About Liquid Content&#8482; (Structured Content)</title>
     <titlealts>
-        <navtitle>Structured Content</navtitle>
+        <navtitle>Liquid Content&#8482; (Structured Content)</navtitle>
     </titlealts>
 
 
@@ -36,11 +36,11 @@
 
 
 		<section id="overview">
-            <title>Structured Content Overview</title>
+            <title>Liquid Content&#8482; (Structured Content) Overview</title>
 
-            <p>Structured Content is a microservice that manages <term>content items</term> or pieces of content that can be presented in any context, such as a webpage or a native mobile app.</p>
+            <p><term>Liquid Content&#8482;</term> is a structured content microservice that manages <term>content items</term> or pieces of content that can be presented in any context, such as a webpage or a native mobile app.</p>
 
-            <p>In Evoq, structured content has three types of components:
+            <p>Evoq's <term>Liquid Content</term> has three types of components:
                 <ul>
                     <li><uicontrol>Content Type</uicontrol>. Defines the combination of fields and configuration of a piece of content.</li>
                     <li><uicontrol>Visualizer</uicontrol>. The visualizer defines how the content item is formatted and styled. Just as a container is used to format and style a module, the visualizer is used to format and style the content item.</li>

@@ -44,7 +44,7 @@
 
 
         <steps>
-            <step audience="adm" conkeyref="k-bppbar/step-pb-adm-Manage-Roles-E91"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Manage-Roles-E91"><cmd/></step>
             <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Manage-Roles-E91"><cmd/></step>
             <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-create-or-edit-role"><cmd/></step>
             <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-create-new-role-group"><cmd/></step>
