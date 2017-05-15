@@ -194,16 +194,6 @@ function RefreshDITAOT()  {
 }
 
 
-# Returns $TRUE if the current date meets the condition.
-# $cond can be "PRE" to check if the current date is before $yyyyMMdd.
-# $cond can be "POST" to check if the current date is before $yyyyMMdd.
-function isActiveDate( [string] $cond, [string] $yyyyMMdd )  {
-    $now = Get-Date -Format "yyyyMMdd"
-    switch ( $cond ) {
-        "PRE"  { return { $now -lt $yyyyMMdd } }
-        "POST" { return { $now -gt $yyyyMMdd } }
-    }
-}
 # Copies time-sensitive versions of files in the build folder.
 # The temporary version of the file must be named as follows:
 #   PRE_YYYYMMDD_original-filename.dita  - The temporary file will be used before the specified date.
@@ -215,7 +205,16 @@ function CopyTimeSensitiveFiles( [string] $src, [string] $tgt, [string] $filter 
         $inc = $prefix + "_*" + $filter
         Get-ChildItem -Path $src\.. -Include $inc -Recurse | foreach {
             $fnarr = ($_.Name).Split( "_", [System.StringSplitOptions]::RemoveEmptyEntries )
-            if ( isActiveDate $prefix $fnarr[1] ) {
+
+            $now = [int] ( Get-Date -Format "yyyyMMdd" )
+            $yyyyMMdd = [int] ( $fnarr[1] )
+
+            $isActive = $false;
+            switch ( $cond ) {
+                "PRE"  { if ( $now -lt $yyyyMMdd )  { $isActive = $true } }
+                "POST" { if ( $now -gt $yyyyMMdd )  { $isActive = $true } }
+            }
+            if ( $isActive ) {
                 $fn = $_.FullName
                 $path = $_.DirectoryName
                 Write-Host "  $fn"
@@ -295,8 +294,14 @@ function AssembleOutput()  {
     CopyTimeSensitiveFiles "$gitdir\_content" $outdir "searchresults.html"
 
     RobocopyBasic         "$gitdir\_content\common\samples"   "$outdir\common\samples"                                          "/s"
-    RobocopyIncludeArray  "$gitdir\_content\common\img"       "$outdir\common\img"      "*.jpg,*.png,*.gif,*.svg"
     RobocopyIncludeArray  "$gitdir\_themes\dnn"               "$outdir\_theme"          "*.jpg,*.png,*.gif,*.svg,26d3f6*,*.js"
+
+    #Copy only the images that are actually used.
+    #old: RobocopyIncludeArray  "$gitdir\_content\common\img"       "$outdir\common\img"      "*.jpg,*.png,*.gif,*.svg"
+    $imgfiles = Get-ChildItem -Path $outdir\*.html -Recurse | Select-String -Pattern "(scr-[a-zA-Z0-9_-]+.png)|(scr-[a-zA-Z0-9_-]+.gif)|(scr-[a-zA-Z0-9_-]+.svg)|(gra-[a-zA-Z0-9_-]+.png)|(gra-[a-zA-Z0-9_-]+.gif)|(gra-[a-zA-Z0-9_-]+.svg)|(ico-[a-zA-Z0-9_-]+.png)|(ico-[a-zA-Z0-9_-]+.gif)|(ico-[a-zA-Z0-9_-]+.svg)" -AllMatches | foreach { $_ -match "img/(?<content>.*)"" alt" | Out-Null; $matches['content'] } | Sort-Object | Get-Unique
+    foreach ( $img in $imgfiles )  {
+        Copy-Item  -Path "$gitdir\_content\common\img\$img"  -Destination "$outdir\common\img"  -Force | Out-Null
+    }
 
     # The following is a hack.
     Copy-Item  -Path $outdir\developers\creating-modules\index.html  -Destination $outdir\developers\extensions  -Force
@@ -393,7 +398,7 @@ function ZipOutput()  {
     $gitdir = $gitroot + "\."
     $thmdir = $gitroot + "\_themes\dnn"
     $outdir = $bldroot + "\output\" + $transtype
-    $zipdir = $bldroot + "\output\"
+    $zipdir = $bldroot + "\output"
     $cssfile = $thmdir + "\dnndocsltr.css"
 
     # Logs must be in unmapped build root dir so it can be passed to a cmd.exe with no drive mappings.

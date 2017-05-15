@@ -1,148 +1,183 @@
 {
     "global" : {
         "avail" : "PCE"
+        ,"author" : "wrET,1701"
+        ,"audience" : [
+            {   "audtype" : "administrator"
+                ,"audjob" : "customizing"
+            }
+        ]
+        ,"products" : [ "P91", "C91","E91", "P90", "C90","E90" ]
     },
 
 
     "bpsection" : [
-        {
-            "id" : "note-editing-default-role",
-            "text" : "Only the description can be changed in default roles."
+        {   "id" : "note-editing-default-role"
+            ,"text" : "Only the description can be changed in default roles."
         },
-        {
-            "id" : "note-deleting-default-role",
-            "text" : "Default roles cannot be deleted."
+        {   "id" : "note-deleting-default-role"
+            ,"text" : "Default roles cannot be deleted."
         },
-        {
-            "id" : "note-default-groups",
-            "text" : "Default groups cannot be edited or deleted."
+        {   "id" : "note-default-groups"
+            ,"text" : "Default groups cannot be edited or deleted."
         },
-        {
-            "id" : "note-avail-if-social-group",
-            "text" : "This option is available only if the role's <uicontrol>Security Mode</uicontrol> is set to <uicontrol>SocialGroup</uicontrol> or <uicontrol>Both</uicontrol>. The role owner can moderate other users assigned to the role."
+        {   "id" : "note-avail-if-social-group"
+            ,"text" : "This option is available only if the role's <uicontrol>Security Mode</uicontrol> is set to <uicontrol>SocialGroup</uicontrol> or <uicontrol>Both</uicontrol>. The role owner can moderate other users assigned to the role."
         },
-        {
-            "id" : "ph-users-gain-role-access-immediately",
-            "text" : "Users added to a role immediately gain access to any modules or pages available to members of that role. The user might need to refresh their browser to view those modules and pages."
+        {   "id" : "ph-users-gain-role-access-immediately"
+            ,"text" : "Users added to a role immediately gain access to any modules or pages available to members of that role. The user might need to refresh their browser to view those modules and pages."
         },
-        {
-            "id" : "ph-exactly-one-group",
-            "text" : "A role must belong to exactly one group. The <uicontrol>[Global Roles]</uicontrol> group contains all roles that do not belong to a custom group."
+        {   "id" : "note-exactly-one-group"
+            ,"text" : "A role must belong to exactly one group. The <uicontrol>[Global Roles]</uicontrol> group contains all roles that do not belong to a custom group."
+        },
+        {   "id" : "ul-security-modes"
+            ,"items" : [
+                "<uicontrol>Security Role</uicontrol>. The role is used to managed access to modules and pages of the site."
+                ,"<uicontrol>Social Group</uicontrol>. The role is used as a community that users can join and subscribe to. Available only in Evoq Engage."
+                ,"<uicontrol>Both</uicontrol>. The role is used both as a security role and as a social group. Use this mode when access to a certain area (modules and pages) of the website must be restricted to members of a community. Available only in Evoq Engage."
+            ]
+        },
+        {   "id" : "ul-status"
+            ,"items" : [
+                "<uicontrol>Pending</uicontrol>. The role was created but not yet approved for use."
+                ,"<uicontrol>Disabled</uicontrol>. The role is not available. <!-- If a role is disabled, are the members deleted? -->"
+                ,"<uicontrol>Approved</uicontrol>. The role is available."
+            ]
+        }
+    ],
+
+
+    "bptables" : [
+        {   "id" : "simpletable-role-props"
+            ,"rows" : [
+                {   "fld" : "Public"
+                    ,"desc" : "If enabled, any registered user can subscribe to this role."
+                },
+                {   "fld" : "Role Group"
+                    ,"desc" : "conref=note-exactly-one-group"
+                },
+                {   "fld" : "Security Mode"
+                    ,"desc" : "conref=ul-security-modes"
+                },
+                {   "fld" : "Status"
+                    ,"desc" : "conref=ul-status"
+                },
+                {   "fld" : "Auto Assignment"
+                    ,"desc" : "If enabled, new users are automatically added to this role."
+                },
+                {   "fld" : "Assign to Existing Users"
+                    ,"desc" : "If enabled, all existing users are automatically added to this role. <!-- If disabled, are the existing users removed from the role? What if new users have been added in the meantime, are they removed also? -->"
+                }
+            ]
         }
     ],
 
 
     "bpsteps" : [
-        {
-            "id" : "step-create-new-role",
-            "cmd" : "Click/Tap <uicontrol>Create New Role</uicontrol>.",
-            "img" : "scr-RoleList-CreateRole-E90.png"
+        {   "id" : "step-create-new-role"
+            ,"cmd" : "Click/Tap <uicontrol>Create New Role</uicontrol>."
+            ,"info" : "img=scr-RoleList-CreateRole-E90.png| "
         },
-        {
-            "id" : "step-config-new-role-properties",
-            "cmd" : "Configure the new role's properties.",
-            "img" : "scr-Roles-Create-E90.png",
-            "info" : "conref=simpletable-role-props"
+        {   "id" : "step-config-new-role-properties"
+            ,"cmd" : "Configure the new role's properties."
+            ,"info" : [
+                "img=scr-Roles-Create-E90.png| "
+                ,"conref=simpletable-role-props"
+            ]
         },
-        {
-            "id" : "step-edit-role-properties",
-            "cmd" : "Edit the role's properties.",
-            "img" : "scr-Roles-Edit-Edit-E90.png",
-            "info" : "conref=simpletable-role-props"
+        {   "id" : "step-edit-role-properties"
+            ,"cmd" : "Edit the role's properties."
+            ,"info" : [
+                "img=scr-Roles-Edit-Edit-E90.png| "
+                ,"conref=simpletable-role-props"
+            ]
         },
-        {
-            "id" : "step-pencil-icon",
-            "cmd" : "Click/Tap the pencil icon for the role.",
-            "img" : "scr-RoleList-EditRole-E90.png"
+        {   "id" : "step-pencil-icon"
+            ,"cmd" : "Click/Tap the pencil icon for the role."
+            ,"info" : "img=scr-RoleList-EditRole-E90.png| "
         },
-        {
-            "id" : "step-delete-button",
-            "cmd" : "Click/Tap the <uicontrol>Delete</uicontrol> button.",
-            "img" : "scr-Roles-Edit-Delete-E90.png"
+        {   "id" : "step-delete-button"
+            ,"cmd" : "Click/Tap the <uicontrol>Delete</uicontrol> button."
+            ,"info" : "img=scr-Roles-Edit-Delete-E90.png| "
         },
-        {
-            "id" : "step-create-or-edit-role",
-            "cmd" : "Create or edit a role."
+        {   "id" : "step-create-or-edit-role"
+            ,"cmd" : "Create or edit a role."
         },
-        {
-            "id" : "step-create-new-role-group",
-            "cmd" : "Expand the <uicontrol>Role Group</uicontrol> dropdown and choose <uicontrol>New Group</uicontrol>.",
-            "img" : "scr-Roles-Edit-RoleGroup-E90.png"
+        {   "id" : "step-create-new-role-group"
+            ,"cmd" : "Expand the <uicontrol>Role Group</uicontrol> dropdown and choose <uicontrol>New Group</uicontrol>."
+            ,"info" : "img=scr-Roles-Edit-RoleGroup-E90.png| "
         },
-        {
-            "id" : "step-choose-role-group",
-            "cmd" : "Expand the <uicontrol>Role Group</uicontrol> dropdown and choose the group from the list.",
-            "img" : "scr-Roles-Edit-RoleGroup-E90.png"
+        {   "id" : "step-choose-role-group"
+            ,"cmd" : "Expand the <uicontrol>Role Group</uicontrol> dropdown and choose the group from the list."
+            ,"info" : "img=scr-Roles-Edit-RoleGroup-E90.png| "
         },
-        {
-            "id" : "step-edit-new-role-group-properties",
-            "cmd" : "Edit the role group's properties.",
-            "img" : "scr-Roles-NewGroup-E90.png"
+        {   "id" : "step-edit-new-role-group-properties"
+            ,"cmd" : "Edit the role group's properties."
+            ,"info" : "img=scr-Roles-NewGroup-E90.png| "
         },
-        {
-            "id" : "step-edit-existing-role-group-properties",
-            "cmd" : "Edit the role group's properties.",
-            "img" : "scr-Roles-EditGroup-E90.png"
+        {   "id" : "step-edit-existing-role-group-properties"
+            ,"cmd" : "Edit the role group's properties."
+            ,"info" : "img=scr-Roles-EditGroup-E90.png| "
         },
-        {
-            "id" : "step-users-in-role",
-            "cmd" : "Click/Tap the <uicontrol>Users in Role</uicontrol> icon for the role.",
-            "img" : "scr-RoleList-ManageUsers-E90.png"
+        {   "id" : "step-users-in-role"
+            ,"cmd" : "Click/Tap the <uicontrol>Users in Role</uicontrol> icon for the role."
+            ,"info" : "img=scr-RoleList-ManageUsers-E90.png| "
         },
-        {
-            "id" : "step-opt-check-send-email",
-            "cmd" : "(Optional) Check the <uicontrol>Send Email</uicontrol> box to notify the user of changes to their role(s).",
-            "img" : "scr-Roles-Users-SendEmail-E90.png"
+        {   "id" : "step-opt-check-send-email"
+            ,"cmd" : "(Optional) Check the <uicontrol>Send Email</uicontrol> box to notify the user of changes to their role(s)."
+            ,"info" : "img=scr-Roles-Users-SendEmail-E90.png| "
         },
-        {
-            "id" : "step-opt-check-is-owner",
-            "cmd" : "(Optional) Check the <uicontrol>Is Owner</uicontrol> box to designate the next added user as the owner of the role.",
-            "img" : "scr-Roles-Users-IsOwner-E90.png",
-            "info" : "conref=note-avail-if-social-group"
+        {   "id" : "step-opt-check-is-owner"
+            ,"cmd" : "(Optional) Check the <uicontrol>Is Owner</uicontrol> box to designate the next added user as the owner of the role."
+            ,"info" : [
+                "img=scr-Roles-Users-IsOwner-E90.png| "
+                ,"conref=note-avail-if-social-group"
+            ]
         },
-        {
-            "id" : "step-search-for-user",
-            "cmd" : "Search for the user in the list."
+        {   "id" : "step-search-for-user"
+            ,"cmd" : "Search for the user in the list."
         },
-        {
-            "id" : "step-add-user",
-            "cmd" : "Type the username, first name, or last name in the search field. Then click/tap <uicontrol>+Add</uicontrol>.",
-            "img" : "scr-Roles-Users-AddUser-E90.png"
+        {   "id" : "step-add-user"
+            ,"cmd" : "Type the username, first name, or last name in the search field. Then click/tap <uicontrol>+Add</uicontrol>."
+            ,"info" : "img=scr-Roles-Users-AddUser-E90.png| "
         },
-        {
-            "id" : "step-hover-and-delete-user",
-            "cmd" : "Hover over the username, then click/tap the <uicontrol>X</uicontrol> icon for that user.",
-            "img" : "scr-Roles-Users-Delete-E90.png"
+        {   "id" : "step-hover-and-delete-user"
+            ,"cmd" : "Hover over the username, then click/tap the <uicontrol>X</uicontrol> icon for that user."
+            ,"info" : "img=scr-Roles-Users-Delete-E90.png| "
         },
-        {
-            "id" : "step-hover-and-calendar-user",
-            "cmd" : "Hover over the username, then click/tap the calendar start and end icons for that user to define the date range when the user is assigned to the role.",
-            "img" : "scr-Roles-Users-Calendar-E90.png"
+        {   "id" : "step-hover-and-calendar-user"
+            ,"cmd" : "Hover over the username, then click/tap the calendar start and end icons for that user to define the date range when the user is assigned to the role."
+            ,"info" : "img=scr-Roles-Users-Calendar-E90.png| "
         },
-        {
-            "id" : "step-choose-global-roles-group",
-            "cmd" : "From the <uicontrol>Role Group</uicontrol> dropdown, choose <uicontrol>Global Roles</uicontrol>",
-            "img" : "scr-Roles-Edit-RoleGroup-E90.png"
+        {   "id" : "step-choose-global-roles-group"
+            ,"cmd" : "From the <uicontrol>Role Group</uicontrol> dropdown, choose <uicontrol>Global Roles</uicontrol>"
+            ,"info" : "img=scr-Roles-Edit-RoleGroup-E90.png| "
         },
-        {
-            "id" : "step-filter-by-role-group",
-            "cmd" : "From the dropdown in the upper-left, choose the role group you want or <uicontrol>All Groups</uicontrol> to display all roles.",
-            "img" : "scr-RoleList-FilterByRoleGroup-E90.png"
+        {   "id" : "step-filter-by-role-group"
+            ,"cmd" : "From the dropdown in the upper-left, choose the role group you want or <uicontrol>All Groups</uicontrol> to display all roles."
+            ,"info" : "img=scr-RoleList-FilterByRoleGroup-E90.png| "
         },
-        {
-            "id" : "step-filter-by-custom-role-group",
-            "cmd" : "From the dropdown in the upper-left, choose the custom role group.",
-            "img" : "scr-RoleList-FilterByRoleGroup-E90.png"
+        {   "id" : "step-filter-by-custom-role-group"
+            ,"cmd" : "From the dropdown in the upper-left, choose the custom role group."
+            ,"info" : "img=scr-RoleList-FilterByRoleGroup-E90.png| "
         },
-        {
-            "id" : "step-edit-custom-role-group",
-            "cmd" : "Click/Tap the pencil icon next to the role group name.",
-            "img" : "scr-Roles-CustomGroup-Edit-E90.png"
+        {   "id" : "step-edit-custom-role-group"
+            ,"cmd" : "Click/Tap the pencil icon next to the role group name."
+            ,"info" : "img=scr-Roles-CustomGroup-Edit-E90.png| "
         },
-        {
-            "id" : "step-delete-custom-role-group",
-            "cmd" : "Click/Tap the trash icon next to the role group name.",
-            "img" : "scr-Roles-CustomGroup-Delete-E90.png"
+        {   "id" : "step-delete-custom-role-group"
+            ,"cmd" : "Click/Tap the trash icon next to the role group name."
+            ,"info" : "img=scr-Roles-CustomGroup-Delete-E90.png| "
+        },
+        {   "id" : "step-search-for-role"
+            ,"cmd" : "Search for the role you want to act on."
+            ,"substeps" : [
+                {   "cmd" : "(Optional) Filter the list."
+                    ,"info" : "conref=ul-filter-list-options"
+                },
+                {   "cmd" : "Locate the role in the list."
+                }
+            ]
         }
     ],
 
@@ -150,179 +185,174 @@
     "topics" : [
 
         {
-            "nav" : "Create Role",
-            "title" : "Create a Role",
-            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
-            "steps" : [
-                "step-pbar-Manage-Roles adm cmg",
-                "step-create-new-role",
-                "step-config-new-role-properties",
-                "Save."
+            "nav" : "Create Role"
+            ,"title" : "Create a Role"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Manage-Roles adm cmg"
+                ,"step-create-new-role"
+                ,"step-config-new-role-properties"
+                ,"Save."
             ]
         },
 
         {
-            "nav" : "Edit Role",
-            "title" : "Edit a Role",
-            "section" : "conref=note-editing-default-role",
-            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
-            "steps" : [
-                "step-pbar-Manage-Roles adm cmg",
-                "step-search-for-role",
-                "step-pencil-icon",
-                "step-edit-role-properties",
-                "Save."
+            "nav" : "Edit Role"
+            ,"title" : "Edit a Role"
+            ,"section" : "conref=note-editing-default-role"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Manage-Roles adm cmg"
+                ,"step-search-for-role"
+                ,"step-pencil-icon"
+                ,"step-edit-role-properties"
+                ,"Save."
             ]
         },
 
         {
-            "nav" : "Delete Role",
-            "title" : "Delete a Role",
-            "section" : "conref=note-deleting-default-role",
-            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
-            "steps" : [
-                "step-pbar-Manage-Roles adm cmg",
-                "step-search-for-role",
-                "step-pencil-icon",
-                "step-delete-button",
-                "Confirm."
+            "nav" : "Delete Role"
+            ,"title" : "Delete a Role"
+            ,"section" : "conref=note-deleting-default-role"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Manage-Roles adm cmg"
+                ,"step-search-for-role"
+                ,"step-pencil-icon"
+                ,"step-delete-button"
+                ,"Confirm."
             ]
         },
 
         {
-            "nav" : "Assign Users to Role",
-            "title" : "Assign Users to a Role",
-            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
-            "steps" : [
-                "step-pbar-Manage-Roles adm cmg",
-                "step-search-for-role",
-                "step-users-in-role",
-                "step-opt-check-send-email",
-                "step-opt-check-is-owner",
-                "step-add-user"
-            ],
-            "result" : "conref=ph-users-gain-role-access-immediately"
+            "nav" : "Assign Users to Role"
+            ,"title" : "Assign Users to a Role"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Manage-Roles adm cmg"
+                ,"step-search-for-role"
+                ,"step-users-in-role"
+                ,"step-opt-check-send-email"
+                ,"step-opt-check-is-owner"
+                ,"step-add-user"
+            ]
+            ,"result" : "conref=ph-users-gain-role-access-immediately"
         },
 
         {
-            "nav" : "Remove Users from Role",
-            "title" : "Remove Users from a Role",
-            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
-            "steps" : [
-                "step-pbar-Manage-Roles adm cmg",
-                "step-search-for-role",
-                "step-users-in-role",
-                "step-opt-check-send-email",
-                "step-search-for-user",
-                "step-hover-and-delete-user",
-                "Confirm."
+            "nav" : "Remove Users from Role"
+            ,"title" : "Remove Users from a Role"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Manage-Roles adm cmg"
+                ,"step-search-for-role"
+                ,"step-users-in-role"
+                ,"step-opt-check-send-email"
+                ,"step-search-for-user"
+                ,"step-hover-and-delete-user"
+                ,"Confirm."
             ]
         },
 
         {
-            "nav" : "Edit Date Range for Role Membership",
-            "title" : "Edit the Date Range for a Role Membership",
-            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
-            "steps" : [
-                "step-pbar-Manage-Roles adm cmg",
-                "step-search-for-role",
-                "step-users-in-role",
-                "step-opt-check-send-email",
-                "step-search-for-user",
-                "step-hover-and-calendar-user"
+            "nav" : "Edit Date Range for Role Membership"
+            ,"title" : "Edit the Date Range for a Role Membership"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Manage-Roles adm cmg"
+                ,"step-search-for-role"
+                ,"step-users-in-role"
+                ,"step-opt-check-send-email"
+                ,"step-search-for-user"
+                ,"step-hover-and-calendar-user"
             ]
         },
 
         {
-            "nav" : "Add Role to New Group",
-            "title" : "Add a Role to a New Group",
-            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
-            "steps" : [
-                "step-pbar-Manage-Roles adm cmg",
-                "step-create-or-edit-role",
-                "step-create-new-role-group",
-                "step-edit-new-role-group-properties",
-                "Save."
+            "nav" : "Add Role to New Group"
+            ,"title" : "Add a Role to a New Group"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Manage-Roles adm cmg"
+                ,"step-create-or-edit-role"
+                ,"step-create-new-role-group"
+                ,"step-edit-new-role-group-properties"
+                ,"Save."
             ]
         },
 
         {
-            "nav" : "Add Role to Existing Group",
-            "title" : "Add a Role to an Existing Group",
-            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
-            "steps" : [
-                "step-pbar-Manage-Roles adm cmg",
-                "step-create-or-edit-role",
-                "step-choose-role-group",
-                "Save."
+            "nav" : "Add Role to Existing Group"
+            ,"title" : "Add a Role to an Existing Group"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Manage-Roles adm cmg"
+                ,"step-create-or-edit-role"
+                ,"step-choose-role-group"
+                ,"Save."
             ]
         },
 
         {
-            "nav" : "Remove Role from Group",
-            "title" : "Remove a Role from a Group",
-            "section" : [
-                {
-                    "text" : "conref=ph-exactly-one-group",
-                    "wrapper" : "note"
-                }
-            ],
-            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
-            "steps" : [
-                "step-pbar-Manage-Roles adm cmg",
-                "step-search-for-role",
-                "step-pencil-icon",
-                "step-choose-global-roles-group",
-                "Save."
+            "nav" : "Remove Role from Group"
+            ,"title" : "Remove a Role from a Group"
+            ,"section" : "conref=note-exactly-one-group"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Manage-Roles adm cmg"
+                ,"step-search-for-role"
+                ,"step-pencil-icon"
+                ,"step-choose-global-roles-group"
+                ,"Save."
             ]
         },
 
         {
-            "nav" : "View Roles Included in Group",
-            "title" : "View the List of Roles Included in a Group",
-            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
-            "steps" : [
-                "step-pbar-Manage-Roles adm cmg",
-                "step-filter-by-role-group"
+            "nav" : "View Roles Included in Group"
+            ,"title" : "View the List of Roles Included in a Group"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Manage-Roles adm cmg"
+                ,"step-filter-by-role-group"
             ]
         },
 
         {
-            "nav" : "View Users Assigned to Role",
-            "title" : "View the List of Users Assigned to a Role",
-            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
-            "steps" : [
-                "step-pbar-Manage-Roles adm cmg",
-                "step-search-for-role",
-                "step-users-in-role"
-            ],
-            "result" : "img=scr-Roles-Users-E90.png"
+            "nav" : "View Users Assigned to Role"
+            ,"title" : "View the List of Users Assigned to a Role"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Manage-Roles adm cmg"
+                ,"step-search-for-role"
+                ,"step-users-in-role"
+            ]
+            ,"result" : "img=scr-Roles-Users-E90.png| "
         },
 
         {
-            "nav" : "Edit Custom Role Group",
-            "title" : "Edit a Custom Role Group",
-            "section" : "conref=note-default-groups",
-            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
-            "steps" : [
-                "step-pbar-Manage-Roles adm cmg",
-                "step-filter-by-custom-role-group",
-                "step-edit-custom-role-group",
-                "step-edit-existing-role-group-properties",
-                "Save."
+            "nav" : "Edit Custom Role Group"
+            ,"title" : "Edit a Custom Role Group"
+            ,"section" : "conref=note-default-groups"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Manage-Roles adm cmg"
+                ,"step-filter-by-custom-role-group"
+                ,"step-edit-custom-role-group"
+                ,"step-edit-existing-role-group-properties"
+                ,"Save."
             ]
         },
 
         {
-            "nav" : "Delete Custom Role Group",
-            "title" : "Delete a Custom Role Group",
-            "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ],
-            "steps" : [
-                "step-pbar-Manage-Roles adm cmg",
-                "step-filter-by-custom-role-group",
-                "Remove all roles from the custom group.",
-                "step-delete-custom-role-group",
-                "Confirm."
+            "nav" : "Delete Custom Role Group"
+            ,"title" : "Delete a Custom Role Group"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Manage-Roles adm cmg"
+                ,"step-filter-by-custom-role-group"
+                ,"Remove all roles from the custom group."
+                ,"step-delete-custom-role-group"
+                ,"Confirm."
             ]
         }
 

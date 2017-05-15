@@ -86,7 +86,7 @@ WHERE TabID = (
                         </ol>
                     </li>
                     <li outputclass="step stepexpand"><xref format="dita" href="../servers/clear-cache.dita">Clear the server cache.</xref></li>
-                    <li outputclass="step stepexpand">Restart the application pool to allow the changes to take effect.</li>  <!-- TODO: Link this to a how-to topic about restarting the application pool. -->
+                    <li outputclass="step stepexpand"><xref format="dita" href="../servers/restart-application.dita">Restart the application pool</xref> to allow the changes to take effect.</li>
                 </ol>
             </section>
 

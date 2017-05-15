@@ -2,11 +2,11 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
 <task xml:lang="en" id="tsk-delete-web-server">
 
+
     <title>Delete a Web Server</title>
     <titlealts>
         <navtitle>Delete Web Server</navtitle>
     </titlealts>
-
 
     <prolog>
         <author>wrET,1704</author>
@@ -15,30 +15,32 @@
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
-            <audience type="administrator" job="other" otherjob="configuring" />
-            <audience type="administrator" job="maintaining" />
+            <audience type="administrator" job="other" otherjob="configuring"/>
+            <audience type="administrator" job="maintaining"/>
             <prodinfo>
-                <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <prodname>Content</prodname>
+                <vrmlist>
+                    <vrm version="9" release="1"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
-                <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <prodname>Engage</prodname>
+                <vrmlist>
+                    <vrm version="9" release="1"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
             </prodinfo>
         </metadata>
     </prolog>
-
 
     <taskbody>
 
         <section conkeyref="k-bptext/section-prodavail-CE"></section>
 
         <prereq>
-            <ul>
-                <li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li>
-            </ul>
+            <ul><li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li></ul>
         </prereq>
-
 
         <steps>
             <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Servers-E91"><cmd/></step>
@@ -50,4 +52,3 @@
     </taskbody>
 
 </task>
-

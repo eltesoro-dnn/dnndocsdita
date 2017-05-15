@@ -2,46 +2,51 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
 <task xml:lang="en" id="tsk-add-directory-to-excluded-list">
 
+
     <title>Add a Directory to Excluded List for Crawling</title>
     <titlealts>
         <navtitle>Add Directory to Excluded List</navtitle>
     </titlealts>
 
-
     <prolog>
-        <author>wrET,201703</author>
+        <author>wrET,1703</author>
         <copyright>
             <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
-            <audience type="administrator" job="customizing" />
+            <audience type="administrator" job="customizing"/>
             <prodinfo>
                 <prodname>Platform</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="1"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
-                <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <prodname>Content</prodname>
+                <vrmlist>
+                    <vrm version="9" release="1"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
-                <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <prodname>Engage</prodname>
+                <vrmlist>
+                    <vrm version="9" release="1"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
             </prodinfo>
         </metadata>
     </prolog>
-
 
     <taskbody>
 
         <section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <prereq>
-            <ul>
-                <li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
-            </ul>
+            <ul><li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li></ul>
         </prereq>
-
 
         <steps>
             <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-SiteSettings-E91"><cmd/></step>
@@ -54,4 +59,3 @@
     </taskbody>
 
 </task>
-

@@ -9,9 +9,9 @@
 
 
     <prolog>
-        <author>orMC,wrET,1611</author>
+        <author>wrET,orMC,1704</author>
         <copyright>
-            <copyryear year="2016"></copyryear>
+            <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
@@ -26,15 +26,24 @@
             <audience type="other" othertype="community manager" job="other" otherjob="moderating" />
             <prodinfo>
                 <prodname>Platform</prodname>
-                <vrmlist><vrm version="8" release="5"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
         </metadata>
     </prolog>
@@ -123,7 +132,10 @@ Community Analytics</lines>
                     </stentry>
                     <stentry id="cmg-dashboard"><lines>Site Analytics</lines></stentry>
                     <stentry id="ced-dashboard"><lines>Site Analytics</lines></stentry>
-                    <stentry id="mod-dashboard"><lines>Community Analytics</lines></stentry>
+                    <stentry id="mod-dashboard">
+<lines>Site Analytics
+Community Analytics</lines>
+                    </stentry>
                 </strow>
 
                 <strow>
@@ -132,28 +144,28 @@ Community Analytics</lines>
 <lines>Assets
 Pages
 Forms
-Content Items
+Content Library
 Recycle Bin</lines>
                     </stentry>
                     <stentry id="adm-content">
 <lines>Assets
 Pages
 Forms
-Content Items
+Content Library
 Recycle Bin</lines>
                     </stentry>
                     <stentry id="cmg-content">
 <lines>Assets
 Pages
 Forms
-Content Items
+Content Library
 Recycle Bin</lines>
                     </stentry>
                     <stentry id="ced-content">
 <lines>Assets
 Pages
 Forms
-Content Items</lines>
+Content Library</lines>
                     </stentry>
                     <stentry id="mod-content"><lines>Assets</lines></stentry>
                 </strow>
@@ -208,11 +220,13 @@ Vocabularies
 Connectors
 Extensions
 Servers
+Import/Export
 Scheduler
 Custom CSS
 SQL Console
 Config Manager
-About</lines>
+About
+OnDemand</lines>
                     </stentry>
                     <stentry id="adm-settings">
 <lines>Site Settings

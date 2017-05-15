@@ -2,50 +2,54 @@
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
 <task xml:lang="en" id="tsk-add-role-to-new-group">
 
+
     <title>Add a Role to a New Group</title>
     <titlealts>
         <navtitle>Add Role to New Group</navtitle>
     </titlealts>
 
-
     <prolog>
-        <author>wrET,201701</author>
+        <author>wrET,1701</author>
         <copyright>
             <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
-            <audience type="administrator" job="customizing" />
+            <audience type="administrator" job="customizing"/>
             <prodinfo>
                 <prodname>Platform</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="1"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
-                <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <prodname>Content</prodname>
+                <vrmlist>
+                    <vrm version="9" release="1"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
-                <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <prodname>Engage</prodname>
+                <vrmlist>
+                    <vrm version="9" release="1"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
             </prodinfo>
         </metadata>
     </prolog>
-
 
     <taskbody>
 
         <section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
         <prereq>
-            <ul>
-                <li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li>
-            </ul>
+            <ul><li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li></ul>
         </prereq>
-
 
         <steps>
             <step audience="adm" conkeyref="k-bppbar/step-pb-host-Manage-Roles-E91"><cmd/></step>
-            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Manage-Roles-E91"><cmd/></step>
             <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-create-or-edit-role"><cmd/></step>
             <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-create-new-role-group"><cmd/></step>
             <step conref="bptext-rolessteps.dita#tsk-bptext-rolessteps/step-edit-new-role-group-properties"><cmd/></step>
@@ -55,4 +59,3 @@
     </taskbody>
 
 </task>
-

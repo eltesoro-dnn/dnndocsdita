@@ -1,126 +1,233 @@
 {
     "global" : {
         "avail" : "CE"
+        ,"author" : "wrET,1704"
+        ,"audience" : [
+            {   "audtype" : "administrator"
+                ,"audjob" : "configuring"
+            },
+            {   "audtype" : "administrator"
+                ,"audjob" : "maintaining"
+            }
+        ]
+        ,"products" : [ "C91","E91", "C90","E90" ]
     },
 
 
     "bpsection" : [
-        {
-            "id" : "stepsection-go-to-the-appropriate-tab"
-            , "text" : "View each tab for the information you need."
+        {   "id" : "p-also-persona-bar-logo"
+            ,"text" : "Also visible from the Persona Bar logo."
         },
-        {
-            "id" : "tip-filter-server-list"
-            , "text" : "You can filter the list to show only <uicontrol>Enabled</uicontrol> servers or only <uicontrol>Disabled</uicontrol> servers."
+        {   "id" : "important-discouraged-webconfig"
+            ,"text" : "Changing these settings is strongly discouraged. If necessary, you can modify them in <filepath>web.config</filepath>."
         },
-        {
-            "id" : "p-server-web-request-adapter"
-            , "text" : "If a server is added to the web farm, the <uicontrol>Server Web Request Adapter</uicontrol> automatically retrieves the new server's default URL and adds it to the list of servers. The adapter also checks the availability of servers in the web farm and coordinates the synchronization of cache among <uicontrol>Enabled</uicontrol> servers."
+        {   "id" : "ph-platform-manage-servers"
+            ,"text" : "In the DNN Platform, you can manage the web servers by using SQL commands (e.g., <codeph>select * from webservers</codeph>) through the SQL Console."
         },
-        {
-            "id" : "note-caching-provider-web-request-adapter"
-            , "text" : "In the <uicontrol>Performance Tab</uicontrol>, the <uicontrol>Caching Provider</uicontrol> must be set to <uicontrol>WebRequestCachingProvider</uicontrol> for the <uicontrol>Server Web Request Adapter</uicontrol> to be used."
+        {   "id" : "ph-cache-to-file"
+            ,"text" : "<uicontrol>File</uicontrol>. The cache is stored in a file. Choose this if your server tends to run out of memory."
         },
-        {
-            "id" : "note-disabled-server-cache"
-            , "text" : "If a server is disabled in the UI but is still running, its cache is not synchronized with other servers in the list and could return outdated content."
+        {   "id" : "ph-cache-to-memory"
+            ,"text" : "<uicontrol>Memory</uicontrol>. The cache is stored in memory. Fastest performance."
         },
-        {
-            "id" : "p-autofilled-url"
-            , "text" : "The URL is automatically filled in, based on the port aliases. You would use these steps, only if you need to associate a specific subdomain with a specific web server for tests or special cases."
+        {   "id" : "ph-cache-to-database"
+            ,"text" : "<uicontrol>Database</uicontrol>. The cache is stored in a database."
         },
-        {
-            "id" : "note-port-alias-must-exist"
-            , "text" : "The port alias must already exist."
+        {   "id" : "stepsection-go-to-the-appropriate-tab"
+            ,"text" : "View each tab for the information you need."
+        },
+        {   "id" : "tip-filter-server-list"
+            ,"text" : "You can filter the list to show only <uicontrol>Enabled</uicontrol> servers or only <uicontrol>Disabled</uicontrol> servers."
+        },
+        {   "id" : "p-server-web-request-adapter"
+            ,"text" : "If a server is added to the web farm, the <uicontrol>Server Web Request Adapter</uicontrol> automatically retrieves the new server's default URL and adds it to the list of servers. The adapter also checks the availability of servers in the web farm and coordinates the synchronization of cache among <uicontrol>Enabled</uicontrol> servers."
+        },
+        {   "id" : "note-caching-provider-web-request-adapter"
+            ,"text" : "In the <uicontrol>Performance Tab</uicontrol>, the <uicontrol>Caching Provider</uicontrol> must be set to <uicontrol>WebRequestCachingProvider</uicontrol> for the <uicontrol>Server Web Request Adapter</uicontrol> to be used."
+        },
+        {   "id" : "note-disabled-server-cache"
+            ,"text" : "If a server is disabled in the UI but is still running, its cache is not synchronized with other servers in the list and could return outdated content."
+        },
+        {   "id" : "p-autofilled-url"
+            ,"text" : "The URL is automatically filled in, based on the port aliases. You would use these steps, only if you need to associate a specific subdomain with a specific web server for tests or special cases."
+        },
+        {   "id" : "note-port-alias-must-exist"
+            ,"text" : "The port alias must already exist."
+        }
+    ],
+
+
+    "bptables" : [
+
+        {   "id" : "simpletable-sysinfo-application"
+            ,"rows" : [
+                {   "fld" : "conref=lines-product-version"
+                    ,"desc" : "conref=p-also-persona-bar-logo"
+                },
+                {   "fld" : "Host GUID"
+                    ,"desc" : "Might be required by Support to identify your DNN installation."
+                },
+                {   "fld" : "HTML Editor Provider"
+                    ,"desc" : "The default HTML Editor for all sites in the installation. <xref format=\"dita\" href=\"../configuring-your-site/configure-html-editor.dita\">Each site can specify a different HTML editor.</xref>"
+                },
+                {   "fld" : "Data Provider"
+                    ,"desc" : "SQL is the default data provider for all sites in the installation. If necessary, you can replace it by installing a custom third-party provider (not supported by DNN) and updating web.config."
+                },
+                {   "fld" : "Caching Provider"
+                    ,"desc" : "The default caching provider for all sites in the installation. <xref format=\"dita\" href=\"../servers/configure-caching.dita\">You can specify a different caching provider.</xref>"
+                },
+                {   "fld" : "Logging Provider"
+                    ,"desc" : "conref=note-discouraged-webconfig"
+                },
+                {   "fld" : "conref=lines-friendly-url"
+                    ,"desc" : "conref=note-discouraged-webconfig"
+                },
+                {   "fld" : "Scheduler Mode"
+                    ,"desc" : "conref=ul-scheduler-mode"
+                },
+                {   "fld" : "Web Farm Enabled"
+                    ,"desc" : "Automatically updated from the web servers table. You can view the list of servers, <xref format=\"dita\" href=\"enable-or-disable-web-server.dita\">enable or disable servers</xref>, or <xref format=\"dita\" href=\"delete-web-server.dita\">delete the obsolete ones</xref>."
+                },
+                {   "fld" : "CAS Permissions"
+                    ,"desc" : "conref=note-discouraged-webconfig"
+                }
+            ]
+        },
+
+        {   "id" : "simpletable-sysinfo-web"
+            ,"rows" : [
+                {   "fld" : "conref=lines-os-web-netframework"
+                    ,"desc" : "Version numbers of systems installed and required by the DNN installation."
+                },
+                {   "fld" : "ASP.NET Identity"
+                    ,"desc" : "The Windows user account used with the DNN installation. This account must have sufficient permissions to access and modify folders on the server."
+                },
+                {   "fld" : "Host Name"
+                    ,"desc" : "The name of the web server used for the current host/superuser session."
+                },
+                {   "fld" : "Physical Path"
+                    ,"desc" : "The local server path to the site's root folder."
+                },
+                {   "fld" : "Site URL"
+                    ,"desc" : "The primary URL for the site."
+                },
+                {   "fld" : "Relative Path"
+                    ,"desc" : "The path to the DNN installation folder, relative to the site's root folder."
+                },
+                {   "fld" : "Server Time"
+                    ,"desc" : "The current date and time of the server."
+                }
+            ]
+        },
+
+        {   "id" : "simpletable-sysinfo-database"
+            ,"rows" : [
+                {   "fld" : "conref=lines-database-servicepack-product-platform"
+                    ,"desc" : "Information about the database provider. The default database provider is SQL."
+                },
+                {   "fld" : "Database Backup History"
+                    ,"desc" : "Prior database backups. To configure database backups, use the database backup application (i.e., SQL Backup Manager)."
+                },
+                {   "fld" : "Database Files"
+                    ,"desc" : "Current files used by the database."
+                }
+            ]
+        },
+
+        {   "id" : "simpletable-cachingprovider-webreqadapter"
+            ,"header" : {
+                "widths" : "1* 2* 2*"
+                ,"titles" : [ "Product and Environment", "Default <uicontrol>Caching Provider</uicontrol>", "Default <uicontrol>Server Web Request Adapter</uicontrol>" ]
+            }
+            ,"rows" : [
+                [   "Evoq (OnDemand)"
+                    ,"WebRequestCachingProvider"
+                    ,"DotNetNuke.Azure.WebRequestAdapter.ServerWebRequestAdapter"
+                ],
+                [   "Evoq (other)"
+                    ,"WebRequestCachingProvider"
+                    ,"DotNetNuke.Entities.Host.ServerWebRequestAdapter"
+                ],
+                [   "DNN Platform"
+                    ,"FileBasedCachingProvider"
+                    ,"(No adapter. Cache is not synchronized automatically.)"
+                ]
+            ]
         }
     ],
 
 
     "bpsteps" : [
-        {
-            "id" : "step-clear-cache-button"
-            , "cmd" : "Click/Tap <uicontrol>Clear Cache</uicontrol>."
-            , "img" : "scr-Servers-buttons-ClearCache.png"
+        {   "id" : "step-clear-cache-button"
+            ,"cmd" : "Click/Tap <uicontrol>Clear Cache</uicontrol>."
+            ,"info" : "img=scr-Servers-buttons-ClearCache.png| "
         },
-        {
-            "id" : "step-restart-application-button"
-            , "cmd" : "Click/Tap <uicontrol>Restart Application</uicontrol>."
-            , "img" : "scr-Servers-buttons-RestartApplication.png"
+        {   "id" : "step-restart-application-button"
+            ,"cmd" : "Click/Tap <uicontrol>Restart Application</uicontrol>."
+            ,"info" : "img=scr-Servers-buttons-RestartApplication.png| "
         },
-        {
-            "id" : "step-choose-web-request-adapter"
-            , "cmd" : "Expand the dropdown and choose."
-            , "img" : "scr-Servers-ServerSettings-WebServers-ServerWebRequestAdapter-E90.png"
+        {   "id" : "step-choose-web-request-adapter"
+            ,"cmd" : "Expand the dropdown and choose."
+            ,"info" : "img=scr-Servers-ServerSettings-WebServers-ServerWebRequestAdapter-E90.png| "
         },
-        {
-            "id" : "step-edit-server"
-            , "cmd" : "Under <uicontrol>Servers</uicontrol>, find the server you want to edit. Click/Tap the pencil icon."
-            , "img" : "scr-Servers-ServerSettings-WebServers-EditIcon-E90.png"
-            , "info" : "conref=tip-filter-server-list"
+        {   "id" : "step-edit-server"
+            ,"cmd" : "Under <uicontrol>Servers</uicontrol>, find the server you want to edit. Click/Tap the pencil icon."
+            ,"info" : [
+                "img=scr-Servers-ServerSettings-WebServers-EditIcon-E90.png| "
+                ,"conref=tip-filter-server-list"
+            ]
         },
-        {
-            "id" : "step-edit-server-url"
-            , "cmd" : "Edit the URL."
-            , "substeps" : [
-                {
-                    "cmd" : "Click/Tap the pencil icon for <uicontrol>URL</uicontrol>."
-                    , "img" : "scr-Servers-ServerSettings-WebServers-URL-pencil-E90.png"
+        {   "id" : "step-edit-server-url"
+            ,"cmd" : "Edit the URL."
+            ,"substeps" : [
+                {   "cmd" : "Click/Tap the pencil icon for <uicontrol>URL</uicontrol>."
+                    ,"info" : "img=scr-Servers-ServerSettings-WebServers-URL-pencil-E90.png| "
                 },
-                {
-                    "cmd" : "Enter a new URL or modify the existing one."
-                    , "img" : "scr-Servers-ServerSettings-WebServers-URL-textbox-E90.png"
+                {   "cmd" : "Enter a new URL or modify the existing one."
+                    ,"info" : "img=scr-Servers-ServerSettings-WebServers-URL-textbox-E90.png| "
                 },
-                {
-                    "cmd" : "Press <userinput>Enter</userinput>."
+                {   "cmd" : "Press <userinput>Enter</userinput>."
                 }
             ]
         },
-        {
-            "id" : "step-edit-server-group"
-            , "cmd" : "Assign the server to a group."
-            , "substeps" : [
-                {
-                    "cmd" : "Click/Tap the pencil icon for <uicontrol>Server Group</uicontrol>."
-                    , "img" : "scr-Servers-ServerSettings-WebServers-ServerGroup-pencil-E90.png"
+        {   "id" : "step-edit-server-group"
+            ,"cmd" : "Assign the server to a group."
+            ,"substeps" : [
+                {   "cmd" : "Click/Tap the pencil icon for <uicontrol>Server Group</uicontrol>."
+                    ,"info" : "img=scr-Servers-ServerSettings-WebServers-ServerGroup-pencil-E90.png| "
                 },
-                {
-                    "cmd" : "Enter the group name."
-                    , "img" : "scr-Servers-ServerSettings-WebServers-ServerGroup-textbox-E90.png"
+                {   "cmd" : "Enter the group name."
+                    ,"info" : "img=scr-Servers-ServerSettings-WebServers-ServerGroup-textbox-E90.png| "
                 },
-                {
-                    "cmd" : "Press <userinput>Enter</userinput>."
+                {   "cmd" : "Press <userinput>Enter</userinput>."
                 }
             ]
         },
-        {
-            "id" : "step-enable-disable-server"
-            , "cmd" : "Toggle the <uicontrol>Enabled</uicontrol> switch."
-            , "img" : "scr-Servers-ServerSettings-WebServers-Enabled-toggle-E90.png"
+        {   "id" : "step-enable-disable-server"
+            ,"cmd" : "Toggle the <uicontrol>Enabled</uicontrol> switch."
+            ,"info" : "img=scr-Servers-ServerSettings-WebServers-Enabled-toggle-E90.png| "
         },
-        {
-            "id" : "step-load-cache-items"
-            , "cmd" : "Click/Tap the <uicontrol>Load Cache Items</uicontrol> link."
-            , "img" : "scr-Servers-ServerSettings-WebServers-LoadCacheItems-link-E90.png"
+        {   "id" : "step-load-cache-items"
+            ,"cmd" : "Click/Tap the <uicontrol>Load Cache Items</uicontrol> link."
+            ,"info" : "img=scr-Servers-ServerSettings-WebServers-LoadCacheItems-link-E90.png| "
         },
-        {
-            "id" : "step-expire-individual-cache-items"
-            , "cmd" : "Expire individual cache items."
-            , "img" : "scr-Servers-ServerSettings-WebServers-CacheItems.gif"
-            , "substeps" : [
-                {
-                    "cmd" : "Select the cache item from the dropdown."
-                    , "result" : "The cache item is displayed in the <uicontrol>Cache Key</uicontrol> field as XML."
+        {   "id" : "step-expire-individual-cache-items"
+            ,"cmd" : "Expire individual cache items."
+            ,"info" : "img=scr-Servers-ServerSettings-WebServers-CacheItems.gif"
+            ,"substeps" : [
+                {   "cmd" : "Select the cache item from the dropdown."
+                    ,"result" : "The cache item is displayed in the <uicontrol>Cache Key</uicontrol> field as XML."
                 },
-                {
-                    "cmd" : "Click/Tap <uicontrol>Expire Cache Item</uicontrol>."
+                {   "cmd" : "Click/Tap <uicontrol>Expire Cache Item</uicontrol>."
                 }
             ]
         },
-        {
-            "id" : "step-delete-server"
-            , "cmd" : "Under <uicontrol>Servers</uicontrol>, find the server you want to edit. Click/Tap the trash icon."
-            , "img" : "scr-Servers-ServerSettings-WebServers-DeleteIcon-E90.png"
-            , "info" : "conref=tip-filter-server-list"
+        {   "id" : "step-delete-server"
+            ,"cmd" : "Under <uicontrol>Servers</uicontrol>, find the server you want to edit. Click/Tap the trash icon."
+            ,"info" : [
+                "img=scr-Servers-ServerSettings-WebServers-DeleteIcon-E90.png| "
+                ,"conref=tip-filter-server-list"
+            ]
         }
     ],
 
@@ -129,117 +236,117 @@
 
         {
             "nav" : "Clear Cache"
-            , "title" : "Clear Cache"
-            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
-            , "steps" : [
+            ,"title" : "Clear Cache"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            ,"steps" : [
                 "step-pbar-Settings-Servers"
-                , "step-clear-cache-button"
+                ,"step-clear-cache-button"
             ]
         },
 
         {
             "nav" : "Restart Application"
-            , "title" : "Restart the Application"
-            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
-            , "steps" : [
+            ,"title" : "Restart the Application"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            ,"steps" : [
                 "step-pbar-Settings-Servers"
-                , "step-restart-application-button"
+                ,"step-restart-application-button"
             ]
         },
 
         {
             "nav" : "Replace Web Request Adapter"
-            , "title" : "Replace the Web Request Adapter"
-            , "section" : [
-                { "text" : "conref=p-server-web-request-adapter" }
-                , { "text" : "conref=note-caching-provider-web-request-adapter" }
-                , { "text" : "conref=simpletable-cachingprovider-webreqadapter" }
+            ,"title" : "Replace the Web Request Adapter"
+            ,"section" : [
+                "conref=p-server-web-request-adapter"
+                , "conref=note-caching-provider-web-request-adapter"
+                , "conref=simpletable-cachingprovider-webreqadapter"
             ]
-            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
-            , "steps" : [
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            ,"steps" : [
                 "step-pbar-Settings-Servers"
-                , "step-pbtabs-Settings-Servers-ServerSettings-WebServers"
-                , "step-choose-web-request-adapter"
-                , "Save."
+                ,"step-pbtabs-Settings-Servers-ServerSettings-WebServers"
+                ,"step-choose-web-request-adapter"
+                ,"Save."
             ]
-            , "###" : [
+            ,"###" : [
                 "* Different for Platform, which doesn't sychronize its cache with other servers' cache. Platform doesn't have the Web Servers tab."
-                , "* Stored in web.config."
+                ,"* Stored in web.config."
             ]
         },
 
         {
             "nav" : "Change URL of Web Server"
-            , "title" : "Change the URL of a Web Server"
-            , "section" : [
-                { "text" : "conref=p-autofilled-url" }
-                , { "text" : "conref=note-port-alias-must-exist" }
+            ,"title" : "Change the URL of a Web Server"
+            ,"section" : [
+                "conref=p-autofilled-url"
+                ,"conref=note-port-alias-must-exist"
             ]
-            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
-            , "steps" : [
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            ,"steps" : [
                 "step-pbar-Settings-Servers"
-                , "step-pbtabs-Settings-Servers-ServerSettings-WebServers"
-                , "step-edit-server"
-                , "step-edit-server-url"
+                ,"step-pbtabs-Settings-Servers-ServerSettings-WebServers"
+                ,"step-edit-server"
+                ,"step-edit-server-url"
             ]
         },
 
         {
             "nav" : "Assign Web Server to Server Group"
-            , "title" : "Assign the Web Server to a Server Group"
-            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
-            , "steps" : [
+            ,"title" : "Assign the Web Server to a Server Group"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            ,"steps" : [
                 "step-pbar-Settings-Servers"
-                , "step-pbtabs-Settings-Servers-ServerSettings-WebServers"
-                , "step-edit-server"
-                , "step-edit-server-group"
+                ,"step-pbtabs-Settings-Servers-ServerSettings-WebServers"
+                ,"step-edit-server"
+                ,"step-edit-server-group"
             ]
-            , "###" : [
+            ,"###" : [
                 "* Free form, but (BUGBUG) should be a dropdown."
             ]
         },
 
         {
             "nav" : "Enable or Disable Web Server"
-            , "title" : "Enable or Disable a Web Server"
-            , "section" : "conref=note-disabled-server-cache"
-            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
-            , "steps" : [
+            ,"title" : "Enable or Disable a Web Server"
+            ,"section" : "conref=note-disabled-server-cache"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            ,"steps" : [
                 "step-pbar-Settings-Servers"
-                , "step-pbtabs-Settings-Servers-ServerSettings-WebServers"
-                , "step-edit-server"
-                , "step-enable-disable-server"
+                ,"step-pbtabs-Settings-Servers-ServerSettings-WebServers"
+                ,"step-edit-server"
+                ,"step-enable-disable-server"
             ]
-            , "###" : [
+            ,"###" : [
                 "* Internal note: Even if they disable all servers, the adapter will still enable a server."
             ]
         },
 
         {
             "nav" : "Expire Cached Item in Web Server"
-            , "title" : "Expire a Cached Item in a Web Server"
-            , "section" : "<p>These steps allow you delete individual items in the cache. To delete all cache items at once, use the <uicontrol>Clear Cache</uicontrol> button.</p>"
-            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
-            , "steps" : [
+            ,"title" : "Expire a Cached Item in a Web Server"
+            ,"section" : "<p>These steps allow you delete individual items in the cache. To delete all cache items at once, use the <uicontrol>Clear Cache</uicontrol> button.</p>"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            ,"steps" : [
                 "step-pbar-Settings-Servers"
-                , "step-pbtabs-Settings-Servers-ServerSettings-WebServers"
-                , "step-edit-server"
-                , "step-load-cache-items"
-                , "step-expire-individual-cache-items"
-                , "Click/Tap the <uicontrol>X</uicontrol> when done."
+                ,"step-pbtabs-Settings-Servers-ServerSettings-WebServers"
+                ,"step-edit-server"
+                ,"step-load-cache-items"
+                ,"step-expire-individual-cache-items"
+                ,"Click/Tap the <uicontrol>X</uicontrol> when done."
             ]
         },
+
         {
             "nav" : "Delete Web Server"
-            , "title" : "Delete a Web Server"
-            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
-            , "steps" : [
+            ,"title" : "Delete a Web Server"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            ,"steps" : [
                 "step-pbar-Settings-Servers"
-                , "step-pbtabs-Settings-Servers-ServerSettings-WebServers"
-                , "step-delete-server"
-                , "Confirm."
+                ,"step-pbtabs-Settings-Servers-ServerSettings-WebServers"
+                ,"step-delete-server"
+                ,"Confirm."
             ]
         }
-
     ]
 }

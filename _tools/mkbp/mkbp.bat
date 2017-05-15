@@ -28,21 +28,31 @@ call %0 runme json\servers.json bptext-servers W:\_content\common\servers prolog
 goto :eof
 
 :sitelogs
-call %0 runme json\sitelogs.json bptext-sitelogs W:\_content\common\sitelogs prolog-PCE.txt
+call %0 runme json\sitelogs.json      bptext-sitelogs      W:\_content\common\sitelogs
 goto :eof
+
+
+:tested
 
 :content
-call %0 runme json\content.json bptext-content W:\_content\common\structured-content prolog-E.txt
+call %0 runme json\content.json       bptext-content       W:\_content\common\structured-content
 goto :eof
 
+:import-export
+:importexport
+call %0 runme json\import-export.json bptext-import-export W:\_content\administrators\import-export
+goto :eof
+
+
+:wip
+
 :urlmanagement
-call %0 runme json\urlmanagement.json bptext-content W:\_content\common\urlmanagement prolog-PCE.txt
+call %0 runme json\urlmanagement.json bptext-urlmanagement W:\_content\common\urlmanagement prolog-PCE.txt
 goto :eof
 
 :analytics
-call %0 runme json\analytics.json bptext-content W:\_content\common\analytics json\analytics-prolog.txt
+call %0 runme json\analytics.json bptext-analytics W:\_content\common\analytics json\analytics-prolog.txt
 goto :eof
-
 
 
 
@@ -51,14 +61,12 @@ if _%3_ EQU __  goto :error
 cd /d %~dp0
 if not exist %~dp0out\*  md %~dp0out > nul
 del %~dp0out\* /q
-powershell -file mkbp-generic-files-json.ps1 %2 %3 %5 %~dp0out
+powershell -file mkbp-json.ps1 %2 %3 %~dp0out %5
 call windiff %4\* %~dp0out\*
 start %4
 start %~dp0out
-npp %4\bp*
-npp %~dp0out\bp*
+npp %4\bp* %~dp0out\bp*
 goto :eof
-
 :. powershell -file mkbp-compare-copy.ps1
 :. for /f "usebackq" %%v in (`dir out-%1\*.dita /b`) do fc W:\_content\common\roles\%%v out-%1\%%v
 :. for /f "usebackq" %%v in (`dir out-%1\*.dita /b`) do if _%%v_ NEQ _bptext-rolessteps.dita_ xcopy out-%1\%%v W:\_content\common\roles /v /y

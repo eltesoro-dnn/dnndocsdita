@@ -1,5 +1,5 @@
 # Creates the boilerplates for the tabs and subtabs after the Persona Bar menu.
-# USAGE: powershell -file mkbp-pbtabs-steps.ps1 pbtabs-E90.csv mkbp-pbtabs-steps.out
+# USAGE: powershell -file mkbp-pbtabs-steps.ps1 pbtabs-E91.csv mkbp-pbtabs-steps.out
 #
 # WARNINGS:
 #   * For overlays on the image:

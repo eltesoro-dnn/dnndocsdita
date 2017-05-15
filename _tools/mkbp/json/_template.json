@@ -1,103 +1,88 @@
 {
     "global" : {
         "avail" : "PCE"
-        , "author" : "wrET,orBC,1704"
-        , "audience" : [
-            {
-                "audtype" : "administrator"
-                , "audjob" : "configuring"
+        ,"author" : "wrET,orBC,1704"
+        ,"audience" : [
+            {   "audtype" : "administrator"
+                ,"audjob" : "configuring"
             }
         ]
-        , "products" : [ "C91", "E91" ]
-        , "source" : "https://dnntracker.atlassian.net/wiki/display/EVOQ/Configure+Google+Tag+Manager+for+working+with+Evoq+Analytics"
+        ,"products" : [ "P91", "C91","E91", "P90", "C90","E90" ]
+        ,"source" : ""
     },
 
 
     "bpsection" : [
-        {
-            "id" : ""
-            , "text" : ""
+        {   "id" : ""
+            ,"text" : ""
         },
-        {
-            "id" : ""
-            , "text" : "To escape double quotes, use \"backslash\"."
-
-        }
-    ],
-
-
-    "bpstrows" : [
-        {
-            , "fld" : "Standard Replacement Character"
-            , "desc" : "The value that replaces any space character in the parameter portion of a generated URL. The replacement can be a hyphen (-) or an underscore (_)."
+        {   "id" : ""
+            ,"text" : [
+                ""
+                ,""
+            ]
         },
-        {
-            , "fld" : "Concatenate Page URLs"
-            , "desc" : ""
+        {   "id" : ""
+            ,"text" : "To escape double quotes, use \"backslash\"."
         }
     ],
 
 
     "bptables" : [
-        {
-            "id" : "simpletable-"
-            , "rows" : [
-                "strow-field-standard-replacement-character"
-                , "strow-field-concatenate-page-urls"
+        {   "id" : "boilerplates"
+            ,"header" : {
+                "widths" : "1* 3*"
+                ,"titles" : [ "Field", "Description" ]
+            }
+            ,"rows" : [
+                {   "fld" : ""
+                    ,"desc" : [
+                        ""
+                        ,""
+                    ]
+                },
+                {   "fld" : ""
+                    ,"desc" : ""
+                }
+            ]
+        },
+        {   "id" : "simpletable-"
+            ,"rows" : [
+                "strow-field-"
+                ,"strow-field-"
             ]
         }
     ],
 
 
     "bpsteps" : [
-        {
-            "id" : "step-"
-            , "cmd" : "Click/Tap <uicontrol></uicontrol>."
-            , "info" : ""
-            , "img" : "scr-.png"
-            , "substeps" : [
-                {
-                    "cmd" : ""
-                    , "img" : {
-                        "fn" : "scr-.png"
-                        , "alt" : "Alt text here."
-                    }
-                    , "info" : ""
-                    , "result" : ""
+        {   "id" : ""
+            ,"cmd" : ""
+            ,"info" : [
+                "img=|"
+                ,"conref="
+                ,""
+            ]
+        },
+        {   "id" : "step-"
+            ,"cmd" : "Click/Tap <uicontrol></uicontrol>."
+            ,"info" : [
+                "img=scr-.png|Alt text here."
+                ,"conref=simpletable-"
+            ]
+            ,"substeps" : [
+                {   "cmd" : ""
+                    ,"info" : [
+                        "img=scr-.png|Alt text here."
+                    ]
+                    ,"result" : ""
                 },
-                {
-                    "cmd" : "Click/Tap <uicontrol>Expire Cache Item</uicontrol>."
+                {   "cmd" : "Click/Tap <uicontrol>Expire Cache Item</uicontrol>."
                 }
             ]
-            , "xmp" : "Example: <userinput>omg,lol,lmao</userinput>"
+            ,"xmp" : "Example: <userinput>omg,lol,lmao</userinput>"
             ]
-        },
-        {
-            "id" : "step-"
-            , "cmd" : "Click/Tap <uicontrol></uicontrol>."
-            , "img" : {
-                "fn" : "scr-.png"
-                , "alt" : "Alt text here."
-            }
-            , "info" : "conref=simpletable-"
-        },
-        {
-            "id" : ""
-            , "cmd" : ""
-            , "img" : {
-                "fn" : ""
-                , "alt" : ""
-            }
-            , "info" : "conref="
-        },
-        {
-            "id" : "step-"
-            , "cmd" : "Click/Tap <uicontrol></uicontrol>."
-            , "img" : "scr-.png"
-            , "###" : [
-                "* "
-                , "* "
-            ]
+            ,"###" : []
         }
     ],
 
@@ -106,34 +91,34 @@
 
         {
             "nav" : "..."
-            , "title" : "..."
-            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
-            , "steps" : [
+            ,"title" : "..."
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
                 "step-pbar- adm"
-                , "step-pbtabs- adm"
-                , "step-"
-                , "step-"
+                ,"step-pbtabs- adm"
+                ,"step-"
+                ,"step-"
             ]
-            , "result" : "An XML file containing the selected entries is attached to the email."
+            ,"result" : "An XML file containing the selected entries is attached to the email."
         },
 
         {
             "nav" : "..."
-            , "title" : "..."
-            , "author" : "wrET,orBC,1704"
-            , "audience" : [
+            ,"title" : "..."
+            ,"author" : "wrET,orBC,1704"
+            ,"audience" : [
                 {
                     "type" : "administrator"
-                    , "job" : "configuring"
+                    ,"job" : "configuring"
                 }
             ]
-            , "products" : [ "C91", "E91" ]
-            , "prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
-            , "steps" : [
+            ,"products" : [ "C91","E91" ]
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            ,"steps" : [
                 "step-pbar- host"
-                , "step-pbtabs- host"
-                , "step-"
-                , "step-"
+                ,"step-pbtabs- host"
+                ,"step-"
+                ,"step-"
             ]
         },
 

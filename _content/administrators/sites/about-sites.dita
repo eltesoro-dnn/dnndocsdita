@@ -9,7 +9,7 @@
 
 
     <prolog>
-        <author>wrET,trCP,1701</author>
+        <author>wrET,trCP,1704</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -24,7 +24,11 @@
 			-->
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="8" release="5"/></vrmlist>
+                <vrmlist>
+                    <vrm version="8" release="5"/>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
         </metadata>
     </prolog>
@@ -36,7 +40,9 @@
 
 		<section id="overview">
 
-            <p>DNN sites that share content and users can be combined into a site group. A site can belong to one group only.</p>
+            <p>Each DNN installation can host multiple sites. The superuser/host has access to all sites; administrators have access to one or more specific sites.</p>
+
+            <p>DNN sites that share content and users can be combined into a site group. A site can belong to only one group.</p>
 
             <p>When creating a site group, you must also select a master site from the list of ungrouped sites. The master site can perform these tasks:</p>
             <ul>

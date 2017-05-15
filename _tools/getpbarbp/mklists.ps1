@@ -30,7 +30,7 @@ if ( $args.Count -gt 1 )  {
 
     Get-Content $bpfn | Where { $_.Contains( "<!-- <step conkeyref" ) -or $_.Contains( "<!-- <li outputclass" ) } | foreach {
         $_ -match "<!-- (?<content>.*) -->" | Out-Null; $matches['content']
-    } | Out-File $lsfn
+    } | Out-File $lsfn -Encoding DEFAULT
 
 }
 else  {

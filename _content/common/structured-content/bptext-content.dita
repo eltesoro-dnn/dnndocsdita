@@ -47,145 +47,24 @@
             <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentItems-JobDescription-E91.png"><alt>Creating a Job Posting content item</alt></image>
             </p>
 
+            <!-- <p conref="bptext-content.dita#tsk-bptext-content/p-visualizer-codevisualizer-example-display-bullets"></p> -->
+            <p id="p-visualizer-codevisualizer-example-display-bullets">Example: If you want the content items to be displayed as bullets in an unordered list,
+                <ul>
+                    <li><uicontrol>Header</uicontrol> can contain the opening <codeph>&lt;ul&gt;</codeph> tag.</li>
+                    <li><uicontrol>Template</uicontrol> can contain <codeph>&lt;ul&gt;{{itemname}}&lt;/ul&gt;</codeph></li>
+                    <li><uicontrol>Footer</uicontrol> can contain the closing <codeph>&lt;/ul&gt;</codeph> tag.</li>
+                </ul>
+            </p>
+
+
         </section>
 
 
-        <section>
-
-            <!-- <simpletable conref="bptext-content.dita#tsk-bptext-content/simpletable-contenttype-configurecontenttype"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable> -->
-            <simpletable id="simpletable-contenttype-configurecontenttype" relcolwidth="1* 3*">
-                <sthead>
-                    <stentry>Field</stentry>
-                    <stentry>Description</stentry>
-                </sthead>
-                <strow id="strow-field-contenttype-name">
-                    <stentry><uicontrol>Content Type Title</uicontrol></stentry>
-                    <stentry>The name of the content type. Can be edited at the top of the form where it is displayed.</stentry>
-                </strow>
-                <strow id="strow-field-contenttype-icon">
-                    <stentry><uicontrol>Content Type Glyph / Icon</uicontrol></stentry>
-                    <stentry>The icon that represents the content type in a list or grid. Expand the dropdown arrow to select or search.</stentry>
-                </strow>
-                <strow id="strow-field-contenttype-desc">
-                    <stentry><uicontrol>Add a description</uicontrol></stentry>
-                    <stentry>A short description of the content type.</stentry>
-                </strow>
-            </simpletable>
-
-            <!-- <simpletable conref="bptext-content.dita#tsk-bptext-content/simpletable-contenttype-configureproperties"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable> -->
-            <simpletable id="simpletable-contenttype-configureproperties" relcolwidth="1* 3*">
-                <sthead>
-                    <stentry>Field</stentry>
-                    <stentry>Description</stentry>
-                </sthead>
-                <strow id="strow-field-contenttypeproperties-contentitemname">
-                    <stentry><uicontrol>Content Item Name</uicontrol></stentry>
-                    <stentry>The word or phrase that describes each item of this content type. Example: A content item based on the <uicontrol>Job Listing</uicontrol> content type could be called <userinput>job opening</userinput>.</stentry>
-                </strow>
-                <strow id="strow-field-contenttypeproperties-tags">
-                    <stentry><uicontrol>Tags</uicontrol></stentry>
-                    <stentry>Words or phrases to be associated with the content items based on this content type.</stentry>
-                </strow>
-                <strow id="strow-field-contenttypeproperties-desc">
-                    <stentry><uicontrol>Description</uicontrol></stentry>
-                    <stentry>A short description of the content items based on this content type.</stentry>
-                </strow>
-            </simpletable>
-
-            <!-- <simpletable conref="bptext-content.dita#tsk-bptext-content/simpletable-visualizer-configurevisualizerproperties"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable> -->
-            <simpletable id="simpletable-visualizer-configurevisualizerproperties" relcolwidth="1* 3*">
-                <sthead>
-                    <stentry>Field</stentry>
-                    <stentry>Description</stentry>
-                </sthead>
-                <strow id="strow-field-visualizer-name">
-                    <stentry><uicontrol>Name</uicontrol></stentry>
-                    <stentry>The name of the visualizer.
-                        <note type="tip">Include the name of the content type in the visualizer's name to make it easy to find all visualizers associated with the content type. If you plan to have multiple visualizers for the same content type, add a short phrase that briefly describes its function to distinguish it from other visualizers.</note>
-                    </stentry>
-                </strow>
-                <strow id="strow-field-visualizer-desc">
-                    <stentry><uicontrol>Description</uicontrol></stentry>
-                    <stentry>A short description of the visualizer.</stentry>
-                </strow>
-                <strow id="strow-field-visualizer-icon">
-                    <stentry><uicontrol>Icon</uicontrol></stentry>
-                    <stentry>The icon for the visualizer.</stentry>
-                </strow>
-                <strow id="strow-field-visualizer-content-type">
-                    <stentry><uicontrol>Content Type</uicontrol></stentry>
-                    <stentry>The content type to associate with this visualizer.
-                        <note type="warning">Changing the content type will replace any existing HTML code in the <menucascade><uicontrol>Editor</uicontrol> <uicontrol>Template</uicontrol></menucascade> editor.</note>
-                    </stentry>
-                </strow>
-            </simpletable>
-
-            <!-- <simpletable conref="bptext-content.dita#tsk-bptext-content/simpletable-contentitem-configurecontentitem-properties"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable> -->
-            <simpletable id="simpletable-contentitem-configurecontentitem-properties" relcolwidth="1* 3*">
-                <sthead>
-                    <stentry>Field</stentry>
-                    <stentry>Description</stentry>
-                </sthead>
-                <strow id="strow-field-contentitem-properties-name">
-                    <stentry><uicontrol>Content Item Name</uicontrol></stentry>
-                    <stentry>The name used to refer to the content item.</stentry>
-                </strow>
-                <strow id="strow-field-contentitem-properties-tags">
-                    <stentry><uicontrol>Tags</uicontrol></stentry>
-                    <stentry>A comma-separated list of tags to associate with the content item. You can also press <uicontrol><shortcut>Enter</shortcut></uicontrol> after typing each tag.</stentry>
-                </strow>
-                <strow id="strow-field-contentitem-properties-description">
-                    <stentry><uicontrol>Description</uicontrol></stentry>
-                    <stentry>A short description of the content item.</stentry>
-                </strow>
-            </simpletable>
-
-            <!-- <simpletable conref="bptext-content.dita#tsk-bptext-content/simpletable-contentitem-configurecontentitem-seo"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable> -->
-            <simpletable id="simpletable-contentitem-configurecontentitem-seo" relcolwidth="1* 3*">
-                <sthead>
-                    <stentry>Field</stentry>
-                    <stentry>Description</stentry>
-                </sthead>
-                <strow id="strow-field-contentitem-seo-pagetitle">
-                    <stentry><uicontrol>Page Title</uicontrol></stentry>
-                    <stentry>The content item title to use in web browsers and search results.</stentry>
-                </strow>
-                <strow id="strow-field-contentitem-seo-description">
-                    <stentry><uicontrol>Description</uicontrol></stentry>
-                    <stentry>The content item description to use in search engine results and in social media posts when this item is shared.</stentry>
-                </strow>
-                <strow id="strow-field-contentitem-seo-keywords">
-                    <stentry><uicontrol>Keywords</uicontrol></stentry>
-                    <stentry>Tags to associate with this content item when search engines perform indexing.</stentry>
-                </strow>
-                <strow id="strow-field-contentitem-seo-imageforpage">
-                    <stentry><uicontrol>Image for Page</uicontrol></stentry>
-                    <stentry>Image to use when the page is shared in social media.</stentry>
-                </strow>
-            </simpletable>
-
-
-            <!-- <simpletable conref="bptext-content.dita#tsk-bptext-content/simpletable-contentitem-closesavedraftsavecomplete"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable> -->
-            <simpletable id="simpletable-contentitem-closesavedraftsavecomplete" relcolwidth="1* 3*">
-                <strow>
-                    <stentry><uicontrol>Close</uicontrol></stentry>
-                    <stentry>Discards changes made in this session.</stentry>
-                </strow>
-                <strow>
-                    <stentry><uicontrol>Save as Draft</uicontrol></stentry>
-                    <stentry>Saves changes made in this session, then closes the window. The content item is hidden from the public.</stentry>
-                </strow>
-                <strow>
-                    <stentry><uicontrol>Save</uicontrol></stentry>
-                    <stentry>Saves changes made in this session, then closes the window. The content item moves forward to the next step in the workflow. <!-- Is this correct? --></stentry>
-                </strow>
-            </simpletable>
-
-
-
         <!-- =================================================== -->
-        <!-- This section was generated by running: powershell -file mkbp-generic-files-json.ps1 json\content.json bptext-content prolog-E.txt w:\_tools\mkbp\out -->
+        <!-- This section was generated by running: powershell -file mkbp-json.ps1 json\content.json bptext-content w:\_tools\mkbp\out -->
         <!-- START GENERATED SECTION -->
+
+        <section>
 
             <!-- <note conref="bptext-content.dita#tsk-bptext-content/warning-must-be-in-correct-site"></note> -->
             <note type="warning" id="warning-must-be-in-correct-site">Verify that you are at the site that will be associated with the API key before creating the key.</note>
@@ -199,20 +78,176 @@
             <!-- <note conref="bptext-content.dita#tsk-bptext-content/warning-reset-key"></note> -->
             <note type="warning" id="warning-reset-key">This action cannot be undone, whether other changes are saved or not. <uicontrol>Reset Key</uicontrol> immediately deletes the old key and replaces it with a new one. Third-party apps that use the old key will no longer be able to access your content items unless you provide them with the new key.</note>
 
-        <!-- END GENERATED SECTION -->
-        <!-- =================================================== -->
+            <!-- <ul conref="bptext-content.dita#tsk-bptext-content/ul-visualizer-codevisualizer-enter-html-code"><li/></ul> -->
+            <ul id="ul-visualizer-codevisualizer-enter-html-code">
+                <li>Enter HTML code in <uicontrol>Header</uicontrol> and <uicontrol>Footer</uicontrol> to enclose the entire list of content items.</li>
+                <li>Enter HTML code in <uicontrol>Template</uicontrol> to enclose the individual content items in the list.</li>
+            </ul>
 
+            <!-- <note conref="bptext-content.dita#tsk-bptext-content/tip-visualizer-codevisualizer-choose-content-type-before-editing"></note> -->
+            <note type="tip" id="tip-visualizer-codevisualizer-choose-content-type-before-editing">Choose the content type in the <uicontrol>Details</uicontrol> tab before editing the visualizer HTML code. The fields of the selected content type are added to the <uicontrol>Template</uicontrol> editor as placeholders for the field value(s). They are also displayed in a dropdown that appears when you press <uicontrol><shortcut>Ctrl+Space</shortcut></uicontrol>.</note>
+
+            <!-- <note conref="bptext-content.dita#tsk-bptext-content/tip-visualizer-codevisualizer-wrap-placeholders-with-div"></note> -->
+            <note type="tip" id="tip-visualizer-codevisualizer-wrap-placeholders-with-div">Because the placeholders hide the inner tags, such as <codeph>&lt;img/&gt;</codeph> or <codeph>&lt;p/&gt;</codeph>, you can wrap the placeholders with <codeph>&lt;div/&gt;</codeph> tags with <codeph>class</codeph> names or <codeph>id</codeph> names that you can refer to in the CSS code. Example: <codeph>&lt;div class=&quot;myimgdiv&quot;&gt;{{ myImg }}&lt;/div&gt;</codeph></note>
+
+            <!-- <note conref="bptext-content.dita#tsk-bptext-content/tip-access-inner-tag"></note> -->
+            <note type="tip" id="tip-access-inner-tag">If you wrapped a placeholder, you can access the inner tag if you wrapped them in a named <codeph>&lt;div/&gt;</codeph> tag. Example: <codeph>.myimgdiv img { width: 50px }</codeph></note>
 
         </section>
 
+        <section>
+
+            <!-- <simpletable conref="bptext-content.dita#tsk-bptext-content/simpletable-contenttype-configurecontenttype"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable> -->
+            <simpletable id="simpletable-contenttype-configurecontenttype" relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Field</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-contenttype-name"><stentry/></strow> -->
+                <strow id="strow-field-contenttype-name">
+                    <stentry><uicontrol>Content Type Title</uicontrol></stentry>
+                    <stentry>The name of the content type. Can be edited at the top of the form where it is displayed.</stentry>
+                </strow>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-contenttype-icon"><stentry/></strow> -->
+                <strow id="strow-field-contenttype-icon">
+                    <stentry><uicontrol>Content Type Glyph / Icon</uicontrol></stentry>
+                    <stentry>The icon that represents the content type in a list or grid. Expand the dropdown arrow to select or search.</stentry>
+                </strow>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-contenttype-desc"><stentry/></strow> -->
+                <strow id="strow-field-contenttype-desc">
+                    <stentry><uicontrol>Add a description</uicontrol></stentry>
+                    <stentry>A short description of the content type.</stentry>
+                </strow>
+            </simpletable>
+
+            <!-- <simpletable conref="bptext-content.dita#tsk-bptext-content/simpletable-contenttype-configureproperties"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable> -->
+            <simpletable id="simpletable-contenttype-configureproperties" relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Field</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-contenttypeproperties-contentitemname"><stentry/></strow> -->
+                <strow id="strow-field-contenttypeproperties-contentitemname">
+                    <stentry><uicontrol>Content Item Name</uicontrol></stentry>
+                    <stentry>The word or phrase that describes each item of this content type. Example: A content item based on the <uicontrol>Job Listing</uicontrol> content type could be called <userinput>job opening</userinput>.</stentry>
+                </strow>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-contenttypeproperties-tags"><stentry/></strow> -->
+                <strow id="strow-field-contenttypeproperties-tags">
+                    <stentry><uicontrol>Tags</uicontrol></stentry>
+                    <stentry>Words or phrases to be associated with the content items based on this content type.</stentry>
+                </strow>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-contenttypeproperties-desc"><stentry/></strow> -->
+                <strow id="strow-field-contenttypeproperties-desc">
+                    <stentry><uicontrol>Description</uicontrol></stentry>
+                    <stentry>A short description of the content items based on this content type.</stentry>
+                </strow>
+            </simpletable>
+
+            <!-- <simpletable conref="bptext-content.dita#tsk-bptext-content/simpletable-visualizer-configurevisualizerproperties"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable> -->
+            <simpletable id="simpletable-visualizer-configurevisualizerproperties" relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Field</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-visualizer-name"><stentry/></strow> -->
+                <strow id="strow-field-visualizer-name">
+                    <stentry><uicontrol>Name</uicontrol></stentry>
+                    <stentry>The name of the visualizer. <note type="tip">Include the name of the content type in the visualizer's name to make it easy to find all visualizers associated with the content type. If you plan to have multiple visualizers for the same content type, add a short phrase that briefly describes its function to distinguish it from other visualizers.</note></stentry>
+                </strow>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-visualizer-desc"><stentry/></strow> -->
+                <strow id="strow-field-visualizer-desc">
+                    <stentry><uicontrol>Description</uicontrol></stentry>
+                    <stentry>A short description of the visualizer.</stentry>
+                </strow>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-visualizer-icon"><stentry/></strow> -->
+                <strow id="strow-field-visualizer-icon">
+                    <stentry><uicontrol>Icon</uicontrol></stentry>
+                    <stentry>The icon for the visualizer.</stentry>
+                </strow>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-visualizer-content-type"><stentry/></strow> -->
+                <strow id="strow-field-visualizer-content-type">
+                    <stentry><uicontrol>Content Type</uicontrol></stentry>
+                    <stentry>The content type to associate with this visualizer. <note type="warning">Changing the content type will replace any existing HTML code in the <menucascade><uicontrol>Editor</uicontrol> <uicontrol>Template</uicontrol></menucascade> editor.</note></stentry>
+                </strow>
+            </simpletable>
+
+            <!-- <simpletable conref="bptext-content.dita#tsk-bptext-content/simpletable-contentitem-configurecontentitem-properties"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable> -->
+            <simpletable id="simpletable-contentitem-configurecontentitem-properties" relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Field</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-contentitem-properties-name"><stentry/></strow> -->
+                <strow id="strow-field-contentitem-properties-name">
+                    <stentry><uicontrol>Content Item Name</uicontrol></stentry>
+                    <stentry>The name used to refer to the content item.</stentry>
+                </strow>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-contentitem-properties-tags"><stentry/></strow> -->
+                <strow id="strow-field-contentitem-properties-tags">
+                    <stentry><uicontrol>Tags</uicontrol></stentry>
+                    <stentry>A comma-separated list of tags to associate with the content item. You can also press <uicontrol><shortcut>Enter</shortcut></uicontrol> after typing each tag.</stentry>
+                </strow>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-contentitem-properties-desc"><stentry/></strow> -->
+                <strow id="strow-field-contentitem-properties-desc">
+                    <stentry><uicontrol>Description</uicontrol></stentry>
+                    <stentry>A short description of the content item.</stentry>
+                </strow>
+            </simpletable>
+
+            <!-- <simpletable conref="bptext-content.dita#tsk-bptext-content/simpletable-contentitem-configurecontentitem-seo"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable> -->
+            <simpletable id="simpletable-contentitem-configurecontentitem-seo" relcolwidth="1* 3*">
+                <sthead>
+                    <stentry>Field</stentry>
+                    <stentry>Description</stentry>
+                </sthead>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-contentitem-seo-pagetitle"><stentry/></strow> -->
+                <strow id="strow-field-contentitem-seo-pagetitle">
+                    <stentry><uicontrol>Page Title</uicontrol></stentry>
+                    <stentry>The content item title to use in web browsers and search results.</stentry>
+                </strow>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-contentitem-seo-desc"><stentry/></strow> -->
+                <strow id="strow-field-contentitem-seo-desc">
+                    <stentry><uicontrol>Description</uicontrol></stentry>
+                    <stentry>The content item description to use in search engine results and in social media posts when this item is shared.</stentry>
+                </strow>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-contentitem-seo-keywords"><stentry/></strow> -->
+                <strow id="strow-field-contentitem-seo-keywords">
+                    <stentry><uicontrol>Keywords</uicontrol></stentry>
+                    <stentry>Tags to associate with this content item when search engines perform indexing.</stentry>
+                </strow>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-contentitem-seo-imageforpage"><stentry/></strow> -->
+                <strow id="strow-field-contentitem-seo-imageforpage">
+                    <stentry><uicontrol>Image for Page</uicontrol></stentry>
+                    <stentry>Image to use when the page is shared in social media.</stentry>
+                </strow>
+            </simpletable>
+
+            <!-- <simpletable conref="bptext-content.dita#tsk-bptext-content/simpletable-contentitem-closesavedraftsavecomplete"><sthead><stentry/></sthead><strow><stentry/></strow></simpletable> -->
+            <simpletable id="simpletable-contentitem-closesavedraftsavecomplete" relcolwidth="1* 3*">
+                <sthead>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </sthead>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-close"><stentry/></strow> -->
+                <strow id="strow-field-close">
+                    <stentry><uicontrol>Close</uicontrol></stentry>
+                    <stentry>Discards changes made in this session.</stentry>
+                </strow>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-save-as-draft"><stentry/></strow> -->
+                <strow id="strow-field-save-as-draft">
+                    <stentry><uicontrol>Save as Draft</uicontrol></stentry>
+                    <stentry>Saves changes made in this session, then closes the window. The content item is hidden from the public.</stentry>
+                </strow>
+                <!-- <strow conref="bptext-content.dita#tsk-bptext-content/strow-field-save"><stentry/></strow> -->
+                <strow id="strow-field-save">
+                    <stentry><uicontrol>Save</uicontrol></stentry>
+                    <stentry>Saves changes made in this session, then closes the window. The content item moves forward to the next step in the workflow. <!-- Is this correct? --></stentry>
+                </strow>
+            </simpletable>
+
+        </section>
 
         <steps>
-
-
-
-        <!-- =================================================== -->
-        <!-- This section was generated by running: powershell -file mkbp-generic-files-json.ps1 json\content.json bptext-content prolog-E.txt w:\_tools\mkbp\out -->
-        <!-- START GENERATED SECTION -->
 
             <!-- <step conref="bptext-content.dita#tsk-bptext-content/step-contenttype-createbtn"><cmd/></step> -->
             <step id="step-contenttype-createbtn">
@@ -318,7 +353,7 @@
             <!-- <step conref="bptext-content.dita#tsk-bptext-content/step-visualizer-export"><cmd/></step> -->
             <step id="step-visualizer-export">
                 <cmd>Click/Tap the <uicontrol>Export File</uicontrol> button.</cmd>
-                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Details-Export-E91.png"><alt></alt></image></info>
+                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Details-Export-E91.png"><alt>Export File button</alt></image></info>
             </step>
 
             <!-- <step conref="bptext-content.dita#tsk-bptext-content/step-visualizer-choose-zip-export"><cmd/></step> -->
@@ -354,8 +389,8 @@
             <step id="step-contentitem-searchsortfilter">
                 <cmd>Search for the content item in the list.</cmd>
                 <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentItems-searchsortfilter-E91.gif"><alt></alt></image>
                     <p>You can use the <uicontrol>Search</uicontrol> field, the <uicontrol>Sort By</uicontrol>, or the filters (<uicontrol>Content Type</uicontrol>, <uicontrol>Status</uicontrol>, and <uicontrol>Dates</uicontrol>).</p>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ContentItems-searchsortfilter-E91.gif"><alt>Sort, search, and filter UI</alt></image>
                 </info>
             </step>
 
@@ -384,7 +419,7 @@
                 <substeps>
                     <substep>
                         <cmd>Choose one or more profiles to use as the sender or poster.</cmd>
-                        <info><p><note type="note">Facebook pages cannot be used as profiles for posting.</note></p></info>
+                        <info><note type="note">Facebook pages cannot be used as profiles for posting.</note></info>
                     </substep>
                     <substep>
                         <cmd>(Optional) Add a message and/or a URL link to include with the content item.</cmd>
@@ -475,7 +510,7 @@
                     </substep>
                     <substep>
                         <cmd>Choose the permissions to grant to the app that uses the API key.</cmd>
-                        <info><note type="note" conref="bptext-content.dita#tsk-bptext-content/note-permissions-for-current-site-only"></note></info>
+                        <info><note conref="bptext-content.dita#tsk-bptext-content/note-permissions-for-current-site-only"></note></info>
                     </substep>
                 </substeps>
             </step>
@@ -490,15 +525,15 @@
                     </substep>
                     <substep>
                         <cmd>Change the permissions associated with the API key.</cmd>
-                        <info><note type="note" conref="bptext-content.dita#tsk-bptext-content/note-permissions-for-current-site-only"></note></info>
+                        <info><note conref="bptext-content.dita#tsk-bptext-content/note-permissions-for-current-site-only"></note></info>
                     </substep>
                     <substep>
                         <cmd>(Optional) To copy the API key to your clipboard, click/tap the <uicontrol>Copy Key</uicontrol>.</cmd>
-                        <info><note type="note" conref="bptext-content.dita#tsk-bptext-content/note-same-as-clipboard-icon"></note></info>
+                        <info><note conref="bptext-content.dita#tsk-bptext-content/note-same-as-clipboard-icon"></note></info>
                     </substep>
                     <substep>
                         <cmd>(Optional) To reset the API key, click/tap the <uicontrol>Reset Key</uicontrol>.</cmd>
-                        <info><note type="warning" conref="bptext-content.dita#tsk-bptext-content/warning-reset-key"></note></info>
+                        <info><note conref="bptext-content.dita#tsk-bptext-content/warning-reset-key"></note></info>
                     </substep>
                 </substeps>
             </step>
@@ -527,11 +562,6 @@
                 <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-APIKey-list-trash-icon-E91.png"><alt>API key list &gt; trash icon</alt></image></info>
             </step>
 
-        <!-- END GENERATED SECTION -->
-        <!-- =================================================== -->
-
-
-
             <!-- <step conref="bptext-content.dita#tsk-bptext-content/step-visualizer-codevisualizer"><cmd/></step> -->
             <step id="step-visualizer-codevisualizer">
                 <cmd>In the <uicontrol>Editor</uicontrol> tab, design the visualizer.</cmd>
@@ -539,40 +569,22 @@
                     <substep>
                         <cmd>In the <uicontrol>Template</uicontrol> editor, enter the HTML code for the visualizer.</cmd>
                         <info>
-                            <ul>
-                                <li>Enter HTML code in <uicontrol>Header</uicontrol> and <uicontrol>Footer</uicontrol> to enclose the entire list of content items.</li>
-                                <li>Enter HTML code in <uicontrol>Template</uicontrol> to enclose the individual content items in the list.</li>
-                            </ul>
-
-                            <p>Example: If you want the content items to be displayed as bullets in an unordered list,
-                                <ul>
-                                    <li><uicontrol>Header</uicontrol> can contain the opening <codeph>&lt;ul&gt;</codeph> tag.</li>
-                                    <li><uicontrol>Template</uicontrol> can contain <codeph>&lt;ul&gt;{{itemname}}&lt;/ul&gt;</codeph></li>
-                                    <li><uicontrol>Footer</uicontrol> can contain the closing <codeph>&lt;/ul&gt;</codeph> tag.</li>
-                                </ul>
-                            </p>
-
-                            <note type="tip">Choose the content type in the <uicontrol>Details</uicontrol> tab before editing the visualizer HTML code. The fields of the selected content type are added to the <uicontrol>Template</uicontrol> editor as placeholders for the field value(s). They are also displayed in a dropdown that appears when you press <uicontrol><shortcut>Ctrl+Space</shortcut></uicontrol>.</note>
-
+                            <ul conref="bptext-content.dita#tsk-bptext-content/ul-visualizer-codevisualizer-enter-html-code"><li/></ul>
+                            <p conref="bptext-content.dita#tsk-bptext-content/p-visualizer-codevisualizer-example-display-bullets"></p>
                             <p>Each placeholder is the reformatted name of the content field enclosed in double curly brackets. Example: The placeholder for a field called <userinput>Recipe Name</userinput> is <codeph>{{recipeName}}</codeph>.</p>
-
                             <p>If the field has multiple values (e.g., multiple choice fields), the values are comma-separated.</p>
-
+                            <note conref="bptext-content.dita#tsk-bptext-content/tip-visualizer-codevisualizer-choose-content-type-before-editing"></note>
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Editor-Template-E91.gif"><alt>Content &gt; Visualizers tab &gt; Editor &gt; Template with field placeholders</alt></image>
-
-                            <note type="tip">Because the placeholders hide the inner tags, such as <codeph>&lt;img/&gt;</codeph> or <codeph>&lt;p/&gt;</codeph>, you can wrap the placeholders with <codeph>&lt;div/&gt;</codeph> tags with <codeph>class</codeph> names or <codeph>id</codeph> names that you can refer to in the CSS code. Example: <codeph>&lt;div class=&quot;myimgdiv&quot;&gt;{{ myImg }}&lt;/div&gt;</codeph></note>
+                            <note conref="bptext-content.dita#tsk-bptext-content/tip-visualizer-codevisualizer-wrap-placeholders-with-div"></note>
                         </info>
                     </substep>
-
                     <substep>
                         <cmd>In the <uicontrol>Style</uicontrol> editor, enter CSS code for the visualizer.</cmd>
                         <info>
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Editor-Style-E91.png"><alt>Content &gt; Visualizers tab &gt; Editor &gt; Style</alt></image>
-
-                            <note type="tip">If you wrapped a placeholder, you can access the inner tag if you wrapped them in a named <codeph>&lt;div/&gt;</codeph> tag. Example: <codeph>.myimgdiv img { width: 50px }</codeph></note>
+                            <note conref="bptext-content.dita#tsk-bptext-content/tip-access-inner-tag"></note>
                         </info>
                     </substep>
-
                     <substep>
                         <cmd>In the <uicontrol>Script</uicontrol> editor, enter JavaScript code for the visualizer, if needed.</cmd>
                         <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-Visualizers-Editor-Script-E91.png"><alt>Content &gt; Visualizers tab &gt; Editor &gt; Style</alt></image></info>
@@ -581,6 +593,11 @@
             </step>
 
         </steps>
+
+
+        <!-- END GENERATED SECTION -->
+        <!-- =================================================== -->
+
 
     </taskbody>
 
