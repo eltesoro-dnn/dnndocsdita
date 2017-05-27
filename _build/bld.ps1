@@ -33,9 +33,9 @@ function Usage()  {
         "powershell -file $script _publicclasses.txt "
         )
 
-    Write-Host "Usage: " $usage
-    Write-Host "Examples: "
-    $examples | foreach { Write-Host "    " $_ }
+    Write-Host "Usage: " $usage  -foregroundcolor "Yellow"
+    Write-Host "Examples: "  -foregroundcolor "Yellow"
+    $examples | foreach { Write-Host "    " $_  -foregroundcolor "Yellow" }
 }
 
 
@@ -162,8 +162,8 @@ function TestPathOrThrow( [string] $path )  {
        Test-Path -Path $path
     }
     catch [Exception]  {
-        Write-Host $_.Exception.GetType().FullName
-        Write-Host $_.Exception.Message
+        Write-Host $_.Exception.GetType().FullName  -foregroundcolor "Red"
+        Write-Host $_.Exception.Message  -foregroundcolor "Red"
         throw( "Exception" )
     }
 }
@@ -266,7 +266,9 @@ function CopyBldFolders()  {
     CopyTimeSensitiveFiles $blddir $blddir
 
     foreach ( $subbld in $subbldarr )  {
-        RobocopyIncludeArray "$blddir\common" "$blddir\$subbld" "*.dita*" "/s"
+        if ( $subbld -ne "api" )  {
+            RobocopyIncludeArray "$blddir\common" "$blddir\$subbld" "*.dita*" "/s"
+        }
     }
 }
 
@@ -341,7 +343,7 @@ function Publish2Localhost()  {
               "robocopy $srcdir $lochostdocdir /s /mt /log+:$cpylog",
               "if exist $lochostdocdir\web.config  del $lochostdocdir\web.config" ) "runasadmin"
 
-    # Write-Host "TO DO: Manually copy the files from $srcdir to $lochostdocdir."
+    # Write-Host "TO DO: Manually copy the files from $srcdir to $lochostdocdir." -foregroundcolor "Yellow"
     # Explorer $srcdir
     Explorer $lochostdocdir
 }
@@ -364,7 +366,7 @@ function ZipOutput()  {
     Write-Host "Setting environment variables ...."
 
     # Array of subcenters to build.
-    $subbldarr = "administrators", "developers", "designers", "content-managers", "community-managers"
+    $subbldarr = "administrators", "developers", "designers", "content-managers", "community-managers", "api"
 
     # Array of custom css and jscript files.
     $cssjsarr = ( "dnndocsltr.css", "headscripts.js", "scripts.js" )
@@ -461,7 +463,7 @@ function ZipOutput()  {
     $failed = 0
     $subbldarr | foreach  {
         if ( -not( Test-Path -Path $outdir\$_\* ) )  {
-            Write-Host "FATAL: Build failed for the subcenter $_."
+            Write-Host "FATAL: Build failed for the subcenter $_." -foregroundcolor "Red"
             $failed += 1
         }
     }

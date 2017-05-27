@@ -53,7 +53,7 @@
             <topicref format="dita" type="reference" toc="yes" href="../fields/content-field-static-text.dita" />
         </topichead>
 
-        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+        <topichead audience="adm" outputclass="sub-nav-tabs" collection-type="family" >
             <topicmeta><navtitle>API Keys</navtitle></topicmeta>
             <topicref format="dita" type="task" toc="yes" href="create-api-key.dita" />
             <topicref format="dita" type="task" toc="yes" href="get-existing-api-key.dita" />

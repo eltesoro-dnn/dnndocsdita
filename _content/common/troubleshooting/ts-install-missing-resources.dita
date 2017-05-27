@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="SQL-timeout-error">
+
+    <title>Troubleshooting: Missing Resources After An Upgrade</title>
+    <titlealts>
+        <navtitle>Troubleshooting: Missing Resources After An Upgrade</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrMF,edET,1705</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="troubleshooting" />
+            <audience type="programmer" job="troubleshooting" />
+            <audience type="other" othertype="designer" job="troubleshooting" />
+            <audience type="other" othertype="content manager" job="troubleshooting" />
+            <audience type="other" othertype="community manager" job="troubleshooting" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="0"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+
+        <section outputclass="condition">
+            <title>Symptom</title>
+            <p>After an upgrade, errors about missing DLLs or other files from core functionality.</p>
+        </section>
+
+
+        <bodydiv outputclass="troubleSolution">
+            <section outputclass="cause">
+                <title>Possible Cause</title>
+
+                <p>Some resources failed to install during the upgrade.</p>
+            </section>
+
+            <section outputclass="remedy">
+                <title>Solution</title>
+
+                <ol outputclass="steps">
+                    <li outputclass="step stepexpand">Back up the site and the database.</li>  <!-- TODO: Link this to a how-to topic about backing up the site and the database. -->
+                    <li outputclass="step stepexpand">In a browser, go to <filepath>http://&lt;yourdomain&gt;/install/install.aspx?mode=installresources</filepath>.</li>
+                    <li outputclass="step stepexpand">Wait for the resource installation process to complete.</li>
+                    <li outputclass="step stepexpand">After the process completes, click the <uicontrol>View Site</uicontrol> button.</li>
+                    <li outputclass="step stepexpand">Verify that the errors no longer appear.</li>
+                </ol>
+            </section>
+
+        </bodydiv>
+
+    </body>
+
+    <!--
+    <related-links>
+        <link format="dita" href="ts-page-remains-in-draft.dita"><linktext>Troubleshooting: Page Remains in Draft Mode</linktext></link>
+    </related-links>
+    -->
+
+</topic>

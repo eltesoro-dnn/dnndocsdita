@@ -1,6 +1,6 @@
 /*
  | Based on the DITA Open Toolkit project.
- | ?ver=170425
+ | ?ver=170525
 */
 
 
@@ -568,6 +568,7 @@ dt.prereq {
   font-size: 1.75em;
   font-weight: normal;
 }
+.paramlisttitle,
 .sectiondivtitle {
   -webkit-font-smoothing: antialiased;
   line-height: 1.1;
@@ -580,6 +581,9 @@ dt.prereq {
 .section {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+.docindent {
+  margin-left: 50px;
 }
 .example {
   margin-top: 1em;

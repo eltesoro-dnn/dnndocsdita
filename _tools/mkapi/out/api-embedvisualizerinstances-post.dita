@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-api-embedvisualizerinstances-post">
+
+
+    <title>POST Embed Visualizer Instances</title>
+    <titlealts>
+        <navtitle>POST Embed Visualizer Instances</navtitle>
+    </titlealts>
+
+    <body>
+
+        <section id="apidesc">
+            <title>POST /api/EmbedVisualizerInstances</title>
+            <p></p>
+        </section>
+
+
+        <section id="http-request">
+            <title>HTTP Request</title>
+
+            <sectiondiv id="sectiondiv-url">
+
+                <p outputclass="sectiondivtitle docindent">In the URL,</p>
+
+                <codeblock outputclass="syntaxblock docindent">
+<ph conkeyref="k-bpapi/ph-apibaseurl"></ph>/api/EmbedVisualizerInstances
+                </codeblock>
+            </sectiondiv>
+
+            <sectiondiv id="sectiondiv-messagebody">
+
+                <p outputclass="sectiondivtitle docindent">In the message body,</p>
+
+                <parml outputclass="docindent">
+                    <plentry>
+                        <pt>embedVisualizerInstanceCreation</pt>
+                        <pd></pd>
+                    </plentry>
+                </parml>
+
+                <codeblock outputclass="syntaxblock docindent">
+<ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-Visualizers-Embed-EmbedVisualizerInstanceCreation"></ph>
+                </codeblock>
+
+                <p outputclass="paramlisttitle docindent">Message Body Schema Values</p>
+                <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-API-Dto-Visualizers-Embed-EmbedVisualizerInstanceCreation"><plentry><pt/><pd/></plentry></parml>
+            </sectiondiv>
+        </section>
+
+
+        <section id="http-response-body">
+            <title>HTTP Response</title>
+
+            <p>Status: <systemoutput>200</systemoutput></p>
+
+            <codeblock outputclass="syntaxblock docindent">
+<ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-Visualizers-Embed-EmbedVisualizerInstanceResponse"></ph>
+            </codeblock>
+
+            <p outputclass="paramlisttitle docindent">Response Schema Values</p>
+            <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-API-Dto-Visualizers-Embed-EmbedVisualizerInstanceResponse"><plentry><pt/><pd/></plentry></parml>
+        </section>
+
+    </body>
+
+</topic>

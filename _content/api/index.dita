@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-index">
+
+    <title>About DNN Microservices APIs</title>
+    <titlealts>
+        <navtitle>DNN Microservices API Reference</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1705</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+        <p>See <xref format="dita" scope="peer" href="../../microservices/creating-apps-that-use-microservices.dita">Creating Apps That Use Microservices</xref>.</p>
+
+    </body>
+
+    <!--
+    <related-links>
+        <link format="" scope="external" href=""><linktext></linktext></link>
+    </related-links>
+    -->
+
+</topic>

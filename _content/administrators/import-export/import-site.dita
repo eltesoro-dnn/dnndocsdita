@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-import-site">
+
+
+    <title>Import a Site</title>
+    <titlealts>
+        <navtitle>Import Site</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>wrET,1704</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring"/>
+            <prodinfo>
+                <prodname>Content</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Engage</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <taskbody>
+
+        <section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section><note conref="bptext-import-export.dita#tsk-bptext-import-export/warning-cannot-undo-import"></note></section>
+
+        <prereq>
+            <ul>
+                <li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li>
+                <li>The export folders must be copied to the server that hosts the target site.</li>
+            </ul>
+        </prereq>
+
+        <steps>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-Import-Export-E91"><cmd/></step>
+            <step conref="bptext-import-export.dita#tsk-bptext-import-export/step-choose-site-import"><cmd/></step>
+            <step conref="bptext-import-export.dita#tsk-bptext-import-export/step-import-data-button"><cmd/></step>
+            <step conref="bptext-import-export.dita#tsk-bptext-import-export/step-select-package-to-import"><cmd/></step>
+            <step conref="bptext-import-export.dita#tsk-bptext-import-export/step-configure-import-settings"><cmd/></step>
+            <step><cmd><uicontrol>Continue</uicontrol>.</cmd></step>
+        </steps>
+
+        <postreq>Check the <uicontrol>Import / Export Log</uicontrol> for the status of the import.</postreq>
+
+    </taskbody>
+
+</task>

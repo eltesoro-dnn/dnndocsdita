@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-api-visualizers-export-id-post">
+
+
+    <title>POST Visualizers with ID</title>
+    <titlealts>
+        <navtitle>POST Visualizers with ID</navtitle>
+    </titlealts>
+
+    <body>
+
+        <section id="apidesc">
+            <title>POST /api/Visualizers/export/{id}</title>
+            <p></p>
+        </section>
+
+
+        <section id="http-request">
+            <title>HTTP Request</title>
+
+            <sectiondiv id="sectiondiv-url">
+
+                <p outputclass="sectiondivtitle docindent">In the URL,</p>
+
+                <codeblock outputclass="syntaxblock docindent">
+<ph conkeyref="k-bpapi/ph-apibaseurl"></ph>/api/Visualizers/export/<varname>{id}</varname>
+                </codeblock>
+
+                <p outputclass="paramlisttitle docindent">Path Parameters</p>
+                <parml outputclass="docindent">
+                    <plentry>
+                        <pt>id</pt>
+                        <pd>[string] </pd>
+                    </plentry>
+                </parml>
+            </sectiondiv>
+
+            <sectiondiv id="sectiondiv-messagebody">
+
+                <p outputclass="sectiondivtitle docindent">In the message body,</p>
+
+            </sectiondiv>
+        </section>
+
+
+        <section id="http-response-body">
+            <title>HTTP Response</title>
+
+            <p>Status: <systemoutput>200</systemoutput></p>
+
+            <codeblock outputclass="syntaxblock docindent">
+{
+    "type" : "string"
+}
+            </codeblock>
+
+            <p outputclass="paramlisttitle docindent">Response Schema Values</p>
+            <parml outputclass="docindent">
+                <plentry>
+                    <pt>type</pt>
+                    <pd></pd>
+                </plentry>
+            </parml>
+        </section>
+
+    </body>
+
+</topic>

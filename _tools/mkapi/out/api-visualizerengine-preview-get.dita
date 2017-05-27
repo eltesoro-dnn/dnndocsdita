@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-api-visualizerengine-preview-get">
+
+
+    <title>GET Visualizer Engine</title>
+    <titlealts>
+        <navtitle>GET Visualizer Engine</navtitle>
+    </titlealts>
+
+    <body>
+
+        <section id="apidesc">
+            <title>GET /api/VisualizerEngine/Preview</title>
+            <p></p>
+        </section>
+
+
+        <section id="http-request">
+            <title>HTTP Request</title>
+
+            <sectiondiv id="sectiondiv-url">
+
+                <p outputclass="sectiondivtitle docindent">In the URL,</p>
+
+                <codeblock outputclass="syntaxblock docindent">
+<ph conkeyref="k-bpapi/ph-apibaseurl"></ph>/api/VisualizerEngine/Preview?<varname>query</varname>
+                </codeblock>
+
+                <p outputclass="paramlisttitle docindent">Query Fields</p>
+                <parml outputclass="docindent">
+                    <plentry>
+                        <pt>visualizerId</pt>
+                        <pd>[string] </pd>
+                    </plentry>
+                    <plentry>
+                        <pt>contentItemIds</pt>
+                        <pd>[array] </pd>
+                    </plentry>
+                </parml>
+            </sectiondiv>
+        </section>
+
+
+        <section id="http-response-body">
+            <title>HTTP Response</title>
+
+            <p>Status: <systemoutput>200</systemoutput></p>
+
+            <codeblock outputclass="syntaxblock docindent">
+<ph conkeyref="k-bpapi/ph-definitions-StructuredContent-Services-Visualizers-Dto-VisualizerRenderResult"></ph>
+            </codeblock>
+
+            <p outputclass="paramlisttitle docindent">Response Schema Values</p>
+            <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Visualizers-Dto-VisualizerRenderResult"><plentry><pt/><pd/></plentry></parml>
+        </section>
+
+    </body>
+
+</topic>

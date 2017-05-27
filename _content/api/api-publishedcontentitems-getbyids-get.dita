@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-api-publishedcontentitems-getbyids-get">
+
+
+    <title>GET Published Content Items with ID Array</title>
+    <titlealts>
+        <navtitle>GET Published Content Items with ID Array</navtitle>
+    </titlealts>
+
+    <body>
+
+        <section id="apidesc">
+            <title>GET /api/PublishedContentItems/GetByIds</title>
+            <p></p>
+        </section>
+
+
+        <section id="http-request">
+            <title>HTTP Request</title>
+
+            <sectiondiv id="sectiondiv-url">
+
+                <p outputclass="sectiondivtitle docindent">In the URL,</p>
+
+                <codeblock outputclass="syntaxblock docindent">
+<ph conkeyref="k-bpapi/ph-apibaseurl"></ph>/api/PublishedContentItems/GetByIds?<varname>query</varname>
+                </codeblock>
+
+                <p outputclass="paramlisttitle docindent">Query Fields</p>
+                <parml outputclass="docindent">
+                    <plentry>
+                        <pt>contentItemIds</pt>
+                        <pd>[array] </pd>
+                    </plentry>
+                </parml>
+            </sectiondiv>
+        </section>
+
+
+        <section id="http-response-body">
+            <title>HTTP Response</title>
+
+            <p>Status: <systemoutput>200</systemoutput></p>
+
+            <codeblock outputclass="syntaxblock docindent">
+{
+    [
+    <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-Services-Publishing-Dto-ContentItem"></ph>
+        , ...
+    ]
+}
+            </codeblock>
+
+            <p outputclass="paramlisttitle docindent">Response Schema Values</p>
+            <parml outputclass="docindent">
+                <plentry>
+                    <pt>type</pt>
+                    <pd></pd>
+                </plentry>
+                <plentry>
+                    <pt>items</pt>
+                    <pd>
+                        <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Publishing-Dto-ContentItem"><plentry><pt/><pd/></plentry></parml>
+                    </pd>
+                </plentry>
+            </parml>
+        </section>
+
+    </body>
+
+</topic>

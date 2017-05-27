@@ -21,8 +21,8 @@
                 <xsl:if test="$sitetitle  ='Content Managers'"><div class="subctr cmgctr active"><a href="/docs/content-managers/index.html">Content Managers</a></div></xsl:if>
                 <xsl:if test="$sitetitle !='Content Managers'"><div class="subctr cmgctr"><a href="/docs/content-managers/index.html">Content Managers</a></div></xsl:if>
 
-                <xsl:if test="$sitetitle  ='Developers'"><div class="subctr devctr active"><a href="/docs/developers/index.html">Developers</a></div></xsl:if>
-                <xsl:if test="$sitetitle !='Developers'"><div class="subctr devctr"><a href="/docs/developers/index.html">Developers</a></div></xsl:if>
+                <xsl:if test="    $sitetitle  ='Developers' or $sitetitle  ='APIs'"><div class="subctr devctr active"><a href="/docs/developers/index.html">Developers</a></div></xsl:if>
+                <xsl:if test="not($sitetitle  ='Developers' or $sitetitle  ='APIs')"><div class="subctr devctr"><a href="/docs/developers/index.html">Developers</a></div></xsl:if>
 
                 <xsl:if test="$sitetitle  ='Designers'"><div class="subctr dsgctr active"><a href="/docs/designers/index.html">Designers</a></div></xsl:if>
                 <xsl:if test="$sitetitle !='Designers'"><div class="subctr dsgctr"><a href="/docs/designers/index.html">Designers</a></div></xsl:if>
@@ -45,8 +45,8 @@
                                 <xsl:if test="$sitetitle  ='Content Managers'"><li class="subctr cmgctr active"><a href="/docs/content-managers/index.html">Content Managers</a></li></xsl:if>
                                 <xsl:if test="$sitetitle !='Content Managers'"><li class="subctr cmgctr"><a href="/docs/content-managers/index.html">Content Managers</a></li></xsl:if>
 
-                                <xsl:if test="$sitetitle  ='Developers'"><li class="subctr devctr active"><a href="/docs/developers/index.html">Developers</a></li></xsl:if>
-                                <xsl:if test="$sitetitle !='Developers'"><li class="subctr devctr"><a href="/docs/developers/index.html">Developers</a></li></xsl:if>
+                                <xsl:if test="    $sitetitle  ='Developers' or $sitetitle  ='APIs'"><li class="subctr devctr active"><a href="/docs/developers/index.html">Developers</a></li></xsl:if>
+                                <xsl:if test="not($sitetitle  ='Developers' or $sitetitle  ='APIs')"><li class="subctr devctr"><a href="/docs/developers/index.html">Developers</a></li></xsl:if>
 
                                 <xsl:if test="$sitetitle  ='Designers'"><li class="subctr dsgctr active"><a href="/docs/designers/index.html">Designers</a></li></xsl:if>
                                 <xsl:if test="$sitetitle !='Designers'"><li class="subctr dsgctr"><a href="/docs/designers/index.html">Designers</a></li></xsl:if>

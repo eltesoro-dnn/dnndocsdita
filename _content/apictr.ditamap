@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-APICtr">
+
+    <title>API</title>
+
+
+    <!-- Keys. NOTE: Do NOT use keys for topics that need to have an "active" tag in the toc. -->
+    <keydef keys="k-bptext"     href="common/bptext.dita#top-bptext" />
+    <keydef keys="k-bpsteps"    href="common/bptext-steps.dita#tsk-bptext-steps" />
+    <keydef keys="k-bppbar"     href="common/bptext-pbar.dita#tsk-bptext-pbar" />
+    <keydef keys="k-bppbtabs"   href="common/bptext-pbtabs.dita#tsk-bptext-pbtabs" />
+
+    <keydef keys="k-bpapi"      href="api/bptext-api.dita#top-bptext-api" />
+
+
+    <!-- Topics -->
+    <topicref format="dita" type="topic" toc="yes" href="api/index.dita" collection-type="family">
+
+        <!-- Structured Content -->
+        <mapref href="api/api-structured-content.ditamap" />
+
+        <!-- Form Builder -->
+        <!-- <mapref href="api/form-builder/api-form-builder.ditamap" /> -->
+
+        <!-- References -->
+        <topicref format="dita" type="topic" navtitle="Developer Center" locktitle="yes" toc="yes" scope="peer" href="developers/index.dita" />
+        <topicref format="dita" type="topic" navtitle="Glossary"         locktitle="yes" toc="yes" scope="peer" href="developers/glossary.dita" />
+
+    </topicref>
+
+
+    <!-- RelTables -->
+    <!--
+    <reltable>
+        <relheader>
+            <relcolspec type="concept"/>
+            <relcolspec type="task"/>
+            <relcolspec type="reference"/>
+        </relheader>
+    </reltable>
+    -->
+
+</map>

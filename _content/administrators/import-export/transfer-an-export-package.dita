@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-transfer-an-export-package">
+
+
+    <title>Transfer an Export Package</title>
+    <titlealts>
+        <navtitle>Transfer an Export Package</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>wrET,1704</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring"/>
+            <prodinfo>
+                <prodname>Content</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Engage</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <taskbody>
+
+        <section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section><p>An export creates a set of folders in the local server. To make the export package available for import in another server, you must copy the exported folders to the target server.</p></section>
+
+        <prereq>
+            <ul><li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li></ul>
+        </prereq>
+
+        <steps>
+            <step conref="bptext-import-export.dita#tsk-bptext-import-export/step-find-export-package"><cmd/></step>
+            <step conref="bptext-import-export.dita#tsk-bptext-import-export/step-find-target-folder"><cmd/></step>
+            <step conref="bptext-import-export.dita#tsk-bptext-import-export/step-copy-export-package"><cmd/></step>
+            <step conref="bptext-import-export.dita#tsk-bptext-import-export/step-view-target-import-export-log"><cmd/></step>
+        </steps>
+
+        <result>The export package appears in the <uicontrol>Import / Export Log</uicontrol> in the target server.</result>
+
+    </taskbody>
+
+</task>

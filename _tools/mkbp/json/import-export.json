@@ -1,0 +1,199 @@
+{
+    "global" : {
+        "avail" : "PCE"
+        ,"author" : "wrET,1704"
+        ,"audience" : [
+            {   "audtype" : "administrator"
+                ,"audjob" : "configuring"
+            }
+        ]
+        ,"products" : [ "C91","E91" ]
+    },
+
+
+    "bpsection" : [
+        {   "id" : "note-export-takes-time"
+            ,"text" : "An export can take time depending on the selected components and the size of the site."
+        },
+        {   "id" : "warning-cannot-undo-import"
+            ,"text" : "You cannot undo an import. Back up your site and database before proceeding."
+        },
+        {   "id" : "ul-export-modes"
+            ,"items" : [
+                "<uicontrol>Differential</uicontrol>. Exports only the differences between the last export and the current state."
+                ,"<uicontrol>Full</uicontrol>. Exports the selected components and pages fully. <note type=\"note\">The first export is always a full export.</note>"
+            ]
+        },
+        {   "id" : "tip-set-filter-to-all-exports"
+            ,"text" : "Set <uicontrol>Filter</uicontrol> to <uicontrol>All Exports</uicontrol>."
+        },
+        {   "id" : "warning-copy-all-differential-exports"
+            ,"text" : "If the <uicontrol>Export Mode</uicontrol> is <uicontrol>Differential</uicontrol>, you must copy all export packages since your last import."
+        },
+        {   "id" : "important-same-path-target-source"
+            ,"text" : "The path in the target server must be the same as the path in the source server."
+        }
+    ],
+
+
+    "bptables" : [
+        {   "id" : "boilerplates"
+            ,"rows" : [
+                {   "fld" : "Name"
+                    ,"desc" : "A user-friendly name to refer to the export."
+                },
+                {   "fld" : "Include in Export"
+                    ,"desc" : "The components to export."
+                },
+                {   "fld" : "Pages in Export"
+                    ,"desc" : "The pages to export."
+                },
+                {   "fld" : "Include Deletions"
+                    ,"desc" : "If enabled (<uicontrol>On</uicontrol>), <uicontrol>Recycle Bin</uicontrol> items are exported. <note type=\"note\">These items are not imported into a Production installation.</note>"
+                },
+                {   "fld" : "Run Now"
+                    ,"desc" : "If enabled (<uicontrol>On</uicontrol>), the process starts immediately."
+                },
+                {   "fld" : "Export Mode"
+                    ,"desc" : "conref=ul-export-modes"
+                },
+                {   "fld" : "Overwrite Collisions"
+                    ,"desc" : "If enabled (<uicontrol>On</uicontrol>), objects in the target site will be overwritten."
+                }
+            ]
+        },
+        {   "id" : "simpletable-export-settings"
+            ,"rows" : [
+                "conref=strow-field-name"
+                ,"conref=strow-field-include-in-export"
+                ,"conref=strow-field-pages-in-export"
+                ,"conref=strow-field-include-deletions"
+                ,"conref=strow-field-run-now"
+                ,"conref=strow-field-export-mode"
+            ]
+        },
+        {   "id" : "simpletable-import-settings"
+            ,"rows" : [
+                "conref=strow-field-overwrite-collisions"
+                ,"conref=strow-field-run-now"
+            ]
+        }
+    ],
+
+
+    "bpsteps" : [
+        {   "id" : "step-choose-site-export"
+            ,"cmd" : "Choose a site to export from."
+            ,"info" : "img=scr-Settings-ImportExport-ChooseSite-E91.png|Site dropdown"
+        },
+        {   "id" : "step-choose-site-import"
+            ,"cmd" : "Choose a site to import to."
+            ,"info" : "img=scr-Settings-ImportExport-ChooseSite-E91.png|Site dropdown"
+        },
+        {   "id" : "step-export-data-button"
+            ,"cmd" : "Click/Tap the <uicontrol>Export Data</uicontrol> button."
+            ,"info" : "img=scr-Settings-ImportExport-ExportData-button-E91.png|Export Data button"
+        },
+        {   "id" : "step-import-data-button"
+            ,"cmd" : "Click/Tap the <uicontrol>Import Data</uicontrol> button."
+            ,"info" : "img=scr-Settings-ImportExport-ImportData-button-E91.png|Import Data button"
+        },
+        {   "id" : "step-configure-export-settings"
+            ,"cmd" : "Configure the export settings."
+            ,"info" : [
+                "img=scr-Settings-ImportExport-ExportData-E91.png|Export settings"
+                ,"conref=simpletable-export-settings"
+            ]
+        },
+        {   "id" : "step-select-package-to-import"
+            ,"cmd" : "Click/Tap the package to import. Then <uicontrol>Continue</uicontrol>."
+            ,"info" : "img=scr-Settings-ImportExport-select-package-to-import-E91.png|Package selected for import; Continue button enabled."
+        },
+        {   "id" : "step-configure-import-settings"
+            ,"cmd" : "Configure the import settings."
+            ,"info" : [
+                "img=scr-Settings-ImportExport-ImportData-E91.png|Import settings"
+                ,"conref=simpletable-import-settings"
+            ]
+        },
+        {   "id" : "step-find-export-package"
+            ,"cmd" : "In the source server (where the export was done), find the export package(s)."
+            ,"substeps" : [
+                {   "cmd" : "conkeyref=k-bppbar/ph-pb-host-Settings-Import-Export-E91"
+                    ,"info" : "conkeyref=k-bppbar/fig-pb-host-Settings-Import-Export-E91"
+                },
+                {   "cmd" : "Under <uicontrol>Import / Export Log</uicontrol>, search for the export package(s) you want."
+                    ,"info" : "conref=tip-set-filter-to-all-exports"
+                },
+                {   "cmd" : "Note the <uicontrol>Folder Name</uicontrol> and the <uicontrol>Export Mode</uicontrol>."
+                    ,"info" : "conref=warning-copy-all-differential-exports"
+                },
+                {   "cmd" : "In Windows Explorer, go to the <filepath>App_Data/ExportImport</filepath> folder."
+                    ,"info" : "<p>Each subfolder is an export package.</p>"
+                }
+            ]
+        },
+        {   "id" : "step-find-target-folder"
+            ,"cmd" : "In the target server (where the import will be done), go to the <filepath>App_Data/ExportImport</filepath> folder."
+        },
+        {   "id" : "step-copy-export-package"
+            ,"cmd" : "Copy the export package subfolder from the source server to the target server."
+            ,"info" : "conref=important-same-path-target-source"
+        },
+        {   "id" : "step-view-target-import-export-log"
+            ,"cmd" : "View the <uicontrol>Import / Export Log</uicontrol> of the DNN installation in the target server."
+            ,"info" : "img=scr-Settings-ImportExport-Log-E91.png|Import / Export Log"
+        }
+    ],
+
+
+    "topics" : [
+        {
+            "nav" : "Export Site"
+            ,"title" : "Export a Site"
+            ,"section" : "conref=note-export-takes-time"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Settings-Import-Export host"
+                ,"step-choose-site-export"
+                ,"step-export-data-button"
+                ,"step-configure-export-settings"
+                ,"Click/Tap <uicontrol>Begin Export</uicontrol>."
+            ]
+            ,"postreq" : "Check the <uicontrol>Import / Export Log</uicontrol> for the status of the export."
+        },
+
+        {
+            "nav" : "Import Site"
+            ,"title" : "Import a Site"
+            ,"section" : "conref=warning-cannot-undo-import"
+            ,"prereqs" : [
+                "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>"
+                ,"The export folders must be copied to the server that hosts the target site."
+            ]
+            ,"steps" : [
+                "step-pbar-Settings-Import-Export host"
+                ,"step-choose-site-import"
+                ,"step-import-data-button"
+                ,"step-select-package-to-import"
+                ,"step-configure-import-settings"
+                ,"<uicontrol>Continue</uicontrol>."
+            ]
+            ,"postreq" : "Check the <uicontrol>Import / Export Log</uicontrol> for the status of the import."
+        },
+
+        {
+            "nav" : "Transfer an Export Package"
+            ,"title" : "Transfer an Export Package"
+            ,"section" : "<p>An export creates a set of folders in the local server. To make the export package available for import in another server, you must copy the exported folders to the target server.</p>"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            ,"steps" : [
+                "step-find-export-package"
+                ,"step-find-target-folder"
+                ,"step-copy-export-package"
+                ,"step-view-target-import-export-log"
+            ]
+            ,"result" : "The export package appears in the <uicontrol>Import / Export Log</uicontrol> in the target server."
+        }
+    ]
+}

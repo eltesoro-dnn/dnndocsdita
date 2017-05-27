@@ -202,8 +202,17 @@
         </ant>
     </target>
 
-    <!-- Keep the three centers as separate targets, or else the navs get mixed up. -->
-    <target name="html5" depends="html5-adm, html5-dev, html5-dsg, html5-cmg, html5-mod">
+    <target name="html5-api" depends="html5-prep, html5-dev">
+        <echo level="info">Building html5 APIs ....</echo>
+        <ant antfile="build.xml">
+            <property name="sitetitle" value="APIs"/>
+            <property name="args.input" location="${bld.dir}${file.separator}apictr.ditamap"/>
+            <property name="args.filter" location="${bld.dir}${file.separator}apictr.ditaval"/>
+        </ant>
+    </target>
+
+    <!-- Keep the subcenters as separate targets, or else the navs get mixed up. The html5-api build must immediately follow the html5-dev build. -->
+    <target name="html5" depends="html5-adm, html5-dev, html5-api, html5-dsg, html5-cmg, html5-mod">
         <echo level="info">Completed html5 builds ....</echo>
     </target>
 

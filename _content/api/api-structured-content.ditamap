@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/map.dtd">
+<map xml:lang="en" id="map-api-structured-content">
+
+    <title>API - Structured Content</title>
+
+    <topichead outputclass="sub-nav-tabs" collection-type="family" >
+        <topicmeta><navtitle>Structured Content</navtitle></topicmeta>
+
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Content Types</navtitle></topicmeta>
+            <topicref format="dita" type="topic" toc="yes" href="api-contenttypes-get.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="api-contenttypes-id-get.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="api-contenttypes-post.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="api-contenttypes-id-put.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="api-contenttypes-id-delete.dita" />
+        </topichead>
+
+        <!--
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Visualizers</navtitle></topicmeta>
+            <topicref format="dita" type="task" toc="yes" href="api-visualizers-get.dita" />
+            <topicref format="dita" type="task" toc="yes" href="api-visualizers-id-get.dita" />
+            <topicref format="dita" type="task" toc="yes" href="api-visualizers-post.dita" />
+            <topicref format="dita" type="task" toc="yes" href="api-visualizers-id-put.dita" />
+            <topicref format="dita" type="task" toc="yes" href="api-visualizers-id-delete.dita" />
+            <topicref format="dita" type="task" toc="yes" href="api-visualizers-export-id-post.dita" />
+            <topicref format="dita" type="task" toc="yes" href="api-visualizers-import-post.dita" />
+        </topichead>
+        -->
+
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Content Items</navtitle></topicmeta>
+            <topicref format="dita" type="topic" toc="yes" href="api-contentitems-get.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="api-contentitems-id-get.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="api-contentitems-post.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="api-contentitems-id-put.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="api-contentitems-id-delete.dita" />
+        </topichead>
+
+        <topichead outputclass="sub-nav-tabs" collection-type="family" >
+            <topicmeta><navtitle>Published Content Items</navtitle></topicmeta>
+            <topicref format="dita" type="topic" toc="yes" href="api-publishedcontentitems-get.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="api-publishedcontentitems-getbyids-get.dita" />
+        </topichead>
+
+        <!-- <topicref format="dita" type="topic" toc="yes" href="examples/examples-structured-content-apis.dita" /> -->
+
+    </topichead>
+
+    <!--
+    <topichead outputclass="sub-nav-tabs" collection-type="family" >
+        <topicmeta><navtitle>Form Builder</navtitle></topicmeta>
+
+        <topicref format="dita" type="task" toc="yes" href=".dita" />
+        <topicref format="dita" type="task" toc="yes" href=".dita" />
+        <topicref format="dita" type="task" toc="yes" href=".dita" />
+    </topichead>
+    -->
+
+</map>

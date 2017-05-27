@@ -1,0 +1,32 @@
+{
+    "global" : {
+        ,"author" : "wrET,1705"
+        ,"audience" : [
+            {   "audtype" : "programmer"
+                ,"audjob" : "programming"
+            }
+        ]
+        ,"products" : [ "P91", "C91","E91" ]
+    },
+
+
+    "bpsyntaxdiagram" : [
+    {   "id" : ""
+        ,"text" : ""
+    },
+
+
+    "topics" : [
+
+        {
+            "nav" : "GET Content Item"
+            ,"title" : "GET Content Item"
+            ,"syntaxdiagram" : {
+
+            }
+            ,"sections" : [
+
+            ]
+        }
+    ]
+}

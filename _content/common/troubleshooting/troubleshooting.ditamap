@@ -6,6 +6,9 @@
 
 	<topicref format="dita" type="topic" toc="yes" href="about-troubleshooting.dita" copy-to="index.dita" collection-type="family" >
 
+        <!-- Installation -->
+        <topicref format="dita" type="topic" toc="yes" href="ts-install-missing-resources.dita" />
+
         <!-- Security -->
         <topicref format="dita" type="topic" toc="yes" href="ts-error-login-ip-filtering-is-currently-disabled.dita" />
 

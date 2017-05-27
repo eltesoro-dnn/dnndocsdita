@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-import-export">
+
+    <title>Import / Export</title>
+
+    <!-- Topics -->
+    <topicref format="dita" type="topic" toc="yes" href="about-import-export.dita" copy-to="index.dita" collection-type="family">
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="export-site.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="transfer-an-export-package.dita" />
+        <topicref audience="adm" format="dita" type="task" toc="yes" href="import-site.dita" />
+    </topicref>
+
+</map>

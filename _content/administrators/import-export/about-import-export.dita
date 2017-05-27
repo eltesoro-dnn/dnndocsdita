@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-about-import-export">
+
+    <title>Import / Export</title>
+    <titlealts>
+        <navtitle>Import / Export</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1704</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section id="overview">
+            <p>Import/Export in v9.1 is designed to synchronize two sites in different installations in different servers, such as a staging installation and a production installation.</p>
+
+
+            <note type="important">Before you perform an import, back up your site and database. Imports can only be undone by restoring from a backup.</note>
+
+
+            <p>In addition to exporting and importing within the same product, you can also import packages from a more basic product.
+                <simpletable relcolwidth="1* 3*">
+                    <sthead>
+                        <stentry>You can export from</stentry>
+                        <stentry>and import the package to</stentry>
+                    </sthead>
+                    <strow>
+                        <stentry>DNN Platform</stentry>
+                        <stentry>
+                            <ul>
+                                <li>DNN Platform</li>
+                                <li>Evoq Basic</li>
+                                <li>Evoq Content</li>
+                                <li>Evoq Engage</li>
+                            </ul>
+                        </stentry>
+                    </strow>
+                    <strow>
+                        <stentry>Evoq Basic</stentry>
+                        <stentry>
+                            <ul>
+                                <li>Evoq Basic</li>
+                                <li>Evoq Content</li>
+                                <li>Evoq Engage</li>
+                            </ul>
+                        </stentry>
+                    </strow>
+                    <strow>
+                        <stentry>Evoq Content</stentry>
+                        <stentry>
+                            <ul>
+                                <li>Evoq Content</li>
+                                <li>Evoq Engage</li>
+                            </ul>
+                        </stentry>
+                    </strow>
+                    <strow>
+                        <stentry>Evoq Engage</stentry>
+                        <stentry>
+                            <ul>
+                                <li>Evoq Engage</li>
+                            </ul>
+                        </stentry>
+                    </strow>
+                </simpletable>
+            </p>
+        </section>
+
+
+        <section id="differential-export">
+            <title>Differential Export</title>
+
+            <p>You can export the entire site or select which components to export. You can also choose to perform a <uicontrol>Full</uicontrol> export or a <uicontrol>Differential</uicontrol> export. A differential export includes only the changes from the last export; therefore, the process is faster and the package is smaller.</p>
+
+            <note type="warning">Differential exports must be managed and used carefully.
+                <ul>
+                    <li>Differential packages must be imported in the same order as they were exported, so that the changes are applied correctly.</li>
+                    <li>
+                        <p>Deleting a differential export package will invalidate the differential export packages that were created after it.</p>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/gra-import-export-example.gif"><alt>Illustration of differential scenario if middle differential export is deleted.</alt></image>
+                    </li>
+                </ul>
+            </note>
+        </section>
+
+    </body>
+
+</topic>

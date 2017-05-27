@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-api-contentitems-id-delete">
+
+
+    <title>DELETE Content Items with ID</title>
+    <titlealts>
+        <navtitle>DELETE Content Items with ID</navtitle>
+    </titlealts>
+
+    <body>
+
+        <section id="apidesc">
+            <title>DELETE /api/ContentItems/{id}</title>
+            <p>Deletes the specified content item.</p>
+        </section>
+
+
+        <section id="http-request">
+            <title>HTTP Request</title>
+
+            <sectiondiv id="sectiondiv-url">
+
+                <p outputclass="sectiondivtitle docindent">In the URL,</p>
+
+                <codeblock outputclass="syntaxblock docindent">
+<ph conkeyref="k-bpapi/ph-apibaseurl"></ph>/api/ContentItems/<varname>{id}</varname>
+                </codeblock>
+
+                <p outputclass="paramlisttitle docindent">Path Parameters</p>
+                <parml outputclass="docindent">
+                    <plentry>
+                        <pt>id</pt>
+                        <pd>[string] The unique identifier of the content item to delete.</pd>
+                    </plentry>
+                </parml>
+            </sectiondiv>
+        </section>
+
+
+        <section id="http-response-body">
+            <title>HTTP Response</title>
+
+            <p>Status: <systemoutput>200</systemoutput></p>
+
+            <codeblock outputclass="syntaxblock docindent">
+<ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-ContentItems-ContentItem"></ph>
+            </codeblock>
+
+            <p outputclass="paramlisttitle docindent">Response Schema Values</p>
+            <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-API-Dto-ContentItems-ContentItem"><plentry><pt/><pd/></plentry></parml>
+        </section>
+
+    </body>
+
+</topic>

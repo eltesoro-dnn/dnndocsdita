@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-examples-structured-content-apis">
+
+    <title>Examples: Liquid Content APIs</title>
+    <titlealts>
+        <navtitle>Examples: Liquid Content APIs</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1705</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-CE"></section>
+
+        <section id="overview">
+            <p>The following are GitHub links to examples that use the APIs for the Liquid Content&#8482; (Structured Content) microservice.</p>
+        </section>
+
+
+        <section id="test">
+            <title>test</title>
+            <table frame="all" colsep="1" rowsep="1" >
+                <tgroup cols="3" align="center">
+                    <colspec colname="COL1"/>
+                    <colspec colname="COL2"/>
+                    <colspec colname="COL3"/>
+                    <tbody>
+                        <row>
+                            <entry namest="COL1" nameend="COL3">Short description here.</entry>
+                        </row>
+                        <row>
+                            <entry colname="COL1"><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/">Learn More</xref></entry>
+                            <entry colname="COL2"><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/AI.NLP/README.md">Tutorial</xref></entry>
+                            <entry colname="COL3"><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/AI.NLP">Source</xref></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+
+
+        <!--
+
+                            Blog: http://www.builtwithdnn.com
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/AI.NLP/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/AI.NLP">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/AI.Vision/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/AI.Vision">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/APIExplorer/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/APIExplorer">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/Bots.Azure/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/Bots.Azure">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/Bots.Telegram/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/Bots.Telegram">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/BuiltWithDNNBlog/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/BuiltWithDNNBlog">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/Evoq.Modules/01-JobList.WebForm/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/Evoq.Modules/01-JobList.WebForm">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/Evoq.Modules/02-JobList.AngularJS.Simple/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/Evoq.Modules/02-JobList.AngularJS.Simple">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/Evoq.Modules/03-JobList.AngularJS.Full/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/Evoq.Modules/03-JobList.AngularJS.Full">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/Integration.ChromeCast/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/Integration.ChromeCast">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/Integration.ChromeExtension/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/Integration.ChromeExtension">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/Integration.ERP/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/Integration.ERP">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/Integration.Excel/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/Integration.Excel">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/Integration.SecondLife/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/Integration.SecondLife">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/Mobile.Game/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/Mobile.Game">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/Mobile.Ionic.Android/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/Mobile.Ionic.Android">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/Mobile.ReactNative.Android/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/Mobile.ReactNative.Android">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/Mobile.Xamarin.HelloWorld/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/Mobile.Xamarin.HelloWorld">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/Mobile.Xamarin.LiquidContent/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/Mobile.Xamarin.LiquidContent">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/OfflineVisualizerSync/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/OfflineVisualizerSync">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/ProgressiveWebApp/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/ProgressiveWebApp">Source</xref></entry>
+
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/WinForms/README.md">Tutorial</xref></entry>
+                            <entry><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/WinForms">Source</xref></entry>
+
+
+
+        -->
+
+        <!--
+        <section id="">
+            <title></title>
+            <table frame="all" colsep="1" rowsep="1" >
+                <tgroup cols="3" align="center">
+                    <colspec colname="COL1"/>
+                    <colspec colname="COL2"/>
+                    <colspec colname="COL3"/>
+                    <tbody>
+                        <row>
+                            <entry namest="COL1" nameend="COL3"></entry>
+                        </row>
+                        <row>
+                            <entry colname="COL1><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/">Learn More</xref></entry>
+                            <entry colname="COL2><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/blob/master/.../README.md">Tutorial</xref></entry>
+                            <entry colname="COL3><xref format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Evoq.LiquidContent.Samples.Public/tree/master/...">Source</xref></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+
+
+        -->
+
+
+    </body>
+
+    <related-links>
+        <link format="dita" scope="peer" href="../index.dita"><linktext>DNN Microservices API Reference</linktext></link>
+        <link format="dita" scope="peer" href="../../structured-content/index.dita"><linktext>Liquid Content (Structured Content)</linktext></link>
+    </related-links>
+
+</topic>
