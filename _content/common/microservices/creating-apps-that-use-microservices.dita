@@ -35,7 +35,7 @@
         <section id="overview">
             <title>Overview</title>
 
-            <p>DNN provides APIs that you can use to access the microservices from your app. Essentially, your app simply needs to generate HTTPS requests to <filepath>https://dnnapi.com</filepath> with specific information in the URL path, the URL query, or the body of the request, along with an API key in the HTTP header. The results are sent back in the body of the response from the server.</p>
+            <p>DNN provides APIs that you can use to access the microservices from your app. Essentially, your app simply needs to generate HTTPS requests to <filepath>https://dnnapi.com/content</filepath> with specific information in the URL path, the URL query, or the body of the request, along with an API key in the HTTP header. The results are sent back in the body of the response from the server.</p>
 
             <p>
             <!--
@@ -74,7 +74,7 @@
 
             <p>An item might be a content type, a content item, a published content item, a visualizer, or a visualizer instance<!--, a campaign, a form, a form response, or a set of user preferences for a form -->.</p>
 
-            <note type="important">All API HTTP requests for Evoq sites must go to <filepath>https://dnnapi.com</filepath> .</note>
+            <note type="important">All API HTTP requests for Evoq sites must go to <filepath>https://dnnapi.com/content</filepath> .</note>
 
             <p>The microservices expect the parameters of an API in one of these locations:</p>
             <ul>
@@ -93,31 +93,31 @@
                 <strow>
                     <stentry>GET</stentry>
                     <stentry>list of items</stentry>
-                    <stentry><filepath>https://dnnapi.com/api/<varname>apiname</varname>?<varname>field</varname>=<varname>value</varname></filepath></stentry>
+                    <stentry><filepath>https://dnnapi.com/content/api/<varname>apiname</varname>?<varname>field</varname>=<varname>value</varname></filepath></stentry>
                     <stentry>(Not required.)</stentry>
                 </strow>
                 <strow>
                     <stentry>GET</stentry>
                     <stentry>specific item</stentry>
-                    <stentry><filepath>https://dnnapi.com/api/<varname>apiname</varname>/<varname>itemID</varname></filepath></stentry>
+                    <stentry><filepath>https://dnnapi.com/content/api/<varname>apiname</varname>/<varname>itemID</varname></filepath></stentry>
                     <stentry>(Not required.)</stentry>
                 </strow>
                 <strow>
                     <stentry>POST</stentry>
                     <stentry>specific item</stentry>
-                    <stentry><filepath>https://dnnapi.com/api/<varname>apiname</varname>/<varname>itemID</varname>?publish=TRUE</filepath></stentry>
+                    <stentry><filepath>https://dnnapi.com/content/api/<varname>apiname</varname>/<varname>itemID</varname>?publish=TRUE</filepath></stentry>
                     <stentry>JSON DTO</stentry>
                 </strow>
                 <strow>
                     <stentry>PUT</stentry>
                     <stentry>specific item</stentry>
-                    <stentry><filepath>https://dnnapi.com/api/<varname>apiname</varname>/<varname>itemID</varname>?publish=TRUE</filepath></stentry>
+                    <stentry><filepath>https://dnnapi.com/content/api/<varname>apiname</varname>/<varname>itemID</varname>?publish=TRUE</filepath></stentry>
                     <stentry>JSON DTO</stentry>
                 </strow>
                 <strow>
                     <stentry>DELETE</stentry>
                     <stentry>specific item</stentry>
-                    <stentry><filepath>https://dnnapi.com/api/<varname>apiname</varname>/<varname>itemID</varname></filepath></stentry>
+                    <stentry><filepath>https://dnnapi.com/content/api/<varname>apiname</varname>/<varname>itemID</varname></filepath></stentry>
                     <stentry>(Not required.)</stentry>
                 </strow>
             </simpletable>
@@ -265,7 +265,7 @@
                 </li>
                 <li>Construct the URL of your PUT request to contain the path parameter (<varname>id</varname>) and the optional query parameter (<varname>publish</varname>). Example: If <varname>id</varname> is "11111111-1111-1111" and you want the changes to be published immediately, then the URL would be as follows:
                     <codeblock>
-    https://dnnapi.com/api/ContentItems/11111111-1111-1111?publish=true
+    https://dnnapi.com/content/api/ContentItems/11111111-1111-1111?publish=true
                     </codeblock>
                 </li>
             </ol>

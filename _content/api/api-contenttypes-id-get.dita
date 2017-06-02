@@ -23,12 +23,12 @@
 
                 <p outputclass="sectiondivtitle docindent">In the URL,</p>
 
-                <codeblock outputclass="syntaxblock docindent">
+<codeblock outputclass="syntaxblock docindent">
 <ph conkeyref="k-bpapi/ph-apibaseurl"></ph>/api/ContentTypes/<varname>{id}</varname>
-                </codeblock>
+</codeblock>
 
-                <p outputclass="paramlisttitle docindent">Path Parameters</p>
                 <parml outputclass="docindent">
+                <!-- Path Parameters -->
                     <plentry>
                         <pt>id</pt>
                         <pd>[string] The unique identifier of the content type to get.</pd>
@@ -41,14 +41,105 @@
         <section id="http-response-body">
             <title>HTTP Response</title>
 
-            <p>Status: <systemoutput>200</systemoutput></p>
+                <p outputclass="docindent">Status: <systemoutput>200</systemoutput></p>
 
-            <codeblock outputclass="syntaxblock docindent">
-<ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-ContentType"></ph>
-            </codeblock>
+<codeblock outputclass="syntaxblock docindent">
+{
+    "id" : "string"
+    "createdAt" : "string"
+    "createdBy" :
+        {
+            "id" : "string"
+            "name" : "string"
+            "thumbnail" : "string"
+        }
+    "updatedAt" : "string"
+    "updatedBy" :
+        {
+            "id" : "string"
+            "name" : "string"
+            "thumbnail" : "string"
+        }
+    "name" : "string"
+    "icon" : "string"
+    "description" : "string"
+    "enabled" : "boolean"
+    "fields" : "array"
+    "numberOfItems" : "integer"
+    "numberOfVisualizers" : "integer"
+    "isSystem" : "boolean"
+    "properties" :
+        {
+            "contentName" :
+                {
+                    "type" : "string"
+                    "settings" :
+                        {
+                            "nameGeneratorFields" : "array"
+                        }
+                    "id" : "string"
+                    "name" : "string"
+                    "label" : "string"
+                    "descriptionActive" : "boolean"
+                    "description" : "string"
+                    "tooltipActive" : "boolean"
+                    "tooltip" : "string"
+                    "row" : "integer"
+                    "width" : "string"
+                    "position" : "string"
+                }
+            "contentTags" :
+                {
+                    "type" : "string"
+                    "validation" :
+                        {
+                            "requireField" :
+                                {
+                                    "active" : "boolean"
+                                    "errorMessage" : "string"
+                                }
+                            "standardErrorMessage" : "string"
+                        }
+                    "id" : "string"
+                    "name" : "string"
+                    "label" : "string"
+                    "descriptionActive" : "boolean"
+                    "description" : "string"
+                    "tooltipActive" : "boolean"
+                    "tooltip" : "string"
+                    "row" : "integer"
+                    "width" : "string"
+                    "position" : "string"
+                }
+            "contentDescription" :
+                {
+                    "type" : "string"
+                    "validation" :
+                        {
+                            "requireField" :
+                                {
+                                    "active" : "boolean"
+                                    "errorMessage" : "string"
+                                }
+                            "standardErrorMessage" : "string"
+                        }
+                    "id" : "string"
+                    "name" : "string"
+                    "label" : "string"
+                    "descriptionActive" : "boolean"
+                    "description" : "string"
+                    "tooltipActive" : "boolean"
+                    "tooltip" : "string"
+                    "row" : "integer"
+                    "width" : "string"
+                    "position" : "string"
+                }
+        }
+}
+</codeblock>
 
-            <p outputclass="paramlisttitle docindent">Response Schema Values</p>
-            <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-API-Dto-ContentType"><plentry><pt/><pd/></plentry></parml>
+            <!-- Response Schema Values -->
+            <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-API-Dto-ContentTypes-ContentType"><plentry><pt/><pd/></plentry></parml>
         </section>
 
     </body>

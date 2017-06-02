@@ -23,12 +23,12 @@
 
                 <p outputclass="sectiondivtitle docindent">In the URL,</p>
 
-                <codeblock outputclass="syntaxblock docindent">
+<codeblock outputclass="syntaxblock docindent">
 <ph conkeyref="k-bpapi/ph-apibaseurl"></ph>/api/ContentItems/<varname>{id}</varname>
-                </codeblock>
+</codeblock>
 
-                <p outputclass="paramlisttitle docindent">Path Parameters</p>
                 <parml outputclass="docindent">
+                <!-- Path Parameters -->
                     <plentry>
                         <pt>id</pt>
                         <pd>[string] The unique identifier of the content item to get.</pd>
@@ -41,13 +41,54 @@
         <section id="http-response-body">
             <title>HTTP Response</title>
 
-            <p>Status: <systemoutput>200</systemoutput></p>
+                <p outputclass="docindent">Status: <systemoutput>200</systemoutput></p>
 
-            <codeblock outputclass="syntaxblock docindent">
-<ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-ContentItems-ContentItem"></ph>
-            </codeblock>
+<codeblock outputclass="syntaxblock docindent">
+{
+    "id" : "string"
+    "slug" : "string"
+    "contentTypeId" : "string"
+    "contentTypeName" : "string"
+    "name" : "string"
+    "description" : "string"
+    "language" : "string"
+    "alreadyPublished" : "boolean"
+    "details" : "object"
+    "currentVersion" : "integer"
+    "usages" : "integer"
+    "createdAt" : "string"
+    "createdBy" :
+        {
+            "id" : "string"
+            "name" : "string"
+            "thumbnail" : "string"
+        }
+    "updatedAt" : "string"
+    "updatedBy" :
+        {
+            "id" : "string"
+            "name" : "string"
+            "thumbnail" : "string"
+        }
+    "stateId" : "integer"
+    "tags" : "array"
+    "clientReferenceId" : "string"
+    "seoSettings" :
+        {
+            "pageTitle" : "string"
+            "description" : "string"
+            "keywords" : "array"
+            "image" :
+                {
+                    "fileName" : "string"
+                    "fileId" : "integer"
+                    "url" : "string"
+                }
+        }
+}
+</codeblock>
 
-            <p outputclass="paramlisttitle docindent">Response Schema Values</p>
+            <!-- Response Schema Values -->
             <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-API-Dto-ContentItems-ContentItem"><plentry><pt/><pd/></plentry></parml>
         </section>
 

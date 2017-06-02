@@ -23,51 +23,58 @@
 
                 <p outputclass="sectiondivtitle docindent">In the URL,</p>
 
-                <codeblock outputclass="syntaxblock docindent">
+<codeblock outputclass="syntaxblock docindent">
 <ph conkeyref="k-bpapi/ph-apibaseurl"></ph>/api/PublishedContentItems?<varname>query</varname>
-                </codeblock>
+</codeblock>
 
-                <p outputclass="paramlisttitle docindent">Query Fields</p>
                 <parml outputclass="docindent">
+                <!-- Query Fields -->
                     <plentry>
-                        <pt>published</pt>
-                        <pd>[string] (Optional) </pd>
-                    </plentry>
-                    <plentry>
-                        <pt>tags</pt>
-                        <pd>[string] (Optional) </pd>
-                    </plentry>
-                    <plentry>
-                        <pt>contenttypeid</pt>
-                        <pd>[string] (Optional) </pd>
-                    </plentry>
-                    <plentry>
-                        <pt>searchtext</pt>
-                        <pd>[string] (Optional) </pd>
-                    </plentry>
-                    <plentry>
-                        <pt>startindex</pt>
-                        <pd>[string] (Optional) </pd>
-                    </plentry>
-                    <plentry>
-                        <pt>maxitems</pt>
-                        <pd>[string] (Optional) </pd>
-                    </plentry>
-                    <plentry>
-                        <pt>fieldorder</pt>
-                        <pd>[string] (Optional) </pd>
-                    </plentry>
-                    <plentry>
-                        <pt>orderasc</pt>
-                        <pd>[boolean] (Optional) </pd>
-                    </plentry>
-                    <plentry>
-                        <pt>createdfrom</pt>
-                        <pd>[string] (Optional) </pd>
-                    </plentry>
-                    <plentry>
-                        <pt>createdto</pt>
-                        <pd>[string] (Optional) </pd>
+                        <pt>query</pt>
+                        <pd>Can include the following keys and their associated values:
+                            <parml outputclass="docindent">
+                                <plentry>
+                                    <pt>query.published</pt>
+                                    <pd>[boolean] (Optional) If true, only published content items are included in the results.</pd>
+                                </plentry>
+                                <plentry>
+                                    <pt>query.tags</pt>
+                                    <pd>[string] (Optional) The tags to search for. Comma-separated and URL-encoded. Example: tags=my%20tag,tag2,lastTag</pd>
+                                </plentry>
+                                <plentry>
+                                    <pt>query.contentTypeId</pt>
+                                    <pd>[string] (Optional) </pd>
+                                </plentry>
+                                <plentry>
+                                    <pt>query.searchText</pt>
+                                    <pd>[string] (Optional) </pd>
+                                </plentry>
+                                <plentry>
+                                    <pt>query.startIndex</pt>
+                                    <pd>[integer] (Optional) </pd>
+                                </plentry>
+                                <plentry>
+                                    <pt>query.maxItems</pt>
+                                    <pd>[integer] (Optional) </pd>
+                                </plentry>
+                                <plentry>
+                                    <pt>query.fieldOrder</pt>
+                                    <pd>[string] (Optional) </pd>
+                                </plentry>
+                                <plentry>
+                                    <pt>query.orderAsc</pt>
+                                    <pd>[boolean] (Optional) </pd>
+                                </plentry>
+                                <plentry>
+                                    <pt>query.createdFrom</pt>
+                                    <pd>[string] (Optional) </pd>
+                                </plentry>
+                                <plentry>
+                                    <pt>query.createdTo</pt>
+                                    <pd>[string] (Optional) </pd>
+                                </plentry>
+                            </parml>
+                        </pd>
                     </plentry>
                 </parml>
             </sectiondiv>
@@ -77,13 +84,16 @@
         <section id="http-response-body">
             <title>HTTP Response</title>
 
-            <p>Status: <systemoutput>200</systemoutput></p>
+                <p outputclass="docindent">Status: <systemoutput>200</systemoutput></p>
 
-            <codeblock outputclass="syntaxblock docindent">
-<ph conkeyref="k-bpapi/ph-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-Services-Publishing-Dto-ContentItem"></ph>
-            </codeblock>
+<codeblock outputclass="syntaxblock docindent">
+{
+    "documents" : "array"
+    "totalResultCount" : "integer"
+}
+</codeblock>
 
-            <p outputclass="paramlisttitle docindent">Response Schema Values</p>
+            <!-- Response Schema Values -->
             <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-Services-Publishing-Dto-ContentItem"><plentry><pt/><pd/></plentry></parml>
         </section>
 

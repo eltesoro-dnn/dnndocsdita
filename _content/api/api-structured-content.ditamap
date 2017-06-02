@@ -4,8 +4,7 @@
 
     <title>API - Structured Content</title>
 
-    <topichead outputclass="sub-nav-tabs" collection-type="family" >
-        <topicmeta><navtitle>Structured Content</navtitle></topicmeta>
+    <topicref format="dita" type="topic" navtitle="Structured Content" locktitle="yes" toc="yes" href="about-structured-content-apis.dita" collection-type="family" >
 
         <topichead outputclass="sub-nav-tabs" collection-type="family" >
             <topicmeta><navtitle>Content Types</navtitle></topicmeta>
@@ -46,7 +45,7 @@
 
         <!-- <topicref format="dita" type="topic" toc="yes" href="examples/examples-structured-content-apis.dita" /> -->
 
-    </topichead>
+    </topicref>
 
     <!--
     <topichead outputclass="sub-nav-tabs" collection-type="family" >

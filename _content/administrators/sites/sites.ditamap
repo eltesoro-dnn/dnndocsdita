@@ -12,6 +12,7 @@
             <topicref format="dita" type="task" toc="yes" href="edit-site-properties.dita" />
             <topicref format="dita" type="task" toc="yes" href="view-site.dita" />
             <topicref format="dita" type="task" toc="yes" href="delete-site.dita" />
+            <topicref format="dita" type="task" toc="yes" href="move-site-to-another-server.dita" />
         </topichead>
 
         <topichead outputclass="sub-nav-tabs" collection-type="family" >
@@ -23,6 +24,7 @@
         </topichead>
 
         <mapref href="../import-export/import-export.ditamap" />
+
 
     </topicref>
 

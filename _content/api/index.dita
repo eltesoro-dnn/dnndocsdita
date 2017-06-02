@@ -34,7 +34,14 @@
 
     <body>
 
-        <p>See <xref format="dita" scope="peer" href="../../microservices/creating-apps-that-use-microservices.dita">Creating Apps That Use Microservices</xref>.</p>
+        <section id="overview">
+            <title>About the DNN Microservices APIs</title>
+
+            <p>The DNN Microservices APIs provide access to actual content and related objects served by the DNN microservices. Unlike the module-creation APIs, these APIs use the HTTP/HTTPS protocol to communicate with the microservices.</p>
+
+            <p>For more information, see <xref format="dita" scope="peer" href="../developers/microservices/creating-apps-that-use-microservices.dita">Creating Apps That Use Microservices</xref>.</p>
+
+        </section>
 
     </body>
 

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-about-structured-content-apis">
+
+    <title>About Structured Content APIs</title>
+    <titlealts>
+        <navtitle>Structured Content APIs</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1706</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+        <section id="overview">
+            <title>Structured Content APIs</title>
+
+            <p>The <term>Liquid Content&#8482; (Structured Content)</term> APIs expose the content types and content items in a site.</p>
+        </section>
+
+        <section id="content-types">
+            <title>Content Types</title>
+
+            <ul>
+                <li><xref format="dita" href="api-contentitems-get.dita">GET Content Types</xref> returns a list of content types that match the query.</li>
+                <li><xref format="dita" href="api-contentitems-id-get.dita">GET Content Types with ID</xref> returns the specific content type with the specified ID.</li>
+                <li><xref format="dita" href="api-contentitems-post.dita">POST Content Types</xref> creates a new content type.</li>
+                <li><xref format="dita" href="api-contentitems-id-put.dita">PUT Content Types with ID</xref> updates the content type with the specified ID.</li>
+                <li><xref format="dita" href="api-contentitems-id-delete.dita">DELETE Content Types with ID</xref> deletes the content type with the specified ID.</li>
+            </ul>
+        </section>
+
+        <section id="content-items">
+            <title>Content Items</title>
+
+            <ul>
+                <li><xref format="dita" href="api-contenttypes-get.dita">GET Content Items</xref> returns a list of content items that match the query.</li>
+                <li><xref format="dita" href="api-contenttypes-id-get.dita">GET Content Items with ID</xref> returns the specific content item with the specified ID.</li>
+                <li><xref format="dita" href="api-contenttypes-post.dita">POST Content Items</xref> creates a new content item.</li>
+                <li><xref format="dita" href="api-contenttypes-id-put.dita">PUT Content Items with ID</xref> updates the content item with the specified ID.</li>
+                <li><xref format="dita" href="api-contenttypes-id-delete.dita">DELETE Content Items with ID</xref> deletes the content item with the specified ID.</li>
+            </ul>
+        </section>
+
+        <section id="published-content-items">
+            <title>Published Content Items</title>
+
+            <ul>
+                <li><xref format="dita" href="api-publishedcontentitems-get.dita">GET Published Content Items</xref> returns a list of published content items that match the query.</li>
+                <li><xref format="dita" href="api-publishedcontentitems-getbyids-get.dita">GET Published Content Items with ID Array</xref> returns the published content items with the specified IDs.</li>
+            </ul>
+        </section>
+
+    </body>
+
+
+    <related-links>
+        <link format="dita" scope="peer" href="../developers/microservices/creating-apps-that-use-microservices.dita"><linktext>Creating Apps That Use Microservices</linktext></link>
+    </related-links>
+
+</topic>

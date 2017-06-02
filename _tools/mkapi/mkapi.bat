@@ -15,11 +15,18 @@ if not exist %~dp0out\*  md %~dp0out > nul
 del %~dp0out\* /q
 powershell -file mkapi.ps1 %2 %3 %4 %~dp0out %5
 call windiff %5\* %~dp0out\*
+
+echo.
+echo *** Would you like to copy modified files from %~dp0out to %5? (Note: Only existing files are updated.) [y/n] ***
+set /p _ans=[y/n]
+if _%_ans%_ -ne y  goto :review
+cd /d %5
+for /f "usebackq" %%v in ( `dir *.* /b` ) do  if exist %~dp0out\%%v  xcopy %~dp0out\%%v %5 /v
+:review
 start %5
 start %~dp0out
 npp %5\bp* %~dp0out\bp*
 goto :eof
-
 
 
 :error

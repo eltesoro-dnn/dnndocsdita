@@ -161,12 +161,8 @@ function CountChildren( [PSCustomObject] $parentnode )  {
 function WriteSingleKeyValue( [string] $field, [PSCustomObject] $node, [string] $indent )  {
     if ( $field.CompareTo( '$ref' ) -eq 0 )  {
         if ( $node -and ( $node.StartsWith( "#/" ) ) )  {
-            # This creates a conkeyref. Not ideal in bptext-api due to nested indentation problem within a codeblock.
-            WriteConref $node "ph" $indent
-        }
-        else  {
-            # This expands and formats the node in situ. Better solution.
-            WrapAndWriteNodeAsSchema $definitionsnode.$node "$indent"
+            $repl = $node.Replace( "#/definitions/", "" )
+            WrapAndWriteNodeAsSchema $definitionsnode.$repl "$indent"
         }
     }
     elseif ( $field.CompareTo( "enum" ) -eq 0 )  {
@@ -481,17 +477,17 @@ function WriteResponse( [string] $apiname, [PSCustomObject] $node, [string] $ind
     $node.responses | foreach  {
         $status = $_.psobject.properties.name
         Write-Output ""
-        Write-Output "$indent$tab<p>Status: <systemoutput>$status</systemoutput></p>"
+        Write-Output "$indent$tab$tab<p outputclass=""docindent"">Status: <systemoutput>$status</systemoutput></p>"
 
         # Codeblock for schema
         Write-Output ""
-        Write-Output "$indent$tab<codeblock outputclass=""syntaxblock docindent"">"
+        Write-Output "<codeblock outputclass=""syntaxblock docindent"">"
         WrapAndWriteNodeAsSchema $_.$status.schema ""
-        Write-Output "$indent$tab</codeblock>"
+        Write-Output "</codeblock>"
 
         # Parameters for schema
         Write-Output ""
-        Write-Output "$indent$tab<p outputclass=""paramlisttitle docindent"">Response Schema Values</p>"
+        Write-Output "$indent$tab<!-- Response Schema Values -->"
         WrapAndWriteNodeAsParams $_.$status.schema "$indent$tab"
     }
 
@@ -508,20 +504,19 @@ function WriteDTOParams( [string] $apiname, [PSCustomObject] $node, [string] $in
 
     # NOTE: Assumes that there is only one parameter where "in" == "body".
     $node.parameters | Where-Object { $_.in -eq "body" } | foreach  {
-        # Name and description of the "body" parameter.
-        Write-Output "$indent$tab<parml outputclass=""docindent"">"
-        WriteSingleParam $_.name $_ $indent$tab$tab
-        Write-Output "$indent$tab</parml>"
+        # Description of the "body" parameter.
+        $desc = $_.description
+        Write-Output "$indent$tab<p outputclass=""docindent"">$desc</p>"
 
         # Codeblock for schema
         Write-Output ""
-        Write-Output "$indent$tab<codeblock outputclass=""syntaxblock docindent"">"
+        Write-Output "<codeblock outputclass=""syntaxblock docindent"">"
         WriteNodeAsSchema $_.schema ""
-        Write-Output "$indent$tab</codeblock>"
+        Write-Output "</codeblock>"
 
         # Parameters for schema
         Write-Output ""
-        Write-Output "$indent$tab<p outputclass=""paramlisttitle docindent"">Message Body Schema Values</p>"
+        Write-Output "$indent$tab<!-- Message Body Schema Values -->"
         WrapAndWriteNodeAsParams $_.schema "$indent$tab"
     }
 
@@ -542,26 +537,33 @@ function WriteURLSyntax( [string] $apiname, [PSCustomObject] $node, [string] $in
     Write-Output ""
     Write-Output "$indent$tab<p outputclass=""sectiondivtitle docindent"">In the URL,</p>"
     Write-Output ""
-    Write-Output "$indent$tab<codeblock outputclass=""syntaxblock docindent"">"
+    Write-Output "<codeblock outputclass=""syntaxblock docindent"">"
     Write-Output "$syntaxcode"
-    Write-Output "$indent$tab</codeblock>"
+    Write-Output "</codeblock>"
 
     # Parameters
-    $countparams = CountParams $node.parameters "in" "path"
-    if ( $countparams -gt 0 )  {
+    $countpath  = CountParams $node.parameters "in" "path"
+    $countquery = CountParams $node.parameters "in" "query"
+    $countall = $countpath + $countquery
+    if ( $countall -gt 0 )  {
         Write-Output ""
-        Write-Output "$indent$tab<p outputclass=""paramlisttitle docindent"">Path Parameters</p>"
         Write-Output "$indent$tab<parml outputclass=""docindent"">"
-        WriteURLParams $node.parameters "path"  "$indent$tab$tab"
-        Write-Output "$indent$tab</parml>"
-    }
 
-    $countparams = CountParams $node.parameters "in" "query"
-    if ( $countparams -gt 0 )  {
-        Write-Output ""
-        Write-Output "$indent$tab<p outputclass=""paramlisttitle docindent"">Query Fields</p>"
-        Write-Output "$indent$tab<parml outputclass=""docindent"">"
-        WriteURLParams $node.parameters "query" "$indent$tab$tab"
+        if ( $countpath -gt 0 )  {
+            Write-Output "$indent$tab<!-- Path Parameters -->"
+            WriteURLParams $node.parameters "path"  "$indent$tab$tab"
+        }
+        if ( $countquery -gt 0 )  {
+            Write-Output "$indent$tab<!-- Query Fields -->"
+            Write-Output "$indent$tab$tab<plentry>"
+            Write-Output "$indent$tab$tab$tab<pt>query</pt>"
+            Write-Output "$indent$tab$tab$tab<pd>Can include the following keys and their associated values:"
+                Write-Output "$indent$tab$tab$tab$tab<parml outputclass=""docindent"">"
+                WriteURLParams $node.parameters "query" "$indent$tab$tab$tab$tab$tab"
+                Write-Output "$indent$tab$tab$tab$tab</parml>"
+            Write-Output "$indent$tab$tab$tab</pd>"
+            Write-Output "$indent$tab$tab</plentry>"
+        }
         Write-Output "$indent$tab</parml>"
     }
 

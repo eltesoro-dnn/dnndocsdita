@@ -1,6 +1,6 @@
 /*
  | Based on the DITA Open Toolkit project.
- | ?ver=170525
+ | ?ver=170602
 */
 
 
@@ -281,6 +281,13 @@ header {
 }
 .header nav > ul ul, .header-home nav > ul ul {
   display: none;
+}
+
+:target:before {
+content:"";
+display:block;
+height:250px; /* fixed header height*/
+margin:-250px 0 0; /* negative fixed header height */
 }
 
 /* ------------------------------------------------------------
@@ -583,7 +590,14 @@ dt.prereq {
   margin-bottom: 1em;
 }
 .docindent {
-  margin-left: 50px;
+  margin-left: 20px;
+}
+.syntaxblock,
+.paramlisttitle {
+  margin-left: 40px;
+}
+.parml {
+  margin-left: 60px;
 }
 .example {
   margin-top: 1em;
@@ -694,9 +708,13 @@ ul.simple {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+.stepsection,
 .substepexpand {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+.superstep {
+  font-size: 110%;
 }
 /* Align images based on @align on topic/image */
 div.imageleft {
@@ -772,6 +790,9 @@ span.filepath {
   overflow: auto;
   line-height: 110%;
   font-size: 105%;
+}
+.codeblock {
+  margin: 1em;
 }
 .msgph,
 .msgblock {

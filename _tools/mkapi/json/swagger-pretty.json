@@ -3,9 +3,9 @@
     "info": {
         "version": "v1",
         "title": "Structured Content API",
-        "description": "Build 01.16.00.12"
+        "description": "Build 01.16.00.21"
     },
-    "host": "qa-sc.dnnapi.com:80",
+    "host": "qa-sc.dnnapi.com",
     "schemes": [
         "http"
     ],
@@ -15,6 +15,7 @@
                 "tags": [
                     "ApiKeys"
                 ],
+                "summary": "Resets the specified api key.",
                 "operationId": "Api Keys: Post Reset Api Key",
                 "consumes": [],
                 "produces": [
@@ -27,6 +28,7 @@
                     {
                         "name": "id",
                         "in": "path",
+                        "description": "The unique identifier of the api key to reset.",
                         "required": true,
                         "type": "string"
                     }
@@ -39,7 +41,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -54,6 +55,7 @@
                 "tags": [
                     "ApiKeys"
                 ],
+                "summary": "Gets all the api keys that match the specified criteria.",
                 "operationId": "Api Keys: Get Api Keys",
                 "consumes": [],
                 "produces": [
@@ -64,46 +66,50 @@
                 ],
                 "parameters": [
                     {
-                        "name": "searchtext",
+                        "name": "query.searchText",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "startindex",
+                        "name": "query.startIndex",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "query.maxItems",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "query.fieldOrder",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "maxitems",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "fieldorder",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "orderasc",
+                        "name": "query.orderAsc",
                         "in": "query",
                         "required": false,
                         "type": "boolean"
                     },
                     {
-                        "name": "createdfrom",
+                        "name": "query.createdFrom",
                         "in": "query",
                         "required": false,
-                        "type": "string"
+                        "type": "string",
+                        "format": "date-time"
                     },
                     {
-                        "name": "createdto",
+                        "name": "query.createdTo",
                         "in": "query",
                         "required": false,
-                        "type": "string"
+                        "type": "string",
+                        "format": "date-time"
                     }
                 ],
                 "responses": {
@@ -114,7 +120,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -127,6 +132,7 @@
                 "tags": [
                     "ApiKeys"
                 ],
+                "summary": "Creates a new api key.",
                 "operationId": "Api Keys: Post Api Key",
                 "consumes": [
                     "application/json",
@@ -145,6 +151,7 @@
                     {
                         "name": "apiKeyDto",
                         "in": "body",
+                        "description": "The settings for the new api key.",
                         "required": true,
                         "schema": {
                             "$ref": "#/definitions/StructuredContent.API.Dto.ApiKeys.ApiKeyCreation"
@@ -159,7 +166,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -174,6 +180,7 @@
                 "tags": [
                     "ApiKeys"
                 ],
+                "summary": "Gets the api key with the specified identifier.",
                 "operationId": "Api Keys: Get Api Key",
                 "consumes": [],
                 "produces": [
@@ -186,6 +193,7 @@
                     {
                         "name": "id",
                         "in": "path",
+                        "description": "The unique identifier of the api key to get.",
                         "required": true,
                         "type": "string"
                     }
@@ -198,7 +206,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -211,6 +218,7 @@
                 "tags": [
                     "ApiKeys"
                 ],
+                "summary": "Updates the specified api key.",
                 "operationId": "Api Keys: Put Api Key",
                 "consumes": [
                     "application/json",
@@ -229,12 +237,14 @@
                     {
                         "name": "id",
                         "in": "path",
+                        "description": "The unique identifier of the api key to update.",
                         "required": true,
                         "type": "string"
                     },
                     {
                         "name": "apiKeyDto",
                         "in": "body",
+                        "description": "The new settings for the specified api key.",
                         "required": true,
                         "schema": {
                             "$ref": "#/definitions/StructuredContent.API.Dto.ApiKeys.ApiKeyCreation"
@@ -249,7 +259,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -262,6 +271,7 @@
                 "tags": [
                     "ApiKeys"
                 ],
+                "summary": "Deletes the specified api key.",
                 "operationId": "Api Keys: Delete Api Key",
                 "consumes": [],
                 "produces": [
@@ -274,6 +284,7 @@
                     {
                         "name": "id",
                         "in": "path",
+                        "description": "The unique identifier of the api key to delete.",
                         "required": true,
                         "type": "string"
                     }
@@ -286,7 +297,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -301,6 +311,7 @@
                 "tags": [
                     "ContentItemAnalytics"
                 ],
+                "summary": "Gets all url given a specified Content Item identifier and a criteria.",
                 "operationId": "Content Item Analytics: Get Shared Urls",
                 "consumes": [],
                 "produces": [
@@ -311,20 +322,20 @@
                 ],
                 "parameters": [
                     {
-                        "name": "contentitemid",
+                        "name": "queryDto.contentItemId",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "startindex",
+                        "name": "queryDto.startIndex",
                         "in": "query",
                         "required": false,
                         "type": "integer",
                         "format": "int32"
                     },
                     {
-                        "name": "maxitems",
+                        "name": "queryDto.maxItems",
                         "in": "query",
                         "required": false,
                         "type": "integer",
@@ -339,7 +350,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -354,6 +364,7 @@
                 "tags": [
                     "ContentItemAnalytics"
                 ],
+                "summary": "Gets all analytics given a specified Content Item identifier.",
                 "operationId": "Content Item Analytics: Get Content Item Analytics",
                 "consumes": [],
                 "produces": [
@@ -366,6 +377,7 @@
                     {
                         "name": "id",
                         "in": "path",
+                        "description": "The unique identifier of the Content Item.",
                         "required": true,
                         "type": "string"
                     }
@@ -381,7 +393,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -426,7 +437,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -468,7 +478,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -510,7 +519,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -550,7 +558,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -590,7 +597,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -616,64 +622,70 @@
                 ],
                 "parameters": [
                     {
-                        "name": "published",
+                        "name": "query.published",
+                        "in": "query",
+                        "description": "If true, only published content items are included in the results.",
+                        "required": false,
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "query.tags",
+                        "in": "query",
+                        "description": "The tags to search for. Comma-separated and URL-encoded. Example: tags=my%20tag,tag2,lastTag",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "query.contentTypeId",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "tags",
+                        "name": "query.searchText",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "contenttypeid",
+                        "name": "query.startIndex",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "query.maxItems",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "query.fieldOrder",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "searchtext",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "startindex",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "maxitems",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "fieldorder",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "orderasc",
+                        "name": "query.orderAsc",
                         "in": "query",
                         "required": false,
                         "type": "boolean"
                     },
                     {
-                        "name": "createdfrom",
+                        "name": "query.createdFrom",
                         "in": "query",
                         "required": false,
-                        "type": "string"
+                        "type": "string",
+                        "format": "date-time"
                     },
                     {
-                        "name": "createdto",
+                        "name": "query.createdTo",
                         "in": "query",
                         "required": false,
-                        "type": "string"
+                        "type": "string",
+                        "format": "date-time"
                     }
                 ],
                 "responses": {
@@ -684,7 +696,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -719,7 +730,7 @@
                         "description": "The settings for the new content item.",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentItems.ContentItem"
+                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentItems.ContentItemCreation"
                         }
                     },
                     {
@@ -738,7 +749,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -779,7 +789,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -821,7 +830,7 @@
                         "description": "The new settings for the specified content item.",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentItems.ContentItem"
+                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentItems.ContentItemCreation"
                         }
                     },
                     {
@@ -840,7 +849,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -879,7 +887,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -905,57 +912,60 @@
                 ],
                 "parameters": [
                     {
-                        "name": "searchtext",
+                        "name": "query.searchText",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "startindex",
+                        "name": "query.startIndex",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "query.maxItems",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "query.fieldOrder",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "maxitems",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "fieldorder",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "orderasc",
+                        "name": "query.orderAsc",
                         "in": "query",
                         "required": false,
                         "type": "boolean"
                     },
                     {
-                        "name": "createdfrom",
+                        "name": "query.createdFrom",
                         "in": "query",
                         "required": false,
-                        "type": "string"
+                        "type": "string",
+                        "format": "date-time"
                     },
                     {
-                        "name": "createdto",
+                        "name": "query.createdTo",
                         "in": "query",
                         "required": false,
-                        "type": "string"
+                        "type": "string",
+                        "format": "date-time"
                     }
                 ],
                 "responses": {
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/StructuredContent.Services.Dto.SearchResultDto[StructuredContent.API.Dto.ContentType]"
+                            "$ref": "#/definitions/StructuredContent.Services.Dto.SearchResultDto[StructuredContent.API.Dto.ContentTypes.ContentType]"
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -990,7 +1000,7 @@
                         "description": "The settings for the new content type.",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentType"
+                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentTypes.ContentTypeCreation"
                         }
                     }
                 ],
@@ -998,11 +1008,10 @@
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentType"
+                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentTypes.ContentType"
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1039,11 +1048,10 @@
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentType"
+                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentTypes.ContentType"
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1085,7 +1093,7 @@
                         "description": "The new settings for the specified content type.",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentType"
+                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentTypes.ContentTypeCreation"
                         }
                     }
                 ],
@@ -1093,11 +1101,10 @@
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentType"
+                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentTypes.ContentType"
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1132,11 +1139,10 @@
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentType"
+                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentTypes.ContentType"
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1151,6 +1157,7 @@
                 "tags": [
                     "EmbedVisualizerInstances"
                 ],
+                "summary": "Creates a new embed visualizer instance.",
                 "operationId": "Embed Visualizer Instances: Post Embed Visualizer Instance",
                 "consumes": [
                     "application/json",
@@ -1169,6 +1176,7 @@
                     {
                         "name": "embedVisualizerInstanceCreation",
                         "in": "body",
+                        "description": "The settings for the new embed visualizer instance.",
                         "required": true,
                         "schema": {
                             "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.Embed.EmbedVisualizerInstanceCreation"
@@ -1183,7 +1191,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1198,7 +1205,7 @@
                 "tags": [
                     "Management"
                 ],
-                "summary": "Copy tenant operation",
+                "summary": "Copy tenant operation.",
                 "operationId": "Management: Post Copy Tenant",
                 "consumes": [
                     "application/json",
@@ -1217,10 +1224,10 @@
                     {
                         "name": "postData",
                         "in": "body",
-                        "description": "",
+                        "description": "Copy tenant parameters",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/Evoq.Microservices.Framework.Api.Controllers.CopyTenantInput"
+                            "$ref": "#/definitions/Evoq.Microservices.Framework.Api.Controllers.DnnServicesManagement.CopyTenantInput"
                         }
                     }
                 ],
@@ -1228,11 +1235,10 @@
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/System.Object"
+                            "type": "object"
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1247,6 +1253,7 @@
                 "tags": [
                     "PublishedContentItems"
                 ],
+                "summary": "Gets the latest versions of the published content items that match the specified identifiers.",
                 "operationId": "Published Content Items: Get Published Content Items By Ids",
                 "consumes": [],
                 "produces": [
@@ -1259,6 +1266,7 @@
                     {
                         "name": "contentItemIds",
                         "in": "query",
+                        "description": "Collection of content items identifiers.",
                         "required": true,
                         "type": "array",
                         "items": {
@@ -1278,7 +1286,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1305,64 +1312,70 @@
                 ],
                 "parameters": [
                     {
-                        "name": "published",
+                        "name": "query.published",
+                        "in": "query",
+                        "description": "If true, only published content items are included in the results.",
+                        "required": false,
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "query.tags",
+                        "in": "query",
+                        "description": "The tags to search for. Comma-separated and URL-encoded. Example: tags=my%20tag,tag2,lastTag",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "query.contentTypeId",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "tags",
+                        "name": "query.searchText",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "contenttypeid",
+                        "name": "query.startIndex",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "query.maxItems",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "query.fieldOrder",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "searchtext",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "startindex",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "maxitems",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "fieldorder",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "orderasc",
+                        "name": "query.orderAsc",
                         "in": "query",
                         "required": false,
                         "type": "boolean"
                     },
                     {
-                        "name": "createdfrom",
+                        "name": "query.createdFrom",
                         "in": "query",
                         "required": false,
-                        "type": "string"
+                        "type": "string",
+                        "format": "date-time"
                     },
                     {
-                        "name": "createdto",
+                        "name": "query.createdTo",
                         "in": "query",
                         "required": false,
-                        "type": "string"
+                        "type": "string",
+                        "format": "date-time"
                     }
                 ],
                 "responses": {
@@ -1373,7 +1386,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1388,6 +1400,7 @@
                 "tags": [
                     "Revisions"
                 ],
+                "summary": "Gets all revisions of a speficied content item that match the specified criteria.",
                 "operationId": "Revisions: Get Revisions",
                 "consumes": [],
                 "produces": [
@@ -1400,64 +1413,65 @@
                     {
                         "name": "contentItemId",
                         "in": "path",
+                        "description": "The unique identifier of the referring content item.",
                         "required": true,
                         "type": "string"
                     },
                     {
-                        "name": "searchtext",
+                        "name": "queryDto.searchText",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "startindex",
+                        "name": "queryDto.startIndex",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "queryDto.maxItems",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "queryDto.fieldOrder",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "maxitems",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "fieldorder",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "orderasc",
+                        "name": "queryDto.orderAsc",
                         "in": "query",
                         "required": false,
                         "type": "boolean"
                     },
                     {
-                        "name": "createdfrom",
+                        "name": "queryDto.createdFrom",
                         "in": "query",
                         "required": false,
-                        "type": "string"
+                        "type": "string",
+                        "format": "date-time"
                     },
                     {
-                        "name": "createdto",
+                        "name": "queryDto.createdTo",
                         "in": "query",
                         "required": false,
-                        "type": "string"
+                        "type": "string",
+                        "format": "date-time"
                     }
                 ],
                 "responses": {
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "#/definitions/StructuredContent.API.Dto.ContentItems.ContentItemRevision"
-                            }
+                            "$ref": "#/definitions/StructuredContent.Services.Dto.SearchResultDto[StructuredContent.API.Dto.ContentItems.ContentItemRevision]"
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1472,6 +1486,7 @@
                 "tags": [
                     "Revisions"
                 ],
+                "summary": "Gets the a revision with a specified number of a content item with the specified identifier.",
                 "operationId": "Revisions: Get Revision",
                 "consumes": [],
                 "produces": [
@@ -1484,12 +1499,14 @@
                     {
                         "name": "contentItemId",
                         "in": "path",
+                        "description": "The unique identifier of the referring content item.",
                         "required": true,
                         "type": "string"
                     },
                     {
                         "name": "version",
                         "in": "path",
+                        "description": "The version number of the referring revision.",
                         "required": true,
                         "type": "integer",
                         "format": "int32"
@@ -1503,7 +1520,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1516,6 +1532,7 @@
                 "tags": [
                     "Revisions"
                 ],
+                "summary": "Deletes the specified content item revision.",
                 "operationId": "Revisions: Delete Revision",
                 "consumes": [],
                 "produces": [
@@ -1528,12 +1545,14 @@
                     {
                         "name": "contentItemId",
                         "in": "path",
+                        "description": "The unique identifier of the content item.",
                         "required": true,
                         "type": "string"
                     },
                     {
                         "name": "version",
                         "in": "path",
+                        "description": "The version number of the revision to delete.",
                         "required": true,
                         "type": "integer",
                         "format": "int32"
@@ -1547,7 +1566,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1562,6 +1580,7 @@
                 "tags": [
                     "Revisions"
                 ],
+                "summary": "Gets the list of content items referenced by the specified content item revision, through the reference objects within the content type.",
                 "operationId": "Revisions: Get Valid Reference Objects",
                 "consumes": [],
                 "produces": [
@@ -1574,12 +1593,14 @@
                     {
                         "name": "contentItemId",
                         "in": "path",
+                        "description": "The unique identifier of the content item.",
                         "required": true,
                         "type": "string"
                     },
                     {
                         "name": "version",
                         "in": "path",
+                        "description": "The version number of the revision.",
                         "required": true,
                         "type": "integer",
                         "format": "int32"
@@ -1596,7 +1617,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1611,6 +1631,7 @@
                 "tags": [
                     "Tags"
                 ],
+                "summary": "Gets all tags that match the specified criteria.",
                 "operationId": "Tags: Get Tags",
                 "consumes": [],
                 "produces": [
@@ -1621,32 +1642,39 @@
                 ],
                 "parameters": [
                     {
-                        "name": "startindex",
+                        "name": "queryDto.startIndex",
                         "in": "query",
+                        "description": "Start index in pagination.",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "queryDto.pageSize",
+                        "in": "query",
+                        "description": "Page size in pagination.",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "queryDto.tagPrefix",
+                        "in": "query",
+                        "description": "the tag prefix used to search",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "pagesize",
+                        "name": "queryDto.tags",
                         "in": "query",
+                        "description": "Delimit the tag search by a subset of tags",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "tagprefix",
+                        "name": "queryDto.contentTypeId",
                         "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "tags",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "contenttypeid",
-                        "in": "query",
+                        "description": "if not null, the search is done for content type aggregations",
                         "required": false,
                         "type": "string"
                     }
@@ -1662,7 +1690,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1690,11 +1717,10 @@
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "$ref": "#/definitions/System.Object"
+                            "type": "object"
                         }
                     }
-                },
-                "deprecated": false
+                }
             }
         },
         "/api/VisualizerEngine/Preview": {
@@ -1702,6 +1728,8 @@
                 "tags": [
                     "VisualizerEngine"
                 ],
+                "summary": "Generates the preview HTML code for a given basic visualizer displaying given content items.",
+                "description": "This method does not support other type of visualizers (i.e.: List Detail, Detail, List)",
                 "operationId": "Visualizer Engine: Get Preview",
                 "consumes": [],
                 "produces": [
@@ -1714,12 +1742,14 @@
                     {
                         "name": "visualizerId",
                         "in": "query",
+                        "description": "Visualizer identifier",
                         "required": true,
                         "type": "string"
                     },
                     {
                         "name": "contentItemIds",
                         "in": "query",
+                        "description": "List of content items",
                         "required": true,
                         "type": "array",
                         "items": {
@@ -1736,7 +1766,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1771,6 +1800,7 @@
                     {
                         "name": "currentPageUrl",
                         "in": "query",
+                        "description": "The URL of the current page.",
                         "required": false,
                         "type": "string"
                     }
@@ -1783,7 +1813,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1852,7 +1881,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1907,7 +1935,111 @@
                         }
                     }
                 },
-                "deprecated": false,
+                "security": [
+                    {
+                        "oauth2": [
+                            "sc-visualizer-render:read"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/api/VisualizerEngine/RenderRelatedContent": {
+            "get": {
+                "tags": [
+                    "VisualizerEngine"
+                ],
+                "operationId": "Visualizer Engine: Get Render Related Content",
+                "consumes": [],
+                "produces": [
+                    "application/json",
+                    "text/json",
+                    "application/xml",
+                    "text/xml"
+                ],
+                "parameters": [
+                    {
+                        "name": "visualizerInstanceId",
+                        "in": "query",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "slug",
+                        "in": "query",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "currentPageUrl",
+                        "in": "query",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.VisualizerRenderResult"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2": [
+                            "sc-visualizer-render:read"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/api/VisualizerEngine/RenderDetailBatch": {
+            "get": {
+                "tags": [
+                    "VisualizerEngine"
+                ],
+                "summary": "Renders a batch from a visualizer instance of type detail, ordered by its modification date from older to newer",
+                "operationId": "Visualizer Engine: Get Render Detail Batch",
+                "consumes": [],
+                "produces": [
+                    "application/json",
+                    "text/json",
+                    "application/xml",
+                    "text/xml"
+                ],
+                "parameters": [
+                    {
+                        "name": "visualizerInstanceId",
+                        "in": "query",
+                        "description": "the id of the visualizer instance to be rendered.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "modifiedSince",
+                        "in": "query",
+                        "description": "Initial date to get the modified details from",
+                        "required": true,
+                        "type": "string",
+                        "format": "date-time"
+                    },
+                    {
+                        "name": "currentPageUrl",
+                        "in": "query",
+                        "description": "Current page url.",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.VisualizerDetailRenderResult"
+                        }
+                    }
+                },
                 "security": [
                     {
                         "oauth2": [
@@ -1944,14 +2076,10 @@
                     "200": {
                         "description": "OK",
                         "schema": {
-                            "type": "array",
-                            "items": {
-                                "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.VisualizerInstance"
-                            }
+                            "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.VisualizerInstance"
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -1993,7 +2121,7 @@
                         "description": "The new settings for the specified visualizer instance.",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.VisualizerInstance"
+                            "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.VisualizerInstanceCreation"
                         }
                     }
                 ],
@@ -2005,7 +2133,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -2044,7 +2171,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -2081,7 +2207,7 @@
                         "description": "The settings for the new visualizer instance.",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.VisualizerInstance"
+                            "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.VisualizerInstanceCreation"
                         }
                     }
                 ],
@@ -2093,7 +2219,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -2108,6 +2233,7 @@
                 "tags": [
                     "Visualizers"
                 ],
+                "summary": "Exports a Visualizer in a zip file.",
                 "operationId": "Visualizers: Post Export",
                 "consumes": [],
                 "produces": [
@@ -2120,6 +2246,7 @@
                     {
                         "name": "id",
                         "in": "path",
+                        "description": "Visualizer identifier to export.",
                         "required": true,
                         "type": "string"
                     }
@@ -2132,7 +2259,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -2147,6 +2273,7 @@
                 "tags": [
                     "Visualizers"
                 ],
+                "summary": "Imports a Visualizer given a zip file",
                 "operationId": "Visualizers: Post Import",
                 "consumes": [],
                 "produces": [
@@ -2159,12 +2286,13 @@
                     {
                         "name": "importType",
                         "in": "query",
+                        "description": "the import type",
                         "required": false,
                         "type": "string",
                         "enum": [
-                            "Confirm",
-                            "Overwrite",
-                            "Duplicate"
+                            "confirm",
+                            "overwrite",
+                            "duplicate"
                         ]
                     }
                 ],
@@ -2176,7 +2304,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -2202,52 +2329,56 @@
                 ],
                 "parameters": [
                     {
-                        "name": "contenttypeid",
+                        "name": "query.contentTypeId",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "searchtext",
+                        "name": "query.searchText",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "startindex",
+                        "name": "query.startIndex",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "query.maxItems",
+                        "in": "query",
+                        "required": false,
+                        "type": "integer",
+                        "format": "int32"
+                    },
+                    {
+                        "name": "query.fieldOrder",
                         "in": "query",
                         "required": false,
                         "type": "string"
                     },
                     {
-                        "name": "maxitems",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "fieldorder",
-                        "in": "query",
-                        "required": false,
-                        "type": "string"
-                    },
-                    {
-                        "name": "orderasc",
+                        "name": "query.orderAsc",
                         "in": "query",
                         "required": false,
                         "type": "boolean"
                     },
                     {
-                        "name": "createdfrom",
+                        "name": "query.createdFrom",
                         "in": "query",
                         "required": false,
-                        "type": "string"
+                        "type": "string",
+                        "format": "date-time"
                     },
                     {
-                        "name": "createdto",
+                        "name": "query.createdTo",
                         "in": "query",
                         "required": false,
-                        "type": "string"
+                        "type": "string",
+                        "format": "date-time"
                     }
                 ],
                 "responses": {
@@ -2258,7 +2389,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -2293,7 +2423,7 @@
                         "description": "The settings for the new visualizer.",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.Visualizer"
+                            "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.VisualizerCreation"
                         }
                     }
                 ],
@@ -2305,7 +2435,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -2349,7 +2478,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -2391,7 +2519,7 @@
                         "description": "The new settings for the specified visualizer.",
                         "required": true,
                         "schema": {
-                            "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.Visualizer"
+                            "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.VisualizerCreation"
                         }
                     }
                 ],
@@ -2403,7 +2531,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -2442,7 +2569,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -2457,7 +2583,8 @@
                 "tags": [
                     "WebHooks"
                 ],
-                "summary": "Creates a new webhook for SC. If there is a webhook already associated to the callback Url, that webhook is returned.",
+                "summary": "Creates a new Web Hook.",
+                "description": "If there is a Web Hook already associated to the callback Url, that Web Hook is returned.",
                 "operationId": "Web Hooks: Post Web Hook",
                 "consumes": [
                     "application/json",
@@ -2476,7 +2603,7 @@
                     {
                         "name": "hook",
                         "in": "body",
-                        "description": "The new item payload",
+                        "description": "The settings for the new Web Hook.",
                         "required": true,
                         "schema": {
                             "$ref": "#/definitions/StructuredContent.API.Dto.Hooks.HookCreation"
@@ -2491,7 +2618,6 @@
                         }
                     }
                 },
-                "deprecated": false,
                 "security": [
                     {
                         "oauth2": [
@@ -2524,19 +2650,21 @@
                     "type": "string"
                 },
                 "createdAt": {
+                    "format": "date-time",
                     "description": "Created At",
                     "type": "string"
                 },
                 "createdBy": {
-                    "$ref": "StructuredContent.Models.UserInfo",
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
                     "description": "Created By"
                 },
                 "updatedAt": {
+                    "format": "date-time",
                     "description": "Updated At",
                     "type": "string"
                 },
                 "updatedBy": {
-                    "$ref": "StructuredContent.Models.UserInfo",
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
                     "description": "Updated By"
                 }
             }
@@ -2562,10 +2690,12 @@
                     "type": "string"
                 },
                 "startIndex": {
-                    "type": "string"
+                    "format": "int32",
+                    "type": "integer"
                 },
                 "maxItems": {
-                    "type": "string"
+                    "format": "int32",
+                    "type": "integer"
                 },
                 "fieldOrder": {
                     "type": "string"
@@ -2574,9 +2704,11 @@
                     "type": "boolean"
                 },
                 "createdFrom": {
+                    "format": "date-time",
                     "type": "string"
                 },
                 "createdTo": {
+                    "format": "date-time",
                     "type": "string"
                 }
             }
@@ -2587,16 +2719,21 @@
                 "documents": {
                     "type": "array",
                     "items": {
-                        "$ref": "StructuredContent.API.Dto.ApiKeys.ApiKey"
+                        "$ref": "#/definitions/StructuredContent.API.Dto.ApiKeys.ApiKey"
                     }
                 },
                 "totalResultCount": {
-                    "type": "string"
+                    "format": "int64",
+                    "type": "integer"
                 }
             }
         },
         "StructuredContent.API.Dto.ApiKeys.ApiKeyCreation": {
-            "description": "Represent the request to create/update an api key",
+            "description": "Settings to create/update an api key",
+            "required": [
+                "name",
+                "scopes"
+            ],
             "type": "object",
             "properties": {
                 "name": {
@@ -2635,7 +2772,8 @@
                     }
                 },
                 "totalResultCount": {
-                    "type": "string"
+                    "format": "int64",
+                    "type": "integer"
                 }
             }
         },
@@ -2644,8 +2782,8 @@
             "properties": {
                 "analyticsType": {
                     "enum": [
-                        "Visualizer",
-                        "Embedded"
+                        "visualizer",
+                        "embedded"
                     ],
                     "type": "string"
                 },
@@ -2657,12 +2795,13 @@
                     "type": "integer"
                 },
                 "mostRecentDate": {
+                    "format": "date-time",
                     "type": "string"
                 },
                 "publications": {
                     "type": "array",
                     "items": {
-                        "$ref": "StructuredContent.Models.ContentItemAnalytics.Publication"
+                        "$ref": "#/definitions/StructuredContent.Models.ContentItemAnalytics.Publication"
                     }
                 }
             }
@@ -2671,6 +2810,7 @@
             "type": "object",
             "properties": {
                 "date": {
+                    "format": "date-time",
                     "type": "string"
                 },
                 "url": {
@@ -2688,7 +2828,7 @@
                 "contentItems": {
                     "type": "array",
                     "items": {
-                        "$ref": "StructuredContent.Models.ContentItemLite"
+                        "$ref": "#/definitions/StructuredContent.Models.ContentItemLite"
                     }
                 },
                 "fieldName": {
@@ -2744,8 +2884,8 @@
                     "type": "boolean"
                 },
                 "details": {
-                    "$ref": "System.Object",
-                    "description": "The JObject structure that contains the values of all dynamic fields of the content item."
+                    "description": "The JObject structure that contains the values of all dynamic fields of the content item.",
+                    "type": "object"
                 },
                 "currentVersion": {
                     "format": "int32",
@@ -2758,19 +2898,21 @@
                     "type": "integer"
                 },
                 "createdAt": {
+                    "format": "date-time",
                     "description": "When the content item was created.",
                     "type": "string"
                 },
                 "createdBy": {
-                    "$ref": "StructuredContent.Models.UserInfo",
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
                     "description": "Who created the content item."
                 },
                 "updatedAt": {
+                    "format": "date-time",
                     "description": "When the content item was last updated.",
                     "type": "string"
                 },
                 "updatedBy": {
-                    "$ref": "StructuredContent.Models.UserInfo",
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
                     "description": "Who last updated the content item."
                 },
                 "stateId": {
@@ -2790,13 +2932,10 @@
                     "type": "string"
                 },
                 "seoSettings": {
-                    "$ref": "StructuredContent.Models.SeoSettings"
+                    "$ref": "#/definitions/StructuredContent.Models.SeoSettings",
+                    "description": "Seo settings of the content item."
                 }
             }
-        },
-        "System.Object": {
-            "type": "object",
-            "properties": {}
         },
         "StructuredContent.Models.SeoSettings": {
             "type": "object",
@@ -2814,7 +2953,7 @@
                     }
                 },
                 "image": {
-                    "$ref": "StructuredContent.Models.ImageAsset"
+                    "$ref": "#/definitions/StructuredContent.Models.ImageAsset"
                 }
             }
         },
@@ -2839,7 +2978,7 @@
             "properties": {
                 "published": {
                     "description": "If true, only published content items are included in the results.",
-                    "type": "string"
+                    "type": "boolean"
                 },
                 "tags": {
                     "description": "The tags to search for. Comma-separated and URL-encoded. Example: tags=my%20tag,tag2,lastTag",
@@ -2852,10 +2991,12 @@
                     "type": "string"
                 },
                 "startIndex": {
-                    "type": "string"
+                    "format": "int32",
+                    "type": "integer"
                 },
                 "maxItems": {
-                    "type": "string"
+                    "format": "int32",
+                    "type": "integer"
                 },
                 "fieldOrder": {
                     "type": "string"
@@ -2864,9 +3005,11 @@
                     "type": "boolean"
                 },
                 "createdFrom": {
+                    "format": "date-time",
                     "type": "string"
                 },
                 "createdTo": {
+                    "format": "date-time",
                     "type": "string"
                 }
             }
@@ -2877,29 +3020,68 @@
                 "documents": {
                     "type": "array",
                     "items": {
-                        "$ref": "StructuredContent.API.Dto.ContentItems.ContentItem"
+                        "$ref": "#/definitions/StructuredContent.API.Dto.ContentItems.ContentItem"
                     }
                 },
                 "totalResultCount": {
-                    "type": "string"
+                    "format": "int64",
+                    "type": "integer"
                 }
             }
         },
-        "StructuredContent.Services.Dto.SearchResultDto[StructuredContent.API.Dto.ContentType]": {
+        "StructuredContent.API.Dto.ContentItems.ContentItemCreation": {
+            "description": "Settings to create/update a Content Item",
+            "type": "object",
+            "properties": {
+                "contentTypeId": {
+                    "description": "The unique identifier of the content type of the content item.",
+                    "type": "string"
+                },
+                "name": {
+                    "description": "The name of the content item.",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "The description of the content item.",
+                    "type": "string"
+                },
+                "details": {
+                    "description": "The JObject structure that contains the values of all dynamic fields of the content item.",
+                    "type": "object"
+                },
+                "tags": {
+                    "description": "The list of tags associated with the content item.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "clientReferenceId": {
+                    "description": "An external identifier used to synchronize the content item with clients, specifically the HTMLPro module in Evoq.",
+                    "type": "string"
+                },
+                "seoSettings": {
+                    "$ref": "#/definitions/StructuredContent.Models.SeoSettings",
+                    "description": "Seo settings of the content item."
+                }
+            }
+        },
+        "StructuredContent.Services.Dto.SearchResultDto[StructuredContent.API.Dto.ContentTypes.ContentType]": {
             "type": "object",
             "properties": {
                 "documents": {
                     "type": "array",
                     "items": {
-                        "$ref": "StructuredContent.API.Dto.ContentType"
+                        "$ref": "#/definitions/StructuredContent.API.Dto.ContentTypes.ContentType"
                     }
                 },
                 "totalResultCount": {
-                    "type": "string"
+                    "format": "int64",
+                    "type": "integer"
                 }
             }
         },
-        "StructuredContent.API.Dto.ContentType": {
+        "StructuredContent.API.Dto.ContentTypes.ContentType": {
             "description": "The JSONObject structure that defines a content type.",
             "type": "object",
             "properties": {
@@ -2908,19 +3090,21 @@
                     "type": "string"
                 },
                 "createdAt": {
+                    "format": "date-time",
                     "description": "When the content type was created.",
                     "type": "string"
                 },
                 "createdBy": {
-                    "$ref": "StructuredContent.Models.UserInfo",
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
                     "description": "Who created the content type."
                 },
                 "updatedAt": {
+                    "format": "date-time",
                     "description": "When the content type was last updated.",
                     "type": "string"
                 },
                 "updatedBy": {
-                    "$ref": "StructuredContent.Models.UserInfo",
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
                     "description": "Who last updated the content type."
                 },
                 "name": {
@@ -2943,7 +3127,7 @@
                     "description": "The set of fields that comprise the content type.",
                     "type": "array",
                     "items": {
-                        "$ref": "StructuredContent.Models.ContentTypeFields.ContentTypeField"
+                        "$ref": "#/definitions/StructuredContent.Models.ContentTypeFields.ContentTypeField"
                     }
                 },
                 "numberOfItems": {
@@ -2961,8 +3145,8 @@
                     "type": "boolean"
                 },
                 "properties": {
-                    "$ref": "StructuredContent.Models.ContentTypeProperties",
-                    "description": "The set of properties of the content type."
+                    "$ref": "#/definitions/StructuredContent.Models.ContentTypeProperties",
+                    "description": "The set of properties of the content type<!--, such as ??? -->."
                 }
             }
         },
@@ -2980,17 +3164,17 @@
                 },
                 "type": {
                     "enum": [
-                        "SingleLineText",
-                        "MultiLineText",
-                        "Assets",
-                        "ReferenceObject",
-                        "MultipleChoice",
-                        "NumberSelector",
-                        "DateTime",
-                        "StaticText",
-                        "ContentName",
-                        "ContentTags",
-                        "ContentDescription"
+                        "singleLineText",
+                        "multiLineText",
+                        "assets",
+                        "referenceObject",
+                        "multipleChoice",
+                        "numberSelector",
+                        "dateTime",
+                        "staticText",
+                        "contentName",
+                        "contentTags",
+                        "contentDescription"
                     ],
                     "type": "string"
                 },
@@ -3011,9 +3195,25 @@
                     "type": "integer"
                 },
                 "width": {
+                    "enum": [
+                        "quarter",
+                        "third",
+                        "half",
+                        "twoThirds",
+                        "threeQuarters",
+                        "full"
+                    ],
                     "type": "string"
                 },
                 "position": {
+                    "enum": [
+                        "start",
+                        "quarter",
+                        "third",
+                        "half",
+                        "twoThirds",
+                        "threeQuarters"
+                    ],
                     "type": "string"
                 }
             }
@@ -3022,13 +3222,13 @@
             "type": "object",
             "properties": {
                 "contentName": {
-                    "$ref": "StructuredContent.Models.ContentTypeFields.ContentName.ContentNameField"
+                    "$ref": "#/definitions/StructuredContent.Models.ContentTypeFields.ContentName.ContentNameField"
                 },
                 "contentTags": {
-                    "$ref": "StructuredContent.Models.ContentTypeFields.ContentTags.ContentTagsField"
+                    "$ref": "#/definitions/StructuredContent.Models.ContentTypeFields.ContentTags.ContentTagsField"
                 },
                 "contentDescription": {
-                    "$ref": "StructuredContent.Models.ContentTypeFields.ContentDescription.ContentDescriptionField"
+                    "$ref": "#/definitions/StructuredContent.Models.ContentTypeFields.ContentDescription.ContentDescriptionField"
                 }
             }
         },
@@ -3037,22 +3237,22 @@
             "properties": {
                 "type": {
                     "enum": [
-                        "SingleLineText",
-                        "MultiLineText",
-                        "Assets",
-                        "ReferenceObject",
-                        "MultipleChoice",
-                        "NumberSelector",
-                        "DateTime",
-                        "StaticText",
-                        "ContentName",
-                        "ContentTags",
-                        "ContentDescription"
+                        "singleLineText",
+                        "multiLineText",
+                        "assets",
+                        "referenceObject",
+                        "multipleChoice",
+                        "numberSelector",
+                        "dateTime",
+                        "staticText",
+                        "contentName",
+                        "contentTags",
+                        "contentDescription"
                     ],
                     "type": "string"
                 },
                 "settings": {
-                    "$ref": "StructuredContent.Models.ContentTypeFields.ContentName.ContentNameSettings"
+                    "$ref": "#/definitions/StructuredContent.Models.ContentTypeFields.ContentName.ContentNameSettings"
                 },
                 "id": {
                     "type": "string"
@@ -3080,9 +3280,25 @@
                     "type": "integer"
                 },
                 "width": {
+                    "enum": [
+                        "quarter",
+                        "third",
+                        "half",
+                        "twoThirds",
+                        "threeQuarters",
+                        "full"
+                    ],
                     "type": "string"
                 },
                 "position": {
+                    "enum": [
+                        "start",
+                        "quarter",
+                        "third",
+                        "half",
+                        "twoThirds",
+                        "threeQuarters"
+                    ],
                     "type": "string"
                 }
             }
@@ -3092,22 +3308,22 @@
             "properties": {
                 "type": {
                     "enum": [
-                        "SingleLineText",
-                        "MultiLineText",
-                        "Assets",
-                        "ReferenceObject",
-                        "MultipleChoice",
-                        "NumberSelector",
-                        "DateTime",
-                        "StaticText",
-                        "ContentName",
-                        "ContentTags",
-                        "ContentDescription"
+                        "singleLineText",
+                        "multiLineText",
+                        "assets",
+                        "referenceObject",
+                        "multipleChoice",
+                        "numberSelector",
+                        "dateTime",
+                        "staticText",
+                        "contentName",
+                        "contentTags",
+                        "contentDescription"
                     ],
                     "type": "string"
                 },
                 "validation": {
-                    "$ref": "StructuredContent.Models.ContentTypeFields.ContentTags.ContentTagsValidation"
+                    "$ref": "#/definitions/StructuredContent.Models.ContentTypeFields.ContentTags.ContentTagsValidation"
                 },
                 "id": {
                     "type": "string"
@@ -3135,9 +3351,25 @@
                     "type": "integer"
                 },
                 "width": {
+                    "enum": [
+                        "quarter",
+                        "third",
+                        "half",
+                        "twoThirds",
+                        "threeQuarters",
+                        "full"
+                    ],
                     "type": "string"
                 },
                 "position": {
+                    "enum": [
+                        "start",
+                        "quarter",
+                        "third",
+                        "half",
+                        "twoThirds",
+                        "threeQuarters"
+                    ],
                     "type": "string"
                 }
             }
@@ -3147,22 +3379,22 @@
             "properties": {
                 "type": {
                     "enum": [
-                        "SingleLineText",
-                        "MultiLineText",
-                        "Assets",
-                        "ReferenceObject",
-                        "MultipleChoice",
-                        "NumberSelector",
-                        "DateTime",
-                        "StaticText",
-                        "ContentName",
-                        "ContentTags",
-                        "ContentDescription"
+                        "singleLineText",
+                        "multiLineText",
+                        "assets",
+                        "referenceObject",
+                        "multipleChoice",
+                        "numberSelector",
+                        "dateTime",
+                        "staticText",
+                        "contentName",
+                        "contentTags",
+                        "contentDescription"
                     ],
                     "type": "string"
                 },
                 "validation": {
-                    "$ref": "StructuredContent.Models.ContentTypeFields.ContentDescription.ContentDescriptionValidation"
+                    "$ref": "#/definitions/StructuredContent.Models.ContentTypeFields.ContentDescription.ContentDescriptionValidation"
                 },
                 "id": {
                     "type": "string"
@@ -3190,9 +3422,25 @@
                     "type": "integer"
                 },
                 "width": {
+                    "enum": [
+                        "quarter",
+                        "third",
+                        "half",
+                        "twoThirds",
+                        "threeQuarters",
+                        "full"
+                    ],
                     "type": "string"
                 },
                 "position": {
+                    "enum": [
+                        "start",
+                        "quarter",
+                        "third",
+                        "half",
+                        "twoThirds",
+                        "threeQuarters"
+                    ],
                     "type": "string"
                 }
             }
@@ -3212,7 +3460,7 @@
             "type": "object",
             "properties": {
                 "requireField": {
-                    "$ref": "StructuredContent.Models.ContentTypeFields.Validation.RequireFieldValidation"
+                    "$ref": "#/definitions/StructuredContent.Models.ContentTypeFields.Validation.RequireFieldValidation"
                 },
                 "standardErrorMessage": {
                     "type": "string"
@@ -3223,7 +3471,7 @@
             "type": "object",
             "properties": {
                 "requireField": {
-                    "$ref": "StructuredContent.Models.ContentTypeFields.Validation.RequireFieldValidation"
+                    "$ref": "#/definitions/StructuredContent.Models.ContentTypeFields.Validation.RequireFieldValidation"
                 },
                 "standardErrorMessage": {
                     "type": "string"
@@ -3241,22 +3489,56 @@
                 }
             }
         },
+        "StructuredContent.API.Dto.ContentTypes.ContentTypeCreation": {
+            "description": "Settings to create/update a Content Type",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "The name of the content type.",
+                    "type": "string"
+                },
+                "icon": {
+                    "description": "The icon associated with the content type.",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "The description of the content type.",
+                    "type": "string"
+                },
+                "fields": {
+                    "description": "The set of fields that comprise the content type.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/StructuredContent.Models.ContentTypeFields.ContentTypeField"
+                    }
+                },
+                "properties": {
+                    "$ref": "#/definitions/StructuredContent.Models.ContentTypeProperties",
+                    "description": "The set of properties of the content type<!--, such as ??? -->."
+                }
+            }
+        },
         "StructuredContent.API.Dto.Visualizers.Embed.EmbedVisualizerInstanceCreation": {
+            "description": "Embed Visualizer settings",
             "type": "object",
             "properties": {
                 "visualizerId": {
+                    "description": "Visualizer indentifier",
                     "type": "string"
                 },
                 "type": {
+                    "description": "Type of the Visualizer",
                     "enum": [
-                        "Basic",
-                        "Detail",
-                        "List",
-                        "ListDetail"
+                        "basic",
+                        "detail",
+                        "list",
+                        "listDetail",
+                        "relatedContent"
                     ],
                     "type": "string"
                 },
                 "contentItemIds": {
+                    "description": "List of content items assigned to the Visualizer Instance",
                     "type": "array",
                     "items": {
                         "type": "string"
@@ -3265,20 +3547,24 @@
             }
         },
         "StructuredContent.API.Dto.Visualizers.Embed.EmbedVisualizerInstanceResponse": {
+            "description": "Represents the Embed Visualizer Instance creation response",
             "type": "object",
             "properties": {
                 "id": {
+                    "description": "Visualizer instance identifier",
                     "type": "string"
                 },
                 "embedCode": {
+                    "description": "Embed code in form of an html script tag",
                     "type": "string"
                 }
             }
         },
-        "Evoq.Microservices.Framework.Api.Controllers.CopyTenantInput": {
+        "Evoq.Microservices.Framework.Api.Controllers.DnnServicesManagement.CopyTenantInput": {
             "type": "object",
             "properties": {
                 "operationId": {
+                    "format": "uuid",
                     "type": "string"
                 },
                 "sourceTenantId": {
@@ -3326,26 +3612,28 @@
                     "type": "boolean"
                 },
                 "details": {
-                    "$ref": "System.Object"
+                    "type": "object"
                 },
                 "currentVersion": {
                     "format": "int32",
                     "type": "integer"
                 },
                 "createdAt": {
+                    "format": "date-time",
                     "type": "string"
                 },
                 "createdBy": {
-                    "$ref": "StructuredContent.Models.UserInfo"
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo"
                 },
                 "updatedAt": {
+                    "format": "date-time",
                     "type": "string"
                 },
                 "updatedBy": {
-                    "$ref": "StructuredContent.Models.UserInfo"
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo"
                 },
                 "seoSettings": {
-                    "$ref": "StructuredContent.Models.SeoSettings"
+                    "$ref": "#/definitions/StructuredContent.Models.SeoSettings"
                 }
             }
         },
@@ -3355,78 +3643,115 @@
                 "documents": {
                     "type": "array",
                     "items": {
-                        "$ref": "StructuredContent.Services.Publishing.Dto.ContentItem"
+                        "$ref": "#/definitions/StructuredContent.Services.Publishing.Dto.ContentItem"
                     }
                 },
                 "totalResultCount": {
-                    "type": "string"
+                    "format": "int64",
+                    "type": "integer"
+                }
+            }
+        },
+        "StructuredContent.Services.Dto.SearchResultDto[StructuredContent.API.Dto.ContentItems.ContentItemRevision]": {
+            "type": "object",
+            "properties": {
+                "documents": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/StructuredContent.API.Dto.ContentItems.ContentItemRevision"
+                    }
+                },
+                "totalResultCount": {
+                    "format": "int64",
+                    "type": "integer"
                 }
             }
         },
         "StructuredContent.API.Dto.ContentItems.ContentItemRevision": {
+            "description": "Represents a Content Item Revision",
             "type": "object",
             "properties": {
                 "id": {
+                    "description": "Unique identifier",
                     "type": "string"
                 },
                 "contentItemId": {
+                    "description": "Content item unique identifier",
                     "type": "string"
                 },
                 "contentTypeId": {
+                    "description": "Content Type unique identifier",
                     "type": "string"
                 },
                 "version": {
                     "format": "int32",
+                    "description": "Version number",
                     "type": "integer"
                 },
                 "language": {
+                    "description": "Language, currently is hard-coded to english",
                     "type": "string"
                 },
                 "name": {
+                    "description": "Content item Name",
                     "type": "string"
                 },
                 "slug": {
+                    "description": "Content item slug",
                     "type": "string"
                 },
                 "description": {
+                    "description": "Content item description",
                     "type": "string"
                 },
                 "tags": {
+                    "description": "Content item tags",
                     "type": "array",
                     "items": {
                         "type": "string"
                     }
                 },
                 "details": {
-                    "$ref": "System.Object"
+                    "description": "Content item details",
+                    "type": "object"
                 },
                 "createdAt": {
+                    "format": "date-time",
+                    "description": "Create At",
                     "type": "string"
                 },
                 "createdBy": {
-                    "$ref": "StructuredContent.Models.UserInfo"
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
+                    "description": "Created By User"
                 },
                 "updatedAt": {
+                    "format": "date-time",
+                    "description": "Updated At",
                     "type": "string"
                 },
                 "updatedBy": {
-                    "$ref": "StructuredContent.Models.UserInfo"
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
+                    "description": "Updated By User"
                 },
                 "seoSettings": {
-                    "$ref": "StructuredContent.Models.SeoSettings"
+                    "$ref": "#/definitions/StructuredContent.Models.SeoSettings",
+                    "description": "Seo Settings"
                 }
             }
         },
         "StructuredContent.API.Dto.Tags.TagsQueryDto": {
+            "description": "Tags query criteria",
             "type": "object",
             "properties": {
                 "startIndex": {
+                    "format": "int32",
                     "description": "Start index in pagination.",
-                    "type": "string"
+                    "type": "integer"
                 },
                 "pageSize": {
+                    "format": "int32",
                     "description": "Page size in pagination.",
-                    "type": "string"
+                    "type": "integer"
                 },
                 "tagPrefix": {
                     "description": "the tag prefix used to search",
@@ -3443,13 +3768,16 @@
             }
         },
         "StructuredContent.API.Dto.Tags.Tag": {
+            "description": "Tag information",
             "type": "object",
             "properties": {
                 "value": {
+                    "description": "Value of the tag",
                     "type": "string"
                 },
                 "contentItemsUsage": {
                     "format": "int32",
+                    "description": "Number of time the tag has been assigned to the content items",
                     "type": "integer"
                 }
             }
@@ -3473,7 +3801,7 @@
                     "type": "string"
                 },
                 "metadata": {
-                    "$ref": "StructuredContent.Services.Visualizers.Dto.VisualizerRenderMetadata"
+                    "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.VisualizerRenderMetadata"
                 }
             }
         },
@@ -3498,7 +3826,17 @@
                     "type": "string"
                 },
                 "openGraphInfo": {
-                    "$ref": "StructuredContent.Services.Visualizers.Dto.OpenGraphInfo"
+                    "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.OpenGraphInfo"
+                },
+                "name": {
+                    "type": "string"
+                },
+                "slug": {
+                    "type": "string"
+                },
+                "updateDate": {
+                    "format": "date-time",
+                    "type": "string"
                 },
                 "scripts": {
                     "type": "array",
@@ -3516,7 +3854,7 @@
                     "type": "string"
                 },
                 "metadata": {
-                    "$ref": "StructuredContent.Services.Visualizers.Dto.VisualizerRenderMetadata"
+                    "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.VisualizerRenderMetadata"
                 }
             }
         },
@@ -3551,10 +3889,104 @@
                 "type": {
                     "description": "The type of this visualizer instance: Basic, Detail, List, or ListDetail. Default is Basic.",
                     "enum": [
-                        "Basic",
-                        "Detail",
-                        "List",
-                        "ListDetail"
+                        "basic",
+                        "detail",
+                        "list",
+                        "listDetail",
+                        "relatedContent"
+                    ],
+                    "type": "string"
+                },
+                "visualizerId": {
+                    "description": "The unique identifier of the visualizer definition used to create this visualizer instance.",
+                    "type": "string"
+                },
+                "detailsVisualizerId": {
+                    "description": "The unique identifier of the visualizer details associated with this visualizer instance.",
+                    "type": "string"
+                },
+                "referencedVisualizerInstanceId": {
+                    "type": "string"
+                },
+                "contentItemIds": {
+                    "description": "An array of the content item IDs associated with this visualizer instance.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "referencedContentItemIds": {
+                    "description": "An array of the content item IDs referred to by the content items associated with this visualizer instance.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "pagingEnabled": {
+                    "description": "If true, the list of content items returned by a query are split into pages of a specified size. Otherwise, the entire list is always returned.",
+                    "type": "boolean"
+                },
+                "dynamicFilteringEnabled": {
+                    "description": "When set to true allows dynamic tags filtering",
+                    "type": "boolean"
+                },
+                "contentItemQuery": {
+                    "$ref": "#/definitions/StructuredContent.Models.Visualizers.Query",
+                    "description": "The query used to retrieve content items. For use with List and ListDetail visualizers."
+                },
+                "createdAt": {
+                    "format": "date-time",
+                    "description": "When the visualizer instance was created.",
+                    "type": "string"
+                },
+                "createdBy": {
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
+                    "description": "Who created the visualizer instance."
+                },
+                "updatedAt": {
+                    "format": "date-time",
+                    "description": "When the visualizer instance was last updated.",
+                    "type": "string"
+                },
+                "updatedBy": {
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
+                    "description": "Who last updated the visualizer instance."
+                }
+            }
+        },
+        "StructuredContent.Models.Visualizers.Query": {
+            "type": "object",
+            "properties": {
+                "tags": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
+                },
+                "pageSize": {
+                    "format": "int32",
+                    "type": "integer"
+                },
+                "fieldOrder": {
+                    "type": "string"
+                },
+                "orderAsc": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "StructuredContent.API.Dto.Visualizers.VisualizerInstanceCreation": {
+            "description": "Settings to create/update a Visualizer Instance",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "description": "The type of this visualizer instance: Basic, Detail, List, or ListDetail. Default is Basic.",
+                    "enum": [
+                        "basic",
+                        "detail",
+                        "list",
+                        "listDetail",
+                        "relatedContent"
                     ],
                     "type": "string"
                 },
@@ -3585,47 +4017,12 @@
                     "type": "boolean"
                 },
                 "dynamicFilteringEnabled": {
+                    "description": "When set to true allows dynamic tags filtering",
                     "type": "boolean"
                 },
                 "contentItemQuery": {
-                    "$ref": "StructuredContent.Models.Visualizers.Query",
+                    "$ref": "#/definitions/StructuredContent.Models.Visualizers.Query",
                     "description": "The query used to retrieve content items. For use with List and ListDetail visualizers."
-                },
-                "createdAt": {
-                    "description": "When the visualizer instance was created.",
-                    "type": "string"
-                },
-                "createdBy": {
-                    "$ref": "StructuredContent.Models.UserInfo",
-                    "description": "Who created the visualizer instance."
-                },
-                "updatedAt": {
-                    "description": "When the visualizer instance was last updated.",
-                    "type": "string"
-                },
-                "updatedBy": {
-                    "$ref": "StructuredContent.Models.UserInfo",
-                    "description": "Who last updated the visualizer instance."
-                }
-            }
-        },
-        "StructuredContent.Models.Visualizers.Query": {
-            "type": "object",
-            "properties": {
-                "tags": {
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                },
-                "pageSize": {
-                    "type": "string"
-                },
-                "fieldOrder": {
-                    "type": "string"
-                },
-                "orderAsc": {
-                    "type": "boolean"
                 }
             }
         },
@@ -3634,7 +4031,7 @@
             "type": "object",
             "properties": {
                 "visualizer": {
-                    "$ref": "StructuredContent.API.Dto.Visualizers.Visualizer",
+                    "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.Visualizer",
                     "description": "All the metadata asociated with the visualizer."
                 },
                 "contentTypeNames": {
@@ -3651,15 +4048,15 @@
             "type": "object",
             "properties": {
                 "header": {
-                    "$ref": "StructuredContent.Services.Visualizers.Dto.Resource",
+                    "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.Resource",
                     "description": "The HTML code that displays the header of the content item list."
                 },
                 "template": {
-                    "$ref": "StructuredContent.Services.Visualizers.Dto.Resource",
+                    "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.Resource",
                     "description": "The HTML code that displays each content item in the results list."
                 },
                 "footer": {
-                    "$ref": "StructuredContent.Services.Visualizers.Dto.Resource",
+                    "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.Resource",
                     "description": "The HTML code that displays the footer of the content item list."
                 },
                 "contentTypeId": {
@@ -3674,19 +4071,15 @@
                     "description": "The list of web scripts used by the visualizer definition.",
                     "type": "array",
                     "items": {
-                        "$ref": "StructuredContent.Services.Visualizers.Dto.Resource"
+                        "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.Resource"
                     }
                 },
                 "cssFiles": {
                     "description": "The list of CSS files used by the visualizer definition.",
                     "type": "array",
                     "items": {
-                        "$ref": "StructuredContent.Services.Visualizers.Dto.Resource"
+                        "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.Resource"
                     }
-                },
-                "isSystem": {
-                    "description": "If true, the visualizer definition is a default provided by DNN.",
-                    "type": "boolean"
                 },
                 "id": {
                     "description": "The unique identifier of the visualizer definition.",
@@ -3709,25 +4102,31 @@
                     "type": "boolean"
                 },
                 "createdAt": {
+                    "format": "date-time",
                     "description": "When the visualizer definition was created.",
                     "type": "string"
                 },
                 "createdBy": {
-                    "$ref": "StructuredContent.Models.UserInfo",
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
                     "description": "Who created the visualizer definition."
                 },
                 "updatedAt": {
+                    "format": "date-time",
                     "description": "When the visualizer definition was last updated.",
                     "type": "string"
                 },
                 "updatedBy": {
-                    "$ref": "StructuredContent.Models.UserInfo",
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
                     "description": "Who last updated the visualizer definition."
                 },
                 "numberOfVisualizerInstances": {
                     "format": "int32",
-                    "description": "The number of visualizer instances associated with the visualizer definition. Equal to the number of content items that use this visualizer.",
+                    "description": "The number of visualizer instances associated with the visualizer definition. Equal to the number of content items that use this visualizer. <!-- ??? -->",
                     "type": "integer"
+                },
+                "isSystem": {
+                    "description": "If true, the visualizer definition is a default provided by DNN.",
+                    "type": "boolean"
                 }
             }
         },
@@ -3744,7 +4143,7 @@
                     "type": "string"
                 },
                 "isPrivate": {
-                    "type": "string"
+                    "type": "boolean"
                 }
             }
         },
@@ -3758,10 +4157,12 @@
                     "type": "string"
                 },
                 "startIndex": {
-                    "type": "string"
+                    "format": "int32",
+                    "type": "integer"
                 },
                 "maxItems": {
-                    "type": "string"
+                    "format": "int32",
+                    "type": "integer"
                 },
                 "fieldOrder": {
                     "type": "string"
@@ -3770,9 +4171,11 @@
                     "type": "boolean"
                 },
                 "createdFrom": {
+                    "format": "date-time",
                     "type": "string"
                 },
                 "createdTo": {
+                    "format": "date-time",
                     "type": "string"
                 }
             }
@@ -3783,11 +4186,12 @@
                 "documents": {
                     "type": "array",
                     "items": {
-                        "$ref": "StructuredContent.API.Dto.Visualizers.VisualizerBasicInfo"
+                        "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.VisualizerBasicInfo"
                     }
                 },
                 "totalResultCount": {
-                    "type": "string"
+                    "format": "int64",
+                    "type": "integer"
                 }
             }
         },
@@ -3816,24 +4220,26 @@
                     "type": "boolean"
                 },
                 "createdAt": {
+                    "format": "date-time",
                     "description": "When the visualizer definition was created.",
                     "type": "string"
                 },
                 "createdBy": {
-                    "$ref": "StructuredContent.Models.UserInfo",
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
                     "description": "Who created the visualizer definition."
                 },
                 "updatedAt": {
+                    "format": "date-time",
                     "description": "When the visualizer definition was last updated.",
                     "type": "string"
                 },
                 "updatedBy": {
-                    "$ref": "StructuredContent.Models.UserInfo",
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
                     "description": "Who last updated the visualizer definition."
                 },
                 "numberOfVisualizerInstances": {
                     "format": "int32",
-                    "description": "The number of visualizer instances associated with the visualizer definition. Equal to the number of content items that use this visualizer.",
+                    "description": "The number of visualizer instances associated with the visualizer definition. Equal to the number of content items that use this visualizer. <!-- ??? -->",
                     "type": "integer"
                 },
                 "isSystem": {
@@ -3842,8 +4248,61 @@
                 }
             }
         },
+        "StructuredContent.API.Dto.Visualizers.VisualizerCreation": {
+            "description": "Settings to create/update a Visualizer",
+            "type": "object",
+            "properties": {
+                "name": {
+                    "description": "The name of the visualizer definition.",
+                    "type": "string"
+                },
+                "description": {
+                    "description": "The description of the visualizer definition.",
+                    "type": "string"
+                },
+                "iconUrl": {
+                    "description": "The URL to the icon file associated with the visualizer definition.",
+                    "type": "string"
+                },
+                "header": {
+                    "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.Resource",
+                    "description": "The HTML code that displays the header of the content item list."
+                },
+                "template": {
+                    "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.Resource",
+                    "description": "The HTML code that displays each content item in the results list."
+                },
+                "footer": {
+                    "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.Resource",
+                    "description": "The HTML code that displays the footer of the content item list."
+                },
+                "contentTypeId": {
+                    "description": "The unique identifier of the content type associated with this visualizer definition.",
+                    "type": "string"
+                },
+                "scripts": {
+                    "description": "The list of web scripts used by the visualizer definition.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.Resource"
+                    }
+                },
+                "cssFiles": {
+                    "description": "The list of CSS files used by the visualizer definition.",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.Resource"
+                    }
+                }
+            }
+        },
         "StructuredContent.API.Dto.Hooks.HookCreation": {
             "description": "Webhook payload for subscription",
+            "required": [
+                "url",
+                "secret",
+                "events"
+            ],
             "type": "object",
             "properties": {
                 "description": {
@@ -3859,7 +4318,7 @@
                     "type": "string"
                 },
                 "active": {
-                    "description": "Set active to false",
+                    "description": "State of the Web Hook, true active, false when inactive",
                     "type": "boolean"
                 },
                 "events": {
@@ -3867,16 +4326,16 @@
                     "type": "array",
                     "items": {
                         "enum": [
-                            "ContentItemPublished",
-                            "ContentItemCreated",
-                            "ContentItemUpdated",
-                            "ContentItemDeleted",
-                            "ContentTypeCreated",
-                            "ContentTypeUpdated",
-                            "ContentTypeDeleted",
-                            "VisualizerCreated",
-                            "VisualizerUpdated",
-                            "VisualizerDeleted"
+                            "contentItemPublished",
+                            "contentItemCreated",
+                            "contentItemUpdated",
+                            "contentItemDeleted",
+                            "contentTypeCreated",
+                            "contentTypeUpdated",
+                            "contentTypeDeleted",
+                            "visualizerCreated",
+                            "visualizerUpdated",
+                            "visualizerDeleted"
                         ],
                         "type": "string"
                     }
@@ -3888,27 +4347,37 @@
             "type": "object",
             "properties": {
                 "id": {
+                    "description": "Web Hook unique identifier",
                     "type": "string"
                 },
                 "createdAt": {
+                    "format": "date-time",
+                    "description": "Created At",
                     "type": "string"
                 },
                 "createdBy": {
-                    "$ref": "StructuredContent.Models.UserInfo"
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
+                    "description": "Created By User"
                 },
                 "updatedAt": {
+                    "format": "date-time",
+                    "description": "Updated At",
                     "type": "string"
                 },
                 "updatedBy": {
-                    "$ref": "StructuredContent.Models.UserInfo"
+                    "$ref": "#/definitions/StructuredContent.Models.UserInfo",
+                    "description": "Updated By User"
                 },
                 "description": {
+                    "description": "Description",
                     "type": "string"
                 },
                 "active": {
+                    "description": "State of the Web Hook, true active, false when inactive",
                     "type": "boolean"
                 },
                 "url": {
+                    "description": "Url of the Web Hook.",
                     "type": "string"
                 },
                 "secret": {
@@ -3916,19 +4385,20 @@
                     "type": "string"
                 },
                 "events": {
+                    "description": "Events to subscribe",
                     "type": "array",
                     "items": {
                         "enum": [
-                            "ContentItemPublished",
-                            "ContentItemCreated",
-                            "ContentItemUpdated",
-                            "ContentItemDeleted",
-                            "ContentTypeCreated",
-                            "ContentTypeUpdated",
-                            "ContentTypeDeleted",
-                            "VisualizerCreated",
-                            "VisualizerUpdated",
-                            "VisualizerDeleted"
+                            "contentItemPublished",
+                            "contentItemCreated",
+                            "contentItemUpdated",
+                            "contentItemDeleted",
+                            "contentTypeCreated",
+                            "contentTypeUpdated",
+                            "contentTypeDeleted",
+                            "visualizerCreated",
+                            "visualizerUpdated",
+                            "visualizerDeleted"
                         ],
                         "type": "string"
                     }

@@ -17,7 +17,7 @@
         <section id="phrases">
 
             <!-- <ph conkeyref="k-bpapi/ph-apibaseurl"></ph> -->
-            <ph id="ph-apibaseurl">https://dnnapi.com</ph>
+            <ph id="ph-apibaseurl">https://dnnapi.com/content</ph>
 
         </section>
 
@@ -38,14 +38,14 @@
     "token" : "string"
     "scopes" : "string"
     "createdAt" : "string"
-    "createdBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "createdBy" :
         {
             "id" : "string"
             "name" : "string"
             "thumbnail" : "string"
         }
     "updatedAt" : "string"
-    "updatedBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "updatedBy" :
         {
             "id" : "string"
             "name" : "string"
@@ -125,8 +125,8 @@
             <ph id="ph-definitions-StructuredContent-Services-Dto-QueryDto">
 {
     "searchText" : "string"
-    "startIndex" : "string"
-    "maxItems" : "string"
+    "startIndex" : "integer"
+    "maxItems" : "integer"
     "fieldOrder" : "string"
     "orderAsc" : "boolean"
     "createdFrom" : "string"
@@ -141,11 +141,11 @@
                 </plentry>
                 <plentry>
                     <pt>startIndex</pt>
-                    <pd>[string] </pd>
+                    <pd>[integer] </pd>
                 </plentry>
                 <plentry>
                     <pt>maxItems</pt>
-                    <pd>[string] </pd>
+                    <pd>[integer] </pd>
                 </plentry>
                 <plentry>
                     <pt>fieldOrder</pt>
@@ -170,7 +170,7 @@
             <ph id="ph-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ApiKeys-ApiKey">
 {
     "documents" : "array"
-    "totalResultCount" : "string"
+    "totalResultCount" : "integer"
 }
             </ph>
             <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ApiKeys-ApiKey"><plentry><pt/><pd/></plentry></parml> -->
@@ -181,7 +181,7 @@
                 </plentry>
                 <plentry>
                     <pt>totalResultCount</pt>
-                    <pd>[string] </pd>
+                    <pd>[integer] </pd>
                 </plentry>
             </parml>
 
@@ -235,7 +235,7 @@
             <ph id="ph-definitions-StructuredContent-Services-Dto-SearchResultDto-System-String">
 {
     "documents" : "array"
-    "totalResultCount" : "string"
+    "totalResultCount" : "integer"
 }
             </ph>
             <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Dto-SearchResultDto-System-String"><plentry><pt/><pd/></plentry></parml> -->
@@ -246,7 +246,7 @@
                 </plentry>
                 <plentry>
                     <pt>totalResultCount</pt>
-                    <pd>[string] </pd>
+                    <pd>[integer] </pd>
                 </plentry>
             </parml>
 
@@ -362,18 +362,18 @@
     "description" : "string"
     "language" : "string"
     "alreadyPublished" : "boolean"
-    "details" : System.Object
+    "details" : "object"
     "currentVersion" : "integer"
     "usages" : "integer"
     "createdAt" : "string"
-    "createdBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "createdBy" :
         {
             "id" : "string"
             "name" : "string"
             "thumbnail" : "string"
         }
     "updatedAt" : "string"
-    "updatedBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "updatedBy" :
         {
             "id" : "string"
             "name" : "string"
@@ -382,12 +382,12 @@
     "stateId" : "integer"
     "tags" : "array"
     "clientReferenceId" : "string"
-    "seoSettings" :  <!-- StructuredContent.Models.SeoSettings -->
+    "seoSettings" :
         {
             "pageTitle" : "string"
             "description" : "string"
             "keywords" : "array"
-            "image" :  <!-- StructuredContent.Models.ImageAsset -->
+            "image" :
                 {
                     "fileName" : "string"
                     "fileId" : "integer"
@@ -432,10 +432,7 @@
                 </plentry>
                 <plentry>
                     <pt>details</pt>
-                    <pd>
-                        The JObject structure that contains the values of all dynamic fields of the content item.
-                        <parml conkeyref="k-bpapi/parml-definitions-System-Object"><plentry><pt/><pd/></plentry></parml>
-                    </pd>
+                    <pd>[object] The JObject structure that contains the values of all dynamic fields of the content item.</pd>
                 </plentry>
                 <plentry>
                     <pt>currentVersion</pt>
@@ -482,6 +479,7 @@
                 <plentry>
                     <pt>seoSettings</pt>
                     <pd>
+                        Seo settings of the content item.
                         <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Models-SeoSettings"><plentry><pt/><pd/></plentry></parml>
                     </pd>
                 </plentry>
@@ -494,7 +492,7 @@
     "pageTitle" : "string"
     "description" : "string"
     "keywords" : "array"
-    "image" :  <!-- StructuredContent.Models.ImageAsset -->
+    "image" :
         {
             "fileName" : "string"
             "fileId" : "integer"
@@ -553,12 +551,12 @@
             <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-ContentItems-ContentItemQueryDto"></ph> -->
             <ph id="ph-definitions-StructuredContent-API-Dto-ContentItems-ContentItemQueryDto">
 {
-    "published" : "string"
+    "published" : "boolean"
     "tags" : "string"
     "contentTypeId" : "string"
     "searchText" : "string"
-    "startIndex" : "string"
-    "maxItems" : "string"
+    "startIndex" : "integer"
+    "maxItems" : "integer"
     "fieldOrder" : "string"
     "orderAsc" : "boolean"
     "createdFrom" : "string"
@@ -569,7 +567,7 @@
             <parml id="parml-definitions-StructuredContent-API-Dto-ContentItems-ContentItemQueryDto" outputclass="docindent">
                 <plentry>
                     <pt>published</pt>
-                    <pd>[string] If true, only published content items are included in the results.</pd>
+                    <pd>[boolean] If true, only published content items are included in the results.</pd>
                 </plentry>
                 <plentry>
                     <pt>tags</pt>
@@ -585,11 +583,11 @@
                 </plentry>
                 <plentry>
                     <pt>startIndex</pt>
-                    <pd>[string] </pd>
+                    <pd>[integer] </pd>
                 </plentry>
                 <plentry>
                     <pt>maxItems</pt>
-                    <pd>[string] </pd>
+                    <pd>[integer] </pd>
                 </plentry>
                 <plentry>
                     <pt>fieldOrder</pt>
@@ -614,7 +612,7 @@
             <ph id="ph-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ContentItems-ContentItem">
 {
     "documents" : "array"
-    "totalResultCount" : "string"
+    "totalResultCount" : "integer"
 }
             </ph>
             <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ContentItems-ContentItem"><plentry><pt/><pd/></plentry></parml> -->
@@ -625,44 +623,103 @@
                 </plentry>
                 <plentry>
                     <pt>totalResultCount</pt>
-                    <pd>[string] </pd>
+                    <pd>[integer] </pd>
                 </plentry>
             </parml>
 
 
-            <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ContentType"></ph> -->
-            <ph id="ph-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ContentType">
+            <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-ContentItems-ContentItemCreation"></ph> -->
+            <ph id="ph-definitions-StructuredContent-API-Dto-ContentItems-ContentItemCreation">
 {
-    "documents" : "array"
-    "totalResultCount" : "string"
+    "contentTypeId" : "string"
+    "name" : "string"
+    "description" : "string"
+    "details" : "object"
+    "tags" : "array"
+    "clientReferenceId" : "string"
+    "seoSettings" :
+        {
+            "pageTitle" : "string"
+            "description" : "string"
+            "keywords" : "array"
+            "image" :
+                {
+                    "fileName" : "string"
+                    "fileId" : "integer"
+                    "url" : "string"
+                }
+        }
 }
             </ph>
-            <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ContentType"><plentry><pt/><pd/></plentry></parml> -->
-            <parml id="parml-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ContentType" outputclass="docindent">
+            <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-API-Dto-ContentItems-ContentItemCreation"><plentry><pt/><pd/></plentry></parml> -->
+            <parml id="parml-definitions-StructuredContent-API-Dto-ContentItems-ContentItemCreation" outputclass="docindent">
+                <plentry>
+                    <pt>contentTypeId</pt>
+                    <pd>[string] The unique identifier of the content type of the content item.</pd>
+                </plentry>
+                <plentry>
+                    <pt>name</pt>
+                    <pd>[string] The name of the content item.</pd>
+                </plentry>
+                <plentry>
+                    <pt>description</pt>
+                    <pd>[string] The description of the content item.</pd>
+                </plentry>
+                <plentry>
+                    <pt>details</pt>
+                    <pd>[object] The JObject structure that contains the values of all dynamic fields of the content item.</pd>
+                </plentry>
+                <plentry>
+                    <pt>tags</pt>
+                    <pd>[array] The list of tags associated with the content item.</pd>
+                </plentry>
+                <plentry>
+                    <pt>clientReferenceId</pt>
+                    <pd>[string] An external identifier used to synchronize the content item with clients, specifically the HTMLPro module in Evoq.</pd>
+                </plentry>
+                <plentry>
+                    <pt>seoSettings</pt>
+                    <pd>
+                        Seo settings of the content item.
+                        <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Models-SeoSettings"><plentry><pt/><pd/></plentry></parml>
+                    </pd>
+                </plentry>
+            </parml>
+
+
+            <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ContentTypes-ContentType"></ph> -->
+            <ph id="ph-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ContentTypes-ContentType">
+{
+    "documents" : "array"
+    "totalResultCount" : "integer"
+}
+            </ph>
+            <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ContentTypes-ContentType"><plentry><pt/><pd/></plentry></parml> -->
+            <parml id="parml-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ContentTypes-ContentType" outputclass="docindent">
                 <plentry>
                     <pt>documents</pt>
                     <pd>[array] </pd>
                 </plentry>
                 <plentry>
                     <pt>totalResultCount</pt>
-                    <pd>[string] </pd>
+                    <pd>[integer] </pd>
                 </plentry>
             </parml>
 
 
-            <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-ContentType"></ph> -->
-            <ph id="ph-definitions-StructuredContent-API-Dto-ContentType">
+            <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-ContentTypes-ContentType"></ph> -->
+            <ph id="ph-definitions-StructuredContent-API-Dto-ContentTypes-ContentType">
 {
     "id" : "string"
     "createdAt" : "string"
-    "createdBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "createdBy" :
         {
             "id" : "string"
             "name" : "string"
             "thumbnail" : "string"
         }
     "updatedAt" : "string"
-    "updatedBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "updatedBy" :
         {
             "id" : "string"
             "name" : "string"
@@ -676,12 +733,12 @@
     "numberOfItems" : "integer"
     "numberOfVisualizers" : "integer"
     "isSystem" : "boolean"
-    "properties" :  <!-- StructuredContent.Models.ContentTypeProperties -->
+    "properties" :
         {
-            "contentName" :  <!-- StructuredContent.Models.ContentTypeFields.ContentName.ContentNameField -->
+            "contentName" :
                 {
                     "type" : "string"
-                    "settings" :  <!-- StructuredContent.Models.ContentTypeFields.ContentName.ContentNameSettings -->
+                    "settings" :
                         {
                             "nameGeneratorFields" : "array"
                         }
@@ -696,12 +753,12 @@
                     "width" : "string"
                     "position" : "string"
                 }
-            "contentTags" :  <!-- StructuredContent.Models.ContentTypeFields.ContentTags.ContentTagsField -->
+            "contentTags" :
                 {
                     "type" : "string"
-                    "validation" :  <!-- StructuredContent.Models.ContentTypeFields.ContentTags.ContentTagsValidation -->
+                    "validation" :
                         {
-                            "requireField" :  <!-- StructuredContent.Models.ContentTypeFields.Validation.RequireFieldValidation -->
+                            "requireField" :
                                 {
                                     "active" : "boolean"
                                     "errorMessage" : "string"
@@ -719,12 +776,12 @@
                     "width" : "string"
                     "position" : "string"
                 }
-            "contentDescription" :  <!-- StructuredContent.Models.ContentTypeFields.ContentDescription.ContentDescriptionField -->
+            "contentDescription" :
                 {
                     "type" : "string"
-                    "validation" :  <!-- StructuredContent.Models.ContentTypeFields.ContentDescription.ContentDescriptionValidation -->
+                    "validation" :
                         {
-                            "requireField" :  <!-- StructuredContent.Models.ContentTypeFields.Validation.RequireFieldValidation -->
+                            "requireField" :
                                 {
                                     "active" : "boolean"
                                     "errorMessage" : "string"
@@ -745,8 +802,8 @@
         }
 }
             </ph>
-            <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-API-Dto-ContentType"><plentry><pt/><pd/></plentry></parml> -->
-            <parml id="parml-definitions-StructuredContent-API-Dto-ContentType" outputclass="docindent">
+            <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-API-Dto-ContentTypes-ContentType"><plentry><pt/><pd/></plentry></parml> -->
+            <parml id="parml-definitions-StructuredContent-API-Dto-ContentTypes-ContentType" outputclass="docindent">
                 <plentry>
                     <pt>id</pt>
                     <pd>[string] The unique identifier of the content type.</pd>
@@ -808,7 +865,7 @@
                 <plentry>
                     <pt>properties</pt>
                     <pd>
-                        The set of properties of the content type.
+                        The set of properties of the content type<!--, such as ??? -->.
                         <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Models-ContentTypeProperties"><plentry><pt/><pd/></plentry></parml>
                     </pd>
                 </plentry>
@@ -883,10 +940,10 @@
             <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-Models-ContentTypeProperties"></ph> -->
             <ph id="ph-definitions-StructuredContent-Models-ContentTypeProperties">
 {
-    "contentName" :  <!-- StructuredContent.Models.ContentTypeFields.ContentName.ContentNameField -->
+    "contentName" :
         {
             "type" : "string"
-            "settings" :  <!-- StructuredContent.Models.ContentTypeFields.ContentName.ContentNameSettings -->
+            "settings" :
                 {
                     "nameGeneratorFields" : "array"
                 }
@@ -901,12 +958,12 @@
             "width" : "string"
             "position" : "string"
         }
-    "contentTags" :  <!-- StructuredContent.Models.ContentTypeFields.ContentTags.ContentTagsField -->
+    "contentTags" :
         {
             "type" : "string"
-            "validation" :  <!-- StructuredContent.Models.ContentTypeFields.ContentTags.ContentTagsValidation -->
+            "validation" :
                 {
-                    "requireField" :  <!-- StructuredContent.Models.ContentTypeFields.Validation.RequireFieldValidation -->
+                    "requireField" :
                         {
                             "active" : "boolean"
                             "errorMessage" : "string"
@@ -924,12 +981,12 @@
             "width" : "string"
             "position" : "string"
         }
-    "contentDescription" :  <!-- StructuredContent.Models.ContentTypeFields.ContentDescription.ContentDescriptionField -->
+    "contentDescription" :
         {
             "type" : "string"
-            "validation" :  <!-- StructuredContent.Models.ContentTypeFields.ContentDescription.ContentDescriptionValidation -->
+            "validation" :
                 {
-                    "requireField" :  <!-- StructuredContent.Models.ContentTypeFields.Validation.RequireFieldValidation -->
+                    "requireField" :
                         {
                             "active" : "boolean"
                             "errorMessage" : "string"
@@ -976,7 +1033,7 @@
             <ph id="ph-definitions-StructuredContent-Models-ContentTypeFields-ContentName-ContentNameField">
 {
     "type" : "string"
-    "settings" :  <!-- StructuredContent.Models.ContentTypeFields.ContentName.ContentNameSettings -->
+    "settings" :
         {
             "nameGeneratorFields" : "array"
         }
@@ -1051,9 +1108,9 @@
             <ph id="ph-definitions-StructuredContent-Models-ContentTypeFields-ContentTags-ContentTagsField">
 {
     "type" : "string"
-    "validation" :  <!-- StructuredContent.Models.ContentTypeFields.ContentTags.ContentTagsValidation -->
+    "validation" :
         {
-            "requireField" :  <!-- StructuredContent.Models.ContentTypeFields.Validation.RequireFieldValidation -->
+            "requireField" :
                 {
                     "active" : "boolean"
                     "errorMessage" : "string"
@@ -1131,9 +1188,9 @@
             <ph id="ph-definitions-StructuredContent-Models-ContentTypeFields-ContentDescription-ContentDescriptionField">
 {
     "type" : "string"
-    "validation" :  <!-- StructuredContent.Models.ContentTypeFields.ContentDescription.ContentDescriptionValidation -->
+    "validation" :
         {
-            "requireField" :  <!-- StructuredContent.Models.ContentTypeFields.Validation.RequireFieldValidation -->
+            "requireField" :
                 {
                     "active" : "boolean"
                     "errorMessage" : "string"
@@ -1225,7 +1282,7 @@
             <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-Models-ContentTypeFields-ContentTags-ContentTagsValidation"></ph> -->
             <ph id="ph-definitions-StructuredContent-Models-ContentTypeFields-ContentTags-ContentTagsValidation">
 {
-    "requireField" :  <!-- StructuredContent.Models.ContentTypeFields.Validation.RequireFieldValidation -->
+    "requireField" :
         {
             "active" : "boolean"
             "errorMessage" : "string"
@@ -1251,7 +1308,7 @@
             <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-Models-ContentTypeFields-ContentDescription-ContentDescriptionValidation"></ph> -->
             <ph id="ph-definitions-StructuredContent-Models-ContentTypeFields-ContentDescription-ContentDescriptionValidation">
 {
-    "requireField" :  <!-- StructuredContent.Models.ContentTypeFields.Validation.RequireFieldValidation -->
+    "requireField" :
         {
             "active" : "boolean"
             "errorMessage" : "string"
@@ -1294,6 +1351,110 @@
             </parml>
 
 
+            <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-ContentTypes-ContentTypeCreation"></ph> -->
+            <ph id="ph-definitions-StructuredContent-API-Dto-ContentTypes-ContentTypeCreation">
+{
+    "name" : "string"
+    "icon" : "string"
+    "description" : "string"
+    "fields" : "array"
+    "properties" :
+        {
+            "contentName" :
+                {
+                    "type" : "string"
+                    "settings" :
+                        {
+                            "nameGeneratorFields" : "array"
+                        }
+                    "id" : "string"
+                    "name" : "string"
+                    "label" : "string"
+                    "descriptionActive" : "boolean"
+                    "description" : "string"
+                    "tooltipActive" : "boolean"
+                    "tooltip" : "string"
+                    "row" : "integer"
+                    "width" : "string"
+                    "position" : "string"
+                }
+            "contentTags" :
+                {
+                    "type" : "string"
+                    "validation" :
+                        {
+                            "requireField" :
+                                {
+                                    "active" : "boolean"
+                                    "errorMessage" : "string"
+                                }
+                            "standardErrorMessage" : "string"
+                        }
+                    "id" : "string"
+                    "name" : "string"
+                    "label" : "string"
+                    "descriptionActive" : "boolean"
+                    "description" : "string"
+                    "tooltipActive" : "boolean"
+                    "tooltip" : "string"
+                    "row" : "integer"
+                    "width" : "string"
+                    "position" : "string"
+                }
+            "contentDescription" :
+                {
+                    "type" : "string"
+                    "validation" :
+                        {
+                            "requireField" :
+                                {
+                                    "active" : "boolean"
+                                    "errorMessage" : "string"
+                                }
+                            "standardErrorMessage" : "string"
+                        }
+                    "id" : "string"
+                    "name" : "string"
+                    "label" : "string"
+                    "descriptionActive" : "boolean"
+                    "description" : "string"
+                    "tooltipActive" : "boolean"
+                    "tooltip" : "string"
+                    "row" : "integer"
+                    "width" : "string"
+                    "position" : "string"
+                }
+        }
+}
+            </ph>
+            <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-API-Dto-ContentTypes-ContentTypeCreation"><plentry><pt/><pd/></plentry></parml> -->
+            <parml id="parml-definitions-StructuredContent-API-Dto-ContentTypes-ContentTypeCreation" outputclass="docindent">
+                <plentry>
+                    <pt>name</pt>
+                    <pd>[string] The name of the content type.</pd>
+                </plentry>
+                <plentry>
+                    <pt>icon</pt>
+                    <pd>[string] The icon associated with the content type.</pd>
+                </plentry>
+                <plentry>
+                    <pt>description</pt>
+                    <pd>[string] The description of the content type.</pd>
+                </plentry>
+                <plentry>
+                    <pt>fields</pt>
+                    <pd>[array] The set of fields that comprise the content type.</pd>
+                </plentry>
+                <plentry>
+                    <pt>properties</pt>
+                    <pd>
+                        The set of properties of the content type<!--, such as ??? -->.
+                        <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Models-ContentTypeProperties"><plentry><pt/><pd/></plentry></parml>
+                    </pd>
+                </plentry>
+            </parml>
+
+
             <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-Visualizers-Embed-EmbedVisualizerInstanceCreation"></ph> -->
             <ph id="ph-definitions-StructuredContent-API-Dto-Visualizers-Embed-EmbedVisualizerInstanceCreation">
 {
@@ -1306,15 +1467,15 @@
             <parml id="parml-definitions-StructuredContent-API-Dto-Visualizers-Embed-EmbedVisualizerInstanceCreation" outputclass="docindent">
                 <plentry>
                     <pt>visualizerId</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Visualizer indentifier</pd>
                 </plentry>
                 <plentry>
                     <pt>type</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Type of the Visualizer</pd>
                 </plentry>
                 <plentry>
                     <pt>contentItemIds</pt>
-                    <pd>[array] </pd>
+                    <pd>[array] List of content items assigned to the Visualizer Instance</pd>
                 </plentry>
             </parml>
 
@@ -1330,17 +1491,17 @@
             <parml id="parml-definitions-StructuredContent-API-Dto-Visualizers-Embed-EmbedVisualizerInstanceResponse" outputclass="docindent">
                 <plentry>
                     <pt>id</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Visualizer instance identifier</pd>
                 </plentry>
                 <plentry>
                     <pt>embedCode</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Embed code in form of an html script tag</pd>
                 </plentry>
             </parml>
 
 
-            <!-- <ph conkeyref="k-bpapi/ph-definitions-Evoq-Microservices-Framework-Api-Controllers-CopyTenantInput"></ph> -->
-            <ph id="ph-definitions-Evoq-Microservices-Framework-Api-Controllers-CopyTenantInput">
+            <!-- <ph conkeyref="k-bpapi/ph-definitions-Evoq-Microservices-Framework-Api-Controllers-DnnServicesManagement-CopyTenantInput"></ph> -->
+            <ph id="ph-definitions-Evoq-Microservices-Framework-Api-Controllers-DnnServicesManagement-CopyTenantInput">
 {
     "operationId" : "string"
     "sourceTenantId" : "string"
@@ -1348,8 +1509,8 @@
     "callbackUrl" : "string"
 }
             </ph>
-            <!-- <parml conkeyref="k-bpapi/parml-definitions-Evoq-Microservices-Framework-Api-Controllers-CopyTenantInput"><plentry><pt/><pd/></plentry></parml> -->
-            <parml id="parml-definitions-Evoq-Microservices-Framework-Api-Controllers-CopyTenantInput" outputclass="docindent">
+            <!-- <parml conkeyref="k-bpapi/parml-definitions-Evoq-Microservices-Framework-Api-Controllers-DnnServicesManagement-CopyTenantInput"><plentry><pt/><pd/></plentry></parml> -->
+            <parml id="parml-definitions-Evoq-Microservices-Framework-Api-Controllers-DnnServicesManagement-CopyTenantInput" outputclass="docindent">
                 <plentry>
                     <pt>operationId</pt>
                     <pd>[string] </pd>
@@ -1381,28 +1542,28 @@
     "tags" : "array"
     "language" : "string"
     "alreadyPublished" : "boolean"
-    "details" : System.Object
+    "details" : "object"
     "currentVersion" : "integer"
     "createdAt" : "string"
-    "createdBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "createdBy" :
         {
             "id" : "string"
             "name" : "string"
             "thumbnail" : "string"
         }
     "updatedAt" : "string"
-    "updatedBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "updatedBy" :
         {
             "id" : "string"
             "name" : "string"
             "thumbnail" : "string"
         }
-    "seoSettings" :  <!-- StructuredContent.Models.SeoSettings -->
+    "seoSettings" :
         {
             "pageTitle" : "string"
             "description" : "string"
             "keywords" : "array"
-            "image" :  <!-- StructuredContent.Models.ImageAsset -->
+            "image" :
                 {
                     "fileName" : "string"
                     "fileId" : "integer"
@@ -1451,9 +1612,7 @@
                 </plentry>
                 <plentry>
                     <pt>details</pt>
-                    <pd>
-                        <parml conkeyref="k-bpapi/parml-definitions-System-Object"><plentry><pt/><pd/></plentry></parml>
-                    </pd>
+                    <pd>[object] </pd>
                 </plentry>
                 <plentry>
                     <pt>currentVersion</pt>
@@ -1492,7 +1651,7 @@
             <ph id="ph-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-Services-Publishing-Dto-ContentItem">
 {
     "documents" : "array"
-    "totalResultCount" : "string"
+    "totalResultCount" : "integer"
 }
             </ph>
             <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-Services-Publishing-Dto-ContentItem"><plentry><pt/><pd/></plentry></parml> -->
@@ -1503,7 +1662,27 @@
                 </plentry>
                 <plentry>
                     <pt>totalResultCount</pt>
-                    <pd>[string] </pd>
+                    <pd>[integer] </pd>
+                </plentry>
+            </parml>
+
+
+            <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ContentItems-ContentItemRevision"></ph> -->
+            <ph id="ph-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ContentItems-ContentItemRevision">
+{
+    "documents" : "array"
+    "totalResultCount" : "integer"
+}
+            </ph>
+            <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ContentItems-ContentItemRevision"><plentry><pt/><pd/></plentry></parml> -->
+            <parml id="parml-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-ContentItems-ContentItemRevision" outputclass="docindent">
+                <plentry>
+                    <pt>documents</pt>
+                    <pd>[array] </pd>
+                </plentry>
+                <plentry>
+                    <pt>totalResultCount</pt>
+                    <pd>[integer] </pd>
                 </plentry>
             </parml>
 
@@ -1520,27 +1699,27 @@
     "slug" : "string"
     "description" : "string"
     "tags" : "array"
-    "details" : System.Object
+    "details" : "object"
     "createdAt" : "string"
-    "createdBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "createdBy" :
         {
             "id" : "string"
             "name" : "string"
             "thumbnail" : "string"
         }
     "updatedAt" : "string"
-    "updatedBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "updatedBy" :
         {
             "id" : "string"
             "name" : "string"
             "thumbnail" : "string"
         }
-    "seoSettings" :  <!-- StructuredContent.Models.SeoSettings -->
+    "seoSettings" :
         {
             "pageTitle" : "string"
             "description" : "string"
             "keywords" : "array"
-            "image" :  <!-- StructuredContent.Models.ImageAsset -->
+            "image" :
                 {
                     "fileName" : "string"
                     "fileId" : "integer"
@@ -1553,69 +1732,70 @@
             <parml id="parml-definitions-StructuredContent-API-Dto-ContentItems-ContentItemRevision" outputclass="docindent">
                 <plentry>
                     <pt>id</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Unique identifier</pd>
                 </plentry>
                 <plentry>
                     <pt>contentItemId</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Content item unique identifier</pd>
                 </plentry>
                 <plentry>
                     <pt>contentTypeId</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Content Type unique identifier</pd>
                 </plentry>
                 <plentry>
                     <pt>version</pt>
-                    <pd>[integer] </pd>
+                    <pd>[integer] Version number</pd>
                 </plentry>
                 <plentry>
                     <pt>language</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Language, currently is hard-coded to english</pd>
                 </plentry>
                 <plentry>
                     <pt>name</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Content item Name</pd>
                 </plentry>
                 <plentry>
                     <pt>slug</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Content item slug</pd>
                 </plentry>
                 <plentry>
                     <pt>description</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Content item description</pd>
                 </plentry>
                 <plentry>
                     <pt>tags</pt>
-                    <pd>[array] </pd>
+                    <pd>[array] Content item tags</pd>
                 </plentry>
                 <plentry>
                     <pt>details</pt>
-                    <pd>
-                        <parml conkeyref="k-bpapi/parml-definitions-System-Object"><plentry><pt/><pd/></plentry></parml>
-                    </pd>
+                    <pd>[object] Content item details</pd>
                 </plentry>
                 <plentry>
                     <pt>createdAt</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Create At</pd>
                 </plentry>
                 <plentry>
                     <pt>createdBy</pt>
                     <pd>
+                        Created By User
                         <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Models-UserInfo"><plentry><pt/><pd/></plentry></parml>
                     </pd>
                 </plentry>
                 <plentry>
                     <pt>updatedAt</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Updated At</pd>
                 </plentry>
                 <plentry>
                     <pt>updatedBy</pt>
                     <pd>
+                        Updated By User
                         <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Models-UserInfo"><plentry><pt/><pd/></plentry></parml>
                     </pd>
                 </plentry>
                 <plentry>
                     <pt>seoSettings</pt>
                     <pd>
+                        Seo Settings
                         <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Models-SeoSettings"><plentry><pt/><pd/></plentry></parml>
                     </pd>
                 </plentry>
@@ -1625,8 +1805,8 @@
             <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-Tags-TagsQueryDto"></ph> -->
             <ph id="ph-definitions-StructuredContent-API-Dto-Tags-TagsQueryDto">
 {
-    "startIndex" : "string"
-    "pageSize" : "string"
+    "startIndex" : "integer"
+    "pageSize" : "integer"
     "tagPrefix" : "string"
     "tags" : "string"
     "contentTypeId" : "string"
@@ -1636,11 +1816,11 @@
             <parml id="parml-definitions-StructuredContent-API-Dto-Tags-TagsQueryDto" outputclass="docindent">
                 <plentry>
                     <pt>startIndex</pt>
-                    <pd>[string] Start index in pagination.</pd>
+                    <pd>[integer] Start index in pagination.</pd>
                 </plentry>
                 <plentry>
                     <pt>pageSize</pt>
-                    <pd>[string] Page size in pagination.</pd>
+                    <pd>[integer] Page size in pagination.</pd>
                 </plentry>
                 <plentry>
                     <pt>tagPrefix</pt>
@@ -1668,11 +1848,11 @@
             <parml id="parml-definitions-StructuredContent-API-Dto-Tags-Tag" outputclass="docindent">
                 <plentry>
                     <pt>value</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Value of the tag</pd>
                 </plentry>
                 <plentry>
                     <pt>contentItemsUsage</pt>
-                    <pd>[integer] </pd>
+                    <pd>[integer] Number of time the tag has been assigned to the content items</pd>
                 </plentry>
             </parml>
 
@@ -1683,7 +1863,7 @@
     "scripts" : "array"
     "cssFiles" : "array"
     "html" : "string"
-    "metadata" :  <!-- StructuredContent.Services.Visualizers.Dto.VisualizerRenderMetadata -->
+    "metadata" :
         {
             "vi" : "string"
             "ci" : "array"
@@ -1737,7 +1917,7 @@
             <ph id="ph-definitions-StructuredContent-Services-Visualizers-Dto-VisualizerDetailRenderResult">
 {
     "contentItemId" : "string"
-    "openGraphInfo" :  <!-- StructuredContent.Services.Visualizers.Dto.OpenGraphInfo -->
+    "openGraphInfo" :
         {
             "title" : "string"
             "content" : "string"
@@ -1745,10 +1925,13 @@
             "link" : "string"
             "imageUrl" : "string"
         }
+    "name" : "string"
+    "slug" : "string"
+    "updateDate" : "string"
     "scripts" : "array"
     "cssFiles" : "array"
     "html" : "string"
-    "metadata" :  <!-- StructuredContent.Services.Visualizers.Dto.VisualizerRenderMetadata -->
+    "metadata" :
         {
             "vi" : "string"
             "ci" : "array"
@@ -1766,6 +1949,18 @@
                     <pd>
                         <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Visualizers-Dto-OpenGraphInfo"><plentry><pt/><pd/></plentry></parml>
                     </pd>
+                </plentry>
+                <plentry>
+                    <pt>name</pt>
+                    <pd>[string] </pd>
+                </plentry>
+                <plentry>
+                    <pt>slug</pt>
+                    <pd>[string] </pd>
+                </plentry>
+                <plentry>
+                    <pt>updateDate</pt>
+                    <pd>[string] </pd>
                 </plentry>
                 <plentry>
                     <pt>scripts</pt>
@@ -1830,26 +2025,27 @@
     "type" : "string"
     "visualizerId" : "string"
     "detailsVisualizerId" : "string"
+    "referencedVisualizerInstanceId" : "string"
     "contentItemIds" : "array"
     "referencedContentItemIds" : "array"
     "pagingEnabled" : "boolean"
     "dynamicFilteringEnabled" : "boolean"
-    "contentItemQuery" :  <!-- StructuredContent.Models.Visualizers.Query -->
+    "contentItemQuery" :
         {
             "tags" : "array"
-            "pageSize" : "string"
+            "pageSize" : "integer"
             "fieldOrder" : "string"
             "orderAsc" : "boolean"
         }
     "createdAt" : "string"
-    "createdBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "createdBy" :
         {
             "id" : "string"
             "name" : "string"
             "thumbnail" : "string"
         }
     "updatedAt" : "string"
-    "updatedBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "updatedBy" :
         {
             "id" : "string"
             "name" : "string"
@@ -1876,6 +2072,10 @@
                     <pd>[string] The unique identifier of the visualizer details associated with this visualizer instance.</pd>
                 </plentry>
                 <plentry>
+                    <pt>referencedVisualizerInstanceId</pt>
+                    <pd>[string] </pd>
+                </plentry>
+                <plentry>
                     <pt>contentItemIds</pt>
                     <pd>[array] An array of the content item IDs associated with this visualizer instance.</pd>
                 </plentry>
@@ -1889,7 +2089,7 @@
                 </plentry>
                 <plentry>
                     <pt>dynamicFilteringEnabled</pt>
-                    <pd>[boolean] </pd>
+                    <pd>[boolean] When set to true allows dynamic tags filtering</pd>
                 </plentry>
                 <plentry>
                     <pt>contentItemQuery</pt>
@@ -1927,7 +2127,7 @@
             <ph id="ph-definitions-StructuredContent-Models-Visualizers-Query">
 {
     "tags" : "array"
-    "pageSize" : "string"
+    "pageSize" : "integer"
     "fieldOrder" : "string"
     "orderAsc" : "boolean"
 }
@@ -1940,7 +2140,7 @@
                 </plentry>
                 <plentry>
                     <pt>pageSize</pt>
-                    <pd>[string] </pd>
+                    <pd>[integer] </pd>
                 </plentry>
                 <plentry>
                     <pt>fieldOrder</pt>
@@ -1953,57 +2153,116 @@
             </parml>
 
 
+            <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-Visualizers-VisualizerInstanceCreation"></ph> -->
+            <ph id="ph-definitions-StructuredContent-API-Dto-Visualizers-VisualizerInstanceCreation">
+{
+    "type" : "string"
+    "visualizerId" : "string"
+    "detailsVisualizerId" : "string"
+    "contentItemIds" : "array"
+    "referencedContentItemIds" : "array"
+    "pagingEnabled" : "boolean"
+    "dynamicFilteringEnabled" : "boolean"
+    "contentItemQuery" :
+        {
+            "tags" : "array"
+            "pageSize" : "integer"
+            "fieldOrder" : "string"
+            "orderAsc" : "boolean"
+        }
+}
+            </ph>
+            <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-API-Dto-Visualizers-VisualizerInstanceCreation"><plentry><pt/><pd/></plentry></parml> -->
+            <parml id="parml-definitions-StructuredContent-API-Dto-Visualizers-VisualizerInstanceCreation" outputclass="docindent">
+                <plentry>
+                    <pt>type</pt>
+                    <pd>[string] The type of this visualizer instance: Basic, Detail, List, or ListDetail. Default is Basic.</pd>
+                </plentry>
+                <plentry>
+                    <pt>visualizerId</pt>
+                    <pd>[string] The unique identifier of the visualizer definition used to create this visualizer instance.</pd>
+                </plentry>
+                <plentry>
+                    <pt>detailsVisualizerId</pt>
+                    <pd>[string] The unique identifier of the visualizer details associated with this visualizer instance.</pd>
+                </plentry>
+                <plentry>
+                    <pt>contentItemIds</pt>
+                    <pd>[array] An array of the content item IDs associated with this visualizer instance.</pd>
+                </plentry>
+                <plentry>
+                    <pt>referencedContentItemIds</pt>
+                    <pd>[array] An array of the content item IDs referred to by the content items associated with this visualizer instance.</pd>
+                </plentry>
+                <plentry>
+                    <pt>pagingEnabled</pt>
+                    <pd>[boolean] If true, the list of content items returned by a query are split into pages of a specified size. Otherwise, the entire list is always returned.</pd>
+                </plentry>
+                <plentry>
+                    <pt>dynamicFilteringEnabled</pt>
+                    <pd>[boolean] When set to true allows dynamic tags filtering</pd>
+                </plentry>
+                <plentry>
+                    <pt>contentItemQuery</pt>
+                    <pd>
+                        The query used to retrieve content items. For use with List and ListDetail visualizers.
+                        <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Models-Visualizers-Query"><plentry><pt/><pd/></plentry></parml>
+                    </pd>
+                </plentry>
+            </parml>
+
+
             <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-Visualizers-ImportResult"></ph> -->
             <ph id="ph-definitions-StructuredContent-API-Dto-Visualizers-ImportResult">
 {
-    "visualizer" :  <!-- StructuredContent.API.Dto.Visualizers.Visualizer -->
+    "visualizer" :
         {
-            "header" :  <!-- StructuredContent.Services.Visualizers.Dto.Resource -->
+            "header" :
                 {
                     "content" : "string"
                     "name" : "string"
                     "uri" : "string"
-                    "isPrivate" : "string"
+                    "isPrivate" : "boolean"
                 }
-            "template" :  <!-- StructuredContent.Services.Visualizers.Dto.Resource -->
+            "template" :
                 {
                     "content" : "string"
                     "name" : "string"
                     "uri" : "string"
-                    "isPrivate" : "string"
+                    "isPrivate" : "boolean"
                 }
-            "footer" :  <!-- StructuredContent.Services.Visualizers.Dto.Resource -->
+            "footer" :
                 {
                     "content" : "string"
                     "name" : "string"
                     "uri" : "string"
-                    "isPrivate" : "string"
+                    "isPrivate" : "boolean"
                 }
             "contentTypeId" : "string"
             "contentTypeName" : "string"
             "scripts" : "array"
             "cssFiles" : "array"
-            "isSystem" : "boolean"
             "id" : "string"
             "name" : "string"
             "description" : "string"
             "iconUrl" : "string"
             "isNew" : "boolean"
             "createdAt" : "string"
-            "createdBy" :  <!-- StructuredContent.Models.UserInfo -->
+            "createdBy" :
                 {
                     "id" : "string"
                     "name" : "string"
                     "thumbnail" : "string"
                 }
             "updatedAt" : "string"
-            "updatedBy" :  <!-- StructuredContent.Models.UserInfo -->
+            "updatedBy" :
                 {
                     "id" : "string"
                     "name" : "string"
                     "thumbnail" : "string"
                 }
             "numberOfVisualizerInstances" : "integer"
+            "isSystem" : "boolean"
         }
     "contentTypeNames" : "array"
 }
@@ -2027,52 +2286,52 @@
             <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-Visualizers-Visualizer"></ph> -->
             <ph id="ph-definitions-StructuredContent-API-Dto-Visualizers-Visualizer">
 {
-    "header" :  <!-- StructuredContent.Services.Visualizers.Dto.Resource -->
+    "header" :
         {
             "content" : "string"
             "name" : "string"
             "uri" : "string"
-            "isPrivate" : "string"
+            "isPrivate" : "boolean"
         }
-    "template" :  <!-- StructuredContent.Services.Visualizers.Dto.Resource -->
+    "template" :
         {
             "content" : "string"
             "name" : "string"
             "uri" : "string"
-            "isPrivate" : "string"
+            "isPrivate" : "boolean"
         }
-    "footer" :  <!-- StructuredContent.Services.Visualizers.Dto.Resource -->
+    "footer" :
         {
             "content" : "string"
             "name" : "string"
             "uri" : "string"
-            "isPrivate" : "string"
+            "isPrivate" : "boolean"
         }
     "contentTypeId" : "string"
     "contentTypeName" : "string"
     "scripts" : "array"
     "cssFiles" : "array"
-    "isSystem" : "boolean"
     "id" : "string"
     "name" : "string"
     "description" : "string"
     "iconUrl" : "string"
     "isNew" : "boolean"
     "createdAt" : "string"
-    "createdBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "createdBy" :
         {
             "id" : "string"
             "name" : "string"
             "thumbnail" : "string"
         }
     "updatedAt" : "string"
-    "updatedBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "updatedBy" :
         {
             "id" : "string"
             "name" : "string"
             "thumbnail" : "string"
         }
     "numberOfVisualizerInstances" : "integer"
+    "isSystem" : "boolean"
 }
             </ph>
             <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-API-Dto-Visualizers-Visualizer"><plentry><pt/><pd/></plentry></parml> -->
@@ -2113,10 +2372,6 @@
                 <plentry>
                     <pt>cssFiles</pt>
                     <pd>[array] The list of CSS files used by the visualizer definition.</pd>
-                </plentry>
-                <plentry>
-                    <pt>isSystem</pt>
-                    <pd>[boolean] If true, the visualizer definition is a default provided by DNN.</pd>
                 </plentry>
                 <plentry>
                     <pt>id</pt>
@@ -2162,7 +2417,11 @@
                 </plentry>
                 <plentry>
                     <pt>numberOfVisualizerInstances</pt>
-                    <pd>[integer] The number of visualizer instances associated with the visualizer definition. Equal to the number of content items that use this visualizer.</pd>
+                    <pd>[integer] The number of visualizer instances associated with the visualizer definition. Equal to the number of content items that use this visualizer. <!-- ??? --></pd>
+                </plentry>
+                <plentry>
+                    <pt>isSystem</pt>
+                    <pd>[boolean] If true, the visualizer definition is a default provided by DNN.</pd>
                 </plentry>
             </parml>
 
@@ -2173,7 +2432,7 @@
     "content" : "string"
     "name" : "string"
     "uri" : "string"
-    "isPrivate" : "string"
+    "isPrivate" : "boolean"
 }
             </ph>
             <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Visualizers-Dto-Resource"><plentry><pt/><pd/></plentry></parml> -->
@@ -2192,7 +2451,7 @@
                 </plentry>
                 <plentry>
                     <pt>isPrivate</pt>
-                    <pd>[string] </pd>
+                    <pd>[boolean] </pd>
                 </plentry>
             </parml>
 
@@ -2202,8 +2461,8 @@
 {
     "contentTypeId" : "string"
     "searchText" : "string"
-    "startIndex" : "string"
-    "maxItems" : "string"
+    "startIndex" : "integer"
+    "maxItems" : "integer"
     "fieldOrder" : "string"
     "orderAsc" : "boolean"
     "createdFrom" : "string"
@@ -2222,11 +2481,11 @@
                 </plentry>
                 <plentry>
                     <pt>startIndex</pt>
-                    <pd>[string] </pd>
+                    <pd>[integer] </pd>
                 </plentry>
                 <plentry>
                     <pt>maxItems</pt>
-                    <pd>[string] </pd>
+                    <pd>[integer] </pd>
                 </plentry>
                 <plentry>
                     <pt>fieldOrder</pt>
@@ -2251,7 +2510,7 @@
             <ph id="ph-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-Visualizers-VisualizerBasicInfo">
 {
     "documents" : "array"
-    "totalResultCount" : "string"
+    "totalResultCount" : "integer"
 }
             </ph>
             <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Dto-SearchResultDto-StructuredContent-API-Dto-Visualizers-VisualizerBasicInfo"><plentry><pt/><pd/></plentry></parml> -->
@@ -2262,7 +2521,7 @@
                 </plentry>
                 <plentry>
                     <pt>totalResultCount</pt>
-                    <pd>[string] </pd>
+                    <pd>[integer] </pd>
                 </plentry>
             </parml>
 
@@ -2276,14 +2535,14 @@
     "iconUrl" : "string"
     "isNew" : "boolean"
     "createdAt" : "string"
-    "createdBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "createdBy" :
         {
             "id" : "string"
             "name" : "string"
             "thumbnail" : "string"
         }
     "updatedAt" : "string"
-    "updatedBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "updatedBy" :
         {
             "id" : "string"
             "name" : "string"
@@ -2339,11 +2598,93 @@
                 </plentry>
                 <plentry>
                     <pt>numberOfVisualizerInstances</pt>
-                    <pd>[integer] The number of visualizer instances associated with the visualizer definition. Equal to the number of content items that use this visualizer.</pd>
+                    <pd>[integer] The number of visualizer instances associated with the visualizer definition. Equal to the number of content items that use this visualizer. <!-- ??? --></pd>
                 </plentry>
                 <plentry>
                     <pt>isSystem</pt>
                     <pd>[boolean] If true, the visualizer definition is a default provided by DNN.</pd>
+                </plentry>
+            </parml>
+
+
+            <!-- <ph conkeyref="k-bpapi/ph-definitions-StructuredContent-API-Dto-Visualizers-VisualizerCreation"></ph> -->
+            <ph id="ph-definitions-StructuredContent-API-Dto-Visualizers-VisualizerCreation">
+{
+    "name" : "string"
+    "description" : "string"
+    "iconUrl" : "string"
+    "header" :
+        {
+            "content" : "string"
+            "name" : "string"
+            "uri" : "string"
+            "isPrivate" : "boolean"
+        }
+    "template" :
+        {
+            "content" : "string"
+            "name" : "string"
+            "uri" : "string"
+            "isPrivate" : "boolean"
+        }
+    "footer" :
+        {
+            "content" : "string"
+            "name" : "string"
+            "uri" : "string"
+            "isPrivate" : "boolean"
+        }
+    "contentTypeId" : "string"
+    "scripts" : "array"
+    "cssFiles" : "array"
+}
+            </ph>
+            <!-- <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-API-Dto-Visualizers-VisualizerCreation"><plentry><pt/><pd/></plentry></parml> -->
+            <parml id="parml-definitions-StructuredContent-API-Dto-Visualizers-VisualizerCreation" outputclass="docindent">
+                <plentry>
+                    <pt>name</pt>
+                    <pd>[string] The name of the visualizer definition.</pd>
+                </plentry>
+                <plentry>
+                    <pt>description</pt>
+                    <pd>[string] The description of the visualizer definition.</pd>
+                </plentry>
+                <plentry>
+                    <pt>iconUrl</pt>
+                    <pd>[string] The URL to the icon file associated with the visualizer definition.</pd>
+                </plentry>
+                <plentry>
+                    <pt>header</pt>
+                    <pd>
+                        The HTML code that displays the header of the content item list.
+                        <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Visualizers-Dto-Resource"><plentry><pt/><pd/></plentry></parml>
+                    </pd>
+                </plentry>
+                <plentry>
+                    <pt>template</pt>
+                    <pd>
+                        The HTML code that displays each content item in the results list.
+                        <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Visualizers-Dto-Resource"><plentry><pt/><pd/></plentry></parml>
+                    </pd>
+                </plentry>
+                <plentry>
+                    <pt>footer</pt>
+                    <pd>
+                        The HTML code that displays the footer of the content item list.
+                        <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Services-Visualizers-Dto-Resource"><plentry><pt/><pd/></plentry></parml>
+                    </pd>
+                </plentry>
+                <plentry>
+                    <pt>contentTypeId</pt>
+                    <pd>[string] The unique identifier of the content type associated with this visualizer definition.</pd>
+                </plentry>
+                <plentry>
+                    <pt>scripts</pt>
+                    <pd>[array] The list of web scripts used by the visualizer definition.</pd>
+                </plentry>
+                <plentry>
+                    <pt>cssFiles</pt>
+                    <pd>[array] The list of CSS files used by the visualizer definition.</pd>
                 </plentry>
             </parml>
 
@@ -2374,7 +2715,7 @@
                 </plentry>
                 <plentry>
                     <pt>active</pt>
-                    <pd>[boolean] Set active to false</pd>
+                    <pd>[boolean] State of the Web Hook, true active, false when inactive</pd>
                 </plentry>
                 <plentry>
                     <pt>events</pt>
@@ -2388,14 +2729,14 @@
 {
     "id" : "string"
     "createdAt" : "string"
-    "createdBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "createdBy" :
         {
             "id" : "string"
             "name" : "string"
             "thumbnail" : "string"
         }
     "updatedAt" : "string"
-    "updatedBy" :  <!-- StructuredContent.Models.UserInfo -->
+    "updatedBy" :
         {
             "id" : "string"
             "name" : "string"
@@ -2412,39 +2753,41 @@
             <parml id="parml-definitions-StructuredContent-API-Dto-Hooks-Hook" outputclass="docindent">
                 <plentry>
                     <pt>id</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Web Hook unique identifier</pd>
                 </plentry>
                 <plentry>
                     <pt>createdAt</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Created At</pd>
                 </plentry>
                 <plentry>
                     <pt>createdBy</pt>
                     <pd>
+                        Created By User
                         <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Models-UserInfo"><plentry><pt/><pd/></plentry></parml>
                     </pd>
                 </plentry>
                 <plentry>
                     <pt>updatedAt</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Updated At</pd>
                 </plentry>
                 <plentry>
                     <pt>updatedBy</pt>
                     <pd>
+                        Updated By User
                         <parml conkeyref="k-bpapi/parml-definitions-StructuredContent-Models-UserInfo"><plentry><pt/><pd/></plentry></parml>
                     </pd>
                 </plentry>
                 <plentry>
                     <pt>description</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Description</pd>
                 </plentry>
                 <plentry>
                     <pt>active</pt>
-                    <pd>[boolean] </pd>
+                    <pd>[boolean] State of the Web Hook, true active, false when inactive</pd>
                 </plentry>
                 <plentry>
                     <pt>url</pt>
-                    <pd>[string] </pd>
+                    <pd>[string] Url of the Web Hook.</pd>
                 </plentry>
                 <plentry>
                     <pt>secret</pt>
@@ -2452,7 +2795,7 @@
                 </plentry>
                 <plentry>
                     <pt>events</pt>
-                    <pd>[array] </pd>
+                    <pd>[array] Events to subscribe</pd>
                 </plentry>
             </parml>
 

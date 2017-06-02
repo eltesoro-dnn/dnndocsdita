@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-move-site-to-another-server">
+
+    <title>Move Site To Another Server</title>
+    <titlealts>
+        <navtitle>Move Site</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrMT,edET,1705</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <!-- <prereq>
+            <xref format="dita" href="set-up-dnn-folder.dita">DNN installed with folder permissions for the user account that will run your website.</xref>
+        </prereq> -->
+
+        <steps>
+
+            <stepsection outputclass="superstep">Export the web files from the old server, and set up the site in the new server.</stepsection>
+
+            <step><cmd><xref format="dita" href="../import-export/export-site.dita" >In the old server, export the site.</xref></cmd></step>
+
+            <step><cmd><xref format="dita" href="../import-export/transfer-an-export-package.dita" >Copy the export package to the new server.</xref></cmd></step>
+
+            <step><cmd><xref format="dita" href="../import-export/import-site.dita" >In the new server, import the site using the export package.</xref></cmd></step>
+
+            <step><cmd><xref format="dita" href="../setup/set-up-iis.dita" >In the new server, create a new IIS site.</xref></cmd></step>
+
+            <step><cmd><xref format="dita" href="../setup/set-up-dnn-folder.dita" >Add the necessary permissions for your website folder.</xref></cmd></step>
+
+
+
+            <stepsection outputclass="superstep">Copy the database and set up a database user.</stepsection>
+
+            <step><cmd><xref format="html" scope="external" href="https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/create-a-full-database-backup-sql-server">In the old server, back up the database to a .bak file, then copy the .bak file to the new server.</xref></cmd></step>
+
+            <step><cmd><xref format="html" scope="external" href="https://docs.microsoft.com/en-us/sql/relational-databases/backup-restore/restore-a-database-backup-using-ssms">In the new server, restore the SQL database.</xref></cmd></step>
+
+            <step>
+                <cmd>In the new server, use SQL Server Management Studio to set up a database user.</cmd>
+                <substeps>
+                    <substep><cmd><xref format="dita" href="../setup/set-up-sql.dita#tsk-set-up-sql/set-up-sql-user">Create a new user for your database.</xref></cmd></substep>
+                    <substep><cmd><xref format="dita" href="../setup/set-up-sql.dita#tsk-set-up-sql/db-owner-access">Set up the appropriate permissions.</xref></cmd></substep>
+                </substeps>
+            </step>
+
+
+
+            <stepsection outputclass="superstep">Configure web.config and the crawl list.</stepsection>
+
+			<step><cmd>In the new server, <xref format="dita" href="../configuring-your-site/access-web-config.dita">access the web.config file</xref>, and verify that the <codeph>connectionStrings</codeph> section is correctly configured.</cmd>
+				<info>
+                    <ul>
+                        <li><codeph>Data Source</codeph> must be set to the path to your database server.</li>
+                        <li><codeph>Catalog</codeph> must be the name of the database you restored. </li>
+                        <li><codeph>User ID and Password</codeph> must be the credentials of the authorized user that you created for your database.</li>
+                        <li><codeph>Data Source</codeph> must be set to the path to your database server.</li>
+                    </ul>
+				</info>
+			</step>
+
+			<step><cmd> If the web address for the new site is different from the old site, <xref format="dita" href="../search/edit-starting-url-in-crawl-list.dita">update the starting URL for crawling</xref>.</cmd></step>
+
+
+
+            <stepsection outputclass="superstep">Clear cache and restart.</stepsection>
+
+			<step>
+				<cmd>In IIS Manager, restart your website.</cmd>
+				<substeps>
+                    <substep><cmd>Go to <menucascade><uicontrol>Control Panel</uicontrol> <uicontrol>Administrative Tools</uicontrol> <uicontrol>Internet Information Services (IIS) Manager</uicontrol></menucascade>.</cmd></substep>
+					<!-- <substep><cmd>Select your website under Sites in the connections section on the left.</cmd></substep> This doesn't seem to be required. -->
+					<substep>
+                        <cmd>In the <uicontrol>Actions</uicontrol> panel on the right, click/tap <menucascade><uicontrol>Manage Server</uicontrol> <uicontrol>Restart</uicontrol></menucascade>.</cmd>
+						<info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-IISManager-restart.png"><alt>IIS Manager - Restart</alt></image>
+                            <note type="tip">Remember to update your DNS with your new server’s IP address.</note>
+                        </info>
+					</substep>
+				</substeps>
+			</step>
+
+			<step><cmd><xref href="../servers/clear-cache.dita">Clear the DNN cache.</xref></cmd></step>
+
+			<step><cmd><xref href="../servers/restart-application.dita">Restart the DNN application.</xref></cmd></step>
+
+        </steps>
+
+    </taskbody>
+
+</task>
