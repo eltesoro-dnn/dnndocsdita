@@ -17,6 +17,8 @@
         <topicref format="dita" type="task" toc="yes" href="delete-all-unauthorized-users.dita" />
         <topicref format="dita" type="task" toc="yes" href="restore-deleted-user-account.dita" />
         <topicref format="dita" type="task" toc="yes" href="purge-user-account.dita" />
+        <topicref format="dita" type="task" toc="yes" href="../recyclebin/restore-multiple-deleted-users.dita" />
+        <topicref format="dita" type="task" toc="yes" href="../recyclebin/purge-multiple-deleted-users.dita" />
 
         <!-- Host/superuser accounts tasks -->
         <topicref audience="adm" format="dita" type="task" toc="yes" href="create-host-account.dita" />

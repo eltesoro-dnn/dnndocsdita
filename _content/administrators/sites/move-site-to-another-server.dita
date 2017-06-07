@@ -91,20 +91,7 @@
 
             <stepsection outputclass="superstep">Clear cache and restart.</stepsection>
 
-			<step>
-				<cmd>In IIS Manager, restart your website.</cmd>
-				<substeps>
-                    <substep><cmd>Go to <menucascade><uicontrol>Control Panel</uicontrol> <uicontrol>Administrative Tools</uicontrol> <uicontrol>Internet Information Services (IIS) Manager</uicontrol></menucascade>.</cmd></substep>
-					<!-- <substep><cmd>Select your website under Sites in the connections section on the left.</cmd></substep> This doesn't seem to be required. -->
-					<substep>
-                        <cmd>In the <uicontrol>Actions</uicontrol> panel on the right, click/tap <menucascade><uicontrol>Manage Server</uicontrol> <uicontrol>Restart</uicontrol></menucascade>.</cmd>
-						<info>
-                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-IISManager-restart.png"><alt>IIS Manager - Restart</alt></image>
-                            <note type="tip">Remember to update your DNS with your new server’s IP address.</note>
-                        </info>
-					</substep>
-				</substeps>
-			</step>
+            <step conkeyref="k-bpsteps/step-reset-iis-website"><cmd/></step>
 
 			<step><cmd><xref href="../servers/clear-cache.dita">Clear the DNN cache.</xref></cmd></step>
 

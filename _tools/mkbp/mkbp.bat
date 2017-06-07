@@ -43,6 +43,10 @@ goto :eof
 call %0 runme json\import-export.json bptext-import-export W:\_content\administrators\import-export
 goto :eof
 
+:recyclebin
+call %0 runme json\recyclebin.json    bptext-recyclebin    W:\_content\common\recyclebin
+goto :eof
+
 
 :wip
 

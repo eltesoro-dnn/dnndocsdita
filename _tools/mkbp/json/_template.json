@@ -99,7 +99,6 @@
                 ,"step-"
                 ,"step-"
             ]
-            ,"result" : "An XML file containing the selected entries is attached to the email."
         },
 
         {
@@ -119,6 +118,15 @@
                 ,"step-pbtabs- host"
                 ,"step-"
                 ,"step-"
+            ]
+            ,"result" : "An XML file containing the selected entries is attached to the email."
+            ,"rellinks" : [
+                {
+                    "format" : ""
+                    "scope" : ""
+                    "href" : ""
+                    "text" : ""
+                }
             ]
         },
 

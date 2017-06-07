@@ -381,7 +381,7 @@ function Write1Step4bp( [PSCustomObject] $node, [string] $tag, [string] $indent 
 }
 function WriteSteps4bp( [PSCustomObject] $nodes, [string] $parenttag, [string] $indent )  {
     if ( $nodes.Count -gt 0 )  {
-        if ( $parenttag -notmatch "^sub" )  { Write-Output "" }
+        if ( $parenttag -like "step" )  { Write-Output "" }
         if ( $nodes -is [String] )  {
             $s = MkConref $nodes
             Write-Output "$indent$s"
@@ -392,16 +392,20 @@ function WriteSteps4bp( [PSCustomObject] $nodes, [string] $parenttag, [string] $
             foreach ( $node in $nodes )  {
                 if ( $node -is [String] )  {
                     $s = MkConref $node
-                    Write-Output "$indent$s"
+                    Write-Output "$indent$tab$s"
                 }
                 else  {
-                    Write1Step4bp $node $tag "$indent$tab"
+                    if ( $parenttag.StartsWith( "choices" ) )  {
+                        WriteSteps4bp $node $tag "$indent$tab"
+                    }
+                    else  {
+                        Write1Step4bp $node $tag "$indent$tab"
+                    }
                 }
             }
-            if ( $parenttag -notmatch "^sub" )  { Write-Output "" }
             Write-Output "$indent</$parenttag>"
         }
-        if ( $parenttag -notmatch "^sub" )  { Write-Output "" }
+        if ( $parenttag -like "step" )  { Write-Output "" }
     }
 }
 

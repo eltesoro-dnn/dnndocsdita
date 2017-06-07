@@ -6,29 +6,24 @@
 
 
     <!-- Keys. NOTE: Do NOT use keys for topics that need to have an "active" tag in the toc. -->
-    <keydef keys="k-bptext"     href="common/bptext.dita#top-bptext" />
-    <keydef keys="k-bpsteps"    href="common/bptext-steps.dita#tsk-bptext-steps" />
-    <keydef keys="k-bppbar"     href="common/bptext-pbar.dita#tsk-bptext-pbar" />
-    <keydef keys="k-bppbtabs"   href="common/bptext-pbtabs.dita#tsk-bptext-pbtabs" />
+    <keydef keys="k-bptext"    href="common/bptext.dita#top-bptext" />
+    <keydef keys="k-bpsteps"   href="common/bptext-steps.dita#tsk-bptext-steps" />
+    <keydef keys="k-bppbar"    href="common/bptext-pbar.dita#tsk-bptext-pbar" />
+    <keydef keys="k-bppbtabs"  href="common/bptext-pbtabs.dita#tsk-bptext-pbtabs" />
 
-    <keydef keys="k-bppagespb"  href="developers/pages-templates/bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb" />
-    <keydef keys="k-bppagesxx"  href="developers/pages-templates/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx" />
-    <keydef keys="k-bpmodules"  href="developers/content-with-modules/bptext-modules-steps.dita#tsk-bptext-modules-steps" />
+    <keydef keys="k-bppagespb" href="developers/pages-templates/bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb" />
+    <keydef keys="k-bppagesxx" href="developers/pages-templates/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx" />
+    <keydef keys="k-bpmodules" href="developers/content-with-modules/bptext-modules-steps.dita#tsk-bptext-modules-steps" />
 
 
     <!-- Topics -->
     <topicref format="dita" type="topic" toc="yes" href="developers/index.dita" >
 
-        <topicref format="dita" type="topic" navtitle="What's New in Features"      locktitle="yes" toc="yes" href="developers/whats-new-dnn.dita" />
-        <topicref format="dita" type="topic" navtitle="DNN Solutions"               locktitle="yes" toc="yes" href="developers/dnn-overview.dita" />
+        <topicref format="dita" type="topic" navtitle="What's New in Features" locktitle="yes" toc="yes" href="developers/whats-new-dnn.dita" />
+        <topicref format="dita" type="topic" navtitle="DNN Solutions"          locktitle="yes" toc="yes" href="developers/dnn-overview.dita" />
 
         <!-- Setup -->
-        <topicref format="dita" type="topic" toc="yes" href="developers/setup/set-up-dnn.dita" copy-to="developers/setup/index.dita" collection-type="sequence">
-            <topicref format="dita" type="task" toc="yes" href="developers/setup/set-up-dnn-folder.dita" />
-            <topicref format="dita" type="task" toc="yes" href="developers/setup/set-up-iis.dita" />
-            <topicref format="dita" type="task" toc="yes" href="developers/setup/set-up-sql.dita" />
-            <topicref format="dita" type="task" toc="yes" href="developers/setup/run-installation-wizard.dita" />
-        </topicref>
+        <mapref href="developers/setup/setup.ditamap" />
 
         <!-- Microservices -->
         <topicref format="dita" type="topic" navtitle="Microservices" locktitle="yes" toc="yes" href="developers/microservices/about-microservices.dita" copy-to="developers/microservices/index.dita"  collection-type="family" >

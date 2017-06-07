@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/map.dtd">
+<map xml:lang="en" id="map-setup">
+
+    <title>Setup</title>
+
+    <topicref audience="adm dev dsg" format="dita" type="topic" toc="yes" href="set-up-dnn.dita" copy-to="index.dita" collection-type="sequence">
+        <topicref format="dita" type="task" toc="yes" href="set-up-dnn-folder.dita" />
+        <topicref format="dita" type="task" toc="yes" href="set-up-iis.dita" />
+        <topicref format="dita" type="task" toc="yes" href="set-up-sql.dita" />
+        <topicref format="dita" type="task" toc="yes" href="run-installation-wizard.dita" />
+        <topicref format="dita" type="task" toc="yes" href="upgrade-evoq.dita" />
+    </topicref>
+
+</map>

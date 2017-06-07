@@ -13,7 +13,7 @@
 # Example: $bldroot can be overridden by the %_bldroot% evar.
 
 # $zipoutdir
-$texteditor = "%ProgramFiles(x86)%\Notepad++\notepad++.exe"  # "notepad"
+$texteditor = "%ProgramFiles%\Notepad++\notepad++.exe"  # "notepad"
 $lochostdocdir = "c:\inetpub\wwwroot\docs"
 
 $bldroot   = "v:"

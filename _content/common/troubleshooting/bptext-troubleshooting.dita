@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-bptext-troubleshooting">
+
+    <title>Boilerplates &#8212; Troubleshooting</title>
+
+    <prolog>
+        <author>wrET,1706</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+    </prolog>
+
+    <body>
+
+        <section>
+
+            <!-- ==================== INSTRUCTIONS ====================
+            For the following, copy the conref comment to your DITA file and uncomment it there.
+            -->
+
+            <ul>
+
+                <!-- <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-access-web-config"></li> -->
+                <li id="li-access-web-config" outputclass="step stepexpand"><xref href="../configuring-your-site/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></li>
+
+                <!-- <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-clear-cache"></li> -->
+                <li id="li-clear-cache" outputclass="step stepexpand"><xref href="../servers/clear-cache.dita">Clear the DNN cache.</xref></li>
+
+                <!-- <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-restart-app"></li> -->
+                <li id="li-restart-app" outputclass="step stepexpand"><xref href="../servers/restart-application.dita">Restart the DNN application.</xref></li>
+
+                <!-- <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-restart-app-expanded"></li> -->
+                <li id="li-restart-app-expanded" outputclass="step stepexpand"><xref href="../servers/restart-application.dita">Restart the DNN application</xref> to allow the changes to take effect.</li>
+
+                <!-- <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-back-up"></li> -->
+                <li id="li-back-up" outputclass="step stepexpand">Back up the site and the database.</li>
+
+
+
+
+                <!-- <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-"></li>
+                <li id="li-" outputclass="step stepexpand"><xref href="../xxx/yyy.dita">....</xref></li>
+                -->
+
+            </ul>
+
+        </section>
+
+
+
+        <!-- ==================== INSTRUCTIONS ====================
+        The following point to other boilerplate files.
+        Simply copy and paste the <li></li> line to your DITA file.
+
+        To go to the SQL console:
+        <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E91"></ph></li>
+        -->
+
+
+
+        <!-- ==================== INSTRUCTIONS ====================
+        Search for the Persona Bar command and copy that line.
+        NOTE: If both "adm" and "host" versions are available, use the "host" version.
+
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-ProductVersion-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-Documentation-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-CustomerPortal-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-ContactSupport-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-Logout-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Dashboard-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Dashboard-SiteAnalytics-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Dashboard-CommunityAnalytics-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-Assets-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-Pages-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-Forms-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-ContentLibrary-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-RecycleBin-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-Users-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-Roles-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-Templates-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-Themes-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-AdminLogs-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-PageAnalytics-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-PageAnalytics-CurrentPage-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-PageAnalytics-TotalPageViews-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-PageAnalytics-AverageTimeonPage-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-PageAnalytics-BounceRate-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-SiteSettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Security-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Workflow-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-SEO-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Community-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Gamification-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Vocabularies-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Connectors-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Extensions-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Servers-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-CustomCSS-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-all-Profile-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-all-Edit-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-ProductVersion-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-Documentation-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-CustomerPortal-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-ContactSupport-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-Logout-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Dashboard-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Dashboard-SiteAnalytics-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-Assets-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-Pages-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-Forms-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-ContentLibrary-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-RecycleBin-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Manage-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Manage-Users-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Manage-Templates-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-PageAnalytics-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-PageAnalytics-CurrentPage-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-PageAnalytics-TotalPageViews-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-PageAnalytics-AverageTimeonPage-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-PageAnalytics-BounceRate-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Settings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Settings-Workflow-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Settings-Connectors-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-ProductVersion-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-NETFramework-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-ServerName-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-LicenseKey-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-Documentation-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-CustomerPortal-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-ContactSupport-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-Logout-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Dashboard-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Dashboard-SiteAnalytics-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Dashboard-CommunityAnalytics-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-Assets-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-Pages-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-Forms-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-ContentLibrary-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-RecycleBin-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-Users-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-Roles-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-Templates-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-Themes-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-Sites-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-AdminLogs-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-PageAnalytics-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-PageAnalytics-CurrentPage-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-PageAnalytics-TotalPageViews-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-PageAnalytics-AverageTimeonPage-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-PageAnalytics-BounceRate-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SiteSettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Security-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Workflow-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SEO-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Community-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Gamification-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Vocabularies-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Connectors-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Extensions-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Servers-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Import-Export-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Scheduler-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-CustomCSS-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-ConfigManager-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-About-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-OnDemand-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-ProductVersion-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-Documentation-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-CustomerPortal-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-ContactSupport-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-Logout-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Dashboard-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Dashboard-SiteAnalytics-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Dashboard-CommunityAnalytics-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Content-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Content-Assets-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Manage-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Manage-Users-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Manage-Templates-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-PageAnalytics-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-PageAnalytics-CurrentPage-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-PageAnalytics-TotalPageViews-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-PageAnalytics-AverageTimeonPage-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-PageAnalytics-BounceRate-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Settings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Settings-Community-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Settings-Gamification-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Settings-Connectors-E91"></ph></li>
+        -->
+
+
+
+        <!-- ==================== INSTRUCTIONS ====================
+        Search for the tab name and copy that line to add after the Persona Bar line from above.
+        NOTE: If both "adm" and "host" versions are available, use the "host" version.
+
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-SiteAnalytics-Summary-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-SiteAnalytics-Conversions-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-SiteAnalytics-Traffic-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-CommunityAnalytics-Answers-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-CommunityAnalytics-Blogs-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-CommunityAnalytics-Challenges-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-CommunityAnalytics-Discussions-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-CommunityAnalytics-Events-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-CommunityAnalytics-Ideas-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Dashboard-CommunityAnalytics-Wiki-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Content-ContentLibrary-Content-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Content-ContentLibrary-ContentTypes-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Content-ContentLibrary-Visualizers-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Content-RecycleBin-Pages-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Content-RecycleBin-Modules-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Content-RecycleBin-Users-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Content-RecycleBin-Templates-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-SiteSettings-SiteInfo-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-SiteSettings-Search-Synonyms-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-SiteSettings-Search-IgnoreWords-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-SiteSettings-Search-Crawling-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-SiteSettings-Search-FileExtensions-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-Gamification-Actions-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-Gamification-Privileges-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Settings-Gamification-Badges-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Content-ContentLibrary-APIKeys-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Manage-Sites-Sites-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Manage-Sites-SiteGroups-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Manage-AdminLogs-AdminLogs-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Manage-AdminLogs-LogSettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SiteSettings-SiteBehavior-DefaultPages-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SiteSettings-SiteBehavior-Messaging-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SiteSettings-SiteBehavior-UserProfiles-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SiteSettings-SiteBehavior-SiteAliases-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SiteSettings-SiteBehavior-More-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SiteSettings-Language-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SiteSettings-Search-BasicSettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Security-LoginSettings-BasicLoginSettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Security-LoginSettings-LoginIPFilters-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Security-MemberAccounts-MemberManagement-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Security-MemberAccounts-RegistrationSettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Security-SecurityAnalyzer-AuditChecks-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Security-SecurityAnalyzer-ScannerCheck-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Security-SecurityAnalyzer-SuperuserActivity-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Security-SecurityBulletins-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Security-More-SSLSettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Security-More-MoreSecuritySettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SEO-URLManagement-GeneralSettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SEO-URLManagement-ExtensionURLProviders-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SEO-URLManagement-Expressions-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SEO-URLManagement-TestURL-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SEO-SitemapSettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Extensions-InstalledExtensions-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Extensions-AvailableExtensions-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Servers-SystemInfo-Application-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Servers-SystemInfo-Web-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Servers-SystemInfo-Database-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Servers-ServerSettings-WebServers-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Servers-ServerSettings-SMTPServer-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Servers-ServerSettings-Performance-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Servers-ServerSettings-Logs-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Scheduler-TaskQueue-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Scheduler-Scheduler-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Scheduler-History-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-ConfigManager-ConfigFiles-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-ConfigManager-MergeScripts-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-OnDemand-Account-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-OnDemand-Installations-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-OnDemand-Certificates-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Manage-AdminLogs-AdminLogs-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SiteSettings-SiteBehavior-DefaultPages-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SiteSettings-SiteBehavior-Messaging-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SiteSettings-SiteBehavior-UserProfiles-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SiteSettings-Language-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SiteSettings-Search-BasicSettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Security-LoginSettings-BasicLoginSettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Security-MemberAccounts-RegistrationSettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Security-More-SSLSettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SEO-URLManagement-GeneralSettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SEO-URLManagement-ExtensionURLProviders-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SEO-URLManagement-TestURL-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SEO-SitemapSettings-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Servers-SystemInfo-Application-E91"></ph></li>
+        <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Servers-ServerSettings-SMTPServer-E91"></ph></li>
+        -->
+
+    </body>
+
+</topic>

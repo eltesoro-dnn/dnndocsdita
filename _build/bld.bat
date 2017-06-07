@@ -5,7 +5,7 @@ cls
 set _zipoutdir=
 
 :. Path to the text editor of your choice.
-set _texteditor=%ProgramFiles(x86)%\Notepad++\notepad++.exe
+set _texteditor=%ProgramFiles%\Notepad++\notepad++.exe
 
 :. Path to the docs folder in your local website.
 set _localhostdocdir=c:\inetpub\wwwroot\docs

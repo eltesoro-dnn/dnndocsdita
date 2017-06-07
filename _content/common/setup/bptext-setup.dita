@@ -18,37 +18,151 @@
 
         <steps>
 
+
+            <!-- ==================== IIS ==================== -->
+
+            <!-- <step conref="bptext-setup.dita#tsk-bptext-setup/step-enable-iis"><cmd/></step> -->
+            <step id="step-enable-iis"><cmd>Enable IIS.</cmd>
+                <substeps>
+                    <substep><cmd><xref format="dita" href="../requirements.dita">Check compatible versions.</xref></cmd></substep>
+
+                    <substep><cmd>Go to <menucascade><uicontrol>Control Panel</uicontrol> <uicontrol>Programs and Features</uicontrol> <uicontrol>Turn Windows features on or off</uicontrol></menucascade>.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallIIS-1.png"><alt>Turn Windows features on or off</alt></image>
+                        </info>
+                    </substep>
+
+                    <substep><cmd>Under <uicontrol>Internet Information Services</uicontrol>, turn on the following:</cmd>
+                        <info>
+                            <ul>
+                                <li><uicontrol>Web Management Tools</uicontrol>: IIS Management Console</li>
+                                <li><uicontrol>World Wide Web Services</uicontrol>
+                                    <ul>
+                                        <li><uicontrol>Application Development Features</uicontrol>: ASP.NET 3.5 and 4.6</li>
+                                        <li><uicontrol>Common HTTP Features</uicontrol>: Default Document and Static Content</li>
+                                        <li>(Optional) <uicontrol>Security</uicontrol>: Basic Authentication</li>
+                                        <!-- TODO: Per Joe's tech review on 20160106: Add Windows Authentication here and in the screenshot. -->
+                                    </ul>
+                                </li>
+                                <li><uicontrol>Internet Information Services Hostable Web Core</uicontrol></li>
+                            </ul>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallIIS-6.png"><alt>IIS options to turn on</alt></image>
+                        </info>
+                    </substep>
+
+                    <!-- TODO: Per Joe's tech review on 20160106: Add (Optional) Performance Features: Static Content Compression -->
+                </substeps>
+            </step>
+
+
+            <!-- <step conref="bptext-setup.dita#tsk-bptext-setup/step-point-to-DNN-folder"><cmd/></step> -->
+            <step id="step-point-to-DNN-folder"><cmd>To create a new website and point it to the DNN installation folder:</cmd>
+               <substeps>
+                    <substep><cmd>Go to <menucascade><uicontrol>Control Panel</uicontrol> <uicontrol>Administrative Tools</uicontrol> <uicontrol>Internet Information Services (IIS) Manager</uicontrol></menucascade>.</cmd></substep>
+
+                    <substep>
+                        <cmd>In the <uicontrol>Connections</uicontrol> panel, expand your host tree, right-click on <uicontrol>Sites</uicontrol>, and choose <uicontrol>Add Website</uicontrol>.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-1.png"><alt>In Connections, Sites, then Add Website"</alt></image>
+                        </info>
+                    </substep>
+
+                    <substep>
+                        <cmd>Enter the new website's name and choose the location.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-2.png"><alt>Enter the new website's name and choose the location.</alt></image>
+                        </info>
+                    </substep>
+
+                    <substep>
+                        <cmd>Enter the <uicontrol>Host name</uicontrol>.</cmd>
+                        <info>
+                            <p><ph outputclass="audience-dev audience-dsg">Developers and Designers:</ph> If setting up a local development environment, you can use <codeph>www.dnndev.me</codeph> (or any subdomain). DNNDEV.ME is a registered domain which points to the loopback address of 127.0.0.1, so it will always resolve locally.</p>
+                            <p><ph outputclass="audience-adm">Administrators:</ph> If setting up a live website, use your website's domain.</p>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-4.png"><alt>For local, use www.dnndev.me.</alt></image>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+
+
+            <!-- <step conref="bptext-setup.dita#tsk-bptext-setup/step-use-existing-website"><cmd/></step> -->
+            <step id="step-use-existing-website"><cmd>To use an existing IIS website:</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>In the <uicontrol>Connections</uicontrol> panel, right-click on the name of the existing website, and choose <uicontrol>Edit Bindings...</uicontrol>.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-6.png"><alt>Right-click on the website's name and choose Edit Bindings.</alt></image>
+                        </info>
+                    </substep>
+
+                    <substep>
+                        <cmd>In <uicontrol>Site Bindings</uicontrol>, click/tap <uicontrol>Add...</uicontrol>. In <uicontrol>Add Site Binding</uicontrol>, enter the <uicontrol>Host name</uicontrol>.</cmd>
+                        <info>
+                            <p><ph outputclass="audience-dev audience-dsg">Developers and Designers:</ph> If setting up a local development environment, you can use <codeph>www.dnndev.me</codeph> (or any subdomain). DNNDEV.ME is a registered domain which points to the loopback address of 127.0.0.1, so it will always resolve locally.</p>
+                            <p><ph outputclass="audience-adm">Administrators:</ph> If setting up a live website, use your website's domain.</p>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-NewSiteInIIS-7.png"><alt>For local, use www.dnndev.me.</alt></image>
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+
+
+            <!-- <step conref="bptext-setup.dita#tsk-bptext-setup/step-apppoolname-perms"><cmd/></step> -->
+            <step id="step-apppoolname-perms">
+                <cmd>If you do not use <b>NETWORK SERVICE</b> as the user account to run your website, verify that <b>IIS AppPool\AppPoolName</b> has <b>Full</b> or <b>Modify</b> permissions for the DNN installation folder.</cmd>
+                <info>
+                    <p>The account <b>IIS AppPool\AppPoolName</b> is automatically created by IIS.</p>
+                    <p>See <xref format="dita" href="set-up-dnn-folder.dita">Set Up DNN Folder and the User Account</xref>.</p>
+                </info>
+            </step>
+
+
+            <!-- See ..\bptext-steps.dita for restarting the website in IIS. -->
+
+
+            <!-- ==================== SQL ==================== -->
+
+
             <!-- <step conref="bptext-setup.dita#tsk-bptext-setup/step-install-sql"><cmd/></step> -->
             <step id="step-install-sql">
                 <cmd>Install SQL.</cmd>
                 <substeps>
                     <substep><cmd><xref format="dita" href="../requirements.dita">Check compatible versions.</xref></cmd></substep>
+
                     <substep><cmd>Choose <uicontrol>New SQL Server stand-alone installation...</uicontrol>.</cmd>
                         <info>
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallSQL-1.png"><alt>New SQL Server stand-alone installation</alt></image>
                         </info>
                     </substep>
+
                     <substep><cmd>Include any product updates.</cmd></substep>
+
                     <substep><cmd>Accept the defaults in <uicontrol>Feature Selection</uicontrol>, <uicontrol>Instance Configuration</uicontrol>, and <uicontrol>Server Configuration</uicontrol>.</cmd></substep>
+
                     <substep><cmd>In <uicontrol>Database Engine Configuration</uicontrol>, under <uicontrol>Authentication Mode</uicontrol>, choose <uicontrol>Mixed Mode</uicontrol>.</cmd>
                         <info>
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-InstallSQL-6.png"><alt>Database Engine Conf > Authentication Mode > Mixed Mode</alt></image>
                         </info>
                     </substep>
+
                     <substep><cmd>Accept the defaults in remaining dialogs.</cmd></substep>
                 </substeps>
             </step>
+
 
             <!-- <step conref="bptext-setup.dita#tsk-bptext-setup/step-create-sql-database"><cmd/></step> -->
             <step id="step-create-sql-database">
                 <cmd>Create a SQL database for your website.</cmd>
                 <substeps>
                     <substep><cmd>Start the <uicontrol>Microsoft SQL Server Management Studio</uicontrol> app.</cmd></substep>
+
                     <substep><cmd>In the <uicontrol>Object Explorer</uicontrol> panel, right-click on <uicontrol>Databases</uicontrol>, and choose <uicontrol>New Database...</uicontrol>.</cmd>
                         <info>
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-2.png"><alt>In the Object Explorer panel, right-click Databases, choose New Database.</alt></image>
                         </info>
                     </substep>
+
                     <substep><cmd>Enter the name of the new database. Click/Tap <uicontrol>OK</uicontrol>.</cmd>
                         <info>
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-3.png"><alt>Enter new database name.</alt></image>
@@ -57,6 +171,7 @@
                     </substep>
                 </substeps>
             </step>
+
 
             <!-- <step conref="bptext-setup.dita#tsk-bptext-setup/step-create-sql-user"><cmd/></step> -->
             <step id="step-create-sql-user">
@@ -67,6 +182,7 @@
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-4.png"><alt>Under Security, right-click Logins, choose New Login.</alt></image>
                         </info>
                     </substep>
+
                     <substep><cmd>Enter the username, choose <uicontrol>SQL Server authentication</uicontrol>, add a password, uncheck <uicontrol>Enforce password policy</uicontrol>, and choose the database.</cmd>
                         <info>
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-5.png"><alt>Choose SQL Server authentication. Uncheck Enforce password policy.</alt></image>
@@ -75,6 +191,7 @@
                     </substep>
                 </substeps>
             </step>
+
 
             <!-- <step conref="bptext-setup.dita#tsk-bptext-setup/step-db-owner-access"><cmd/></step> -->
             <step id="step-db-owner-access">
@@ -85,16 +202,19 @@
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-6.png"><alt>Under your database > Security, right-click Users, choose New User.</alt></image>
                         </info>
                     </substep>
+
                     <substep><cmd>Set <uicontrol>User type</uicontrol> to <uicontrol>SQL user with login</uicontrol>.</cmd>
                         <info>
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-7.png"><alt>User type = SQL user with login</alt></image>
                         </info>
                     </substep>
+
                     <substep><cmd>Enter the username of the account you just created, then click/tap <uicontrol>Check Names</uicontrol>.</cmd>
                         <info>
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-8.png"><alt>Enter the new account's login name, then click/tap Check Names.</alt></image>
                         </info>
                     </substep>
+
                     <substep><cmd>Under <uicontrol>Select a page</uicontrol>, select <uicontrol>Membership</uicontrol>, and check the <uicontrol>db_owner</uicontrol> database role membership.</cmd>
                         <info>
                             <image outputclass="img-scr" scalefit="yes" placement="break" align="center" href="../../common/img/scr-SetupSQL-10.png"><alt>For Membership page, check db_owner.</alt></image>

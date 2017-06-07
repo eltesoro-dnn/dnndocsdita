@@ -23,13 +23,7 @@
         <topicref format="dita" type="topic" navtitle="DNN Solutions"               locktitle="yes" toc="yes" href="administrators/dnn-overview.dita" />
 
         <!-- Setup -->
-        <topicref format="dita" type="topic" toc="yes" href="administrators/setup/set-up-dnn.dita" copy-to="administrators/setup/index.dita" collection-type="sequence">
-            <topicref format="dita" type="task" toc="yes" href="administrators/setup/set-up-dnn-folder.dita" />
-            <topicref format="dita" type="task" toc="yes" href="administrators/setup/set-up-iis.dita" />
-            <topicref format="dita" type="task" toc="yes" href="administrators/setup/set-up-sql.dita" />
-            <topicref format="dita" type="task" toc="yes" href="administrators/setup/run-installation-wizard.dita" />
-            <topicref format="dita" type="task" toc="yes" href="administrators/setup/upgrade-evoq.dita" />
-        </topicref>
+        <mapref href="administrators/setup/setup.ditamap" />
 
         <!-- Licensing -->
         <topicref format="dita" type="topic" navtitle="Licensing Evoq" locktitle="yes" toc="yes" href="administrators/licensing/licensing.dita" copy-to="administrators/licensing/index.dita" collection-type="family">
@@ -256,6 +250,23 @@
             <relcell>
                 <topicref format="dita" type="topic"      href="administrators/sitemaps/about-sitemaps.dita" />
                 <topicref format="dita" type="topic"      href="administrators/search/about-search.dita" />
+            </relcell>
+            <relcell/>
+        </relrow>
+
+        <!-- adm recycle bin -->
+        <relrow>
+            <relcell/>
+            <relcell>
+                <topicref format="dita" type="task"       href="administrators/recyclebin/empty-recycle-bin.dita" />
+                <topicref format="dita" type="task"       href="administrators/recyclebin/purge-deleted-modules.dita" />
+                <topicref format="dita" type="task"       href="administrators/recyclebin/purge-deleted-pages.dita" />
+                <topicref format="dita" type="task"       href="administrators/recyclebin/purge-deleted-templates.dita" />
+                <topicref format="dita" type="task"       href="administrators/recyclebin/purge-multiple-deleted-users.dita" />
+                <topicref format="dita" type="task"       href="administrators/recyclebin/restore-deleted-modules.dita" />
+                <topicref format="dita" type="task"       href="administrators/recyclebin/restore-deleted-pages.dita" />
+                <topicref format="dita" type="task"       href="administrators/recyclebin/restore-deleted-templates.dita" />
+                <topicref format="dita" type="task"       href="administrators/recyclebin/restore-multiple-deleted-users.dita" />
             </relcell>
             <relcell/>
         </relrow>

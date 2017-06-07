@@ -102,12 +102,6 @@
 <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SEO-URLManagement-TestURL-E91"></ph></li>
 <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SEO-SitemapSettings-E91"><cmd/></step>
 <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SEO-SitemapSettings-E91"></ph></li>
-<step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-All-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-All-E91"></ph></li>
-<step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-Application-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-Application-E91"></ph></li>
-<step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Vocabularies-Website-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Vocabularies-Website-E91"></ph></li>
 <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Extensions-InstalledExtensions-E91"><cmd/></step>
 <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Extensions-InstalledExtensions-E91"></ph></li>
 <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-Extensions-AvailableExtensions-E91"><cmd/></step>
@@ -168,12 +162,6 @@
 <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SEO-URLManagement-TestURL-E91"></ph></li>
 <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-SEO-SitemapSettings-E91"><cmd/></step>
 <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-SEO-SitemapSettings-E91"></ph></li>
-<step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-All-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-All-E91"></ph></li>
-<step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-Application-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-Application-E91"></ph></li>
-<step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Vocabularies-Website-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Vocabularies-Website-E91"></ph></li>
 <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Servers-SystemInfo-Application-E91"><cmd/></step>
 <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Servers-SystemInfo-Application-E91"></ph></li>
 <step conkeyref="k-bppbtabs/step-pbtabs-adm-Settings-Servers-ServerSettings-SMTPServer-E91"><cmd/></step>

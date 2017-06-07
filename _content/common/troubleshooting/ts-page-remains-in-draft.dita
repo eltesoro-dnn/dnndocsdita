@@ -61,8 +61,8 @@
                 <title>Solution</title>
 
                 <ol outputclass="steps">
-                    <li outputclass="step stepexpand">Back up the site and the database.</li>  <!-- TODO: Link this to a how-to topic about backing up the site and the database. -->
-                    <li outputclass="step stepexpand">Log into the site as a host/superuser.</li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Back up the site and the database.</ph></li>  <!-- TODO: Link this to a how-to topic about backing up the site and the database. -->
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Log into the site as a host/superuser.</ph></li>
                     <li outputclass="step stepexpand"><p outputclass="cmd">Publish the page through SQL.</p>
                         <ol outputclass="substeps">
                             <li outputclass="substep"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E91"></ph></li>

@@ -25,12 +25,7 @@
         <topicref format="dita" type="topic" navtitle="DNN Solutions"               locktitle="yes" toc="yes" href="designers/dnn-overview.dita" />
 
         <!-- Setup -->
-        <topicref format="dita" type="topic" toc="yes" href="designers/setup/set-up-dnn.dita" copy-to="designers/setup/index.dita" collection-type="sequence">
-            <topicref format="dita" type="task" toc="yes" href="designers/setup/set-up-dnn-folder.dita" />
-            <topicref format="dita" type="task" toc="yes" href="designers/setup/set-up-iis.dita" />
-            <topicref format="dita" type="task" toc="yes" href="designers/setup/set-up-sql.dita" />
-            <topicref format="dita" type="task" toc="yes" href="designers/setup/run-installation-wizard.dita" />
-        </topicref>
+        <mapref href="designers/setup/setup.ditamap" />
 
         <!-- About themes -->
         <topicref format="dita" type="topic" toc="yes" href="designers/about-themes.dita" />

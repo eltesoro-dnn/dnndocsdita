@@ -1,0 +1,216 @@
+{
+    "global" : {
+        "avail" : "CE"
+        ,"author" : "wrET,1706"
+        ,"audience" : [
+            {   "audtype" : "administrator"
+                ,"audjob" : "other"
+            },
+            {   "audtype" : "content manager"
+                ,"audjob" : "other"
+            }
+        ]
+        ,"products" : [ "C91","E91" ]
+    },
+
+
+    "bpsection" : [
+        {   "id" : "note-purges-all"
+            ,"text" : "The <uicontrol>Empty Recycle Bin</uicontrol> button purges (permanently deletes) all items. To purge a specific type of item, go to the tab for the item type."
+        }
+    ],
+
+
+    "bpsteps" : [
+        {   "id" : "step-empty-recycle-bin-button"
+            ,"cmd" : "Click/Tap <uicontrol>Empty Recycle Bin</uicontrol>."
+            ,"info" : "img=scr-RecycleBin-Empty-Recycle-Bin-button-E91.png|Empty Recycle Bin button"
+        },
+
+        {   "id" : "step-restore-one-or-more-pages"
+            ,"cmd" : "Restore one or more pages."
+            ,"choices" : [
+                [   "<p>To restore a single page, hover over the page to restore, and click/tap the <uicontrol>Restore</uicontrol> icon for that item.</p>"
+                    ,"img=scr-RecycleBin-Pages-Restore-icon-E91.png|Restore icon for each item in the list."
+                ],
+                [   "<p>To restore multiple pages, check the boxes for the items to restore, and click/tap the <uicontrol>Restore</uicontrol> button.</p>"
+                    ,"img=scr-RecycleBin-Pages-Select-Then-Restore-button-E91.png|Restore button."
+                ]
+            ]
+        },
+        {   "id" : "step-restore-one-or-more-modules"
+            ,"cmd" : "Restore one or more modules."
+            ,"choices" : [
+                [   "<p>To restore a single module, hover over the module to restore, and click/tap the <uicontrol>Restore</uicontrol> icon for that item.</p>"
+                    ,"img=scr-RecycleBin-Modules-Restore-icon-E91.png|Restore icon for each item in the list."
+                ],
+                [   "<p>To restore multiple modules, check the boxes for the items to restore, and click/tap the <uicontrol>Restore</uicontrol> button.</p>"
+                    ,"img=scr-RecycleBin-Modules-Select-Then-Restore-button-E91.png|Restore button."
+                ]
+            ]
+        },
+        {   "id" : "step-restore-one-or-more-users"
+            ,"cmd" : "Restore one or more users."
+            ,"choices" : [
+                [   "<p>To restore a single user, hover over the user to restore, and click/tap the <uicontrol>Restore</uicontrol> icon for that item.</p>"
+                    ,"img=scr-RecycleBin-Users-Restore-icon-E91.png|Restore icon for each item in the list."
+                ],
+                [   "<p>To restore multiple users, check the boxes for the items to restore, and click/tap the <uicontrol>Restore</uicontrol> button.</p>"
+                    ,"img=scr-RecycleBin-Users-Select-Then-Restore-button-E91.png|Restore button."
+                ]
+            ]
+        },
+        {   "id" : "step-restore-one-or-more-templates"
+            ,"cmd" : "Restore one or more templates."
+            ,"choices" : [
+                [   "<p>To restore a single template, hover over the template to restore, and click/tap the <uicontrol>Restore</uicontrol> icon for that item.</p>"
+                    ,"img=scr-RecycleBin-Templates-Restore-icon-E91.png|Restore icon for each item in the list."
+                ],
+                [   "<p>To restore multiple templates, check the boxes for the items to restore, and click/tap the <uicontrol>Restore</uicontrol> button.</p>"
+                    ,"img=scr-RecycleBin-Templates-Select-Then-Restore-button-E91.png|Restore button."
+                ]
+            ]
+        },
+
+        {   "id" : "step-purge-one-or-more-pages"
+            ,"cmd" : "Purge (Permanently delete) one or more pages."
+            ,"choices" : [
+                [   "<p>To purge a single page, hover over the page to purge, and click/tap the <uicontrol>Delete</uicontrol> icon for that item.</p>"
+                    ,"img=scr-RecycleBin-Pages-Delete-icon-E91.png|Delete icon for each item in the list."
+                ],
+                [   "<p>To purge multiple pages, check the boxes for the items to purge, and click/tap the <uicontrol>Delete</uicontrol> button.</p>"
+                    ,"img=scr-RecycleBin-Pages-Select-Then-Delete-button-E91.png|Delete button."
+                ]
+            ]
+        },
+        {   "id" : "step-purge-one-or-more-modules"
+            ,"cmd" : "Purge (Permanently delete) one or more modules."
+            ,"choices" : [
+                [   "<p>To purge a single module, hover over the module to purge, and click/tap the <uicontrol>Delete</uicontrol> icon for that item.</p>"
+                    ,"img=scr-RecycleBin-Modules-Delete-icon-E91.png|Delete icon for each item in the list."
+                ],
+                [   "<p>To purge multiple modules, check the boxes for the items to purge, and click/tap the <uicontrol>Delete</uicontrol> button.</p>"
+                    ,"img=scr-RecycleBin-Modules-Select-Then-Delete-button-E91.png|Delete button."
+                ]
+            ]
+        },
+        {   "id" : "step-purge-one-or-more-users"
+            ,"cmd" : "Purge (Permanently delete) one or more users."
+            ,"choices" : [
+                [   "<p>To purge a single user, hover over the user to purge, and click/tap the <uicontrol>Delete</uicontrol> icon for that item.</p>"
+                    ,"img=scr-RecycleBin-Users-Delete-icon-E91.png|Delete icon for each item in the list."
+                ],
+                [   "<p>To purge multiple users, check the boxes for the items to purge, and click/tap the <uicontrol>Delete</uicontrol> button.</p>"
+                    ,"img=scr-RecycleBin-Users-Select-Then-Delete-button-E91.png|Delete button."
+                ]
+            ]
+        },
+        {   "id" : "step-purge-one-or-more-templates"
+            ,"cmd" : "Purge (Permanently delete) one or more templates."
+            ,"choices" : [
+                [   "<p>To purge a single template, hover over the template to purge, and click/tap the <uicontrol>Delete</uicontrol> icon for that item.</p>"
+                    ,"img=scr-RecycleBin-Templates-Delete-icon-E91.png|Delete icon for each item in the list."
+                ],
+                [   "<p>To purge multiple templates, check the boxes for the items to purge, and click/tap the <uicontrol>Delete</uicontrol> button.</p>"
+                    ,"img=scr-RecycleBin-Templates-Select-Then-Delete-button-E91.png|Delete button."
+                ]
+            ]
+        }
+    ],
+
+
+    "topics" : [
+        {
+            "nav" : "Empty Recycle Bin"
+            ,"title" : "Empty the Recycle Bin"
+            ,"section" : "conref=note-purges-all"
+            ,"steps" : [
+                "step-pbar-Content-RecycleBin adm cmg"
+                ,"step-empty-recycle-bin-button"
+                ,"Confirm."
+            ]
+        },
+
+        {
+            "nav" : "Restore Deleted Pages"
+            ,"title" : "Restore Deleted Pages"
+            ,"steps" : [
+                "step-pbar-Content-RecycleBin adm cmg"
+                ,"step-pbtabs-Content-RecycleBin-Pages adm cmg"
+                ,"step-restore-one-or-more-pages"
+                ,"Confirm."
+            ]
+        },
+        {
+            "nav" : "Restore Deleted Modules"
+            ,"title" : "Restore Deleted Modules"
+            ,"steps" : [
+                "step-pbar-Content-RecycleBin adm cmg"
+                ,"step-pbtabs-Content-RecycleBin-Modules adm cmg"
+                ,"step-restore-one-or-more-modules"
+                ,"Confirm."
+            ]
+        },
+        {
+            "nav" : "Restore Multiple Deleted Users"
+            ,"title" : "Restore Multiple Deleted Users"
+            ,"steps" : [
+                "step-pbar-Content-RecycleBin adm cmg"
+                ,"step-pbtabs-Content-RecycleBin-Users adm cmg"
+                ,"step-restore-one-or-more-users"
+                ,"Confirm."
+            ]
+        },
+        {
+            "nav" : "Restore Deleted Templates"
+            ,"title" : "Restore Deleted Templates"
+            ,"steps" : [
+                "step-pbar-Content-RecycleBin adm cmg"
+                ,"step-pbtabs-Content-RecycleBin-Templates adm cmg"
+                ,"step-restore-one-or-more-templates"
+                ,"Confirm."
+            ]
+        },
+
+        {
+            "nav" : "Purge Deleted Pages"
+            ,"title" : "Purge Deleted Pages"
+            ,"steps" : [
+                "step-pbar-Content-RecycleBin adm cmg"
+                ,"step-pbtabs-Content-RecycleBin-Pages adm cmg"
+                ,"step-purge-one-or-more-pages"
+                ,"Confirm."
+            ]
+        },
+        {
+            "nav" : "Purge Deleted Modules"
+            ,"title" : "Purge Deleted Modules"
+            ,"steps" : [
+                "step-pbar-Content-RecycleBin adm cmg"
+                ,"step-pbtabs-Content-RecycleBin-Modules adm cmg"
+                ,"step-purge-one-or-more-modules"
+                ,"Confirm."
+            ]
+        },
+        {
+            "nav" : "Purge Multiple Deleted Users"
+            ,"title" : "Purge Multiple Deleted Users"
+            ,"steps" : [
+                "step-pbar-Content-RecycleBin adm cmg"
+                ,"step-pbtabs-Content-RecycleBin-Users adm cmg"
+                ,"step-purge-one-or-more-users"
+                ,"Confirm."
+            ]
+        },
+        {
+            "nav" : "Purge Deleted Templates"
+            ,"title" : "Purge Deleted Templates"
+            ,"steps" : [
+                "step-pbar-Content-RecycleBin adm cmg"
+                ,"step-pbtabs-Content-RecycleBin-Templates adm cmg"
+                ,"step-purge-one-or-more-templates"
+                ,"Confirm."
+            ]
+        }
+    ]
+}
