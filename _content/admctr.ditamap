@@ -20,7 +20,6 @@
     <topicref format="dita" type="topic" toc="yes" href="administrators/index.dita" >
 
         <topicref format="dita" type="topic" navtitle="What's New in Features"      locktitle="yes" toc="yes" href="administrators/whats-new-dnn.dita" />
-        <topicref format="dita" type="topic" navtitle="DNN Solutions"               locktitle="yes" toc="yes" href="administrators/dnn-overview.dita" />
 
         <!-- Setup -->
         <mapref href="administrators/setup/setup.ditamap" />
@@ -60,6 +59,7 @@
 
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="administrators/administrator-references.dita" collection-type="family">
+            <topicref format="dita" type="topic"     toc="yes" href="administrators/dnn-overview.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="administrators/control-bar-to-persona-bar.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="administrators/persona-bar-by-role.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="administrators/providers.dita" />

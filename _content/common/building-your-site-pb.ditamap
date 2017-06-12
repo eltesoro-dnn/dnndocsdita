@@ -9,7 +9,6 @@
 
         <mapref href="assets/assets.ditamap" />
         <mapref href="pages-templates/pages-templates.ditamap" />
-        <mapref href="content-with-modules/content-with-modules.ditamap" />
 
         <topicref format="dita" type="topic" toc="yes" href="microservices/creating-content-with-microservices.dita" copy-to="microservices/index.dita" collection-type="family">
             <!-- <topicref format="dita" type="topic" toc="yes" href="microservices/about-microservices.dita" /> -->
@@ -17,6 +16,8 @@
 			<mapref href="forms/forms.ditamap" />
 			<topicref format="dita" type="topic" toc="yes" href="fields/content-fields-versus-form-fields.dita" copy-to="fields/index.dita" />
         </topicref>
+
+        <mapref href="content-with-modules/content-with-modules.ditamap" />
 
         <topicref format="dita" type="topic" toc="yes" href="recyclebin/empty-recycle-bin.dita" />
 

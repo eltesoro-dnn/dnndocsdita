@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-structured-content">
+
+    <title>Liquid Content&#8482; (Structured Content)</title>
+
+    <!-- Topics -->
+    <topicref format="dita" type="reference" toc="yes" href="visualizer-templates.dita" collection-type="family" >
+        <topicref format="dita" type="reference" toc="yes" href="visualizer-templates-basics.dita" />
+        <topicref format="dita" type="reference" toc="yes" href="visualizer-templates-filters.dita" />
+        <topicref format="dita" type="reference" toc="yes" href="visualizer-templates-datetime.dita" />
+    </topicref>
+
+</map>

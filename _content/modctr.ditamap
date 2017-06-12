@@ -20,7 +20,6 @@
     <topicref format="dita" type="topic" toc="yes" href="community-managers/index.dita" >
 
         <topicref format="dita" type="topic" navtitle="What's New in Features"      locktitle="yes" toc="yes" href="community-managers/whats-new-dnn.dita" />
-        <topicref format="dita" type="topic" navtitle="DNN Solutions"               locktitle="yes" toc="yes" href="community-managers/dnn-overview.dita" />
 
         <!-- Configuring Your Site -->
         <mapref href="community-managers/configuring-your-site-pb-all.ditamap" />
@@ -36,6 +35,7 @@
 
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="community-managers/community-manager-references.dita" collection-type="family">
+            <topicref format="dita" type="topic"     toc="yes" href="community-managers/dnn-overview.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="community-managers/control-bar-to-persona-bar.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="community-managers/persona-bar-by-role.dita" />
             <mapref href="community-managers/included-modules/included-modules.ditamap" />

@@ -2,14 +2,14 @@
 <!DOCTYPE reference PUBLIC "-//OASIS//DTD DITA Reference//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/reference.dtd">
 <reference xml:lang="en" id="ref-searched-fields">
 
-    <title>Microservices: Searched Fields</title>
+    <title>Liquid Content: Searched Fields</title>
     <titlealts>
         <navtitle>Searched Fields</navtitle>
     </titlealts>
 
 
     <prolog>
-        <author>wrET,1609</author>
+        <author>wrET,1706</author>
         <copyright>
             <copyryear year="2016"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -18,11 +18,18 @@
             <audience type="programmer" job="programming" />
             <prodinfo>
                 <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="8" release="5"/></vrmlist>
+                <vrmlist>
+                    <vrm version="8" release="5"/>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
         </metadata>
     </prolog>
@@ -40,7 +47,7 @@
 
 
         <section id="structuredcontent">
-            <title>In Structured Content</title>
+            <title>In Liquid Content&#8482; (Structured Content)</title>
 
             <simpletable relcolwidth="3* 3* 3*">
                 <sthead>
@@ -94,38 +101,6 @@
                             <li>ContentTypeName</li>
                             <li>CreatedBy</li>
                             <li>UpdatedBy</li>
-                        </ul>
-                    </stentry>
-                </strow>
-            </simpletable>
-        </section>
-
-
-        <section id="formbuilder">
-            <title>In Form Builder</title>
-
-            <simpletable relcolwidth="1* 3*">
-                <sthead>
-                    <stentry>Item Type</stentry>
-                    <stentry>Searched Fields</stentry>
-                </sthead>
-                <strow>
-                    <stentry>form</stentry>
-                    <stentry>
-                        <ul>
-                            <li>Title</li>
-                            <li>Tags</li>
-                            <li>StaticTexts</li>
-                            <li>CampaignLabel</li>
-                        </ul>
-                    </stentry>
-                </strow>
-                <strow>
-                    <stentry>response</stentry>
-                    <stentry>
-                        <ul>
-                            <li>Location</li>
-                            <li>UrlResponses</li>
                         </ul>
                     </stentry>
                 </strow>

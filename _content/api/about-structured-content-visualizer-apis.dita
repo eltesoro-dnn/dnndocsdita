@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-about-structured-content-visualizer-apis">
+
+    <title>About Liquid Content&#8482; Visualizer APIs</title>
+    <titlealts>
+        <navtitle>Visualizer APIs</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,170x</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="2"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="2"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="2"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+        <section id="visualizers">
+            <title>Visualizer APIs</title>
+
+            <ul>
+                <li><xref format="dita" href="api-visualizers-get.dita">GET Visualizers</xref> returns a list of visualizers that match the query.</li>
+                <li><xref format="dita" href="api-visualizers-id-get.dita">GET Visualizers with ID</xref> returns the specific visualizers with the specified ID.</li>
+                <li><xref format="dita" href="api-visualizers-post.dita">POST Visualizers</xref> creates a new visualizers.</li>
+                <li><xref format="dita" href="api-visualizers-id-put.dita">PUT Visualizers with ID</xref> updates the visualizers with the specified ID.</li>
+                <li><xref format="dita" href="api-visualizers-id-delete.dita">DELETE Visualizers with ID</xref> deletes the visualizers with the specified ID.</li>
+            </ul>
+        </section>
+
+    </body>
+
+
+    <related-links>
+        <link format="dita" scope="peer" href="../developers/microservices/creating-apps-that-use-microservices.dita"><linktext>Creating Apps That Use Microservices</linktext></link>
+    </related-links>
+
+</topic>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
-<topic xml:lang="en" id="top-about-structured-content-apis">
+<topic xml:lang="en" id="top-about-structured-content-published-content-item-apis">
 
-    <title>About Liquid Content&#8482; (Structured Content) APIs</title>
+    <title>About Liquid Content&#8482; Published Content Item APIs</title>
     <titlealts>
-        <navtitle>Liquid Content&#8482; (Structured Content) APIs</navtitle>
+        <navtitle>Published Content Item APIs</navtitle>
     </titlealts>
 
 
@@ -34,10 +34,13 @@
 
     <body>
 
-        <section id="overview">
-            <title>Liquid Content&#8482; (Structured Content) APIs</title>
+        <section id="published-content-items">
+            <title>Published Content Item APIs</title>
 
-            <p>The <term>Liquid Content&#8482; (Structured Content)</term> APIs expose the content types and content items in a site.</p>
+            <ul>
+                <li><xref format="dita" href="api-publishedcontentitems-get.dita">GET Published Content Items</xref> returns a list of published content items that match the query.</li>
+                <li><xref format="dita" href="api-publishedcontentitems-getbyids-get.dita">GET Published Content Items with ID Array</xref> returns the published content items with the specified IDs.</li>
+            </ul>
         </section>
 
     </body>

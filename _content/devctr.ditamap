@@ -20,22 +20,33 @@
     <topicref format="dita" type="topic" toc="yes" href="developers/index.dita" >
 
         <topicref format="dita" type="topic" navtitle="What's New in Features" locktitle="yes" toc="yes" href="developers/whats-new-dnn.dita" />
-        <topicref format="dita" type="topic" navtitle="DNN Solutions"          locktitle="yes" toc="yes" href="developers/dnn-overview.dita" />
 
         <!-- Setup -->
         <mapref href="developers/setup/setup.ditamap" />
 
-        <!-- Microservices -->
-        <topicref format="dita" type="topic" navtitle="Microservices" locktitle="yes" toc="yes" href="developers/microservices/about-microservices.dita" copy-to="developers/microservices/index.dita"  collection-type="family" >
+        <!-- Microservices - General -->
+        <topicref format="dita" type="topic" navtitle="About Microservices" locktitle="yes" toc="yes" href="developers/microservices/about-microservices.dita" copy-to="developers/microservices/index.dita"  collection-type="family" >
             <topicref format="dita" type="topic"     toc="yes" href="developers/microservices/creating-apps-that-use-microservices.dita" />
-            <!-- <topicref format="dita" type="reference" toc="yes" href="developers/microservices/dto-???.dita" />  Topics not ready. -->
-            <topicref format="dita" type="reference" toc="yes" href="developers/microservices/searched-fields.dita" />
-            <topicref format="dita" type="reference" toc="yes" href="developers/microservices/api-results-pagination.dita" />
-            <!-- Link to the Evoq API docs here. -->
         </topicref>
 
+        <!-- Liquid Content / Structured Content -->
+        <topicref format="dita" type="topic" navtitle="Liquid Content&#8482; Microservice" locktitle="yes" toc="yes" href="developers/structured-content/about-structured-content.dita" copy-to="developers/structured-content/index.dita"  collection-type="family" >
+            <!-- Getting Started with Liquid Content - Summary page which points to Content Types, Content Items, Content Fields, Visualizers, Recipe Example -->
+            <mapref href="developers/structured-content/structured-content-visualizer-templates.ditamap" />
+            <topicref format="dita" type="topic" scope="peer" navtitle="Liquid Content&#8482; APIs" locktitle="yes" toc="yes" href="api/about-structured-content-apis.dita" >
+                <topicref format="dita" type="topic" scope="peer" navtitle="Content Types"          locktitle="yes" toc="yes" href="api/about-structured-content-content-type-apis.dita" />
+                <!-- <topicref format="dita" type="topic" scope="peer" navtitle="Visualizers"       locktitle="yes" toc="yes" href="api/about-structured-content-visualizer-apis.dita" /> -->
+                <topicref format="dita" type="topic" scope="peer" navtitle="Content Items"          locktitle="yes" toc="yes" href="api/about-structured-content-content-item-apis.dita" />
+                <topicref format="dita" type="topic" scope="peer" navtitle="PublishedContent Items" locktitle="yes" toc="yes" href="api/about-structured-content-published-content-item-apis.dita" />
+            </topicref>
+            <topicref format="dita" type="reference" toc="yes" href="developers/microservices/searched-fields.dita" />
+            <topicref format="dita" type="reference" toc="yes" href="developers/microservices/api-results-pagination.dita" />
+            <!-- Samples -->
+        </topicref>
+
+
         <!-- Modules -->
-        <topicref format="dita" type="topic" navtitle="Modules" locktitle="yes" toc="yes" href="developers/about-modules/module-development.dita" copy-to="developers/about-modules/index.dita" collection-type="family">
+        <topicref format="dita" type="topic" navtitle="About Modules" locktitle="yes" toc="yes" href="developers/about-modules/module-development.dita" copy-to="developers/about-modules/index.dita" collection-type="family">
             <topicref format="dita" type="topic" toc="yes" href="developers/about-modules/module-features.dita" />
             <topicref format="dita" type="topic" toc="yes" href="developers/about-modules/module-architecture.dita" />
 
@@ -49,37 +60,38 @@
                 <topicref format="dita" type="task" navtitle="Install a Module" locktitle="yes" toc="yes" href="developers/extensions/install-extension.dita" />
             </topicref>
 
-            <!-- MVC modules -->
-            <topicref format="dita" type="topic" navtitle="MVC Modules" locktitle="yes" toc="yes" href="developers/mvc-modules/mvc-module-development.dita" collection-type="family" >
-                <topicref format="dita" type="topic" toc="yes" href="developers/mvc-modules/mvc-module-project-overview.dita" copy-to="developers/mvc-modules/index.dita" />
-                <topicref format="dita" type="topic" toc="yes" href="developers/mvc-modules/mvc-module-mvccontroller.dita" />
-                <topicref format="dita" type="topic" toc="yes" href="developers/mvc-modules/mvc-module-mvcviews.dita" />
-                <topicref format="dita" type="topic" toc="yes" href="developers/mvc-modules/mvc-module-unittest.dita" />
-                <topicref format="dita" type="topic" toc="yes" href="developers/mvc-modules/unsupported-mvc-features.dita" />
-            </topicref>
-
-            <!-- SPA modules -->
-            <topicref format="dita" type="topic" navtitle="SPA Modules" locktitle="yes" toc="yes" href="developers/about-modules/spa-module-development.dita" />
-
-            <!-- Web Forms modules -->
-            <topicref format="dita" type="topic" navtitle="Web Forms Modules" locktitle="yes" toc="yes" href="developers/about-modules/web-forms-module-development.dita" />
+            <topicref format="html" scope="external" navtitle="DNN Module APIs" locktitle="yes" toc="yes" href="http://www.dnnsoftware.com/dnn-api/" />
+            <!-- <topicref format="dita" type="reference" toc="yes" href="developers/contents-module-pack.dita" /> Topic not ready. -->
+            <topicref format="dita" type="reference" toc="yes" href="developers/extensions/dnn-manifest-schema.dita" />
+            <topicref format="dita" type="topic"     toc="yes" href="developers/about-evs.dita" />
         </topicref>
+
+        <!-- MVC modules -->
+        <topicref format="dita" type="topic" navtitle="MVC Modules" locktitle="yes" toc="yes" href="developers/mvc-modules/mvc-module-development.dita" collection-type="family" >
+            <topicref format="dita" type="topic" toc="yes" href="developers/mvc-modules/mvc-module-project-overview.dita" copy-to="developers/mvc-modules/index.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="developers/mvc-modules/mvc-module-mvccontroller.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="developers/mvc-modules/mvc-module-mvcviews.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="developers/mvc-modules/mvc-module-unittest.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="developers/mvc-modules/unsupported-mvc-features.dita" />
+        </topicref>
+
+        <!-- SPA modules -->
+        <topicref format="dita" type="topic" navtitle="SPA Modules" locktitle="yes" toc="yes" href="developers/about-modules/spa-module-development.dita" />
+
+        <!-- Web Forms modules -->
+        <topicref format="dita" type="topic" navtitle="Web Forms Modules" locktitle="yes" toc="yes" href="developers/about-modules/web-forms-module-development.dita" />
 
         <!-- Securing Your Site -->
         <mapref href="developers/security.ditamap" />
 
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="developers/developer-references.dita" collection-type="family">
+            <topicref format="dita" type="topic"     toc="yes" href="developers/dnn-overview.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="developers/control-bar-to-persona-bar.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="developers/persona-bar-by-role.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="developers/providers.dita" />
-            <topicref format="dita" type="topic"     toc="yes" href="developers/about-evs.dita" />
-            <!-- <topicref format="dita" type="reference" toc="yes" href="developers/contents-module-pack.dita" /> Topic not ready. -->
-            <topicref format="dita" type="reference" toc="yes" href="developers/extensions/dnn-manifest-schema.dita" />
             <mapref href="developers/included-modules/included-modules.ditamap" />
             <!-- <topicref format="dita" type="reference" toc="yes" href="developers/included-modules/included-modules.dita" copy-to="developers/included-modules/index.dita" /> -->
-            <topicref format="html"                  scope="external" navtitle="DNN API Reference"               locktitle="yes" toc="yes" href="http://www.dnnsoftware.com/dnn-api/" />
-            <topicref format="dita" type="topic"     scope="peer"     navtitle="DNN Microservices API Reference" locktitle="yes" toc="yes" href="api/index.dita" />
             <topicref format="dita" type="reference" toc="yes" href="developers/requirements.dita" />
             <topicref format="dita" type="reference" toc="yes" href="developers/product-versions.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="developers/dnn-license.dita" />

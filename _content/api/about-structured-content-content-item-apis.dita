@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
-<topic xml:lang="en" id="top-about-structured-content-apis">
+<topic xml:lang="en" id="top-about-structured-content-content-item-apis">
 
-    <title>About Liquid Content&#8482; (Structured Content) APIs</title>
+    <title>About Liquid Content&#8482; Content Item APIs</title>
     <titlealts>
-        <navtitle>Liquid Content&#8482; (Structured Content) APIs</navtitle>
+        <navtitle>Content Item APIs</navtitle>
     </titlealts>
 
 
@@ -34,10 +34,16 @@
 
     <body>
 
-        <section id="overview">
-            <title>Liquid Content&#8482; (Structured Content) APIs</title>
+        <section id="content-items">
+            <title>Content Item APIs</title>
 
-            <p>The <term>Liquid Content&#8482; (Structured Content)</term> APIs expose the content types and content items in a site.</p>
+            <ul>
+                <li><xref format="dita" href="api-contentitems-get.dita">GET Content Items</xref> returns a list of content items that match the query.</li>
+                <li><xref format="dita" href="api-contentitems-id-get.dita">GET Content Items with ID</xref> returns the specific content item with the specified ID.</li>
+                <li><xref format="dita" href="api-contentitems-post.dita">POST Content Items</xref> creates a new content item.</li>
+                <li><xref format="dita" href="api-contentitems-id-put.dita">PUT Content Items with ID</xref> updates the content item with the specified ID.</li>
+                <li><xref format="dita" href="api-contentitems-id-delete.dita">DELETE Content Items with ID</xref> deletes the content item with the specified ID.</li>
+            </ul>
         </section>
 
     </body>

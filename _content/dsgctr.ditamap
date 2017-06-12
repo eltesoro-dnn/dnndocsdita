@@ -22,7 +22,6 @@
     <topicref format="dita" type="topic" toc="yes" href="designers/index.dita" >
 
         <topicref format="dita" type="topic" navtitle="What's New in Features"      locktitle="yes" toc="yes" href="designers/whats-new-dnn.dita" />
-        <topicref format="dita" type="topic" navtitle="DNN Solutions"               locktitle="yes" toc="yes" href="designers/dnn-overview.dita" />
 
         <!-- Setup -->
         <mapref href="designers/setup/setup.ditamap" />
@@ -43,6 +42,7 @@
 
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="designers/designer-references.dita" collection-type="family">
+            <topicref format="dita" type="topic"     toc="yes" href="designers/dnn-overview.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="designers/control-bar-to-persona-bar.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="designers/persona-bar-by-role.dita" />
             <topicref format="dita" type="reference" toc="yes" href="designers/persona-bar-style-guide.dita" />

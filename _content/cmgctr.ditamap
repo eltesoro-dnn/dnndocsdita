@@ -20,7 +20,6 @@
     <topicref format="dita" type="topic" toc="yes" href="content-managers/index.dita" >
 
         <topicref format="dita" type="topic" navtitle="What's New in Features"      locktitle="yes" toc="yes" href="content-managers/whats-new-dnn.dita" />
-        <topicref format="dita" type="topic" navtitle="DNN Solutions"               locktitle="yes" toc="yes" href="content-managers/dnn-overview.dita" />
 
         <!-- Configuring Your Site for Content -->
         <mapref href="content-managers/configuring-your-site-pb-all.ditamap" />
@@ -33,6 +32,7 @@
 
         <!-- References -->
         <topicref format="dita" type="topic" toc="yes" href="content-managers/content-manager-references.dita" collection-type="family">
+            <topicref format="dita" type="topic"     toc="yes" href="content-managers/dnn-overview.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="content-managers/control-bar-to-persona-bar.dita" />
             <topicref format="dita" type="topic"     toc="yes" href="content-managers/persona-bar-by-role.dita" />
             <mapref href="content-managers/included-modules/included-modules.ditamap" />
@@ -98,11 +98,11 @@
         <!-- adm dev cmg -->
         <relrow>
             <relcell>
-                <topicref format="dita" type="topic"                                                                                 href="content-managers/microservices/creating-content-with-microservices.dita" />
-                <topicref format="dita" type="topic"              linking="targetonly" navtitle="JWT Authentication" locktitle="yes" href="developers/jwt/about-jwt.dita" />
-                <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Licensing"          locktitle="yes" href="administrators/licensing/licensing.dita" />
+                <topicref format="dita" type="topic"                                                                                    href="content-managers/microservices/creating-content-with-microservices.dita" />
+                <topicref format="dita" type="topic"              linking="targetonly" navtitle="JWT Authentication"    locktitle="yes" href="developers/jwt/about-jwt.dita" />
+                <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Licensing"             locktitle="yes" href="administrators/licensing/licensing.dita" />
                 <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Liquid Content&#8482;" locktitle="yes" href="content-managers/structured-content/about-structured-content.dita" />
-                <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Form Builder"       locktitle="yes" href="content-managers/forms/about-form-builder.dita" />
+                <topicref format="dita" type="topic" scope="peer" linking="targetonly" navtitle="Form Builder"          locktitle="yes" href="content-managers/forms/about-form-builder.dita" />
             </relcell>
             <relcell/>
             <relcell/>

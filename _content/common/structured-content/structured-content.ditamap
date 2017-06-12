@@ -22,11 +22,7 @@
             <topicref format="dita" type="task"      toc="yes" href="delete-visualizer.dita" />
             <topicref format="dita" type="task"      toc="yes" href="import-visualizer.dita" />
             <topicref format="dita" type="task"      toc="yes" href="export-visualizer.dita" />
-            <topicref format="dita" type="reference" toc="yes" href="visualizer-templates.dita" collection-type="family" >
-                <topicref format="dita" type="reference" toc="yes" href="visualizer-templates-basics.dita" />
-                <topicref format="dita" type="reference" toc="yes" href="visualizer-templates-filters.dita" />
-                <topicref format="dita" type="reference" toc="yes" href="visualizer-templates-datetime.dita" />
-            </topicref>
+            <mapref href="structured-content-visualizer-templates.ditamap" />
             <!-- <topicref format="dita" type="topic"     toc="yes" href="visualizer-package.dita" /> 201704 Per Chris, do not write this yet. It will continue to change. -->
         </topichead>
 
