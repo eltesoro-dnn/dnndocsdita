@@ -31,9 +31,6 @@ goto :eof
 call %0 runme json\sitelogs.json      bptext-sitelogs      W:\_content\common\sitelogs
 goto :eof
 
-
-:tested
-
 :content
 call %0 runme json\content.json       bptext-content       W:\_content\common\structured-content
 goto :eof
@@ -47,12 +44,12 @@ goto :eof
 call %0 runme json\recyclebin.json    bptext-recyclebin    W:\_content\common\recyclebin
 goto :eof
 
+:urlmanagement
+call %0 runme json\urlmanagement.json bptext-url-management W:\_content\common\url-management
+goto :eof
+
 
 :wip
-
-:urlmanagement
-call %0 runme json\urlmanagement.json bptext-urlmanagement W:\_content\common\urlmanagement prolog-PCE.txt
-goto :eof
 
 :analytics
 call %0 runme json\analytics.json bptext-analytics W:\_content\common\analytics json\analytics-prolog.txt

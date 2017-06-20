@@ -22,16 +22,26 @@
             <audience type="other" othertype="community manager" job="troubleshooting" />
             <prodinfo>
                 <prodname>Platform</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
+            <othermeta name="jira" content="DOC-125"/>
         </metadata>
     </prolog>
 
@@ -64,11 +74,11 @@
                 <title>Solution</title>
 
                 <ol outputclass="steps">
-                    <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E91"></ph></li>
-					<li outputclass="step"><ph outputclass="cmd">Check the sizes of <filepath>EventLog</filepath>, <filepath>SiteLog</filepath>, and <filepath>ScheduleHistory</filepath>.</ph>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E91"></ph></li>
+					<li outputclass="step stepexpand"><ph outputclass="cmd">Check the sizes of <filepath>EventLog</filepath>, <filepath>SiteLog</filepath>, and <filepath>ScheduleHistory</filepath>.</ph>
 						<ol outputclass="substeps">
 							<li outputclass="substep">
-                                <ph outputclass="cmd">Copy and paste the following SQL script.</ph>
+                                <ph outputclass="cmd">Run the following SQL script:</ph>
                                 <p outputclass="info">
                                     <codeblock>
 SELECT t.NAME AS TableName
@@ -93,13 +103,12 @@ ORDER BY TotalSpaceKB DESC
                                     </codeblock>
                                 </p>
 							</li>
-							<li outputclass="substep"><ph outputclass="cmd">Click/Tap <uicontrol>Run Script</uicontrol>.</ph></li>
 							<li outputclass="substep"><ph outputclass="cmd">In the result, note the <uicontrol>RowCounts</uicontrol> values for <filepath>EventLog</filepath>, <filepath>SiteLog</filepath>, and <filepath>ScheduleHistory</filepath>.</ph></li>
 						</ol>
                     </li>
-                    <li outputclass="step"><ph outputclass="cmd">Clear <filepath>EventLog</filepath>.</ph>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Clear <filepath>EventLog</filepath>.</ph>
                         <ol outputclass="substeps">
-							<li outputclass="substep"><ph outputclass="cmd">Copy and paste the following SQL script.</ph>
+							<li outputclass="substep"><ph outputclass="cmd">Run the following SQL script:</ph>
                                 <p outputclass="info">
                                     <codeblock>
 DELETE TOP (1000)
@@ -108,12 +117,11 @@ FROM EventLog;
                                     <note type="note">To clear <filepath>EventLog</filepath>, replace <codeph>1000</codeph> with the <uicontrol>RowCounts</uicontrol> value. To reduce the size of <filepath>EventLog</filepath> (instead of clearing it), replace <codeph>1000</codeph> with the number of rows you want to delete.</note>
                                 </p>
 							</li>
-							<li outputclass="substep"><ph outputclass="cmd">Click/Tap <uicontrol>Run Script</uicontrol>.</ph></li>
                         </ol>
                     </li>
-                    <li outputclass="step"><ph outputclass="cmd">Delete the <filepath>SiteLog</filepath> and <filepath>ScheduleHistory</filepath> tables.</ph>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Delete the <filepath>SiteLog</filepath> and <filepath>ScheduleHistory</filepath> tables.</ph>
                         <ol outputclass="substeps">
-							<li outputclass="substep"><ph outputclass="cmd">Copy and paste the following SQL script.</ph>
+							<li outputclass="substep"><ph outputclass="cmd">Run the following SQL script:</ph>
                                 <p outputclass="info">
                                     <codeblock>
 TRUNCATE TABLE SiteLog;
@@ -121,11 +129,10 @@ TRUNCATE TABLE ScheduleHistory;
                                     </codeblock>
                                 </p>
 							</li>
-							<li outputclass="substep"><ph outputclass="cmd">Click/Tap <uicontrol>Run Script</uicontrol>.</ph></li>
 						</ol>
                     </li>
-					<li outputclass="step"><ph outputclass="cmd"><xref href="../servers/restart-application.dita">Restart the application</xref> to allow the changes to take effect.</ph></li>
-					<li outputclass="step"><ph outputclass="cmd">To test, try to <xref format="dita" href="../sitelogs/view-site-logs.dita">access the Admin Logs</xref>.</ph></li>
+					<li outputclass="step stepexpand"><ph outputclass="cmd"><xref href="../servers/restart-application.dita">Restart the application</xref> to allow the changes to take effect.</ph></li>
+					<li outputclass="step stepexpand"><ph outputclass="cmd">To test, try to <xref format="dita" href="../sitelogs/view-site-logs.dita">access the Admin Logs</xref>.</ph></li>
                 </ol>
             </section>
 

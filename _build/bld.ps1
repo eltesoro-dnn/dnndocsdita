@@ -210,7 +210,7 @@ function CopyTimeSensitiveFiles( [string] $src, [string] $tgt, [string] $filter 
             $yyyyMMdd = [int] ( $fnarr[1] )
 
             $isActive = $false;
-            switch ( $cond ) {
+            switch ( $prefix ) {
                 "PRE"  { if ( $now -lt $yyyyMMdd )  { $isActive = $true } }
                 "POST" { if ( $now -gt $yyyyMMdd )  { $isActive = $true } }
             }
@@ -264,6 +264,7 @@ function CopyBldFolders()  {
     RobocopyIncludeArray  "$gitdir\_themes\dnn"              "$blddir\_themes\dnn"     "dnn*.css"
 
     CopyTimeSensitiveFiles $blddir $blddir
+    CopyTimeSensitiveFiles $blddir $blddir "*.html"
 
     foreach ( $subbld in $subbldarr )  {
         if ( $subbld -ne "api" )  {
@@ -289,11 +290,13 @@ function BuildDITADocs()  {
 function AssembleOutput()  {
     Write-Host "Copying additional required files to the output ...."
 
-    Copy-Item  -Path "$gitdir\_content\index.html"          -Destination "$outdir"  -Force | Out-Null
-    CopyTimeSensitiveFiles "$gitdir\_content" $outdir "index.html"
+    Copy-Item  -Path "$blddir\index.html"          -Destination "$outdir"  -Force | Out-Null
+    # Copy-Item  -Path "$gitdir\_content\index.html"          -Destination "$outdir"  -Force | Out-Null
+    # CopyTimeSensitiveFiles "$gitdir\_content" $outdir "index.html"
 
-    Copy-Item  -Path "$gitdir\_content\searchresults.html"  -Destination "$outdir"  -Force | Out-Null
-    CopyTimeSensitiveFiles "$gitdir\_content" $outdir "searchresults.html"
+    Copy-Item  -Path "$blddir\searchresults.html"  -Destination "$outdir"  -Force | Out-Null
+    # Copy-Item  -Path "$gitdir\_content\searchresults.html"  -Destination "$outdir"  -Force | Out-Null
+    # CopyTimeSensitiveFiles "$gitdir\_content" $outdir "searchresults.html"
 
     RobocopyBasic         "$gitdir\_content\common\samples"   "$outdir\common\samples"                                          "/s"
     RobocopyIncludeArray  "$gitdir\_themes\dnn"               "$outdir\_theme"          "*.jpg,*.png,*.gif,*.svg,26d3f6*,*.js"

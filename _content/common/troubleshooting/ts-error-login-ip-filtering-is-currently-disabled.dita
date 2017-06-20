@@ -22,16 +22,26 @@
             <audience type="other" othertype="community manager" job="troubleshooting" />
             <prodinfo>
                 <prodname>Platform</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
+            <othermeta name="jira" content="???"/>
         </metadata>
     </prolog>
 
@@ -39,6 +49,7 @@
     <body>
 
 		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
 
         <section outputclass="condition">
             <title>Symptom</title>
@@ -60,8 +71,8 @@
                 <title>Solution</title>
 
                 <ol outputclass="steps">
-                    <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Security-E91"></ph></li>
-                    <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Security-MemberAccounts-MemberManagement-E91"></ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Security-E91"></ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Security-MemberAccounts-MemberManagement-E91"></ph></li>
                     <li outputclass="step stepexpand">Turn on <uicontrol>Enable IP Address Checking</uicontrol>.</li>
                 </ol>
             </section>

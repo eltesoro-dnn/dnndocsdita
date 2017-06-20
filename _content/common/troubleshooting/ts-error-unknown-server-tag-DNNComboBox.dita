@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
-<topic xml:lang="en" id="troubleshooting-ts-error-another-user-has-taken-action-on-the-page">
+<topic xml:lang="en" id="troubleshooting-ts-error-unknown-server-tag-DNNComboBox">
 
-    <title>Error: Another User Has Taken Action on the Page</title>
+    <title>Error: Unknown Server Tag - DNNComboBox</title>
     <titlealts>
-        <navtitle>Error: Another User Has Taken Action</navtitle>
+        <navtitle>Error: Unknown Server Tag - DNNComboBox</navtitle>
     </titlealts>
 
 
     <prolog>
-        <author>wrMF,edET,1702</author>
+        <author>wrMF,edET,1706</author>
         <copyright>
             <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -41,7 +41,7 @@
                     <vrm version="9" release="1"/>
                 </vrmlist>
             </prodinfo>
-            <othermeta name="jira" content="DOC-118"/>
+            <othermeta name="jira" content="DOC-141"/>
         </metadata>
     </prolog>
 
@@ -54,7 +54,7 @@
         <section outputclass="condition">
             <title>Symptom</title>
             <p>Error:</p>
-            <systemoutput>Another user has taken action on the page and its state has been changed. Please refresh the page to see the current state.</systemoutput>
+            <systemoutput>DotNetNuke.Framework.PageBase - An error has occurred while loading page.System.Web.HttpParseException (0x80004005): Unknown server tag 'dnn:DnnComboBox'.</systemoutput>
         </section>
 
 
@@ -62,19 +62,20 @@
             <section outputclass="cause">
                 <title>Possible Cause</title>
 
-                <p>Another user made a change that conflicts with your changes.</p>
+                <p>An older version of the DNN Events module is installed.</p>
             </section>
 
             <section outputclass="remedy">
                 <title>Solution</title>
 
                 <ol outputclass="steps">
-                    <li outputclass="step stepexpand">Exit the edit mode and refresh the page.</li>
-                    <li outputclass="step stepexpand">Enter the edit mode.</li>
-                    <li outputclass="step stepexpand">Redo your changes, if necessary.</li>
-                    <li outputclass="step stepexpand">Publish the changes.</li>
+                    <li outputclass="step stepexpand">Download <xref href="https://github.com/DNNCommunity/DNN.Events/releases" scope="external">the latest version of the DNN Events module</xref>.</li>
+                    <li outputclass="step stepexpand">Go to your site.</li>
+                    <li outputclass="step stepexpand">Log into the site as a superuser/host.</li>
+                    <li outputclass="step stepexpand"><xref href="../extensions/install-extension.dita">Install the downloaded version of the DNN Events module.</xref></li>
                 </ol>
             </section>
+
         </bodydiv>
 
     </body>

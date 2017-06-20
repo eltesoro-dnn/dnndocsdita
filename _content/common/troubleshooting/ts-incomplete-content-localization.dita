@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
-<topic xml:lang="en" id="troubleshooting-ts-error-another-user-has-taken-action-on-the-page">
+<topic xml:lang="en" id="troubleshooting-ts-incomplete-content-localization">
 
-    <title>Error: Another User Has Taken Action on the Page</title>
+    <title>Troubleshooting: Incomplete Content Localization</title>
     <titlealts>
-        <navtitle>Error: Another User Has Taken Action</navtitle>
+        <navtitle>Troubleshooting: Incomplete Localization</navtitle>
     </titlealts>
 
 
     <prolog>
-        <author>wrMF,edET,1702</author>
+        <author>wrMF,edET,1706</author>
         <copyright>
             <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -41,7 +41,7 @@
                     <vrm version="9" release="1"/>
                 </vrmlist>
             </prodinfo>
-            <othermeta name="jira" content="DOC-118"/>
+            <othermeta name="jira" content="DOC-145"/>
         </metadata>
     </prolog>
 
@@ -50,31 +50,51 @@
 
 		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
-
         <section outputclass="condition">
             <title>Symptom</title>
-            <p>Error:</p>
-            <systemoutput>Another user has taken action on the page and its state has been changed. Please refresh the page to see the current state.</systemoutput>
+            <p>After enabling localization, only some content is localized.</p>
         </section>
-
 
         <bodydiv outputclass="troubleSolution">
             <section outputclass="cause">
                 <title>Possible Cause</title>
 
-                <p>Another user made a change that conflicts with your changes.</p>
+                <p>The localization process timed out during the conversion.</p>
             </section>
 
             <section outputclass="remedy">
                 <title>Solution</title>
 
                 <ol outputclass="steps">
-                    <li outputclass="step stepexpand">Exit the edit mode and refresh the page.</li>
-                    <li outputclass="step stepexpand">Enter the edit mode.</li>
-                    <li outputclass="step stepexpand">Redo your changes, if necessary.</li>
-                    <li outputclass="step stepexpand">Publish the changes.</li>
+                    <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-back-up"></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E91"></ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Run the following SQL script:</ph>
+                        <p outputclass="info">
+                            <codeblock>
+DELETE
+FROM Tabs
+WHERE CultureCode = 'xx-XX';
+                            </codeblock> where <varname>xx-XX</varname> is the culture code of the added language.
+                        </p>
+                    </li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Run the following SQL script:</ph>
+                        <p outputclass="info">
+                            <codeblock>
+UPDATE Tabs
+SET CultureCode = NULL;
+
+UPDATE PortalSettings
+SET SettingValue = 'False'
+WHERE SettingName = 'ContentLocalizationEnabled'
+	AND PortalID = xx;
+                            </codeblock> where <varname>xx</varname> is the ID of the site for which localization was enabled.
+                        </p>
+                    </li>
+                    <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-recycle-app-pool"></li>
+                    <li outputclass="step stepexpand">Rerun the localization process.</li>
                 </ol>
             </section>
+
         </bodydiv>
 
     </body>

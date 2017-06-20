@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
-<topic xml:lang="en" id="troubleshooting-ts-error-another-user-has-taken-action-on-the-page">
+<topic xml:lang="en" id="troubleshooting-ts-broken-profile-image">
 
-    <title>Error: Another User Has Taken Action on the Page</title>
+    <title>Troubleshooting: Broken Profile Image</title>
     <titlealts>
-        <navtitle>Error: Another User Has Taken Action</navtitle>
+        <navtitle>Troubleshooting: Broken Profile Image</navtitle>
     </titlealts>
 
 
     <prolog>
-        <author>wrMF,edET,1702</author>
+        <author>wrMF,edET,1706</author>
         <copyright>
             <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -41,7 +41,7 @@
                     <vrm version="9" release="1"/>
                 </vrmlist>
             </prodinfo>
-            <othermeta name="jira" content="DOC-118"/>
+            <othermeta name="jira" content="DOC-142"/>
         </metadata>
     </prolog>
 
@@ -53,8 +53,7 @@
 
         <section outputclass="condition">
             <title>Symptom</title>
-            <p>Error:</p>
-            <systemoutput>Another user has taken action on the page and its state has been changed. Please refresh the page to see the current state.</systemoutput>
+            <p>The user’s profile image is not shown.</p>
         </section>
 
 
@@ -62,19 +61,21 @@
             <section outputclass="cause">
                 <title>Possible Cause</title>
 
-                <p>Another user made a change that conflicts with your changes.</p>
+                <p>The default URL regular expression is missing.</p>
             </section>
 
             <section outputclass="remedy">
                 <title>Solution</title>
 
                 <ol outputclass="steps">
-                    <li outputclass="step stepexpand">Exit the edit mode and refresh the page.</li>
-                    <li outputclass="step stepexpand">Enter the edit mode.</li>
-                    <li outputclass="step stepexpand">Redo your changes, if necessary.</li>
-                    <li outputclass="step stepexpand">Publish the changes.</li>
+                    <li outputclass="step stepexpand">Log into the affected site with a superuser/host account.</li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-SEO-E91"></ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SEO-URLManagement-Expressions-E91"></ph></li>
+                    <li outputclass="step stepexpand">In <uicontrol>Do Not Rewrite URL Regular Expression</uicontrol>, enter <codeph>/DesktopModules/|/Providers/|/LinkClick\.aspx|/profilepic\.ashx|/DnnImageHandler\.ashx|/__browserLink/</codeph></li>
+                    <li outputclass="step"><xref href="../servers/clear-cache.dita">Clear the server cache.</xref></li>
                 </ol>
             </section>
+
         </bodydiv>
 
     </body>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
-<topic xml:lang="en" id="troubleshooting-ts-error-another-user-has-taken-action-on-the-page">
+<topic xml:lang="en" id="troubleshooting-ts-error-could-not-load-awssdk">
 
-    <title>Error: Another User Has Taken Action on the Page</title>
+    <title>Error: Could not load file or assembly 'AWSSDK' or one of its dependencies</title>
     <titlealts>
-        <navtitle>Error: Another User Has Taken Action</navtitle>
+        <navtitle>Error: Could not load AWSSDK</navtitle>
     </titlealts>
 
 
     <prolog>
-        <author>wrMF,edET,1702</author>
+        <author>wrMF,edET,1706</author>
         <copyright>
             <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -41,7 +41,7 @@
                     <vrm version="9" release="1"/>
                 </vrmlist>
             </prodinfo>
-            <othermeta name="jira" content="DOC-118"/>
+            <othermeta name="jira" content="DOC-144"/>
         </metadata>
     </prolog>
 
@@ -53,8 +53,7 @@
 
         <section outputclass="condition">
             <title>Symptom</title>
-            <p>Error:</p>
-            <systemoutput>Another user has taken action on the page and its state has been changed. Please refresh the page to see the current state.</systemoutput>
+            <p>Error after upgrading a site: <codeph>Could not load file or assembly 'AWSSDK' or one of its dependencies.</codeph></p>
         </section>
 
 
@@ -62,17 +61,18 @@
             <section outputclass="cause">
                 <title>Possible Cause</title>
 
-                <p>Another user made a change that conflicts with your changes.</p>
+                <p>A custom module uses a different version of AWSSDK.DLL.</p>
             </section>
 
             <section outputclass="remedy">
                 <title>Solution</title>
 
                 <ol outputclass="steps">
-                    <li outputclass="step stepexpand">Exit the edit mode and refresh the page.</li>
-                    <li outputclass="step stepexpand">Enter the edit mode.</li>
-                    <li outputclass="step stepexpand">Redo your changes, if necessary.</li>
-                    <li outputclass="step stepexpand">Publish the changes.</li>
+                    <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-back-up"></li>
+                    <li outputclass="step stepexpand">Open the <filepath>/bin/Providers</filepath> subfolder of the site folder.</li>
+                    <li outputclass="step stepexpand">Right-click the <filepath>AWSSDK.DLL</filepath> file and select <uicontrol>Properties</uicontrol>.</li>
+                    <li outputclass="step stepexpand">Within the pop-up dialog, switch to the <uicontrol>Details</uicontrol> tab and verify that the file version is <systemoutput>1.2.3.1</systemoutput>.</li>
+                    <li outputclass="step stepexpand">Remove other copies of <filepath>AWSSK.DLL</filepath> in the <filepath>/bin</filepath> subfolder of the site folder.</li>
                 </ol>
             </section>
         </bodydiv>

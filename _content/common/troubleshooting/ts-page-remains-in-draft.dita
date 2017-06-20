@@ -9,7 +9,7 @@
 
 
     <prolog>
-        <author>wrMF,1702</author>
+        <author>wrMF,edET,1702</author>
         <copyright>
             <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
@@ -22,16 +22,26 @@
             <audience type="other" othertype="community manager" job="troubleshooting" />
             <prodinfo>
                 <prodname>Platform</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
+            <othermeta name="jira" content="DOC-118"/>
         </metadata>
     </prolog>
 
@@ -61,13 +71,14 @@
                 <title>Solution</title>
 
                 <ol outputclass="steps">
-                    <li outputclass="step stepexpand"><ph outputclass="cmd">Back up the site and the database.</ph></li>  <!-- TODO: Link this to a how-to topic about backing up the site and the database. -->
+                    <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-back-up"></li>
                     <li outputclass="step stepexpand"><ph outputclass="cmd">Log into the site as a host/superuser.</ph></li>
-                    <li outputclass="step stepexpand"><p outputclass="cmd">Publish the page through SQL.</p>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Publish the page through SQL.</ph>
                         <ol outputclass="substeps">
                             <li outputclass="substep"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E91"></ph></li>
-                            <li outputclass="substep"><p outputclass="cmd">Enter the following SQL script in the multi-line text field.</p>
-                                <codeblock>
+                            <li outputclass="substep"><ph outputclass="cmd">Run the following SQL script:</ph>
+                                <p outputclass="info">
+                                    <codeblock>
 DECLARE @PageName VARCHAR(250);
 
 SET @PageName = 'Home';
@@ -80,13 +91,13 @@ WHERE TabID = (
 		WHERE TabName LIKE @PageName
 		)
 	AND IsPublished = 0;
-                                </codeblock>
-                                <note type="note">Set <userinput>@PageName</userinput> to the name of the page you are editing; e.g., <userinput>'Home'</userinput>.</note>
+                                    </codeblock> where <varname>@PageName</varname> is the name of the page you are editing; e.g., <userinput>'Home'</userinput>.
+                                </p>
                             </li>
                         </ol>
                     </li>
                     <li outputclass="step stepexpand"><xref format="dita" href="../servers/clear-cache.dita">Clear the server cache.</xref></li>
-                    <li outputclass="step stepexpand"><xref format="dita" href="../servers/restart-application.dita">Restart the application pool</xref> to allow the changes to take effect.</li>
+                    <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-recycle-app-pool"></li>
                 </ol>
             </section>
 

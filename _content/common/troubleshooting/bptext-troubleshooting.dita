@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
-<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
-<topic xml:lang="en" id="top-bptext-troubleshooting">
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/dita/v1.3/os/part3-all-inclusive/all-inclusive-grammars/dtd/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-bptext-troubleshooting">
 
     <title>Boilerplates &#8212; Troubleshooting</title>
 
@@ -12,7 +12,7 @@
         </copyright>
     </prolog>
 
-    <body>
+    <taskbody>
 
         <section>
 
@@ -33,6 +33,9 @@
 
                 <!-- <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-restart-app-expanded"></li> -->
                 <li id="li-restart-app-expanded" outputclass="step stepexpand"><xref href="../servers/restart-application.dita">Restart the DNN application</xref> to allow the changes to take effect.</li>
+
+                <!-- <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-recycle-app-pool"></li> -->
+                <li id="li-recycle-app-pool" outputclass="step stepexpand"><xref format="html" scope="external" href="https://technet.microsoft.com/en-us/library/cc770764(v=ws.10).aspx">Recycle the application pool</xref> to allow the changes to take effect.</li>
 
                 <!-- <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-back-up"></li> -->
                 <li id="li-back-up" outputclass="step stepexpand">Back up the site and the database.</li>
@@ -56,6 +59,8 @@
 
         To go to the SQL console:
         <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E91"></ph></li>
+
+
         -->
 
 
@@ -294,6 +299,6 @@
         <li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-adm-Settings-Servers-ServerSettings-SMTPServer-E91"></ph></li>
         -->
 
-    </body>
+    </taskbody>
 
-</topic>
+</task>

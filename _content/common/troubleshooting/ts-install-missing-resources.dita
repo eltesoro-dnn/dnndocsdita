@@ -22,16 +22,26 @@
             <audience type="other" othertype="community manager" job="troubleshooting" />
             <prodinfo>
                 <prodname>Platform</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Content</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
             <prodinfo>
                 <prodname>Evoq Engage</prodname>
-                <vrmlist><vrm version="9" release="0"/></vrmlist>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
             </prodinfo>
+            <othermeta name="jira" content="DOC-135"/>
         </metadata>
     </prolog>
 
@@ -58,7 +68,7 @@
                 <title>Solution</title>
 
                 <ol outputclass="steps">
-                    <li outputclass="step stepexpand">Back up the site and the database.</li>  <!-- TODO: Link this to a how-to topic about backing up the site and the database. -->
+                    <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-back-up"></li>
                     <li outputclass="step stepexpand">In a browser, go to <filepath>http://&lt;yourdomain&gt;/install/install.aspx?mode=installresources</filepath>.</li>
                     <li outputclass="step stepexpand">Wait for the resource installation process to complete.</li>
                     <li outputclass="step stepexpand">After the process completes, click the <uicontrol>View Site</uicontrol> button.</li>
