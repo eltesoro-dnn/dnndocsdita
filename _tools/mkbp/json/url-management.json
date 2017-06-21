@@ -1,0 +1,257 @@
+{
+    "global" : {
+        "avail" : "PCE"
+        ,"author" : "wrET,1705"
+        ,"audience" : [
+            {   "audtype" : "administrator"
+                ,"audjob" : "configuring"
+            }
+        ]
+        ,"products" : [ "P91", "C91","E91", "P90", "C90","E90" ]
+    },
+
+
+    "bpsection" : [
+        {   "id" : "section-url-rewriter"
+            ,"text" : "The URL Rewriter can assign SEO-friendly URLs for your pages for better results."
+        },
+        {   "id" : "section-url-redirects"
+            ,"text" : "You can specify how to redirect requests."
+        },
+        {   "id" : "section-extension-url-providers"
+            ,"text" : "DNN provides default URL providers; however, you can also specify your own."
+        },
+        {   "id" : "section-regex-url-management"
+            ,"text" : "You can set the patterns to filter assets and pages that should be acted upon or exempted from the action. Note that the same filters apply to all sites in the installation."
+        }
+    ],
+
+
+    "bptables" : [
+        {
+            "id" : "simpletable-url-rewriter"
+            ,"rows" : [
+                {   "fld" : "Standard Replacement Character"
+                    ,"desc" : "The value that replaces any space character in the parameter portion of a generated URL. The replacement can be a hyphen (-) or an underscore (_)."
+                },
+                {   "fld" : "Concatenate Page URLs"
+                    ,"desc" : "If enabled, you can configure page URLs. <!-- How? -->"
+                },
+                {   "fld" : "Convert URLs to Lowercase"
+                    ,"desc" : "If enabled, URLs will be converted to all lowercase characters."
+                },
+                {   "fld" : "Convert Accented Characters"
+                    ,"desc" : "If enabled, accented characters are converted to their plain-ASCII equivalents."
+                },
+                {   "fld" : "Set Default Site Language"
+                    ,"desc" : "If enabled and the URL does not specify a language, the site's default language is assumed."
+                }
+            ]
+        },
+        {
+            "id" : "simpletable-url-redirects"
+            ,"rows" : [
+                {   "fld" : "Redirect deleted, expired, disabled pages to"
+                    ,"desc" : "The target page if a requested page is not found. Options: \"404 Error\" and \"Site Home Page\"."
+                },
+                {   "fld" : "Redirect to Friendly URLs"
+                    ,"desc" : "If enabled, non-friendly URLs are redirected to the friendly version of the URL."
+                },
+                {   "fld" : "Redirect Mixed Case URLs"
+                    ,"desc" : "If enabled, URLs with mixed-case characters are redirected to the lowercase version of the URL."
+                }
+            ]
+        },
+        {   "id" : "simpletable-url-regex"
+            ,"rows" : [
+                {   "fld" : "Ignore URL Regular Expression"
+                    ,"desc" : "Defines the set of URLs that should be ignored for rewriting, redirecting, or any other processing by the URL Rewriter. Typically, these would be images, CSS files, PDF files, and other assets."
+                },
+                {   "fld" : "Do Not Rewrite URL Regular Expression"
+                    ,"desc" : "Defines the set of URLs that should be ignored for rewriting."
+                },
+                {   "fld" : "Site URLs Only Regular Expression"
+                    ,"desc" : "Defines the set of URLs that must be first checked against the siteURLs.config file, which contains explicit rewriting and redirect instructions."
+                },
+                {   "fld" : "Do Not Redirect URL Regular Expression"
+                    ,"desc" : "Defines the set of URLs that should not be redirected under any condition."
+                },
+                {   "fld" : "Do Not Redirect Https URL Regular Expression"
+                    ,"desc" : "Defines the set of URLs that should not be redirected if the redirect would go from HTTP to HTTPS or vice versa."
+                },
+                {   "fld" : "Prevent Lowercase URL Regular Expression"
+                    ,"desc" : "Defines the set of URLs that should not be set to lowercase. Use this if the URL contains an encoded character or a case-sensitive code."
+                },
+                {   "fld" : "Do Not Use Friendly URLs Regular Expression"
+                    ,"desc" : "Defines the set of URLs that should be preserved. Typically used for backward compatibility."
+                },
+                {   "fld" : "Keep in Querystring Regular Expression"
+                    ,"desc" : "Defines the part of a generated URL that must be preserved in the query string. Example: If this field contains <userinput>/key/value</userinput> and a generated URL is <systemoutput>/pagename/key/value</systemoutput>, then the generated URL is replaced with <systemoutput>/pagename?key=value</systemoutput>"
+                },
+                {   "fld" : "URLs With No Extension Regular Expression"
+                    ,"desc" : "Defines the set of URLs for pages or resources that are not on the server, are not a DNN page, and can be requested without an extension. These URLs will not return a 404 status even if the page or resource is not found."
+                },
+                {   "fld" : "Valid Friendly URL Regular Expression"
+                    ,"desc" : "Defines the set of characters that are valid for a friendly URL. Characters that do not match the regular expression will be deleted from the generated URL."
+                }
+            ]
+        },
+        {   "id" : "simpletable-test-page-url"
+            ,"rows" : [
+                {   "fld" : "Page to Test"
+                    ,"desc" : "Select the page from the tree."
+                },
+                {   "fld" : "Add Query String"
+                    ,"desc" : "(Optional) Enter <codeph>?key=value</codeph> to test the URL with a query string. The generated URL will include <codeph>/key/value</codeph>."
+                },
+                {   "fld" : "Custom Page Name / URL End String"
+                    ,"desc" : "(Optional) Enter the name of the specific page to test, if any."
+                }
+            ]
+        },
+        {   "id" : "simpletable-testresults-url-rewriting"
+            ,"rows" : [
+                {   "fld" : "Rewriting Result"
+                    ,"desc" : "The rewritten URL as it would be seen by the DNN installation and third-party extensions."
+                },
+                {   "fld" : "Identified Language / Culture"
+                    ,"desc" : "The culture code of the site. Discovered during the URL-rewriting process."
+                },
+                {   "fld" : "Identified Page"
+                    ,"desc" : "The target page of the URL. Discovered during the URL-rewriting process."
+                },
+                {   "fld" : "Redirection Result"
+                    ,"desc" : "The final destination after any redirects."
+                },
+                {   "fld" : "Redirection Reason"
+                    ,"desc" : "The reason for the redirect."
+                },
+                {   "fld" : "Operation Messages"
+                    ,"desc" : "Any debug messages generated during the URL-rewriting process."
+                }
+            ]
+        }
+    ],
+
+
+    "bpsteps" : [
+        {   "id" : "step-configure-url-rewriter"
+            ,"cmd" : "Configure the URL rewriter."
+            ,"info" : [
+                "img=scr-SEO-URLManagement-GeneralSettings-URLRewriter-E91.png|URL Management &gt; General Settings"
+                ,"conref=simpletable-url-rewriter"
+            ]
+        },
+        {   "id" : "step-configure-url-redirects"
+            ,"cmd" : "Configure the URL redirects."
+            ,"info" : [
+                "img=scr-SEO-URLManagement-GeneralSettings-URLRedirects-E91.png|URL Management &gt; General Settings"
+                ,"conref=simpletable-url-redirects"
+            ]
+        },
+        {   "id" : "step-manage-url-providers"
+            ,"cmd" : "Manage your URL providers."
+            ,"info" : [
+                "img=scr-SEO-URLManagement-ExtensionURLProviders.png|URL Management &gt; Extension URL Providers"
+            ]
+            ,"choices" : [
+                "<choice>To enable or disable a URL provider, check or uncheck its <uicontrol>Enabled</uicontrol> box.</choice>"
+                ,"<choice>To change the properties of a URL provider (if possible), click/tap its pencil icon.</choice>"
+            ]
+        },
+        {   "id" : "step-define-regex-for-each-behavior"
+            ,"cmd" : "Enter the regular expression to define the set for the behavior."
+            ,"info" : [
+                "img=scr-SEO-URLManagement-Expressions-E91.png|URL Management &gt; Expressions"
+                ,"conref=simpletable-url-regex"
+            ]
+        },
+        {   "id" : "step-test-page-url"
+            ,"cmd" : "Test a page URL."
+            ,"info" : "img=scr-SEO-URLManagement-TestURL-TestPageURL-E91.png|URL Management &gt; Test URL"
+            ,"substeps" : [
+                {   "cmd" : "Fill in the required fields."
+                    ,"info" : "conref=simpletable-test-page-url"
+                },
+                {   "cmd" : "Click/Tap <uicontrol>Test URL</uicontrol>."  }
+            ]
+            ,"result" : "The <uicontrol>Resulting URLs</uicontrol> field displays the possible URLs for the page, based on the site alias and the languages for that page."
+        },
+        {   "id" : "step-test-url-rewriting"
+            ,"cmd" : "Fill in the required field."
+            ,"info" : "img=scr-SEO-URLManagement-TestURL-TestURLRewriting-E91.png|URL Management &gt; Test URL"
+            ,"substeps" : [
+                {   "cmd" : "Enter the fully-qualified <uicontrol>URL to Test</uicontrol> (including <codeph>http://</codeph> or <codeph>https://</codeph>)."  },
+                {   "cmd" : "Click/Tap <uicontrol>Test URL Rewriting</uicontrol>."  }
+            ]
+            ,"result" : "conref=simpletable-testresults-url-rewriting"
+        }
+    ],
+
+
+    "topics" : [
+
+        {
+            "nav" : "Configure URL Rewriter"
+            ,"title" : "Configure URL Rewriter"
+            ,"section" : "conref=section-url-rewriter"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Settings-SEO host"
+                ,"step-pbtabs-Settings-SEO-URLManagement-GeneralSettings host"
+                ,"step-configure-url-rewriter"
+                ,"<uicontrol>Save</uicontrol>."
+            ]
+        },
+
+        {
+            "nav" : "Configure URL Redirects"
+            ,"title" : "Configure URL Redirects"
+            ,"section" : "conref=section-url-redirects"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Settings-SEO host"
+                ,"step-pbtabs-Settings-SEO-URLManagement-GeneralSettings host"
+                ,"step-configure-url-redirects"
+                ,"<uicontrol>Save</uicontrol>."
+            ]
+        },
+
+        {
+            "nav" : "Manage URL Providers"
+            ,"title" : "Manage URL Providers"
+            ,"section" : "conref=section-extension-url-providers"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Settings-SEO host"
+                ,"step-pbtabs-Settings-SEO-URLManagement-ExtensionURLProviders host"
+                ,"step-manage-url-providers"
+            ]
+        },
+
+        {
+            "nav" : "Edit RegEx for URL Management"
+            ,"title" : "Edit RegEx for URL Management"
+            ,"section" : "conref=section-regex-url-management"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqHost\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Settings-SEO host"
+                ,"step-pbtabs-Settings-SEO-URLManagement-Expressions host"
+                ,"step-define-regex-for-each-behavior"
+                ,"<uicontrol>Save</uicontrol>."
+            ]
+        },
+
+        {
+            "nav" : "Test URL Generation"
+            ,"title" : "Test URL Generation"
+            ,"prereqs" : [ "<ph conkeyref=\"k-bptext/ph-PrereqAdmin\"></ph>" ]
+            ,"steps" : [
+                "step-pbar-Settings-SEO host"
+                ,"step-pbtabs-Settings-SEO-URLManagement-TestURL host"
+                ,"step-test-page-url"
+                ,"step-test-url-rewriting"
+            ]
+        }
+    ]
+}

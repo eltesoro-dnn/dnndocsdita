@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map xml:lang="en" id="map-urlmanagement">
+
+    <title>URL Management</title>
+
+    <topichead outputclass="sub-nav-tabs" collection-type="family" >
+        <topicmeta><navtitle>URL Management</navtitle></topicmeta>
+        <topicref format="dita" type="task" toc="yes" href="configure-url-rewriter.dita" />
+        <topicref format="dita" type="task" toc="yes" href="configure-url-redirects.dita" />
+        <topicref format="dita" type="task" toc="yes" href="manage-url-providers.dita" />
+        <topicref format="dita" type="task" toc="yes" href="edit-regex-for-url-management.dita" />
+        <topicref format="dita" type="task" toc="yes" href="test-url-generation.dita" />
+    </topichead>
+
+</map>
+
+
+
+
+
+

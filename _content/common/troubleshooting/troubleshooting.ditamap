@@ -6,29 +6,20 @@
 
 	<topicref format="dita" type="topic" toc="yes" href="about-troubleshooting.dita" copy-to="index.dita" collection-type="family" >
 
-        <!-- Installation -->
-        <topicref format="dita" type="topic" toc="yes" href="ts-install-missing-resources.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="ts-how-to-increase-max-upload-file-size.dita" />  <!-- Site Configuration -->
 
-        <!-- Security -->
-        <topicref format="dita" type="topic" toc="yes" href="ts-error-login-ip-filtering-is-currently-disabled.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="ts-error-login-ip-filtering-is-currently-disabled.dita" />  <!-- Security -->
+        <topicref format="dita" type="topic" toc="yes" href="ts-error-another-user-has-taken-action-on-the-page.dita" />  <!-- Page Editing -->
+        <topicref format="dita" type="topic" toc="yes" href="ts-error-unknown-server-tag-DNNComboBox.dita" />  <!-- Modules -->
+        <topicref format="dita" type="topic" toc="yes" href="ts-error-could-not-load-awssdk.dita" />  <!-- Modules -->
+        <topicref format="dita" type="topic" toc="yes" href="ts-error-sql-timeout.dita" />  <!-- SQL -->
 
-        <!-- Users -->
-        <topicref format="dita" type="topic" toc="yes" href="ts-broken-profile-image.dita" />
-
-        <!-- Page Editing -->
-        <topicref format="dita" type="topic" toc="yes" href="ts-error-another-user-has-taken-action-on-the-page.dita" />
-        <topicref format="dita" type="topic" toc="yes" href="ts-page-remains-in-draft.dita" />
-        <topicref format="dita" type="topic" toc="yes" href="ts-unable-to-remove-page-redirect-urls.dita" />
-
-        <!-- Modules -->
-        <topicref format="dita" type="topic" toc="yes" href="ts-error-unknown-server-tag-DNNComboBox.dita" />
-        <topicref format="dita" type="topic" toc="yes" href="ts-error-could-not-load-awssdk.dita" />
-
-        <!-- SQL -->
-        <topicref format="dita" type="topic" toc="yes" href="ts-error-sql-timeout.dita" />
-
-        <!-- Localization -->
-        <topicref format="dita" type="topic" toc="yes" href="ts-incomplete-content-localization.dita" />
+        <topicref format="dita" type="topic" toc="yes" href="ts-install-missing-resources.dita" />  <!-- Installation -->
+        <topicref format="dita" type="topic" toc="yes" href="ts-broken-profile-image.dita" />  <!-- Users -->
+        <topicref format="dita" type="topic" toc="yes" href="ts-page-remains-in-draft.dita" />  <!-- Page Editing -->
+        <topicref format="dita" type="topic" toc="yes" href="ts-unable-to-remove-page-redirect-urls.dita" />  <!-- Page Editing -->
+        <topicref format="dita" type="topic" toc="yes" href="ts-incomplete-content-localization.dita" />  <!-- Localization -->
+        <topicref format="dita" type="topic" toc="yes" href="ts-missing-persona-bar.dita" />  <!-- Misc -->
 
     </topicref>
 

@@ -35,10 +35,25 @@
                 <li id="li-restart-app-expanded" outputclass="step stepexpand"><xref href="../servers/restart-application.dita">Restart the DNN application</xref> to allow the changes to take effect.</li>
 
                 <!-- <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-recycle-app-pool"></li> -->
-                <li id="li-recycle-app-pool" outputclass="step stepexpand"><xref format="html" scope="external" href="https://technet.microsoft.com/en-us/library/cc770764(v=ws.10).aspx">Recycle the application pool</xref> to allow the changes to take effect.</li>
+                <!-- <ph conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/ph-recycle-app-pool"></ph> -->
+                <li id="li-recycle-app-pool" outputclass="step stepexpand"><ph id="ph-recycle-app-pool"><xref format="html" scope="external" href="https://technet.microsoft.com/en-us/library/cc770764(v=ws.10).aspx">Recycle the application pool</xref> to allow the changes to take effect.</ph></li>
 
                 <!-- <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-back-up"></li> -->
                 <li id="li-back-up" outputclass="step stepexpand">Back up the site and the database.</li>
+
+                <!-- <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-reset-iis-website"></li> -->
+                <li id="li-reset-iis-website" outputclass="step stepexpand">
+                    <p outputclass="cmd"><ph conkeyref="k-bpsteps/ph-cmd-reset-iis-website"></ph></p>
+                    <ol outputclass="substeps">
+                        <li outputclass="substep"><p outputclass="cmd"><ph conkeyref="k-bpsteps/ph-substep-cmd-reset-iis-website-ctrlpanel"></ph></p></li>
+                        <li outputclass="substep">
+                            <p outputclass="cmd"><ph conkeyref="k-bpsteps/ph-substep-cmd-reset-iis-website-restart"></ph></p>
+                            <p outputclass="info" conkeyref="k-bpsteps/p-substep-info-reset-iis-website-restart"></p>
+                        </li>
+                    </ol>
+                </li>
+
+
 
 
 

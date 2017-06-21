@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-ts-how-to-increase-max-upload-file-size">
+
+    <title>How to: Increase the Maximum File Size for Upload</title>
+    <titlealts>
+        <navtitle>How to: Increase Max File Size for Upload</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,orSM,1706</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="troubleshooting" />
+            <audience type="programmer" job="troubleshooting" />
+            <audience type="other" othertype="designer" job="troubleshooting" />
+            <audience type="other" othertype="content manager" job="troubleshooting" />
+            <audience type="other" othertype="community manager" job="troubleshooting" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
+            </prodinfo>
+            <othermeta name="jira" content="DOC-XXX"/>
+            <othermeta name="source" content="https://dnntracker.atlassian.net/wiki/display/SUP/HOW+TO%3A+Set+Upload+File+Size+Limits (Refined version from Will Morgenweck.)"/>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section>
+            <p>The maximum file size must be multiples of 1024.
+                <ul>
+                    <li>1024 bytes = 1 kilobyte (KB)</li>
+                    <li>1024 KB = 1 megabyte (MB)</li>
+                    <li>1024 MB = 1 gigabyte (GB)</li>
+                </ul>
+            </p>
+        </section>
+
+        <steps>
+
+            <step><cmd><xref href="../configuring-your-site/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></cmd></step>
+            <step>
+                <cmd>Update the <codeph>httpRuntime</codeph> tag with the maximum file size you want.</cmd>
+                <substeps>
+                    <substep>
+                        <cmd>Look for the <codeph>httpRuntime</codeph> tag.</cmd>
+                        <info>
+                            <p>The default <codeph>httpRuntime</codeph> tag might look as follows:</p>
+                            <codeblock>
+&lt;httpRuntime targetFramework=&quot;4.5&quot; shutdownTimeout=&quot;120&quot; executionTimeout=&quot;1200&quot; useFullyQualifiedRedirectUrl=&quot;true&quot; maxRequestLength=&quot;29296&quot; requestLengthDiskThreshold=&quot;81920&quot; maxUrlLength=&quot;2048&quot; requestPathInvalidCharacters=&quot;&amp;lt;,&amp;gt;,*,%,:,\,?&quot; enableVersionHeader=&quot;false&quot; requestValidationMode=&quot;2.0&quot; fcnMode=&quot;Single&quot; /&gt;
+                            </codeblock>
+                        </info>
+                    </substep>
+                    <substep>
+                        <cmd>Replace the value of <varname>maxRequestLength</varname> with the maximum file size you want.</cmd>
+                        <info>
+                        <note type="note"><varname>maxRequestLength</varname> is stored as kilobytes. Example: You can use <userinput>2097152</userinput> KB (equivalent to 2 GB).</note>
+
+                        </info>
+                    </substep>
+                </substeps>
+            </step>
+            <step>
+                <cmd>If you need to upload files that are greater than 28 MB on IIS7+ or on Cloud Services, add a <codeph>&lt;system.webServer/&gt;</codeph> node to specify the <varname>maxAllowedContentLength</varname> for requests.</cmd>
+                <info>
+                    <note type="note"><varname>maxAllowedContentLength</varname> is stored as bytes. Example: You can use <userinput>2147483647</userinput> bytes (equivalent to 2 GB).</note>
+                    <p>Add the following node to your <filepath>web.config</filepath>:</p>
+                    <codeblock>
+&lt;system.webServer&gt;
+    &lt;security&gt;
+      &lt;requestFiltering&gt;
+        &lt;requestLimits maxAllowedContentLength=&quot;2147483647&quot; /&gt;
+      &lt;/requestFiltering&gt;
+    &lt;/security&gt;
+&lt;/system.webServer&gt;
+                    </codeblock>
+                </info>
+            </step>
+            <step><cmd>Save.</cmd></step>
+            <step><cmd><ph conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/ph-recycle-app-pool"></ph></cmd></step>
+
+        </steps>
+
+    </taskbody>
+
+</task>

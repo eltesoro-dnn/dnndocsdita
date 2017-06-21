@@ -23,7 +23,7 @@ function IsValid( [string] $s )  {
 
 function IsNotValid( [string] $s )  { return ( !(IsValid $s) ) }
 
-function Hyphenated( [string] $s )  { return ( $s.Replace( " ", "-" ).Replace( ",", "" ).Replace( "(", "" ).Replace( ")", "" ).ToLower() ) }
+function Hyphenated( [string] $s )  { return ( $s.Replace( " / ", " " ).Replace( " ", "-" ).Replace( ",", "" ).Replace( "(", "" ).Replace( ")", "" ).ToLower() ) }
 
 function ExtractRefType( [string] $str )  {
     $arr = $str.Split( "-", [System.StringSplitOptions]::None )
@@ -373,7 +373,17 @@ function Write1Step4bp( [PSCustomObject] $node, [string] $tag, [string] $indent 
         if ( $node.result -is [String] )  {
             $s = "Result: " + $node.result
         }
-        $s = MkConref $s "stepresult"
+        else  {
+            $s = MkConref $s "stepresult"
+
+
+
+
+
+
+
+
+        }
         Write-Output "$indent$tab$s"
     }
 

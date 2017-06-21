@@ -45,7 +45,7 @@ call %0 runme json\recyclebin.json    bptext-recyclebin    W:\_content\common\re
 goto :eof
 
 :urlmanagement
-call %0 runme json\urlmanagement.json bptext-url-management W:\_content\common\url-management
+call %0 runme json\url-management.json bptext-url-management W:\_content\common\url-management
 goto :eof
 
 

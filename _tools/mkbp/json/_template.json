@@ -29,6 +29,11 @@
 
 
     "bptables" : [
+        {
+            "id" : "boilerplates"
+            ,"rows" : [
+            ]
+        },
         {   "id" : "boilerplates"
             ,"header" : {
                 "widths" : "1* 3*"

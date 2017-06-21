@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="troubleshooting-ts-missing-persona-bar">
+
+    <title>Troubleshooting: Missing Persona Bar</title>
+    <titlealts>
+        <navtitle>Troubleshooting: Missing Persona Bar</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrMT,edET,1705</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="troubleshooting" />
+            <audience type="programmer" job="troubleshooting" />
+            <audience type="other" othertype="designer" job="troubleshooting" />
+            <audience type="other" othertype="content manager" job="troubleshooting" />
+            <audience type="other" othertype="community manager" job="troubleshooting" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+
+        <section outputclass="condition">
+            <title>Symptom</title>
+
+            <p>Persona Bar does not load. </p>
+        </section>
+
+
+        <bodydiv outputclass="troubleSolution">
+            <section outputclass="cause">
+                <title>Possible Cause</title>
+
+                <sectiondiv outputclass="cause">
+                    <p>The site files are located on the root drive rather than inside a folder.</p>
+                </sectiondiv>
+            </section>
+
+            <section outputclass="remedy">
+                <title>Solution</title>
+
+                <ol outputclass="steps">
+                    <li outputclass="step stepexpand"><p outputclass="cmd">Move the website contents to a folder.</p>
+                        <ol outputclass="substeps">
+                            <li outputclass="substep"><p outputclass="cmd">Create a new folder within the drive. The directory for websites is usually in C:\inetpub\wwwroot\yourwebsitefolder.</p></li>
+							<li outputclass="substep"><xref format="dita" href="../setup/set-up-dnn-folder.dita">Apply IIS permissions to this new folder for your website.</xref></li>
+							<li outputclass="substep"><p outputclass="cmd">Move the DNN website files to the new folder.</p></li>
+							<li outputclass="substep"><xref format="dita" href="../setup/set-up-iis.dita#tsk-set-up-iis/point-to-DNN-folder">In IIS Manager, change the website’s physical path to point to this new folder.</xref></li>
+                        </ol>
+                    </li>
+					<li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-reset-iis-website"></li>
+                </ol>
+            </section>
+
+
+
+			<section outputclass="cause">
+                <title>Possible Cause</title>
+
+                <sectiondiv outputclass="cause">
+                    <p>The web.config file is missing the correct assembly binding.</p>
+                </sectiondiv>
+            </section>
+
+            <section outputclass="remedy">
+                <title>Solution</title>
+
+                <ol outputclass="steps">
+                    <li outputclass="step stepexpand"><xref format="dita" href="../configuring-your-site/access-web-config.dita">Access the <filepath>web.config</filepath> file.</xref></li>
+                    <li outputclass="step stepexpand">Look for the <codeph>assemblyIdentity</codeph> node.
+						<codeblock>
+assemblyIdentity name=&quot;Newtonsoft.Json&quot; publicKeyToken=&quot;30ad4fe6b2a6aeed&quot;
+						</codeblock>
+					</li>
+                    <li outputclass="step stepexpand"><p outputclass="cmd">In the <codeph>assemblyIdentity</codeph> node, replace the <codeph>bindingRedirect</codeph> tag with the following:</p>
+						<codeblock>
+bindingRedirect oldVersion=&quot;0.0.0.0-32767.32767.32767.32767&quot; newVersion=&quot;7.0.0.0&quot;
+						</codeblock>
+					</li>
+					<li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-reset-iis-website"></li>
+                </ol>
+            </section>
+
+        </bodydiv>
+
+    </body>
+
+</topic>

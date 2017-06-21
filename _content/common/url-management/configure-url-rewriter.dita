@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-configure-url-rewriter">
+
+
+    <title>Configure URL Rewriter</title>
+    <titlealts>
+        <navtitle>Configure URL Rewriter</navtitle>
+    </titlealts>
+
+    <prolog>
+        <author>wrET,1705</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="other" otherjob="configuring"/>
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist>
+                    <vrm version="9" release="1"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Content</prodname>
+                <vrmlist>
+                    <vrm version="9" release="1"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Engage</prodname>
+                <vrmlist>
+                    <vrm version="9" release="1"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+    <taskbody>
+
+        <section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section conref="bptext-url-management.dita#tsk-bptext-url-management/section-url-rewriter"></section>
+
+        <prereq>
+            <ul><li><ph conkeyref="k-bptext/ph-PrereqAdmin"></ph></li></ul>
+        </prereq>
+
+        <steps>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Settings-SEO-E91"><cmd/></step>
+            <step audience="adm" conkeyref="k-bppbtabs/step-pbtabs-host-Settings-SEO-URLManagement-GeneralSettings-E91"><cmd/></step>
+            <step conref="bptext-url-management.dita#tsk-bptext-url-management/step-configure-url-rewriter"><cmd/></step>
+            <step><cmd><uicontrol>Save</uicontrol>.</cmd></step>
+        </steps>
+
+    </taskbody>
+
+</task>
