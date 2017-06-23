@@ -125,9 +125,11 @@
 
             <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-editbar-pagesettings"><cmd/></step> -->
             <!-- <step conkeyref="k-bpsteps/step-pb-editbar-pagesettings"><cmd/></step> -->
+            <!-- <ph conkeyref="k-bpsteps/ph-cmd-pb-editbar-pagesettings"></ph> -->
+            <!-- <p conkeyref="k-bpsteps/p-info-pb-editbar-pagesettings"></p> -->
             <step id="step-pb-editbar-pagesettings">
-                <cmd>In the <uicontrol>Edit Bar</uicontrol>, click/tap the <uicontrol>Page Settings</uicontrol> icon.</cmd>
-                <info><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-EditBar-PageSettings.png"><alt>Page Settings icon</alt></image></info>
+                <cmd><ph id="ph-cmd-pb-editbar-pagesettings">In the <uicontrol>Edit Bar</uicontrol>, click/tap the <uicontrol>Page Settings</uicontrol> icon.</ph></cmd>
+                <info><p id="p-info-pb-editbar-pagesettings"><image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-pb-EditBar-PageSettings.png"><alt>Page Settings icon</alt></image></p></info>
             </step>
 
             <!-- <step conref="bptext-steps.dita#tsk-bptext-steps/step-pb-editbar-pagehistory"><cmd/></step> -->

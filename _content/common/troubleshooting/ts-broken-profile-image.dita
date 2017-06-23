@@ -68,11 +68,11 @@
                 <title>Solution</title>
 
                 <ol outputclass="steps">
-                    <li outputclass="step stepexpand">Log into the affected site with a superuser/host account.</li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Log into the affected site with a superuser/host account.</ph></li>
                     <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-SEO-E91"></ph></li>
                     <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-SEO-URLManagement-Expressions-E91"></ph></li>
-                    <li outputclass="step stepexpand">In <uicontrol>Do Not Rewrite URL Regular Expression</uicontrol>, enter <codeph>/DesktopModules/|/Providers/|/LinkClick\.aspx|/profilepic\.ashx|/DnnImageHandler\.ashx|/__browserLink/</codeph></li>
-                    <li outputclass="step"><xref href="../servers/clear-cache.dita">Clear the server cache.</xref></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">In <uicontrol>Do Not Rewrite URL Regular Expression</uicontrol>, enter <codeph>/DesktopModules/|/Providers/|/LinkClick\.aspx|/profilepic\.ashx|/DnnImageHandler\.ashx|/__browserLink/</codeph>.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd"><xref href="../servers/clear-cache.dita">Clear the server cache.</xref></ph></li>
                 </ol>
             </section>
 

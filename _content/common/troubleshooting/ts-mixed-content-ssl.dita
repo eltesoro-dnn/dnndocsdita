@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="troubleshooting-ts-mixed-content-ssl">
+
+    <title>Troubleshooting: Mixed-Content Warnings When Using SSL Offloading
+</title>
+    <titlealts>
+        <navtitle>Troubleshooting: Mixed-Content Warnings When Using SSL Offloading
+</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrMF,1706</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="troubleshooting" />
+            <audience type="programmer" job="troubleshooting" />
+            <audience type="other" othertype="designer" job="troubleshooting" />
+            <audience type="other" othertype="content manager" job="troubleshooting" />
+            <audience type="other" othertype="community manager" job="troubleshooting" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist>
+                    <vrm version="9" release="1"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist>
+                    <vrm version="9" release="1"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist>
+                    <vrm version="9" release="1"/>
+                    <vrm version="9" release="0"/>
+                </vrmlist>
+            </prodinfo>
+            <othermeta name="jira" content="DOC-143"/>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+        <section outputclass="condition">
+            <title>Symptom</title>
+            <p>Mixed-content warnings, such as:
+                <ul>
+                    <li>Internet Explorer: <msgph>Only secure content is displayed.</msgph></li>
+                    <li>Firefox: <msgph>Firefox has blocked content that isn't secure.</msgph></li>
+                    <li>Chrome: <msgph>This page includes script from unauthenticated sources.</msgph></li>
+                </ul>
+            </p>
+        </section>
+
+        <bodydiv outputclass="troubleSolution">
+            <section outputclass="cause">
+                <title>Possible Cause</title>
+
+                <p>A secured page (HTTPS) contains unsecured links (HTTP) to some resources (images, scripts, etc.).</p>
+            </section>
+
+            <section outputclass="remedy">
+                <title>Solution</title>
+
+                <ol outputclass="steps">
+                    <li outputclass="step stepexpand"><p outputclass="cmd">Configure the SSL Offload Header Value as required by your load balancers.</p>
+                        Examples:
+                        <ul>
+                            <li><xref href="http://support.citrix.com/article/CTX118518" scope="external">Citrix supports custom headers and recommends using SSL_REQUEST.</xref></li>
+                            <li><xref href="http://fusionsecurity.blogspot.com/2011/04/ssl-offloading-and-weblogic-server.html" scope="external">Weblogic uses a fixed header of WL-Proxy-SSL.</xref></li>
+                            <li>BigIP/F5 supports custom headers via their <apiname>iRule</apiname> rewrite function.</li>
+                        </ul>
+                    </li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Go to the page to edit.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-all-Edit-E91"></ph></li>
+                    <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-pb-editbar-pagesettings"></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-all-Content-Pages-Advanced-More-E91"></ph><image conkeyref="k-bppbtabs/image-pbtabs-all-Content-Pages-Advanced-More-E91"></image></li>
+                    <li outputclass="step stepexpand">
+                        <p outputclass="cmd">Under <uicontrol>Security</uicontrol>, enable <uicontrol>Secure Connection</uicontrol>.</p>
+                        <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Page-Advanced-Security.png"><alt>Security &gt; Secure Connection</alt></image>
+                    </li>
+                </ol>
+            </section>
+
+        </bodydiv>
+
+    </body>
+
+</topic>

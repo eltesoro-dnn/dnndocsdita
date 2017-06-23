@@ -69,10 +69,10 @@
                 <title>Solution</title>
 
                 <ol outputclass="steps">
-                    <li outputclass="step stepexpand">Exit the edit mode and refresh the page.</li>
-                    <li outputclass="step stepexpand">Enter the edit mode.</li>
-                    <li outputclass="step stepexpand">Redo your changes, if necessary.</li>
-                    <li outputclass="step stepexpand">Publish the changes.</li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Exit the edit mode and refresh the page.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Enter the edit mode.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Redo your changes, if necessary.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Publish the changes.</ph></li>
                 </ol>
             </section>
         </bodydiv>

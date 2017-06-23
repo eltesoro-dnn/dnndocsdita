@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="troubleshooting-ts-error-argumentnullexception-after-move-upgrade">
+
+    <title>Troubleshooting: ArgumentNullException After a Move or an Upgrade</title>
+    <titlealts>
+        <navtitle>Troubleshooting: ArgumentNullException After Move or Upgrade</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrMG,edET,1706</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="administrator" job="troubleshooting" />
+            <audience type="programmer" job="troubleshooting" />
+            <audience type="other" othertype="designer" job="troubleshooting" />
+            <audience type="other" othertype="content manager" job="troubleshooting" />
+            <audience type="other" othertype="community manager" job="troubleshooting" />
+            <prodinfo>
+                <prodname>Platform</prodname>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist>
+                    <vrm version="9" release="0"/>
+                    <vrm version="9" release="1"/>
+                </vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
+
+
+        <section outputclass="condition">
+            <title>Symptom</title>
+            <p>Error:</p>
+            <systemoutput>System.ArgumentNullException: Collection cannot be null.</systemoutput>
+        </section>
+
+
+        <bodydiv outputclass="troubleSolution">
+
+            <section outputclass="cause">
+                <title>Possible Cause</title>
+
+                <p>The database user does not have owner rights for the database.</p>
+            </section>
+
+            <section outputclass="remedy">
+                <title>Solution</title>
+
+                <ol outputclass="steps">
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">In the Microsoft SQL Server Management Studio, log into your database server.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Go to <menucascade><uicontrol>Security</uicontrol> <uicontrol>Logins</uicontrol></menucascade>.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Right-click the database associated with your DNN installation, and choose <uicontrol>Properties</uicontrol>.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">In the <uicontrol>User Mapping</uicontrol> section, set the role for the DNN database user as <userinput>db_owner</userinput>.</ph></li>
+                </ol>
+            </section>
+
+        </bodydiv>
+
+
+		<bodydiv outputclass="troubleSolution">
+
+            <section outputclass="cause">
+                <title>Possible Cause</title>
+
+                <p>The IIS bindings do not match the correct portal alias.</p>
+            </section>
+
+            <section outputclass="remedy">
+                <title>Solution</title>
+
+                <ul outputclass="steps">
+                    <li outputclass="step stepexpand">
+                        <ph outputclass="cmd">Correct the site alias in the IIS Manager.</ph>
+                        <ol outputclass="substeps">
+                            <li outputclass="substep"><ph outputclass="cmd">Go to IIS Manager and select the site.</ph></li>
+                            <li outputclass="substep"><ph outputclass="cmd">On the right panel, in the <uicontrol>Actions</uicontrol> section, go to <uicontrol>Bindings</uicontrol>.</ph></li>
+                            <li outputclass="substep"><ph outputclass="cmd">Add a new binding.</ph></li>
+                            <li outputclass="substep"><ph outputclass="cmd">Copy the correct site alias into the new binding.</ph></li>
+                        </ol>
+                    </li>
+                    <li outputclass="step stepexpand">
+                        <ph outputclass="cmd">Correct the site alias in the SQL database.</ph>
+                        <ol outputclass="substeps">
+                            <li outputclass="substep"><ph outputclass="cmd">In the Microsoft SQL Server Management Studio, log in to your database server.</ph></li>
+                            <li outputclass="substep"><ph outputclass="cmd">Create a new query for the DNN database.</ph></li>
+                            <li outputclass="substep"><ph outputclass="cmd">Run the following: <codeph>SELECT * FROM PortalAlias</codeph></ph></li>
+                            <li outputclass="substep"><ph outputclass="cmd">If the result shows an incorrect site alias, replace it.</ph>
+                                <p outputclass="info">Run the following SQL script:
+                                    <codeblock>
+UPDATE PortalAlias
+SET HTTPAlias = 'newdomain.dnndev.me'
+WHERE HTTPAlias = 'olddomain.dnndev.me'
+                                    </codeblock>
+                                </p>
+                            </li>
+                            <li outputclass="substep"><ph outputclass="cmd">If the result does not show the site alias, insert it.</ph>
+                                <p outputclass="info">Run the following SQL script:
+                                    <codeblock>
+INSERT INTO PortalAlias (PortalID, HTTPAlias, CreatedByUserID, CreatedOnDate, LastModifiedByUserID, LastModifiedOnDate, BrowserType, IsPrimary)
+VALUES (0,'newdomain.dnndev.me',-1,GETDATE(),-1,GETDATE(),'Normal',0)
+                                    </codeblock>
+                                </p>
+                            </li>
+                        </ol>
+
+                        <note type="note">When using external domains, you might need to add an entry to <filepath>%SystemRoot%\System32\drivers\etc\hosts</filepath> in order to point the browser to the correct domain.</note>
+                    </li>
+                </ul>
+
+            </section>
+
+		</bodydiv>
+
+
+		<bodydiv outputclass="troubleSolution">
+
+            <section outputclass="cause">
+                <title>Possible Cause</title>
+
+                <p>Incorrect <codeph>connectionString</codeph> entry in the <filepath>web.config</filepath> file.</p>
+            </section>
+
+            <section outputclass="remedy">
+                <title>Solution</title>
+
+                <ol outputclass="steps">
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Go to the <filepath>web.config</filepath> file on the root folder of the installation.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Revise the entries for the connection string, specifically <codeph>Server Name</codeph>, <codeph>User</codeph>, and <codeph>Password</codeph>.</ph></li>
+                </ol>
+            </section>
+
+        </bodydiv>
+
+
+		<bodydiv outputclass="troubleSolution">
+
+            <section outputclass="cause">
+                <title>Possible Cause</title>
+
+                <p>The Application Pool Identity account does not have modify rights for the DNN Installation folder.</p>
+            </section>
+
+            <section outputclass="remedy">
+                <title>Solution</title>
+
+                <ol outputclass="steps">
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Using Windows Explorer, go to your site folder and right-click on the DNN installation folder.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Choose <uicontrol>Properties</uicontrol>, and go to the <uicontrol>Security</uicontrol> tab.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Click/Tap <uicontrol>Edit…</uicontrol>.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Click/Tap <uicontrol>Add…</uicontrol>.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Select the correct location for the user.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Set the object name to <uicontrol>IIS AppPool\&lt;AppPoolName&gt;</uicontrol>, where <uicontrol>&lt;AppPoolName&gt;</uicontrol> is the Application Pool Identity account name.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Click/Tap <uicontrol>Check Names</uicontrol>.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Click/Tap <uicontrol>OK</uicontrol>, then <uicontrol>Apply</uicontrol>.</ph></li>
+                </ol>
+            </section>
+
+        </bodydiv>
+
+    </body>
+
+</topic>

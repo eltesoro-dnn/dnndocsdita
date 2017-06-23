@@ -69,10 +69,10 @@
 
                 <ol outputclass="steps">
                     <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-back-up"></li>
-                    <li outputclass="step stepexpand">In a browser, go to <filepath>http://&lt;yourdomain&gt;/install/install.aspx?mode=installresources</filepath>.</li>
-                    <li outputclass="step stepexpand">Wait for the resource installation process to complete.</li>
-                    <li outputclass="step stepexpand">After the process completes, click the <uicontrol>View Site</uicontrol> button.</li>
-                    <li outputclass="step stepexpand">Verify that the errors no longer appear.</li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">In a browser, go to <filepath>http://&lt;yourdomain&gt;/install/install.aspx?mode=installresources</filepath>.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Wait for the resource installation process to complete.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">After the process completes, click the <uicontrol>View Site</uicontrol> button.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Verify that the errors no longer appear.</ph></li>
                 </ol>
             </section>
 

@@ -73,7 +73,7 @@
                 <ol outputclass="steps">
                     <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Security-E91"></ph></li>
                     <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-Security-MemberAccounts-MemberManagement-E91"></ph></li>
-                    <li outputclass="step stepexpand">Turn on <uicontrol>Enable IP Address Checking</uicontrol>.</li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Turn on <uicontrol>Enable IP Address Checking</uicontrol>.</ph></li>
                 </ol>
             </section>
         </bodydiv>

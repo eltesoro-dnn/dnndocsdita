@@ -1,6 +1,6 @@
 /*
  | Based on the DITA Open Toolkit project.
- | ?ver=170602
+ | ?ver=170622
 */
 
 
@@ -794,6 +794,7 @@ span.filepath {
 .codeblock {
   margin: 1em;
 }
+.systemoutput,
 .msgph,
 .msgblock {
   font-family: monospace;
@@ -2607,7 +2608,6 @@ and (orientation : portrait) {
     padding: 63px 35px 63px 150px;
   }
 }
-
 
 
 /* ------------------------------------------------------------

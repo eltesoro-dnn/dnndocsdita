@@ -68,8 +68,9 @@
                 <ol outputclass="steps">
                     <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-back-up"></li>
                     <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E91"></ph></li>
-                    <li outputclass="step stepexpand"><ph outputclass="cmd">Run the following SQL script:</ph>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Delete the culture code of the aborted localization process.</ph>
                         <p outputclass="info">
+                            <ph>Run the following SQL script:</ph>
                             <codeblock>
 DELETE
 FROM Tabs
@@ -77,8 +78,9 @@ WHERE CultureCode = 'xx-XX';
                             </codeblock> where <varname>xx-XX</varname> is the culture code of the added language.
                         </p>
                     </li>
-                    <li outputclass="step stepexpand"><ph outputclass="cmd">Run the following SQL script:</ph>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Disable content localization for the site.</ph>
                         <p outputclass="info">
+                            <ph>Run the following SQL script:</ph>
                             <codeblock>
 UPDATE Tabs
 SET CultureCode = NULL;
@@ -91,7 +93,7 @@ WHERE SettingName = 'ContentLocalizationEnabled'
                         </p>
                     </li>
                     <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-recycle-app-pool"></li>
-                    <li outputclass="step stepexpand">Rerun the localization process.</li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Rerun the localization process.</ph></li>
                 </ol>
             </section>
 

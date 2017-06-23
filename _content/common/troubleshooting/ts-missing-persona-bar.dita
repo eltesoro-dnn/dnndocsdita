@@ -61,12 +61,12 @@
                 <title>Solution</title>
 
                 <ol outputclass="steps">
-                    <li outputclass="step stepexpand"><p outputclass="cmd">Move the website contents to a folder.</p>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Move the website contents to a folder.</ph>
                         <ol outputclass="substeps">
-                            <li outputclass="substep"><p outputclass="cmd">Create a new folder within the drive. The directory for websites is usually in C:\inetpub\wwwroot\yourwebsitefolder.</p></li>
+                            <li outputclass="substep"><ph outputclass="cmd">Create a new folder within the drive. The directory for websites is usually in <filepath>C:\inetpub\wwwroot\yourwebsitefolder</filepath>.</ph></li>
 							<li outputclass="substep"><xref format="dita" href="../setup/set-up-dnn-folder.dita">Apply IIS permissions to this new folder for your website.</xref></li>
-							<li outputclass="substep"><p outputclass="cmd">Move the DNN website files to the new folder.</p></li>
-							<li outputclass="substep"><xref format="dita" href="../setup/set-up-iis.dita#tsk-set-up-iis/point-to-DNN-folder">In IIS Manager, change the website’s physical path to point to this new folder.</xref></li>
+							<li outputclass="substep"><ph outputclass="cmd">Move the DNN website files to the new folder.</ph></li>
+							<li outputclass="substep"><ph outputclass="cmd"><xref format="dita" href="../setup/set-up-iis.dita#tsk-set-up-iis/point-to-DNN-folder">In IIS Manager, change the website's physical path to point to this new folder.</xref></ph></li>
                         </ol>
                     </li>
 					<li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-reset-iis-website"></li>

@@ -1,272 +1,272 @@
 <step conkeyref="k-bppbar/step-pb-adm-Logo-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Logo-ProductVersion-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-ProductVersion-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-ProductVersion-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Logo-Documentation-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-Documentation-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-Documentation-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Logo-CustomerPortal-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-CustomerPortal-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-CustomerPortal-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Logo-ContactSupport-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-ContactSupport-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-ContactSupport-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Logo-Logout-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-Logout-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Logo-Logout-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Dashboard-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Dashboard-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Dashboard-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Dashboard-SiteAnalytics-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Dashboard-SiteAnalytics-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Dashboard-SiteAnalytics-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Dashboard-CommunityAnalytics-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Dashboard-CommunityAnalytics-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Dashboard-CommunityAnalytics-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Content-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Content-Assets-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-Assets-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-Assets-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Content-Pages-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-Pages-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-Pages-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Content-Forms-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-Forms-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-Forms-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Content-ContentLibrary-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-ContentLibrary-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-ContentLibrary-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Content-RecycleBin-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-RecycleBin-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Content-RecycleBin-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Manage-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Manage-Users-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-Users-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-Users-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Manage-Roles-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-Roles-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-Roles-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Manage-Templates-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-Templates-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-Templates-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Manage-Themes-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-Themes-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-Themes-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Manage-AdminLogs-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-AdminLogs-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Manage-AdminLogs-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-PageAnalytics-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-PageAnalytics-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-PageAnalytics-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-PageAnalytics-CurrentPage-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-PageAnalytics-CurrentPage-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-PageAnalytics-CurrentPage-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-PageAnalytics-TotalPageViews-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-PageAnalytics-TotalPageViews-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-PageAnalytics-TotalPageViews-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-PageAnalytics-AverageTimeonPage-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-PageAnalytics-AverageTimeonPage-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-PageAnalytics-AverageTimeonPage-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-PageAnalytics-BounceRate-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-PageAnalytics-BounceRate-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-PageAnalytics-BounceRate-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Settings-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Settings-SiteSettings-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-SiteSettings-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-SiteSettings-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Settings-Security-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Security-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Security-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Settings-Workflow-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Workflow-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Workflow-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Settings-SEO-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-SEO-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-SEO-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Settings-Community-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Community-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Community-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Settings-Gamification-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Gamification-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Gamification-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Settings-Vocabularies-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Vocabularies-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Vocabularies-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Settings-Connectors-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Connectors-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Connectors-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Settings-Extensions-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Extensions-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Extensions-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Settings-Servers-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Servers-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-Servers-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-adm-Settings-CustomCSS-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-CustomCSS-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-adm-Settings-CustomCSS-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-all-Profile-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-all-Profile-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-all-Profile-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-all-Edit-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-all-Edit-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-all-Edit-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Logo-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Logo-ProductVersion-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-ProductVersion-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-ProductVersion-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Logo-Documentation-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-Documentation-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-Documentation-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Logo-CustomerPortal-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-CustomerPortal-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-CustomerPortal-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Logo-ContactSupport-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-ContactSupport-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-ContactSupport-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Logo-Logout-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-Logout-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Logo-Logout-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Dashboard-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Dashboard-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Dashboard-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Dashboard-SiteAnalytics-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Dashboard-SiteAnalytics-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Dashboard-SiteAnalytics-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Content-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Content-Assets-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-Assets-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-Assets-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Content-Pages-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-Pages-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-Pages-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Content-Forms-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-Forms-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-Forms-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Content-ContentLibrary-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-ContentLibrary-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-ContentLibrary-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Content-RecycleBin-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-RecycleBin-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Content-RecycleBin-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Manage-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Manage-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Manage-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Manage-Users-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Manage-Users-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Manage-Users-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Manage-Templates-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Manage-Templates-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Manage-Templates-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-PageAnalytics-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-PageAnalytics-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-PageAnalytics-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-PageAnalytics-CurrentPage-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-PageAnalytics-CurrentPage-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-PageAnalytics-CurrentPage-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-PageAnalytics-TotalPageViews-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-PageAnalytics-TotalPageViews-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-PageAnalytics-TotalPageViews-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-PageAnalytics-AverageTimeonPage-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-PageAnalytics-AverageTimeonPage-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-PageAnalytics-AverageTimeonPage-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-PageAnalytics-BounceRate-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-PageAnalytics-BounceRate-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-PageAnalytics-BounceRate-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Settings-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Settings-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Settings-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Settings-Workflow-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Settings-Workflow-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Settings-Workflow-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-cmg-Settings-Connectors-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Settings-Connectors-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-cmg-Settings-Connectors-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Logo-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Logo-ProductVersion-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-ProductVersion-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-ProductVersion-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Logo-NETFramework-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-NETFramework-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-NETFramework-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Logo-ServerName-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-ServerName-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-ServerName-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Logo-LicenseKey-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-LicenseKey-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-LicenseKey-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Logo-Documentation-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-Documentation-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-Documentation-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Logo-CustomerPortal-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-CustomerPortal-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-CustomerPortal-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Logo-ContactSupport-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-ContactSupport-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-ContactSupport-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Logo-Logout-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-Logout-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Logo-Logout-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Dashboard-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Dashboard-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Dashboard-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Dashboard-SiteAnalytics-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Dashboard-SiteAnalytics-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Dashboard-SiteAnalytics-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Dashboard-CommunityAnalytics-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Dashboard-CommunityAnalytics-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Dashboard-CommunityAnalytics-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Content-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Content-Assets-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-Assets-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-Assets-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Content-Pages-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-Pages-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-Pages-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Content-Forms-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-Forms-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-Forms-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Content-ContentLibrary-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-ContentLibrary-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-ContentLibrary-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Content-RecycleBin-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-RecycleBin-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Content-RecycleBin-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Manage-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Manage-Users-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-Users-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-Users-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Manage-Roles-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-Roles-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-Roles-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Manage-Templates-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-Templates-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-Templates-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Manage-Themes-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-Themes-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-Themes-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Manage-Sites-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-Sites-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-Sites-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Manage-AdminLogs-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-AdminLogs-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Manage-AdminLogs-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-PageAnalytics-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-PageAnalytics-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-PageAnalytics-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-PageAnalytics-CurrentPage-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-PageAnalytics-CurrentPage-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-PageAnalytics-CurrentPage-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-PageAnalytics-TotalPageViews-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-PageAnalytics-TotalPageViews-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-PageAnalytics-TotalPageViews-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-PageAnalytics-AverageTimeonPage-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-PageAnalytics-AverageTimeonPage-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-PageAnalytics-AverageTimeonPage-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-PageAnalytics-BounceRate-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-PageAnalytics-BounceRate-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-PageAnalytics-BounceRate-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-SiteSettings-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SiteSettings-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SiteSettings-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-Security-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Security-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Security-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-Workflow-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Workflow-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Workflow-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-SEO-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SEO-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SEO-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-Community-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Community-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Community-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-Gamification-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Gamification-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Gamification-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-Vocabularies-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Vocabularies-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Vocabularies-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-Connectors-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Connectors-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Connectors-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-Extensions-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Extensions-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Extensions-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-Servers-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Servers-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Servers-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-Import-Export-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Import-Export-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Import-Export-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-Scheduler-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Scheduler-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-Scheduler-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-CustomCSS-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-CustomCSS-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-CustomCSS-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-SQLConsole-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-SQLConsole-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-ConfigManager-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-ConfigManager-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-ConfigManager-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-About-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-About-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-About-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-host-Settings-OnDemand-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-OnDemand-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-host-Settings-OnDemand-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Logo-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Logo-ProductVersion-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-ProductVersion-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-ProductVersion-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Logo-Documentation-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-Documentation-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-Documentation-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Logo-CustomerPortal-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-CustomerPortal-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-CustomerPortal-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Logo-ContactSupport-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-ContactSupport-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-ContactSupport-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Logo-Logout-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-Logout-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Logo-Logout-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Dashboard-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Dashboard-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Dashboard-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Dashboard-SiteAnalytics-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Dashboard-SiteAnalytics-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Dashboard-SiteAnalytics-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Dashboard-CommunityAnalytics-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Dashboard-CommunityAnalytics-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Dashboard-CommunityAnalytics-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Content-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Content-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Content-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Content-Assets-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Content-Assets-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Content-Assets-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Manage-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Manage-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Manage-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Manage-Users-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Manage-Users-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Manage-Users-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Manage-Templates-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Manage-Templates-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Manage-Templates-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-PageAnalytics-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-PageAnalytics-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-PageAnalytics-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-PageAnalytics-CurrentPage-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-PageAnalytics-CurrentPage-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-PageAnalytics-CurrentPage-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-PageAnalytics-TotalPageViews-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-PageAnalytics-TotalPageViews-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-PageAnalytics-TotalPageViews-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-PageAnalytics-AverageTimeonPage-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-PageAnalytics-AverageTimeonPage-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-PageAnalytics-AverageTimeonPage-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-PageAnalytics-BounceRate-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-PageAnalytics-BounceRate-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-PageAnalytics-BounceRate-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Settings-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Settings-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Settings-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Settings-Community-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Settings-Community-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Settings-Community-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Settings-Gamification-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Settings-Gamification-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Settings-Gamification-E91"></ph></li>
 <step conkeyref="k-bppbar/step-pb-mod-Settings-Connectors-E91"><cmd/></step>
-<li outputclass="step"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Settings-Connectors-E91"></ph></li>
+<li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbar/ph-pb-mod-Settings-Connectors-E91"></ph></li>

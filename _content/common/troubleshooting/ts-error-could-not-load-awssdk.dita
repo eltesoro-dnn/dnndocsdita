@@ -53,7 +53,8 @@
 
         <section outputclass="condition">
             <title>Symptom</title>
-            <p>Error after upgrading a site: <codeph>Could not load file or assembly 'AWSSDK' or one of its dependencies.</codeph></p>
+            <p>Error after upgrading a site:</p>
+            <systemoutput>Could not load file or assembly 'AWSSDK' or one of its dependencies.</systemoutput>
         </section>
 
 
@@ -69,10 +70,10 @@
 
                 <ol outputclass="steps">
                     <li conref="bptext-troubleshooting.dita#tsk-bptext-troubleshooting/li-back-up"></li>
-                    <li outputclass="step stepexpand">Open the <filepath>/bin/Providers</filepath> subfolder of the site folder.</li>
-                    <li outputclass="step stepexpand">Right-click the <filepath>AWSSDK.DLL</filepath> file and select <uicontrol>Properties</uicontrol>.</li>
-                    <li outputclass="step stepexpand">Within the pop-up dialog, switch to the <uicontrol>Details</uicontrol> tab and verify that the file version is <systemoutput>1.2.3.1</systemoutput>.</li>
-                    <li outputclass="step stepexpand">Remove other copies of <filepath>AWSSK.DLL</filepath> in the <filepath>/bin</filepath> subfolder of the site folder.</li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Open the <filepath>/bin/Providers</filepath> subfolder of the site folder.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Right-click the <filepath>AWSSDK.DLL</filepath> file and select <uicontrol>Properties</uicontrol>.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Within the pop-up dialog, switch to the <uicontrol>Details</uicontrol> tab and verify that the file version is <systemoutput>1.2.3.1</systemoutput>.</ph></li>
+                    <li outputclass="step stepexpand"><ph outputclass="cmd">Remove other copies of <filepath>AWSSK.DLL</filepath> in the <filepath>/bin</filepath> subfolder of the site folder.</ph></li>
                 </ol>
             </section>
         </bodydiv>

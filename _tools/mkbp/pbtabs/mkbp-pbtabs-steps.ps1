@@ -69,7 +69,7 @@ function MkBlurb( [string] $prod, [string] $persona, [string] $menu1, [string] $
     Write-Output( "" )
     Write-Output( "           <!-- <step conref=""bptext-pbtabs.dita#tsk-bptext-pbtabs/step-$bpid""><cmd/></step> -->" )
     Write-Output( "           <!-- <step conkeyref=""k-bppbtabs/step-$bpid""><cmd/></step> -->" )
-    Write-Output( "           <!-- <li outputclass=""step""><ph outputclass=""cmd"" conkeyref=""k-bppbtabs/ph-$bpid""></ph></li> -->" )
+    Write-Output( "           <!-- <li outputclass=""step stepexpand""><ph outputclass=""cmd"" conkeyref=""k-bppbtabs/ph-$bpid""></ph><image conkeyref=""k-bppbtabs/image-$bpid""></image></li> -->" )
     Write-Output( "           <!-- <cmd conkeyref=""k-bppbtabs/cmd-$bpid""></cmd> -->" )
     Write-Output( "           <!-- <info conkeyref=""k-bppbtabs/info-$bpid""></info> -->" )
     Write-Output( "           <step id=""step-$bpid"">" )
