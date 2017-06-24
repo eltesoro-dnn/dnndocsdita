@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8" standalone="no"?>
 <!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
-<task xml:lang="en" id="tsk-access-web-config">
+<task xml:lang="en" id="tsk-merge-xml-config">
 
-    <title>Access web.config and other .config files</title>
+    <title>Merge XML Configuration Files</title>
     <titlealts>
-        <navtitle>Access web.config</navtitle>
+        <navtitle>Merge XML Configuration Files</navtitle>
     </titlealts>
 
     <prolog>
         <author>wrET,1706</author>
         <copyright>
-            <copyryear year="2017"></copyryear>
+            <copyryear year="20117"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
         <metadata>
@@ -39,21 +39,34 @@
                 </vrmlist>
             </prodinfo>
         </metadata>
+        <othermeta name="jira" content="DOC-???"/>
     </prolog>
 
     <taskbody>
 
 		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
+        <!-- TODO: Wait for the feature to be cleaned up. -->
+
         <steps>
             <step conkeyref="k-bppbar/step-pb-host-Settings-ConfigManager-E91"><cmd/></step>
-            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-ConfigManager-ConfigFiles-E91"><cmd/></step>
+            <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-ConfigManager-MergeScripts-E91"><cmd/></step>
             <step>
-                <cmd>Choose the configuration file from the dropdown list.</cmd>
+                <cmd>Enter the XML to merge.</cmd>
+                <choices>
+                    <choice>You can enter the XML in the text field.</choice>
+                    <choice>You can upload a XML from a file.
+                        <ol>
+                            <li>Click/Tap <uicontrol>Upload XML Merge Script</uicontrol>.</li>
+                            <li>(Optional) After the XML is loaded into the text field, edit the XML.</li>
+                        </ol>
+                    </choice>
+                </choices>
                 <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ConfigMgr-ConfigFiles-webconfig-E91.png"><alt>Config Files dropdown &gt; web.config</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-ConfigMgr-MergeScripts-E91.png"><alt>Merge Scripts</alt></image>
                 </info>
             </step>
+            <step><cmd>Click/Tap <uicontrol>Execute Merge</uicontrol>.</cmd></step>
         </steps>
 
     </taskbody>
