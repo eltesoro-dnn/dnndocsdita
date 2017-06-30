@@ -375,14 +375,6 @@ function Write1Step4bp( [PSCustomObject] $node, [string] $tag, [string] $indent 
         }
         else  {
             $s = MkConref $s "stepresult"
-
-
-
-
-
-
-
-
         }
         Write-Output "$indent$tab$s"
     }

@@ -54,7 +54,7 @@
             <title>Example</title>
 
             <p>Suppose you want a list of content items whose name that has the word "new" in its text fields. Then your query would be:</p>
-            <p><filepath>https://example.com/api/ContentItems?searchtext=new</filepath></p>
+            <p><filepath>https://dnnapi.com/content/api/ContentItems?searchtext=new</filepath></p>
 
             <simpletable relcolwidth="2* 1* 1* 1* 1* 1* 1* 1* 1* 1* 1*">
                 <strow>
@@ -99,10 +99,10 @@
             </simpletable>
 
             <p>If you want each page to have a maximum of three content items, then set <codeph>maxitems</codeph> to <userinput>3</userinput>.</p>
-            <p><filepath>https://example.com/api/ContentItems?searchtext=new&amp;maxitems=3</filepath></p>
+            <p><filepath>https://dnnapi.com/content/api/ContentItems?searchtext=new&amp;maxitems=3</filepath></p>
 
             <p>To display the third page of the results, then set <codeph>startindex</codeph> to the first index of that page. That is, <codeph>(pagenumber - 1) * maxitems</codeph>. The list has zero-based indexing; therefore, if <codeph>maxitems</codeph> is <userinput>3</userinput>, then the <codeph>startindex</codeph> for the third page is <userinput>6</userinput>.</p>
-            <p><filepath>https://example.com/api/ContentItems?searchtext=new&amp;maxitems=3&amp;startindex=6</filepath></p>
+            <p><filepath>https://dnnapi.com/content/api/ContentItems?searchtext=new&amp;maxitems=3&amp;startindex=6</filepath></p>
 
             <simpletable relcolwidth="2* 1* 1* 1* 1* 1* 1* 1* 1* 1* 1*">
                 <strow>
@@ -147,7 +147,7 @@
             </simpletable>
 
             <p>However, the pagination does not have to be equal pages. You can choose to ignore the first two items and display the next five items.</p>
-            <p><filepath>https://example.com/api/ContentItems?searchtext=new&amp;maxitems=5&amp;startindex=2</filepath></p>
+            <p><filepath>https://dnnapi.com/content/api/ContentItems?searchtext=new&amp;maxitems=5&amp;startindex=2</filepath></p>
 
             <simpletable relcolwidth="2* 1* 1* 1* 1* 1* 1* 1* 1* 1* 1*">
                 <strow>

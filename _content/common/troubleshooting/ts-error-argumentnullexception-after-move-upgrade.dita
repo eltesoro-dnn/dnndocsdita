@@ -2,9 +2,9 @@
 <!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
 <topic xml:lang="en" id="troubleshooting-ts-error-argumentnullexception-after-move-upgrade">
 
-    <title>Troubleshooting: ArgumentNullException After a Move or an Upgrade</title>
+    <title>Error: ArgumentNullException After a Move or an Upgrade</title>
     <titlealts>
-        <navtitle>Troubleshooting: ArgumentNullException After Move or Upgrade</navtitle>
+        <navtitle>Error: ArgumentNullException After Move or Upgrade</navtitle>
     </titlealts>
 
 
@@ -41,8 +41,8 @@
                     <vrm version="9" release="1"/>
                 </vrmlist>
             </prodinfo>
+            <othermeta name="jira" content="DOC-139"/>
         </metadata>
-        <othermeta name="jira" content="DOC-139"/>
     </prolog>
 
 
