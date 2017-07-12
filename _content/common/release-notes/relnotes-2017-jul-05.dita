@@ -52,7 +52,7 @@
                         <dt>Navigation</dt>
                         <dd>
                             <ul>
-                                <li>Non-admin/host-specific areas within the Persona Bar can now be assigned to specific user roles. This allows for custom menu access to be granted to any user role within DNN.</li>
+                                <!-- Removed on 20170712 per WM. <li>Non-admin/host-specific areas within the Persona Bar can now be assigned to specific user roles. This allows for custom menu access to be granted to any user role within DNN.</li> -->
                                 <li>Menu and button interactions show additional validation and user feedback implementations.</li>
                                 <li>In-app navigation and breadcrumbs have been added and improved, where applicable, to increase usability.</li>
                                 <li>Minor UI enhancements were made in the following menus: Security, Servers, Sites, and Scheduler.</li>
