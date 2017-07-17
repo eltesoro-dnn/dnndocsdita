@@ -1,0 +1,101 @@
+{
+    "__NOTES__" : [
+        "Source/Basis: bptext-pbtabs.dita"
+    ],
+
+
+
+    "legend" : {
+        "contentTypeId" : ""
+        ,"maxitems" : "100"
+    },
+
+
+
+    "list-all-type-subsections" : {
+        "action" : "GET"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "contentTypeId" : ""
+            ,"maxitems" : ""
+        }
+        ,"outfile" : "processed.out"
+    },
+
+
+
+    "add-subsections" : {
+        "action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "subsection-"
+            ,"description" : ""
+            ,"details" : {
+                "text": "_text_",
+                "image": [ "_image_" ],
+                "steps": []
+            }
+            ,"tags" : [ "", "", "" ]
+        }
+        ,"permutations" : [
+            {
+                "_text_"   : "<p>\n</p>"
+                ,"_image_"  : ""
+            },
+            {
+                "_text_"   : "<p>\n</p>"
+                ,"_image_"  : ""
+            },
+            {
+                "_text_"   : "<p>\n</p>"
+                ,"_image_"  : ""
+            },
+            {
+                "_text_"   : "<p>\n</p>"
+                ,"_image_"  : ""
+            },
+            {
+                "_text_"   : "<p>\n</p>"
+                ,"_image_"  : ""
+            },
+            {
+                "_text_"   : "<p>\n</p>"
+                ,"_image_"  : ""
+            },
+            {
+                "_text_"   : "<p>\n</p>"
+                ,"_image_"  : ""
+            },
+            {
+                "_text_"   : "<p>\n</p>"
+                ,"_image_"  : ""
+            },
+            {
+                "_text_"   : "<p>\n</p>"
+                ,"_image_"  : ""
+            },
+            {
+                "_text_"   : "<p>This is text\n</p>"
+                ,"_image_"  : "a864b456-853b-49b8-8c4d-bdbcd4a8f87c"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+
+
+    "delete-all-subsections" : {
+        "action" : "GET-DELETE"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "contentTypeId" : ""
+            ,"maxitems" : ""
+        }
+        ,"id" : []
+        ,"outfile" : "processed.out"
+    }
+}

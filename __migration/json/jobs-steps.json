@@ -1,0 +1,31 @@
+{
+    "legend" : {
+        "contentTypeId" : ""
+        ,"maxitems" : "100"
+    },
+
+
+
+    "list-all-type-steps" : {
+        "action" : "GET"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "contentTypeId" : ""
+            ,"maxitems" : ""
+        }
+        ,"outfile" : "processed.out"
+    },
+
+
+
+    "delete-all-steps" : {
+        "action" : "GET-DELETE"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "contentTypeId" : ""
+            ,"maxitems" : ""
+        }
+        ,"id" : []
+        ,"outfile" : "processed.out"
+    }
+}

@@ -1,0 +1,254 @@
+{
+    "__NOTES__" : [
+        "Source/Basis: bptext-pbtabs.dita"
+    ],
+
+
+
+    "legend" : {
+        "contentTypeId" : ""
+        ,"maxitems" : "100"
+    },
+
+
+
+    "list-all-type-persons" : {
+        "action" : "GET"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "contentTypeId" : ""
+            ,"maxitems" : ""
+        }
+        ,"outfile" : "processed.out"
+    },
+
+
+    "add-persons" : {
+        "action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name": "_fn_ _ln_"
+            ,"description" : ""
+            ,"details": {
+                "firstName": "_fn_"
+                ,"lastName": "_ln_"
+                ,"profileImage": ""
+                ,"title": "_title_"
+                ,"shortBiography": "_shortbio_"
+                ,"longBiography": "_longbio_"
+                ,"email": "_email_"
+                ,"linkedIn": "http://linkedin.com/in/_linkedin_"
+                ,"twitterHandle": "@_twitter_"
+            }
+            ,"tags" : [ "_fn_ _ln_", "_roles_" ]
+        }
+        ,"permutations" : [
+            {
+                "_fn_" : "Bruce"
+                ,"_ln_" : "Chapman"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : "bruce.chapman@dnnsoftware.com"
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "tr|or"
+            },
+            {
+                "_fn_" : "Cody"
+                ,"_ln_" : "Lin"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : ""
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "wr|or"
+            },
+            {
+                "_fn_" : "Chris"
+                ,"_ln_" : "Paterra"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : "chris.paterra@dnnsoftware.com"
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "tr"
+            },
+            {
+                "_fn_" : "Dennis"
+                ,"_ln_" : "Shiao"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : "dennis.shiao@dnnsoftware.com"
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "ce"
+            },
+            {
+                "_fn_" : "Eleanor"
+                ,"_ln_" : "Tesoro"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : "eleanor.tesoro@dnnsoftware.com"
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "wr|or|ed|ce"
+            },
+            {
+                "_fn_" : "Francesco"
+                ,"_ln_" : "Rivola"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : "francesco.rivola@xepient.com"
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "tr"
+            },
+            {
+                "_fn_" : "George"
+                ,"_ln_" : "Alatrash"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : "george.alatrash@dnnsoftware.com"
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "tr"
+            },
+            {
+                "_fn_" : "Joe"
+                ,"_ln_" : "Brinkman"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : "joe.brinkman@dnnsoftware.com"
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "wr|or|tr"
+            },
+            {
+                "_fn_" : "Lorraine"
+                ,"_ln_" : "Young"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : ""
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "wr|or|ce"
+            },
+            {
+                "_fn_" : "Manuel"
+                ,"_ln_" : "Gonzales"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : "manuel.gonzales@dnnsoftware.com"
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "wr|or"
+            },
+            {
+                "_fn_" : "Max"
+                ,"_ln_" : "Tsao"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : "max.tsao@dnnsoftware.com"
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "wr|or"
+            },
+            {
+                "_fn_" : "Maxwell"
+                ,"_ln_" : "Freeman-Orr"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : "maxwell.freeman-orr@dnnsoftware.com"
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "wr|or"
+            },
+            {
+                "_fn_" : "Miguel"
+                ,"_ln_" : "Gatmaytan"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : ""
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "tr"
+            },
+            {
+                "_fn_" : "Nathan"
+                ,"_ln_" : "Rover"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : "nathan.rover@dnnsoftware.com"
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "tr"
+            },
+            {
+                "_fn_" : "Sam"
+                ,"_ln_" : "Sze"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : "samuel.sze@dnnsoftware.com"
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "|"
+            },
+            {
+                "_fn_" : "Tony"
+                ,"_ln_" : "Sandhu"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : "tony.sandhu@dnnsoftware.com"
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "wr|or"
+            },
+            {
+                "_fn_" : "Will"
+                ,"_ln_" : "Morgenweck"
+                ,"_title_" : ""
+                ,"_shortbio_" : ""
+                ,"_longbio_" : ""
+                ,"_email_" : "will.morgenweck@dnnsoftware.com"
+                ,"_linkedin_" : ""
+                ,"_twitter_" : ""
+                ,"_roles_" : "tr"
+            }
+        ]
+        ,"ARCHIVE" : [
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+    "delete-all-persons" : {
+        "action" : "GET-DELETE"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "contentTypeId" : ""
+            ,"maxitems" : ""
+        }
+        ,"id" : []
+        ,"outfile" : "processed.out"
+    }
+
+}

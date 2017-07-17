@@ -1,0 +1,583 @@
+{
+    "__NOTES__" : [
+        "Source/Basis: bptext-pbtabs.dita"
+    ],
+
+
+
+    "legend" : {
+        "contentTypeId" : ""
+        ,"maxitems" : "100"
+    },
+
+
+
+    "add-images-pbtabs" : {
+        "action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "scr-pbtabs-_persona_-_dashed_-E91"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "imageFile" : [
+                    {
+                        "fileId": 0
+                        ,"fileName": "scr-pbtabs-_persona_-_dashed_-E91.png"
+                        ,"url": "https://dnnteuyw4.blob.core.windows.net/portals/7/Persona%20Bar%20menus/scr-pbtabs-_persona_-_dashed_-E91.png?sr=b&si=DNNFileManagerPolicy&sig=_sig_"
+                    }
+                ]
+                ,"altText": "Persona Bar > _menualt_"
+                ,"overlay1": "olpb1-_dashed_-E91_persona_"
+                ,"overlay2": "olpb2-_dashed_-E91_persona_"
+            }
+            ,"tags" : [ "persona bar", "pbtabs", "menu", "_menualt_", "_persona_", "E91" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Dashboard", "Site Analytics", "Summary" ],
+                "_menualt_":  [ "Dashboard", "Site Analytics", "Summary" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Dashboard", "Site Analytics", "Conversions" ],
+                "_menualt_":  [ "Dashboard", "Site Analytics", "Conversions" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Dashboard", "Site Analytics", "Traffic" ],
+                "_menualt_":  [ "Dashboard", "Site Analytics", "Traffic" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Dashboard", "Community Analytics", "Answers" ],
+                "_menualt_":  [ "Dashboard", "Community Analytics", "Answers" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Dashboard", "Community Analytics", "Blogs" ],
+                "_menualt_":  [ "Dashboard", "Community Analytics", "Blogs" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Dashboard", "Community Analytics", "Challenges" ],
+                "_menualt_":  [ "Dashboard", "Community Analytics", "Challenges" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Dashboard", "Community Analytics", "Discussions" ],
+                "_menualt_":  [ "Dashboard", "Community Analytics", "Discussions" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Dashboard", "Community Analytics", "Events" ],
+                "_menualt_":  [ "Dashboard", "Community Analytics", "Events" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Dashboard", "Community Analytics", "Ideas" ],
+                "_menualt_":  [ "Dashboard", "Community Analytics", "Ideas" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Dashboard", "Community Analytics", "Wiki" ],
+                "_menualt_":  [ "Dashboard", "Community Analytics", "Wiki" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Content", "Pages", "Details" ],
+                "_menualt_":  [ "Content", "Pages", "Details" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Content", "Pages", "Permissions" ],
+                "_menualt_":  [ "Content", "Pages", "Permissions" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Content", "Pages", "Advanced", "Modules" ],
+                "_menualt_":  [ "Content", "Pages", "Advanced", "Modules" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Content", "Pages", "Advanced", "Appearance" ],
+                "_menualt_":  [ "Content", "Pages", "Advanced", "Appearance" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Content", "Pages", "Advanced", "SEO" ],
+                "_menualt_":  [ "Content", "Pages", "Advanced", "SEO" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Content", "Pages", "Advanced", "More" ],
+                "_menualt_":  [ "Content", "Pages", "Advanced", "More" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Content", "Content Library", "Content" ],
+                "_menualt_":  [ "Content", "Content Library", "Content" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Content", "Content Library", "Content Types" ],
+                "_menualt_":  [ "Content", "Content Library", "Content Types" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Content", "Content Library", "Visualizers" ],
+                "_menualt_":  [ "Content", "Content Library", "Visualizers" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Content", "Content Library", "API Keys" ],
+                "_menualt_":  [ "Content", "Content Library", "API Keys" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Content", "Recycle Bin", "Pages" ],
+                "_menualt_":  [ "Content", "Recycle Bin", "Pages" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Content", "Recycle Bin", "Modules" ],
+                "_menualt_":  [ "Content", "Recycle Bin", "Modules" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Content", "Recycle Bin", "Users" ],
+                "_menualt_":  [ "Content", "Recycle Bin", "Users" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Content", "Recycle Bin", "Templates" ],
+                "_menualt_":  [ "Content", "Recycle Bin", "Templates" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Manage", "Sites ", "Sites" ],
+                "_menualt_":  [ "Manage", "Sites ", "Sites" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Manage", "Sites ", "Site Groups" ],
+                "_menualt_":  [ "Manage", "Sites ", "Site Groups" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Manage", "Admin Logs", "Admin Logs" ],
+                "_menualt_":  [ "Manage", "Admin Logs", "Admin Logs" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Manage", "Admin Logs", "Admin Logs" ],
+                "_menualt_":  [ "Manage", "Admin Logs", "Admin Logs" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Manage", "Admin Logs", "Log Settings" ],
+                "_menualt_":  [ "Manage", "Admin Logs", "Log Settings" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Settings", "Site Settings", "Site Info" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Site Info" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Site Settings", "Site Behavior", "Default Pages" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Site Behavior", "Default Pages" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Site Settings", "Site Behavior", "Default Pages" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Site Behavior", "Default Pages" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Site Settings", "Site Behavior", "Messaging" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Site Behavior", "Messaging" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Site Settings", "Site Behavior", "Messaging" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Site Behavior", "Messaging" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Site Settings", "Site Behavior", "User Profiles" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Site Behavior", "User Profiles" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Site Settings", "Site Behavior", "User Profiles" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Site Behavior", "User Profiles" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Site Settings", "Site Behavior", "Site Aliases" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Site Behavior", "Site Aliases" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Site Settings", "Site Behavior", "More" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Site Behavior", "More" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Site Settings", "Language" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Language" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Site Settings", "Language" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Language" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Site Settings", "Search", "Basic Settings" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Search", "Basic Settings" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Site Settings", "Search", "Basic Settings" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Search", "Basic Settings" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Settings", "Site Settings", "Search", "Synonyms" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Search", "Synonyms" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Settings", "Site Settings", "Search", "Ignore Words" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Search", "Ignore Words" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Settings", "Site Settings", "Search", "Crawling" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Search", "Crawling" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Settings", "Site Settings", "Search", "File Extensions" ],
+                "_menualt_":  [ "Settings", "Site Settings", "Search", "File Extensions" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Security", "Login Settings", "Basic Login Settings" ],
+                "_menualt_":  [ "Settings", "Security", "Login Settings", "Basic Login Settings" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Security", "Login Settings", "Basic Login Settings" ],
+                "_menualt_":  [ "Settings", "Security", "Login Settings", "Basic Login Settings" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Security", "Login Settings", "Login IP Filters" ],
+                "_menualt_":  [ "Settings", "Security", "Login Settings", "Login IP Filters" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Security", "Member Accounts", "Member Management" ],
+                "_menualt_":  [ "Settings", "Security", "Member Accounts", "Member Management" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Security", "Member Accounts", "Registration Settings" ],
+                "_menualt_":  [ "Settings", "Security", "Member Accounts", "Registration Settings" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Security", "Member Accounts", "Registration Settings" ],
+                "_menualt_":  [ "Settings", "Security", "Member Accounts", "Registration Settings" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Security", "Security Analyzer", "Audit Checks" ],
+                "_menualt_":  [ "Settings", "Security", "Security Analyzer", "Audit Checks" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Security", "Security Analyzer", "Scanner Check" ],
+                "_menualt_":  [ "Settings", "Security", "Security Analyzer", "Scanner Check" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Security", "Security Analyzer", "Superuser Activity" ],
+                "_menualt_":  [ "Settings", "Security", "Security Analyzer", "Superuser Activity" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Security", "Security Bulletins" ],
+                "_menualt_":  [ "Settings", "Security", "Security Bulletins" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Security", "More", "SSL Settings" ],
+                "_menualt_":  [ "Settings", "Security", "More", "SSL Settings" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Security", "More", "SSL Settings" ],
+                "_menualt_":  [ "Settings", "Security", "More", "SSL Settings" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Security", "More", "More Security Settings" ],
+                "_menualt_":  [ "Settings", "Security", "More", "More Security Settings" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "SEO", "URL Management", "General Settings" ],
+                "_menualt_":  [ "Settings", "SEO", "URL Management", "General Settings" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "SEO", "URL Management", "General Settings" ],
+                "_menualt_":  [ "Settings", "SEO", "URL Management", "General Settings" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "SEO", "URL Management", "Extension URL Providers" ],
+                "_menualt_":  [ "Settings", "SEO", "URL Management", "Extension URL Providers" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "SEO", "URL Management", "Extension URL Providers" ],
+                "_menualt_":  [ "Settings", "SEO", "URL Management", "Extension URL Providers" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "SEO", "URL Management", "Expressions" ],
+                "_menualt_":  [ "Settings", "SEO", "URL Management", "Expressions" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "SEO", "URL Management", "Test URL" ],
+                "_menualt_":  [ "Settings", "SEO", "URL Management", "Test URL" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "SEO", "URL Management", "Test URL" ],
+                "_menualt_":  [ "Settings", "SEO", "URL Management", "Test URL" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "SEO", "Sitemap Settings" ],
+                "_menualt_":  [ "Settings", "SEO", "Sitemap Settings" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "SEO", "Sitemap Settings" ],
+                "_menualt_":  [ "Settings", "SEO", "Sitemap Settings" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Settings", "Gamification", "Actions" ],
+                "_menualt_":  [ "Settings", "Gamification", "Actions" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Settings", "Gamification", "Privileges" ],
+                "_menualt_":  [ "Settings", "Gamification", "Privileges" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Settings", "Gamification", "Badges" ],
+                "_menualt_":  [ "Settings", "Gamification", "Badges" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Extensions", "Installed Extensions" ],
+                "_menualt_":  [ "Settings", "Extensions", "Installed Extensions" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Extensions", "Available Extensions" ],
+                "_menualt_":  [ "Settings", "Extensions", "Available Extensions" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Servers", "System Info", "Application" ],
+                "_menualt_":  [ "Settings", "Servers", "System Info", "Application" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Servers", "System Info", "Application" ],
+                "_menualt_":  [ "Settings", "Servers", "System Info", "Application" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Servers", "System Info", "Web" ],
+                "_menualt_":  [ "Settings", "Servers", "System Info", "Web" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Servers", "System Info", "Database" ],
+                "_menualt_":  [ "Settings", "Servers", "System Info", "Database" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Servers", "Server Settings", "Web Servers" ],
+                "_menualt_":  [ "Settings", "Servers", "Server Settings", "Web Servers" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Servers", "Server Settings", "SMTP Server" ],
+                "_menualt_":  [ "Settings", "Servers", "Server Settings", "SMTP Server" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Servers", "Server Settings", "SMTP Server" ],
+                "_menualt_":  [ "Settings", "Servers", "Server Settings", "SMTP Server" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Servers", "Server Settings", "Performance" ],
+                "_menualt_":  [ "Settings", "Servers", "Server Settings", "Performance" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Servers", "Server Settings", "Logs" ],
+                "_menualt_":  [ "Settings", "Servers", "Server Settings", "Logs" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Scheduler", "Task Queue" ],
+                "_menualt_":  [ "Settings", "Scheduler", "Task Queue" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Scheduler", "Scheduler" ],
+                "_menualt_":  [ "Settings", "Scheduler", "Scheduler" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Scheduler", "History" ],
+                "_menualt_":  [ "Settings", "Scheduler", "History" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Config Manager", "Config Files" ],
+                "_menualt_":  [ "Settings", "Config Manager", "Config Files" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Config Manager", "Merge Scripts" ],
+                "_menualt_":  [ "Settings", "Config Manager", "Merge Scripts" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "OnDemand", "Account" ],
+                "_menualt_":  [ "Settings", "OnDemand", "Account" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "OnDemand", "Installations" ],
+                "_menualt_":  [ "Settings", "OnDemand", "Installations" ],
+                "_sig_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "OnDemand", "Certificates" ],
+                "_menualt_":  [ "Settings", "OnDemand", "Certificates" ],
+                "_sig_":  ""
+            }
+        ]
+        ,"outfile" : "processed.out"
+    }
+}

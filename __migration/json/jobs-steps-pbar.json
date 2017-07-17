@@ -1,0 +1,852 @@
+{
+    "__NOTES__" : [
+        "Source/Basis: bptext-pbar.dita"
+    ],
+
+
+
+    "legend" : {
+        "contentTypeId" : ""
+        ,"maxitems" : "100"
+    },
+
+
+
+    "add-steps-pbar-menu" : {
+        "action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "step-pb-_persona_-_dashed_"
+            ,"description" : "Persona Bar menu step"
+            ,"language": "en"
+            ,"details": {
+                "command": "Go to _menucasc_."
+                ,"image": [ "_imageid_" ]
+            }
+            ,"tags" : [ "persona bar", "menu", "_persona_", "E91" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Logo" ],
+                "_menucasc_":  [ "Logo" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Logo", "Product Version" ],
+                "_menucasc_":  [ "Logo", "Product Version" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Logo", "Documentation" ],
+                "_menucasc_":  [ "Logo", "Documentation" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Logo", "Customer Portal" ],
+                "_menucasc_":  [ "Logo", "Customer Portal" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Logo", "Contact Support" ],
+                "_menucasc_":  [ "Logo", "Contact Support" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Logo", "Logout" ],
+                "_menucasc_":  [ "Logo", "Logout" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Dashboard" ],
+                "_menucasc_":  [ "Dashboard" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Dashboard", "Site Analytics" ],
+                "_menucasc_":  [ "Dashboard", "Site Analytics" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Dashboard", "Community Analytics" ],
+                "_menucasc_":  [ "Dashboard", "Community Analytics" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Content" ],
+                "_menucasc_":  [ "Content" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Content", "Assets" ],
+                "_menucasc_":  [ "Content", "Assets" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Content", "Pages" ],
+                "_menucasc_":  [ "Content", "Pages" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Content", "Forms" ],
+                "_menucasc_":  [ "Content", "Forms" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Content", "Content Library" ],
+                "_menucasc_":  [ "Content", "Content Library" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Content", "Recycle Bin" ],
+                "_menucasc_":  [ "Content", "Recycle Bin" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Manage" ],
+                "_menucasc_":  [ "Manage" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Manage", "Users" ],
+                "_menucasc_":  [ "Manage", "Users" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Manage", "Roles" ],
+                "_menucasc_":  [ "Manage", "Roles" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Manage", "Templates" ],
+                "_menucasc_":  [ "Manage", "Templates" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Manage", "Themes" ],
+                "_menucasc_":  [ "Manage", "Themes" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Manage", "Admin Logs" ],
+                "_menucasc_":  [ "Manage", "Admin Logs" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Page Analytics" ],
+                "_menucasc_":  [ "Page Analytics" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Page Analytics", "Current Page" ],
+                "_menucasc_":  [ "Page Analytics", "Current Page" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Page Analytics", "Total Page Views" ],
+                "_menucasc_":  [ "Page Analytics", "Total Page Views" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Page Analytics", "Average Time on Page" ],
+                "_menucasc_":  [ "Page Analytics", "Average Time on Page" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Page Analytics", "Bounce Rate" ],
+                "_menucasc_":  [ "Page Analytics", "Bounce Rate" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings" ],
+                "_menucasc_":  [ "Settings" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Site Settings" ],
+                "_menucasc_":  [ "Settings", "Site Settings" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Security" ],
+                "_menucasc_":  [ "Settings", "Security" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Workflow" ],
+                "_menucasc_":  [ "Settings", "Workflow" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "SEO" ],
+                "_menucasc_":  [ "Settings", "SEO" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Community" ],
+                "_menucasc_":  [ "Settings", "Community" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Gamification" ],
+                "_menucasc_":  [ "Settings", "Gamification" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Vocabularies" ],
+                "_menucasc_":  [ "Settings", "Vocabularies" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Connectors" ],
+                "_menucasc_":  [ "Settings", "Connectors" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Extensions" ],
+                "_menucasc_":  [ "Settings", "Extensions" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Servers" ],
+                "_menucasc_":  [ "Settings", "Servers" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "adm",
+                "_dashed_":  [ "Settings", "Custom CSS" ],
+                "_menucasc_":  [ "Settings", "Custom CSS" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Profile" ],
+                "_menucasc_":  [ "Profile" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "all",
+                "_dashed_":  [ "Edit" ],
+                "_menucasc_":  [ "Edit" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Logo" ],
+                "_menucasc_":  [ "Logo" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Logo", "Product Version" ],
+                "_menucasc_":  [ "Logo", "Product Version" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Logo", "Documentation" ],
+                "_menucasc_":  [ "Logo", "Documentation" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Logo", "Customer Portal" ],
+                "_menucasc_":  [ "Logo", "Customer Portal" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Logo", "Contact Support" ],
+                "_menucasc_":  [ "Logo", "Contact Support" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Logo", "Logout" ],
+                "_menucasc_":  [ "Logo", "Logout" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Dashboard" ],
+                "_menucasc_":  [ "Dashboard" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Dashboard", "Site Analytics" ],
+                "_menucasc_":  [ "Dashboard", "Site Analytics" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Content" ],
+                "_menucasc_":  [ "Content" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Content", "Assets" ],
+                "_menucasc_":  [ "Content", "Assets" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Content", "Pages" ],
+                "_menucasc_":  [ "Content", "Pages" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Content", "Forms" ],
+                "_menucasc_":  [ "Content", "Forms" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Content", "Content Library" ],
+                "_menucasc_":  [ "Content", "Content Library" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Content", "Recycle Bin" ],
+                "_menucasc_":  [ "Content", "Recycle Bin" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Manage" ],
+                "_menucasc_":  [ "Manage" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Manage", "Users" ],
+                "_menucasc_":  [ "Manage", "Users" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Manage", "Templates" ],
+                "_menucasc_":  [ "Manage", "Templates" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Page Analytics" ],
+                "_menucasc_":  [ "Page Analytics" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Page Analytics", "Current Page" ],
+                "_menucasc_":  [ "Page Analytics", "Current Page" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Page Analytics", "Total Page Views" ],
+                "_menucasc_":  [ "Page Analytics", "Total Page Views" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Page Analytics", "Average Time on Page" ],
+                "_menucasc_":  [ "Page Analytics", "Average Time on Page" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Page Analytics", "Bounce Rate" ],
+                "_menucasc_":  [ "Page Analytics", "Bounce Rate" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Settings" ],
+                "_menucasc_":  [ "Settings" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Settings", "Workflow" ],
+                "_menucasc_":  [ "Settings", "Workflow" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "cmg",
+                "_dashed_":  [ "Settings", "Connectors" ],
+                "_menucasc_":  [ "Settings", "Connectors" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Logo" ],
+                "_menucasc_":  [ "Logo" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Logo", "Product Version" ],
+                "_menucasc_":  [ "Logo", "Product Version" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Logo", ".NET Framework" ],
+                "_menucasc_":  [ "Logo", ".NET Framework" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Logo", "Server Name" ],
+                "_menucasc_":  [ "Logo", "Server Name" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Logo", "License Key" ],
+                "_menucasc_":  [ "Logo", "License Key" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Logo", "Documentation" ],
+                "_menucasc_":  [ "Logo", "Documentation" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Logo", "Customer Portal" ],
+                "_menucasc_":  [ "Logo", "Customer Portal" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Logo", "Contact Support" ],
+                "_menucasc_":  [ "Logo", "Contact Support" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Logo", "Logout" ],
+                "_menucasc_":  [ "Logo", "Logout" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Dashboard" ],
+                "_menucasc_":  [ "Dashboard" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Dashboard", "Site Analytics" ],
+                "_menucasc_":  [ "Dashboard", "Site Analytics" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Dashboard", "Community Analytics" ],
+                "_menucasc_":  [ "Dashboard", "Community Analytics" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Content" ],
+                "_menucasc_":  [ "Content" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Content", "Assets" ],
+                "_menucasc_":  [ "Content", "Assets" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Content", "Pages" ],
+                "_menucasc_":  [ "Content", "Pages" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Content", "Forms" ],
+                "_menucasc_":  [ "Content", "Forms" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Content", "Content Library" ],
+                "_menucasc_":  [ "Content", "Content Library" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Content", "Recycle Bin" ],
+                "_menucasc_":  [ "Content", "Recycle Bin" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Manage" ],
+                "_menucasc_":  [ "Manage" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Manage", "Users" ],
+                "_menucasc_":  [ "Manage", "Users" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Manage", "Roles" ],
+                "_menucasc_":  [ "Manage", "Roles" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Manage", "Templates" ],
+                "_menucasc_":  [ "Manage", "Templates" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Manage", "Themes" ],
+                "_menucasc_":  [ "Manage", "Themes" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Manage", "Sites " ],
+                "_menucasc_":  [ "Manage", "Sites " ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Manage", "Admin Logs" ],
+                "_menucasc_":  [ "Manage", "Admin Logs" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Page Analytics" ],
+                "_menucasc_":  [ "Page Analytics" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Page Analytics", "Current Page" ],
+                "_menucasc_":  [ "Page Analytics", "Current Page" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Page Analytics", "Total Page Views" ],
+                "_menucasc_":  [ "Page Analytics", "Total Page Views" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Page Analytics", "Average Time on Page" ],
+                "_menucasc_":  [ "Page Analytics", "Average Time on Page" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Page Analytics", "Bounce Rate" ],
+                "_menucasc_":  [ "Page Analytics", "Bounce Rate" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings" ],
+                "_menucasc_":  [ "Settings" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Site Settings" ],
+                "_menucasc_":  [ "Settings", "Site Settings" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Security" ],
+                "_menucasc_":  [ "Settings", "Security" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Workflow" ],
+                "_menucasc_":  [ "Settings", "Workflow" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "SEO" ],
+                "_menucasc_":  [ "Settings", "SEO" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Community" ],
+                "_menucasc_":  [ "Settings", "Community" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Gamification" ],
+                "_menucasc_":  [ "Settings", "Gamification" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Vocabularies" ],
+                "_menucasc_":  [ "Settings", "Vocabularies" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Connectors" ],
+                "_menucasc_":  [ "Settings", "Connectors" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Extensions" ],
+                "_menucasc_":  [ "Settings", "Extensions" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Servers" ],
+                "_menucasc_":  [ "Settings", "Servers" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Import-Export" ],
+                "_menucasc_":  [ "Settings", "Import-Export" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Scheduler" ],
+                "_menucasc_":  [ "Settings", "Scheduler" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Custom CSS" ],
+                "_menucasc_":  [ "Settings", "Custom CSS" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "SQL Console" ],
+                "_menucasc_":  [ "Settings", "SQL Console" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "Config Manager" ],
+                "_menucasc_":  [ "Settings", "Config Manager" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "About" ],
+                "_menucasc_":  [ "Settings", "About" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "host",
+                "_dashed_":  [ "Settings", "OnDemand" ],
+                "_menucasc_":  [ "Settings", "OnDemand" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Logo" ],
+                "_menucasc_":  [ "Logo" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Logo", "Product Version" ],
+                "_menucasc_":  [ "Logo", "Product Version" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Logo", "Documentation" ],
+                "_menucasc_":  [ "Logo", "Documentation" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Logo", "Customer Portal" ],
+                "_menucasc_":  [ "Logo", "Customer Portal" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Logo", "Contact Support" ],
+                "_menucasc_":  [ "Logo", "Contact Support" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Logo", "Logout" ],
+                "_menucasc_":  [ "Logo", "Logout" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Dashboard" ],
+                "_menucasc_":  [ "Dashboard" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Dashboard", "Site Analytics" ],
+                "_menucasc_":  [ "Dashboard", "Site Analytics" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Dashboard", "Community Analytics" ],
+                "_menucasc_":  [ "Dashboard", "Community Analytics" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Content" ],
+                "_menucasc_":  [ "Content" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Content", "Assets" ],
+                "_menucasc_":  [ "Content", "Assets" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Manage" ],
+                "_menucasc_":  [ "Manage" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Manage", "Users" ],
+                "_menucasc_":  [ "Manage", "Users" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Manage", "Templates" ],
+                "_menucasc_":  [ "Manage", "Templates" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Page Analytics" ],
+                "_menucasc_":  [ "Page Analytics" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Page Analytics", "Current Page" ],
+                "_menucasc_":  [ "Page Analytics", "Current Page" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Page Analytics", "Total Page Views" ],
+                "_menucasc_":  [ "Page Analytics", "Total Page Views" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Page Analytics", "Average Time on Page" ],
+                "_menucasc_":  [ "Page Analytics", "Average Time on Page" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Page Analytics", "Bounce Rate" ],
+                "_menucasc_":  [ "Page Analytics", "Bounce Rate" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Settings" ],
+                "_menucasc_":  [ "Settings" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Settings", "Community" ],
+                "_menucasc_":  [ "Settings", "Community" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Settings", "Gamification" ],
+                "_menucasc_":  [ "Settings", "Gamification" ],
+                "_imageid_":  ""
+            },
+            {
+                "_persona_":  "mod",
+                "_dashed_":  [ "Settings", "Connectors" ],
+                "_menucasc_":  [ "Settings", "Connectors" ],
+                "_imageid_":  ""
+            }
+        ]
+        ,"outfile" : "processed.out"
+    }
+}

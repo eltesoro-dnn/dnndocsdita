@@ -1,0 +1,353 @@
+{
+    "__NOTES__" : [
+        "Source/Basis: bptext-pbtabs.dita"
+    ],
+
+
+
+    "legend" : {
+        "contentTypeId" : ""
+        ,"maxitems" : "100"
+    },
+
+
+
+    "TEMPLATE-add-steps-pbar-menu1" : {
+        "action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : "b6ca9b42-d54e-4161-8001-f6791bd42553"
+            ,"name" : "step-pb-_persona_-_menudash_"
+            ,"description" : "Persona Bar menu step"
+            ,"language": "en"
+            "details": {
+                "command": "<p>Go to <span class=\"menucascade\"><span class=\"ph uicontrol\">Persona Bar</span> &gt; <span class=\"ph uicontrol\">_menu1_</span></span>.</p>",
+                "info": "<p>my info\n</p>",
+                "image": [
+                    ""
+                ],
+                "choices": [],
+                "substeps": [],
+                "results": "<p>my results\n</p>"
+            },
+            ,"tags" : [ "persona bar", "menu", "_persona_", "_menu1_", "E91" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Content"
+                ,"_menu1_"    : "Content"
+            },
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Dashboard"
+                ,"_menualt_"  : "Dashboard"
+            },
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Logo"
+                ,"_menualt_"  : "Logo"
+            },
+            {
+                "_persona_"   : "host"
+                ,"_menudash_" : "Settings"
+                ,"_menualt_"  : "Settings"
+            }
+        ]
+        ,"outfile" : "processed.out"
+        ,"ARCHIVE-permutations" : [
+        ]
+    },
+    "TEMPLATE-list-contentitems-matching-query" : {
+        "action" : "GET"
+        ,"apicall" : "PublishedContentItems"
+        ,"query" : {
+            "published " : "true"
+            ,"tags" : "my%20tag,tag2,lastTag"
+            ,"contentTypeId" : ""
+            ,"searchText" : ""
+            ,"startIndex" : ""
+            ,"maxitems" : "100"
+            ,"fieldOrder" : ""
+            ,"orderAsc" : ""
+            ,"createdFrom" : ""
+            ,"createdTo" : ""
+        }
+        ,"outfile" : "processed.out"
+    },
+    "TEMPLATE-get-specific-contentitem" : {
+        "action" : "GET"
+        ,"apicall" : "PublishedContentItems"
+        ,"id" : ""
+        ,"outfile" : "processed.out"
+    },
+    "TEMPLATE-add-contentitem" : {
+        "action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : "string"
+            ,"name" : "string"
+            ,"description" : "string"
+            ,"details" : "object"
+            ,"tags" : "array"
+            ,"clientReferenceId" : "string"
+            ,"seoSettings" : {
+                "pageTitle" : "string"
+                ,"description" : "string"
+                ,"keywords" : "array"
+                ,"image" : {
+                    "fileName" : "string"
+                    ,"fileId" : "integer"
+                    ,"url" : "string"
+                }
+            }
+        }
+        ,"outfile" : "processed.out"
+    },
+    "TEMPLATE-add-subsections" : {
+        "action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "subsection-"
+            ,"description" : ""
+            ,"details" : {
+            }
+            ,"tags" : [ "", "", "" ]
+        }
+        ,"permutations" : [
+            {
+                "__"   : ""
+                ,"__"  : ""
+                ,"__"  : ""
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+    "TEMPLATE-update-contentitem" : {
+        "action" : "PUT"
+        ,"apicall" : "ContentItems"
+        ,"id" : ""
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : "string"
+            ,"name" : "string"
+            ,"description" : "string"
+            ,"details" : "object"
+            ,"tags" : "array"
+            ,"clientReferenceId" : "string"
+            ,"seoSettings" : {
+                "pageTitle" : "string"
+                ,"description" : "string"
+                ,"keywords" : "array"
+                ,"image" : {
+                    "fileName" : "string"
+                    ,"fileId" : "integer"
+                    ,"url" : "string"
+                }
+            }
+        }
+        ,"outfile" : "processed.out"
+    },
+    "TEMPLATE-delete-specific-contentitem" : {
+        "action" : "DELETE"
+        ,"apicall" : "ContentItems"
+        ,"id" : ""
+        ,"outfile" : "processed.out"
+    },
+
+
+
+    "TEMPLATE-list-contenttypes-matching-query" : {
+        "action" : "GET"
+        ,"apicall" : "ContentTypes"
+        ,"query" : {
+            "searchText " : ""
+            ,"startIndex" : ""
+            ,"maxitems" : "100"
+            ,"fieldOrder" : ""
+            ,"orderAsc" : ""
+            ,"createdFrom" : ""
+            ,"createdTo" : ""
+        }
+        ,"outfile" : "processed.out"
+    },
+    "TEMPLATE-get-specific-contenttype" : {
+        "action" : "GET"
+        ,"apicall" : "ContentTypes"
+        ,"id" : ""
+        ,"outfile" : "processed.out"
+    },
+    "TEMPLATE-add-contenttype" : {
+        "action" : "POST"
+        ,"apicall" : "ContentTypes"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "name" : "string"
+            ,"icon" : "string"
+            ,"description" : "string"
+            ,"fields" : "array"
+            ,"properties" : {
+                "contentName" : {
+                    "type" : "string"
+                    ,"settings" : {
+                        "nameGeneratorFields" : "array"
+                    }
+                    ,"id" : "string"
+                    ,"name" : "string"
+                    ,"label" : "string"
+                    ,"descriptionActive" : "boolean"
+                    ,"description" : "string"
+                    ,"tooltipActive" : "boolean"
+                    ,"tooltip" : "string"
+                    ,"row" : "integer"
+                    ,"width" : "string"
+                    ,"position" : "string"
+                }
+                ,"contentTags" : {
+                    "type" : "string"
+                    ,"validation" : {
+                        "requireField" : {
+                            "active" : "boolean"
+                            ,"errorMessage" : "string"
+                        }
+                        ,"standardErrorMessage" : "string"
+                    }
+                    ,"id" : "string"
+                    ,"name" : "string"
+                    ,"label" : "string"
+                    ,"descriptionActive" : "boolean"
+                    ,"description" : "string"
+                    ,"tooltipActive" : "boolean"
+                    ,"tooltip" : "string"
+                    ,"row" : "integer"
+                    ,"width" : "string"
+                    ,"position" : "string"
+                }
+                ,"contentDescription" : {
+                    "type" : "string"
+                    ,"validation" : {
+                        "requireField" : {
+                            "active" : "boolean"
+                            ,"errorMessage" : "string"
+                        }
+                        ,"standardErrorMessage" : "string"
+                    }
+                    ,"id" : "string"
+                    ,"name" : "string"
+                    ,"label" : "string"
+                    ,"descriptionActive" : "boolean"
+                    ,"description" : "string"
+                    ,"tooltipActive" : "boolean"
+                    ,"tooltip" : "string"
+                    ,"row" : "integer"
+                    ,"width" : "string"
+                    ,"position" : "string"
+                }
+            }
+        }
+        ,"outfile" : "processed.out"
+    },
+    "TEMPLATE-update-contenttype" : {
+        "action" : "PUT"
+        ,"apicall" : "ContentTypes"
+        ,"id" : ""
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "name" : "string"
+            ,"icon" : "string"
+            ,"description" : "string"
+            ,"fields" : "array"
+            ,"properties" : {
+                "contentName" : {
+                    "type" : "string"
+                    ,"settings" : {
+                        "nameGeneratorFields" : "array"
+                    }
+                    ,"id" : "string"
+                    ,"name" : "string"
+                    ,"label" : "string"
+                    ,"descriptionActive" : "boolean"
+                    ,"description" : "string"
+                    ,"tooltipActive" : "boolean"
+                    ,"tooltip" : "string"
+                    ,"row" : "integer"
+                    ,"width" : "string"
+                    ,"position" : "string"
+                }
+                ,"contentTags" : {
+                    "type" : "string"
+                    ,"validation" : {
+                        "requireField" : {
+                            "active" : "boolean"
+                            ,"errorMessage" : "string"
+                        }
+                        ,"standardErrorMessage" : "string"
+                    }
+                    ,"id" : "string"
+                    ,"name" : "string"
+                    ,"label" : "string"
+                    ,"descriptionActive" : "boolean"
+                    ,"description" : "string"
+                    ,"tooltipActive" : "boolean"
+                    ,"tooltip" : "string"
+                    ,"row" : "integer"
+                    ,"width" : "string"
+                    ,"position" : "string"
+                }
+                ,"contentDescription" : {
+                    "type" : "string"
+                    ,"validation" : {
+                        "requireField" : {
+                            "active" : "boolean"
+                            ,"errorMessage" : "string"
+                        }
+                        ,"standardErrorMessage" : "string"
+                    }
+                    ,"id" : "string"
+                    ,"name" : "string"
+                    ,"label" : "string"
+                    ,"descriptionActive" : "boolean"
+                    ,"description" : "string"
+                    ,"tooltipActive" : "boolean"
+                    ,"tooltip" : "string"
+                    ,"row" : "integer"
+                    ,"width" : "string"
+                    ,"position" : "string"
+                }
+            }
+        }
+        ,"outfile" : "processed.out"
+    },
+    "TEMPLATE-delete-specific-contenttypes" : {
+        "action" : "DELETE"
+        ,"apicall" : "ContentTypes"
+        ,"id" : ""
+        ,"outfile" : "processed.out"
+    },
+    "TEMPLATE-delete-all-images" : {
+        "action" : "GET-DELETE"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "contentTypeId" : ""
+            ,"maxitems" : "100"
+        }
+        ,"id" : []
+        ,"outfile" : "processed.out"
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "__NOTES__" : [
+        "Source/Basis: bptext-pbtabs.dita"
+    ],
+
+
+
+    "legend" : {
+        "contentTypeId" : ""
+        ,"maxitems" : "100"
+    },
+
+
+
+    "list-all-type-termdescs" : {
+        "action" : "GET"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "contentTypeId" : ""
+            ,"maxitems" : ""
+        }
+        ,"outfile" : "processed.out"
+    },
+
+}

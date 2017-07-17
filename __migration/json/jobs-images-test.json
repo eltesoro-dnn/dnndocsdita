@@ -1,0 +1,507 @@
+{
+    "__NOTES__" : [
+        "Source/Basis: bptext-pbtabs.dita"
+    ],
+
+
+
+    "legend" : {
+        "contentTypeId" : ""
+        ,"maxitems" : "100"
+    },
+
+
+
+    "add-images-pbar-host-test" : {
+        "action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "scr-pbar-_persona_-_menudash_-E91d"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "imageFile" : [
+                    {
+                        "fileId": 0
+                        ,"fileName": "scr-pbar-_persona_-_menudash_-E91.png"
+                        ,"url": "https://dnnteuyw4.blob.core.windows.net/portals/7/Persona%20Bar%20menus/scr-pbar-_persona_-_menudash_-E91.png?sr=b&si=DNNFileManagerPolicy&sig=N6Qxb6rNfdlYLr9Z4eccfCvJcQNLjHWKMKb2wVhIUu0%3D"
+                    }
+                ]
+                ,"altText": "Persona Bar > _menualt_"
+                ,"overlay1": "olpb1-_menudash_-E91_persona_"
+                ,"overlay2": "olpb2-_menudash_-E91_persona_"
+            }
+            ,"tags" : [ "persona bar", "pbar", "menu", "_menualt_", "_persona_" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "host"
+                ,"_menudash_" : "Logo-ProductVersion"
+                ,"_menualt_"  : "Logo-ProductVersion"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+
+
+    "add-images-pbar-test00" : {
+        "testdesc" : "Original imageFile details."
+        ,"action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "_code_-image-pbar-menu-_persona_-_menudash_"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "imageFile": [
+                    {
+                        "fileId" : 139
+                        ,"fileName" : "scr-pbar-adm-Settings-E91.png"
+                        ,"url" : "https://dnnaq4bei.blob.core.windows.net/portals/1/PBar%20menus/scr-pbar-adm-Settings-E91.png?sr=b&si=DNNFileManagerPolicy&sig=iOq%2FVqQ5hHQ2IYYOj%2BRV%2FD5thEHX%2FXf8Fc0R1zzTNGs%3D"
+
+                    }
+                ]
+                ,"altText" : "Persona Bar > _menualt_"
+            }
+            ,"tags" : [ "persona bar", "menu", "_persona_" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Settings"
+                ,"_menualt_"  : "Settings"
+                ,"_code_"     : "testapi00"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+    "add-images-pbar-test01" : {
+        "testdesc" : "No imageFile"
+        ,"action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "_code_-image-pbar-menu-_persona_-_menudash_"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "altText" : "Persona Bar > _menualt_"
+            }
+            ,"tags" : [ "persona bar", "menu", "_persona_" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Settings"
+                ,"_menualt_"  : "Settings"
+                ,"_code_"     : "testapi01"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+    "add-images-pbar-test02" : {
+        "testdesc" : "Field ID only."
+        ,"action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "_code_-image-pbar-menu-_persona_-_menudash_"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "imageFile": [
+                    {
+                        "fileId" : 139
+                    }
+                ]
+                ,"altText" : "Persona Bar > _menualt_"
+            }
+            ,"tags" : [ "persona bar", "menu", "_persona_" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Settings"
+                ,"_menualt_"  : "Settings"
+                ,"_code_"     : "testapi02"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+    "add-images-pbar-test03" : {
+        "testdesc" : "Filename only."
+        ,"action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "_code_-image-pbar-menu-_persona_-_menudash_"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "imageFile": [
+                    {
+                        "fileName" : "scr-pbar-adm-Settings-E91.png"
+                    }
+                ]
+                ,"altText" : "Persona Bar > _menualt_"
+            }
+            ,"tags" : [ "persona bar", "menu", "_persona_" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Settings"
+                ,"_menualt_"  : "Settings"
+                ,"_code_"     : "testapi03"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+    "add-images-pbar-test04" : {
+        "testdesc" : "URL only, no query."
+        ,"action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "_code_-image-pbar-menu-_persona_-_menudash_"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "imageFile": [
+                    {
+                        "url" : "https://dnnaq4bei.blob.core.windows.net/portals/1/PBar%20menus/scr-pbar-adm-Settings-E91.png"
+                    }
+                ]
+                ,"altText" : "Persona Bar > _menualt_"
+            }
+            ,"tags" : [ "persona bar", "menu", "_persona_" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Settings"
+                ,"_menualt_"  : "Settings"
+                ,"_code_"     : "testapi04"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+    "add-images-pbar-test05" : {
+        "testdesc" : "URL only, with query."
+        ,"action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "_code_-image-pbar-menu-_persona_-_menudash_"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "imageFile": [
+                    {
+                        "url" : "https://dnnaq4bei.blob.core.windows.net/portals/1/PBar%20menus/scr-pbar-adm-Settings-E91.png?sr=b&si=DNNFileManagerPolicy&sig=iOq%2FVqQ5hHQ2IYYOj%2BRV%2FD5thEHX%2FXf8Fc0R1zzTNGs%3D"
+                    }
+                ]
+                ,"altText" : "Persona Bar > _menualt_"
+            }
+            ,"tags" : [ "persona bar", "menu", "_persona_" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Settings"
+                ,"_menualt_"  : "Settings"
+                ,"_code_"     : "testapi05"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+    "add-images-pbar-test06" : {
+        "testdesc" : "FileID and fileName"
+        ,"action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "_code_-image-pbar-menu-_persona_-_menudash_"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "imageFile": [
+                    {
+                        "fileId" : 0
+                        ,"fileName" : "scr-pbar-adm-Settings-E91.png"
+                    }
+                ]
+                ,"altText" : "Persona Bar > _menualt_"
+            }
+            ,"tags" : [ "persona bar", "menu", "_persona_" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Settings"
+                ,"_menualt_"  : "Settings"
+                ,"_code_"     : "testapi06"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+    "add-images-pbar-test07" : {
+        "testdesc" : "FileID and URL, no query"
+        ,"action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "_code_-image-pbar-menu-_persona_-_menudash_"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "imageFile": [
+                    {
+                        "fileId" : 0
+                        ,"url" : "https://dnnaq4bei.blob.core.windows.net/portals/1/PBar%20menus/scr-pbar-adm-Settings-E91.png"
+                    }
+                ]
+                ,"altText" : "Persona Bar > _menualt_"
+            }
+            ,"tags" : [ "persona bar", "menu", "_persona_" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Settings"
+                ,"_menualt_"  : "Settings"
+                ,"_code_"     : "testapi07"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+    "add-images-pbar-test08" : {
+        "testdesc" : "FileID and URL with query"
+        ,"action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "_code_-image-pbar-menu-_persona_-_menudash_"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "imageFile": [
+                    {
+                        "fileId" : 0
+                        ,"url" : "https://dnnaq4bei.blob.core.windows.net/portals/1/PBar%20menus/scr-pbar-adm-Settings-E91.png?sr=b&si=DNNFileManagerPolicy&sig=iOq%2FVqQ5hHQ2IYYOj%2BRV%2FD5thEHX%2FXf8Fc0R1zzTNGs%3D"
+                    }
+                ]
+                ,"altText" : "Persona Bar > _menualt_"
+            }
+            ,"tags" : [ "persona bar", "menu", "_persona_" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Settings"
+                ,"_menualt_"  : "Settings"
+                ,"_code_"     : "testapi08"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+    "add-images-pbar-test09" : {
+        "testdesc" : "FileName and URL, no query"
+        ,"action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "_code_-image-pbar-menu-_persona_-_menudash_"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "imageFile": [
+                    {
+                        "fileName" : "scr-pbar-adm-Settings-E91.png"
+                        ,"url" : "https://dnnaq4bei.blob.core.windows.net/portals/1/PBar%20menus/scr-pbar-adm-Settings-E91.png"
+                    }
+                ]
+                ,"altText" : "Persona Bar > _menualt_"
+            }
+            ,"tags" : [ "persona bar", "menu", "_persona_" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Settings"
+                ,"_menualt_"  : "Settings"
+                ,"_code_"     : "testapi09"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+    "add-images-pbar-test10" : {
+        "testdesc" : "FileName and URL with query"
+        ,"action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "_code_-image-pbar-menu-_persona_-_menudash_"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "imageFile": [
+                    {
+                        "fileName" : "scr-pbar-adm-Settings-E91.png"
+                        ,"url" : "https://dnnaq4bei.blob.core.windows.net/portals/1/PBar%20menus/scr-pbar-adm-Settings-E91.png?sr=b&si=DNNFileManagerPolicy&sig=iOq%2FVqQ5hHQ2IYYOj%2BRV%2FD5thEHX%2FXf8Fc0R1zzTNGs%3D"
+                    }
+                ]
+                ,"altText" : "Persona Bar > _menualt_"
+            }
+            ,"tags" : [ "persona bar", "menu", "_persona_" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Settings"
+                ,"_menualt_"  : "Settings"
+                ,"_code_"     : "testapi10"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+    "add-images-pbar-test11" : {
+        "testdesc" : "No query"
+        ,"action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "_code_-image-pbar-menu-_persona_-_menudash_"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "imageFile": [
+                    {
+                        "fileId" : 0
+                        ,"fileName" : "scr-pbar-adm-Settings-E91.png"
+                        ,"url" : "https://dnnaq4bei.blob.core.windows.net/portals/1/PBar%20menus/scr-pbar-adm-Settings-E91.png"
+                    }
+                ]
+                ,"altText" : "Persona Bar > _menualt_"
+            }
+            ,"tags" : [ "persona bar", "menu", "_persona_" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Settings"
+                ,"_menualt_"  : "Settings"
+                ,"_code_"     : "testapi11"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+    "add-images-pbar-test12" : {
+        "testdesc" : "Complete"
+        ,"action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "_code_-image-pbar-menu-_persona_-_menudash_"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "imageFile": [
+                    {
+                        "fileId" : 0
+                        ,"fileName" : "scr-pbar-adm-Settings-E91.png"
+                        ,"url" : "https://dnnaq4bei.blob.core.windows.net/portals/1/PBar%20menus/scr-pbar-adm-Settings-E91.png?sr=b&si=DNNFileManagerPolicy&sig=iOq%2FVqQ5hHQ2IYYOj%2BRV%2FD5thEHX%2FXf8Fc0R1zzTNGs%3D"
+                    }
+                ]
+                ,"altText" : "Persona Bar > _menualt_"
+            }
+            ,"tags" : [ "persona bar", "menu", "_persona_" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Settings"
+                ,"_menualt_"  : "Settings"
+                ,"_code_"     : "testapi12"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+    "add-images-pbar-testXX" : {
+        "testdesc" : ""
+        ,"action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "_code_-image-pbar-menu-_persona_-_menudash_"
+            ,"description" : "Persona Bar menu"
+            ,"details" : {
+                "imageFile": [
+                    {
+                        "fileId" : 0
+                        ,"fileName" : "scr-pbar-adm-Settings-E91.png"
+                        ,"url" : "https://dnnaq4bei.blob.core.windows.net/portals/1/PBar%20menus/scr-pbar-adm-Settings-E91.png?sr=b&si=DNNFileManagerPolicy&sig=iOq%2FVqQ5hHQ2IYYOj%2BRV%2FD5thEHX%2FXf8Fc0R1zzTNGs%3D"
+                    }
+                ]
+                ,"altText" : "Persona Bar > _menualt_"
+            }
+            ,"tags" : [ "persona bar", "menu", "_persona_" ]
+        }
+        ,"permutations" : [
+            {
+                "_persona_"   : "adm"
+                ,"_menudash_" : "Settings"
+                ,"_menualt_"  : "Settings"
+                ,"_code_"     : "testapiXX"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    }
+}

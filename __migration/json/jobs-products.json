@@ -1,0 +1,200 @@
+{
+    "__NOTES__" : [
+        "Source/Basis: bptext-pbtabs.dita"
+    ],
+
+
+
+    "legend" : {
+        "contentTypeId" : ""
+        ,"maxitems" : "100"
+    },
+
+
+    "list-all-type-products" : {
+        "action" : "GET"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "contentTypeId" : ""
+            ,"maxitems" : ""
+        }
+        ,"outfile" : "processed.out"
+    },
+
+
+
+    "add-products-v85-v91" : {
+        "action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "product-_code_"
+            ,"details": {
+                "productName": [ "_fullname_" ]
+                ,"version": [ "_ver_" ]
+                ,"releaseDate": "_unixdate_"
+                ,"gitHub": "http://github.com/dnnsoftware/Dnn.Platform/releases/tag/v_ver_.0"
+                ,"releaseNotes": "http://www.dnnsoftware.com/docs/administrators/release-notes/relnotes-_reldate_.html"
+            }
+            ,"tags" : [ "_fullname_" ]
+        }
+        ,"permutations" : [
+            {
+                "_code_" : "E85"
+                ,"_fullname_" : "Evoq Engage"
+                ,"_ver_" : "8.5"
+                ,"_reldate_"  : "2016-aug-22"
+                ,"_unixdate_" : "2016-aug-22"
+            },
+            {
+                "_code_" : "C85"
+                ,"_fullname_" : "Evoq Content"
+                ,"_ver_" : "8.5"
+                ,"_reldate_"  : "2016-aug-22"
+                ,"_unixdate_" : "2016-aug-22"
+            },
+            {
+                "_code_" : "B85"
+                ,"_fullname_" : "Evoq Basic"
+                ,"_ver_" : "8.5"
+                ,"_reldate_"  : "2016-aug-22"
+                ,"_unixdate_" : "2016-aug-22"
+            },
+            {
+                "_code_" : "P85"
+                ,"_fullname_" : "DNN Platform"
+                ,"_ver_" : "8.5"
+                ,"_reldate_"  : "2016-aug-22"
+                ,"_unixdate_" : "2016-aug-22"
+            },
+            {
+                "_code_" : "E90"
+                ,"_fullname_" : "Evoq Engage"
+                ,"_ver_" : "9.0"
+                ,"_reldate_"  : "2016-dec-09"
+                ,"_unixdate_" : "2016-dec-09"
+            },
+            {
+                "_code_" : "C90"
+                ,"_fullname_" : "Evoq Content"
+                ,"_ver_" : "9.0"
+                ,"_reldate_"  : "2016-dec-09"
+                ,"_unixdate_" : "2016-dec-09"
+            },
+            {
+                "_code_" : "B90"
+                ,"_fullname_" : "Evoq Basic"
+                ,"_ver_" : "9.0"
+                ,"_reldate_"  : "2016-dec-09"
+                ,"_unixdate_" : "2016-dec-09"
+            },
+            {
+                "_code_" : "P90"
+                ,"_fullname_" : "DNN Platform"
+                ,"_ver_" : "9.0"
+                ,"_reldate_"  : "2016-dec-09"
+                ,"_unixdate_" : "2016-dec-09"
+            },
+            {
+                "_code_" : "E91"
+                ,"_fullname_" : "Evoq Engage"
+                ,"_ver_" : "9.1"
+                ,"_reldate_"  : "2017-apr-26"
+                ,"_unixdate_" : "2017-apr-26"
+            },
+            {
+                "_code_" : "C91"
+                ,"_fullname_" : "Evoq Content"
+                ,"_ver_" : "9.1"
+                ,"_reldate_"  : "2017-apr-26"
+                ,"_unixdate_" : "2017-apr-26"
+            },
+            {
+                "_code_" : "B91"
+                ,"_fullname_" : "Evoq Basic"
+                ,"_ver_" : "9.1"
+                ,"_reldate_"  : "2017-apr-26"
+                ,"_unixdate_" : "2017-apr-26"
+            },
+            {
+                "_code_" : "P91"
+                ,"_fullname_" : "DNN Platform"
+                ,"_ver_" : "9.1"
+                ,"_reldate_"  : "2017-apr-26"
+                ,"_unixdate_" : "2017-apr-26"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+
+
+    "add-products-v92" : {
+        "action" : "POST"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "publish" : "true"
+        }
+        ,"body" : {
+            "contentTypeId" : ""
+            ,"name" : "product-_code_"
+            ,"details": {
+                "productName": [ "_fullname_" ]
+                ,"version": [ "_ver_" ]
+                ,"releaseDate": "_unixdate_"
+                ,"gitHub": "http://github.com/dnnsoftware/Dnn.Platform/releases/tag/v_ver_.0"
+                ,"releaseNotes": "http://www.dnnsoftware.com/docs/administrators/release-notes/relnotes-_reldate_.html"
+            }
+            ,"tags" : [ "_fullname_" ]
+        }
+        ,"permutations" : [
+            {
+                "_code_" : "E92"
+                ,"_fullname_" : "Evoq Engage"
+                ,"_ver_" : "9.2"
+                ,"_reldate_"  : "2017-mmm-dd"
+                ,"_unixdate_" : "2017-mmm-dd"
+            },
+            {
+                "_code_" : "C92"
+                ,"_fullname_" : "Evoq Content"
+                ,"_ver_" : "9.2"
+                ,"_reldate_"  : "2017-mmm-dd"
+                ,"_unixdate_" : "2017-mmm-dd"
+            },
+            {
+                "_code_" : "B92"
+                ,"_fullname_" : "Evoq Basic"
+                ,"_ver_" : "9.2"
+                ,"_reldate_"  : "2017-mmm-dd"
+                ,"_unixdate_" : "2017-mmm-dd"
+            },
+            {
+                "_code_" : "P92"
+                ,"_fullname_" : "DNN Platform"
+                ,"_ver_" : "9.2"
+                ,"_reldate_"  : "2017-mmm-dd"
+                ,"_unixdate_" : "2017-mmm-dd"
+            }
+        ]
+        ,"outfile" : "processed.out"
+    },
+
+
+
+
+
+    "delete-all-products" : {
+        "action" : "GET-DELETE"
+        ,"apicall" : "ContentItems"
+        ,"query" : {
+            "contentTypeId" : ""
+            ,"maxitems" : ""
+        }
+        ,"id" : []
+        ,"outfile" : "processed.out"
+    }
+}

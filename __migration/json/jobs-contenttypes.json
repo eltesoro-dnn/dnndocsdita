@@ -1,0 +1,1740 @@
+{
+    "__NOTES__" : [
+        "Source/Basis: bptext-pbtabs.dita"
+    ],
+
+
+
+    "legend": {
+        "maxitems": "100"
+    },
+    "list-all-contenttypes": {
+        "action": "GET",
+        "apicall": "ContentTypes",
+        "query": {
+            "maxitems": ""
+        },
+        "outfile": "processed.out"
+    },
+    "delete-all-contenttypes": {
+        "action": "GET-DELETE",
+        "apicall": "ContentTypes",
+        "query": {
+            "contentTypeId": "",
+            "maxitems": ""
+        },
+        "id": "",
+        "outfile": "processed.out"
+    },
+    "add-contenttype-Choice": {
+        "action": "POST",
+        "apicall": "ContentTypes",
+        "query": {
+            "publish": "TRUE"
+        },
+        "body": {
+            "name": "Choice",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "singleLineText",
+                    "settings": {
+                        "subType": "singleLine",
+                        "phoneNumberFormat": null
+                    },
+                    "name": "command",
+                    "label": "Command",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "info",
+                    "label": "Info",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Image",
+                    "settings": {
+                        "subType": "singleReferenceObject"
+                    },
+                    "name": "image",
+                    "label": "Image",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-Conceptual": {
+        "action": "POST",
+        "apicall": "ContentTypes",
+        "query": {
+            "publish": "TRUE"
+        },
+        "body": {
+            "name": "Conceptual",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "singleLineText",
+                    "settings": {
+                        "subType": "singleLine",
+                        "phoneNumberFormat": null
+                    },
+                    "name": "title",
+                    "label": "Title",
+                    "row": 0,
+                    "width": "threeQuarters",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Product",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "products",
+                    "label": "Products",
+                    "row": 0,
+                    "width": "quarter",
+                    "position": "threeQuarters"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Person",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "authors",
+                    "label": "Authors",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Person",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "sMEs",
+                    "label": "SMEs",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "quarter"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Person",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "editors",
+                    "label": "Editors",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "half"
+                },
+                {
+                    "type": "multipleChoice",
+                    "defaultValue": "Administrators",
+                    "settings": {
+                        "subType": "checkBox",
+                        "choices": [
+                            {
+                                "label": "Administrators"
+                            },
+                            {
+                                "label": "Content Managers"
+                            },
+                            {
+                                "label": "Developers"
+                            },
+                            {
+                                "label": "Designers"
+                            },
+                            {
+                                "label": "Community Managers"
+                            }
+                        ],
+                        "multiSelect": false,
+                        "listOrientation": "vertical",
+                        "otherAsAnOption": true
+                    },
+                    "name": "audience",
+                    "label": "Audience",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "threeQuarters"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "body",
+                    "label": "Body",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "relLinks",
+                    "label": "RelLinks",
+                    "row": 4,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Section",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "section",
+                    "label": "Section",
+                    "row": 3,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-Image": {
+        "action": "POST",
+        "apicall": "ContentTypes",
+        "query": {
+            "publish": "TRUE"
+        },
+        "body": {
+            "name": "Image",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "assets",
+                    "settings": {
+                        "subType": "image",
+                        "maxAssets": 1
+                    },
+                    "name": "imageFile",
+                    "label": "ImageFile",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "singleLineText",
+                    "settings": {
+                        "subType": "singleLine",
+                        "phoneNumberFormat": null
+                    },
+                    "name": "altText",
+                    "label": "AltText",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "singleLineText",
+                    "settings": {
+                        "subType": "singleLine",
+                        "phoneNumberFormat": null
+                    },
+                    "name": "overlay1",
+                    "label": "Overlay1",
+                    "row": 2,
+                    "width": "quarter",
+                    "position": "start"
+                },
+                {
+                    "type": "singleLineText",
+                    "settings": {
+                        "subType": "singleLine",
+                        "phoneNumberFormat": null
+                    },
+                    "name": "overlay2",
+                    "label": "Overlay2",
+                    "row": 2,
+                    "width": "quarter",
+                    "position": "quarter"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-Product": {
+        "action": "POST",
+        "apicall": "ContentTypes",
+        "query": {
+            "publish": "TRUE"
+        },
+        "body": {
+            "name": "Product",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "multipleChoice",
+                    "settings": {
+                        "subType": "radioButton",
+                        "choices": [
+                            {
+                                "label": "Evoq Engage"
+                            },
+                            {
+                                "label": "Evoq Content"
+                            },
+                            {
+                                "label": "Evoq Basic"
+                            },
+                            {
+                                "label": "DNN Platform"
+                            }
+                        ],
+                        "multiSelect": false,
+                        "listOrientation": "vertical",
+                        "otherAsAnOption": false
+                    },
+                    "name": "productName",
+                    "label": "Product Name",
+                    "row": 0,
+                    "width": "quarter",
+                    "position": "start"
+                },
+                {
+                    "type": "multipleChoice",
+                    "settings": {
+                        "subType": "radioButton",
+                        "choices": [
+                            {
+                                "label": "8.5"
+                            },
+                            {
+                                "label": "9.0"
+                            },
+                            {
+                                "label": "9.1"
+                            }
+                        ],
+                        "multiSelect": false,
+                        "listOrientation": "vertical",
+                        "otherAsAnOption": true
+                    },
+                    "name": "version",
+                    "label": "Version",
+                    "row": 0,
+                    "width": "quarter",
+                    "position": "quarter"
+                },
+                {
+                    "type": "dateTime",
+                    "settings": {
+                        "subType": "date",
+                        "dateFormat": "yyyymmdd",
+                        "timeFormat": "hr24",
+                        "timeZoneInfoActive": false,
+                        "timeZoneInfoId": "Dateline Standard Time"
+                    },
+                    "name": "releaseDate",
+                    "label": "Release Date",
+                    "row": 0,
+                    "width": "quarter",
+                    "position": "half"
+                },
+                {
+                    "type": "assets",
+                    "settings": {
+                        "subType": "image",
+                        "maxAssets": 1
+                    },
+                    "name": "productLogo",
+                    "label": "Product Logo",
+                    "row": 0,
+                    "width": "quarter",
+                    "position": "threeQuarters"
+                },
+                {
+                    "type": "singleLineText",
+                    "settings": {
+                        "subType": "url",
+                        "phoneNumberFormat": null
+                    },
+                    "name": "gitHub",
+                    "label": "GitHub",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "singleLineText",
+                    "settings": {
+                        "subType": "url",
+                        "phoneNumberFormat": null
+                    },
+                    "name": "releaseNotes",
+                    "label": "Release Notes",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-Reference": {
+        "action": "POST",
+        "apicall": "ContentTypes",
+        "query": {
+            "publish": "TRUE"
+        },
+        "body": {
+            "name": "Reference",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "singleLineText",
+                    "settings": {
+                        "subType": "singleLine",
+                        "phoneNumberFormat": null
+                    },
+                    "name": "title",
+                    "label": "Title",
+                    "row": 0,
+                    "width": "threeQuarters",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Product",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "products",
+                    "label": "Products",
+                    "row": 0,
+                    "width": "quarter",
+                    "position": "threeQuarters"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Person",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "authors",
+                    "label": "Authors",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Person",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "sMEs",
+                    "label": "SMEs",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "quarter"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Person",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "editors",
+                    "label": "Editors",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "half"
+                },
+                {
+                    "type": "multipleChoice",
+                    "defaultValue": "Administrators",
+                    "settings": {
+                        "subType": "checkBox",
+                        "choices": [
+                            {
+                                "label": "Administrators"
+                            },
+                            {
+                                "label": "Content Managers"
+                            },
+                            {
+                                "label": "Developers"
+                            },
+                            {
+                                "label": "Designers"
+                            },
+                            {
+                                "label": "Community Managers"
+                            }
+                        ],
+                        "multiSelect": false,
+                        "listOrientation": "vertical",
+                        "otherAsAnOption": true
+                    },
+                    "name": "audience",
+                    "label": "Audience",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "threeQuarters"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "body",
+                    "label": "Body",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "relLinks",
+                    "label": "RelLinks",
+                    "row": 3,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-Requisite": {
+        "action": "POST",
+        "apicall": "ContentTypes",
+        "query": {
+            "publish": "TRUE"
+        },
+        "body": {
+            "name": "Requisite",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "reqList",
+                    "label": "ReqList",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-Section": {
+        "action": "POST",
+        "apicall": "ContentTypes",
+        "query": {
+            "publish": "TRUE"
+        },
+        "body": {
+            "name": "Section",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "singleLineText",
+                    "settings": {
+                        "subType": "singleLine",
+                        "phoneNumberFormat": null
+                    },
+                    "name": "title",
+                    "label": "Title",
+                    "descriptionActive": true,
+                    "description": "Leave the title blank if the content item is part of a larger section.",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "SubSection",
+                    "settings": {
+                        "subType": "singleReferenceObject"
+                    },
+                    "name": "subSections",
+                    "label": "SubSections",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "relLinks",
+                    "label": "RelLinks",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-Solution": {
+        "action": "POST",
+        "apicall": "ContentTypes",
+        "query": {
+            "publish": "TRUE"
+        },
+        "body": {
+            "name": "Solution",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "multiLine"
+                    },
+                    "name": "cause",
+                    "label": "Cause",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "information",
+                    "label": "Information",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Requisite",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "prerequisites",
+                    "label": "Prerequisites",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Choice",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "choices",
+                    "label": "Choices",
+                    "descriptionActive": true,
+                    "description": "Use this, instead of the substeps, if the sequence is not important.",
+                    "row": 3,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Substep",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "steps",
+                    "label": "Steps",
+                    "descriptionActive": true,
+                    "description": "",
+                    "row": 4,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Requisite",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "postrequisites",
+                    "label": "Postrequisites",
+                    "row": 5,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-Step": {
+        "action": "POST",
+        "apicall": "ContentTypes",
+        "query": {
+            "publish": "TRUE"
+        },
+        "body": {
+            "name": "Step",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "command",
+                    "label": "Command",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "info",
+                    "label": "Info",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Image",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "image",
+                    "label": "Image",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Choice",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "choices",
+                    "label": "Choices",
+                    "row": 3,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Substep",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "substeps",
+                    "label": "Substeps",
+                    "row": 4,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "results",
+                    "label": "Results",
+                    "row": 5,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-SubSection": {
+        "action": "POST",
+        "apicall": "ContentTypes",
+        "query": {
+            "publish": "TRUE"
+        },
+        "body": {
+            "name": "SubSection",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "text",
+                    "label": "Text",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Image",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "image",
+                    "label": "Image",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Step",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "steps",
+                    "label": "Steps",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-Substep": {
+        "action": "POST",
+        "apicall": "ContentTypes",
+        "query": {
+            "publish": "TRUE"
+        },
+        "body": {
+            "name": "Substep",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "command",
+                    "label": "Command",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "info",
+                    "label": "Info",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Image",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "image",
+                    "label": "Image",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "results",
+                    "label": "Results",
+                    "row": 3,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-Task": {
+        "action": "POST",
+        "apicall": "ContentTypes",
+        "query": {
+            "publish": "TRUE"
+        },
+        "body": {
+            "name": "Task",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "singleLineText",
+                    "settings": {
+                        "subType": "singleLine",
+                        "phoneNumberFormat": null
+                    },
+                    "name": "title",
+                    "label": "Title",
+                    "row": 0,
+                    "width": "threeQuarters",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Product",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "products",
+                    "label": "Products",
+                    "row": 0,
+                    "width": "quarter",
+                    "position": "threeQuarters"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Person",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "authors",
+                    "label": "Authors",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Person",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "sMEs",
+                    "label": "SMEs",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "quarter"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Person",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "editors",
+                    "label": "Editors",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "half"
+                },
+                {
+                    "type": "multipleChoice",
+                    "defaultValue": "Administrators",
+                    "settings": {
+                        "subType": "checkBox",
+                        "choices": [
+                            {
+                                "label": "Administrators"
+                            },
+                            {
+                                "label": "Content Managers"
+                            },
+                            {
+                                "label": "Developers"
+                            },
+                            {
+                                "label": "Designers"
+                            },
+                            {
+                                "label": "Community Managers"
+                            }
+                        ],
+                        "multiSelect": false,
+                        "listOrientation": "vertical",
+                        "otherAsAnOption": true
+                    },
+                    "name": "audience",
+                    "label": "Audience",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "threeQuarters"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "introduction",
+                    "label": "Introduction",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Requisite",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "prerequisites",
+                    "label": "Prerequisites",
+                    "row": 3,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Choice",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "choices",
+                    "label": "Choices",
+                    "descriptionActive": true,
+                    "description": "Use this, instead of the steps, if the sequence is not important.",
+                    "row": 4,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Step",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "steps",
+                    "label": "Steps",
+                    "row": 5,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "results",
+                    "label": "Results",
+                    "row": 6,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Requisite",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "postrequisites",
+                    "label": "Postrequisites",
+                    "row": 7,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "relLinks",
+                    "label": "RelLinks",
+                    "row": 8,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-TermDesc": {
+        "action": "POST",
+        "apicall": "ContentTypes",
+        "query": {
+            "publish": "TRUE"
+        },
+        "body": {
+            "name": "TermDesc",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "term",
+                    "label": "Term",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "description",
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-Troubleshooting": {
+        "action": "POST",
+        "apicall": "ContentTypes",
+        "query": {
+            "publish": "TRUE"
+        },
+        "body": {
+            "name": "Troubleshooting",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "singleLineText",
+                    "settings": {
+                        "subType": "singleLine",
+                        "phoneNumberFormat": null
+                    },
+                    "name": "title",
+                    "label": "Title",
+                    "row": 0,
+                    "width": "threeQuarters",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Product",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "products",
+                    "label": "Products",
+                    "row": 0,
+                    "width": "quarter",
+                    "position": "threeQuarters"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Person",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "authors",
+                    "label": "Authors",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Person",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "sMEs",
+                    "label": "SMEs",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "quarter"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Person",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "editors",
+                    "label": "Editors",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "half"
+                },
+                {
+                    "type": "multipleChoice",
+                    "defaultValue": "Administrators",
+                    "settings": {
+                        "subType": "checkBox",
+                        "choices": [
+                            {
+                                "label": "Administrators"
+                            },
+                            {
+                                "label": "Content Managers"
+                            },
+                            {
+                                "label": "Developers"
+                            },
+                            {
+                                "label": "Designers"
+                            },
+                            {
+                                "label": "Community Managers"
+                            }
+                        ],
+                        "multiSelect": false,
+                        "listOrientation": "vertical",
+                        "otherAsAnOption": true
+                    },
+                    "name": "audience",
+                    "label": "Audience",
+                    "row": 1,
+                    "width": "quarter",
+                    "position": "threeQuarters"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "introduction",
+                    "label": "Introduction",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "multiLine"
+                    },
+                    "name": "errorMsg",
+                    "label": "ErrorMsg",
+                    "descriptionActive": true,
+                    "description": "Use ErrorMsg or Symptom, not both.",
+                    "row": 3,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "symptom",
+                    "label": "Symptom",
+                    "descriptionActive": true,
+                    "description": "Use ErrorMsg or Symptom, not both.",
+                    "row": 4,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Solution",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "solutions",
+                    "label": "Solutions",
+                    "row": 5,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "relLinks",
+                    "label": "RelLinks",
+                    "row": 6,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    }
+}
