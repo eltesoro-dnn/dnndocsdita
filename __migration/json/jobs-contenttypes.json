@@ -1,37 +1,12 @@
 {
-    "__NOTES__" : [
-        "Source/Basis: bptext-pbtabs.dita"
-    ],
-
-
-
     "legend": {
         "maxitems": "100"
     },
-    "list-all-contenttypes": {
-        "action": "GET",
-        "apicall": "ContentTypes",
-        "query": {
-            "maxitems": ""
-        },
-        "outfile": "processed.out"
+    "list-contenttypes": {
     },
-    "delete-all-contenttypes": {
-        "action": "GET-DELETE",
-        "apicall": "ContentTypes",
-        "query": {
-            "contentTypeId": "",
-            "maxitems": ""
-        },
-        "id": "",
-        "outfile": "processed.out"
+    "deleteall-contenttypes": {
     },
     "add-contenttype-Choice": {
-        "action": "POST",
-        "apicall": "ContentTypes",
-        "query": {
-            "publish": "TRUE"
-        },
         "body": {
             "name": "Choice",
             "icon": null,
@@ -108,11 +83,6 @@
         }
     },
     "add-contenttype-Conceptual": {
-        "action": "POST",
-        "apicall": "ContentTypes",
-        "query": {
-            "publish": "TRUE"
-        },
         "body": {
             "name": "Conceptual",
             "icon": null,
@@ -284,11 +254,6 @@
         }
     },
     "add-contenttype-Image": {
-        "action": "POST",
-        "apicall": "ContentTypes",
-        "query": {
-            "publish": "TRUE"
-        },
         "body": {
             "name": "Image",
             "icon": null,
@@ -376,12 +341,92 @@
             }
         }
     },
+    "add-contenttype-Note": {
+        "body": {
+            "name": "Note",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "multipleChoice",
+                    "settings": {
+                        "subType": "dropDown",
+                        "choices": [
+                            {
+                                "label": "Important"
+                            },
+                            {
+                                "label": "Note"
+                            },
+                            {
+                                "label": "Remember"
+                            },
+                            {
+                                "label": "Tip"
+                            },
+                            {
+                                "label": "Trouble"
+                            },
+                            {
+                                "label": "Warning"
+                            }
+                        ],
+                        "multiSelect": false,
+                        "listOrientation": "horizontal",
+                        "otherAsAnOption": false
+                    },
+                    "name": "type",
+                    "label": "Type",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "multiLine"
+                    },
+                    "name": "msg",
+                    "label": "Msg",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
     "add-contenttype-Product": {
-        "action": "POST",
-        "apicall": "ContentTypes",
-        "query": {
-            "publish": "TRUE"
-        },
         "body": {
             "name": "Product",
             "icon": null,
@@ -526,11 +571,6 @@
         }
     },
     "add-contenttype-Reference": {
-        "action": "POST",
-        "apicall": "ContentTypes",
-        "query": {
-            "publish": "TRUE"
-        },
         "body": {
             "name": "Reference",
             "icon": null,
@@ -689,11 +729,6 @@
         }
     },
     "add-contenttype-Requisite": {
-        "action": "POST",
-        "apicall": "ContentTypes",
-        "query": {
-            "publish": "TRUE"
-        },
         "body": {
             "name": "Requisite",
             "icon": null,
@@ -745,11 +780,6 @@
         }
     },
     "add-contenttype-Section": {
-        "action": "POST",
-        "apicall": "ContentTypes",
-        "query": {
-            "publish": "TRUE"
-        },
         "body": {
             "name": "Section",
             "icon": null,
@@ -828,11 +858,6 @@
         }
     },
     "add-contenttype-Solution": {
-        "action": "POST",
-        "apicall": "ContentTypes",
-        "query": {
-            "publish": "TRUE"
-        },
         "body": {
             "name": "Solution",
             "icon": null,
@@ -951,11 +976,6 @@
         }
     },
     "add-contenttype-Step": {
-        "action": "POST",
-        "apicall": "ContentTypes",
-        "query": {
-            "publish": "TRUE"
-        },
         "body": {
             "name": "Step",
             "icon": null,
@@ -1068,11 +1088,6 @@
         }
     },
     "add-contenttype-SubSection": {
-        "action": "POST",
-        "apicall": "ContentTypes",
-        "query": {
-            "publish": "TRUE"
-        },
         "body": {
             "name": "SubSection",
             "icon": null,
@@ -1150,11 +1165,6 @@
         }
     },
     "add-contenttype-Substep": {
-        "action": "POST",
-        "apicall": "ContentTypes",
-        "query": {
-            "publish": "TRUE"
-        },
         "body": {
             "name": "Substep",
             "icon": null,
@@ -1241,11 +1251,6 @@
         }
     },
     "add-contenttype-Task": {
-        "action": "POST",
-        "apicall": "ContentTypes",
-        "query": {
-            "publish": "TRUE"
-        },
         "body": {
             "name": "Task",
             "icon": null,
@@ -1469,11 +1474,6 @@
         }
     },
     "add-contenttype-TermDesc": {
-        "action": "POST",
-        "apicall": "ContentTypes",
-        "query": {
-            "publish": "TRUE"
-        },
         "body": {
             "name": "TermDesc",
             "icon": null,
@@ -1536,11 +1536,6 @@
         }
     },
     "add-contenttype-Troubleshooting": {
-        "action": "POST",
-        "apicall": "ContentTypes",
-        "query": {
-            "publish": "TRUE"
-        },
         "body": {
             "name": "Troubleshooting",
             "icon": null,

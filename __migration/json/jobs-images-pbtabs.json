@@ -5,20 +5,8 @@
 
 
 
-    "legend" : {
-        "contentTypeId" : ""
-        ,"maxitems" : "100"
-    },
-
-
-
     "add-images-pbtabs" : {
-        "action" : "POST"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
-            "publish" : "true"
-        }
-        ,"body" : {
+        "body" : {
             "contentTypeId" : ""
             ,"name" : "scr-pbtabs-_persona_-_dashed_-E91"
             ,"description" : "Persona Bar menu"
@@ -578,6 +566,5 @@
                 "_sig_":  ""
             }
         ]
-        ,"outfile" : "processed.out"
     }
 }

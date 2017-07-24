@@ -5,21 +5,39 @@
 
 
 
-    "legend" : {
-        "contentTypeId" : ""
-        ,"maxitems" : "100"
+    "list-termdescs" : {
     },
 
 
 
-    "list-all-type-termdescs" : {
-        "action" : "GET"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
+    "TEMPLATE-add-termdescs" : {
+        "body" : {
             "contentTypeId" : ""
-            ,"maxitems" : ""
+            ,"name" : ""
+            ,"description" : ""
+            ,"details" : {
+                "term": "",
+                "description": ""
+
+            }
+            ,"tags" : [ "", "", "" ]
         }
-        ,"outfile" : "processed.out"
+    },
+    "add-termdescs-" : {
+        "permutations" : [
+            {
+                "name" : "termdesc-_name_",
+                "term": "",
+                "description": ""
+            }
+        ]
     },
 
+
+
+    "delete-termdescs-in-list" : {
+        "ids" : []
+    },
+    "deleteall-termdescs" : {
+    }
 }

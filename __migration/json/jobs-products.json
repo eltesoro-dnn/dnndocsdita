@@ -5,31 +5,13 @@
 
 
 
-    "legend" : {
-        "contentTypeId" : ""
-        ,"maxitems" : "100"
-    },
-
-
-    "list-all-type-products" : {
-        "action" : "GET"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
-            "contentTypeId" : ""
-            ,"maxitems" : ""
-        }
-        ,"outfile" : "processed.out"
+    "list-products" : {
     },
 
 
 
-    "add-products-v85-v91" : {
-        "action" : "POST"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
-            "publish" : "true"
-        }
-        ,"body" : {
+    "TEMPLATE-add-products" : {
+        "body" : {
             "contentTypeId" : ""
             ,"name" : "product-_code_"
             ,"details": {
@@ -41,7 +23,9 @@
             }
             ,"tags" : [ "_fullname_" ]
         }
-        ,"permutations" : [
+    },
+    "add-products-v85-v91" : {
+        "permutations" : [
             {
                 "_code_" : "E85"
                 ,"_fullname_" : "Evoq Engage"
@@ -127,30 +111,9 @@
                 ,"_unixdate_" : "2017-apr-26"
             }
         ]
-        ,"outfile" : "processed.out"
     },
-
-
-
     "add-products-v92" : {
-        "action" : "POST"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
-            "publish" : "true"
-        }
-        ,"body" : {
-            "contentTypeId" : ""
-            ,"name" : "product-_code_"
-            ,"details": {
-                "productName": [ "_fullname_" ]
-                ,"version": [ "_ver_" ]
-                ,"releaseDate": "_unixdate_"
-                ,"gitHub": "http://github.com/dnnsoftware/Dnn.Platform/releases/tag/v_ver_.0"
-                ,"releaseNotes": "http://www.dnnsoftware.com/docs/administrators/release-notes/relnotes-_reldate_.html"
-            }
-            ,"tags" : [ "_fullname_" ]
-        }
-        ,"permutations" : [
+        "permutations" : [
             {
                 "_code_" : "E92"
                 ,"_fullname_" : "Evoq Engage"
@@ -180,21 +143,13 @@
                 ,"_unixdate_" : "2017-mmm-dd"
             }
         ]
-        ,"outfile" : "processed.out"
     },
 
 
 
-
-
-    "delete-all-products" : {
-        "action" : "GET-DELETE"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
-            "contentTypeId" : ""
-            ,"maxitems" : ""
-        }
-        ,"id" : []
-        ,"outfile" : "processed.out"
+    "delete-products-in-list" : {
+        "ids" : []
+    },
+    "deleteall-products" : {
     }
 }

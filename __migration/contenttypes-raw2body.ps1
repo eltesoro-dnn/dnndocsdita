@@ -162,23 +162,8 @@ if ( $args.Count -gt 1 )  {
 
     # Default jobs.
     $outobj = [PSCustomObject]@{
-        legend = [PSCustomObject]@{  maxitems = "100"  }
-        "list-all-contenttypes" = [PSCustomObject]@{
-            action = "GET"
-            apicall = "ContentTypes"
-            query = [PSCustomObject]@{  maxitems = ""  }
-            outfile = "processed.out"
-        }
-        "delete-all-contenttypes" = [PSCustomObject]@{
-            action = "GET-DELETE"
-            apicall = "ContentTypes"
-            query = [PSCustomObject]@{
-                contentTypeId = ""
-                maxitems = ""
-            }
-            id = ""
-            outfile = "processed.out"
-        }
+        "list-all-contenttypes" = [PSCustomObject]@{}
+        "deleteall-contenttypes" = [PSCustomObject]@{}
     }
 
 
@@ -189,7 +174,7 @@ if ( $args.Count -gt 1 )  {
             $name = "add-contenttype-" + $ctype.name
             Write-Host "Name: $name"
             $newjob = InitJob
-            $outobj | Add-Member -Name $name -Type NoteProperty -Value $newjob
+            $outobj | Add-Member -Type NoteProperty -Name $name -Value $newjob
             $outobj.$name.body = CleanNode $ctype
         }
     }

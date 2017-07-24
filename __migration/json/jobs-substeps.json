@@ -5,21 +5,30 @@
 
 
 
-    "legend" : {
-        "contentTypeId" : ""
-        ,"maxitems" : "100"
+    "list-substeps" : {
     },
 
 
 
-    "list-all-type-substeps" : {
-        "action" : "GET"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
+    "add-substeps-" : {
+        "body" : {
             "contentTypeId" : ""
-            ,"maxitems" : ""
+            ,"name" : ""
+            ,"description" : ""
+            ,"details" : {
+
+            }
+            ,"tags" : [ "", "", "" ]
         }
-        ,"outfile" : "processed.out"
+        ,"permutations" : [
+        ]
     },
 
+
+
+    "delete-substeps-in-list" : {
+        "ids" : []
+    },
+    "deleteall-substeps" : {
+    }
 }

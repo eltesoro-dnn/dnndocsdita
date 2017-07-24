@@ -1,0 +1,106 @@
+{
+    "__NOTES__" : [
+        "Source/Basis: bptext.dita"
+    ],
+
+
+
+    "list-notes" : {
+    },
+
+
+
+    "TEMPLATE-add-notes" : {
+        "body" : {
+            "contentTypeId" : ""
+            ,"name" : ""
+            ,"description" : ""
+            ,"details" : {
+                "type" : []
+                ,"msg" : ""
+            }
+            ,"tags" : [ "", "", "" ]
+        }
+    },
+    "add-notes-bptextdita" : {
+        "permutations" : [
+            {
+                "name"  : "note-TipSkinningTool"
+                ,"type" : [ "Tip" ]
+                ,"msg"  : "<a href=http://www.10poundgorilla.com/>10 Pound Gorilla</a>'s <a href=http://www.10poundgorilla.com/DNN/Skinning-Tool>Skinning Tool</a> is both a reference and a tool that customizes the code for DNN theme objects, based on the attribute values you specify."
+            },
+            {
+                "name"  : "note-ModuleSecurityForHosts"
+                ,"type" : [ "Important" ]
+                ,"msg"  : "To improve security, grant module access only to host users, and disable the module if not used regularly."
+            },
+            {
+                "name"  : "note-ModuleSecurityForAdmins"
+                ,"type" : [ "Important" ]
+                ,"msg"  : "To improve security, restrict permissions for modules that perform administrative tasks."
+            },
+            {
+                "name"  : "note-SecurityReviewLogs"
+                ,"type" : [ "Tip" ]
+                ,"msg"  : "Review your site's logs regularly to be familiar with your traffic patterns. This practice makes it easier for you to identify unusual patterns that might indicate suspicious activity."
+            },
+            {
+                "name"  : "note-DNNContentTypesNoEdit"
+                ,"type" : [ "Note" ]
+                ,"msg"  : "Content types provided by DNN cannot be edited. To use a DNN-provided content type as a template for your own content type, you can duplicate it and customize the copy."
+            },
+            {
+                "name"  : "note-DNNContentTypesNoDel"
+                ,"type" : [ "Note" ]
+                ,"msg"  : "Content types provided by DNN cannot be deleted."
+            },
+            {
+                "name"  : "note-DNNVisualizersNoMod"
+                ,"type" : [ "Note" ]
+                ,"msg"  : "Visualizers provided by DNN cannot be edited, replaced, exported, or deleted."
+            },
+            {
+                "name"  : "note-GlobalSetting"
+                ,"type" : [ "Warning" ]
+                ,"msg"  : "This setting affects all sites in your installation."
+            },
+            {
+                "name"  : "note-RestoredVersion"
+                ,"type" : [ "Note" ]
+                ,"msg"  : "The restored version is copied to the top of the list as the most recent version."
+            },
+            {
+                "name"  : "note-CloudSupport"
+                ,"type" : [ "Important" ]
+                ,"msg"  : "If your Evoq instance is hosted on the DNN Cloud, please contact <a href=http://www.dnnsoftware.com/services/customer-support>Evoq Customer Support</a> directly. The following instructions are not applicable to DNN Cloud instances."
+            },
+            {
+                "name"  : "note-VisibleToAdminsOnly"
+                ,"type" : [ "Note" ]
+                ,"msg"  : "This module is visible to administrators only."
+            }
+        ]
+    },
+    "add-notes-" : {
+        "body" : {
+            "contentTypeId" : ""
+            ,"name" : ""
+            ,"description" : ""
+            ,"details" : {
+                "type" : []
+                ,"msg" : ""
+            }
+            ,"tags" : [ "", "", "" ]
+        }
+        ,"permutations" : [
+        ]
+    },
+
+
+
+    "delete-notes-in-list" : {
+        "ids" : []
+    },
+    "deleteall-notes" : {
+    }
+}

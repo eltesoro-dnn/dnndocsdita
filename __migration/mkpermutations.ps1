@@ -92,8 +92,8 @@ function BldJson( [string] $bptype, [string] $menutype, [string] $persona, [PSOb
     switch( $option )  {
         "images-pbar"   {  $memberarr = ( "_persona_", "_dashed_", "_menualt_", "_sig_" )  }
         "images-pbtabs" {  $memberarr = ( "_persona_", "_dashed_", "_menualt_", "_sig_" )  }
-        "steps-pbar"    {  $memberarr = ( "_persona_", "_dashed_", "_menucasc_", "_imageciname_", "_imageid_" )  }
-        "steps-pbtabs"  {  $memberarr = ( "_persona_", "_dashed_", "_tab1cmd_", "_tab2cmd_", "_imageciname_", "_imageid_" )  }
+        "steps-pbar"    {  $memberarr = ( "_persona_", "_dashed_", "_menucasc_", "_id-image_" )  }
+        "steps-pbtabs"  {  $memberarr = ( "_persona_", "_dashed_", "_tab1cmd_", "_tab2cmd_", "_id-image_" )  }
         default         {  $memberarr = @(); Write-Host "WARNING: Menu type is not recognized: $menutype"  }
     }
 
@@ -117,16 +117,15 @@ function BldJson( [string] $bptype, [string] $menutype, [string] $persona, [PSOb
             "_dashed_"    { $val = $menuarr }
             "_menualt_"   { $val = $menuarr }
             "_menucasc_"  { $val = $menuarr }
-            "_tab1cmd_"   { $val = ""; if ( IsValid $tab1 ) { $val = "Go to the <span class=""uicontrol"">$tab1</span> tab" } }
-            "_tab2cmd_"   { $val = ""; if ( IsValid $tab2 ) { $val = ", and then the <span class=""uicontrol"">$tab2</span> subtab" } }
-            "_imageciname_"  {
+            "_tab1cmd_"   { $val = ""; if ( IsValid $tab1 ) { $val = "Go to the <uicontrol>$tab1</uicontrol> tab" } }
+            "_tab2cmd_"   { $val = ""; if ( IsValid $tab2 ) { $val = ", and then the <uicontrol>$tab2</uicontrol> subtab" } }
+            "_id-image_"  {
                 switch( $option )  {
                     "steps-pbar"    { $val = "scr-pbar-$persona-$dashed-E91" }
                     "steps-pbtabs"  { $val = "scr-pbtabs-$persona-$dashed-E91" }
                     default         { $val = "" }
                 }
             }
-            "_imageid_"   { $val = "" }
             "_sig_"       { $val = "" }
             default       { $val = "" }
         }

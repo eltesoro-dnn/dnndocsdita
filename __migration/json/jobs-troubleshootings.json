@@ -5,21 +5,32 @@
 
 
 
-    "legend" : {
-        "contentTypeId" : ""
-        ,"maxitems" : "100"
+    "list-troubleshootings" : {
     },
 
 
 
-    "list-all-type-troubleshootings" : {
-        "action" : "GET"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
+    "TEMPLATE-add-troubleshootings" : {
+        "body" : {
             "contentTypeId" : ""
-            ,"maxitems" : ""
+            ,"name" : ""
+            ,"description" : ""
+            ,"details" : {
+
+            }
+            ,"tags" : [ "", "", "" ]
         }
-        ,"outfile" : "processed.out"
+    },
+    "add-troubleshootings-" : {
+        "permutations" : [
+        ]
     },
 
+
+
+    "delete-troubleshootings-in-list" : {
+        "ids" : []
+    },
+    "deleteall-troubleshootings" : {
+    }
 }

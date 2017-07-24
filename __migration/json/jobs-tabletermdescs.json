@@ -5,32 +5,39 @@
 
 
 
-    "list-choices" : {
+    "list-tabletermdescs" : {
     },
 
 
 
-    "TEMPLATE-add-choices" : {
+    "TEMPLATE-add-tabletermdescs" : {
         "body" : {
             "contentTypeId" : ""
             ,"name" : ""
             ,"description" : ""
             ,"details" : {
+                "term": "",
+                "description": ""
 
             }
             ,"tags" : [ "", "", "" ]
         }
     },
-    "add-choices-" : {
+    "add-tabletermdescs-" : {
         "permutations" : [
+            {
+                "name" : "termdesc-_name_",
+                "term": "",
+                "description": ""
+            }
         ]
     },
 
 
 
-    "delete-choices-in-list" : {
+    "delete-tabletermdescs-in-list" : {
         "ids" : []
     },
-    "deleteall-choices" : {
+    "deleteall-tabletermdescs" : {
     }
 }

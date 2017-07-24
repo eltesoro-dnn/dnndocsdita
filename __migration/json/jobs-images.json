@@ -5,44 +5,14 @@
 
 
 
-    "legend" : {
-        "contentTypeId" : ""
-        ,"maxitems" : "100"
-    },
-
-
-
-    "list-all-type-images" : {
-        "action" : "GET"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
-            "contentTypeId" : ""
-            ,"maxitems" : ""
-        }
-        ,"outfile" : "processed.out"
+    "list-images-all" : {
     },
 
 
 
     "delete-images-in-list" : {
-        "action" : "DELETE"
-        ,"apicall" : "ContentItems"
-        ,"id" : [
-             ""
-            ,""
-            ,""
-            ,""
-        ]
-        ,"outfile" : "processed.out"
+        "ids" : []
     },
-    "delete-all-images" : {
-        "action" : "GET-DELETE"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
-            "contentTypeId" : ""
-            ,"maxitems" : ""
-        }
-        ,"id" : []
-        ,"outfile" : "processed.out"
+    "deleteall-images" : {
     }
 }

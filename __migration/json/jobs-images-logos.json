@@ -1,0 +1,70 @@
+{
+    "__NOTES__" : [
+        "Source/Basis: bptext-pbar.dita"
+    ],
+
+
+
+    "add-images-logos" : {
+        "body" : {
+            "contentTypeId" : ""
+            ,"name" : "_imgname_"
+            ,"description" : "Product icon"
+            ,"details" : {
+                "imageFile" : [
+                    {
+                        "fileId": 0
+                        ,"fileName": "_imgname_._imgext_"
+                        ,"url": "https://dnnteuyw4.blob.core.windows.net/portals/7/Persona%20Bar%20menus/_imgname_._imgext_?sr=b&si=DNNFileManagerPolicy&sig=_sig_"
+                    }
+                ]
+                ,"altText": "_alttext_"
+            }
+            ,"tags" : [ "persona bar", "pbar", "menu", "_menualt_", "_persona_", "E91" ]
+        }
+        ,"permutations" : [
+            {
+                "_imgname_"   : "logo-dnn-platform"
+                ,"_imgext_"   : "png"
+                ,"_alttext_"  : "DNN Platform"
+                ,"_sig_"      : ""
+            },
+            {
+                "_imgname_"   : "logo-evoq-basic"
+                ,"_imgext_"   : "png"
+                ,"_alttext_"  : "Evoq Basic"
+                ,"_sig_"      : ""
+            },
+            {
+                "_imgname_"   : "logo-evoq-basic"
+                ,"_imgext_"   : "svg"
+                ,"_alttext_"  : "Evoq Basic"
+                ,"_sig_"      : ""
+            },
+            {
+                "_imgname_"   : "logo-evoq-content"
+                ,"_imgext_"   : "png"
+                ,"_alttext_"  : "Evoq Content"
+                ,"_sig_"      : ""
+            },
+            {
+                "_imgname_"   : "logo-evoq-content"
+                ,"_imgext_"   : "svg"
+                ,"_alttext_"  : "Evoq Content"
+                ,"_sig_"      : ""
+            },
+            {
+                "_imgname_"   : "logo-evoq-engage"
+                ,"_imgext_"   : "png"
+                ,"_alttext_"  : "Evoq Engage"
+                ,"_sig_"      : ""
+            },
+            {
+                "_imgname_"   : "logo-evoq-engage"
+                ,"_imgext_"   : "svg"
+                ,"_alttext_"  : "Evoq Engage"
+                ,"_sig_"      : ""
+            }
+        ]
+    }
+}

@@ -1,0 +1,125 @@
+{
+    "__NOTES__" : [
+        "Source/Basis: bptext-pbtabs.dita, bptext.dita"
+    ],
+
+
+
+    "list-passages" : {
+    },
+
+
+
+    "TEMPLATE-add-passages" : {
+        "body" : {
+            "contentTypeId" : ""
+            ,"name" : ""
+            ,"description" : ""
+            ,"details" : {
+                "text": "",
+                "image": [],
+                "steps": []
+            }
+            ,"tags" : [ "", "", "" ]
+        }
+    },
+    "add-passages-bptextdita" : {
+        "permutations" : [
+            {
+                "name" : "passage-rfc2119"
+                ,"text" : "The key words &quot;MUST&quot;, &quot;MUST NOT&quot;, &quot;REQUIRED&quot;, &quot;SHALL&quot;, &quot;SHALL NOT&quot;, &quot;SHOULD&quot;, &quot;SHOULD NOT&quot;, &quot;RECOMMENDED&quot;,  &quot;MAY&quot;, and &quot;OPTIONAL&quot; in this document are to be interpreted as described in <a href=https://www.ietf.org/rfc/rfc2119.txt>RFC 2119</a>."
+            },
+            {
+                "name" : "passage-contactsupport"
+                ,"text" : "Contact <a href=http://www.dnnsoftware.com/services/customer-support>Customer Support</a>."
+            },
+            {
+                "name" : "passage-3rdPartyExtensions"
+                ,"text" : "Thousands of third-party modules and themes are available from these sources:<ul><li><a href=http://store.dnnsoftware.com>DNN Store</a>: Extensions for sale. Some developers provide versions that include the source code.</li><li><a href=http://www.DNNSoftware.com/Forge>DNN Forge</a>: Open source and free extensions.</li></ul>"
+            },
+            {
+                "name" : "passage-ul-publisheddatespages"
+                ,"text" : "<ul><li>The page is published after the specified start date. If <uicontrol>Start Date</uicontrol> is not set, the page is published immediately.</li><li>The page is hidden after the specified end date. If <uicontrol>End Date</uicontrol> is not set, the page is visible indefinitely.</li></ul>"
+            },
+            {
+                "name" : "passage-ul-publisheddatesmodules"
+                ,"text" : "<ul><li>The module is published after the specified start date. If <uicontrol>Start Date</uicontrol> is not set, the module is published immediately.</li><li>The module is hidden after the specified end date. If <uicontrol>End Date</uicontrol> is not set, the module is visible indefinitely.</li></ul>"
+            }
+        ]
+    },
+    "add-passages-bptextdita-prodavail" : {
+        "permutations" : [
+            {
+                "image" : [ "_id-image-P_", "_id-image-B_", "_id-image-C_", "_id-image-E_" ]
+                ,"_prodcode_" : "PBCE"
+                ,"_id-image-P_" : "logo-dnn-platform"
+                ,"_id-image-B_" : "logo-evoq-basic"
+                ,"_id-image-C_" : "logo-evoq-content"
+                ,"_id-image-E_" : "logo-evoq-engage"
+            },
+            {
+                "image" : [ "_id-image-B_", "_id-image-C_", "_id-image-E_" ]
+                ,"_prodcode_" : "BCE"
+                ,"_id-image-B_" : "logo-evoq-basic"
+                ,"_id-image-C_" : "logo-evoq-content"
+                ,"_id-image-E_" : "logo-evoq-engage"
+            },
+            {
+                "image" : [ "_id-image-C_", "_id-image-E_" ]
+                ,"_prodcode_" : "CE"
+                ,"_id-image-C_" : "logo-evoq-content"
+                ,"_id-image-E_" : "logo-evoq-engage"
+            },
+            {
+                "image" : [ "_id-image-E_" ]
+                ,"_prodcode_" : "E"
+                ,"_id-image-E_" : "logo-evoq-engage"
+            }
+        ]
+    },
+    "add-passages-bptextpbtabsdita" : {
+        "permutations" : [
+            {
+                "name" : "passage-fieldadd"
+                ,"text" : "To add a new field, drag and drop a field type to the canvas, then configure its settings."
+            },
+            {
+                "name" : "passage-fieldedit"
+                ,"text" : "To edit a field, click/tap on the field in the canvas, then configure its settings."
+            },
+            {
+                "name" : "passage-fielddup"
+                ,"text" : "To duplicate a field, hover over the field in the canvas, click/tap the duplicate icon, then configure the settings of the new copy."
+            },
+            {
+                "name" : "passage-fielddel"
+                ,"text" : "To delete a field, hover over the field in the canvas, and click/tap the trash icon."
+            },
+            {
+                "name" : "passage-oldterm"
+                ,"text" : "This is the old term, still used in some APIs and UI controls."
+            },
+            {
+                "name" : "passage-support-url"
+                ,"text" : "<a href=http://www.dnnsoftware.com/services/customer-support>Evoq Customer Support</a>"
+            },
+            {
+                "name" : "passage-pbar-varies"
+                ,"text" : "The Persona Bar varies according to the product and to the permissions granted to the current authenticated (logged-in) user through roles. Examples: A host or superuser has access to almost all menu items, whereas a community manager would have access to only the features required to manage the community-related aspects of the site. Likewise, Evoq Content does not have the community-related menu items that Evoq Engage has."
+            },
+            {
+                "name"   : "passage-selectfilebox"
+                ,"image" : [ "scr-selectfilebox.gif" ]
+                ,"text"  : "You can use one of the following methods to select the file:<ul><li>Drag and drop the file to the box.</li><li>Select from the files in your site folder.</li><li>Upload a file.</li><li>Link to a file.</li></ul>"
+            }
+        ]
+    },
+
+
+
+    "delete-passages-in-list" : {
+        "ids" : []
+    },
+    "deleteall-passages" : {
+    }
+}

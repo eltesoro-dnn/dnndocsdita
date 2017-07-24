@@ -1,25 +1,71 @@
 {
     "__NOTES__" : [
-        "Source/Basis: bptext-pbtabs.dita"
+        "Source/Basis: bptext.dita > Prerequisites"
     ],
 
 
 
-    "legend" : {
-        "contentTypeId" : ""
-        ,"maxitems" : "100"
+    "list-requisites" : {
     },
 
 
 
-    "list-all-type-requisites" : {
-        "action" : "GET"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
+    "TEMPLATE-add-requisites" : {
+        "body" : {
             "contentTypeId" : ""
-            ,"maxitems" : ""
+            ,"name" : "_name_"
+            ,"description" : ""
+            ,"language": "en"
+            ,"details": {
+                "reqList": "_req_"
+            }
+            ,"tags" : [ "_tag_", "E91" ]
         }
-        ,"outfile" : "processed.out"
+    },
+    "add-requisites-bptextdita" : {
+        "permutations" : [
+            {
+                "_name_" : "prereq-host"
+                ,"_req_" : "<b>A host / superuser account is required.</b> Hosts have full permissions to all sites in the DNN instance."
+                ,"_tag_" : "host"
+            },
+            {
+                "_name_" : "prereq-hostformodulesthemes"
+                ,"_req_" : "A host account is required to upload modules and themes, because they might contain executable code. (An administrator account is sufficient to apply modules and themes to a website.)"
+                ,"_tag_" : "host"
+            },
+            {
+                "_name_" : "prereq-admin"
+                ,"_req_" : "<b>An administrator account for the site is required.</b> Administrators have full permissions to the specific site."
+                ,"_tag_" : "adm"
+            },
+            {
+                "_name_" : "prereq-communitymgr"
+                ,"_req_" : "<b>A community manager account for the site is required.</b> Community managers have access to community-related features and settings in Evoq Engage."
+                ,"_tag_" : "cmg"
+            },
+            {
+                "_name_" : "prereq-microservicesenabled"
+                ,"_req_" : "Microservices must be enabled for your site."
+                ,"_tag_" : "microservices"
+            },
+            {
+                "_name_" : "prereq-fbscmicroservicesenabled"
+                ,"_req_" : "Both the Form Builder and the Structured Content microservices must be enabled for your site."
+                ,"_tag_" : "microservices"
+            }
+        ]
+    },
+    "add-requisites-" : {
+        "permutations" : [
+        ]
     },
 
+
+
+    "delete-requisites-in-list" : {
+        "ids" : [ "" ]
+    },
+    "deleteall-requisites" : {
+    }
 }

@@ -38,6 +38,136 @@
             <title>Liquid Content&#8482; (Structured Content) APIs</title>
 
             <p>The <term>Liquid Content&#8482; (Structured Content)</term> APIs expose the content types and content items in a site.</p>
+
+            <p>Different actions require different data in different components of the web request.</p>
+
+        </section>
+
+
+        <section id="section-contenttypes">
+            <title>Content Types</title>
+
+            <simpletable relcolwidth="5* 1* 3* 3* 3*">
+                <sthead>
+                    <stentry></stentry>
+                    <stentry>HTTP Method</stentry>
+                    <stentry>URL</stentry>
+                    <stentry>Query</stentry>
+                    <stentry>Body</stentry>
+                </sthead>
+                <strow>
+                    <stentry><xref format="dita" scope="peer" href="http://localhost/docs/api/api-contenttypes-get.html">To get multiple content types using a filter</xref></stentry>
+                    <stentry>GET</stentry>
+                    <stentry></stentry>
+                    <stentry>
+                        <ul>
+                            <li><varname>maxitems</varname></li>
+                            <li>and other filters</li>
+                        </ul>
+                    </stentry>
+                    <stentry></stentry>
+                </strow>
+                <strow>
+                    <stentry><xref format="dita" scope="peer" href="http://localhost/docs/api/api-contenttypes-id-get.html">To get a specific content type</xref></stentry>
+                    <stentry>GET</stentry>
+                    <stentry>ID of content type to get</stentry>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+                <strow>
+                    <stentry><xref format="dita" scope="peer" href="http://localhost/docs/api/api-contenttypes-post.html">To create a content type</xref></stentry>
+                    <stentry>POST</stentry>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                    <stentry>
+                        <ul>
+                            <li><varname>name</varname></li>
+                            <li><varname>icon</varname></li>
+                            <li><varname>description</varname></li>
+                            <li><varname>fields</varname></li>
+                            <li><varname>properties</varname></li> <!-- Why is this required? -->
+                        </ul>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry><xref format="dita" scope="peer" href="http://localhost/docs/api/api-contenttypes-id-put.html">To update a specific content type</xref></stentry>
+                    <stentry>PUT</stentry>
+                    <stentry>ID of content type to update</stentry>
+                    <stentry></stentry>
+                    <stentry>fields to update</stentry>
+                </strow>
+                <strow>
+                    <stentry><xref format="dita" scope="peer" href="http://localhost/docs/api/api-contenttypes-id-delete.html">To delete a specific content type</xref></stentry>
+                    <stentry>DELETE</stentry>
+                    <stentry>ID of content type to delete</stentry>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+            </simpletable>
+        </section>
+
+
+        <section id="section-contentitems">
+            <title>Content Items</title>
+
+            <simpletable relcolwidth="5* 1* 3* 3* 3*">
+                <sthead>
+                    <stentry></stentry>
+                    <stentry>HTTP Method</stentry>
+                    <stentry>URL</stentry>
+                    <stentry>Query</stentry>
+                    <stentry>Body</stentry>
+                </sthead>
+                <strow>
+                    <stentry><xref format="dita" scope="peer" href="http://localhost/docs/api/api-contentitems-get.html">To get multiple content items using a filter</xref></stentry>
+                    <stentry>GET</stentry>
+                    <stentry></stentry>
+                    <stentry>
+                        <ul>
+                            <li><varname>contentTypeId</varname></li>
+                            <li><varname>maxitems</varname></li>
+                            <li>and other filters</li>
+                        </ul>
+                    </stentry>
+                    <stentry></stentry>
+                </strow>
+                <strow>
+                    <stentry><xref format="dita" scope="peer" href="http://localhost/docs/api/api-contentitems-id-get.html">To get a specific content item</xref></stentry>
+                    <stentry>GET</stentry>
+                    <stentry>ID of content item to get</stentry>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+                <strow>
+                    <stentry><xref format="dita" scope="peer" href="http://localhost/docs/api/api-contentitems-post.html">To create a content item</xref></stentry>
+                    <stentry>POST</stentry>
+                    <stentry></stentry>
+                    <stentry><varname>publish</varname></stentry>
+                    <stentry>
+                        <ul>
+                            <li><varname>contentTypeId</varname></li>
+                            <li><varname>name</varname></li>
+                            <li><varname>description</varname></li>
+                            <li><varname>fields</varname></li>
+                            <li><varname>properties</varname></li> <!-- Why is this required? -->
+                        </ul>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry><xref format="dita" scope="peer" href="http://localhost/docs/api/api-contentitems-id-put.html">To update a specific content item</xref></stentry>
+                    <stentry>PUT</stentry>
+                    <stentry>ID of content item to update</stentry>
+                    <stentry><varname>publish</varname></stentry>
+                    <stentry>fields to update</stentry>
+                </strow>
+                <strow>
+                    <stentry><xref format="dita" scope="peer" href="http://localhost/docs/api/api-contentitems-id-delete.html">To delete a specific content item</xref></stentry>
+                    <stentry>DELETE</stentry>
+                    <stentry>ID of content item to delete</stentry>
+                    <stentry></stentry>
+                    <stentry></stentry>
+                </strow>
+            </simpletable>
         </section>
 
     </body>

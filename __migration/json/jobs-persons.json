@@ -5,31 +5,13 @@
 
 
 
-    "legend" : {
-        "contentTypeId" : ""
-        ,"maxitems" : "100"
+    "list-persons" : {
     },
 
 
 
-    "list-all-type-persons" : {
-        "action" : "GET"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
-            "contentTypeId" : ""
-            ,"maxitems" : ""
-        }
-        ,"outfile" : "processed.out"
-    },
-
-
-    "add-persons" : {
-        "action" : "POST"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
-            "publish" : "true"
-        }
-        ,"body" : {
+    "TEMPLATE-add-persons" : {
+        "body" : {
             "contentTypeId" : ""
             ,"name": "_fn_ _ln_"
             ,"description" : ""
@@ -46,7 +28,9 @@
             }
             ,"tags" : [ "_fn_ _ln_", "_roles_" ]
         }
-        ,"permutations" : [
+    }
+    "add-persons-contributors" : {
+        "permutations" : [
             {
                 "_fn_" : "Bruce"
                 ,"_ln_" : "Chapman"
@@ -237,18 +221,13 @@
         ]
         ,"ARCHIVE" : [
         ]
-        ,"outfile" : "processed.out"
     },
 
-    "delete-all-persons" : {
-        "action" : "GET-DELETE"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
-            "contentTypeId" : ""
-            ,"maxitems" : ""
-        }
-        ,"id" : []
-        ,"outfile" : "processed.out"
-    }
 
+
+    "delete-persons" : {
+        "ids" : []
+    },
+    "deleteall-persons" : {
+    }
 }

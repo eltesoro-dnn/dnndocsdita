@@ -5,21 +5,32 @@
 
 
 
-    "legend" : {
-        "contentTypeId" : ""
-        ,"maxitems" : "100"
+    "list-conceptuals" : {
     },
 
 
 
-    "list-all-type-conceptuals" : {
-        "action" : "GET"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
+    "TEMPLATE-add-conceptuals" : {
+        "body" : {
             "contentTypeId" : ""
-            ,"maxitems" : ""
+            ,"name" : ""
+            ,"description" : ""
+            ,"details" : {
+
+            }
+            ,"tags" : [ "", "", "" ]
         }
-        ,"outfile" : "processed.out"
+    },
+    "add-conceptuals-" : {
+        "permutations" : [
+        ]
     },
 
+
+
+    "delete-conceptuals-in-list" : {
+        "ids" : []
+    },
+    "deleteall-conceptuals" : {
+    }
 }

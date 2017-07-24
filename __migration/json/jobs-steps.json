@@ -1,31 +1,34 @@
 {
-    "legend" : {
-        "contentTypeId" : ""
-        ,"maxitems" : "100"
+    "__NOTES__" : [
+        "Source/Basis: bptext-pbtabs.dita"
+    ],
+
+
+
+    "list-steps" : {
     },
 
 
 
-    "list-all-type-steps" : {
-        "action" : "GET"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
+    "add-steps-" : {
+        "body" : {
             "contentTypeId" : ""
-            ,"maxitems" : ""
+            ,"name" : ""
+            ,"description" : ""
+            ,"details" : {
+
+            }
+            ,"tags" : [ "", "", "" ]
         }
-        ,"outfile" : "processed.out"
+        ,"permutations" : [
+        ]
     },
 
 
 
-    "delete-all-steps" : {
-        "action" : "GET-DELETE"
-        ,"apicall" : "ContentItems"
-        ,"query" : {
-            "contentTypeId" : ""
-            ,"maxitems" : ""
-        }
-        ,"id" : []
-        ,"outfile" : "processed.out"
+    "delete-steps-in-list" : {
+        "ids" : []
+    },
+    "deleteall-steps" : {
     }
 }
