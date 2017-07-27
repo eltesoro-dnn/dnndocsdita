@@ -5,30 +5,32 @@
 
 
 
-    "list-tabletermdescs" : {
+    "listall-tabletermdescs" : {
     },
 
 
 
     "TEMPLATE-add-tabletermdescs" : {
         "body" : {
-            "contentTypeId" : ""
-            ,"name" : ""
+            "name" : ""
             ,"description" : ""
             ,"details" : {
-                "term": "",
-                "description": ""
-
+                "rows": [
+                ]
             }
             ,"tags" : [ "", "", "" ]
         }
     },
-    "add-tabletermdescs-" : {
+    "add-tabletermdescs" : {
         "permutations" : [
             {
-                "name" : "termdesc-_name_",
-                "term": "",
-                "description": ""
+                "name" : "tabletermdesc-test"
+                ,"rows" : [
+                    "_id-termdesc-1_"
+                    ,"_id-termdesc-2_"
+                ]
+                ,"_id-termdesc-1_" : "my term-desc pair"
+                ,"_id-termdesc-2_" : "my second term-desc"
             }
         ]
     },

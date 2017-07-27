@@ -1,5 +1,9 @@
 @echo off
 
+:. Refresh settings*.json to provide the IDs for referenced content types.
+    call dnnps.bat listall-contenttypes
+
+
 call dnnps.bat add-contenttype-Image
 
 call dnnps.bat add-contenttype-Note
@@ -11,8 +15,7 @@ call dnnps.bat add-contenttype-Product
 call dnnps.bat add-contenttype-TermDesc
 
 
-:. Refresh settings*.json.
-    call dnnps.bat list-all-contenttypes
+    call dnnps.bat listall-contenttypes
 
 
 :. Requires Image
@@ -23,30 +26,30 @@ call dnnps.bat add-contenttype-Substep
 call dnnps.bat add-contenttype-TableTermDesc
 
 
-    call dnnps.bat list-all-contenttypes
+    call dnnps.bat listall-contenttypes
 
 
 :. Requires Choice, Substep
 call dnnps.bat add-contenttype-Step
 
 
-    call dnnps.bat list-all-contenttypes
+    call dnnps.bat listall-contenttypes
 
 
 :. Requires Image, Step
 call dnnps.bat add-contenttype-Passage
 
 
-    call dnnps.bat list-all-contenttypes
+    call dnnps.bat listall-contenttypes
 
 
-:. Requires Passge
+:. Requires Passage
 call dnnps.bat add-contenttype-Section
 :. Requires Requisite, Choice, Step
 call dnnps.bat add-contenttype-Solution
 
 
-    call dnnps.bat list-all-contenttypes
+    call dnnps.bat listall-contenttypes
 
 
 :. Requires Product, Person, Section
@@ -59,9 +62,4 @@ call dnnps.bat add-contenttype-Task
 call dnnps.bat add-contenttype-Troubleshooting
 
 
-    call dnnps.bat list-all-contenttypes
-
-
-:. Archive
-echo Copying to out\contenttypes*.out . . . .
-for %%v in ( raw processed ) do copy /v /y %%v.out out\contenttypes-%%v.out
+    call dnnps.bat listall-contenttypes

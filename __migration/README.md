@@ -10,18 +10,24 @@ Prereq: A clean site
     ## Update dnnps.bat with the new value of %bldsite%.
 
 # Content types
-    ## To create content types in the new site, run newcontenttypes.bat.
+    ## dnnps listall-contenttypes
+    ## createcontenttypes.bat
     ## Verify that contenttypeids list is updated in settings-doccenter-*.json
-    ## To add a new content type or update an existing one:
+    ## (Maintenance) To add a new content type or update an existing one:
         ### In the green-room site, manually add a new content type or update an existing one.
-        ### dnnps list-contenttypes
-        ### contenttypes-raw2body.bat
+        ### dnnps listall-contenttypes (to generate raw.out)
+        ### contenttypes-raw2body.bat (to update jobs-contenttypes.json )
+        ### Update createcontenttypes.bat with the new content type, if any.
+        ### dnnps add-contenttype-nameofnewtype
+        ### dnnps update-contenttype-nameoftypetoupdate
+        ### dnnps listall-contenttypes
 
 
 
 PERSONS
-# Create the content items for persons.
-    dnnps add-persons
+# Create the content items for contributors.
+    dnnps add-persons-contributors
+    dnnps listall-persons
 
 
 
@@ -36,11 +42,11 @@ PERSONA BAR AND TABS
 # Create the content items.
     dnnps add-images-pbar
     dnnps add-images-pbtabs
-    dnnps list-all-type-images
+    dnnps listall-images
 
     dnnps add-steps-pbar-menu
     dnnps add-steps-pbtabs
-    dnnps list-all-type-steps
+    dnnps listall-steps
 
 
 
@@ -58,11 +64,11 @@ PRODUCT LOGOS
 
 # Create the content items.
     dnnps add-images-logos
-    dnnps list-all-type-images
+    dnnps listall-images
 
     dnnps add-products-v85-v91
-    dnnps add-products-v92
-    dnnps list-all-type-products
+    :. dnnps add-products-v92
+    dnnps listall-products
 
 
 
@@ -73,18 +79,21 @@ OTHER CONTENT
 
 # Create the content items.
     dnnps add-images-...
-    dnnps list-all-type-images
+    dnnps listall-images
+
+
+
+OTHER CONTENT
+
+# Create the content items.
 
     dnnps add-requisites-bptextdita
-    dnnps list-all-type-requisites
+    dnnps listall-requisites
 
     dnnps add-notes-bptextdita
-    dnnps list-all-type-notes
+    dnnps listall-notes
 
     dnnps add-passages-bptextdita
     dnnps add-passages-bptextpbtabsdita
-    dnnps list-all-type-passages
-
-
-
+    dnnps listall-passages
 

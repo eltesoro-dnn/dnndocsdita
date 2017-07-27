@@ -21,7 +21,7 @@
 
 
 
-    "TEMPLATE-list-contentitems-" : {
+    "TEMPLATE-listall-contentitems" : {
         "query" : {
             "published " : "true"
             ,"tags" : "my%20tag,tag2,lastTag"
@@ -34,7 +34,7 @@
             ,"createdTo" : ""
         }
     },
-    "TEMPLATE-list-contentitems" : {
+    "TEMPLATE-listall-contentitems" : {
         "ids" : []
     },
 

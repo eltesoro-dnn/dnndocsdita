@@ -3,6 +3,7 @@
 
     <xsl:template match="/|node()|@*" mode="gen-user-head">
             <script language="JavaScript" src="/docs/_theme/headscripts.js"></script>
+            <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
     </xsl:template>
 
 </xsl:stylesheet>

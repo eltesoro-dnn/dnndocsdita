@@ -12,7 +12,7 @@
 
 $apiurl = "https://dnnapi.com/content/api"
 $mimetype = "application/json"
-$maxitems = 100
+$maxitems = 1000
 
 
 # $APICALLS = @( "ContentTypes", "ContentItems" )
@@ -27,7 +27,7 @@ function Usage()  {
 
 
     $examples = @(
-        "powershell -file $script settings.json jobs-sections.json list-all-contenttypes"
+        "powershell -file $script settings.json jobs-sections.json listall-contenttypes"
         )
 
     Write-Host "Usage: " $usage
@@ -74,13 +74,36 @@ function PSObj2Str( [PSObject] $queryobj, [string] $separator )  {
 }
 
 
+function IsContentType( [string] $jobname )  {
+    $arr = $jobname.Split( "-_", [System.StringSplitOptions]::RemoveEmptyEntries )
+    if ( $arr.Length -lt 2 )                              {  return $false  }
+    if ( $arr[1].ToLower().StartsWith( "contenttype" ) )  {  return $true  }
+    else                                                  {  return $false  }
+}
+function GetContentTypeName( [string] $jobname )  {
+    $arr = $jobname.Split( "-", [System.StringSplitOptions]::RemoveEmptyEntries )
+    if ( $arr.Length -gt 1 )  {  return $arr[1]  }
+    else                      {  return ""  }
+}
+# BUGBUG: Accesses the $ctypeidlist var directly.
+# $ctypename must be singular to match the names in $ctypeidlist.
+function GetContentTypeID( [string] $ctypename )  {
+    if ( $ctypeidlist.$ctypename )  {  return $ctypeidlist.$ctypename  }
+    else                            {  return ""  }
+}
 # Gets the contenttype ID from the settings file, based on the contenttype embedded in the jobname.
-function GetContentTypeNameID( [string] $jobname, [PSObject] $ctypeidlist )  {
+function GetContentTypeNameID( [string] $jobname )  {
     $arr = @()
-    foreach ( $name in $ctypeidlist.psobject.properties.name )   {
-        $namelc = "-" + $name.ToLower()
-        if ( $jobname.ToLower().Contains( $namelc ) )  {
-            $arr = @( $name, $ctypeidlist.$name )
+    $jobctname = GetContentTypeName $jobname
+    if ( $jobctname.Contains( "contenttype" ) )  {
+        $arr = @( "contenttype", "" )
+    }
+    else  {
+        foreach ( $name in $ctypeidlist.psobject.properties.name )   {
+            $namelc = "-" + $name.ToLower()
+            if ( $jobname.ToLower().Contains( $namelc ) )  {
+                $arr = @( $name, $ctypeidlist.$name )
+            }
         }
     }
     return $arr
@@ -156,14 +179,9 @@ function ReplaceWithLegend( [PSCustomObject] $tgtnode, [PSCustomObject] $legendn
     return $tgtnode
 }
 
-function IsContentType( [string] $jobname )  {
-    $arr = $jobname.Split( "-_", [System.StringSplitOptions]::None )
-    if ( $arr[1].ToLower().StartsWith( "contenttype" ) )  { return $true }
-    else                                                  { return $false }
-}
-
 function GetAction( [string] $jobname )  {
     if ( $jobname.StartsWith( "list-"      ) )  { return "GET" }
+    if ( $jobname.StartsWith( "listall-"   ) )  { return "GET" }
     if ( $jobname.StartsWith( "add-"       ) )  { return "POST" }
     if ( $jobname.StartsWith( "update-"    ) )  { return "PUT" }
     if ( $jobname.StartsWith( "delete-"    ) )  { return "DELETE" }
@@ -175,13 +193,8 @@ function GetAPICall( [string] $jobname )  {
     else                           { return "ContentItems" }
 }
 
-function GetContentTypeID( [string] $jobname )  {
-    $arr = $jobname.Split( "-_", [System.StringSplitOptions]::None )
-    return $arr[1]
-}
-
 function GetJobPrefix( [string] $jobname, [int32] $count )  {
-    $arr = $jobname.Split( "-_", [System.StringSplitOptions]::None )
+    $arr = $jobname.Split( "-_", [System.StringSplitOptions]::RemoveEmptyEntries )
     $i = $count - 1
     return [string]::Join( "-", $arr[0..$i] )
 }
@@ -190,21 +203,27 @@ function GetJobPrefix( [string] $jobname, [int32] $count )  {
 function CreateOrUpdateNode( [PSObject] $parent, [string] $key, [string] $valstr, [PSObject] $valobj )  {
     if     ( IsValid $valstr )  { $value = $valstr }
     elseif ( IsValid $valobj )  { $value = $valobj }
+    else                        { $value = "" }
 
-    if ( $parent.$key )  {
-        $parent.$key = $value
+    if ( IsValid $value )  {
+        if ( $parent.psobject.properties.name -contains $key )  {
+            $parent.$key = $value
+        }
+        else {
+            $parent | Add-Member -Type NoteProperty -Name $key -Value $value
+        }
     }
-    else {
-        $parent | Add-Member -Type NoteProperty -Name $key -Value $value
+    else  {
+        $parent = $parent | Select-Object -Property * -ExcludeProperty $key
     }
 
     return $parent
 }
 
-# For content types only. If $jobnode.body.fields includes references to another contenttype, check if that contenttype already exists. If it exists, get its ID; otherwise, error message.
-function ReplaceRefsToOtherCTs( [PSObject] $jobnode )  {
+# For content types only. If $bodynode.fields includes references to another contenttype, check if that contenttype already exists. If it exists, get its ID; otherwise, error message.
+function ReplaceRefsToOtherCTs( [PSObject] $bodynode )  {
     #  Get IDs of referenced contenttypes from the site settings.
-    $jobnode.body.fields | foreach  {
+    $bodynode.fields | foreach  {
         if ( IsValid $_.allowedContentTypeName )  {
             $ctypename = $_.allowedContentTypeName
             $ctid = GetContentTypeID $ctypename
@@ -217,28 +236,34 @@ function ReplaceRefsToOtherCTs( [PSObject] $jobnode )  {
             }
         }
     }
-    return $jobnode
+    return $bodynode
 }
 
 # Returns one permutation.
 function MkPerm( [PSCustomObject] $body, [PSCustomObject] $perm )  {
     $ignorearr = @( "id" )
 
-    # Do not copy non-existent _*_ keys.
+    # Do not copy keys that are not in the target $body (_*_ keys).
     $body = ReplaceWithLegend $body $perm $false
 
-    # Convert to string for easier replacements.
+    # Convert to string for easier replacements of the _*_ keys.
     $template = $body | ConvertTo-Json -Depth 10
 
     # Replace the _*_ vars.
     foreach ( $key in $perm.psobject.properties.name ) {
         if (( $ignorearr -notcontains $key ) -and ( $key.StartsWith( "_" ) ))  {
-            # Get the ID of the referenced content item.
-            # Example: "_id-ctype-foo_" = "nameofmycontentitem" will get the ID of the content item "foo" of type "ctype".
+
             $newval = $perm.$key
+
+            # Get the ID of the referenced content item.
+            # Example: "_id-ctype-foo_" = "nameofmycontentitem" will get the ID of the content item "nameofmycontentitem" of type "ctype".
+            # NOTE: ctype must be singular.
             if ( $key.StartsWith( "_id-" ) )  {
-                $arr = $key.Split( "-_", [System.StringSplitOptions]::None )
+                $arr = $key.Split( "-_", [System.StringSplitOptions]::RemoveEmptyEntries )
                 $newval = GetContentItemID $arr[1].ToLower() $newval
+                if ( !$newval )  {
+                    Write-Error "WARNING: Content item ID for $key not found."
+                }
             }
 
             switch ( $key )  {
@@ -286,13 +311,13 @@ function MkPerm( [PSCustomObject] $body, [PSCustomObject] $perm )  {
     return $template
 }
 
-# BUGBUG: Directly accesses $maxitems and $ctypenameid.
-function BldQuery( [string] $action, [string] $jobname, [PSObject] $jobnode )  {
+# BUGBUG: Directly accesses $maxitems.
+function BldQuery( [string] $action, [string] $jobname, [PSObject] $jobnode, [string] $ctypeid )  {
 
     $queryobj = [PSCustomObject]@{}
 
     # Start with default.
-    if ( $jobname.Contains( "contenttype") )  {
+    if ( IsContentType $jobname )  {
         switch ( $action )  {
             "GET"  {
                 $queryobj | Add-Member -Type NoteProperty -Name maxitems -Value $maxitems
@@ -304,7 +329,7 @@ function BldQuery( [string] $action, [string] $jobname, [PSObject] $jobnode )  {
         switch ( $action )  {
             "GET"  {
                 if ( $jobnode.ids.Length -eq 0 )  {
-                    $queryobj | Add-Member -Type NoteProperty -Name contentTypeId -Value $ctypenameid[1]
+                    $queryobj | Add-Member -Type NoteProperty -Name contentTypeId -Value $ctypeid
                     $queryobj | Add-Member -Type NoteProperty -Name maxitems -Value $maxitems
                 }
                 # No query if content item IDs are specified.
@@ -334,6 +359,46 @@ function GetListOfIDs( [PSObject] $jobnode )  {
     if     ( $jobnode.ids -is [string] )  {  return @( $jobnode.ids )  }
     elseif ( $jobnode.ids -is [array] )   {  return $jobnode.ids  }
     else                                  {  return @()  }
+}
+
+# Do not include system/default content types and content items.
+function GetListOfIDsFromResponse( [PSObject] $respjsondocs, [string] $jobname )  {
+    $isCT = IsContentType $jobname
+    $IDList = @()
+
+    # Content items: Confirm the content type name, in case the content type ID was not passed to InvokeWebRequest and it returned ALL content items.
+    if ( !$isCT )  {
+        $respjsondocs | foreach  {
+            if ( $ctypenameid -and ( StrCompare $_.contentTypeName $ctypenameid[0] ) )  {
+                if ( !($_.isSystem) )  {  $IDList += $_.id  }
+            }
+        }
+    }
+
+    # Content types: Sort from not-depended-on to depended-on (with fields that have allowedContentTypeId).
+    else  {
+        # Get the IDs, sorted by dependencies.
+        $respjsondocs | foreach  {
+            # If the current type is not already in the list, add it to the top.
+            if ( $IDList -notcontains $_.id )  {
+                $IDList = @($_.id) + $IDList
+            }
+            # Check if each reference is already in the list. If not, add to the bottom.
+            foreach ( $fld in $_.fields )  {
+                $allowedCT = $fld.allowedContentTypeId
+                if ( $allowedCT -and ( $IDList -notcontains $allowedCT ) )  {
+                    $IDList += $allowedCT
+                }
+            }
+        }
+
+        # Remove the system/default content types.
+        $respjsondocs | foreach  {
+            if ( $_.isSystem )  { $IDList = $IDList -ne $_.id }
+        }
+    }
+
+    return $IDList
 }
 
 function InvokeWebRequest( [string] $uri, [string] $action, [PSObject] $hdr, [string] $bodyjson )  {
@@ -368,6 +433,11 @@ function MkPSObjKeyValPair( [PSObject] $respjsondocs )  {
     return $outobj
 }
 
+function RobocopyBasic( [string] $src, [string] $tgt, [string] $opts )  {
+    Write-Host "Copying from $src to $tgt with options $opts ...."
+    $cmd = "@robocopy " + $src + " " + $tgt + " /mt /log+:" + $copylog + " " + $opts
+    RunBat $cmd
+}
 
 
 # MAIN -------------------------------------------------------
@@ -392,11 +462,18 @@ if ( $args.Count -gt 2 )  {
     }
     $mysettings = Get-Content -Raw -Path $setsjson | ConvertFrom-Json
     if ( IsValid $mysettings.apikey )          {  $apikey      = $mysettings.apikey  }
-    if ( IsValid $mysettings.outraw )          {  $outraw      = $mysettings.outraw  }
     if ( IsValid $mysettings.contenttypeids )  {  $ctypeidlist = $mysettings.contenttypeids  }
 
     # $ctypenameid is a two-element array.
     $ctypenameid = GetContentTypeNameID $jobname $ctypeidlist
+
+    if ( IsValid $mysettings.outraw )  {
+        $outraw = $mysettings.outraw
+        if ( $ctypenameid )  {
+            $outraw = $ctypenameid[0] + "-" + $outraw
+        }
+    }
+
 
     # Compose the header.
     if ( $apikey -eq $NULL )  {
@@ -409,30 +486,37 @@ if ( $args.Count -gt 2 )  {
 
 
     # Read the jobs file and the template file.
-    Get-ChildItem -Path $jsonpath | Select-String -Pattern $jobname              | Group Path | Select Name | %{ $jobsjson = $_.name }
-    Get-ChildItem -Path $jsonpath | Select-String -Pattern “TEMPLATE-$jobprefix” | Group Path | Select Name | %{ $tmpljson = $_.name }
+    Get-ChildItem -Path $jsonpath | Select-String -Pattern """$jobname"""      | Group Path | Select Name | %{ $jobsjson = $_.name }
+    Get-ChildItem -Path $jsonpath | Select-String -Pattern """TEMPLATE-$jobname""" | Group Path | Select Name | %{ $tmpljson = $_.name }
+    if ( !$tmpljson )  { Get-ChildItem -Path $jsonpath | Select-String -Pattern """TEMPLATE-$jobprefix""" | Group Path | Select Name | %{ $tmpljson = $_.name } }
     if ( !$tmpljson )  { $tmpljson = $jobsjson }
-    $myjobs = Get-Content -Raw -Path $jobsjson | ConvertFrom-Json
-    $mytmpl = Get-Content -Raw -Path $tmpljson | ConvertFrom-Json
-    $jobnode = $myjobs.$jobname
-    $permsarray = $jobnode.permutations
 
+    Write-Host "DEBUG: jobsjson is $jobsjson "
+
+    if ( $jobsjson )  {  $myjobs = Get-Content -Raw -Path $jobsjson | ConvertFrom-Json  }
+    else  { Write-Error "ERROR: jobsjson is null."; return }
+    if ( $tmpljson )  {  $mytmpl = Get-Content -Raw -Path $tmpljson | ConvertFrom-Json  }
+    else  { Write-Error "ERROR: tmpljson is null." }
+
+    $jobnode  = $myjobs.$jobname
+    $permsarray = $myjobs.$jobname.permutations
+
+    $tmplnode = $null
+    @( "TEMPLATE-$jobprefix", "TEMPLATE-$jobname" ) | foreach {
+        if ( $mytmpl.$_.body )  {  $tmplnode = $mytmpl.$_  }
+    }
 
     # BODY
     # Start with the template, if any, then replace with job values, if any.
-    if ( $jobnode -is [PSCustomObject] )  {
-
-        $tmpljob = "TEMPLATE-$jobprefix"
-        if ( $mytmpl.$tmpljob.body )  {
-            $bodynode = $mytmpl.$tmpljob.body
-            $bodynode = ReplaceWithLegend $bodynode $jobnode.body
-        }
-        else  {
-            $bodynode = $jobnode.body
-        }
+    if ( $tmplnode.body -is [PSObject] )  {
+        $bodynode = $tmplnode.body
+        $bodynode = ReplaceWithLegend $bodynode $jobnode.body
+    }
+    elseif ( $jobnode.body -is [PSObject] )  {
+        $bodynode = $jobnode.body
     }
     else  {
-        $bodynode = [PSObject]@{}
+        $bodynode = [PSCustomObject]@{}
     }
 
 
@@ -452,7 +536,7 @@ if ( $args.Count -gt 2 )  {
             "POST"   {
                 # FOR POSTS ONLY. Add the contentTypeID for the current job.
                 if ( StrCompare $action "POST" )  {
-                    $bodynode = CreateOrUpdateNode $bodynode "contentTypeID" $ctypenameid[1]
+                    $bodynode = CreateOrUpdateNode $bodynode "contentTypeID" $ctypenameid[1] $null
                 }
             }
         }
@@ -467,7 +551,12 @@ if ( $args.Count -gt 2 )  {
 
     # INVOKEWEBREQUEST
 
-    $query = BldQuery $action $jobname $jobnode
+    if ( $ctypenameid )  {
+        $query = BldQuery $action $jobname $jobnode $ctypenameid[1]
+    }
+    else  {
+        $query = BldQuery $action $jobname $jobnode ""
+    }
 
     $responses = @()
 
@@ -544,17 +633,12 @@ if ( $args.Count -gt 2 )  {
             # Overwrite query for GET-DELETE.
             $query = BldQuery "GET" $jobname $jobnode
 
+            # Create the list of content type/item IDs to delete.
             $getresponse = InvokeWebRequest "$apiurl$apicall$query" "GET" $hdr
             if ( $getresponse )  {
                 $respjson = $getresponse | ConvertFrom-Json
-                $IDList = @()
-                $respjson.documents | foreach  {
-                    # 1. Compare the content type name, in case the content type ID was not passed to InvokeWebRequest.
-                    # 2. Do not delete system/default content types and content items.
-                    if ( ( StrCompare $_.contentTypeName $ctypenameid[0] ) -and !($_.isSystem) )  {
-                        $IDList += $_.id
-                    }
-                }
+                $IDList = GetListOfIDsFromResponse $respjson.documents $jobname
+
                 if ( $IDList.Length -gt 0 )  {
                     $query = BldQuery "DELETE" $jobname $jobnode
                     $IDList | foreach  {
@@ -572,19 +656,30 @@ if ( $args.Count -gt 2 )  {
 
     ## raw
     if ( IsValid $outraw )  {
-        foreach ( $resp in $responses )  {
-            Write-Output $resp | Out-File $outraw -Encoding DEFAULT
-        }
+        Write-Output $responses | Out-File $outraw -Encoding DEFAULT
+        # foreach ( $resp in $responses )  {
+        #     Write-Output $resp | Out-File $outraw -Encoding DEFAULT
+        # }
     }
 
-    ## With list-* jobs, update the list of ids in $setsjson and display in console.
-    if ( $jobname.StartsWith( "list-" ) )  {
-        $idsnodename = $ctypenameid[0] + "ids"
+    ## With listall-* jobs, update the list of ids in $setsjson and display in console.
+    if ( $jobname.StartsWith( "listall-" ) )  {
+        if ( $jobname.StartsWith( "listall-contenttypes" ) )  {
+            $idsnodename = "contenttypeids"
+        }
+        elseif ( $ctypenameid )  {
+            $idsnodename = $ctypenameid[0] + "ids"
+        }
+        else  {
+            $idsnodename = "ids"
+        }
+
         foreach ( $resp in $responses )  {
             $respjson = $resp | ConvertFrom-Json
             $newids = MkPSObjKeyValPair $respjson.documents
             $mysettings = CreateOrUpdateNode $mysettings $idsnodename "" $newids
         }
+
         $mysettings | ConvertTo-Json -Depth 10 | Out-File $setsjson -Encoding DEFAULT
         $mysettings.$idsnodename | Out-Host
     }

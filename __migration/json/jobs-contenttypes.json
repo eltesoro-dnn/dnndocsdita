@@ -1,8 +1,5 @@
 {
-    "legend": {
-        "maxitems": "100"
-    },
-    "list-contenttypes": {
+    "listall-contenttypes": {
     },
     "deleteall-contenttypes": {
     },
@@ -426,6 +423,83 @@
             }
         }
     },
+    "add-contenttype-Passage": {
+        "body": {
+            "name": "Passage",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "text",
+                    "label": "Text",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Image",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "image",
+                    "label": "Image",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Step",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "steps",
+                    "label": "Steps",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
     "add-contenttype-Product": {
         "body": {
             "name": "Product",
@@ -802,12 +876,12 @@
                 {
                     "type": "referenceObject",
                     "allowedContentTypeId": "",
-                    "allowedContentTypeName": "SubSection",
+                    "allowedContentTypeName": "Passage",
                     "settings": {
                         "subType": "singleReferenceObject"
                     },
-                    "name": "subSections",
-                    "label": "SubSections",
+                    "name": "passages",
+                    "label": "Passages",
                     "row": 1,
                     "width": "full",
                     "position": "start"
@@ -1087,83 +1161,6 @@
             }
         }
     },
-    "add-contenttype-SubSection": {
-        "body": {
-            "name": "SubSection",
-            "icon": null,
-            "enabled": true,
-            "fields": [
-                {
-                    "type": "multiLineText",
-                    "settings": {
-                        "subType": "textEditor"
-                    },
-                    "name": "text",
-                    "label": "Text",
-                    "row": 0,
-                    "width": "full",
-                    "position": "start"
-                },
-                {
-                    "type": "referenceObject",
-                    "allowedContentTypeId": "",
-                    "allowedContentTypeName": "Image",
-                    "settings": {
-                        "subType": "multiReferenceObject"
-                    },
-                    "name": "image",
-                    "label": "Image",
-                    "row": 1,
-                    "width": "full",
-                    "position": "start"
-                },
-                {
-                    "type": "referenceObject",
-                    "allowedContentTypeId": "",
-                    "allowedContentTypeName": "Step",
-                    "settings": {
-                        "subType": "multiReferenceObject"
-                    },
-                    "name": "steps",
-                    "label": "Steps",
-                    "row": 2,
-                    "width": "full",
-                    "position": "start"
-                }
-            ],
-            "properties": {
-                "contentName": {
-                    "type": "contentName",
-                    "settings": {
-                        "nameGeneratorFields": [
-
-                        ]
-                    },
-                    "name": null,
-                    "label": "Content Item Name",
-                    "row": 0,
-                    "width": "half",
-                    "position": "start"
-                },
-                "contentTags": {
-                    "type": "contentTags",
-                    "name": null,
-                    "label": "Tags",
-                    "row": 0,
-                    "width": "half",
-                    "position": "half"
-                },
-                "contentDescription": {
-                    "type": "contentDescription",
-                    "name": null,
-                    "label": "Description",
-                    "row": 1,
-                    "width": "full",
-                    "position": "start"
-                }
-            }
-        }
-    },
     "add-contenttype-Substep": {
         "body": {
             "name": "Substep",
@@ -1215,6 +1212,87 @@
                     "row": 3,
                     "width": "full",
                     "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-TableTermDesc": {
+        "body": {
+            "name": "TableTermDesc",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "TermDesc",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "rows",
+                    "label": "Rows",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "staticText",
+                    "settings": {
+                        "subType": "heading",
+                        "headingType": "h2",
+                        "headingContent": "Field",
+                        "paragraphContent": ""
+                    },
+                    "name": "staticText",
+                    "label": "Static Text",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                {
+                    "type": "staticText",
+                    "settings": {
+                        "subType": "heading",
+                        "headingType": "h2",
+                        "headingContent": "Description",
+                        "paragraphContent": ""
+                    },
+                    "name": "staticText1",
+                    "label": "Static Text",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
                 }
             ],
             "properties": {

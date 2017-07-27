@@ -44,23 +44,6 @@ function IsNotValid( [string] $s )  {
     return !( IsValid $s )
 }
 
-
-# Create the job.
-function InitJob()  {
-    $query = [PSCustomObject]@{
-        publish = "TRUE"
-    }
-
-    $object = [PSCustomObject]@{
-        action = "POST"
-        apicall = "ContentTypes"
-        query = $query
-        body = @{}
-    }
-
-    return $object
-}
-
 # Delete the properties listed in the array if the first property is set to false or is blank.
 function DeleteIfFirstIsFalseOrInvalid( [PSObject] $node, [string[]] $props )  {
     $first = $props[0]
@@ -162,7 +145,7 @@ if ( $args.Count -gt 1 )  {
 
     # Default jobs.
     $outobj = [PSCustomObject]@{
-        "list-all-contenttypes" = [PSCustomObject]@{}
+        "listall-contenttypes"   = [PSCustomObject]@{}
         "deleteall-contenttypes" = [PSCustomObject]@{}
     }
 
@@ -173,7 +156,9 @@ if ( $args.Count -gt 1 )  {
         if ( !($ctype.isSystem) )  {
             $name = "add-contenttype-" + $ctype.name
             Write-Host "Name: $name"
-            $newjob = InitJob
+            $newjob = [PSCustomObject]@{
+                    body = @{}
+                }
             $outobj | Add-Member -Type NoteProperty -Name $name -Value $newjob
             $outobj.$name.body = CleanNode $ctype
         }
