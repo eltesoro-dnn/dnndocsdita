@@ -1,0 +1,948 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-about-structured-content-api-post-put-type-fields">
+
+    <title>About Liquid Content&#8482; Content Type Fields for POST and PUT APIs</title>
+    <titlealts>
+        <navtitle>Content Type Fields for POST and PUT</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1707</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+        <section id="overview">
+
+            <p>The JSON structure in the body of the POST request requires a <codeph>fields</codeph> array, and each field in the content type is defined as a node in the fields array.</p>
+
+            <p>Example of a JSON node in the <codeph>fields</codeph> array:
+                <codeblock>
+"fields": [
+    ...
+    {
+        "type": "singleLineText",
+        "defaultValue": null,
+        "setDefaultValueAsHidden": false,
+        "settings": {
+            "subType": "singleLine",
+            "phoneNumberFormat": null
+        },
+        "validation": {
+            "requireField": {
+                "active": true,
+                "errorMessage": "This is a required field"
+            },
+            "numberOfCharacters": {
+                "active": false,
+                "rangeDefinition": "between",
+                "minimum": null,
+                "minimumUnit": null,
+                "maximum": null,
+                "maximumUnit": null,
+                "errorMessage": "This field does not meet the required number of characters"
+            },
+            "standardErrorMessage": null
+        },
+        "id": "aa50984e-b459-4caa-94b9-5fa3a95ff082",
+        "name": "lastName",
+        "label": "Last Name",
+        "descriptionActive": false,
+        "description": "",
+        "tooltipActive": false,
+        "tooltip": "",
+        "row": 0,
+        "width": "half",
+        "position": "half"
+    },
+    ...
+]
+                </codeblock>
+            </p>
+
+            <note type="tip">Evoq UI is the easiest way to create content types in most cases. To copy content types to multiple sites/servers, you can use the Export/Import feature.</note>
+
+            <p>If you want to create multiple similar content types or if you want to recreate the same content types for testing,
+                <ul>
+                    <li>create one of the content types in the UI,</li>
+                    <li>request (GET) that content type from your app,</li>
+                    <li>clean up the resulting JSON to remove the specific values, such as the <varname>id</varname> of the content type and of reference fields, and</li>
+                    <li>replace the old values with values for the new type.</li>
+                </ul>
+            </p>
+
+        </section>
+
+
+        <section id="type">
+            <title>Field Types</title>
+
+            <p>A field can be any of the following types:</p>
+            <ul>
+                <li>Single-Line Text</li>
+                <li>Multi-Line Text</li>
+                <li>Number</li>
+                <li>Multiple Choice</li>
+                <li>Date/Time</li>
+                <li>Assets</li>
+                <li>Reference Object</li>
+                <li>Static Text</li>
+            </ul>
+
+            <p>Each type could require additional settings. Example: The <uicontrol>Single Line Text</uicontrol> type requires the <varname>subtype</varname> setting.</p>
+
+            <p>Also see the <xref format="dita" href="#top-content-type-fields-for-post-put/validation">Validation section</xref>.</p>
+
+            <simpletable relcolwidth="1* 6*">
+                <sthead>
+                    <stentry>Field Type</stentry>
+                    <stentry>Code Snippet(s)</stentry>
+                </sthead>
+                <strow>
+                    <stentry>Single-Line Text</stentry>
+                    <stentry>
+                        <p>For a plain text field:</p>
+                        <codeblock>
+"type" : "singleLineText",
+"settings": {
+    "subType": "singleLine",
+    "phoneNumberFormat": null
+}
+                        </codeblock>
+                        <p>For a URL/website:</p>
+                        <codeblock>
+"type" : "singleLineText",
+"settings": {
+    "subType": "url",
+    "phoneNumberFormat": null
+}
+                        </codeblock>
+                        <p>For an email address:</p>
+                        <codeblock>
+"type" : "singleLineText",
+"settings": {
+    "subType": "email",
+    "phoneNumberFormat": null
+}
+                        </codeblock>
+                        <!-- BUGBUG: What are the valid phone number formats? -->
+                        <p>For a phone number:</p>
+                        <codeblock>
+"type" : "singleLineText",
+"settings": {
+    "subType": "phoneNumber",
+    "phoneNumberFormat": null
+}
+                        </codeblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>Multi-Line Text</stentry>
+                    <stentry>
+                        <p>For plain text:</p>
+                        <codeblock>
+"type" : "multiLineText",
+"settings": {
+    "subType": "multiLine"
+}
+                        </codeblock>
+                        <p>For rich text:</p>
+                        <codeblock>
+"type" : "multiLineText",
+"settings": {
+    "subType": "textEditor"
+}
+                        </codeblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>Number</stentry>
+                    <stentry>
+                        <p>Example:</p>
+                        <codeblock>
+"type": "numberSelector",
+"settings": {
+    "subType": "singleLine",
+    "numberSetFormat": "decimal",
+    "spinnerOrientation": "horizontal",
+    "numberRange": {
+        "minimum": 1.0,
+        "maximum": 5.0
+    }
+}
+                        </codeblock>
+
+                        <p>To specify the number set:</p>
+                        <ul>
+                            <li>Integers:    <codeph>"numberSetFormat": "integer"</codeph></li>
+                            <li>Decimals:    <codeph>"numberSetFormat": "decimal"</codeph></li>
+                            <li>Percentages: <codeph>"numberSetFormat": "percentage"</codeph></li>
+                        </ul>
+
+                        <p>To indicate how the selection is displayed in the UI:</p>
+                        <ul>
+                            <li>As a plain text box:
+                                <codeblock>
+"subType": "singleLine"
+                                </codeblock>
+                            </li>
+                            <li>As a vertical spinner:
+                                <codeblock>
+"subType": "spinner",
+"spinnerOrientation": "vertical"
+                                </codeblock>
+                            </li>
+                            <li>As a horizontal spinner:
+                                <codeblock>
+"subType": "spinner",
+"spinnerOrientation": "horizontal"
+                                </codeblock>
+                            </li>
+                            <li>As a dropdown:
+                                <codeblock>
+"subType": "dropdown"
+                                </codeblock>
+                            </li>
+                        </ul>
+
+                        <p>To specify the number range, use floats regardless of the number set:</p>
+                        <codeblock>
+"numberRange": {
+    "minimum": 1.0,
+    "maximum": 5.0
+}
+                        </codeblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>Multiple Choice
+                    </stentry>
+                    <stentry>
+                        <p>Example:</p>
+                        <codeblock>
+"type": "multipleChoice",
+"defaultValue": "blue",
+"settings": {
+    "subType": "dropDown",
+    "choices": [
+        { "label": "blue" },
+        { "label": "green" }
+    ],
+    "multiSelect": false,
+    "listOrientation": "vertical",
+    "otherAsAnOption": false
+}
+                        </codeblock>
+
+                        <p>To change how the choices are displayed in the Evoq UI:</p>
+                        <ul>
+                            <li>As a dropdown:   <codeph>"subType": "dropDown"</codeph></li>
+                            <li>As checkboxes:   <codeph>"subType": "checkBox"</codeph></li>
+                            <li>As radiobuttons: <codeph>"subType": "radioButton"</codeph></li>
+                        </ul>
+
+                        <p>To specify the options, enter each as the value of a <varname>label</varname> setting in the <varname>choices</varname> array.</p>
+                        <codeblock>
+"settings": {
+    ...
+    "choices": [
+        { "label": "blue" },
+        { "label": "green" }
+    ],
+    ...
+}
+                        </codeblock>
+
+                        <p>To indicate the number of selected choices:</p>
+                        <ul>
+                            <li>To allow only one selection,      <codeph>"multiSelect": false</codeph></li>
+                            <li>To allow more than one selection, <codeph>"multiSelect": true</codeph></li>
+                        </ul>
+
+                        <p>To specify how checkboxes and radio buttons are displayed (List orientation is ignored for dropdown lists.):</p>
+                        <ul>
+                            <li>To display the choices vertically,   <codeph>"listOrientation": "vertical"</codeph></li>
+                            <li>To display the choices horizontally, <codeph>"listOrientation": "horizontal"</codeph></li>
+                        </ul>
+
+                        <p>To allow <term>Other</term> as an option: <codeph>"otherAsAnOption": true</codeph></p>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>Date / Time</stentry>
+                    <stentry>
+                        <p>Example:</p>
+                        <codeblock>
+"type" : "dateTime",
+"settings": {
+    "subType": "date",
+    "dateFormat": "yyyymmdd",
+    "timeFormat": "hr24",
+    "timeZoneInfoActive": false,
+    "timeZoneInfoId": "Dateline Standard Time"
+},
+                        </codeblock>
+
+                        <p>To choose the variation:</p>
+                        <ul>
+                            <li>For the date only:      <codeph>"subType": "date"</codeph></li>
+                            <li>For the time only:      <codeph>"subType": "time"</codeph></li>
+                            <li>For both date and time: <codeph>"subType": "dateTime"</codeph></li>
+                        </ul>
+
+                        <p>Valid date formats:</p>
+                        <ul>
+                            <li><codeph>"dateFormat": "ddmmyy"</codeph></li>
+                            <li><codeph>"dateFormat": "mmddyy"</codeph></li>
+                            <li><codeph>"dateFormat": "ddmmyyyy"</codeph></li>
+                            <li><codeph>"dateFormat": "mmddyyyy"</codeph></li>
+                            <li><codeph>"dateFormat": "yyyymmdd"</codeph></li>
+                        </ul>
+
+                        <p>Valid time formats:</p>
+                        <ul>
+                            <li><codeph>"timeFormat": "hr24"</codeph></li>
+                            <li><codeph>"timeFormat": "amPm"</codeph></li>
+                        </ul>
+
+                        <!-- BUGBUG: Verify if this info about timezone is correct. -->
+                        <p>To use the default timezone:</p>
+                        <codeblock>
+"timeZoneInfoActive": false,
+"timeZoneInfoId": "Dateline Standard Time"
+                        </codeblock>
+
+                        <p>To specify UTC for the indicated time:</p>
+                        <codeblock>
+"timeZoneInfoActive": true,
+"timeZoneInfoId": "UTC"
+                        </codeblock>
+
+                        <p>To specify the Pacific timezone for the indicated time:</p>
+                        <codeblock>
+"timeZoneInfoActive": true,
+"timeZoneInfoId": "Pacific Standard Time"
+                        </codeblock>
+
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>Assets
+                    </stentry>
+                    <stentry>
+
+                        <p>For an image asset:</p>
+                        <codeblock>
+"type" : "assets",
+"settings": {
+    "subType": "image",
+    "maxAssets": 1
+},
+                        </codeblock>
+
+                        <!-- BUGBUG: Confirm the subtype. -->
+                        <p>For a document asset:</p>
+                        <codeblock>
+"type" : "assets",
+"settings": {
+    "subType": "document",
+    "maxAssets": 1
+},
+                        </codeblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>Reference Object
+                    </stentry>
+                    <stentry>
+
+                        <p>To accept only one reference:</p>
+                        <codeblock>
+"type" : "referenceObject",
+"settings": {
+    "subType": "singleReferenceObject"
+}
+                        </codeblock>
+
+                        <p>To accept multiple references:</p>
+                        <codeblock>
+"type" : "referenceObject",
+"settings": {
+    "subType": "multiReferenceObject"
+}
+                        </codeblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>Static Text
+                    </stentry>
+                    <stentry>
+
+                        <p>To specify a static heading (<varname>headingType</varname> can be "h2", "", ):</p>
+                        <codeblock>
+"type" : "staticText",
+"settings": {
+    "subType": "heading",
+    "headingType": "h2",
+    "headingContent": "MyHeading",
+    "paragraphContent": ""
+},
+                        </codeblock>
+
+                        <p>To specify a paragraph:</p>
+                        <codeblock>
+"type" : "staticText",
+"settings": {
+    "subType": "paragraph",
+    "headingType": "",
+    "headingContent": "",
+    "paragraphContent": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam imperdiet turpis turpis, blandit varius nibh dignissim ut."
+},
+                        </codeblock>
+
+                    </stentry>
+                </strow>
+            </simpletable>
+
+        </section>
+
+
+        <section id="namelabel">
+            <title>Name and Label</title>
+
+            <p>All fields require a name and a label. Example:</p>
+            <codeblock>
+"name": "firstName",
+"label": "First Name"
+            </codeblock>
+
+        </section>
+
+
+        <section id="defaultvalue">
+            <title>Default Value</title>
+
+            <p>A field could have a default value setting (<varname>defaultValue</varname>) which is stored as a string. This setting is required whether the field has a default value or not.</p>
+
+            <p>You can also hide the default value from the user. However, if the default value is hidden, the field must not be required.</p>
+
+            <p>Without a default value:
+                <codeblock>
+"defaultValue" : null
+                </codeblock>
+            </p>
+
+            <p>With a default value that is shown:</p>
+                <codeblock>
+"defaultValue" : "This is my default.",
+"setDefaultValueAsHidden" : false
+                </codeblock>
+
+            <p>With a default value that is hidden:</p>
+                <codeblock>
+"defaultValue" : "This is my default.",
+"setDefaultValueAsHidden": true,
+...
+"validation" : {
+    "requireField" : {
+        "active" : false,
+        "errorMessage" : null
+    },
+},
+...
+                </codeblock>
+        </section>
+
+
+        <section id="validation">
+            <title>Validation</title>
+
+            <p>You can optionally require validation for data entered in the field. Each field type requires different validation settings.</p>
+
+            <p>Example: The following settings require a value for a Single-Line Text field but it doesn't impose a limit on the number of characters that can be entered:</p>
+            <codeblock>
+"validation": {
+    "requireField": {
+        "active": true,
+        "errorMessage": "This is a required field"
+    },
+    "numberOfCharacters": {
+        "active": false,
+        "rangeDefinition": "between",
+        "minimum": null,
+        "minimumUnit": null,
+        "maximum": null,
+        "maximumUnit": null,
+        "errorMessage": "This field does not meet the required number of characters"
+    },
+    "standardErrorMessage": null
+}
+            </codeblock>
+
+            <p>The <varname>validation</varname> node can contain the following settings.</p>
+            <simpletable relcolwidth="1* 1* 4*">
+                <sthead>
+                    <stentry>Validation Setting</stentry>
+                    <stentry>Applicable in Field Types</stentry>
+                    <stentry>Description and Example</stentry>
+                </sthead>
+                <strow>
+                    <stentry><varname>requireField</varname></stentry>
+                    <stentry><lines>All field types</lines></stentry>
+                    <stentry>
+
+                        <p>If the field is optional,</p>
+                        <codeblock>
+"requireField": {
+    "active": false,
+    "errorMessage": null
+}
+                        </codeblock>
+
+                        <p>If the user must enter a value for the field,</p>
+                        <codeblock>
+"requireField": {
+    "active": true,
+    "errorMessage": "This is a required field"
+}
+                        </codeblock>
+
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry><varname>standardErrorMessage</varname></stentry>
+                    <stentry><lines>All field types</lines></stentry>
+                    <stentry>
+                        <p>The error message to use for all other errors without defined error messages.</p>
+                        <codeblock>"standardErrorMessage": null</codeblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry><varname>numberOfCharacters</varname></stentry>
+                    <stentry><lines><varname>singleLineText</varname>
+<varname>multiLineText</varname></lines>
+                    </stentry>
+                    <!-- BUGBUG: Are the null settings required to be declared at all? -->
+                    <stentry>
+
+                        <p>If the field can contain any number of characters,</p>
+                        <codeblock>
+"numberOfCharacters": {
+    "active": false,
+    "rangeDefinition": null,
+    "minimum": null,
+    "minimumUnit": null,
+    "maximum": null,
+    "maximumUnit": null,
+    "errorMessage": null
+},
+                        </codeblock>
+
+                        <p>If the number of characters must be restricted, you can specify a range, only the minimum, or only the maximum.</p>
+
+                        <p>Range restriction: If the text must have 5 to 140 characters,</p>
+                        <codeblock>
+"numberOfCharacters": {
+    "active": true,
+    "rangeDefinition": "between",
+    "minimum": 5,
+    "minimumUnit": null,
+    "maximum": 140,
+    "maximumUnit": null,
+    "errorMessage": "This field does not meet the required number of characters"
+},
+                        </codeblock>
+
+                        <p>Minimum restriction: If the text must have at least 20 characters,</p>
+                        <codeblock>
+"numberOfCharacters": {
+    "active": true,
+    "rangeDefinition": "minimum",
+    "minimum": 20,
+    "minimumUnit": null,
+    "maximum": null,
+    "maximumUnit": null,
+    "errorMessage": "This field does not meet the required number of characters"
+},
+                        </codeblock>
+
+                        <p>Maximum restriction: If the text must have no more than 500 characters,</p>
+                        <codeblock>
+"numberOfCharacters": {
+    "active": true,
+    "rangeDefinition": "maximum",
+    "minimum": null,
+    "minimumUnit": null,
+    "maximum": 500,
+    "maximumUnit": null,
+    "errorMessage": "This field does not meet the required number of characters"
+},
+                        </codeblock>
+
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry><varname>numberOfReferences</varname></stentry>
+                    <stentry><lines><varname>referenceObject</varname> (Multi-Reference Object)</lines></stentry>
+                    <stentry>
+
+                        <p>If the field can contain any number of references,</p>
+                        <codeblock>
+"numberOfReferences": {
+    "active": false,
+    "rangeDefinition": null,
+    "minimum": null,
+    "minimumUnit": null,
+    "maximum": null,
+    "maximumUnit": null,
+    "errorMessage": null
+},
+                        </codeblock>
+
+                        <p>If the number of references must be restricted, you can specify a range, only the minimum, or only the maximum.</p>
+
+                        <p>Range restriction: If the field must refer to 2 to 5 content items,</p>
+                        <codeblock>
+"numberOfReferences": {
+    "active": true,
+    "rangeDefinition": "between",
+    "minimum": 2,
+    "minimumUnit": null,
+    "maximum": 5,
+    "maximumUnit": null,
+    "errorMessage": "This field does not meet the required number of references"
+},
+                        </codeblock>
+
+                        <p>Minimum restriction: If the field must refer to at least 2 content items,</p>
+                        <codeblock>
+"numberOfReferences": {
+    "active": true,
+    "rangeDefinition": "minimum",
+    "minimum": 2,
+    "minimumUnit": null,
+    "maximum": null,
+    "maximumUnit": null,
+    "errorMessage": "This field does not meet the required number of references"
+},
+                        </codeblock>
+
+                        <p>Maximum restriction: If the field must refer to no more than 5 content items,</p>
+                        <codeblock>
+"numberOfReferences": {
+    "active": true,
+    "rangeDefinition": "maximum",
+    "minimum": null,
+    "minimumUnit": null,
+    "maximum": 5,
+    "maximumUnit": null,
+    "errorMessage": "This field does not meet the required number of references"
+},
+                        </codeblock>
+
+                    </stentry>
+                </strow>
+
+                <strow>
+                    <!-- BUGBUG: Why is this in validation? -->
+                    <stentry><varname>dropdownOrder</varname></stentry>
+                    <stentry><lines><varname>numberSelector</varname></lines></stentry>
+                    <stentry>
+                        <p></p>
+                        <codeblock>
+"dropdownOrder": "ascending"
+                        </codeblock>
+                    </stentry>
+                </strow>
+
+                <strow>
+                    <stentry><varname>dateRange</varname></stentry>
+                    <stentry><lines><varname>dateTime</varname></lines></stentry>
+                    <stentry>
+
+                        <p>If the date is not restricted,</p>
+                        <codeblock>
+"dateRange": {
+    "active": false,
+    "rangeDefinition": null,
+    "startDateTime": null,
+    "endDateTime": null,
+    "errorMessage": null
+}
+                        </codeblock>
+
+                        <p>If the date must be restricted, you can specify a date range (<codeph>between</codeph>), only the start date (<codeph>after</codeph>), or only the end date (<codeph>before</codeph>).</p>
+
+                        <p>Range restriction: If the date must fall between 2017-07-10 and 2017-07-14,</p>
+                        <codeph>
+"dateRange": {
+    "active": true,
+    "rangeDefinition": "between",
+    "startDateTime": "2017-07-10T19:00:00Z",  <!-- BUGBUG: Does it ignore the time portion of the timestamp? -->
+    "endDateTime": "2017-07-14T19:00:00Z",
+    "errorMessage": "Your date is not within the accepted date range."
+}
+                        </codeph>
+
+                        <p>Start date restriction: If the date must be after 2017-07-31,</p>
+                        <codeph>
+"dateRange": {
+    "active": true,
+    "rangeDefinition": "after",
+    "startDateTime": "2017-07-31T19:00:00Z",
+    "endDateTime": null,
+    "errorMessage": "Your date is not within the accepted date range."
+}
+                        </codeph>
+
+                        <p>End date restriction: If the date must be before 2017-07-01,</p>
+                        <codeph>
+"dateRange": {
+    "active": true,
+    "rangeDefinition": "before",
+    "startDateTime": null,
+    "endDateTime": "2017-07-01T19:00:00Z",
+    "errorMessage": "Your date is not within the accepted date range."
+}
+                        </codeph>
+
+                    </stentry>
+                </strow>
+
+                <strow>
+                    <stentry><varname>timeRange</varname></stentry>
+                    <stentry><lines><varname>dateTime</varname></lines></stentry>
+                    <stentry>
+
+                        <p>If the time is not restricted,</p>
+                        <codeblock>
+"timeRange": {
+    "active": false,
+    "rangeDefinition": null,
+    "startDateTime": null,
+    "endDateTime": null,
+    "errorMessage": null
+}
+                        </codeblock>
+
+                        <p>If the time must be restricted, you can specify a time span (<codeph>between</codeph>), only the start time (<codeph>after</codeph>), or only the end time (<codeph>before</codeph>).</p>
+
+                        <p>Span restriction: If the time must fall within a time span,</p>
+                        <codeph>
+"timeRange": {
+    "active": true,
+    "rangeDefinition": "between",
+    "startDateTime": "09:00:00",
+    "endDateTime": "19:59:00",
+    "errorMessage": "Your time is not within the accepted time range."
+}
+                        </codeph>
+
+                        <p>Start time restriction: If the time must be after 21:00,</p> <!-- BUGBUG: In the selected timezone? -->
+                        <codeph>
+"timeRange": {
+    "active": true,
+    "rangeDefinition": "after",
+    "startDateTime": "21:00:00",
+    "endDateTime": "23:59:00",
+    "errorMessage": "Your time is not within the accepted time range."
+}
+                        </codeph>
+
+                        <p>End time restriction: If the time must be before 05:00,</p> <!-- BUGBUG: In the selected timezone? -->
+                        <codeph>
+"timeRange": {
+    "active": true,
+    "rangeDefinition": "before",
+    "startDateTime": "00:00:00",
+    "endDateTime": "05:00:00",
+    "errorMessage": "Your time is not within the accepted time range."
+},
+                        </codeph>
+
+                    </stentry>
+                </strow>
+
+                <!--
+                <strow>
+                    <stentry><varname></varname></stentry>
+                    <stentry><lines><varname></varname></lines></stentry>
+                    <stentry>
+                        <p></p>
+                        <codeblock>
+                        </codeblock>
+                    </stentry>
+                </strow>
+                -->
+
+            </simpletable>
+
+        </section>
+
+
+        <section id="userhints">
+            <title>User Hints</title>
+
+            <p>To provide hints that describe the purpose of the field, you can add a field description or a tooltip.</p>
+
+            <simpletable relcolwidth="1* 4*">
+                <sthead>
+                    <stentry>Setting</stentry>
+                    <stentry>Description and Example</stentry>
+                </sthead>
+                <strow>
+                    <stentry>Description
+                        <ul>
+                            <li><varname>descriptionActive</varname></li>
+                            <li><varname>description</varname></li>
+                        </ul>
+                    </stentry>
+                    <stentry>Set <varname>descriptionActive</varname> to <codeph>true</codeph> to display the value of <varname>description</varname> below the field in the Evoq UI.
+
+                        <p>No description:</p>
+                        <codeblock>
+"descriptionActive": false,
+"description": ""
+                        </codeblock>
+
+                        <p>With description:</p>
+                        <codeblock>
+"descriptionActive": true,
+"description": "This is the field description."
+                        </codeblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>Tooltip
+                        <ul>
+                            <li><varname>tooltipActive</varname></li>
+                            <li><varname>tooltip</varname></li>
+                        </ul>
+                    </stentry>
+                    <stentry>Set <varname>tooltipActive</varname> to <codeph>true</codeph> to include the information icon, which displays the value of <varname>tooltip</varname> when clicked/tapped in the Evoq UI.
+
+                        <p>No tooltip:</p>
+                        <codeblock>
+"tooltipActive": false,
+"tooltip": ""
+                        </codeblock>
+
+                        <p>With tooltip:</p>
+                        <codeblock>
+"tooltipActive": true,
+"tooltip": "This is the field's tooltip."
+                        </codeblock>
+
+                    </stentry>
+                </strow>
+            </simpletable>
+        </section>
+
+
+        <section id="positioning">
+            <title>UI Positioning</title>
+
+            <p>Some settings are required to display the content type correctly in the UI. The canvas that displays the fields are comprised of rows. Each row can be divided into three or four equal parts, and each part contains one field.</p>
+
+            <simpletable relcolwidth="1* 4*">
+                <sthead>
+                    <stentry>Setting</stentry>
+                    <stentry>Description and Example</stentry>
+                </sthead>
+
+                <strow>
+                    <stentry><varname>row</varname></stentry>
+                    <stentry>The numbering of rows are zero-based; therefore, the first row is Row 0.
+                        <p>Example: <codeph>"row" : 2</codeph></p>
+                    </stentry>
+                </strow>
+
+                <strow>
+                    <stentry><varname>width</varname></stentry>
+                    <stentry>The width of the field, relative to the width of the canvas. Possible values are:
+                        <ul>
+                            <li>full</li>
+                            <li>threeQuarters</li>
+                            <li>twoThirds</li>
+                            <li>half</li>
+                            <li>third</li>
+                            <li>quarter</li>
+                        </ul>
+
+                        <note type="note">The division of the row must be consistent between <varname>width</varname> and <varname>position</varname>.</note>
+
+                        <p>Examples:
+                            <ul>
+                                <li><codeph>"width" : "full"</codeph></li>
+                                <li><codeph>"width" : "twoThirds"</codeph></li>
+                                <li><codeph>"width" : "quarter"</codeph></li>
+                            </ul>
+                        </p>
+
+                    </stentry>
+                </strow>
+
+                <strow>
+                    <stentry><varname>position</varname></stentry>
+                    <stentry>The position of the field in the row.
+
+                        <p>If the row is divided into four sections, possible values are:</p>
+                        <ul>
+                            <li>start</li>
+                            <li>quarter</li>
+                            <li>half</li>
+                            <li>threeQuarters</li>
+                        </ul>
+
+                        <p>If the row is divided into three sections, possible values are:</p>
+                        <ul>
+                            <li>start</li>
+                            <li>third</li>
+                            <li>twoThirds</li>
+                        </ul>
+
+                        <note type="note">The division of the row must be consistent between <varname>width</varname> and <varname>position</varname>.</note>
+
+                        <p>Examples:</p>
+                        <ul>
+                            <li><codeph>"position" : "start"</codeph></li>
+                            <li><codeph>"position" : "half"</codeph></li>
+                            <li><codeph>"position" : "third"</codeph></li>
+                        </ul>
+
+                    </stentry>
+                </strow>
+            </simpletable>
+
+            <note type="important">If a row overflows (i.e., too many fields), if fields overlap in a row, or if the fields assume a different type of row division (i.e., one field uses quarters and another uses thirds), your POST request might be rejected.</note>
+
+            <p>If width is <codeph>full</codeph>, the position must be <codeph>start</codeph>, and no other fields are allowed in the same row.</p>
+            <codeblock>
+"row" : 0,
+"width" : "full",
+"position" : "start"
+            </codeblock>
+
+        </section>
+
+    </body>
+
+</topic>

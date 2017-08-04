@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE topic PUBLIC "-//OASIS//DTD DITA Topic//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/topic.dtd">
+<topic xml:lang="en" id="top-about-structured-content-api-get-responses">
+
+    <title>About Liquid Content&#8482; API Responses to GET Requests</title>
+    <titlealts>
+        <navtitle>API Responses to GET</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1707</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="programmer" job="programming" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <body>
+
+        <section id="overview">
+            <p>A Liquid Content API GET request can return either a JSON structure stored the body of the response or an error.</p>
+
+            <p>Different factors affect the contents of the response, including:
+                <ul>
+                    <li>the parameters of the GET request</li>
+                    <li>the number of results returned</li>
+                    <li>whether the results are content types/items</li>
+                    <li>the content type of the content item</li>
+                </ul>
+            </p>
+        </section>
+
+        <section id="getparameters">
+            <title>GET Parameters and Result Count</title>
+
+            <p>If the GET request includes the ID of a specific content type/item:
+                <ul>
+                    <li>If none was found, the server returns a 404 message.</li>
+                    <li>If the content type/item was found, the JSON structure contains information about the content type/item.
+                        <codeblock>
+{
+    "id": "...",
+    ...
+},
+                        </codeblock>
+                    </li>
+                </ul>
+            </p>
+
+            <p>If the GET request includes parameters in the query to filter the results, the JSON structure contains a <varname>documents</varname> array and <varname>totalResultCount</varname>.
+                <ul>
+                    <li>If none was found, the <varname>documents</varname> array is empty.
+                        <codeblock>
+{
+    "documents": [],
+    "totalResultCount": 0
+}
+                        </codeblock>
+                    </li>
+                    <li>If one or more content types/items were found, the <varname>documents</varname> array contains one node for each content type/item in the results.
+                        <codeblock>
+{
+    "documents": [
+        {
+            "id": "...",
+            ...
+        },
+        {
+            "id": "...",
+            ...
+        }
+    ],
+    "totalResultCount": 2
+}
+                        </codeblock>
+                    </li>
+                </ul>
+            </p>
+
+            <note type="note">By default, the maximum results returned is 10. Example: If 42 content items meet the criteria specified in the query of the request, only 10 will be returned. To override the default, set <varname>maxitems</varname> in the query string of the URL; e.g., <codeph>https://dnnapi.com/content/api/ContentItems?maxitems=500</codeph></note>
+        </section>
+
+
+        <section id="typeversusitem">
+            <title>Content Type Versus Content Item</title>
+
+            <p>Content type nodes differ from content item nodes as follows:</p>
+
+            <table frame="all" colsep="1" rowsep="1" >
+                <tgroup cols="3">
+                    <colspec colnum="1" colname="ctype" colwidth="1" align="left"/>
+                    <colspec colnum="2" colname="citem" colwidth="1" align="left"/>
+                    <!-- <colspec colnum="3" colname="desc" colwidth="4" align="left"/> -->
+                    <thead>
+                        <row>
+                            <entry>Content Type</entry>
+                            <entry>Content Item</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry namest="type" nameend="item">
+                                <varname>id</varname>
+                                <varname>name</varname>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry colname="ctype"><varname>icon</varname></entry>
+                            <entry colname="citem"><varname>slug</varname>
+                                <p><ph conkeyref="k-bpapi/ph-apifields-slug-contenttype"></ph></p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry namest="type" nameend="item"><varname>description</varname></entry>
+                        </row>
+                        <row>
+                            <entry colname="ctype"/>
+                            <entry colname="citem">
+<lines><varname>contentTypeId</varname>
+<varname>contentTypeName</varname>
+<varname>language</varname></lines>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry colname="ctype"><varname>enabled</varname>
+                                <p>If <codeph>true</codeph>, content items can be created for this content type.</p>
+                            </entry>
+                            <entry colname="citem"><varname>alreadyPublished</varname>
+                                <p></p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry colname="ctype"><varname>fields</varname>
+                                <p>Each field node includes the field type, the default value, the validation criteria, and the field's position in the form.</p>
+                            </entry>
+                            <entry colname="citem"><varname>details</varname>
+                                <p>The values for the fields. If a field is a reference to another content type, <codeph>details</codeph> includes a node with the values for the fields of that referenced content type.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry colname="ctype"/>
+                            <entry colname="citem"><varname>currentVersion</varname></entry>
+                        </row>
+                        <row>
+                            <entry colname="ctype">
+                                <varname>numberOfItems</varname>
+                                <p>The number of content items of this content type.</p>
+                                <varname>numberOfVisualizers</varname>
+                                <p>The number of visualizers associated with this content type.</p>
+                            </entry>
+                            <entry colname="citem"><varname>usages</varname>
+                                <p>The number of times that a content item is used in other content items, in pages, or in apps.</p>
+                                <note type="note">This is not the number of hits on the content item.</note>  <!-- BUGBUG: Confirm. -->
+                            </entry>
+                        </row>
+                        <row>
+                            <entry namest="type" nameend="item">
+<lines><varname>createdAt</varname>
+<varname>createdBy</varname>
+<varname>updatedAt</varname>
+<varname>updatedBy</varname></lines>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry colname="ctype"><varname>isSystem</varname>
+                                <p>If <codeph>true</codeph>, the content type is one of the defaults and cannot be modified or deleted.</p>
+                            </entry>
+                            <entry colname="citem">
+                                <varname>stateId</varname>
+                                <p>A code that represents the current workflow state. If 0, the item is in draft (unpublished) mode. If 1, the item is published.</p>
+                                <varname>tags</varname>
+                                <p>The list of tags associated with the content item.</p>
+                                <varname>clientReferenceId</varname>
+                                <p>[string] An external identifier used to synchronize the content item with clients, specifically the HTMLPro module in Evoq.</p>
+                            </entry>
+                        </row>
+                        <row>
+                            <entry colname="ctype"><varname>properties</varname></entry>
+                            <entry colname="citem"><varname>seoSettings</varname></entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+        </section>
+
+
+        <section id="typeofitem">
+            <title>Content Type of the Content Item</title>
+
+            <p>The <varname>details</varname> node of the content item varies based on the defined fields of its content type.</p>
+
+            <p>Example: Suppose the content type definition contains the following two fields. (The definitions are simplified for clarity.)</p>
+            <simpletable relcolwidth="1* 1*">
+                <sthead>
+                    <stentry>Content Type Definition</stentry>
+                    <stentry>Content Item Definition</stentry>
+                </sthead>
+                <strow>
+                    <stentry><codeblock>"fields": [</codeblock></stentry>
+                    <stentry><codeblock>"details": {</codeblock></stentry>
+                </strow>
+                <strow>
+                    <stentry>
+                        <codeblock>
+{
+    "type": "multipleChoice",
+    "defaultValue": null,
+    "settings": {
+        "subType": "radioButton",
+        "choices": [
+            { "label": "Evoq Engage" },
+            { "label": "Evoq Content" },
+            { "label": "Evoq Basic" },
+            { "label": "DNN Platform" }
+        ],
+        "multiSelect": false,
+        "listOrientation": "vertical",
+        "otherAsAnOption": false
+    },
+    "validation": { ... },
+    "name": "productName",
+    "label": "Product Name", ...
+},
+                        </codeblock>
+                    </stentry>
+                    <stentry>
+                        <codeblock>
+"productName": [
+    "Evoq Content"
+],
+                        </codeblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>
+                        <codeblock>
+{
+    "type": "multipleChoice", ...
+    "settings": {
+        "subType": "radioButton",
+        "choices": [
+            { "label": "8.5" },
+            { "label": "9.0" },
+            { "label": "9.1" }
+        ],
+        "multiSelect": false,
+        "listOrientation": "vertical",
+        "otherAsAnOption": true
+    },
+    "validation": { ... },
+    "name": "version",
+    "label": "Version", ...
+},
+                        </codeblock>
+                    </stentry>
+                    <stentry>
+                        <codeblock>
+"version": [
+    "9.1"
+],
+                        </codeblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>
+                        <codeblock>
+{
+    "type": "dateTime", ...
+    "settings": {
+        "subType": "date",
+        "dateFormat": "yyyymmdd",
+        "timeFormat": "hr24",
+        "timeZoneInfoActive": false,
+        "timeZoneInfoId": "Dateline Standard Time"
+    },
+    "validation": { ... },
+    "name": "releaseDate",
+    "label": "Release Date", ...
+},
+                        </codeblock>
+                    </stentry>
+                    <stentry>
+                        <p>Dates and times are returned as Unix time.</p>
+                        <codeblock>
+"releaseDate": "1493208000",
+                        </codeblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry>
+                        <codeblock>
+{
+    "type": "singleLineText", ...
+    "settings": {
+        "subType": "url", ...
+    },
+    "validation": { ... },
+    "name": "releaseNotes",
+    "label": "Release Notes", ...
+}
+                        </codeblock>
+                    </stentry>
+                    <stentry>
+                        <codeblock>
+"releaseNotes": "http://example.com"
+                        </codeblock>
+                    </stentry>
+                </strow>
+                <strow>
+                    <stentry><codeblock>]</codeblock></stentry>
+                    <stentry><codeblock>}</codeblock></stentry>
+                </strow>
+
+           </simpletable>
+
+        </section>
+
+    </body>
+
+</topic>
