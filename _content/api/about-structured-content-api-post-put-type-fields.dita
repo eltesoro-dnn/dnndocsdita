@@ -81,12 +81,12 @@
             <note type="tip">Evoq UI is the easiest way to create content types in most cases. To copy content types to multiple sites/servers, you can use the Export/Import feature.</note>
 
             <p>If you want to create multiple similar content types or if you want to recreate the same content types for testing,
-                <ul>
+                <ol>
                     <li>create one of the content types in the UI,</li>
                     <li>request (GET) that content type from your app,</li>
                     <li>clean up the resulting JSON to remove the specific values, such as the <varname>id</varname> of the content type and of reference fields, and</li>
                     <li>replace the old values with values for the new type.</li>
-                </ul>
+                </ol>
             </p>
 
         </section>

@@ -1,0 +1,498 @@
+{
+    "__NOTES__":  [
+        "Source/Basis: ..."
+    ],
+    "listall-webapifields":  {
+    },
+    "TEMPLATE-add-webapifields":  {
+        "body":  {
+            "name":  "",
+            "description":  "",
+            "language":  "en",
+            "alreadyPublished":  true,
+            "details":  {
+                "fieldName":  "",
+                "dataType":  [
+                ],
+                "enumList":  "",
+                "elementType":  "",
+                "fieldDesc":  ""
+            },
+            "tags":  [
+            ]
+        }
+    },
+    "add-webapifields":  {
+        "permutations":  [
+            {
+                "name":  "apifield-contenttype-get-querysearchtext",
+                "fieldName":  "query.searchText",
+                "dataType":  "string",
+                "fieldDesc":  "The text to search for."
+            },
+            {
+                "name":  "apifield-contenttype-get-querystartindex",
+                "fieldName":  "query.startIndex",
+                "dataType":  "integer-int32",
+                "fieldDesc":  "The index at which to start the returned results. Example: If the value is 5, the first five resulting items are ignored."
+            },
+            {
+                "name":  "apifield-contenttype-get-querymaxitems",
+                "fieldName":  "query.maxItems",
+                "dataType":  "integer-int32",
+                "fieldDesc":  "The maximum number of resulting items to return."
+            },
+            {
+                "name":  "apifield-contenttype-get-queryfieldorder",
+                "fieldName":  "query.fieldOrder",
+                "dataType":  "string",
+                "fieldDesc":  "The field to be used for sorting the results. See \u003cterm\u003eorderAsc\u003c/term\u003e."
+            },
+            {
+                "name":  "apifield-contenttype-get-queryorderasc",
+                "fieldName":  "query.orderAsc",
+                "dataType":  "boolean",
+                "fieldDesc":  "If \u003cterm\u003etrue\u003c/true\u003e, the results are sorted in ascending order of \u003cterm\u003efieldOrder\u003c/term\u003e. Otherwise, in descending order."
+            },
+            {
+                "name":  "apifield-contenttype-get-querycreatedfrom",
+                "fieldName":  "query.createdFrom",
+                "dataType":  "string-date-time",
+                "fieldDesc":  "The earliest creation date to be included in the results. Use with \u003cterm\u003ecreatedTo\u003c/term\u003e to define a range of creation dates."
+            },
+            {
+                "name":  "apifield-contenttype-get-querycreatedto",
+                "fieldName":  "query.createdTo",
+                "dataType":  "string-date-time",
+                "fieldDesc":  "The latest creation date to be included in the results. Use with \u003cterm\u003ecreatedFrom\u003c/term\u003e to define a range of creation dates."
+            },
+            {
+                "name":  "apifield-contenttype-dto-documents",
+                "fieldName":  "documents",
+                "dataType":  "array",
+                "elementType":  "StructuredContent.API.Dto.ContentTypes.ContentType"
+            },
+            {
+                "name":  "apifield-contenttype-dto-totalresultcount",
+                "fieldName":  "totalResultCount",
+                "dataType":  "integer-int64"
+            },
+            {
+                "name":  "apifield-contenttype-dto-name",
+                "fieldName":  "name",
+                "dataType":  "string",
+                "fieldDesc":  "The name of the content type."
+            },
+            {
+                "name":  "apifield-contenttype-dto-icon",
+                "fieldName":  "icon",
+                "dataType":  "string",
+                "fieldDesc":  "The icon associated with the content type."
+            },
+            {
+                "name":  "apifield-contenttype-dto-description",
+                "fieldName":  "description",
+                "dataType":  "string",
+                "fieldDesc":  "The description of the content type."
+            },
+            {
+                "name":  "apifield-contenttype-dto-fields",
+                "fieldName":  "fields",
+                "dataType":  "array",
+                "elementType":  "StructuredContent.Models.ContentTypeFields.ContentTypeField",
+                "fieldDesc":  "The set of fields that comprise the content type."
+            },
+            {
+                "name":  "apifield-contenttype-dto-properties",
+                "fieldName":  "properties",
+                "dataType":  "object",
+                "fieldDesc":  "[StructuredContent.Models.ContentTypeProperties] The set of properties of the content type\u003c!--, such as ??? --\u003e."
+            },
+            {
+                "name":  "apifield-contenttype-dto-selectedlanguages",
+                "fieldName":  "selectedLanguages",
+                "dataType":  "array",
+                "elementType":  "StructuredContent.API.Dto.Languages.Language",
+                "fieldDesc":  "List of selected languages of the ContentType"
+            },
+            {
+                "name":  "apifield-contenttype-dto-id",
+                "fieldName":  "id",
+                "dataType":  "string",
+                "fieldDesc":  "The unique identifier of the content type."
+            },
+            {
+                "name":  "apifield-contenttype-dto-createdat",
+                "fieldName":  "createdAt",
+                "dataType":  "string-date-time",
+                "fieldDesc":  "When the content type was created."
+            },
+            {
+                "name":  "apifield-contenttype-dto-createdby",
+                "fieldName":  "createdBy",
+                "dataType":  "object",
+                "fieldDesc":  "[Person] Who created the content type."
+            },
+            {
+                "name":  "apifield-contenttype-dto-updatedat",
+                "fieldName":  "updatedAt",
+                "dataType":  "string-date-time",
+                "fieldDesc":  "When the content type was last updated."
+            },
+            {
+                "name":  "apifield-contenttype-dto-updatedby",
+                "fieldName":  "updatedBy",
+                "dataType":  "object",
+                "fieldDesc":  "[Person] Who last updated the content type."
+            },
+            {
+                "name":  "apifield-contenttype-dto-enabled",
+                "fieldName":  "enabled",
+                "dataType":  "boolean",
+                "fieldDesc":  "If true, new content items of this content type can be created. Otherwise, not."
+            },
+            {
+                "name":  "apifield-contenttype-dto-numberofitems",
+                "fieldName":  "numberOfItems",
+                "dataType":  "integer-int32",
+                "fieldDesc":  "The number of content items that are of this content type."
+            },
+            {
+                "name":  "apifield-contenttype-dto-numberofvisualizers",
+                "fieldName":  "numberOfVisualizers",
+                "dataType":  "integer-int32",
+                "fieldDesc":  "The number of visualizers associated with this content type."
+            },
+            {
+                "name":  "apifield-contenttype-dto-issystem",
+                "fieldName":  "isSystem",
+                "dataType":  "boolean",
+                "fieldDesc":  "If true, this content type is a default provided by DNN."
+            },
+            {
+                "name":  "apifield-contenttype-get-id",
+                "fieldName":  "id",
+                "dataType":  "string",
+                "fieldDesc":  "The unique identifier of the content type to get."
+            },
+            {
+                "name":  "apifield-contenttype-put-id",
+                "fieldName":  "id",
+                "dataType":  "string",
+                "fieldDesc":  "The unique identifier of the content type to update."
+            },
+            {
+                "name":  "apifield-contenttype-delete-id",
+                "fieldName":  "id",
+                "dataType":  "string",
+                "fieldDesc":  "The unique identifier of the content type to delete."
+            },
+            {
+                "name":  "apifield-contenttype-get-name",
+                "fieldName":  "name",
+                "dataType":  "string",
+                "fieldDesc":  "The name of the content type to get"
+            },
+            {
+                "name":  "apifield-contentitem-get-querypublished",
+                "fieldName":  "query.published",
+                "dataType":  "boolean",
+                "fieldDesc":  "If \u003cterm\u003etrue\u003c/term\u003e, only published content items are included in the results. Default is \u003cterm\u003efalse\u003c/term\u003e."
+            },
+            {
+                "name":  "apifield-contentitem-get-querytags",
+                "fieldName":  "query.tags",
+                "dataType":  "string",
+                "fieldDesc":  "The tags to search for. Comma-separated and URL-encoded. Example: tags=my%20tag,tag2,lastTag"
+            },
+            {
+                "name":  "apifield-contentitem-get-querycontenttypeid",
+                "fieldName":  "query.contentTypeId",
+                "dataType":  "string",
+                "fieldDesc":  "The content type of the content items to return."
+            },
+            {
+                "name":  "apifield-contentitem-get-querysearchtext",
+                "fieldName":  "query.searchText",
+                "dataType":  "string",
+                "fieldDesc":  "The text to search for."
+            },
+            {
+                "name":  "apifield-contentitem-get-querystartindex",
+                "fieldName":  "query.startIndex",
+                "dataType":  "integer-int32",
+                "fieldDesc":  "The index at which to start the returned results. Example: If the value is 5, the first five resulting items are ignored."
+            },
+            {
+                "name":  "apifield-contentitem-get-querymaxitems",
+                "fieldName":  "query.maxItems",
+                "dataType":  "integer-int32",
+                "fieldDesc":  "The maximum number of resulting items to return."
+            },
+            {
+                "name":  "apifield-contentitem-get-queryfieldorder",
+                "fieldName":  "query.fieldOrder",
+                "dataType":  "string",
+                "fieldDesc":  "The field to be used for sorting the results. See \u003cterm\u003eorderAsc\u003c/term\u003e."
+            },
+            {
+                "name":  "apifield-contentitem-get-queryorderasc",
+                "fieldName":  "query.orderAsc",
+                "dataType":  "boolean",
+                "fieldDesc":  "If \u003cterm\u003etrue\u003c/true\u003e, the results are sorted in ascending order of \u003cterm\u003efieldOrder\u003c/term\u003e. Otherwise, in descending order."
+            },
+            {
+                "name":  "apifield-contentitem-get-querycreatedfrom",
+                "fieldName":  "query.createdFrom",
+                "dataType":  "string-date-time",
+                "fieldDesc":  "The earliest creation date to be included in the results. Use with \u003cterm\u003ecreatedTo\u003c/term\u003e to define a range of creation dates."
+            },
+            {
+                "name":  "apifield-contentitem-get-querycreatedto",
+                "fieldName":  "query.createdTo",
+                "dataType":  "string-date-time",
+                "fieldDesc":  "The latest creation date to be included in the results. Use with \u003cterm\u003ecreatedFrom\u003c/term\u003e to define a range of creation dates."
+            },
+            {
+                "name":  "apifield-contentitem-dto-documents",
+                "fieldName":  "documents",
+                "dataType":  "array",
+                "elementType":  "StructuredContent.API.Dto.ContentItems.ContentItem"
+            },
+            {
+                "name":  "apifield-contentitem-dto-totalresultcount",
+                "fieldName":  "totalResultCount",
+                "dataType":  "integer-int64"
+            },
+            {
+                "name":  "apifield-contentitem-dto-contenttypeid",
+                "fieldName":  "contentTypeId",
+                "dataType":  "string",
+                "fieldDesc":  "The unique identifier of the content type of the content item."
+            },
+            {
+                "name":  "apifield-contentitem-dto-name",
+                "fieldName":  "name",
+                "dataType":  "string",
+                "fieldDesc":  "The name of the content item."
+            },
+            {
+                "name":  "apifield-contentitem-dto-description",
+                "fieldName":  "description",
+                "dataType":  "string",
+                "fieldDesc":  "The description of the content item."
+            },
+            {
+                "name":  "apifield-contentitem-dto-details",
+                "fieldName":  "details",
+                "dataType":  "object",
+                "fieldDesc":  "The JObject structure that contains the values of all dynamic fields of the content item."
+            },
+            {
+                "name":  "apifield-contentitem-dto-tags",
+                "fieldName":  "tags",
+                "dataType":  "array",
+                "elementType":  "",
+                "fieldDesc":  "The list of tags associated with the content item."
+            },
+            {
+                "name":  "apifield-contentitem-dto-clientreferenceid",
+                "fieldName":  "clientReferenceId",
+                "dataType":  "string",
+                "fieldDesc":  "An external identifier used to synchronize the content item with clients, specifically the HTMLPro module in Evoq."
+            },
+            {
+                "name":  "apifield-contentitem-dto-seosettings",
+                "fieldName":  "seoSettings",
+                "dataType":  "object",
+                "fieldDesc":  "[SEO Settings] Seo settings of the content item."
+            },
+            {
+                "name":  "apifield-contentitem-post-publish",
+                "fieldName":  "publish",
+                "dataType":  "boolean",
+                "fieldDesc":  "If \u003cterm\u003etrue\u003c/term\u003e, the new content item is immediately published. Default is \u003cterm\u003efalse\u003c/term\u003e."
+            },
+            {
+                "name":  "apifield-contentitem-dto-id",
+                "fieldName":  "id",
+                "dataType":  "string",
+                "fieldDesc":  "The unique identifier of the content item."
+            },
+            {
+                "name":  "apifield-contentitem-dto-slug",
+                "fieldName":  "slug",
+                "dataType":  "string",
+                "fieldDesc":  "The portion of the URL that uniquely identifies this content item for retrieval."
+            },
+            {
+                "name":  "apifield-contentitem-dto-contenttypename",
+                "fieldName":  "contentTypeName",
+                "dataType":  "string",
+                "fieldDesc":  "The name of the content type of the content item."
+            },
+            {
+                "name":  "apifield-contentitem-dto-language",
+                "fieldName":  "language",
+                "dataType":  "string",
+                "fieldDesc":  "The language of the content item."
+            },
+            {
+                "name":  "apifield-contentitem-dto-alreadypublished",
+                "fieldName":  "alreadyPublished",
+                "dataType":  "boolean",
+                "fieldDesc":  "Whether the content item has been published."
+            },
+            {
+                "name":  "apifield-contentitem-dto-currentversion",
+                "fieldName":  "currentVersion",
+                "dataType":  "integer-int32",
+                "fieldDesc":  "The current version of the content item."
+            },
+            {
+                "name":  "apifield-contentitem-dto-usages",
+                "fieldName":  "usages",
+                "dataType":  "integer-int32",
+                "fieldDesc":  "The number of times that the content item is used."
+            },
+            {
+                "name":  "apifield-contentitem-dto-createdat",
+                "fieldName":  "createdAt",
+                "dataType":  "string-date-time",
+                "fieldDesc":  "When the content item was created."
+            },
+            {
+                "name":  "apifield-contentitem-dto-createdby",
+                "fieldName":  "createdBy",
+                "dataType":  "object",
+                "fieldDesc":  "[Person] Who created the content item."
+            },
+            {
+                "name":  "apifield-contentitem-dto-updatedat",
+                "fieldName":  "updatedAt",
+                "dataType":  "string-date-time",
+                "fieldDesc":  "When the content item was last updated."
+            },
+            {
+                "name":  "apifield-contentitem-dto-updatedby",
+                "fieldName":  "updatedBy",
+                "dataType":  "object",
+                "fieldDesc":  "[Person] Who last updated the content item."
+            },
+            {
+                "name":  "apifield-contentitem-dto-stateid",
+                "fieldName":  "stateId",
+                "dataType":  "integer-int32",
+                "fieldDesc":  "A code that represents the current workflow state. If 0, the item is in draft (unpublished) mode. If 1, the item is published."
+            },
+            {
+                "name":  "apifield-contentitem-get-id",
+                "fieldName":  "id",
+                "dataType":  "string",
+                "fieldDesc":  "The unique identifier of the content item to get."
+            },
+            {
+                "name":  "apifield-contentitem-put-id",
+                "fieldName":  "id",
+                "dataType":  "string",
+                "fieldDesc":  "The unique identifier of the content item to update."
+            },
+            {
+                "name":  "apifield-contentitem-put-publish",
+                "fieldName":  "publish",
+                "dataType":  "boolean",
+                "fieldDesc":  "If \u003cterm\u003etrue\u003c/term\u003e, the updated content item is immediately published. Default is \u003cterm\u003efalse\u003c/term\u003e."
+            },
+            {
+                "name":  "apifield-contentitem-delete-id",
+                "fieldName":  "id",
+                "dataType":  "string",
+                "fieldDesc":  "The unique identifier of the content item to delete."
+            },
+            {
+                "name":  "apifield-publishedcontentitem-get-contentitemids",
+                "fieldName":  "contentItemIds",
+                "dataType":  "array",
+                "elementType":  "",
+                "fieldDesc":  "Collection of content items identifiers."
+            },
+            {
+                "name":  "apifield-publishedcontentitem-get-querypublished",
+                "fieldName":  "query.published",
+                "dataType":  "boolean",
+                "fieldDesc":  "If \u003cterm\u003etrue\u003c/term\u003e, only published content items are included in the results. Default is \u003cterm\u003efalse\u003c/term\u003e."
+            },
+            {
+                "name":  "apifield-publishedcontentitem-get-querytags",
+                "fieldName":  "query.tags",
+                "dataType":  "string",
+                "fieldDesc":  "The tags to search for. Comma-separated and URL-encoded. Example: tags=my%20tag,tag2,lastTag"
+            },
+            {
+                "name":  "apifield-publishedcontentitem-get-querycontenttypeid",
+                "fieldName":  "query.contentTypeId",
+                "dataType":  "string",
+                "fieldDesc":  "The content type of the content items to return."
+            },
+            {
+                "name":  "apifield-publishedcontentitem-get-querysearchtext",
+                "fieldName":  "query.searchText",
+                "dataType":  "string",
+                "fieldDesc":  "The text to search for."
+            },
+            {
+                "name":  "apifield-publishedcontentitem-get-querystartindex",
+                "fieldName":  "query.startIndex",
+                "dataType":  "integer-int32",
+                "fieldDesc":  "The index at which to start the returned results. Example: If the value is 5, the first five resulting items are ignored."
+            },
+            {
+                "name":  "apifield-publishedcontentitem-get-querymaxitems",
+                "fieldName":  "query.maxItems",
+                "dataType":  "integer-int32",
+                "fieldDesc":  "The maximum number of resulting items to return."
+            },
+            {
+                "name":  "apifield-publishedcontentitem-get-queryfieldorder",
+                "fieldName":  "query.fieldOrder",
+                "dataType":  "string",
+                "fieldDesc":  "The field to be used for sorting the results. See \u003cterm\u003eorderAsc\u003c/term\u003e."
+            },
+            {
+                "name":  "apifield-publishedcontentitem-get-queryorderasc",
+                "fieldName":  "query.orderAsc",
+                "dataType":  "boolean",
+                "fieldDesc":  "If \u003cterm\u003etrue\u003c/true\u003e, the results are sorted in ascending order of \u003cterm\u003efieldOrder\u003c/term\u003e. Otherwise, in descending order."
+            },
+            {
+                "name":  "apifield-publishedcontentitem-get-querycreatedfrom",
+                "fieldName":  "query.createdFrom",
+                "dataType":  "string-date-time",
+                "fieldDesc":  "The earliest creation date to be included in the results. Use with \u003cterm\u003ecreatedTo\u003c/term\u003e to define a range of creation dates."
+            },
+            {
+                "name":  "apifield-publishedcontentitem-get-querycreatedto",
+                "fieldName":  "query.createdTo",
+                "dataType":  "string-date-time",
+                "fieldDesc":  "The latest creation date to be included in the results. Use with \u003cterm\u003ecreatedFrom\u003c/term\u003e to define a range of creation dates."
+            },
+            {
+                "name":  "apifield-publishedcontentitem-dto-documents",
+                "fieldName":  "documents",
+                "dataType":  "array",
+                "elementType":  "StructuredContent.Services.Publishing.Dto.ContentItem"
+            },
+            {
+                "name":  "apifield-publishedcontentitem-dto-totalresultcount",
+                "fieldName":  "totalResultCount",
+                "dataType":  "integer-int64"
+            }
+        ]
+    },
+    "delete-webapifields-in-list":  {
+        "ids":  [
+        ]
+    },
+    "deleteall-webapifields":  {
+    }
+}

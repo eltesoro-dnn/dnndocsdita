@@ -1,7 +1,9 @@
 {
     "listall-contenttypes": {
+
     },
     "deleteall-contenttypes": {
+
     },
     "add-contenttype-Choice": {
         "body": {
@@ -22,17 +24,6 @@
                     "position": "start"
                 },
                 {
-                    "type": "multiLineText",
-                    "settings": {
-                        "subType": "textEditor"
-                    },
-                    "name": "info",
-                    "label": "Info",
-                    "row": 2,
-                    "width": "full",
-                    "position": "start"
-                },
-                {
                     "type": "referenceObject",
                     "allowedContentTypeId": "",
                     "allowedContentTypeName": "Image",
@@ -42,6 +33,17 @@
                     "name": "image",
                     "label": "Image",
                     "row": 1,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "info",
+                    "label": "Info",
+                    "row": 2,
                     "width": "full",
                     "position": "start"
                 }
@@ -193,17 +195,6 @@
                     "position": "start"
                 },
                 {
-                    "type": "multiLineText",
-                    "settings": {
-                        "subType": "textEditor"
-                    },
-                    "name": "relLinks",
-                    "label": "RelLinks",
-                    "row": 4,
-                    "width": "full",
-                    "position": "start"
-                },
-                {
                     "type": "referenceObject",
                     "allowedContentTypeId": "",
                     "allowedContentTypeName": "Section",
@@ -213,6 +204,17 @@
                     "name": "section",
                     "label": "Section",
                     "row": 3,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "relLinks",
+                    "label": "RelLinks",
+                    "row": 4,
                     "width": "full",
                     "position": "start"
                 }
@@ -807,19 +809,17 @@
             "name": "Requisite",
             "icon": null,
             "enabled": true,
-            "fields": [
-                {
-                    "type": "multiLineText",
-                    "settings": {
-                        "subType": "textEditor"
-                    },
-                    "name": "reqList",
-                    "label": "ReqList",
-                    "row": 0,
-                    "width": "full",
-                    "position": "start"
-                }
-            ],
+            "fields": {
+                "type": "multiLineText",
+                "settings": {
+                    "subType": "textEditor"
+                },
+                "name": "reqList",
+                "label": "ReqList",
+                "row": 0,
+                "width": "full",
+                "position": "start"
+            },
             "properties": {
                 "contentName": {
                     "type": "contentName",
@@ -1254,19 +1254,6 @@
             "enabled": true,
             "fields": [
                 {
-                    "type": "referenceObject",
-                    "allowedContentTypeId": "",
-                    "allowedContentTypeName": "TermDesc",
-                    "settings": {
-                        "subType": "multiReferenceObject"
-                    },
-                    "name": "rows",
-                    "label": "Rows",
-                    "row": 1,
-                    "width": "full",
-                    "position": "start"
-                },
-                {
                     "type": "staticText",
                     "settings": {
                         "subType": "heading",
@@ -1293,6 +1280,19 @@
                     "row": 0,
                     "width": "half",
                     "position": "half"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "TermDesc",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "rows",
+                    "label": "Rows",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
                 }
             ],
             "properties": {
@@ -1613,6 +1613,434 @@
             }
         }
     },
+    "add-contenttype-Test Date": {
+        "body": {
+            "name": "Test Date",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "dateTime",
+                    "settings": {
+                        "subType": "date",
+                        "dateFormat": "ddmmyy",
+                        "timeFormat": "hr24",
+                        "timeZoneInfoActive": false,
+                        "timeZoneInfoId": "Dateline Standard Time"
+                    },
+                    "name": "dateDDMMYY",
+                    "label": "Date DD-MM-YY",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                {
+                    "type": "dateTime",
+                    "settings": {
+                        "subType": "date",
+                        "dateFormat": "mmddyy",
+                        "timeFormat": "hr24",
+                        "timeZoneInfoActive": false,
+                        "timeZoneInfoId": "Dateline Standard Time"
+                    },
+                    "name": "dateMMDDYY",
+                    "label": "Date MM-DD-YY",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                {
+                    "type": "dateTime",
+                    "settings": {
+                        "subType": "date",
+                        "dateFormat": "ddmmyyyy",
+                        "timeFormat": "hr24",
+                        "timeZoneInfoActive": false,
+                        "timeZoneInfoId": "Dateline Standard Time"
+                    },
+                    "name": "dateDDMMYYYY",
+                    "label": "Date DD-MM-YYYY",
+                    "row": 1,
+                    "width": "half",
+                    "position": "start"
+                },
+                {
+                    "type": "dateTime",
+                    "settings": {
+                        "subType": "date",
+                        "dateFormat": "mmddyyyy",
+                        "timeFormat": "hr24",
+                        "timeZoneInfoActive": false,
+                        "timeZoneInfoId": "Dateline Standard Time"
+                    },
+                    "name": "dateMMDDYYYY",
+                    "label": "Date MM-DD-YYYY",
+                    "row": 1,
+                    "width": "half",
+                    "position": "half"
+                },
+                {
+                    "type": "dateTime",
+                    "settings": {
+                        "subType": "date",
+                        "dateFormat": "yyyymmdd",
+                        "timeFormat": "hr24",
+                        "timeZoneInfoActive": false,
+                        "timeZoneInfoId": "Dateline Standard Time"
+                    },
+                    "name": "dateYYYYMMDD",
+                    "label": "Date YYYY-MM-DD",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "dateTime",
+                    "settings": {
+                        "subType": "time",
+                        "dateFormat": "ddmmyy",
+                        "timeFormat": "amPm",
+                        "timeZoneInfoActive": false,
+                        "timeZoneInfoId": "Dateline Standard Time"
+                    },
+                    "name": "timeAMPM",
+                    "label": "Time AM/PM",
+                    "row": 3,
+                    "width": "half",
+                    "position": "half"
+                },
+                {
+                    "type": "dateTime",
+                    "settings": {
+                        "subType": "time",
+                        "dateFormat": "ddmmyy",
+                        "timeFormat": "hr24",
+                        "timeZoneInfoActive": false,
+                        "timeZoneInfoId": "Dateline Standard Time"
+                    },
+                    "name": "time24h",
+                    "label": "Time 24h",
+                    "row": 3,
+                    "width": "half",
+                    "position": "start"
+                },
+                {
+                    "type": "dateTime",
+                    "settings": {
+                        "subType": "time",
+                        "dateFormat": "ddmmyy",
+                        "timeFormat": "hr24",
+                        "timeZoneInfoActive": true,
+                        "timeZoneInfoId": "UTC"
+                    },
+                    "name": "timezoneUTC",
+                    "label": "Timezone UTC",
+                    "row": 4,
+                    "width": "half",
+                    "position": "start"
+                },
+                {
+                    "type": "dateTime",
+                    "settings": {
+                        "subType": "time",
+                        "dateFormat": "ddmmyy",
+                        "timeFormat": "hr24",
+                        "timeZoneInfoActive": true,
+                        "timeZoneInfoId": "Pacific Standard Time"
+                    },
+                    "name": "timezonePacific",
+                    "label": "Timezone Pacific",
+                    "row": 4,
+                    "width": "half",
+                    "position": "half"
+                },
+                {
+                    "type": "dateTime",
+                    "settings": {
+                        "subType": "dateTime",
+                        "dateFormat": "ddmmyy",
+                        "timeFormat": "hr24",
+                        "timeZoneInfoActive": true,
+                        "timeZoneInfoId": "Pacific Standard Time"
+                    },
+                    "name": "dateandTimePacific",
+                    "label": "Date and Time Pacific",
+                    "row": 5,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "dateTime",
+                    "settings": {
+                        "subType": "dateTime",
+                        "dateFormat": "ddmmyy",
+                        "timeFormat": "hr24",
+                        "timeZoneInfoActive": true,
+                        "timeZoneInfoId": "Pacific Standard Time"
+                    },
+                    "name": "dateTimeBefore",
+                    "label": "Date / Time - Before",
+                    "row": 6,
+                    "width": "third",
+                    "position": "start"
+                },
+                {
+                    "type": "dateTime",
+                    "settings": {
+                        "subType": "dateTime",
+                        "dateFormat": "ddmmyy",
+                        "timeFormat": "hr24",
+                        "timeZoneInfoActive": true,
+                        "timeZoneInfoId": "Pacific Standard Time"
+                    },
+                    "name": "dateTimeAfter",
+                    "label": "Date / Time - After",
+                    "row": 6,
+                    "width": "third",
+                    "position": "third"
+                },
+                {
+                    "type": "dateTime",
+                    "settings": {
+                        "subType": "dateTime",
+                        "dateFormat": "ddmmyy",
+                        "timeFormat": "hr24",
+                        "timeZoneInfoActive": true,
+                        "timeZoneInfoId": "Pacific Standard Time"
+                    },
+                    "name": "dateTimeBetween",
+                    "label": "Date / Time - Between",
+                    "row": 6,
+                    "width": "third",
+                    "position": "twoThirds"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-Test Number": {
+        "body": {
+            "name": "Test Number",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "numberSelector",
+                    "settings": {
+                        "subType": "singleLine",
+                        "numberSetFormat": "integer",
+                        "spinnerOrientation": "horizontal",
+                        "numberRange": {
+                            "minimum": 1.0,
+                            "maximum": 5.0
+                        }
+                    },
+                    "name": "singleLineInteger",
+                    "label": "SingleLine Integer",
+                    "row": 0,
+                    "width": "third",
+                    "position": "start"
+                },
+                {
+                    "type": "numberSelector",
+                    "settings": {
+                        "subType": "singleLine",
+                        "numberSetFormat": "decimal",
+                        "spinnerOrientation": "horizontal",
+                        "numberRange": {
+                            "minimum": 1.0,
+                            "maximum": 5.0
+                        }
+                    },
+                    "name": "singleLineDecimal",
+                    "label": "SingleLine Decimal",
+                    "row": 0,
+                    "width": "third",
+                    "position": "third"
+                },
+                {
+                    "type": "numberSelector",
+                    "settings": {
+                        "subType": "singleLine",
+                        "numberSetFormat": "percentage",
+                        "spinnerOrientation": "horizontal",
+                        "numberRange": {
+                            "minimum": 1.0,
+                            "maximum": 5.0
+                        }
+                    },
+                    "name": "singleLinePercentag",
+                    "label": "SingleLine Percentag",
+                    "row": 0,
+                    "width": "third",
+                    "position": "twoThirds"
+                },
+                {
+                    "type": "numberSelector",
+                    "settings": {
+                        "subType": "spinner",
+                        "numberSetFormat": "integer",
+                        "spinnerOrientation": "horizontal",
+                        "numberRange": {
+                            "minimum": 6.0,
+                            "maximum": 10.0
+                        }
+                    },
+                    "name": "spinnerIntegerHori",
+                    "label": "Spinner Integer Hori",
+                    "row": 1,
+                    "width": "third",
+                    "position": "start"
+                },
+                {
+                    "type": "numberSelector",
+                    "settings": {
+                        "subType": "spinner",
+                        "numberSetFormat": "decimal",
+                        "spinnerOrientation": "vertical",
+                        "numberRange": {
+                            "minimum": 6.0,
+                            "maximum": 10.0
+                        }
+                    },
+                    "name": "spinnerDecimalVertical",
+                    "label": "Spinner Decimal Vertical",
+                    "row": 1,
+                    "width": "third",
+                    "position": "third"
+                },
+                {
+                    "type": "numberSelector",
+                    "settings": {
+                        "subType": "spinner",
+                        "numberSetFormat": "percentage",
+                        "spinnerOrientation": "horizontal",
+                        "numberRange": {
+                            "minimum": 6.0,
+                            "maximum": 10.0
+                        }
+                    },
+                    "name": "spinnerPercentageHori",
+                    "label": "Spinner Percentage Hori",
+                    "row": 1,
+                    "width": "third",
+                    "position": "twoThirds"
+                },
+                {
+                    "type": "numberSelector",
+                    "settings": {
+                        "subType": "dropdown",
+                        "numberSetFormat": "integer",
+                        "spinnerOrientation": "horizontal",
+                        "numberRange": {
+                            "minimum": 11.0,
+                            "maximum": 15.0
+                        }
+                    },
+                    "name": "dropdownInteger",
+                    "label": "Dropdown Integer",
+                    "row": 2,
+                    "width": "third",
+                    "position": "start"
+                },
+                {
+                    "type": "numberSelector",
+                    "settings": {
+                        "subType": "dropdown",
+                        "numberSetFormat": "decimal",
+                        "spinnerOrientation": "horizontal",
+                        "numberRange": {
+                            "minimum": 11.0,
+                            "maximum": 15.0
+                        }
+                    },
+                    "name": "dropdownDecimal",
+                    "label": "Dropdown Decimal",
+                    "row": 2,
+                    "width": "third",
+                    "position": "third"
+                },
+                {
+                    "type": "numberSelector",
+                    "settings": {
+                        "subType": "dropdown",
+                        "numberSetFormat": "percentage",
+                        "spinnerOrientation": "horizontal",
+                        "numberRange": {
+                            "minimum": 11.0,
+                            "maximum": 15.0
+                        }
+                    },
+                    "name": "dropdownPercentage",
+                    "label": "Dropdown Percentage",
+                    "row": 2,
+                    "width": "third",
+                    "position": "twoThirds"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
     "add-contenttype-Troubleshooting": {
         "body": {
             "name": "Troubleshooting",
@@ -1775,6 +2203,604 @@
                     "row": 6,
                     "width": "full",
                     "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-WebApiDto": {
+        "body": {
+            "name": "WebApiDto",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "dTODesc",
+                    "label": "DTO Desc",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "syntax",
+                    "label": "Syntax",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "WebApiField",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "fields",
+                    "label": "Fields",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-WebApiField": {
+        "body": {
+            "name": "WebApiField",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "singleLineText",
+                    "settings": {
+                        "subType": "singleLine",
+                        "phoneNumberFormat": null
+                    },
+                    "name": "fieldName",
+                    "label": "Field Name",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "multiLine"
+                    },
+                    "name": "fieldDesc",
+                    "label": "Field Desc",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multipleChoice",
+                    "defaultValue": "string",
+                    "settings": {
+                        "subType": "dropDown",
+                        "choices": [
+                            {
+                                "label": "string"
+                            },
+                            {
+                                "label": "string-uuid"
+                            },
+                            {
+                                "label": "string-date-time"
+                            },
+                            {
+                                "label": "number"
+                            },
+                            {
+                                "label": "number-float"
+                            },
+                            {
+                                "label": "integer"
+                            },
+                            {
+                                "label": "integer-int32"
+                            },
+                            {
+                                "label": "integer-int64"
+                            },
+                            {
+                                "label": "boolean"
+                            },
+                            {
+                                "label": "array"
+                            },
+                            {
+                                "label": "object"
+                            },
+                            {
+                                "label": "enum"
+                            }
+                        ],
+                        "multiSelect": false,
+                        "listOrientation": "horizontal",
+                        "otherAsAnOption": false
+                    },
+                    "name": "dataType",
+                    "label": "Data Type",
+                    "row": 2,
+                    "width": "third",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "multiLine"
+                    },
+                    "name": "enumList",
+                    "label": "Enum List",
+                    "descriptionActive": true,
+                    "description": "Use if DataType is \"enum\".",
+                    "row": 2,
+                    "width": "third",
+                    "position": "third"
+                },
+                {
+                    "type": "singleLineText",
+                    "settings": {
+                        "subType": "singleLine",
+                        "phoneNumberFormat": null
+                    },
+                    "name": "elementType",
+                    "label": "Element Type",
+                    "descriptionActive": true,
+                    "description": "Use if DataType is \"array\".",
+                    "row": 2,
+                    "width": "third",
+                    "position": "twoThirds"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-WebApiMethod": {
+        "body": {
+            "name": "WebApiMethod",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "summary",
+                    "label": "Summary",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multipleChoice",
+                    "defaultValue": "GET",
+                    "settings": {
+                        "subType": "dropDown",
+                        "choices": [
+                            {
+                                "label": "GET"
+                            },
+                            {
+                                "label": "POST"
+                            },
+                            {
+                                "label": "PUT"
+                            },
+                            {
+                                "label": "DELETE"
+                            }
+                        ],
+                        "multiSelect": false,
+                        "listOrientation": "horizontal",
+                        "otherAsAnOption": false
+                    },
+                    "name": "action",
+                    "label": "Action",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "WebApiSection",
+                    "settings": {
+                        "subType": "singleReferenceObject"
+                    },
+                    "name": "uRLSection",
+                    "label": "URL Section",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "WebApiSection",
+                    "settings": {
+                        "subType": "singleReferenceObject"
+                    },
+                    "name": "messageSection",
+                    "label": "Message Section",
+                    "row": 3,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "WebApiSection",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "responseSection",
+                    "label": "Response Section",
+                    "row": 4,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Passage",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "remarks",
+                    "label": "Remarks",
+                    "row": 5,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "relatedLinks",
+                    "label": "Related Links",
+                    "row": 6,
+                    "width": "full",
+                    "position": "start"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-WebApiParam": {
+        "body": {
+            "name": "WebApiParam",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "singleLineText",
+                    "settings": {
+                        "subType": "singleLine",
+                        "phoneNumberFormat": null
+                    },
+                    "name": "paramName",
+                    "label": "Param Name",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multipleChoice",
+                    "defaultValue": "body",
+                    "settings": {
+                        "subType": "dropDown",
+                        "choices": [
+                            {
+                                "label": "path"
+                            },
+                            {
+                                "label": "query"
+                            },
+                            {
+                                "label": "body"
+                            }
+                        ],
+                        "multiSelect": false,
+                        "listOrientation": "horizontal",
+                        "otherAsAnOption": false
+                    },
+                    "name": "in",
+                    "label": "In",
+                    "row": 1,
+                    "width": "half",
+                    "position": "start"
+                },
+                {
+                    "type": "multipleChoice",
+                    "defaultValue": "Optional",
+                    "settings": {
+                        "subType": "dropDown",
+                        "choices": [
+                            {
+                                "label": "Optional"
+                            },
+                            {
+                                "label": "Required"
+                            }
+                        ],
+                        "multiSelect": false,
+                        "listOrientation": "horizontal",
+                        "otherAsAnOption": false
+                    },
+                    "name": "requiredOptional",
+                    "label": "Required Optional",
+                    "row": 1,
+                    "width": "half",
+                    "position": "half"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "WebApiField",
+                    "settings": {
+                        "subType": "singleReferenceObject"
+                    },
+                    "name": "field",
+                    "label": "Field",
+                    "descriptionActive": true,
+                    "description": "Choose either DTO or Field, not both.",
+                    "row": 2,
+                    "width": "half",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "WebApiDto",
+                    "settings": {
+                        "subType": "singleReferenceObject"
+                    },
+                    "name": "dTO",
+                    "label": "DTO",
+                    "descriptionActive": true,
+                    "description": "Choose either DTO or Field, not both.",
+                    "row": 2,
+                    "width": "half",
+                    "position": "half"
+                }
+            ],
+            "properties": {
+                "contentName": {
+                    "type": "contentName",
+                    "settings": {
+                        "nameGeneratorFields": [
+
+                        ]
+                    },
+                    "name": null,
+                    "label": "Content Item Name",
+                    "row": 0,
+                    "width": "half",
+                    "position": "start"
+                },
+                "contentTags": {
+                    "type": "contentTags",
+                    "name": null,
+                    "label": "Tags",
+                    "row": 0,
+                    "width": "half",
+                    "position": "half"
+                },
+                "contentDescription": {
+                    "type": "contentDescription",
+                    "name": null,
+                    "label": "Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                }
+            }
+        }
+    },
+    "add-contenttype-WebApiSection": {
+        "body": {
+            "name": "WebApiSection",
+            "icon": null,
+            "enabled": true,
+            "fields": [
+                {
+                    "type": "singleLineText",
+                    "settings": {
+                        "subType": "singleLine",
+                        "phoneNumberFormat": null
+                    },
+                    "name": "responseCode",
+                    "label": "Response Code",
+                    "descriptionActive": true,
+                    "description": "Only for response sections.",
+                    "row": 0,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "sectionDescription",
+                    "label": "Section Description",
+                    "row": 1,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
+                    },
+                    "name": "syntax",
+                    "label": "Syntax",
+                    "row": 2,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "WebApiParam",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "pathParams",
+                    "label": "Path Params",
+                    "descriptionActive": true,
+                    "description": "Only for URL sections.",
+                    "row": 3,
+                    "width": "half",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "WebApiParam",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "mainParams",
+                    "label": "Main Params",
+                    "descriptionActive": true,
+                    "description": "Query parameters, message body parameters, or response body parameters.",
+                    "row": 3,
+                    "width": "half",
+                    "position": "half"
                 }
             ],
             "properties": {

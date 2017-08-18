@@ -8,14 +8,15 @@
     "add-images-logos" : {
         "body" : {
             "contentTypeId" : ""
-            ,"name" : "_imgname_"
+            ,"name" : "_imgfn_"
             ,"description" : "Product icon"
+            ,"language": "en"
             ,"details" : {
                 "imageFile" : [
                     {
                         "fileId": 0
-                        ,"fileName": "_imgname_._imgext_"
-                        ,"url": "https://dnnteuyw4.blob.core.windows.net/portals/7/logos/_imgname_._imgext_?sr=b&si=DNNFileManagerPolicy&sig=_sig_"
+                        ,"fileName": "_imgfn_"
+                        ,"url": "_imgurl_"
                     }
                 ]
                 ,"altText": "_alttext_"
@@ -24,46 +25,39 @@
         }
         ,"permutations" : [
             {
-                "_imgname_"   : "logo-dnn-platform"
-                ,"_imgext_"   : "png"
+                "_imgfn_"     : "logo-dnn-platform.png"
+                ,"_imgurl_"   : "logo-dnn-platform.png"
                 ,"_alttext_"  : "DNN Platform"
-                ,"_sig_"      : ""
             },
             {
-                "_imgname_"   : "logo-evoq-basic"
-                ,"_imgext_"   : "png"
+                "_imgfn_"     : "logo-evoq-basic.png"
+                ,"_imgurl_"   : "logo-evoq-basic.png"
                 ,"_alttext_"  : "Evoq Basic"
-                ,"_sig_"      : ""
             },
             {
-                "_imgname_"   : "logo-evoq-basic"
-                ,"_imgext_"   : "svg"
+                "_imgfn_"     : "logo-evoq-basic.svg"
+                ,"_imgurl_"   : "logo-evoq-basic.svg"
                 ,"_alttext_"  : "Evoq Basic"
-                ,"_sig_"      : ""
             },
             {
-                "_imgname_"   : "logo-evoq-content"
-                ,"_imgext_"   : "png"
+                "_imgfn_"     : "logo-evoq-content.png"
+                ,"_imgurl_"   : "logo-evoq-content.png"
                 ,"_alttext_"  : "Evoq Content"
-                ,"_sig_"      : ""
             },
             {
-                "_imgname_"   : "logo-evoq-content"
-                ,"_imgext_"   : "svg"
+                "_imgfn_"     : "logo-evoq-content.svg"
+                ,"_imgurl_"   : "logo-evoq-content.svg"
                 ,"_alttext_"  : "Evoq Content"
-                ,"_sig_"      : ""
             },
             {
-                "_imgname_"   : "logo-evoq-engage"
-                ,"_imgext_"   : "png"
+                "_imgfn_"     : "logo-evoq-engage.png"
+                ,"_imgurl_"   : "logo-evoq-engage.png"
                 ,"_alttext_"  : "Evoq Engage"
-                ,"_sig_"      : ""
             },
             {
-                "_imgname_"   : "logo-evoq-engage"
-                ,"_imgext_"   : "svg"
+                "_imgfn_"     : "logo-evoq-engage.svg"
+                ,"_imgurl_"   : "logo-evoq-engage.svg"
                 ,"_alttext_"  : "Evoq Engage"
-                ,"_sig_"      : ""
             }
         ]
     }

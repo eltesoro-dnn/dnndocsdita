@@ -82,6 +82,7 @@ function CleanNode( [PSObject] $node )  {
         for ( $i = 0; $i -le ($node.fields).GetUpperBound(0); $i++ ) {
             ($node.fields)[$i] = CleanNode ($node.fields)[$i]
         }
+        $node.fields = $node.fields | Sort-Object -Property row
     }
 
     if ( $node.properties -is [PSObject] )  {

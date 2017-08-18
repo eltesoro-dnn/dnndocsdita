@@ -1,6 +1,6 @@
 /*
  | Based on the DITA Open Toolkit project.
- | ?ver=170622
+ | ?ver=170805
 */
 
 
@@ -598,6 +598,7 @@ dt.prereq {
 }
 .parml {
   margin-left: 60px;
+  line-height: 100%;
 }
 .example {
   margin-top: 1em;
@@ -617,10 +618,10 @@ dt.prereq {
   color: #006d97;
 }
 .announcement-left {
-    text-align: left;
+  text-align: left;
 }
 .announcement-center {
-    text-align: center;
+  text-align: center;
 }
 .announcement-left,
 .announcement-center {
@@ -2608,6 +2609,7 @@ and (orientation : portrait) {
     padding: 63px 35px 63px 150px;
   }
 }
+
 
 
 /* ------------------------------------------------------------

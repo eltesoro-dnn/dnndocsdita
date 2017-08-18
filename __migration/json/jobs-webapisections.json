@@ -1,0 +1,260 @@
+{
+    "__NOTES__":  [
+        "Source/Basis: ..."
+    ],
+    "listall-webapisections":  {
+    },
+    "TEMPLATE-add-webapisections":  {
+        "body":  {
+            "name":  "apiparam-_fldname_",
+            "description":  "",
+            "language":  "en",
+            "alreadyPublished":  true,
+            "details":  {
+                "responseCode":  "",
+                "sectionDescription":  "",
+                "syntax":  "",
+                "pathParams":  [
+                ],
+                "mainParams":  [
+                ]
+            },
+            "tags":  [
+            ]
+        }
+    },
+    "add-webapisections":  {
+        "permutations":  [
+            {
+                "name":  "apisection-url-apicontenttypes",
+                "sectionDescription":  "The URI with the criteria (ID or query) for the requested Content Type.",
+                "syntax":  "https://dnnapi.com/content/api/ContentTypes?query",
+                "_id-apiparam-contenttype-get-querysearchtext_":  "apiparam-contenttype-get-querysearchtext",
+                "_id-apiparam-contenttype-get-querystartindex_":  "apiparam-contenttype-get-querystartindex",
+                "_id-apiparam-contenttype-get-querymaxitems_":  "apiparam-contenttype-get-querymaxitems",
+                "_id-apiparam-contenttype-get-queryfieldorder_":  "apiparam-contenttype-get-queryfieldorder",
+                "_id-apiparam-contenttype-get-queryorderasc_":  "apiparam-contenttype-get-queryorderasc",
+                "_id-apiparam-contenttype-get-querycreatedfrom_":  "apiparam-contenttype-get-querycreatedfrom",
+                "_id-apiparam-contenttype-get-querycreatedto_":  "apiparam-contenttype-get-querycreatedto",
+                "mainParams":  [
+                    "_id-apiparam-contenttype-get-querysearchtext_",
+                    "_id-apiparam-contenttype-get-querystartindex_",
+                    "_id-apiparam-contenttype-get-querymaxitems_",
+                    "_id-apiparam-contenttype-get-queryfieldorder_",
+                    "_id-apiparam-contenttype-get-queryorderasc_",
+                    "_id-apiparam-contenttype-get-querycreatedfrom_",
+                    "_id-apiparam-contenttype-get-querycreatedto_"
+                ]
+            },
+            {
+                "name":  "apisection-response-apicontenttypes-get-200",
+                "responseCode":  "200",
+                "sectionDescription":  "The code and the body of the response message. \r\nStatus: 200 \r\nThe body contains the content type(s) that match(es) the specified ID or the specified criteria in the query.",
+                "syntax":  "{\r\n    \"documents\":  \"array\",\r\n    \"totalResultCount\":  \"integer\"\r\n}"
+            },
+            {
+                "name":  "apisection-body-apicontenttypes",
+                "sectionDescription":  "The settings for the new Content Type to create.",
+                "syntax":  "{\r\n    \"contentType\":  {\r\n        \"name\":  \"string\",\r\n        \"icon\":  \"string\",\r\n        \"description\":  \"string\",\r\n        \"fields\":  \"array\",\r\n        \"properties\":  {\r\n            \"contentName\":  {\r\n                \"type\":  \"string\",\r\n                \"settings\":  {\r\n                    \"nameGeneratorFields\":  \"array\"\r\n                },\r\n                \"id\":  \"string\",\r\n                \"name\":  \"string\",\r\n                \"label\":  \"string\",\r\n                \"descriptionActive\":  \"boolean\",\r\n                \"description\":  \"string\",\r\n                \"tooltipActive\":  \"boolean\",\r\n                \"tooltip\":  \"string\",\r\n                \"row\":  \"integer\",\r\n                \"width\":  \"string\",\r\n                \"position\":  \"string\",\r\n                \"selectedLanguages\":  \"array\"\r\n            },\r\n            \"contentTags\":  {\r\n                \"type\":  \"string\",\r\n                \"validation\":  {\r\n                    \"requireField\":  {\r\n                        \"active\":  \"boolean\",\r\n                        \"errorMessage\":  \"string\"\r\n                    },\r\n                    \"standardErrorMessage\":  \"string\"\r\n                },\r\n                \"id\":  \"string\",\r\n                \"name\":  \"string\",\r\n                \"label\":  \"string\",\r\n                \"descriptionActive\":  \"boolean\",\r\n                \"description\":  \"string\",\r\n                \"tooltipActive\":  \"boolean\",\r\n                \"tooltip\":  \"string\",\r\n                \"row\":  \"integer\",\r\n                \"width\":  \"string\",\r\n                \"position\":  \"string\",\r\n                \"selectedLanguages\":  \"array\"\r\n            },\r\n            \"contentDescription\":  {\r\n                \"type\":  \"string\",\r\n                \"validation\":  {\r\n                    \"requireField\":  {\r\n                        \"active\":  \"boolean\",\r\n                        \"errorMessage\":  \"string\"\r\n                    },\r\n                    \"standardErrorMessage\":  \"string\"\r\n                },\r\n                \"id\":  \"string\",\r\n                \"name\":  \"string\",\r\n                \"label\":  \"string\",\r\n                \"descriptionActive\":  \"boolean\",\r\n                \"description\":  \"string\",\r\n                \"tooltipActive\":  \"boolean\",\r\n                \"tooltip\":  \"string\",\r\n                \"row\":  \"integer\",\r\n                \"width\":  \"string\",\r\n                \"position\":  \"string\",\r\n                \"selectedLanguages\":  \"array\"\r\n            }\r\n        },\r\n        \"selectedLanguages\":  \"array\"\r\n    }\r\n}",
+                "_id-apiparam-contenttype-post-contenttype_":  "apiparam-contenttype-post-contenttype",
+                "mainParams":  [
+                    "_id-apiparam-contenttype-post-contenttype_"
+                ]
+            },
+            {
+                "name":  "apisection-response-apicontenttypes-post-200",
+                "responseCode":  "200",
+                "sectionDescription":  "OK",
+                "syntax":  "{\r\n    \"id\":  \"string\",\r\n    \"createdAt\":  \"string\",\r\n    \"createdBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"updatedAt\":  \"string\",\r\n    \"updatedBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"name\":  \"string\",\r\n    \"icon\":  \"string\",\r\n    \"description\":  \"string\",\r\n    \"enabled\":  \"boolean\",\r\n    \"fields\":  \"array\",\r\n    \"numberOfItems\":  \"integer\",\r\n    \"numberOfVisualizers\":  \"integer\",\r\n    \"isSystem\":  \"boolean\",\r\n    \"properties\":  {\r\n        \"contentName\":  {\r\n            \"type\":  \"string\",\r\n            \"settings\":  {\r\n                \"nameGeneratorFields\":  \"array\"\r\n            },\r\n            \"id\":  \"string\",\r\n            \"name\":  \"string\",\r\n            \"label\":  \"string\",\r\n            \"descriptionActive\":  \"boolean\",\r\n            \"description\":  \"string\",\r\n            \"tooltipActive\":  \"boolean\",\r\n            \"tooltip\":  \"string\",\r\n            \"row\":  \"integer\",\r\n            \"width\":  \"string\",\r\n            \"position\":  \"string\",\r\n            \"selectedLanguages\":  \"array\"\r\n        },\r\n        \"contentTags\":  {\r\n            \"type\":  \"string\",\r\n            \"validation\":  {\r\n                \"requireField\":  {\r\n                    \"active\":  \"boolean\",\r\n                    \"errorMessage\":  \"string\"\r\n                },\r\n                \"standardErrorMessage\":  \"string\"\r\n            },\r\n            \"id\":  \"string\",\r\n            \"name\":  \"string\",\r\n            \"label\":  \"string\",\r\n            \"descriptionActive\":  \"boolean\",\r\n            \"description\":  \"string\",\r\n            \"tooltipActive\":  \"boolean\",\r\n            \"tooltip\":  \"string\",\r\n            \"row\":  \"integer\",\r\n            \"width\":  \"string\",\r\n            \"position\":  \"string\",\r\n            \"selectedLanguages\":  \"array\"\r\n        },\r\n        \"contentDescription\":  {\r\n            \"type\":  \"string\",\r\n            \"validation\":  {\r\n                \"requireField\":  {\r\n                    \"active\":  \"boolean\",\r\n                    \"errorMessage\":  \"string\"\r\n                },\r\n                \"standardErrorMessage\":  \"string\"\r\n            },\r\n            \"id\":  \"string\",\r\n            \"name\":  \"string\",\r\n            \"label\":  \"string\",\r\n            \"descriptionActive\":  \"boolean\",\r\n            \"description\":  \"string\",\r\n            \"tooltipActive\":  \"boolean\",\r\n            \"tooltip\":  \"string\",\r\n            \"row\":  \"integer\",\r\n            \"width\":  \"string\",\r\n            \"position\":  \"string\",\r\n            \"selectedLanguages\":  \"array\"\r\n        }\r\n    },\r\n    \"selectedLanguages\":  \"array\"\r\n}"
+            },
+            {
+                "name":  "apisection-url-apicontenttypesid",
+                "sectionDescription":  "The URI with the criteria (ID or query) for the requested Content Type.",
+                "syntax":  "https://dnnapi.com/content/api/ContentTypes/{id}?query",
+                "_id-apiparam-contenttype-get-id_":  "apiparam-contenttype-get-id",
+                "pathParams":  [
+                    "_id-apiparam-contenttype-get-id_"
+                ]
+            },
+            {
+                "name":  "apisection-response-apicontenttypesid-get-200",
+                "responseCode":  "200",
+                "sectionDescription":  "The code and the body of the response message. \r\nStatus: 200 \r\nThe body contains the content type(s) that match(es) the specified ID or the specified criteria in the query.",
+                "syntax":  "{\r\n    \"id\":  \"string\",\r\n    \"createdAt\":  \"string\",\r\n    \"createdBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"updatedAt\":  \"string\",\r\n    \"updatedBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"name\":  \"string\",\r\n    \"icon\":  \"string\",\r\n    \"description\":  \"string\",\r\n    \"enabled\":  \"boolean\",\r\n    \"fields\":  \"array\",\r\n    \"numberOfItems\":  \"integer\",\r\n    \"numberOfVisualizers\":  \"integer\",\r\n    \"isSystem\":  \"boolean\",\r\n    \"properties\":  {\r\n        \"contentName\":  {\r\n            \"type\":  \"string\",\r\n            \"settings\":  {\r\n                \"nameGeneratorFields\":  \"array\"\r\n            },\r\n            \"id\":  \"string\",\r\n            \"name\":  \"string\",\r\n            \"label\":  \"string\",\r\n            \"descriptionActive\":  \"boolean\",\r\n            \"description\":  \"string\",\r\n            \"tooltipActive\":  \"boolean\",\r\n            \"tooltip\":  \"string\",\r\n            \"row\":  \"integer\",\r\n            \"width\":  \"string\",\r\n            \"position\":  \"string\",\r\n            \"selectedLanguages\":  \"array\"\r\n        },\r\n        \"contentTags\":  {\r\n            \"type\":  \"string\",\r\n            \"validation\":  {\r\n                \"requireField\":  {\r\n                    \"active\":  \"boolean\",\r\n                    \"errorMessage\":  \"string\"\r\n                },\r\n                \"standardErrorMessage\":  \"string\"\r\n            },\r\n            \"id\":  \"string\",\r\n            \"name\":  \"string\",\r\n            \"label\":  \"string\",\r\n            \"descriptionActive\":  \"boolean\",\r\n            \"description\":  \"string\",\r\n            \"tooltipActive\":  \"boolean\",\r\n            \"tooltip\":  \"string\",\r\n            \"row\":  \"integer\",\r\n            \"width\":  \"string\",\r\n            \"position\":  \"string\",\r\n            \"selectedLanguages\":  \"array\"\r\n        },\r\n        \"contentDescription\":  {\r\n            \"type\":  \"string\",\r\n            \"validation\":  {\r\n                \"requireField\":  {\r\n                    \"active\":  \"boolean\",\r\n                    \"errorMessage\":  \"string\"\r\n                },\r\n                \"standardErrorMessage\":  \"string\"\r\n            },\r\n            \"id\":  \"string\",\r\n            \"name\":  \"string\",\r\n            \"label\":  \"string\",\r\n            \"descriptionActive\":  \"boolean\",\r\n            \"description\":  \"string\",\r\n            \"tooltipActive\":  \"boolean\",\r\n            \"tooltip\":  \"string\",\r\n            \"row\":  \"integer\",\r\n            \"width\":  \"string\",\r\n            \"position\":  \"string\",\r\n            \"selectedLanguages\":  \"array\"\r\n        }\r\n    },\r\n    \"selectedLanguages\":  \"array\"\r\n}"
+            },
+            {
+                "name":  "apisection-body-apicontenttypesid",
+                "sectionDescription":  "The new settings for the Content Type to update.",
+                "syntax":  "{\r\n    \"contentType\":  {\r\n        \"name\":  \"string\",\r\n        \"icon\":  \"string\",\r\n        \"description\":  \"string\",\r\n        \"fields\":  \"array\",\r\n        \"properties\":  {\r\n            \"contentName\":  {\r\n                \"type\":  \"string\",\r\n                \"settings\":  {\r\n                    \"nameGeneratorFields\":  \"array\"\r\n                },\r\n                \"id\":  \"string\",\r\n                \"name\":  \"string\",\r\n                \"label\":  \"string\",\r\n                \"descriptionActive\":  \"boolean\",\r\n                \"description\":  \"string\",\r\n                \"tooltipActive\":  \"boolean\",\r\n                \"tooltip\":  \"string\",\r\n                \"row\":  \"integer\",\r\n                \"width\":  \"string\",\r\n                \"position\":  \"string\",\r\n                \"selectedLanguages\":  \"array\"\r\n            },\r\n            \"contentTags\":  {\r\n                \"type\":  \"string\",\r\n                \"validation\":  {\r\n                    \"requireField\":  {\r\n                        \"active\":  \"boolean\",\r\n                        \"errorMessage\":  \"string\"\r\n                    },\r\n                    \"standardErrorMessage\":  \"string\"\r\n                },\r\n                \"id\":  \"string\",\r\n                \"name\":  \"string\",\r\n                \"label\":  \"string\",\r\n                \"descriptionActive\":  \"boolean\",\r\n                \"description\":  \"string\",\r\n                \"tooltipActive\":  \"boolean\",\r\n                \"tooltip\":  \"string\",\r\n                \"row\":  \"integer\",\r\n                \"width\":  \"string\",\r\n                \"position\":  \"string\",\r\n                \"selectedLanguages\":  \"array\"\r\n            },\r\n            \"contentDescription\":  {\r\n                \"type\":  \"string\",\r\n                \"validation\":  {\r\n                    \"requireField\":  {\r\n                        \"active\":  \"boolean\",\r\n                        \"errorMessage\":  \"string\"\r\n                    },\r\n                    \"standardErrorMessage\":  \"string\"\r\n                },\r\n                \"id\":  \"string\",\r\n                \"name\":  \"string\",\r\n                \"label\":  \"string\",\r\n                \"descriptionActive\":  \"boolean\",\r\n                \"description\":  \"string\",\r\n                \"tooltipActive\":  \"boolean\",\r\n                \"tooltip\":  \"string\",\r\n                \"row\":  \"integer\",\r\n                \"width\":  \"string\",\r\n                \"position\":  \"string\",\r\n                \"selectedLanguages\":  \"array\"\r\n            }\r\n        },\r\n        \"selectedLanguages\":  \"array\"\r\n    }\r\n}",
+                "_id-apiparam-contenttype-put-contenttype_":  "apiparam-contenttype-put-contenttype",
+                "mainParams":  [
+                    "_id-apiparam-contenttype-put-contenttype_"
+                ]
+            },
+            {
+                "name":  "apisection-response-apicontenttypesid-put-200",
+                "responseCode":  "200",
+                "sectionDescription":  "OK",
+                "syntax":  "{\r\n    \"id\":  \"string\",\r\n    \"createdAt\":  \"string\",\r\n    \"createdBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"updatedAt\":  \"string\",\r\n    \"updatedBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"name\":  \"string\",\r\n    \"icon\":  \"string\",\r\n    \"description\":  \"string\",\r\n    \"enabled\":  \"boolean\",\r\n    \"fields\":  \"array\",\r\n    \"numberOfItems\":  \"integer\",\r\n    \"numberOfVisualizers\":  \"integer\",\r\n    \"isSystem\":  \"boolean\",\r\n    \"properties\":  {\r\n        \"contentName\":  {\r\n            \"type\":  \"string\",\r\n            \"settings\":  {\r\n                \"nameGeneratorFields\":  \"array\"\r\n            },\r\n            \"id\":  \"string\",\r\n            \"name\":  \"string\",\r\n            \"label\":  \"string\",\r\n            \"descriptionActive\":  \"boolean\",\r\n            \"description\":  \"string\",\r\n            \"tooltipActive\":  \"boolean\",\r\n            \"tooltip\":  \"string\",\r\n            \"row\":  \"integer\",\r\n            \"width\":  \"string\",\r\n            \"position\":  \"string\",\r\n            \"selectedLanguages\":  \"array\"\r\n        },\r\n        \"contentTags\":  {\r\n            \"type\":  \"string\",\r\n            \"validation\":  {\r\n                \"requireField\":  {\r\n                    \"active\":  \"boolean\",\r\n                    \"errorMessage\":  \"string\"\r\n                },\r\n                \"standardErrorMessage\":  \"string\"\r\n            },\r\n            \"id\":  \"string\",\r\n            \"name\":  \"string\",\r\n            \"label\":  \"string\",\r\n            \"descriptionActive\":  \"boolean\",\r\n            \"description\":  \"string\",\r\n            \"tooltipActive\":  \"boolean\",\r\n            \"tooltip\":  \"string\",\r\n            \"row\":  \"integer\",\r\n            \"width\":  \"string\",\r\n            \"position\":  \"string\",\r\n            \"selectedLanguages\":  \"array\"\r\n        },\r\n        \"contentDescription\":  {\r\n            \"type\":  \"string\",\r\n            \"validation\":  {\r\n                \"requireField\":  {\r\n                    \"active\":  \"boolean\",\r\n                    \"errorMessage\":  \"string\"\r\n                },\r\n                \"standardErrorMessage\":  \"string\"\r\n            },\r\n            \"id\":  \"string\",\r\n            \"name\":  \"string\",\r\n            \"label\":  \"string\",\r\n            \"descriptionActive\":  \"boolean\",\r\n            \"description\":  \"string\",\r\n            \"tooltipActive\":  \"boolean\",\r\n            \"tooltip\":  \"string\",\r\n            \"row\":  \"integer\",\r\n            \"width\":  \"string\",\r\n            \"position\":  \"string\",\r\n            \"selectedLanguages\":  \"array\"\r\n        }\r\n    },\r\n    \"selectedLanguages\":  \"array\"\r\n}"
+            },
+            {
+                "name":  "apisection-response-apicontenttypesid-delete-200",
+                "responseCode":  "200",
+                "sectionDescription":  "OK",
+                "syntax":  "{\r\n    \"id\":  \"string\",\r\n    \"createdAt\":  \"string\",\r\n    \"createdBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"updatedAt\":  \"string\",\r\n    \"updatedBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"name\":  \"string\",\r\n    \"icon\":  \"string\",\r\n    \"description\":  \"string\",\r\n    \"enabled\":  \"boolean\",\r\n    \"fields\":  \"array\",\r\n    \"numberOfItems\":  \"integer\",\r\n    \"numberOfVisualizers\":  \"integer\",\r\n    \"isSystem\":  \"boolean\",\r\n    \"properties\":  {\r\n        \"contentName\":  {\r\n            \"type\":  \"string\",\r\n            \"settings\":  {\r\n                \"nameGeneratorFields\":  \"array\"\r\n            },\r\n            \"id\":  \"string\",\r\n            \"name\":  \"string\",\r\n            \"label\":  \"string\",\r\n            \"descriptionActive\":  \"boolean\",\r\n            \"description\":  \"string\",\r\n            \"tooltipActive\":  \"boolean\",\r\n            \"tooltip\":  \"string\",\r\n            \"row\":  \"integer\",\r\n            \"width\":  \"string\",\r\n            \"position\":  \"string\",\r\n            \"selectedLanguages\":  \"array\"\r\n        },\r\n        \"contentTags\":  {\r\n            \"type\":  \"string\",\r\n            \"validation\":  {\r\n                \"requireField\":  {\r\n                    \"active\":  \"boolean\",\r\n                    \"errorMessage\":  \"string\"\r\n                },\r\n                \"standardErrorMessage\":  \"string\"\r\n            },\r\n            \"id\":  \"string\",\r\n            \"name\":  \"string\",\r\n            \"label\":  \"string\",\r\n            \"descriptionActive\":  \"boolean\",\r\n            \"description\":  \"string\",\r\n            \"tooltipActive\":  \"boolean\",\r\n            \"tooltip\":  \"string\",\r\n            \"row\":  \"integer\",\r\n            \"width\":  \"string\",\r\n            \"position\":  \"string\",\r\n            \"selectedLanguages\":  \"array\"\r\n        },\r\n        \"contentDescription\":  {\r\n            \"type\":  \"string\",\r\n            \"validation\":  {\r\n                \"requireField\":  {\r\n                    \"active\":  \"boolean\",\r\n                    \"errorMessage\":  \"string\"\r\n                },\r\n                \"standardErrorMessage\":  \"string\"\r\n            },\r\n            \"id\":  \"string\",\r\n            \"name\":  \"string\",\r\n            \"label\":  \"string\",\r\n            \"descriptionActive\":  \"boolean\",\r\n            \"description\":  \"string\",\r\n            \"tooltipActive\":  \"boolean\",\r\n            \"tooltip\":  \"string\",\r\n            \"row\":  \"integer\",\r\n            \"width\":  \"string\",\r\n            \"position\":  \"string\",\r\n            \"selectedLanguages\":  \"array\"\r\n        }\r\n    },\r\n    \"selectedLanguages\":  \"array\"\r\n}"
+            },
+            {
+                "name":  "apisection-url-apicontenttypesnamename",
+                "sectionDescription":  "The URI with the criteria (ID or query) for the requested Content Type.",
+                "syntax":  "https://dnnapi.com/content/api/ContentTypes/name/{name}?query",
+                "_id-apiparam-contenttype-get-name_":  "apiparam-contenttype-get-name",
+                "pathParams":  [
+                    "_id-apiparam-contenttype-get-name_"
+                ]
+            },
+            {
+                "name":  "apisection-response-apicontenttypesnamename-get-200",
+                "responseCode":  "200",
+                "sectionDescription":  "The code and the body of the response message. \r\nStatus: 200 \r\nThe body contains the content type(s) that match(es) the specified ID or the specified criteria in the query.",
+                "syntax":  "{\r\n    \"id\":  \"string\",\r\n    \"createdAt\":  \"string\",\r\n    \"createdBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"updatedAt\":  \"string\",\r\n    \"updatedBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"name\":  \"string\",\r\n    \"icon\":  \"string\",\r\n    \"description\":  \"string\",\r\n    \"enabled\":  \"boolean\",\r\n    \"fields\":  \"array\",\r\n    \"numberOfItems\":  \"integer\",\r\n    \"numberOfVisualizers\":  \"integer\",\r\n    \"isSystem\":  \"boolean\",\r\n    \"properties\":  {\r\n        \"contentName\":  {\r\n            \"type\":  \"string\",\r\n            \"settings\":  {\r\n                \"nameGeneratorFields\":  \"array\"\r\n            },\r\n            \"id\":  \"string\",\r\n            \"name\":  \"string\",\r\n            \"label\":  \"string\",\r\n            \"descriptionActive\":  \"boolean\",\r\n            \"description\":  \"string\",\r\n            \"tooltipActive\":  \"boolean\",\r\n            \"tooltip\":  \"string\",\r\n            \"row\":  \"integer\",\r\n            \"width\":  \"string\",\r\n            \"position\":  \"string\",\r\n            \"selectedLanguages\":  \"array\"\r\n        },\r\n        \"contentTags\":  {\r\n            \"type\":  \"string\",\r\n            \"validation\":  {\r\n                \"requireField\":  {\r\n                    \"active\":  \"boolean\",\r\n                    \"errorMessage\":  \"string\"\r\n                },\r\n                \"standardErrorMessage\":  \"string\"\r\n            },\r\n            \"id\":  \"string\",\r\n            \"name\":  \"string\",\r\n            \"label\":  \"string\",\r\n            \"descriptionActive\":  \"boolean\",\r\n            \"description\":  \"string\",\r\n            \"tooltipActive\":  \"boolean\",\r\n            \"tooltip\":  \"string\",\r\n            \"row\":  \"integer\",\r\n            \"width\":  \"string\",\r\n            \"position\":  \"string\",\r\n            \"selectedLanguages\":  \"array\"\r\n        },\r\n        \"contentDescription\":  {\r\n            \"type\":  \"string\",\r\n            \"validation\":  {\r\n                \"requireField\":  {\r\n                    \"active\":  \"boolean\",\r\n                    \"errorMessage\":  \"string\"\r\n                },\r\n                \"standardErrorMessage\":  \"string\"\r\n            },\r\n            \"id\":  \"string\",\r\n            \"name\":  \"string\",\r\n            \"label\":  \"string\",\r\n            \"descriptionActive\":  \"boolean\",\r\n            \"description\":  \"string\",\r\n            \"tooltipActive\":  \"boolean\",\r\n            \"tooltip\":  \"string\",\r\n            \"row\":  \"integer\",\r\n            \"width\":  \"string\",\r\n            \"position\":  \"string\",\r\n            \"selectedLanguages\":  \"array\"\r\n        }\r\n    },\r\n    \"selectedLanguages\":  \"array\"\r\n}"
+            },
+            {
+                "name":  "apisection-url-apicontentitems",
+                "sectionDescription":  "The URI with the criteria (ID or query) for the requested Content Item.",
+                "syntax":  "https://dnnapi.com/content/api/ContentItems?query",
+                "_id-apiparam-contentitem-get-querypublished_":  "apiparam-contentitem-get-querypublished",
+                "_id-apiparam-contentitem-get-querytags_":  "apiparam-contentitem-get-querytags",
+                "_id-apiparam-contentitem-get-querycontenttypeid_":  "apiparam-contentitem-get-querycontenttypeid",
+                "_id-apiparam-contentitem-get-querysearchtext_":  "apiparam-contentitem-get-querysearchtext",
+                "_id-apiparam-contentitem-get-querystartindex_":  "apiparam-contentitem-get-querystartindex",
+                "_id-apiparam-contentitem-get-querymaxitems_":  "apiparam-contentitem-get-querymaxitems",
+                "_id-apiparam-contentitem-get-queryfieldorder_":  "apiparam-contentitem-get-queryfieldorder",
+                "_id-apiparam-contentitem-get-queryorderasc_":  "apiparam-contentitem-get-queryorderasc",
+                "_id-apiparam-contentitem-get-querycreatedfrom_":  "apiparam-contentitem-get-querycreatedfrom",
+                "_id-apiparam-contentitem-get-querycreatedto_":  "apiparam-contentitem-get-querycreatedto",
+                "mainParams":  [
+                    "_id-apiparam-contentitem-get-querypublished_",
+                    "_id-apiparam-contentitem-get-querytags_",
+                    "_id-apiparam-contentitem-get-querycontenttypeid_",
+                    "_id-apiparam-contentitem-get-querysearchtext_",
+                    "_id-apiparam-contentitem-get-querystartindex_",
+                    "_id-apiparam-contentitem-get-querymaxitems_",
+                    "_id-apiparam-contentitem-get-queryfieldorder_",
+                    "_id-apiparam-contentitem-get-queryorderasc_",
+                    "_id-apiparam-contentitem-get-querycreatedfrom_",
+                    "_id-apiparam-contentitem-get-querycreatedto_"
+                ]
+            },
+            {
+                "name":  "apisection-response-apicontentitems-get-200",
+                "responseCode":  "200",
+                "sectionDescription":  "The code and the body of the response message. \r\nStatus: 200 \r\nThe body contains the content item(s) that match(es) the specified ID or the specified criteria in the query.",
+                "syntax":  "{\r\n    \"documents\":  \"array\",\r\n    \"totalResultCount\":  \"integer\"\r\n}"
+            },
+            {
+                "name":  "apisection-body-apicontentitems",
+                "sectionDescription":  "The settings for the new Content Item to create.",
+                "syntax":  "{\r\n    \"contentItem\":  {\r\n        \"contentTypeId\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"description\":  \"string\",\r\n        \"details\":  \"object\",\r\n        \"tags\":  \"array\",\r\n        \"clientReferenceId\":  \"string\",\r\n        \"seoSettings\":  {\r\n            \"pageTitle\":  \"string\",\r\n            \"description\":  \"string\",\r\n            \"keywords\":  \"array\",\r\n            \"image\":  {\r\n                \"fileName\":  \"string\",\r\n                \"fileId\":  \"integer\",\r\n                \"url\":  \"string\"\r\n            }\r\n        }\r\n    }\r\n}",
+                "_id-apiparam-contentitem-post-contentitem_":  "apiparam-contentitem-post-contentitem",
+                "mainParams":  [
+                    "_id-apiparam-contentitem-post-contentitem_"
+                ]
+            },
+            {
+                "name":  "apisection-response-apicontentitems-post-200",
+                "responseCode":  "200",
+                "sectionDescription":  "OK",
+                "syntax":  "{\r\n    \"id\":  \"string\",\r\n    \"slug\":  \"string\",\r\n    \"contentTypeId\":  \"string\",\r\n    \"contentTypeName\":  \"string\",\r\n    \"name\":  \"string\",\r\n    \"description\":  \"string\",\r\n    \"language\":  \"string\",\r\n    \"alreadyPublished\":  \"boolean\",\r\n    \"details\":  \"object\",\r\n    \"currentVersion\":  \"integer\",\r\n    \"usages\":  \"integer\",\r\n    \"createdAt\":  \"string\",\r\n    \"createdBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"updatedAt\":  \"string\",\r\n    \"updatedBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"stateId\":  \"integer\",\r\n    \"tags\":  \"array\",\r\n    \"clientReferenceId\":  \"string\",\r\n    \"seoSettings\":  {\r\n        \"pageTitle\":  \"string\",\r\n        \"description\":  \"string\",\r\n        \"keywords\":  \"array\",\r\n        \"image\":  {\r\n            \"fileName\":  \"string\",\r\n            \"fileId\":  \"integer\",\r\n            \"url\":  \"string\"\r\n        }\r\n    }\r\n}"
+            },
+            {
+                "name":  "apisection-url-apicontentitemsid",
+                "sectionDescription":  "The URI with the criteria (ID or query) for the requested Content Item.",
+                "syntax":  "https://dnnapi.com/content/api/ContentItems/{id}?query",
+                "_id-apiparam-contentitem-get-id_":  "apiparam-contentitem-get-id",
+                "pathParams":  [
+                    "_id-apiparam-contentitem-get-id_"
+                ]
+            },
+            {
+                "name":  "apisection-response-apicontentitemsid-get-200",
+                "responseCode":  "200",
+                "sectionDescription":  "The code and the body of the response message. \r\nStatus: 200 \r\nThe body contains the content item(s) that match(es) the specified ID or the specified criteria in the query.",
+                "syntax":  "{\r\n    \"id\":  \"string\",\r\n    \"slug\":  \"string\",\r\n    \"contentTypeId\":  \"string\",\r\n    \"contentTypeName\":  \"string\",\r\n    \"name\":  \"string\",\r\n    \"description\":  \"string\",\r\n    \"language\":  \"string\",\r\n    \"alreadyPublished\":  \"boolean\",\r\n    \"details\":  \"object\",\r\n    \"currentVersion\":  \"integer\",\r\n    \"usages\":  \"integer\",\r\n    \"createdAt\":  \"string\",\r\n    \"createdBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"updatedAt\":  \"string\",\r\n    \"updatedBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"stateId\":  \"integer\",\r\n    \"tags\":  \"array\",\r\n    \"clientReferenceId\":  \"string\",\r\n    \"seoSettings\":  {\r\n        \"pageTitle\":  \"string\",\r\n        \"description\":  \"string\",\r\n        \"keywords\":  \"array\",\r\n        \"image\":  {\r\n            \"fileName\":  \"string\",\r\n            \"fileId\":  \"integer\",\r\n            \"url\":  \"string\"\r\n        }\r\n    }\r\n}"
+            },
+            {
+                "name":  "apisection-body-apicontentitemsid",
+                "sectionDescription":  "The new settings for the Content Item to update.",
+                "syntax":  "{\r\n    \"contentItem\":  {\r\n        \"contentTypeId\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"description\":  \"string\",\r\n        \"details\":  \"object\",\r\n        \"tags\":  \"array\",\r\n        \"clientReferenceId\":  \"string\",\r\n        \"seoSettings\":  {\r\n            \"pageTitle\":  \"string\",\r\n            \"description\":  \"string\",\r\n            \"keywords\":  \"array\",\r\n            \"image\":  {\r\n                \"fileName\":  \"string\",\r\n                \"fileId\":  \"integer\",\r\n                \"url\":  \"string\"\r\n            }\r\n        }\r\n    }\r\n}",
+                "_id-apiparam-contentitem-put-contentitem_":  "apiparam-contentitem-put-contentitem",
+                "mainParams":  [
+                    "_id-apiparam-contentitem-put-contentitem_"
+                ]
+            },
+            {
+                "name":  "apisection-response-apicontentitemsid-put-200",
+                "responseCode":  "200",
+                "sectionDescription":  "OK",
+                "syntax":  "{\r\n    \"id\":  \"string\",\r\n    \"slug\":  \"string\",\r\n    \"contentTypeId\":  \"string\",\r\n    \"contentTypeName\":  \"string\",\r\n    \"name\":  \"string\",\r\n    \"description\":  \"string\",\r\n    \"language\":  \"string\",\r\n    \"alreadyPublished\":  \"boolean\",\r\n    \"details\":  \"object\",\r\n    \"currentVersion\":  \"integer\",\r\n    \"usages\":  \"integer\",\r\n    \"createdAt\":  \"string\",\r\n    \"createdBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"updatedAt\":  \"string\",\r\n    \"updatedBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"stateId\":  \"integer\",\r\n    \"tags\":  \"array\",\r\n    \"clientReferenceId\":  \"string\",\r\n    \"seoSettings\":  {\r\n        \"pageTitle\":  \"string\",\r\n        \"description\":  \"string\",\r\n        \"keywords\":  \"array\",\r\n        \"image\":  {\r\n            \"fileName\":  \"string\",\r\n            \"fileId\":  \"integer\",\r\n            \"url\":  \"string\"\r\n        }\r\n    }\r\n}"
+            },
+            {
+                "name":  "apisection-response-apicontentitemsid-delete-200",
+                "responseCode":  "200",
+                "sectionDescription":  "OK",
+                "syntax":  "{\r\n    \"id\":  \"string\",\r\n    \"slug\":  \"string\",\r\n    \"contentTypeId\":  \"string\",\r\n    \"contentTypeName\":  \"string\",\r\n    \"name\":  \"string\",\r\n    \"description\":  \"string\",\r\n    \"language\":  \"string\",\r\n    \"alreadyPublished\":  \"boolean\",\r\n    \"details\":  \"object\",\r\n    \"currentVersion\":  \"integer\",\r\n    \"usages\":  \"integer\",\r\n    \"createdAt\":  \"string\",\r\n    \"createdBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"updatedAt\":  \"string\",\r\n    \"updatedBy\":  {\r\n        \"id\":  \"string\",\r\n        \"name\":  \"string\",\r\n        \"thumbnail\":  \"string\"\r\n    },\r\n    \"stateId\":  \"integer\",\r\n    \"tags\":  \"array\",\r\n    \"clientReferenceId\":  \"string\",\r\n    \"seoSettings\":  {\r\n        \"pageTitle\":  \"string\",\r\n        \"description\":  \"string\",\r\n        \"keywords\":  \"array\",\r\n        \"image\":  {\r\n            \"fileName\":  \"string\",\r\n            \"fileId\":  \"integer\",\r\n            \"url\":  \"string\"\r\n        }\r\n    }\r\n}"
+            },
+            {
+                "name":  "apisection-url-apipublishedcontentitemsgetbyids",
+                "sectionDescription":  "The URI with the criteria (ID or query) for the requested Published Content Item.",
+                "syntax":  "https://dnnapi.com/content/api/PublishedContentItems/GetByIds?query",
+                "_id-apiparam-publishedcontentitem-get-contentitemids_":  "apiparam-publishedcontentitem-get-contentitemids",
+                "mainParams":  [
+                    "_id-apiparam-publishedcontentitem-get-contentitemids_"
+                ]
+            },
+            {
+                "name":  "apisection-response-apipublishedcontentitemsgetbyids-get-200",
+                "responseCode":  "200",
+                "sectionDescription":  "The code and the body of the response message. \r\nStatus: 200 \r\nThe body contains the published content item(s) that match(es) the specified ID or the specified criteria in the query."
+            },
+            {
+                "name":  "apisection-url-apipublishedcontentitems",
+                "sectionDescription":  "The URI with the criteria (ID or query) for the requested Published Content Item.",
+                "syntax":  "https://dnnapi.com/content/api/PublishedContentItems?query",
+                "_id-apiparam-publishedcontentitem-get-querypublished_":  "apiparam-publishedcontentitem-get-querypublished",
+                "_id-apiparam-publishedcontentitem-get-querytags_":  "apiparam-publishedcontentitem-get-querytags",
+                "_id-apiparam-publishedcontentitem-get-querycontenttypeid_":  "apiparam-publishedcontentitem-get-querycontenttypeid",
+                "_id-apiparam-publishedcontentitem-get-querysearchtext_":  "apiparam-publishedcontentitem-get-querysearchtext",
+                "_id-apiparam-publishedcontentitem-get-querystartindex_":  "apiparam-publishedcontentitem-get-querystartindex",
+                "_id-apiparam-publishedcontentitem-get-querymaxitems_":  "apiparam-publishedcontentitem-get-querymaxitems",
+                "_id-apiparam-publishedcontentitem-get-queryfieldorder_":  "apiparam-publishedcontentitem-get-queryfieldorder",
+                "_id-apiparam-publishedcontentitem-get-queryorderasc_":  "apiparam-publishedcontentitem-get-queryorderasc",
+                "_id-apiparam-publishedcontentitem-get-querycreatedfrom_":  "apiparam-publishedcontentitem-get-querycreatedfrom",
+                "_id-apiparam-publishedcontentitem-get-querycreatedto_":  "apiparam-publishedcontentitem-get-querycreatedto",
+                "mainParams":  [
+                    "_id-apiparam-publishedcontentitem-get-querypublished_",
+                    "_id-apiparam-publishedcontentitem-get-querytags_",
+                    "_id-apiparam-publishedcontentitem-get-querycontenttypeid_",
+                    "_id-apiparam-publishedcontentitem-get-querysearchtext_",
+                    "_id-apiparam-publishedcontentitem-get-querystartindex_",
+                    "_id-apiparam-publishedcontentitem-get-querymaxitems_",
+                    "_id-apiparam-publishedcontentitem-get-queryfieldorder_",
+                    "_id-apiparam-publishedcontentitem-get-queryorderasc_",
+                    "_id-apiparam-publishedcontentitem-get-querycreatedfrom_",
+                    "_id-apiparam-publishedcontentitem-get-querycreatedto_"
+                ]
+            },
+            {
+                "name":  "apisection-response-apipublishedcontentitems-get-200",
+                "responseCode":  "200",
+                "sectionDescription":  "The code and the body of the response message. \r\nStatus: 200 \r\nThe body contains the published content item(s) that match(es) the specified ID or the specified criteria in the query.",
+                "syntax":  "{\r\n    \"documents\":  \"array\",\r\n    \"totalResultCount\":  \"integer\"\r\n}"
+            }
+        ]
+    },
+    "delete-webapisections-in-list":  {
+        "ids":  [
+        ]
+    },
+    "deleteall-webapisections":  {
+    }
+}

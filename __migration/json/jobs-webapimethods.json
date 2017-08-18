@@ -1,0 +1,225 @@
+{
+    "__NOTES__":  [
+        "Source/Basis: ..."
+    ],
+    "listall-webapimethods":  {
+    },
+    "TEMPLATE-add-webapimethods":  {
+        "body":  {
+            "name":  "apimethod-_methodname_",
+            "description":  "",
+            "language":  "en",
+            "alreadyPublished":  true,
+            "details":  {
+                "summary":  "",
+                "action":  "GET",
+                "uRLSection":  [
+                ],
+                "messageSection":  [
+                ],
+                "responseSection":  [
+                ],
+                "remarks":  [
+                ],
+                "relatedLinks":  ""
+            },
+            "tags":  [
+            ]
+        }
+    },
+    "add-webapimethods":  {
+        "permutations":  [
+            {
+                "name":  "apimethod-get-apicontenttypes",
+                "summary":  "Gets all content types that match the criteria in the query.",
+                "action":  "GET",
+                "_id-apisection-url-apicontenttypes_":  "apisection-url-apicontenttypes",
+                "uRLSection":  [
+                    "_id-apisection-url-apicontenttypes_"
+                ],
+                "_id-apisection-response-apicontenttypes-get-200_":  "apisection-response-apicontenttypes-get-200",
+                "responseSection":  [
+                    "_id-apisection-response-apicontenttypes-get-200_"
+                ]
+            },
+            {
+                "name":  "apimethod-post-apicontenttypes",
+                "summary":  "Creates a new content type.",
+                "action":  "POST",
+                "_id-apisection-url-apicontenttypes_":  "apisection-url-apicontenttypes",
+                "uRLSection":  [
+                    "_id-apisection-url-apicontenttypes_"
+                ],
+                "_id-apisection-body-apicontenttypes_":  "apisection-body-apicontenttypes",
+                "messageSection":  [
+                    "_id-apisection-body-apicontenttypes_"
+                ],
+                "_id-apisection-response-apicontenttypes-post-200_":  "apisection-response-apicontenttypes-post-200",
+                "responseSection":  [
+                    "_id-apisection-response-apicontenttypes-post-200_"
+                ]
+            },
+            {
+                "name":  "apimethod-get-apicontenttypesid",
+                "summary":  "Gets the specified content type.",
+                "action":  "GET",
+                "_id-apisection-url-apicontenttypesid_":  "apisection-url-apicontenttypesid",
+                "uRLSection":  [
+                    "_id-apisection-url-apicontenttypesid_"
+                ],
+                "_id-apisection-response-apicontenttypesid-get-200_":  "apisection-response-apicontenttypesid-get-200",
+                "responseSection":  [
+                    "_id-apisection-response-apicontenttypesid-get-200_"
+                ]
+            },
+            {
+                "name":  "apimethod-put-apicontenttypesid",
+                "summary":  "Updates the specified content type.",
+                "action":  "PUT",
+                "_id-apisection-url-apicontenttypesid_":  "apisection-url-apicontenttypesid",
+                "uRLSection":  [
+                    "_id-apisection-url-apicontenttypesid_"
+                ],
+                "_id-apisection-body-apicontenttypesid_":  "apisection-body-apicontenttypesid",
+                "messageSection":  [
+                    "_id-apisection-body-apicontenttypesid_"
+                ],
+                "_id-apisection-response-apicontenttypesid-put-200_":  "apisection-response-apicontenttypesid-put-200",
+                "responseSection":  [
+                    "_id-apisection-response-apicontenttypesid-put-200_"
+                ]
+            },
+            {
+                "name":  "apimethod-delete-apicontenttypesid",
+                "summary":  "Deletes the specified content type.",
+                "action":  "DELETE",
+                "_id-apisection-url-apicontenttypesid_":  "apisection-url-apicontenttypesid",
+                "uRLSection":  [
+                    "_id-apisection-url-apicontenttypesid_"
+                ],
+                "_id-apisection-response-apicontenttypesid-delete-200_":  "apisection-response-apicontenttypesid-delete-200",
+                "responseSection":  [
+                    "_id-apisection-response-apicontenttypesid-delete-200_"
+                ]
+            },
+            {
+                "name":  "apimethod-get-apicontenttypesnamename",
+                "summary":  "Gets the content type whose name exactly matches the specified name.",
+                "action":  "GET",
+                "_id-apisection-url-apicontenttypesnamename_":  "apisection-url-apicontenttypesnamename",
+                "uRLSection":  [
+                    "_id-apisection-url-apicontenttypesnamename_"
+                ],
+                "_id-apisection-response-apicontenttypesnamename-get-200_":  "apisection-response-apicontenttypesnamename-get-200",
+                "responseSection":  [
+                    "_id-apisection-response-apicontenttypesnamename-get-200_"
+                ]
+            },
+            {
+                "name":  "apimethod-get-apicontentitems",
+                "summary":  "Gets all content items that match the criteria in the query.",
+                "action":  "GET",
+                "_id-apisection-url-apicontentitems_":  "apisection-url-apicontentitems",
+                "uRLSection":  [
+                    "_id-apisection-url-apicontentitems_"
+                ],
+                "_id-apisection-response-apicontentitems-get-200_":  "apisection-response-apicontentitems-get-200",
+                "responseSection":  [
+                    "_id-apisection-response-apicontentitems-get-200_"
+                ]
+            },
+            {
+                "name":  "apimethod-post-apicontentitems",
+                "summary":  "Creates a new content item.",
+                "action":  "POST",
+                "_id-apisection-url-apicontentitems_":  "apisection-url-apicontentitems",
+                "uRLSection":  [
+                    "_id-apisection-url-apicontentitems_"
+                ],
+                "_id-apisection-body-apicontentitems_":  "apisection-body-apicontentitems",
+                "messageSection":  [
+                    "_id-apisection-body-apicontentitems_"
+                ],
+                "_id-apisection-response-apicontentitems-post-200_":  "apisection-response-apicontentitems-post-200",
+                "responseSection":  [
+                    "_id-apisection-response-apicontentitems-post-200_"
+                ]
+            },
+            {
+                "name":  "apimethod-get-apicontentitemsid",
+                "summary":  "Gets the specified content item.",
+                "action":  "GET",
+                "_id-apisection-url-apicontentitemsid_":  "apisection-url-apicontentitemsid",
+                "uRLSection":  [
+                    "_id-apisection-url-apicontentitemsid_"
+                ],
+                "_id-apisection-response-apicontentitemsid-get-200_":  "apisection-response-apicontentitemsid-get-200",
+                "responseSection":  [
+                    "_id-apisection-response-apicontentitemsid-get-200_"
+                ]
+            },
+            {
+                "name":  "apimethod-put-apicontentitemsid",
+                "summary":  "Updates the specified content item.",
+                "action":  "PUT",
+                "_id-apisection-url-apicontentitemsid_":  "apisection-url-apicontentitemsid",
+                "uRLSection":  [
+                    "_id-apisection-url-apicontentitemsid_"
+                ],
+                "_id-apisection-body-apicontentitemsid_":  "apisection-body-apicontentitemsid",
+                "messageSection":  [
+                    "_id-apisection-body-apicontentitemsid_"
+                ],
+                "_id-apisection-response-apicontentitemsid-put-200_":  "apisection-response-apicontentitemsid-put-200",
+                "responseSection":  [
+                    "_id-apisection-response-apicontentitemsid-put-200_"
+                ]
+            },
+            {
+                "name":  "apimethod-delete-apicontentitemsid",
+                "summary":  "Deletes the specified content item.",
+                "action":  "DELETE",
+                "_id-apisection-url-apicontentitemsid_":  "apisection-url-apicontentitemsid",
+                "uRLSection":  [
+                    "_id-apisection-url-apicontentitemsid_"
+                ],
+                "_id-apisection-response-apicontentitemsid-delete-200_":  "apisection-response-apicontentitemsid-delete-200",
+                "responseSection":  [
+                    "_id-apisection-response-apicontentitemsid-delete-200_"
+                ]
+            },
+            {
+                "name":  "apimethod-get-apipublishedcontentitemsgetbyids",
+                "summary":  "Gets the specified published content items.",
+                "action":  "GET",
+                "_id-apisection-url-apipublishedcontentitemsgetbyids_":  "apisection-url-apipublishedcontentitemsgetbyids",
+                "uRLSection":  [
+                    "_id-apisection-url-apipublishedcontentitemsgetbyids_"
+                ],
+                "_id-apisection-response-apipublishedcontentitemsgetbyids-get-200_":  "apisection-response-apipublishedcontentitemsgetbyids-get-200",
+                "responseSection":  [
+                    "_id-apisection-response-apipublishedcontentitemsgetbyids-get-200_"
+                ]
+            },
+            {
+                "name":  "apimethod-get-apipublishedcontentitems",
+                "summary":  "Gets all published content items that match the criteria in the query.",
+                "action":  "GET",
+                "_id-apisection-url-apipublishedcontentitems_":  "apisection-url-apipublishedcontentitems",
+                "uRLSection":  [
+                    "_id-apisection-url-apipublishedcontentitems_"
+                ],
+                "_id-apisection-response-apipublishedcontentitems-get-200_":  "apisection-response-apipublishedcontentitems-get-200",
+                "responseSection":  [
+                    "_id-apisection-response-apipublishedcontentitems-get-200_"
+                ]
+            }
+        ]
+    },
+    "delete-webapimethods-in-list":  {
+        "ids":  [
+        ]
+    },
+    "deleteall-webapimethods":  {
+    }
+}

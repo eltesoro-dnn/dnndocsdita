@@ -1,0 +1,165 @@
+{
+    "webapifields" : {
+        "__NOTES__" : [
+            "Source/Basis: ..."
+        ],
+        "listall-webapifields" : {
+        },
+        "TEMPLATE-add-webapifields" : {
+            "body" : {
+                "name": ""
+                ,"description": ""
+                ,"language": "en"
+                ,"alreadyPublished": true
+                ,"details": {
+                    "fieldName": ""
+                    ,"dataType": []
+                    ,"enumList": ""
+                    ,"elementType": ""
+                    ,"fieldDesc": ""
+                }
+                ,"tags" : []
+            }
+        },
+        "add-webapifields" : {
+            "permutations" : []
+        },
+        "delete-webapifields-in-list" : {
+            "ids" : []
+        },
+        "deleteall-webapifields" : {
+        }
+    },
+
+
+    "webapidtos" : {
+        "__NOTES__" : [
+            "Source/Basis: ..."
+        ],
+        "listall-webapidtos" : {
+        },
+        "TEMPLATE-add-webapidtos" : {
+            "body" : {
+                "name": ""
+                ,"description": ""
+                ,"language": "en"
+                ,"alreadyPublished": true
+                ,"details": {
+                    "dTODesc": ""
+                    ,"syntax":""
+                    ,"fields": []
+                }
+                ,"tags" : []
+            }
+        },
+        "add-webapidtos" : {
+            "permutations" : []
+        },
+        "delete-webapidtos-in-list" : {
+            "ids" : []
+        },
+        "deleteall-webapidtos" : {
+        }
+    },
+
+
+    "webapiparams" : {
+        "__NOTES__" : [
+            "Source/Basis: ..."
+        ],
+        "listall-webapiparams" : {
+        },
+        "TEMPLATE-add-webapiparams" : {
+            "body" : {
+                "name": "apiparam-_fldname_"
+                ,"description": ""
+                ,"language": "en"
+                ,"alreadyPublished": true
+                ,"details": {
+                    "paramName": ""
+                    ,"in": ""
+                    ,"requiredOptional": ""
+                    ,"field": []
+                    ,"dTO": []
+                }
+                ,"tags" : []
+            }
+        },
+        "add-webapiparams" : {
+            "permutations" : []
+        },
+        "delete-webapiparams-in-list" : {
+            "ids" : []
+        },
+        "deleteall-webapiparams" : {
+        }
+    },
+
+
+    "webapisections" : {
+        "__NOTES__" : [
+            "Source/Basis: ..."
+        ],
+        "listall-webapisections" : {
+        },
+        "TEMPLATE-add-webapisections" : {
+            "body" : {
+                "name": "apiparam-_fldname_"
+                ,"description": ""
+                ,"language": "en"
+                ,"alreadyPublished": true
+                ,"details": {
+                    "responseCode": ""
+                    ,"sectionDescription": ""
+                    ,"syntax": ""
+                    ,"pathParams": []
+                    ,"mainParams": []
+                }
+                ,"tags" : []
+            }
+        },
+        "add-webapisections" : {
+            "permutations" : []
+        },
+        "delete-webapisections-in-list" : {
+            "ids" : []
+        },
+        "deleteall-webapisections" : {
+        }
+    },
+
+
+    "webapimethods" : {
+        "__NOTES__" : [
+            "Source/Basis: ..."
+        ],
+        "listall-webapimethods" : {
+        },
+        "TEMPLATE-add-webapimethods" : {
+            "body" : {
+                "name": "apimethod-_methodname_"
+                ,"description": ""
+                ,"language": "en"
+                ,"alreadyPublished": true
+                ,"details": {
+                    "summary": ""
+                    ,"action": "GET"
+                    ,"uRLSection": []
+                    ,"messageSection": []
+                    ,"responseSection": []
+                    ,"remarks": []
+                    ,"relatedLinks": ""
+                }
+                ,"tags" : []
+            }
+        },
+        "add-webapimethods" : {
+            "permutations" : [        ]
+        },
+        "delete-webapimethods-in-list" : {
+            "ids" : []
+        },
+        "deleteall-webapimethods" : {
+        }
+    }
+}

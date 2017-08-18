@@ -33,11 +33,13 @@
         <topicref format="dita" type="topic" navtitle="Liquid Content&#8482; Microservice" locktitle="yes" toc="yes" href="developers/structured-content/about-structured-content.dita" copy-to="developers/structured-content/index.dita"  collection-type="family" >
             <!-- Getting Started with Liquid Content - Summary page which points to Content Types, Content Items, Content Fields, Visualizers, Recipe Example -->
             <mapref href="developers/structured-content/structured-content-visualizer-templates.ditamap" />
-            <topicref format="dita" type="topic" scope="peer" navtitle="Liquid Content&#8482; APIs" locktitle="yes" toc="yes" href="api/about-structured-content-apis.dita" >
-                <topicref format="dita" type="topic" scope="peer" navtitle="Content Types"          locktitle="yes" toc="yes" href="api/about-structured-content-content-type-apis.dita" />
-                <!-- <topicref format="dita" type="topic" scope="peer" navtitle="Visualizers"       locktitle="yes" toc="yes" href="api/about-structured-content-visualizer-apis.dita" /> -->
-                <topicref format="dita" type="topic" scope="peer" navtitle="Content Items"          locktitle="yes" toc="yes" href="api/about-structured-content-content-item-apis.dita" />
-                <topicref format="dita" type="topic" scope="peer" navtitle="PublishedContent Items" locktitle="yes" toc="yes" href="api/about-structured-content-published-content-item-apis.dita" />
+            <topicref format="dita" type="topic" scope="peer" navtitle="Liquid Content&#8482; APIs"               locktitle="yes" toc="yes" href="api/about-structured-content-apis.dita" >
+                <topicref format="dita" type="topic" scope="peer" navtitle="Content Types"                        locktitle="yes" toc="yes" href="api/about-structured-content-content-type-apis.dita" />
+                <!-- <topicref format="dita" type="topic" scope="peer" navtitle="Visualizers"                     locktitle="yes" toc="yes" href="api/about-structured-content-visualizer-apis.dita" /> -->
+                <topicref format="dita" type="topic" scope="peer" navtitle="Content Items"                        locktitle="yes" toc="yes" href="api/about-structured-content-content-item-apis.dita" />
+                <topicref format="dita" type="topic" scope="peer" navtitle="PublishedContent Items"               locktitle="yes" toc="yes" href="api/about-structured-content-published-content-item-apis.dita" />
+                <topicref format="dita" type="topic" scope="peer" navtitle="API Responses to GET"                 locktitle="yes" toc="yes" href="api/about-structured-content-api-get-responses.dita" />
+                <topicref format="dita" type="topic" scope="peer" navtitle="Content Type Fields for POST and PUT" locktitle="yes" toc="yes" href="api/about-structured-content-api-post-put-type-fields.dita" />
             </topicref>
             <topicref format="dita" type="reference" toc="yes" href="developers/microservices/searched-fields.dita" />
             <topicref format="dita" type="reference" toc="yes" href="developers/microservices/api-results-pagination.dita" />

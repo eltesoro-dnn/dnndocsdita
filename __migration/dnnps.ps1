@@ -1,10 +1,8 @@
 # ============================================================
 # Performs GET, POST, PUT, DELETE against the DNN APIs.
 #
-# Requirements?
-# Output?
-# Resource : https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.utility/invoke-webrequest
-#
+# Resources:
+# https://msdn.microsoft.com/en-us/powershell/reference/5.1/microsoft.powershell.utility/invoke-webrequest
 # ============================================================
 
 
@@ -14,6 +12,8 @@ $apiurl = "https://dnnapi.com/content/api"
 $mimetype = "application/json"
 $maxitems = 1000
 
+$lt = "\u003c"
+$gt = "\u003e"
 
 # $APICALLS = @( "ContentTypes", "ContentItems" )
 # $ACTIONS  = @( "GET", "POST", "PUT", "DELETE" )
@@ -23,11 +23,11 @@ $maxitems = 1000
 
 function Usage()  {
     $script = $MyInvocation.ScriptName
-    $usage = "powershell -file $script $setsjson $jobsjson $jobname"
+    $usage = "powershell -file $script $setsjson $assetstxt $jobsjson $jobname"
 
 
     $examples = @(
-        "powershell -file $script settings.json jobs-sections.json listall-contenttypes"
+        "powershell -file $script settings.json json\assets.txt jobs-sections.json listall-contenttypes"
         )
 
     Write-Host "Usage: " $usage
@@ -110,35 +110,13 @@ function GetContentTypeNameID( [string] $jobname )  {
 }
 
 # Gets the contentitem ID from the settings file, based on the contenttype and the contentitem name.
-# BUGBUG: Accesses the $mysettings var directly.
-function GetContentItemID( [string] $contenttypename, [string] $contentitemname )  {
-    $nodename = $contenttypename + "ids"
-    $node = $mysettings.$nodename
-    foreach ( $name in $node.psobject.properties.name )   {
-        if ( StrCompare $contentitemname $name )  {
-            # if there's only one, return it.
-            if ( $node.$name -is [string] )  {
-                return $node.$name
-            }
-            # if an array, return only the first.
-            elseif ( $node.$name -is [array] )  {
-                return ($node.$name)[0]
-            }
-            else  {
-                return ""
-            }
-        }
+function GetContentItemID( [string] $contentitemname )  {
+    foreach ( $ctype in $global:mysettings.psobject.properties.name )  {
+        $ctypenode = $global:mysettings.$ctype
+        if ( $ctypenode.$contentitemname -is [string] )  { return $ctypenode.$contentitemname }
+        if ( $ctypenode.$contentitemname -is [array] )   { return $ctypenode.$contentitemname[0] }
     }
     return ""
-}
-
-# Wraps each element of an array inside <span/> tags with the specified class.
-function WrapSpanElements( [string[]] $arr, [string] $class )  {
-    $new = @()
-    $arr | foreach  {
-        $new = "&lt;span class=&quot;$class&quot;&gt;$_&lt;/span&gt;"
-    }
-    return $new
 }
 
 # Returns the Unixtime epochtime of a date in the format "yyyy-MMM-dd".
@@ -239,75 +217,124 @@ function ReplaceRefsToOtherCTs( [PSObject] $bodynode )  {
     return $bodynode
 }
 
+#Wraps one string inside <span/> tags with the specified class
+function WrapSpanStr( [string] $text, [string] $class )  {
+    $wrap = "span"
+    return "$lt$wrap class=$class$gt$text$lt/$wrap$gt"
+}
+# Wraps each element of an array inside <span/> tags with the specified class.
+function WrapSpanElements( [string[]] $arr, [string] $class )  {
+    $new = @()
+    $arr | foreach  {
+        $new = WrapSpanStr $_ $class
+    }
+    return $new
+}
+function ReplaceTagWithSpan( [string] $text, [string] $tag )  {
+    $wrap = "span"
+    return $text.Replace( "$lt$tag$gt", "$lt$wrap class=$tag$gt" ).Replace( "$lt/$tag$gt", "$lt/$wrap$gt" )
+}
 # Returns one permutation.
-function MkPerm( [PSCustomObject] $body, [PSCustomObject] $perm )  {
+function MkPerm( [PSObject] $freshbody, [PSObject] $perm, [array] $assetsarr )  {
     $ignorearr = @( "id" )
 
-    # Do not copy keys that are not in the target $body (_*_ keys).
-    $body = ReplaceWithLegend $body $perm $false
+    # Do not copy keys that are not in the target $freshbody (_*_ keys).
+    $freshbody = ReplaceWithLegend $freshbody $perm $false
 
     # Convert to string for easier replacements of the _*_ keys.
-    $template = $body | ConvertTo-Json -Depth 10
+    $bodyjson = $freshbody | ConvertTo-Json -Depth 10
 
     # Replace the _*_ vars.
     foreach ( $key in $perm.psobject.properties.name ) {
         if (( $ignorearr -notcontains $key ) -and ( $key.StartsWith( "_" ) ))  {
 
-            $newval = $perm.$key
-
-            # Get the ID of the referenced content item.
-            # Example: "_id-ctype-foo_" = "nameofmycontentitem" will get the ID of the content item "nameofmycontentitem" of type "ctype".
-            # NOTE: ctype must be singular.
-            if ( $key.StartsWith( "_id-" ) )  {
-                $arr = $key.Split( "-_", [System.StringSplitOptions]::RemoveEmptyEntries )
-                $newval = GetContentItemID $arr[1].ToLower() $newval
-                if ( !$newval )  {
-                    Write-Error "WARNING: Content item ID for $key not found."
-                }
+            if ( $perm.$key -is [array] )  {
+                $newval = @( $perm.$key )
+            }
+            else  {
+                $newval = $perm.$key
             }
 
-            switch ( $key )  {
-                "_dashed_"    {
+            $arr = $key.Split( "-_", [System.StringSplitOptions]::RemoveEmptyEntries )
+            $keystart = $arr[0]
+
+            switch ( $keystart )  {
+                "id"  {
+                    # Get the ID of the referenced content item.
+                    # Example: "_id-ctype-foo_" = "nameofmycontentitem" will get the ID of the content item "nameofmycontentitem" of type "ctype".
+                    # NOTE: ctype must be singular.
+                    $newval = GetContentItemID $newval
+                    if ( !$newval )  {
+                        Write-Error "WARNING: Content item ID for $key not found."
+                    }
+                    else  {
+                        $bodyjson = $bodyjson.Replace( $key, $newval )
+                    }
+                    break;
+                }
+                "dashed"  {
                     if ( $newval -is [array] )  {
                         $newval = [string]::Join( "-", $newval )
-                        $newval = $newval.Replace( " ", "" ).Replace( "/", "" ).ToLower()
                     }
-                    $template = $template.Replace( $key, $newval )
+                    $newval = $newval.Replace( " ", "" ).Replace( "/", "" ).ToLower()
+                    $bodyjson = $bodyjson.Replace( $key, $newval )
+                    break;
                 }
-                "_uicontrol_"  {
-                    $newval = "&lt;span class=&quot;uicontrol&quot;&gt;" + $newval + "&lt;/span&gt;"
-                    $template = $template.Replace( $key, $newval )
-                }
-                "_menucasc_"  {
+                "menucasc"  {
                     if ( $newval -is [array] )  {
                         $arr = WrapSpanElements $newval "ph uicontrol"
                         $newval = "&lt;span class=&quot;menucascade&quot;&gt;" + [string]::Join( " &gt; ", $arr ) + "&lt;/span&gt;"
                     }
-                    $template = $template.Replace( $key, $newval )
+                    $bodyjson = $bodyjson.Replace( $key, $newval )
+                    break;
                 }
-                "_menualt_"  {
+                "menualt"  {
                     if ( $newval -is [array] )  {
                         $newval = [string]::Join( " &gt; ", $newval )
                     }
-                    $template = $template.Replace( $key, $newval )
+                    $bodyjson = $bodyjson.Replace( $key, $newval )
+                    break;
                 }
-                "_unixdate_"  {
+                "unixdate"  {
                     $newval = GetUnixDate( $newval )
 
-                    $template = $template.Replace( $key, $newval )
-                    $template = $template.Replace( """$key""", $newval )
+                    $bodyjson = $bodyjson.Replace( $key, $newval )
+                    $bodyjson = $bodyjson.Replace( """$key""", $newval )
+                    break;
                 }
-                "_int_"  {
-                    $template = $template.Replace( $key, $newval )
-                    $template = $template.Replace( """$key""", $newval )
+                "int"  {
+                    $bodyjson = $bodyjson.Replace( $key, $newval )
+                    $bodyjson = $bodyjson.Replace( """$key""", $newval )
+                    break;
                 }
                 DEFAULT  {
-                    $template = $template.Replace( $key, $newval )
+                    $bodyjson = $bodyjson.Replace( $key, $newval )
                 }
             }
         }
     }
 
+    # Convert to PSObject to get the filename after replacements.
+    $freshbody = $bodyjson | ConvertFrom-Json
+    if ( $freshbody.details.imageFile.Count -gt 0 )  {
+        $imgfn = $freshbody.details.imageFile[0].fileName
+        if ( IsValid $imgfn )  {
+            $imgfn = $imgfn.ToLower()
+            $assetsarr | foreach  {
+                if ( $_.ToLower().Contains( $imgfn ) )  {
+                    $bodyjson = $bodyjson.Replace( "_imgurl_", $_ )
+                }
+            }
+        }
+    }
+
+    return $bodyjson
+}
+function ReplaceDitaTags( [string] $template )  {
+    # Tag becomes class.
+    @( "uicontrol" ) | foreach {
+        $template = ReplaceTagWithSpan $template $_
+    }
     return $template
 }
 
@@ -333,12 +360,15 @@ function BldQuery( [string] $action, [string] $jobname, [PSObject] $jobnode, [st
                     $queryobj | Add-Member -Type NoteProperty -Name maxitems -Value $maxitems
                 }
                 # No query if content item IDs are specified.
+                break;
             }
             "POST"  {
                 $queryobj | Add-Member -Type NoteProperty -Name publish -Value "TRUE"
+                break;
             }
             "PUT"  {
                 $queryobj | Add-Member -Type NoteProperty -Name publish -Value "TRUE"
+                break;
             }
             # No query for POST, PUT, or DELETE.
         }
@@ -370,7 +400,7 @@ function GetListOfIDsFromResponse( [PSObject] $respjsondocs, [string] $jobname )
     if ( !$isCT )  {
         $respjsondocs | foreach  {
             if ( $ctypenameid -and ( StrCompare $_.contentTypeName $ctypenameid[0] ) )  {
-                if ( !($_.isSystem) )  {  $IDList += $_.id  }
+                $IDList += $_.id
             }
         }
     }
@@ -443,9 +473,10 @@ function RobocopyBasic( [string] $src, [string] $tgt, [string] $opts )  {
 # MAIN -------------------------------------------------------
 
 if ( $args.Count -gt 2 )  {
-    $setsjson = $args[0]
-    $jobname  = $args[1]
-    $jsonpath = $args[2]
+    $jobname  = $args[0]
+    $jsonpath = $args[1]
+    $setsjson = $args[2]
+    $assettxt = $args[3]
 
     $thisscript = $MyInvocation.MyCommand.Name
     $params = [string]::Join( " ", $args )
@@ -460,15 +491,17 @@ if ( $args.Count -gt 2 )  {
         Write-Error "ERROR: Missing or invalid settings file."
         return
     }
-    $mysettings = Get-Content -Raw -Path $setsjson | ConvertFrom-Json
-    if ( IsValid $mysettings.apikey )          {  $apikey      = $mysettings.apikey  }
-    if ( IsValid $mysettings.contenttypeids )  {  $ctypeidlist = $mysettings.contenttypeids  }
+    $global:mysettings = Get-Content -Raw -Path $setsjson | ConvertFrom-Json
+    if ( IsValid $global:mysettings.apikey )          {  $apikey      = $global:mysettings.apikey  }
+    if ( IsValid $global:mysettings.contenttypeids )  {  $ctypeidlist = $global:mysettings.contenttypeids  }
+
+    $assets = Get-Content $assettxt
 
     # $ctypenameid is a two-element array.
     $ctypenameid = GetContentTypeNameID $jobname $ctypeidlist
 
-    if ( IsValid $mysettings.outraw )  {
-        $outraw = $mysettings.outraw
+    if ( IsValid $global:mysettings.outraw )  {
+        $outraw = $global:mysettings.outraw
         if ( $ctypenameid )  {
             $outraw = $ctypenameid[0] + "-" + $outraw
         }
@@ -491,8 +524,6 @@ if ( $args.Count -gt 2 )  {
     if ( !$tmpljson )  { Get-ChildItem -Path $jsonpath | Select-String -Pattern """TEMPLATE-$jobprefix""" | Group Path | Select Name | %{ $tmpljson = $_.name } }
     if ( !$tmpljson )  { $tmpljson = $jobsjson }
 
-    Write-Host "DEBUG: jobsjson is $jobsjson "
-
     if ( $jobsjson )  {  $myjobs = Get-Content -Raw -Path $jobsjson | ConvertFrom-Json  }
     else  { Write-Error "ERROR: jobsjson is null."; return }
     if ( $tmpljson )  {  $mytmpl = Get-Content -Raw -Path $tmpljson | ConvertFrom-Json  }
@@ -507,13 +538,13 @@ if ( $args.Count -gt 2 )  {
     }
 
     # BODY
-    # Start with the template, if any, then replace with job values, if any.
+    # Copy the template, if any, then replace with job values, if any.
     if ( $tmplnode.body -is [PSObject] )  {
-        $bodynode = $tmplnode.body
+        $bodynode = $tmplnode.body.psobject.Copy()
         $bodynode = ReplaceWithLegend $bodynode $jobnode.body
     }
     elseif ( $jobnode.body -is [PSObject] )  {
-        $bodynode = $jobnode.body
+        $bodynode = $jobnode.body.psobject.Copy()
     }
     else  {
         $bodynode = [PSCustomObject]@{}
@@ -560,6 +591,9 @@ if ( $args.Count -gt 2 )  {
 
     $responses = @()
 
+    # This will be used as the clean customized copy of $bodynode.
+    $basebodyjson = $bodynode | ConvertTo-Json -Depth 10
+
     switch( $action )  {
 
         "GET"  {
@@ -576,21 +610,27 @@ if ( $args.Count -gt 2 )  {
                     $resp = InvokeWebRequest "$apiurl$apicall$query" $action $hdr
                     if ( $resp.content )  {  $responses += ($resp.content).Replace( "  ", "    " )  }
             }
+            break;
         }
 
         "POST"   {
             if ( $permsarray.Length -gt 0 )  {
                 foreach ( $perm in $permsarray )  {
-                    $body = MkPerm $bodynode $perm
+                    $bodynode = $basebodyjson | ConvertFrom-Json
+                    $body = MkPerm $bodynode $perm $assets
+                    $body = ReplaceDitaTags $body
                     $resp = InvokeWebRequest "$apiurl$apicall$query" $action $hdr $body
                     if ( $resp.content )  {  $responses += ($resp.content).Replace( "  ", "    " )  }
                 }
             }
             else  {
+                $bodynode = $basebodyjson | ConvertFrom-Json
                 $body = $bodynode | ConvertTo-Json -Depth 10
+                $body = ReplaceDitaTags $body
                 $resp = InvokeWebRequest "$apiurl$apicall$query" $action $hdr $body
                 if ( $resp.content )  {  $responses += ($resp.content).Replace( "  ", "    " )  }
             }
+            break;
         }
 
         "PUT"    {
@@ -598,7 +638,9 @@ if ( $args.Count -gt 2 )  {
                 foreach ( $perm in $permsarray )  {
                     if ( IsValid $perm.id )  {
                         $id = "/" + $perm.id    # Each perm should include an ID.
-                        $body = MkPerm $bodynode $perm
+                        $bodynode = $basebodyjson | ConvertFrom-Json
+                        $body = MkPerm $bodynode $perm $assets
+                        $body = ReplaceDitaTags $body
                         $resp = InvokeWebRequest "$apiurl$apicall$id$query" $action $hdr $body
                         if ( $resp.content )  {  $responses += ($resp.content).Replace( "  ", "    " )  }
                     }
@@ -609,13 +651,16 @@ if ( $args.Count -gt 2 )  {
                 $IDList = GetListOfIDs $jobnode
                 if ( $IDList.Length -gt 0 )  {
                     $IDList | foreach  {
+                        $bodynode = $basebodyjson | ConvertFrom-Json
                         $body = $bodynode | ConvertTo-Json -Depth 10
+                        $body = ReplaceDitaTags $body
                         $resp = InvokeWebRequest "$apiurl$apicall/$_$query" $action $hdr $body
                         if ( $resp.content )  {  $responses += ($resp.content).Replace( "  ", "    " )  }
                     }
                 }
                 # Don't do anything if there's no ID.
             }
+            break;
         }
 
         "DELETE"  {
@@ -627,6 +672,7 @@ if ( $args.Count -gt 2 )  {
                 }
             }
             # Don't do anything if there's no ID.
+            break;
         }
 
         "GET-DELETE"  {
@@ -647,6 +693,7 @@ if ( $args.Count -gt 2 )  {
                     }
                 }
             }
+            break;
         }
 
     }
@@ -677,11 +724,11 @@ if ( $args.Count -gt 2 )  {
         foreach ( $resp in $responses )  {
             $respjson = $resp | ConvertFrom-Json
             $newids = MkPSObjKeyValPair $respjson.documents
-            $mysettings = CreateOrUpdateNode $mysettings $idsnodename "" $newids
+            $global:mysettings = CreateOrUpdateNode $global:mysettings $idsnodename "" $newids
         }
 
-        $mysettings | ConvertTo-Json -Depth 10 | Out-File $setsjson -Encoding DEFAULT
-        $mysettings.$idsnodename | Out-Host
+        $global:mysettings | ConvertTo-Json -Depth 10 | Out-File $setsjson -Encoding DEFAULT
+        $global:mysettings.$idsnodename | Out-Host
     }
 
 }

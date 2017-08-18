@@ -1,0 +1,446 @@
+{
+    "__NOTES__":  [
+        "Source/Basis: ..."
+    ],
+    "listall-webapiparams":  {
+    },
+    "TEMPLATE-add-webapiparams":  {
+        "body":  {
+            "name":  "apiparam-_fldname_",
+            "description":  "",
+            "language":  "en",
+            "alreadyPublished":  true,
+            "details":  {
+                "paramName":  "",
+                "in":  "",
+                "requiredOptional":  "",
+                "field":  [
+                ],
+                "dTO":  [
+                ]
+            },
+            "tags":  [
+            ]
+        }
+    },
+    "add-webapiparams":  {
+        "permutations":  [
+            {
+                "name":  "apiparam-contenttype-get-querysearchtext",
+                "paramName":  "query.searchText",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contenttype-get-querysearchtext_":  "apifield-contenttype-get-querysearchtext",
+                "field":  [
+                    "_id-apifield-contenttype-get-querysearchtext_"
+                ]
+            },
+            {
+                "name":  "apiparam-contenttype-get-querystartindex",
+                "paramName":  "query.startIndex",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contenttype-get-querystartindex_":  "apifield-contenttype-get-querystartindex",
+                "field":  [
+                    "_id-apifield-contenttype-get-querystartindex_"
+                ]
+            },
+            {
+                "name":  "apiparam-contenttype-get-querymaxitems",
+                "paramName":  "query.maxItems",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contenttype-get-querymaxitems_":  "apifield-contenttype-get-querymaxitems",
+                "field":  [
+                    "_id-apifield-contenttype-get-querymaxitems_"
+                ]
+            },
+            {
+                "name":  "apiparam-contenttype-get-queryfieldorder",
+                "paramName":  "query.fieldOrder",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contenttype-get-queryfieldorder_":  "apifield-contenttype-get-queryfieldorder",
+                "field":  [
+                    "_id-apifield-contenttype-get-queryfieldorder_"
+                ]
+            },
+            {
+                "name":  "apiparam-contenttype-get-queryorderasc",
+                "paramName":  "query.orderAsc",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contenttype-get-queryorderasc_":  "apifield-contenttype-get-queryorderasc",
+                "field":  [
+                    "_id-apifield-contenttype-get-queryorderasc_"
+                ]
+            },
+            {
+                "name":  "apiparam-contenttype-get-querycreatedfrom",
+                "paramName":  "query.createdFrom",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contenttype-get-querycreatedfrom_":  "apifield-contenttype-get-querycreatedfrom",
+                "field":  [
+                    "_id-apifield-contenttype-get-querycreatedfrom_"
+                ]
+            },
+            {
+                "name":  "apiparam-contenttype-get-querycreatedto",
+                "paramName":  "query.createdTo",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contenttype-get-querycreatedto_":  "apifield-contenttype-get-querycreatedto",
+                "field":  [
+                    "_id-apifield-contenttype-get-querycreatedto_"
+                ]
+            },
+            {
+                "name":  "apiparam-contenttype-post-contenttype",
+                "paramName":  "contentType",
+                "in":  "body",
+                "requiredOptional":  "Required",
+                "_id-apidto-contenttype-post-structuredcontentapidtocontenttypescontenttypecreation_":  "apidto-contenttype-post-structuredcontentapidtocontenttypescontenttypecreation",
+                "dTO":  [
+                    "_id-apidto-contenttype-post-structuredcontentapidtocontenttypescontenttypecreation_"
+                ]
+            },
+            {
+                "name":  "apiparam-contenttype-get-id",
+                "paramName":  "id",
+                "in":  "path",
+                "requiredOptional":  "Required",
+                "_id-apifield-contenttype-get-id_":  "apifield-contenttype-get-id",
+                "field":  [
+                    "_id-apifield-contenttype-get-id_"
+                ]
+            },
+            {
+                "name":  "apiparam-contenttype-put-id",
+                "paramName":  "id",
+                "in":  "path",
+                "requiredOptional":  "Required",
+                "_id-apifield-contenttype-put-id_":  "apifield-contenttype-put-id",
+                "field":  [
+                    "_id-apifield-contenttype-put-id_"
+                ]
+            },
+            {
+                "name":  "apiparam-contenttype-put-contenttype",
+                "paramName":  "contentType",
+                "in":  "body",
+                "requiredOptional":  "Required",
+                "_id-apidto-contenttype-put-structuredcontentapidtocontenttypescontenttypecreation_":  "apidto-contenttype-put-structuredcontentapidtocontenttypescontenttypecreation",
+                "dTO":  [
+                    "_id-apidto-contenttype-put-structuredcontentapidtocontenttypescontenttypecreation_"
+                ]
+            },
+            {
+                "name":  "apiparam-contenttype-delete-id",
+                "paramName":  "id",
+                "in":  "path",
+                "requiredOptional":  "Required",
+                "_id-apifield-contenttype-delete-id_":  "apifield-contenttype-delete-id",
+                "field":  [
+                    "_id-apifield-contenttype-delete-id_"
+                ]
+            },
+            {
+                "name":  "apiparam-contenttype-get-name",
+                "paramName":  "name",
+                "in":  "path",
+                "requiredOptional":  "Required",
+                "_id-apifield-contenttype-get-name_":  "apifield-contenttype-get-name",
+                "field":  [
+                    "_id-apifield-contenttype-get-name_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-get-querypublished",
+                "paramName":  "query.published",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contentitem-get-querypublished_":  "apifield-contentitem-get-querypublished",
+                "field":  [
+                    "_id-apifield-contentitem-get-querypublished_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-get-querytags",
+                "paramName":  "query.tags",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contentitem-get-querytags_":  "apifield-contentitem-get-querytags",
+                "field":  [
+                    "_id-apifield-contentitem-get-querytags_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-get-querycontenttypeid",
+                "paramName":  "query.contentTypeId",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contentitem-get-querycontenttypeid_":  "apifield-contentitem-get-querycontenttypeid",
+                "field":  [
+                    "_id-apifield-contentitem-get-querycontenttypeid_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-get-querysearchtext",
+                "paramName":  "query.searchText",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contentitem-get-querysearchtext_":  "apifield-contentitem-get-querysearchtext",
+                "field":  [
+                    "_id-apifield-contentitem-get-querysearchtext_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-get-querystartindex",
+                "paramName":  "query.startIndex",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contentitem-get-querystartindex_":  "apifield-contentitem-get-querystartindex",
+                "field":  [
+                    "_id-apifield-contentitem-get-querystartindex_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-get-querymaxitems",
+                "paramName":  "query.maxItems",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contentitem-get-querymaxitems_":  "apifield-contentitem-get-querymaxitems",
+                "field":  [
+                    "_id-apifield-contentitem-get-querymaxitems_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-get-queryfieldorder",
+                "paramName":  "query.fieldOrder",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contentitem-get-queryfieldorder_":  "apifield-contentitem-get-queryfieldorder",
+                "field":  [
+                    "_id-apifield-contentitem-get-queryfieldorder_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-get-queryorderasc",
+                "paramName":  "query.orderAsc",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contentitem-get-queryorderasc_":  "apifield-contentitem-get-queryorderasc",
+                "field":  [
+                    "_id-apifield-contentitem-get-queryorderasc_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-get-querycreatedfrom",
+                "paramName":  "query.createdFrom",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contentitem-get-querycreatedfrom_":  "apifield-contentitem-get-querycreatedfrom",
+                "field":  [
+                    "_id-apifield-contentitem-get-querycreatedfrom_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-get-querycreatedto",
+                "paramName":  "query.createdTo",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contentitem-get-querycreatedto_":  "apifield-contentitem-get-querycreatedto",
+                "field":  [
+                    "_id-apifield-contentitem-get-querycreatedto_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-post-contentitem",
+                "paramName":  "contentItem",
+                "in":  "body",
+                "requiredOptional":  "Required",
+                "_id-apidto-contentitem-post-structuredcontentapidtocontentitemscontentitemcreation_":  "apidto-contentitem-post-structuredcontentapidtocontentitemscontentitemcreation",
+                "dTO":  [
+                    "_id-apidto-contentitem-post-structuredcontentapidtocontentitemscontentitemcreation_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-post-publish",
+                "paramName":  "publish",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contentitem-post-publish_":  "apifield-contentitem-post-publish",
+                "field":  [
+                    "_id-apifield-contentitem-post-publish_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-get-id",
+                "paramName":  "id",
+                "in":  "path",
+                "requiredOptional":  "Required",
+                "_id-apifield-contentitem-get-id_":  "apifield-contentitem-get-id",
+                "field":  [
+                    "_id-apifield-contentitem-get-id_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-put-id",
+                "paramName":  "id",
+                "in":  "path",
+                "requiredOptional":  "Required",
+                "_id-apifield-contentitem-put-id_":  "apifield-contentitem-put-id",
+                "field":  [
+                    "_id-apifield-contentitem-put-id_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-put-contentitem",
+                "paramName":  "contentItem",
+                "in":  "body",
+                "requiredOptional":  "Required",
+                "_id-apidto-contentitem-put-structuredcontentapidtocontentitemscontentitemcreation_":  "apidto-contentitem-put-structuredcontentapidtocontentitemscontentitemcreation",
+                "dTO":  [
+                    "_id-apidto-contentitem-put-structuredcontentapidtocontentitemscontentitemcreation_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-put-publish",
+                "paramName":  "publish",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-contentitem-put-publish_":  "apifield-contentitem-put-publish",
+                "field":  [
+                    "_id-apifield-contentitem-put-publish_"
+                ]
+            },
+            {
+                "name":  "apiparam-contentitem-delete-id",
+                "paramName":  "id",
+                "in":  "path",
+                "requiredOptional":  "Required",
+                "_id-apifield-contentitem-delete-id_":  "apifield-contentitem-delete-id",
+                "field":  [
+                    "_id-apifield-contentitem-delete-id_"
+                ]
+            },
+            {
+                "name":  "apiparam-publishedcontentitem-get-contentitemids",
+                "paramName":  "contentItemIds",
+                "in":  "query",
+                "requiredOptional":  "Required",
+                "_id-apifield-publishedcontentitem-get-contentitemids_":  "apifield-publishedcontentitem-get-contentitemids",
+                "field":  [
+                    "_id-apifield-publishedcontentitem-get-contentitemids_"
+                ]
+            },
+            {
+                "name":  "apiparam-publishedcontentitem-get-querypublished",
+                "paramName":  "query.published",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-publishedcontentitem-get-querypublished_":  "apifield-publishedcontentitem-get-querypublished",
+                "field":  [
+                    "_id-apifield-publishedcontentitem-get-querypublished_"
+                ]
+            },
+            {
+                "name":  "apiparam-publishedcontentitem-get-querytags",
+                "paramName":  "query.tags",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-publishedcontentitem-get-querytags_":  "apifield-publishedcontentitem-get-querytags",
+                "field":  [
+                    "_id-apifield-publishedcontentitem-get-querytags_"
+                ]
+            },
+            {
+                "name":  "apiparam-publishedcontentitem-get-querycontenttypeid",
+                "paramName":  "query.contentTypeId",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-publishedcontentitem-get-querycontenttypeid_":  "apifield-publishedcontentitem-get-querycontenttypeid",
+                "field":  [
+                    "_id-apifield-publishedcontentitem-get-querycontenttypeid_"
+                ]
+            },
+            {
+                "name":  "apiparam-publishedcontentitem-get-querysearchtext",
+                "paramName":  "query.searchText",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-publishedcontentitem-get-querysearchtext_":  "apifield-publishedcontentitem-get-querysearchtext",
+                "field":  [
+                    "_id-apifield-publishedcontentitem-get-querysearchtext_"
+                ]
+            },
+            {
+                "name":  "apiparam-publishedcontentitem-get-querystartindex",
+                "paramName":  "query.startIndex",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-publishedcontentitem-get-querystartindex_":  "apifield-publishedcontentitem-get-querystartindex",
+                "field":  [
+                    "_id-apifield-publishedcontentitem-get-querystartindex_"
+                ]
+            },
+            {
+                "name":  "apiparam-publishedcontentitem-get-querymaxitems",
+                "paramName":  "query.maxItems",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-publishedcontentitem-get-querymaxitems_":  "apifield-publishedcontentitem-get-querymaxitems",
+                "field":  [
+                    "_id-apifield-publishedcontentitem-get-querymaxitems_"
+                ]
+            },
+            {
+                "name":  "apiparam-publishedcontentitem-get-queryfieldorder",
+                "paramName":  "query.fieldOrder",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-publishedcontentitem-get-queryfieldorder_":  "apifield-publishedcontentitem-get-queryfieldorder",
+                "field":  [
+                    "_id-apifield-publishedcontentitem-get-queryfieldorder_"
+                ]
+            },
+            {
+                "name":  "apiparam-publishedcontentitem-get-queryorderasc",
+                "paramName":  "query.orderAsc",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-publishedcontentitem-get-queryorderasc_":  "apifield-publishedcontentitem-get-queryorderasc",
+                "field":  [
+                    "_id-apifield-publishedcontentitem-get-queryorderasc_"
+                ]
+            },
+            {
+                "name":  "apiparam-publishedcontentitem-get-querycreatedfrom",
+                "paramName":  "query.createdFrom",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-publishedcontentitem-get-querycreatedfrom_":  "apifield-publishedcontentitem-get-querycreatedfrom",
+                "field":  [
+                    "_id-apifield-publishedcontentitem-get-querycreatedfrom_"
+                ]
+            },
+            {
+                "name":  "apiparam-publishedcontentitem-get-querycreatedto",
+                "paramName":  "query.createdTo",
+                "in":  "query",
+                "requiredOptional":  "Optional",
+                "_id-apifield-publishedcontentitem-get-querycreatedto_":  "apifield-publishedcontentitem-get-querycreatedto",
+                "field":  [
+                    "_id-apifield-publishedcontentitem-get-querycreatedto_"
+                ]
+            }
+        ]
+    },
+    "delete-webapiparams-in-list":  {
+        "ids":  [
+        ]
+    },
+    "deleteall-webapiparams":  {
+    }
+}

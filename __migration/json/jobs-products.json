@@ -14,6 +14,8 @@
         "body" : {
             "contentTypeId" : ""
             ,"name" : "product-_code_"
+            ,"description" : ""
+            ,"language": "en"
             ,"details": {
                 "productName": [ "_fullname_" ]
                 ,"version": [ "_ver_" ]

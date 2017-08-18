@@ -3,7 +3,7 @@
     "info": {
         "version": "v1",
         "title": "Structured Content API",
-        "description": "Build 01.16.00.21"
+        "description": "Build 01.19.00.6"
     },
     "host": "qa-sc.dnnapi.com",
     "schemes": [
@@ -424,6 +424,12 @@
                         "description": "The unique identifier of the referring content item.",
                         "required": true,
                         "type": "string"
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "required": false,
+                        "type": "string"
                     }
                 ],
                 "responses": {
@@ -606,6 +612,47 @@
                 ]
             }
         },
+        "/api/ContentItems/{id}/availableLocalizations": {
+            "get": {
+                "tags": [
+                    "ContentItems"
+                ],
+                "summary": "Gets the number of times that the specified content item is used.",
+                "operationId": "Content Items: Get Content Item Localizations",
+                "consumes": [],
+                "produces": [
+                    "application/json",
+                    "text/json",
+                    "application/xml",
+                    "text/xml"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "The unique identifier of the content item.",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "format": "int32",
+                            "type": "integer"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2": [
+                            "sc-item:read"
+                        ]
+                    }
+                ]
+            }
+        },
         "/api/ContentItems": {
             "get": {
                 "tags": [
@@ -779,6 +826,12 @@
                         "description": "The unique identifier of the content item to get.",
                         "required": true,
                         "type": "string"
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "required": false,
+                        "type": "string"
                     }
                 ],
                 "responses": {
@@ -891,6 +944,46 @@
                     {
                         "oauth2": [
                             "sc-item:write"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/api/ContentTypes/name/{name}": {
+            "get": {
+                "tags": [
+                    "ContentTypes"
+                ],
+                "summary": "Gets a content type by a given name. It makes an exact search.",
+                "operationId": "Content Types: Get Content Type By Name",
+                "consumes": [],
+                "produces": [
+                    "application/json",
+                    "text/json",
+                    "application/xml",
+                    "text/xml"
+                ],
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The name of the content type to get",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/StructuredContent.API.Dto.ContentTypes.ContentType"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2": [
+                            "sc-type:read"
                         ]
                     }
                 ]
@@ -1200,6 +1293,215 @@
                 ]
             }
         },
+        "/api/ImportExport/export": {
+            "post": {
+                "tags": [
+                    "ImportExport"
+                ],
+                "summary": "Performs an export request",
+                "operationId": "Import Export: Post Export",
+                "consumes": [
+                    "application/json",
+                    "text/json",
+                    "application/xml",
+                    "text/xml",
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json",
+                    "text/json",
+                    "application/xml",
+                    "text/xml"
+                ],
+                "parameters": [
+                    {
+                        "name": "request",
+                        "in": "body",
+                        "description": "Export settings",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/StructuredContent.API.Dto.ImportExport.ExportRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/StructuredContent.API.Dto.ImportExport.ImportExportProcess"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2": [
+                            "sc:write"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/api/ImportExport/import": {
+            "post": {
+                "tags": [
+                    "ImportExport"
+                ],
+                "summary": "Performs an import request",
+                "operationId": "Import Export: Post Import",
+                "consumes": [
+                    "application/json",
+                    "text/json",
+                    "application/xml",
+                    "text/xml",
+                    "application/x-www-form-urlencoded"
+                ],
+                "produces": [
+                    "application/json",
+                    "text/json",
+                    "application/xml",
+                    "text/xml"
+                ],
+                "parameters": [
+                    {
+                        "name": "importRequest",
+                        "in": "body",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/StructuredContent.API.Dto.ImportExport.ImportRequest"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/StructuredContent.API.Dto.ImportExport.ImportExportProcess"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2": [
+                            "sc:write"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/api/ImportExport/checkImport": {
+            "get": {
+                "tags": [
+                    "ImportExport"
+                ],
+                "summary": "Checks the status of the import process",
+                "operationId": "Import Export: Get Check Import",
+                "consumes": [],
+                "produces": [
+                    "application/json",
+                    "text/json",
+                    "application/xml",
+                    "text/xml"
+                ],
+                "parameters": [
+                    {
+                        "name": "token",
+                        "in": "query",
+                        "description": "import token",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/StructuredContent.API.Dto.ImportExport.ImportExportProcess"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2": [
+                            "sc:write"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/api/ImportExport/checkExport": {
+            "get": {
+                "tags": [
+                    "ImportExport"
+                ],
+                "summary": "Checks the status of the export process",
+                "operationId": "Import Export: Get Check Export",
+                "consumes": [],
+                "produces": [
+                    "application/json",
+                    "text/json",
+                    "application/xml",
+                    "text/xml"
+                ],
+                "parameters": [
+                    {
+                        "name": "token",
+                        "in": "query",
+                        "description": "export token",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "$ref": "#/definitions/StructuredContent.API.Dto.ImportExport.ImportExportProcess"
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2": [
+                            "sc:write"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/api/Languages/enabled": {
+            "get": {
+                "tags": [
+                    "Languages"
+                ],
+                "summary": "Gets all languages available for a tenant.",
+                "operationId": "Languages: Get Enabled Languages",
+                "consumes": [],
+                "produces": [
+                    "application/json",
+                    "text/json",
+                    "application/xml",
+                    "text/xml"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/StructuredContent.API.Dto.ContentTypes.Language"
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2": [
+                            "sc-item:read"
+                        ]
+                    }
+                ]
+            }
+        },
         "/api/management/CopyTenant": {
             "post": {
                 "tags": [
@@ -1418,6 +1720,13 @@
                         "type": "string"
                     },
                     {
+                        "name": "language",
+                        "in": "query",
+                        "description": "Language of the revisions to retrieve",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
                         "name": "queryDto.searchText",
                         "in": "query",
                         "required": false,
@@ -1510,6 +1819,13 @@
                         "required": true,
                         "type": "integer",
                         "format": "int32"
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "Language of the revision to get",
+                        "required": false,
+                        "type": "string"
                     }
                 ],
                 "responses": {
@@ -1556,6 +1872,13 @@
                         "required": true,
                         "type": "integer",
                         "format": "int32"
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "Language of the revision to delete",
+                        "required": false,
+                        "type": "string"
                     }
                 ],
                 "responses": {
@@ -1604,6 +1927,13 @@
                         "required": true,
                         "type": "integer",
                         "format": "int32"
+                    },
+                    {
+                        "name": "language",
+                        "in": "query",
+                        "description": "Language of content items referenced by the content item revision",
+                        "required": false,
+                        "type": "string"
                     }
                 ],
                 "responses": {
@@ -1869,8 +2199,30 @@
                     {
                         "name": "tags",
                         "in": "query",
+                        "description": "The list of tags to filter the list result.",
                         "required": false,
                         "type": "string"
+                    },
+                    {
+                        "name": "$filter",
+                        "in": "query",
+                        "description": "The advanced filter criteria.",
+                        "required": false,
+                        "type": "string"
+                    },
+                    {
+                        "name": "ignoreHeader",
+                        "in": "query",
+                        "description": "When true the render does not include the header template.",
+                        "required": false,
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "ignoreFooter",
+                        "in": "query",
+                        "description": "When true the render does not include the footer template.",
+                        "required": false,
+                        "type": "boolean"
                     }
                 ],
                 "responses": {
@@ -1949,6 +2301,7 @@
                 "tags": [
                     "VisualizerEngine"
                 ],
+                "summary": "Renders a list of related content",
                 "operationId": "Visualizer Engine: Get Render Related Content",
                 "consumes": [],
                 "produces": [
@@ -1961,18 +2314,28 @@
                     {
                         "name": "visualizerInstanceId",
                         "in": "query",
+                        "description": "the id of the visualizer instance to be rendered.",
+                        "required": true,
+                        "type": "string"
+                    },
+                    {
+                        "name": "referencedVisualizerInstanceId",
+                        "in": "query",
+                        "description": "the id of the visualizer instance source of the related content",
                         "required": true,
                         "type": "string"
                     },
                     {
                         "name": "slug",
                         "in": "query",
+                        "description": "The URL portion that identifies the specific content item.",
                         "required": true,
                         "type": "string"
                     },
                     {
                         "name": "currentPageUrl",
                         "in": "query",
+                        "description": "Current page url.",
                         "required": true,
                         "type": "string"
                     }
@@ -2223,6 +2586,49 @@
                     {
                         "oauth2": [
                             "sc-visualizer-instance:write"
+                        ]
+                    }
+                ]
+            }
+        },
+        "/api/Visualizers/name/{name}": {
+            "get": {
+                "tags": [
+                    "Visualizers"
+                ],
+                "summary": "Gets a visualizer by a given name. It makes an exact search.",
+                "operationId": "Visualizers: Get Visualizer By Name",
+                "consumes": [],
+                "produces": [
+                    "application/json",
+                    "text/json",
+                    "application/xml",
+                    "text/xml"
+                ],
+                "parameters": [
+                    {
+                        "name": "name",
+                        "in": "path",
+                        "description": "The name of the visualizer",
+                        "required": true,
+                        "type": "string"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "OK",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.Visualizer"
+                            }
+                        }
+                    }
+                },
+                "security": [
+                    {
+                        "oauth2": [
+                            "sc-visualizer:read"
                         ]
                     }
                 ]
@@ -3063,21 +3469,9 @@
                 "seoSettings": {
                     "$ref": "#/definitions/StructuredContent.Models.SeoSettings",
                     "description": "Seo settings of the content item."
-                }
-            }
-        },
-        "StructuredContent.Services.Dto.SearchResultDto[StructuredContent.API.Dto.ContentTypes.ContentType]": {
-            "type": "object",
-            "properties": {
-                "documents": {
-                    "type": "array",
-                    "items": {
-                        "$ref": "#/definitions/StructuredContent.API.Dto.ContentTypes.ContentType"
-                    }
                 },
-                "totalResultCount": {
-                    "format": "int64",
-                    "type": "integer"
+                "language": {
+                    "type": "string"
                 }
             }
         },
@@ -3147,6 +3541,13 @@
                 "properties": {
                     "$ref": "#/definitions/StructuredContent.Models.ContentTypeProperties",
                     "description": "The set of properties of the content type<!--, such as ??? -->."
+                },
+                "selectedLanguages": {
+                    "description": "List of selected languages of the ContentType",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/StructuredContent.API.Dto.ContentTypes.Language"
+                    }
                 }
             }
         },
@@ -3215,6 +3616,12 @@
                         "threeQuarters"
                     ],
                     "type": "string"
+                },
+                "selectedLanguages": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/StructuredContent.Models.Language"
+                    }
                 }
             }
         },
@@ -3229,6 +3636,45 @@
                 },
                 "contentDescription": {
                     "$ref": "#/definitions/StructuredContent.Models.ContentTypeFields.ContentDescription.ContentDescriptionField"
+                }
+            }
+        },
+        "StructuredContent.API.Dto.ContentTypes.Language": {
+            "description": "",
+            "type": "object",
+            "properties": {
+                "id": {
+                    "description": "",
+                    "type": "string"
+                },
+                "cultureName": {
+                    "description": "",
+                    "type": "string"
+                },
+                "displayName": {
+                    "description": "",
+                    "type": "string"
+                },
+                "default": {
+                    "description": "",
+                    "type": "boolean"
+                }
+            }
+        },
+        "StructuredContent.Models.Language": {
+            "type": "object",
+            "properties": {
+                "id": {
+                    "type": "string"
+                },
+                "cultureName": {
+                    "type": "string"
+                },
+                "displayName": {
+                    "type": "string"
+                },
+                "default": {
+                    "type": "boolean"
                 }
             }
         },
@@ -3300,6 +3746,12 @@
                         "threeQuarters"
                     ],
                     "type": "string"
+                },
+                "selectedLanguages": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/StructuredContent.Models.Language"
+                    }
                 }
             }
         },
@@ -3371,6 +3823,12 @@
                         "threeQuarters"
                     ],
                     "type": "string"
+                },
+                "selectedLanguages": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/StructuredContent.Models.Language"
+                    }
                 }
             }
         },
@@ -3442,6 +3900,12 @@
                         "threeQuarters"
                     ],
                     "type": "string"
+                },
+                "selectedLanguages": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/StructuredContent.Models.Language"
+                    }
                 }
             }
         },
@@ -3489,6 +3953,21 @@
                 }
             }
         },
+        "StructuredContent.Services.Dto.SearchResultDto[StructuredContent.API.Dto.ContentTypes.ContentType]": {
+            "type": "object",
+            "properties": {
+                "documents": {
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/StructuredContent.API.Dto.ContentTypes.ContentType"
+                    }
+                },
+                "totalResultCount": {
+                    "format": "int64",
+                    "type": "integer"
+                }
+            }
+        },
         "StructuredContent.API.Dto.ContentTypes.ContentTypeCreation": {
             "description": "Settings to create/update a Content Type",
             "type": "object",
@@ -3515,6 +3994,13 @@
                 "properties": {
                     "$ref": "#/definitions/StructuredContent.Models.ContentTypeProperties",
                     "description": "The set of properties of the content type<!--, such as ??? -->."
+                },
+                "selectedLanguages": {
+                    "description": "List of selected languages of the ContentType",
+                    "type": "array",
+                    "items": {
+                        "$ref": "#/definitions/StructuredContent.API.Dto.ContentTypes.Language"
+                    }
                 }
             }
         },
@@ -3557,6 +4043,89 @@
                 "embedCode": {
                     "description": "Embed code in form of an html script tag",
                     "type": "string"
+                }
+            }
+        },
+        "StructuredContent.API.Dto.ImportExport.ExportRequest": {
+            "type": "object",
+            "properties": {
+                "type": {
+                    "enum": [
+                        "full",
+                        "incremental",
+                        "visualizerInstance"
+                    ],
+                    "type": "string"
+                },
+                "toDate": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "fromDate": {
+                    "format": "date-time",
+                    "type": "string"
+                },
+                "includeDeletions": {
+                    "type": "boolean"
+                },
+                "visualizerInstanceId": {
+                    "type": "string"
+                }
+            }
+        },
+        "StructuredContent.API.Dto.ImportExport.ImportExportProcess": {
+            "description": "Represents the Import or Export Process information",
+            "type": "object",
+            "properties": {
+                "type": {
+                    "description": "Type of the process, import or export",
+                    "enum": [
+                        "import",
+                        "export"
+                    ],
+                    "type": "string"
+                },
+                "token": {
+                    "description": "Identification of the process",
+                    "type": "string"
+                },
+                "isCompleted": {
+                    "description": "True if the process is completed, false otherwise",
+                    "type": "boolean"
+                },
+                "percentage": {
+                    "format": "float",
+                    "description": "Percentage of completion",
+                    "type": "number"
+                },
+                "withErrors": {
+                    "description": "Indicator of failure during the process",
+                    "type": "boolean"
+                },
+                "errorMessage": {
+                    "description": "Error message",
+                    "type": "string"
+                },
+                "totalItems": {
+                    "format": "int32",
+                    "description": "Total items involved in the process",
+                    "type": "integer"
+                },
+                "processedItems": {
+                    "format": "int32",
+                    "description": "Total number of items alreayd processed",
+                    "type": "integer"
+                }
+            }
+        },
+        "StructuredContent.API.Dto.ImportExport.ImportRequest": {
+            "type": "object",
+            "properties": {
+                "exportToken": {
+                    "type": "string"
+                },
+                "overwriteCollisions": {
+                    "type": "boolean"
                 }
             }
         },
@@ -3802,6 +4371,9 @@
                 },
                 "metadata": {
                     "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.VisualizerRenderMetadata"
+                },
+                "pagination": {
+                    "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.VisualizerRenderPaginate"
                 }
             }
         },
@@ -3816,6 +4388,19 @@
                     "items": {
                         "type": "string"
                     }
+                }
+            }
+        },
+        "StructuredContent.Services.Visualizers.Dto.VisualizerRenderPaginate": {
+            "type": "object",
+            "properties": {
+                "totalItems": {
+                    "format": "int64",
+                    "type": "integer"
+                },
+                "pageSize": {
+                    "format": "int32",
+                    "type": "integer"
                 }
             }
         },
@@ -3855,6 +4440,9 @@
                 },
                 "metadata": {
                     "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.VisualizerRenderMetadata"
+                },
+                "pagination": {
+                    "$ref": "#/definitions/StructuredContent.Services.Visualizers.Dto.VisualizerRenderPaginate"
                 }
             }
         },
@@ -3903,9 +4491,6 @@
                 },
                 "detailsVisualizerId": {
                     "description": "The unique identifier of the visualizer details associated with this visualizer instance.",
-                    "type": "string"
-                },
-                "referencedVisualizerInstanceId": {
                     "type": "string"
                 },
                 "contentItemIds": {
@@ -4026,23 +4611,6 @@
                 }
             }
         },
-        "StructuredContent.API.Dto.Visualizers.ImportResult": {
-            "description": "Contains the result of an import file process.",
-            "type": "object",
-            "properties": {
-                "visualizer": {
-                    "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.Visualizer",
-                    "description": "All the metadata asociated with the visualizer."
-                },
-                "contentTypeNames": {
-                    "description": "All the names of the content types that were created during the proces.",
-                    "type": "array",
-                    "items": {
-                        "type": "string"
-                    }
-                }
-            }
-        },
         "StructuredContent.API.Dto.Visualizers.Visualizer": {
             "description": "The JSONObject structure that defines a visualizer. Extends the VisualizerBasicInfo class.",
             "type": "object",
@@ -4144,6 +4712,26 @@
                 },
                 "isPrivate": {
                     "type": "boolean"
+                },
+                "isCompressed": {
+                    "type": "boolean"
+                }
+            }
+        },
+        "StructuredContent.API.Dto.Visualizers.ImportResult": {
+            "description": "Contains the result of an import file process.",
+            "type": "object",
+            "properties": {
+                "visualizer": {
+                    "$ref": "#/definitions/StructuredContent.API.Dto.Visualizers.Visualizer",
+                    "description": "All the metadata asociated with the visualizer."
+                },
+                "contentTypeNames": {
+                    "description": "All the names of the content types that were created during the proces.",
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    }
                 }
             }
         },
@@ -4426,6 +5014,8 @@
                 "sc-webhook:write": "Try out the webhook write APIs",
                 "sc-api-key:read": "Try out the Api Key readonly APIs",
                 "sc-api-key:write": "Try out the Api Key write APIs",
+                "sc:export": "Try out the Structured Content export APIs",
+                "sc:import": "Try out the Structured Content import APIs",
                 "sc:manage": "Try out the Structured Content Manage APIs"
             }
         }

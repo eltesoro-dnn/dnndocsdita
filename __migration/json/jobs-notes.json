@@ -15,11 +15,12 @@
             "contentTypeId" : ""
             ,"name" : ""
             ,"description" : ""
+            ,"language": "en"
             ,"details" : {
                 "type" : []
                 ,"msg" : ""
             }
-            ,"tags" : [ "", "", "" ]
+            ,"tags" : []
         }
     },
     "add-notes-bptextdita" : {
@@ -81,18 +82,29 @@
             }
         ]
     },
+
     "add-notes-" : {
-        "body" : {
-            "contentTypeId" : ""
-            ,"name" : ""
-            ,"description" : ""
-            ,"details" : {
-                "type" : []
-                ,"msg" : ""
-            }
-            ,"tags" : [ "", "", "" ]
-        }
-        ,"permutations" : [
+        "permutations" : [
+            {
+                "name"  : "note-ReqApiKeyCTypeRead"
+                ,"type" : [ "Note" ]
+                ,"msg"  : "Requires an API key with <uicontrol>Read Content Types</uicontrol> or <uicontrol>Read / Write Content Types</uicontrol> permissions."
+            },
+            {
+                "name"  : "note-ReqApiKeyCTypeWrite"
+                ,"type" : [ "Note" ]
+                ,"msg"  : "Requires an API key with <uicontrol>Read / Write Content Types</uicontrol> permissions."
+            },
+            {
+                "name"  : "note-ReqApiKeyCItemRead"
+                ,"type" : [ "Note" ]
+                ,"msg"  : "Requires an API key with <uicontrol>Read Content Items</uicontrol> or <uicontrol>Read / Write Content Items</uicontrol> permissions."
+            },
+            {
+                "name"  : "note-ReqApiKeyCItemWrite"
+                ,"type" : [ "Note" ]
+                ,"msg"  : "Requires an API key with <uicontrol>Read / Write Content Items</uicontrol> permissions."
+            },
         ]
     },
 

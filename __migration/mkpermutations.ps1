@@ -90,8 +90,8 @@ function BldJson( [string] $bptype, [string] $menutype, [string] $persona, [PSOb
     $option = "$bptype-$menutype"
     $memberarr = @()
     switch( $option )  {
-        "images-pbar"   {  $memberarr = ( "_persona_", "_dashed_", "_menualt_", "_sig_" )  }
-        "images-pbtabs" {  $memberarr = ( "_persona_", "_dashed_", "_menualt_", "_sig_" )  }
+        "images-pbar"   {  $memberarr = ( "_persona_", "_dashed-short_", "_dashed_", "_menualt_" )  }
+        "images-pbtabs" {  $memberarr = ( "_persona_", "_dashed_", "_menualt_", "_prodcode_" )  }
         "steps-pbar"    {  $memberarr = ( "_persona_", "_dashed_", "_menucasc_", "_id-image_" )  }
         "steps-pbtabs"  {  $memberarr = ( "_persona_", "_dashed_", "_tab1cmd_", "_tab2cmd_", "_id-image_" )  }
         default         {  $memberarr = @(); Write-Host "WARNING: Menu type is not recognized: $menutype"  }
@@ -101,6 +101,7 @@ function BldJson( [string] $bptype, [string] $menutype, [string] $persona, [PSOb
     $menu2 = $ln.menu2
     $tab1  = $ln.tab1
     $tab2  = $ln.tab2
+    $imgprod = $ln.imgprod
     $menuarr = @( $menu1 )
     if ( IsValid $menu2 )  { $menuarr += $menu2 }
     if ( IsValid $tab1 )   { $menuarr += $tab1 }
@@ -109,23 +110,24 @@ function BldJson( [string] $bptype, [string] $menutype, [string] $persona, [PSOb
     $dashed = [string]::Join( "-", $menuarr )
     $dashed = $dashed.Replace( " ", "" ).Replace( "/", "" ).ToLower()
 
-
     $newobj = [PSCustomObject]@{}
     $memberarr | foreach {
         switch ( $_ )  {
-            "_persona_"   { $val = "$persona" }
-            "_dashed_"    { $val = $menuarr }
-            "_menualt_"   { $val = $menuarr }
-            "_menucasc_"  { $val = $menuarr }
-            "_tab1cmd_"   { $val = ""; if ( IsValid $tab1 ) { $val = "Go to the <uicontrol>$tab1</uicontrol> tab" } }
-            "_tab2cmd_"   { $val = ""; if ( IsValid $tab2 ) { $val = ", and then the <uicontrol>$tab2</uicontrol> subtab" } }
-            "_id-image_"  {
+            "_persona_"       { $val = "$persona" }
+            "_dashed-short_"  { $val = @( $menuarr[0] ) }
+            "_dashed_"        { $val = $menuarr }
+            "_menualt_"       { $val = $menuarr }
+            "_menucasc_"      { $val = $menuarr }
+            "_tab1cmd_"       { $val = ""; if ( IsValid $tab1 ) { $val = "Go to the <uicontrol>$tab1</uicontrol> tab" } }
+            "_tab2cmd_"       { $val = ""; if ( IsValid $tab2 ) { $val = ", and then the <uicontrol>$tab2</uicontrol> subtab" } }
+            "_id-image_"      {
                 switch( $option )  {
                     "steps-pbar"    { $val = "scr-pbar-$persona-$dashed-E91" }
                     "steps-pbtabs"  { $val = "scr-pbtabs-$persona-$dashed-E91" }
                     default         { $val = "" }
                 }
             }
+            "_prodcode_"  { $val = $imgprod }
             "_sig_"       { $val = "" }
             default       { $val = "" }
         }
@@ -135,6 +137,7 @@ function BldJson( [string] $bptype, [string] $menutype, [string] $persona, [PSOb
     $newjson = $newobj | ConvertTo-Json -Depth 10
 
     # Prettify
+    $newjson = $newjson.Replace( "\u003c", "<" ).Replace( "\u003e", ">" )
     $newjson = "$indent$newjson," -replace "`r`n                \ +", " " -replace "`r`n", "`r`n$indent"
 
     return $newjson

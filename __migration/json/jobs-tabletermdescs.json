@@ -12,16 +12,18 @@
 
     "TEMPLATE-add-tabletermdescs" : {
         "body" : {
-            "name" : ""
+            "contentTypeId" : ""
+            ,"name" : ""
             ,"description" : ""
+            ,"language": "en"
             ,"details" : {
                 "rows": [
                 ]
             }
-            ,"tags" : [ "", "", "" ]
+            ,"tags" : []
         }
     },
-    "add-tabletermdescs" : {
+    "add-tabletermdescs-test" : {
         "permutations" : [
             {
                 "name" : "tabletermdesc-test"

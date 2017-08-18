@@ -1,6 +1,6 @@
 # ======================================================================
 # Creates the boilerplates for apis.
-# USAGE: powershell -file mkapi.ps1 qa-sc.dnnapi.com/swagger/docs/v1 json\swagger.json bptext-api .\out
+# USAGE: powershell -file mkapi.ps1 %swaggerpath% json\swagger.json bptext-api .\out
 # ======================================================================
 
 
@@ -586,7 +586,6 @@ function WriteRequest( [string] $apiname, [PSCustomObject] $node, [string] $inde
     Write-Output "$indent</section>"
 }
 
-
 function WriteTopic( [string] $topictype, [string] $apiname, [string] $method, [string] $hyph, [PSCustomObject] $node )  {
 
     if ( $node.deprecated -eq $true )  {
@@ -608,10 +607,12 @@ function WriteTopic( [string] $topictype, [string] $apiname, [string] $method, [
         WriteResponse $apiname $node "$tab$tab"
 
         # WriteSection  $node.remarks  "remarks"  "$tab$tab"
-        # WriteRelLinks $node.rellinks "$tab$tab"
 
         Write-Output ""
         Write-Output "$tab</$bodytag>"
+
+        # WriteRelLinks $node.rellinks "$tab$tab"
+
         WriteTopicEnd $topictype
     }
 }
@@ -644,7 +645,7 @@ if ( $args.Count -gt 2 )  {
     $thisscript = $MyInvocation.MyCommand.Name
     $params = [string]::Join( " ", $args )
 
-    # $myjson = Get-Content -Raw -Path $srcfn | ConvertFrom-Json
+    # Request the json from the Swagger website.
     if ( IsValid $srcuri )  {
         $webpage = Invoke-WebRequest -URI $srcuri
         if ( $webpage.StatusCode -eq 200 )  {

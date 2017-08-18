@@ -10,10 +10,11 @@
             "contentTypeId" : ""
             ,"name" : ""
             ,"description" : ""
+            ,"language": "en"
             ,"details" : {
 
             }
-            ,"tags" : [ "", "", "" ]
+            ,"tags" : []
         }
         ,"permutations" : [
         ]
@@ -45,6 +46,7 @@
             "contentTypeId" : "string"
             ,"name" : "string"
             ,"description" : "string"
+            ,"language": "en"
             ,"details" : "object"
             ,"tags" : "array"
             ,"clientReferenceId" : "string"
