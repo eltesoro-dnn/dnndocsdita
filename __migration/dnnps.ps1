@@ -10,7 +10,7 @@
 
 $apiurl = "https://dnnapi.com/content/api"
 $mimetype = "application/json"
-$maxitems = 1000
+$maxitems = 100
 
 $lt = "\u003c"
 $gt = "\u003e"
@@ -85,10 +85,10 @@ function GetContentTypeName( [string] $jobname )  {
     if ( $arr.Length -gt 1 )  {  return $arr[1]  }
     else                      {  return ""  }
 }
-# BUGBUG: Accesses the $ctypeidlist var directly.
-# $ctypename must be singular to match the names in $ctypeidlist.
+# BUGBUG: Accesses the $global:ctypeidlist var directly.
+# $ctypename must be singular to match the names in $global:ctypeidlist.
 function GetContentTypeID( [string] $ctypename )  {
-    if ( $ctypeidlist.$ctypename )  {  return $ctypeidlist.$ctypename  }
+    if ( $global:ctypeidlist.$ctypename )  {  return $global:ctypeidlist.$ctypename  }
     else                            {  return ""  }
 }
 # Gets the contenttype ID from the settings file, based on the contenttype embedded in the jobname.
@@ -99,10 +99,10 @@ function GetContentTypeNameID( [string] $jobname )  {
         $arr = @( "contenttype", "" )
     }
     else  {
-        foreach ( $name in $ctypeidlist.psobject.properties.name )   {
+        foreach ( $name in $global:ctypeidlist.psobject.properties.name )   {
             $namelc = "-" + $name.ToLower()
             if ( $jobname.ToLower().Contains( $namelc ) )  {
-                $arr = @( $name, $ctypeidlist.$name )
+                $arr = @( $name, $global:ctypeidlist.$name )
             }
         }
     }
@@ -307,6 +307,12 @@ function MkPerm( [PSObject] $freshbody, [PSObject] $perm, [array] $assetsarr )  
                     $bodyjson = $bodyjson.Replace( """$key""", $newval )
                     break;
                 }
+                "arr2str"  {
+                    if ( $newval -is [array] )  {
+                        $newval = [string]::Join( "\r\n", $newval.Replace( "\u003c", "<" ).Replace( "\u003e", ">" ) )
+                    }
+                    break;
+                }
                 DEFAULT  {
                     $bodyjson = $bodyjson.Replace( $key, $newval )
                 }
@@ -492,13 +498,13 @@ if ( $args.Count -gt 2 )  {
         return
     }
     $global:mysettings = Get-Content -Raw -Path $setsjson | ConvertFrom-Json
-    if ( IsValid $global:mysettings.apikey )          {  $apikey      = $global:mysettings.apikey  }
-    if ( IsValid $global:mysettings.contenttypeids )  {  $ctypeidlist = $global:mysettings.contenttypeids  }
+    if ( IsValid $global:mysettings.apikey )          {  $apikey             = $global:mysettings.apikey  }
+    if ( IsValid $global:mysettings.contenttypeids )  {  $global:ctypeidlist = $global:mysettings.contenttypeids  }
 
     $assets = Get-Content $assettxt
 
     # $ctypenameid is a two-element array.
-    $ctypenameid = GetContentTypeNameID $jobname $ctypeidlist
+    $ctypenameid = GetContentTypeNameID $jobname
 
     if ( IsValid $global:mysettings.outraw )  {
         $outraw = $global:mysettings.outraw
@@ -613,7 +619,7 @@ if ( $args.Count -gt 2 )  {
             break;
         }
 
-        "POST"   {
+        "POST"  {
             if ( $permsarray.Length -gt 0 )  {
                 foreach ( $perm in $permsarray )  {
                     $bodynode = $basebodyjson | ConvertFrom-Json
@@ -633,7 +639,7 @@ if ( $args.Count -gt 2 )  {
             break;
         }
 
-        "PUT"    {
+        "PUT"  {
             if ( $permsarray.Length -gt 0 )  {
                 foreach ( $perm in $permsarray )  {
                     if ( IsValid $perm.id )  {

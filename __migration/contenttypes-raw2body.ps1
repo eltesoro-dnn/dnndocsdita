@@ -82,7 +82,20 @@ function CleanNode( [PSObject] $node )  {
         for ( $i = 0; $i -le ($node.fields).GetUpperBound(0); $i++ ) {
             ($node.fields)[$i] = CleanNode ($node.fields)[$i]
         }
-        $node.fields = $node.fields | Sort-Object -Property row
+        # Sort the fields by row and then by position.
+        foreach( $fld in $node.fields )  {
+            switch ( $fld.position )  {
+                "start"          { $poscode = "0" }
+                "quarter"        { $poscode = "1" }
+                "half"           { $poscode = "2" }
+                "threeQuarters"  { $poscode = "3" }
+                "third"          { $poscode = "1" }
+                "twoThirds"      { $poscode = "2" }
+                default          { $poscode = "0" }
+            }
+            $fld = $fld | Add-Member -Type NoteProperty -Name "poscode" -Value $poscode
+        }
+        $node.fields = $node.fields | Sort-Object -Property row, poscode | Select-Object * -exclude poscode
     }
 
     if ( $node.properties -is [PSObject] )  {

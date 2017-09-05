@@ -1,3 +1,4 @@
+
 {
     "listall-contenttypes": {
 
@@ -510,8 +511,9 @@
             "fields": [
                 {
                     "type": "multipleChoice",
+                    "defaultValue": "Evoq Engage",
                     "settings": {
-                        "subType": "radioButton",
+                        "subType": "dropDown",
                         "choices": [
                             {
                                 "label": "Evoq Engage"
@@ -537,23 +539,12 @@
                     "position": "start"
                 },
                 {
-                    "type": "multipleChoice",
+                    "type": "singleLineText",
+                    "defaultValue": "9.2",
+                    "setDefaultValueAsHidden": false,
                     "settings": {
-                        "subType": "radioButton",
-                        "choices": [
-                            {
-                                "label": "8.5"
-                            },
-                            {
-                                "label": "9.0"
-                            },
-                            {
-                                "label": "9.1"
-                            }
-                        ],
-                        "multiSelect": false,
-                        "listOrientation": "vertical",
-                        "otherAsAnOption": true
+                        "subType": "singleLine",
+                        "phoneNumberFormat": null
                     },
                     "name": "version",
                     "label": "Version",
@@ -589,15 +580,29 @@
                     "position": "threeQuarters"
                 },
                 {
-                    "type": "singleLineText",
+                    "type": "multipleChoice",
+                "defaultValue": "[none]",
                     "settings": {
-                        "subType": "url",
-                        "phoneNumberFormat": null
+                        "subType": "dropDown",
+                        "choices": [
+                            {
+                            "label": "[none]"
+                            },
+                            {
+                                "label": "GitHub"
+                            },
+                            {
+                                "label": "CodePlex"
+                            }
+                        ],
+                        "multiSelect": false,
+                        "listOrientation": "horizontal",
+                        "otherAsAnOption": false
                     },
-                    "name": "gitHub",
-                    "label": "GitHub",
+                    "name": "sourceLocation",
+                    "label": "Source Location",
                     "row": 1,
-                    "width": "full",
+                    "width": "quarter",
                     "position": "start"
                 },
                 {
@@ -605,6 +610,17 @@
                     "settings": {
                         "subType": "url",
                         "phoneNumberFormat": null
+                    },
+                    "name": "sourceURL",
+                    "label": "Source URL",
+                    "row": 1,
+                    "width": "threeQuarters",
+                    "position": "quarter"
+                },
+                {
+                    "type": "multiLineText",
+                    "settings": {
+                        "subType": "textEditor"
                     },
                     "name": "releaseNotes",
                     "label": "Release Notes",
@@ -760,13 +776,65 @@
                     "position": "start"
                 },
                 {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Section",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "sections",
+                    "label": "Sections",
+                    "row": 3,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "Passage",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "passages",
+                    "label": "Passages",
+                    "row": 4,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "TableTermDesc",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "tables",
+                    "label": "Tables",
+                    "row": 5,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
+                    "type": "referenceObject",
+                    "allowedContentTypeId": "",
+                    "allowedContentTypeName": "TermDesc",
+                    "settings": {
+                        "subType": "multiReferenceObject"
+                    },
+                    "name": "termsandDefinitions",
+                    "label": "Terms and Definitions",
+                    "row": 6,
+                    "width": "full",
+                    "position": "start"
+                },
+                {
                     "type": "multiLineText",
                     "settings": {
                         "subType": "textEditor"
                     },
                     "name": "relLinks",
                     "label": "RelLinks",
-                    "row": 3,
+                    "row": 7,
                     "width": "full",
                     "position": "start"
                 }
@@ -1613,7 +1681,7 @@
             }
         }
     },
-    "add-contenttype-Test Date": {
+    "add-contenttype-TestDate": {
         "body": {
             "name": "Test Date",
             "icon": null,
@@ -1699,21 +1767,6 @@
                     "settings": {
                         "subType": "time",
                         "dateFormat": "ddmmyy",
-                        "timeFormat": "amPm",
-                        "timeZoneInfoActive": false,
-                        "timeZoneInfoId": "Dateline Standard Time"
-                    },
-                    "name": "timeAMPM",
-                    "label": "Time AM/PM",
-                    "row": 3,
-                    "width": "half",
-                    "position": "half"
-                },
-                {
-                    "type": "dateTime",
-                    "settings": {
-                        "subType": "time",
-                        "dateFormat": "ddmmyy",
                         "timeFormat": "hr24",
                         "timeZoneInfoActive": false,
                         "timeZoneInfoId": "Dateline Standard Time"
@@ -1723,6 +1776,21 @@
                     "row": 3,
                     "width": "half",
                     "position": "start"
+                },
+                {
+                    "type": "dateTime",
+                    "settings": {
+                        "subType": "time",
+                        "dateFormat": "ddmmyy",
+                        "timeFormat": "amPm",
+                        "timeZoneInfoActive": false,
+                        "timeZoneInfoId": "Dateline Standard Time"
+                    },
+                    "name": "timeAMPM",
+                    "label": "Time AM/PM",
+                    "row": 3,
+                    "width": "half",
+                    "position": "half"
                 },
                 {
                     "type": "dateTime",
@@ -1848,7 +1916,7 @@
             }
         }
     },
-    "add-contenttype-Test Number": {
+    "add-contenttype-TestNumber": {
         "body": {
             "name": "Test Number",
             "icon": null,

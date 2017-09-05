@@ -40,7 +40,7 @@
             <sectiondiv id="sectiondiv-relnotes-platform">
                 <!-- <xref conref="relnotes-2017-apr-26.dita#top-relnotes-2017-apr-26/xref-github-link"></xref> -->
                 <p><xref id="xref-github-link" format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Platform/releases/tag/v9.1.0">GitHub</xref></p>
-                <dl>
+                <dl id="dl-relnotes-platform-9.1.0">
                     <dlentry>
                         <dt>ADA Compliance</dt>
                         <dd>
@@ -78,7 +78,7 @@
             <!-- <sectiondiv conref="relnotes-2017-apr-26.dita#top-relnotes-2017-apr-26/sectiondiv-relnotes-evoq"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-evoq">
                 <p outputclass="sectiondivtitle">EVOQ BASIC</p>
-                <dl>
+                <dl id="ul-relnotes-basic-9.1.0">
                     <dlentry>
                         <dt>All updates included with DNN Platform 9.1.0.</dt>
                         <dd>
@@ -97,7 +97,7 @@
                 </dl>
 
                 <p outputclass="sectiondivtitle">EVOQ CONTENT</p>
-                <dl>
+                <dl id="ul-relnotes-content-9.1.0">
                     <dlentry>
                         <dt>All updates included with Evoq Basic 9.1.0.</dt>
                         <dd><note conref="#top-relnotes-2017-apr-26/note-telerik-add-delete-extensions"></note></dd>
@@ -124,7 +124,7 @@
                     </dlentry>
                     <dlentry>
                         <dt>Visualizer Import/Export</dt>
-                        <dd>For designers and developers who hate copying and pasting code from environment to environment, we’ve added export and import capability for visualizers and their accompanying content types.</dd>
+                        <dd>For designers and developers who hate copying and pasting code from environment to environment, we've added export and import capability for visualizers and their accompanying content types.</dd>
                     </dlentry>
                     <dlentry>
                         <dt>Content Item Revision History</dt>
@@ -132,7 +132,7 @@
                     </dlentry>
                     <dlentry>
                         <dt>Auto-Suggest Tagging in Visualizers and Content Items to Assist with List Visualizers</dt>
-                        <dd>During the creation of a <term>List</term> or <term>List/Detail</term> visualizer, tags will be suggested to help filter content elements. This enables marketers to deploy brand-consistent content and to easily find the content they’re looking for. Tag suggestions are based on the taxonomy of the content library and on what has already been published on the page.</dd>
+                        <dd>During the creation of a <term>List</term> or <term>List/Detail</term> visualizer, tags will be suggested to help filter content elements. This enables marketers to deploy brand-consistent content and to easily find the content they're looking for. Tag suggestions are based on the taxonomy of the content library and on what has already been published on the page.</dd>
                     </dlentry>
                     <dlentry>
                         <dt>Content Item &lt;meta&gt; Tag Support</dt>
@@ -141,7 +141,7 @@
                 </dl>
 
                 <p outputclass="sectiondivtitle">EVOQ ENGAGE</p>
-                <dl>
+                <dl id="ul-relnotes-engage-9.1.0">
                     <dlentry>
                         <dt>All updates included with Evoq Content 9.1.0.</dt>
                         <dd><note conref="#top-relnotes-2017-apr-26/note-telerik-add-delete-extensions"></note></dd>
@@ -162,11 +162,11 @@
                     </dlentry>
                     <dlentry>
                         <dt>Multichannel Publishing : Content Item Embed Code</dt>
-                        <dd>You can generate an embed code to allow your content to live anywhere on the web. Evoq’s content analytics also tracks what URLs your content lives in and how much reach it gets.</dd>
+                        <dd>You can generate an embed code to allow your content to live anywhere on the web. Evoq's content analytics also tracks what URLs your content lives in and how much reach it gets.</dd>
                     </dlentry>
                     <dlentry>
                         <dt>Multichannel Publishing : Social Publishing</dt>
-                        <dd>Using Liquid Content's publishing application, users can connect their social profiles and publish content directly to Facebook, Twitter, or LinkedIn. Evoq saves a rendering of that post, the date/time it was published, and how much engagement it received.</dd>
+                        <dd>Using Liquid Content&#8482;'s publishing application, users can connect their social profiles and publish content directly to Facebook, Twitter, or LinkedIn. Evoq saves a rendering of that post, the date/time it was published, and how much engagement it received.</dd>
                     </dlentry>
                 </dl>
             </sectiondiv>

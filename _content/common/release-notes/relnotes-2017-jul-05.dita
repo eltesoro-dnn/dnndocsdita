@@ -40,7 +40,7 @@
             <sectiondiv id="sectiondiv-relnotes-platform">
                 <!-- <xref conref="relnotes-2017-jul-05.dita#top-relnotes-2017-jul-05/xref-github-link"></xref> -->
                 <p><xref id="xref-github-link" format="html" scope="external" href="https://github.com/dnnsoftware/Dnn.Platform/releases/tag/v9.1.1">GitHub</xref></p>
-                <dl>
+                <dl id="dl-relnotes-platform-9.1.1">
                     <dlentry>
                         <dt>FIPS Compliance</dt>
                         <dd>The user verification algorithm was updated to use a FIPS-compliant method.
@@ -85,7 +85,7 @@
             <!-- <sectiondiv conref="relnotes-2017-jul-05.dita#top-relnotes-2017-jul-05/sectiondiv-relnotes-evoq"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-evoq">
                 <p outputclass="sectiondivtitle">EVOQ BASIC</p>
-                <dl>
+                <dl id="dl-relnotes-basic-9.1.1">
                     <dlentry>
                         <dt>All updates included with DNN Platform 9.1.1.</dt>
                         <dd></dd>
@@ -97,7 +97,7 @@
                 </dl>
 
                 <p outputclass="sectiondivtitle">EVOQ CONTENT</p>
-                <dl>
+                <dl id="dl-relnotes-content-9.1.1">
                     <dlentry>
                         <dt>All updates included with Evoq Basic 9.1.1.</dt>
                         <dd></dd>
@@ -108,14 +108,14 @@
                     </dlentry>
                     <dlentry>
                         <dt>Import/Export</dt>
-                        <dd>Import/Export now supports a site’s entire microservice content library. When exporting a site or portion of a site, users can now elect to transfer the contents of their Liquid Content library along with the export package.</dd>
+                        <dd>Import/Export now supports a site's entire microservice content library. When exporting a site or portion of a site, users can now elect to transfer the contents of their Liquid Content&#8482; library along with the export package.</dd>
                     </dlentry>
                     <dlentry>
-                        <dt>Liquid Content</dt>
+                        <dt>Liquid Content&#8482;</dt>
                         <dd>
                             <ul>
                                 <li><uicontrol>Related Content</uicontrol> is a new visualizer type that communicates with an existing visualizer on a page to filter and display related content items. Example: A blog post may have certain tags to describe the content in the post. The <uicontrol>Related Content</uicontrol> visualizer, when deployed on a blog post page, will use the taxonomy of that content to display similar types of blog posts. This is extremely useful for content marketers trying to create sticky websites and engage their audience.</li>
-                                <li>The contents of a Liquid Content list and the details of that list are now fully indexed and are discoverable in Evoq Search.</li>
+                                <li>The contents of a Liquid Content&#8482; list and the details of that list are now fully indexed and are discoverable in Evoq Search.</li>
                                 <li>The loading time and the behavior of the microservice menus were enhanced for better performance.</li>
                                 <li>The social publishing authentication workflow was improved to allow saved profiles to persist as long as the social network allows the user to remain authenticated.</li>
                                 <li>Social publishing preview posts are updated to better reflect the actual content and structure of the post on a social network.</li>
@@ -128,7 +128,7 @@
                         <dd>
                             <ul>
                                 <li>Notifications can now be sent to multiple recipients when a form is completed.</li>
-                                <li>The Form Builder – Structured Content connector now accepts files and assets from submitted forms and transfers them to the corresponding content item.</li>
+                                <li>The Form Builder &#8212; Structured Content connector now accepts files and assets from submitted forms and transfers them to the corresponding content item.</li>
                                 <li>Webhook support/subscription can now listen to form responses and copy a file or content to a custom endpoint.</li>
                                 <li>Files and assets uploaded through a form submission are now added to a dedicated Form Submissions folder within Assets.</li>
                             </ul>
@@ -141,7 +141,7 @@
                 </dl>
 
                 <p outputclass="sectiondivtitle">EVOQ ENGAGE</p>
-                <dl>
+                <dl id="dl-relnotes-engage-9.1.1">
                     <dlentry>
                         <dt>All updates included with Evoq Content 9.1.1.</dt>
                         <dd></dd>

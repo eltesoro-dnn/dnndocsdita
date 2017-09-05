@@ -42,7 +42,7 @@
                 <!-- <xref conref="relnotes-2015-may-26.dita#top-relnotes-2015-may-26/xref-codeplex-link"></xref> -->
                 <p><xref id="xref-codeplex-link" format="html" scope="external" href="http://dotnetnuke.codeplex.com/releases/view/615317">CodePlex</xref></p>
 
-                <ul>
+                <ul id="ul-relnotes-platform-7.4.1">
                     <li>Fixed race condition which could cause errors during file upload.</li>
                     <li>Fixed issue where country profile property can cause registration to fail.</li>
                     <li>Fixed issue where calendar control breaks in Arabic language.</li>
@@ -88,15 +88,15 @@
             <!-- <ph conref="relnotes-2015-may-26.dita#top-relnotes-2015-may-26/ph-prodver-evoq"></ph> -->
             <title>EVOQ <ph id="ph-prodver-evoq">8.1.0</ph></title>
 
-            <!-- <sectiondiv conref="relnotes-2015-may-26.dita#top-relnotes-2015-may-26/sectiondiv-relnotes-contentbasic"></sectiondiv> -->
-            <sectiondiv id="sectiondiv-relnotes-contentbasic">
+            <!-- <sectiondiv conref="relnotes-2015-may-26.dita#top-relnotes-2015-may-26/sectiondiv-relnotes-basic"></sectiondiv> -->
+            <sectiondiv id="sectiondiv-relnotes-basic">
                 <p>EVOQ CONTENT BASIC</p>
-                <ul>
+                <ul id="ul-relnotes-basic-8.1.0">
                     <li>All updates included with DNN Platform 7.4.1.</li>
                     <li>Improved the overall experience for IE 9 users.</li>
                     <li>Exposed page analytics in mobile view.</li>
                     <li>Added a new content analytics engine that allows page and site traffic to be tracked and reviewed.</li>
-                    <li>Turned the dashboard’s navigation summary page names into links that load the page analytics of those pages (so you no longer need to navigate to a page to view its analytics).</li>
+                    <li>Turned the dashboard's navigation summary page names into links that load the page analytics of those pages (so you no longer need to navigate to a page to view its analytics).</li>
                     <li>Enhanced the usability of the Recycle Bin (in the Persona Bar), also made it a submenu item under Manage.</li>
                     <li>Moved the template section to a submenu item under Manage and updated the creation UI to be more consistent with the rest of the product.</li>
                     <li>Refined the create page experience and enabled page publish scheduling.</li>
@@ -107,11 +107,11 @@
             <!-- <sectiondiv conref="relnotes-2015-may-26.dita#top-relnotes-2015-may-26/sectiondiv-relnotes-content"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-content">
                 <p>EVOQ CONTENT</p>
-                <ul>
+                <ul id="ul-relnotes-content-8.1.0">
                     <li>All updates included with Evoq Content Basic 8.1.0.</li>
                     <li>Added new Publisher content authoring module that ties into advanced workflow and provides an authoring experience similar to creating and editing page content.</li>
                     <li>Added Disqus connector that is tightly integrated with the new Publisher module.</li>
-                    <li>Enhanced it so Content Managers/editors cannot create personalized versions of pages that shouldn’t be personalized (template pages, user profile pages, etc.).</li>
+                    <li>Enhanced it so Content Managers/editors cannot create personalized versions of pages that shouldn't be personalized (template pages, user profile pages, etc.).</li>
                     <li>Added validation to UI when combining various rules for personalized pages to avoid the creation of a personalized page that could never be accessed.</li>
                     <li>Refined how unpublished deleted personalized pages are handled, they are immediately removed (hard deleted, along with any modules on the page) and NOT available in the recycle bin.</li>
                 </ul>
@@ -120,7 +120,7 @@
             <!-- <sectiondiv conref="relnotes-2015-may-26.dita#top-relnotes-2015-may-26/sectiondiv-relnotes-engage"></sectiondiv> -->
             <sectiondiv id="sectiondiv-relnotes-engage">
                 <p>EVOQ ENGAGE</p>
-                <ul>
+                <ul id="ul-relnotes-engage-8.1.0">
                     <li>All updates included with Evoq Content 8.1.0.</li>
                     <li>Added Zendesk connector and module that allows end users to create, comment on and view Zendesk tickets from within your Engage website.</li>
                     <li>Added ability to sort by date created in list views of Answers and Ideas.</li>

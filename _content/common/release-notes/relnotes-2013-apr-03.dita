@@ -42,7 +42,7 @@
                 <!-- <xref conref="relnotes-2013-apr-03.dita#top-relnotes-2013-apr-03/xref-codeplex-link"></xref> -->
                 <p><xref id="xref-codeplex-link" format="html" scope="external" href="http://dotnetnuke.codeplex.com/releases/view/103868">CodePlex</xref></p>
 
-                <ul>
+                <ul id="ul-relnotes-platform-7.0.5">
                     <li>Fixed issue in the Client Resource Manager where data URL's were removed when running the composite files option.</li>
                     <li>Fixed issue when switching language from the control panel.</li>
                     <li>Fixed issue that stopped the Telerik RadMenu and RadTabstring from rendering correctly when an HTML module is added to the same page.</li>
@@ -105,7 +105,7 @@
             <title>DOTNETNUKE PLATFORM 6.2.7</title>
             <sectiondiv>
                 <p><xref format="html" scope="external" href="http://dotnetnuke.codeplex.com/releases/view/104373">CodePlex</xref></p>
-                <ul>
+                <ul id="ul-relnotes-platform-6.2.7">
                     <li>Security:
                         <ul>
                             <li>Fixed potential javascript injections on sites running multiple languages.</li>

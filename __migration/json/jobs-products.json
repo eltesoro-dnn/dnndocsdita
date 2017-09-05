@@ -7,151 +7,751 @@
 
     "listall-products" : {
     },
+    "delete-products-in-list" : {
+        "ids" : []
+    },
+    "deleteall-products" : {
+    },
 
 
 
     "TEMPLATE-add-products" : {
         "body" : {
             "contentTypeId" : ""
-            ,"name" : "product-_code_"
+            ,"name" : ""
             ,"description" : ""
             ,"language": "en"
             ,"details": {
-                "productName": [ "_fullname_" ]
-                ,"version": [ "_ver_" ]
+                "productName": "_fullname_"
+                ,"productLogo": ""
+                ,"version": "_ver_"
                 ,"releaseDate": "_unixdate_"
-                ,"gitHub": "http://github.com/dnnsoftware/Dnn.Platform/releases/tag/v_ver_.0"
-                ,"releaseNotes": "http://www.dnnsoftware.com/docs/administrators/release-notes/relnotes-_reldate_.html"
+                ,"sourceLocation": "[none]"
+                ,"sourceURL": ""
+                ,"releaseNotes": ""
             }
-            ,"tags" : [ "_fullname_" ]
+            ,"tags" : [ "_fullname_", "_ver_" ]
         }
     },
-    "add-products-v85-v91" : {
-        "permutations" : [
+    "add-products" : {
+        "permutations" :         [
             {
-                "_code_" : "E85"
-                ,"_fullname_" : "Evoq Engage"
-                ,"_ver_" : "8.5"
-                ,"_reldate_"  : "2016-aug-22"
-                ,"_unixdate_" : "2016-aug-22"
+                "name":  "product-platform-9.1.1",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "9.1.1",
+                "_unixdate_":  "2017-jul-05",
+                "releaseNotes":  "<DL id=top-relnotes-2017-jul-05__dl-relnotes-platform-9.1.1 class=dl><DT class=\"dt dlterm\">FIPS Compliance \r\n<DD class=dd>The user verification algorithm was updated to use a FIPS-compliant method. \r\n<DIV class=\"note important note_important\"><SPAN class=\"note__title importanttitle\">Important:</SPAN> After the upgrade, links in verification emails sent prior to the upgrade will fail. Therefore, administrators must check the <DFN class=term>Unverified Users</DFN> role and, if necessary, reissue a verification email for users belonging to that role.</DIV>\r\n<DT class=\"dt dlterm\">Navigation \r\n<DD class=dd>\r\n<UL class=ul>\r\n<LI class=li>Menu and button interactions show additional validation and user feedback implementations. \r\n<LI class=li>In-app navigation and breadcrumbs have been added and improved, where applicable, to increase usability. \r\n<LI class=li>Minor UI enhancements were made in the following menus: Security, Servers, Sites, and Scheduler. </LI></UL>\r\n<DT class=\"dt dlterm\">UI \r\n<DD class=dd>\r\n<UL class=ul>\r\n<LI class=li>In Page Management, the option to select the parent page (when creating a new web page) was restored. \r\n<LI class=li>In the Edit mode toggle, the option to remain in Edit mode was restored. </LI></UL>\r\n<DT class=\"dt dlterm\">Translation \r\n<DD class=dd>Fixed several translation issues in the default language packs. </DD></DL>",
+                "sourceLocation":  "GitHub",
+                "sourceURL":  "https://github.com/dnnsoftware/Dnn.Platform/releases/tag/v9.1.1"
             },
             {
-                "_code_" : "C85"
-                ,"_fullname_" : "Evoq Content"
-                ,"_ver_" : "8.5"
-                ,"_reldate_"  : "2016-aug-22"
-                ,"_unixdate_" : "2016-aug-22"
+                "name":  "product-basic-9.1.1",
+                "_fullname_":  "Evoq Basic",
+                "_ver_":  "9.1.1",
+                "_unixdate_":  "2017-jul-05",
+                "releaseNotes":  "<DL id=top-relnotes-2017-jul-05__dl-relnotes-basic-9.1.1 class=dl><DT class=\"dt dlterm\">All updates included with DNN Platform 9.1.1. \r\n<DD class=dd>\r\n<DT class=\"dt dlterm\">Customer-requested \r\n<DD class=dd>Various updates based on almost 70 customer support tickets, including 20 customer-requested improvements. </DD></DL>"
             },
             {
-                "_code_" : "B85"
-                ,"_fullname_" : "Evoq Basic"
-                ,"_ver_" : "8.5"
-                ,"_reldate_"  : "2016-aug-22"
-                ,"_unixdate_" : "2016-aug-22"
+                "name":  "product-content-9.1.1",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "9.1.1",
+                "_unixdate_":  "2017-jul-05",
+                "releaseNotes":  "<DL id=top-relnotes-2017-jul-05__dl-relnotes-content-9.1.1 class=dl><DT class=\"dt dlterm\">All updates included with Evoq Basic 9.1.1. \r\n<DD class=dd>\r\n<DT class=\"dt dlterm\">Dropbox \r\n<DD class=dd>The Dropbox folder provider was updated to version 2. \r\n<DT class=\"dt dlterm\">Import/Export \r\n<DD class=dd>Import/Export now supports a site\'s entire microservice content library. When exporting a site or portion of a site, users can now elect to transfer the contents of their Liquid Content™ library along with the export package. \r\n<DT class=\"dt dlterm\">Liquid Content™ \r\n<DD class=dd>\r\n<UL class=ul>\r\n<LI class=li><SPAN class=\"ph uicontrol\">Related Content</SPAN> is a new visualizer type that communicates with an existing visualizer on a page to filter and display related content items. Example: A blog post may have certain tags to describe the content in the post. The <SPAN class=\"ph uicontrol\">Related Content</SPAN> visualizer, when deployed on a blog post page, will use the taxonomy of that content to display similar types of blog posts. This is extremely useful for content marketers trying to create sticky websites and engage their audience. \r\n<LI class=li>The contents of a Liquid Content™ list and the details of that list are now fully indexed and are discoverable in Evoq Search. \r\n<LI class=li>The loading time and the behavior of the microservice menus were enhanced for better performance. \r\n<LI class=li>The social publishing authentication workflow was improved to allow saved profiles to persist as long as the social network allows the user to remain authenticated. \r\n<LI class=li>Social publishing preview posts are updated to better reflect the actual content and structure of the post on a social network. \r\n<LI class=li>Visualizer updates are now refreshed more granularly (using AJAX) instead of requiring a full page refresh. </LI></UL>\r\n<DT class=\"dt dlterm\">Form Builder \r\n<DD class=dd>\r\n<UL class=ul>\r\n<LI class=li>Notifications can now be sent to multiple recipients when a form is completed. \r\n<LI class=li>The Form Builder — Structured Content connector now accepts files and assets from submitted forms and transfers them to the corresponding content item. \r\n<LI class=li>Webhook support/subscription can now listen to form responses and copy a file or content to a custom endpoint. \r\n<LI class=li>Files and assets uploaded through a form submission are now added to a dedicated Form Submissions folder within Assets. </LI></UL>\r\n<DT class=\"dt dlterm\">Analytics \r\n<DD class=dd>Evoq Analytics now tracks individual content items displayed through a visualizer on any web page, allowing users to analyze how many times a content item has been viewed and who viewed it. </DD></DL>"
             },
             {
-                "_code_" : "P85"
-                ,"_fullname_" : "DNN Platform"
-                ,"_ver_" : "8.5"
-                ,"_reldate_"  : "2016-aug-22"
-                ,"_unixdate_" : "2016-aug-22"
+                "name":  "product-engage-9.1.1",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "9.1.1",
+                "_unixdate_":  "2017-jul-05",
+                "releaseNotes":  "<DL id=top-relnotes-2017-jul-05__dl-relnotes-engage-9.1.1 class=dl><DT class=\"dt dlterm\">All updates included with Evoq Content 9.1.1. \r\n<DD class=dd>\r\n<DT class=\"dt dlterm\">Minor updates \r\n<DD class=dd>Several minor customer enhancements were added and bugs fixed. </DD></DL>"
             },
             {
-                "_code_" : "E90"
-                ,"_fullname_" : "Evoq Engage"
-                ,"_ver_" : "9.0"
-                ,"_reldate_"  : "2016-dec-09"
-                ,"_unixdate_" : "2016-dec-09"
+                "name":  "product-platform-9.1.0",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "9.1.0",
+                "_unixdate_":  "2017-apr-26",
+                "releaseNotes":  "<DL id=top-relnotes-2017-apr-26__dl-relnotes-platform-9.1.0 class=dl><DT class=\"dt dlterm\">ADA Compliance \r\n<DD class=dd>\r\n<P class=p>DNN complies with accessibility requirements defined by the Americans with Disabilities Act (ADA). Anonymous site visitors with those requirements can now use accessibility tools to browse and interact with any DNN site. Authenticated users can additionally use an accessibility tool to navigate the Persona Bar and to perform other actions. New accessibility features include:</P>\r\n<UL class=ul>\r\n<LI class=li>Ability to add alternative text for every image on a site. \r\n<LI class=li>Ability to post documents in text format, so text-to-speech and other assistive technologies can vocalize the content. \r\n<LI class=li>Full control over colors and font settings to allow the creation of web pages with high contrast and large fonts. </LI></UL>\r\n<P class=p>Although DNN provides the capability and assistance in creating ADA-compliant web pages, site managers are still responsible for choosing and adopting appropriate content creation strategies.</P>\r\n<DT class=\"dt dlterm\">Import/Export \r\n<DD class=dd>DNN now ships with a standalone module that exports/imports entire websites, as well as more granular components, such as individual site pages, the user database, and the content database. The exported data is stored in a single portable package that contains everything required to recreate that site or component in a different installation. \r\n<DT class=\"dt dlterm\">Telerik Removal \r\n<DD class=dd>Additional changes were made to continue phasing out Telerik from DNN products. <A class=xref href=\"relnotes-2017-apr-26-telerik-removal.html\">See details.</A> \r\n<DT class=\"dt dlterm\">Added and Deprecated Extensions \r\n<DD class=dd>Some extensions were added and others deprecated depending on the product and the installation/upgrade scenario. <A class=xref href=\"relnotes-2017-apr-26-extensions.html\">See details.</A> </DD></DL>",
+                "sourceLocation":  "GitHub",
+                "sourceURL":  "https://github.com/dnnsoftware/Dnn.Platform/releases/tag/v9.1.0"
             },
             {
-                "_code_" : "C90"
-                ,"_fullname_" : "Evoq Content"
-                ,"_ver_" : "9.0"
-                ,"_reldate_"  : "2016-dec-09"
-                ,"_unixdate_" : "2016-dec-09"
+                "name":  "product-basic-9.1.0",
+                "_fullname_":  "Evoq Basic",
+                "_ver_":  "9.1.0",
+                "_unixdate_":  "2017-apr-26",
+                "releaseNotes":  "<DL id=top-relnotes-2017-apr-26__ul-relnotes-basic-9.1.0 class=dl><DT class=\"dt dlterm\">All updates included with DNN Platform 9.1.0. \r\n<DD class=dd>\r\n<DIV id=top-relnotes-2017-apr-26__note-telerik-add-delete-extensions class=\"note note note_note\"><SPAN class=\"note__title notetitle\">Note:</SPAN> Changes for <A class=xref href=\"relnotes-2017-apr-26-telerik-removal.html\">Telerik Removal</A> and for <A class=xref href=\"relnotes-2017-apr-26-extensions.html\">Added and Deprecated Extensions</A> are different for each product.</DIV>\r\n<DT class=\"dt dlterm\">Global Asset Management \r\n<DD class=dd>Superusers/Hosts can now manage and browse all assets (from all Evoq sites within the installation) through the Asset Manager. Previously, assets could only be viewed at the site level. \r\n<DT class=\"dt dlterm\">Multiple Connector Support \r\n<DD class=dd>Evoq now allows connecting to multiple accounts for the same folder provider. Example: You can sync the folders of different Dropbox accounts with Evoq. Each folder path is given a unique name and is managed independently. </DD></DL>"
             },
             {
-                "_code_" : "B90"
-                ,"_fullname_" : "Evoq Basic"
-                ,"_ver_" : "9.0"
-                ,"_reldate_"  : "2016-dec-09"
-                ,"_unixdate_" : "2016-dec-09"
+                "name":  "product-content-9.1.0",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "9.1.0",
+                "_unixdate_":  "2017-apr-26",
+                "releaseNotes":  "<DL id=top-relnotes-2017-apr-26__ul-relnotes-content-9.1.0 class=dl><DT class=\"dt dlterm\">All updates included with Evoq Basic 9.1.0. \r\n<DD class=dd>\r\n<DIV class=\"note note note_note\"><SPAN class=\"note__title notetitle\">Note:</SPAN> Changes for <A class=xref href=\"relnotes-2017-apr-26-telerik-removal.html\">Telerik Removal</A> and for <A class=xref href=\"relnotes-2017-apr-26-extensions.html\">Added and Deprecated Extensions</A> are different for each product.</DIV>\r\n<DT class=\"dt dlterm\">In-context Editing for Liquid Content™ \r\n<DD class=dd>You can add content, edit content, and manage the visualizer within the module interface. Module permissions have been added to restrict access to either the visualizer or content editing functions. Changing the content or visualizer also triggers page workflow and versioning. Currently, workflow is triggered with content item visualizers only; list workflow events are coming soon. \r\n<DT class=\"dt dlterm\">New Google Tag Manager Connector \r\n<DD class=dd>You can now connect to Google Tag Manager to administer and analyze your website dynamically, to define segments of pages, and to manage campaigns. \r\n<DT class=\"dt dlterm\">Analytics Updates \r\n<DD class=dd>Rich dynamic charts were added to further segment data and understand interactions on the website. Charts are updated in real time, as users modify dimensions or date ranges. Conversion tracking was enhanced to include segmentation based on individual conversion metrics, as well as visitor pathway analysis and attribute page conversion performance. \r\n<DT class=\"dt dlterm\">Multi-Step Forms \r\n<DD class=dd>You can create and deploy forms with multiple steps. Useful for surveys, questionnaires, and quizzes. You can customize the look and feel of the form, including the transition between steps, and then you can view the results for each step. \r\n<DT class=\"dt dlterm\">New Form Submission Event to Collect Form Response Data \r\n<DD class=dd>The webhook capability of forms was updated to provide developers a deeper access point to the form response data. \r\n<DT class=\"dt dlterm\">Visualizer Import/Export \r\n<DD class=dd>For designers and developers who hate copying and pasting code from environment to environment, we\'ve added export and import capability for visualizers and their accompanying content types. \r\n<DT class=\"dt dlterm\">Content Item Revision History \r\n<DD class=dd>Liquid Content™ now saves every version of a content item. You can preview and roll back to prior versions. \r\n<DT class=\"dt dlterm\">Auto-Suggest Tagging in Visualizers and Content Items to Assist with List Visualizers \r\n<DD class=dd>During the creation of a <DFN class=term>List</DFN> or <DFN class=term>List/Detail</DFN> visualizer, tags will be suggested to help filter content elements. This enables marketers to deploy brand-consistent content and to easily find the content they\'re looking for. Tag suggestions are based on the taxonomy of the content library and on what has already been published on the page. \r\n<DT class=\"dt dlterm\">Content Item &lt;meta&gt; Tag Support \r\n<DD class=dd>All content items now support the Open Graph Protocol, which allows a title, a description, keywords, and an image to be used as the content preview when shared in social channels. </DD></DL>"
             },
             {
-                "_code_" : "P90"
-                ,"_fullname_" : "DNN Platform"
-                ,"_ver_" : "9.0"
-                ,"_reldate_"  : "2016-dec-09"
-                ,"_unixdate_" : "2016-dec-09"
+                "name":  "product-engage-9.1.0",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "9.1.0",
+                "_unixdate_":  "2017-apr-26",
+                "releaseNotes":  "<DL id=top-relnotes-2017-apr-26__ul-relnotes-engage-9.1.0 class=dl><DT class=\"dt dlterm\">All updates included with Evoq Content 9.1.0. \r\n<DD class=dd>\r\n<DIV class=\"note note note_note\"><SPAN class=\"note__title notetitle\">Note:</SPAN> Changes for <A class=xref href=\"relnotes-2017-apr-26-telerik-removal.html\">Telerik Removal</A> and for <A class=xref href=\"relnotes-2017-apr-26-extensions.html\">Added and Deprecated Extensions</A> are different for each product.</DIV>\r\n<DT class=\"dt dlterm\">Content Item Analytics \r\n<DD class=dd>Analytics is now available for individual content items to provide information such as: \r\n<UL class=ul>\r\n<LI class=li>how they are used on the web (in an Evoq site or embedded in an app) \r\n<LI class=li>how often they were shared \r\n<LI class=li>how much engagement they received </LI></UL>\r\n<DT class=\"dt dlterm\">Multichannel Publishing : API Key Management \r\n<DD class=dd>You can easily generate an API key to allow other applications and services to access the Liquid Content™ REST API, which provides access to content and which communicates with external services. You can integrate Liquid Content with native mobile apps, digital signage, or even another CMS. \r\n<DT class=\"dt dlterm\">Multichannel Publishing : Content Item Embed Code \r\n<DD class=dd>You can generate an embed code to allow your content to live anywhere on the web. Evoq\'s content analytics also tracks what URLs your content lives in and how much reach it gets. \r\n<DT class=\"dt dlterm\">Multichannel Publishing : Social Publishing \r\n<DD class=dd>Using Liquid Content™\'s publishing application, users can connect their social profiles and publish content directly to Facebook, Twitter, or LinkedIn. Evoq saves a rendering of that post, the date/time it was published, and how much engagement it received. </DD></DL>"
             },
             {
-                "_code_" : "E91"
-                ,"_fullname_" : "Evoq Engage"
-                ,"_ver_" : "9.1"
-                ,"_reldate_"  : "2017-apr-26"
-                ,"_unixdate_" : "2017-apr-26"
+                "name":  "product-platform-9.0.1",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "9.0.1",
+                "_unixdate_":  "2017-jan-25",
+                "releaseNotes":  "<UL id=top-relnotes-2017-jan-25__ul-relnotes-platform-9.0.1 class=ul><LI class=li>The Platform Persona Bar menu items were converted to icons to enhance the design and localizability of the new Admin Persona Bar. \r\n<LI class=li>Legacy scheduled tasks were removed. \r\n<LI class=li>Users can now be soft-deleted (sent to the recycle bin) and later purged (permanently deleted). \r\n<LI class=li>The host/superuser can now select a global site and language. \r\n<LI class=li>In Users and Roles, performance was improved, and database usage was made more efficient. \r\n<LI class=li>The UI was enhanced and cleaned up. \r\n<LI class=li>Significant bug fixes. </LI></UL>",
+                "sourceLocation":  "GitHub",
+                "sourceURL":  "https://github.com/dnnsoftware/Dnn.Platform/releases/tag/v9.0.1"
             },
             {
-                "_code_" : "C91"
-                ,"_fullname_" : "Evoq Content"
-                ,"_ver_" : "9.1"
-                ,"_reldate_"  : "2017-apr-26"
-                ,"_unixdate_" : "2017-apr-26"
+                "name":  "product-basic-9.0.1",
+                "_fullname_":  "Evoq Basic",
+                "_ver_":  "9.0.1",
+                "_unixdate_":  "2017-jan-25",
+                "releaseNotes":  "<UL id=top-relnotes-2017-jan-25__ul-relnotes-basic-9.0.1 class=ul><LI class=li>All updates included with DNN Platform 9.0.1. \r\n<LI class=li>The Assets feature now supports recursive indexing to sync all installed folders. </LI></UL>"
             },
             {
-                "_code_" : "B91"
-                ,"_fullname_" : "Evoq Basic"
-                ,"_ver_" : "9.1"
-                ,"_reldate_"  : "2017-apr-26"
-                ,"_unixdate_" : "2017-apr-26"
+                "name":  "product-content-9.0.1",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "9.0.1",
+                "_unixdate_":  "2017-jan-25",
+                "releaseNotes":  "<UL id=top-relnotes-2017-jan-25__ul-relnotes-content-9.0.1 class=ul><LI class=li>All updates included with Evoq Content Basic 9.0.1. \r\n<LI class=li>The Connectors feature has a new option for UNC folder providers. \r\n<LI class=li>Bug fixes specific to Evoq Content. </LI></UL>"
             },
             {
-                "_code_" : "P91"
-                ,"_fullname_" : "DNN Platform"
-                ,"_ver_" : "9.1"
-                ,"_reldate_"  : "2017-apr-26"
-                ,"_unixdate_" : "2017-apr-26"
+                "name":  "product-engage-9.0.1",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "9.0.1",
+                "_unixdate_":  "2017-jan-25",
+                "releaseNotes":  "<UL id=top-relnotes-2017-jan-25__ul-relnotes-engage-9.0.1 class=ul><LI class=li>All updates included with Evoq Content 9.0.1. \r\n<LI class=li>Bug fixes specific to Evoq Engage. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-9.0.0",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "9.0.0",
+                "_unixdate_":  "2016-dec-09",
+                "releaseNotes":  "<UL id=top-relnotes-2016-dec-09__ul-relnotes-platform-9.0.0 class=ul><LI class=li>The host/admin experience is enhanced with a modern Persona Bar user interface. Most modules were rewritten using React.js. The legacy Control Panel and its accompanying host/admin pages are removed during the upgrade. \r\n<LI class=li>New modules can now be installed directly from the Persona Bar menu by a host/superuser. \r\n<LI class=li>Persona Bar modules can be configured with individual permissions, thereby allowing the creation of custom personas. \r\n<LI class=li>Advanced URL Management functionality, which used to be available in Evoq only, is released to the Platform. \r\n<LI class=li>The About menu option (formerly License Management) now includes links to the new Documentation Center and to Sales. \r\n<LI class=li>The Scheduler\'s task management and user interface elements were updated. \r\n<LI class=li>The user interface of the Themes module was converted to a gallery-style theme browser. </LI></UL>",
+                "sourceLocation":  "GitHub",
+                "sourceURL":  "https://github.com/dnnsoftware/Dnn.Platform/releases/tag/v9.0.0"
+            },
+            {
+                "name":  "product-basic-9.0.0",
+                "_fullname_":  "Evoq Basic",
+                "_ver_":  "9.0.0",
+                "_unixdate_":  "2016-dec-09",
+                "releaseNotes":  "<UL id=top-relnotes-2016-dec-09__ul-relnotes-basic-9.0.0 class=ul><LI class=li>All updates included with DNN Platform 9.0.0. \r\n<LI class=li>Site Groups was folded into Site Management. The Site Groups module now displays a snapshot of each portal\'s home page as a thumbnail card. \r\n<LI class=li>Content localization was simplified, and redundancies were removed. Content localization now occurs at the page level. </LI></UL>"
+            },
+            {
+                "name":  "product-content-9.0.0",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "9.0.0",
+                "_unixdate_":  "2016-dec-09",
+                "releaseNotes":  "<UL id=top-relnotes-2016-dec-09__ul-relnotes-content-9.0.0 class=ul><LI class=li>All updates included with Evoq Content Basic 9.0.0. \r\n<LI class=li>The new MailChimp connector allows new users or subscribers to be automatically mapped to your MailChimp subscription lists. The connector also includes an Unsubscribe module for users to be automatically removed if they opt out. \r\n<LI class=li>New Evoq Analytics service replaces the old built-in analytics functionality. The new service connects to Google Analytics and displays visualizations, data, and insights inside the Evoq interface.<A class=xref href=\"#top-relnotes-2016-dec-09__fn-cloud-based\"><SUP>1</SUP></A> \r\n<LI class=li>Form Builder: You can now build and deploy dynamic forms.<A class=xref href=\"#top-relnotes-2016-dec-09__fn-cloud-based\"><SUP>1</SUP></A> \r\n<UL class=ul>\r\n<LI class=li>Four common use cases are shipped out of the box. \r\n<LI class=li>You can now customize the view of the form response list for easier analysis. \r\n<LI class=li>You can configure the properties (custom URL) and custom connections (Google Analytics) of a form. You can also hide forms. \r\n<LI class=li>Forms can perform one or more of the following actions when a response is submitted: \r\n<UL class=ul>\r\n<LI class=li>Send an email to the form respondent or an internal team. \r\n<LI class=li>Provide a downloadable file. \r\n<LI class=li>Display a message. \r\n<LI class=li>Redirect to another URL. </LI></UL></LI></UL></LI></UL>"
+            },
+            {
+                "name":  "product-engage-9.0.0",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "9.0.0",
+                "_unixdate_":  "2016-dec-09",
+                "releaseNotes":  "<UL id=top-relnotes-2016-dec-09__ul-relnotes-engage-9.0.0 class=ul><LI class=li>All updates included with Evoq Content 9.0.0. \r\n<LI class=li>Structured Content: Separates the content creation process from the design process.<A class=xref href=\"#top-relnotes-2016-dec-09__fn-cloud-based\"><SUP>1</SUP></A> \r\n<UL class=ul>\r\n<LI class=li>You can easily create content types with drag-and-drop functionality and dynamic layouts. \r\n<LI class=li>Six common use cases are shipped out of the box. \r\n<LI class=li>Content creators don\'t have to worry about the design of the page where their content would appear. \r\n<LI class=li>Images can be edited directly on the page. \r\n<LI class=li>Dynamic lists are automatically updated with newly created content items matching the configured criteria. \r\n<LI class=li>Dynamic lists can easily link to a detail view without requiring a new page for every content item. </LI></UL>\r\n<LI class=li>Visualizers: Modern and beautifully designed content wrappers are included.<A class=xref href=\"#top-relnotes-2016-dec-09__fn-cloud-based\"><SUP>1</SUP></A> \r\n<UL class=ul>\r\n<LI class=li>With dozens of visualizers provided out of the box and more added with each update, web designers can easily add modern design elements to web pages using content. \r\n<LI class=li>Visualizers are easily created using templates that bundle HTML, CSS, and JavaScript. \r\n<LI class=li>Visualizer Builder templates also support pagination, header wrappers, and footer wrappers. </LI></UL>\r\n<LI class=li>The new connector between the Form Builder and Structured Content converts form submissions to content items, which can be mined for testimonials or reviews and displayed on a page. \r\n<LI class=li>A dedicated Community Analytics dashboard displays important community performance metrics and analytics. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-8.0.4",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "8.0.4",
+                "_unixdate_":  "2016-aug-22",
+                "releaseNotes":  "<UL id=top-relnotes-2016-aug-22__ul-relnotes-platform-8.0.4 class=ul><LI class=li>MVC Module bug fixes and added MVC Controller Views Path. \r\n<LI class=li>Extension Modules Usage Details defaults to current portal and uses proper links for pages. \r\n<LI class=li>Web API performance improvements. \r\n<LI class=li>Login and registration bugs addressed for redirects, email notifications, and password resets. \r\n<LI class=li>Corrected several issues around character encoding. \r\n<LI class=li>Page Manager bug fixes included fixes for duplicate pages and permissions. \r\n<LI class=li>Fixed bugs related to SSL offloading. \r\n<LI class=li>Tested and verified compatibility with SQL 2016. \r\n<LI class=li>Consolidated SQL install/upgrade scripts. \r\n<LI class=li>Additional minor enhancements and bug fixes. </LI></UL>",
+                "sourceLocation":  "GitHub",
+                "sourceURL":  "https://github.com/dnnsoftware/Dnn.Platform/releases/tag/v8.0.4"
+            },
+            {
+                "name":  "product-contentplus-8.5.0",
+                "_fullname_":  "Evoq Basic",
+                "_ver_":  "8.5.0",
+                "_unixdate_":  "2016-aug-22",
+                "releaseNotes":  "<UL id=top-relnotes-2016-aug-22__ul-relnotes-contentplus-8.5.0 class=ul><LI class=li>All updates included with DNN Platform 8.0.4. \r\n<LI class=li>Improved functionality and user experience of <SPAN class=\"ph uicontrol\">Add Module</SPAN>. \r\n<LI class=li>Added Azure and Amazon S3 file connectors. \r\n<LI class=li>Improved user experience and performance of validation for Dropbox and Box connectors. \r\n<LI class=li>Added description field to <SPAN class=\"ph uicontrol\">Asset Manager</SPAN> and added tracking when files are downloaded. \r\n<LI class=li>Additional minor enhancements and bug fixes. </LI></UL>"
+            },
+            {
+                "name":  "product-contentplus-8.5.0",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "8.5.0",
+                "_unixdate_":  "2016-aug-22",
+                "releaseNotes":  "<UL id=top-relnotes-2016-aug-22__ul-relnotes-contentplus-8.5.0 class=ul><LI class=li>All updates included with DNN Platform 8.0.4. \r\n<LI class=li>Improved functionality and user experience of <SPAN class=\"ph uicontrol\">Add Module</SPAN>. \r\n<LI class=li>Added Azure and Amazon S3 file connectors. \r\n<LI class=li>Improved user experience and performance of validation for Dropbox and Box connectors. \r\n<LI class=li>Added description field to <SPAN class=\"ph uicontrol\">Asset Manager</SPAN> and added tracking when files are downloaded. \r\n<LI class=li>Additional minor enhancements and bug fixes. </LI></UL>"
+            },
+            {
+                "name":  "product-engage-8.5.0",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "8.5.0",
+                "_unixdate_":  "2016-aug-22",
+                "releaseNotes":  "<UL id=top-relnotes-2016-aug-22__ul-relnotes-engage-8.5.0 class=ul><LI class=li>All updates included with Evoq Content 8.5.0. \r\n<LI class=li>Added RSS support for the Activity Stream. \r\n<LI class=li>Enabled auto-resizing of images in the Activity Stream for optimal performance. \r\n<LI class=li>Introduced <A class=xref href=\"../../content-managers/microservices/index.html\">DNN Cloud Microservices</A>. Microservices improve the overall performance of your site by hosting additional functionality on cloud servers. Microservices also enable easier and faster deployment of updates. \r\n<UL class=ul>\r\n<LI class=li><A class=xref href=\"../../content-managers/structured-content/index.html\">Structured Content</A>. Separates content creation from design using a highly structured approach. \r\n<UL class=ul>\r\n<LI class=li>Get started with the six predefined content types, which are based on common use cases. \r\n<LI class=li>Define custom content types using simple drag-and-drop functionality and dynamic layouts. \r\n<LI class=li>Create content items in a structured format without worrying about design. </LI></UL>\r\n<LI class=li><A class=xref href=\"../../content-managers/structured-content/create-visualizer.html\">Visualizers</A>. Defines and applies styling to content items. \r\n<UL class=ul>\r\n<LI class=li>Use templates to define visualizers, which are bundles of HTML, CSS, and JavaScript. \r\n<LI class=li>Easily apply new design elements to content in web pages, using the included visualizers (more to be added with each update). </LI></UL>\r\n<LI class=li><A class=xref href=\"../../content-managers/forms/index.html\">Form Builder</A>. Builds and deploys dynamic forms. \r\n<UL class=ul>\r\n<LI class=li>Customize the four predefined forms, which are based on common use cases. Or use them as is. \r\n<LI class=li>Display the list of responses in custom configurations to extract insights. </LI></UL>\r\n<LI class=li>Migration of existing HTML content into Structured Content microservice. </LI></UL>\r\n<LI class=li>Additional minor enhancements and bug fixes. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-8.0.3",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "8.0.3",
+                "_unixdate_":  "2016-may-26",
+                "releaseNotes":  "<UL id=top-relnotes-2016-may-26__ul-relnotes-platform-8.0.3 class=ul><LI class=li>Critical security update. \r\n<LI class=li>See breaking changes in 8.0.0. </LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/621771"
+            },
+            {
+                "name":  "product-evoq-8.4.2",
+                "_fullname_":  "Evoq Basic",
+                "_ver_":  "8.4.2",
+                "_unixdate_":  "2016-may-26",
+                "releaseNotes":  "<UL id=top-relnotes-2016-may-26__ul-relnotes-evoq-8.4.2 class=ul><LI class=li>All updates included with DNN Platform 8.0.3. \r\n<LI class=li>Critical security update. </LI></UL>"
+            },
+            {
+                "name":  "product-evoq-8.4.2",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "8.4.2",
+                "_unixdate_":  "2016-may-26",
+                "releaseNotes":  "<UL id=top-relnotes-2016-may-26__ul-relnotes-evoq-8.4.2 class=ul><LI class=li>All updates included with DNN Platform 8.0.3. \r\n<LI class=li>Critical security update. </LI></UL>"
+            },
+            {
+                "name":  "product-evoq-8.4.2",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "8.4.2",
+                "_unixdate_":  "2016-may-26",
+                "releaseNotes":  "<UL id=top-relnotes-2016-may-26__ul-relnotes-evoq-8.4.2 class=ul><LI class=li>All updates included with DNN Platform 8.0.3. \r\n<LI class=li>Critical security update. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-8.0.2",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "8.0.2",
+                "_unixdate_":  "2016-apr-18",
+                "releaseNotes":  "<UL id=top-relnotes-2016-apr-18__ul-relnotes-platform-8.0.2 class=ul><LI class=li>Critical security update. </LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/620964"
+            },
+            {
+                "name":  "product-evoq-8.4.1",
+                "_fullname_":  "Evoq Basic",
+                "_ver_":  "8.4.1",
+                "_unixdate_":  "2016-apr-18",
+                "releaseNotes":  "<UL id=top-relnotes-2016-apr-18__ul-relnotes-evoq-8.4.1 class=ul><LI class=li>All updates included with DNN Platform 8.0.2. \r\n<LI class=li>Security and maintenance updates. </LI></UL>"
+            },
+            {
+                "name":  "product-evoq-8.4.1",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "8.4.1",
+                "_unixdate_":  "2016-apr-18",
+                "releaseNotes":  "<UL id=top-relnotes-2016-apr-18__ul-relnotes-evoq-8.4.1 class=ul><LI class=li>All updates included with DNN Platform 8.0.2. \r\n<LI class=li>Security and maintenance updates. </LI></UL>"
+            },
+            {
+                "name":  "product-evoq-8.4.1",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "8.4.1",
+                "_unixdate_":  "2016-apr-18",
+                "releaseNotes":  "<UL id=top-relnotes-2016-apr-18__ul-relnotes-evoq-8.4.1 class=ul><LI class=li>All updates included with DNN Platform 8.0.2. \r\n<LI class=li>Security and maintenance updates. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-8.0.1",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "8.0.1",
+                "_unixdate_":  "2016-mar-16",
+                "releaseNotes":  "<UL id=top-relnotes-2016-mar-16__ul-relnotes-platform-8.0.1 class=ul><LI class=li>Critical security update. \r\n<LI class=li>See breaking changes in 8.0.0. </LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/619412"
+            },
+            {
+                "name":  "product-content-8.4.0",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "8.4.0",
+                "_unixdate_":  "2016-mar-16",
+                "releaseNotes":  "<UL id=top-relnotes-2016-mar-16__ul-relnotes-content-8.4.0 class=ul><LI class=li>All updates included with DNN Platform 8.0.1. \r\n<LI class=li>Made it possible for search crawler to exclude specific folders. \r\n<LI class=li>Made search-indexed images appear as images instead of documents for source type. \r\n<LI class=li>Fixed problem where newly added files to Digital Asset Manager were not going through set workflow. \r\n<LI class=li>Additional minor enhancements and bug fixes. </LI></UL>"
+            },
+            {
+                "name":  "product-engage-8.4.0",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "8.4.0",
+                "_unixdate_":  "2016-mar-16",
+                "releaseNotes":  "<UL id=top-relnotes-2016-mar-16__ul-relnotes-engage-8.4.0 class=ul><LI class=li>All updates included with Evoq Content 8.4. \r\n<LI class=li>Added ability to change social media message being shared in challenges. \r\n<LI class=li>Updated Zendesk connector to support pulling in additional fields from Zendesk. \r\n<LI class=li>Updated user interface and experience for creating and viewing tickets as an end user. \r\n<LI class=li>Added event hooks for all major Engage modular functionality, allowing third party extensibility. \r\n<LI class=li>Additional minor enhancements and bug fixes. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-8.0.0",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "8.0.0",
+                "_unixdate_":  "2016-jan-14",
+                "releaseNotes":  "<DL id=top-relnotes-2016-jan-14__dl-relnotes-platform-8.0.0 class=dl><DT class=\"dt dlterm\">The following are breaking changes that can impact upgrades as well as third-party extensions: \r\n<DD class=dd>\r\n<UL class=ul>\r\n<LI class=li>.NET 4.5.1 or higher is now required. \r\n<LI class=li>Removed the following administration modules from the product: Site Log, Newsletters, Vendors, and Banners. Although no longer supported, these can be downloaded from <A class=xref href=\"https://github.com/DNNCommunity\" target=_blank>DNNCommunity in GitHub</A>. \r\n<LI class=li>Removed the following navigation providers: ASP2Menu, DNNDropDown, DNNMenu, DNNTree, Solpart. \r\n<LI class=li>Removed the following functionality/modules: What\'s New, Feed Browser, Widget Framework, Getting Started, Content List. \r\n<LI class=li>Removed the legacy appSetting connection string. Modules that have not been updated for this change in the past years will now break. \r\n<LI class=li>Moved Telerik controls to a new assembly, requiring third-party extensions to recompile to continue to work. This will be phased out completely in subsequent releases. \r\n<LI class=li>Removed support for Internet Explorer 8. \r\n<LI class=li>These third party modules (core modules that formerly shipped with the Platform) break in this upgrade and must be upgraded: \r\n<UL class=ul>\r\n<LI class=li><A class=xref href=\"https://github.com/DNNCommunity/DNN.Faq\" target=_blank>FAQ</A> \r\n<LI class=li><A class=xref href=\"https://github.com/DNNCommunity/DNN.Feedback\" target=_blank>Feedback</A> \r\n<LI class=li><A class=xref href=\"https://github.com/DNNCommunity/DNN.IFrame\" target=_blank>IFrame</A> \r\n<LI class=li><A class=xref href=\"https://github.com/DNNCommunity/DNN.Events\" target=_blank>Events</A> \r\n<LI class=li><A class=xref href=\"https://github.com/DNNCommunity/DNN.FormAndList\" target=_blank>Form and List</A> </LI></UL></LI></UL>\r\n<DT class=\"dt dlterm\">The following updates are geared towards extension developers and theme designers: \r\n<DD class=dd>\r\n<UL class=ul>\r\n<LI class=li>Single Page Application (SPA) and MVC modules are now supported, so developers can create non-Webforms-based modules. Visual Studio 2015 templates for both types are also released. \r\n<LI class=li>The module settings API was updated to support strongly typed settings. \r\n<LI class=li>Incremental upgrade support is now possible through <STRONG class=\"ph b\">SqlDataProvider</STRONG>, cleanup files, and configuration merge files. This allows changes to the platform or third-party extensions without requiring a new versioned release. \r\n<LI class=li>Extension developers can now create admin and host pages through the DNN Manifest (.dnn). \r\n<LI class=li>Developers can now exclude individual CSS and/or JS files from being loaded or combined during minification through a new control. \r\n<LI class=li><STRONG class=\"ph b\">Default.css</STRONG> now has versioning support, which can be set by theme designers to reduce the CSS that their themes need to override. \r\n<LI class=li>Third party components (CodeMirror and Newtonsoft) were upgraded to newer versions. \r\n<LI class=li>DAL 2 is enhanced to add a fluent configuration API that allows developers to separate their data implementation details from their models. \r\n<LI class=li>The DNN Platform now uses Web API 2.0. \r\n<LI class=li>JSON Web Token (JWT) authentication support is added to allow developers a way to expose WebAPI services for consumption outside of the framework, such as mobile applications. <STRONG class=\"ph b\">Warning:</STRONG> This feature is still in beta. </LI></UL>\r\n<DT class=\"dt dlterm\">Additional changes: \r\n<DD class=dd>\r\n<UL class=ul>\r\n<LI class=li>A new image handler is exposed to developers to be used for profile pictures throughout the application. \r\n<LI class=li>CK Editor is the new default HTML provider in new installations (replacing the Telerik RadEditor as default). \r\n<LI class=li>A number of Administration modules (including Vendors, Site Log, Newsletters) were removed from the base installation. \r\n<LI class=li>A new default theme that uses Bootstrap 3 is now available. \r\n<LI class=li>The base project was converted from a Website Project (WSP) to a Web Application Project (WAP) to help reduce application startup time. \r\n<LI class=li>The page output caching provider was moved from Evoq to the DNN Platform. \r\n<LI class=li>Password resets now use the same token as long as it isn\'t expired. This means that, if the user clicks <STRONG class=\"ph b\">Send password</STRONG> multiple times quickly, only a single token will be generated. \r\n<LI class=li>Password inputs now allow 39 characters instead of 20. \r\n<LI class=li>The default robots.txt now allows client-side resources to be indexed. \r\n<LI class=li>Text used throughout the entire application were reviewed for consistency. \r\n<LI class=li>The Breadcrumb theme object now outputs schema.org markup. \r\n<LI class=li>Fixed: The issue where some platform functionality injected CSS files too late, so that they couldn\'t be modified by skin.css. \r\n<LI class=li>SMTP now supports TLS authentication. </LI></UL></DD></DL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/619410"
+            },
+            {
+                "name":  "product-basic-8.3.0",
+                "_fullname_":  "Evoq Basic",
+                "_ver_":  "8.3.0",
+                "_unixdate_":  "2016-jan-14",
+                "releaseNotes":  "<UL id=top-relnotes-2016-jan-14__ul-relnotes-basic-8.3.0 class=ul><LI class=li>All updates included with DNN Platform 8.0.0. \r\n<LI class=li>Added ability to manage a user\'s roles within the Users section of the Persona Bar. \r\n<LI class=li>Corrected several problems around generating URLs for Digital Asset Manager. \r\n<LI class=li>Additional minor enhancements and bug fixes. </LI></UL>"
+            },
+            {
+                "name":  "product-content-8.3.0",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "8.3.0",
+                "_unixdate_":  "2016-jan-14",
+                "releaseNotes":  "<UL id=top-relnotes-2016-jan-14__ul-relnotes-content-8.3.0 class=ul><LI class=li>All updates included with Evoq Content Basic 8.3.0. \r\n<LI class=li>Added Optimizely connector and module that provides a way to do A/B (split) testing within Evoq. \r\n<LI class=li>Additional minor enhancements and bug fixes. </LI></UL>"
+            },
+            {
+                "name":  "product-engage-8.3.0",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "8.3.0",
+                "_unixdate_":  "2016-jan-14",
+                "releaseNotes":  "<UL id=top-relnotes-2016-jan-14__ul-relnotes-engage-8.3.0 class=ul><LI class=li>All updates included with Evoq Content 8.3. \r\n<LI class=li>Added ability to subscribe to activity stream posts and their comments (for items created within the activity stream). \r\n<LI class=li>Added emoji support in activity stream. \r\n<LI class=li>Updated activity stream comment area to provide the same experience as creating a new post (support for images, videos, etc.). \r\n<LI class=li>Removed notifications for votes on Ideas. \r\n<LI class=li>Added ability to sort comments in Discussions module by newest or oldest (also available for third party extensions utilizing the commenting control of Engage). \r\n<LI class=li>Made it possible for users to delete posts from other users on their own activity stream. \r\n<LI class=li>Corrected problems where Ideas votes may not be returned or added back. \r\n<LI class=li>Additional minor enhancements and bug fixes. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.4.2",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.4.2",
+                "_unixdate_":  "2015-oct-05",
+                "releaseNotes":  "<UL id=top-relnotes-2015-oct-05__ul-relnotes-platform-7.4.2 class=ul><LI class=li>Added upgrade support from beta release. \r\n<LI class=li>Fixed issue with lists in custom registration form. \r\n<LI class=li>Fixed issue with ignore words in Italian and French. \r\n<LI class=li>Fixed issue with site export in multi-language site. \r\n<LI class=li>Fixed issue where parameters in return URL were malformed. \r\n<LI class=li>Fixed issue in sitemap for multi-language site. \r\n<LI class=li>Fixed issue where control panel did not render links correctly in SSL offload environments. \r\n<LI class=li>Fixed issue where pages with future start date were inaccessible. \r\n<LI class=li>Fixed multiple password reset issues. \r\n<LI class=li>Fixed issue where site settings could be duplicated. \r\n<LI class=li>Fixed issue where dismissing all notifications removed messages as well. \r\n<LI class=li>Fixed issue where file link for missing file caused exception. \r\n<LI class=li>Fixed issue where localized portal settings were not getting applied when switching languages. \r\n<LI class=li>Fixed issue where admin was unable to change interface language. \r\n<LI class=li>Fixed issue where page name uniqueness was applied cross language. \r\n<LI class=li>Fixed multiple scheduler issues. \r\n<LI class=li>Security: \r\n<UL class=ul>\r\n<LI class=li>Fixed issue where users could get registered even though User Registration was set to none (medium). \r\n<LI class=li>Fixed potential XSS issue when using tab controls (low). </LI></UL></LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/617762"
+            },
+            {
+                "name":  "product-basic-8.2.0",
+                "_fullname_":  "Evoq Basic",
+                "_ver_":  "8.2.0",
+                "_unixdate_":  "2015-oct-05",
+                "releaseNotes":  "<UL id=top-relnotes-2015-oct-05__ul-relnotes-basic-8.2.0 class=ul><LI class=li>All updates included with DNN Platform 7.4.2. \r\n<LI class=li>Added mobile view and support for the Persona Bar\'s Recycle Bin and Workflow sections. \r\n<LI class=li>HTML WYSIWYG editor updated to a newer version. \r\n<LI class=li>Made content layout a true module. This allows more options for features like \"Display on All Pages\" and for copying to other sites/pages. \r\n<LI class=li>Additional minor enhancements and bug fixes. </LI></UL>"
+            },
+            {
+                "name":  "product-content-8.2.0",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "8.2.0",
+                "_unixdate_":  "2015-oct-05",
+                "releaseNotes":  "<UL id=top-relnotes-2015-oct-05__ul-relnotes-content-8.2.0 class=ul><LI class=li>All updates included with Evoq Content Basic 8.2.0. \r\n<LI class=li>Added region support to content personalization (requires purchase of GeoIP data from MaxMind). \r\n<LI class=li>Added profile property support for content personalization. \r\n<LI class=li>Improved the user experience of the page-visited rule for content personalization. \r\n<LI class=li>Added RSS feed capabilities to the Publisher module. \r\n<LI class=li>Added Search companion modules to allow multiple ways to search the Publisher module (tags, by author, text). \r\n<LI class=li>Additional bug fixes and minor enhancements. </LI></UL>"
+            },
+            {
+                "name":  "product-engage-8.2.0",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "8.2.0",
+                "_unixdate_":  "2015-oct-05",
+                "releaseNotes":  "<UL id=top-relnotes-2015-oct-05__ul-relnotes-engage-8.2.0 class=ul><LI class=li>All updates included with Evoq Content 8.2.0. \r\n<LI class=li>Added ability to create Zendesk tickets from topics or questions (if Zendesk connector setup). \r\n<LI class=li>Added paging support to the blog roster companion module. \r\n<LI class=li>Updated the usability of Content Exchange; search logic makes it easer to find things now. \r\n<LI class=li>Additional bug fixes and minor enhancements. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.4.1",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.4.1",
+                "_unixdate_":  "2015-may-26",
+                "releaseNotes":  "<UL id=top-relnotes-2015-may-26__ul-relnotes-platform-7.4.1 class=ul><LI class=li>Fixed race condition which could cause errors during file upload. \r\n<LI class=li>Fixed issue where country profile property can cause registration to fail. \r\n<LI class=li>Fixed issue where calendar control breaks in Arabic language. \r\n<LI class=li>Fixed issue where Italian Language pack causes error on Host Settings. \r\n<LI class=li>Fixed issue where Twitter Provider fails to create unique DNN login names. \r\n<LI class=li>Fixed issue where creating a social group can fail in the \"All Roles\" mode. \r\n<LI class=li>Fixed issue where custom url providers can\'t be disabled. \r\n<LI class=li>Fixed issue where upgrades can fail if portalsettings has invalid values. \r\n<LI class=li>Fixed issue where permissions can\'t be applied to a shared module. \r\n<LI class=li>Fixed issue where url rewriting is broken for non-2 letter culture codes. \r\n<LI class=li>Fixed performance issue where missing page doctype causes excessive file lookups. \r\n<LI class=li>Fixed performance issue where testing for local URIs causes slow DNS lookups. \r\n<LI class=li>Fixed issues where removing large number of unauthorized users would fail. \r\n<LI class=li>Fixed issue where RazorHost did not follow standard Razor Engine behavior. \r\n<LI class=li>Fixed issue where JavaScript library version number cannot hold full value for some libraries. \r\n<LI class=li>Fixed issue where JavaScript libraries don\'t work in cached modules. \r\n<LI class=li>Fixed issue where JavaScript library API doesn\'t immport full dependency tree. \r\n<LI class=li>Fixed issue where 404 page was included in the sitemap. \r\n<LI class=li>Fixed issue where en-us systemlocale was hardcoded in PortalSettings API. \r\n<LI class=li>Fixed performance issue where some HttpModules were executed for static file requests. \r\n<LI class=li>Fixed issue where user registration can fail with long passwords. \r\n<LI class=li>Fixed issue where Country properties were returning numeric id rather than value. \r\n<LI class=li>Fixed issue where browser language detection fails. \r\n<LI class=li>Fixed issue where URLs are not exported correctly in page content. \r\n<LI class=li>Fixed issue where switching languages removes the query string parameters. \r\n<LI class=li>Added new Security Analyzer module. \r\n<LI class=li>Fixed caching issues with multi-language portal settings. \r\n<LI class=li>Security: \r\n<UL class=ul>\r\n<LI class=li>Fixed account creation issue in install wizard (critical). \r\n<LI class=li>Fixed request forgery issue in file upload component (low). \r\n<LI class=li>Fixed information leakage issue for file existence (low). \r\n<LI class=li>Fixed information leakage issue for installed version (low). </LI></UL></LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/615317"
+            },
+            {
+                "name":  "product-basic-8.1.0",
+                "_fullname_":  "Evoq Basic",
+                "_ver_":  "8.1.0",
+                "_unixdate_":  "2015-may-26",
+                "releaseNotes":  "<UL id=top-relnotes-2015-may-26__ul-relnotes-basic-8.1.0 class=ul><LI class=li>All updates included with DNN Platform 7.4.1. \r\n<LI class=li>Improved the overall experience for IE 9 users. \r\n<LI class=li>Exposed page analytics in mobile view. \r\n<LI class=li>Added a new content analytics engine that allows page and site traffic to be tracked and reviewed. \r\n<LI class=li>Turned the dashboard\'s navigation summary page names into links that load the page analytics of those pages (so you no longer need to navigate to a page to view its analytics). \r\n<LI class=li>Enhanced the usability of the Recycle Bin (in the Persona Bar), also made it a submenu item under Manage. \r\n<LI class=li>Moved the template section to a submenu item under Manage and updated the creation UI to be more consistent with the rest of the product. \r\n<LI class=li>Refined the create page experience and enabled page publish scheduling. \r\n<LI class=li>Updated Content Layout to handle responsive design and content properly. </LI></UL>"
+            },
+            {
+                "name":  "product-content-8.1.0",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "8.1.0",
+                "_unixdate_":  "2015-may-26",
+                "releaseNotes":  "<UL id=top-relnotes-2015-may-26__ul-relnotes-content-8.1.0 class=ul><LI class=li>All updates included with Evoq Content Basic 8.1.0. \r\n<LI class=li>Added new Publisher content authoring module that ties into advanced workflow and provides an authoring experience similar to creating and editing page content. \r\n<LI class=li>Added Disqus connector that is tightly integrated with the new Publisher module. \r\n<LI class=li>Enhanced it so Content Managers/editors cannot create personalized versions of pages that shouldn\'t be personalized (template pages, user profile pages, etc.). \r\n<LI class=li>Added validation to UI when combining various rules for personalized pages to avoid the creation of a personalized page that could never be accessed. \r\n<LI class=li>Refined how unpublished deleted personalized pages are handled, they are immediately removed (hard deleted, along with any modules on the page) and NOT available in the recycle bin. </LI></UL>"
+            },
+            {
+                "name":  "product-engage-8.1.0",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "8.1.0",
+                "_unixdate_":  "2015-may-26",
+                "releaseNotes":  "<UL id=top-relnotes-2015-may-26__ul-relnotes-engage-8.1.0 class=ul><LI class=li>All updates included with Evoq Content 8.1.0. \r\n<LI class=li>Added Zendesk connector and module that allows end users to create, comment on and view Zendesk tickets from within your Engage website. \r\n<LI class=li>Added ability to sort by date created in list views of Answers and Ideas. \r\n<LI class=li>Added totals to all line charts in Dashboard reports. \r\n<LI class=li>Enhanced page analytics to handle all user generated content, so it is now tracked as an independent URL. \r\n<LI class=li>Updated how votes on questions/answers are added/removed with relation to gaming mechanics to avoid users abusing the system. \r\n<LI class=li>Added more scoring actions to track and reward various profile update activity. \r\n<LI class=li>Changed in-context analytics to show page traffic analytics instead of community health indicators (these are still accessible via the dashboard). \r\n<LI class=li>Made default visibility of Activity Stream entries to group members only, when in group mode. \r\n<LI class=li>Enhanced social connectors to return more insightful messaging when connections fail. \r\n<LI class=li>Stopped pushing updates to the journal when groups are updated, so you no longer see these in the Activity Stream (any previous entries are still available, in upgrades). </LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.4.0",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.4.0",
+                "_unixdate_":  "2015-feb-04",
+                "releaseNotes":  "<UL id=top-relnotes-2015-feb-04__ul-relnotes-platform-7.4.0 class=ul><LI class=li>Added Workflow and versioning API. \r\n<LI class=li>Added multilanguage support to Site Settings. \r\n<LI class=li>Fixed issues where core platform rendered non-HTML5 compliant markup. \r\n<LI class=li>Refactored PortalSettings and Eventlogs to better support future enhancements. \r\n<LI class=li>Enhanced User Search to include email and username. \r\n<LI class=li>Removed obsolete meta tags. \r\n<LI class=li>Updated 51Degrees to 3.1.9.3. \r\n<LI class=li>Added HTML Editor Manager module. \r\n<LI class=li>Fixed issue where enabling content localization fails with multiple languages installed. \r\n<LI class=li>Fixed issue where password reset error prevented updating password. \r\n<LI class=li>Added localization support for Persian. \r\n<LI class=li>Added localization support for additional culture code formats. \r\n<LI class=li>Fixed issue where profile properties were not displayed using UTF-8. \r\n<LI class=li>Fixed issue where scheduler would fail when large number of history items existed. \r\n<LI class=li>Fixed issue where scheduler would fail with InvalidOperationException. \r\n<LI class=li>Fixed issue where module settings could not be accessed after upgrade. \r\n<LI class=li>Fixed issue where files in folder providers were not deleted properly. </LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/611324"
+            },
+            {
+                "name":  "product-basic-8.0.0",
+                "_fullname_":  "Evoq Basic",
+                "_ver_":  "8.0.0",
+                "_unixdate_":  "2015-feb-04",
+                "releaseNotes":  "<UL id=top-relnotes-2015-feb-04__ul-relnotes-basic-8.0.0 class=ul><LI class=li>All updates included with DNN Platform 7.4.0. \r\n<LI class=li>Created a new content authoring experience exposed to Content Managers and Content Editors (new roles) through the Persona Bar, which replaces the Control Panel. \r\n<LI class=li>Made it possible for Content Managers to search users and assign them content editing permissions. \r\n<LI class=li>Added the Asset Manager, which replaces the File Manager and is available to Content Managers and Editors from the Persona Bar. \r\n<LI class=li>Added a new content analytics engine that allows page and site traffic to be tracked and reviewed. \r\n<LI class=li>Enhanced workflow and made it easier to configure. Also moved it from the module to page level. \r\n<LI class=li>Added a new WYSIWYG editor that also provides image editing capabilities, such as image cropping and rotation. \r\n<LI class=li>Provided a new simplified page management experience within the Persona Bar, which is exposed to Content Managers and Editors. \r\n<LI class=li>Made it possible for Content Managers and Editors to create page templates to reuse when creating new site pages. \r\n<LI class=li>Created a new Recycle Bin, which is accessible to Content Managers and Editors. \r\n<LI class=li>Added new content layout module that provides Content Editors with a way to control the layout of the content they are authoring, without requiring a new theme or knowledge of HTML. \r\n<LI class=li>Added preview capabilities for desktop, tablet, and mobile devices. The preview capabilities are exposed at the page level. \r\n<LI class=li>Simplified how pages and content are published and versioned. Also made it more accessible to Content Editors. \r\n<LI class=li>Exposed Google Analytics configuration to Content Manager. </LI></UL>"
+            },
+            {
+                "name":  "product-content-8.0.0",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "8.0.0",
+                "_unixdate_":  "2015-feb-04",
+                "releaseNotes":  "<UL id=top-relnotes-2015-feb-04__ul-relnotes-content-8.0.0 class=ul><LI class=li>All updates included with Evoq Content Basic 8.0.0. \r\n<LI class=li>Added content personalization capabilities. This allows Content Editors to create personalized views of existing pages that are displayed based on a series of rules they define. \r\n<LI class=li>Added connectors to the following external products/services: Box, Dropbox, and Marketo. \r\n<LI class=li>Added a Marketo Forms module which allows forms created in Marketo to be displayed within your Evoq site. </LI></UL>"
+            },
+            {
+                "name":  "product-engage-8.0.0",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "8.0.0",
+                "_unixdate_":  "2015-feb-04",
+                "releaseNotes":  "<UL id=top-relnotes-2015-feb-04__ul-relnotes-engage-8.0.0 class=ul><LI class=li>All updates included with Evoq Content 8.0.0. \r\n<LI class=li>New Content Exchange — Allows you to move or copy content between multiple modules within Social (e.g., turn a topic into a question). \r\n<LI class=li>New Challenges Module — A module that is tied to gaming mechanics to help increase reach beyond your online community through your existing community (Advocacy Marketing). \r\n<LI class=li>New Member Profile — Split the Profile Dashboard module so each piece can be moved around the page. Also added the ability to see a user\'s activity per day (positive scoring only). \r\n<LI class=li>Leaderboard Updates — Simplified settings. Added the ability to control the interval used for display. Previously, the only display interval option was <DFN class=term>lifetime</DFN>. \r\n<LI class=li>Export to Excel — All engagement reports in the dashboard now export to a single Excel file, based on selected date range at the time of the export. \r\n<LI class=li>Custom Date Range Reports — Community managers can now set the start/end dates for reports, in addition to the predefined intervals. \r\n<LI class=li>Spectators — People who have viewed but not engaged with content are now tracked in the dashboard reports. \r\n<LI class=li>Asset Manager — A file manager in the Persona Bar (what the community manager sees) also allows management of files of specific users (as a manager). \r\n<LI class=li>Activity Stream — New option to group similar items in the stream. Example: If User A earned Badge X, pictures of up to 3 other users who also recently earned the same badge are displayed. \r\n<LI class=li>Integrated mechanics / actions with CMS-related activities (edited module or page, created page or module, edited content, etc.). \r\n<LI class=li>Discussions — Added support for attachments. Requires access permissions. \r\n<LI class=li>Events — Added .ics link, so users can add the viewed event to their calendar. \r\n<LI class=li>Answers — Moderators can now see who voted on a question or answer. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.3.4",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.3.4",
+                "_unixdate_":  "2014-nov-12",
+                "releaseNotes":  "<UL id=top-relnotes-2014-nov-12__ul-relnotes-platform-7.3.4 class=ul><LI class=li>Fixed issue where site settings were not updating correctly in multi-language installations. \r\n<LI class=li>Fixed issue where partial site templates were not working correctly with child sites. \r\n<LI class=li>Fixed issue where links created in Telerik RadEditor were not correct. \r\n<LI class=li>Fixed issue where search results might be duplicated. \r\n<LI class=li>Fixed issue where user could not change default value for a profile property. \r\n<LI class=li>Fixed issue where a file uploaded from the web is not visible in the Host File Management. \r\n<LI class=li>Fixed issue where ControlBarController returned invalid JSON. \r\n<LI class=li>Fixed issue where you couldn\'t add a module in a spanish language site. \r\n<LI class=li>Fixed issue where a clustered index was missing from a search table. \r\n<LI class=li>Fixed issue where uploading an ICO file failed. \r\n<LI class=li>Fixed issue where HTML Editor Permissions were not working correctly. \r\n<LI class=li>Fixed issue where popups were not centered on the screen. \r\n<LI class=li>Fixed issue where popup iframe is not initialized correctly. \r\n<LI class=li>Fixed issue where AUM was not correctly handling 301 redirects. \r\n<LI class=li>Fixed issue where multiple region/country controls in a profile did not work correctly. \r\n<LI class=li>Added ability to save localized lists to resource file. \r\n<LI class=li>Added method to remove all subscriptions from a ContentItem. </LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/137325"
+            },
+            {
+                "name":  "product-content-7.3.4",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "7.3.4",
+                "_unixdate_":  "2014-nov-12",
+                "releaseNotes":  "<UL id=top-relnotes-2014-nov-12__ul-relnotes-content-7.3.4 class=ul><LI class=li>All updates included with DNN Platform 7.3.4. \r\n<LI class=li>Fixed issue where the HTML module was set to draft mode after clicking the publish button without making changes. \r\n<LI class=li>Fixed issue that cause the file download statistics to not render the correct information. \r\n<LI class=li>Fixed timeout issue in GetAggregatedFile that was causing a 500 error. \r\n<LI class=li>Fixed issue where an authentication pop up was shown after viewing file properties. \r\n<LI class=li>Fixed issue where the URL of a server was not updated after changing it in the Manage Webservers Page. </LI></UL>"
+            },
+            {
+                "name":  "product-engage-7.3.4",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "7.3.4",
+                "_unixdate_":  "2014-nov-12",
+                "releaseNotes":  "<UL id=top-relnotes-2014-nov-12__ul-relnotes-engage-7.3.4 class=ul><LI class=li>Comments now convert URLs to clickable links (Activity Stream). \r\n<LI class=li>Added ability to include video in wall posts (Activity Stream). \r\n<UL class=ul>\r\n<LI class=li>Links from Youtube/Vimeo and others using Open Graph Protocol have preview and iframe embedded image on publish. </LI></UL>\r\n<LI class=li>Now pulling Open Graph Protocol data when URLs are typed/pasted into wall posts (Activity Stream). \r\n<LI class=li>Added ability for moderators to accept an answer for a question author (Answers). \r\n<LI class=li>Added capability to de-select an accepted answer (Answers). \r\n<LI class=li>Added an add entry button to top portion of module, now consistent with other Social modules (Blogs). \r\n<LI class=li>Now including primary image as part of RSS feed content for entry, if available (Blogs). \r\n<LI class=li>Added ability to moderate new events (Events). \r\n<LI class=li>Added support for commenting (Wiki). \r\n<UL class=ul>\r\n<LI class=li>Also added privileges for commenting unmoderated, editing own comments and integrated with gaming mechanics. </LI></UL>\r\n<LI class=li>Added edit own comment privileges across all Social modules. \r\n<LI class=li>Made publishing experience consistent across Social modules. \r\n<UL class=ul>\r\n<LI class=li>Approval checkbox in UI when applicable, single button instead of two. </LI></UL>\r\n<LI class=li>Added auto-subscribe capability throughout Social modules (when commenting, positive voting, etc.). \r\n<LI class=li>Performance updates: Analytics, Activity Stream, Group Spaces, Base platform. \r\n<LI class=li>Added search tracking mechanics action to each module. \r\n<LI class=li>Improved experience on Windows Phone 8 devices. \r\n<LI class=li>Changed mobile modals to look inline. \r\n<LI class=li>Changed chart axis scaling in dashboard to make better use of space. \r\n<LI class=li>Added Sitemap providers for the 6 main modules (SEO). \r\n<LI class=li>Made paging links in modules use proper anchor tags (SEO). </LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.3.3",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.3.3",
+                "_unixdate_":  "2014-oct-01",
+                "releaseNotes":  "<UL id=top-relnotes-2014-oct-01__ul-relnotes-platform-7.3.3 class=ul><LI class=li>Enhanced DDR Menu to allow menus to be filtered by page tags. \r\n<LI class=li>Enhanced messaging system to support additional tokens. \r\n<LI class=li>Enhanced core library to include extension methods for creating/manipulating XML documents. \r\n<LI class=li>Fixed issue where notifications were not updated without a page refresh. \r\n<LI class=li>Fixed issue where site management was not working correctly with site skins. \r\n<LI class=li>Fixed issue where upgrades can fail due to a versioning issue. \r\n<LI class=li>Fixed issue where foldermanager was inefficient in iterating child folders and files in a given folder. \r\n<LI class=li>Fixed issues where RadEditor provider did not work correctly in IE11. \r\n<LI class=li>Fixed issue where custom page URLs were not properly formatted. \r\n<LI class=li>Fixed issue where page settings were not properly saved for localized pages. \r\n<LI class=li>Fixed issue where sample Razor script would list all users in an installation. \r\n<LI class=li>Fixed issue where improper module manifest can break extensions page. \r\n<LI class=li>Fixed issue where social modules did not update search index appropriately. \r\n<LI class=li>Fixed issue where malformed profile urls or profile pages for deleted users caused error in event log. \r\n<LI class=li>Fixed issue where upgrades failed for case sensitive SQL collations. \r\n<LI class=li>Fixed issue where reordering tabs in one portal affected tab order in other portals. \r\n<LI class=li>Security: \r\n<UL class=ul>\r\n<LI class=li>Failure to validate user messaging permissions. </LI></UL></LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/134695"
+            },
+            {
+                "name":  "product-content-7.3.3",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "7.3.3",
+                "_unixdate_":  "2014-oct-01",
+                "releaseNotes":  "<UL id=top-relnotes-2014-oct-01__ul-relnotes-content-7.3.3 class=ul><LI class=li>All updates included with DNN Platform 7.3.3. \r\n<LI class=li>Fixed issue that was causing an error being logged when updating documents with workflow. \r\n<LI class=li>Implemented new functionality that allows users to find documents using keywords in the file metadata. \r\n<LI class=li>Fixed issue that was causing the search priority in documents to not function correctly. \r\n<LI class=li>Improved performance during document indexing to reduce CPU usage. \r\n<LI class=li>Fixed issue that was causing slashes to be removed when using advanced URL functionality. \r\n<LI class=li>Fixed issue that was causing URLs to not be updated successfully when updating the value from the Manage Web Servers Settings. </LI></UL>"
+            },
+            {
+                "name":  "product-engage-7.3.3",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "7.3.3",
+                "_unixdate_":  "2014-oct-01",
+                "releaseNotes":  "<UL id=top-relnotes-2014-oct-01__ul-relnotes-engage-7.3.3 class=ul><LI class=li>Enhanced the Community Manager Experience: \r\n<UL class=ul>\r\n<LI class=li>Created a new control panel that replaces Social Dashboard and Gaming Mechanics Administration. \r\n<LI class=li>Added additional analytic tracking and reporting options. \r\n<LI class=li>Added community health indicators. \r\n<LI class=li>Added ability to manage users. \r\n<LI class=li>Surfaced tasks in this area. \r\n<LI class=li>Centralized community setting management. </LI></UL>\r\n<LI class=li>Enabled Friendly URLs for the main 6 content oriented modules (great for SEO, also avoids duplicate page titles; cid/## will become /my-content-title). \r\n<LI class=li>Surfaced comment moderation in additional areas (Discussions, Events and Ideas). \r\n<LI class=li>Added ability to report a user which results in notifications to moderators and community managers. \r\n<UL class=ul>\r\n<LI class=li>Users can be removed from the profile area as well. </LI></UL>\r\n<LI class=li>Added Upcoming events view in Social Events and made it the default view, shows only events currently in progress or scheduled in the future. \r\n<LI class=li>Added ability to delete a user from the user\'s profile page (this is a soft-delete) as well as promote them to a moderator role. \r\n<LI class=li>Updated search control in the seven social modules that use it to be a companion module, and thus optional to show/hide for site administrators and page editors. \r\n<UL class=ul>\r\n<LI class=li>This also exposes a new <SPAN class=\"ph uicontrol\">create</SPAN> button in the left hand footer of those modules too, to enable creation when search is not displayed (or without requiring a scroll to top for end users). </LI></UL></LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.3.2",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.3.2",
+                "_unixdate_":  "2014-aug-14",
+                "releaseNotes":  "<UL id=top-relnotes-2014-aug-14__ul-relnotes-platform-7.3.2 class=ul><LI class=li>Fixed backwards compatibility issue with 3rd party control panels. \r\n<LI class=li>Fixed issue in the drag and drop functionality of the File Uploader in IE 11 and Safari. \r\n<LI class=li>Fixed issue where users were able to create pages with the same name. \r\n<LI class=li>Fixed issue that affected older versions of DNN that do not include the maxAllowedContentLength during upgrade. \r\n<LI class=li>Fixed issue that stopped some skins from being upgraded to newer versions. \r\n<LI class=li>Fixed issue that randomly showed an unexpected error during user registration. \r\n<LI class=li>Fixed runaway threads that caused high CPU usage. \r\n<LI class=li>Implemented new functionality that resizes large images posted on the Journal. \r\n<LI class=li>Modified the API so that getModuleDefinitions uses the Definition Name and not the Friendly Name. \r\n<LI class=li>Fixed issue where the page size setting in the user account did not persist after update. \r\n<LI class=li>Fixed issue where share assemblies were removed after uninstalling 3rd party modules. \r\n<LI class=li>Fixed issue where the LoadQueueFromTimer did not pass the IISAppName. \r\n<LI class=li>Fixed CDN setting issue for JavaScript libraries. \r\n<LI class=li>Fixed issue in DAL2 when SQL started with <CODE class=\"ph codeph\">WITH</CODE>. \r\n<LI class=li>Fixed issue in the menu that made IE in Windows Phone OS to not work properly. \r\n<LI class=li>Fixed issue where the URL Parameter in Google Analytics was not being used. \r\n<LI class=li>Security: \r\n<UL class=ul>\r\n<LI class=li>Improved captcha logic against automated registration attacks </LI></UL></LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/127592"
+            },
+            {
+                "name":  "product-content-7.3.2",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "7.3.2",
+                "_unixdate_":  "2014-aug-14",
+                "releaseNotes":  "<UL id=top-relnotes-2014-aug-14__ul-relnotes-content-7.3.2 class=ul><LI class=li>All updates included with DNN Platform 7.3.2. \r\n<LI class=li>Improved Captcha logic and mitigated against automated registration attacks. \r\n<LI class=li>Changed user biography field to be a multi-line text box instead of rich text. \r\n<LI class=li>Changed to hide the profile page of an unverified user. \r\n<LI class=li>Added <CODE class=\"ph codeph\">rel=nofollow</CODE> on Login and Register links. \r\n<LI class=li>Show User Folder Path for Administrators. \r\n<LI class=li>Fix for Layout on User Profile Page using SSL. \r\n<LI class=li>Fixed issue with blurry profile pictures on Journal. </LI></UL>"
+            },
+            {
+                "name":  "product-engage-7.3.2",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "7.3.2",
+                "_unixdate_":  "2014-aug-14",
+                "releaseNotes":  "<UL id=top-relnotes-2014-aug-14__ul-relnotes-engage-7.3.2 class=ul><LI class=li>Introduced Group Spaces and Directory which provide an enhanced set of features and options for social groups versus previous releases. \r\n<UL class=ul>\r\n<LI class=li>Group Directory allows groups to be searched, created, tagged, moderated and managed in a fashion similar to the rest of Evoq Social and it is also tightly integrated with gaming mechanics. \r\n<LI class=li>Group Spaces provides more tools for group owners and administrators to help potential members find their groups (if public), as well as ways to invite new members through notifications or email. </LI></UL>\r\n<LI class=li>The ability to see who liked a comment has been surfaced across the modules as well as the activity stream. \r\n<LI class=li>Simplified the blog entry authoring experience. \r\n<LI class=li>Added the ability to associate a primary image with a blog entry, this is then utilized by list views and Social Sharing. \r\n<LI class=li>Unauthenticated users can now post a comment in the blog, and either sign in or register as they submit the comment. \r\n<LI class=li>Community Managers, or anyone with edit permissions, can now see who voted on an Idea and how many votes they committed. \r\n<LI class=li>The activity stream now does a check to see if new content was added to the stream since the user has viewed the page, if new content was added it lets them know. \r\n<LI class=li>Added additional scoring actions to allow rewarding of likes across the various modules. \r\n<LI class=li>Updated several modules to be responsive which weren\'t handled in the previous release: User Badges, Leaderboard, My Status (Expanded view for profile). \r\n<LI class=li>The CSS across modules has been reduced, simplified and refactored. \r\n<LI class=li>Made the analytics task run in batches in situations where lots of data was introduced in a short period of time (this can be a new site or import situations). </LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.3.1",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.3.1",
+                "_unixdate_":  "2014-jun-26",
+                "releaseNotes":  "<UL id=top-relnotes-2014-jun-26__ul-relnotes-platform-7.3.1 class=ul><LI class=li>Updated jQuery.RequestRegistration to also include jquery-migrate, which many third-party skins rely on. \r\n<LI class=li>Added back missing API methods to preserve binary compatibility. \r\n<LI class=li>Update 51 Degrees V3 to the latest assembly and data file. \r\n<LI class=li>Fixed case sensitivity issues with the scheduler and server names. \r\n<LI class=li>Rollback change to exclude portal.css by default. \r\n<LI class=li>Rollback to previous version of SharpZipLib assembly to preserve backward compatibility. \r\n<LI class=li>Fixed permission grid so that you can add additional roles. \r\n<LI class=li>Fixed user profile page alignment issues. \r\n<LI class=li>Fixed upgrade issue installing Knockout. \r\n<LI class=li>Fixed refactoring issue that would cause issues creating new pages. </LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/123913"
+            },
+            {
+                "name":  "product-content-7.3.1",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "7.3.1",
+                "_unixdate_":  "2014-jun-26",
+                "releaseNotes":  "<UL id=top-relnotes-2014-jun-26__ul-relnotes-content-7.3.1 class=ul><LI class=li>All updates included with DNN Platform 7.3.1. \r\n<LI class=li>Upgraded to the latest Device Detection Library (51 degrees). \r\n<LI class=li>Fixed case-sensitive server check in webfarm management. \r\n<LI class=li>Changed 7.3 behaviour to always include portal.css. \r\n<LI class=li>Changed of legacy API methods from removed to deprecated. \r\n<LI class=li>Fixed issue in Permissions grid when using \'All Roles\'. \r\n<LI class=li>Replaced ICSharpCode.SharpZipLib.dll with SharpZipLib.dll. \r\n<LI class=li>Updated old jQuery Request Registration to always include jquery-migrate. </LI></UL>"
+            },
+            {
+                "name":  "product-engage-7.3.1",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "7.3.1",
+                "_unixdate_":  "2014-jun-26",
+                "releaseNotes":  "<UL id=top-relnotes-2014-jun-26__ul-relnotes-engage-7.3.1 class=ul><LI class=li>Made comment experience consistent across modules and Activity Stream, where applicable. \r\n<LI class=li>Enhanced Like Experience to provide more details in Activity Stream and several Social modules. \r\n<LI class=li>Enhanced Answers and Wiki list UI\'s for usability. \r\n<LI class=li>Moved to Platform subscriptions, in upgrade scenarios the data is migrated. \r\n<LI class=li>Notifications in Social are now streamlined, these now include direct links to all content. \r\n<LI class=li>Added Social Editor and integrated into 6 main Social modules. \r\n<LI class=li>Performance Improvements around SQL queries, space usage and reduced amount of data sent to the browser across all Social modules. \r\n<LI class=li>Added mobile support for most user facing Social modules. \r\n<LI class=li>Additional minor bug fixes and improvements were also part of the release. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.3.0",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.3.0",
+                "_unixdate_":  "2014-jun-11",
+                "releaseNotes":  "<UL id=top-relnotes-2014-jun-11__ul-relnotes-platform-7.3.0 class=ul><LI class=li>Page markup reduction - intelligent resource management \r\n<UL class=ul>\r\n<LI class=li>Removal of unnecessary Viewstate — Home page 4005 bytes down to 90 bytes. \r\n<LI class=li>YSlow base score improvement (7.2.2 80/Grade C -&gt; 7.3.0 93/Grade A). \r\n<LI class=li>25% reduction in page size for home page requests. </LI></UL>\r\n<LI class=li>Extra caching and streamlining of database calls. \r\n<UL class=ul>\r\n<LI class=li>Granular management of objects in cache to reduce cache rebuilds. \r\n<LI class=li>Reduced database activity in high transaction scenarios. \r\n<LI class=li>Tested sites with up to 100 portals — no significant performance impact. </LI></UL>\r\n<LI class=li>New 51 Degrees implementation. \r\n<UL class=ul>\r\n<LI class=li>New lookup algorithm is 100x faster. \r\n<LI class=li>Zero memory consumption. \r\n<LI class=li>Can be disabled if required. </LI></UL>\r\n<LI class=li>Admin UI Updates for increased Admin page load speed. \r\n<UL class=ul>\r\n<LI class=li>File picker/upload control updated for drag/drop. \r\n<LI class=li>User Permissions Grid optimized for active roles only. </LI></UL>\r\n<LI class=li>Add Module Control bar improvements. \r\n<UL class=ul>\r\n<LI class=li>Bookmarking for favorite Modules. \r\n<LI class=li>Search feature for finding modules. \r\n<LI class=li>Lazy load feature to speed panel load. \r\n<LI class=li>Improved scrolling. </LI></UL>\r\n<LI class=li>Scheduled tasks improvement for better control over jobs. \r\n<UL class=ul>\r\n<LI class=li>More granular control over jobs including ability to set a start date/time. \r\n<LI class=li>Delayed initialization for faster application startup. </LI></UL>\r\n<LI class=li>Folder Provider Improvements. \r\n<UL class=ul>\r\n<LI class=li>Ability to create new sites with the site root Folder on remote storage — separating user data from application data. Other Improvements. </LI></UL></LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/121844"
+            },
+            {
+                "name":  "product-content-7.3.0",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "7.3.0",
+                "_unixdate_":  "2014-jun-11",
+                "releaseNotes":  "<UL id=top-relnotes-2014-jun-11__ul-relnotes-content-7.3.0 class=ul><LI class=li>All updates included with DNN Platform 7.3.0. \r\n<LI class=li>Web Server Control. \r\n<UL class=ul>\r\n<LI class=li>Simplified Web Server Management UI. \r\n<LI class=li>Eliminating Site Alias dependency for Web Servers. \r\n<LI class=li>Multiple Server Groups for staging/production using backup/restored database. \r\n<LI class=li>Optimized for Cloud based systems with dynamic servers in autoscale. </LI></UL>\r\n<LI class=li>Scheduled tasks improvement for better control over jobs. \r\n<UL class=ul>\r\n<LI class=li>Automatically transfer control of single-server tasks to new servers when server removed from webfarm. </LI></UL>\r\n<LI class=li>Folder Provider Improvements. \r\n<UL class=ul>\r\n<LI class=li>Optimized Synchronization using ETags for Cloud Providers reduces synch time from minutes to seconds. \r\n<LI class=li>Saving/Restoring modules with content and settings. </LI></UL>\r\n<LI class=li>New Page Publish option for pushing Admin-only pages to All Users with single click. \r\n<LI class=li>Many UI and functionality bugs fixed. </LI></UL>"
+            },
+            {
+                "name":  "product-engage-7.3.0",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "7.3.0",
+                "_unixdate_":  "2014-jun-11",
+                "releaseNotes":  "<UL id=top-relnotes-2014-jun-11__ul-relnotes-engage-7.3.0 class=ul><LI class=li>Added ability to moderate new comments in Blogs. \r\n<LI class=li>Added ability to edit comments and replies within the 6 main user driven content modules (as comment author, moderator, etc.). \r\n<LI class=li>Added group mode support to additional modules (Answers, Wiki, Blogs). \r\n<LI class=li>Added ability to delete Wiki articles. \r\n<LI class=li>Improved date and time selection in Blogs (to match Social Events). \r\n<LI class=li>Corrected several problems in multi-culture installs. \r\n<LI class=li>Additional minor bug fixes and improvements were also part of the release. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.2.2",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.2.2",
+                "_unixdate_":  "2014-mar-19",
+                "releaseNotes":  "<UL id=top-relnotes-2014-mar-19__ul-relnotes-platform-7.2.2 class=ul><LI class=li>Fixed issue where Display Name was editable when when a Display Name format was specified. \r\n<LI class=li>Fixed issue with Portal Templates and modules that are configured to Display On All Pages. \r\n<LI class=li>Enhanced so that system confirmation is required when Unregistering a User Account. \r\n<LI class=li>Changed default module output caching provider from disk to memory. \r\n<LI class=li>Ensure that system modules are identified in the system so they cant be uninstalled. \r\n<LI class=li>Added a querystring parameter that allows you to hide the control panel. \r\n<LI class=li>Added a detailed message when deleting a page with child pages. \r\n<LI class=li>Added an alternate link with \"hreflang\" to sitemap.aspx for multilingual websites. \r\n<LI class=li>Disabled autocomplete on password strength controller. \r\n<LI class=li>Advanced search tags allow html/script and can break rendering. \r\n<LI class=li>Fixed issue where exceptions were thrown if old user profiles are missing during indexing. \r\n<LI class=li>Fixed Journal API to allow edited Comments to be liked. \r\n<LI class=li>If a custom Register page is specified, prevent user from browsing to Register.aspx. \r\n<LI class=li>Fixed JavaScript error in Digital Asset Manager module in IE8. \r\n<LI class=li>Changed tokens in module creator templates so they do not show up as errors in Visual Studio. \r\n<LI class=li>Added a confirmation prompt when deleting modules from Page Management. \r\n<LI class=li>Fixed Site Management so you can filter by \"ALL\". \r\n<LI class=li>Fixed thread safety issue in DotNetNuke.Common.Utilities.ImageUtils where imgWidth and imgHeight were statics. \r\n<LI class=li>Fixed link to app gallery. \r\n<LI class=li>Fixed ability to specify an Upload To location when uploading files. \r\n<LI class=li>Fixed issue with IconBar in DNN 7.2.0+. \r\n<LI class=li>Reduced scope of dnn.DropDownList.css. \r\n<LI class=li>Improved performance of Update Host Settings which caused too many cached objects to be removed. \r\n<LI class=li>Fixed Password Reset so that it is hidden after a duccessful entry. \r\n<LI class=li>Improved editing style for SQL Module. \r\n<LI class=li>Allow Default skins to be removed. \r\n<LI class=li>Fixed exception when Editing a registered user for the first time. \r\n<LI class=li>Allowed sub*sub menus to be accessible in default skin. \r\n<LI class=li>Optimized indexes on Eventlog Table. \r\n<LI class=li>Allow password banned list to be disabled. \r\n<LI class=li>Allow Page URLs to contain spaces. \r\n<LI class=li>Fixed numerous typos in resource files. \r\n<LI class=li>Optimized indexes on TabModules table. \r\n<LI class=li>Optimized indexes on Tabs table. \r\n<LI class=li>Optimized indexes on Permissions tables. \r\n<LI class=li>Fixed deny permissions for Folder. \r\n<LI class=li>Added ability to add new Folder Provider. \r\n<LI class=li>Fixed error so that non*members can join a Private Group. \r\n<LI class=li>Optimized logic of numerous stored procedures and views. \r\n<LI class=li>Allow a custom URL with different domain. \r\n<LI class=li>Allow host user to set max upload size. \r\n<LI class=li>Fixed issue when switchinf to layout mode on Site Settings page. \r\n<LI class=li>Allow CAPTCHA to be used on reset password page. \r\n<LI class=li>Fixed Profile Picture Handler to work in SSL Offloading configuration. \r\n<LI class=li>Enhanced DDR Menu to be Touch Friendly for Mobile and Tablets. \r\n<LI class=li>Added basic Robots.txt in root folder. \r\n<LI class=li>Fixed Password Retrieval issue. \r\n<LI class=li>Fixed issue where Language detection was not working with advanced URL management. \r\n<LI class=li>Fixed issue where IUpgradable did not fire from a Library type extension. \r\n<LI class=li>Enhanced file upload control to support folders with large volumes of files. \r\n<LI class=li>Enhanced file upload to be able to upload from URL. \r\n<LI class=li>Fixed issue where additional parameters passed as string array in NavigateURL() and EditUrl() are ignored. \r\n<LI class=li>Optimized search query sent to Lucene. \r\n<LI class=li>Enhancement to allow separate modules to use the same module definition name. </LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/119857"
+            },
+            {
+                "name":  "product-content-7.2.2",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "7.2.2",
+                "_unixdate_":  "2014-mar-19",
+                "releaseNotes":  "<UL id=top-relnotes-2014-mar-19__ul-relnotes-content-7.2.2 class=ul><LI class=li>All updates included with DNN Platform 7.2.2. \r\n<LI class=li>Added new Print button to Commerce receipts. \r\n<LI class=li>Implemented change to allow Vanity URLs in unicode based languages. \r\n<LI class=li>Implemented change to allow redirected pages and their child pages to be copied. \r\n<LI class=li>Fixed various installation errors. \r\n<LI class=li>Fixed error when javascript CDN enabled. \r\n<LI class=li>Fixed issue with adding Folder Types in File Manager. \r\n<LI class=li>Fixed error for search results on external DNN websites. \r\n<LI class=li>Fixed problem with incorrect extensions image path breaking Extensions page. \r\n<LI class=li>Fixed issue switching to/from SSL using client redirect. </LI></UL>"
+            },
+            {
+                "name":  "product-engage-7.2.2",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "7.2.2",
+                "_unixdate_":  "2014-mar-19",
+                "releaseNotes":  "<UL id=top-relnotes-2014-mar-19__ul-relnotes-engage-7.2.2 class=ul><LI class=li>Localized additional items that were not localizable before (for translations) and corrected several bugs found when running in other languages. \r\n<LI class=li>Improved the date and time selection experience in Social Events. \r\n<LI class=li>Added content notifications (for people subscribed to a specific Question) for up-votes. \r\n<LI class=li>Added content notifications (for people subscribed to a specific Idea) for votes assigned. \r\n<LI class=li>Added ability to manage which companion modules (like Answers Subscriptions) are displayed on the page in an intuitive fashion. \r\n<LI class=li>Separated leaderboard templates from <DFN class=term>mode</DFN> behavior, now you can choose ranking or top contributors mode and any template. \r\n<LI class=li>Corrected several problems in Leaderboard and My Status when used across multiple portals. \r\n<LI class=li>Additional minor bug fixes and improvements were also part of the release. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.2.1",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.2.1",
+                "_unixdate_":  "2014-jan-21",
+                "releaseNotes":  "<UL id=top-relnotes-2014-jan-21__ul-relnotes-platform-7.2.1 class=ul><LI class=li>Fixed issue where .dnn7 manifest was not being utilized in module installation process. \r\n<LI class=li>Fixed issue where restored user could not change his profile avatar. \r\n<LI class=li>Added .ashx to regex filter for Do Not Redirect rule in advanced url management. \r\n<LI class=li>Added various SQL database optimizations contributed by Sebastian Leupold. \r\n<LI class=li>Fixed issue with rich text editor in Newsletters in Firefox. \r\n<LI class=li>Fixed copy page so that all properties are copied. \r\n<LI class=li>Fixed UI issue when managing Authentication providers. \r\n<LI class=li>Fixed browser compatibility issue when managing Available Modules in Site Settings. \r\n<LI class=li>Fixed defaults of billing and trial values when adding security roles. \r\n<LI class=li>Added a 404 page to the blank site template. \r\n<LI class=li>Fixed issue where config element in module manifest throws errors when XML Merge script is in separate file. \r\n<LI class=li>Fixed terminology when changing password as Administrator. \r\n<LI class=li>Fixed Console module so that it ignores pages that are not intended to be included in the menu. \r\n<LI class=li>Fixed access control so that Deny permissions always ovveride Grant permissions. \r\n<LI class=li>Fixed access control so that Navigate permission can be denied. \r\n<LI class=li>Enhanced permissions grid so that full control specification can not be overridden for specific permissions. \r\n<LI class=li>Enhanced control panel so that Stay In Edit Mode option is always available. \r\n<LI class=li>Make application FIPS compliant. \r\n<LI class=li>Fixed issue preventing DAM from being used in Group mode. \r\n<LI class=li>Fixed javascript issue in DNNMenuProvider. \r\n<LI class=li>Fixed access control so that module level permissions are observed for all individualpermission types. \r\n<LI class=li>Disabled field validation when changing countries during registration. \r\n<LI class=li>ModuleSettingsPresenterBased now instantiates ModuleSettings and TabModuleSettings. \r\n<LI class=li>Fixed exception when composing new message to user. \r\n<LI class=li>GetUserRoles will now return an empty list if the user is not valid. \r\n<LI class=li>Made Group pending notification URLs absolute. \r\n<LI class=li>Allow a user using the Windows Live authentication provider to be a member of multiple portals. \r\n<LI class=li>Removed inline style in Logo skin object. \r\n<LI class=li>Fixed Member Directory issue where the same user is displayed multiple times. \r\n<LI class=li>Added stored procedure to prevent error when uninstalling dashboard extension. \r\n<LI class=li>Improved Newsletters so you can send to Social Groups as well as Security Roles. \r\n<LI class=li>Fixed issue where page with a future publish date can not be edited. \r\n<LI class=li>Allow a user to specify both a date and time for publishing in module settings. \r\n<LI class=li>Fixed issue where UserInfo object did not contain LastIPAddress. \r\n<LI class=li>Fixed Site Group behavior so that Site Settings are populated with current portal properties. \r\n<LI class=li>Improved performance of loading folders that contain a large volume of files. \r\n<LI class=li>Fixed scheduler so that Application_Start is recognized when using Request mode. \r\n<LI class=li>Fixed search by tag functionality. \r\n<LI class=li>Fixed Users Online so that it is thread-safe. \r\n<LI class=li>Enhancement so that Google Analytics does not track admin or host user activity. \r\n<LI class=li>Enhanced Test SMTP options so that it tells you who the email was sent from and to. \r\n<LI class=li>Fixed issue preventing the closing of the \"Welcome to Your Installation\" pop up. \r\n<LI class=li>Search crawler enhanced to include host pages. \r\n<LI class=li>Fixed issue causing SendMail to crash when sending blank value for to, cc or bcc. \r\n<LI class=li>Fixed user profile so that users can view their friends profile info if security is set to Friends. \r\n<LI class=li>Fixed Splash page behavior. \r\n<LI class=li>Fixed issues where updating a journal item was creating a new record instead of updating existing one. \r\n<LI class=li>Fixed issue where upgrading from an older version was not cleaning up auth systems, providers and optional modules. \r\n<LI class=li>Enhanced uploading new extension experience to show progress indicator. \r\n<LI class=li>Fixed issue where User could not reply to Message. \r\n<LI class=li>Added new host setting to optionally disable critical error reports displayed in page. \r\n<LI class=li>Fixed upgrade issue if previous version of module creator was installed. \r\n<LI class=li>Fixed an issue where user folders were not deleted when a user was deleted. </LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/117545"
+            },
+            {
+                "name":  "product-content-7.2.1",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "7.2.1",
+                "_unixdate_":  "2014-jan-21",
+                "releaseNotes":  "<UL id=top-relnotes-2014-jan-21__ul-relnotes-content-7.2.1 class=ul><LI class=li>All updates included with DNN Platform 7.2.1. \r\n<LI class=li>Implemented new functionality that allows users to open and edit Office documents on the server from the File Manager. \r\n<LI class=li>Implemented new functionality that allows users to set the root folder in the File Manager. \r\n<LI class=li>Implemented new functionality that allows users to share links to a folder or tag. \r\n<LI class=li>Implemented new functionality where if a File Manager is added to the profile page, the documents are filtered per user. \r\n<LI class=li>Implemented various performance enhancements in the File Manager. \r\n<LI class=li>Enhanced the user switcher functionality so that it can also be used by administrators (not only super users). \r\n<LI class=li>Fixed issue where only system administrators were able to approve documents in the File Manager. \r\n<LI class=li>Fixed issue where the update and cancel buttons did not close the pop up in the MyModules module. \r\n<LI class=li>Fixed issue where large files were not being uploaded to the File Manager. \r\n<LI class=li>Fixed issue where modules were still being shared after a site was removed from a group. </LI></UL>"
+            },
+            {
+                "name":  "product-engage-7.2.1",
+                "_fullname_":  "Evoq Engage",
+                "_ver_":  "7.2.1",
+                "_unixdate_":  "2014-jan-21",
+                "releaseNotes":  "<UL id=top-relnotes-2014-jan-21__ul-relnotes-engage-7.2.1 class=ul><LI class=li>All 7.1 Platform Enhancements: \r\n<UL class=ul>\r\n<LI class=li>All user facing social modules now take full advantage of the new Search. </LI></UL>\r\n<LI class=li>Answers: \r\n<UL class=ul>\r\n<LI class=li>New feature: Inline comment support added for both questions and answers. \r\n<LI class=li>Additional mechanics activities are logged. </LI></UL>\r\n<LI class=li>Azure Compatibility. \r\n<LI class=li>Blogs: \r\n<UL class=ul>\r\n<LI class=li>Pinned blog entry support (1.0.2). \r\n<LI class=li>More control over HTML layout of blog list view items (1.0.2). \r\n<LI class=li>Enhanced \'blogger bar\' to include drop down selector. </LI></UL>\r\n<LI class=li>Design updates to provide a more consistent experience across all social modules. \r\n<LI class=li>Ideas: \r\n<UL class=ul>\r\n<LI class=li>Locking enhanced for various statuses to disallow voting. \r\n<LI class=li>Additional mechanics activities are logged. </LI></UL>\r\n<LI class=li>Profile Dashboard enhanced to allow more control of influence/engagement calculations. \r\n<LI class=li>Related Content updated to support tags in list views (when cid is not present in URL). \r\n<LI class=li>Social Events now also integrated with Bing maps (1.0.2). \r\n<LI class=li>Subscriptions: \r\n<UL class=ul>\r\n<LI class=li>New feature: Module content notifications (subscribe to new questions, enties, topics, ideas, events, articles). \r\n<LI class=li>Subscribe option added to several modules where users author content (ask question, start topic, create idea). </LI></UL>\r\n<LI class=li>Toast skin object updated to be proper skin object so it can be used with HTML skinning. \r\n<LI class=li>New feature: Wiki (A new module slightly different from a traditional Wiki). \r\n<UL class=ul>\r\n<LI class=li>Gaming and reputation mechanics integrated from the start (like all other social modules). \r\n<LI class=li>Pages are called articles to avoid ambiguity with pages and tabs in the platform. \r\n<LI class=li>Use\'s Dnn\'s page design setup to move away from Wiki content templates by exposing companion modules. \r\n<LI class=li>Utilizes cor metadata API. \r\n<LI class=li>Users HTML and not Wiki markup or markdown (except for page links). \r\n<LI class=li>Table of contents automatically build (in comanion module) based on h tags. </LI></UL>\r\n<LI class=li>Implements new content revisions API for change management. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.2.0",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.2.0",
+                "_unixdate_":  "2013-dec-04",
+                "releaseNotes":  "<DL id=top-relnotes-2013-dec-04__dl-relnotes-platform-7.2.0 class=dl><DT class=\"dt dlterm\">Application features \r\n<DD class=dd>\r\n<UL class=ul>\r\n<LI class=li>Responsive Design Skin: The Gravity skin was redesigned to use the Bootstrap framework which provides for a fully responsive design out of the box. \r\n<LI class=li>The SQL module has undergone a complete overhaul in 7.2.0 including a new editor and updated query results pane. \r\n<LI class=li>The DNN Module Creator has been incorporated directly into DNN making it easier than ever to get started writing your new DNN extension. \r\n<LI class=li>The DNN Search has been extended in 7.2.0 to include the ability to search users and user profiles (this feature is easily disabled for those who would prefer not to use it). </LI></UL>\r\n<DT class=\"dt dlterm\">Developer features \r\n<DD class=dd>\r\n<UL class=ul>\r\n<LI class=li>JavaScript Library Management: DNN 7.2.0 allows you to install JavaScript libraries as first party extensions. Once installed your module or skin can request that JavaScript library and the platform will automatically add the library into the page. The API mirrors the one used for jQuery and JQuery UI making it very easy to use. \r\n<LI class=li>Code Editor: The new CodeMirror code editor component has been added to DNN to provide a full syntax highlighting code editor when needed. Module developers can incorporate this feature with just a few lines of JavaScript. </LI></UL></DD></DL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/115680"
+            },
+            {
+                "name":  "product-content-7.2.0",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "7.2.0",
+                "_unixdate_":  "2013-dec-04",
+                "releaseNotes":  "<UL id=top-relnotes-2013-dec-04__ul-relnotes-content-7.2.0 class=ul><LI class=li>All updates included with DNN Platform 7.2.0. \r\n<LI class=li>A new customizable Document Viewer module that allows you list documents on a page filtering by folder or tags. \r\n<LI class=li>The DAM module now includes a Group Mode that allows you to easily create a library in a social group. \r\n<LI class=li>The DAM now allows you to edit the properties of multiple documents at the same time. \r\n<LI class=li>You can now track the number of views and downloads of your digital assets. \r\n<LI class=li>The DAM module is now integrated with the subscriptions and notifications functionality to automate the collaboration on your digital assets. \r\n<LI class=li>Fixed issue filtering issue in the User Switcher feature. \r\n<LI class=li>Fixed usability issue in the HTML Module\'s Save Draft workflow. \r\n<LI class=li>Fixed issue in the Digital Assets Manager where an Unknown Server Error was thrown. \r\n<LI class=li>Fixed exception thrown when a page has a malformed URL and Page Output Caching is selected. \r\n<LI class=li>Fixed issue in the Valid Friendly URL Regular Expression functionality where the value entered was not being handled correctly. \r\n<LI class=li>Fixed issue where subfolders were not unzipped correctly when uploading a zipped folder to the Digital Assets Manager. \r\n<LI class=li>Fixed issue where the File Crawler would stop indexing when an error occurs in the Amazon S3 Provider. \r\n<LI class=li>Fixed issue where the Digital Assets Manager\'s Workflow functionality was not available on upgraded sites. \r\n<LI class=li>Fixed issue where a 301 error is thrown when the homepage of a site is access with querystring parameters. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.1.2",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.1.2",
+                "_unixdate_":  "2013-sep-24",
+                "releaseNotes":  "<UL id=top-relnotes-2013-sep-24__ul-relnotes-platform-7.1.2 class=ul><LI class=li>Added the ability to manage the Vanity URL prefix. \r\n<LI class=li>Added the ability to filter members in the member directory by role. \r\n<LI class=li>Fixed issue where the user could inadvertently click the login button multiple times. \r\n<LI class=li>Fixed issues where core classes could not be used in out of process cache provider. \r\n<LI class=li>Fixed issue where profile visibility submenu was not displayed correctly. \r\n<LI class=li>Fixed issue where the member directory was broken when Convert URL to lowercase setting was enabled. \r\n<LI class=li>Fixed issue where password checker didn\'t work with unicode resource strings. \r\n<LI class=li>Fixed issue where ExecuteDataSet had a breaking change in DNN 7.0. \r\n<LI class=li>Fixed issue where Super User could not change personal profile URL. \r\n<LI class=li>Fixed issue where installing site with blank template caused error. \r\n<LI class=li>Fixed issue where upgrades failed when the ProfessionalPreview module is not installed. \r\n<LI class=li>Fixed issue where social media auth providers are not properly filling in profile properties. \r\n<LI class=li>Fixed issue where admin only content was not visible to Super User. \r\n<LI class=li>Fixed issue where user gets an access denied error after password reset. \r\n<LI class=li>Fixed issue where client resource manager failed to minify files. \r\n<LI class=li>Fixed issue where search didn\'t work after adding search results to alternate page. </LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/112531"
+            },
+            {
+                "name":  "product-content-7.1.2",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "7.1.2",
+                "_unixdate_":  "2013-sep-24",
+                "releaseNotes":  "<UL id=top-relnotes-2013-sep-24__ul-relnotes-content-7.1.2 class=ul><LI class=li>All updates included with DNN Platform 7.1.2. \r\n<LI class=li>Added the ability to manage the Vanity URL prefix. \r\n<LI class=li>Added the ability to filter members in the member directory by role. \r\n<LI class=li>Fixed issues where core classes could not be used in out of process cache provider. \r\n<LI class=li>Fixed issue where profile visibility submenu was not displayed correctly. \r\n<LI class=li>Fixed issue where the member directory was broken when Convert URL to lowercase setting was enabled. \r\n<LI class=li>Fixed issue where password checker didn\'t work with unicode resource strings. \r\n<LI class=li>Fixed issue where Super User could not change personal profile URL. \r\n<LI class=li>Fixed issue where installing site with blank template caused error. \r\n<LI class=li>Fixed issue where social media auth providers are not properly filling in profile properties. \r\n<LI class=li>Fixed issue where admin only content was not visible to Super User. \r\n<LI class=li>Fixed issue where user gets an access denied error after password reset. \r\n<LI class=li>Fixed issue where client resource manager failed to minify files. \r\n<LI class=li>Fixed issue where search didn\'t work after adding search results to alternate page. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.1.1",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.1.1",
+                "_unixdate_":  "2013-aug-13",
+                "releaseNotes":  "<UL id=top-relnotes-2013-aug-13__ul-relnotes-platform-7.1.1 class=ul><LI class=li>Fixed issue where vanity URL was not working correctly in FireFox. \r\n<LI class=li>Fixed issue where default Friendly URL setting was missing for the doNotRewriteRegex. \r\n<LI class=li>Fixed issue where language URLs were not working. \r\n<LI class=li>Fixed issue where adding a new page resulted in an error message. \r\n<LI class=li>Added the ability to define a standard prefix to vanity URLs. \r\n<LI class=li>Fixed issue where the unauthenticated role permissions were not being applied. \r\n<LI class=li>Fixed issue where password strength meter was missing for sites upgraded to 7.1. \r\n<LI class=li>Fixed issue where the Search Admin was missing a resx file in the mobile site template. \r\n<LI class=li>Updated RadControls for ASP.Net Ajax to the Q2 2013 release. \r\n<LI class=li>Fixed issue where hard-deleting a user resulted in an error. \r\n<LI class=li>Fixed issue where localization would stop working. \r\n<LI class=li>Fixed issue where progress bar does not show any progress in the Digital Asset Manager. \r\n<LI class=li>Fixed issue where removing a custom page URL causes a redirect to the home page. \r\n<LI class=li>Fixed issue where language aliases are not created when importing a site with content localization. \r\n<LI class=li>Fixed issue where upgrades from 6.1.5 would cause numerous error log entries regarding potentially dangerous request. \r\n<LI class=li>Fixed issue where disabling anonymous authentication with AD provider installed causes 404 error. \r\n<LI class=li>Security: \r\n<UL class=ul>\r\n<LI class=li>Fixed potential reflective xss issue. \r\n<LI class=li>Fixed issue where malformed html may allow XSS. \r\n<LI class=li>Fixed issue that could lead to redirect \'Phishing\' attack. </LI></UL></LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/110757"
+            },
+            {
+                "name":  "product-platform-6.2.9",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "6.2.9",
+                "_unixdate_":  "2013-aug-13",
+                "releaseNotes":  "<UL id=top-relnotes-2013-aug-13__ul-relnotes-platform-6.2.9 class=ul><LI class=li>Security: \r\n<UL class=ul>\r\n<LI class=li>Fixed potential reflective xss issue. \r\n<LI class=li>Fixed issue where malformed html may allow XSS. \r\n<LI class=li>Fixed issue that could lead to redirect \'Phishing\' attack. </LI></UL></LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/110757"
+            },
+            {
+                "name":  "product-content-7.1.1",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "7.1.1",
+                "_unixdate_":  "2013-aug-13",
+                "releaseNotes":  "<UL id=top-relnotes-2013-aug-13__ul-relnotes-content-7.1.1 class=ul><LI class=li>All updates included with DNN Platform 7.1.1. \r\n<LI class=li>Fixed performance issue when creating a site group with a large set of users. \r\n<LI class=li>Fixed issue where an exception was being thrown when viewing documents statistics in Document Library and using IE 10. \r\n<LI class=li>Fixed issue in the Digital Assets Manager Module where empty .txt files were getting deleted. \r\n<LI class=li>Fixed issue that was causing an error in the single sign on functionality when Active Directory was used. \r\n<LI class=li>Added new functionality to the Digital Assets Manager module to allow users to set a default folder type when creating new folders. \r\n<LI class=li>Fixed issue where only the root folder was being extracted when doing a zip upload with the unzip option checked. \r\n<LI class=li>Fixed issue in the Digital Assets Manager module where .xlsx icons were not being shown. \r\n<LI class=li>Fixed issue in the Client Dependency Framework where an exception was thrown when using GethostByAddress. \r\n<LI class=li>Enhanced security in the Journal module so that unverified users cannot access the information. \r\n<LI class=li>Fixed issue in the Digital Assets Manager module where users with full control privileges were not able to upload documents. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.1.0",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.1.0",
+                "_unixdate_":  "2013-jul-09",
+                "releaseNotes":  "<UL id=top-relnotes-2013-jul-09__ul-relnotes-platform-7.1.0 class=ul><LI class=li>Implemented functionality so that users are able to assign custom CSS to pages without modifying the skin. \r\n<LI class=li>Updated to JQuery 1.9.1. \r\n<LI class=li>Implemented auto-complete functinoality in the taxonomy module. \r\n<LI class=li>Updated the page and user selector controls to improve the experience in larger sites with multiple users. \r\n<LI class=li>Implemented a warning message for Azure users when they install a module that does not have the Azure Compatible flag. \r\n<LI class=li>Fixed issue where users were being logged out if switching between www.domain.com and domain.com. \r\n<LI class=li>Fixed issue when exporting and importing a template where content localization is enabled. \r\n<LI class=li>Fixed issue where data was not being cleaned up after removing a folder provider. \r\n<LI class=li>Fixed issue that made modules not to render corectly when module caching was enabled through the Client Resource Management Framework. \r\n<LI class=li>Added support for accents in profile properties. \r\n<LI class=li>Fixed issue where calling the GetUserByVanityUrl function was throwing an error. </LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/108560"
+            },
+            {
+                "name":  "product-platform-6.2.8",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "6.2.8",
+                "_unixdate_":  "2013-jul-09",
+                "releaseNotes":  "<UL id=top-relnotes-2013-jul-09__ul-relnotes-platform-6.2.8 class=ul><LI class=li>Fixed issue where the application throws an Unhandled Error and an HTTP Response Code of 200 when the connection to the database is lost. </LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/108560"
+            },
+            {
+                "name":  "product-content-7.1.0",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "7.1.0",
+                "_unixdate_":  "2013-jul-09",
+                "releaseNotes":  "<UL id=top-relnotes-2013-jul-09__ul-relnotes-content-7.1.0 class=ul><LI class=li>All updates included with DNN Platform 7.1.0. \r\n<LI class=li>Fixed issue in the File Manager page when the user tried to refresh a page using F5. \r\n<LI class=li>Fixed issue where new PDF documents were not indexed by the search crawler. \r\n<LI class=li>Implemented new functionality to roll back changes when enabling Content Localization fails. \r\n<LI class=li>Updated the neat upload assembly that was causing errors when uploading documents to document library. \r\n<LI class=li>Fixed UI issue in Document Library\'s security settings. \r\n<LI class=li>Fixed issue that stopped users from adding attachments from the local drive whens sending messages. \r\n<LI class=li>Fixed issue where admin and host pages were being indexed when crawling the site as an administrator. \r\n<LI class=li>Fixed issue in the linkclick functionality when linking to documents stored in the Amazon S3 provider. \r\n<LI class=li>Replaced the page selector control to improve performance in large websites. \r\n<LI class=li>Fixed UI issue where pop ups were not rendered centered in the page. \r\n<LI class=li>Fixed issue that stopped users from uploading files to Azure from the Image Manager. \r\n<LI class=li>Fixed issue when creating sites from a template. \r\n<LI class=li>Fixed issue where only the first site alias was used when multiple aliases were created. \r\n<LI class=li>Fixed issue where visitors using IE were getting a \"mixed content warning\" when SSL Offloading was enabled. \r\n<LI class=li>Fixed issue when uploading files form the HTML Module to a UNC Folder. \r\n<LI class=li>Fixed issue where folder names were changed to lower case when upgrading Document Library. \r\n<LI class=li>Added the Company Name filed to the Commerce Module. \r\n<LI class=li>Fixed issue that stopped users from uploading mp4 files through the HTML Module. \r\n<LI class=li>Fixed issue where HTML workflow notifications were not sent to Administrators. \r\n<LI class=li>Fixed issue that stopped users from creating sub pages from templates. \r\n<LI class=li>Fixed issue where manual synchronization was not working correctly in Document Library. </LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.0.6",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.0.6",
+                "_unixdate_":  "2013-may-01",
+                "releaseNotes":  "<UL id=top-relnotes-2013-may-01__ul-relnotes-platform-7.0.6 class=ul><LI class=li>Fixed issue that caused broken links when changing the name of a page. \r\n<LI class=li>Added search capabilities in the page management section. \r\n<LI class=li>Added new funtionality to the Member Directory so that users can choose between the different search options. \r\n<LI class=li>When creating a social group the newly created role group is now set as the default group. \r\n<LI class=li>Implemented new functionality to allow users to hid the login button in the default skin. \r\n<LI class=li>Removed the module and skin templates from the Starter Kit package. \r\n<LI class=li>Fixed issue that shows an error when registration is set to unique display name. \r\n<LI class=li>Fixed issue that made child site files not to show when managing sites. \r\n<LI class=li>Fixed UX issue when changing the file size in the configuration management section. \r\n<LI class=li>Fixed issue in the Journal module where followers could see posts that are meant for friends only. \r\n<LI class=li>Fixed paging conflict between roles and users in the users\' accounts screen. \r\n<LI class=li>Added new functionality that allows users to see all the social groups they belong to. \r\n<LI class=li>Fixed issue where separating a site from a group would not copy all the users. \r\n<LI class=li>Fixed issue when creating a page from a template when the template has modules that are set to display on all pages. \r\n<LI class=li>Removed the \"-\" from the invalid character list for page names. \r\n<LI class=li>Fixed the styling in the date time picker to display the time. \r\n<LI class=li>Fixed issue that shown the tokens when searching for pages. \r\n<LI class=li>Fixed issue that made the site redirection management screen to not work correctly when pop ups are disabled. \r\n<LI class=li>Fixed issue where exported templates point to the incorrect site settings. \r\n<LI class=li>Fixed issue that caused Social Group Roles to be limited to the Global Role group. \r\n<LI class=li>Fixed issue when page names include a \":\" colon. \r\n<LI class=li>Fixed issue where scheduler runs overlap when retry is set to a short interval. \r\n<LI class=li>Fixed issue with modules that are expected to display in all pages and Content Localization is enabled. \r\n<LI class=li>Implemented auto-refresh functionality in the message center so that users can see updates in real time without refreshing the page. </LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/105676"
+            },
+            {
+                "name":  "product-content-7.0.6",
+                "_fullname_":  "Evoq Content",
+                "_ver_":  "7.0.6",
+                "_unixdate_":  "2013-may-01",
+                "releaseNotes":  "<UL id=top-relnotes-2013-may-01__ul-relnotes-content-7.0.6 class=ul><LI class=li>All updates included with DNN Platform 7.0.6. \r\n<LI class=li>Fixed the date when expiration emails were sent when documents expired in Document Library. \r\n<LI class=li>Enhanced the performance in the Links Module. \r\n<LI class=li>Fixed issue that made avatar image to not show on the user profile next to the login link. \r\n<LI class=li>Fixed issue where unnecessary client dependency files were created. \r\n<LI class=li>Fixed issue where an unauthorized error was shown in when accessing the Journal through WebAPI incorrectly. \r\n<LI class=li>Fixed UX issue in the workflow state in the HTML Module. \r\n<LI class=li>Fixed memory leak in Search Crawler that affected the performance when crawling the site. \r\n<LI class=li>Implemented the command timeout in PetaPocoHelper. \r\n<LI class=li>Fixed issue where deleted HTML Modules appear in the MyWork section. \r\n<LI class=li>Fixed issue where the Console Module does not display the icons corrctly when creating a social group. \r\n<LI class=li>Fixed issue when uploading files with an ampersand in the name through the HTML Module. \r\n<LI class=li>Implemented setting in the HTML to manage the length of the HTMLTextController. \r\n<LI class=li>Updated the user agent user when the searchcrawler crawls the site. \r\n<LI class=li>Security: \r\n<UL class=ul>\r\n<LI class=li>Fixed code that generates pop ups and can potentially allow for javascript / HTML injection. </LI></UL></LI></UL>"
+            },
+            {
+                "name":  "product-platform-7.0.5",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.0.5",
+                "_unixdate_":  "2013-apr-03",
+                "releaseNotes":  "<UL id=top-relnotes-2013-apr-03__ul-relnotes-platform-7.0.5 class=ul><LI class=li>Fixed issue in the Client Resource Manager where data URL\'s were removed when running the composite files option. \r\n<LI class=li>Fixed issue when switching language from the control panel. \r\n<LI class=li>Fixed issue that stopped the Telerik RadMenu and RadTabstring from rendering correctly when an HTML module is added to the same page. \r\n<LI class=li>Fixed issue that stopped users from changing login settings. \r\n<LI class=li>Fixed issue that stopped users from changing the settings in the event viewer.. \r\n<LI class=li>Fixed post back issue when copying a page using the control panel. \r\n<LI class=li>Implemented module icon override when updating to a new version of the product. \r\n<LI class=li>Fixed image upload control rendering issue when using IE or Firefox. \r\n<LI class=li>Fixed issue that makes the dashboard fail when running SQL Azure. \r\n<LI class=li>Fixed export as XML in Dashboard feature when running on SQL Azure. \r\n<LI class=li>Fixed upgrade issue when hosting a site in SQL Azure. \r\n<LI class=li>Fixed password validation issue when adding a new user. \r\n<LI class=li>Added auto complete when searching for devices to the Device Preview Management module. \r\n<LI class=li>Fix issue when the user is upgrading DNN and recycles the app pool before calling the upgrade page. \r\n<LI class=li>Fixed support pop ups feature when creating a new module from a manifest file. \r\n<LI class=li>Fixed the To and From logic in the messaging module. \r\n<LI class=li>Security: \r\n<UL class=ul>\r\n<LI class=li>Fixed permissions issue when uploading files through Service Framework requests. \r\n<LI class=li>Fixed potential javascript injections on sites running multiple languages. \r\n<LI class=li>Fixed potential javascript injections on modules that implement pop ups for edits. \r\n<LI class=li>Implemented filters in the rich text editor to avoid the possibility of cross-site scripting issues. </LI></UL></LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/103868"
+            },
+            {
+                "name":  "product-platform-6.2.7",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "6.2.7",
+                "_unixdate_":  "2013-apr-03",
+                "releaseNotes":  "<UL id=top-relnotes-2013-apr-03__ul-relnotes-platform-6.2.7 class=ul><LI class=li>Security: \r\n<UL class=ul>\r\n<LI class=li>Fixed potential javascript injections on sites running multiple languages. \r\n<LI class=li>Implemented filters in the rich text editor to avoid the possibility of cross-site scripting issues. </LI></UL></LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/103868"
+            },
+            {
+                "name":  "product-platform-7.0.4",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.0.4",
+                "_unixdate_":  "2013-mar-06",
+                "releaseNotes":  "<UL id=top-relnotes-2013-mar-06__ul-relnotes-platform-7.0.4 class=ul><LI class=li>Fixed issue that caused message replies to now show in the feed. \r\n<LI class=li>Fixed errors in Razor DDR Templates when upgrading to a version higher than 7.0.0. \r\n<LI class=li>Fixed issue that prevented hosts users from changing their password. \r\n<LI class=li>Fixed issue that caused line feeds to be removed from messages when using Firefox. \r\n<LI class=li>Fixed UX issue when copying pages from the control panel. \r\n<LI class=li>Fixed JS errors when creating pages using IE 10. \r\n<LI class=li>Fixed issue where standard asp file input elements were rendered incorrectly. \r\n<LI class=li>Fixed drag and drop functionality when updating a user\'s profile picture. \r\n<LI class=li>Replaced the old style icons for modules shown in the control panel. \r\n<LI class=li>Fixed issue that caused the server to hang when pages were moved using the Pages Module. \r\n<LI class=li>Fixed issue that caused the site logo to not function correctly on child websites. \r\n<LI class=li>Fixed issue that caused autocomplete to fail when a Console Module was added to a page. \r\n<LI class=li>Fixed module actions positioning issues when using ajax to load content after the page is rendered. \r\n<LI class=li>Enhanced the way user names are displayed when liking comments in the Journal Module. \r\n<LI class=li>Fixed issue that caused multilingual sites to show duplicate entries in the site switching tool in the control panel. \r\n<LI class=li>Fixed issue that caused multiple entries to be added to the ContentItems table when adding tags to modules. \r\n<LI class=li>Updated the list of devices in the Preview Management Module to include the most popular devices to date. </LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/102566"
+            },
+            {
+                "name":  "product-platform-7.0.3",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.0.3",
+                "_unixdate_":  "2013-feb-06",
+                "releaseNotes":  "<UL id=top-relnotes-2013-feb-06__ul-relnotes-platform-7.0.3 class=ul><LI class=li>Fixed issue that prevented non admins and non hosts to save HTML content as a template. \r\n<LI class=li>Fixed potential endless loop when using the device redirection on a new site. \r\n<LI class=li>Fixed UI issue where sub menus could go off screen. \r\n<LI class=li>Fixed issue that stopped users from switching sites from the control bar. \r\n<LI class=li>Fixed CSS issue for disabled menu items. \r\n<LI class=li>Fixed issue with link in the Journal when a site is restored in a different server. \r\n<LI class=li>Fixed issue that prevented pop ups from closing when a window would not use the default alias for JQuery. \r\n<LI class=li>Fixed errors when registering or logging in using a Twitter account. \r\n<LI class=li>Fixed issue that stopped users from updating the Max File Size value. \r\n<LI class=li>Implemented functionality in the Admin &gt; Advanced Configuration &gt; Languages so that users are able to re install and upgrade language packs. \r\n<LI class=li>Fixed error in the HTML Editor Image Manager that stopped users from navigating the complete folder structure. \r\n<LI class=li>Improved performance of the File Explorer when looking for files from an HTML module. \r\n<LI class=li>Fixed issue where more than one language pack was being shown for each language during installation. \r\n<LI class=li>Fixed issue where notification emails were not being sent. \r\n<LI class=li>Fixed issue where the wrong timezone would be set in the host user\'s profile. \r\n<LI class=li>Fixed issue where email was not getting delivered when a user received a message from another user. \r\n<LI class=li>Fixed issue that prevented users from renaming pages that include special characters. \r\n<LI class=li>Enhanced the flow when downloading documents that can be opened in a browser (like xml). \r\n<LI class=li>Removed non FIPS compliant code from the Client Resource Management component. \r\n<LI class=li>Fixed issue where the user was not able to download language packs from the host &gt; languages section. \r\n<LI class=li>Implemented functionality to send query strings when redirecting sites using the mobile redirection feature. </LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/101046"
+            },
+            {
+                "name":  "product-platform-7.0.2",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.0.2",
+                "_unixdate_":  "2013-jan-11",
+                "releaseNotes":  "<UL id=top-relnotes-2013-jan-11__ul-relnotes-platform-7.0.2 class=ul><LI class=li>Fixed issue that made the edit module icon to not appear when editing pages. </LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/100158"
+            },
+            {
+                "name":  "product-platform-7.0.1",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.0.1",
+                "_unixdate_":  "2013-jan-09",
+                "releaseNotes":  "<UL id=top-relnotes-2013-jan-09__ul-relnotes-platform-7.0.1 class=ul><LI class=li>Fixed issue in sitemap priority when hosting services uses commas instead of dots as decimal separators. This issue affects directly to the no technician user of portal. \r\n<LI class=li>Fixed issue where files with special characters were not encoded correctly in the URL. \r\n<LI class=li>Fixed error that caused settings not to be saved from the page management module. \r\n<LI class=li>Fixed issue in the device redirection module where the isTablet or Both options were not being enabled when upgrading to the 51Degrees Basic data. \r\n<LI class=li>Fixed issue where the hyperlink manager threw an exception when running in debug mode. \r\n<LI class=li>Fixed issue in the editor provider dialog that caused \"My Folder\" not to be shown. \r\n<LI class=li>Fixed issue in the Journal where clicking the Get More button threw an authorization error. \r\n<LI class=li>Fixed issue that stopped users from deleting role groups. \r\n<LI class=li>Fixed module permissions issue when the editor has permissions to edit a module but not the page. \r\n<LI class=li>Fixed issue where autosave was not enabled by default when upgrading from CE to PE or EE. \r\n<LI class=li>Fixed error when sending a friend request to a member of a child site when the sites are in a group. \r\n<LI class=li>Fixed issue in the Journal where the text box would hide when commenting on an existing comment. \r\n<LI class=li>Fixed issue in the control panel where the module list would not work correctly with Firefox 17. \r\n<LI class=li>Fixed issue that caused only one component to be shown when adding multi-component modules to a page. \r\n<LI class=li>Fixed UI issue that caused the control panel to not hide when the HTML Editor is set to full screen mode. \r\n<LI class=li>Fixed issue where lists with large recordsets didn\'t be display all records. \r\n<LI class=li>Fixed issue that made images not clickable in the Journal. \r\n<LI class=li>Fixed issue that caused the Image or File Upload icons in the Journal not to work when using Firefox 17. \r\n<LI class=li>Fixed issue that made the Taxonomy module unavailable. \r\n<LI class=li>Fixed issue when using jquery tabs. \r\n<LI class=li>Added horizontal scrolling to grids with large record sets. \r\n<LI class=li>Removed the Feed Explorer module from the package. \r\n<LI class=li>Added the isSmartPhone property to the device redirection module when upgrading to the Basic or Premium data. \r\n<LI class=li>Optimized the messaging and notifications html / css to maximize the default.css inheritance. \r\n<LI class=li>Fixed issue where the user was not able to download language packs from the host - languages section. \r\n<LI class=li>Security: \r\n<UL class=ul>\r\n<LI class=li>Enhanced the code that generates profile pictures to avoid performance problems. \r\n<LI class=li>Enhanced the member search to avoid data compromise.. \r\n<LI class=li>A number of browsers incorrectly implement a particular HTML tag, in violation of the official W3C standards. Defensive coding was added to avoid the possibility to use this tag to redirect requests for certain files to another site. </LI></UL>\r\n<LI class=li>Updated modules: \r\n<UL class=ul>\r\n<LI class=li>File Manager \r\n<LI class=li>Pages Module \r\n<LI class=li>Taxonomy Manager \r\n<LI class=li>HTML Editor \r\n<LI class=li>Journal \r\n<LI class=li>Member Directory Module \r\n<LI class=li>Device Detection and Redirection Module </LI></UL></LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/100069"
+            },
+            {
+                "name":  "product-platform-6.2.6",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "6.2.6",
+                "_unixdate_":  "2013-jan-09",
+                "releaseNotes":  "<UL id=top-relnotes-2013-jan-09__ul-relnotes-platform-6.2.6 class=ul><LI class=li>Fixed issue that cause the member avatars to not show in the Member Directory. \r\n<LI class=li>Security: \r\n<UL class=ul>\r\n<LI class=li>Enhanced the code that generates profile pictures to avoid performance problems. \r\n<LI class=li>Enhanced the member search to avoid data compromise.. \r\n<LI class=li>A number of browsers incorrectly implement a particular HTML tag, in violation of the official W3C standards. Defensive coding was added to avoid the possibility to use this tag to redirect requests for certain files to another site. </LI></UL></LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/100069"
+            },
+            {
+                "name":  "product-platform-7.0.0",
+                "_fullname_":  "DNN Platform",
+                "_ver_":  "7.0.0",
+                "_unixdate_":  "2012-nov-28",
+                "releaseNotes":  "<UL id=top-relnotes-2012-nov-28__ul-relnotes-platform-7.0.0 class=ul><LI class=li>Fixed issue that caused profiles of deleted users to be available. \r\n<LI class=li>Removed the postback after checkboxes are selected in Page Settings &gt; Taxonomy. \r\n<LI class=li>Implemented the functionality required to edit security role names and social group names. \r\n<LI class=li>Fixed JavaScript error when using a \";\" semicolon as a profile property. \r\n<LI class=li>Fixed issue when using DateTime properties in profiles. \r\n<LI class=li>Fixed viewstate error when using Facebook authentication in conjunction with \"require valid profile for login\". \r\n<LI class=li>Fixed issue where cached pages were not sending Content-Type in the response header. \r\n<LI class=li>Fixed issue where deleting the razor host module caused the razorhelpers to be deleted too. \r\n<LI class=li>Fixed issue where users could not upload a profile picture when a site belonged to a site group. \r\n<LI class=li>Fixed issue where the Journal ignores the page size setting. \r\n<LI class=li>Fixed issue where URLs were incorrect after moving a site with site groups enabled to a new serer. \r\n<LI class=li>Fixed issue in the Journal that made image thumbnails not clickable. \r\n<LI class=li>Fixed issue in the Journal where images were played like youtube videos. \r\n<LI class=li>Security: \r\n<UL class=ul>\r\n<LI class=li>Fixed issue in the Member Directory module that could show members to non authenticated users. \r\n<LI class=li>Fixed issue in the Lists module that could potentially be used for script / html injection. \r\n<LI class=li>Fixed issue in Module\'s titles that would allow users to enter html or JavaScript code. \r\n<LI class=li>Fixed issue where some validation was missing when uploading profile pictures. </LI></UL>\r\n<LI class=li>Updated modules: \r\n<UL class=ul>\r\n<LI class=li>File Manager \r\n<LI class=li>Journal \r\n<LI class=li>Member Directory \r\n<LI class=li>Message Center \r\n<LI class=li>My Modules \r\n<LI class=li>Social Groups </LI></UL></LI></UL>",
+                "sourceLocation":  "CodePlex",
+                "sourceURL":  "http://dotnetnuke.codeplex.com/releases/view/97017"
             }
         ]
+
     },
     "add-products-v92" : {
         "permutations" : [
             {
-                "_code_" : "E92"
+                "name" : "product-E92"
                 ,"_fullname_" : "Evoq Engage"
                 ,"_ver_" : "9.2"
-                ,"_reldate_"  : "2017-mmm-dd"
                 ,"_unixdate_" : "2017-mmm-dd"
+                ,"releaseNotes": ""
             },
             {
-                "_code_" : "C92"
+                "name" : "product-C92"
                 ,"_fullname_" : "Evoq Content"
                 ,"_ver_" : "9.2"
-                ,"_reldate_"  : "2017-mmm-dd"
                 ,"_unixdate_" : "2017-mmm-dd"
+                ,"releaseNotes": ""
             },
             {
-                "_code_" : "B92"
+                "name" : "product-B92"
                 ,"_fullname_" : "Evoq Basic"
                 ,"_ver_" : "9.2"
-                ,"_reldate_"  : "2017-mmm-dd"
                 ,"_unixdate_" : "2017-mmm-dd"
+                ,"releaseNotes": ""
             },
             {
-                "_code_" : "P92"
+                "name" : "product-P92"
                 ,"_fullname_" : "DNN Platform"
                 ,"_ver_" : "9.2"
-                ,"_reldate_"  : "2017-mmm-dd"
                 ,"_unixdate_" : "2017-mmm-dd"
+                ,"releaseNotes": ""
             }
         ]
-    },
-
-
-
-    "delete-products-in-list" : {
-        "ids" : []
-    },
-    "deleteall-products" : {
     }
 }

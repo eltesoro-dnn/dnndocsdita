@@ -46,25 +46,25 @@
                 "name":  "apifield-contenttype-get-queryfieldorder",
                 "fieldName":  "query.fieldOrder",
                 "dataType":  "string",
-                "fieldDesc":  "The field to be used for sorting the results. See \u003cterm\u003eorderAsc\u003c/term\u003e."
+                "fieldDesc":  "The field to be used for sorting the results. See <term>orderAsc</term>."
             },
             {
                 "name":  "apifield-contenttype-get-queryorderasc",
                 "fieldName":  "query.orderAsc",
                 "dataType":  "boolean",
-                "fieldDesc":  "If \u003cterm\u003etrue\u003c/true\u003e, the results are sorted in ascending order of \u003cterm\u003efieldOrder\u003c/term\u003e. Otherwise, in descending order."
+                "fieldDesc":  "If <term>true</true>, the results are sorted in ascending order of <term>fieldOrder</term>. Otherwise, in descending order."
             },
             {
                 "name":  "apifield-contenttype-get-querycreatedfrom",
                 "fieldName":  "query.createdFrom",
                 "dataType":  "string-date-time",
-                "fieldDesc":  "The earliest creation date to be included in the results. Use with \u003cterm\u003ecreatedTo\u003c/term\u003e to define a range of creation dates."
+                "fieldDesc":  "The earliest creation date to be included in the results. Use with <term>createdTo</term> to define a range of creation dates."
             },
             {
                 "name":  "apifield-contenttype-get-querycreatedto",
                 "fieldName":  "query.createdTo",
                 "dataType":  "string-date-time",
-                "fieldDesc":  "The latest creation date to be included in the results. Use with \u003cterm\u003ecreatedFrom\u003c/term\u003e to define a range of creation dates."
+                "fieldDesc":  "The latest creation date to be included in the results. Use with <term>createdFrom</term> to define a range of creation dates."
             },
             {
                 "name":  "apifield-contenttype-dto-documents",
@@ -106,7 +106,7 @@
                 "name":  "apifield-contenttype-dto-properties",
                 "fieldName":  "properties",
                 "dataType":  "object",
-                "fieldDesc":  "[StructuredContent.Models.ContentTypeProperties] The set of properties of the content type\u003c!--, such as ??? --\u003e."
+                "fieldDesc":  "[StructuredContent.Models.ContentTypeProperties] The set of properties of the content type<!--, such as ??? -->."
             },
             {
                 "name":  "apifield-contenttype-dto-selectedlanguages",
@@ -197,7 +197,7 @@
                 "name":  "apifield-contentitem-get-querypublished",
                 "fieldName":  "query.published",
                 "dataType":  "boolean",
-                "fieldDesc":  "If \u003cterm\u003etrue\u003c/term\u003e, only published content items are included in the results. Default is \u003cterm\u003efalse\u003c/term\u003e."
+                "fieldDesc":  "If <term>true</term>, only published content items are included in the results. Default is <term>false</term>."
             },
             {
                 "name":  "apifield-contentitem-get-querytags",
@@ -233,25 +233,25 @@
                 "name":  "apifield-contentitem-get-queryfieldorder",
                 "fieldName":  "query.fieldOrder",
                 "dataType":  "string",
-                "fieldDesc":  "The field to be used for sorting the results. See \u003cterm\u003eorderAsc\u003c/term\u003e."
+                "fieldDesc":  "The field to be used for sorting the results. See <term>orderAsc</term>."
             },
             {
                 "name":  "apifield-contentitem-get-queryorderasc",
                 "fieldName":  "query.orderAsc",
                 "dataType":  "boolean",
-                "fieldDesc":  "If \u003cterm\u003etrue\u003c/true\u003e, the results are sorted in ascending order of \u003cterm\u003efieldOrder\u003c/term\u003e. Otherwise, in descending order."
+                "fieldDesc":  "If <term>true</true>, the results are sorted in ascending order of <term>fieldOrder</term>. Otherwise, in descending order."
             },
             {
                 "name":  "apifield-contentitem-get-querycreatedfrom",
                 "fieldName":  "query.createdFrom",
                 "dataType":  "string-date-time",
-                "fieldDesc":  "The earliest creation date to be included in the results. Use with \u003cterm\u003ecreatedTo\u003c/term\u003e to define a range of creation dates."
+                "fieldDesc":  "The earliest creation date to be included in the results. Use with <term>createdTo</term> to define a range of creation dates."
             },
             {
                 "name":  "apifield-contentitem-get-querycreatedto",
                 "fieldName":  "query.createdTo",
                 "dataType":  "string-date-time",
-                "fieldDesc":  "The latest creation date to be included in the results. Use with \u003cterm\u003ecreatedFrom\u003c/term\u003e to define a range of creation dates."
+                "fieldDesc":  "The latest creation date to be included in the results. Use with <term>createdFrom</term> to define a range of creation dates."
             },
             {
                 "name":  "apifield-contentitem-dto-documents",
@@ -311,7 +311,7 @@
                 "name":  "apifield-contentitem-post-publish",
                 "fieldName":  "publish",
                 "dataType":  "boolean",
-                "fieldDesc":  "If \u003cterm\u003etrue\u003c/term\u003e, the new content item is immediately published. Default is \u003cterm\u003efalse\u003c/term\u003e."
+                "fieldDesc":  "If <term>true</term>, the new content item is immediately published. Default is <term>false</term>."
             },
             {
                 "name":  "apifield-contentitem-dto-id",
@@ -401,7 +401,7 @@
                 "name":  "apifield-contentitem-put-publish",
                 "fieldName":  "publish",
                 "dataType":  "boolean",
-                "fieldDesc":  "If \u003cterm\u003etrue\u003c/term\u003e, the updated content item is immediately published. Default is \u003cterm\u003efalse\u003c/term\u003e."
+                "fieldDesc":  "If <term>true</term>, the updated content item is immediately published. Default is <term>false</term>."
             },
             {
                 "name":  "apifield-contentitem-delete-id",
@@ -420,7 +420,7 @@
                 "name":  "apifield-publishedcontentitem-get-querypublished",
                 "fieldName":  "query.published",
                 "dataType":  "boolean",
-                "fieldDesc":  "If \u003cterm\u003etrue\u003c/term\u003e, only published content items are included in the results. Default is \u003cterm\u003efalse\u003c/term\u003e."
+                "fieldDesc":  "If <term>true</term>, only published content items are included in the results. Default is <term>false</term>."
             },
             {
                 "name":  "apifield-publishedcontentitem-get-querytags",
@@ -456,25 +456,25 @@
                 "name":  "apifield-publishedcontentitem-get-queryfieldorder",
                 "fieldName":  "query.fieldOrder",
                 "dataType":  "string",
-                "fieldDesc":  "The field to be used for sorting the results. See \u003cterm\u003eorderAsc\u003c/term\u003e."
+                "fieldDesc":  "The field to be used for sorting the results. See <term>orderAsc</term>."
             },
             {
                 "name":  "apifield-publishedcontentitem-get-queryorderasc",
                 "fieldName":  "query.orderAsc",
                 "dataType":  "boolean",
-                "fieldDesc":  "If \u003cterm\u003etrue\u003c/true\u003e, the results are sorted in ascending order of \u003cterm\u003efieldOrder\u003c/term\u003e. Otherwise, in descending order."
+                "fieldDesc":  "If <term>true</true>, the results are sorted in ascending order of <term>fieldOrder</term>. Otherwise, in descending order."
             },
             {
                 "name":  "apifield-publishedcontentitem-get-querycreatedfrom",
                 "fieldName":  "query.createdFrom",
                 "dataType":  "string-date-time",
-                "fieldDesc":  "The earliest creation date to be included in the results. Use with \u003cterm\u003ecreatedTo\u003c/term\u003e to define a range of creation dates."
+                "fieldDesc":  "The earliest creation date to be included in the results. Use with <term>createdTo</term> to define a range of creation dates."
             },
             {
                 "name":  "apifield-publishedcontentitem-get-querycreatedto",
                 "fieldName":  "query.createdTo",
                 "dataType":  "string-date-time",
-                "fieldDesc":  "The latest creation date to be included in the results. Use with \u003cterm\u003ecreatedFrom\u003c/term\u003e to define a range of creation dates."
+                "fieldDesc":  "The latest creation date to be included in the results. Use with <term>createdFrom</term> to define a range of creation dates."
             },
             {
                 "name":  "apifield-publishedcontentitem-dto-documents",
