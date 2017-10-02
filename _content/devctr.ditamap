@@ -11,9 +11,9 @@
     <keydef keys="k-bppbar"    href="common/bptext-pbar.dita#tsk-bptext-pbar" />
     <keydef keys="k-bppbtabs"  href="common/bptext-pbtabs.dita#tsk-bptext-pbtabs" />
 
-    <keydef keys="k-bppagespb" href="developers/pages-templates/bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb" />
-    <keydef keys="k-bppagesxx" href="developers/pages-templates/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx" />
-    <keydef keys="k-bpmodules" href="developers/content-with-modules/bptext-modules-steps.dita#tsk-bptext-modules-steps" />
+    <keydef keys="k-bppagespb" href="common/pages-templates/bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb" />
+    <keydef keys="k-bppagesxx" href="common/pages-templates/bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx" />
+    <keydef keys="k-bpmodules" href="common/content-with-modules/bptext-modules-steps.dita#tsk-bptext-modules-steps" />
 
 
     <!-- Topics -->
@@ -43,7 +43,7 @@
             </topicref>
             <topicref format="dita" type="reference" toc="yes" href="developers/microservices/searched-fields.dita" />
             <topicref format="dita" type="reference" toc="yes" href="developers/microservices/api-results-pagination.dita" />
-            <topicref format="dita" type="reference" toc="yes" href="api/examples/examples-structured-content-apis.dita" />
+            <topicref format="dita" type="topic" toc="yes" href="api/examples/examples-structured-content-apis.dita" />
             <!-- Samples -->
         </topicref>
 

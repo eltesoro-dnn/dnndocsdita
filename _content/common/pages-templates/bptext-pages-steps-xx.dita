@@ -7,7 +7,7 @@
     <prolog>
         <author>wrET,orLY,edET</author>
         <copyright>
-            <copyryear year="2016"></copyryear>
+            <copyryear year="2017"></copyryear>
             <copyrholder>DNN Corp</copyrholder>
         </copyright>
     </prolog>
@@ -26,6 +26,21 @@
                     <stentry>Required. Used in the navigation.</stentry>
                 </strow>
 
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-bulkpagestoadd"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-bulkpagestoadd"><stentry/></strow> -->
+                <strow id="strow-field-bulkpagestoadd">
+                    <stentry><uicontrol>Bulk Pages to Add</uicontrol></stentry>
+                    <stentry>The names of the pages to add for use in the navigation. One per line. To create a hierarchy, prepend the name with <codeph>&gt;</codeph>. Example:
+                        <codeblock>
+Topic 1
+&gt;Topic 1.1
+&gt;Topic 1.2
+&gt;&gt;Topic 1.2.1
+Topic 2
+                        </codeblock>
+                    </stentry>
+                </strow>
+
                 <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagetitle"><stentry/></strow> -->
                 <!-- <strow conkeyref="k-bppagesxx/strow-field-pagetitle"><stentry/></strow> -->
                 <strow id="strow-field-pagetitle">
@@ -34,6 +49,13 @@
                         Displayed as the browser window's title.
                         <note type="tip">The title is used by search engines to identify the information on the page. Include at least five highly descriptive words, and keep the title under 200 characters.</note>
                     </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-description"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-description"><stentry/></strow> -->
+                <strow id="strow-field-description">
+                    <stentry><uicontrol>[Page] Description</uicontrol></stentry>
+                    <stentry>Information about the page.</stentry>
                 </strow>
 
                 <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pageurl"><stentry/></strow> -->
@@ -72,6 +94,23 @@
                 <strow id="strow-field-tags">
                     <stentry><uicontrol>Tags</uicontrol></stentry>
                     <stentry>Predefined tags that you can choose from the dropdown, if any are defined in the <uicontrol>Taxonomy Manager</uicontrol>.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-parentpage"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-parentpage"><stentry/></strow> -->
+                <strow id="strow-field-parentpage">
+                    <stentry>
+                        <p><uicontrol>Parent Page</uicontrol></p>
+                        <p><uicontrol>Branch Parent</uicontrol></p>
+                    </stentry>
+                    <stentry>The page under which the new page(s) should reside in the hierarchy.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-parentbranch"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-parentbranch"><stentry/></strow> -->
+                <strow id="strow-field-parentbranch">
+                    <stentry><uicontrol>Branch Parent</uicontrol></stentry>
+                    <stentry>The page under which the new pages should reside in the hierarchy.</stentry>
                 </strow>
 
                 <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-parentpageinsertpage"><stentry/></strow> -->
@@ -153,7 +192,7 @@
                 <!-- <strow conkeyref="k-bppagesxx/strow-field-linktracking"><stentry/></strow> -->
                 <strow id="strow-field-linktracking">
                     <stentry><uicontrol>Link Tracking</uicontrol></stentry>
-                    <stentry>If enabled, </stentry>
+                    <stentry>If enabled, tracking links are created to determine where traffic to the page is coming from.</stentry>
                 </strow>
 
                 <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-enablescheduling"><stentry/></strow> -->
@@ -161,9 +200,21 @@
                 <strow id="strow-field-enablescheduling">
                     <stentry><uicontrol>Enable Scheduling</uicontrol></stentry>
                     <stentry>
-                        <p>If enabled, the <uicontrol>Start Date</uicontrol> and <uicontrol>End Date</uicontrol> buttons appear below the switch. Click/Tap on either button to set the dates and times.</p>
+                        <p>If enabled, the <uicontrol>Start Date</uicontrol> and <uicontrol>End Date</uicontrol> buttons appear below the switch. Click/Tap on either button to set the time span when the page is publicly visible on the site.</p>
                         <ul conkeyref="k-bptext/ul-publisheddatespages"><li/></ul>
                         <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddPage-Details-Calendar.png"><alt>Add Page &gt; Details &gt; Calendar</alt></image>
+                    </stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagetemplatemode"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-pagetemplatemode"><stentry/></strow> -->
+                <strow id="strow-field-pagetemplatemode">
+                    <stentry><uicontrol>Template Mode</uicontrol></stentry>
+                    <stentry>
+                        <ul>
+                            <li><uicontrol>Import from Xml</uicontrol>. You must specify an XML file containing the template to import.</li>
+                            <li><uicontrol>Evoq Page Template</uicontrol>. You must choose from the template layouts provided by the site's current theme.</li>
+                        </ul>
                     </stentry>
                 </strow>
 
@@ -171,8 +222,144 @@
                 <!-- <strow conkeyref="k-bppagesxx/strow-field-pagetemplate"><stentry/></strow> -->
                 <strow id="strow-field-pagetemplate">
                     <stentry><uicontrol>Page Template</uicontrol></stentry>
-                    <stentry>Required. The template layouts are defined by the theme used in the site.</stentry>
+                    <stentry>The template layouts are defined by the theme used in the site.</stentry>
                 </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagetemplatexmlfile"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-pagetemplatexmlfile"><stentry/></strow> -->
+                <strow id="strow-field-pagetemplatexmlfile">
+                    <stentry><uicontrol>Xml File</uicontrol></stentry>
+                    <stentry>The XML file containing the template to import.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-newpagetemplatename"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-newpagetemplatename"><stentry/></strow> -->
+                <strow id="strow-field-newpagetemplatename">
+                    <stentry><uicontrol>Template Name</uicontrol></stentry>
+                    <stentry>The name of the new template.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-newtemplatedesc"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-newtemplatedesc"><stentry/></strow> -->
+                <strow id="strow-field-newtemplatedesc">
+                    <stentry><uicontrol>Description</uicontrol></stentry>
+                    <stentry>The description of the new template.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-newtemplateincludecontent"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-newtemplateincludecontent"><stentry/></strow> -->
+                <strow id="strow-field-newtemplateincludecontent">
+                    <stentry><uicontrol>Include Content</uicontrol></stentry>
+                    <stentry>Only appears if exporting to XML. If enabled (<uicontrol>On</uicontrol>), the resulting template file includes information about all the modules in the current page. If disabled, the resulting template file only includes page information.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-existingpage"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-existingpage"><stentry/></strow> -->
+                <strow id="strow-field-existingpage">
+                    <stentry><uicontrol>Existing Page</uicontrol></stentry>
+                    <stentry>An existing page in your site. To link to an external site, set <uicontrol>Page Type</uicontrol> to <uicontrol>External Url</uicontrol>.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-externalurl"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-externalurl"><stentry/></strow> -->
+                <strow id="strow-field-externalurl">
+                    <stentry><uicontrol>External Url</uicontrol></stentry>
+                    <stentry>The URL to an external site. To linke to another page in the same site, set <uicontrol>Page Type</uicontrol> to <uicontrol>Existing</uicontrol>.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-permanentredirect"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-permanentredirect"><stentry/></strow> -->
+                <strow id="strow-field-permanentredirect">
+                    <stentry><uicontrol>Permanent Redirect</uicontrol></stentry>
+                    <stentry>If enabled (<uicontrol>On</uicontrol>), the HTTP status code 301 is returned with the page to indicate that the redirect is permanent.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-openlinkinnewwindow"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-openlinkinnewwindow"><stentry/></strow> -->
+                <strow id="strow-field-openlinkinnewwindow">
+                    <stentry><uicontrol>Open Link In New Window</uicontrol></stentry>
+                    <stentry>If enabled (<uicontrol>On</uicontrol>), the page is displayed in a new browser window or tab.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagetheme"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-pagetheme"><stentry/></strow> -->
+                <strow id="strow-field-pagetheme">
+                    <stentry><uicontrol>Page Theme</uicontrol></stentry>
+                    <stentry>The theme to use for the page.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-layout"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-layout"><stentry/></strow> -->
+                <strow id="strow-field-layout">
+                    <stentry><uicontrol>Layout</uicontrol></stentry>
+                    <stentry>The layout to use for the page.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagecontainer"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-pagecontainer"><stentry/></strow> -->
+                <strow id="strow-field-pagecontainer">
+                    <stentry><uicontrol>Page Container</uicontrol></stentry>
+                    <stentry>The container to use for all modules in the page. This setting is overridden by the module's container setting, if any.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pagestylesheet"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-pagestylesheet"><stentry/></strow> -->
+                <strow id="strow-field-pagestylesheet">
+                    <stentry><uicontrol>Page Stylesheet</uicontrol></stentry>
+                    <stentry>The CSS to use for this page. If blank, a default CSS is used. (Note: The default CSS used depends on other settings; it might be from the page theme, the site theme, or other CSS defaults.)</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-previewthemelayoutandcontainer"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-previewthemelayoutandcontainer"><stentry/></strow> -->
+                <strow id="strow-field-previewthemelayoutandcontainer">
+                    <stentry><uicontrol>Preview Theme Layout and Container</uicontrol></stentry>
+                    <stentry>If clicked/tapped, all the selected <uicontrol>Appearance</uicontrol> settings are applied to a page in a new browser window or tab.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-pageheadertags"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-pageheadertags"><stentry/></strow> -->
+                <strow id="strow-field-pageheadertags">
+                    <stentry><uicontrol>Page Header Tags</uicontrol></stentry>
+                    <stentry>HTML <codeph>&lt;meta&gt;</codeph> tags to add to the <codeph>&lt;head&gt;</codeph> of the page. Example: <codeph>&lt;meta name=&quot;keywords&quot; content=&quot;CMS, Liquid Content, example&quot;&gt;</codeph></stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-sitemappriority"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-sitemappriority"><stentry/></strow> -->
+                <strow id="strow-field-sitemappriority">
+                    <stentry><uicontrol>Sitemap Priority</uicontrol></stentry>
+                    <stentry>The priority for the page (0 to 1.0; default is 0.5). This value helps search engines to rank the page relative to other pages in the site.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-allowindexing"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-allowindexing"><stentry/></strow> -->
+                <strow id="strow-field-allowindexing">
+                    <stentry><uicontrol>Allow Indexing</uicontrol></stentry>
+                    <stentry>If enabled (<uicontrol>On</uicontrol>), the <codeph>ROBOTS</codeph> meta tag is set to <codeph>INDEX</codeph> to indicate that search engines should index the page; i.e., <codeph>&lt;meta name=&quot;ROBOTS&quot; content=&quot;INDEX&quot; /&gt;</codeph>. Otherwise, the <codeph>ROBOTS</codeph> meta tag is set to <codeph>NOINDEX</codeph>, and search engines ignore the page.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-secureconnection"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-secureconnection"><stentry/></strow> -->
+                <strow id="strow-field-secureconnection">
+                    <stentry><uicontrol>Secure Connection</uicontrol></stentry>
+                    <stentry>If enabled (<uicontrol>On</uicontrol>), the page is forced to use SSL. Available only if the site is SSL-enabled.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-disablepage"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-disablepage"><stentry/></strow> -->
+                <strow id="strow-field-disablepage">
+                    <stentry><uicontrol>Disable Page</uicontrol></stentry>
+                    <stentry>If enabled (<uicontrol>On</uicontrol>), the page appears in the navigation, but it cannot be clicked/tapped, thus creating a placeholder.</stentry>
+                </strow>
+
+                <!-- <strow conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/strow-field-outputcacheprovider"><stentry/></strow> -->
+                <!-- <strow conkeyref="k-bppagesxx/strow-field-outputcacheprovider"><stentry/></strow> -->
+                <strow id="strow-field-outputcacheprovider">
+                    <stentry><uicontrol>Output Cache Provider</uicontrol></stentry>
+                    <stentry>The caching provider to use for the page. If none is specified, the site's caching provider is used.</stentry>
+                </strow>
+
+
+
 
 
 
@@ -215,15 +402,25 @@
             <!--
             <cmd conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/cmd-xx-configure-page-permissions"></cmd>
             <info>
-                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="img/scr-XX-Page-Permissions.png"><alt>Page Settings &gt; Permissions</alt></image>
-                <ul conkeyref="k-bpsteps/ul-configure-permissions"><li/></ul>
+                <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Page-Permissions-E91.png"><alt>Page &gt; Permissions</alt></image>
+                <ul conkeyref="k-bpsteps/ul-configure-permissions-E91"><li/></ul>
             </info>
             -->
             <step>
                 <cmd id="cmd-xx-configure-page-permissions">(Optional) In the <uicontrol>Permissions</uicontrol> tab, configure which roles can do which actions on this page.</cmd>
             </step>
 
+
+
         </steps>
+
+        <result>
+            <!-- <ph conref="bptext-pages-steps-xx.dita#tsk-bptext-pages-steps-xx/ph-page-in-edit-mode"></ph> -->
+            <!-- <ph conkeyref="k-bppagesxx/ph-page-in-edit-mode"></ph> -->
+            <ph id="ph-page-in-edit-mode">The page is displayed in edit mode. You can click/tap on any of the panes to add content or modules.</ph>
+
+
+        </result>
 
     </taskbody>
 

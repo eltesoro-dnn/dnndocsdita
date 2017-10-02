@@ -37,6 +37,10 @@
 
 		<section conkeyref="k-bptext/section-prodavail-PCE"></section>
 
+        <section>
+            <note type="note">You cannot delete the current revision.</note>
+        </section>
+
         <prereq>
 			<ul>
 				<li><ph conkeyref="k-bptext/ph-PrereqHost"></ph></li>

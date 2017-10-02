@@ -120,7 +120,8 @@
                         <row>
                             <entry colname="ctype"><varname>icon</varname></entry>
                             <entry colname="citem"><varname>slug</varname>
-                                <p><ph conkeyref="k-bpapi/ph-apifields-slug-contenttype"></ph></p>
+                                <p>The portion of the URL that uniquely identifies the content type for retrieval.</p>
+                                <!-- <p><ph conkeyref="k-bpapi/ph-apifields-slug-contenttype"></ph></p> -->
                             </entry>
                         </row>
                         <row>

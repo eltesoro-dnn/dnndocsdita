@@ -39,10 +39,8 @@
         <steps>
             <step audience="adm" conkeyref="k-bppbar/step-pb-host-Content-Pages-E91"><cmd/></step>
             <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-Pages-E91"><cmd/></step>
-
-            <step conkeyref="k-bppagespb/step-pb-deletepage"><cmd/></step>
-
-            <step><cmd>Confirm the deletion.</cmd></step>
+            <step conkeyref="k-bppagespb/step-pb-deletepage-E91"><cmd/></step>
+            <step><cmd>Confirm.</cmd></step>
         </steps>
 
     </taskbody>

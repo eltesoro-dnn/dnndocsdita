@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE task PUBLIC "-//OASIS//DTD DITA General Task//EN" "http://docs.oasis-open.org/dita/v1.2/os/dtd1.2/technicalContent/dtd/generaltask.dtd">
+<task xml:lang="en" id="tsk-configure-page-standard">
+
+    <title>Configure a Standard Page</title>
+    <titlealts>
+        <navtitle>Configure Standard Page</navtitle>
+    </titlealts>
+
+
+    <prolog>
+        <author>wrET,1709</author>
+        <copyright>
+            <copyryear year="2017"></copyryear>
+            <copyrholder>DNN Corp</copyrholder>
+        </copyright>
+        <metadata>
+            <audience type="other" othertype="content manager" job="other" otherjob="aggregating" />
+            <prodinfo>
+                <prodname>Evoq Content</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+            <prodinfo>
+                <prodname>Evoq Engage</prodname>
+                <vrmlist><vrm version="9" release="1"/></vrmlist>
+            </prodinfo>
+        </metadata>
+    </prolog>
+
+
+    <taskbody>
+
+        <section conkeyref="k-bptext/section-prodavail-CE"></section>
+
+        <steps>
+            <step audience="adm" conkeyref="k-bppbar/step-pb-host-Content-Pages-E91"><cmd/></step>
+            <step audience="cmg" conkeyref="k-bppbar/step-pb-cmg-Content-Pages-E91"><cmd/></step>
+            <step conkeyref="k-bppagespb/step-pb-gearicon-E91"><cmd/></step>
+            <step conkeyref="k-bppagespb/step-pb-configurepagedetails-standard"><cmd/></step>
+            <step conkeyref="k-bppagespb/step-pb-configurepagepermissions"><cmd/></step>
+            <step conkeyref="k-bppagespb/step-pb-configurepageadvanced"><cmd/></step>
+            <step><cmd>Click/Tap <uicontrol>Save</uicontrol>.</cmd></step>
+        </steps>
+
+        <result>The page is displayed in edit mode. You can click/tap on any of the panes to add content or modules.</result>
+
+    </taskbody>
+
+</task>

@@ -97,6 +97,7 @@ Settings,SQL Console,,,host,,,,E90,
 Settings,Config Manager,Config Files,,host,,,,E90,
 Settings,Config Manager,Merge Scripts,,host,,,,E90,
 Settings,About,,,host,,,,E90,
-Settings,OnDemand,Account,,host,,,,E91,new?
-Settings,OnDemand,Installations,,host,,,,E91,new?
-Settings,OnDemand,Certificates,,host,,,,E91,new?
+Settings,OnDemand,Account,,host,,,,E91,
+Settings,OnDemand,Installations,,host,,,,E91,
+Settings,OnDemand,Usage,Summary,host,,,,E91,
+Settings,OnDemand,Usage,History,host,,,,E91,

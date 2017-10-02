@@ -7,8 +7,18 @@
     <topicref format="dita" type="topic" toc="yes" href="managing-pages-templates.dita" copy-to="index.dita" collection-type="family">
         <topichead outputclass="sub-nav-tabs" collection-type="family" >
             <topicmeta><navtitle>Pages</navtitle></topicmeta>
-            <topicref format="dita" type="task" toc="yes" href="create-page-pb-all.dita" />
-            <topicref format="dita" type="task" toc="yes" href="configure-page-pb-all.dita" />
+            <topicref format="dita" type="task" toc="yes" href="create-single-page-standard.dita" />
+            <topicref format="dita" type="task" toc="yes" href="create-single-page-existing.dita" />
+            <topicref format="dita" type="task" toc="yes" href="create-single-page-url.dita" />
+            <topicref format="dita" type="task" toc="yes" href="create-single-page-file.dita" />
+
+            <topicref format="dita" type="task" toc="yes" href="create-multiple-pages-pb-all.dita" />
+
+            <topicref format="dita" type="task" toc="yes" href="configure-page-standard.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configure-page-existing.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configure-page-url.dita" />
+            <topicref format="dita" type="task" toc="yes" href="configure-page-file.dita" />
+
             <topicref format="dita" type="task" toc="yes" href="copy-page-pb-all.dita" />
             <topicref format="dita" type="task" toc="yes" href="edit-page-pb-all.dita" />
             <topicref format="dita" type="task" toc="yes" href="view-hidden-page-pb-all.dita" />

@@ -993,15 +993,28 @@
            </step>
 
 
-           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-OnDemand-Certificates-E91"><cmd/></step> -->
-           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-OnDemand-Certificates-E91"><cmd/></step> -->
-           <!-- <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-OnDemand-Certificates-E91"></ph><image conkeyref="k-bppbtabs/image-pbtabs-host-Settings-OnDemand-Certificates-E91"></image></li> -->
-           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-OnDemand-Certificates-E91"></cmd> -->
-           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-OnDemand-Certificates-E91"></info> -->
-           <step id="step-pbtabs-host-Settings-OnDemand-Certificates-E91">
-               <cmd id="cmd-pbtabs-host-Settings-OnDemand-Certificates-E91"><ph id="ph-pbtabs-host-Settings-OnDemand-Certificates-E91">Go to the <uicontrol>Certificates</uicontrol> tab.</ph></cmd>
-               <info id="info-pbtabs-host-Settings-OnDemand-Certificates-E91" outputclass="init-hide">
-                   <image id="image-pbtabs-host-Settings-OnDemand-Certificates-E91" outputclass="img-scr" scalefit="yes" href="img/scr-pbtabs-host-Settings-OnDemand-Certificates-E91.png"><alt>Certificates</alt></image>
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-OnDemand-Usage-Summary-E91"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-OnDemand-Usage-Summary-E91"><cmd/></step> -->
+           <!-- <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-OnDemand-Usage-Summary-E91"></ph><image conkeyref="k-bppbtabs/image-pbtabs-host-Settings-OnDemand-Usage-Summary-E91"></image></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-OnDemand-Usage-Summary-E91"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-OnDemand-Usage-Summary-E91"></info> -->
+           <step id="step-pbtabs-host-Settings-OnDemand-Usage-Summary-E91">
+               <cmd id="cmd-pbtabs-host-Settings-OnDemand-Usage-Summary-E91"><ph id="ph-pbtabs-host-Settings-OnDemand-Usage-Summary-E91">Go to the <uicontrol>Usage</uicontrol> tab, and then the  <uicontrol>Summary</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-host-Settings-OnDemand-Usage-Summary-E91" outputclass="init-hide">
+                   <image id="image-pbtabs-host-Settings-OnDemand-Usage-Summary-E91" outputclass="img-scr" scalefit="yes" href="img/scr-pbtabs-host-Settings-OnDemand-Usage-Summary-E91.png"><alt>Usage &gt; Summary</alt></image>
+               </info>
+           </step>
+
+
+           <!-- <step conref="bptext-pbtabs.dita#tsk-bptext-pbtabs/step-pbtabs-host-Settings-OnDemand-Usage-History-E91"><cmd/></step> -->
+           <!-- <step conkeyref="k-bppbtabs/step-pbtabs-host-Settings-OnDemand-Usage-History-E91"><cmd/></step> -->
+           <!-- <li outputclass="step stepexpand"><ph outputclass="cmd" conkeyref="k-bppbtabs/ph-pbtabs-host-Settings-OnDemand-Usage-History-E91"></ph><image conkeyref="k-bppbtabs/image-pbtabs-host-Settings-OnDemand-Usage-History-E91"></image></li> -->
+           <!-- <cmd conkeyref="k-bppbtabs/cmd-pbtabs-host-Settings-OnDemand-Usage-History-E91"></cmd> -->
+           <!-- <info conkeyref="k-bppbtabs/info-pbtabs-host-Settings-OnDemand-Usage-History-E91"></info> -->
+           <step id="step-pbtabs-host-Settings-OnDemand-Usage-History-E91">
+               <cmd id="cmd-pbtabs-host-Settings-OnDemand-Usage-History-E91"><ph id="ph-pbtabs-host-Settings-OnDemand-Usage-History-E91">Go to the <uicontrol>Usage</uicontrol> tab, and then the  <uicontrol>History</uicontrol> subtab.</ph></cmd>
+               <info id="info-pbtabs-host-Settings-OnDemand-Usage-History-E91" outputclass="init-hide">
+                   <image id="image-pbtabs-host-Settings-OnDemand-Usage-History-E91" outputclass="img-scr" scalefit="yes" href="img/scr-pbtabs-host-Settings-OnDemand-Usage-History-E91.png"><alt>Usage &gt; History</alt></image>
                </info>
            </step>
 

@@ -92,43 +92,52 @@
 
 
             <!--
-            Instead of going into the Page Management page, better to use:
+            Instead of going into the Pages page, better to use:
             <step><cmd>Go to the page to edit.</cmd></step>
             <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-all-editpagepersonabar"><cmd/></step>
             -->
-            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-pencilicon"><cmd/></step> -->
-            <!-- <step conkeyref="k-bppagespb/step-pb-pencilicon"><cmd/></step> -->
-            <step id="step-pb-pencilicon">
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-pencilicon-E91"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-pencilicon-E91"><cmd/></step> -->
+            <step id="step-pb-pencilicon-E91">
                 <cmd>In the <wintitle>Pages</wintitle> page, hover over the page to edit, then click/tap the pencil icon.</cmd>
                 <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageManagement-Edit.png"><alt>Page Management &gt; Edit</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Pages-Edit-E91.png"><alt>Pages &gt; Edit</alt></image>
                 </info>
             </step>
 
-            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-eyeicon"><cmd/></step> -->
-            <!-- <step conkeyref="k-bppagespb/step-pb-eyeicon"><cmd/></step> -->
-            <step id="step-pb-eyeicon">
-                <cmd>In the <wintitle>Page Management</wintitle> page, hover over the page to view, then click/tap the eye icon.</cmd>
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-eyeicon-E91"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-eyeicon-E91"><cmd/></step> -->
+            <step id="step-pb-eyeicon-E91">
+                <cmd>In the <wintitle>Pages</wintitle> page, hover over the page to view, then click/tap the eye icon.</cmd>
                 <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageManagement-View.png"><alt>Page Management &gt; View</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Pages-View-E91.png"><alt>Pages &gt; View</alt></image>
                 </info>
             </step>
 
-            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gearicon"><cmd/></step> -->
-            <!-- <step conkeyref="k-bppagespb/step-pb-gearicon"><cmd/></step> -->
-            <step id="step-pb-gearicon">
-                <cmd>In the <wintitle>Page Management</wintitle> page, hover over the page to configure, then click/tap the gear icon.</cmd>
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gearicon-E91"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-gearicon-E91"><cmd/></step> -->
+            <step id="step-pb-gearicon-E91">
+                <cmd>In the <wintitle>Pages</wintitle> page, hover over the page to configure, then click/tap the gear icon.</cmd>
                 <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageManagement-Configure.png"><alt>Page Management &gt; Configure</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Pages-Configure-E91.png"><alt>Pages &gt; Configure</alt></image>
                 </info>
             </step>
 
-            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-deletepage"><cmd/></step> -->
-            <!-- <step conkeyref="k-bppagespb/step-pb-deletepage"><cmd/></step> -->
-            <step id="step-pb-deletepage">
-                <cmd>In the <wintitle>Page Management</wintitle> page, hover over the page to delete, then click/tap the X icon.</cmd>
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-gearicon-neutral-E91"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-gearicon-neutral-E91"><cmd/></step> -->
+            <step id="step-pb-gearicon-neutral-E91">
+                <cmd>In the <wintitle>Pages</wintitle> page, hover over the page, then click/tap the gear icon.</cmd>
                 <info>
-                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageManagement-Delete.png"><alt>Page Management &gt; Delete</alt></image>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Pages-Configure-E91.png"><alt>Pages &gt; Configure</alt></image>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-deletepage-E91"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-deletepage-E91"><cmd/></step> -->
+            <step id="step-pb-deletepage-E91">
+                <cmd>In the <wintitle>Pages</wintitle> page, hover over the page to delete, then click/tap the X icon.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Pages-Delete-E91.png"><alt>Pages &gt; Delete</alt></image>
                 </info>
             </step>
 
@@ -185,7 +194,314 @@
             </step>
 
 
+
+            <!-- ADD PAGES - E91 -->
+
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-addsinglepage"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-addsinglepage"><cmd/></step> -->
+            <step id="step-pb-addsinglepage">
+                <cmd>Click/Tap <uicontrol>Add Page</uicontrol>.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Pages-AddSinglePage-E90.png"><alt>Pages &gt; Click/Tap Add Page.</alt></image>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-addmultiplepages"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-addmultiplepages"><cmd/></step> -->
+            <step id="step-pb-addmultiplepages">
+                <cmd>Click/Tap <uicontrol>Add Multiple Pages</uicontrol>.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Pages-AddMultiplePages-E90.png"><alt>Pages &gt; Click/Tap Add Multiple Pages.</alt></image>
+                </info>
+            </step>
+
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-configpage"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-configpage"><cmd/></step> -->
+            <step id="step-pb-configpage">
+                <cmd>Click/Tap <uicontrol>Duplicate Page</uicontrol>.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-ConfigPage-DuplicatePage-E91.png"><alt>Pages &gt; Settings (gear icon) &gt; Duplicate Page</alt></image>
+                </info>
+            </step>
+
+
+
+            <step>
+                <!-- <cmd conkeyref="k-bppagespb/cmd-pb-configurepagedetails"></cmd> -->
+                <cmd id="cmd-pb-configurepagedetails">In the <uicontrol>Details</uicontrol> tab, configure the basic settings of the page.</cmd>
+
+                <info>
+                    <!-- <image conkeyref="k-bppagespb/image-addsinglepage-details-pagetype"><alt/></image> -->
+                    <image id="image-addsinglepage-details-pagetype" outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-PageSettings-Details-PageType-E91.png"><alt>Page Details &gt; Page Type options</alt></image>
+                </info>
+
+                <substeps>
+
+                    <!-- <substep conkeyref="k-bppagespb/substep-pb-choosepagetype-standard"><cmd/></substep> -->
+                    <substep id="substep-pb-choosepagetype-standard">
+                        <cmd>Set <uicontrol>Page Type</uicontrol> to <uicontrol>Standard</uicontrol>.</cmd>
+                        <info><image conkeyref="k-bppagespb/image-addsinglepage-details-pagetype"><alt/></image></info>
+                    </substep>
+
+                    <!-- <substep conkeyref="k-bppagespb/substep-pb-choosepagetype-existing"><cmd/></substep> -->
+                    <substep id="substep-pb-choosepagetype-existing">
+                        <cmd>Set <uicontrol>Page Type</uicontrol> to <uicontrol>Existing</uicontrol>.</cmd>
+                        <info><image conkeyref="k-bppagespb/image-addsinglepage-details-pagetype"><alt/></image></info>
+                    </substep>
+
+                    <!-- <substep conkeyref="k-bppagespb/substep-pb-choosepagetype-url"><cmd/></substep> -->
+                    <substep id="substep-pb-choosepagetype-url">
+                        <cmd>Set <uicontrol>Page Type</uicontrol> to <uicontrol>URL</uicontrol>.</cmd>
+                        <info><image conkeyref="k-bppagespb/image-addsinglepage-details-pagetype"><alt/></image></info>
+                    </substep>
+
+                    <!-- <substep conkeyref="k-bppagespb/substep-pb-choosepagetype-file"><cmd/></substep> -->
+                    <substep id="substep-pb-choosepagetype-file">
+                        <cmd>Set <uicontrol>Page Type</uicontrol> to <uicontrol>File</uicontrol>.</cmd>
+                        <info><image conkeyref="k-bppagespb/image-addsinglepage-details-pagetype"><alt/></image></info>
+                    </substep>
+
+                    <!-- <substep conkeyref="k-bppagespb/substep-pb-configurepage-add-standard"><cmd/></substep> -->
+                    <substep id="substep-pb-configurepage-add-standard">
+                        <cmd>Configure the new standard page.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddSinglePage-Details-Standard-E91.png"><alt>Add Page &gt; Details &gt; Page Type: Standard </alt></image>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow conkeyref="k-bppagesxx/strow-field-pagename"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-pagetitle"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-description"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-keywords"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-tags"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-parentpage"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-displayinmenu"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-linktracking"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-workflow"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-enablescheduling"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-pagetemplatemode"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-pagetemplate"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-pagetemplatexmlfile"><stentry/></strow>
+                            </simpletable>
+                        </info>
+                    </substep>
+
+                    <!-- <substep conkeyref="k-bppagespb/substep-pb-configurepage-existing"><cmd/></substep> -->
+                    <substep id="substep-pb-configurepage-existing">
+                        <cmd>Configure the link to an existing page.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddSinglePage-Details-Existing-E91.png"><alt>Add Page &gt; Details &gt; Page Type: Existing </alt></image>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow conkeyref="k-bppagesxx/strow-field-existingpage"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-permanentredirect"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-openlinkinnewwindow"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-pagename"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-displayinmenu"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-enablescheduling"><stentry/></strow>
+                            </simpletable>
+                        </info>
+                    </substep>
+
+                    <!-- <substep conkeyref="k-bppagespb/substep-pb-configurepage-url"><cmd/></substep> -->
+                    <substep id="substep-pb-configurepage-url">
+                        <cmd>Configure the URL.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddSinglePage-Details-URL-E91.png"><alt>Add Page &gt; Details &gt; Page Type: URL </alt></image>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow conkeyref="k-bppagesxx/strow-field-externalurl"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-permanentredirect"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-openlinkinnewwindow"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-pagename"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-displayinmenu"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-enablescheduling"><stentry/></strow>
+                            </simpletable>
+                        </info>
+                    </substep>
+
+                    <!-- <substep conkeyref="k-bppagespb/substep-pb-configurepage-file"><cmd/></substep> -->
+                    <substep id="substep-pb-configurepage-file">
+                        <cmd>Configure the link to a file.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-AddSinglePage-Details-File-E91.png"><alt>Add Page &gt; Details &gt; Page Type: File </alt></image>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow conkeyref="k-bppagesxx/strow-field-permanentredirect"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-openlinkinnewwindow"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-pagename"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-displayinmenu"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-enablescheduling"><stentry/></strow>
+                            </simpletable>
+                        </info>
+                    </substep>
+
+                </substeps>
+            </step>
+
+
+
+
+
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-configurepagedetails-standard"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-configurepagedetails-standard"><cmd/></step> -->
+            <step id="step-pb-configurepagedetails-standard">
+                <cmd conkeyref="k-bppagespb/cmd-pb-configurepagedetails"></cmd>
+                <substeps>
+                    <substep conkeyref="k-bppagespb/substep-pb-choosepagetype-standard"><cmd/></substep>
+                    <substep conkeyref="k-bppagespb/substep-pb-configurepage-add-standard"><cmd/></substep>
+                </substeps>
+            </step>
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-configurepagedetails-existing"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-configurepagedetails-existing"><cmd/></step> -->
+            <step id="step-pb-configurepagedetails-existing">
+                <cmd conkeyref="k-bppagespb/cmd-pb-configurepagedetails"></cmd>
+                <substeps>
+                    <substep conkeyref="k-bppagespb/substep-pb-choosepagetype-existing"><cmd/></substep>
+                    <substep conkeyref="k-bppagespb/substep-pb-configurepage-existing"><cmd/></substep>
+                </substeps>
+            </step>
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-configurepagedetails-url"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-configurepagedetails-url"><cmd/></step> -->
+            <step id="step-pb-configurepagedetails-url">
+                <cmd conkeyref="k-bppagespb/cmd-pb-configurepagedetails"></cmd>
+                <substeps>
+                    <substep conkeyref="k-bppagespb/substep-pb-choosepagetype-url"><cmd/></substep>
+                    <substep conkeyref="k-bppagespb/substep-pb-configurepage-url"><cmd/></substep>
+                </substeps>
+            </step>
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-configurepagedetails-file"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-configurepagedetails-file"><cmd/></step> -->
+            <step id="step-pb-configurepagedetails-file">
+                <cmd conkeyref="k-bppagespb/cmd-pb-configurepagedetails"></cmd>
+                <substeps>
+                    <substep conkeyref="k-bppagespb/substep-pb-choosepagetype-file"><cmd/></substep>
+                    <substep conkeyref="k-bppagespb/substep-pb-configurepage-file"><cmd/></substep>
+                </substeps>
+            </step>
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-bulkpagesettings"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-bulkpagesettings"><cmd/></step> -->
+            <step id="step-pb-bulkpagesettings">
+                <cmd>Configure the settings that are common among the new pages.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Pages-AddMultiplePages-E91.png"><alt>Content &gt; Pages &gt; Add Multiple Pages</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow conkeyref="k-bppagesxx/strow-field-parentpage"><stentry/></strow>
+                        <strow conkeyref="k-bppagesxx/strow-field-keywords"><stentry/></strow>
+                        <strow conkeyref="k-bppagesxx/strow-field-tags"><stentry/></strow>
+                        <strow conkeyref="k-bppagesxx/strow-field-workflow"><stentry/></strow>
+                        <strow conkeyref="k-bppagesxx/strow-field-displayinmenu"><stentry/></strow>
+                        <strow conkeyref="k-bppagesxx/strow-field-linktracking"><stentry/></strow>
+                        <strow conkeyref="k-bppagesxx/strow-field-enablescheduling"><stentry/></strow>
+                        <strow conkeyref="k-bppagesxx/strow-field-bulkpagestoadd"><stentry/></strow>
+                    </simpletable>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-configurepagepermissions"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-configurepagepermissions"><cmd/></step> -->
+            <step id="step-pb-configurepagepermissions">
+                <cmd conkeyref="k-bppagesxx/cmd-xx-configure-page-permissions"></cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Page-Permissions-E91.png"><alt>Page &gt; Permissions</alt></image>
+                    <ul conkeyref="k-bpsteps/ul-configure-permissions-E91"><li/></ul>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-configurepageadvanced"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-configurepageadvanced"><cmd/></step> -->
+            <step id="step-pb-configurepageadvanced">
+                <cmd>(Optional) In the <uicontrol>Advanced</uicontrol> tab, configure additional settings.</cmd>
+                <substeps>
+
+                    <substep id="substep-pb-configurepageadvanced-modules">
+                        <cmd>In the <uicontrol>Modules</uicontrol> subtab, edit or delete the modules on the page, as needed.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Page-Advanced-Modules-E91.png"><alt>Page &gt; Advanced &gt; Modules</alt></image>
+                            <note type="note">The <uicontrol>Modules</uicontrol> tab appears only if configuring a standard page.</note>
+                        </info>
+                    </substep>
+
+                    <substep id="substep-pb-configurepageadvanced-appearance">
+                        <cmd>In the <uicontrol>Appearance</uicontrol> subtab, configure how the page is displayed.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Page-Advanced-Appearance-E91.png"><alt>Page &gt; Advanced &gt; Appearance</alt></image>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow conkeyref="k-bppagesxx/strow-field-pagetheme"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-layout"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-pagecontainer"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-pagestylesheet"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-previewthemelayoutandcontainer"><stentry/></strow>
+                            </simpletable>
+                        </info>
+                    </substep>
+
+                    <substep id="substep-pb-configurepageadvanced-seo">
+                        <cmd>In the <uicontrol>SEO</uicontrol> subtab, configure SEO-related settings for the page.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Page-Advanced-SEO-E91.png"><alt>Page &gt; Advanced &gt; SEO</alt></image>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow conkeyref="k-bppagesxx/strow-field-pageheadertags"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-sitemappriority"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-allowindexing"><stentry/></strow>
+                            </simpletable>
+                        </info>
+                    </substep>
+
+                    <substep id="substep-pb-configurepageadvanced-more">
+                        <cmd>In the <uicontrol>More</uicontrol> subtab, configure security and caching for the page.</cmd>
+                        <info>
+                            <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-Page-Advanced-More-E91.png"><alt>Page &gt; Advanced &gt; More</alt></image>
+                            <simpletable relcolwidth="1* 3*">
+                                <sthead>
+                                    <stentry>Field</stentry>
+                                    <stentry>Description</stentry>
+                                </sthead>
+                                <strow conkeyref="k-bppagesxx/strow-field-secureconnection"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-disablepage"><stentry/></strow>
+                                <strow conkeyref="k-bppagesxx/strow-field-outputcacheprovider"><stentry/></strow>
+                            </simpletable>
+                        </info>
+                    </substep>
+
+                </substeps>
+            </step>
+
+
+
             <!-- PAGE VERSION MENU -->
+
 
             <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pages-pageversion-preview"><cmd/></step> -->
             <!-- <step conkeyref="k-bppagespb/step-pages-pageversion-preview"><cmd/></step> -->
@@ -219,12 +535,44 @@
 
             <!-- TEMPLATES: ADD, EDIT -->
 
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-savepagetemplate"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-savepagetemplate"><cmd/></step> -->
+            <step id="step-pb-savepagetemplate">
+                <cmd>Click/Tap <uicontrol>Save Page Template</uicontrol>.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-ConfigPage-SavePageTemplate-E91.png"><alt>Pages &gt; Settings (gear icon) &gt; Save Page Template</alt></image>
+                    <ul>
+                        <li>To use in the same site, choose <uicontrol>Evoq Page Template</uicontrol>.</li>
+                        <li>To use in another site, choose <uicontrol>Export as XML</uicontrol>.</li>
+                    </ul>
+                </info>
+            </step>
+
+            <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-configurepagetemplate"><cmd/></step> -->
+            <!-- <step conkeyref="k-bppagespb/step-pb-configurepagetemplate"><cmd/></step> -->
+            <step id="step-pb-configurepagetemplate">
+                <cmd>Fill in the template information.</cmd>
+                <info>
+                    <image outputclass="img-scr" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-SavePageTemplate-XML-E91.png"><alt>Save Page Template into XML file</alt></image>
+                    <simpletable relcolwidth="1* 3*">
+                        <sthead>
+                            <stentry>Field</stentry>
+                            <stentry>Description</stentry>
+                        </sthead>
+                        <strow conkeyref="k-bppagesxx/strow-field-newpagetemplatename"><stentry/></strow>
+                        <strow conkeyref="k-bppagesxx/strow-field-newtemplatedesc"><stentry/></strow>
+                        <strow conkeyref="k-bppagesxx/strow-field-newtemplateincludecontent"><stentry/></strow>
+                    </simpletable>
+                </info>
+            </step>
+
             <!-- <step conref="bptext-pages-steps-pb.dita#tsk-bptext-pages-steps-pb/step-pb-cmg-gototemplatelist"><cmd/></step> -->
             <!-- <step conkeyref="k-bppagespb/step-pb-cmg-gototemplatelist"><cmd/></step> -->
             <step id="step-pb-cmg-gototemplatelist">
                 <cmd>Go to <menucascade><uicontrol>Persona Bar</uicontrol> <uicontrol>Manage</uicontrol> <uicontrol>Templates</uicontrol></menucascade>.</cmd>
                 <info outputclass="init-hide">
-                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pbar-cmg-Manage-Templates.png"><alt>Persona Bar &gt; Manage &gt; Templates</alt></image>
+                    <image outputclass="img-scr-menu" scalefit="yes" placement="break" align="left" href="../../common/img/scr-pb-ConfigPage-SavePageTemplate-E91.png"><alt>Page &gt; Manage &gt; Templates</alt></image>
                 </info>
             </step>
 

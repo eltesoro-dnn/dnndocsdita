@@ -128,12 +128,12 @@
                 <!-- <strow conref="bptext-servers.dita#tsk-bptext-servers/strow-field-logging-provider"><stentry/></strow> -->
                 <strow id="strow-field-logging-provider">
                     <stentry><uicontrol>Logging Provider</uicontrol></stentry>
-                    <stentry><note conref="bptext-servers.dita#tsk-bptext-servers/note-discouraged-webconfig"></note></stentry>
+                    <stentry><note conref="bptext-servers.dita#tsk-bptext-servers/important-discouraged-webconfig"></note></stentry>
                 </strow>
                 <!-- <strow conref="bptext-servers.dita#tsk-bptext-servers/strow-field-lines-friendly-url"><stentry/></strow> -->
                 <strow id="strow-field-lines-friendly-url">
                     <stentry><lines conref="bptext-servers.dita#tsk-bptext-servers/lines-friendly-url"></lines></stentry>
-                    <stentry><note conref="bptext-servers.dita#tsk-bptext-servers/note-discouraged-webconfig"></note></stentry>
+                    <stentry><note conref="bptext-servers.dita#tsk-bptext-servers/important-discouraged-webconfig"></note></stentry>
                 </strow>
                 <!-- <strow conref="bptext-servers.dita#tsk-bptext-servers/strow-field-scheduler-mode"><stentry/></strow> -->
                 <strow id="strow-field-scheduler-mode">
@@ -148,7 +148,7 @@
                 <!-- <strow conref="bptext-servers.dita#tsk-bptext-servers/strow-field-cas-permissions"><stentry/></strow> -->
                 <strow id="strow-field-cas-permissions">
                     <stentry><uicontrol>CAS Permissions</uicontrol></stentry>
-                    <stentry><note conref="bptext-servers.dita#tsk-bptext-servers/note-discouraged-webconfig"></note></stentry>
+                    <stentry><note conref="bptext-servers.dita#tsk-bptext-servers/important-discouraged-webconfig"></note></stentry>
                 </strow>
             </simpletable>
 

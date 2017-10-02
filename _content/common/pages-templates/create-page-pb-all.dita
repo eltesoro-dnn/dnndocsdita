@@ -62,7 +62,7 @@
             <step conkeyref="k-bppagespb/step-pb-addfloatingpagetohierarchy"><cmd/></step>
         </steps>
 
-        <result>The page is displayed in edit mode. You can click/tap on any of the panes to add content or modules.</result>
+        <result><ph conkeyref="k-bppagesxx/ph-page-in-edit-mode"></ph></result>
 
     </taskbody>
 
